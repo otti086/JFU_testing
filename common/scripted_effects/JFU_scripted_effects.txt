@@ -1,0 +1,438 @@
+declare_war_on_all_allies = {
+	if = { #Make sure we dont declare war on UK a second time
+		limit = { NOT = { has_war_with = ENG } }
+		declare_war_on = { target = ENG type = annex_everything }
+		ROOT_call_allies_both_sides = yes
+	}
+}
+
+ROOT_call_allies_both_sides = {
+	ROOT_call_all_allies_against_ENG = yes
+	ENG_call_all_allies_against_ROOT = yes
+}
+ROOT_call_all_allies_against_ENG = {
+	for_each_scope_loop = {
+		array = ROOT.allies
+		if = {
+			limit = { NOT = { OR = { original_tag = ITA  } } } 
+			add_to_war = {
+				targeted_alliance = ROOT
+				enemy = ENG
+			}
+		}
+
+	}
+}
+ENG_call_all_allies_against_ROOT = {
+	for_each_scope_loop = {
+	    array = ENG.allies
+		if = {
+			add_to_war = {
+				targeted_alliance = ENG
+				enemy = ROOT
+			}
+		}
+	}
+} 
+ROOT_call_against_norway = {
+	for_each_scope_loop = {
+		array = ROOT.allies
+		if = {
+			limit = { NOT = { OR = { original_tag = ITA  } } } 
+			add_to_war = {
+				targeted_alliance = ROOT
+				enemy = NOR
+			}
+		}
+
+	}
+} 
+ROOT_call_against_denmark = {
+	for_each_scope_loop = {
+		array = ROOT.allies
+		if = {
+			limit = { NOT = { OR = { original_tag = ITA  } } } 
+			add_to_war = {
+				targeted_alliance = ROOT
+				enemy = DEN
+			}
+		}
+
+	}
+} 
+ROOT_call_against_beligum = {
+		for_each_scope_loop = {
+		array = ROOT.allies
+		if = {
+			limit = { NOT = { OR = { original_tag = ITA  } } } 
+			add_to_war = {
+				targeted_alliance = ROOT
+				enemy = BEL
+			}
+		}
+
+	}
+} 
+ROOT_call_against_holland = {
+		for_each_scope_loop = {
+		array = ROOT.allies
+		if = {
+			limit = { NOT = { OR = { original_tag = ITA  } } } 
+			add_to_war = {
+				targeted_alliance = ROOT
+				enemy = HOL
+			}
+		}
+
+	}
+							
+}
+ROOT_call_against_france = {
+		for_each_scope_loop = {
+		array = ROOT.allies
+		if = {
+			limit = { NOT = { OR = { original_tag = ITA  } } } 
+			add_to_war = {
+				targeted_alliance = ROOT
+				enemy = FRA
+			}
+		}
+
+	}
+							
+}
+ROOT_call_against_switzerland = {
+		for_each_scope_loop = {
+		array = ROOT.allies
+		if = {
+			limit = { NOT = { OR = { original_tag = SWI  } } } 
+			add_to_war = {
+				targeted_alliance = ROOT
+				enemy = SWI
+			}
+		}
+
+	}
+}	
+air_to_germany = {
+	if = { limit = { tag = ITA }
+	send_equipment = { equipment = fighter_equipment amount = 10000 target = GER }
+	send_equipment = { equipment = CAS_equipment amount = 10000 target = GER }
+	send_equipment = { equipment = tac_bomber_equipment amount = 10000 target = GER }
+	send_equipment = { equipment = heavy_fighter_equipment amount = 10000 target = GER }	
+	send_equipment = { equipment = strat_bomber_equipment amount = 10000 target = GER }	
+	}
+}
+
+
+
+tp_divs_out_of_france = {  every_country = { limit ={ is_in_faction_with = ENG }  every_state = { limit = { OR = { is_core_of = FRA  }}  teleport_armies = { to_state = 5139 }   } }  }
+
+HFU_fuel_startup_effect = { 
+	every_country={
+		limit={	has_country_flag=fuel_system_enabled}
+				add_to_array={GLOBAL.fuel_system_manager=THIS.id}
+	}
+	GER = {
+		every_country = {
+			limit = {
+				NOT={tag=GER}
+				OR = { is_in_faction_with = GER  tag = EFR    }
+				
+				NOT = { is_in_array = { GER.faction_members_array = THIS.id } }			
+			}
+			add_to_array = { GER.faction_members_array = THIS.id }
+		}
+		if = {
+			limit = {
+				any_of_scopes={array=GER.faction_members_array NOT={is_in_array={GLOBAL.fuel_countries=THIS.id}}}
+			}
+			for_each_scope_loop={
+				array=GER.faction_members_array
+				if={limit={NOT={is_in_array={GLOBAL.fuel_countries=THIS.id}}}
+				add_to_array={GLOBAL.fuel_countries=THIS.id}}
+			}
+		}
+		set_variable={send_fuel_enabled=2}
+		for_each_scope_loop={
+			array=GER.faction_members_array
+					set_variable={send_fuel_enabled=2}
+		}
+	}
+	ENG = {
+		every_country = {
+			limit = {
+				OR = {
+					AND = { 
+						NOT={tag=ENG}
+						
+						OR = {is_in_faction_with = ENG tag = USA }  
+						NOT = { is_in_array = { ENG.faction_members_array = THIS.id } }	
+					}
+				}
+			}
+			add_to_array = { ENG.faction_members_array = THIS.id }
+		}
+		if = {
+			limit = {
+				any_of_scopes={array=ENG.faction_members_array NOT={is_in_array={GLOBAL.fuel_countries=THIS.id}}}
+			}
+			for_each_scope_loop={
+				array=ENG.faction_members_array
+				if={limit={NOT={is_in_array={GLOBAL.fuel_countries=THIS.id}}}
+				add_to_array={GLOBAL.fuel_countries=THIS.id}}
+			}
+		}
+		set_variable={send_fuel_enabled=2}
+		for_each_scope_loop={
+			array=ENG.faction_members_array
+			set_variable={send_fuel_enabled=2}
+		}
+	}
+}
+HFU_fuel_on_daily_scripted_effect = {
+	if={
+		limit={tag=SWE}
+		for_each_scope_loop={
+			array=GLOBAL.fuel_system_manager
+			set_variable={GLOBAL.controllerscope=THIS.id}
+			for_each_scope_loop={
+				array = THIS.faction_members_array
+				##
+				set_variable={GLOBAL.currentscope=THIS.id}
+				##
+				if={
+					limit={check_variable={send_fuel_enabled >1}}
+					set_variable={fuelbedarf=min_fuel}
+					subtract_from_variable={fuelbedarf=fuel_ratio}
+					set_variable={fuelbedarfanteil=fuelbedarf}
+					multiply_variable={fuelbedarf=max_fuel_k}
+					set_variable={fuelbedarfvorzeichen=fuelbedarf}
+					multiply_variable={fuelbedarfvorzeichen=-1}
+					##
+					set_variable={fuelbedarf_k=fuelbedarf}
+					set_variable={fuelbedarfvorzeichen_k=fuelbedarfvorzeichen}
+					##
+					multiply_variable={fuelbedarfvorzeichen=1000}
+					multiply_variable={fuelbedarf=1000}
+	
+					set_variable={PREV.fuelbedarf=PREV.min_fuel}
+					subtract_from_variable={PREV.fuelbedarf=PREV.fuel_ratio}
+					set_variable={PREV.fuelbedarfanteil=PREV.fuelbedarf}
+					multiply_variable={PREV.fuelbedarf=PREV.max_fuel_k}
+					set_variable={PREV.fuelbedarfvorzeichen=PREV.fuelbedarf}
+					multiply_variable={PREV.fuelbedarfvorzeichen=-1}
+					multiply_variable={PREV.fuelbedarfvorzeichen=1000}
+					multiply_variable={PREV.fuelbedarf=1000}
+					set_variable={PREV.free_stockpile=PREV.max_fuel_k}
+					subtract_from_variable={PREV.free_stockpile=PREV.fuel_k}
+					multiply_variable={PREV.free_stockpile=1000}
+					set_variable={PREV.free_stockpilenegativ=PREV.free_stockpile}
+					multiply_variable={PREV.free_stockpilenegativ=-1}
+
+					set_variable={countryfuelplus5=fuel_ratio}
+					add_to_variable={countryfuelplus5=0.05}
+					if={
+						limit={ #fuel von prev zu this
+							check_variable={PREV.fuelbedarf <0} #hat prev mehr fuel als minimum?
+							check_variable={min_fuel > countryfuelplus5} 
+						}
+						if={
+							limit={
+								check_variable={fuelbedarf >0}
+								check_variable={PREV.fuelbedarfvorzeichen >fuelbedarf}
+							}
+							set_temp_variable={PREV.mastergain=fuelbedarfvorzeichen}
+							set_temp_variable={subjectgain=fuelbedarf}
+							PREV={ add_fuel=mastergain	}
+							add_fuel=subjectgain
+						}
+						else={
+		
+							set_temp_variable={PREV.mastergain=fuelbedarfvorzeichen}
+							set_temp_variable={subjectgain=fuelbedarf}
+							PREV={	add_fuel=mastergain	}
+							add_fuel=subjectgain
+							set_temp_variable={PREV.test2=PREV.fuelbedarfvorzeichen}
+						}
+					}
+					else_if={ #fuel von this zu prev
+						limit={
+							check_variable={fuelbedarf <0} #hat this mehr fuel als minimum?
+							check_variable={PREV.fuel_ratio <0.95} # hat PREV full_stockpile?
+						}
+						if={
+							limit={
+								check_variable={fuelbedarfvorzeichen <PREV.free_stockpile} # ist this free fuel kleiner als prev free stockpile?
+							}
+							set_temp_variable={PREV.mastergain=fuelbedarfvorzeichen}
+							set_temp_variable={subjectgain=fuelbedarf}
+							PREV={	add_fuel=mastergain	}
+							add_fuel=subjectgain
+						}
+						else_if={
+							limit={check_variable={PREV.free_stockpile>1000}}#no need to transfer fuel <1k
+
+							set_temp_variable={PREV.mastergain=PREV.free_stockpile}
+							set_temp_variable={subjectgain=PREV.free_stockpilenegativ}
+							PREV={	add_fuel=mastergain	}
+							add_fuel=subjectgain
+						}
+					}
+					else_if={#this fills the subject fuel storage to 95% when major has full fuel
+						limit={
+							check_variable={fuel_ratio <0.95} #hat this free stockpile
+							check_variable={PREV.fuel_ratio >0.95} # hat PREV full_stockpile?
+						}
+						set_variable={free_stockpile=max_fuel_k}
+						subtract_from_variable={free_stockpile=fuel_k}
+						multiply_variable={free_stockpile=1000}
+						set_variable={free_stockpilenegativ=free_stockpile}
+						multiply_variable={free_stockpilenegativ=-1}
+						set_variable={master_spare_fuel=PREV.max_fuel_k}
+						multiply_variable={master_spare_fuel=0.03}
+						multiply_variable={master_spare_fuel=1000}
+						set_variable={master_spare_fuelnegativ=master_spare_fuel}
+						multiply_variable={master_spare_fuelnegativ=-1}
+						if={limit={check_variable={free_stockpile<mastersparefuel}}
+							set_temp_variable={PREV.mastergain=free_stockpilenegativ}
+							set_temp_variable={subjectgain=free_stockpile}}
+						else={
+							set_temp_variable={PREV.mastergain=master_spare_fuelnegativ}
+							set_temp_variable={subjectgain=master_spare_fuel}
+						}
+						PREV={	add_fuel=mastergain	}
+						add_fuel=subjectgain			
+					}
+				}
+			}
+		}
+	}
+	for_each_scope_loop={
+	array=GLOBAL.fuel_countries
+		set_temp_variable={currentfuel=fuel_ratio}
+		subtract_from_temp_variable={currentfuel=1}
+		multiply_temp_variable={currentfuel = 88}
+		set_variable={fuel_bar_fuel=currentfuel}
+	}
+}
+
+fuel_system_refresh_list = {
+			if = {
+							limit = {
+								any_country = {
+									OR={AND={NOT={tag=ROOT}
+									is_in_faction_with = ROOT 
+									NOT = { is_in_array = { ROOT.faction_members_array = THIS.id } }
+								}
+								any_of_scopes={array=ROOT.faction_members_array exists=no}
+								}
+								}
+								
+							}
+							clear_array=ROOT.faction_members_array
+							every_country = {
+								limit = {
+									NOT={tag=ROOT}
+									OR={is_in_faction_with = ROOT
+									AND={ROOT={tag=ENG}tag=SOV}} 
+									NOT = { is_in_array = { ROOT.faction_members_array = THIS.id } }
+									
+								}
+								add_to_array = { ROOT.faction_members_array = THIS.id }
+							}
+							#if = { limit = { TAG = ENG } add_to_array = { ROOT.faction_members_array = SOV.id } }
+						}
+			if = {
+							limit = {
+								any_of_scopes={array=ROOT.faction_members_array NOT={is_in_array={GLOBAL.fuel_countries=THIS.id}}
+								}
+							}
+							for_each_scope_loop={
+								array=ROOT.faction_members_array
+								if={limit={NOT={is_in_array={GLOBAL.fuel_countries=THIS.id}}}
+								add_to_array={GLOBAL.fuel_countries=THIS.id}}
+								}
+				}
+}
+
+JFU_vichy_france = { 
+
+	GER = { 
+	diplomatic_relation = {   country = EFR    relation = non_aggression_pact   active = yes }
+
+	transfer_state = 28
+	transfer_state = 17
+	transfer_state = 27
+	transfer_state = 18
+	transfer_state = 24
+	transfer_state = 16
+	transfer_state = 15
+	transfer_state = 30
+	transfer_state = 23
+	transfer_state = 14
+	transfer_state = 19
+	transfer_state = 29
+	transfer_state = 806
+	transfer_state = 785
+	}
+
+	FRA = {
+	remove_ideas = FRA_protected_by_the_maginot_line
+	remove_ideas = FRA_victors_of_wwi
+	remove_ideas = FRA_full_employment
+	remove_ideas = FRA_disjointed_government
+	remove_ideas = FRA_political_violence
+			create_country_leader = {
+				name = "Charles de Gaulle"
+				desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
+				picture = "Portrait_France_Charles_De_Gaulle.dds"
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+				}
+			}
+	}
+	JFU_vichy_france_2 = yes
+			
+}
+
+
+JFU_vichy_france_2 = {
+	ITA = {   transfer_state = 735 transfer_state = 665 transfer_state = 458 transfer_state = 1 } #Italian claims, includes territory from Tunisia+Corsica+South Eastern France that was occupied in 1942
+	539 = { set_building_level = { type = infrastructure level = 5 }}
+	EFR ={ 
+		set_country_flag = vichy_france_established
+		###SOUTHERN FRANCE###
+		transfer_state = 26
+		add_state_core = 26
+		set_capital = { state = 26 } 
+		transfer_state = 33 
+		add_state_core = 33 
+		transfer_state = 20
+		add_state_core = 20 
+		transfer_state = 25
+		add_state_core = 25 
+		transfer_state = 31 
+		add_state_core = 31 
+		transfer_state = 22 
+		add_state_core = 22 
+		transfer_state = 32 
+		add_state_core = 32 
+		transfer_state = 21
+		add_state_core = 21 
+		###NORTH AFRICA### #demilitarized so Vichy players aren't utter cancer
+		transfer_state = 460
+		460 = { set_demilitarized_zone = yes }
+		transfer_state = 513
+		513 = { set_demilitarized_zone = yes }
+		transfer_state = 462
+		462 = { set_demilitarized_zone = yes }
+		transfer_state = 459
+		459 = { set_demilitarized_zone = yes }
+		transfer_state = 461
+		461 = { set_demilitarized_zone = yes }
+	}
+
+}
+						

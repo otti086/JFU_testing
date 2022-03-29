@@ -1,0 +1,273 @@
+﻿###########################
+# French Events
+###########################
+
+add_namespace = france
+
+
+### The Fall of France
+
+country_event = {
+	id = france.10
+	title = france.10.t
+	desc = france.10.d
+	picture = GFX_report_event_german_parade_paris
+	fire_only_once = yes	
+	is_triggered_only = yes 
+	option = { # Become Free French
+		name = france.10.b
+		custom_effect_tooltip = france.10.b_tt
+	}
+}
+
+country_event = {
+	id = france.14
+	title = france.14.t
+	desc = france.14.d
+	picture = GFX_report_event_german_parade_paris
+	
+	is_triggered_only = yes
+
+		option = { # Armistice!
+		name = france.14.a
+		ENG = { country_event = britain.9 }
+		#horstorical_multiplayer_vichy_france = yes 
+	}
+}
+
+
+# De Gaulle becomes leader
+country_event = {
+	id = france.20
+	title = france.20.t
+	desc = france.20.d
+	picture = GFX_report_event_degaulle_churchill
+	
+	is_triggered_only = yes
+	
+	option = {
+		custom_effect_tooltip = france.20.a_tt
+		set_country_flag = france_de_gaulle
+		hidden_effect =  {
+			add_country_leader_role = {
+				character = FRA_charles_de_gaulle
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = conservatism
+					traits = {
+					}	
+				}
+				promote_leader = yes				
+			}		
+		}
+		name = france.20.a
+	}
+}
+
+
+
+# French strikes
+country_event = {
+	id = france.22
+	title = france.21.t
+	desc = france.21.d
+	picture = GFX_report_event_worker_protests
+	
+	is_triggered_only = yes
+
+	option = {
+		ai_chance = {
+			base = 15
+		}
+		name = france.21.a
+		add_timed_idea = {
+			idea = FRA_factory_strikes
+			days = 60
+		}
+		hidden_effect = {
+			country_event = { id = france.23 days = 60 }
+		}
+	}
+
+	option = {
+		ai_chance = {
+			base = 85
+		}
+		name = france.21.b
+		add_political_power = -50
+	}
+}
+
+# Strikes are over
+country_event = {
+	id = france.23
+	title = france.23.t
+	desc = france.23.d
+	picture = GFX_report_event_airplane_factory
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = france.23.a
+	}
+}
+
+# Vichy France: Germany is handing over some of our land
+country_event = {
+	id = france.27
+	title = france.27.t
+	desc = { 
+		text = france.27.d_1_state 
+		trigger = {
+			OR = {
+				NOT = { has_global_flag = ITA_claims_on_france_735 }
+				has_global_flag = ITA_claims_on_france_1
+			}
+			OR = {
+				has_global_flag = ITA_claims_on_france_735
+				NOT = { has_global_flag = ITA_claims_on_france_1 }
+			}
+		} 
+	}
+	desc = { 
+		text = france.27.d_both
+		trigger = { 
+			has_global_flag = ITA_claims_on_france_735 
+			has_global_flag = ITA_claims_on_france_1
+		} 
+	}
+	picture = GFX_report_event_worried_french
+
+	is_triggered_only	= yes
+
+	option = {
+		name = france.27.a
+		
+		effect_tooltip = {
+			if = {
+				limit = { has_global_flag = ITA_claims_on_france_735 }
+				ITA = { transfer_state = 735 }
+			}
+			if = {
+				limit = { has_global_flag = ITA_claims_on_france_1 }
+				ITA = { transfer_state = 1 }
+			}
+		}
+
+		if = {
+			limit = {
+				has_global_flag = ITA_claims_on_france_735
+				has_global_flag = ITA_claims_on_france_1
+				OR = {
+					owns_state = 554
+					owns_state = 677
+					owns_state = 680
+				}
+
+			}
+			random_other_country = {
+				limit = {
+					original_tag = FRA
+					has_government = democratic
+				}
+				if = {
+					limit = { ROOT = { owns_state = 554 } }
+					transfer_state = 554
+				}
+				if = {
+					limit = { ROOT = { owns_state = 677 } }
+					transfer_state = 677
+				}
+				if = {
+					limit = { ROOT = { owns_state = 680 } }
+					transfer_state = 680
+				}
+				country_event = france.28
+			}
+		}
+	}
+
+}
+
+# France - Syria defects to us
+country_event = {
+	id = france.28
+	title = france.28.t
+	desc = france.28.d
+	picture = GFX_report_event_worried_french
+
+	is_triggered_only	= yes
+
+	option = {
+		name = france.28.a
+	}
+
+}
+
+# France - Britain accepts Ally request
+country_event = {
+	id = france.29
+	title = france.29.t
+	desc = france.29.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {
+		name = france.29.a
+	}
+}
+
+# France - Britain denies Ally request
+country_event = {
+	id = france.30
+	title = france.30.t
+	desc = france.30.d
+	picture = GFX_report_event_chamberlain
+
+	is_triggered_only	= yes
+
+	option = {
+		name = france.30.a
+	}
+}
+
+# Édouard Daladier Resigns
+country_event = {
+	id = france.31
+	title = france.31.t
+	desc = france.31.d
+	picture = GFX_report_event_german_parade_paris
+
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = FRA
+		has_government = democratic
+		has_global_flag = fall_of_france
+		NOT = { has_country_flag = france_de_gaulle }
+	} 
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = france.31.a
+		retire_country_leader = yes
+		add_country_leader_role = {
+			character = FRA_paul_reynaud
+			country_leader = {
+				expire = "1965.1.1"
+				ideology = liberalism
+				traits = {
+				}
+			}
+			promote_leader = yes
+		}
+		set_country_flag = daladier_resigned
+	}
+}
+

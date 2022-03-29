@@ -1,0 +1,5 @@
+JFU_decisions = {
+	icon = generic_research
+	visible = {
+	}
+}

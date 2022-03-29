@@ -1,0 +1,146 @@
+﻿###########################
+# Australian TFV events Events
+###########################
+
+add_namespace = tfv_australia
+
+# Completed AST_the_singapore_strategy.
+# Australian national focus.
+country_event = {
+	id = tfv_australia.1
+	title = tfv_australia.1.t	# Democratic Australia proposes to govern Singapore/Borneo colonies.
+	desc = tfv_australia.1.d	#
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tfv_australia.1.a # Transfer ownership of colonies to Australia.
+		
+		ai_chance = {
+			base = 100
+		}
+		
+		hidden_effect = {
+			AST = {
+				country_event = { id = tfv_australia.2 }
+			}
+		}
+	}
+	
+	option = {
+		name = tfv_australia.1.b # Diplomatically refuse Australia's proposal.
+		
+		ai_chance = {
+			base = 0
+		}
+		
+		AST = {
+			country_event = { id = tfv_australia.3 }
+		}
+	}
+}
+
+country_event = {
+	id = tfv_australia.2
+	title = tfv_australia.2.t	# Great Britain transferred Singapore/Borneo colonies to Australia.
+	desc = tfv_australia.2.d	#
+	picture = GFX_report_event_ast_army
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tfv_australia.2.a
+		
+		
+		news_event = { hours = 6 id = news.238 }
+	}
+}
+
+country_event = {
+	id = tfv_australia.3
+	title = tfv_australia.3.t	# Great Britain refused Australia's offer to govern Singapore/Borneo.
+	desc = tfv_australia.3.d	#
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tfv_australia.3.a
+	}
+}
+#coronation visit
+country_event = {
+	id = tfv_australia.90
+	title = tfv_australia.90.t	
+	desc = tfv_australia.90.desc	#
+	picture = GFX_report_event_royal_visit
+	
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = {
+			base = 33
+		}
+		name = tfv_australia.90.a
+		add_stability = 0.05
+	}
+
+	option = {
+		ai_chance = {
+			base = 34
+		}
+		name = tfv_australia.90.b
+		add_manpower = 5000
+		add_war_support = 0.05
+	}
+
+	option = {
+		ai_chance = {
+			base = 33
+		}
+		name = tfv_australia.90.c
+		add_political_power = 75
+	}
+}
+
+#coronation visit edward viii
+country_event = {
+	id = tfv_australia.92
+	title = tfv_australia.92.t	
+	desc = tfv_australia.92.desc	#
+	picture = GFX_report_event_royal_visit
+	
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = {
+			base = 33
+		}
+		name = tfv_australia.92.a
+		add_stability = 0.025
+		add_popularity = { ideology = neutrality popularity = 0.075 }
+	}
+
+	option = {
+		ai_chance = {
+			base = 34
+		}
+		name = tfv_australia.92.b
+		add_manpower = 3000
+		add_war_support = 0.075
+		add_popularity = { ideology = neutrality popularity = 0.025 }
+		add_stability = -0.05
+	}
+
+	option = {
+		ai_chance = {
+			base = 33
+		}
+		name = tfv_australia.92.c
+		add_political_power = 50
+		add_popularity = { ideology = neutrality popularity = 0.05 }
+		add_stability = -0.025
+	}
+}
+

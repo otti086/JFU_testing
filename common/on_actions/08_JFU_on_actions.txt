@@ -1,0 +1,126 @@
+on_actions = {
+	
+	on_daily = {
+		effect = {
+			HFU_fuel_on_daily_scripted_effect = yes
+		}
+	}
+	on_capitulation = {
+		effect = {
+				if = { 
+				limit = {
+					original_tag = HOL
+				}
+				every_state = {
+					limit = {
+						AND = {
+							is_core_of = HOL
+							is_controlled_by = GER
+						}
+					}
+				
+					add_compliance = 50 
+				}
+			}
+			if = { 
+				limit = {
+					original_tag = BEL
+				}
+				every_state = {
+					limit = {
+						AND = {
+							is_core_of = BEL
+							is_controlled_by = GER
+						}
+					}
+				
+					add_compliance = 50 
+				}
+			}
+			if = { 
+				limit = {
+					original_tag = NOR
+				}
+				every_state = {
+					limit = {
+						AND = {
+							is_core_of = NOR
+							is_controlled_by = GER
+						}
+					}
+				
+					add_compliance = 50 
+				}
+			}
+			if = { 
+				limit = {
+					original_tag = DEN
+				}
+				every_state = {
+					limit = {
+						AND = {
+							is_core_of = DEN
+							is_controlled_by = GER
+						}
+					}
+				
+					add_compliance = 50 
+				}
+			}
+			if = {
+				limit = { 
+				original_tag = POL
+
+				}
+				SOV = {transfer_state = 96 }
+				SOV = {transfer_state = 95 }
+				SOV = {transfer_state = 94 }
+				SOV = {transfer_state = 784 }
+				SOV = {transfer_state = 93 }
+				SOV = {transfer_state = 91 }
+				SOV = {transfer_state = 89 }
+				SOV = {transfer_state = 97 }
+			}
+		}
+	}
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { tag = FRA }
+					FROM.FROM = { is_core_of = FRA }
+					OR ={  AND ={  FRA = { surrender_progress	> 0.32 NOT = { OR = { controls_state = 18 controls_state = 785 controls_state = 16 }} } }	FRA = { surrender_progress	> 0.5	}	 }
+					NOT = { FRA = { has_country_flag = france_is_kill }}
+				}
+
+				tp_divs_out_of_france = yes 
+				JFU_vichy_france = yes 
+				FRA = { 
+					set_country_flag = france_is_kill  
+					 set_capital = { state = 539 }
+					country_event = { id = france.10 }
+					set_global_flag = fall_of_france
+					set_cosmetic_tag = FRA_FREE
+					news_event = { id = news.34 days = 0 }
+				}
+				ENG = { 
+					retire_country_leader = yes					
+					create_country_leader = {
+						name = "Winston Churchill"
+						desc = "POLITICS_WINSTON_CHURCHILL_DESC"
+						picture = "Portrait_Britain_Winston_Churchill.dds"
+						expire = "1965.1.1"
+						ideology = conservatism
+						traits = {	british_bulldog	}
+					}
+
+					add_stability = 0.1
+					add_war_support = 0.1
+				}
+				GER = {  country_event = { id = france.14 }}
+				if = { limit = { country_exists = JAP } JAP = { transfer_state = 670 transfer_state = 286 transfer_state = 741 transfer_state = 671 transfer_state = 728 } }
+
+			}
+		}
+	}
+}

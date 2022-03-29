@@ -1,0 +1,513 @@
+﻿
+###   ##  #   ### ### ###  ##   ##  #       #   # ###  ##  #   ### #  #  ##  ### 
+#  # #  # #    #   #   #  #  # #  # #       #   #  #  #  # #   #   ## # #  # #   
+###  #  # #    #   #   #  #    #### #        # #   #  #  # #   ##  # ## #    ##  
+#    #  # #    #   #   #  #  # #  # #        # #   #  #  # #   #   #  # #  # #   
+#     ##  ### ###  #  ###  ##  #  # ###       #   ###  ##  ### ### #  #  ##  ### 
+
+
+add_namespace = lar_france_political_violence
+
+# right wing riots
+country_event = {
+	id = lar_france_political_violence.1
+	title = lar_france_political_violence.1.t
+	desc = lar_france_political_violence.1.desc
+	picture = GFX_report_event_generic_riot
+	is_triggered_only = yes
+
+	option = {
+		name = lar_france_political_violence.1.a #ignore
+		add_stability = -0.05
+		add_popularity = { ideology = fascism popularity = 0.025 }
+		add_popularity = { ideology = neutrality popularity = 0.025 }
+	}
+
+	option = {
+		name = lar_france_political_violence.1.b #prosecute
+		add_political_power = -50
+	}
+}
+
+# communist riots
+country_event = {
+	id = lar_france_political_violence.2
+	title = lar_france_political_violence.1.t
+	desc = lar_france_political_violence.2.desc
+	picture = GFX_report_event_generic_riot
+	is_triggered_only = yes
+
+	option = {
+		name = lar_france_political_violence.1.a #ignore
+		add_stability = -0.05
+		add_popularity = { ideology = communism popularity = 0.025 }
+	}
+
+	option = {
+		name = lar_france_political_violence.1.b #prosecute
+		add_political_power = -50
+	}
+}
+
+# massive right wing riots
+country_event = {
+	id = lar_france_political_violence.3
+	title = lar_france_political_violence.3.t
+	desc = lar_france_political_violence.3.desc
+	picture = GFX_report_event_generic_riot
+	is_triggered_only = yes
+
+	option = {
+		name = lar_france_political_violence.3.a #ignore
+		add_stability = -0.1
+		add_popularity = { ideology = fascism popularity = 0.05 }
+		add_popularity = { ideology = neutrality popularity = 0.05 }
+	}
+
+	option = {
+		name = lar_france_political_violence.3.b #prosecute
+		add_political_power = -150
+	}
+}
+#   #  ##  ###  # # ### ###       ## #  #  ##  ###  ###  ##   ##  ### 
+#   # #  # #  # # # #   #  #     #   #  # #  # #  #  #  #  # #    #   
+# # # #  # ###  ##  ##  ###       #  #### #  # ###   #  #### # ## ##  
+# # # #  # #  # # # #   #  #       # #  # #  # #  #  #  #  # #  # #   
+ # #   ##  #  # # # ### #  #     ##  #  #  ##  #  #  #  #  #  ##  ### 
+
+
+#events to notify player that they are having worker issues
+add_namespace = lar_worker_shortage
+
+#country switched to extensive conscription while on full employment
+country_event = {
+	id = lar_worker_shortage.1
+	title = lar_worker_shortage.1.t
+	desc = lar_worker_shortage.1.desc
+	picture = GFX_report_event_generic_factory
+
+	trigger = {
+		tag = FRA
+		has_idea = FRA_full_employment
+		not = { has_idea = FRA_worker_shortage }
+		OR = {
+			has_idea = extensive_conscription
+			has_idea = service_by_requirement
+			has_idea = all_adults_serve
+			has_idea = scraping_the_barrel
+		}
+	}
+	mean_time_to_happen = { days = 20 }
+	
+	immediate = {
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = FRA_full_employment
+				add_idea = FRA_worker_shortage
+			}
+		}
+	}
+
+	option = {
+		name = lar_worker_shortage.1.a #agree
+		ai_chance = {
+			factor = 80
+		}
+		effect_tooltip = { #actual effect in immediate so player can not avoid by waiting it out, tooltip here to tell player what is happening
+			swap_ideas = {
+				remove_idea = FRA_full_employment
+				add_idea = FRA_worker_shortage
+			}
+		}
+	}
+}
+
+#country demobilizes while having worker shortage
+country_event = {
+	id = lar_worker_shortage.2
+	title = lar_worker_shortage.2.t
+	desc = lar_worker_shortage.2.desc
+	picture = GFX_report_event_france_tank_production
+
+	trigger = {
+		tag = FRA
+		has_idea = FRA_worker_shortage
+		not = { has_idea = FRA_full_employment }
+		OR = {
+			has_idea = limited_conscription
+			has_idea = disarmed_nation
+			has_idea = volunteer_only
+		}
+	}
+	mean_time_to_happen = { days = 20 }
+	option = {
+		name = lar_worker_shortage.2.a #agree
+		ai_chance = {
+			factor = 80
+		}
+		swap_ideas = {
+			remove_idea = FRA_worker_shortage
+			add_idea = FRA_full_employment
+		}
+	}
+}
+
+ ##  ###  #   #  ##     ###  #  # ###   ##  #  #  ##   ## ###  ## 
+#  # #  # ## ## #       #  # #  # #  # #  # #  # #  # #   #   #   
+#### ###  # # #  #      ###  #  # ###  #    #### ####  #  ##   #  
+#  # #  # #   #   #     #    #  # #  # #  # #  # #  #   # #     # 
+#  # #  # #   # ##      #     ##  #  #  ##  #  # #  # ##  ### ##  
+
+add_namespace = lar_arms_purchases
+
+#intial event for US - France wants to buy weapons
+country_event = {
+	id = lar_arms_purchases.1
+	title = lar_arms_purchases.1.t
+	desc = lar_arms_purchases.1.desc
+	picture = GFX_report_event_generic_lend_lease
+	is_triggered_only = yes
+	option = {
+		name = lar_arms_purchases.1.a #agree
+		ai_chance = {
+			factor = 40
+		}
+		trigger = {
+			USA_can_sell_weapons_trigger = yes
+		}
+		FRA = {
+			country_event = lar_arms_purchases.2
+		}
+		army_experience = 10
+	}
+
+	option = {
+		name = lar_arms_purchases.1.b #refuse
+		ai_chance = {
+			factor = 60
+			modifier = {
+				FRA = { has_war = yes }
+				factor = 0.5
+			}
+		}
+		FRA = {
+			country_event = lar_arms_purchases.3
+		}
+	}
+}
+
+# rasponse event for France - country agrees
+country_event = {
+	id = lar_arms_purchases.2
+	title = lar_arms_purchases.2.t
+	desc = lar_arms_purchases.2.desc
+	picture = GFX_report_event_merchant_ship_01
+	is_triggered_only = yes
+	option = {
+		name = lar_arms_purchases.2.a #agree
+		ai_chance = {
+			factor = 100
+		}
+		set_country_flag = FRA_arms_purchases_permitted
+	}
+}
+#response event for France - US refuse
+country_event = {
+	id = lar_arms_purchases.3
+	title = lar_arms_purchases.3.t
+	desc = lar_arms_purchases.3.desc
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = lar_arms_purchases.3.a #agree
+		ai_chance = {
+			factor = 80
+		}
+	}
+}
+
+#   #  ##  #   #  # #  # ### ### ### ###   ##     ###  ##       ## ###   ##  ### #  # 
+#   # #  # #   #  # ## #  #  #   #   #  # #        #  #  #     #   #  # #  #  #  ## # 
+ # #  #  # #   #  # # ##  #  ##  ##  ###   #       #  #  #      #  ###  ####  #  # ## 
+ # #  #  # #   #  # #  #  #  #   #   #  #   #      #  #  #       # #    #  #  #  #  # 
+  #    ##  ###  ##  #  #  #  ### ### #  # ##       #   ##      ##  #    #  # ### #  # 
+
+add_namespace = lar_france_volunteers
+
+#event for country - French volunteers have joined!
+country_event = {
+	id = lar_france_volunteers.1
+	title = lar_france_volunteers.1.t
+	desc = lar_france_volunteers.1.desc
+	picture = GFX_report_event_spain_civil_war_volunteers_01
+	immediate = {
+		if = {
+			limit = { has_government = fascism }
+			set_variable = { volunteer_strength = FRA.party_popularity@fascism }
+		}
+		else_if = {
+			limit = { has_government = communism }
+			set_variable = { volunteer_strength = FRA.party_popularity@communism }
+		}
+		else_if = {
+			limit = { has_government = democratic }
+			set_variable = { volunteer_strength = FRA.party_popularity@democratic }
+			multiply_variable = { volunteer_strength = 0.5 } #special modifier to reduce impact of democratic support [no longer war support, or we reach 0 often, also it is HIDDEN]
+		}
+		else_if = {
+			limit = { has_government = neutrality }
+			set_variable = { volunteer_strength = FRA.party_popularity@neutrality }
+		}
+		multiply_variable = { volunteer_strength = 1000 }
+	}
+	is_triggered_only = yes
+	option = {
+		name = lar_france_volunteers.1.a #agree
+		ai_chance = {
+			factor = 40
+		}
+		set_country_flag = FRA_has_received_volunteers
+		add_manpower = volunteer_strength
+	}
+}
+
+# volunteers return - hidden event
+country_event = {
+	id = lar_france_volunteers.2
+	hidden = yes
+	
+	trigger = {
+		original_tag = SPR
+		has_country_flag = FRA_has_received_volunteers
+		has_war = no
+	}
+	mean_time_to_happen = { days = 30 }
+	immediate = {
+		clr_country_flag = FRA_has_received_volunteers
+		FRA = { country_event = lar_france_volunteers.3 }
+	}
+	option = {}
+}  
+
+# volunteers return - event for France to accept them
+country_event = {
+	id = lar_france_volunteers.3
+	title = lar_france_volunteers.3.t
+	desc = lar_france_volunteers.3.desc
+	picture = GFX_report_event_saf_civil_war
+	is_triggered_only = yes
+	
+	option = {
+		name = lar_france_volunteers.3.a #agree
+		ai_chance = {
+			factor = 60
+		}
+		if = {
+			limit = {
+				FROM = {
+					has_government = fascism
+				}
+			}
+			add_popularity = { ideology = fascism popularity = 0.05 }
+			army_experience = 10
+		}
+		else_if = {
+			limit = {
+				FROM = {
+					has_government = communism
+				}
+			}
+			add_popularity = { ideology = communism popularity = 0.05 }
+			army_experience = 10
+		}
+		else_if = {
+			limit = {
+				FROM = {
+					has_government = democratic
+				}
+			}
+			add_popularity = { ideology = democratic popularity = 0.05 }
+			army_experience = 10
+		}
+		else_if = {
+			limit = {
+				FROM = {
+					has_government = neutrality
+				}
+			}
+			add_popularity = { ideology = neutrality popularity = 0.05 }
+			army_experience = 10
+		}
+	}
+
+	option = {
+		name = lar_france_volunteers.3.b #arefuse
+		ai_chance = {
+			factor = 40
+		}
+		if = {
+			limit = {
+				FROM = {
+					has_government = fascism
+				}
+			}
+			set_temp_variable = { stability_impact = party_popularity@fascism }
+			multiply_temp_variable = { stability_impact = 0.1 }
+			add_stability = stability_impact
+		}
+		else_if = {
+			limit = {
+				FROM = {
+					has_government = communism
+				}
+			}
+			set_temp_variable = { stability_impact = party_popularity@communism }
+			multiply_temp_variable = { stability_impact = 0.1 }
+			add_stability = stability_impact
+		}
+		else_if = {
+			limit = {
+				FROM = {
+					has_government = democratic
+				}
+			}
+			set_temp_variable = { stability_impact = party_popularity@democratic }
+			multiply_temp_variable = { stability_impact = 0.1 }
+			add_stability = stability_impact
+		}
+		else_if = {
+			limit = {
+				FROM = {
+					has_government = neutrality
+				}
+			}
+			set_temp_variable = { stability_impact = party_popularity@neutrality }
+			multiply_temp_variable = { stability_impact = 0.1 }
+			add_stability = stability_impact
+		}
+	}
+} 
+
+#  #  ##  #  #     ### #  # ### ### ###  #   # ### #  # ### ###  ##  #  #     ### #  #      ## ###   ##  ### #  # 
+## # #  # ## #      #  ## #  #  #   #  # #   # #   ## #  #   #  #  # ## #      #  ## #     #   #  # #  #  #  ## # 
+# ## #  # # ##      #  # ##  #  ##  ###   # #  ##  # ##  #   #  #  # # ##      #  # ##      #  ###  ####  #  # ## 
+#  # #  # #  #      #  #  #  #  #   #  #  # #  #   #  #  #   #  #  # #  #      #  #  #       # #    #  #  #  #  # 
+#  #  ##  #  #     ### #  #  #  ### #  #   #   ### #  #  #  ###  ##  #  #     ### #  #     ##  #    #  # ### #  # 
+
+add_namespace = lar_non_intervention
+
+#intial event France wants to propose non-intervention
+country_event = {
+	id = lar_non_intervention.1
+	title = lar_non_intervention.1.t
+	desc = lar_non_intervention.1.desc
+	picture = GFX_report_event_generic_conference
+	is_triggered_only = yes
+	option = {
+		name = lar_non_intervention.1.a #agree
+		ai_chance = {
+			factor = 80
+		}
+		set_country_flag = FRA_non_intervention_agreed
+		FRA = {
+			country_event = lar_non_intervention.2
+		}
+	}
+
+	option = {
+		name = lar_non_intervention.1.b #refuse
+		ai_chance = {
+			factor = 20
+		}
+		FRA = {
+			country_event = lar_non_intervention.3
+		}
+		set_country_flag = FRA_non_intervention_refused
+	}
+}
+
+# rasponse event for France - country agrees
+country_event = {
+	id = lar_non_intervention.2
+	title = lar_non_intervention.2.t
+	desc = lar_non_intervention.2.desc
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	option = {
+		name = lar_non_intervention.2.a #agree
+		ai_chance = {
+			factor = 100
+		}
+		add_stability = 0.02
+		add_war_support = -0.01
+	}
+}
+#response event for France - country refuses
+country_event = {
+	id = lar_non_intervention.3
+	title = lar_non_intervention.3.t
+	desc = lar_non_intervention.3.desc
+	picture = GFX_report_event_generic_sign_treaty2
+	is_triggered_only = yes
+	option = {
+		name = lar_non_intervention.3.a #agree
+		ai_chance = {
+			factor = 80
+		}
+	}
+}
+
+ ##   ##  #   # #   # #  # #  # ###  ## ###      ## #  # ###  ###   ##  ###  ### 
+#  # #  # ## ## ## ## #  # ## #  #  #    #      #   #  # #  # #  # #  # #  #  #  
+#    #  # # # # # # # #  # # ##  #   #   #       #  #  # ###  ###  #  # ###   #  
+#  # #  # #   # #   # #  # #  #  #    #  #        # #  # #    #    #  # #  #  #  
+ ##   ##  #   # #   #  ##  #  # ### ##   #      ##   ##  #    #     ##  #  #  #  
+
+add_namespace = lar_communist_support
+
+country_event = {
+	id = lar_communist_support.1
+	hidden = yes
+	trigger = {
+		has_idea = FRA_communist_cooperation
+		communism > 0.15
+	}
+	fire_only_once = yes
+	immediate = {
+		swap_ideas = {
+			remove_idea = FRA_communist_cooperation
+			add_idea = FRA_communist_cooperation_2
+		}
+	}
+	mean_time_to_happen = { days = 5 }
+	option = {
+		
+	}
+}
+
+add_namespace = lar_fra_inefficient_economy
+
+country_event = {
+	id = lar_fra_inefficient_economy.1
+	hidden = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		if = {
+			limit = { has_idea = FRA_inefficient_economy_2 }
+			swap_ideas = {
+				remove_idea = FRA_inefficient_economy_2
+				add_idea = FRA_inefficient_economy_1
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = FRA_inefficient_economy_1
+			}
+			remove_ideas = FRA_inefficient_economy_1
+		}
+	}
+	option = {
+		
+	}
+}

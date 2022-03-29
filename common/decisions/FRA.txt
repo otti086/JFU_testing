@@ -1,0 +1,1024 @@
+
+ 
+FRA_vichy_france = {
+
+	FRA_scuttle_the_fleet = {
+
+		icon = generic_ignite_civil_war
+
+		available = {
+			has_government = fascism
+			NOT = {
+				GER = { divisions_in_state = { state = 21 size > 0 } }
+			}
+			has_country_flag = {
+				flag = case_anton
+				days > 2
+			}
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		visible = {
+			has_government = fascism
+			has_country_flag = case_anton
+		}
+
+		complete_effect = {
+			set_country_flag = scuttled_fleet
+			destroy_ships = {
+				type = ship_hull_light
+				count = all
+			}
+			destroy_ships = {
+				type = ship_hull_cruiser
+				count = all
+			}
+			destroy_ships = {
+				type = ship_hull_heavy
+				count = all
+			}
+			destroy_ships = {
+				type = ship_hull_carrier 
+				count = all
+			}
+			destroy_ships = {
+				type = ship_hull_submarine
+				count = all
+			}
+		}
+	}
+
+	FRA_case_anton_mission = {
+
+		icon = generic_tank
+
+		available = {
+			is_subject = no
+			has_war_with = GER
+		}
+
+		days_mission_timeout = 7
+		fire_only_once = yes
+
+		activation = {
+			original_tag = FRA
+			has_government = fascism
+			OR = {
+				is_subject_of = GER
+				has_focus_tree = vichy_french_focus
+			}
+			has_country_flag = case_anton
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = FRA_case_anton_mission_tt
+		}
+
+		is_good = no
+
+		timeout_effect = {
+			transfer_navy = { target = GER }
+			GER = { annex_country = { target = ROOT } }
+			if = {
+				limit = {
+					NOT = { has_country_flag = scuttled_fleet }
+				}
+				GER = { news_event = { id = wtt_news.23 hours = 6 } }
+			}
+			if = {
+				limit = {
+					has_country_flag = scuttled_fleet
+				}
+				GER = { news_event = { id = wtt_news.24 hours = 6 } }
+			}
+			custom_effect_tooltip = GAME_OVER_TT
+		}
+	}
+	FRA_demand_unification_with_vichy = {
+		available = {
+			VIC = {
+				exists = yes
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+			controls_state = 16 #Paris
+		}
+
+		visible = {
+			NOT = {
+				tag = VIC
+			}
+			country_exists = VIC
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 0
+		fire_only_once = yes
+		complete_effect = {
+			random_other_country = {
+				limit = {
+					tag = VIC
+				}
+				country_event = lar_france_vichy_reunification.1
+			}
+		}
+	}
+	FRA_failsafe_join_axis = {
+		available = {
+			tag = VIC
+			NOT = {
+				has_war_with = GER
+				is_in_faction_with = GER
+			}
+			date > 1942.6.1
+			FRA = {
+				any_controlled_state = {
+					NOT = { #algeria
+						state = 459
+						state = 460
+						state = 513
+					}
+					is_core_of = FRA
+				}
+			}
+		}
+		visible = {
+			is_ai = yes #if you are not a member of the dev team - avert thy eyes, traveller, for thou hath gazed upon my shame
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		cost = 0
+		fire_only_once = yes
+		complete_effect = {
+			set_rule = { can_join_factions = yes }
+			GER = { add_to_faction = ROOT }
+		}
+	}
+}
+category_test_decisions = {
+	test_free_france = {
+		allowed = { original_tag = FRA }
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	test_vichy_france = {
+		allowed = { original_tag = FRA }
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			create_dynamic_country = {
+				original_tag = FRA
+				save_event_target_as = france_vichy
+				every_state = {
+					limit = {
+						is_controlled_by = ROOT
+					}
+					event_target:france_vichy = { transfer_state = PREV }
+				}
+				every_state = {
+					limit = {
+						is_controlled_by = ROOT
+						OR = {
+							state = 735
+							state = 21
+							state = 32
+							state = 20
+							state = 26
+							state = 22
+							state = 31
+							state = 25
+							state = 33
+						}
+					}
+					add_core_of = PREV
+					event_target:france_vichy = { transfer_state = PREV }
+				}
+				every_state = {
+					limit = {
+						is_controlled_by = ROOT
+						is_core_of = ROOT
+						NOT = {
+							is_controlled_by = event_target:france_vichy
+						}
+					}
+					add_core_of = PREV
+				}
+				set_capital = { state = 26 }
+				set_politics = {
+					ruling_party = fascism
+					elections_allowed = no
+				}
+				set_popularities = {
+					democratic = 0
+					neutrality = 20
+					fascism = 80
+					communism = 0
+				}
+				set_cosmetic_tag = FRA_VICHY
+				create_country_leader = {
+					name = "Philippe Pétain"
+					desc = "POLITICS_PHILIPPE_PÉTAIN_DESC"
+					picture = "Portrait_France_Philippe_Petain.dds"
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = {
+						
+					}
+				}
+				add_ideas = FRA_occupation_costs_4
+				load_focus_tree = vichy_french_focus
+				FRA = {
+					transfer_units_fraction = {
+						target = event_target:france_vichy
+						size = 0.9
+						stockpile_ratio = 0.7
+						army_ratio = 0.5
+						navy_ratio = 0.85
+						air_ratio = 1.0
+					}
+				}
+				change_tag_from = FRA
+			}
+		}
+	}
+}
+
+FRA_weapons_purchases_category = {
+	FRA_order_weapons_in_USA = {
+	icon = generic_prepare_civil_war
+		available = {
+			
+		}
+		visible = {
+			USA_can_sell_weapons_trigger = yes
+		}
+		days_remove = 60
+		cost = 50
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				has_equipment = {
+					infantry_equipment < 1
+				}
+				factor = 50
+			}
+			modifier = {
+				has_manpower < 10000 
+				factor = 0 #need to up conscription laws
+			}
+		}
+		complete_effect = {
+			USA = {
+				add_offsite_building = { type = industrial_complex level = 2 }
+			}
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2500
+			}
+			USA = {
+				add_offsite_building = { type = industrial_complex level = -2 }
+			}
+		}
+	}
+	FRA_order_artillery_in_USA = {
+		icon = ger_military_buildup
+		available = {
+			
+		}
+		visible = {
+			USA_can_sell_weapons_trigger = yes
+		}
+		days_remove = 60
+		cost = 75
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_equipment = {
+					artillery_equipment < 1
+				}
+				factor = 50
+			}
+			modifier = {
+				has_manpower < 10000 
+				factor = 0 #need to up conscription laws
+			}
+		}
+		complete_effect = {
+			USA = {
+				add_offsite_building = { type = industrial_complex level = 3 }
+			}
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 75
+			}
+			USA = {
+				add_offsite_building = { type = industrial_complex level = -3 }
+			}
+		}
+	}
+	FRA_order_tanks_in_USA = {
+		icon = generic_air
+		available = {
+			
+		}
+		visible = {
+			USA_can_sell_weapons_trigger = yes
+		}
+		days_remove = 60
+		cost = 100
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_equipment = {
+					light_tank_chassis < 50
+				}
+				factor = 5
+			}
+			modifier = {
+				has_manpower < 10000 
+				factor = 0 #need to up conscription laws
+			}
+		}
+		modifier = {
+		}
+		complete_effect = {
+			USA = {
+				add_offsite_building = { type = industrial_complex level = 5 }
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					USA = { 
+						OR = {
+							has_tech = basic_light_tank 
+							has_tech = basic_light_tank_chassis
+						}
+						NOT = { 
+							OR = {
+								has_tech = basic_medium_tank 
+								has_tech = improved_medium_tank #needed because basic can be bypassed
+								has_tech = basic_medium_tank_chassis
+								has_tech = improved_medium_tank_chassis
+							}
+						}
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = light_tank_chassis
+					amount = 50
+				}
+			}
+			else_if = {
+				limit = {
+					USA = {
+						OR = {
+							has_tech = basic_medium_tank 
+							has_tech = improved_medium_tank #needed because basic can be bypassed
+							has_tech = basic_medium_tank_chassis
+							has_tech = improved_medium_tank_chassis
+						}
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = medium_tank_chassis
+					amount = 50
+				}
+			}
+			USA = {
+				add_offsite_building = { type = industrial_complex level = -5 }
+			}
+		}
+	}
+	FRA_order_fighters_in_USA = {
+		icon = generic_air
+		available = {
+			
+		}
+		visible = {
+			USA_can_sell_weapons_trigger = yes
+		}
+		days_remove = 60
+		cost = 100
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_equipment = {
+					fighter_equipment < 1
+				}
+				factor = 5
+			}
+			modifier = {
+				has_manpower < 10000 
+				factor = 0 #need to up conscription laws
+			}
+		}
+		modifier = {
+		}
+		complete_effect = {
+			USA = {
+				add_offsite_building = { type = industrial_complex level = 5 }
+			}
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = fighter_equipment
+				amount = 50
+			}
+			USA = {
+				add_offsite_building = { type = industrial_complex level = -5 }
+			}
+		}
+	}
+	FRA_order_bombers_in_USA = {
+		icon = generic_air
+		available = {
+			
+		}
+		visible = {
+			USA_can_sell_weapons_trigger = yes
+		}
+		days_remove = 60
+		cost = 100
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_equipment = {
+					tac_bomber_equipment < 1
+				}
+				factor = 5
+			}
+			modifier = {
+				has_manpower < 10000 
+				factor = 0 #need to up conscription laws
+			}
+		}
+		modifier = {
+			
+		}
+		complete_effect = {
+			USA = {
+				add_offsite_building = { type = industrial_complex level = 5 }
+			}
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = tac_bomber_equipment
+				amount = 25
+			}
+			USA = {
+				add_offsite_building = { type = industrial_complex level = -5 }
+			}
+		}
+	}
+}
+
+FRA_spanish_intervention_category = {
+	FRA_invite_FROM_to_non_intervention = {
+		available = {
+			has_country_flag = FRA_non_intervention
+		}
+		target_array = global.majors
+
+		target_trigger = {
+			FROM = {
+				exists = yes
+				NOT = { 
+					has_country_flag = FRA_non_intervention_agreed 
+					has_country_flag = FRA_non_intervention_refused
+				}
+				capital_scope = {
+					is_on_continent = europe
+				}
+			}
+		}
+		visible = {
+			has_country_flag = FRA_non_intervention
+		}
+		target_root_trigger = {
+			has_country_flag = FRA_non_intervention	
+		}
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				not = { has_government = democratic }
+				factor = 0
+			}
+			modifier = {
+				has_stability < 0.3
+				factor = 5
+			}
+		}
+		complete_effect = {
+			FROM = {
+				country_event = lar_non_intervention.1
+			}
+		}
+	}
+
+	FRA_allow_non_military_aid = {
+		available = {  }
+
+		visible = { not = { has_country_flag = FRA_non_military_aid_allowed } }
+
+		cancel_trigger = {
+			OR = {
+				has_global_flag = scw_over
+				not = { has_country_flag = FRA_non_military_aid_allowed }
+			}
+		}
+
+		complete_effect = { 
+			set_country_flag = FRA_non_military_aid_allowed 
+			clr_country_flag = FRA_non_intervention
+			custom_effect_tooltip = FRA_non_military_aid_tt
+			unlock_decision_tooltip = FRA_ban_non_military_aid
+		}
+
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_stability < 0.3
+				factor = 0
+			}
+		}
+		days_remove = -1
+		modifier = {
+			stability_factor = -0.05
+		}
+	}
+
+	FRA_ban_non_military_aid = {
+		available = {  }
+
+		visible = { has_country_flag = FRA_non_military_aid_allowed }
+
+		complete_effect = { 
+			clr_country_flag = FRA_non_military_aid_allowed 
+			set_country_flag = FRA_non_intervention
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				has_stability < 0.3
+				add = 5
+			}
+		}
+	}
+
+	FRA_send_non_military_aid_to_FROM = {
+		available = { 
+			has_equipment = {
+				support_equipment > 99
+			} 
+		}
+
+		visible = { has_country_flag = FRA_non_military_aid_allowed }
+		target_root_trigger = { has_country_flag = FRA_non_military_aid_allowed }
+
+		targets = { SPA SPR SPB SPC SPD }
+
+		target_trigger = {
+			FROM = {
+				exists = yes
+				has_war = yes
+				NOT = { has_war_with = ROOT }
+			}
+		}
+		days_re_enable = 30
+		complete_effect = { 
+			send_equipment = {
+				type = support_equipment
+				amount = 100
+				target = FROM
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				FROM = { has_government = ROOT }
+				factor = 5
+			}
+		}
+		cost = 0
+	}
+	FRA_allow_arms_purchases = {
+		available = {  }
+
+		visible = { not = { has_country_flag = FRA_arms_purchases_allowed } }
+
+		cancel_trigger = {
+			OR = {
+				has_global_flag = scw_over
+				not = { has_country_flag = FRA_arms_purchases_allowed }
+			}
+		}
+
+		complete_effect = { 
+			set_country_flag = FRA_arms_purchases_allowed 
+			clr_country_flag = FRA_non_intervention
+			custom_effect_tooltip = FRA_allow_arms_purchases_tt
+			unlock_decision_tooltip = FRA_ban_arms_purchases
+		}
+
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_stability < 0.4
+				factor = 0
+			}
+		}
+		days_remove = -1
+		modifier = {
+			stability_factor = -0.1
+			war_support_factor = 0.05
+		}
+
+	}
+
+	FRA_ban_arms_purchases = {
+		available = {  }
+
+		visible = { has_country_flag = FRA_arms_purchases_allowed }
+
+		complete_effect = { 
+			clr_country_flag = FRA_arms_purchases_allowed 
+			set_country_flag = FRA_non_intervention
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				has_stability < 0.4
+				add = 5
+			}
+		}
+	}
+
+	FRA_allow_sending_weapons = {
+		available = {  }
+
+		visible = { not = { has_country_flag = FRA_sending_weapons_allowed } }
+
+		cancel_trigger = {
+			OR = {
+				has_global_flag = scw_over
+				not = { has_country_flag = FRA_sending_weapons_allowed }
+			}
+		}
+
+		complete_effect = { 
+			set_country_flag = FRA_sending_weapons_allowed 
+			clr_country_flag = FRA_non_intervention
+			unlock_decision_tooltip = FRA_ban_sending_weapons
+		}
+
+		cost = 25
+		days_remove = -1
+		modifier = {
+			stability_factor = -0.15
+			war_support_factor = 0.075
+			lend_lease_tension = -1
+			request_lease_tension = -1
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_stability < 0.45
+				factor = 0
+			}
+		}
+	}
+
+	FRA_ban_sending_weapons = {
+		available = {  }
+
+		visible = { has_country_flag = FRA_sending_weapons_allowed }
+
+		complete_effect = { 
+			clr_country_flag = FRA_sending_weapons_allowed 
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				has_stability < 0.45
+				add = 5
+			}
+		}
+	}
+	FRA_allow_volunteer_work = {
+		available = {  }
+
+		visible = { not = { has_country_flag = FRA_volunteer_work_allowed } }
+
+		cancel_trigger = {
+			OR = {
+				has_global_flag = scw_over
+				not = { has_country_flag = FRA_volunteer_work_allowed }
+			}
+		}
+
+		complete_effect = { 
+			set_country_flag = FRA_volunteer_work_allowed 
+			clr_country_flag = FRA_non_intervention
+			unlock_decision_tooltip = FRA_ban_volunteer_work
+			every_other_country = {
+				limit = {
+					OR = {
+						tag = SPA
+						tag = SPD
+						tag = SPB
+						tag = SPC
+					}
+					exists = yes
+					NOT = { has_country_flag = FRA_has_received_volunteers }
+				}
+				country_event = lar_france_volunteers.1
+			}
+			custom_effect_tooltip = FRA_allow_volunteer_work_tt
+		}
+
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_stability < 0.5
+				factor = 0
+			}
+		}
+		days_remove = -1
+		modifier = {
+			stability_factor = -0.2
+			war_support_factor = 0.1
+		}
+	}
+
+	FRA_ban_volunteer_work = {
+		available = {  }
+
+		visible = { has_country_flag = FRA_volunteer_work_allowed }
+
+		complete_effect = { 
+			clr_country_flag = FRA_volunteer_work_allowed 
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				has_stability < 0.5
+				add = 5
+			}
+		}
+		cost = 0
+	}
+	FRA_allow_covert_intervention = {
+		available = {  }
+
+		visible = { not = { has_country_flag = FRA_covert_intervention_allowed } }
+
+		cancel_trigger = {
+			OR = {
+				has_global_flag = scw_over
+				not = { has_country_flag = FRA_covert_intervention_allowed }
+			}
+		}
+
+		complete_effect = { 
+			set_country_flag = FRA_covert_intervention_allowed 
+			clr_country_flag = FRA_non_intervention
+			set_rule = { can_send_volunteers = yes }
+		}
+
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_stability < 0.55
+				factor = 0
+			}
+			modifier = {
+				has_stability < 0.8
+				factor = 0.5
+			}
+		}
+		days_remove = -1
+		modifier = {
+			stability_factor = -0.25
+			war_support_factor = 0.125
+			send_volunteers_tension = -0.9
+		}
+	}
+
+	FRA_ban_covert_intervention = {
+		available = { 
+			NOT = {
+				any_other_country = {
+					has_volunteers_amount_from = {
+						tag = ROOT
+						count > 0
+					}
+				}
+			}
+		}
+
+		visible = { has_country_flag = FRA_covert_intervention_allowed }
+
+		complete_effect = { 
+			clr_country_flag = FRA_covert_intervention_allowed 
+			#recall_volunteers_from = SPR
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				has_stability < 0.55
+				add = 5
+			}
+		}
+	}
+
+	FRA_intervene_on_side_of_FROM = {
+		available = { has_war_support > 0.25 }
+
+		visible = { has_war = no }
+
+		targets = { SPD SPA SPB SPR }
+
+		target_trigger = { 
+			FROM = {
+				original_tag = SPR
+				has_government = ROOT
+			}
+		}
+
+		complete_effect = {
+			#This is not optimal, but it generates a beautiful tooltip
+			if = {
+				limit = { FROM = { tag = SPD } }
+				set_country_flag = supports_SPD_flag
+				if = {
+					limit = { country_exists = SPA }
+					add_to_war = { targeted_alliance = SPD enemy = SPA hostility_reason = asked_to_join }
+				}
+				if = {
+					limit = { country_exists = SPC }
+					add_to_war = { targeted_alliance = SPD enemy = SPC hostility_reason = asked_to_join }
+				}
+				if = {
+					limit = { country_exists = SPB }
+					add_to_war = { targeted_alliance = SPD enemy = SPB hostility_reason = asked_to_join }
+				}
+			}
+			else_if = {
+				limit = { FROM = { tag = SPA } }
+				set_country_flag = supports_SPA_flag
+				if = {
+					limit = { country_exists = SPD }
+					add_to_war = { targeted_alliance = SPA enemy = SPD hostility_reason = asked_to_join }
+				}
+				if = {
+					limit = { country_exists = SPC }
+					add_to_war = { targeted_alliance = SPA enemy = SPC hostility_reason = asked_to_join }
+				}
+				if = {
+					limit = { country_exists = SPB }
+					add_to_war = { targeted_alliance = SPA enemy = SPB hostility_reason = asked_to_join }
+				}
+			}
+			else_if = {
+				limit = { FROM = { tag = SPB } }
+				set_country_flag = supports_SPB_flag
+				if = {
+					limit = { country_exists = SPD }
+					add_to_war = { targeted_alliance = SPB enemy = SPD hostility_reason = asked_to_join }
+				}
+				if = {
+					limit = { country_exists = SPC }
+					add_to_war = { targeted_alliance = SPB enemy = SPC hostility_reason = asked_to_join }
+				}
+				if = {
+					limit = { country_exists = SPA }
+					add_to_war = { targeted_alliance = SPB enemy = SPA hostility_reason = asked_to_join }
+				}
+			}
+
+			effect_tooltip = {
+				give_military_access = FROM
+				FROM = { give_military_access = ROOT }
+			}
+			hidden_effect = {
+				diplomatic_relation = {
+					country = FROM
+					relation = military_access
+					active = yes
+				}
+				FROM = {
+					diplomatic_relation = {
+						country = ROOT
+						relation = military_access
+						active = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_faction_leader = yes
+				}
+				add_to_faction = FROM
+			}
+			clr_country_flag = FRA_non_intervention
+			if = {
+				limit = {
+					has_country_flag = FRA_covert_intervention_allowed
+				}
+				clr_country_flag = FRA_covert_intervention_allowed 
+			}
+			if = {
+				limit = {
+					has_country_flag = FRA_volunteer_work_allowed
+				}
+				clr_country_flag = FRA_volunteer_work_allowed 
+			}
+			if = {
+				limit = {
+					has_country_flag = FRA_sending_weapons_allowed
+				}
+				clr_country_flag = FRA_sending_weapons_allowed 
+			}
+			if = { 
+				limit = { has_country_flag = FRA_non_military_aid_allowed }
+				clr_country_flag = FRA_non_military_aid_allowed
+			}
+			if = { 
+				limit = { has_country_flag = FRA_arms_purchases_allowed }
+				clr_country_flag = FRA_arms_purchases_allowed
+			}
+			
+		}
+
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_war = yes
+				factor = 0
+			}
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+		
+	}
+}
+economy_decisions = {
+
+	FRA_revoke_the_matignon_agreements = {
+		visible = { has_idea = FRA_matignon_agreements }
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				has_war = no
+				factor = 0
+			}
+		}
+
+		complete_effect = {
+			remove_ideas = FRA_matignon_agreements
+			if = {
+				limit = {
+					communism > 0.25
+				}
+				country_event = lar_france_political_violence.2
+			}
+		}
+	}
+}

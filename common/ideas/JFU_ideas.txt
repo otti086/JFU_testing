@@ -1,0 +1,112 @@
+ideas = {
+
+	country = {
+		
+		volunteers_3 = {
+			allowed = {
+				always = no
+			}
+			
+			picture = partial_economic_mobilisation
+			
+			removal_cost = -1
+
+			modifier = {
+				send_volunteer_size = 2
+				send_volunteer_divisions_required = -0.99
+			}
+		
+		}
+		
+		volunteers_4 = {
+			allowed = {
+				always = no
+			}
+			
+			picture = partial_economic_mobilisation
+			
+			removal_cost = -1
+
+			modifier = {
+				send_volunteer_size = 3
+				send_volunteer_divisions_required = -0.99
+			}
+		
+		}
+		
+		volunteers_7 = {
+			allowed = {
+				always = no
+			}
+			
+			picture = partial_economic_mobilisation
+			
+			removal_cost = -1
+
+			modifier = {
+				send_volunteer_size = 6
+				send_volunteer_divisions_required = -0.99
+			}
+		
+		}
+		
+		volunteers_8 = {
+			allowed = {
+				always = no
+			}
+			
+			picture = partial_economic_mobilisation
+			
+			removal_cost = -1
+
+			modifier = {
+				send_volunteer_size = 7
+				send_volunteer_divisions_required = -0.99
+			}
+		
+		}
+        jap_oil_reserves = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			
+			removal_cost = -1
+			
+			picture = generic_refining_concern_1
+			
+			modifier = {
+				max_fuel = 500
+				#max_fuel_factor = 0.5
+			}
+		
+		}
+
+		axis_barbarossa = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = generic_acquire_tanks
+
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.05
+			}
+			modifier = { 
+				supply_consumption_factor = -0.10
+				production_speed_infrastructure_factor = 0.4
+				production_speed_rail_way_factor = 0.4
+				no_supply_grace = 72
+			}
+
+		}
+		
+	}
+	
+}
