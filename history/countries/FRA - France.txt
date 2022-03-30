@@ -151,7 +151,6 @@ if = {
 		francois_darlan
 		philippe_fequant
 		famh
-		volunteers_4
 		jean_marie_bergeret
 		renault_fra
 		FRA_full_employment
@@ -311,6 +310,7 @@ add_ideas = {
 	FRA_disjointed_government
 	FRA_protected_by_the_maginot_line
 	limited_conscription
+	volunteers_4
 	FRA_full_employment
 	FRA_political_violence
 	FRA_inefficient_economy_2
