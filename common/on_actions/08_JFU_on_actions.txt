@@ -22,6 +22,21 @@ on_actions = {
 					add_compliance = 50 
 				}
 			}
+				if = { 
+					limit = {
+						original_tag = GRE
+					}
+				every_state = {
+					limit = {
+						AND = {
+							is_core_of = GRE
+							is_controlled_by = ITA
+						}
+					}
+				
+					add_compliance = 50 
+				}
+			}
 			if = { 
 				limit = {
 					original_tag = BEL
