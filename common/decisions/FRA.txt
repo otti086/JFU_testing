@@ -996,29 +996,3 @@ FRA_spanish_intervention_category = {
 		
 	}
 }
-economy_decisions = {
-
-	FRA_revoke_the_matignon_agreements = {
-		visible = { has_idea = FRA_matignon_agreements }
-
-		cost = 50
-
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				has_war = no
-				factor = 0
-			}
-		}
-
-		complete_effect = {
-			remove_ideas = FRA_matignon_agreements
-			if = {
-				limit = {
-					communism > 0.25
-				}
-				country_event = lar_france_political_violence.2
-			}
-		}
-	}
-}
