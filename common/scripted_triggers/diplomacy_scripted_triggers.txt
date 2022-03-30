@@ -101,73 +101,7 @@ DIPLOMACY_REVOKE_GUARANTEE_ENABLE_TRIGGER = {
 }
 
 DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
-	if = {
-		limit = {
-			has_game_rule = {
-				rule = allow_release_nations
-				option = FREE
-			}
-			has_dlc = "La Resistance"
-			original_tag = SPR
-		}
-		custom_trigger_tooltip = {
-			tooltip = RULE_ALLOW_RELEASE_NATIONS_SPAIN_TOOLTIP
-			has_global_flag = scw_over
-		}
-	}
-	if = {
-		limit = {
-			has_game_rule = {
-				rule = allow_release_nations
-				option = FREE
-			}
-			has_dlc = "La Resistance"
-			original_tag = SPR
-			has_completed_focus = SPR_masters_of_our_own_fate
-		}
-		custom_trigger_tooltip = {
-			tooltip = RULE_ALLOW_RELEASE_NATIONS_ANARCHIST_SPAIN_TOOLTIP
-			NOT = { original_tag = SPR }
-		}
-	}
-	if = {
-		limit = {
-			has_game_rule = {
-				rule = allow_release_nations
-				option = PEACE_ONLY
-			}
-			OR = {
-				NOT = { has_dlc = "Man the Guns" }
-				NOT = { original_tag = ENG }
-			}
-			OR = {
-				NOT = { has_dlc = "La Resistance" }
-				NOT = { original_tag = SPR }
-		}
-		}
-		custom_trigger_tooltip = {
-			tooltip = RULE_ALLOW_RELEASE_NATIONS_PEACE_ONLY_TOOLTIP
-			has_war = no
-		}
-	}
-	if = {
-		limit = {
-			has_game_rule = {
-				rule = allow_release_nations
-				option = PEACE_ONLY
-			}
-			has_dlc = "La Resistance"
-			original_tag = SPR
-		}
-		custom_trigger_tooltip = {
-			tooltip = RULE_ALLOW_RELEASE_NATIONS_PEACE_ONLY_TOOLTIP
-			has_war = no
-		}
-		custom_trigger_tooltip = {
-			tooltip = RULE_ALLOW_RELEASE_NATIONS_SPAIN_TOOLTIP
-			has_global_flag = scw_over
-		}
-	}
+
 	if = {
 		limit = {
 			has_game_rule = {

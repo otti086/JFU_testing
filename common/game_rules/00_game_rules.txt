@@ -101,16 +101,6 @@ allow_release_nations = {
 	name = "RULE_ALLOW_RELEASE_NATIONS"
 	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
 	icon = "GFX_release_nations"
-	default = {
-		name = "FREE"
-		text = RULE_OPTION_FREE
-		desc = "RULE_ALLOW_RELEASE_NATIONS_FREE_DESC"
-	}
-	option = {
-		name = "PEACE_ONLY"
-		text = "RULE_OPTION_PEACE_ONLY"
-		desc = "RULE_ALLOW_RELEASE_NATIONS_PEACE_ONLY_DESC"
-	}
 	option = {
 		name = "BLOCKED"
 		text = RULE_OPTION_BLOCKED
@@ -281,11 +271,6 @@ allow_take_over_faction = {
 	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
 	required_dlc = "Man the Guns"
 	icon = "GFX_take_over_faction_leadership"
-	option = {
-		name = "ALLOWED"
-		text = "RULE_OPTION_ALLOWED"
-		desc = "RULE_ALLOW_TAKE_OVER_FACTION_ALLOWED_DESC"
-	}
 	option = {
 		name = "BLOCKED"
 		text = "RULE_OPTION_BLOCKED"
