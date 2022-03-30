@@ -1,5 +1,12 @@
 ﻿capital = 64
 
+
+set_variable = {
+    var = min_fuel
+    value = 0.300
+}
+
+set_country_flag=fuel_system_enabled
 if = {
 	limit = {
 		NOT = {

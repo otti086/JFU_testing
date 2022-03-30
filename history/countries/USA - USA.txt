@@ -1,5 +1,12 @@
 ﻿capital = 361
 
+
+
+set_variable = {
+    var = min_fuel
+    value = 0.600
+}
+
 oob = "USA_1936"
 
 starting_train_buffer = 5

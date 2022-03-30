@@ -1,5 +1,13 @@
 on_actions = {
-	
+	on_startup = {
+		effect = {
+			SWE = { HFU_fuel_startup_effect = yes }
+		}
+	}
+
+
+
+
 	on_daily = {
 		effect = {
 			HFU_fuel_on_daily_scripted_effect = yes

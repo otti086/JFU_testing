@@ -1,5 +1,13 @@
 ﻿capital = 41
 
+
+
+
+set_variable = {
+    var = min_fuel
+    value = 0.200
+}
+
 oob = "SPR_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }

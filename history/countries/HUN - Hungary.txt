@@ -1,5 +1,13 @@
 ﻿capital = 43
 
+
+
+
+set_variable = {
+    var = min_fuel
+    value = 0.200
+}
+
 oob = "HUN_1936"
 
 set_research_slots = 3

@@ -1,5 +1,13 @@
 ﻿capital = 46
 
+
+
+
+set_variable = {
+    var = min_fuel
+    value = 0.200
+}
+
 if = {
 	limit = {
 		NOT = {

@@ -166,9 +166,10 @@ HFU_fuel_startup_effect = {
 					AND = { 
 						NOT={tag=ENG}
 						
-						OR = {is_in_faction_with = ENG tag = USA }  
+						is_in_faction_with = ENG  
 						NOT = { is_in_array = { ENG.faction_members_array = THIS.id } }	
 					}
+					tag = USA
 				}
 			}
 			add_to_array = { ENG.faction_members_array = THIS.id }
@@ -335,13 +336,13 @@ fuel_system_refresh_list = {
 								limit = {
 									NOT={tag=ROOT}
 									OR={is_in_faction_with = ROOT
-									AND={ROOT={tag=ENG}tag=SOV}} 
+									AND={ROOT={tag=ENG}tag=USA}} 
 									NOT = { is_in_array = { ROOT.faction_members_array = THIS.id } }
 									
 								}
 								add_to_array = { ROOT.faction_members_array = THIS.id }
 							}
-							#if = { limit = { TAG = ENG } add_to_array = { ROOT.faction_members_array = SOV.id } }
+							#if = { limit = { TAG = ENG } add_to_array = { ROOT.faction_members_array = USA.id } }
 						}
 			if = {
 							limit = {
