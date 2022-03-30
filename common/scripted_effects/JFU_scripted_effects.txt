@@ -375,6 +375,17 @@ JFU_vichy_france = {
 	transfer_state = 29
 	transfer_state = 806
 	transfer_state = 785
+
+		every_state = {
+			limit = {
+				AND = {
+					is_core_of = FRA
+					is_controlled_by = GER
+				}
+			}
+				
+			add_compliance = 60
+		}
 	}
 
 	FRA = {
