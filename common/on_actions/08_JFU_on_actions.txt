@@ -103,6 +103,26 @@ on_actions = {
 				SOV = {transfer_state = 91 }
 				SOV = {transfer_state = 89 }
 				SOV = {transfer_state = 97 }
+				every_state = {
+					limit = {
+						AND = {
+							is_core_of = POL
+							is_controlled_by = GER
+						}
+					}
+				
+					add_compliance = 50 
+				}
+				every_state = {
+					limit = {
+						AND = {
+							is_core_of = POL
+							is_controlled_by = HUN
+						}
+					}
+				
+					add_compliance = 50 
+				}
 			}
 		}
 	}
