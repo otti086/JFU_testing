@@ -181,7 +181,6 @@ SOV_paranoia_system = {
 						is_character_slot = political_advisor
 						SOV_character_can_be_purged = yes
 					}
-					NOT = { has_idea = SOV_understaffed_bureaucracy }
 					NOT = { has_idea = SOV_lavrenty_beriya }
 				}
 			}
@@ -195,7 +194,6 @@ SOV_paranoia_system = {
 					is_character_slot = political_advisor
 					SOV_character_can_be_purged = yes
 				}
-				NOT = { has_idea = SOV_understaffed_bureaucracy }
 				NOT = { has_idea = SOV_lavrenty_beriya }
 			}
 			SOV_is_stalinist = yes
@@ -1173,29 +1171,6 @@ SOV_paranoia_system = {
 
 		complete_effect = {
 			SOV_trigger_regular_purge_advisor_accused_effect = yes
-		}
-	}
-
-	SOV_DEBUG_trigger_regular_purge_civil_servants_dec = {
-		priority = 82
-
-		icon = eng_trade_unions_support
-
-		allowed = {
-			original_tag = SOV
-		}
-
-		available = {
-		}
-
-		visible = {
-			has_country_flag = SOV_TEST_show_debug_purge_decisions_flag
-		}
-
-		cost = 0
-
-		complete_effect = {
-			SOV_trigger_regular_purge_civil_servants_purged_effect = yes
 		}
 	}
 

@@ -927,7 +927,6 @@ SOV_manage_a_regular_purge_effect = { # Phase 2: Set the Area to be purged (admi
 						SOV_character_can_be_purged = yes
 					}
 				}
-				has_idea = SOV_understaffed_bureaucracy
 				has_idea = SOV_lavrenty_beriya
 			}
 			SOV_pick_regular_purge_administration_type_effect = yes
@@ -1175,14 +1174,6 @@ SOV_pick_regular_purge_administration_type_effect = {
 				}
 			}
 			SOV_trigger_regular_purge_advisor_accused_effect = yes
-			add_to_temp_variable = { SOV_random_purge_test = 1 } #TEST
-		}
-		33 = { # CIVIL SERVANTS PURGED
-			modifier = {
-				factor = 0
-				has_idea = SOV_understaffed_bureaucracy
-			}
-			SOV_trigger_regular_purge_civil_servants_purged_effect = yes
 			add_to_temp_variable = { SOV_random_purge_test = 1 } #TEST
 		}
 		33 = { # NKVD PURGE
@@ -1553,14 +1544,6 @@ SOV_trigger_regular_purge_advisor_accused_effect = {
 	}
 
 	country_event = NSB_soviet_paranoia_system_events.11 # TRIGGER EVENT
-
-	set_variable = { SOV_last_regular_purge_area = 1 } #Set area purged to prevent same area from being purged twice in a row
-	set_country_flag = SOV_last_purge_flag
-}
-
-### CIVIL SERVANTS PURGED
-SOV_trigger_regular_purge_civil_servants_purged_effect = {
-	country_event = NSB_soviet_paranoia_system_events.12 # TRIGGER EVENT
 
 	set_variable = { SOV_last_regular_purge_area = 1 } #Set area purged to prevent same area from being purged twice in a row
 	set_country_flag = SOV_last_purge_flag

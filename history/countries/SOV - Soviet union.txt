@@ -132,6 +132,18 @@ if = {
 SOV_mikhail_kalinin = {
 	set_character_flag = SOV_safe_from_purge_flag
 }
+SOV_nikolay_voznesensky = {
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_georgy_zhukov = { 
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_vasily_chuykov = {
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_dmitry_lelyushenko = {
+	set_character_flag = SOV_safe_from_purge_flag
+}
 SOV_nikita_khrushchyov = {
 	set_character_flag = SOV_safe_from_purge_flag
 }
@@ -714,10 +726,6 @@ add_ideas = {
 	add_ideas = vladimir_kasatonov
 
 	#PURGE NSs
-	add_timed_idea = {
-		idea = SOV_understaffed_bureaucracy
-		days  =365
-	}
 	add_ideas = {
 		SOV_anti_soviet_military_thinking_banned_army
 		SOV_purged_junior_army_officers_2
@@ -1055,8 +1063,6 @@ set_popularities = {
 
 create_faction = Comintern
 add_to_faction = SOV
-add_to_faction = MON
-add_to_faction = TAN
 
 if = {
 	limit = {
