@@ -1,0 +1,82 @@
+﻿add_namespace = news
+news_event = {	
+   id = news.4002
+   title = news.4002.t
+   desc = ""
+   picture = GFX_news_event_italian_tank_desert
+
+		major =  yes
+		is_triggered_only = yes
+      option = { name = "Ok"  }
+   } 
+ 
+add_namespace = horsttool 
+ # Horst used a cheat
+news_event = {
+	id = horsttool.1
+	title = "TFU-tool"
+	
+	desc = " [From.Getname] gave [Root.cheat_selected] to [From.From.Owner.Getname]"
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Okay..."
+		clear_variable=this.selected_cheat 
+		clear_variable=this.target_country
+		 }
+		
+	}
+
+	
+	news_event = {
+	id = horsttool.11
+	title = "TFU-tool"
+	
+	desc = " [From.Getname] gave five military factories to [From.From.Owner.Getname]"
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Okay..."
+		 }
+		
+	}
+		news_event = {
+	id = horsttool.12
+	title = "TFU-tool"
+	
+	desc = " [From.Getname] gave one civilian factory to [From.From.Owner.Getname]"
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Okay..."
+		 }
+		
+	}
+		news_event = {
+	id = horsttool.30
+	title = "How to use TFU-tool"
+	
+	desc = "Click MARK STATE to mark all the states you which to be targeted by a certain effect and then click on the effect you wish to apply. The effect will then apply to the markeeted states and remove all previously marked states."
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Okay..."
+		 }
+		
+	}

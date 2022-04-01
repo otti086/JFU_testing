@@ -9,7 +9,7 @@ set_variable = {
 
 
 set_country_flag=fuel_system_enabled
-
+set_country_flag=host
 
 if = {
 	limit = {
