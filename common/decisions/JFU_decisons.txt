@@ -459,4 +459,19 @@ JFU_decisions = {
 			EFR = { add_to_war = { targeted_alliance = GER enemy = ENG } }
 		}
 	}
+
+	"Support France" = {
+		icon = eng_install_government
+		allowed = { original_tag = ENG }
+		days_remove = 120
+
+		available = {NOT = { FRA = { owns_state = 16 }}  check_variable = { FRA.FRA_legitimacy < 100 }
+						FRA = { has_country_flag = france_is_kill}}
+		visible = {	tag = ENG }
+		cost = 50
+		complete_effect = {
+		custom_effect_tooltip = "French Legitimacy will increase by 20"
+			add_to_variable =  { var = FRA.FRA_legitimacy value = 20 }
+		}
+	}
 }

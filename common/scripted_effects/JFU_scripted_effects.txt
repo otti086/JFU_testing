@@ -444,6 +444,63 @@ JFU_vichy_france_2 = {
 		459 = { set_demilitarized_zone = yes }
 		transfer_state = 461
 		461 = { set_demilitarized_zone = yes }
+
+			if = { 
+				limit = { FRA = { check_variable = { FRA_legitimacy 	< 100 } }  }
+				transfer_state = 554
+				transfer_state = 680
+				transfer_state = 677
+				transfer_state = 799
+				transfer_state = 553
+			}
+
+			if = { 
+				limit = { FRA = { check_variable = { FRA_legitimacy 	< 80 } }  }
+				transfer_state = 543
+				transfer_state = 706
+				transfer_state = 708
+				transfer_state = 713
+			}
+
+			if = { 
+				limit = { FRA = { check_variable = { FRA_legitimacy 	< 60 } }  }
+				transfer_state = 557
+				transfer_state = 272
+				transfer_state = 780
+				transfer_state = 556
+				transfer_state = 779
+				transfer_state = 778
+				transfer_state = 777
+				transfer_state = 776
+				transfer_state = 781
+				transfer_state = 782
+				transfer_state = 786
+				transfer_state = 515
+				transfer_state = 775
+				transfer_state = 298
+				transfer_state = 514
+			}
+			#if = { 
+			#	limit = { FRA = { check_variable = { FRA_legitimacy 	< 40 } }  }
+			#	transfer_state = 774
+			#	transfer_state = 773
+			#	transfer_state = 660
+				
+			#}
+			#if = { 
+			#	limit = { FRA = { check_variable = { FRA_legitimacy 	< 20 } }  }
+			#	transfer_state = 772				
+			#}
+	}
+	FRA = {
+		if = { 
+			limit = { FRA = { check_variable = { FRA_legitimacy 	> 40 } }  }
+			transfer_state = 295
+			transfer_state = 538
+			transfer_state = 718
+			transfer_state = 768
+			transfer_state = 769
+		}
 	}
 
 }

@@ -1116,13 +1116,7 @@ focus = {
 			factor = 1
 		}
 		available = {
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				has_legitimacy > 200
-			}
-			has_country_leader = { ruling_only = yes character = FRA_charles_de_gaulle}
+			NOT = { FRA = { controls_state = 16 } }
 		}
 		
 		bypass = {
@@ -1138,12 +1132,19 @@ focus = {
 			}
 			else = {
 				add_manpower = 10000
-				add_legitimacy = 15
 			}
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = 5000
 			}
+
+			ENG = { 
+				add_relation_modifier = {
+				target = FRA
+				modifier = trade_major
+				}
+			}
+
 		}
 	}
 	focus = {
@@ -1189,7 +1190,7 @@ focus = {
 	focus = {
 		id = FRA_intervention_in_north_africa
 		icon = GFX_goal_generic_position_armies
-		x = -5
+		x = 4
 		y = 1
 		offset = {
 			x = 0
@@ -1205,9 +1206,7 @@ focus = {
 			factor = 1
 		}
 		available = {
-			NOT = {
-				FRA_controls_north_africa = yes
-			}
+			
 		}
 		
 		bypass = {
@@ -1222,7 +1221,7 @@ focus = {
 	focus = {
 		id = FRA_intervention_in_west_africa
 		icon = GFX_goal_generic_position_armies
-		x = -3
+		x = -2
 		y = 1
 		offset = {
 			x = 0
@@ -1237,25 +1236,49 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
+
 		available = {
-			NOT = {
-				FRA_controls_west_africa = yes
-			}
+
+			check_variable = {  FRA_legitimacy > 60  }
+				
+				custom_trigger_tooltip = {
+					tooltip = "Has at least 60 legitimacy"
+					check_variable = { FRA_legitimacy > 60 }
+				}
 		}
 		
 		bypass = {
-
+			FRA = { controls_state = 557 }
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_ANNEXATION }
-		completion_reward = {}
+		completion_reward = {
+			
+			FRA = { 
+				transfer_state = 557
+				transfer_state = 272
+				transfer_state = 780
+				transfer_state = 556
+				transfer_state = 779
+				transfer_state = 778
+				transfer_state = 777
+				transfer_state = 776
+				transfer_state = 781
+				transfer_state = 782
+				transfer_state = 786
+				transfer_state = 515
+				transfer_state = 775
+				transfer_state = 298
+				transfer_state = 514
+			}
+		}
 	}
 	focus = {
 		id = FRA_intervention_in_syria
 		icon = GFX_goal_generic_position_armies
-		x = -1
+		x = 2
 		y = 1
 		offset = {
 			x = 0
@@ -1271,57 +1294,42 @@ focus = {
 			factor = 1
 		}
 		available = {
-			NOT = {
-				FRA_controls_syria = yes
+
+			check_variable = {  FRA_legitimacy > 100  }
+				
+
+			custom_trigger_tooltip = {
+				tooltip = "Has at least 100 legitimacy"
+				check_variable = { FRA_legitimacy > 100 }
 			}
 		}
 		
 		bypass = {
+			FRA = { 
+				controls_state = 554
+				}
+			}	
 
-		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_ANNEXATION }
-		completion_reward = {}
-	}
-	focus = {
-		id = FRA_intervention_in_indochina
-		icon = GFX_goal_generic_position_armies
-		x = 1
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = { 
-			focus = FRA_appeal_to_overseas_territories
-		}
-		relative_position_id = FRA_appeal_to_overseas_territories
-		
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			NOT = {
-				FRA_controls_indochina = yes
+
+		completion_reward = {			
+			FRA = { 
+				transfer_state = 554
+				transfer_state = 680
+				transfer_state = 677
+				transfer_state = 799
+				transfer_state = 553
 			}
 		}
-		
-		bypass = {
-
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-		completion_reward = {}
 	}
+
 	focus = {
 		id = FRA_intervention_in_central_africa
 		icon = GFX_goal_generic_position_armies
-		x = 3
+		x = -4
 		y = 1
 		offset = {
 			x = 0
@@ -1335,26 +1343,42 @@ focus = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}
+		}		
 		available = {
-			NOT = {
-				FRA_controls_central_africa = yes
+
+			check_variable = {  FRA_legitimacy > 40  }
+
+			custom_trigger_tooltip = {
+				tooltip = "Has at least 40 legitimacy"
+				check_variable = { FRA_legitimacy > 40 }
 			}
 		}
 		
 		bypass = {
+			FRA = { 
+				controls_state = 295 
+				}
+			}	
 
-		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_ANNEXATION }
-		completion_reward = {}
+
+		completion_reward = {			
+			FRA = { 
+			transfer_state = 295
+			transfer_state = 538
+			transfer_state = 718
+			transfer_state = 768
+			transfer_state = 769
+			}
+		}
 	}
 	focus = {
 		id = FRA_intervention_in_madagascar
 		icon = GFX_goal_generic_position_armies
-		x = 5
+		x = 0
 		y = 1
 		offset = {
 			x = 0
@@ -1370,26 +1394,31 @@ focus = {
 			factor = 1
 		}
 		available = {
-			NOT = {
-				543 = {
-					OR = {
-						is_controlled_by = ROOT
-						CONTROLLER = {
-							is_subject_of = ROOT
-						}
-					}
+
+			check_variable = {  FRA_legitimacy > 80  }
+				
+				custom_trigger_tooltip = {
+					tooltip = "Has at least 80 legitimacy"
+					check_variable = { FRA_legitimacy > 80 }
 				}
-			}
 		}
 		
 		bypass = {
-
+			FRA = { controls_state = 543 }
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_ANNEXATION }
-		completion_reward = {}
+		completion_reward = {
+			
+			FRA = { 
+				transfer_state = 543
+				transfer_state = 706
+				transfer_state = 708
+				transfer_state = 713
+			}
+		}
 	}
 	focus = {
 		id = FRA_form_the_national_committee
@@ -1403,7 +1432,6 @@ focus = {
 		prerequisite = { 
 			focus = FRA_intervention_in_madagascar
 			focus = FRA_intervention_in_syria
-			focus = FRA_intervention_in_indochina
 			focus = FRA_intervention_in_north_africa
 			focus = FRA_intervention_in_west_africa
 			focus = FRA_intervention_in_central_africa
@@ -1415,14 +1443,11 @@ focus = {
 			factor = 1
 		}
 		available = {
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				has_legitimacy > 90
-			}
-			else = {
-				num_of_factories > 24
+			check_variable = {  FRA_legitimacy > 100  }
+
+			custom_trigger_tooltip = {
+				tooltip = "Has at least 100 legitimacy"
+				check_variable = { FRA_legitimacy > 100 }
 			}
 		}
 		
@@ -1641,14 +1666,11 @@ focus = {
 			factor = 1
 		}
 		available = {
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				has_legitimacy > 200
-			}
-			else = {
-				num_of_factories > 14
+			check_variable = {  FRA_legitimacy > 100  }
+
+			custom_trigger_tooltip = {
+				tooltip = "Has at least 100 legitimacy"
+				check_variable = { FRA_legitimacy > 100 }
 			}
 		}
 		cancel_if_invalid = yes

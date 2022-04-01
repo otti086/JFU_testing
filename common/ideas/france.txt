@@ -2,6 +2,14 @@ ideas = {
 
 	country = {
 
+
+		fra_legit_idea = {
+			picture = FRA_political_violence
+			allowed = {	original_tag = FRA	}
+			allowed_civil_war = {	original_tag = FRA	}
+			removal_cost = -1
+		}
+		
 		FRA_full_employment = {
 			picture = generic_production_bonus
 			allowed = {

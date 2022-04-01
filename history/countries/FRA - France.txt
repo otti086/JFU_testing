@@ -8,6 +8,8 @@ set_variable = {
     value = 0.200
 }
 
+set_variable = { var = FRA_legitimacy value = 0 }
+
 if = {
 	limit = {
 		NOT = {
@@ -322,6 +324,7 @@ add_ideas = {
 	FRA_full_employment
 	FRA_political_violence
 	FRA_inefficient_economy_2
+	FRA_legit_idea
 }
 
 recruit_character = FRA_philippe_petain
