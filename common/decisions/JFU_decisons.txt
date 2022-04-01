@@ -220,7 +220,7 @@ JFU_decisions = {
 				every_state = {
 					limit = {
 						AND = {
-							is_core_of = SIA
+							is_core_of = MAN
 							OR = {
 								is_controlled_by = JAP
 							}
