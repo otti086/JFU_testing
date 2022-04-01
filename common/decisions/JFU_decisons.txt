@@ -455,6 +455,7 @@ JFU_decisions = {
 		fire_only_once = yes
 		cost = 0
 		complete_effect = {
+			GER = { add_to_faction = EFR }
 			EFR = { add_to_war = { targeted_alliance = GER enemy = ENG } }
 		}
 	}
