@@ -23,31 +23,6 @@ ideas = {
 	
 	}
 
-	tank_manufacturer = { 
-		
-		designer = yes
-		
-		landsverk = {
-			
-			picture = generic_tank_manufacturer_2
-
-			
-			allowed = {
-				original_tag = SWE
-			}
-			
-			research_bonus = {
-				armor = 0.15
-			}
-			
-			traits = { tank_manufacturer }
-			
-			modifier = {
-				# notable tanks L-120 and L-60, lighter tanks as well as the medium tank Stridsvagn m/42, that was mobile and well protected.
-			}
-		}
-
-	}
 	
 	naval_manufacturer = { 
 			

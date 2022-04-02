@@ -5,6 +5,11 @@ axis = {
 		tag = HUN
 		tag = ROM
 		tag = SPR
+		tag = BUL
+		tag = JAP
+		tag = SIA
+		tag = MAN
+		tag = EFR
 	}
 }
 
@@ -13,10 +18,35 @@ allies = {
 		tag = ENG
 		tag = FRA
 		tag = CAN
+		tag = AST
+		tag = BRA
+		tag = MEX
+		tag = NZL
+		tag = USA
+		tag = RAJ
+		tag = SAF
 	}
 }
 ai_country = {
 	OR = {
 		tag = SWE
+		tag = BEL
+		tag = HOL
+		tag = CZE
+		tag = POL
+		tag = AUS
+		tag = LIT
+		tag = EST
+		tag = LAT
+		tag = YUG
+		tag = GRE
+		tag = ALB
+		tag = NOR
+		tag = DEN
+		tag = CHI
+		tag = IRQ
+		tag = ETH
+		tag = PER
+		tag = POR
 	}
 }

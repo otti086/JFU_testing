@@ -1743,7 +1743,7 @@ ideas = {
 				
 			
 			allowed = {
-				NOT = { OR = {  axis = yes ai_country = yes }}
+				NOT = { OR = {  axis = yes ai_country = yes tag = SOV}}
 			
 			}
 			
@@ -1763,7 +1763,7 @@ ideas = {
 			
 			
 			allowed = {
-				NOT = { OR = {  axis = yes ai_country = yes }}
+				NOT = { OR = {  axis = yes ai_country = yes tag = SOV}}
 			
 			}
 			
@@ -1783,7 +1783,7 @@ ideas = {
 			
 			
 			allowed = {
-				NOT = { OR = {  axis = yes ai_country = yes }}
+				NOT = { OR = {  axis = yes ai_country = yes tag = SOV}}
 			
 			}
 			
@@ -1803,7 +1803,7 @@ ideas = {
 			
 			
 			allowed = {
-				NOT = { OR = {  allies = yes ai_country = yes }}
+				NOT = { OR = {  allies = yes ai_country = yes tag = SOV}}
 			
 			}
 			
@@ -1823,7 +1823,7 @@ ideas = {
 			
 			
 			allowed = {
-				NOT = { OR = {  allies = yes ai_country = yes }}
+				NOT = { OR = {  allies = yes ai_country = yes tag = SOV}}
 			
 			}
 			
@@ -1843,7 +1843,7 @@ ideas = {
 			
 			
 			allowed = {
-				NOT = { OR = {  allies = yes ai_country = yes }}
+				NOT = { OR = {  allies = yes ai_country = yes tag = SOV }}
 			
 			}
 			

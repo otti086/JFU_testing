@@ -97,26 +97,6 @@ ideas = {
 			
 		}
 	}
-
-	tank_manufacturer = {
-	
-		designer = yes
-	
-		fiat = {
-			
-			
-			allowed = {
-				original_tag = ITA
-			}
-			
-			
-			research_bonus = {
-				armor = 0.15
-			}
-			
-			traits = { tank_manufacturer }
-		}
-	}
 	
 	
 	

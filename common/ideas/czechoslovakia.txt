@@ -510,66 +510,7 @@ ideas = {
 	}
 
 	# TECHNOLOGY
-	tank_manufacturer = {
 
-		designer = yes
-
-		CZE_ckd = {
-
-
-			allowed = {
-				original_tag = CZE
-			}
-
-			research_bonus = {
-				armor = 0.15
-			}
-
-			traits = { fast_tank_manufacturer }
-
-			equipment_bonus = {
-				# made light/medium tanks panzerkampfwagen 38
-			}
-		}
-
-		CZE_tatra = {
-
-			picture = generic_tank_manufacturer_2
-
-
-			allowed = {
-				original_tag = CZE
-			}
-
-			research_bonus = {
-				armor = 0.15
-			}
-
-			traits = { medium_tank_manufacturer }
-
-			equipment_bonus = {
-			}
-		}
-
-		CZE_skoda_armor = {
-
-			picture = generic_tank_manufacturer_3
-
-
-			allowed = {
-				original_tag = CZE
-			}
-
-			research_bonus = {
-				armor = 0.15
-			}
-
-			traits = { heavy_tank_manufacturer }
-
-			equipment_bonus = {
-			}
-		}
-	}
 
 	naval_manufacturer = {
 

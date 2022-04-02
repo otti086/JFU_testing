@@ -540,27 +540,6 @@ ideas = {
 
 	}
 
-	tank_manufacturer = {
-		new_south_wales_rc = {
-
-			allowed = {
-				original_TAG = AST
-				has_dlc = "Together for Victory"
-			}
-
-
-
-			research_bonus = {
-				armor = 0.15
-			}
-
-			traits = { fast_tank_manufacturer }
-
-			modifier = {
-			}
-		}
-
-	}
 
 	naval_manufacturer = {
 

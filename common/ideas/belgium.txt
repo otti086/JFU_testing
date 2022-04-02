@@ -1,48 +1,7 @@
 ideas = {
 	# MILITARY
 
-	tank_manufacturer = { 
-		
-		designer = yes
-		
-		renault_bel = {
-			picture = renault
 
-			
-			allowed = {
-				original_tag = BEL
-			}
-			
-			research_bonus = {
-				armor = 0.15
-			}
-			
-			traits = { fast_tank_manufacturer }
-			
-			modifier = {
-				# Renault FT
-			}
-		}
-
-		vickers_armstrong_bel = {
-			picture = generic_tank_manufacturer_2
-		
-			
-			allowed = {
-				original_tag = BEL
-			}
-			
-			research_bonus = {
-				armor = 0.15
-			}
-			
-			traits = { medium_tank_manufacturer }
-			
-			modifier = {
-				
-			}
-		}
-	}
 
 	aircraft_manufacturer = {
 	

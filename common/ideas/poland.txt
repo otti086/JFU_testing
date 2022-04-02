@@ -2183,27 +2183,6 @@ country = {
 		}
 	}
 
-	tank_manufacturer = {
-
-		POL_pzinz = {
-
-			allowed = {
-				original_tag = POL
-				has_dlc = "Poland: United and Ready"
-			}
-
-			research_bonus = {
-				armor = 0.15
-			}
-
-			traits = { tank_manufacturer }
-
-			modifier = {
-				# heavily armored light tanks 7TP, weak vs air ,diesel powered
-			}
-		}
-	}
-
 	naval_manufacturer = {
 
 		designer = yes
