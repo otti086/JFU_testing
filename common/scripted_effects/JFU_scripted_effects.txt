@@ -38,7 +38,14 @@ ROOT_call_against_norway = {
 	for_each_scope_loop = {
 		array = ROOT.allies
 		if = {
-			limit = { NOT = { OR = { original_tag = ITA  } } } 
+			limit = {
+				NOT = { 
+					OR = { 
+						original_tag = ITA  
+						original_tag = ETH
+					} 
+				} 
+			} 
 			add_to_war = {
 				targeted_alliance = ROOT
 				enemy = NOR
@@ -51,7 +58,7 @@ ROOT_call_against_denmark = {
 	for_each_scope_loop = {
 		array = ROOT.allies
 		if = {
-			limit = { NOT = { OR = { original_tag = ITA  } } } 
+			limit = { NOT = { OR = { original_tag = ITA original_tag = ETH } } } 
 			add_to_war = {
 				targeted_alliance = ROOT
 				enemy = DEN
@@ -64,7 +71,7 @@ ROOT_call_against_beligum = {
 		for_each_scope_loop = {
 		array = ROOT.allies
 		if = {
-			limit = { NOT = { OR = { original_tag = ITA  } } } 
+			limit = { NOT = { OR = { original_tag = ITA original_tag = ETH } } } 
 			add_to_war = {
 				targeted_alliance = ROOT
 				enemy = BEL
@@ -77,7 +84,7 @@ ROOT_call_against_holland = {
 		for_each_scope_loop = {
 		array = ROOT.allies
 		if = {
-			limit = { NOT = { OR = { original_tag = ITA  } } } 
+			limit = { NOT = { OR = { original_tag = ITA original_tag = ETH } } } 
 			add_to_war = {
 				targeted_alliance = ROOT
 				enemy = HOL
@@ -91,7 +98,7 @@ ROOT_call_against_france = {
 		for_each_scope_loop = {
 		array = ROOT.allies
 		if = {
-			limit = { NOT = { OR = { original_tag = ITA  } } } 
+			limit = { NOT = { OR = { original_tag = ITA original_tag = ETH } } } 
 			add_to_war = {
 				targeted_alliance = ROOT
 				enemy = FRA
@@ -100,19 +107,6 @@ ROOT_call_against_france = {
 
 	}
 							
-}
-ROOT_call_against_switzerland = {
-		for_each_scope_loop = {
-		array = ROOT.allies
-		if = {
-			limit = { NOT = { OR = { original_tag = SWI  } } } 
-			add_to_war = {
-				targeted_alliance = ROOT
-				enemy = SWI
-			}
-		}
-
-	}
 }	
 air_to_germany = {
 	if = { limit = { tag = ITA }

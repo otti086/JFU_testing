@@ -284,8 +284,53 @@ JFU_decisions = {
 		}
 	}
 
+	ROM_annex_Bulgaria = {
+		icon = generic_operation
+		fire_only_once = yes
+		allowed = { tag = ROM }
+		cost = 0
+		complete_effect = {
+			annex_country = { target = BUL transfer_troops = yes }
+			hidden_effect = { 
+				every_state = {
+					limit = {
+						AND = {
+							is_core_of = BUL
+							OR = {
+								is_controlled_by = ROM
+							}
+						}
+					}
+				
+				add_compliance = 100
+				}
+			}
+		}
+	}
 
-
+	ITA_annex_Bulgaria = {
+		icon = generic_operation
+		fire_only_once = yes
+		allowed = { tag = ITA }
+		cost = 0
+		complete_effect = {
+			annex_country = { target = BUL transfer_troops = yes }
+			hidden_effect = { 
+				every_state = {
+					limit = {
+						AND = {
+							is_core_of = BUL
+							OR = {
+								is_controlled_by = ITA
+							}
+						}
+					}
+				
+				add_compliance = 100
+				}
+			}
+		}
+	}
 
 
 	ITA_establish_IEA = {
