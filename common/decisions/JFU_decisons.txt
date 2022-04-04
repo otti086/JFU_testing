@@ -215,21 +215,15 @@ JFU_decisions = {
 		cost = 0
 		available = {	date < 1937.1.1	} 
 		complete_effect = {
-			annex_country = { target = MAN transfer_troops = yes }
 			hidden_effect = { 
 				every_state = {
 					limit = {
-						AND = {
 							is_core_of = MAN
-							OR = {
-								is_controlled_by = JAP
-							}
-						}
 					}
-				
-				add_compliance = 90 
+				add_core_of = JAP
 				}
 			}
+			annex_country = { target = MAN transfer_troops = yes }
 		}
 	}
 
@@ -240,21 +234,16 @@ JFU_decisions = {
 		allowed = { tag = AST }
 		cost = 0
 		complete_effect = {
-			annex_country = { target = NZL transfer_troops = yes }
 			hidden_effect = { 
 				every_state = {
 					limit = {
-						AND = {
 							is_core_of = NZL
-							OR = {
-								is_controlled_by = AST
-							}
-						}
 					}
 				
-				add_compliance = 100
+				add_core_of = AST
 				}
 			}
+			annex_country = { target = NZL transfer_troops = yes }			
 		}
 	}
 
@@ -266,21 +255,17 @@ JFU_decisions = {
 		allowed = { tag = CAN }
 		cost = 0
 		complete_effect = {
-			annex_country = { target = SAF transfer_troops = yes }
 			hidden_effect = { 
 				every_state = {
 					limit = {
-						AND = {
 							is_core_of = SAF
-							OR = {
-								is_controlled_by = CAN
-							}
-						}
 					}
 				
-				add_compliance = 100
+				add_core_of = CAN
 				}
 			}
+			annex_country = { target = SAF transfer_troops = yes }
+
 		}
 	}
 
@@ -289,22 +274,12 @@ JFU_decisions = {
 		fire_only_once = yes
 		allowed = { tag = ROM }
 		cost = 0
+		available = {  }
 		complete_effect = {
-			annex_country = { target = BUL transfer_troops = yes }
-			hidden_effect = { 
-				every_state = {
-					limit = {
-						AND = {
-							is_core_of = BUL
-							OR = {
-								is_controlled_by = ROM
-							}
-						}
-					}
-				
-				add_compliance = 100
-				}
+			hidden_effect = {
+				ROM = { add_state_core = 211 add_state_core = 801 add_state_core = 212 add_state_core = 48}
 			}
+			annex_country = { target = BUL transfer_troops = yes }
 		}
 	}
 
@@ -313,22 +288,15 @@ JFU_decisions = {
 		fire_only_once = yes
 		allowed = { tag = ITA }
 		cost = 0
+		available = { date > 1938.1.1 }
 		complete_effect = {
-			annex_country = { target = BUL transfer_troops = yes }
 			hidden_effect = { 
-				every_state = {
-					limit = {
-						AND = {
-							is_core_of = BUL
-							OR = {
-								is_controlled_by = ITA
-							}
-						}
-					}
-				
-				add_compliance = 100
-				}
+				211 = { add_core_of = ROM } 
+				801 = { add_core_of = ROM }
+				212 = { add_core_of = ROM }
+				48 = { add_core_of = ROM }
 			}
+			annex_country = { target = BUL transfer_troops = yes }
 		}
 	}
 
@@ -418,6 +386,7 @@ JFU_decisions = {
 		cost = 0
 		complete_effect = {
 			ITA = { add_to_war = { targeted_alliance = GER enemy = ENG } }
+			ETH = { add_to_war = { targeted_alliance = GER enemy = ENG } }
 		}
 	}	
 

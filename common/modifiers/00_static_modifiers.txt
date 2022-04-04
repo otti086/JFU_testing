@@ -663,4 +663,4 @@ SOV_for_the_common_good_relation = { #For Right Oppo allies
 	license_tech_difference_speed = 0.25 #less cost increase for each tech level between the license and own tech level
 }
 
-trade_major = {trade_cost_for_target_factor = -0.9 extra_trade_to_target_factor = 1.0	}
+trade_major = {trade_cost_for_target_factor = -0.8 	}
