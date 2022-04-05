@@ -321,16 +321,6 @@ bookmarks = {
 			}
 		}
 
-		"POR"={
-			minor = yes
-			history = "PORTUGAL_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-				POR_unstable_republic
-				POR_unreliable_army
-			}
-		}
-
 		"BUL"={
 			minor = yes
 			history = "BUL_GATHERING_STORM_DESC"

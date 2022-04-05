@@ -276,17 +276,6 @@ bookmarks = {
 				SPA_retake_gibraltar
 			}
 		}
-		
-		"POR"={
-			minor = yes
-			history = "PORTUGAL_BLITZKRIEG_DESC"
-			ideology = democratic
-			ideas = {
-				POR_volunteers_in_the_war_nationalist
-				POR_colonial_assimilation_policy
-				POR_estado_novo
-			}
-		}
 		"BUL"={
 			minor = yes
 			history = "BUL_BLITZKRIEG_DESC"

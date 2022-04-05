@@ -1,12 +1,12 @@
 ﻿focus_tree = {
-	id = vichy_french_focus
+	id = ERF_focus
 	
 	country = {
 		factor = 0
 		
 		modifier = {
 			add = 1
-			tag = FRA
+			tag = EFR
 		}
 	}
 	

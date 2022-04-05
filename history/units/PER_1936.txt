@@ -1,77 +1,50 @@
 ﻿division_template = {
-	name = "Infantry Brigade"			# Infantry Brigade
-
-	division_names_group = PER_GAR_01
+	name = "50W"
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
+
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+		infantry = { x = 2 y = 4 }
+
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+		infantry = { x = 3 y = 3 }
+		infantry = { x = 3 y = 4 }
+
+		infantry = { x = 4 y = 0 }
+		infantry = { x = 4 y = 1 }
+		infantry = { x = 4 y = 2 }
+		infantry = { x = 4 y = 3 }
+		infantry = { x = 4 y = 4 }
+
+	}
+	support = {
+
 	}
 }
-division_template = {
-	name = "Cavalry Brigade"			# Cavalry Brigade
 
-	division_names_group = PER_CAV_01
-
-	regiments = {
-		cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
-		cavalry = { x = 0 y = 2 }
-		cavalry = { x = 1 y = 0 }
-		cavalry = { x = 1 y = 1 }
-		cavalry = { x = 1 y = 2 }
-	}
-}
-
-
-units = {
-	######## LAND OOB ########
-	##### Royal Iranian Army #####
-	division = {
-		name = "Persian Cossack Brigade"
-		location = 1896
-		division_template = "Cavalry Brigade"		
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-
-	}
-	division = {
-		name = "South Persia Rifles"
-		location = 10913
-		division_template = "Infantry Brigade"		
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-
-	}
-	division = {
-		name = "Imperial Gendarmerie"
+units = {			
+	division= {	
+		name = "50W" 
 		location = 10837
-		division_template = "Infantry Brigade"		
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-
-	}
-
-	######## No Naval OOB ########
-}
-
-air_wings = {
-	### Royal Iranian Air Force ###
-	266 = {
-		# 1st Air Group -- Hawker Furys
-		fighter_equipment_0 =  {
-			owner = "PER" 
-			amount = 72
-		}
-		# 2nd, 3rd Air Groups -- Hawker Hinds, Audaxes
-		CAS_equipment_1 =  {
-			owner = "PER" 
-			amount = 48
-		}
+		division_template = "50W" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
 	}
 }
 
