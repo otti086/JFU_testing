@@ -47,6 +47,5 @@ ai_country = {
 		tag = IRQ
 		tag = ETH
 		tag = PER
-		tag = POR
 	}
 }

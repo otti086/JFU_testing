@@ -579,7 +579,6 @@ ideas = {
 					is_in_faction = no
 					OR = {
 						# portugal and sweden are special tungsten snowflakes
-						tag = POR
 						tag = SWE
 
 						# Iraq & Iran are special oil snowflakes

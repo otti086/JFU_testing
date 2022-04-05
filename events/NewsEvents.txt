@@ -10087,7 +10087,6 @@ news_event = {
 			OR = {
 				Tag = ENG
 				TAG = BEL
-				TAG = POR
 				TAG = FRA
 			}
 		}
@@ -10102,7 +10101,6 @@ news_event = {
 			NOT = {
 				Tag = ENG
 				TAG = BEL
-				TAG = POR
 				TAG = FRA
 				TAG = SOV
 				TAG = SAF	

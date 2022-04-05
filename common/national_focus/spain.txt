@@ -2020,139 +2020,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SPA_unite_iberia
-		available = {
-			OR = {
-				AND = {
-					country_exists = POR
-					POR = {
-						NOT = { is_in_faction_with = ROOT }
-						NOT = { is_subject_of = ROOT }
-						NOT = { has_war_with = ROOT }
-					}
-					NOT = {
-						any_state = {
-							is_core_of = POR
-							NOT = { is_owned_by = POR }
-						}
-					}
-				}
-				AND = {
-					ENG = { owns_state = 118 }
-					NOT = { is_in_faction_with = ENG }
-				}
-			}
-		}
-		bypass = {
-			NOT = { country_exists = POR }
-		}
-		prerequisite = { focus = SPA_the_will_to_empire }
-		
-		icon = GFX_focus_generic_attack_portugal
-		x = -2
-		y = 1
-		relative_position_id = SPA_the_will_to_empire
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			if = {
-				limit = {
-					POR = {
-						NOT = { is_in_faction_with = ROOT }
-						NOT = { is_subject_of = ROOT }
-						NOT = { has_war_with = ROOT }
-					}
-				}
-				create_wargoal = {
-				    type = annex_everything
-				    target = POR
-				    expire = 0
-				}
-			}
-			if = {
-				limit = {
-					ENG = {
-						owns_state = 118
-					}
-				}
-				create_wargoal = {
-					type = take_state_focus
-					target = ENG
-					generator = { 118 }
-					expire = 0
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = SPA_absorb_the_portuguese_empire
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_unite_iberia }
-		
-		icon = GFX_goal_generic_forceful_treaty
-		x = 1
-		y = 1
-		relative_position_id = SPA_unite_iberia
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = SPA_claim_the_aragonese_possessions
-		available = {
-			NOT = {
-				is_in_faction_with = ITA
-			}
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_unite_iberia }
-		
-		icon = GFX_goal_generic_territory_or_war
-		x = 0
-		y = 2
-		relative_position_id = SPA_unite_iberia
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_state_claim = 1
-			add_state_claim = 116
-			add_state_claim = 182
-			add_state_claim = 183
-			add_state_claim = 114
-			add_state_claim = 115
-			add_state_claim = 156
-			add_state_claim = 117
-			add_state_claim = 448
-			add_state_claim = 449
-			add_state_claim = 450
-			add_state_claim = 451
-			add_state_claim = 661
-			add_state_claim = 662
-			add_state_claim = 663
-			create_wargoal = {
-				type = take_state_focus
-				target = ITA
-				generator = { 114 115 156 117 448 449 450 451 661 662 663 }
-				expire = 0
-			}
-		}
-	}
-
-	focus = {
 		id = SPA_reclaim_spanish_africa
 		available = {
 			NOT = {
@@ -3723,122 +3590,6 @@ focus_tree = {
 					add_idea = SPA_carlism_4
 				}
 			}
-		}
-	}
-
-	focus = {
-		id = SPA_portuguese_aid
-		available = {
-			NOT = { has_war_with = POR }
-			any_enemy_country = {
-				NOT = {
-					has_volunteers_amount_from = {
-						tag = POR
-						count > 0
-					}
-				}
-			}
-		}
-		bypass = {
-			has_global_flag = scw_over
-		}
-		prerequisite = { focus = SPA_a_methodical_approach }
-		
-		icon = GFX_focus_generic_befriend_portugal
-		x = 1
-		y = 1
-		relative_position_id = SPA_a_methodical_approach
-		cost = 5
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_MANPOWER}
-		completion_reward = {
-			effect_tooltip = {
-				add_manpower = 20000
-				POR = {
-					add_timed_idea = { idea = SPA_spanish_civil_war_commitments days = 730 }
-					add_opinion_modifier = { target = ROOT modifier = SPA_spanish_civil_war_commitments }
-				}
-			}
-			custom_effect_tooltip = SPA_the_iberian_pact_tt_2
-			POR = { country_event = { id = lar_spain.22 hours = 12 random_hours = 36 } }
-		}
-	}
-
-	focus = {
-		id = SPA_the_iberian_pact
-		available = {
-			has_global_flag = scw_over
-			has_war = no
-			is_in_faction = no
-			POR = {
-				has_war = no
-				is_in_faction = no
-			}
-			NOT = { has_global_flag = POR_iberian_summit_in_progress_flag }
-		}
-		bypass = {
-			POR = { is_in_faction = yes }
-		}
-		prerequisite = { focus = SPA_portuguese_aid }
-		
-		icon = GFX_goal_generic_major_alliance
-		x = 0
-		y = 1
-		relative_position_id = SPA_portuguese_aid
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			custom_effect_tooltip = SPA_the_iberian_pact_tt
-			custom_effect_tooltip = SPA_the_iberian_pact_tt_2
-			POR = { country_event = { id = lar_spain.25 hours = 12 random_hours = 36 } }
-		}
-	}
-
-	focus = {
-		id = SPA_the_latin_bloc
-		available = {
-			has_global_flag = scw_over
-			NOT = { has_completed_focus = SPA_join_the_axis }
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_the_iberian_pact }
-		
-		icon = GFX_goal_generic_alliance
-		x = 0
-		y = 1
-		relative_position_id = SPA_the_iberian_pact
-		cost = 10
-
-		available_if_capitulated = yes
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
-
-		completion_reward = {
-			set_rule = {
-				can_create_factions = yes
-			}
-			create_faction = SPA_latin_bloc
-			every_other_country = {
-				limit = {
-					OR = {
-						original_tag = POR
-						original_tag = ITA
-					}
-					is_in_faction = no
-				}
-				country_event = { id = lar_spain.30 hours = 12 random_hours = 36 }
-			}
-			hidden_effect = { news_event = { id = lar_news.19 hours = 6 } }
 		}
 	}
 
@@ -6640,7 +6391,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			POR = { country_event = { id = lar_spain.45 hours = 6 random_hours = 6 } }
+			
 		}
 	}
 
@@ -7820,14 +7571,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_portuguese_anarchism
-		available = {
-			any_state = {
-				is_fully_controlled_by = ROOT
-				any_neighbor_state = {
-					is_owned_by = POR
-				}
-			}
-		}
+		available = { }
 		bypass = {
 			owns_state = 180
 			owns_state = 181
@@ -7836,7 +7580,6 @@ focus_tree = {
 			owns_state = 795
 		}
 
-		will_lead_to_war_with = POR
 		prerequisite = { focus = SPR_the_threats_abound }
 		
 		icon = GFX_focus_generic_attack_portugal
@@ -7847,28 +7590,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
-		completion_reward = {
-			if = {
-				limit = {
-					POR = { has_civil_war = yes }
-				}
-				every_country = {
-					limit = {
-						original_tag = POR
-					}
-					ROOT = {
-						create_wargoal = {
-							type = annex_everything
-						    target = PREV
-						    expire = 0
-						}
-					}
-				}
-			}
-			else = {
-				POR = { country_event = { id = lar_spain.48 hours = 6 random_hours = 18 } }
-			}
-		}
+		completion_reward = {}
 	}
 
 	focus = {
@@ -7897,12 +7619,6 @@ focus_tree = {
 			hidden_effect = {
 				drop_cosmetic_tag = yes
 				set_cosmetic_tag = SPC_regional_defense_council_of_iberia
-			}
-			every_state = {
-				limit = {
-					is_core_of = POR
-				}
-				add_core_of = ROOT
 			}
 		}
 	}
@@ -10788,9 +10504,6 @@ focus_tree = {
 		id = SPR_a_red_iberia
 		available = {
 		}
-		bypass = {
-			has_war_with = POR
-		}
 		prerequisite = { focus = SPR_unify_the_london_bureau focus = SPR_modernize_the_armed_forces }
 
 		icon = GFX_focus_generic_attack_portugal
@@ -10801,22 +10514,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
-		completion_reward = {
-			if = {
-				limit = {
-					POR = {
-						NOT = { has_government = communism }
-					}
-				}
-				create_wargoal = {
-					type = annex_everything
-					target = POR
-				}
-			}
-			else = {
-				POR = { country_event = { id = lar_spain.59 hours = 6 random_hours = 6 } }
-			}
-		}
+		completion_reward = {}
 	}
 
 	focus = {

@@ -1245,11 +1245,6 @@ country_event = {
 				SPR_scw_in_progress = yes
 			}
 			AND = {
-				has_dlc = "La Resistance"
-				original_tag = POR
-				has_global_flag = SPR_portuguese_anarchism_flag
-			}
-			AND = {
 				has_dlc = "Battle for the Bosporus"
 				original_tag = BUL
 				OR = {

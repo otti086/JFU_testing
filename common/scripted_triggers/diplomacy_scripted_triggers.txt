@@ -687,18 +687,6 @@ DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
 				NOT = { FROM = { tag = SPC } }
 			}
 		}
-		else_if = {
-			limit = {
-				has_dlc = "La Resistance"
-				tag = POR
-				FROM = { original_tag = SPR }
-				NOT = { has_global_flag = scw_over }
-			}
-			custom_trigger_tooltip = {
-				tooltip = RULE_VOLUNTEERS_PORTUGAL_SCW_TT
-
-			}
-		}
 		else_if = { #Bulgarian volunteers in SCW (with La Resistance)
 			limit = {
 				has_dlc = "Battle for the Bosporus"
