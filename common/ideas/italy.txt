@@ -246,5 +246,22 @@ ideas = {
 			
 			traits = { naval_manufacturer }
 		}
+
+		copelix_company = {
+			
+			
+			allowed = {
+				original_tag = ITA
+			}
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { raiding_fleet_naval_manufacturer }
+			
+		}
 	}
 }
