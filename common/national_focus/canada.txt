@@ -70,23 +70,9 @@
 		x = 0
 		y = 0
 
-		cost = 10
+		cost = 5
 
-		ai_will_do = {
-			factor = 24
-			modifier = {
-				factor = 3
-				has_completed_focus = CAN_crown_corporations
-			}
-		}
 
-		available = {
-		
-		}
-		
-		bypass = {
-
-		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -105,23 +91,9 @@
 		y = 0
 		relative_position_id = CAN_rowell_sirois_commission
 
-		cost = 10
+		cost = 5
 
-		ai_will_do = {
-			factor = 25
-			modifier = {
-				factor = 3
-				has_completed_focus = CAN_rowell_sirois_commission
-			}
-		}
 
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -143,27 +115,9 @@
 		y = 1
 		relative_position_id = CAN_rowell_sirois_commission
 
-		cost = 10
+		cost = 5
 
-		ai_will_do = {
-			factor = 75
-		}
 
-		available = {
-		}
-		
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = construction_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = industrial_complex
-						size < 1
-						include_locked = yes
-					}
-				}
-			}
-		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -193,10 +147,10 @@
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = CAN_national_housing_act_IC
@@ -250,7 +204,7 @@
 		y = 2
 		relative_position_id = CAN_rowell_sirois_commission
 
-		cost = 10
+		cost = 2
 
 		ai_will_do = {
 			factor = 75
@@ -281,51 +235,6 @@
 		}
 	}
 
-	focus = {
-		id = CAN_maritime_colonial_railway
-		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = CAN_canada_pacific_railway }
-		x = 0
-		y = 3
-		relative_position_id = CAN_rowell_sirois_commission
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 75
-		}
-
-		available = {
-			controls_state = 464
-			controls_state = 465
-			controls_state = 468
-		}
-		
-		bypass = {
-			
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-			build_railway = { #Montreal - Halifax
-				path = {
-					4345 4417 10320 7433 1284 12291 4362 7379 4432 1424 7304 7644 7361
-				}
-			}
-			build_railway = {
-				path = {
-					1424 4285
-				}
-			} 
-			build_railway = {
-				path = { 7433 12149 }
-			}
-		}
-	}
 
 	focus = {
 		id = CAN_retool_angus_shops
@@ -336,15 +245,7 @@
 		y = 3
 		relative_position_id = CAN_rowell_sirois_commission
 
-		cost = 10
-
-		ai_will_do = {
-			factor = 75
-		}
-
-		available = {
-
-		}
+		cost = 5
 		
 		bypass = {
 			custom_trigger_tooltip = {
@@ -369,10 +270,10 @@
 				limit = {
 					has_state_flag = CAN_retool_angus_shops_AF
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -388,71 +289,13 @@
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = CAN_retool_angus_shops_AF
-			}
-		}
-	}
-
-	focus = {
-		id = CAN_imperial_oil
-		icon = GFX_goal_generic_oil_refinery
-		prerequisite = { focus = CAN_retool_angus_shops }
-		x = 2
-		y = 4
-		relative_position_id = CAN_rowell_sirois_commission
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 75
-		}
-
-		available = {
-			controls_state = 470
-			controls_state = 471
-			controls_state = 472
-			controls_state = 683
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-			470 = {
-				add_resource = {
-					type = oil
-					amount = 2
-				}
-			}
-			471 = {
-				add_resource = {
-					type = oil
-					amount = 4
-				}
-			}
-			472 = {
-				add_resource = {
-					type = oil
-					amount = 4
-				}
-			}
-			683 = {
-				add_resource = {
-					type = oil
-					amount = 4
-				}
 			}
 		}
 	}
@@ -482,8 +325,8 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -640,7 +483,7 @@
 		y = 1
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -768,7 +611,7 @@
 		y = 2
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -1167,10 +1010,10 @@
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = CAN_john_inglis_and_company_AF2
@@ -2297,7 +2140,7 @@
 		x = 20
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 9
@@ -2505,7 +2348,7 @@
 		y = 2
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -2540,7 +2383,7 @@
 		y = 2
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -2588,8 +2431,7 @@
 	focus = {
 		id = CAN_supply_the_empire
 		icon = GFX_goal_generic_construction2
-		prerequisite = { focus = CAN_the_plan}
-		prerequisite = { focus = CAN_camp_x }
+		prerequisite = { focus = CAN_the_plan focus = CAN_camp_x}
 		x = 0
 		y = 3
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
@@ -2721,7 +2563,7 @@
 	focus = {
 		id = CAN_rcaf_station_borden
 		icon = GFX_goal_generic_build_airforce
-		x = 30
+		x = 24
 		y = 0
 
 		cost = 10
@@ -3229,22 +3071,10 @@
 	focus = {
 		id = CAN_halifax_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 25
+		x = 22
 		y = 0
 
 		cost = 10
-
-		ai_will_do = {
-			factor = 9
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -3288,350 +3118,4 @@
 			}
 		}
 	}
-
-	focus = {
-		id = CAN_destroyer_effort
-		icon = GFX_goal_generic_navy_anti_submarine
-		prerequisite = { focus = CAN_halifax_shipyards }
-		x = 0
-		y = 1
-		relative_position_id = CAN_halifax_shipyards
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_RESEARCH }
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = CAN_destroyer_effort
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = dd_tech
-			}
-		}
-	}
-
-	focus = {
-		id = CAN_light_cruiser_effort
-		icon = GFX_goal_generic_navy_cruiser
-		prerequisite = { focus = CAN_destroyer_effort }
-		x = -1
-		y = 2
-		relative_position_id = CAN_halifax_shipyards
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_RESEARCH }
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = CAN_light_cruiser_effort
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = cl_tech
-			}
-		}
-	}
-
-	focus = {
-		id = CAN_heavy_cruiser_effort
-		icon = GFX_goal_generic_occupy_states_coastal
-		prerequisite = { focus = CAN_destroyer_effort }
-		x = 1
-		y = 2
-		relative_position_id = CAN_halifax_shipyards
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_RESEARCH }
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = CAN_heavy_cruiser_effort
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = ca_tech
-			}
-		}
-	}
-
-	focus = {	
-		id = CAN_escort_fleet
-		icon = GFX_goal_generic_navy_doctrines_tactics
-		prerequisite = { focus = CAN_light_cruiser_effort }
-		mutually_exclusive = { focus = CAN_fleet_in_being }
-		x = -1
-		y = 3
-		relative_position_id = CAN_halifax_shipyards
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-			modifier = {
-				has_war_with = GER
-				factor = 2
-			}
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_RESEARCH }
-
-		completion_reward = {
-			navy_experience = 25
-			add_doctrine_cost_reduction = {
-				name = CAN_escort_fleet
-				cost_reduction = 0.25
-				uses = 2
-				category = convoy_defense_tree
-			}
-		}
-	}
-
-	focus = {
-		id = CAN_fleet_in_being
-		icon = GFX_goal_generic_navy_battleship
-		prerequisite = { focus = CAN_light_cruiser_effort }
-		mutually_exclusive = { focus = CAN_escort_fleet }
-		x = 1
-		y = 3
-		relative_position_id = CAN_halifax_shipyards
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_RESEARCH }
-
-		completion_reward = {
-			navy_experience = 25
-			add_doctrine_cost_reduction = {
-				name = CAN_fleet_in_being
-				cost_reduction = 0.25
-				uses = 2
-				category = cat_fleet_in_being
-			}			
-		}
-	}
-
-	focus = {
-		id = CAN_degauss_ship_hulls
-		icon = GFX_goal_generic_navy_anti_submarine
-		prerequisite = { focus = CAN_escort_fleet focus = CAN_fleet_in_being }
-		x = -1
-		y = 4
-		relative_position_id = CAN_halifax_shipyards
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_RESEARCH }
-
-		completion_reward = {
-			add_ideas = CAN_degauss_ship_hulls
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				if = {
-					limit = {
-						has_tech = degaussing
-					}
-					add_tech_bonus = {
-						name = CAN_degauss_ship_hulls
-						bonus = 0.5
-						uses = 1
-						category = naval_mines
-					}
-					else = {
-						set_technology = {
-						    degaussing = 1
-						}
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = CAN_trade_fleet
-		icon = GFX_goal_generic_positive_trade_relations
-		prerequisite = { focus = CAN_escort_fleet focus = CAN_fleet_in_being }
-		x = 1
-		y = 4
-		relative_position_id = CAN_halifax_shipyards
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-			add_ideas = CAN_trade_fleet			
-		}
-	}
-
-	focus = {
-		id = CAN_united_shipyards
-		icon = GFX_goal_generic_construct_naval_dockyard
-		prerequisite = { focus = CAN_trade_fleet focus = CAN_degauss_ship_hulls }
-		x = 0
-		y = 5
-		relative_position_id = CAN_halifax_shipyards
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		complete_tooltip = {
-			navy_experience = 25
-			random_state = {
-				limit = {
-					has_state_flag = CAN_united_shipyards_DY
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = dockyard
-					level = 3
-					instant_build = yes
-				}
-			}
-		}
-
-		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					is_coastal = yes
-					free_building_slots = {
-						building = dockyard
-						size > 2
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = dockyard
-					level = 3
-					instant_build = yes
-				}
-				set_state_flag = CAN_united_shipyards_DY
-			}
-		}
-	}
-
 }		
