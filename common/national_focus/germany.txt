@@ -1367,7 +1367,7 @@ focus_tree = {
 		id = GER_air_innovation
 		text = air_innovation
 		icon = GFX_goal_generic_build_airforce
-		x = 16
+		x = 13
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -1595,7 +1595,7 @@ focus_tree = {
 	focus = {
 		id = GER_army_innovation
 		icon = GFX_goal_generic_axis_build_infantry
-		x = 19
+		x = 16
 		y = 0
 		cost = 10
 
@@ -1900,7 +1900,7 @@ focus_tree = {
 		icon = GFX_goal_molotov_ribbentrop_pact
 		prerequisite = { focus = GER_anschluss }
 		cancel_if_invalid = no
-		x = 6
+		x = 5
 		y = 0
 		relative_position_id = GER_soviet_treaty
 		cost = 10
@@ -1916,7 +1916,7 @@ focus_tree = {
 	focus = {
 		id = GER_rhineland
 		icon = GFX_goal_generic_military_sphere
-		x = 24
+		x = 21
 		y = 0
 		cost = 10
 		search_filters = { FOCUS_FILTER_POLITICAL }	
@@ -1931,31 +1931,12 @@ focus_tree = {
 		}		
 	}
 	focus = {
-		id = GER_ussr_war_goal
-		icon = GFX_goal_generic_war_with_comintern
-		prerequisite = { focus = GER_rhineland }
-		available_if_capitulated = no
-		will_lead_to_war_with = SOV
-		x = -3
-		y = 2
-		relative_position_id = GER_rhineland
-		cost = 0.2
-			
-		completion_reward = {
-			create_wargoal = {
-					type = annex_everything
-					target = SOV
-					expire = 0
-			}
-		}
-	}
-	focus = {
 		id = GER_anschluss
 		icon = GFX_goal_anschluss
 		prerequisite = { focus = GER_rhineland }
 		available_if_capitulated = no
 		cancel_if_invalid = no
-		x = 2
+		x = 0
 		y = 1
 		relative_position_id = GER_rhineland
 		cost = 10
@@ -1988,7 +1969,7 @@ focus_tree = {
 		id = GER_demand_memel
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = GER_anschluss }
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = GER_anschluss
 		cost = 10
@@ -2026,7 +2007,7 @@ focus_tree = {
 		will_lead_to_war_with = CZE
 		will_lead_to_war_with = FRA
 		cancel_if_invalid = yes
-		x = -3
+		x = -2
 		y = 1
 		relative_position_id = GER_anschluss
 		cost = 10
@@ -2173,7 +2154,7 @@ focus_tree = {
 	focus = {
 		id = GER_naval_rearmament
 		icon = GFX_goal_generic_build_navy
-		x = 32
+		x = 26
 		y = 0
 		cost = 5
 
@@ -2565,58 +2546,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_ideas = GER_modular_construction
-		}
-	}
-
-
-	focus = {
-		id = GER_improve_national_spirit
-		prerequisite = { focus = GER_rhineland }
-		icon = GFX_goal_support_fascism
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = GER_improve_national_spirit_tooltip
-				OR = {
-					GER = { controls_state = 126 }
-					any_other_country = {
-						is_in_faction_with = GER
-						controls_state = 126
-					}
-				}
-				OR = {
-					GER = { controls_state = 16 }
-					any_other_country = {
-						is_in_faction_with = GER
-						controls_state = 16
-					}
-				}
-			}
-		}
-		cancel = {
-			AND = {
-				has_war = no
-				126 = {
-					owner = {
-						NOT = { tag = GER }
-						NOT = { is_in_faction_with = GER }
-					}
-				}
-				16 = {
-					owner = {
-						NOT = { tag = GER }
-						NOT = { is_in_faction_with = GER }
-					}
-				}
-			}
-		}
-		cancel_if_invalid = no
-		x = 0
-		y = 1
-		relative_position_id = GER_rhineland
-		cost = 10
-		completion_reward = {
-			remove_ideas = sour_loser
-			add_ideas = triumphant_will
 		}
 	}
 }

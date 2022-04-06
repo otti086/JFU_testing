@@ -150,12 +150,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ career_officer }
-			skill=2
-			attack_skill=2
+			traits={ career_officer commando }
+			skill=3
+			attack_skill=4
 			defense_skill=2
-			planning_skill=2
-			logistics_skill=1
+			planning_skill=3
+			logistics_skill=2
 			legacy_id=0
 		}
 	}
