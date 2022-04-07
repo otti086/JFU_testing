@@ -37,7 +37,6 @@ AST_historical = {
 		AST_daimler_dingo								#1938
 		AST_promote_reservists							#1939
 		AST_support_the_policy_of_appeasement			#1938
-		AST_strengthen_ties_with_uk						#1937
 		AST_adopt_westminster							#1940
 		AST_CSIR										#1936
 		AST_expand_the_raaf								#1939
@@ -59,7 +58,6 @@ AST_historical = {
 		AST_australian_womens_army_service				#1941
 		AST_sentinel_tank_project						#1941
 		AST_cockatoo_island_shipyards					#1942
-		AST_citizen_military_forces						#1939
 		AST_classify_aliens								#1939
 		AST_protect_overseas_commerce					#1940s
 		AST_expand_northern_presence					#1940s

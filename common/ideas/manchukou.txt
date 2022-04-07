@@ -50,6 +50,50 @@ ideas = {
 			}
 		}
 
+		MAN_agriculturaltrade = {
+	
+			available = {
+			}
+			
+			allowed = {
+				always = no
+			}
+	
+			removal_cost = -1
+
+			picture = man_five_year_plan_industry
+			
+			
+			modifier = { 	consumer_goods_factor = -0.03	}
+		
+			
+		}
+
+		MAN_opiumtrade = {
+	
+			available = {
+		
+			}
+			
+			allowed = {
+				always = no
+			}
+	
+			removal_cost = -1
+
+			picture = man_five_year_plan_industry
+			
+			
+			modifier = { 	
+				consumer_goods_factor = -0.1 
+				industrial_capacity_factory	= -0.1
+				industrial_capacity_dockyard = -0.1
+
+			}
+			
+			
+		}
+
 		MAN_kwantung_veto = {
 
 			allowed = {

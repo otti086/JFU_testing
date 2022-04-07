@@ -56,17 +56,12 @@ SAF_historical = {
 		SAF_joint_air_training_scheme
 		SAF_reconstitute_the_cape_corps	
 		SAF_seaward_defence_force
-		SAF_protect_the_trade
 		SAF_armor_effort
 		SAF_sa_engineer_corps
 		SAF_south_african_steel
 		SAF_pretoria_arms
-		SAF_anti_submarine_tactics
-		SAF_expand_the_simons_town_base
 		SAF_expand_the_rand_mines
 		SAF_fund_the_university_of_south_africa
-		SAF_anti_submarine_tactics
-		SAF_strengthen_the_cape_garrison_artillery
 		SAF_desert_air_force
 		SAF_retain_experienced_pilots
 		SAF_expand_the_cape_corps

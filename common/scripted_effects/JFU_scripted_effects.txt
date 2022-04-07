@@ -498,4 +498,10 @@ JFU_vichy_france_2 = {
 	}
 
 }
-						
+
+
+
+
+JFU_startup_on_action = {
+	if = {	limit = { has_game_rule = { rule = horst_manchukuo	option = HORST_ENABLE_MOD_MANCHUKUO	} }	MAN = { load_focus_tree = manchukuomod_focus } 	}
+}						

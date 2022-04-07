@@ -158,7 +158,6 @@ bookmarks = {
 			}
 			focuses = {
 				RAJ_indian_gurkhas
-				RAJ_the_smiling_buddha
 			}
 		}
 		"HUN"={
