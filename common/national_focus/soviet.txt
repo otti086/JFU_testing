@@ -1506,78 +1506,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_research_slot = 1
-			if = {
-				limit = {
-					any_country = {
-						SOV_is_valid_academy_of_sciences_target = yes
-					}
-				}
-				if = { #ALT IDEOLOGY
-					limit = {
-						NOT = { has_government = communism }
-					}
-					add_to_tech_sharing_group = SOV_imperial_academies_of_sciences_joint_program
-					every_country = {
-						limit = {
-							SOV_is_valid_academy_of_sciences_target = yes
-						}
-						add_to_tech_sharing_group = SOV_imperial_academies_of_sciences_joint_program
-					}
-				}
-				else = { #DEFAULT COMMUNISM
-					add_to_tech_sharing_group = SOV_soviet_academies_of_sciences_joint_program
-					every_country = {
-						limit = {
-							SOV_is_valid_academy_of_sciences_target = yes
-						}
-						add_to_tech_sharing_group = SOV_soviet_academies_of_sciences_joint_program
-					}
-				}
-			}
-			if = { #ALT IDEOLOGY
-				limit = {
-					NOT = { has_government = communism }
-				}
-				hidden_effect = {
-					add_dynamic_modifier = { modifier = SOV_ussr_academy_of_sciences_dynamic_modifier_alt }
-				}
-				effect_tooltip = { add_ideas = SOV_national_academy_of_sciences_alt_fake }
-			}
-			else = { #DEFAULT COMMUNISM
-				hidden_effect = {
-					add_dynamic_modifier = { modifier = SOV_ussr_academy_of_sciences_dynamic_modifier }
-				}
-				effect_tooltip = { add_ideas = SOV_national_academy_of_sciences_fake }
-			}
-		}
-	}
-
-	focus = {
-		id = SOV_national_academies_of_sciences
-
-		icon = GFX_focus_research2
-		prerequisite = { focus = SOV_the_ussr_academy_of_sciences }
-		x = 0
-		y = 3
-		relative_position_id = SOV_the_ussr_academy_of_sciences
-		cost = 5
-
-		available = {
-
-		}
-		
-		search_filters = {FOCUS_FILTER_RESEARCH}
-
-		completion_reward = {
-			if = { 
-				limit = { #DEFAULT COMMUNISM
-					has_government = communism
-				}
-				custom_effect_tooltip = SOV_national_academies_of_sciences_tt
-			}
-			else = { #ALT IDEOLOGY
-				custom_effect_tooltip = SOV_national_academies_of_sciences_alt_tt
-			}
 		}
 	}
 
@@ -1624,7 +1552,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_transpolar_flights
-		cost = 10
+		cost = 5
 
 		available = {
 			any_owned_state = {
@@ -1693,7 +1621,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_expand_the_aircraft_industry
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -1736,10 +1664,10 @@ focus_tree = {
 		icon = GFX_goal_generic_build_airforce
 		prerequisite = { focus = SOV_the_ussr_academy_of_sciences }
 		prerequisite = { focus = SOV_merge_aircraft_plants }
-		x = 0
-		y = 2
+		x = -1
+		y = 1
 		relative_position_id = SOV_merge_aircraft_plants
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -1765,13 +1693,11 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = SOV_expand_the_aircraft_industry
-		cost = 10
+		cost = 5
 
 		mutually_exclusive = { focus = SOV_intensify_pilot_training_program }
 
-		available = {
-			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
-		}
+
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
@@ -1817,7 +1743,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_transpolar_flights
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -1844,7 +1770,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_foster_flying_clubs
-		cost = 10
+		cost = 5
 
 		available = {
 			OR = {
@@ -1876,7 +1802,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_women_in_aviation
-		cost = 10
+		cost = 5
 
 		available = {
 			any_enemy_country = {
@@ -1916,13 +1842,11 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = SOV_foster_flying_clubs
-		cost = 10
+		cost = 5
 
 		mutually_exclusive = { focus = SOV_increase_aircraft_production }
 
-		available = {
-			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
-		}
+
 		
 		search_filters = {FOCUS_FILTER_AIR_XP}
 
@@ -1947,7 +1871,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_expand_the_aircraft_industry
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -1972,7 +1896,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_increase_aircraft_production
-		cost = 10
+		cost = 5
 
 		mutually_exclusive = { focus = SOV_long_range_aircraft }
 
@@ -2004,7 +1928,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_intensify_pilot_training_program
-		cost = 10
+		cost = 5
 
 		mutually_exclusive = { focus = SOV_ground_support }
 
@@ -2037,7 +1961,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_ground_support
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -2774,7 +2698,7 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = SOV_military_engineering_university
-		cost = 10
+		cost = 5
 
 		available = {
 			has_full_control_of_state = 219 #MOSCOW
@@ -2981,7 +2905,7 @@ focus_tree = {
 		icon = GFX_focus_SOV_the_road_of_life
 		prerequisite = { focus = SOV_move_industry_to_the_urals }
 		x = 2
-		y = 2
+		y = 1
 		relative_position_id = SOV_development_of_tankograd
 		cost = 5
 
@@ -3785,6 +3709,9 @@ focus_tree = {
 		cost = 5
 
 		available = {
+			any_enemy_country = {
+				SOV_is_major_not_original_sov = yes
+			}
 		}
 		
 		search_filters = {}
@@ -3805,9 +3732,7 @@ focus_tree = {
 		relative_position_id = SOV_strengthen_the_mobilization_plan
 		cost = 10
 
-		available = {
-			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
-		}
+
 		
 		search_filters = {}
 
@@ -4897,19 +4822,6 @@ focus_tree = {
 
 			#HISTORICAL
 
-			#Litvinov
-			if = {
-				limit = {
-					has_character = SOV_maksim_litvinov
-				}
-				SOV_maksim_litvinov = {
-					set_character_flag = SOV_targeted_for_purge_flag
-				}
-			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
-
 			custom_effect_tooltip = SOV_will_trigger_a_great_purge_tt
 			hidden_effect = {
 				set_country_flag = SOV_purge_event_unavoidable_flag #No way to avoid this purge. This people are about to be purged and there's nothing you can do for them.
@@ -5516,7 +5428,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = SOV_expand_the_agitprop
-		cost = 10
+		cost = 5
 
 		mutually_exclusive = { focus = SOV_collectivist_propaganda }
 
@@ -5547,7 +5459,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_positive_heroism
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -5567,7 +5479,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_revive_the_stakhanovite_movement
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -5654,7 +5566,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_expand_the_agitprop
-		cost = 10
+		cost = 5
 
 		mutually_exclusive = { focus = SOV_positive_heroism }
 
@@ -5682,7 +5594,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_collectivist_propaganda
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -5702,7 +5614,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_socialist_emulation
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -5817,52 +5729,9 @@ focus_tree = {
 		relative_position_id = SOV_the_comintern
 		cost = 5
 
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				has_civil_war = yes
-			}	
-		}
+
 		
-		available = {
-			has_civil_war = no
-			OR = {
-				has_completed_focus = SOV_the_centre
-			}
-			if = {
-				limit = {
-					has_dlc = "La Resistance"
-				}
-				SPR_scw_in_progress = yes
-				if = {
-					limit = {
-						NOT = { has_global_flag = spanish_civil_war }
-					}
-					custom_trigger_tooltip = {
-					    tooltip = POR_spr_tooltip_country_exist_tt
-					    country_exists = SPR
-				    }
-				    custom_trigger_tooltip = {
-					    tooltip = POR_spr_tooltip_at_peace_tt
-						NOT = { has_war_with = SPR }
-				    }
-				}
-			}
-			else = {
-				any_other_country = {
-					original_tag = SPR
-					has_civil_war = yes
-					NOT = { has_war_with = ROOT }
-					OR = {
-						has_government = democratic
-						has_government = communism
-					}
-				}
-			}
-			has_government = communism
-			is_subject = no
-		}
+
 		
 		search_filters = {}
 
@@ -5912,43 +5781,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SOV_policy_of_collective_security
-		icon = GFX_goal_anschluss
+		id = SOV_anti_fascist_policies
+		icon = GFX_focus_generic_anti_fascist_diplomacy
 		prerequisite = { focus = SOV_the_comintern }
 		x = -1
 		y = 1
 		relative_position_id = SOV_the_comintern
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				has_civil_war = yes
-			}	
-		}
-
-		available = {
-
-		}
-		
-		search_filters = {FOCUS_FILTER_POLITICAL}
-
-		completion_reward = {
-			add_political_power = 35
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = SOV_maksim_litvinov
-		}
-	}
-
-	focus = {
-		id = SOV_anti_fascist_policies
-		icon = GFX_focus_generic_anti_fascist_diplomacy
-		prerequisite = { focus = SOV_policy_of_collective_security }
-		x = 0
-		y = 1
-		relative_position_id = SOV_policy_of_collective_security
-		cost = 5
+		cost = 10
 		
 		ai_will_do = {
 			factor = 1
@@ -5993,116 +5832,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SOV_seek_a_defense_pact_with_the_allies
-		icon = GFX_goal_generic_major_alliance
+		id = SOV_eradicate_western_fascism
+		icon = GFX_focus_generic_strike_at_democracy1
 		prerequisite = { focus = SOV_anti_fascist_policies }
 		x = 0
 		y = 1
 		relative_position_id = SOV_anti_fascist_policies
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				has_civil_war = yes
-			}	
-		}
-		
-		bypass = {
-			OR = {
-				NOT = { country_exists = FRA }
-				FRA = { has_capitulated = yes }
-			}
-			NOT = {
-				any_other_country = {
-					is_faction_leader = yes
-					SOV_is_valid_collective_security_target = yes
-				}
-			}
-		}
-
-		available = {
-			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
-			is_subject = no
-		}
-		
-		search_filters = {}
-
-		completion_reward = {
-			if = { #FRA is default target
-				limit = {
-					country_exists = FRA
-					FRA = {	SOV_is_valid_collective_security_target = yes }
-				}
-				set_variable = { SOV_collective_security_target = FRA }
-				FRA = { country_event = { id = NSB_soviet_policies_of_collective_security.1 hours = 8 random_hours = 4 } }
-			}
-			else_if = { #ENG is first fallback target
-				limit = {
-					country_exists = ENG
-					is_faction_leader = yes
-					ENG = {	SOV_is_valid_collective_security_target = yes }
-				}
-				set_variable = { SOV_collective_security_target = FRA }
-				ENG = { country_event = { id = NSB_soviet_policies_of_collective_security.1 hours = 8 random_hours = 4 } }
-			}
-			else_if = { #Non-Fascist European faction leader is next
-				limit = {
-					any_country = {
-						is_faction_leader = yes
-						capital_scope = { is_on_continent = europe }
-						SOV_is_valid_collective_security_target = yes
-					}
-				}
-				random_other_country = {
-					limit = {
-						is_faction_leader = yes
-						capital_scope = { is_on_continent = europe }
-						SOV_is_valid_collective_security_target = yes
-					}
-					ROOT = { set_variable = { SOV_collective_security_target = PREV } }
-					country_event = { id = NSB_soviet_policies_of_collective_security.1 hours = 8 random_hours = 4 }
-				}
-			}
-			else_if = { #Alright I don't really care anymore, pick whoever is left alive
-				limit = {
-					any_other_country = {
-						is_faction_leader = yes
-						SOV_is_valid_collective_security_target = yes
-					}
-				}
-				random_other_country = {
-					limit = {
-						is_faction_leader = yes
-						SOV_is_valid_collective_security_target = yes
-					}
-					ROOT = { set_variable = { SOV_collective_security_target = PREV } }
-					country_event = { id = NSB_soviet_policies_of_collective_security.1 hours = 8 random_hours = 4 }
-				}
-			}
-
-			custom_effect_tooltip = SOV_seek_a_defense_pact_with_the_allies_event_effects_tt
-
-			if = {
-				limit = {
-					country_exists = POL
-					POL = { SOV_is_valid_collective_security_target = yes }
-					var:SOV_collective_security_target = {
-						capital_scope = { is_on_continent = europe }
-					}
-				}
-				custom_effect_tooltip = SOV_seek_a_defense_pact_with_the_allies_poland_tt
-			}
-		}
-	}
-	focus = {
-		id = SOV_eradicate_western_fascism
-		icon = GFX_focus_generic_strike_at_democracy1
-		prerequisite = { focus = SOV_seek_a_defense_pact_with_the_allies }
-		x = 0
-		y = 1
-		relative_position_id = SOV_seek_a_defense_pact_with_the_allies
 		cost = 10
 
 		ai_will_do = {
@@ -6196,117 +5931,12 @@ focus_tree = {
 
 
 	focus = {
-		id = SOV_baltic_security
-		icon = GFX_focus_SOV_baltic_security
+		id = SOV_claims_in_baltic
+		icon = GFX_goal_generic_more_territorial_claims
 		prerequisite = { focus = SOV_the_comintern }
 		x = 1
 		y = 1
 		relative_position_id = SOV_the_comintern
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				has_civil_war = yes
-			}	
-		}
-		
-		bypass = {
-			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
-			NOT = {
-				country_exists = EST
-				country_exists = LAT
-				country_exists = LIT
-			}
-		}
-
-		available = {
-			OR = {
-				NOT = { has_country_flag = SOV_paranoia_system_active_flag }  #TODO_Manu: Change for the inverse, "Political Paranoia has subsided"
-			}
-			is_subject = no
-		}
-		
-		search_filters = {}
-
-		completion_reward = {
-			if = {
-				limit = {
-					country_exists = EST
-				}
-				EST = {
-					if = {
-						limit = { ROOT = { has_government = fascism } }
-						add_timed_idea = { idea = fascist_influence days = 1095 }
-					}
-					if = {
-						limit = { ROOT = { has_government = democratic } }
-						add_timed_idea = { idea = democratic_influence days = 1095 }
-					}
-					if = {
-						limit = { ROOT = { has_government = communism } }
-						add_timed_idea = { idea = communist_influence days = 1095 }
-					}
-					hidden_effect = {
-						country_event = { id = generic.1 }
-					}
-				}
-			}
-			if = {
-				limit = {
-					country_exists = LAT
-				}
-				LAT = {
-					if = {
-						limit = { ROOT = { has_government = fascism } }
-						add_timed_idea = { idea = fascist_influence days = 1095 }
-					}
-					if = {
-						limit = { ROOT = { has_government = democratic } }
-						add_timed_idea = { idea = democratic_influence days = 1095 }
-					}
-					if = {
-						limit = { ROOT = { has_government = communism } }
-						add_timed_idea = { idea = communist_influence days = 1095 }
-					}
-					hidden_effect = {
-						country_event = { id = generic.1 }
-					}
-				}
-			}
-			if = {
-				limit = {
-					country_exists = LIT
-				}
-				LIT = {
-					if = {
-						limit = { ROOT = { has_government = fascism } }
-						add_timed_idea = { idea = fascist_influence days = 1095 }
-					}
-					if = {
-						limit = { ROOT = { has_government = democratic } }
-						add_timed_idea = { idea = democratic_influence days = 1095 }
-					}
-					if = {
-						limit = { ROOT = { has_government = communism } }
-						add_timed_idea = { idea = communist_influence days = 1095 }
-					}
-					hidden_effect = {
-						country_event = { id = generic.1 }
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = SOV_claims_in_baltic
-		icon = GFX_goal_generic_more_territorial_claims
-		prerequisite = { focus = SOV_baltic_security }
-		x = 0
-		y = 1
-		relative_position_id = SOV_baltic_security
 		cost = 5
 
 		available = {
@@ -6329,92 +5959,11 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 
 		completion_reward = {
-			# Estonia
-			custom_effect_tooltip = SOV_estonian_claimed_states_tt
-			hidden_effect = {
-				EST = {
-					every_owned_state = {
-						limit = {
-							is_core_of = PREV
-						}
-						ROOT = { add_state_claim = PREV }
-					}
-				}
-			}
-			# Latvia
-			custom_effect_tooltip = SOV_latvian_claimed_states_tt
-			hidden_effect = {
-				LAT = {
-					every_owned_state = {
-						limit = {
-							is_core_of = PREV
-						}
-						ROOT = { add_state_claim = PREV }
-					}
-				}
-			}
-			# Lithuania
-			custom_effect_tooltip = SOV_lithuanian_claimed_states_tt
-			hidden_effect = {
-				LIT = {
-					every_owned_state = {
-						limit = {
-							is_core_of = PREV
-						}
-						ROOT = { add_state_claim = PREV }
-					}
-				}
-			}
-			#Activate targeted decisions
 			annex_country = { target = LAT  }
 			annex_country = { target = LIT  }
 			annex_country = { target = EST  }
 			add_named_threat = { threat = 1 name = SOV_claims_in_baltic }
 			add_political_power = -225
-		}
-	}
-
-	focus = {
-		id = SOV_secure_leningrad
-		icon = GFX_focus_generic_attack_finland
-		prerequisite = {  focus = SOV_claims_in_baltic }
-		x = 0
-		y = 1
-		relative_position_id = SOV_claims_in_baltic
-		cost = 10
-		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				has_civil_war = yes
-			}	
-		}
-		dynamic = yes 
-
-		available = {
-			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
-			is_subject = no
-		}
-
-		bypass = {
-			has_full_control_of_state = 146
-		}
-		
-		search_filters = {FOCUS_FILTER_ANNEXATION}
-
-		completion_reward = {
-			add_state_claim = 146 # Karjala
-			146 = {
-				controller = {
-					set_country_flag = SOV_ultimatum_sent_flag #Add it for AI strats reasons
-					add_timed_idea = {
-						idea = communist_pressure
-						days = 365
-					}
-					country_event = { id = finland.1 hours = 16 random_hours = 8 }
-				}
-			}
 		}
 	}
 	focus = {

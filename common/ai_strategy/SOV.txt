@@ -213,34 +213,7 @@ SOV_anti_armor = {
 	}
 }
 
-claims_on_finland = {
-	allowed = {
-		original_tag = SOV
-	}
-	enable = {
-		has_completed_focus = SOV_secure_leningrad
-		country_exists = FIN
-		NOT = { controls_state = 146 } #Karelija
-		date > 1940.8.1
-	}
-	abort = {
-		OR = {
-			NOT = {
-				country_exists = FIN
-			}
-			FIN = {
-				has_government = ROOT
-			}
-			controls_state = 146 #Karelija
-		}
-	}
 
-	ai_strategy = {
-		type = antagonize
-		id = "FIN"
-		value = 200
-	}
-}
 
 germany_enemy = {
 	allowed = {

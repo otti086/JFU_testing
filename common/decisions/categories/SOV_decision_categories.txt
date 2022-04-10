@@ -94,22 +94,7 @@ SOV_great_patriotic_war = {
 		}
 	}	
 }
-SOV_national_academy_of_sciences_dec_cat = {
-	priority = 30
 
-	icon = SOV_soviet_academy_of_sciences
-
-	picture = GFX_decision_cat_picture_soviet_national_academy_of_sciences 
-
-	allowed = {
-		original_tag = SOV
-	}
-
-	visible = {
-		has_completed_focus = SOV_national_academies_of_sciences
-		has_civil_war = no
-	}
-}
 
 SOV_merge_designers_dec_cat = {
 	priority = 28
