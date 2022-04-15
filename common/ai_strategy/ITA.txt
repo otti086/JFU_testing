@@ -384,34 +384,6 @@ ITA_share_borders_with_GER_against_SOV = {
 	}
 }
 
-spain_scw_support_ITA_resistance = {
-	allowed = {
-		original_tag = ITA
-		has_dlc = "La Resistance"
-	}
-	enable = {
-		has_government = fascism
-		country_exists = SPA
-	}
-	abort = {
-		OR = {
-			NOT = { country_exists = SPA }
-			SPA = { has_completed_focus = SPA_join_the_allies }
-		}
-	}
-
-	ai_strategy = {
-		type = support
-		id = "SPA"
-		value = 100
-	}
-	ai_strategy = {
-		type = send_volunteers_desire
-		id = "SPA"
-		value = 100
-	}
-}
-
 ITA_stockpile_less_early_game = {
 	allowed = {
 		original_tag = ITA

@@ -3545,7 +3545,7 @@ SOV_failed_anglo_soviet_invasion_ai_strategies_effect = {
 
 SOV_manage_spanish_generals_exiled_in_ussr_effect = {
 	#log = "FROM is [FROM.GetName] // ROOT is [ROOT.GetName]" #Debug
-	#Exiled SPD/SPC Generals
+	#Exiled SPD/SPA Generals
 	if = { #Líster
 		limit = {
 			ROOT = { tag = SPD }
@@ -3624,81 +3624,6 @@ SOV_manage_spanish_generals_exiled_in_ussr_effect = {
 }
 
 #POUM brigades come to aid in the Soviet Civil War
-SOV_poum_brigades_to_soviet_civil_war_effect = {
-
-	add_equipment_to_stockpile = {
-		type = infantry_equipment
-		amount = 6000
-		producer = SPC
-	}
-	add_equipment_to_stockpile = {
-		type = support_equipment
-		amount = 600
-		producer = SPC
-	}
-
-	division_template = {
-		name = "International Marxist Brigades"
-		is_locked = yes
-		priority = 1
-		template_counter = 14
-		regiments = {
-			infantry = { x = 0 y = 0 }
-			infantry = { x = 0 y = 1 }
-			infantry = { x = 1 y = 0 }
-			infantry = { x = 1 y = 1 }
-		}
-	}
-
-	division_template = {
-		name = "POUM Special Brigades"
-		is_locked = yes
-		priority = 1
-		template_counter = 02
-		regiments = {
-			infantry = { x = 0 y = 0 }
-			infantry = { x = 0 y = 1 }
-			infantry = { x = 0 y = 2 }
-			infantry = { x = 1 y = 0 }
-			infantry = { x = 1 y = 1 }
-			infantry = { x = 1 y = 2 }
-		}
-		support = {
-			engineer = { x = 0 y = 0 }
-			recon = { x = 0 y = 1 }
-			artillery = { x = 0 y = 2 }
-			anti_tank = { x = 0 y = 3 }
-		}
-	}
-
-	division_template = {
-		name = "Brigada de las Juventudes del POUM"
-		template_counter = 0
-		division_names_group = SPD_INF_02
-		is_locked = yes
-		regiments = {
-			infantry = { x = 0 y = 0 }
-			infantry = { x = 0 y = 1 }
-			infantry = { x = 0 y = 2 }
-		}
-		support = {
-			engineer = { x = 0 y = 0 }
-		}
-	}
-
-	var:SOV_civil_war_start_state = {
-		create_unit = { #Int Marxist Brigades
-			division = "name = \"International Marxist Brigade\" division_template = \"International Marxist Brigades\" start_experience_factor = 0.7 start_equipment_factor = 1.0" owner = SOV count = 12
-		}
-		create_unit = { #POUM Special Brigades
-			division = "name = \"POUM Special Brigade\" division_template = \"POUM Special Brigades\" start_experience_factor = 1 start_equipment_factor = 1.0" owner = SOV count = 2
-		}
-		create_unit = { #Juventudes Sindicales
-			division = "name = \"Brigada de las Juventudes del POUM\" division_template = \"Brigada de las Juventudes del POUM\" start_experience_factor = 0.6 start_equipment_factor = 1.0" owner = SOV count = 6
-		}
-	}
-
-}
 
 SOV_damage_relocated_military_factories_effect = {
 	if = {

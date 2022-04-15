@@ -69,27 +69,14 @@ news_event = {
 		hidden_effect = {
 			if = {
 				limit = {
-					has_completed_focus = SPA_the_phalanx_ascendant
-				}
-				set_global_flag = SPR_falange_won
-			}
-			if = {
-				limit = {
-					has_completed_focus = SPA_unify_the_nationalist_front
+					has_completed_focus = SPR_unify_the_nationalist_front
 				}
 				set_global_flag = SPR_franco_won
 			}
 			if = {
 				limit = {
-					has_completed_focus = SPA_supremacy_of_the_communion
-				}
-				set_global_flag = SPR_carlists_won
-			}
-			if = {
-				limit = {
 					OR = {
-						tag = SPA
-						tag = SPB
+						tag = SPR
 					}
 				}
 				delete_unit_template_and_units = {
@@ -106,36 +93,14 @@ news_event = {
 				}
 				if = {
 					limit = {
-						tag = SPA
-						has_completed_focus = SPA_the_fifth_column
-					}
-					delete_unit_template_and_units = {
-						division_template = "Fifth Columnist Brigade"
-						disband = yes
-					}
-				}
-				if = {
-					limit = {
-						NOT = {
-							tag = SPB
-						}
-					}
-					delete_unit_template_and_units = {
-						division_template = "Requeté Carlista"
-						disband = yes
-					}
-				}
-				if = {
-					limit = {
-						tag = SPA
+						tag = SPR
 					}
 					every_state = {
 						limit = {
 							has_state_flag = SPR_core_of_spain_flag
 							has_state_flag = SPR_sided_with_nationalists_flag
 						}
-						remove_core_of = SPB
-						remove_core_of = SPC
+						remove_core_of = SPA
 						remove_core_of = SPD
 					}
 					every_state = {
@@ -144,8 +109,6 @@ news_event = {
 							has_state_flag = SPR_sided_with_republicans_flag
 						}
 						remove_core_of = SPA
-						remove_core_of = SPB
-						remove_core_of = SPC
 						remove_core_of = SPD
 						start_resistance = yes
 					}
@@ -154,58 +117,12 @@ news_event = {
 							limit = {
 								is_controlled_by = ROOT
 							}
-							remove_core_of = SPB
 							remove_core_of = SPD
-							remove_core_of = SPC
 							add_core_of = ROOT
 						}
 						else = {
-							remove_claim_by = SPB
-							remove_claim_by = SPC
 							remove_claim_by = SPD
 							add_claim_by = SPA
-						}
-					}
-				}
-				if = {
-					limit = {
-						tag = SPB
-					}
-					every_state = {
-						limit = {
-							has_state_flag = SPR_core_of_spain_flag
-							has_state_flag = SPR_sided_with_nationalists_flag
-						}
-						remove_core_of = SPA
-						remove_core_of = SPC
-						remove_core_of = SPD
-					}
-					every_state = {
-						limit = {
-							has_state_flag = SPR_core_of_spain_flag
-							has_state_flag = SPR_sided_with_republicans_flag
-						}
-						remove_core_of = SPB
-						remove_core_of = SPA
-						remove_core_of = SPC
-						remove_core_of = SPD
-						start_resistance = yes
-					}
-					118 = {
-						if = {
-							limit = {
-								is_controlled_by = ROOT
-							}
-							remove_core_of = SPA
-							remove_core_of = SPD
-							remove_core_of = SPC
-							add_core_of = ROOT							
-						}
-						else = {
-							remove_claim_by = SPA
-							remove_claim_by = SPC
-							remove_claim_by = SPD
-							add_claim_by = SPB
 						}
 					}
 				}
@@ -255,27 +172,6 @@ news_event = {
 			}
 		}
 	}
-	
-	option = {
-		name = lar_news.1.a
-		trigger = {
-			country_exists = SPB
-			SPB = { has_capitulated = no }
-			NOT = { tag = SPB }
-			NOT = { original_tag = SPR }
-			has_government = neutrality
-		}
-	}
-	option = {
-		name = lar_news.1.b
-		trigger = {
-			country_exists = SPB
-			SPB = { has_capitulated = no }
-			NOT = { tag = SPB }
-			NOT = { original_tag = SPR }
-			NOT = { has_government = neutrality }
-		}
-	}
 	option = {
 		name = lar_news.1.c
 		trigger = {
@@ -319,9 +215,9 @@ news_event = {
 		name = lar_news.1.e
 		trigger = {
 			tag = SOV
-			country_exists = SPA
+			country_exists = SPR
 			SPA = { has_capitulated = no }
-			NOT = { tag = SPA }
+			NOT = { tag = SPR }
 			NOT = { original_tag = SPR }
 		}
 	}
@@ -329,8 +225,7 @@ news_event = {
 		name = lar_news.1.f
 		trigger = {
 			OR = {
-				tag = SPA
-				tag = SPB
+				tag = SPR
 			}
 		}
 		effect_tooltip = {
@@ -346,27 +241,10 @@ news_event = {
 				division_template = "Brigada de la Guardia Civil"
 				disband = yes
 			}
-			if = {
-				limit = {
-					tag = SPA
-					has_completed_focus = SPA_the_fifth_column
-				}
-				delete_unit_template_and_units = {
-					division_template = "Fifth Columnist Brigade"
-					disband = yes
-				}
-			}
-			if = {
-				limit = {
-					NOT = {
-						tag = SPB
-					}
-				}
-				delete_unit_template_and_units = {
+			delete_unit_template_and_units = {
 					division_template = "Requeté Carlista"
 					disband = yes
 				}
-			}
 			remove_ideas = SPA_death_before_surrender
 			if = {
 				limit = {
@@ -383,7 +261,7 @@ news_event = {
 			}
 			if = {
 				limit = {
-					tag = SPA
+					tag = SPR
 				}
 				every_state = {
 					limit = {
@@ -401,31 +279,7 @@ news_event = {
 						add_core_of = ROOT
 					}
 					else = {
-						add_claim_by = SPA
-					}
-				}
-			}
-			if = {
-				limit = {
-					tag = SPB
-				}
-				every_state = {
-					limit = {
-						has_state_flag = SPR_core_of_spain_flag
-						has_state_flag = SPR_sided_with_republicans_flag
-					}
-					remove_core_of = SPB
-					start_resistance = yes
-				}
-				118 = {
-					if = {
-						limit = {
-							is_controlled_by = ROOT
-						}
-						add_core_of = ROOT
-					}
-					else = {
-						add_claim_by = SPB
+						add_claim_by = SPR
 					}
 				}
 			}
@@ -463,14 +317,14 @@ news_event = {
 		text = lar_news.2.desc_republic_no_help
 		trigger = {
 			has_global_flag = SPR_democrats_won
-			NOT = { SPD = {  has_completed_focus = SPR_expand_soviet_aid } }
+			NOT = { SPD = {  has_completed_focus = SPA_expand_soviet_aid } }
 		}
 	}
 	desc = {
 		text = lar_news.2.desc_republic_soviet_help
 		trigger = {
 			has_global_flag = SPR_democrats_won
-			SPD = { has_completed_focus = SPR_expand_soviet_aid }
+			SPD = { has_completed_focus = SPA_expand_soviet_aid }
 		}
 	}
 	desc = {
@@ -501,41 +355,15 @@ news_event = {
 		hidden_effect = {
 			if = {
 				limit = {
-					has_completed_focus = SPR_regional_defense_council_of_aragon
-				}
-				set_global_flag = SPR_anarchists_won
-			}
-			if = {
-				limit = {
-					has_completed_focus = SPR_hinder_nkvd_interference
-				}
-				set_global_flag = SPR_poum_won
-			}
-			if = {
-				limit = {
-					has_completed_focus = SPR_the_stalinist_doctrine
-				}
-				set_global_flag = SPR_stalinists_won
-			}
-			if = {
-				limit = {
-					has_completed_focus = SPR_maintain_the_second_republic
+					has_completed_focus = SPA_maintain_the_second_republic
 				}
 				set_global_flag = SPR_democrats_won
 			}
 			if = {
 				limit = {
 					OR = {
-						tag = SPC
-						tag = SPD
+						tag = SPA
 					}
-				}
-				if = {
-					limit = {
-						tag = SPC
-						SPC = { has_completed_focus = SPR_regional_defense_council_of_aragon }
-					}
-					set_global_flag = { flag = SPR_anarchist_victory_timer_flag value = 1 days = 365 }
 				}
 				delete_unit_template_and_units = {
 					division_template = "Guarnición Republicana"
@@ -564,112 +392,6 @@ news_event = {
 				delete_unit_template_and_units = {
 					division_template = "Brigada Anarquista"
 					disband = yes
-				}
-
-				if = {
-					limit = {
-						tag = SPC
-					}
-
-					# If POUM wins and Right Oppo Soviets aided them
-					if = {
-						limit = {
-							has_template = "International Marxist Brigades"
-						}
-						delete_unit_template_and_units = {
-							division_template = "International Marxist Brigades"
-							disband = yes
-						}
-					}
-					if = {
-						limit = {
-							has_template = "Soviet Special Brigades"
-						}
-						delete_unit_template_and_units = {
-							division_template = "Soviet Special Brigades"
-							disband = yes
-						}
-					}
-
-					every_state = {
-						limit = {
-							has_state_flag = SPR_core_of_spain_flag
-							has_state_flag = SPR_sided_with_republicans_flag
-						}
-						remove_core_of = SPA
-						remove_core_of = SPB
-						remove_core_of = SPD
-					}
-					every_state = {
-						limit = {
-							has_state_flag = SPR_core_of_spain_flag
-							has_state_flag = SPR_sided_with_nationalists_flag
-						}
-						remove_core_of = SPC
-						remove_core_of = SPB
-						remove_core_of = SPD
-						remove_core_of = SPA
-						start_resistance = yes
-					}
-					118 = {
-						if = {
-							limit = {
-								is_controlled_by = ROOT
-							}
-							remove_core_of = SPA
-							remove_core_of = SPB
-							remove_core_of = SPD
-							add_core_of = ROOT
-						}
-						else = {
-							remove_claim_by = SPB
-							remove_claim_by = SPA
-							remove_claim_by = SPD
-							add_claim_by = SPC
-						}
-					}
-				}
-				if = {
-					limit = {
-						tag = SPD
-					}
-					every_state = {
-						limit = {
-							has_state_flag = SPR_core_of_spain_flag
-							has_state_flag = SPR_sided_with_republicans_flag
-						}
-						remove_core_of = SPA
-						remove_core_of = SPB
-						remove_core_of = SPC
-					}
-					every_state = {
-						limit = {
-							has_state_flag = SPR_core_of_spain_flag
-							has_state_flag = SPR_sided_with_nationalists_flag
-						}
-						remove_core_of = SPD
-						remove_core_of = SPB
-						remove_core_of = SPC
-						remove_core_of = SPA
-						start_resistance = yes
-					}
-					118 = {
-						if = {
-							limit = {
-								is_controlled_by = ROOT
-							}
-							remove_core_of = SPA
-							remove_core_of = SPB
-							remove_core_of = SPC
-							add_core_of = ROOT
-						}
-						else = {
-							remove_claim_by = SPA
-							remove_claim_by = SPB
-							remove_claim_by = SPC
-							add_claim_by = SPD
-						}
-					}
 				}
 				remove_ideas = SPR_death_before_surrender
 				add_timed_idea = { idea = SPA_recovering_from_civil_war days = 2190 }
@@ -728,7 +450,7 @@ news_event = {
 				}
 				if = {
 					limit = {
-						has_completed_focus = SPR_expand_soviet_aid
+						has_completed_focus = SPA_expand_soviet_aid
 					}
 					SOV = {
 						country_event = { id = lar_spain.81 hours = 6 }
@@ -736,131 +458,6 @@ news_event = {
 					country_event = { id = lar_spain.82 hours = 6 }
 				}
 			}
-
-			#If POUM supported by SOV and won and SOV has not won/bypasssed their civil war yet -> POUM will help SOV in their CW
-			if = {
-				limit = {
-					has_global_flag = SOV_covert_support_for_poum_flag
-					has_global_flag = SPR_poum_won
-					SOV = {
-						OR = { #Do not trigger if Soviet civil war has finished or was bypassed
-							has_global_flag = SOV_soviet_civil_war
-						}
-					}
-				}
-				SOV = { country_event = { id = NSB_soviet_spanish_civil_war.6 days = 8 random_days = 4 } }
-			}
-		}
-	}
-	
-	option = {
-		name = lar_news.2.a
-		trigger = {
-			country_exists = SPC
-			SPC = { has_capitulated = no }
-			NOT = { tag = SPC }
-			NOT = { original_tag = SPR }
-			SPC = { has_completed_focus = SPR_regional_defense_council_of_aragon }
-		}
-	}
-	option = {
-		name = lar_news.2.b
-		trigger = {
-			NOT = { tag = SOV }
-			NOT = { original_tag = SPR }
-			NOT = {
-				AND = {
-					tag = MEX
-					has_country_leader = {
- 						character = MEX_leon_trotsky
- 					}
-				}
-			}
-			NOT = {
-				is_in_faction_with = SOV
-				AND = {
-					is_in_faction_with = MEX
-					MEX = {
-						has_country_leader = {
- 							character = MEX_leon_trotsky
- 						}
-					}
-				}
-			}
-			has_government = communism
-			country_exists = SPC
-			SPC = { has_capitulated = no }
-			NOT = { tag = SPC }
-			SPC = { has_completed_focus = SPR_hinder_nkvd_interference }
-		}
-	}
-	option = {
-		name = lar_news.2.c
-		trigger = {
-			NOT = { tag = SOV }
-			NOT = { original_tag = SPR }
-			NOT = {
-				AND = {
-					tag = MEX
-					has_country_leader = {
- 						character = MEX_leon_trotsky
- 					}
-				}
-			}
-			NOT = {
-				is_in_faction_with = SOV
-				AND = {
-					is_in_faction_with = MEX
-					MEX = {
-						has_country_leader = {
- 							character = MEX_leon_trotsky
- 						}
-					}
-				}
-			}
-			NOT = {
-				AND = {
-					tag = GER
-					has_government = fascism
-				}
-				AND = {
-					tag = ITA
-					has_government = fascism
-				}
-			}
-			NOT = { has_government = communism }
-			country_exists = SPC
-			SPC = { has_capitulated = no }
-			NOT = { tag = SPC }
-			SPC = { has_completed_focus = SPR_hinder_nkvd_interference }
-		}
-	}
-	option = {
-		name = lar_news.2.d
-		trigger = {
-			NOT = { original_tag = SPR }
-			OR = {
-				tag = SOV
-				is_in_faction_with = SOV
-				AND = {
-					tag = MEX
-					has_country_leader = {
- 						character = MEX_leon_trotsky
- 					}
-				}
-				AND = {
-					is_in_faction_with = MEX
-					MEX = {
-						has_country_leader = {
- 							character = MEX_leon_trotsky
- 						}
-					}
-				}
-			}
-			country_exists = SPC
-			SPC = { has_capitulated = no }
-			NOT = { tag = SPC }
-			SPC = { has_completed_focus = SPR_hinder_nkvd_interference }
 		}
 	}
 	option = {
@@ -882,8 +479,7 @@ news_event = {
 				has_government = communism
 			}
 			NOT = {
-				SPD = { has_completed_focus = SPR_the_stalinist_doctrine }
-				SPD = { has_completed_focus = SPR_expand_soviet_aid }
+				SPD = { has_completed_focus = SPA_expand_soviet_aid }
 			}
 			country_exists = SPD
 			SPD = { has_capitulated = no }
@@ -896,8 +492,7 @@ news_event = {
 			NOT = { original_tag = SPR }
 			tag = SOV
 			NOT = {
-				SPD = { has_completed_focus = SPR_the_stalinist_doctrine }
-				SPD = { has_completed_focus = SPR_expand_soviet_aid }
+				SPD = { has_completed_focus = SPA_expand_soviet_aid }
 			}
 			country_exists = SPD
 			SPD = { has_capitulated = no }
@@ -910,8 +505,7 @@ news_event = {
 			NOT = { original_tag = SPR }
 			tag = SOV
 			OR = {
-				SPD = { has_completed_focus = SPR_the_stalinist_doctrine }
-				SPD = { has_completed_focus = SPR_expand_soviet_aid }
+				SPD = { has_completed_focus = SPA_expand_soviet_aid }
 			}
 			country_exists = SPD
 			SPD = { has_capitulated = no }
@@ -934,8 +528,7 @@ news_event = {
 				}
 			}
 			OR = {
-				SPD = { has_completed_focus = SPR_the_stalinist_doctrine }
-				SPD = { has_completed_focus = SPR_expand_soviet_aid }
+				SPD = { has_completed_focus = SPA_expand_soviet_aid }
 			}
 			country_exists = SPD
 			SPD = { has_capitulated = no }
@@ -966,14 +559,13 @@ news_event = {
 		trigger = {
 			OR = {
 				tag = SPD
-				tag = SPC
+				tag = SPA
 			}
 		}
 		effect_tooltip = {
 			if = {
 				limit = {
-					tag = SPC
-					SPC = { has_completed_focus = SPR_regional_defense_council_of_aragon }
+					tag = D
 				}
 				set_global_flag = { flag = SPR_anarchist_victory_timer_flag value = 1 days = 365 }
 			}
@@ -1033,14 +625,14 @@ news_event = {
 			}
 			if = {
 				limit = {
-					tag = SPC
+					tag = SPD
 				}
 				every_state = {
 					limit = {
 						has_state_flag = SPR_core_of_spain_flag
 						has_state_flag = SPR_sided_with_nationalists_flag
 					}
-					remove_core_of = SPC
+					remove_core_of = SPD
 					start_resistance = yes
 				}
 				118 = {
@@ -1051,7 +643,7 @@ news_event = {
 						add_core_of = ROOT
 					}
 						else = {
-						add_claim_by = SPC
+						add_claim_by = SPD
 					}
 				}
 			}
@@ -1412,14 +1004,6 @@ news_event = {
 	major = yes
 	
 	is_triggered_only = yes
-	
-	option = {
-		name = lar_news.10.a # Carlist
-		trigger = {
-			NOT = { has_global_flag = scw_early_end }
-			tag = SPB
-		}
-	}
 	option = {
 		name = lar_news.10.b # Falangist/Francoist or anyone helping them
 		trigger = {
@@ -1440,8 +1024,7 @@ news_event = {
 		trigger = {
 			has_global_flag = scw_early_end
 			OR = {
-				tag = SPA
-				tag = SPB
+				tag = SPR
 				has_country_flag = SPR_sent_volunteers_to_SPA_flag
 			}
 		}
@@ -1452,14 +1035,14 @@ news_event = {
 			NOT = { has_global_flag = scw_early_end }
 			OR = {
 				tag = SPD
-				tag = SPC
+				tag = SPA
 				SPD = {
 					has_volunteers_amount_from = {
 					    tag = ROOT
 					    count > 0
 					}
 				}
-				SPC = {
+				SPA = {
 					has_volunteers_amount_from = {
 					    tag = ROOT
 					    count > 0
@@ -1481,8 +1064,7 @@ news_event = {
 			NOT = { has_global_flag = scw_early_end }
 			NOT = {
 				tag = SPA
-				tag = SPB
-				tag = SPC
+				tag = SPR
 				tag = SPD
 				SPA = {
 					has_volunteers_amount_from = {
@@ -1504,8 +1086,7 @@ news_event = {
 		trigger = {
 			has_global_flag = scw_early_end
 			NOT = {
-				tag = SPA
-				tag = SPB
+				tag = SPR
 				has_country_flag = SPR_sent_volunteers_to_SPD_flag
 			}
 		}
@@ -1539,15 +1120,8 @@ news_event = {
 		trigger = {
 			NOT = { has_global_flag = scw_early_end }
 			OR = {
-				tag = SPA
-				tag = SPB
-				SPA = {
-					has_volunteers_amount_from = {
-					    tag = ROOT
-					    count > 0
-					}
-				}
-				SPB = {
+				tag = SPR
+				SPR = {
 					has_volunteers_amount_from = {
 					    tag = ROOT
 					    count > 0
@@ -1577,7 +1151,7 @@ news_event = {
 			has_global_flag = scw_early_end
 			OR = {
 				tag = SPD
-				tag = SPC
+				tag = SPA
 				has_country_flag = SPR_sent_volunteers_to_SPD_flag
 			}
 		}
@@ -1586,7 +1160,7 @@ news_event = {
 		name = lar_news.11.c # Anarchists
 		trigger = {
 			NOT = { has_global_flag = scw_early_end }
-			tag = SPC
+			tag = SPD
 		}
 	}
 	option = {
@@ -1602,16 +1176,9 @@ news_event = {
 			NOT = { has_global_flag = scw_early_end }
 			NOT = {
 				tag = SPA
-				tag = SPB
-				tag = SPC
+				tag = SPR
 				tag = SPD
 				SPA = {
-					has_volunteers_amount_from = {
-					    tag = ROOT
-					    count > 0
-					}
-				}
-				SPB = {
 					has_volunteers_amount_from = {
 					    tag = ROOT
 					    count > 0
@@ -1632,7 +1199,7 @@ news_event = {
 			has_global_flag = scw_early_end
 			NOT = {
 				tag = SPD
-				tag = SPC
+				tag = SPA
 				has_country_flag = SPR_sent_volunteers_to_SPA_flag
 			}
 		}
@@ -1867,274 +1434,6 @@ news_event = {
 	}
 }
 
-# News event - Carlist Spanish monarchy restoration
-news_event = {
-	id = lar_news.17
-	title = lar_news.17.t
-	desc = lar_spain.35.desc
-	picture = GFX_news_event_royal_visit
-	
-	major = yes
-	
-	is_triggered_only = yes
-
-	immediate = {
-		hidden_effect = {
-			if = {
-				limit = {
-					original_tag = SPR
-				}
-				if = {
-					limit = {
-						has_country_flag = SPB_xavier_king
-					}
-					create_country_leader = {
-						name = "Javier I"
-						desc = "POLITICS_JAVIER_I_DESC"
-						picture = "GFX_portrait_SPA_xavier_of_bourbon_parma"
-						expire = "1965.1.1"
-						ideology = despotism
-						traits = {
-							the_sacred_king
-						}
-					}
-				}
-				if = {
-					limit = {
-						NOT = { has_country_flag = SPB_xavier_king }
-						NOT = { has_global_flag = SPB_alfonso_xiii_dead }
-					}
-					create_country_leader = {
-						name = "Alfonso XIII"
-						desc = "POLITICS_ALFONSO_XIII_DESC"
-						picture = "GFX_portrait_SPA_alfonso_xiii"
-						expire = "1965.1.1"
-						ideology = despotism
-						traits = {
-							disgraced_monarch
-						}
-					}
-				}
-				if = {
-					limit = {
-						NOT = { has_country_flag = SPB_xavier_king }
-						has_global_flag = SPB_alfonso_xiii_dead
-					}
-					create_country_leader = {
-						name = "Jaime IV"
-						desc = "POLITICS_JAIME_IV_DESC"
-						picture = "GFX_portrait_fra_infante_jaime"
-						expire = "1965.1.1"
-						ideology = despotism
-						traits = {
-							the_legitimist
-						}
-					}
-				}
-			}
-		}
-	}
-	
-	option = {
-		name = lar_spain.35.a # Spain
-		trigger = {
-			original_tag = SPR
-		}
-		drop_cosmetic_tag = yes
-		set_cosmetic_tag = SPB_kingdom
-		effect_tooltip = {
-			if = {
-				limit = {
-					has_country_flag = SPB_xavier_king
-				}
-				create_country_leader = {
-					name = "Javier I"
-					desc = "POLITICS_JAVIER_I_DESC"
-					picture = "GFX_portrait_SPA_xavier_of_bourbon_parma"
-					expire = "1965.1.1"
-					ideology = despotism
-					traits = {
-						the_sacred_king
-					}
-				}
-			}
-			if = {
-				limit = {
-					NOT = { has_country_flag = SPB_xavier_king }
-					NOT = { has_global_flag = SPB_alfonso_xiii_dead }
-				}
-				create_country_leader = {
-					name = "Alfonso XIII"
-					desc = "POLITICS_ALFONSO_XIII_DESC"
-					picture = "GFX_portrait_SPA_alfonso_xiii"
-					expire = "1965.1.1"
-					ideology = despotism
-					traits = {
-						disgraced_monarch
-					}
-				}
-			}
-			if = {
-				limit = {
-					NOT = { has_country_flag = SPB_xavier_king }
-					has_global_flag = SPB_alfonso_xiii_dead
-				}
-				create_country_leader = {
-					name = "Jaime IV"
-					desc = "POLITICS_JAIME_IV_DESC"
-					picture = "GFX_portrait_fra_infante_jaime"
-					expire = "1965.1.1"
-					ideology = despotism
-					traits = {
-						the_legitimist
-					}
-				}
-			}
-		}
-	}
-	option = {
-		name = lar_news.17.b # Everyone else
-		trigger = {
-			NOT = {
-				original_tag = SPR
-			}
-		}
-	}
-}
-
-# News event - Francoist Spanish monarchy restoration
-news_event = {
-	id = lar_news.18
-	title = lar_news.17.t
-	desc = lar_news.18.desc
-	picture = GFX_news_event_royal_visit
-	
-	major = yes
-	
-	is_triggered_only = yes
-
-	immediate = {
-		hidden_effect = {
-			if = {
-				limit = {
-					original_tag = SPR
-				}
-				if = {
-					limit = {
-						has_country_flag = SPB_xavier_king
-					}
-					create_country_leader = {
-						name = "Javier I"
-						desc = "POLITICS_JAVIER_I_DESC"
-						picture = "GFX_portrait_SPA_xavier_of_bourbon_parma"
-						expire = "1965.1.1"
-						ideology = despotism
-						traits = {
-							the_sacred_king
-						}
-					}
-				}
-				if = {
-					limit = {
-						NOT = { has_country_flag = SPB_xavier_king }
-						NOT = { has_global_flag = SPB_alfonso_xiii_dead }
-					}
-					create_country_leader = {
-						name = "Alfonso XIII"
-						desc = "POLITICS_ALFONSO_XIII_DESC"
-						picture = "GFX_portrait_SPA_alfonso_xiii"
-						expire = "1965.1.1"
-						ideology = despotism
-						traits = {
-							disgraced_monarch
-						}
-					}
-				}
-				if = {
-					limit = {
-						NOT = { has_country_flag = SPB_xavier_king }
-						has_global_flag = SPB_alfonso_xiii_dead
-					}
-					create_country_leader = {
-						name = "Jaime IV"
-						desc = "POLITICS_JAIME_IV_DESC"
-						picture = "GFX_portrait_fra_infante_jaime"
-						expire = "1965.1.1"
-						ideology = despotism
-						traits = {
-							the_legitimist
-						}
-					}
-				}
-			}
-		}
-	}
-	
-	option = {
-		name = lar_news.18.a # Spain
-		trigger = {
-			original_tag = SPR
-		}
-		effect_tooltip = {
-			if = {
-				limit = {
-					has_country_flag = SPB_xavier_king
-				}
-				create_country_leader = {
-					name = "Javier I"
-					desc = "POLITICS_JAVIER_I_DESC"
-					picture = "GFX_portrait_SPA_xavier_of_bourbon_parma"
-					expire = "1965.1.1"
-					ideology = despotism
-					traits = {
-						the_sacred_king
-					}
-				}
-			}
-			if = {
-				limit = {
-					NOT = { has_country_flag = SPB_xavier_king }
-					NOT = { has_global_flag = SPB_alfonso_xiii_dead }
-				}
-				create_country_leader = {
-					name = "Alfonso XIII"
-					desc = "POLITICS_ALFONSO_XIII_DESC"
-					picture = "GFX_portrait_SPA_alfonso_xiii"
-					expire = "1965.1.1"
-					ideology = despotism
-					traits = {
-						disgraced_monarch
-					}
-				}
-			}
-			if = {
-				limit = {
-					NOT = { has_country_flag = SPB_xavier_king }
-					has_global_flag = SPB_alfonso_xiii_dead
-				}
-				create_country_leader = {
-					name = "Jaime IV"
-					desc = "POLITICS_JAIME_IV_DESC"
-					picture = "GFX_portrait_fra_infante_jaime"
-					expire = "1965.1.1"
-					ideology = despotism
-					traits = {
-						the_legitimist
-					}
-				}
-			}
-		}
-	}
-	option = {
-		name = lar_news.18.b # Everyone else
-		trigger = {
-			NOT = {
-				original_tag = SPR
-			}
-		}
-	}
-}
-
 # News event - Latin Bloc
 news_event = {
 	id = lar_news.19
@@ -2332,7 +1631,7 @@ news_event = {
 					has_state_flag = SPR_core_of_spain_flag
 					has_state_flag = SPR_sided_with_nationalists_flag
 				}
-				remove_core_of = SPC
+				remove_core_of = SPA
 				remove_core_of = SPD
 			}
 			every_state = {
@@ -2340,7 +1639,7 @@ news_event = {
 					has_state_flag = SPR_core_of_spain_flag
 					has_state_flag = SPR_sided_with_republicans_flag
 				}
-				remove_core_of = SPC
+				remove_core_of = SPA
 				remove_core_of = SPD
 			}
 			118 = {
@@ -2350,11 +1649,11 @@ news_event = {
 					}
 					add_core_of = ROOT
 					remove_core_of = SPD
-					remove_core_of = SPC
+					remove_core_of = SPA
 				}
 				else = {
-					add_claim_by = SPA
-					remove_claim_by = SPC
+					add_claim_by = SPR
+					remove_claim_by = SPA
 					remove_claim_by = SPD
 				}
 			}
@@ -2403,44 +1702,10 @@ news_event = {
 	}
 
 	option = {
-		name = lar_news.28.d
-		trigger = {
-			tag = SPA
-			has_completed_focus = SPA_the_phalanx_ascendant
-		}
-		#effect_tooltip = {
-		#	every_state = {
-		#		limit = {
-		#			has_state_flag = SPR_sided_with_republicans_flag
-		#		}
-		#		remove_core_of = ROOT
-		#		start_resistance = yes
-		#	}
-		#}
-	}
-
-	option = {
 		name = lar_news.28.e
 		trigger = {
-			tag = SPA
-			has_completed_focus = SPA_unify_the_nationalist_front
-		}
-		#effect_tooltip = {
-		#	every_state = {
-		#		limit = {
-		#			has_state_flag = SPR_sided_with_republicans_flag
-		#		}
-		#		remove_core_of = ROOT
-		#		start_resistance = yes
-		#	}
-		#}
-	}
-
-	option = {
-		name = lar_news.28.f
-		trigger = {
-			tag = SPA
-			has_completed_focus = SPA_supremacy_of_the_communion
+			tag = SPR
+			has_completed_focus = SPR_unify_the_nationalist_front
 		}
 		#effect_tooltip = {
 		#	every_state = {
@@ -2473,16 +1738,14 @@ news_event = {
 					has_state_flag = SPR_core_of_spain_flag
 					has_state_flag = SPR_sided_with_republicans_flag
 				}
-				remove_core_of = SPA
-				remove_core_of = SPB
+				remove_core_of = SPR
 			}
 			every_state = {
 				limit = {
 					has_state_flag = SPR_core_of_spain_flag
 					has_state_flag = SPR_sided_with_nationalists_flag
 				}
-				remove_core_of = SPB
-				remove_core_of = SPA
+				remove_core_of = SPR
 			}
 			118 = {
 				if = {
@@ -2490,13 +1753,11 @@ news_event = {
 						is_controlled_by = ROOT
 					}
 					add_core_of = ROOT
-					remove_core_of = SPA
-					remove_core_of = SPB
+					remove_core_of = SPR
 				}
 				else = {
 					add_claim_by = SPD
-					remove_claim_by = SPA
-					remove_claim_by = SPB
+					remove_claim_by = SPR
 				}
 			}
 		}
@@ -2543,14 +1804,10 @@ news_event = {
 		}
 	}
 
-	option = { # SPC
+	option = { # SPD
 		name = lar_news.29.d
 		trigger = {
 			tag = SPD
-			OR = {
-				has_completed_focus = SPR_regional_defense_council_of_aragon
-				has_completed_focus = SPR_hinder_nkvd_interference
-			}
 		}
 		#effect_tooltip = {
 		#	every_state = {
@@ -2568,8 +1825,7 @@ news_event = {
 		trigger = {
 			tag = SPD
 			OR = {
-				has_completed_focus = SPR_maintain_the_second_republic
-				has_completed_focus = SPR_the_stalinist_doctrine
+				has_completed_focus = SPA_maintain_the_second_republic
 			}
 		}
 		#effect_tooltip = {

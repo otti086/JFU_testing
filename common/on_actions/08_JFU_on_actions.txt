@@ -94,7 +94,9 @@ on_actions = {
 				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 815 }
 			}
 			SWE = { JFU_startup_on_action = yes }
-
+			SPR = {
+				country_event = { id = lar_spain.2 days = 230 }
+			}
 		}
 		
 	}

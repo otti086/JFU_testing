@@ -1001,14 +1001,6 @@ opinion_modifiers = {
 		value = 25
 	}
 
-	SPR_hinder_nkvd_interference = {
-		value = -50
-	}
-	
-	SPR_the_stalinist_doctrine = {
-		value = 25
-	}
-
 	SPR_subvert_soviet_control = {
 		value = -50
 	}

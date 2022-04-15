@@ -1378,7 +1378,7 @@ ideas = {
 		}
 
 		SOV_face_western_fascism_ns = {
-			picture = SPR_the_popular_front
+			picture = SPA_the_popular_front
 
 			removal_cost = -1
 			

@@ -2817,7 +2817,7 @@ country_event = {
 		
 		if = { #Spanish POUM -> Not actually transfering them, just creating spoawning them
 			limit = {
-				tag = SPC
+				tag = SPD
 			}
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
@@ -3984,7 +3984,7 @@ unit_leader_event = {
 	}
 }
 
-# POUM - SOV has organized International Marxist Brigades -> Event for SPC
+# POUM - SOV has organized International Marxist Brigades -> Event for SPD
 country_event = {
 	id = NSB_soviet_spanish_civil_war.2
 	title = NSB_soviet_spanish_civil_war.2.t
@@ -4021,7 +4021,7 @@ country_event = {
 	}
 }
 
-# POUM - SOV has sent special commandos -> Event for SPC
+# POUM - SOV has sent special commandos -> Event for SPD
 country_event = {
 	id = NSB_soviet_spanish_civil_war.3
 	title = NSB_soviet_spanish_civil_war.3.t
@@ -4071,7 +4071,7 @@ country_event = {
 	}
 }
 
-# POUM - SOV has organized popular speeches in the country -> Event for SPC
+# POUM - SOV has organized popular speeches in the country -> Event for SPD
 country_event = {
 	id = NSB_soviet_spanish_civil_war.4
 	title = NSB_soviet_spanish_civil_war.4.t
@@ -4113,7 +4113,7 @@ country_event = {
 	}
 }
 
-# POUM - SOV has infiltrate the Stalinist command in Spain -> Event for SPC
+# POUM - SOV has infiltrate the Stalinist command in Spain -> Event for SPD
 country_event = {
 	id = NSB_soviet_spanish_civil_war.5
 	title = NSB_soviet_spanish_civil_war.5.t
@@ -4171,17 +4171,6 @@ country_event = {
 		}
 		
 		custom_effect_tooltip = SOV_poum_aid_in_case_of_civil_War_tt
-	}
-
-	#Let's kick some asses! -> Soviet Civil War is ongoing
-	option = {
-		name = NSB_soviet_spanish_civil_war.6.a
-
-		trigger = {
-			has_global_flag = SOV_soviet_civil_war
-		}
-
-		SOV_poum_brigades_to_soviet_civil_war_effect = yes
 	}
 }
 

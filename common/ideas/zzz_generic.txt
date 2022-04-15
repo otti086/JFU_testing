@@ -1270,7 +1270,7 @@ ideas = {
 				}
 				NOT = {
 					AND = {
-						OR = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD }
+						OR = { tag = SPR tag = SPA   tag = SPD }
 						has_dlc = "La Resistance"
 					}
 				}
@@ -1326,7 +1326,7 @@ ideas = {
 				}
 				NOT = {
 					AND = {
-						OR = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD }
+						OR = { tag = SPR tag = SPA  tag = SPD }
 						has_dlc = "La Resistance"
 					}
 				}
@@ -1377,7 +1377,7 @@ ideas = {
 				}
 				NOT = {
 					AND = {
-						OR = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD }
+						OR = { tag = SPR tag = SPA  tag = SPD }
 						has_dlc = "La Resistance"
 					}
 				}
@@ -1428,7 +1428,7 @@ ideas = {
 				}
 				NOT = {
 					AND = {
-						OR = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD  }
+						OR = { tag = SPR tag = SPA   tag = SPD  }
 						has_dlc = "La Resistance"
 					}
 				}
@@ -1475,7 +1475,7 @@ ideas = {
 				}
 				NOT = {
 					AND = {
-						OR = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD  }
+						OR = { tag = SPR tag = SPA  tag = SPD  }
 						has_dlc = "La Resistance"
 					}
 				}
@@ -1523,7 +1523,7 @@ ideas = {
 				}
 				NOT = {
 					AND = {
-						OR = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD }
+						OR = { tag = SPR tag = SPA  tag = SPD }
 						has_dlc = "La Resistance"
 					}
 				}
@@ -1571,7 +1571,7 @@ ideas = {
 				}
 				NOT = {
 					AND = {
-						OR = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD }
+						OR = { tag = SPR tag = SPA  tag = SPD }
 						has_dlc = "La Resistance"
 					}
 				}
@@ -1621,7 +1621,7 @@ ideas = {
 				}
 				NOT = {
 					AND = {
-						OR = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD  }
+						OR = { tag = SPR tag = SPA  tag = SPD  }
 						has_dlc = "La Resistance"
 					}
 				}
@@ -1666,7 +1666,7 @@ ideas = {
 				}
 				NOT = {
 					AND = {
-						OR = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD  }
+						OR = { tag = SPR tag = SPA  tag = SPD  }
 						has_dlc = "La Resistance"
 					}
 				}
@@ -1711,7 +1711,7 @@ ideas = {
 				}
 				NOT = {
 					AND = {
-						OR = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD  }
+						OR = { tag = SPR tag = SPA tag = SPD  }
 						has_dlc = "La Resistance"
 					}
 				}

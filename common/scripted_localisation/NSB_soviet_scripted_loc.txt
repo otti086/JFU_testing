@@ -1135,7 +1135,7 @@ defined_text = {
 	name = GetInfantryEquipmentGFX
 	text = { #POUM
 		trigger = {
-			tag = SPC
+			tag = SPD
 		}
 		localization_key = GFX_report_event_spr_anarchists2
 	}

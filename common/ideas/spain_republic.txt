@@ -932,7 +932,7 @@ ideas = {
 			picture = SPR_masters_of_our_own_fate
 
 			allowed = {
-				original_tag = SPR
+				original_tag = SPA
 				NOT = { has_government = fascism }
 			}
 
@@ -954,7 +954,7 @@ ideas = {
 			#picture = 
 
 			allowed = {
-				original_tag = SPR
+				original_tag = SPA
 				NOT = { has_government = fascism }
 			}
 
@@ -969,12 +969,13 @@ ideas = {
 			}
 		}
 
+
 		SPR_crush_the_revolution = {
 
 			picture = SPR_crush_the_revolution
 
 			allowed = {
-				original_tag = SPR
+				original_tag = SPA
 				NOT = { has_government = fascism }
 			}
 
@@ -1297,7 +1298,7 @@ ideas = {
 
 			name = SPR_popular_front
 
-			picture = SPR_the_popular_front
+			picture = SPA_the_popular_front
 
 			allowed = {
 				original_tag = SPR
@@ -1322,7 +1323,7 @@ ideas = {
 
 			name = SPR_popular_front
 
-			picture = SPR_the_popular_front
+			picture = SPA_the_popular_front
 
 			allowed = {
 				original_tag = SPR
@@ -1346,7 +1347,7 @@ ideas = {
 
 			name = SPR_popular_front
 
-			picture = SPR_the_popular_front
+			picture = SPA_the_popular_front
 
 			allowed = {
 				original_tag = SPR
@@ -1371,7 +1372,7 @@ ideas = {
 
 			name = SPR_popular_front
 
-			picture = SPR_the_popular_front
+			picture = SPA_the_popular_front
 
 			allowed = {
 				original_tag = SPR

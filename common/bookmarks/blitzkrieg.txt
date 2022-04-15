@@ -269,9 +269,7 @@ bookmarks = {
 				SPA_recovering_from_civil_war
 			}
 			focuses = {
-				SPA_expand_the_axis_gold_trade
-				SPA_the_spanish_miracle
-				SPA_retake_gibraltar
+				SPR_expand_the_axis_gold_trade
 			}
 		}
 		"BUL"={

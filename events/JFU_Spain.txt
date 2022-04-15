@@ -1,0 +1,665 @@
+﻿add_namespace = lar_spain 
+
+country_event = {
+	id = lar_spain.1
+	title = spain.9.t
+	desc = lar_spain.1.desc
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SPR
+	}
+
+	immediate = {
+		hidden_effect = {
+			every_state = {
+				limit = {
+					is_core_of = SPR
+				}
+				add_core_of = SPA
+			}
+		}
+	}
+
+	# Falange
+	option = {
+		name = lar_spain.1.b
+		trigger = {
+			tag = SPR
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.1
+		}
+	}
+}
+country_event = {
+	id = lar_spain.2
+	title = lar_spain.2.t
+	desc = lar_spain.2.desc
+	picture = GFX_report_event_spain_civil_war_soldiers
+	
+	is_triggered_only = yes
+
+
+	option = { # Option for Nationalists - Franco
+		name = lar_spain.2.a
+		trigger = { tag = SPR }
+		# Remove Spirits that will no longer be relevant
+		custom_effect_tooltip = nationalists_chosen
+		remove_ideas = SPR_military_disloyalty
+		remove_ideas = SPR_political_violence
+		SPR_clr_national_strikes = yes
+		effect_tooltip = {
+			add_timed_idea = { idea = SPA_death_before_surrender days = 900 }
+			set_party_name = { ideology = neutrality long_name = SPR_neutrality_military_junta_party_long name = SPR_neutrality_military_junta_party }
+			kill_ideology_leader = fascism
+		}
+		complete_national_focus = SPR_unify_the_nationalist_front
+		
+		hidden_effect = {
+			SPA = { 
+				transfer_state = 41
+			}
+			SPA = { 
+				set_politics = {
+					ruling_party = democratic
+				}
+				set_popularities = {
+					democratic = 50
+					neutrality = 11
+					communism = 39
+				}
+				retire_ideology_leader = democratic
+				retire_ideology_leader = neutrality
+				retire_ideology_leader = communism
+				retire_ideology_leader = fascism
+				retire_ideology_leader = neutrality
+				create_country_leader = {
+					name = "Manuel Azaña"
+					desc = "POLITICS_MANUEL_AZANA_DESC"
+					picture = "Portrait_Spain_Manuel_Azana.dds"
+					expire = "1965.1.1"
+					ideology = conservatism
+					traits = {
+						figurehead_president
+					}
+				}
+			}
+			set_cosmetic_tag = SPR_nationalist_spain
+			set_politics = {
+				ruling_party = neutrality
+			}
+			add_popularity = {
+				ideology = democratic
+				 popularity = -0.25
+			}
+			add_popularity = {
+			   ideology = communism
+			    popularity = -0.1
+			}
+			add_war_support = 0.3
+			set_capital = { state = 176 }
+			kill_country_leader = yes
+			create_country_leader = {
+				name = "José Sanjurjo"
+				desc = "POLITICS_JOSE_SANJURJO_DESC"
+				picture = "GFX_portrait_SPA_jose_sanjurjo"
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+					the_lion_of_the_rif
+				}
+			}
+			set_party_name = { ideology = neutrality long_name = SPR_neutrality_military_junta_party_long name = SPR_neutrality_military_junta_party }
+			add_timed_idea = { idea = SPA_death_before_surrender days = 900 }
+			set_global_flag = spanish_civil_war # Start civil war - used in many triggers
+			country_event = { id = lar_spain.6 days = 7 } # SCW notification event for the player
+			country_event = { id = lar_spain.78 days = 7 random_days = 7 } # Sanjurjo dies
+			division_template = {
+				name = "Guarnición Nacionalista"
+				is_locked = yes
+				template_counter = 6
+				division_names_group = SPR_INF_02
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+				}
+			}
+			division_template = {
+				name = "División del Ejército de África"
+				template_counter = 4
+				division_names_group = SPR_INF_06
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 2 y = 0 }
+					artillery_brigade = { x = 2 y = 1 }
+					artillery_brigade = { x = 2 y = 2 }
+				}
+				support = {
+					recon = { x = 0 y = 0 }
+					engineer = { x = 0 y = 1 }
+				}
+			}
+			290 = {
+				create_unit = {
+					division = "division_template = \"División del Ejército de África\" start_experience_factor = 0.3" 
+					owner = SPR
+				}
+				create_unit = {
+					division = "division_template = \"División del Ejército de África\" start_experience_factor = 0.3" 
+					owner = SPR
+				}
+				create_unit = {
+					division = "division_template = \"División del Ejército de África\" start_experience_factor = 0.3" 
+					owner = SPR
+				}
+				create_unit = {
+					division = "division_template = \"División del Ejército de África\" start_experience_factor = 0.3" 
+					owner = SPR
+				}
+				create_unit = {
+					division = "division_template = \"División del Ejército de África\" start_experience_factor = 0.3" 
+					owner = SPR
+				}
+			}
+			division_template = {
+				name = "Requeté Carlista"
+				template_counter = 8
+				division_names_group = SPR_INF_03
+				is_locked = yes
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+				}
+			}
+			172 = {
+				create_unit = {
+					division = "division_template = \"Requeté Carlista\" start_experience_factor = 0.3" 
+					owner = SPR
+					allow_spawning_on_enemy_provs = yes
+					count = 5
+				}
+			}
+			SPA = {
+				division_template = {
+					name = "Guarnición Republicana"
+					is_locked = yes
+					template_counter = 6
+					division_names_group = SPD_INF_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+					}
+				}
+			}
+			SPA = { 
+				transfer_state = 41
+			}
+
+			transfer_units_fraction = {
+				target = SPA
+				size = 0.5 
+				stockpile_ratio = 0.5
+				army_ratio = 0.5
+				air_ratio = 0.5
+				keep_unit_leaders = {
+						    
+				}
+				keep_unit_leaders_trigger = {
+					has_trait = trait_SPA_nationalist_sympathies
+				}
+			}
+			SPA = {
+				delete_units = {
+				    division_template = "División de Infantería"
+				    disband = yes
+				}
+				delete_units = {
+				    division_template = "División de Caballería"
+				    disband = yes
+				}
+				delete_units = {
+				    division_template = "Brigada Montaña"
+				    disband = yes
+				}
+				delete_units = {
+				    division_template = "Brigada de Infantería"
+				    disband = yes
+				}
+			}
+			every_unit_leader = {
+				limit = {
+					NOT = { has_trait = trait_SPA_nationalist_sympathies }
+				}
+				set_nationality = SPA
+			}
+			every_unit_leader = {
+				limit = {
+					has_trait = trait_SPA_nationalist_sympathies
+				}
+				remove_unit_leader_trait = trait_SPA_nationalist_sympathies
+			}
+			every_owned_state = {
+				limit = {
+					NOT = {
+						state =  171
+						state =  174
+						state =  176 
+						state =  788 
+						state =  170 
+						state =  166 
+						state =  172 
+						state =  177 
+						state =  290
+						state =  178
+						state =  699 
+						state =  791
+						state=   783
+					}
+				}
+				SPA = { 
+					transfer_state = PREV
+				}
+				create_unit = {
+					division = "division_template = \"Guarnición Republicana\" start_experience_factor = 0.1" 
+					owner = SPA
+					allow_spawning_on_enemy_provs = yes
+					count = 3
+				}
+			}
+			41 = { 
+				create_unit = {
+					division = "division_template = \"Guarnición Republicana\" start_experience_factor = 0.1" 
+					owner = SPA
+					allow_spawning_on_enemy_provs = yes
+					count = 6
+				}
+			}	
+			every_owned_state = {
+				limit = {
+					NOT = {
+					state =  794 
+					state =  165 
+					state =  167 
+					state =  168 
+					state =  173 
+					state =  169 
+					state =  789 
+					state =  175 
+					state =  41 
+					state =  793 
+					state =  169 
+					state =  790 
+					state =  792 
+					}
+				}
+				create_unit = {
+					division = "division_template = \"Guarnición Nacionalista\" start_experience_factor = 0.1" 
+					owner = SPR
+					allow_spawning_on_enemy_provs = yes
+					count = 3
+				}
+			}
+			SPR = {
+				declare_war_on = {
+				    target = SPA
+				    type = annex_everything
+				}
+			}
+			SPA = {
+				load_focus_tree = {
+					tree = JFU_RSPAIN_focus
+					keep_completed = no
+					}
+				complete_national_focus = SPA_maintain_the_second_republic
+				inherit_technology = SPR
+				country_lock_all_division_template = no
+				set_capital = { state = 41 }
+				add_timed_idea = { idea = SPR_death_before_surrender days = 900 }
+				add_ideas = SPR_disbanded_army_1
+				set_party_name = { ideology = neutrality long_name = SPR_neutrality_anarchism_party_long name = SPR_neutrality_anarchism_party }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = lar_spain.6
+	title = lar_spain.6.t
+	desc = lar_spain.6.desc
+	picture = GFX_report_event_spr_spanish_civil_war2
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = scw_frontlines_solidify
+			remove_ideas = SPA_planned_uprising
+			every_state = {
+				limit = {
+					OR = {
+						state = 41
+						state = 165
+						state = 166
+						state = 167
+						state = 168
+						state = 169
+						state = 170
+						state = 171
+						state = 172
+						state = 173
+						state = 174
+						state = 175
+						state = 176
+						state = 788
+						state = 789
+						state = 790
+						state = 791
+						state = 792
+						state = 793
+						state = 794
+					}
+				}
+				set_state_flag = SPR_unplanned_offensive_flag
+				add_dynamic_modifier = {
+					modifier = unplanned_offensive
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = lar_spain.6.a
+		if = {
+			limit = {
+				tag = SPR
+			}
+			effect_tooltip = { remove_ideas = SPA_planned_uprising }
+		}
+		effect_tooltip = {
+			every_state = {
+				limit = {
+					OR = {
+						state = 41
+						state = 165
+						state = 166
+						state = 167
+						state = 168
+						state = 169
+						state = 170
+						state = 171
+						state = 172
+						state = 173
+						state = 174
+						state = 175
+						state = 176
+						state = 788
+						state = 789
+						state = 790
+						state = 791
+						state = 792
+						state = 793
+						state = 794
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = unplanned_offensive
+				}
+			}
+		}
+		custom_effect_tooltip = lar_spain.6_tt
+	}
+}
+
+# Spanish Civil War - Fascists Defeated
+country_event = {
+	id = lar_spain.12
+	title = lar_spain.12.t
+	desc = lar_spain.12.desc
+	picture = GFX_report_event_spr_civil_war_faction_defeated
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = lar_spain.11.a
+	}
+}
+
+# Spanish Civil War - Franco Defeated
+country_event = {
+	id = lar_spain.13
+	title = lar_spain.13.t
+	desc = lar_spain.13.desc
+	picture = GFX_report_event_spr_civil_war_faction_defeated
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = lar_spain.11.a
+	}
+}
+
+# Spanish Civil War - Anarchists Defeated
+country_event = {
+	id = lar_spain.14
+	title = lar_spain.14.t
+	desc = lar_spain.14.desc
+	picture = GFX_report_event_spr_civil_war_faction_defeated
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = lar_spain.11.a
+	}
+}
+
+# Spanish Civil War - Republicans Defeated
+country_event = {
+	id = lar_spain.16
+	title = lar_spain.16.t
+	desc = lar_spain.16.desc
+	picture = GFX_report_event_spr_civil_war_faction_defeated
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lar_spain.11.a
+	}
+}
+
+country_event = {
+	id = lar_spain.9
+	title = lar_spain.9.t
+	desc = {
+		text = lar_spain.9.desc
+	}
+	picture = GFX_report_event_spr_anarchist_uprising2
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+				if = {
+					limit = {
+						AND = {
+								controls_state =  165 
+								controls_state =  794 
+						}
+					}
+					every_state = {
+						limit = {
+							AND = {
+								state = 165
+								state = 794
+							}
+							is_controlled_by = ROOT
+						}
+						SPD = {
+						transfer_state = PREV
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						AND = {
+							NOT = {
+								controls_state = 794
+							}
+							controls_state = 165
+						}
+					}
+					every_state = {
+						limit = {
+								state = 165
+							is_controlled_by = ROOT
+						}
+						SPD = {
+							transfer_state = PREV
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						AND ={
+							NOT = {
+								controls_state = 165
+								controls_state = 794
+							}
+							controls_state =  167 
+							controls_state =  793 
+						}
+					}
+					every_state = {
+						limit = {
+							AND = {
+								state = 167
+								state = 793
+							}
+							is_controlled_by = ROOT
+						}
+						SPD = {
+							transfer_state = PREV
+						}
+					}
+				}
+				else = {
+					every_state = {
+						limit = {
+								state = 167
+							is_controlled_by = ROOT
+						}
+						SPD = {
+							transfer_state = PREV
+						}
+					}
+				}
+
+
+			set_global_flag = SPR_anarchist_uprising_flag
+			set_global_flag = { flag = SPR_civil_war_startup value = 1 days = 3 }
+			SPD = {
+				set_rule = {
+				    can_puppet = no
+				    can_create_factions = no
+				    can_join_factions = no
+				    can_boost_own_ideology = no
+					can_generate_female_aces = yes
+					can_create_collaboration_government = no
+				}
+				set_politics = {
+					ruling_party = neutrality
+				}
+				set_popularities = {
+					communism = 40
+					democratic = 2
+					neutrality = 58
+				}
+				create_country_leader = {
+					name = "Anarchist Commune"
+					desc = "POLITICS_ANARCHIST_COMMUNE_DESC"
+					picture = "GFX_portrait_SPR_anarchist_commune"
+					expire = "1965.1.1"
+					ideology = anarchism
+					traits = {
+						our_right_to_survive
+					}
+				}
+				inherit_technology = SPA
+				remove_ideas = SPR_the_maximum_concession
+				add_ideas = closed_economy
+				set_stability = 0.6
+				set_war_support = 0.5
+			}
+			SPD = {	
+				division_template = { 
+					name = "Brigada Anarquista"
+					template_counter = 0
+					priority = 1
+					division_names_group = SPR_INF_04
+					is_locked = yes
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+					}
+				}
+				every_owned_state = {
+					create_unit = {
+						division = "division_template = \"Brigada Anarquista\" start_experience_factor = 0 start_equipment_factor = 0.25" 
+						owner = SPD
+					}
+					create_unit = {
+						division = "division_template = \"Brigada Anarquista\" start_experience_factor = 0 start_equipment_factor = 0.25" 
+						owner = SPD
+					}
+					create_unit = {
+						division = "division_template = \"Brigada Anarquista\" start_experience_factor = 0 start_equipment_factor = 0.25" 
+						owner = SPD
+					}
+					create_unit = {
+						division = "division_template = \"Brigada Anarquista\" start_experience_factor = 0 start_equipment_factor = 0.25" 
+						owner = SPD
+					}
+					create_unit = {
+						division = "division_template = \"Brigada Anarquista\" start_experience_factor = 0 start_equipment_factor = 0.25" 
+						owner = SPD
+					}
+				}
+				add_popularity = {
+				    ideology = neutrality
+				    popularity = -0.25
+				}
+				add_stability = -0.1
+				declare_war_on = {
+				    target = SPR
+				    type = annex_everything
+				}
+
+				declare_war_on = {
+				    target = SPA
+				    type = annex_everything
+				}
+				add_timed_idea = { idea = SPR_death_before_surrender days = 900 }
+			}
+		}
+	}
+
+	option = {
+		name = lar_spain.9.a
+	}
+}

@@ -265,7 +265,7 @@ country_event = {
 		country_event = { id = wtt_manchukou.101  }
 				
 				
-				}
+	}
 				
 }
 

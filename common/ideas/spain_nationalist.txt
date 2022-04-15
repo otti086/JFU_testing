@@ -21,6 +21,36 @@ ideas = {
 	}
 
 	country = {
+		SPR_no_airfields = {
+			
+			name = Isolationism
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			removal_cost = -1
+			modifier = {
+				production_speed_air_base_factor = -1
+				production_speed_synthetic_refinery_factor = -1
+				production_speed_synthetic_rubber_refinery_factor = -1
+			}
+		}
+		SPR_no_navy = {
+			
+			name = Isolationism
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			removal_cost = -1
+			modifier = {
+			  industrial_capacity_dockyard = -1
+			}
+		}
+
+
 
 		SPA_death_before_surrender = {
 
@@ -56,44 +86,6 @@ ideas = {
 
 			targeted_modifier = {
 				tag = SPD
-				attack_bonus_against = 0.15
-				defense_bonus_against = 0.05
-			}
-		}
-
-		SPA_anti_anarchist_offensive = {
-
-			picture = SPR_nationalist_remnants
-
-			allowed = {
-				original_tag = SPR
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			targeted_modifier = {
-				tag = SPC
-				attack_bonus_against = 0.15
-				defense_bonus_against = 0.05
-			}
-		}
-
-		SPA_anti_carlist_offensive = {
-
-			picture = SPR_nationalist_remnants
-
-			allowed = {
-				original_tag = SPR
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			targeted_modifier = {
-				tag = SPB
 				attack_bonus_against = 0.15
 				defense_bonus_against = 0.05
 			}
@@ -393,44 +385,6 @@ ideas = {
 
 			modifier = {
 				training_time_factor = -0.15
-			}
-		}
-
-		SPA_eliminate_the_carlists = {
-
-			picture = SPA_eliminate_the_carlists
-
-			allowed = {
-				original_tag = SPR
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			targeted_modifier = {
-				tag = SPB
-				attack_bonus_against = 0.15
-				defense_bonus_against = 0.05
-			}
-		}
-
-		SPA_no_compromise_on_carlist_ideals = {
-
-			picture = SPA_carlism
-
-			allowed = {
-				original_tag = SPR
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			targeted_modifier = {
-				tag = SPA
-				attack_bonus_against = 0.15
-				defense_bonus_against = 0.05
 			}
 		}
 

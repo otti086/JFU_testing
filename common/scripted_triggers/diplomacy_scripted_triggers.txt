@@ -652,15 +652,14 @@ DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
 		}
 		if = {
 			limit = {
-				NOT = { tag = SPC }
+				NOT = { tag = SPD }
 				FROM = {
-					tag = SPC
-					has_completed_focus = SPR_regional_defense_council_of_aragon
+					tag = SPD
 				}
 			}
 			custom_trigger_tooltip = {
 				tooltip = RULE_VOLUNTEERS_NOT_ANARCHISTS_TT
-				NOT = { FROM = { tag = SPC } }
+				NOT = { FROM = { tag = SPD } }
 			}
 		}
 		else = {
@@ -676,15 +675,14 @@ DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
 		}
 		if = {
 			limit = {
-				NOT = { tag = SPC }
+				NOT = { tag = SPD }
 				FROM = {
-					tag = SPC
-					has_completed_focus = SPR_regional_defense_council_of_aragon
+					tag = SPD
 				}
 			}
 			custom_trigger_tooltip = {
 				tooltip = RULE_VOLUNTEERS_NOT_ANARCHISTS_TT
-				NOT = { FROM = { tag = SPC } }
+				NOT = { FROM = { tag = SPD } }
 			}
 		}
 		else_if = { #Bulgarian volunteers in SCW (with La Resistance)
@@ -846,8 +844,7 @@ DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
 					OR = {
 						AND = {
 							has_dlc = "La Resistance"
-							FROM = { NOT = { tag = SPA } }
-							FROM = { NOT = { tag = SPB } }
+							FROM = { NOT = { tag = SPR } }
 						}
 						AND = {
 							NOT = { has_dlc = "La Resistance" }
@@ -878,15 +875,14 @@ DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
 		}
 		if = {
 			limit = {
-				NOT = { tag = SPC }
+				NOT = { tag = SPD }
 				FROM = {
-					tag = SPC
-					has_completed_focus = SPR_regional_defense_council_of_aragon
+					tag = SPD
 	}
 			}
 			custom_trigger_tooltip = {
 				tooltip = RULE_VOLUNTEERS_NOT_ANARCHISTS_TT
-				NOT = { FROM = { tag = SPC } }
+				NOT = { FROM = { tag = SPD } }
 			}
 		}
 	}

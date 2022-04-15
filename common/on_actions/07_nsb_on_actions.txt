@@ -1386,7 +1386,7 @@ on_actions = {
 			}
 		}
 
-		#Spanish general from SPD/SPC exile in SOV -> NSB
+		#Spanish general from SPD/SPA exile in SOV -> NSB
 		effect = {
 			if = {
 				limit = {
@@ -1394,7 +1394,7 @@ on_actions = {
 					has_dlc = "La Resistance"
 					OR = {
 						tag = SPD
-						tag = SPC
+						tag = SPA
 					}
 					OR = {
 						SPR_scw_in_progress = yes #In case someone else caps the Spanish faction

@@ -2,56 +2,56 @@ SPA_garrison_control_tooltip = {
 	if = {
 		limit = {
 			check_variable = { var = SPA_garrison_control value = 1 compare = equals }
-			ROOT = { has_completed_focus = SPA_a_great_spain }
+			ROOT = { has_completed_focus = SPR_a_great_spain }
 		}
 		custom_effect_tooltip = SPA_garrison_control_nationalists_none_tt
 	}
 	if = {
 		limit = {
 			check_variable = { var = SPA_garrison_control value = 2 compare = equals }
-			ROOT = { has_completed_focus = SPA_a_great_spain }
+			ROOT = { has_completed_focus = SPR_a_great_spain }
 		}
 		custom_effect_tooltip = SPA_garrison_control_nationalists_weak_tt
 	}
 	if = {
 		limit = {
 			check_variable = { var = SPA_garrison_control value = 3 compare = equals }
-			ROOT = { has_completed_focus = SPA_a_great_spain }
+			ROOT = { has_completed_focus = SPR_a_great_spain }
 		}
 		custom_effect_tooltip = SPA_garrison_control_nationalists_strong_tt
 	}
 	if = {
 		limit = {
 			check_variable = { var = SPA_garrison_control value = 4 compare = equals }
-			ROOT = { has_completed_focus = SPA_a_great_spain }
+			ROOT = { has_completed_focus = SPR_a_great_spain }
 		}
 		custom_effect_tooltip = SPA_garrison_control_nationalists_total_tt
 	}
 	if = {
 		limit = {
 			check_variable = { var = SPA_garrison_control value = 1 compare = equals }
-			ROOT = { has_completed_focus = SPR_the_popular_front }
+			ROOT = { has_completed_focus = SPA_the_popular_front }
 		}
 		custom_effect_tooltip = SPA_garrison_control_republicans_none_tt
 	}
 	if = {
 		limit = {
 			check_variable = { var = SPA_garrison_control value = 2 compare = equals }
-			ROOT = { has_completed_focus = SPR_the_popular_front }
+			ROOT = { has_completed_focus = SPA_the_popular_front }
 		}
 		custom_effect_tooltip = SPA_garrison_control_republicans_weak_tt
 	}
 	if = {
 		limit = {
 			check_variable = { var = SPA_garrison_control value = 3 compare = equals }
-			ROOT = { has_completed_focus = SPR_the_popular_front }
+			ROOT = { has_completed_focus = SPA_the_popular_front }
 		}
 		custom_effect_tooltip = SPA_garrison_control_republicans_strong_tt
 	}
 	if = {
 		limit = {
 			check_variable = { var = SPA_garrison_control value = 4 compare = equals }
-			ROOT = { has_completed_focus = SPR_the_popular_front }
+			ROOT = { has_completed_focus = SPA_the_popular_front }
 		}
 		custom_effect_tooltip = SPA_garrison_control_republicans_total_tt
 	}
@@ -126,7 +126,7 @@ SPR_garrison_control_cost_calculation = {
 SPR_concessions_to_the_left_increase = {
 	if = {
 		limit = {
-			has_completed_focus = SPA_a_great_spain
+			has_completed_focus = SPR_a_great_spain
 			has_idea = SPR_national_strikes_4
 		}
 		swap_ideas = {
@@ -136,7 +136,7 @@ SPR_concessions_to_the_left_increase = {
 	}
 	else_if = {
 		limit = {
-			has_completed_focus = SPA_a_great_spain
+			has_completed_focus = SPR_a_great_spain
 			has_idea = SPR_national_strikes_3
 		}
 		swap_ideas = {
@@ -146,7 +146,7 @@ SPR_concessions_to_the_left_increase = {
 	}
 	else_if = {
 		limit = {
-			has_completed_focus = SPA_a_great_spain
+			has_completed_focus = SPR_a_great_spain
 			has_idea = SPR_national_strikes_2
 		}
 		swap_ideas = {
@@ -156,7 +156,7 @@ SPR_concessions_to_the_left_increase = {
 	}
 	else_if = {
 		limit = {
-			has_completed_focus = SPA_a_great_spain
+			has_completed_focus = SPR_a_great_spain
 			has_idea = SPR_national_strikes_1
 		}
 		swap_ideas = {
@@ -166,7 +166,7 @@ SPR_concessions_to_the_left_increase = {
 	}
 	if = {
 		limit = {
-			has_completed_focus = SPR_the_popular_front
+			has_completed_focus = SPA_the_popular_front
 			has_idea = SPR_national_strikes_8
 		}
 		swap_ideas = {
@@ -176,7 +176,7 @@ SPR_concessions_to_the_left_increase = {
 	}
 	else_if = {
 		limit = {
-			has_completed_focus = SPR_the_popular_front
+			has_completed_focus = SPA_the_popular_front
 			has_idea = SPR_national_strikes_3
 		}
 		swap_ideas = {
@@ -186,7 +186,7 @@ SPR_concessions_to_the_left_increase = {
 	}
 	else_if = {
 		limit = {
-			has_completed_focus = SPR_the_popular_front
+			has_completed_focus = SPA_the_popular_front
 			has_idea = SPR_national_strikes_7
 		}
 		swap_ideas = {
@@ -196,7 +196,7 @@ SPR_concessions_to_the_left_increase = {
 	}
 	else_if = {
 		limit = {
-			has_completed_focus = SPR_the_popular_front
+			has_completed_focus = SPA_the_popular_front
 			has_idea = SPR_national_strikes_6
 		}
 		swap_ideas = {
@@ -209,7 +209,7 @@ SPR_concessions_to_the_left_increase = {
 SPR_suppress_the_strikes_increase = {
 	if = {
 		limit = {
-			has_completed_focus = SPA_a_great_spain
+			has_completed_focus = SPR_a_great_spain
 			has_idea = SPR_national_strikes_2
 		}
 		swap_ideas = {
@@ -219,7 +219,7 @@ SPR_suppress_the_strikes_increase = {
 	}
 	else_if = {
 		limit = {
-			has_completed_focus = SPA_a_great_spain
+			has_completed_focus = SPR_a_great_spain
 			has_idea = SPR_national_strikes_3
 		}
 		swap_ideas = {
@@ -229,7 +229,7 @@ SPR_suppress_the_strikes_increase = {
 	}
 	else_if = {
 		limit = {
-			has_completed_focus = SPA_a_great_spain
+			has_completed_focus = SPR_a_great_spain
 			has_idea = SPR_national_strikes_4
 		}
 		swap_ideas = {
@@ -239,7 +239,7 @@ SPR_suppress_the_strikes_increase = {
 	}
 	else_if = {
 		limit = {
-			has_completed_focus = SPA_a_great_spain
+			has_completed_focus = SPR_a_great_spain
 			has_idea = SPR_national_strikes_5
 		}
 		swap_ideas = {
@@ -249,7 +249,7 @@ SPR_suppress_the_strikes_increase = {
 	}
 	if = {
 		limit = {
-			has_completed_focus = SPR_the_popular_front
+			has_completed_focus = SPA_the_popular_front
 			has_idea = SPR_national_strikes_7
 		}
 		swap_ideas = {
@@ -259,7 +259,7 @@ SPR_suppress_the_strikes_increase = {
 	}
 	else_if = {
 		limit = {
-			has_completed_focus = SPR_the_popular_front
+			has_completed_focus = SPA_the_popular_front
 			has_idea = SPR_national_strikes_3
 		}
 		swap_ideas = {
@@ -269,7 +269,7 @@ SPR_suppress_the_strikes_increase = {
 	}
 	else_if = {
 		limit = {
-			has_completed_focus = SPR_the_popular_front
+			has_completed_focus = SPA_the_popular_front
 			has_idea = SPR_national_strikes_8
 		}
 		swap_ideas = {
@@ -279,7 +279,7 @@ SPR_suppress_the_strikes_increase = {
 	}
 	else_if = {
 		limit = {
-			has_completed_focus = SPR_the_popular_front
+			has_completed_focus = SPA_the_popular_front
 			has_idea = SPR_national_strikes_9
 		}
 		swap_ideas = {

@@ -13,51 +13,15 @@ defined_text = {
 	text = {
 		trigger = {
 			original_tag = SPR
-			has_completed_focus = SPA_a_great_spain
+			has_completed_focus = SPR_a_great_spain
 		}
 		localization_key = SPR_NATIONALISTS_INSTRUCTIONS
 	}
 	text = {
 		trigger = {
 			original_tag = SPR
-			has_completed_focus = SPR_the_popular_front
+			has_completed_focus = SPA_the_popular_front
 		}
 		localization_key = SPR_REPUBLICANS_INSTRUCTIONS
-	}
-}
-
-defined_text = {
-	name = GetSPBkingloc
-	text = {
-		trigger = {
-			original_tag = SPR
-			has_country_flag = SPB_xavier_king
-		}
-		localization_key = SPB_xavier_king
-	}
-	text = {
-		trigger = {
-			original_tag = SPR
-			NOT = { has_country_flag = SPB_xavier_king }
-		}
-		localization_key = SPB_alfonso_king
-	}
-}
-
-defined_text = {
-	name = GetSPBking2loc
-	text = {
-		trigger = {
-			original_tag = SPR
-			has_country_flag = SPB_xavier_king
-		}
-		localization_key = SPB_xavier_king2
-	}
-	text = {
-		trigger = {
-			original_tag = SPR
-			NOT = { has_country_flag = SPB_xavier_king }
-		}
-		localization_key = SPB_alfonso_king2
 	}
 }

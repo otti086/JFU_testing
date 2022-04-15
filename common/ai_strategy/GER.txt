@@ -625,34 +625,6 @@ spain_ally = {
 	}
 }
 
-spain_ally_resistance = {
-	allowed = {
-		original_tag = GER
-		has_dlc = "La Resistance"
-	}
-	enable = {
-		has_completed_focus = GER_nationalist_spain_ally
-		country_exists = SPA
-	}
-	abort = {
-		OR = {
-			NOT = { country_exists = SPA }
-			SPA = { has_completed_focus = SPA_join_the_allies }
-		}
-	}
-
-	ai_strategy = {
-		type = befriend
-		id = "SPA"
-		value = 100
-	}
-	ai_strategy = {
-		type = alliance
-		id = "SPA"
-		value = 100
-	}
-}
-
 anschluss_rejected = {
 	allowed = {
 		original_tag = GER
@@ -1437,34 +1409,6 @@ GER_we_dont_fight_pathetic_sweden_on_historical = { # :O
 		type = protect
 		id = SWE
 		value = 50 #keep the iron coming and no one gets hurt
-	}
-}
-
-spain_scw_support_GER_resistance = {
-	allowed = {
-		original_tag = GER
-		has_dlc = "La Resistance"
-	}
-	enable = {
-		has_government = fascism
-		country_exists = SPA
-	}
-	abort = {
-		OR = {
-			NOT = { country_exists = SPA }
-			SPA = { has_completed_focus = SPA_join_the_allies }
-		}
-	}
-
-	ai_strategy = {
-		type = support
-		id = "SPA"
-		value = 100
-	}
-	ai_strategy = {
-		type = send_volunteers_desire
-		id = "SPA"
-		value = 100
 	}
 }
 
