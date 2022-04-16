@@ -156,10 +156,6 @@ focus_tree = {
 		prerequisite = { focus = GER_four_year_plan }
 		available = {
 			OR = {
-				FRA = { has_capitulated = yes }
-				NOT = { country_exists = FRA }
-			}
-			OR = {
 				has_full_control_of_state = 19
 				has_full_control_of_state = 23
 				has_full_control_of_state = 30
@@ -1997,6 +1993,9 @@ focus_tree = {
 		relative_position_id = GER_demand_memel
 		cost = 10
 		completion_reward = {
+			hidden_effect = {
+				add_to_faction = SPR
+			}
 			add_named_threat = { threat = 5 name = GER_danzig_or_war }
 		}
 	}

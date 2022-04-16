@@ -100,10 +100,6 @@ on_actions = {
 		}
 		
 	}
-
-
-
-
 	on_daily = {
 		effect = {
 			HFU_fuel_on_daily_scripted_effect = yes
@@ -289,4 +285,10 @@ on_actions = {
 			}
 		}
 	}
+	on_paradrop = {
+	    effect = {
+			if = {  limit = { OR = { is_owned_by = SPR state = 118 } } ROOT = { PREV = {  teleport_armies = { to_state = FROM } } }	}
+		}
+	}
+	on_naval_invasion = { effect ={  if = { limit = { spanish_coastline = yes } teleport_armies = {limit = { allies = yes  } to_state = FROM }  PREV = { if = { limit = { SPR = { owns_state = 41 } }transfer_state_to = SPR}  else = { transfer_state_to = GER }  }  } }   }	
 }

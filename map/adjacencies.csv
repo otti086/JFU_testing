@@ -175,4 +175,28 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 4391;1703;impassable;-1;-1;-1;-1;-1;;pamir mountains
 4391;12526;impassable;-1;-1;-1;-1;-1;;pamir mountains
 3314;6336;sea;2752;2885;1578;2890;1581;;Afsluitdijk
+
+3761;6521;sea;;-1;-1;-1;-1;Berlin-Madrid;Berlin-Madrid
+6955;11666;sea;;-1;-1;-1;-1;Vienna-Madrid;Vienna-Madrid
+9853;9824;impassable;-1;-1;-1;-1;-1;; Spain France
+9853;11779;impassable;-1;-1;-1;-1;-1;; Spain France
+11779;6915;impassable;-1;-1;-1;-1;-1;; Spain France
+6915;3898;impassable;-1;-1;-1;-1;-1;; Spain France
+3898;6931;impassable;-1;-1;-1;-1;-1;; Spain France
+3898;3915;impassable;-1;-1;-1;-1;-1;; Spain France
+3915;3899;impassable;-1;-1;-1;-1;-1;; Spain France
+9882;3899;impassable;-1;-1;-1;-1;-1;; Spain France
+9882;899;impassable;-1;-1;-1;-1;-1;; Spain France
+9882;915;impassable;-1;-1;-1;-1;-1;; Spain France
+9884;915;impassable;-1;-1;-1;-1;-1;; Spain France
+9884;11838;impassable;-1;-1;-1;-1;-1;; Spain France
+11697;11838;impassable;-1;-1;-1;-1;-1;; Spain France
+11697;3931;impassable;-1;-1;-1;-1;-1;; Spain France
+743;3931;impassable;-1;-1;-1;-1;-1;; Spain France
+743;3737;impassable;-1;-1;-1;-1;-1;; Spain France
+743;6756;impassable;-1;-1;-1;-1;-1;; Spain France
+
+
+
+
 -1;-1;;-1;-1;-1;-1;-1;-1
