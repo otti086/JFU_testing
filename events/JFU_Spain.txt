@@ -490,65 +490,55 @@ country_event = {
 				if = {
 					limit = {
 						AND = {
-							state = 165
-							state = 794
-							}
-						is_controlled_by = ROOT
+							165 = { is_controlled_by = ROOT }
+							794 = { is_controlled_by = ROOT }
+						}
 					}
 					every_state = {
 						limit = {
-							AND = {
+							OR = {
 								state = 165
 								state = 794
 							}
-							is_controlled_by = ROOT
 						}
 						SPD = {
 						transfer_state = PREV
 						}
 					}
 				}
-				if = {
+				else_if = {
 					limit = {
 						AND = {
-							NOT = {
-								state = 794
-								is_controlled_by = ROOT
-							}
-						state = 165
-							is_controlled_by = ROOT
+							NOT = {	794 = { is_controlled_by = ROOT }}
+							165 = { is_controlled_by = ROOT }
 						}
 					}
 					every_state = {
 						limit = {
 								state = 165
-							is_controlled_by = ROOT
-						}
+							}
 						SPD = {
 							transfer_state = PREV
 						}
 					}
 				}
-				if = {
+				else_if = {
 					limit = {
 						AND ={
 							NOT = {
-								state = 165
-								state = 794
-								is_controlled_by = ROOT
+								165 = { is_controlled_by = ROOT }
+								794 = { is_controlled_by = ROOT }
 							}
-							state =  167 
-							state =  793 
-							is_controlled_by = ROOT
+							167 = { is_controlled_by = ROOT }
+							793 = { is_controlled_by = ROOT }
 						}
 					}
 					every_state = {
 						limit = {
-							AND = {
+							OR = {
 								state = 167
 								state = 793
 							}
-							is_controlled_by = ROOT
 						}
 						SPD = {
 							transfer_state = PREV
@@ -558,8 +548,7 @@ country_event = {
 				else = {
 					every_state = {
 						limit = {
-								state = 167
-							is_controlled_by = ROOT
+							state = 167
 						}
 						SPD = {
 							transfer_state = PREV
