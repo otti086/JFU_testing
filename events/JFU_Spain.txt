@@ -556,6 +556,8 @@ country_event = {
 					}
 				}
 
+			every_country = { limit ={ tag = SPR }  every_state = { limit = { is_controlled_by = SPD }  teleport_armies = { to_state = 3816 }   } } 
+			every_country = { limit ={ tag = SPA }  every_state = { limit = { is_controlled_by = SPD }  teleport_armies = { to_state = 832 }   } }
 
 			set_global_flag = SPR_anarchist_uprising_flag
 			set_global_flag = { flag = SPR_civil_war_startup value = 1 days = 3 }

@@ -1535,7 +1535,6 @@
 			custom_effect_tooltip = JAP_the_zero_tt
 			hidden_effect = {
 				 set_technology = { cv_fighter2 = 1 }
-				 set_technology = { cv_nav_bomber2 = 1 } }
 		}
 	}
 
