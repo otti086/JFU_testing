@@ -195,8 +195,17 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 743;3931;impassable;-1;-1;-1;-1;-1;; Spain France
 743;3737;impassable;-1;-1;-1;-1;-1;; Spain France
 743;6756;impassable;-1;-1;-1;-1;-1;; Spain France
-
-
-
+10113;10013;impassable;-1;-1;-1;-1;-1;; Spain Ceuta
+10113;1194;impassable;-1;-1;-1;-1;-1;; Spain Ceuta
+12087;10013;impassable;-1;-1;-1;-1;-1;; Spain Ceuta
+4199;10013;impassable;-1;-1;-1;-1;-1;; Spain Ceuta
+4199;4097;impassable;-1;-1;-1;-1;-1;; Spain Ceuta
+7215;4097;impassable;-1;-1;-1;-1;-1;; Spain Ceuta
+12100;989;impassable;-1;-1;-1;-1;-1;; Spain Ceuta
+12100;1111;impassable;-1;-1;-1;-1;-1;; Spain Ceuta
+12100;4097;impassable;-1;-1;-1;-1;-1;; Spain Ceuta
+4135;7153;impassable;-1;-1;-1;-1;-1;; Spain Gibraltar
+10094;4135;impassable;-1;-1;-1;-1;-1;; Spain Gibraltar
+13228;4135;impassable;-1;-1;-1;-1;-1;; Spain Gibraltar
 
 -1;-1;;-1;-1;-1;-1;-1;-1
