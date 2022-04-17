@@ -28,9 +28,6 @@ country_event = {
 	# Falange
 	option = {
 		name = lar_spain.1.b
-		trigger = {
-			tag = SPR
-		}
 		add_popularity = {
 			ideology = fascism
 			popularity = 0.1
@@ -48,7 +45,6 @@ country_event = {
 
 	option = { # Option for Nationalists - Franco
 		name = lar_spain.2.a
-		trigger = { tag = SPR }
 		# Remove Spirits that will no longer be relevant
 		custom_effect_tooltip = nationalists_chosen
 		remove_ideas = SPR_military_disloyalty
@@ -205,9 +201,6 @@ country_event = {
 					}
 				}
 			}
-			SPA = { 
-				transfer_state = 41
-			}
 
 			transfer_units_fraction = {
 				target = SPA
@@ -323,7 +316,7 @@ country_event = {
 				load_focus_tree = {
 					tree = JFU_RSPAIN_focus
 					keep_completed = no
-					}
+				}
 				complete_national_focus = SPA_maintain_the_second_republic
 				inherit_technology = SPR
 				country_lock_all_division_template = no
@@ -497,9 +490,10 @@ country_event = {
 				if = {
 					limit = {
 						AND = {
-								controls_state =  165 
-								controls_state =  794 
-						}
+							state = 165
+							state = 794
+							}
+						is_controlled_by = ROOT
 					}
 					every_state = {
 						limit = {
@@ -514,13 +508,15 @@ country_event = {
 						}
 					}
 				}
-				else_if = {
+				if = {
 					limit = {
 						AND = {
 							NOT = {
-								controls_state = 794
+								state = 794
+								is_controlled_by = ROOT
 							}
-							controls_state = 165
+						state = 165
+							is_controlled_by = ROOT
 						}
 					}
 					every_state = {
@@ -533,15 +529,17 @@ country_event = {
 						}
 					}
 				}
-				else_if = {
+				if = {
 					limit = {
 						AND ={
 							NOT = {
-								controls_state = 165
-								controls_state = 794
+								state = 165
+								state = 794
+								is_controlled_by = ROOT
 							}
-							controls_state =  167 
-							controls_state =  793 
+							state =  167 
+							state =  793 
+							is_controlled_by = ROOT
 						}
 					}
 					every_state = {
@@ -767,7 +765,6 @@ country_event = {
 
 	trigger = {
 		has_country_flag = SPR_relocated_gold_reserves_selection_flag_sov
-		}
 		NOT = { has_country_flag = SPR_relocate_the_gold_reserves_timer_flag }
 	}
 
