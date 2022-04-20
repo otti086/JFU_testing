@@ -97,7 +97,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 4
 		} 
-		location = 11721 
+		location = 12766 
 		division_template = "Divisione di Fanteria"	# 'Semi-Mountain' (less trained & equipped than Alpina)
 		start_experience_factor = 0.3 
 	} 
@@ -106,7 +106,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 4
 		} 
-		location = 11721 
+		location = 12766 
 		division_template = "Divisione Alpina" 
 		start_experience_factor = 0.3 
 	} 
@@ -117,7 +117,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 3
 		} 
-		location = 11891 
+		location = 12766 
 		division_template = "Divisione di Fanteria"	# 'Semi-Mountain' (less trained & equipped than Alpina)
 		start_experience_factor = 0.3 
 	} 
@@ -126,7 +126,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 6
 		}  
-		location = 11891 
+		location = 12766 
 		division_template = "Divisione di Fanteria"	# 'Semi-Mountain' (less trained & equipped than Alpina)
 		start_experience_factor = 0.3 
 	} 
@@ -137,7 +137,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}  
-		location = 6788 
+		location = 12766 
 		division_template = "Reggimento di Cavalleria" 
 		start_experience_factor = 0.2 
 		start_equipment_factor = 0.7 
@@ -150,7 +150,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}  
-		location = 9738 
+		location = 12766 
 		division_template = "Divisione Alpina" 
 		start_experience_factor = 0.3 
 	} 
@@ -161,7 +161,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 11
 		}  
-		location = 6780 
+		location = 12766 
 		division_template = "Divisione di Fanteria"	# 'Semi-Mountain' (less trained & equipped than Alpina)
 		start_experience_factor = 0.3 
 	} 
@@ -170,7 +170,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 2
 		}  
-		location = 6780 
+		location = 12766 
 		division_template = "Divisione Alpina" 
 		start_experience_factor = 0.3 
 	} 
@@ -181,7 +181,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 23
 		} #  "23a Divisione di Fanteria 'Ferrara'" 
-		location = 611 
+		location = 12766 
 		division_template = "Divisione di Fanteria"	# 'Semi-Mountain' (less trained & equipped than Alpina)
 		start_experience_factor = 0.3 
 	} 
@@ -190,7 +190,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 7
 		} #  "7a Divisione di Fanteria 'Lupi di Toscana'" 
-		location = 611 
+		location = 12766 
 		division_template = "Divisione di Fanteria"	
 		start_experience_factor = 0.2 
 	} 
@@ -203,7 +203,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 9
 		} #  "9a Divisione Autotrasportabile 'Pasubio'" 
-		location = 11735 
+		location = 12766 
 		division_template = "Divisione di Fanteria"	
 		start_experience_factor = 0.2 
 		start_equipment_factor = 0.7 
@@ -215,7 +215,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 8
 		} #  "8a Divisione Motorizzata 'Po'" 
-		location = 628 
+		location = 12766 
 		division_template = "Divisione di Fanteria"	
 		start_experience_factor = 0.2 
 		start_equipment_factor = 0.7 
@@ -225,7 +225,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 3
 		} #  "3a Divisione Alpina 'Julia'" 
-		location = 628 
+		location = 12766 
 		division_template = "Divisione Alpina" 
 		start_experience_factor = 0.3 
 	} 
@@ -236,7 +236,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 2
 		} #  "2° Reggimento 'Piemonte Cavalleria'" 
-		location = 6626 
+		location = 12766 
 		division_template = "Reggimento di Cavalleria" 
 		start_experience_factor = 0.2 
 		start_equipment_factor = 0.7 
@@ -258,7 +258,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 2
 		} #  "2a Divisione Celere 'Emanuele Filiberto'" 
-		location = 11584 
+		location = 12766 
 		division_template = "Divisione Celere" 
 		start_experience_factor = 0.3 
 	} 
@@ -267,7 +267,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 3
 		} #  "3a Divisione Celere 'Principe Amedeo'" 
-		location = 11584 
+		location = 12766 
 		division_template = "Divisione Celere" 
 		start_experience_factor = 0.3 
 	} 
@@ -279,7 +279,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 20
 		} #  "20a Divisione di Fanteria 'Friuli'" 
-		location = 4159 
+		location = 12766 
 		division_template = "Divisione di Fanteria"	
 		start_experience_factor = 0.2 
 		start_equipment_factor = 0.7 
@@ -289,7 +289,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 25
 		} #  "25a Divisione di Fanteria 'Bologna'" 
-		location = 10074 
+		location = 12766 
 		division_template = "Divisione di Fanteria"	
 		start_experience_factor = 0.2 
 		start_equipment_factor = 0.7 
@@ -299,7 +299,7 @@ units = {
 	# Subordinate to Theater #
 	division = { # 
 		name = "7a Divisione CC.NN. 'Cirene'" 
-		location = 1149 
+		location = 12766 
 		division_template = "Divisione di Fanteria"	# CC.NN. militia, lower training and equipment 
 		start_experience_factor = 0.1 
 		start_equipment_factor = 0.5 
@@ -309,7 +309,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 2
 		} #  "2a Divisione Coloniale 'Libia'" 
-		location = 1130 
+		location = 12766 
 		division_template = "Divisione Coloniale" # Colonial militia, lower training and equipment
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } } 
 		start_equipment_factor = 0.5 
@@ -479,7 +479,7 @@ units = {
 air_wings = { 
 	### ITALY ###
 	# 1a Squadra Aerea - SQA1 (Milan)
-	158 = { 
+	550 = { 
 		# 2a Divisione Aerea 'Borea'
 		fighter_equipment_0 = { 
 			amount = 80 
@@ -494,7 +494,7 @@ air_wings = {
 	} 
 
 	# 3a Squadra Aerea - SQA3 (Rome)
-	2 = { 
+	550 = { 
 		# 5a Divisione Aerea 'Eolo'
 		tac_bomber_equipment_0 = { 
 			amount = 64 
@@ -508,7 +508,7 @@ air_wings = {
 	} 
 
 	# 2a Squadra Aerea - SQA2 (Palermo)
-	115 = { 
+	550 = { 
 		# 1a Divisione Aerea 'Aquila'
 		fighter_equipment_0 = { 
 			amount = 80 
@@ -522,7 +522,7 @@ air_wings = {
 	} 
 
 	# 4a Squadra Aerea - SQA4 (Bari)
-	156 = { 
+	550 = { 
 		# 9a Divisione Aerea 'Leone'
 		nav_bomber_equipment_1 = { 
 			amount = 48 
@@ -531,7 +531,7 @@ air_wings = {
 	} 
 
 	# Aeronautica della Sardegna - ASAR (Cagliari)
-	114 = { 
+	550 = { 
 		# 10a Brigata Aerea 'Marte'
 		nav_bomber_equipment_1 = { 
 			amount = 24 
@@ -541,7 +541,7 @@ air_wings = {
 
 	### AFRICA ###
 	# Aeronautica della Libia (Tripoli)
-	448 = { 
+	550 = { 
 		# 14a Brigata Aerea 'Rex'
 		fighter_equipment_0 = { 
 			amount = 20 

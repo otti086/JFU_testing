@@ -107,7 +107,7 @@ on_actions = {
 	}
 	on_capitulation = {
 		effect = {
-				if = { 
+			if = { 
 				limit = {
 					original_tag = HOL
 				}
@@ -116,21 +116,6 @@ on_actions = {
 						AND = {
 							is_core_of = HOL
 							is_controlled_by = GER
-						}
-					}
-				
-					add_compliance = 50 
-				}
-			}
-				if = { 
-					limit = {
-						original_tag = GRE
-					}
-				every_state = {
-					limit = {
-						AND = {
-							is_core_of = GRE
-							is_controlled_by = ITA
 						}
 					}
 				
@@ -215,6 +200,51 @@ on_actions = {
 				
 					add_compliance = 50 
 				}
+			}
+			if = {
+				limit = {
+					original_tag = GRE
+					ITA = { has_war_with = GRE }
+				}
+				ITA = {
+					transfer_state = 185
+					transfer_state = 731
+					transfer_state = 47
+					transfer_state = 184
+					transfer_state = 186
+					transfer_state = 182
+					transfer_state = 187
+					every_state = {
+             		   limit = {
+              		     	is_core_of = GRE
+             		      	is_controlled_by = ITA
+              		 	}
+              		  add_compliance = 50
+		   			}
+				}
+			
+			}
+			if = {
+				limit = {
+					original_tag = CHI
+					JAP = { has_war_with = CHI }
+				}
+				if = { 
+					limit = {
+						JAP = {
+							has_country_flag = MAN_GETS_CHINA
+						}
+					
+					}
+					MAN = {
+						annex_country = { target = CHI }
+					}
+				}
+				else = {
+					JAP = {
+						annex_country = { target = CHI }
+					}
+				}			
 			}
 		}
 	}

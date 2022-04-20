@@ -1125,13 +1125,6 @@ focus_tree = {
 
 	focus = {
 		id = SPR_fascist_economic_aid
-		available = {
-			any_country = {
-				is_in_faction_with = ROOT
-				has_government = fascism
-				is_major = yes
-			}
-		}
 		bypass = {
 		}
 		prerequisite = { focus = SPR_national_recovery }

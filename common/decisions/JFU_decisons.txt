@@ -155,10 +155,10 @@ JFU_decisions = {
 		fire_only_once = yes
 		allowed = { tag =  SOV }
 		available = { 
-			or = { 
+			OR = { 
 				date > 1942.1.1
 				NOT = {
-					OR = {
+					AND = {
 						ENG = { controls_state = 119 }
 						ENG = { controls_state = 120 }
 						ENG = { controls_state = 121 }
@@ -306,6 +306,16 @@ JFU_decisions = {
 		}
 	}
 
+	MAN_Gets_China = {
+		icon = border_war
+		allowed = {	original_tag = JAP	}
+		visible = {	country_exists = CHI country_exists = MAN }
+		fire_only_once = no
+		complete_effect = {
+			if = { limit = { NOT = { has_country_flag = MAN_GETS_CHINA }}  set_country_flag = MAN_GETS_CHINA}
+			else = { clr_country_flag = MAN_GETS_CHINA }
+		}
+	}
 	AST_annex_NEW_Zealand = {
 		icon = generic_operation
 		fire_only_once = yes
