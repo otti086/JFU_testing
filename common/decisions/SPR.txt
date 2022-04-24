@@ -2823,19 +2823,7 @@ political_actions = {
 		}
 
 		timeout_effect = {
-			if = {
-				limit = {
-					num_of_controlled_states > 4
-				}
-				country_event = lar_spain.7
-			}
-			else = {
-				activate_mission = SPA_carlist_uprising_mission
-				add_days_mission_timeout = {
-					mission = SPA_carlist_uprising_mission
-					days = -316
-				}
-			}
+				add_timed_idea = { idea = SPR_carlists_uprising days = 365 }
 		}
 	}
 

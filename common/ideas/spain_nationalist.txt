@@ -51,6 +51,22 @@ ideas = {
 		}
 
 
+		SPR_carlists_uprising = {
+
+			name = carlist_uprising
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = -0.25
+			}
+		}
+
+
 
 		SPA_death_before_surrender = {
 
