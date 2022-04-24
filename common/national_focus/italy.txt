@@ -1477,7 +1477,7 @@
 		x = 1
 		y = 1
 		relative_position_id = ITA_victoryinETH
-		cost = 5
+		cost = 500
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
 		ai_will_do = {

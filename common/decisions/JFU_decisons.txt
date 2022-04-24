@@ -377,10 +377,10 @@ JFU_decisions = {
 		available = { date > 1938.1.1 }
 		complete_effect = {
 			hidden_effect = { 
-				211 = { add_core_of = ROM } 
-				801 = { add_core_of = ROM }
-				212 = { add_core_of = ROM }
-				48 = { add_core_of = ROM }
+				211 = { add_core_of = ITA } 
+				801 = { add_core_of = ITA }
+				212 = { add_core_of = ITA }
+				48 = { add_core_of = ITA }
 			}
 			annex_country = { target = BUL transfer_troops = yes }
 		}
