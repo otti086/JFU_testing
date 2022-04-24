@@ -59,22 +59,22 @@ air_wings = {
 		# 1 Hiko Rentai -- Kawasaki Ki-10
 		fighter_equipment_0 = {
 			owner = "JAP" 
-			amount = 72
+			amount = 36
 		}
 		# 16 Hiko Rentai -- Kawasaki Ki-10
 		fighter_equipment_0 = {
 			owner = "JAP" 
-			amount = 72
+			amount = 36
 		}
 		# 6 Hiko Rentai -- Mitsubishi Ki-2
 		CAS_equipment_1 =  {
 			owner = "JAP" 
-			amount = 54
+			amount = 27
 		}
 		# 9 Hiko Rentai -- Mitsubishi Ki-1
 		tac_bomber_equipment_0 =  {
 			owner = "JAP" 
-			amount = 54
+			amount = 27
 		}
 	}
 
@@ -83,12 +83,12 @@ air_wings = {
 		# 3 Hiko Rentai -- Kawasaki Ki-10
 		fighter_equipment_0 = {
 			owner = "JAP" 
-			amount = 72
+			amount = 36
 		}
 		# 5 Hiko Rentai -- Kawasaki Ki-3
 		CAS_equipment_1 =  {
 			owner = "JAP" 
-			amount = 54
+			amount = 27
 		}
 	}
 
@@ -97,7 +97,7 @@ air_wings = {
 		# 10 Hiko Rentai -- Kawasaki Ki-3
 		CAS_equipment_1 =  {
 			owner = "JAP" 
-			amount = 54
+			amount = 27
 		}
 
 	}
@@ -108,12 +108,12 @@ air_wings = {
 		# Kizarazu Kokutai -- Aichi D1A2
 		cv_CAS_equipment_1 = {
 			owner = "JAP" 
-			amount = 60
+			amount = 30
 		}
 		# Kanoya Kokutai -- Aichi D1A2
 		cv_CAS_equipment_1 = {
 			owner = "JAP" 
-			amount = 60
+			amount = 30
 		}
 	}
 
@@ -122,12 +122,12 @@ air_wings = {
 		# 12 Kokutai -- Nakajima A4N1
 		cv_fighter_equipment_0 = {
 			owner = "JAP" 
-			amount = 72
+			amount = 36
 		}
 		# 13 Kokutai -- Mitsubishi B2M2
 		cv_nav_bomber_equipment_1 = {
 			owner = "JAP" 
-			amount = 48
+			amount = 24
 		}
 	}
 
@@ -135,15 +135,15 @@ air_wings = {
 	282 = { 
 		cv_fighter_equipment_0 =  {
 			owner = "JAP" 
-			amount = 12
+			amount = 6
 		}
 		cv_CAS_equipment_1 = {
 			owner = "JAP" 
-			amount = 9
+			amount = 5
 		}
 		cv_nav_bomber_equipment_1 =  {
 			owner = "JAP" 
-			amount = 9
+			amount = 5
 		}
 
 	}

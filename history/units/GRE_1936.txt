@@ -217,13 +217,13 @@ air_wings = {
 		# Machitís Moíras
 		fighter_equipment_0 = {
 			owner = "GRE" 
-			amount = 26
+			amount = 13
 			create_if_missing = yes
 		}
 		# Moíra vomvistón
 		tac_bomber_equipment_0 = {
 			owner = "GRE" 
-			amount = 71
+			amount = 35
 			create_if_missing = yes
 		}
 	}

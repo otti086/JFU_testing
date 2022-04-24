@@ -261,7 +261,7 @@ air_wings = {
 		# Grupo n.1 de Caza FARE 'Alas Rojas'
 		fighter_equipment_0 = {
 			owner = "SPR" 
-			amount = 36
+			amount = 18
 		}
 	}
 	# Arma de Aviación -- Sevilla (and Barcelona)
@@ -269,14 +269,14 @@ air_wings = {
 		# Grupo n.3 de Caza FARE 'Malraux'
 		fighter_equipment_0 = {
 			owner = "SPR" 
-			amount = 24
+			amount = 12
 		}
 	}
 	# Aeronáutica Naval -- Murcia
 	168 = {
 		nav_bomber_equipment_1 = {
 			owner = "SPR" 
-			amount = 27
+			amount = 13
 		}
 	}
 }
