@@ -636,48 +636,6 @@ characters={
 		}
 	}
 
-	HUN_laszlo_rajk={
-		name=HUN_laszlo_rajk
-		portraits={
-			army={
-				small="GFX_idea_HUN_laszlo_rajk"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = HUN_laszlo_rajk
-			allowed = {
-				original_tag = HUN
-			}
-			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
-			}
-			traits = {
-				communist_revolutionary 
-			}
-			ai_will_do = {
-				base = 0
-				modifier = {
-					add = 100
-					OR = {
-						has_country_flag = HUN_AI_RANDOM_COMMUNIST
-						has_game_rule = {
-							rule = HUN_ai_behavior
-							option = COMMUNIST
-						}
-					}
-				}
-			}
-		}
-	}
-
 	HUN_jozsef_szell={
 		name=HUN_jozsef_szell
 		portraits={

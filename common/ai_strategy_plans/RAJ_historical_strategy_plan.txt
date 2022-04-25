@@ -8,18 +8,8 @@ RAJ_historical = {
 	}
 	enable = {
 		OR = {
-			AND = {
 				is_historical_focus_on = yes
-				has_game_rule = {
-					rule = RAJ_ai_behavior
-					option = DEFAULT
-				}
-			}
 			has_country_flag = RAJ_AI_RANDOM_DEMOCRATIC_HISTORICAL 
-			has_game_rule = {
-				rule = RAJ_ai_behavior
-				option = DEMOCRATIC_HISTORICAL
-			}
 			has_country_flag = britain_enforced_our_loyalty
 		}
 	}

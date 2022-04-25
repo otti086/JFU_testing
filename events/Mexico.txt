@@ -1021,116 +1021,9 @@ country_event = {
 		set_global_flag = trotsky_exile_mexico
 		ai_chance = {
 			factor = 1
-			
-			modifier = {
-				add = 100
-				OR = {
-					has_game_rule = {
-						rule = MEX_ai_behavior
-						option = DEFAULT
-					}
-					has_country_flag = MEX_AI_SECULAR_REPUBLIC 
-					has_game_rule = {
-						rule = MEX_ai_behavior
-						option = SECULAR_REPUBLIC
-					}
-					has_country_flag = MEX_AI_SOCIAL_CATHOLICISM 
-					has_game_rule = {
-						rule = MEX_ai_behavior
-						option = SOCIAL_CATHOLICISM
-					}
-					has_country_flag = MEX_AI_FASCIST_DICTATORSHIP 
-					has_game_rule = {
-						rule = MEX_ai_behavior
-						option = FASCIST_DICTATORSHIP
-					}
-				}
-			}
-			
 			modifier = {
 				add = 100
 				is_historical_focus_on = yes
-				NOT = {
-					OR = {
-						has_country_flag = MEX_AI_THEOCRATIC_ORDER 
-						has_game_rule = {
-							rule = MEX_ai_behavior
-							option = THEOCRATIC_ORDER
-						}
-						has_country_flag = MEX_AI_SOVIET_REPUBLIC 
-						has_game_rule = {
-							rule = MEX_ai_behavior
-							option = SOVIET_REPUBLIC
-						}
-						has_country_flag = MEX_AI_CARDENISMO 
-						has_game_rule = {
-							rule = MEX_ai_behavior
-							option = CARDENISMO
-						}
-					}
-				}
-			}
-		}
-	}
-	
-	option = {
-		trigger = {
-			SOV = {
-				has_country_leader = { character = SOV_iosif_stalin }
-			}
-			NOT = {
-				has_war_with = SOV
-			}
-		}
-		
-		name = mexico.17.b # Send him to Stalin to face trial for his crimes
-				
-		if = {
-			limit = {
-				SOV = {
-					has_country_leader = { character = SOV_iosif_stalin }
-				}
-				NOT = {
-					has_country_leader = {
-						character = MEX_hernan_laborde
-						ruling_only = yes
-					}
-				}
-			}
-			SOV = {
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = mexico_extradited_trotsky
-				}
-				country_event = {
-					id = mexico.21
-					days = 1
-				}
-			}
-		}
-		USA = {
-			add_opinion_modifier = {
-				target = ROOT
-				modifier = mexico_communist_menace
-			}
-		}
-		ai_chance = {
-			factor = 0
-			
-			modifier = {
-				add = 100
-				OR = {
-					has_country_flag = MEX_AI_THEOCRATIC_ORDER 
-					has_game_rule = {
-						rule = MEX_ai_behavior
-						option = THEOCRATIC_ORDER
-					}
-					has_country_flag = MEX_AI_SOVIET_REPUBLIC 
-					has_game_rule = {
-						rule = MEX_ai_behavior
-						option = SOVIET_REPUBLIC
-					}
-				}
 			}
 		}
 	}
@@ -1175,17 +1068,7 @@ country_event = {
 		
 		ai_chance = {
 			factor = 0
-			
-			modifier = {
-				add = 100
-				OR = {
-					has_country_flag = MEX_AI_CARDENISMO 
-					has_game_rule = {
-						rule = MEX_ai_behavior
-						option = CARDENISMO
-					}
-				}
-			}
+		
 		}
 	}
 }

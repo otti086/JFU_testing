@@ -7,18 +7,8 @@ HOL_historical_plan = {
 	}
 	enable = {
 		OR = {
-			AND = {
 				is_historical_focus_on = yes
-				has_game_rule = {
-					rule = HOL_ai_behavior 
-					option = DEFAULT
-				}
-			}
 			has_country_flag = HOL_AI_RANDOM_DEMOCRATIC_HISTORICAL
-			has_game_rule = {
-				rule = HOL_ai_behavior 
-				option = DEMOCRATIC_HISTORICAL
-			}
 		}
 	}
 

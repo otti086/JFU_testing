@@ -7,18 +7,8 @@ MAN_historical_plan = {
 	}
 	enable = {
 		OR = {
-			AND = {
 				is_historical_focus_on = yes
-				has_game_rule = {
-					rule = MAN_ai_behavior
-					option = DEFAULT
-				}
-			}
 			has_country_flag = MAN_AI_RANDOM_OBEDIENCE
-			has_game_rule = {
-				rule = MAN_ai_behavior
-				option = OBEDIENCE
-			}
 		}
 	}
 

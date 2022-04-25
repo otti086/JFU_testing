@@ -7,21 +7,8 @@ German_historical = {
 	}
 	enable = {
 		or = {
-			AND = {
-				is_historical_focus_on = yes
-				OR = {
-					not = { has_dlc = "Waking the Tiger" }
-					has_game_rule = {
-						rule = GER_ai_behavior
-						option = DEFAULT
-					}
-				}	
-			}
+				is_historical_focus_on = yes	
 			has_country_flag = GER_AI_RANDOM_FASCIST
-			has_game_rule = {
-				rule = GER_ai_behavior
-				option = FASCIST
-			}
 		}
 	}
 	abort = {

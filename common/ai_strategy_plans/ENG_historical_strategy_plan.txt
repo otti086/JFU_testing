@@ -7,21 +7,8 @@ ENG_historical_plan = {
 	}
 	enable = {
 		OR = {
-			AND = {
-				is_historical_focus_on = yes
-				OR = {
-					not = { has_dlc = "Man the Guns" }
-					has_game_rule = {
-						rule = ENG_ai_behavior 
-						option = DEFAULT
-					}
-				}
-			}
+			is_historical_focus_on = yes
 			has_country_flag = ENG_AI_DEMOCRATIC_HISTORICAL
-			has_game_rule = {
-				rule = ENG_ai_behavior 
-				option = DEMOCRATIC_HISTORICAL
-			}
 		}
 	}
 

@@ -1487,7 +1487,7 @@ focus_tree = {
 		}
 	}
 	
-		focus = {
+	focus = {
 		id = MAN_mamcc
 		icon = GFX_goal_generic_air_bomber
 		x = 0
@@ -1495,7 +1495,7 @@ focus_tree = {
 
 		cost = 4
 
-				prerequisite = { focus = MAN_railways_sungkiang }
+		prerequisite = { focus = MAN_railways_sungkiang }
 		relative_position_id = MAN_railways_sungkiang
 
 
@@ -1508,7 +1508,7 @@ focus_tree = {
 	}
 	
 	
-		focus = {
+	focus = {
 		id = MAN_mamc_expansion
 		icon = GFX_goal_generic_build_airforce
 		x = 0

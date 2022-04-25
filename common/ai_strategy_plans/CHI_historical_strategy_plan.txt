@@ -7,18 +7,8 @@ CHI_nationalist_historical_plan = {
 	}
 	enable = {
 		OR = {
-			AND = {
-				is_historical_focus_on = yes
-				has_game_rule = {
-					rule = CHI_ai_behavior
-					option = DEFAULT
-				}	
-			}
+			is_historical_focus_on = yes
 			has_country_flag = CHI_AI_RANDOM_HISTORICAL
-			has_game_rule = {
-				rule = CHI_ai_behavior
-				option = HISTORICAL
-			}
 		}
 	}
 	abort = {
@@ -27,10 +17,6 @@ CHI_nationalist_historical_plan = {
 				is_in_faction_with = ENG 
 				is_in_faction_with = USA 
 			}
-		}
-		has_game_rule = {
-			rule = CHI_ai_behavior
-			option = ALTERNATE
 		}
 		MAN = {
 			is_subject = no

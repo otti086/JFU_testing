@@ -174,18 +174,6 @@ BUL_internal_factions = {
 				factor = 0.1
 				has_country_flag = BUL_bzns_joint_act_flag
 			}
-			modifier = {
-				factor = 0
-				BUL_is_fascist_axis_ai = yes
-			}
-			modifier = {
-				factor = 1.5
-				OR = {
-					BUL_is_communist_stalinist_ai = yes
-					BUL_is_communist_balkan_ai = yes
-					BUL_is_democratic_socialist_ai = yes
-				}
-			}
 		}
 
 		allowed = { 
@@ -379,14 +367,6 @@ BUL_internal_factions = {
 				factor = 0.1
 				BUL_is_historical_ai = yes #Not a prio thing for Boris
 			}
-			modifier = {
-				factor = 1.5
-				OR = {
-					BUL_is_communist_stalinist_ai = yes
-					BUL_is_communist_balkan_ai = yes
-					BUL_is_democratic_socialist_ai = yes
-				}
-			}
 		}
 
 		allowed = { 
@@ -466,14 +446,6 @@ BUL_internal_factions = {
 				factor = 0.5
 				has_country_flag = BUL_bzns_legalized_flag
 				check_variable = { BUL_bzns_loyalty = 55 compare = less_than_or_equals }
-			}
-			modifier = {
-				factor = 1.5
-				OR = {
-					BUL_is_communist_stalinist_ai = yes
-					BUL_is_communist_balkan_ai = yes
-					BUL_is_democratic_socialist_ai = yes
-				}
 			}
 		}
 
@@ -746,14 +718,6 @@ BUL_internal_factions = {
 				factor = 0.1
 				BUL_is_historical_ai = yes #Not a prio thing for Boris
 			}
-			modifier = {
-				factor = 0
-				OR = {
-					BUL_is_fascist_axis_ai = yes
-					BUL_is_monarchist_ferdinand_ai = yes
-					BUL_is_democratic_liberal_ai = yes
-				}
-			}
 		}
 
 		allowed = { 
@@ -827,10 +791,6 @@ BUL_internal_factions = {
 
 		ai_will_do = {
 			base = 10
-			modifier = {
-				factor = 0
-				BUL_is_fascist_axis_ai = yes
-			}
 		}
 
 		allowed = { 
@@ -1022,14 +982,6 @@ BUL_internal_factions = {
 
 		ai_will_do = {
 			base = 3
-			modifier = {
-				factor = 1.5
-				OR = {
-					BUL_is_communist_stalinist_ai = yes
-					BUL_is_communist_balkan_ai = yes
-					BUL_is_democratic_socialist_ai = yes
-				}
-			}
 		}
 
 		allowed = { 
@@ -1076,14 +1028,6 @@ BUL_internal_factions = {
 
 		ai_will_do = {
 			base = 3
-			modifier = {
-				factor = 1.5
-				OR = {
-					BUL_is_communist_stalinist_ai = yes
-					BUL_is_communist_balkan_ai = yes
-					BUL_is_democratic_socialist_ai = yes
-				}
-			}
 		}
 
 		allowed = { 
@@ -1818,18 +1762,6 @@ BUL_internal_factions = {
 
 		ai_will_do = {
 			base = 0
-			modifier = {
-				add = 2
-				OR = {
-					BUL_is_fascist_axis_ai = yes
-					BUL_is_monarchist_ferdinand_ai = yes
-					BUL_is_democratic_liberal_ai = yes
-					#AND = { #TODO_Manu: Check how the AI performs without this. Might be necessary to not add it to help the FF coup.
-					#	BUL_is_historical_ai = yes
-					#	date > 1940.6.1
-					#}
-				}
-			}
 		}
 
 		allowed = { 
@@ -1887,10 +1819,6 @@ BUL_internal_factions = {
 
 		ai_will_do = {
 			base = 0
-			modifier = {
-				add = 2
-				BUL_is_fascist_axis_ai = yes
-			}
 		}
 
 		allowed = { 
@@ -1948,10 +1876,6 @@ BUL_internal_factions = {
 
 		ai_will_do = {
 			base = 2
-			modifier = {
-				factor = 0
-				BUL_is_fascist_axis_ai = yes
-			}
 		}
 
 		allowed = { 
@@ -2012,14 +1936,6 @@ BUL_internal_factions = {
 
 		ai_will_do = {
 			base = 0.5
-			modifier = {
-				add = 2
-				OR = {
-					BUL_is_fascist_axis_ai = yes
-					BUL_is_monarchist_ferdinand_ai = yes
-					BUL_is_democratic_liberal_ai = yes
-				}
-			}
 		}
 
 		allowed = { 
@@ -2075,10 +1991,6 @@ BUL_internal_factions = {
 
 		ai_will_do = {
 			base = 0
-			modifier = {
-				add = 2.5
-				BUL_is_fascist_axis_ai = yes
-			}
 		}
 
 		allowed = { 
@@ -2142,14 +2054,6 @@ BUL_internal_factions = {
 
 		ai_will_do = {
 			base = 2.5
-			modifier = {
-				factor = 0
-				OR = {
-					BUL_is_fascist_axis_ai = yes
-					BUL_is_monarchist_ferdinand_ai = yes
-					BUL_is_democratic_liberal_ai = yes
-				}
-			}
 		}
 
 		allowed = { 
@@ -3209,14 +3113,6 @@ BUL_internal_factions = {
 
 		ai_will_do = {
 			base = 100
-			modifier = {
-				factor = 0
-				OR = {
-					BUL_is_communist_stalinist_ai = yes
-					BUL_is_communist_balkan_ai = yes
-					BUL_is_democratic_socialist_ai = yes
-				}
-			}
 		}
 
 		allowed = { 
@@ -3290,14 +3186,6 @@ BUL_internal_factions = {
 
 		ai_will_do = {
 			base = 100
-			modifier = {
-				factor = 0
-				OR = {
-					BUL_is_communist_stalinist_ai = yes
-					BUL_is_communist_balkan_ai = yes
-					BUL_is_democratic_socialist_ai = yes
-				}
-			}
 		}
 
 		allowed = { 
@@ -3371,10 +3259,6 @@ BUL_internal_factions = {
 
 		ai_will_do = {
 			base = 10
-			modifier = {
-				factor = 0
-				BUL_is_fascist_axis_ai = yes
-			}
 		}
 
 		allowed = { 

@@ -1230,13 +1230,6 @@ characters = {
 				ai_will_do = {
 					factor = 1.000
 					modifier = {
-						factor = 0.000
-						or = {
-							BUL_is_communist_stalinist_ai = yes
-							BUL_is_communist_balkan_ai = yes
-						}
-					}
-					modifier = {
 						factor = 0.100
 						BUL_save_money_for_decisions = yes
 					}
@@ -1536,16 +1529,6 @@ characters = {
 			}
 			ai_will_do = {
 				base = 1.000
-				modifier = {
-					factor = 2.000
-					OR = {
-						BUL_is_democratic_socialist_ai = yes 
-						BUL_is_democratic_liberal_ai = yes 
-					}
-					NOT = {
-						has_government = democratic 
-					}
-				}
 			}
 		}
 		name = BUL_stoycho_mushanov
@@ -1585,22 +1568,6 @@ characters = {
 				}
 				ai_will_do = {
 					base = 3.000
-					modifier = {
-						factor = 10
-						OR = {
-							BUL_is_monarchist_ferdinand_ai = yes
-							BUL_is_historical_ai = yes
-						}
-						democratic < 0.2
-					}
-					modifier = {
-						factor = 0.01
-						OR = {
-							BUL_is_monarchist_ferdinand_ai = yes
-							BUL_is_historical_ai = yes
-						}
-						democratic > 0.8
-					}
 				}
 			}
 		}
@@ -1649,25 +1616,6 @@ characters = {
 			}
 			ai_will_do = {
 				base = 1.000
-				modifier = {
-					factor = 2.000
-					OR = {
-						BUL_is_democratic_socialist_ai = yes 
-						BUL_is_democratic_liberal_ai = yes 
-					}
-				}
-				modifier = {
-					factor = 2
-					OR = {
-						BUL_is_monarchist_ferdinand_ai = yes
-						BUL_is_historical_ai = yes
-					}
-					democratic < 0.2
-				}
-				modifier = {
-					factor = 0.000
-					BUL_is_monarchist_ferdinand_ai = yes 
-				}
 			}
 		}
 	}
@@ -1690,13 +1638,6 @@ characters = {
 			}
 			ai_will_do = {
 				base = 1.000
-				modifier = {
-					factor = 3.000
-					OR = {
-						BUL_is_communist_stalinist_ai = yes 
-						BUL_is_communist_balkan_ai = yes 
-					}
-				}
 			}
 		}
 		name = BUL_vasil_kolarov
@@ -1752,20 +1693,6 @@ characters = {
 			traits = {
 				fascist_demagogue 
 			}
-			ai_will_do = {
-				base = 1.000
-				modifier = {
-					factor = 2.000
-					BUL_is_fascist_axis_ai = yes 
-				}
-				modifier = {
-					factor = 0
-					OR = {
-						BUL_is_monarchist_ferdinand_ai = yes
-						BUL_is_historical_ai = yes
-					}
-				}
-			}
 		}
 		name = BUL_ivan_dochev
 		portraits = {
@@ -1794,13 +1721,6 @@ characters = {
 			}
 			ai_will_do = {
 				base = 3.000
-				modifier = {
-					factor = 0
-					OR = {
-						BUL_is_monarchist_ferdinand_ai = yes
-						BUL_is_historical_ai = yes
-					}
-				}
 			}
 		}
 		name = BUL_aleksandar_tsankov
@@ -1836,10 +1756,6 @@ characters = {
 			}
 			ai_will_do = {
 				base = 1.000
-				modifier = {
-					factor = 2.000
-					BUL_is_fascist_axis_ai = yes 
-				}
 			}
 		}
 		name = BUL_nikola_zhekov

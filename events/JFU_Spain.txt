@@ -101,6 +101,7 @@ country_event = {
 			add_war_support = 0.3
 			set_capital = { state = 176 }
 			kill_country_leader = yes
+			country_lock_all_division_template = no
 			create_country_leader = {
 				name = "José Sanjurjo"
 				desc = "POLITICS_JOSE_SANJURJO_DESC"
@@ -160,6 +161,8 @@ country_event = {
 					division = "division_template = \"División del Ejército de África\" start_experience_factor = 0.3" 
 					owner = SPR
 				}
+			}
+			171 = {
 				create_unit = {
 					division = "division_template = \"División del Ejército de África\" start_experience_factor = 0.3" 
 					owner = SPR
@@ -167,7 +170,7 @@ country_event = {
 				create_unit = {
 					division = "division_template = \"División del Ejército de África\" start_experience_factor = 0.3" 
 					owner = SPR
-				}
+				}	
 			}
 			division_template = {
 				name = "Requeté Carlista"
@@ -303,7 +306,7 @@ country_event = {
 					division = "division_template = \"Guarnición Nacionalista\" start_experience_factor = 0.1" 
 					owner = SPR
 					allow_spawning_on_enemy_provs = yes
-					count = 3
+					count = 4
 				}
 			}
 			SPR = {
