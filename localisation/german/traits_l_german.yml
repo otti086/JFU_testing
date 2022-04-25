@@ -553,7 +553,7 @@
  TRAIT_UNLOCKED_BY_MIN_RANK:0 "Erfordert eine Fähigkeitsstufe von mindestens §Y$RANK$§!, um zum Berater zu werden."
  TRAIT_UNLOCKS_ADVISOR_ROLE:0 "Scahltet Rolle §Y$ADVISORSLOT$§! frei: §Y$ADVISORNAME$§!\n"
  TRAIT_MODIFIER_FOR_ADVISOR_RANK:0 "Bei Fähigkeit §Y$RANK$§!:\n\n$TEXT$"
- expert_improviser_movement_bonus_on_land:0 "Bewegungsbonus zu Land: §G+10.0%§!"
+ expert_improviser_movement_bonus_on_land:0 "Bewegungsbonus zu Land: §G+10.0%§!             Angriffsbonus über Flüsse §G+20.0%§!"
  anti_communist_crusader:0 "Anti-kommunistischer Kreuzritter"
  exiled_leader:0 "Anführer im Exil"
  exiled_leader_desc:1 "Dieser Offizier hat weitergekämpft, nachdem sein Heimatland schon besiegt war. Er ist ein idealer Anführer für andere Exilanten, die seinen Antrieb und seinen Kampfgeist steilen."

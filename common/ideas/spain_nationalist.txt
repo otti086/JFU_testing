@@ -33,7 +33,7 @@ ideas = {
 			modifier = {
 				production_speed_air_base_factor = -1
 				production_speed_synthetic_refinery_factor = -1
-				production_speed_synthetic_rubber_refinery_factor = -1
+				production_speed_radar_factor = -1
 			}
 		}
 		SPR_no_navy = {
