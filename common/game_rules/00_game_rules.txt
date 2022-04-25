@@ -356,51 +356,6 @@ allow_paratroopers = {
 	}
 }
 
-#minimum_division_width = {
-#	name = "RULE_MINIMUM_WIDTH"
-#	group = "RULE_GROUP_DIVISION_TEMPLATES"
-#	option = {
-#		name = none
-#		text = "RULE_OPTION_NONE"
-#		desc = "RULE_MINIMUM_WIDTH_NONE_DESC"
-#	}
-#	option = {
-#		name = WIDTH_10
-#		text = "RULE_OPTION_10"
-#		desc = "RULE_MINIMUM_WIDTH_10_DESC"
-#	}
-#	option = {
-#		name = WIDTH_20
-#		text = "RULE_OPTION_20"
-#		desc = "RULE_MINIMUM_WIDTH_20_DESC"
-#	}
-#}
-#
-#maximum_division_width = {
-#	name = "RULE_MAXIMUM_WIDTH"
-#	group = "RULE_GROUP_DIVISION_TEMPLATES"
-#	option = {
-#		name = none
-#		text = "RULE_OPTION_NONE"
-#		desc = "RULE_MAXIMUM_WIDTH_NONE_DESC"
-#	}
-#	option = {
-#		name = WIDTH_20
-#		text = "RULE_OPTION_20"
-#		desc = "RULE_MAXIMUM_WIDTH_20_DESC"
-#	}
-#	option = {
-#		name = WIDTH_30
-#		text = "RULE_OPTION_30"
-#		desc = "RULE_MAXIMUM_WIDTH_30_DESC"
-#	}
-#	option = {
-#		name = WIDTH_40
-#		text = "RULE_OPTION_40"
-#		desc = "RULE_MAXIMUM_WIDTH_40_DESC"
-#	}
-#}
-
  ##   ##  #  #  ## ### ###  #  #  ##  ### ###  ##  #  # 
 #  # #  # ## # #    #  #  # #  # #  #  #   #  #  # ## # 
 #    #  # # ##  #   #  ###  #  # #     #   #  #  # # ## 
