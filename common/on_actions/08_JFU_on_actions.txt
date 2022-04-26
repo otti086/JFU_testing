@@ -324,6 +324,26 @@ on_actions = {
 					transfer_state = 102
 				}
 			}
+
+			if = {
+				limit = {
+					original_tag = ETH
+				}
+				
+				ETH = {
+					transfer_state = 271
+					transfer_state = 550
+					transfer_state = 559
+
+					271 = { add_core_of = ETH }
+					550 = { add_core_of = ETH }
+					559 = { add_core_of = ETH }
+				
+					inherit_technology = ITA	
+				}
+			
+				ITA = { puppet = ETH }	
+			}
 		}
 	}
 	on_state_control_changed = {
