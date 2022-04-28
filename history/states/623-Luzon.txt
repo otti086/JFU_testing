@@ -4,10 +4,6 @@ state= {
 	manpower = 2010656
 	
 	state_category = city
-	
-	resources={
-		rubber=1 # was: 2
-	}
 
 	history= {
 		owner = USA
