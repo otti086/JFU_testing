@@ -41,7 +41,7 @@ NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN = 5;
 NDefines.NAir.AIR_DEPLOYMENT_DAYS = 0;
 NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_STRATEGIC_BOMBER = 0.036;
 NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_TACTICAL_BOMBER = 0.096;		
-NDefines.NAir.SUPPLY_NEED_FACTOR = 0.001;
+NDefines.NAir.SUPPLY_NEED_FACTOR = 0.14;
 
 NDefines.NAir.AIR_WING_MAX_SIZE = 800;                               -- this can be halved 3 times into 100 stacks (very convenient)
 NDefines.NAir.DETECT_CHANCE_FROM_AIRCRAFTS_EFFECTIVE_COUNT = 1500;  -- WAS 3000, halved because plane counts halved | Max amount of aircrafts in region to give full detection bonus.

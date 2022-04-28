@@ -454,12 +454,12 @@ characters={
 					OR = {
 						NOT = { has_global_flag = spanish_civil_war }
 						AND = {
-							tag = SPA
+							tag = SPR
 							has_global_flag = spanish_civil_war
 							NOT = { has_global_flag = SPR_sin_paquito }
 						}
 						AND = {
-							tag = SPD
+							tag = SPA
 							has_global_flag = spanish_civil_war
 							has_global_flag = SPR_sin_paquito
 						}
@@ -582,15 +582,6 @@ characters={
 				planning_skill=4
 				logistics_skill=2
 				legacy_id=1111
-				visible = {
-					OR = {
-						NOT = { has_global_flag = spanish_civil_war }
-						AND = {
-							tag = SPA
-							has_global_flag = spanish_civil_war
-						}
-					}
-				}
 			}
 		}
 		instance = {
@@ -670,7 +661,7 @@ characters={
 					OR = {
 						NOT = { has_global_flag = spanish_civil_war }
 						AND = {
-							tag = SPA
+							tag = SPR
 							has_global_flag = spanish_civil_war
 						}
 					}

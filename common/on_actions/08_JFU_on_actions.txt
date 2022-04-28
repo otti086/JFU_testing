@@ -344,6 +344,20 @@ on_actions = {
 			
 				ITA = { puppet = ETH }	
 			}
+			if = {
+				limit = {
+					original_tag = SPR
+				}
+
+				SPR = {
+					add_timed_idea = { idea = SPR_carlists_uprising days = 365 }
+				}
+				SOV = {
+					remove_ideas = { SPR_seized_spanish_gold_reserves}
+					add_ideas = { SPR_seized_spanish_gold_reserves }
+				}
+
+			}
 		}
 	}
 	on_state_control_changed = {
