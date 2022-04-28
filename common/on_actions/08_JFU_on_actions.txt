@@ -425,6 +425,20 @@ on_actions = {
 				if = { limit = { country_exists = JAP } JAP = { transfer_state = 670 transfer_state = 286 transfer_state = 741 transfer_state = 671 transfer_state = 728 } }
 
 			}
+			if = {
+				limit = {
+					446 = { is_controlled_by = ITA }
+				}
+				add_ideas = ITA_VICTORY_IN_AFRICA
+			}
+			if = {
+				limit = {
+					AND = {
+						NOT = { 446 = { is_controlled_by = ITA } }
+						ITA = { has_idea = ITA_VICTORY_IN_AFRICA }
+					}
+				}
+			}
 		}
 	}
 	on_paradrop = {

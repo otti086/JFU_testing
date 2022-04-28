@@ -1,5 +1,20 @@
 ideas = {
 	country = {
+		ITA_VICTORY_IN_AFRICA = {
+
+			allowed = {
+				original_tag = "ITA"
+			}
+
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+
+
 		victor_emmanuel = {
 			
 			
