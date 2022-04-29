@@ -148,7 +148,7 @@ country_event = {
 					engineer = { x = 0 y = 1 }
 				}
 			}
-			290 = {
+			174 = {
 				create_unit = {
 					division = "division_template = \"División del Ejército de África\" start_experience_factor = 0.3" 
 					owner = SPR
@@ -299,14 +299,16 @@ country_event = {
 					state =  793 
 					state =  169 
 					state =  790 
-					state =  792 
+					state =  792
+					state =  290
+					state =  178
 					}
 				}
 				create_unit = {
 					division = "division_template = \"Guarnición Nacionalista\" start_experience_factor = 0.1" 
 					owner = SPR
 					allow_spawning_on_enemy_provs = yes
-					count = 4
+					count = 5
 				}
 			}
 			SPR = {
