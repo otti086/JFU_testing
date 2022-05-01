@@ -1757,7 +1757,7 @@ SPR_civil_war_offensives = {
 
 		fire_only_once = yes
 
-		days_mission_timeout = 90
+		days_mission_timeout = 70
 
 		is_good = no
 
@@ -2939,10 +2939,10 @@ SPR_expand_resource_extraction = {
 		}
 
 		highlight_states = {
- highlight_state_targets = {
-			state = 792
-		} 
-}
+ 			highlight_state_targets = {
+				state = 792
+			} 
+		}
 
 		available = {
 			has_tech = construction3
@@ -2998,10 +2998,10 @@ SPR_expand_resource_extraction = {
 		}
 
 		highlight_states = {
- highlight_state_targets = {
+ 			highlight_state_targets = {
 			state = 166
-		} 
-}
+			} 
+		}
 
 		available = {
 			has_tech = construction3
@@ -3057,10 +3057,10 @@ SPR_expand_resource_extraction = {
 		}
 
 		highlight_states = {
- highlight_state_targets = {
+ 			highlight_state_targets = {
 			state = 173
-		} 
-}
+			} 
+		}
 
 		available = {
 			has_tech = construction3
@@ -3123,10 +3123,10 @@ SPR_expand_resource_extraction = {
 		}
 
 		highlight_states = {
- highlight_state_targets = {
+ 			highlight_state_targets = {
 			state = 788
-		} 
-}
+			} 
+		}
 
 		visible = {
 			owns_state = 788
@@ -3187,10 +3187,10 @@ SPR_expand_resource_extraction = {
 		}
 
 		highlight_states = {
- highlight_state_targets = {
-			state = 791
-		} 
-}
+ 			highlight_state_targets = {
+				state = 791
+			} 
+		}
 
 		visible = {
 			owns_state = 791
@@ -3251,10 +3251,10 @@ SPR_expand_resource_extraction = {
 		}
 
 		highlight_states = {
- highlight_state_targets = {
-			state = 171
-		} 
-}
+ 			highlight_state_targets = {
+				state = 171
+			} 
+		}
 
 		visible = {
 			owns_state = 171
@@ -3315,10 +3315,10 @@ SPR_expand_resource_extraction = {
 		}
 
 		highlight_states = {
- highlight_state_targets = {
-			state = 170
-		} 
-}
+			highlight_state_targets = {
+					state = 170
+			} 
+		}
 
 		visible = {
 			owns_state = 170
@@ -3372,10 +3372,10 @@ SPR_expand_resource_extraction = {
 		}
 
 		highlight_states = {
- highlight_state_targets = {
-			state = 41
-		} 
-}
+ 			highlight_state_targets = {
+				state = 41
+			} 
+		}	
 
 		available = {
 			has_tech = excavation3

@@ -45,8 +45,10 @@ NDefines.NAir.SUPPLY_NEED_FACTOR = 0.14;
 
 NDefines.NAir.AIR_WING_MAX_SIZE = 800;                               -- this can be halved 3 times into 100 stacks (very convenient)
 NDefines.NAir.DETECT_CHANCE_FROM_AIRCRAFTS_EFFECTIVE_COUNT = 1500;  -- WAS 3000, halved because plane counts halved | Max amount of aircrafts in region to give full detection bonus.
-NDefines.NAir.AIR_WING_COUNTRY_XP_FROM_TRAINING_FACTOR = 0.02; 		-- WAS 0.01, doubled to compensate for halved starting planes | Factor on country Air XP gained from wing training
-NDefines.NAir.FIELD_EXPERIENCE_SCALE = 0.002;						-- WAS 0.001 | This affects how much XP you get from various missions (AFAIK this will affect XP gained from bombing and CAS missions as well)
+NDefines.NAir.AIR_WING_COUNTRY_XP_FROM_TRAINING_FACTOR = 0.02; 		-- WAS 0.005, doubled|quadrupeln  to compensate for halved starting planes | Factor on country Air XP gained from wing training
+NDefines.NAir.FIELD_EXPERIENCE_SCALE = 0.004;
+NDefines.NAir.CLOSE_AIR_SUPPORT_EXPERIENCE_SCALE = 0.002;
+NDefines.NAir.BOMBING_DAMAGE_EXPERIENCE_SCALE = 0.0004;						-- WAS 0.001 | This affects how much XP you get from various missions (AFAIK this will affect XP gained from bombing and CAS missions as well)
 NDefines.NAir.COMBAT_MAX_WINGS_AT_ONCE = 5000;                       -- WAS 10000 | Max amount of air wings in one combat simulation. The higher value, the quicker countries may loose their wings. It's a gameplay balance value.
 NDefines.NAir.COMBAT_MAX_WINGS_AT_GROUND_ATTACK = 5000;               -- WAS 10000 | we can really pounce a land strike and escalate
 NDefines.NAir.COMBAT_MAX_WINGS_AT_ONCE_PORT_STRIKE = 5000;       -- WAS 10000 | we can really pounce a naval strike and escalate
@@ -85,6 +87,7 @@ NDefines.NNavy.MISSION_SUPREMACY_RATIOS = { 						-- supremacy multipliers for d
 NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.05;
 
 NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0;
+NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 1000.0;
 
 NDefines.NProduction.BASE_LICENSE_IC_COST = 0;	
 NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0;	
@@ -112,3 +115,6 @@ NDefines.NAI.JOIN_ALLY_NEUTRAL_DESIRE = 0;
 NDefines.NAI.JOIN_ALLY_FASCIST_DESIRE = 0;			
 NDefines.NAI.JOIN_ALLY_COMMUNIST_DESIRE = 0;			
 NDefines.NAI.DIPLOMATIC_ACTION_PROPOSE_SCORE = 500;
+
+
+NDefines.NOperatives.INTEL_NETWORK_MIN_VP_TO_TARGET = 5;

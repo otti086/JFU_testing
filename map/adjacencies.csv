@@ -272,6 +272,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 7215;5407;impassable;-1;-1;-1;-1;-1;;Spainish Africa;Med;Border;;
 12100;5407;impassable;-1;-1;-1;-1;-1;;Spainish Africa;Med;Border;;
 
+2800;2776;;-1;-1;-1;-1;-1;Aden_Strait;Aden Strait;
+
 
 
 -1;-1;;-1;-1;-1;-1;-1;-1

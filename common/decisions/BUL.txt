@@ -4908,10 +4908,11 @@ BUL_rearmament = {
 			OR = {
 				has_war = yes
 				AND = {
+					is_ai = no
 					is_in_faction = yes
 					NOT = { is_in_faction_with = ENG }
 				}
-			}	
+			}
 			NOT = { has_country_flag = BUL_rearmament_negotiations_ongoing_flag }
 		}
 

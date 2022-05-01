@@ -152,25 +152,9 @@ country_event = {
 				create_unit = {
 					division = "division_template = \"División del Ejército de África\" start_experience_factor = 0.3" 
 					owner = SPR
+					allow_spawning_on_enemy_provs = yes
+					count = 5
 				}
-				create_unit = {
-					division = "division_template = \"División del Ejército de África\" start_experience_factor = 0.3" 
-					owner = SPR
-				}
-				create_unit = {
-					division = "division_template = \"División del Ejército de África\" start_experience_factor = 0.3" 
-					owner = SPR
-				}
-			}
-			171 = {
-				create_unit = {
-					division = "division_template = \"División del Ejército de África\" start_experience_factor = 0.3" 
-					owner = SPR
-				}
-				create_unit = {
-					division = "division_template = \"División del Ejército de África\" start_experience_factor = 0.3" 
-					owner = SPR
-				}	
 			}
 			division_template = {
 				name = "Requeté Carlista"
@@ -302,6 +286,7 @@ country_event = {
 					state =  792
 					state =  290
 					state =  178
+					state =  177
 					}
 				}
 				create_unit = {
@@ -329,6 +314,7 @@ country_event = {
 				add_timed_idea = { idea = SPR_death_before_surrender days = 900 }
 				add_ideas = SPR_disbanded_army_1
 				set_party_name = { ideology = neutrality long_name = SPR_neutrality_anarchism_party_long name = SPR_neutrality_anarchism_party }
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 10000 }
 			}
 		}
 	}
