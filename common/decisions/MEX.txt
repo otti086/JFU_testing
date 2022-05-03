@@ -45,9 +45,6 @@ MEX_category_military_issues = {
 
 				remove_ideas = MEX_cedillo_tension_4
 
-				country_event = {
-					id = mexico.1
-				}
 			}
 			else_if = {
 				limit = {
@@ -125,10 +122,6 @@ MEX_category_military_issues = {
 		is_good = no
 
 		timeout_effect = {
-			set_global_flag = flag_second_mexican_civil_war
-			country_event = {
-				id = mexico.28
-			}
 		}
 	}
 
@@ -186,10 +179,6 @@ MEX_category_military_issues = {
 		is_good = no
 
 		remove_effect = {
-			set_global_flag = flag_second_mexican_civil_war
-			country_event = {
-				id = mexico.28
-			}
 		}
 	}
 
@@ -241,10 +230,6 @@ MEX_category_military_issues = {
 		is_good = no
 
 		timeout_effect = {
-			set_global_flag = flag_second_mexican_civil_war
-			country_event = {
-				id = mexico.30
-			}
 		}
 	}
 
@@ -306,10 +291,6 @@ MEX_category_military_issues = {
 		is_good = no
 
 		remove_effect = {
-			set_global_flag = flag_second_mexican_civil_war
-			country_event = {
-				id = mexico.30
-			}
 		}
 	}
 

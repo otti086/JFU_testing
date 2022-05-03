@@ -122,6 +122,39 @@ on_actions = {
 			SPR = {
 				country_event = { id = lar_spain.2 days = 230 }
 			}
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = JFU_closed_eco_JAPAN
+						option = ENABLE_CLOSED_ECO
+					}
+				}
+				JAP = {
+					add_ideas = closed_economy 
+					add_ideas = limited_exports_idea
+				}
+				
+			}
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = JFU_closed_eco_SOVIET
+						option = ENABLE_CLOSED_ECO
+					}
+				}
+				SOV = {
+					add_ideas = closed_economy 
+					add_ideas = export_focus_idea
+					403 = {
+						add_extra_state_shared_building_slots = 8
+						add_building_construction = {
+							type = industrial_complex
+							level = 8
+							instant_build = yes
+							}
+					}
+				}
+			}
 		}
 		
 	}

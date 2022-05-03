@@ -1157,6 +1157,13 @@ technologies = {
 	
 	nuclear_reactor = {
 
+
+		allow = {
+			has_game_rule = {
+				rule = JFU_NUKE_OPTIONS
+				option = JFU_ENABLE_NUKES
+			}
+		}
 		# can build reactors
 		
 		start_year = 1943

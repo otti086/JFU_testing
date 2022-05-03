@@ -1769,6 +1769,19 @@ early_ship_hull_carrier = {
 			research_cost_coeff = 1
 		}
 
+		allow = {
+			OR = { 
+				has_game_rule = {
+					rule = JFU_SUB_OPTIONS
+					option = JFU_ENABLE_ALL_SUB
+				}
+				has_game_rule = {
+					rule = JFU_SUB_OPTIONS
+					option = JFU_ENABLE_SUB3_ONLY
+				}
+			}
+		}
+
 		research_cost = 2.0
 
 		start_year = 1940
@@ -1804,6 +1817,13 @@ early_ship_hull_carrier = {
 		enable_equipment_modules = {
 			ship_torpedo_sub_4
 			sub_ship_engine_4
+		}
+
+		allow = {
+			has_game_rule = {
+				rule = JFU_SUB_OPTIONS
+				option = JFU_ENABLE_ALL_SUB
+			}
 		}
 
 		research_cost = 2.0
@@ -1892,6 +1912,13 @@ early_ship_hull_carrier = {
 		path = {
 			leads_to_tech = improved_submarine_snorkel
 			research_cost_coeff = 1
+		}
+
+		allow = {
+			has_game_rule = {
+				rule = JFU_snorkel_options
+				option = JFU_ENABLE_SNORKEL2
+			}
 		}
 
 		xp_research_type = navy

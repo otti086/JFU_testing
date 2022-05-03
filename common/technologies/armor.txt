@@ -1328,7 +1328,12 @@ technologies = {
 		enable_subunits = {
 			modern_armor
 		}
-		
+		allow = {
+			has_game_rule = {
+				rule = JFU_MODERN_TANK_OPTIONS
+				option = JFU_ENABLE_MODERN_TANKS
+			}
+		}
 		research_cost = 2.5
 		start_year = 1945
 		

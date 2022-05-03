@@ -106,7 +106,41 @@ ideas = {
 			}
 
 		}
-		
+		export_focus_idea = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = export_focus
+
+			modifier = {
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.05
+				civilian_intel_to_others = 20.0
+				navy_intel_to_others = 10.0
+			}
+		}
+		limited_exports_idea = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = export_focus
+
+			modifier = {
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = 0.01
+				civilian_intel_to_others = 10.0
+				navy_intel_to_others = 5
+			}
+		}
 	}
-	
 }

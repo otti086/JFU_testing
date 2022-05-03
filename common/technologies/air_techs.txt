@@ -1397,6 +1397,19 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		allow = {
+			OR = {
+				has_game_rule = {
+					rule = JFU_ALLOW_STRATEGIC_BOMBERS
+					option = JFU_ENABLE_STRATEGIC_BOMBERS
+				}
+				has_game_rule = {
+					rule = JFU_ALLOW_STRATEGIC_BOMBERS
+					option = JFU_DISABLE_STRATEGIC_BOMBER2
+				}
+			}
+		}
+
 		research_cost = 2
 		start_year = 1936
 		folder = {
@@ -1435,6 +1448,13 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
+		allow = {
+			has_game_rule = {
+				rule = JFU_ALLOW_STRATEGIC_BOMBERS
+				option = JFU_ENABLE_STRATEGIC_BOMBERS
+			}
+		}
+
 		research_cost = 2
 		start_year = 1940
 		folder = {
