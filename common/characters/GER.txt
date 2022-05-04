@@ -115,6 +115,41 @@ characters={
 		}
 	}
 
+	GER_gerd_von_rundstedt_grinded={
+		name=GER_gerd_von_rundstedt_grinded
+		portraits={
+			army={
+				large="gfx/leaders/GER/Portrait_Germany_Gerd_von_Rundstedt.dds"
+				small="GFX_idea_gerd_von_rundstedt"
+			}
+		}	
+		advisor={
+			slot = high_command
+			idea_token = gerd_von_rundstedt_grinded
+			ledger = army
+			allowed = {
+				original_tag = GER
+			}
+			traits = {
+				army_regrouping_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+		
+		field_marshal={
+			traits={ old_guard urban_assault_specialist defensive_doctrine organizer logistics_wizard infantry_leader ambusher trickster }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
 	GER_gunther_von_kluge={
 		name=GER_gunther_von_kluge
 		portraits={
@@ -187,7 +222,7 @@ characters={
 			defense_skill=4
 			planning_skill=2
 			logistics_skill=3
-			legacy_id=4
+			legacy_id=-1
 		}
 	}
 
@@ -219,7 +254,7 @@ characters={
 		}
 		
 		corps_commander={
-			traits={ trait_reckless media_personality armor_officer war_hero trickster expert_improviser desert_fox trait_mountaineer panzer_expert panzer_leader }
+			traits={ trait_reckless armor_officer trickster expert_improviser desert_fox trait_mountaineer panzer_expert panzer_leader trait_engineer fortress_buster }
 			skill=4
 			attack_skill=4
 			defense_skill=4
@@ -258,6 +293,39 @@ characters={
 			planning_skill=3
 			logistics_skill=4
 			legacy_id=5
+		}
+	}
+
+
+	GER_erich_von_manstein_grinded={
+		name=GER_erich_von_manstein_grinded
+		portraits={
+			army={
+				large="gfx/leaders/GER/Portrait_Germany_Erich_von_Manstein.dds"
+				small="GFX_idea_manstein"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = manstein_grinded
+			ledger = army
+			allowed = {
+				original_tag = GER
+			}
+			traits = {
+				mobile_warfare_expert
+			}
+		}
+		
+		corps_commander={
+			traits={ brilliant_strategist armor_officer trickster trait_engineer panzer_leader panzer_expert hill_fighter ranger trickster expert_improviser}
+			skill=4
+			attack_skill=2
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
 		}
 	}
 
@@ -347,6 +415,25 @@ characters={
 			planning_skill=4
 			logistics_skill=2
 			legacy_id=9
+		}
+	}
+
+	GER_fedor_von_bock_grinded={
+		name=GER_fedor_von_bock_grinded
+		portraits={
+			army={
+				large="gfx/leaders/GER/Portrait_Germany_Fedor_von_Bock.dds"
+				small="gfx/interface/ideas/idea_GER_fedor_von_bock.dds"
+			}
+		}
+		field_marshal={
+			traits={ trait_cautious harsh_leader panzer_leader panzer_expert logistics_wizard thorough_planner ranger hill_fighter trickster}
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=-1
 		}
 	}
 
@@ -496,6 +583,25 @@ characters={
 			planning_skill=2
 			logistics_skill=4
 			legacy_id=17
+		}
+	}
+
+	GER_erwin_von_witzleben_grinded={
+		name=GER_erwin_von_witzleben_grinded
+		portraits={
+			army={
+				large="gfx/leaders/GER/Portrait_Germany_Erwin_von_Witzleben.dds"
+				small="gfx/interface/ideas/idea_GER_erwin_von_witzleben.dds"
+			}
+		}
+		corps_commander={
+			traits={ career_officer infantry_leader infantry_expert hill_fighter trait_mountaineer winter_specialist trickster expert_improviser}
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=-1
 		}
 	}
 

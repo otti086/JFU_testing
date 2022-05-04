@@ -184,12 +184,9 @@ recruit_character = GER_alfred_saalwachter
 recruit_character = GER_erhard_milch
 recruit_character = GER_erich_bey
 recruit_character = GER_erich_raeder
-recruit_character = GER_erich_von_manstein
 recruit_character = GER_ernst_udet
 recruit_character = GER_ernsteberhard_hell
-recruit_character = GER_erwin_von_witzleben
 recruit_character = GER_ewald_von_kleist
-recruit_character = GER_fedor_von_bock
 recruit_character = GER_felix_steiner
 recruit_character = GER_ferdinand_schorner
 recruit_character = GER_franz_halder
@@ -197,7 +194,6 @@ recruit_character = GER_friedrich_paulus
 recruit_character = GER_friedrich_schulz
 recruit_character = GER_georg_von_kuchler
 recruit_character = GER_georghans_reinhardt
-recruit_character = GER_gerd_von_rundstedt
 recruit_character = GER_hermann_goring
 recruit_character = GER_gotthard_heinrici
 recruit_character = GER_gunther_lutjens
@@ -247,34 +243,7 @@ recruit_character = GER_wilhelm_ii
 recruit_character = GER_wilhelm_iii
 recruit_character = GER_victoria
 recruit_character = GER_august_von_mackensen
-
 recruit_character = GER_alexander_von_falkenhausen #Not visible unless recalled from China
-
-if = {
-	limit = {
-		OR = {
-			has_game_rule = {
-				rule = JFU_pre_grinded_generals
-				option = PRE_GRINDED_GENERALS_OFF
-			}
-			has_game_rule = {
-				rule = JFU_pre_grinded_generals
-				option = HALVED_GRIND_TIME
-			}
-		}
-	}
-	recruit_character = GER_erwin_rommel
-}
-
-if = {
-	limit = {
-		has_game_rule = {
-			rule = JFU_pre_grinded_generals
-			option = PRE_GRINDED_GENERALS_ON
-		}
-	}
-	recruit_character = GER_erwin_rommel_grinded
-}
 
 if = {
 	limit = {

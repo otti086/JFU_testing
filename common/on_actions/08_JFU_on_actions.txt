@@ -155,6 +155,38 @@ on_actions = {
 					}
 				}
 			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = JFU_pre_grinded_generals
+						option = PRE_GRINDED_GENERALS_ON
+					}
+				}
+				GER = { 
+					recruit_character = GER_erwin_rommel_grinded 
+					recruit_character = GER_fedor_von_bock_grinded
+					recruit_character = GER_erich_von_manstein_grinded
+					recruit_character = GER_erwin_von_witzleben_grinded
+					recruit_character = GER_gerd_von_rundstedt_grinded
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_game_rule = {
+							rule = JFU_pre_grinded_generals
+							option = PRE_GRINDED_GENERALS_ON
+						}
+					}
+				}
+				GER = { 
+					recruit_character = GER_erwin_rommel
+					recruit_character = GER_fedor_von_bock
+					recruit_character = GER_erich_von_manstein
+					recruit_character = GER_erwin_von_witzleben
+					recruit_character = GER_gerd_von_rundstedt
+				}
+			}
 		}
 		
 	}
