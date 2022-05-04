@@ -191,6 +191,44 @@ characters={
 		}
 	}
 
+	GER_erwin_rommel_grinded={
+		name=GER_erwin_rommel_grinded
+		portraits={
+			army={
+				large="gfx/leaders/GER/Portrait_Germany_Erwin_Rommel.dds"
+				small="GFX_idea_erwin_rommel"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = GER_erwin_rommel_grinded
+			ledger = army
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				has_completed_focus = GER_army_innovation
+			}
+			traits = {
+				army_armored_3
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 8.000
+			}
+		}
+		
+		corps_commander={
+			traits={ trait_reckless media_personality armor_officer war_hero trickster expert_improviser desert_fox trait_mountaineer panzer_expert panzer_leader }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
 	GER_erich_von_manstein={
 		name=GER_erich_von_manstein
 		portraits={

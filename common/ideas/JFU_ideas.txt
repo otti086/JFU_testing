@@ -131,7 +131,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = export_focus
+			picture = limited_exports
 
 			modifier = {
 				industrial_capacity_factory = 0.05
