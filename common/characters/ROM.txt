@@ -121,6 +121,25 @@ characters={
 		}
 	}
 
+	ROM_petre_dumitrescu_grinded={
+		name=ROM_petre_dumitrescu_grinded
+		portraits={
+			army={
+				large="GFX_Portrait_romania_petre_dumitrescu"
+				small="GFX_idea_ROM_petre_dumitrescu"
+			}
+		}
+		field_marshal={
+			traits={ logistics_wizard offensive_doctrine organizer infantry_leader infantry_expert thorough_planner trickster hill_fighter ranger }
+			skill=5
+			attack_skill=4
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
 	ROM_ioan_mihail_racovita={
 		name=ROM_ioan_mihail_racovita
 		portraits={
@@ -132,6 +151,25 @@ characters={
 		corps_commander={
 			traits={ hill_fighter }
 			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	ROM_ioan_mihail_racovita_grinded={
+		name=ROM_ioan_mihail_racovita_grinded
+		portraits={
+			army={
+				large="GFX_Portrait_romania_ioan_mihail_racovita"
+				small="GFX_idea_ROM_ioan_mihail_racovita"
+			}
+		}
+		corps_commander={
+			traits={ hill_fighter trait_engineer infantry_expert infantry_leader commando trickster expert_improviser ranger hill_fighter}
+			skill=5
 			attack_skill=2
 			defense_skill=3
 			planning_skill=3
@@ -399,6 +437,41 @@ characters={
 
 		corps_commander={
 			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	ROM_gheorghe_avramescu_grinded={
+		name=ROM_gheorghe_avramescu_grinded
+		portraits={
+			army={
+				small="GFX_idea_ROM_gheorghe_avramescu"
+				large="GFX_Portrait_romania_gheorghe_avramescu"
+			}
+		}
+		advisor={	
+			slot = high_command
+			idea_token = ROM_gheorghe_avramescu_grinded
+			ledger = army
+			allowed = {
+				original_tag = ROM
+			}
+			traits = {
+				army_infantry_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+
+		corps_commander={
+			traits = { trait_engineer infantry_leader infantry_expert commando trickster hill_fighter trait_mountaineer }
+			skill=5
 			attack_skill=3
 			defense_skill=2
 			planning_skill=2

@@ -137,6 +137,25 @@ characters={
 		}
 	}
 
+	HUN_geza_lakatos_grinded={
+		name=HUN_geza_lakatos_grinded
+		portraits={
+			army={
+				large="GFX_Portrait_hungary_geza_lakatos"
+				small="GFX_idea_HUN_geza_lakatos"
+			}
+		}
+		corps_commander={
+			traits = { panzer_leader panzer_expert trickster expert_improviser ranger urban_assault_specialist  }
+			skill=4
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
 	HUN_ivan_hindy={
 		name=HUN_ivan_hindy
 		portraits={
@@ -147,6 +166,25 @@ characters={
 		}
 		corps_commander={
 			traits={ trickster }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+
+	HUN_ivan_hindy_grinded={
+		name=HUN_ivan_hindy_grinded
+		portraits={
+			army={
+				large="GFX_Portrait_hungary_ivan_hindy"
+				small="GFX_idea_HUN_ivan_hindy"
+			}
+		}
+		corps_commander={
+			traits={ trickster organizer logistics_wizard panzer_leader combined_arms_expert thorough_planner urban_assault_specialist ranger trickster}
 			skill=4
 			attack_skill=3
 			defense_skill=4
@@ -174,6 +212,25 @@ characters={
 		}
 	}
 
+	HUN_karoly_beregfy_grinded={
+		name=HUN_karoly_beregfy_grinded
+		portraits={
+			army={
+				large="GFX_Portrait_hungary_karoly_beregfy"
+				small="GFX_idea_HUN_karoly_beregfy"
+			}
+		}
+		field_marshal={
+			traits = { organizer infantry_leader infantry_expert thorough_planner logistics_wizard trait_mountaineer trickster}
+			skill=4
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
 	HUN_lajos_veress={
 		name=HUN_lajos_veress
 		portraits={
@@ -185,6 +242,25 @@ characters={
 		corps_commander={
 			traits={ armor_officer }
 			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	HUN_lajos_veress_grinded={
+		name=HUN_lajos_veress_grinded
+		portraits={
+			army={
+				large="GFX_Portrait_hungary_lajos_veress"
+				small="GFX_idea_HUN_lajos_veress"
+			}
+		}
+		corps_commander={
+			traits={ armor_officer trait_engineer infantry_leader infantry_expert trickster expert_improviser ranger trait_mountaineer }
+			skill=4
 			attack_skill=2
 			defense_skill=1
 			planning_skill=2

@@ -169,6 +169,52 @@ on_actions = {
 					recruit_character = GER_erwin_von_witzleben_grinded
 					recruit_character = GER_gerd_von_rundstedt_grinded
 				}
+				SOV = {
+					recruit_character = SOV_nikolay_vatutin_grinded
+					recruit_character = SOV_georgy_zhukov_grinded
+					recruit_character = SOV_vasily_chuykov_grinded
+					recruit_character = SOV_andrey_grechko_grinded
+					recruit_character = SOV_dmitry_lelyushenko_grinded
+					SOV_georgy_zhukov_grinded = { 
+						set_character_flag = SOV_safe_from_purge_flag
+					}
+					SOV_vasily_chuykov_grinded = {
+						set_character_flag = SOV_safe_from_purge_flag
+					}
+					SOV_dmitry_lelyushenko_grinded = {
+						set_character_flag = SOV_safe_from_purge_flag
+					}	
+					SOV_andrey_grechko_grinded = {
+						set_character_flag = SOV_safe_from_purge_flag
+					}
+					SOV_nikolay_vatutin_grinded = {
+						set_character_flag = SOV_safe_from_purge_flag
+					}	
+				}
+				ROM = {
+					recruit_character = ROM_gheorghe_avramescu_grinded
+					recruit_character = ROM_ioan_mihail_racovita_grinded
+					recruit_character = ROM_petre_dumitrescu_grinded
+				}
+				HUN = {
+					recruit_character = HUN_geza_lakatos_grinded
+					recruit_character = HUN_ivan_hindy_grinded
+					recruit_character = HUN_karoly_beregfy_grinded
+					recruit_character = HUN_lajos_veress_grinded
+				}
+				SPR = {
+					recruit_character = SPR_antonio_cordon_garcia_grinded
+					recruit_character = SPA_francisco_franco_grinded
+					recruit_character = SPR_mohamed_meziane_grinded
+					recruit_character = SPR_gonzalo_queipo_de_llano_grinded
+				}
+				ITA = {
+					recruit_character = ITA_emilio_de_bono_grinded
+					recruit_character = ITA_ugo_cavallero_grinded
+					recruit_character = ITA_giovanni_messe_grinded
+					recruit_character = ITA_ubaldo_soddu_grinded
+					recruit_character = ITA_rodolfo_graziani_grinded
+				}
 			}
 			if = {
 				limit = {
@@ -185,6 +231,51 @@ on_actions = {
 					recruit_character = GER_erich_von_manstein
 					recruit_character = GER_erwin_von_witzleben
 					recruit_character = GER_gerd_von_rundstedt
+				}
+				SOV = {
+					recruit_character = SOV_nikolay_vatutin
+					recruit_character = SOV_georgy_zhukov
+					recruit_character = SOV_vasily_chuykov
+					recruit_character = SOV_andrey_grechko
+					recruit_character = SOV_dmitry_lelyushenko
+					SOV_georgy_zhukov = { 
+						set_character_flag = SOV_safe_from_purge_flag
+					}
+					SOV_vasily_chuykov = {
+						set_character_flag = SOV_safe_from_purge_flag
+					}
+					SOV_dmitry_lelyushenko = {
+						set_character_flag = SOV_safe_from_purge_flag
+					}	
+					SOV_andrey_grechko = {
+						set_character_flag = SOV_safe_from_purge_flag
+					}
+					SOV_nikolay_vatutin = {
+						set_character_flag = SOV_safe_from_purge_flag
+					}				
+				}
+				ROM = {
+					recruit_character = ROM_gheorghe_avramescu
+					recruit_character = ROM_ioan_mihail_racovita
+					recruit_character = ROM_petre_dumitrescu
+				}
+				HUN = {
+					recruit_character = HUN_geza_lakatos
+					recruit_character = HUN_ivan_hindy
+					recruit_character = HUN_karoly_beregfy
+					recruit_character = HUN_lajos_veress
+				}
+				SPR = {
+					recruit_character = SPR_antonio_cordon_garcia
+					recruit_character = SPR_mohamed_meziane
+					recruit_character = SPR_gonzalo_queipo_de_llano
+				}
+				ITA = {
+					recruit_character = ITA_emilio_de_bono
+					recruit_character = ITA_ugo_cavallero
+					recruit_character = ITA_giovanni_messe
+					recruit_character = ITA_ubaldo_soddu
+					recruit_character = ITA_rodolfo_graziani
 				}
 			}
 		}

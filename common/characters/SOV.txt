@@ -159,6 +159,50 @@ characters = {
 		}		
 	}
 
+	SOV_georgy_zhukov_grinded = {
+		name = SOV_georgy_zhukov_grinded
+
+		portraits = {
+			army = {
+				small = "GFX_idea_georgy_zhukov"
+				large = "gfx/leaders/SOV/Portrait_Soviet_Gregory_Zhukov.dds"
+			}
+		}
+
+		field_marshal = {
+			traits = { winter_specialist defensive_doctrine infantry_leader ambusher organizer logistics_wizard skilled_staffer expert_delegator}
+			skill = 5
+			attack_skill = 5
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 5
+			legacy_id = -1
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+		}
+
+		advisor = {
+			cost = 150
+			slot = theorist
+			idea_token = georgy_zhukov_grinded
+			ledger = army
+			allowed = {
+				original_tag = SOV
+			}
+			available = {
+				has_completed_focus = SOV_positive_heroism
+				if = {
+					limit = {
+						has_character_flag = SOV_exiled_flag
+					}
+					NOT = { has_character_flag = SOV_exiled_flag }
+				}
+			}
+			traits = {
+				mass_assault_expert
+			}
+		}		
+	}
+
 	SOV_konstantin_rokossovsky = {
 		name = SOV_konstantin_rokossovsky
 
@@ -317,6 +361,26 @@ characters = {
 			planning_skill = 3
 			logistics_skill = 3
 			legacy_id = 0
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+		}
+	}
+
+	SOV_nikolay_vatutin_grinded = {
+		name = SOV_nikolay_vatutin_grinded
+		portraits = {
+			army = {
+				large = "gfx/leaders/SOV/Portrait_Soviet_Nikolai_Fyodorovich_Vatutin.dds"
+				small="gfx/interface/ideas/idea_SOV_nikolai_fyodorovich_vatutin.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  infantry_officer trait_engineer infantry_leader infantry_expert offensive_doctrine ranger trickster }
+			skill = 4
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+			legacy_id = -1
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
@@ -974,6 +1038,26 @@ characters = {
 		}
 	}
 
+	SOV_dmitry_lelyushenko_grinded = {
+		name = SOV_dmitry_lelyushenko_grinded
+		portraits = {
+			army = {
+				large = "gfx/leaders/SOV/Portrait_Soviet_Dmitri_Danilovich_Lelyushenko.dds"
+				small="gfx/interface/ideas/idea_SOV_dmitri_danilovich_lelyushenko.dds"
+			}
+		}
+		corps_commander = {
+			traits = { trait_reckless panzer_expert panzer_leader trait_engineer trickster expert_improviser ranger hill_fighter }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+		}
+	}
+
 	SOV_andrey_grechko = {
 		name = SOV_andrey_grechko
 		portraits = {
@@ -984,6 +1068,26 @@ characters = {
 		}
 		corps_commander = {
 			traits = { cavalry_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+			legacy_id = 0
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+		}
+	}
+
+	SOV_andrey_grechko_grinded = {
+		name = SOV_andrey_grechko_grinded
+		portraits = {
+			army = {
+				large = "GFX_portrait_SOV_andrey_grechko"
+				small= "GFX_idea_SOV_andrey_grechko"
+			}
+		}
+		corps_commander = {
+			traits = { cavalry_officer infantry_leader trickster guerilla_fighter cavalry_leader }
 			skill = 3
 			attack_skill = 1
 			defense_skill = 3
@@ -1030,6 +1134,26 @@ characters = {
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+		}
+	}
+
+	SOV_vasily_chuykov_grinded = {
+		name = SOV_vasily_chuykov_grinded
+		portraits = {
+			army = {
+				large = "gfx/leaders/SOV/Portrait_Soviet_Vasily_Chuykov.dds"
+				small="gfx/interface/ideas/idea_SOV_vasily_chuikov.dds"
+			}
+		}
+		field_marshal = {
+			traits = { brilliant_strategist organizer panzer_leader panzer_expert combined_arms_expert aggressive_assaulter trickster logistics_wizard thorough_planner hill_fighter ranger }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
