@@ -1147,7 +1147,7 @@ characters = {
 			}
 		}
 		field_marshal = {
-			traits = { brilliant_strategist organizer panzer_leader panzer_expert combined_arms_expert aggressive_assaulter trickster logistics_wizard thorough_planner hill_fighter ranger }
+			traits = { brilliant_strategist organizer panzer_leader  combined_arms_expert aggressive_assaulter trickster logistics_wizard thorough_planner hill_fighter ranger }
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1

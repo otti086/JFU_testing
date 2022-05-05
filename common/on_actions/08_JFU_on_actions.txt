@@ -278,6 +278,22 @@ on_actions = {
 					recruit_character = ITA_rodolfo_graziani
 				}
 			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = JFU_pre_grinded_generals
+						option = HALVED_GRIND_TIME
+					}
+				}
+				every_possible_country = {
+					limit = {
+						NOT = { ai_country = yes }
+					}
+					add_ideas = {
+						HALVED_GRIND
+					}
+				}
+			}
 		}
 		
 	}

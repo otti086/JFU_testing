@@ -153,7 +153,7 @@ characters={
 		}
 		
 		field_marshal={
-			traits={ old_guard trait_cautious defensive_doctrine infantry_expert ambusher trickster guerilla_fighter organizer logistics_wizard hill_fighter trait_mountaineer }
+			traits={ old_guard trait_cautious defensive_doctrine infantry_leader ambusher trickster guerilla_fighter organizer logistics_wizard hill_fighter trait_mountaineer }
 			skill=4
 			attack_skill=1
 			defense_skill=1
