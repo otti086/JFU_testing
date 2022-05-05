@@ -170,7 +170,7 @@ characters = {
 		}
 
 		field_marshal = {
-			traits = { winter_specialist defensive_doctrine infantry_leader ambusher organizer logistics_wizard skilled_staffer expert_delegator}
+			traits = { winter_specialist pre_grinded defensive_doctrine infantry_leader ambusher organizer logistics_wizard skilled_staffer expert_delegator}
 			skill = 5
 			attack_skill = 5
 			defense_skill = 2
@@ -374,7 +374,7 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = {  infantry_officer trait_engineer infantry_leader infantry_expert offensive_doctrine ranger trickster }
+			traits = {  infantry_officer pre_grinded trait_engineer infantry_leader infantry_expert offensive_doctrine ranger trickster }
 			skill = 4
 			attack_skill = 1
 			defense_skill = 3
@@ -1047,7 +1047,7 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { trait_reckless panzer_expert panzer_leader trait_engineer trickster expert_improviser ranger hill_fighter }
+			traits = { trait_reckless pre_grinded panzer_expert panzer_leader trait_engineer trickster expert_improviser ranger hill_fighter }
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -1087,7 +1087,7 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { cavalry_officer infantry_leader trickster guerilla_fighter cavalry_leader }
+			traits = { cavalry_officer pre_grinded infantry_leader trickster guerilla_fighter cavalry_leader }
 			skill = 3
 			attack_skill = 1
 			defense_skill = 3
@@ -1147,7 +1147,7 @@ characters = {
 			}
 		}
 		field_marshal = {
-			traits = { brilliant_strategist organizer panzer_leader  combined_arms_expert aggressive_assaulter trickster logistics_wizard thorough_planner hill_fighter ranger }
+			traits = { brilliant_strategist pre_grinded organizer panzer_leader  combined_arms_expert aggressive_assaulter trickster logistics_wizard thorough_planner hill_fighter ranger }
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1

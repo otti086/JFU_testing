@@ -438,7 +438,7 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ infantry_leader infantry_leader infantry_expert thorough_planner logistics_wizard ranger trickster }
+			traits={ infantry_leader pre_grinded infantry_leader infantry_expert thorough_planner logistics_wizard ranger trickster }
 			skill=4
 			attack_skill=2
 			defense_skill=1
@@ -536,7 +536,7 @@ characters={
 			}
 
 			field_marshal={
-			traits={ logistics_wizard organisational_leader expert_delegator organizer trickster panzer_leader panzer_expert hill_fighter ranger }
+			traits={ logistics_wizard pre_grinded organisational_leader expert_delegator organizer trickster panzer_leader panzer_expert hill_fighter ranger }
 			skill=5
 			attack_skill=3
 			defense_skill=2
@@ -574,7 +574,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ career_officer harsh_leader trait_SPA_nationalist_sympathies panzer_leader panzer_expert trait_engineer fortress_buster trickster expert_improviser hill_fighter ranger }
+			traits={ career_officer pre_grinded harsh_leader trait_SPA_nationalist_sympathies panzer_leader panzer_expert trait_engineer fortress_buster trickster expert_improviser hill_fighter ranger }
 			skill=4
 			attack_skill=5
 			defense_skill=2
@@ -612,7 +612,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ infantry_officer trait_SPA_nationalist_sympathies trait_engineer infantry_leader infantry_expert trickster expert_improviser ranger hill_fighter}
+			traits={ infantry_officer pre_grinded trait_SPA_nationalist_sympathies trait_engineer infantry_leader infantry_expert trickster expert_improviser ranger hill_fighter}
 			skill=3
 			attack_skill=3
 			defense_skill=3

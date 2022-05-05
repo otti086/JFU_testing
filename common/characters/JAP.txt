@@ -96,7 +96,7 @@ characters={
 		}
 
 		corps_commander={
-			traits={ brilliant_strategist trickster trait_engineer commando trickster fortress_buster trait_mountaineer hill_fighter infantry_expert infantry_leader expert_improviser }
+			traits={ brilliant_strategist pre_grinded trickster trait_engineer commando trickster fortress_buster trait_mountaineer hill_fighter infantry_expert infantry_leader expert_improviser }
 			skill=5
 			attack_skill=4
 			defense_skill=5
@@ -160,7 +160,7 @@ characters={
 		}
 		
 		field_marshal={
-			traits={  JAP_samurai_lineage offensive_doctrine organizer infantry_expert infantry_leader trait_engineer trickster hill_fighter trait_mountaineer logistics_wizard thorough_planner}
+			traits={  JAP_samurai_lineage pre_grinded offensive_doctrine organizer infantry_expert infantry_leader trait_engineer trickster hill_fighter trait_mountaineer logistics_wizard thorough_planner}
 			skill=4
 			attack_skill=4
 			defense_skill=4
@@ -230,7 +230,7 @@ characters={
 		}
 		
 		field_marshal={
-			traits={ JAP_samurai_lineage offensive_doctrine organizer panzer_expert panzer_leader trait_engineer trickster logistics_wizard thorough_planner hill_fighter trait_mountaineer}
+			traits={ JAP_samurai_lineage pre_grinded offensive_doctrine organizer panzer_expert panzer_leader trait_engineer trickster logistics_wizard thorough_planner hill_fighter trait_mountaineer}
 			skill=4
 			attack_skill=3
 			defense_skill=4
@@ -268,7 +268,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ career_officer commando infantry_leader infantry_expert naval_invader amphibious urban_assault_specialist hill_fighter }
+			traits={ career_officer pre_grinded commando infantry_leader infantry_expert naval_invader amphibious urban_assault_specialist hill_fighter }
 			skill=3
 			attack_skill=4
 			defense_skill=2
@@ -325,7 +325,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ infantry_officer trickster infantry_expert infantry_leader naval_invader commando expert_improviser jungle_rat trait_mountaineer trait_engineer }
+			traits={ infantry_officer pre_grinded trickster infantry_expert infantry_leader naval_invader commando expert_improviser jungle_rat trait_mountaineer trait_engineer }
 			skill=4
 			attack_skill=4
 			defense_skill=3
@@ -535,7 +535,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ old_guard trait_reckless cavalry_officer trait_engineer panzer_expert panzer_leader commando trickster expert_improviser jungle_rat trait_mountaineer}
+			traits={ old_guard trait_reckless pre_grinded cavalry_officer trait_engineer panzer_expert panzer_leader commando trickster expert_improviser jungle_rat trait_mountaineer}
 			skill=4
 			attack_skill=3
 			defense_skill=2
