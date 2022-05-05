@@ -74,6 +74,38 @@ characters={
 		}
 	}
 
+	JAP_tomoyuki_yamashita_grinded={
+		name=JAP_tomoyuki_yamashita_grinded
+		portraits={
+			army={
+				small="GFX_idea_tomoyuki_yamashita"
+				large="gfx/leaders/JAP/Portrait_Japan_Tomoyuki_Yamashita.dds"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = tomoyuki_yamashita_grinded
+			ledger = army
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				grand_battle_plan_expert
+			}
+		}
+
+		corps_commander={
+			traits={ brilliant_strategist trickster trait_engineer commando trickster fortress_buster trait_mountaineer hill_fighter infantry_expert infantry_leader expert_improviser }
+			skill=5
+			attack_skill=4
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=0
+		}
+	}
+
 	JAP_hisaichi_terauchi={
 		name=JAP_hisaichi_terauchi
 		portraits={
@@ -97,6 +129,38 @@ characters={
 		
 		field_marshal={
 			traits={ politically_connected JAP_samurai_lineage offensive_doctrine }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+
+	JAP_hisaichi_terauchi_grinded={
+		name=JAP_hisaichi_terauchi_grinded
+		portraits={
+			army={
+				small="GFX_idea_hisaichi_terauchi"
+				large="gfx/leaders/JAP/Portrait_Japan_Hisaichi_Terauchi.dds"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = JAP_hisaichi_terauchi_grinded
+			ledger = army
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				military_theorist
+			}
+		}
+		
+		field_marshal={
+			traits={  JAP_samurai_lineage offensive_doctrine organizer infantry_expert infantry_leader trait_engineer trickster hill_fighter trait_mountaineer logistics_wizard thorough_planner}
 			skill=4
 			attack_skill=4
 			defense_skill=4
@@ -141,6 +205,41 @@ characters={
 		}
 	}
 
+	JAP_shunroku_hata_grinded={
+		name=JAP_shunroku_hata_grinded
+		portraits={
+			army={
+				small="GFX_idea_shunroku_hata"
+				large="gfx/leaders/JAP/Portrait_Japan_Shunroku_Hata.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = shunroku_hata_grinded
+			ledger = army
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				army_concealment_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			traits={ JAP_samurai_lineage offensive_doctrine organizer panzer_expert panzer_leader trait_engineer trickster logistics_wizard thorough_planner hill_fighter trait_mountaineer}
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=0
+		}
+	}
+
 	JAP_akira_muto={
 		name=JAP_akira_muto
 		portraits={
@@ -151,6 +250,25 @@ characters={
 		}
 		corps_commander={
 			traits={ career_officer commando }
+			skill=3
+			attack_skill=4
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+
+	JAP_akira_muto_grinded={
+		name=JAP_akira_muto_grinded
+		portraits={
+			army={
+				large="gfx/leaders/JAP/Portrait_Japan_Akira_Muto.dds"
+				small="gfx/interface/ideas/idea_JAP_akira_muto.dds"
+			}
+		}
+		corps_commander={
+			traits={ career_officer commando infantry_leader infantry_expert naval_invader amphibious urban_assault_specialist hill_fighter }
 			skill=3
 			attack_skill=4
 			defense_skill=2
@@ -189,6 +307,25 @@ characters={
 		}
 		corps_commander={
 			traits={ career_officer infantry_officer trickster }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=0
+		}
+	}
+
+	JAP_shizuichi_tanaka_grinded={
+		name=JAP_shizuichi_tanaka_grinded
+		portraits={
+			army={
+				large="gfx/leaders/JAP/Portrait_Japan_Shizuichi_Tanaka.dds"
+				small="gfx/interface/ideas/idea_JAP_shizuichi_tanaka.dds"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer trickster infantry_expert infantry_leader naval_invader commando expert_improviser jungle_rat trait_mountaineer trait_engineer }
 			skill=4
 			attack_skill=4
 			defense_skill=3
@@ -380,6 +517,25 @@ characters={
 		}
 		corps_commander={
 			traits={ old_guard trait_reckless cavalry_officer }
+			skill=4
+			attack_skill=3
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=0
+		}
+	}
+
+	JAP_kenkichi_ueda_grinded={
+		name=JAP_kenkichi_ueda_grinded
+		portraits={
+			army={
+				large="gfx/leaders/JAP/Portrait_Japan_Kenkichi_Ueda.dds"
+				small="gfx/interface/ideas/idea_JAP_kenkichi_ueda.dds"
+			}
+		}
+		corps_commander={
+			traits={ old_guard trait_reckless cavalry_officer trait_engineer panzer_expert panzer_leader commando trickster expert_improviser jungle_rat trait_mountaineer}
 			skill=4
 			attack_skill=3
 			defense_skill=2

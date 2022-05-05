@@ -277,6 +277,25 @@ characters = {
 		}
 	}
 
+	BUL_ivan_markov_grinded = {
+		name = BUL_ivan_markov_grinded
+		portraits = {
+			army = {
+				large = "GFX_portrait_bul_ivan_markov"
+				small = "gfx/interface/ideas/idea_BUL_ivan_markov.dds"
+			}
+		}
+		corps_commander = {
+			traits = { trait_reckless cavalry_leader hill_fighter trait_engineer infantry_expert infantry_leader commando trickster expert_improviser ranger hill_fighter}
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+
 	BUL_georgi_markov = {
 		name = BUL_georgi_markov
 		portraits = {
@@ -293,6 +312,25 @@ characters = {
 			planning_skill = 2
 			logistics_skill = 2
 			legacy_id = 1206
+		}
+	}
+
+	BUL_georgi_markov_grinded = {
+		name = BUL_georgi_markov_grinded
+		portraits = {
+			army = {
+				large = "GFX_portrait_bul_georgi_markov"
+				small = "gfx/interface/ideas/idea_BUL_georgi_markov.dds"
+			}
+		}
+		field_marshal = {
+			traits = { old_guard trait_engineer infantry_leader infantry_expert commando trickster hill_fighter trait_mountaineer }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
 		}
 	}
 

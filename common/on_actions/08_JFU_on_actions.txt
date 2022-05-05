@@ -215,6 +215,26 @@ on_actions = {
 					recruit_character = ITA_ubaldo_soddu_grinded
 					recruit_character = ITA_rodolfo_graziani_grinded
 				}
+				BUL = {
+					recruit_character = BUL_ivan_markov_grinded
+					recruit_character = BUL_georgi_markov_grinded
+				}
+				JAP = {
+					recruit_character = JAP_shizuichi_tanaka_grinded
+					recruit_character = JAP_akira_muto_grinded
+					recruit_character = JAP_shunroku_hata_grinded
+					recruit_character = JAP_hisaichi_terauchi_grinded
+					recruit_character = JAP_tomoyuki_yamashita_grinded
+					recruit_character = JAP_kenkichi_ueda_grinded
+				}
+				MAN = {
+					recruit_character = JAP_shizuichi_tanaka_grinded
+					recruit_character = JAP_akira_muto_grinded
+					recruit_character = JAP_shunroku_hata_grinded
+					recruit_character = JAP_hisaichi_terauchi_grinded
+					recruit_character = JAP_tomoyuki_yamashita_grinded
+					recruit_character = JAP_kenkichi_ueda_grinded
+				}
 			}
 			if = {
 				limit = {
@@ -276,6 +296,18 @@ on_actions = {
 					recruit_character = ITA_giovanni_messe
 					recruit_character = ITA_ubaldo_soddu
 					recruit_character = ITA_rodolfo_graziani
+				}
+				BUL = {
+					recruit_character = BUL_ivan_markov
+					recruit_character = BUL_georgi_markov
+				}
+				JAP = {
+					recruit_character = JAP_shizuichi_tanaka
+					recruit_character = JAP_akira_muto
+					recruit_character = JAP_shunroku_hata
+					recruit_character = JAP_hisaichi_terauchi
+					recruit_character = JAP_tomoyuki_yamashita
+					recruit_character = JAP_kenkichi_ueda
 				}
 			}
 			if = {

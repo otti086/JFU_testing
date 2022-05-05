@@ -87,7 +87,7 @@ NDefines.NNavy.MISSION_SUPREMACY_RATIOS = { 						-- supremacy multipliers for d
 NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.05;
 
 NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0;
-NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 1000.0;
+NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 0.0;
 
 NDefines.NProduction.BASE_LICENSE_IC_COST = 0;	
 NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0;	
