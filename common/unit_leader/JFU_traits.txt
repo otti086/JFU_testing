@@ -1,3 +1,4 @@
+leader_traits = {
 	pre_grinded = { 
 		type = land
 		trait_type = personality_trait
@@ -5,10 +6,11 @@
 		
 		non_shared_modifier = {
 			experience_gain_factor = -10
-            promote_cost_factor = 100
+            promote_cost_factor = 10000
 		}
 
 		new_commander_weight = {
 			factor = 0
 		}
 	}
+}

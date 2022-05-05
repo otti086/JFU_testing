@@ -227,14 +227,6 @@ on_actions = {
 					recruit_character = JAP_tomoyuki_yamashita_grinded
 					recruit_character = JAP_kenkichi_ueda_grinded
 				}
-				MAN = {
-					recruit_character = JAP_shizuichi_tanaka_grinded
-					recruit_character = JAP_akira_muto_grinded
-					recruit_character = JAP_shunroku_hata_grinded
-					recruit_character = JAP_hisaichi_terauchi_grinded
-					recruit_character = JAP_tomoyuki_yamashita_grinded
-					recruit_character = JAP_kenkichi_ueda_grinded
-				}
 			}
 			if = {
 				limit = {

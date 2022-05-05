@@ -225,7 +225,7 @@ characters={
 		}
 		
 		field_marshal={
-			traits={ old_guard career_officer pre_grinded trait_cautious organizer panzer_expert combined_arms_expert thorough_planner organizer thorough_planner hill_fighter trait_mountaineer trickster }
+			traits={ old_guard career_officer pre_grinded trait_cautious organizer panzer_leader combined_arms_expert thorough_planner organizer thorough_planner hill_fighter trait_mountaineer trickster }
 			skill=4
 			attack_skill=1
 			defense_skill=1

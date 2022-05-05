@@ -427,7 +427,7 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ trait_cautious pre_grinded harsh_leader panzer_leader panzer_expert logistics_wizard thorough_planner ranger hill_fighter trickster}
+			traits={ trait_cautious pre_grinded harsh_leader panzer_leader combined_arms_expert logistics_wizard thorough_planner ranger hill_fighter trickster}
 			skill=4
 			attack_skill=4
 			defense_skill=3
