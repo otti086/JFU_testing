@@ -162,6 +162,12 @@ ideas = {
 						NOT = { has_idea = HUN_treaty_of_triannon }
 					}
 				}
+				if = {
+					limit = {
+						original_tag = USA
+					}
+					GER = { has_war = yes }
+				}
 			}
 
 			cost = 150
