@@ -162,7 +162,7 @@ on_actions = {
 						option = PRE_GRINDED_GENERALS_ON
 					}
 				}
-				JFU_pre_grinded_generals_ON = yes
+				SWE = { JFU_pre_grinded_generals_ON = yes }
 			}
 			if = {
 				limit = {
@@ -173,7 +173,7 @@ on_actions = {
 						}
 					}
 				}
-				JFU_pre_grinded_generals_OFF = yes
+				SWE = { JFU_pre_grinded_generals_OFF = yes }
 			}
 			if = {
 				limit = {
@@ -186,9 +186,7 @@ on_actions = {
 					limit = {
 						NOT = { ai_country = yes }
 					}
-					add_ideas = {
-						HALVED_GRIND
-					}
+					add_ideas = { HALVED_GRIND }
 				}
 			}
 		}
