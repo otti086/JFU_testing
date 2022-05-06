@@ -363,34 +363,32 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					limit = {
-						OR = {
-							date > 1941.2.1
-							JAP = { has_war_with = ENG }
-							NOT = {
-								AND = {
-									ENG = { controls_state = 119 }
-									ENG = { controls_state = 120 }
-									ENG = { controls_state = 121 }
-									ENG = { controls_state = 122 }
-									ENG = { controls_state = 123 }
-									ENG = { controls_state = 125 }
-									ENG = { controls_state = 126 }
-									ENG = { controls_state = 127 }
-									ENG = { controls_state = 128 }
-									ENG = { controls_state = 129 }
-									ENG = { controls_state = 130 }
-									ENG = { controls_state = 131 }
-									ENG = { controls_state = 132 }
-									ENG = { controls_state = 133 }
-									ENG = { controls_state = 136 }
-									ENG = { controls_state = 338 }
-								} 
-							}
-						}
+					OR = {
+						date > 1941.2.1
+						JAP = { has_war_with = ENG }
 						NOT = {
-							USA = { has_war_with = GER }
+							AND = {
+								ENG = { controls_state = 119 }
+								ENG = { controls_state = 120 }
+								ENG = { controls_state = 121 }
+								ENG = { controls_state = 122 }
+								ENG = { controls_state = 123 }
+								ENG = { controls_state = 125 }
+								ENG = { controls_state = 126 }
+								ENG = { controls_state = 127 }
+								ENG = { controls_state = 128 }
+								ENG = { controls_state = 129 }
+								ENG = { controls_state = 130 }
+								ENG = { controls_state = 131 }
+								ENG = { controls_state = 132 }
+								ENG = { controls_state = 133 }
+								ENG = { controls_state = 136 }
+								ENG = { controls_state = 338 }
+							} 
 						}
+					}
+					NOT = {
+						USA = { has_war_with = GER }
 					}
 				}
 				if = { limit = { country_exists = USA }	USA = { add_to_war = { targeted_alliance = ENG enemy = GER } } }
