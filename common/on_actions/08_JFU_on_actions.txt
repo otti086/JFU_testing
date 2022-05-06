@@ -326,7 +326,7 @@ on_actions = {
 			HFU_fuel_on_daily_scripted_effect = yes
 			if = {
 				limit = {
-					OR {
+					OR = {
 						date > 1940.8.1
 						NOT = {
 							AND = {
@@ -392,10 +392,10 @@ on_actions = {
 							USA = { has_war_with = GER }
 						}
 					}
-					if = { limit = { country_exists = USA }	USA = { add_to_war = { targeted_alliance = ENG enemy = GER } } }
-					if = { limit = { country_exists = BRA }	BRA = { add_to_war = { targeted_alliance = ENG enemy = GER } } }
-					if = { limit = { country_exists = MEX }	MEX = { add_to_war = { targeted_alliance = ENG enemy = GER } } }
 				}
+				if = { limit = { country_exists = USA }	USA = { add_to_war = { targeted_alliance = ENG enemy = GER } } }
+				if = { limit = { country_exists = BRA }	BRA = { add_to_war = { targeted_alliance = ENG enemy = GER } } }
+				if = { limit = { country_exists = MEX }	MEX = { add_to_war = { targeted_alliance = ENG enemy = GER } } }
 			}
 		}
 	}
