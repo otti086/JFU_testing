@@ -384,33 +384,6 @@ JFU_decisions = {
 			}
 			annex_country = { target = BUL transfer_troops = yes }
 		}
-	}
-
-	ITA_establish_IEA = {
-		allowed = { original_tag = ITA }
-		available = { 
-			has_completed_focus = ITA_victoryinETH 
-			owns_state = 271 owns_state = 550 owns_state = 559 
-		}
-		
-		fire_only_once = yes
-		
-		complete_effect = { 
-			ETH = {
-				transfer_state = 271
-				transfer_state = 550
-				transfer_state = 559
-				
-				271 = { add_core_of = ETH }
-				550 = { add_core_of = ETH }
-				559 = { add_core_of = ETH }
-				
-				inherit_technology = ITA	
-			}
-			
-			puppet = ETH
-		
-		}
 	}	
 
 	ITA_attack_Yugoslavia = {
@@ -439,7 +412,10 @@ JFU_decisions = {
 		allowed = { tag = ITA }
 		available = {	
 			has_completed_focus = ITA_greece_war_goal
-			threat < 0.25
+			OR ={
+				threat < 0.25
+				GER = { has_war_with = ENG }
+			}
 			} 
 		cost = 0
 		complete_effect = {

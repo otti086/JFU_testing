@@ -162,71 +162,7 @@ on_actions = {
 						option = PRE_GRINDED_GENERALS_ON
 					}
 				}
-				GER = { 
-					recruit_character = GER_erwin_rommel_grinded 
-					recruit_character = GER_fedor_von_bock_grinded
-					recruit_character = GER_erich_von_manstein_grinded
-					recruit_character = GER_erwin_von_witzleben_grinded
-					recruit_character = GER_gerd_von_rundstedt_grinded
-				}
-				SOV = {
-					recruit_character = SOV_nikolay_vatutin_grinded
-					recruit_character = SOV_georgy_zhukov_grinded
-					recruit_character = SOV_vasily_chuykov_grinded
-					recruit_character = SOV_andrey_grechko_grinded
-					recruit_character = SOV_dmitry_lelyushenko_grinded
-					SOV_georgy_zhukov_grinded = { 
-						set_character_flag = SOV_safe_from_purge_flag
-					}
-					SOV_vasily_chuykov_grinded = {
-						set_character_flag = SOV_safe_from_purge_flag
-					}
-					SOV_dmitry_lelyushenko_grinded = {
-						set_character_flag = SOV_safe_from_purge_flag
-					}	
-					SOV_andrey_grechko_grinded = {
-						set_character_flag = SOV_safe_from_purge_flag
-					}
-					SOV_nikolay_vatutin_grinded = {
-						set_character_flag = SOV_safe_from_purge_flag
-					}	
-				}
-				ROM = {
-					recruit_character = ROM_gheorghe_avramescu_grinded
-					recruit_character = ROM_ioan_mihail_racovita_grinded
-					recruit_character = ROM_petre_dumitrescu_grinded
-				}
-				HUN = {
-					recruit_character = HUN_geza_lakatos_grinded
-					recruit_character = HUN_ivan_hindy_grinded
-					recruit_character = HUN_karoly_beregfy_grinded
-					recruit_character = HUN_lajos_veress_grinded
-				}
-				SPR = {
-					recruit_character = SPR_antonio_cordon_garcia_grinded
-					recruit_character = SPA_francisco_franco_grinded
-					recruit_character = SPR_mohamed_meziane_grinded
-					recruit_character = SPR_gonzalo_queipo_de_llano_grinded
-				}
-				ITA = {
-					recruit_character = ITA_emilio_de_bono_grinded
-					recruit_character = ITA_ugo_cavallero_grinded
-					recruit_character = ITA_giovanni_messe_grinded
-					recruit_character = ITA_ubaldo_soddu_grinded
-					recruit_character = ITA_rodolfo_graziani_grinded
-				}
-				BUL = {
-					recruit_character = BUL_ivan_markov_grinded
-					recruit_character = BUL_georgi_markov_grinded
-				}
-				JAP = {
-					recruit_character = JAP_shizuichi_tanaka_grinded
-					recruit_character = JAP_akira_muto_grinded
-					recruit_character = JAP_shunroku_hata_grinded
-					recruit_character = JAP_hisaichi_terauchi_grinded
-					recruit_character = JAP_tomoyuki_yamashita_grinded
-					recruit_character = JAP_kenkichi_ueda_grinded
-				}
+				JFU_pre_grinded_generals_ON = yes
 			}
 			if = {
 				limit = {
@@ -237,70 +173,7 @@ on_actions = {
 						}
 					}
 				}
-				GER = { 
-					recruit_character = GER_erwin_rommel
-					recruit_character = GER_fedor_von_bock
-					recruit_character = GER_erich_von_manstein
-					recruit_character = GER_erwin_von_witzleben
-					recruit_character = GER_gerd_von_rundstedt
-				}
-				SOV = {
-					recruit_character = SOV_nikolay_vatutin
-					recruit_character = SOV_georgy_zhukov
-					recruit_character = SOV_vasily_chuykov
-					recruit_character = SOV_andrey_grechko
-					recruit_character = SOV_dmitry_lelyushenko
-					SOV_georgy_zhukov = { 
-						set_character_flag = SOV_safe_from_purge_flag
-					}
-					SOV_vasily_chuykov = {
-						set_character_flag = SOV_safe_from_purge_flag
-					}
-					SOV_dmitry_lelyushenko = {
-						set_character_flag = SOV_safe_from_purge_flag
-					}	
-					SOV_andrey_grechko = {
-						set_character_flag = SOV_safe_from_purge_flag
-					}
-					SOV_nikolay_vatutin = {
-						set_character_flag = SOV_safe_from_purge_flag
-					}				
-				}
-				ROM = {
-					recruit_character = ROM_gheorghe_avramescu
-					recruit_character = ROM_ioan_mihail_racovita
-					recruit_character = ROM_petre_dumitrescu
-				}
-				HUN = {
-					recruit_character = HUN_geza_lakatos
-					recruit_character = HUN_ivan_hindy
-					recruit_character = HUN_karoly_beregfy
-					recruit_character = HUN_lajos_veress
-				}
-				SPR = {
-					recruit_character = SPR_antonio_cordon_garcia
-					recruit_character = SPR_mohamed_meziane
-					recruit_character = SPR_gonzalo_queipo_de_llano
-				}
-				ITA = {
-					recruit_character = ITA_emilio_de_bono
-					recruit_character = ITA_ugo_cavallero
-					recruit_character = ITA_giovanni_messe
-					recruit_character = ITA_ubaldo_soddu
-					recruit_character = ITA_rodolfo_graziani
-				}
-				BUL = {
-					recruit_character = BUL_ivan_markov
-					recruit_character = BUL_georgi_markov
-				}
-				JAP = {
-					recruit_character = JAP_shizuichi_tanaka
-					recruit_character = JAP_akira_muto
-					recruit_character = JAP_shunroku_hata
-					recruit_character = JAP_hisaichi_terauchi
-					recruit_character = JAP_tomoyuki_yamashita
-					recruit_character = JAP_kenkichi_ueda
-				}
+				JFU_pre_grinded_generals_OFF = yes
 			}
 			if = {
 				limit = {
@@ -324,77 +197,77 @@ on_actions = {
 	on_daily = {
 		effect = {
 			HFU_fuel_on_daily_scripted_effect = yes
-			if = {
-				limit = {
-					OR = {
-						date > 1940.8.1
-						NOT = {
-							AND = {
-								ENG = { controls_state = 119 }
-								ENG = { controls_state = 120 }
-								ENG = { controls_state = 121 }
-								ENG = { controls_state = 122 }
-								ENG = { controls_state = 123 }
-								ENG = { controls_state = 125 }
-								ENG = { controls_state = 126 }
-								ENG = { controls_state = 127 }
-								ENG = { controls_state = 128 }
-								ENG = { controls_state = 129 }
-								ENG = { controls_state = 130 }
-								ENG = { controls_state = 131 }
-								ENG = { controls_state = 132 }
-								ENG = { controls_state = 133 }
-								ENG = { controls_state = 136 }
-								ENG = { controls_state = 338 }
-							} 
-						}
-					}
-					NOT = {
-						USA = { is_in_faction = yes }
-						BRA = { is_in_faction = yes }
-						MEX = { is_in_faction = yes }
-					}
-				}
-				ENG = {
-					add_to_faction = USA
-					add_to_faction = BRA
-					add_to_faction = MEX
-				}
-			}
-			if = {
-				limit = {
-					OR = {
-						date > 1941.2.1
-						JAP = { has_war_with = ENG }
-						NOT = {
-							AND = {
-								ENG = { controls_state = 119 }
-								ENG = { controls_state = 120 }
-								ENG = { controls_state = 121 }
-								ENG = { controls_state = 122 }
-								ENG = { controls_state = 123 }
-								ENG = { controls_state = 125 }
-								ENG = { controls_state = 126 }
-								ENG = { controls_state = 127 }
-								ENG = { controls_state = 128 }
-								ENG = { controls_state = 129 }
-								ENG = { controls_state = 130 }
-								ENG = { controls_state = 131 }
-								ENG = { controls_state = 132 }
-								ENG = { controls_state = 133 }
-								ENG = { controls_state = 136 }
-								ENG = { controls_state = 338 }
-							} 
-						}
-					}
-					NOT = {
-						USA = { has_war_with = GER }
-					}
-				}
-				if = { limit = { country_exists = USA }	USA = { add_to_war = { targeted_alliance = ENG enemy = GER } } }
-				if = { limit = { country_exists = BRA }	BRA = { add_to_war = { targeted_alliance = ENG enemy = GER } } }
-				if = { limit = { country_exists = MEX }	MEX = { add_to_war = { targeted_alliance = ENG enemy = GER } } }
-			}
+			#if = {
+			#	limit = {
+			#		OR = {
+			#			date > 1940.8.1
+			#			NOT = {
+			#				AND = {
+			#					ENG = { controls_state = 119 }
+			#					ENG = { controls_state = 120 }
+			#					ENG = { controls_state = 121 }
+			#					ENG = { controls_state = 122 }
+			#					ENG = { controls_state = 123 }
+			#					ENG = { controls_state = 125 }
+			#					ENG = { controls_state = 126 }
+			#					ENG = { controls_state = 127 }
+			#					ENG = { controls_state = 128 }
+			#					ENG = { controls_state = 129 }
+			#					ENG = { controls_state = 130 }
+			#					ENG = { controls_state = 131 }
+			#					ENG = { controls_state = 132 }
+			#					ENG = { controls_state = 133 }
+			#					ENG = { controls_state = 136 }
+			#					ENG = { controls_state = 338 }
+			#				} 
+			#			}
+			#		}
+			#		NOT = {
+			#			USA = { is_in_faction = yes }
+			#			BRA = { is_in_faction = yes }
+			#			MEX = { is_in_faction = yes }
+			#		}
+			#	}
+			#	ENG = {
+			#		add_to_faction = USA
+			#		add_to_faction = BRA
+			#		add_to_faction = MEX
+			#	}
+			#}
+			#if = {
+			#	limit = {
+			#		OR = {
+			#			date > 1941.2.1
+			#			JAP = { has_war_with = ENG }
+			#			NOT = {
+			#				AND = {
+			#					ENG = { controls_state = 119 }
+			#					ENG = { controls_state = 120 }
+			#					ENG = { controls_state = 121 }
+			#					ENG = { controls_state = 122 }
+			#					ENG = { controls_state = 123 }
+			#					ENG = { controls_state = 125 }
+			#					ENG = { controls_state = 126 }
+			#					ENG = { controls_state = 127 }
+			#					ENG = { controls_state = 128 }
+			#					ENG = { controls_state = 129 }
+			#					ENG = { controls_state = 130 }
+			#					ENG = { controls_state = 131 }
+			##					ENG = { controls_state = 132 }
+			#					ENG = { controls_state = 133 }
+			#					ENG = { controls_state = 136 }
+			#					ENG = { controls_state = 338 }
+			#				} 
+			#			}
+			#		}
+			#		NOT = {
+			#			USA = { has_war_with = GER }
+			#		}
+			#	}
+			#	if = { limit = { country_exists = USA }	USA = { add_to_war = { targeted_alliance = ENG enemy = GER } } }
+			#	if = { limit = { country_exists = BRA }	BRA = { add_to_war = { targeted_alliance = ENG enemy = GER } } }
+			#	if = { limit = { country_exists = MEX }	MEX = { add_to_war = { targeted_alliance = ENG enemy = GER } } }
+			#}
 		}
 	}
 	on_capitulation = {
