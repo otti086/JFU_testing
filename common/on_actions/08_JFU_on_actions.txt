@@ -512,13 +512,40 @@ on_actions = {
 				limit = {
 					original_tag = SPA 
 				}
-				set_global_flag = scw_over
+				if = {
+					limit = {
+						NOT = {	SPR = { has_war_with = SPD }}
+					}
+					set_global_flag = scw_over
+				}
 				every_state = {
 					limit = { 
 						AND = {
 							is_core_of = SPA
 							NOT = {
 								is_controlled_by = SPD
+							}
+						}
+					}
+					transfer_state_to = SPR 
+				}
+			}
+			if = {
+				limit = {
+					original_tag = SPD
+				}
+				if = {
+					limit = {
+						NOT = {	SPR = { has_war_with = SPA }}
+					}
+					set_global_flag = scw_over
+				}
+				every_state = {
+					limit = { 
+						AND = {
+							is_core_of = SPD
+							NOT = {
+								is_controlled_by = SPA
 							}
 						}
 					}
