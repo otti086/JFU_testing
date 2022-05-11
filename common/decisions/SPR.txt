@@ -218,18 +218,7 @@ SPR_civil_war_offensives = {
 					controls_state = 790
 				}
 				OR = {
-					AND = {
-						is_historical_focus_on = yes
-						has_game_rule = {
-							rule = SPR_ai_behavior 
-							option = DEFAULT
-						}
-					}
 					has_country_flag = SPR_AI_RANDOM_NATIONALIST_HISTORICAL
-					has_game_rule = {
-						rule = SPR_ai_behavior 
-						option = NATIONALIST_HISTORICAL
-					}
 				}
 			}
 		}
@@ -544,16 +533,8 @@ SPR_civil_war_offensives = {
 				OR = {
 					AND = {
 						is_historical_focus_on = yes
-						has_game_rule = {
-							rule = SPR_ai_behavior 
-							option = DEFAULT
-						}
 					}
 					has_country_flag = SPR_AI_RANDOM_NATIONALIST_HISTORICAL
-					has_game_rule = {
-						rule = SPR_ai_behavior 
-						option = NATIONALIST_HISTORICAL
-					}
 				}
 			}
 		}
@@ -671,16 +652,8 @@ SPR_civil_war_offensives = {
 				OR = {
 					AND = {
 						is_historical_focus_on = yes
-						has_game_rule = {
-							rule = SPR_ai_behavior 
-							option = DEFAULT
-						}
 					}
 					has_country_flag = SPR_AI_RANDOM_NATIONALIST_HISTORICAL
-					has_game_rule = {
-						rule = SPR_ai_behavior 
-						option = NATIONALIST_HISTORICAL
-					}
 				}
 			}
 		}
@@ -793,16 +766,8 @@ SPR_civil_war_offensives = {
 				OR = {
 					AND = {
 						is_historical_focus_on = yes
-						has_game_rule = {
-							rule = SPR_ai_behavior 
-							option = DEFAULT
-						}
 					}
 					has_country_flag = SPR_AI_RANDOM_NATIONALIST_HISTORICAL
-					has_game_rule = {
-						rule = SPR_ai_behavior 
-						option = NATIONALIST_HISTORICAL
-					}
 				}
 			}
 		}
@@ -894,7 +859,7 @@ SPR_civil_war_offensives = {
 				factor = 0
 				is_historical_focus_on = yes
 				SPA = { is_ai = yes }
-				has_completed_focus = SPR_the_popular_front
+				has_completed_focus = SPA_the_popular_front
 			}
 			modifier = {
 				factor = 10
@@ -921,16 +886,8 @@ SPR_civil_war_offensives = {
 				OR = {
 					AND = {
 						is_historical_focus_on = yes
-						has_game_rule = {
-							rule = SPR_ai_behavior 
-							option = DEFAULT
-						}
 					}
 					has_country_flag = SPR_AI_RANDOM_NATIONALIST_HISTORICAL
-					has_game_rule = {
-						rule = SPR_ai_behavior 
-						option = NATIONALIST_HISTORICAL
-					}
 				}
 			}
 		}
@@ -3994,78 +3951,6 @@ SPR_expand_resource_extraction = {
 					type = aluminium
 					amount = 8
 				}
-			}
-		}
-	}
-
-}
-
-
-SPR_recovering_from_civil_war = {
-
-	SPR_eliminate_guerrillas = {
-
-		icon = generic_civil_support
-
-		allowed = {
-			original_tag = SPR
-		}
-
-		available = {
-			FROM = {
-				compliance > 35
-			}
-			has_equipment = {
-			    infantry_equipment > 2000
-			}
-		}
-
-		state_target = yes
-
-		targets = { 41 165 166 167 168 169 170 171 172 173 174 175 176 177 178 788 789 790 791 792 793 794 }
-
-		target_trigger = {
-			OR = {
-				has_completed_focus = SPR_stamp_out_the_maquis
-			}
-			FROM = {
-				is_owned_by = ROOT
-				NOT = {
-					is_core_of = ROOT
-				}
-			}
-		}
-
-		cost = 40
-
-		fire_only_once = yes
-
-		days_remove = 70
-
-		ai_will_do = {
-			base = 200
-		}
-
-		modifier = {
-			weekly_manpower = -300
-		}
-
-		visible = {
-			OR = {
-				has_completed_focus = SPR_stamp_out_the_maquis
-			}
-		}
-
-		complete_effect = {
-			add_equipment_to_stockpile = {
-			    type = infantry_equipment
-			    amount = -2000
-			}
-		}
-
-		remove_effect = {
-			FROM = {
-				add_core_of = ROOT
 			}
 		}
 	}

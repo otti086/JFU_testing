@@ -39,7 +39,6 @@ SPR_historical_plan = {
 		SPR_safeguard_the_freedom_of_worship
 		SPR_fuse_the_parties
 		SPR_a_methodical_approach
-		SPR_tackle_the_vulnerable_fronts
 		SPR_expand_conscription
 		SPR_integrate_the_requetes
 		SPR_national_recovery
@@ -47,8 +46,6 @@ SPR_historical_plan = {
 		SPR_autarky
 		SPR_direct_the_universities
 		SPR_dictator_for_life
-		SPR_stamp_out_the_maquis
-		SPR_la_division_azul
 		SPR_the_tangiers_enclave
 		SPR_the_national_and_popular_army_of_spain
 		SPR_the_army_of_africa_model
