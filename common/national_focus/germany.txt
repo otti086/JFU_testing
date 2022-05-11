@@ -1015,6 +1015,9 @@ focus_tree = {
 		relative_position_id = GER_autobahn
 		cost = 10
 
+		available = {
+			has_war = yes
+		}
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -1025,11 +1028,11 @@ focus_tree = {
 				}
 				add_ideas = war_economy
 			}
-			65_add = {
-				add_extra_state_shared_building_slots = 6
+			52_add = {
+				add_extra_state_shared_building_slots = 10
 				add_building_construction = {
 					type = arms_factory
-					level = 6
+					level = 10
 					instant_build = yes
 				}
 			}
@@ -1082,282 +1085,32 @@ focus_tree = {
 		}
 
 		available_if_capitulated = no
-		complete_tooltip = {
-			every_state = {
-				limit = { has_state_flag = GER_integrate_war_economies_1 }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			every_state = {
-				limit = { has_state_flag = GER_integrate_war_economies_2 }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			HUN = {
-				every_state = {
-					limit = { has_state_flag = GER_integrate_war_economies_1 }
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = arms_factory
-						level = 2
-						instant_build = yes
-					}
-				}
-				every_state = {
-					limit = { has_state_flag = GER_integrate_war_economies_2 }
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = arms_factory
-						level = 2
-						instant_build = yes
-					}
-				}
-			}
-			ROM = {
-				every_state = {
-					limit = { has_state_flag = GER_integrate_war_economies_1 }
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = arms_factory
-						level = 2
-						instant_build = yes
-					}
-				}
-				every_state = {
-					limit = { has_state_flag = GER_integrate_war_economies_2 }
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = arms_factory
-						level = 2
-						instant_build = yes
-					}
-				}
-			}
-		}
 		
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			if = {
-				limit = {
-					NOT = { is_in_faction_with = HUN }
+			155 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
 				}
-				custom_effect_tooltip = GER_integrate_war_economies_tt
-				custom_effect_tooltip = GER_integrate_war_economies_tt3
 			}
-			if = {
-				limit = {
-					NOT = { is_in_faction_with = ROM }
+			46 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
 				}
-				custom_effect_tooltip = GER_integrate_war_economies_tt2
-				custom_effect_tooltip = GER_integrate_war_economies_tt4
 			}
-			if = {
-				limit = {
-					HUN = {
-						is_in_faction_with = GER
-						is_free_or_subject_of_root = yes
-					}
+			61 = {
+				add_extra_state_shared_building_slots = 8
+				add_building_construction = {
+					type = arms_factory
+					level = 8
+					instant_build = yes
 				}
-				HUN = { country_event = { id = wtt_germany.72 } }
-				effect_tooltip = {
-					random_owned_controlled_state = {
-						limit = {
-							free_building_slots = {
-								building = arms_factory
-								size > 1
-								include_locked = yes
-							}
-							NOT = { has_state_flag = GER_integrate_war_economies }
-						}
-						add_extra_state_shared_building_slots = 2
-						add_building_construction = {
-							type = arms_factory
-							level = 2
-							instant_build = yes
-						}
-						set_state_flag = GER_integrate_war_economies
-					}
-					random_owned_controlled_state = {
-						limit = {
-							free_building_slots = {
-								building = arms_factory
-								size > 1
-								include_locked = yes
-							}
-							NOT = { has_state_flag = GER_integrate_war_economies }
-						}
-						add_extra_state_shared_building_slots = 2
-						add_building_construction = {
-							type = arms_factory
-							level = 2
-							instant_build = yes
-						}
-						set_state_flag = GER_integrate_war_economies
-					}
-					HUN = {
-						random_owned_controlled_state = {
-							limit = {
-								free_building_slots = {
-									building = arms_factory
-									size > 1
-									include_locked = yes
-								}
-							}
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-								type = arms_factory
-								level = 2
-								instant_build = yes
-							}
-							set_state_flag = GER_integrate_war_economies_1
-						}
-						random_owned_controlled_state = {
-							limit = {
-								free_building_slots = {
-									building = arms_factory
-									size > 1
-									include_locked = yes
-								}
-							}
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-								type = arms_factory
-								level = 2
-								instant_build = yes
-							}
-							set_state_flag = GER_integrate_war_economies_2
-						}
-					}
-					if = {
-						limit = {
-							has_dlc = "Death or Dishonor" 
-						}
-						set_autonomy = { target = HUN autonomy_state = autonomy_satellite }
-					}
-					if = {
-						limit = { 
-							has_dlc = "Together for Victory"
-							NOT = { has_dlc = "Death or Dishonor" } 
-						}
-						set_autonomy = { target = HUN autonomy_state = autonomy_dominion }
-					}
-					if = {
-						limit = { 
-							NOT = { has_dlc = "Together for Victory" }
-							NOT = { has_dlc = "Death or Dishonor" }
-						}
-						puppet = HUN
-					}
-				}
-				custom_effect_tooltip = GER_integrate_war_economies_tt3
-			}
-			if = {
-				limit = {
-					ROM = {
-						is_in_faction_with = GER
-						is_free_or_subject_of_root = yes
-					}
-				}
-				ROM = { country_event = { id = wtt_germany.72 } }
-				effect_tooltip = {
-					random_owned_controlled_state = {
-						limit = {
-							free_building_slots = {
-								building = arms_factory
-								size > 1
-								include_locked = yes
-							}
-							NOT = { has_state_flag = GER_integrate_war_economies }
-						}
-						add_extra_state_shared_building_slots = 2
-						add_building_construction = {
-							type = arms_factory
-							level = 2
-							instant_build = yes
-						}
-						set_state_flag = GER_integrate_war_economies
-					}
-					random_owned_controlled_state = {
-						limit = {
-							free_building_slots = {
-								building = arms_factory
-								size > 1
-								include_locked = yes
-							}
-							NOT = { has_state_flag = GER_integrate_war_economies }
-						}
-						add_extra_state_shared_building_slots = 2
-						add_building_construction = {
-							type = arms_factory
-							level = 2
-							instant_build = yes
-						}
-						set_state_flag = GER_integrate_war_economies
-					}
-					ROM = {
-						random_owned_controlled_state = {
-							limit = {
-								free_building_slots = {
-									building = arms_factory
-									size > 1
-									include_locked = yes
-								}
-							}
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-								type = arms_factory
-								level = 2
-								instant_build = yes
-							}
-							set_state_flag = GER_integrate_war_economies_1
-						}
-						random_owned_controlled_state = {
-							limit = {
-								free_building_slots = {
-									building = arms_factory
-									size > 1
-									include_locked = yes
-								}
-							}
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-								type = arms_factory
-								level = 2
-								instant_build = yes
-							}
-							set_state_flag = GER_integrate_war_economies_2
-						}
-					}
-					if = {
-						limit = {
-							has_dlc = "Death or Dishonor" 
-						}
-						set_autonomy = { target = ROM autonomy_state = autonomy_satellite }
-					}
-					if = {
-						limit = { 
-							has_dlc = "Together for Victory"
-							NOT = { has_dlc = "Death or Dishonor" } 
-						}
-						set_autonomy = { target = ROM autonomy_state = autonomy_dominion }
-					}
-					if = {
-						limit = { 
-							NOT = { has_dlc = "Together for Victory" }
-							NOT = { has_dlc = "Death or Dishonor" }
-						}
-						puppet = ROM
-					}
-				}
-				custom_effect_tooltip = GER_integrate_war_economies_tt4
 			}
 		}
 	}

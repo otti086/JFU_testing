@@ -13,7 +13,10 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 		}
 
 		available = {
@@ -49,7 +52,10 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			171 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -60,7 +66,10 @@ SPR_civil_war_offensives = {
 			set_country_flag = SPR_preparing_offensive_in_progress_flag
 			every_other_country = {
 				limit = {
-					original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 				}
 				activate_mission = SPA_galicia_offensive_mission
 			}
@@ -75,7 +84,28 @@ SPR_civil_war_offensives = {
 			}
 		}
 
-
+		ai_will_do = {
+			base = 0.1
+			modifier = {
+				factor = 0
+				has_full_control_of_state = 171
+			}
+			modifier = {
+				factor = 10
+				OR = {
+					tag = SPR				}
+			}
+			modifier = {
+				factor = 10
+				divisions_in_state = {
+					state = 171
+					size > 0
+				}
+				NOT = {
+					has_full_control_of_state = 171
+				}
+			}
+		}
 	}
 
 	SPA_asturias_offensive = {
@@ -83,7 +113,10 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 		}
 
 		available = {
@@ -119,7 +152,10 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			790 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -130,7 +166,10 @@ SPR_civil_war_offensives = {
 			set_country_flag = SPR_preparing_offensive_in_progress_flag
 			every_other_country = {
 				limit = {
-					original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 				}
 				activate_mission = SPA_asturias_offensive_mission
 			}
@@ -144,6 +183,56 @@ SPR_civil_war_offensives = {
 				}
 			}
 		}
+
+		ai_will_do = {
+			base = 0.1
+			modifier = {
+				factor = 0
+				has_full_control_of_state = 790
+			}
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				tag = SPD
+			}
+			modifier = {
+				factor = 10
+				OR = {
+					tag = SPR
+				}
+			}
+			modifier = {
+				factor = 10
+				divisions_in_state = {
+					state = 790
+					size > 0
+				}
+				NOT = {
+					has_full_control_of_state = 790
+				}
+			}
+			modifier = {
+				factor = 100
+				tag = SPR
+				NOT = {
+					controls_state = 790
+				}
+				OR = {
+					AND = {
+						is_historical_focus_on = yes
+						has_game_rule = {
+							rule = SPR_ai_behavior 
+							option = DEFAULT
+						}
+					}
+					has_country_flag = SPR_AI_RANDOM_NATIONALIST_HISTORICAL
+					has_game_rule = {
+						rule = SPR_ai_behavior 
+						option = NATIONALIST_HISTORICAL
+					}
+				}
+			}
+		}
 	}
 
 	SPA_leon_offensive = {
@@ -151,7 +240,10 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 		}
 
 		available = {
@@ -187,7 +279,10 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			174 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -198,7 +293,10 @@ SPR_civil_war_offensives = {
 			set_country_flag = SPR_preparing_offensive_in_progress_flag
 			every_other_country = {
 				limit = {
-					original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 				}
 				activate_mission = SPA_leon_offensive_mission
 			}
@@ -212,6 +310,30 @@ SPR_civil_war_offensives = {
 				}
 			}
 		}
+
+		ai_will_do = {
+			base = 0.1
+			modifier = {
+				factor = 0
+				has_full_control_of_state = 174
+			}
+			modifier = {
+				factor = 10
+				OR = {
+					tag = SPR
+				}
+			}
+			modifier = {
+				factor = 10
+				divisions_in_state = {
+					state = 174
+					size > 0
+				}
+				NOT = {
+					has_full_control_of_state = 174
+				}
+			}
+		}
 	}
 
 	SPA_valladolid_offensive = {
@@ -219,7 +341,10 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 		}
 
 		available = {
@@ -255,7 +380,10 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			791 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -266,7 +394,10 @@ SPR_civil_war_offensives = {
 			set_country_flag = SPR_preparing_offensive_in_progress_flag
 			every_other_country = {
 				limit = {
-					original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 				}
 				activate_mission = SPA_valladolid_offensive_mission
 			}
@@ -281,7 +412,29 @@ SPR_civil_war_offensives = {
 			}
 		}
 
-
+		ai_will_do = {
+			base = 0.1
+			modifier = {
+				factor = 0
+				has_full_control_of_state = 791
+			}
+			modifier = {
+				factor = 10
+				OR = {
+					tag = SPR
+				}
+			}
+			modifier = {
+				factor = 10
+				divisions_in_state = {
+					state = 791
+					size > 0
+				}
+				NOT = {
+					has_full_control_of_state = 791
+				}
+			}
+		}
 	}
 
 	SPA_burgos_offensive = {
@@ -289,7 +442,10 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 		}
 
 		available = {
@@ -325,7 +481,10 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			176 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -336,7 +495,10 @@ SPR_civil_war_offensives = {
 			set_country_flag = SPR_preparing_offensive_in_progress_flag
 			every_other_country = {
 				limit = {
-					original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 				}
 				activate_mission = SPA_burgos_offensive_mission
 			}
@@ -359,6 +521,12 @@ SPR_civil_war_offensives = {
 			}
 			modifier = {
 				factor = 10
+				OR = {
+					tag = SPR
+				}
+			}
+			modifier = {
+				factor = 10
 				divisions_in_state = {
 					state = 176
 					size > 0
@@ -369,13 +537,23 @@ SPR_civil_war_offensives = {
 			}
 			modifier = {
 				factor = 100
-				tag = SPA
+				tag = SPR
 				NOT = {
 					controls_state = 176
 				}
 				OR = {
-					is_historical_focus_on = yes
+					AND = {
+						is_historical_focus_on = yes
+						has_game_rule = {
+							rule = SPR_ai_behavior 
+							option = DEFAULT
+						}
+					}
 					has_country_flag = SPR_AI_RANDOM_NATIONALIST_HISTORICAL
+					has_game_rule = {
+						rule = SPR_ai_behavior 
+						option = NATIONALIST_HISTORICAL
+					}
 				}
 			}
 		}
@@ -386,7 +564,10 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 		}
 
 		available = {
@@ -422,7 +603,10 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			792 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -433,7 +617,10 @@ SPR_civil_war_offensives = {
 			set_country_flag = SPR_preparing_offensive_in_progress_flag
 			every_other_country = {
 				limit = {
-					original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 				}
 				activate_mission = SPA_pais_vasco_offensive_mission
 			}
@@ -454,7 +641,12 @@ SPR_civil_war_offensives = {
 				factor = 0
 				has_full_control_of_state = 792
 			}
-
+			modifier = {
+				factor = 10
+				OR = {
+					tag = SPR
+				}
+			}
 			modifier = {
 				factor = 0
 				is_historical_focus_on = yes
@@ -472,13 +664,23 @@ SPR_civil_war_offensives = {
 			}
 			modifier = {
 				factor = 200
-				tag = SPA
+				tag = SPR
 				NOT = {
 					controls_state = 792
 				}
 				OR = {
-					is_historical_focus_on = yes
+					AND = {
+						is_historical_focus_on = yes
+						has_game_rule = {
+							rule = SPR_ai_behavior 
+							option = DEFAULT
+						}
+					}
 					has_country_flag = SPR_AI_RANDOM_NATIONALIST_HISTORICAL
+					has_game_rule = {
+						rule = SPR_ai_behavior 
+						option = NATIONALIST_HISTORICAL
+					}
 				}
 			}
 		}
@@ -489,7 +691,10 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 		}
 
 		available = {
@@ -525,7 +730,10 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			172 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -536,7 +744,10 @@ SPR_civil_war_offensives = {
 			set_country_flag = SPR_preparing_offensive_in_progress_flag
 			every_other_country = {
 				limit = {
-					original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 				}
 				activate_mission = SPA_navarra_offensive_mission
 			}
@@ -557,7 +768,12 @@ SPR_civil_war_offensives = {
 				factor = 0
 				has_full_control_of_state = 172
 			}
-
+			modifier = {
+				factor = 10
+				OR = {
+					tag = SPR
+				}
+			}
 			modifier = {
 				factor = 10
 				divisions_in_state = {
@@ -570,13 +786,23 @@ SPR_civil_war_offensives = {
 			}
 			modifier = {
 				factor = 100
-				tag = SPA
+				tag = SPR
 				NOT = {
 					controls_state = 172
 				}
 				OR = {
-					is_historical_focus_on = yes
+					AND = {
+						is_historical_focus_on = yes
+						has_game_rule = {
+							rule = SPR_ai_behavior 
+							option = DEFAULT
+						}
+					}
 					has_country_flag = SPR_AI_RANDOM_NATIONALIST_HISTORICAL
+					has_game_rule = {
+						rule = SPR_ai_behavior 
+						option = NATIONALIST_HISTORICAL
+					}
 				}
 			}
 		}
@@ -587,7 +813,10 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 		}
 
 		available = {
@@ -623,7 +852,10 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			166 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -634,7 +866,10 @@ SPR_civil_war_offensives = {
 			set_country_flag = SPR_preparing_offensive_in_progress_flag
 			every_other_country = {
 				limit = {
-					original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 				}
 				activate_mission = SPA_western_aragon_offensive_mission
 			}
@@ -655,7 +890,18 @@ SPR_civil_war_offensives = {
 				factor = 0
 				has_full_control_of_state = 166
 			}
-
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				SPA = { is_ai = yes }
+				has_completed_focus = SPR_the_popular_front
+			}
+			modifier = {
+				factor = 10
+				OR = {
+					tag = SPR
+				}
+			}
 			modifier = {
 				factor = 10
 				divisions_in_state = {
@@ -668,13 +914,23 @@ SPR_civil_war_offensives = {
 			}
 			modifier = {
 				factor = 100
-				tag = SPA
+				tag = SPR
 				NOT = {
 					controls_state = 166
 				}
 				OR = {
-					is_historical_focus_on = yes
+					AND = {
+						is_historical_focus_on = yes
+						has_game_rule = {
+							rule = SPR_ai_behavior 
+							option = DEFAULT
+						}
+					}
 					has_country_flag = SPR_AI_RANDOM_NATIONALIST_HISTORICAL
+					has_game_rule = {
+						rule = SPR_ai_behavior 
+						option = NATIONALIST_HISTORICAL
+					}
 				}
 			}
 		}
@@ -685,7 +941,10 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 		}
 
 		available = {
@@ -721,7 +980,10 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			794 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -732,7 +994,10 @@ SPR_civil_war_offensives = {
 			set_country_flag = SPR_preparing_offensive_in_progress_flag
 			every_other_country = {
 				limit = {
-					original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 				}
 				activate_mission = SPA_eastern_aragon_offensive_mission
 			}
@@ -758,7 +1023,12 @@ SPR_civil_war_offensives = {
 				is_historical_focus_on = yes
 				tag = SPD
 			}
-
+			modifier = {
+				factor = 10
+				OR = {
+					tag = SPR
+				}
+			}
 			modifier = {
 				factor = 10
 				divisions_in_state = {
@@ -777,7 +1047,10 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 		}
 
 		available = {
@@ -813,7 +1086,10 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			165 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -824,7 +1100,10 @@ SPR_civil_war_offensives = {
 			set_country_flag = SPR_preparing_offensive_in_progress_flag
 			every_other_country = {
 				limit = {
-					original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 				}
 				activate_mission = SPA_catalunya_offensive_mission
 			}
@@ -850,7 +1129,12 @@ SPR_civil_war_offensives = {
 				is_historical_focus_on = yes
 				tag = SPD
 			}
-
+			modifier = {
+				factor = 10
+				OR = {
+					tag = SPR
+				}
+			}
 			modifier = {
 				factor = 10
 				divisions_in_state = {
@@ -869,7 +1153,10 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 		}
 
 		available = {
@@ -905,7 +1192,10 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			788 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -916,7 +1206,10 @@ SPR_civil_war_offensives = {
 			set_country_flag = SPR_preparing_offensive_in_progress_flag
 			every_other_country = {
 				limit = {
-					original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 				}
 				activate_mission = SPA_salamanca_offensive_mission
 			}
@@ -937,7 +1230,12 @@ SPR_civil_war_offensives = {
 				factor = 0
 				has_full_control_of_state = 788
 			}
-
+			modifier = {
+				factor = 10
+				OR = {
+					tag = SPR
+				}
+			}
 			modifier = {
 				factor = 10
 				divisions_in_state = {
@@ -956,7 +1254,10 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 		}
 
 		available = {
@@ -992,7 +1293,10 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			41 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -1003,7 +1307,10 @@ SPR_civil_war_offensives = {
 			set_country_flag = SPR_preparing_offensive_in_progress_flag
 			every_other_country = {
 				limit = {
-					original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 				}
 				activate_mission = SPA_madrid_offensive_mission
 			}
@@ -1029,7 +1336,12 @@ SPR_civil_war_offensives = {
 				is_historical_focus_on = yes
 				tag = SPD
 			}
-
+			modifier = {
+				factor = 10
+				OR = {
+					tag = SPR
+				}
+			}
 			modifier = {
 				factor = 10
 				divisions_in_state ={
@@ -1048,7 +1360,10 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 		}
 
 		available = {
@@ -1084,7 +1399,10 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			793 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -1095,7 +1413,10 @@ SPR_civil_war_offensives = {
 			set_country_flag = SPR_preparing_offensive_in_progress_flag
 			every_other_country = {
 				limit = {
-					original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 				}
 				activate_mission = SPA_guadalajara_offensive_mission
 			}
@@ -1121,7 +1442,12 @@ SPR_civil_war_offensives = {
 				is_historical_focus_on = yes
 				tag = SPD
 			}
-
+			modifier = {
+				factor = 10
+				OR = {
+					tag = SPR
+				}
+			}
 			modifier = {
 				factor = 10
 				divisions_in_state = {
@@ -1140,7 +1466,10 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 		}
 
 		available = {
@@ -1176,7 +1505,10 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			167 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -1187,7 +1519,10 @@ SPR_civil_war_offensives = {
 			set_country_flag = SPR_preparing_offensive_in_progress_flag
 			every_other_country = {
 				limit = {
-					original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 				}
 				activate_mission = SPA_valencia_offensive_mission
 			}
@@ -1201,6 +1536,35 @@ SPR_civil_war_offensives = {
 				}
 			}
 		}
+
+		ai_will_do = {
+			base = 0.1
+			modifier = {
+				factor = 0
+				has_full_control_of_state = 167
+			}
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				tag = SPD
+			}
+			modifier = {
+				factor = 10
+				OR = {
+					tag = SPR
+				}
+			}
+			modifier = {
+				factor = 10
+				divisions_in_state = {
+					state = 167
+					size > 0
+				}
+				NOT = {
+					has_full_control_of_state = 167
+				}
+			}
+		}
 	}
 
 	SPA_extremadura_offensive = {
@@ -1208,7 +1572,10 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 		}
 
 		available = {
@@ -1244,7 +1611,10 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			170 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -1255,7 +1625,10 @@ SPR_civil_war_offensives = {
 			set_country_flag = SPR_preparing_offensive_in_progress_flag
 			every_other_country = {
 				limit = {
-					original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 				}
 				activate_mission = SPA_extremadura_offensive_mission
 			}
@@ -1276,7 +1649,12 @@ SPR_civil_war_offensives = {
 				factor = 0
 				has_full_control_of_state = 170
 			}
-
+			modifier = {
+				factor = 10
+				OR = {
+					tag = SPR
+				}
+			}
 			modifier = {
 				factor = 10
 				divisions_in_state = {
@@ -1295,7 +1673,10 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 		}
 
 		available = {
@@ -1331,7 +1712,10 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			175 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -1342,7 +1726,10 @@ SPR_civil_war_offensives = {
 			set_country_flag = SPR_preparing_offensive_in_progress_flag
 			every_other_country = {
 				limit = {
-					original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 				}
 				activate_mission = SPA_ciudad_real_offensive_mission
 			}
@@ -1370,6 +1757,12 @@ SPR_civil_war_offensives = {
 			}
 			modifier = {
 				factor = 10
+				OR = {
+					tag = SPR
+				}
+			}
+			modifier = {
+				factor = 10
 				divisions_in_state = {
 					state = 175
 					size > 0
@@ -1386,7 +1779,10 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 		}
 
 		available = {
@@ -1422,7 +1818,10 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			168 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -1433,7 +1832,10 @@ SPR_civil_war_offensives = {
 			set_country_flag = SPR_preparing_offensive_in_progress_flag
 			every_other_country = {
 				limit = {
-					original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 				}
 				activate_mission = SPA_murcia_offensive_mission
 			}
@@ -1461,6 +1863,12 @@ SPR_civil_war_offensives = {
 			}
 			modifier = {
 				factor = 10
+				OR = {
+					tag = SPR
+				}
+			}
+			modifier = {
+				factor = 10
 				divisions_in_state = {
 					state = 168
 					size > 0
@@ -1477,7 +1885,10 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 		}
 
 		available = {
@@ -1513,7 +1924,10 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			169 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -1524,7 +1938,10 @@ SPR_civil_war_offensives = {
 			set_country_flag = SPR_preparing_offensive_in_progress_flag
 			every_other_country = {
 				limit = {
-					original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 				}
 				activate_mission = SPA_sevilla_offensive_mission
 			}
@@ -1545,7 +1962,12 @@ SPR_civil_war_offensives = {
 				factor = 0
 				has_full_control_of_state = 169
 			}
-
+			modifier = {
+				factor = 10
+				OR = {
+					tag = SPR
+				}
+			}
 			modifier = {
 				factor = 10
 				divisions_in_state = {
@@ -1564,7 +1986,10 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 		}
 
 		available = {
@@ -1600,7 +2025,10 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			789 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -1611,7 +2039,10 @@ SPR_civil_war_offensives = {
 			set_country_flag = SPR_preparing_offensive_in_progress_flag
 			every_other_country = {
 				limit = {
-					original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 				}
 				activate_mission = SPA_cordoba_offensive_mission
 			}
@@ -1632,7 +2063,12 @@ SPR_civil_war_offensives = {
 				factor = 0
 				has_full_control_of_state = 789
 			}
-
+			modifier = {
+				factor = 10
+				OR = {
+					tag = SPR
+				}
+			}
 			modifier = {
 				factor = 10
 				divisions_in_state = {
@@ -1651,7 +2087,10 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 		}
 
 		available = {
@@ -1687,7 +2126,10 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			173 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -1698,7 +2140,10 @@ SPR_civil_war_offensives = {
 			set_country_flag = SPR_preparing_offensive_in_progress_flag
 			every_other_country = {
 				limit = {
-					original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = SPA
+					}
 				}
 				activate_mission = SPA_granada_offensive_mission
 			}
@@ -1726,6 +2171,12 @@ SPR_civil_war_offensives = {
 			}
 			modifier = {
 				factor = 10
+				OR = {
+					tag = SPR
+				}
+			}
+			modifier = {
+				factor = 10
 				divisions_in_state = {
 					state = 173
 					size > 0
@@ -1743,12 +2194,15 @@ SPR_civil_war_offensives = {
 #  #  #   # #   #  #       # # # #  # #  #     #  # #   #   #   #  #   #  #   # #  #     #     #   #  #    #   #  #  #  # #  #   # 
  ##  ###   #   ### ###      # #  #  # #  #      ##  #   #   ### #  # ##  ###   #   ### ##      #   # ### ##  ##  ###  ##  #  # ##  
 
- 	SPR_preparing_offensive = {
+  	SPR_preparing_offensive = {
 
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SPA
+			}
 		}
 
 		available = {
@@ -1757,7 +2211,7 @@ SPR_civil_war_offensives = {
 
 		fire_only_once = yes
 
-		days_mission_timeout = 70
+		days_mission_timeout = 90
 
 		is_good = no
 
@@ -1768,7 +2222,10 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SPA
+			}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			has_country_flag = SPR_preparing_offensive_in_progress_flag
@@ -1784,7 +2241,10 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SPA
+			}
 		}
 
 		available = {
@@ -1811,7 +2271,10 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SPA
+			}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			171 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -1832,7 +2295,10 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SPA
+			}
 		}
 
 		available = {
@@ -1859,7 +2325,10 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SPA
+			}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			790 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -1880,7 +2349,10 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SPA
+			}
 		}
 
 		available = {
@@ -1907,7 +2379,10 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SPA
+			}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			174 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -1928,7 +2403,10 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SPA
+			}
 		}
 
 		available = {
@@ -1955,7 +2433,10 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SPA
+			}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			791 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -1976,7 +2457,10 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SPA
+			}
 		}
 
 		available = {
@@ -2003,7 +2487,10 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SPA
+			}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			176 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -2024,7 +2511,10 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SPA
+			}
 		}
 
 		available = {
@@ -2051,7 +2541,10 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SPA
+			}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			792 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -2072,7 +2565,10 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SPA
+			}
 		}
 
 		available = {
@@ -2099,7 +2595,10 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SPA
+			}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			172 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -2120,7 +2619,10 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SPA
+			}
 		}
 
 		available = {
@@ -2147,7 +2649,10 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SPA
+			}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			166 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -2168,7 +2673,10 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SPA
+			}
 		}
 
 		available = {
@@ -2195,7 +2703,10 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SPA
+			}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			794 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -2216,7 +2727,10 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SPA
+			}
 		}
 
 		available = {
@@ -2243,7 +2757,10 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SPA
+			}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			165 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -2264,7 +2781,10 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SPA
+			}
 		}
 
 		available = {
@@ -2291,7 +2811,10 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SPA
+			}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			788 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -2312,7 +2835,10 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SPA
+			}
 		}
 
 		available = {
@@ -2339,7 +2865,10 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SPA
+			}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			41 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -2360,7 +2889,10 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SPA
+			}
 		}
 
 		available = {
@@ -2387,7 +2919,10 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SPA
+			}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			793 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -2408,7 +2943,10 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SPA
+			}
 		}
 
 		available = {
@@ -2435,7 +2973,10 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SPA
+			}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			167 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -2456,7 +2997,10 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SPA
+			}
 		}
 
 		available = {
@@ -2483,7 +3027,10 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SPA
+			}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			170 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -2504,7 +3051,10 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SPA
+			}
 		}
 
 		available = {
@@ -2531,7 +3081,10 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SPA
+			}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			175 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -2552,7 +3105,10 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SPA
+			}
 		}
 
 		available = {
@@ -2579,7 +3135,10 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SPA
+			}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			168 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -2600,7 +3159,10 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SPA
+			}
 		}
 
 		available = {
@@ -2627,7 +3189,10 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SPA
+			}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			169 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -2648,7 +3213,10 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SPA
+			}
 		}
 
 		available = {
@@ -2675,7 +3243,10 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SPA
+			}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			789 = { has_state_flag = SPR_unplanned_offensive_flag }
@@ -2696,7 +3267,10 @@ SPR_civil_war_offensives = {
 		icon = hol_draw_up_staff_plans
 
 		allowed = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SPA
+			}
 		}
 
 		available = {
@@ -2723,7 +3297,10 @@ SPR_civil_war_offensives = {
 		}
 
 		visible = {
-			original_tag = SPR
+			OR = {
+				original_tag = SPR
+				original_tag = SPA
+			}
 			has_global_flag = spanish_civil_war
 			NOT = { has_global_flag = scw_over }
 			173 = { has_state_flag = SPR_unplanned_offensive_flag }

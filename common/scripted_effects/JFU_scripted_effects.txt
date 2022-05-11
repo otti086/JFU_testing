@@ -14,7 +14,7 @@ ROOT_call_all_allies_against_ENG = {
 	for_each_scope_loop = {
 		array = ROOT.allies
 		if = {
-			limit = { NOT = { OR = { original_tag = ITA  } } } 
+			limit = { NOT = { OR = { original_tag = ITA original_tag = ETH } } } 
 			add_to_war = {
 				targeted_alliance = ROOT
 				enemy = ENG

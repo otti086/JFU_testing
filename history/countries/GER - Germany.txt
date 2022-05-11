@@ -53,6 +53,23 @@ set_technology = {
 	fuel_silos = 1
 	fuel_refining = 1
 }
+
+set_autonomy = {
+	target = HUN
+	autonomous_state = autonomy_dominion
+	freedom_level = 0.2
+}
+set_autonomy = {
+	target = ROM
+	autonomous_state = autonomy_dominion
+	freedom_level = 0.2
+}
+set_autonomy = {
+	target = BUL
+	autonomous_state = autonomy_dominion
+	freedom_level = 0.2
+}
+
 if = {
 	limit = {
 		NOT = { has_dlc = "No Step Back" }

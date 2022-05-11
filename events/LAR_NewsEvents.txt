@@ -224,9 +224,7 @@ news_event = {
 	option = {
 		name = lar_news.1.f
 		trigger = {
-			OR = {
-				tag = SPR
-			}
+		tag = SPR
 		}
 		effect_tooltip = {
 			delete_unit_template_and_units = {
@@ -258,30 +256,6 @@ news_event = {
 					has_idea = SPA_foreign_training_staff
 				}
 				remove_ideas = SPA_foreign_training_staff
-			}
-			if = {
-				limit = {
-					tag = SPR
-				}
-				every_state = {
-					limit = {
-						has_state_flag = SPR_core_of_spain_flag
-						has_state_flag = SPR_sided_with_republicans_flag
-					}
-					remove_core_of = SPA
-					start_resistance = yes
-				}
-				118 = {
-					if = {
-						limit = {
-							is_controlled_by = ROOT
-						}
-						add_core_of = ROOT
-					}
-					else = {
-						add_claim_by = SPR
-					}
-				}
 			}
 		}
 	}

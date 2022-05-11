@@ -417,6 +417,28 @@ country_event = {
 	
 	is_triggered_only = yes
 	
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_war = no
+					NOT = {
+						has_completed_focus = SPR_fuse_the_parties
+					}
+				}
+				set_global_flag = scw_early_end
+			}
+			if = {
+				limit = {
+					AND = {
+						has_war = no
+						has_completed_focus = SPR_fuse_the_parties
+					}
+				}
+				country_event = { id = lar_news.1 hours = 6 }
+			}
+		}
+	}
 	option = {
 		name = lar_spain.11.a
 	}
@@ -431,6 +453,28 @@ country_event = {
 	
 	is_triggered_only = yes
 	
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_war = no
+					NOT = {
+						has_completed_focus = SPR_fuse_the_parties
+					}
+				}
+				set_global_flag = scw_early_end
+			}
+			if = {
+				limit = {
+					AND = {
+						has_war = no
+						has_completed_focus = SPR_fuse_the_parties
+					}
+				}
+				country_event = { id = lar_news.1 hours = 6 }
+			}
+		}
+	}
 	option = {
 		name = lar_spain.11.a
 	}
@@ -445,6 +489,28 @@ country_event = {
 	
 	is_triggered_only = yes
 	
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_war = no
+					NOT = {
+						has_completed_focus = SPR_fuse_the_parties
+					}
+				}
+				set_global_flag = scw_early_end
+			}
+			if = {
+				limit = {
+					AND = {
+						has_war = no
+						has_completed_focus = SPR_fuse_the_parties
+					}
+				}
+				country_event = { id = lar_news.1 hours = 6 }
+			}
+		}
+	}
 	option = {
 		name = lar_spain.11.a
 	}
@@ -459,6 +525,28 @@ country_event = {
 	
 	is_triggered_only = yes
 
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_war = no
+					NOT = {
+						has_completed_focus = SPR_fuse_the_parties
+					}
+				}
+				set_global_flag = scw_early_end
+			}
+			if = {
+				limit = {
+					AND = {
+						has_war = no
+						has_completed_focus = SPR_fuse_the_parties
+					}
+				}
+				country_event = { id = lar_news.1 hours = 6 }
+			}
+		}
+	}
 	option = {
 		name = lar_spain.11.a
 	}

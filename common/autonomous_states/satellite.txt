@@ -9,9 +9,9 @@ autonomy_state = {
 		desc = "RULE_DESC_IS_A_SUBJECT"
 		
 		can_not_declare_war = yes
-		can_decline_call_to_war = no
-		can_be_spymaster = no
-		can_create_collaboration_government = no
+		can_decline_call_to_war = yes
+		can_be_spymaster = yes
+		can_create_collaboration_government = yes
 	}
 	
 	modifier = {
@@ -23,11 +23,11 @@ autonomy_state = {
 	}
 	
 	ai_subject_wants_higher = {
-		factor = 1.0
+		factor = 0.0
 	}
 	
 	ai_overlord_wants_lower = {
-		factor = 1.0
+		factor = 0.0
 	}
 
 	ai_overlord_wants_garrison = {
@@ -35,24 +35,9 @@ autonomy_state = {
 	}
 
 	allowed = {
-		OR = {
-			has_dlc = "Death or Dishonor"
-			AND = {
-				OR = {
-					original_tag = POL
-					original_tag = LIT
-					original_tag = LAT
-					original_tag = EST
-				}
-				has_dlc = "No Step Back"
-			}
-		}
-		has_government = fascism
-		if = {
-			limit = { has_dlc = "Waking the Tiger" }
-			NOT = { OVERLORD = { original_tag = JAP } }
-			NOT = { OVERLORD = { original_tag = MAN } }
-		}
+		orignial_tag = HUN 
+		orignial_tag = ROM 
+		orignial_tag = BUL
 	}
 	
 	can_take_level = {

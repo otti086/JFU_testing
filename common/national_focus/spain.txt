@@ -462,28 +462,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SPR_tackle_the_vulnerable_fronts
-		available = {
-		}
-		bypass = {
-			has_global_flag = scw_over
-		}
-		prerequisite = { focus = SPR_a_methodical_approach }
-		
-		icon = GFX_goal_generic_major_war
-		x = 0
-		y = 1
-		relative_position_id = SPR_a_methodical_approach
-		cost = 5
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			custom_effect_tooltip = SPA_tackle_the_vulnerable_fronts_tt
-		}
-	}
-
-	focus = {
 		id = SPR_integrate_the_requetes
 		available = {
 		}
@@ -493,9 +471,9 @@ focus_tree = {
 		prerequisite = { focus = SPR_foment_a_carlist_split }
 		
 		icon = GFX_goal_generic_military_sphere
-		x = -1
-		y = 2
-		relative_position_id = SPR_tackle_the_vulnerable_fronts
+		x = 1
+		y = 1
+		relative_position_id = SPR_foment_a_carlist_split
 		cost = 5
 
 		available_if_capitulated = yes
@@ -549,7 +527,7 @@ focus_tree = {
 		prerequisite = { focus = SPR_integrate_the_requetes  }
 		
 		icon = GFX_focus_research
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = SPR_integrate_the_requetes
 		cost = 10
@@ -707,11 +685,11 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		prerequisite = { focus = SPR_fuse_the_parties }
+		prerequisite = { focus = SPR_national_recovery }
 		
 		icon = GFX_focus_generic_treaty
 		x = 4
-		y = 1
+		y = 2
 		relative_position_id = SPR_fuse_the_parties
 		cost = 5
 
@@ -837,70 +815,18 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SPR_stamp_out_the_maquis
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_dictator_for_life  }
-		
-		icon = GFX_goal_generic_more_territorial_claims
-		x = 0
-		y = 1
-		relative_position_id = SPR_dictator_for_life
-		cost = 5
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			custom_effect_tooltip = SPR_recovering_from_civil_war_focus_tt
-		}
-	}
-
-	focus = {
-		id = SPR_la_division_azul
-		available = {
-			has_completed_focus = SPR_adopt_the_26_points
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_dictator_for_life }
-		
-		icon = GFX_goal_rhineland
-		x = -2
-		y = 1
-		relative_position_id = SPR_dictator_for_life
-		cost = 5
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_ideas = SPA_la_division_azul
-			if = {
-				limit = {
-					has_government = neutrality
-				}
-				set_rule = {
-					can_send_volunteers = yes
-				}
-			}
-		}
-	}
-
-	focus = {
 		id = SPR_the_tangiers_enclave
 		available = {
 			has_full_control_of_state = 290
 		}
 		bypass = {
 		}
-		prerequisite = { focus = SPR_la_division_azul }
-		prerequisite = { focus = SPR_stamp_out_the_maquis }
+		prerequisite = { focus = SPR_dictator_for_life }
 		
 		icon = GFX_goal_generic_position_armies
-		x = 1
+		x = 0
 		y = 1
-		relative_position_id = SPR_la_division_azul
+		relative_position_id = SPR_dictator_for_life
 		cost = 5
 
 		available_if_capitulated = yes
@@ -1477,11 +1403,11 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		prerequisite = {  focus = SPR_fuse_the_parties }
+		prerequisite = {  focus = SPR_national_recovery }
 		
 		icon = GFX_goal_generic_army_doctrines
 		x = -4
-		y = 1
+		y = 2
 		relative_position_id = SPR_fuse_the_parties
 		cost = 10
 
