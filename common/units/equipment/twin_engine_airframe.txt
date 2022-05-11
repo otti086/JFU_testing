@@ -37,8 +37,8 @@ equipments = {
 		reliability = 0.8
 
 		# Air vs Navy - high damage / low hit chance / hard to hurt
-		naval_strike_attack = 27
-		naval_strike_targetting = 10.8
+		naval_strike_attack = 21
+		naval_strike_targetting = 8.4
 
 		#Space taken in convoy
 		lend_lease_cost = 20
@@ -166,8 +166,8 @@ equipments = {
 		air_ground_attack = 6
 		
 		# build_cost_ic = 36
-		naval_strike_attack = 7.2
-		naval_strike_targetting = 10.8
+		naval_strike_attack = 6.6
+		naval_strike_targetting = 8.4
 	}
 	
 	
@@ -193,8 +193,8 @@ equipments = {
 			aluminium = 3
 			rubber = 1
 		}
-		naval_strike_attack = 14.4
-		naval_strike_targetting = 10.2
+		naval_strike_attack = 11.2
+		naval_strike_targetting = 8.4
 	}
 
 	# Improved tac_bomber
@@ -219,8 +219,8 @@ equipments = {
 			aluminium = 4
 			rubber = 1
 		}
-		naval_strike_attack = 21.6
-		naval_strike_targetting = 10.2
+		naval_strike_attack = 16.8
+		naval_strike_targetting = 8.4
 	}
 
 	# Advanced tac_bomber
@@ -245,8 +245,8 @@ equipments = {
 			aluminium = 5
 			rubber = 1
 		}
-		naval_strike_attack = 21.6
-		naval_strike_targetting = 10.2
+		naval_strike_attack = 21
+		naval_strike_targetting = 8.4
 	}
 
 
@@ -287,8 +287,8 @@ equipments = {
 			aluminium = 3
 			rubber = 1
 		}
-		naval_strike_attack = 10.2
-		naval_strike_targetting = 18
+		naval_strike_attack = 8.4
+		naval_strike_targetting = 14
 	}
 	
 	heavy_fighter_equipment_3 = {
@@ -310,8 +310,8 @@ equipments = {
 			aluminium = 4
 			rubber = 1
 		}
-		naval_strike_attack = 16.2
-		naval_strike_targetting = 18
+		naval_strike_attack = 12.6
+		naval_strike_targetting = 14
 	}
 
 
@@ -366,7 +366,7 @@ equipments = {
 		air_attack = 0
 		air_defence = 13
 		
-		build_cost_ic = 40
+		build_cost_ic = 20
 		naval_strike_attack = 0
 		naval_strike_targetting = 0
 	}
@@ -384,7 +384,7 @@ equipments = {
 		air_attack = 0
 		air_defence = 15
 
-		build_cost_ic = 40
+		build_cost_ic = 20
 		resources = {		
 			aluminium = 3
 			rubber = 1
