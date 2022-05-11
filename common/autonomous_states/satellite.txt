@@ -35,9 +35,6 @@ autonomy_state = {
 	}
 
 	allowed = {
-		orignial_tag = HUN 
-		orignial_tag = ROM 
-		orignial_tag = BUL
 	}
 	
 	can_take_level = {
