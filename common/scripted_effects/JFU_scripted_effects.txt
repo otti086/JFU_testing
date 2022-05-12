@@ -570,6 +570,17 @@ JFU_pre_grinded_generals_OFF = {
 		recruit_character = JAP_tomoyuki_yamashita
 		recruit_character = JAP_kenkichi_ueda
 	}
+	FRA = {
+		recruit_character = FRA_charles_huntziger
+		recruit_character = FRA_maxime_weygand
+		recruit_character = FRA_alphonse_juin
+	}
+	ENG = {
+		recruit_character = ENG_bernard_montgomery
+		recruit_character = ENG_claude_auchinleck
+		recruit_character = ENG_alan_cunningham
+		recruit_character = ENG_william_slim
+	}
 }	
 JFU_pre_grinded_generals_ON = {
 	GER = { 
@@ -636,5 +647,17 @@ JFU_pre_grinded_generals_ON = {
 		recruit_character = JAP_hisaichi_terauchi_grinded
 		recruit_character = JAP_tomoyuki_yamashita_grinded
 		recruit_character = JAP_kenkichi_ueda_grinded
+	}
+	FRA = {
+		recruit_character = FRA_charles_huntziger_grinded
+		recruit_character = FRA_charles_de_gaulle_grinded
+		recruit_character = FRA_maxime_weygand_grinded
+		recruit_character = FRA_alphonse_juin_grinded
+	}
+	ENG = {
+		recruit_character = ENG_bernard_montgomery_grinded
+		recruit_character = ENG_claude_auchinleck_grinded
+		recruit_character = ENG_alan_cunningham_grinded
+		recruit_character = ENG_william_slim_grinded
 	}
 }					

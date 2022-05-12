@@ -132,10 +132,10 @@ characters={
 		field_marshal={
 			traits={ logistics_wizard pre_grinded offensive_doctrine organizer infantry_leader infantry_expert thorough_planner trickster hill_fighter ranger }
 			skill=5
-			attack_skill=4
-			defense_skill=4
-			planning_skill=2
-			logistics_skill=3
+			attack_skill=8
+			defense_skill=6
+			planning_skill=6
+			logistics_skill=5
 			legacy_id=-1
 		}
 	}
@@ -170,10 +170,10 @@ characters={
 		corps_commander={
 			traits={ hill_fighter pre_grinded trait_engineer infantry_expert infantry_leader commando trickster expert_improviser ranger hill_fighter}
 			skill=5
-			attack_skill=2
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=2
+			attack_skill=8
+			defense_skill=6
+			planning_skill=6
+			logistics_skill=5
 			legacy_id=-1
 		}
 	}
@@ -472,10 +472,10 @@ characters={
 		corps_commander={
 			traits = { trait_engineer pre_grinded infantry_leader infantry_expert commando trickster hill_fighter trait_mountaineer }
 			skill=5
-			attack_skill=3
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=3
+			attack_skill=5
+			defense_skill=6
+			planning_skill=5
+			logistics_skill=4
 			legacy_id=-1
 		}
 	}

@@ -148,10 +148,10 @@ characters={
 		corps_commander={
 			traits = { panzer_leader pre_grinded panzer_expert trickster expert_improviser ranger urban_assault_specialist  }
 			skill=4
-			attack_skill=3
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=2
+			attack_skill=8
+			defense_skill=6
+			planning_skill=6
+			logistics_skill=5
 			legacy_id=-1
 		}
 	}
@@ -186,10 +186,10 @@ characters={
 		corps_commander={
 			traits={ trickster organizer pre_grinded logistics_wizard panzer_leader combined_arms_expert thorough_planner urban_assault_specialist ranger trickster}
 			skill=4
-			attack_skill=3
-			defense_skill=4
-			planning_skill=2
-			logistics_skill=4
+			attack_skill=8
+			defense_skill=6
+			planning_skill=6
+			logistics_skill=5
 			legacy_id=-1
 		}
 	}
@@ -223,10 +223,10 @@ characters={
 		field_marshal={
 			traits = { organizer infantry_leader pre_grinded infantry_expert thorough_planner logistics_wizard trait_mountaineer trickster}
 			skill=4
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
+			attack_skill=8
+			defense_skill=6
+			planning_skill=6
+			logistics_skill=5
 			legacy_id=-1
 		}
 	}
@@ -261,10 +261,10 @@ characters={
 		corps_commander={
 			traits={ armor_officer trait_engineer pre_grinded infantry_leader infantry_expert trickster expert_improviser ranger trait_mountaineer }
 			skill=4
-			attack_skill=2
-			defense_skill=1
-			planning_skill=2
-			logistics_skill=2
+			attack_skill=8
+			defense_skill=6
+			planning_skill=6
+			logistics_skill=5
 			legacy_id=-1
 		}
 	}

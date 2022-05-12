@@ -172,10 +172,10 @@ characters = {
 		field_marshal = {
 			traits = { winter_specialist pre_grinded defensive_doctrine infantry_leader ambusher organizer logistics_wizard skilled_staffer expert_delegator}
 			skill = 5
-			attack_skill = 5
-			defense_skill = 2
-			planning_skill = 4
-			logistics_skill = 5
+			attack_skill=4
+			defense_skill=5
+			planning_skill=4
+			logistics_skill=4		
 			legacy_id = -1
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
@@ -376,10 +376,10 @@ characters = {
 		corps_commander = {
 			traits = {  infantry_officer pre_grinded trait_engineer infantry_leader infantry_expert offensive_doctrine ranger trickster }
 			skill = 4
-			attack_skill = 1
-			defense_skill = 3
-			planning_skill = 3
-			logistics_skill = 3
+			attack_skill=4
+			defense_skill=5
+			planning_skill=4
+			logistics_skill=4		
 			legacy_id = -1
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
@@ -1048,11 +1048,11 @@ characters = {
 		}
 		corps_commander = {
 			traits = { trait_reckless pre_grinded panzer_expert panzer_leader trait_engineer trickster expert_improviser ranger hill_fighter }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			skill = 5
+			attack_skill=7
+			defense_skill=5
+			planning_skill=5
+			logistics_skill=5
 			legacy_id = -1
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
@@ -1088,11 +1088,11 @@ characters = {
 		}
 		corps_commander = {
 			traits = { cavalry_officer pre_grinded infantry_leader trickster guerilla_fighter cavalry_leader }
-			skill = 3
-			attack_skill = 1
-			defense_skill = 3
-			planning_skill = 3
-			logistics_skill = 3
+			skill = 4
+			attack_skill=4
+			defense_skill=5
+			planning_skill=4
+			logistics_skill=4
 			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
@@ -1148,11 +1148,11 @@ characters = {
 		}
 		field_marshal = {
 			traits = { brilliant_strategist pre_grinded organizer panzer_leader  combined_arms_expert aggressive_assaulter trickster logistics_wizard thorough_planner hill_fighter ranger }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			skill = 5
+			attack_skill=7
+			defense_skill=5
+			planning_skill=5
+			logistics_skill=5
 			legacy_id = -1
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}

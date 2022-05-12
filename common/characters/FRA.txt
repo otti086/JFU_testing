@@ -110,6 +110,25 @@ characters={
 		}
 	}
 
+	FRA_alphonse_juin_grinded={
+		name=FRA_alphonse_juin_grinded
+		portraits={
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Alphonse_Juin.dds"
+				small="gfx/interface/ideas/idea_FRA_alphonse_juin.dds"
+			}
+		}
+		corps_commander={
+			traits={ panzer_leader panzer_expert pre_grinded trickster expert_improviser trait_mountaineer hill_fighter}
+			skill=4
+			attack_skill=6
+			defense_skill=4
+			planning_skill=5
+			logistics_skill=4
+			legacy_id=0
+		}
+	}
+
 	FRA_maurice_gamelin={
 		name=FRA_maurice_gamelin
 		portraits={
@@ -186,6 +205,46 @@ characters={
 			defense_skill=3
 			planning_skill=2
 			logistics_skill=2
+			legacy_id=0
+		}
+	}
+
+	FRA_maxime_weygand_grinded={
+		name=FRA_maxime_weygand_grinded
+		portraits={
+			army={
+				small="GFX_idea_maxime_weygand"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Maxime_Weygand.dds"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = FRA_maxime_weygand_grinded
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				has_completed_focus = FRA_defensive_focus
+			}
+			cost = 100.000
+			traits = {
+				army_chief_defensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			traits={ old_guard inflexible_strategist pre_grinded defensive_doctrine unyielding_defender organizer logistics_wizard thorough_planner infantry_leader infantry_expert }
+			skill=4
+			attack_skill=4
+			defense_skill=6
+			planning_skill=5
+			logistics_skill=5
 			legacy_id=0
 		}
 	}
@@ -291,6 +350,28 @@ characters={
 			planning_skill=3
 			logistics_skill=2
 			legacy_id=101
+		}
+	}
+
+	FRA_charles_de_gaulle_grinded={
+		name=FRA_charles_de_gaulle_grinded
+		portraits={
+			army={
+				small="GFX_idea_charles_de_gaulle"
+			}
+			civilian={
+				large="gfx/leaders/FRA/Portrait_France_Charles_De_Gaulle.dds"
+			}
+		}
+		
+		field_marshal={
+			traits={ media_personality harsh_leader pre_grinded  trickster panzer_expert panzer_leader ranger urban_assault_specialist organizer logistics_wizard }
+			skill=4
+			attack_skill=6
+			defense_skill=4
+			planning_skill=5
+			logistics_skill=5
+			legacy_id=-1
 		}
 	}
 
@@ -408,6 +489,43 @@ characters={
 			defense_skill=1
 			planning_skill=3
 			logistics_skill=3
+			legacy_id=0
+		}
+	}
+
+	FRA_charles_huntziger_grinded={
+		name=FRA_charles_huntziger_grinded
+		portraits={
+			army={
+				small="GFX_idea_charles_huntziger"
+			}
+			army={
+				large="gfx/leaders/FRA/portrait_france_charles_huntziger.dds"
+			}
+		}
+		advisor={	
+			slot = high_command
+			idea_token = FRA_charles_huntziger_grinded
+			ledger = army
+			allowed = {
+				original_tag = FRA
+			}
+			traits = {
+				army_logistics_1
+			}
+			cost =  50
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			traits={ old_guard pre_grinded infantry_officer infantry_expert infantry_leader Invader hill_fighter trait_mountaineer trait_engineer }
+			skill=4
+			attack_skill=6
+			defense_skill=4
+			planning_skill=5
+			logistics_skill=5
 			legacy_id=0
 		}
 	}

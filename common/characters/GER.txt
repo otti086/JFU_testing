@@ -141,11 +141,11 @@ characters={
 		
 		field_marshal={
 			traits={ old_guard pre_grinded urban_assault_specialist defensive_doctrine organizer logistics_wizard infantry_leader ambusher trickster }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=2
+			skill=4
+			attack_skill=5
+			defense_skill=6
+			planning_skill=5
+			logistics_skill=4
 			legacy_id=-1
 		}
 	}
@@ -256,10 +256,10 @@ characters={
 		corps_commander={
 			traits={ trait_reckless pre_grinded armor_officer trickster expert_improviser desert_fox trait_mountaineer panzer_expert panzer_leader trait_engineer fortress_buster }
 			skill=4
-			attack_skill=4
-			defense_skill=4
-			planning_skill=2
-			logistics_skill=3
+			attack_skill=8
+			defense_skill=6
+			planning_skill=6
+			logistics_skill=5
 			legacy_id=-1
 		}
 	}
@@ -321,10 +321,10 @@ characters={
 		corps_commander={
 			traits={ brilliant_strategist pre_grinded armor_officer trickster trait_engineer panzer_leader panzer_expert hill_fighter ranger trickster expert_improviser}
 			skill=4
-			attack_skill=2
-			defense_skill=4
-			planning_skill=3
-			logistics_skill=4
+			attack_skill=8
+			defense_skill=6
+			planning_skill=6
+			logistics_skill=5
 			legacy_id=-1
 		}
 	}
@@ -429,10 +429,10 @@ characters={
 		field_marshal={
 			traits={ trait_cautious pre_grinded harsh_leader panzer_leader combined_arms_expert logistics_wizard thorough_planner ranger hill_fighter trickster}
 			skill=4
-			attack_skill=4
-			defense_skill=3
-			planning_skill=4
-			logistics_skill=2
+			attack_skill=8
+			defense_skill=6
+			planning_skill=6
+			logistics_skill=5
 			legacy_id=-1
 		}
 	}
@@ -597,9 +597,9 @@ characters={
 		corps_commander={
 			traits={ career_officer pre_grinded infantry_leader infantry_expert hill_fighter trait_mountaineer winter_specialist trickster expert_improviser}
 			skill=4
-			attack_skill=4
-			defense_skill=3
-			planning_skill=2
+			attack_skill=5
+			defense_skill=6
+			planning_skill=5
 			logistics_skill=4
 			legacy_id=-1
 		}

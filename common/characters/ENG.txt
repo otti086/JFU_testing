@@ -251,6 +251,41 @@ characters={
 		}
 	}
 
+	ENG_bernard_montgomery_grinded={
+		name=ENG_bernard_montgomery_grinded
+		portraits={
+			army={
+				small="GFX_idea_bernard_montgomery"
+			}
+			army={
+				large="gfx/leaders/ENG/Portrait_Britain_Bernard_Montgomery.dds"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = ENG_bernard_montgomery_grinded
+			ledger = army
+			allowed = {
+				original_tag = ENG
+			}
+			
+			traits = {
+				grand_battle_plan_expert
+			}
+		}
+		
+		field_marshal={
+			traits={ inflexible_strategist pre_grinded organizer logistics_wizard offensive_doctrine infantry_leader infantry_expert deser_fox }
+			skill=4
+			attack_skill=4
+			defense_skill=6
+			planning_skill=5
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+
 	ENG_claude_auchinleck={
 		name=ENG_claude_auchinleck
 		portraits={
@@ -283,6 +318,43 @@ characters={
 			attack_skill=3
 			defense_skill=5
 			planning_skill=3
+			logistics_skill=5
+			legacy_id=0
+		}
+	}
+
+	ENG_claude_auchinleck_grinded={
+		name=ENG_claude_auchinleck_grinded
+		portraits={
+			army={
+				small="GFX_idea_claude_auchinleck"
+			}
+			army={
+				large="gfx/leaders/ENG/Portrait_Britain_Claude_Auchinleck.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = ENG_claude_auchinleck_grinded
+			ledger = army
+			allowed = {
+				original_tag = ENG
+			}
+			traits = {
+				army_logistics_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+		
+		corps_commander={
+			traits={ inflexible_strategist pre_grinded infantry_expert infantry_leader hill_fighter trickster expert_improviser}
+			skill=5
+			attack_skill=4
+			defense_skill=6
+			planning_skill=5
 			logistics_skill=5
 			legacy_id=0
 		}
@@ -325,6 +397,25 @@ characters={
 		}
 	}
 
+	ENG_alan_cunningham_grinded={
+		name=ENG_alan_cunningham_grinded
+		portraits={
+			army={
+				large="gfx/leaders/ENG/Portrait_Britain_Alan_Cunningham.dds"
+				small="gfx/interface/ideas/idea_ENG_alan_cunningham.dds"
+			}
+		}
+		field_marshal={
+			traits = { organizer pre_grinded logistics_wizard thorough_planner hill_fighter Invader infantry_expert infantry_leader }
+			skill=4
+			attack_skill=6
+			defense_skill=4
+			planning_skill=5
+			logistics_skill=5
+			legacy_id=0
+		}
+	}
+
 	ENG_william_slim={
 		name=ENG_william_slim
 		portraits={
@@ -338,6 +429,25 @@ characters={
 			skill=5
 			attack_skill=3
 			defense_skill=3
+			planning_skill=5
+			logistics_skill=5
+			legacy_id=0
+		}
+	}
+
+	ENG_william_slim_grinded={
+		name=ENG_william_slim_grinded
+		portraits={
+			army={
+				large="gfx/leaders/ENG/Portrait_Britain_William_Slim.dds"
+				small="gfx/interface/ideas/idea_ENG_william_slim.dds"
+			}
+		}
+		corps_commander={
+			traits={ war_hero pre_grinded trickster expert_improviser trait_engineer trait_mountaineer infantry_expert infantry_leader Invader }
+			skill=5
+			attack_skill=6
+			defense_skill=4
 			planning_skill=5
 			logistics_skill=5
 			legacy_id=0

@@ -155,10 +155,10 @@ characters={
 		field_marshal={
 			traits={ old_guard pre_grinded trait_cautious defensive_doctrine infantry_leader ambusher trickster guerilla_fighter organizer logistics_wizard hill_fighter trait_mountaineer }
 			skill=4
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
+			attack_skill=5
+			defense_skill=6
+			planning_skill=5
+			logistics_skill=4
 			legacy_id=-1
 		}
 	}
@@ -227,10 +227,10 @@ characters={
 		field_marshal={
 			traits={ old_guard career_officer pre_grinded trait_cautious organizer panzer_leader combined_arms_expert thorough_planner organizer thorough_planner hill_fighter trait_mountaineer trickster }
 			skill=4
-			attack_skill=1
-			defense_skill=1
-			planning_skill=2
-			logistics_skill=3
+			attack_skill=8
+			defense_skill=6
+			planning_skill=6
+			logistics_skill=5
 			legacy_id=-1
 		}
 	}
@@ -295,10 +295,10 @@ characters={
 		corps_commander={
 			traits={ armor_officer pre_grinded panzer_leader panzer_expert expert_improviser trickster desert_fox trait_mountaineer }
 			skill=4
-			attack_skill=4
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=4
+			attack_skill=8
+			defense_skill=6
+			planning_skill=6
+			logistics_skill=5
 			legacy_id=-1
 		}
 	}
@@ -352,10 +352,10 @@ characters={
 		corps_commander={
 			traits={  trait_cautious pre_grinded infantry_leader ambusher camouflage_expert trickster guerilla_fighter trait_mountaineer}
 			skill=4
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
+			attack_skill=5
+			defense_skill=6
+			planning_skill=5
+			logistics_skill=4
 			legacy_id=-1
 		}
 	}
@@ -462,10 +462,10 @@ characters={
 		corps_commander={
 			traits={ trait_cautious pre_grinded politically_connected offensive_doctrine trait_engineer infantry_expert infantry_leader hill_fighter trait_mountaineer expert_improviser trickster fortress_buster }
 			skill=4
-			attack_skill=2
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=1
+			attack_skill=8
+			defense_skill=6
+			planning_skill=6
+			logistics_skill=5
 			legacy_id=-1
 		}
 	}

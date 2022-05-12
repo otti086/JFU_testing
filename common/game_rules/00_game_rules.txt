@@ -338,77 +338,77 @@ JFU_pre_grinded_generals = {
 	}
 }
 JFU_allow_strategic_bombers = {
-	name = "JFU_ALLOW_STRATEGIC_BOMBERS"
+	name = "Strategic Bomber Settings"
 	group = "HORST_GROUPKEY"					
 	icon = "GFX_nukes"			
 	default = {	
 		name = "JFU_ENABLE_STRATEGIC_BOMBERS"
-		text = "PURE VANILLA EXPERINCE"
+		text = "enable Strats"
 		desc = "Strategic Bombers 1 and 2 are both researchable"	
 	}
 	option = {
 		name = "JFU_DISABLE_STRATEGIC_BOMBER2"
-		text = "I HATE BOMBING BUT I LOVE VANILLA"
+		text = "disable Strats 2"
 		desc = "Strategic Bombers 2 are disabled. Strategic Bombers 1 are researchable"
 	}
 	option = {	
 		name = "JFU_DISABLE_STRATEGIC_BOMBERS"
-		text = "I DONT WANT TO BE BOMBED"
+		text = "diable all Strats"
 		desc = "Strategic Bombers 1 and 2 are both disabled"	
 	}
 }
 JFU_nuke_options = {
-	name = "JFU_NUKE_OPTIONS"
+	name = "Nuke Settings"
 	group = "HORST_GROUPKEY"				
 	icon = "GFX_nukes"
 	default = {	
 		name = "JFU_ENABLE_NUKES"
-		text = "VANILLA NUKES"
+		text = "enalbe Nukes"
 		desc = "Clicking this option will enable Nuclear Research"	
 	}
 	option = {	
 		name = "JFU_DISABLE_NUKES"
-		text = "NO NUKES FOR YOU"
+		text = "disable Nukes"
 		desc = "Clicking this option will diable Nuclear Research"
 	}
 }
 JFU_sub_options = {
-	name = "JFU_SUB_OPTIONS"
+	name = "Sub Settings"
 	group = "HORST_GROUPKEY"					
 	icon = "GFX_submarine_operations"
 	default = {	
 		name = "JFU_ENABLE_ALL_SUB"
-		text = "FULL SUB MADNESS"
+		text = "enable all subs"
 		desc = "you can research all submarine technologies at any time"	
 	}
 	option = {	
 		name = "JFU_ENABLE_SUB3_ONLY"
-		text = "SUB 4 ARE OP"
+		text = "disable sub 4s"
 		desc = "Clicking this option will disable 1944 Submarines"	
 	}
 	option = {
 		name = "JFU_DISABLE_ALL_SUB"
-		text = "EASY MODE"
+		text = "disable subs 3 and 4"
 		desc = "Clicking this option will disable 1940 and 1944 Submarines"	
 	}
 }
 JFU_snorkel_options = {
-	name = "JFU_SNORKEL_OPTIONS"
+	name = "Snorkel Settings"
 	group = "HORST_GROUPKEY"					
 	icon = "GFX_submarine_offensive"			
 	default = {	
 		name = "JFU_ENABLE_SNORKEL2"
-		text = "AGAIN FULL SUB MADNESS"
+		text = "enable snorkel 2"
 		desc = "Clicking this option will enable Snorkel 2"	
 	}
 	option = {	
 		name = "JFU_DISABLE_SNORKEL2"
-		text = "NO SUB MADNESS"
+		text = "disable snorkel 2"
 		desc = "Clicking this option will disable Snorkel 2"	
 	}
 }
 JFU_closed_eco_JAPAN = {
-	name = "JFU_CLOSED_ECO_JAPAN"
+	name = "Japan Eco "
 	group = "HORST_GROUPKEY"
 	icon = "RULE_GROUP_GENERAL_UI"
 
@@ -424,7 +424,7 @@ JFU_closed_eco_JAPAN = {
 	}
 }
 JFU_closed_eco_SOVIET = {
-	name = "JFU_CLOSED_ECO_SOVIET"
+	name = "Soviet eco"
 	group = "HORST_GROUPKEY"
 	icon = "RULE_GROUP_GENERAL_UI"
 
@@ -458,17 +458,17 @@ JFU_kamikaze = {
 	}
 }
 JFU_Modern_tank_options = {
-	name = "JFU_MODERN_TANK_OPTIONS"
+	name = "Modern Tanks Settings"
 	group = "HORST_GROUPKEY"				
 	icon = "GFX_nukes"
 	default = {	
 		name = "JFU_ENABLE_MODERN_TANKS"
-		text = "VANILLA Modern TANK"
+		text = "enable Modern Tanks"
 		desc = "Clicking this option will enable the Modern Tanks"	
 	}
 	option = {	
 		name = "JFU_DISABLE_MODERN_TANKS"
-		text = "NO OP TANKS FOR YOU"
+		text = "disable Modern Tanks"
 		desc = "Clicking this option will diable Modern Tanks"
 	}
 }

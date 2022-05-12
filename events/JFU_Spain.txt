@@ -790,13 +790,6 @@ country_event = {
 		name = lar_spain.51.a
 		ai_chance = {
 			base = 25
-			modifier = {
-				factor = 2
-				has_volunteers_amount_from = {
-				    tag = SOV
-				    count > 0
-				}
-			}
 		}
 		trigger = {
 			SOV = {
