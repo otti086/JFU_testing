@@ -152,7 +152,7 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ trickster pre_grinded hill_fighter organizer logistics_wizard panzer_leader panzer_expert trait_engineer }
+			traits={ trickster pre_grinded hill_fighter guerilla_fighter organizer logistics_wizard panzer_leader panzer_expert trait_engineer }
 			skill=4
 			attack_skill=4
 			defense_skill=2

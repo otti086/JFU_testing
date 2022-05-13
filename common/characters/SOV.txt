@@ -1087,7 +1087,7 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { cavalry_officer pre_grinded infantry_leader trickster guerilla_fighter cavalry_leader }
+			traits = { cavalry_officer pre_grinded infantry_leader trickster guerilla_fighter cavalry_leader cavalry_expert}
 			skill = 4
 			attack_skill=4
 			defense_skill=5

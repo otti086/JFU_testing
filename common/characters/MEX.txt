@@ -205,7 +205,7 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ hill_fighter naval_invader pre_grinded trickster infantry_leader infantry_expert organizer logistics_wizard }
+			traits={ hill_fighter naval_invader guerilla_fighter pre_grinded trickster infantry_leader infantry_expert organizer logistics_wizard }
 			skill=4
 			attack_skill=2
 			defense_skill=2

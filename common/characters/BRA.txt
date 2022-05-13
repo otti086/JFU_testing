@@ -100,7 +100,7 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ ranger naval_invader pre_grinded trickster infantry_leader infantry_expert organizer logistics_wizard}
+			traits={ ranger naval_invader pre_grinded guerilla_fighter trickster infantry_leader infantry_expert organizer logistics_wizard}
 			skill=4
 			attack_skill=2
 			defense_skill=3

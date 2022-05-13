@@ -323,7 +323,7 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={  trait_engineer commando naval_invader pre_grinded trickster hill_fighter infantry_leader infantry_expert organizer logistics_wizard  }
+			traits={  trait_engineer commando naval_invader pre_grinded trickster guerilla_fighter hill_fighter infantry_leader infantry_expert organizer logistics_wizard  }
 			skill=4
 			attack_skill=3
 			defense_skill=3

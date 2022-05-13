@@ -470,7 +470,7 @@ characters={
 		}
 
 		corps_commander={
-			traits = { trait_engineer pre_grinded infantry_leader infantry_expert commando trickster hill_fighter trait_mountaineer }
+			traits = { trait_engineer pre_grinded guerilla_fighter infantry_leader infantry_expert commando trickster hill_fighter trait_mountaineer }
 			skill=5
 			attack_skill=5
 			defense_skill=6

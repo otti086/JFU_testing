@@ -268,7 +268,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ career_officer pre_grinded commando infantry_leader infantry_expert naval_invader amphibious urban_assault_specialist hill_fighter }
+			traits={ career_officer pre_grinded commando infantry_leader infantry_expert naval_invader trickster guerilla_fighter urban_assault_specialist hill_fighter }
 			skill=5
 			attack_skill=8
 			defense_skill=6
