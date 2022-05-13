@@ -581,6 +581,43 @@ JFU_pre_grinded_generals_OFF = {
 		recruit_character = ENG_alan_cunningham
 		recruit_character = ENG_william_slim
 	}
+	AST = {
+		recruit_character = AST_leslie_morshead
+		recruit_character = AST_thomas_blamey
+		recruit_character = AST_henry_wynter
+		recruit_character = AST_alan_vasey
+	}
+	BRA = {
+		recruit_character = BRA_eurico_gaspar_dutra
+		recruit_character = BRA_mascarenhas_de_morais
+	}
+	CAN = {
+		recruit_character = CAN_thomas_victor_anderson
+		recruit_character = CAN_charles_foulkes
+	}
+	MEX = {
+		recruit_character = MEX_gildardo_magana
+		recruit_character = MEX_heliodoro_charis
+	}
+	NZL = {
+		recruit_character = NZL_robert_row
+		recruit_character = NZL_william_stevens
+	}
+	RAJ = {
+		recruit_character = RAJ_frank_messervy
+		recruit_character = RAJ_douglas_gracey
+	}
+	SAF = {
+		recruit_character = SAF_george_edwin_brink
+		recruit_character = SAF_guy_hallifax
+	}
+	USA = {
+		recruit_character = USA_omar_bradley
+		recruit_character = USA_dwight_d_eisenhower
+		recruit_character = USA_geoffrey_keyes
+		recruit_character = USA_lucian_truscott
+		recruit_character = USA_george_s_patton
+	}
 }	
 JFU_pre_grinded_generals_ON = {
 	GER = { 
@@ -589,6 +626,7 @@ JFU_pre_grinded_generals_ON = {
 		recruit_character = GER_erich_von_manstein_grinded
 		recruit_character = GER_erwin_von_witzleben_grinded
 		recruit_character = GER_gerd_von_rundstedt_grinded
+		add_ideas = { pre_grinded_gens_volunteers }
 	}
 	SOV = {
 		recruit_character = SOV_nikolay_vatutin_grinded
@@ -611,17 +649,20 @@ JFU_pre_grinded_generals_ON = {
 		SOV_nikolay_vatutin_grinded = {
 			set_character_flag = SOV_safe_from_purge_flag
 		}	
+		add_ideas = { pre_grinded_gens_volunteers }
 	}
 	ROM = {
 		recruit_character = ROM_gheorghe_avramescu_grinded
 		recruit_character = ROM_ioan_mihail_racovita_grinded
 		recruit_character = ROM_petre_dumitrescu_grinded
+		add_ideas = { pre_grinded_gens_volunteers }
 	}
 	HUN = {
 		recruit_character = HUN_geza_lakatos_grinded
 		recruit_character = HUN_ivan_hindy_grinded
 		recruit_character = HUN_karoly_beregfy_grinded
 		recruit_character = HUN_lajos_veress_grinded
+		add_ideas = { pre_grinded_gens_volunteers }
 	}
 	SPR = {
 		recruit_character = SPR_antonio_cordon_garcia_grinded
@@ -635,10 +676,12 @@ JFU_pre_grinded_generals_ON = {
 		recruit_character = ITA_giovanni_messe_grinded
 		recruit_character = ITA_ubaldo_soddu_grinded
 		recruit_character = ITA_rodolfo_graziani_grinded
+		add_ideas = { pre_grinded_gens_volunteers }
 	}
 	BUL = {
 		recruit_character = BUL_ivan_markov_grinded
 		recruit_character = BUL_georgi_markov_grinded
+		add_ideas = { pre_grinded_gens_volunteers }
 	}
 	JAP = {
 		recruit_character = JAP_shizuichi_tanaka_grinded
@@ -647,17 +690,56 @@ JFU_pre_grinded_generals_ON = {
 		recruit_character = JAP_hisaichi_terauchi_grinded
 		recruit_character = JAP_tomoyuki_yamashita_grinded
 		recruit_character = JAP_kenkichi_ueda_grinded
+		add_ideas = { pre_grinded_gens_volunteers }
 	}
 	FRA = {
 		recruit_character = FRA_charles_huntziger_grinded
 		recruit_character = FRA_charles_de_gaulle_grinded
 		recruit_character = FRA_maxime_weygand_grinded
 		recruit_character = FRA_alphonse_juin_grinded
+		add_ideas = { pre_grinded_gens_volunteers }
 	}
 	ENG = {
 		recruit_character = ENG_bernard_montgomery_grinded
 		recruit_character = ENG_claude_auchinleck_grinded
 		recruit_character = ENG_alan_cunningham_grinded
 		recruit_character = ENG_william_slim_grinded
+	}
+	AST = {
+		recruit_character = AST_leslie_morshead_grinded
+		recruit_character = AST_thomas_blamey_grinded
+		recruit_character = AST_henry_wynter_grinded
+		recruit_character = AST_alan_vasey_grinded
+	}
+	BRA = {
+		recruit_character = BRA_eurico_gaspar_dutra_grinded
+		recruit_character = BRA_mascarenhas_de_morais_grinded
+	}
+	CAN = {
+		recruit_character = CAN_thomas_victor_anderson_grinded
+		recruit_character = CAN_charles_foulkes_grinded
+	}
+	MEX = {
+		recruit_character = MEX_gildardo_magana_grinded
+		recruit_character = MEX_heliodoro_charis_grinded
+	}
+	NZL = {
+		recruit_character = NZL_robert_row_grinded
+		recruit_character = NZL_william_stevens_grinded
+	}
+	RAJ = {
+		recruit_character = RAJ_frank_messervy_grinded
+		recruit_character = RAJ_douglas_gracey_grinded
+	}
+	SAF = {
+		recruit_character = SAF_george_edwin_brink_grinded
+		recruit_character = SAF_guy_hallifax_grinded
+	}
+	USA = {
+		recruit_character = USA_omar_bradley_grinded
+		recruit_character = USA_dwight_d_eisenhower_grinded
+		recruit_character = USA_geoffrey_keyes_grinded
+		recruit_character = USA_lucian_truscott_grinded
+		recruit_character = USA_george_s_patton_grinded
 	}
 }					

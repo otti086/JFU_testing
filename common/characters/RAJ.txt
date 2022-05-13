@@ -93,6 +93,25 @@ characters={
 		}
 	}
 
+	RAJ_frank_messervy_grinded={
+		name=RAJ_frank_messervy_grinded
+		portraits={
+			army={
+				large="GFX_RAJ_frank_messervy"
+				small="gfx/interface/ideas/idea_RAJ_frank_messervy.dds"
+			}
+		}
+		corps_commander={
+			traits={ hill_fighter trickster pre_grinded expert_improviser infantry_expert infantry_leader guerilla_fighter }
+			skill=4
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
 	RAJ_douglas_gracey={
 		name=RAJ_douglas_gracey
 		portraits={
@@ -104,6 +123,25 @@ characters={
 		corps_commander={
 			traits={ desert_fox }
 			skill=3
+			attack_skill=1
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	RAJ_douglas_gracey_grinded={
+		name=RAJ_douglas_gracey_grinded
+		portraits={
+			army={
+				large="GFX_RAJ_douglas_gracey"
+				small="gfx/interface/ideas/idea_RAJ_douglas_gracey.dds"
+			}
+		}
+		field_marshal={
+			traits={ desert_fox trickster pre_grinded infantry_expert infantry_leader guerilla_fighter }
+			skill=4
 			attack_skill=1
 			defense_skill=3
 			planning_skill=3

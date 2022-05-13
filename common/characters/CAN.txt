@@ -73,6 +73,25 @@ characters={
 		}
 	}
 
+	CAN_thomas_victor_anderson_grinded={
+		name=CAN_thomas_victor_anderson_grinded
+		portraits={
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+				small="gfx/interface/ideas/idea_europe_generic_land_3.dds"
+			}
+		}
+		corps_commander={
+			traits={trickster pre_grinded hill_fighter expert_improviser panzer_leader panzer_expert trait_engineer}
+			skill=4
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+
 	CAN_charles_foulkes={
 		name=CAN_charles_foulkes
 		portraits={
@@ -82,6 +101,24 @@ characters={
 			}
 		}
 		field_marshal={
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	CAN_charles_foulkes_grinded={
+		name=CAN_charles_foulkes_grinded
+		portraits={
+			army={
+				large="GFX_CAN_charles_foulkes"
+				small="gfx/interface/ideas/idea_CAN_charles_foulkes.dds"
+			}
+		}
+		field_marshal={
+			traits={trickster pre_grinded hill_fighter organizer logistics_wizard panzer_leader panzer_expert trait_engineer}
 			skill=4
 			attack_skill=4
 			defense_skill=2

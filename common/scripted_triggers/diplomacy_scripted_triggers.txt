@@ -198,13 +198,4 @@ DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
 		}
 		always = yes
 	}
-	if = {
-		limit = {
-			has_game_rule = {
-				rule = JFU_pre_grinded_generals
-				option = PRE_GRINDED_GENERALS_ON
-			}
-		}
-		always = no
-	}
 }

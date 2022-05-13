@@ -91,6 +91,25 @@ characters={
 		}
 	}
 
+	BRA_eurico_gaspar_dutra_grinded={
+		name=BRA_eurico_gaspar_dutra_grinded
+		portraits={
+			army={
+				large="gfx/leaders/South America/Portrait_South_America_Generic_land_1.dds"
+				small="gfx/interface/ideas/idea_south_america_generic_land_1.dds"
+			}
+		}
+		field_marshal={
+			traits={ ranger naval_invader pre_grinded trickster infantry_leader infantry_expert organizer logistics_wizard}
+			skill=4
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
 	BRA_mascarenhas_de_morais={
 		name=BRA_mascarenhas_de_morais
 		portraits={
@@ -101,6 +120,25 @@ characters={
 		}
 		corps_commander={
 			traits={ jungle_rat }
+			skill=4
+			attack_skill=2
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+
+	BRA_mascarenhas_de_morais_grinded={
+		name=BRA_mascarenhas_de_morais_grinded
+		portraits={
+			army={
+				large="gfx/leaders/South America/Portrait_South_America_Generic_land_5.dds"
+				small="gfx/interface/ideas/idea_south_america_generic_land_5.dds"
+			}
+		}
+		corps_commander={
+			traits={ jungle_rat trickster pre_grinded expert_improviser panzer_leader panzer_expert trait_engineer }
 			skill=4
 			attack_skill=2
 			defense_skill=4

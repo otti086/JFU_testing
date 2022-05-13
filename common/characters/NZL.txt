@@ -106,6 +106,25 @@ characters={
 		}
 	}
 
+	NZL_robert_row_grinded={
+		name=NZL_robert_row_grinded
+		portraits={
+			army={
+				large="GFX_NZL_robert_row"
+				small="gfx/interface/ideas/idea_NZL_robert_row.dds"
+			}
+		}
+		corps_commander={
+			traits={ naval_invader trickster pre_grinded hill_fighter expert_improviser infantry_expert infantry_leader trait_engineer}
+			skill=4
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
 	NZL_william_stevens={
 		name=NZL_william_stevens
 		portraits={
@@ -115,6 +134,25 @@ characters={
 			}
 		}
 		corps_commander={
+			skill=4
+			attack_skill=2
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+
+	NZL_william_stevens_grinded={
+		name=NZL_william_stevens_grinded
+		portraits={
+			army={
+				large="GFX_NZL_william_stevens"
+				small="gfx/interface/ideas/idea_NZL_william_stevens.dds"
+			}
+		}
+		corps_commander={
+			traits={hill_fighter naval_invader pre_grinded trickster infantry_leader infantry_expert organizer logistics_wizard}
 			skill=4
 			attack_skill=2
 			defense_skill=4

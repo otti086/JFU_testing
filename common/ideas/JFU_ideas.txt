@@ -163,5 +163,19 @@ ideas = {
 				terrain_trait_xp_gain_factor = 1
 			}
 		}
+		pre_grinded_gens_volunteers = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = partial_economic_mobilisation
+
+			modifier = {
+				send_volunteer_size = -10
+				send_volunteer_divisions_required = -0.99
+			}
+		}
 	}
 }

@@ -158,6 +158,25 @@ characters={
 		}
 	}
 
+	MEX_heliodoro_charis_grinded={
+		name=MEX_heliodoro_charis_grinded
+		portraits={
+			army={
+				large="GFX_portrait_MEX_heliodoro_charis" #This is really a generic portrait
+				small="GFX_portrait_MEX_heliodoro_charis_small" #This is really a generic portrait
+			}
+		}
+		corps_commander={
+			traits={ trickster pre_grinded hill_fighter expert_improviser infantry_expert infantry_leader trait_engineer }
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
 	MEX_gildardo_magana={
 		name=MEX_gildardo_magana
 		portraits={
@@ -174,6 +193,25 @@ characters={
 			planning_skill=3
 			logistics_skill=3
 			legacy_id=702
+		}
+	}
+
+	MEX_gildardo_magana_grinded={
+		name=MEX_gildardo_magana_grinded
+		portraits={
+			army={
+				large="GFX_portrait_MEX_gildardo_magana"
+				small="gfx/interface/ideas/idea_MEX_gildardo_magana.dds"
+			}
+		}
+		field_marshal={
+			traits={ hill_fighter naval_invader pre_grinded trickster infantry_leader infantry_expert organizer logistics_wizard }
+			skill=4
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
 		}
 	}
 
