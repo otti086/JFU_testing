@@ -323,18 +323,18 @@ JFU_pre_grinded_generals = {
 
 	default = {
 		name = "PRE_GRINDED_GENERALS_OFF"
-		text = "PAIN SPAIN"
-		desc = "normal Vanilla grinding experience"
+		text = "Pre grinded Generals OFF"
+		desc = "normal Vanilla grinding no pre grinded Generals"
 	}
 	option = {
 		name = "HALVED_GRIND_TIME"
-		text = "HALF PAIN SPAIN"
-		desc = "Trait XP is gained twice as normal"
+		text = "+50% trait Xp gain"
+		desc = "Trait XP gained is mulitpled by 50% does not affect level XP"
 	}
 	option = {
 		name = "PRE_GRINDED_GENERALS_ON"
-		text = "FULL HORST EXPERIENCE"
-		desc = "all Nations have pregrinded Generals no Volunteers are allowed"
+		text = "Pre grinded Generals ON"
+		desc = "all Nations have pregrinded Generals Volunteers are not allowed"
 	}
 }
 JFU_allow_strategic_bombers = {
