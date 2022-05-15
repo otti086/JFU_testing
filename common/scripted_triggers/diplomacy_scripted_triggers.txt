@@ -29,93 +29,7 @@
 #				}
 #			}
 #		}
-
-DIPLOMACY_GUARANTEE_ENABLE_TRIGGER = {
-	if = {
-		limit = {
-			has_game_rule = {
-				rule = allow_guarantees
-				option = BLOCKED
-			}
-		}
-		custom_trigger_tooltip = {
-			tooltip = RULE_ALLOW_GUARANTEES_BLOCKED_TOOLTIP
-			always = no
-		}
-	}
-}
-
-DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
-
-	if = {
-		limit = {
-			has_game_rule = {
-				rule = allow_release_nations
-				option = BLOCKED
-			}
-		}
-		custom_trigger_tooltip = {
-			tooltip = RULE_ALLOW_RELEASE_NATIONS_BLOCKED_TOOLTIP
-			always = no
-		}
-	}
-}
-DIPLOMACY_MILACC_ENABLE_TRIGGER = {
-	if = {
-		limit = {
-			has_game_rule = {
-				rule = allow_access
-				option = BLOCKED
-			}
-		}
-		custom_trigger_tooltip = {
-			tooltip = RULE_ALLOW_MILITARY_ACCESS_BLOCKED_TT
-			always = no
-		}
-	}
-}
-DIPLOMACY_OFFER_MILACC_ENABLE_TRIGGER = {
-	if = {
-		limit = {
-			has_game_rule = {
-				rule = allow_access
-				option = BLOCKED
-			}
-		}
-		custom_trigger_tooltip = {
-			tooltip = RULE_ALLOW_MILITARY_ACCESS_BLOCKED_TT
-			always = no
-		}
-	}
-}
-DIPLOMACY_DOCKING_RIGHTS_ENABLE_TRIGGER = {
-	if = {
-		limit = {
-			has_game_rule = {
-				rule = allow_access
-				option = BLOCKED
-			}
-		}
-		custom_trigger_tooltip = {
-			tooltip = RULE_ALLOW_MILITARY_ACCESS_BLOCKED_TT
-			always = no
-		}
-	}
-}
-DIPLOMACY_OFFER_DOCKING_RIGHTS_ENABLE_TRIGGER = {
-	if = {
-		limit = {
-			has_game_rule = {
-				rule = allow_access
-				option = BLOCKED
-			}
-		}
-		custom_trigger_tooltip = {
-			tooltip = RULE_ALLOW_MILITARY_ACCESS_BLOCKED_TT
-			always = no
-		}
-	}
-}
+DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = { always = no}
 DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
 	if = {
 		limit = {
@@ -149,45 +63,8 @@ DIPLOMACY_REQUEST_LICENSED_PRODUCTION_ENABLE_TRIGGER = {
 		always = yes
 	}
 }
-DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = {
-	if = {
-		limit = {
-			has_game_rule = {
-				rule = allow_wargoals
-				option = NEVER
-			}
-		}
-		always = no
-	}
-}
-DIPLOMACY_BOOST_PARTY_POPULARITY_ENABLE_TRIGGER = {
-	if = {
-		limit = {
-			has_game_rule = {
-				rule = allow_party_boosting
-				option = BLOCKED
-			}
-		}
-		custom_trigger_tooltip = {
-			tooltip = RULE_BOOST_PARTY_BLOCKED_TT
-			always = no
-		}
-	}
-}
-DIPLOMACY_STAGE_COUP_ENABLE_TRIGGER = {
-	if = {
-		limit = {
-			has_game_rule = {
-				rule = allow_coups
-				option = BLOCKED
-			}
-		}
-		custom_trigger_tooltip = {
-			tooltip = RULE_COUP_BLOCKED_TT
-			always = no
-		}
-	}
-}
+DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = { always = no }
+DIPLOMACY_WAR_ENABLE_TRIGGER = {always = no }
 DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
 	if = {
 		limit = {

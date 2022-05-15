@@ -21,27 +21,6 @@
 #	}
 # }
 
-allow_wargoals = {
-	name = "RULE_ALLOW_WARGOALS"
-	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
-	icon = "GFX_wargoals"
-	default = {
-		name = "NEVER"
-		text = RULE_OPTION_ALWAYS_FREE
-		desc = "RULE_ALLOW_WARGOALS_ALWAYS_FREE_DESC"
-	}
-}
-allow_access = {
-	name = "RULE_ALLOW_MILITARY_ACCESS"
-	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
-	icon = "GFX_military_access_docking_rights"
-	default = {
-		name = "BLOCKED"
-		text = RULE_OPTION_BLOCKED
-		desc = "RULE_ALLOW_ACCESS_BLOCKED_DESC"
-	}
-}
-
 allow_release_nations = {
 	name = "RULE_ALLOW_RELEASE_NATIONS"
 	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
@@ -84,45 +63,6 @@ allow_volunteers = {
 		name = "LIMITED"
 		text = "RULE_OPTION_LIMITED"
 		desc = "RULE_ALLOW_VOLUNTEERS_LIMITED_DESC"
-	}
-}
-
-allow_guarantees = {
-	name = "RULE_ALLOW_GUARANTEES"
-	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
-	icon = "GFX_guarantee_independence"
-	default = {
-		name = BLOCKED
-		text = "RULE_OPTION_BLOCKED"
-		desc = "RULE_ALLOW_GUARANTEES_BLOCKED_DESC"
-	}
-}
-
- ##   ##  #   # ### ###  ###      ##   ##  ### ###  ##  #  #  ## 
-#  # #  # #   # #   #  #  #      #  # #  #  #   #  #  # ## # #   
-#    #  #  # #  ##  ###   #      #### #     #   #  #  # # ##  #  
-#  # #  #  # #  #   #  #  #      #  # #  #  #   #  #  # #  #   # 
- ##   ##    #   ### #  #  #      #  #  ##   #  ###  ##  #  # ##  
-
-allow_coups = {
-	name = "RULE_ALLOW_COUPS"
-	group = "RULE_GROUP_COVERT_ACTIONS"
-	icon = "GFX_coups"
-	default = {
-		name = BLOCKED
-		text = "RULE_OPTION_BLOCKED"
-		desc = "RULE_ALLOW_COUPS_BLOCKED_DESC"
-	}
-}
-
-allow_party_boosting = {
-	name = "RULE_ALLOW_PARTY_BOOSTING"
-	group = "RULE_GROUP_COVERT_ACTIONS"
-	icon = "GFX_boosting_party_popularity"
-	option = {
-		name = BLOCKED
-		text = "RULE_OPTION_BLOCKED"
-		desc = "RULE_ALLOW_PARTY_BOOSTING_BLOCKED_DESC"
 	}
 }
 

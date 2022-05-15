@@ -247,7 +247,7 @@ characters={
 		}
 		
 		field_marshal={
-			traits={ trait_cautious armor_officer politically_connected organizer panzer_expert panzer_leader logistics_wizard offensive_doctrine hill_fighter trickster }
+			traits={ trait_cautious pre_grinded armor_officer politically_connected organizer panzer_expert panzer_leader logistics_wizard offensive_doctrine hill_fighter trickster }
 			skill=5
 			attack_skill=3
 			defense_skill=3
