@@ -316,6 +316,15 @@ country_event = {
 				set_party_name = { ideology = neutrality long_name = SPR_neutrality_anarchism_party_long name = SPR_neutrality_anarchism_party }
 				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 10000 }
 			}
+			if = {
+				limit = {
+					has_game_rule = {
+						name = JFU_pre_grinded_generals
+						option = PRE_GRINDED_GENERALS_ON
+					}
+					add_threat = 4
+				}
+			}
 		}
 	}
 }
