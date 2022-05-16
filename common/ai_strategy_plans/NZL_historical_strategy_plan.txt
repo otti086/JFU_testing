@@ -32,8 +32,7 @@ NZL_historical = {
 		#1938										
 		NZL_army_reforms											
 		NZL_charlton_automatic_rifle								
-		NZL_bureau_of_industry										
-		NZL_2nzef													
+		NZL_bureau_of_industry																							
 		NZL_department_of_scientific_and_industrial_research		
 		#1939
 		NZL_arrest_pacifist_leaders									
@@ -41,8 +40,7 @@ NZL_historical = {
 		NZL_transfer_the_new_zealand_division						
 		NZL_maori_affairs_act										
 		NZL_form_the_rnzn											
-		#1940
-		NZL_taranaki_oil											
+		#1940											
 		NZL_industrial_conscription									
 		NZL_domestic_arms_industry									
 		NZL_long_range_patrol										
