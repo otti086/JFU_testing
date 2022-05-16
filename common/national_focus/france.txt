@@ -191,10 +191,10 @@ focus = {
 		search_filters = {  FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			772 = {	
-				add_extra_state_shared_building_slots = 8 
+				add_extra_state_shared_building_slots = 6 
 				add_building_construction = {
 				type = industrial_complex
-				level = 8
+				level = 6
 				instant_build = yes
 				}
 			}				
@@ -539,7 +539,7 @@ focus = {
 			focus = FRA_laissez_faire
 		}
 		relative_position_id = FRA_laissez_faire
-		cost = 10
+		cost = 5
 
 
 		cancel_if_invalid = yes
@@ -781,7 +781,7 @@ focus = {
 			focus = FRA_review_foreign_policy
 		}
 		relative_position_id = FRA_review_foreign_policy
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1135,7 +1135,7 @@ focus = {
 			}
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
-				amount = 5000
+				amount = 10000
 			}
 
 			ENG = { 
@@ -1180,11 +1180,12 @@ focus = {
 			custom_effect_tooltip = FRA_appeal_to_overseas_territories_tt
 			add_offsite_building = {
 				type = industrial_complex
-				level = 2
+				level = 4
 			}
 			hidden_effect = {
 				country_event = lar_appeal_to_overseas_territories.1
 			}
+			add_ideas = tot_economic_mobilisation
 		}
 	}
 	focus = {
@@ -1551,7 +1552,7 @@ focus = {
 		completion_reward = {
 			add_equipment_to_stockpile = {
 				type = convoy
-				amount = 50
+				amount = 100
 			}
 			create_navy_leader = {
 				name = "Emilie Muselier"
@@ -1641,7 +1642,7 @@ focus = {
 			SOV = {
 				add_equipment_to_stockpile = {
 					type = fighter_equipment
-					amount = 150
+					amount = 300
 					producer = FRA
 				}
 			}
@@ -1999,10 +2000,6 @@ focus = {
 				}
 				create_unit = {
 					division = "name = \"2me Demi-Brigade des FFI\" division_template = \"FFI Demi-Brigade\" start_experience_factor = 0"  
-					owner = ROOT
-				}
-				create_unit = {
-					division = "name = \"3me Demi-Brigade des FFI\" division_template = \"FFI Demi-Brigade\" start_experience_factor = 0"  
 					owner = ROOT
 				}
 				set_state_flag = FRA_core_state_liberated

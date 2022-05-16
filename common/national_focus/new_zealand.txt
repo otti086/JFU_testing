@@ -66,10 +66,10 @@
 	focus = {
 		id = NZL_transfer_the_new_zealand_division
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		x = 16
+		x = 11
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2
@@ -112,7 +112,7 @@
 		y = 1
 		relative_position_id = NZL_transfer_the_new_zealand_division
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -174,10 +174,10 @@
 				limit = {
 					has_state_flag = NZL_expand_devonport_naval_base_DY
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -194,10 +194,10 @@
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = NZL_expand_devonport_naval_base_DY
@@ -206,7 +206,7 @@
 				add_building_construction = {
 					type = naval_base
 					province = 4543
-					level = 3
+					level = 5
 					instant_build = yes
 				}
 			}
@@ -448,7 +448,7 @@
 	focus = {
 		id = NZL_expand_the_nzpaf
 		icon = GFX_goal_generic_air_doctrine
-		x = 21
+		x = 16
 		y = 0
 
 		cost = 10
@@ -637,7 +637,7 @@
 			add_tech_bonus = {
 				name = NZL_bomber_focus
 				bonus = 1.00
-				uses = 1
+				uses = 2
 				category = cat_strategic_bomber
 				category = tactical_bomber
 			}
@@ -755,7 +755,7 @@
 			add_tech_bonus = {
 				name = NZL_heavy_bombers
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = cat_strategic_bomber
 			}
 		}
@@ -769,10 +769,10 @@
 	focus = {
 		id = NZL_national_roads_board
 		icon = GFX_goal_generic_construct_infrastructure
-		x = 25
+		x = 20
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 8
@@ -854,11 +854,11 @@
 		id = NZL_new_zealand_steel
 		icon = GFX_goal_generic_production2
 		prerequisite = { focus = NZL_national_roads_board }
-		x = -2
+		x = -1
 		y = 1
 		relative_position_id = NZL_national_roads_board
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -881,44 +881,7 @@
 			284 = {
 				add_resource = {
 					type = steel
-					amount = 10
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = NZL_taranaki_oil
-		icon = GFX_goal_generic_oil_refinery
-		prerequisite = { focus = NZL_national_roads_board }
-		x = 0
-		y = 1
-		relative_position_id = NZL_national_roads_board
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-			controls_state = 284
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-			284 = {
-				add_resource = {
-					type = oil
-					amount = 5
+					amount = 20
 				}
 			}
 		}
@@ -928,7 +891,7 @@
 		id = NZL_wairarapa_sheep_farms
 		icon = GFX_goal_generic_consumer_goods
 		prerequisite = { focus = NZL_national_roads_board }
-		x = 2
+		x = 1
 		y = 1
 		relative_position_id = NZL_national_roads_board
 
@@ -963,7 +926,7 @@
 	focus = {
 		id = NZL_bureau_of_industry
 		icon = GFX_goal_generic_production
-		prerequisite = { focus = NZL_new_zealand_steel focus = NZL_taranaki_oil }
+		prerequisite = { focus = NZL_new_zealand_steel focus = NZL_wairarapa_sheep_farms }
 		x = 0
 		y = 2
 		relative_position_id = NZL_national_roads_board
@@ -1138,7 +1101,7 @@
 		y = 4
 		relative_position_id = NZL_national_roads_board
 
-		cost = 10
+		cost = 20
 
 		ai_will_do = {
 			factor = 25
@@ -1166,10 +1129,10 @@
 				limit = {
 					has_state_flag = NZL_think_big_IC1
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 8
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -1177,49 +1140,32 @@
 				limit = {
 					has_state_flag = NZL_think_big_AF
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 8
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 4
 					instant_build = yes
 				}
 			}
 		}
 
 		completion_reward = {
-			random_owned_controlled_state = {
-				prioritize = { 284 723 }
-				limit = {				
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
+			723 = { 
+				add_extra_state_shared_building_slots = 8
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 				set_state_flag = NZL_think_big_IC1
 			}
-			random_owned_controlled_state = {
-				prioritize = { 284 723 }
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
+			284 = {
+				add_extra_state_shared_building_slots = 8
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 4
 					instant_build = yes
 				}
-				set_state_flag = NZL_think_big_AF
 			}
 		}
 	}
@@ -1262,37 +1208,6 @@
 		}
 	}
 
-	focus = {
-		id = NZL_national_defense_institute
-		icon = GFX_focus_research
-		prerequisite = { focus = NZL_project_seal }
-		x = -2
-		y = 5
-		relative_position_id = NZL_national_roads_board
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 35
-		}
-
-		available = {
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_RESEARCH }
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-	}
-
 
 	############################
 	####### ARMY SECTION #######
@@ -1301,7 +1216,7 @@
 	focus = {
 		id = NZL_army_reforms
 		icon = GFX_goal_generic_army_doctrines
-		x = 30
+		x = 25
 		y = 0
 
 		cost = 10
@@ -1324,11 +1239,11 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			army_experience = 25
+			army_experience = 50
 			add_doctrine_cost_reduction = {
 				name = NZL_army_reforms
 				cost_reduction = 0.5
-				uses = 1
+				uses = 2
 				category = land_doctrine
 			}
 		}
@@ -1342,7 +1257,7 @@
 		y = 1
 		relative_position_id = NZL_army_reforms
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -1407,24 +1322,11 @@
 
 		completion_reward = {
 			add_ideas = NZL_bob_semple_tank
-			if = {
-				limit = {
-					NOT = { has_dlc = "No Step Back" }
-				}
-				add_tech_bonus = {
-					name = NZL_bob_semple_tank
-					bonus = 1.0
-					uses = 1
-					technology = basic_light_tank
-				}
-			}
-			else = {
-				add_tech_bonus = {
-					name = NZL_bob_semple_tank
-					bonus = 1.0
-					uses = 1
-					technology = basic_light_tank_chassis
-				}
+			add_tech_bonus = {
+				name = NZL_bob_semple_tank
+				bonus = 1.0
+				uses = 1
+				category = armor
 			}
 		}
 	}
@@ -1525,7 +1427,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = NZL_schofield_tank
-				bonus = 1.0
+				bonus = 2.0
 				uses = 1
 				category = cat_light_armor
 			}
@@ -1600,7 +1502,7 @@
 			add_tech_bonus = {
 				name = NZL_artillery_focus
 				bonus = 1.00
-				uses = 1
+				uses = 2
 				category = artillery
 			}
 		}
@@ -1668,7 +1570,7 @@
 		x = 4
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2
@@ -1704,7 +1606,7 @@
 		y = 1
 		relative_position_id = NZL_the_first_labor_government
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -1736,7 +1638,7 @@
 		y = 1
 		relative_position_id = NZL_ratana_alliance
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -1757,12 +1659,11 @@
 
 		completion_reward = {
 			284 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 			}
 			723 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 			}
-			add_stability = -0.05
 		}
 	}
 
@@ -1774,7 +1675,7 @@
 		y = 1
 		relative_position_id = NZL_ratana_alliance
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -1980,6 +1881,10 @@
 					division = " name = \"Maori Volunteers\" division_template = \"Maori Volunteers\" start_experience_factor = 0.0"
 					owner = NZL
 				}
+				create_unit = {
+					division = " name = \"Maori Volunteers\" division_template = \"Maori Volunteers\" start_experience_factor = 0.0"
+					owner = NZL
+				}
 			}
 		}
 	}
@@ -1997,7 +1902,7 @@
 		y = 1
 		relative_position_id = NZL_the_first_labor_government
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 30
@@ -2019,11 +1924,9 @@
 		completion_reward = {
 			modify_tech_sharing_bonus = {
 			  	id = commonwealth_research
-			   	bonus = 0.05
+			   	bonus = 0.1
 			}
-			add_political_power = 100
-			add_opinion_modifier = { target = ENG modifier = NZL_strengthen_ties } 
-			ENG = { add_opinion_modifier = { target = NZL modifier = NZL_strengthen_ties } }
+			add_political_power = 150
 		}
 	}
 
@@ -2032,45 +1935,14 @@
 	############################
 
 	focus = {
-		id = NZL_2nzef
-		icon = GFX_goal_generic_position_armies
+		id = NZL_arrest_pacifist_leaders
+		icon = GFX_goal_generic_attack_allies
 		prerequisite = { focus = NZL_strengthen_the_commonwealth }
 		x = 0
 		y = 1
 		relative_position_id = NZL_strengthen_the_commonwealth
 
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_ideas = NZL_2nzef
-		}
-	}
-
-	focus = {
-		id = NZL_arrest_pacifist_leaders
-		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = NZL_2nzef }
-		x = 0
-		y = 2
-		relative_position_id = NZL_strengthen_the_commonwealth
-
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -2099,18 +1971,13 @@
 		icon = GFX_goal_tfv_generic_tech_sharing
 		prerequisite = { focus = NZL_arrest_pacifist_leaders }
 		x = 0
-		y = 3
+		y = 2
 		relative_position_id = NZL_strengthen_the_commonwealth
 
 		cost = 10
 
 		ai_will_do = {
 			factor = 30
-		}
-
-		available = {
-			ENG = { has_government = ROOT }
-			is_in_tech_sharing_group = commonwealth_research
 		}
 
 		bypass = {
@@ -2123,10 +1990,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			modify_tech_sharing_bonus = {
- 				id = commonwealth_research
- 				bonus = 0.05  # we get 20% higher bonus from this group
-			}
+			add_research_slot = 1
 		}
 	}
 

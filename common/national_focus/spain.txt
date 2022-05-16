@@ -43,7 +43,7 @@ focus_tree = {
 			    ideology = neutrality
 			    popularity = 0.2
 			}
-			add_political_power = 250
+			add_political_power = 50
             army_experience = 10
 		}
 	}
@@ -680,11 +680,6 @@ focus_tree = {
 
 	focus = {
 		id = SPR_adopt_the_26_points
-		available = {
-			has_global_flag = scw_over
-		}
-		bypass = {
-		}
 		prerequisite = { focus = SPR_national_recovery }
 		
 		icon = GFX_focus_generic_treaty
@@ -1398,11 +1393,6 @@ focus_tree = {
 
 	focus = {
 		id = SPR_the_national_and_popular_army_of_spain
-		available = {
-			has_global_flag = scw_over
-		}
-		bypass = {
-		}
 		prerequisite = {  focus = SPR_national_recovery }
 		
 		icon = GFX_goal_generic_army_doctrines
