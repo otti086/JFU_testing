@@ -596,6 +596,106 @@ JFU_decisions = {
 			EFR = { add_to_war = { targeted_alliance = GER enemy = ENG } }
 		}
 	}
+	USA_joins_Allies = {
+		icon = generic_operation
+		fire_only_once = yes
+		allowed = { tag = USA }
+		available = {
+			date > 1940.8.1
+			NOT = {
+				is_in_faction_with = ENG
+			}
+		}
+		cost = 0
+		complete_effect = {
+			ENG = { 
+				add_to_faction = USA 
+				if = {
+					limit = {
+						BRA = { is_ai = no }
+						
+					}
+				add_to_faction = BRA
+				}
+				if = {
+					limit = {
+						MEX = { is_ai = no }
+					}
+				add_to_faction = MEX
+				}
+			}
+		}
+	}
+	USA_joins_European_War = {
+		icon = generic_operation
+		fire_only_once = yes
+		allowed = { tag = USA }
+		available = { 
+			OR = {
+				JAP = {has_war_with = USA}
+				date > 1941.2.1
+				NOT = {
+					AND = {
+						ENG = { controls_state = 119 }
+						ENG = { controls_state = 120 }
+						ENG = { controls_state = 121 }
+						ENG = { controls_state = 122 }
+						ENG = { controls_state = 123 }
+						ENG = { controls_state = 125 }
+						ENG = { controls_state = 126 }
+						ENG = { controls_state = 127 }
+						ENG = { controls_state = 128 }
+						ENG = { controls_state = 129 }
+						ENG = { controls_state = 130 }
+						ENG = { controls_state = 131 }
+						ENG = { controls_state = 132 }
+						ENG = { controls_state = 133 }
+						ENG = { controls_state = 136 }
+						ENG = { controls_state = 338 }
+					} 
+				}
+			} 
+		}
+		cost = 0
+		complete_effect = {
+			if = {
+				limit = {
+					NOT = {
+						 is_in_faction_with = ENG 
+					}
+				}
+				ENG = { 
+					add_to_faction = USA 
+					if = {
+						limit = {
+							BRA = { is_ai = no }
+							
+						}
+					add_to_faction = BRA
+					}
+					if = {
+						limit = {
+							MEX = { is_ai = no }
+						}
+					add_to_faction = MEX
+					}
+				}
+			}
+			USA = { add_to_war = { targeted_alliance = ENG enemy = GER } }
+			if = {
+				limit = {
+					BRA = { is_ai = no }
+				}
+				BRA = { add_to_war = { targeted_alliance = ENG enemy = GER } }
+			}
+			if = {
+				limit = {
+					MEX = { is_ai = no }
+				}
+				MEX = { add_to_war = { targeted_alliance = ENG enemy = GER } }
+			}
+		}
+	}	
 
 	"Support France" = {
 		icon = eng_install_government

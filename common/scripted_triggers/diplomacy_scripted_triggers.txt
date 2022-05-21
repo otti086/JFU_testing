@@ -52,6 +52,8 @@ DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = {
 		always = yes #handled by game logic, see above
 	}
 }
+DIPLOMACY_CALL_ALLY_ENABLE_TRIGGER = { always = no } 
+DIPLOMACY_JOIN_ALLY_ENABLE_TRIGGER = { always = no } 
 DIPLOMACY_REQUEST_LICENSED_PRODUCTION_ENABLE_TRIGGER = {
 	if = {
 		limit = {

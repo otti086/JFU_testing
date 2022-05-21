@@ -323,7 +323,6 @@ focus_tree = {
 					has_country_flag = BUL_industrial_investments_in_bulgaria_flag
 				}
 			}
-			is_subject = no
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -3081,14 +3080,10 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			is_subject = no
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			set_rule = {
-				can_create_factions = yes
-			}
 			random_owned_state = {
 				prioritize = { 48 212 }
 				limit = {
