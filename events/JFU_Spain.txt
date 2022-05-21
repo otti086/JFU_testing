@@ -323,7 +323,7 @@ country_event = {
 						option = PRE_GRINDED_GENERALS_ON
 					}
 				}
-				add_named_threat = { threat = 4 name = SPR_Civil_war_Volunteers }
+				add_named_threat = { threat = 3 name = SPR_Civil_war_Volunteers }
 			}
 		}
 	}
