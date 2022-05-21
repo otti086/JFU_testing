@@ -118,6 +118,16 @@ air_to_germany = {
 	}
 }
 
+air_to_hungary = {
+	if = { limit = { tag = ITA }
+	send_equipment = { equipment = fighter_equipment amount = 10000 target = HUN }
+	send_equipment = { equipment = CAS_equipment amount = 10000 target = HUN }
+	send_equipment = { equipment = tac_bomber_equipment amount = 10000 target = HUN }
+	send_equipment = { equipment = heavy_fighter_equipment amount = 10000 target = HUN }	
+	send_equipment = { equipment = strat_bomber_equipment amount = 10000 target = HUN }	
+	}
+}
+
 
 
 tp_divs_out_of_france = {  every_country = { limit ={ is_in_faction_with = ENG }  every_state = { limit = { OR = { is_core_of = FRA  }}  teleport_armies = { to_state = 5139 }   } }  }
@@ -669,6 +679,7 @@ JFU_pre_grinded_generals_ON = {
 		recruit_character = SPA_francisco_franco_grinded
 		recruit_character = SPR_mohamed_meziane_grinded
 		recruit_character = SPR_gonzalo_queipo_de_llano_grinded
+		add_ideas = { scw_pre_grinded_nerf }
 	}
 	ITA = {
 		recruit_character = ITA_emilio_de_bono_grinded

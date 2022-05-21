@@ -308,6 +308,12 @@ ideas = {
 				NOT = {
 					original_tag = SPR
 				}
+				if = {
+					limit = {
+						original_tag = ITA
+					}
+					NOT = { has_war_with = YUG }
+				}
 			}
 			on_add = {
 				if = {
@@ -485,7 +491,30 @@ ideas = {
 
 		free_trade = {
 
-			available = {}
+			available = {
+				if = {
+					limit = {
+						original_tag = SOV
+					}
+					NOT = {
+						has_game_rule = {
+							rule = JFU_closed_eco_SOVIET
+							option = ENABLE_CLOSED_ECO
+						}
+					}
+				}
+				if = {
+					limit = {
+						original_tag = JAP
+					}
+					NOT = {
+						has_game_rule = {
+							rule = JFU_closed_eco_JAPAN
+							option = ENABLE_CLOSED_ECO
+						}
+					}
+				}
+			}
 
 			cost = 150
 			removal_cost = -1
@@ -541,6 +570,28 @@ ideas = {
 						has_dlc = "Waking the Tiger"
 					}
 					NOT = { has_idea = CHI_nine_power_treaty }
+				}
+				if = {
+					limit = {
+						original_tag = SOV
+					}
+					NOT = {
+						has_game_rule = {
+							rule = JFU_closed_eco_SOVIET
+							option = ENABLE_CLOSED_ECO
+						}
+					}
+				}
+				if = {
+					limit = {
+						original_tag = JAP
+					}
+					NOT = {
+						has_game_rule = {
+							rule = JFU_closed_eco_JAPAN
+							option = ENABLE_CLOSED_ECO
+						}
+					}
 				}
 			}
 
@@ -617,6 +668,28 @@ ideas = {
 						has_dlc = "Waking the Tiger"
 					}
 					NOT = { has_idea = CHI_nine_power_treaty }
+				}
+				if = {
+					limit = {
+						original_tag = SOV
+					}
+					NOT = {
+						has_game_rule = {
+							rule = JFU_closed_eco_SOVIET
+							option = ENABLE_CLOSED_ECO
+						}
+					}
+				}
+				if = {
+					limit = {
+						original_tag = JAP
+					}
+					NOT = {
+						has_game_rule = {
+							rule = JFU_closed_eco_JAPAN
+							option = ENABLE_CLOSED_ECO
+						}
+					}
 				}
 			}
 

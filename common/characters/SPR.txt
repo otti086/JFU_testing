@@ -438,7 +438,7 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ infantry_leader pre_grinded infantry_leader infantry_expert thorough_planner logistics_wizard ranger trickster }
+			traits={ infantry_leader trait_SPA_nationalist_sympathies pre_grinded infantry_leader infantry_expert thorough_planner logistics_wizard ranger trickster }
 			skill=4
 			attack_skill=8
 			defense_skill=6
@@ -534,9 +534,8 @@ characters={
 					small="gfx/interface/ideas/idea_SPA_francisco_franco.dds"
 				}
 			}
-
 			field_marshal={
-			traits={ logistics_wizard pre_grinded organisational_leader expert_delegator organizer trickster panzer_leader panzer_expert hill_fighter ranger }
+			traits={ logistics_wizard trait_SPA_nationalist_sympathies pre_grinded organisational_leader expert_delegator organizer trickster panzer_leader panzer_expert hill_fighter ranger }
 			skill=5
 			attack_skill=8
 			defense_skill=6

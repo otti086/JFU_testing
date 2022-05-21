@@ -503,21 +503,6 @@ characters={
 				large="gfx/leaders/FRA/portrait_france_charles_huntziger.dds"
 			}
 		}
-		advisor={	
-			slot = high_command
-			idea_token = FRA_charles_huntziger_grinded
-			ledger = army
-			allowed = {
-				original_tag = FRA
-			}
-			traits = {
-				army_logistics_1
-			}
-			cost =  50
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
 		
 		corps_commander={
 			traits={ old_guard pre_grinded infantry_officer infantry_expert infantry_leader trickster expert_improviser guerilla_fighter Invader hill_fighter trait_mountaineer trait_engineer }

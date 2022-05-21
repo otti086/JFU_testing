@@ -808,7 +808,6 @@
 		}
 
 		available = {
-			is_subject = no
 			communism < 0.5
 			fascism < 0.5
 			neutrality < 0.5
@@ -936,7 +935,6 @@
 		}
 
 		available = {
-			is_subject = no
 		}
 
 		bypass = {

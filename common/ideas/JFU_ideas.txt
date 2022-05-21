@@ -177,5 +177,18 @@ ideas = {
 				send_volunteer_divisions_required = -0.99
 			}
 		}
+		scw_pre_grinded_nerf = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = partial_economic_mobilisation
+
+			modifier = {
+				army_attack_factor = -0.2
+			}
+		}
 	}
 }

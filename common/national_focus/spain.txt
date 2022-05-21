@@ -858,6 +858,7 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = { idea = SPA_national_recovery_1 days = 1825 }
 			add_ideas = SPR_no_airfields
+			remove_idea = {scw_pre_grinded_nerf}
 			random_owned_controlled_state = {
 				set_state_flag = SPA_national_recovery_2civ
 				add_extra_state_shared_building_slots = 2

@@ -183,7 +183,7 @@ characters={
 				small="GFX_idea_HUN_ivan_hindy"
 			}
 		}
-		corps_commander={
+		field_marshal={
 			traits={ trickster organizer pre_grinded logistics_wizard panzer_leader combined_arms_expert thorough_planner urban_assault_specialist ranger trickster}
 			skill=4
 			attack_skill=8

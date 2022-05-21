@@ -129,6 +129,9 @@ SOV_mikhail_kalinin = {
 SOV_nikolay_voznesensky = {
 	set_character_flag = SOV_safe_from_purge_flag
 }
+SOV_konstantin_rokossovsky = {
+	set_character_flag = SOV_safe_from_purge_flag
+}
 SOV_nikita_khrushchyov = {
 	set_character_flag = SOV_safe_from_purge_flag
 }

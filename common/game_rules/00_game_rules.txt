@@ -412,6 +412,21 @@ JFU_Modern_tank_options = {
 		desc = "Clicking this option will diable Modern Tanks"
 	}
 }
+JFU_USA_eco_option = {
+	name = "USA Economy Settings"
+	group = "HORST_GROUPKEY"
+	icon = "RULE_GROUP_GENERAL_UI"
+	default = {
+		name = "DISABLE_PARTIAL_MOB"
+		text = "Early Mob USA"
+		desc = "Clicking this option will give USA early mob until Germany declared on allies"
+	}
+	option = {
+		name = "ENABLE_PARTIAL_MOB"
+		text = "Partial Mob USA"
+		desc = "Clicking this option will give USA Partial Mob before Germany declared on allies"
+	}
+}
 
 
 
