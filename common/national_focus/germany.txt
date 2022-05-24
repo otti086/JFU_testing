@@ -1756,7 +1756,6 @@ focus_tree = {
 					add_war_support = 0.2
 				}
 			}
-			add_war_support = 0.1
 			add_named_threat = { threat = 5 name = GER_danzig_or_war }
 		}
 	}

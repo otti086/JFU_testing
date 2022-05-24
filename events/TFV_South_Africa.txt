@@ -39,44 +39,6 @@ country_event = {
 			}
 		}
 	}
-	
-	option = {
-		name = tfv_south_africa.1.b # ENG refuses the proposal
-		
-		ai_chance = {
-			base = 0
-		}
-		
-		hidden_effect = {
-			SAF = {
-				country_event = { id = tfv_south_africa.3 }
-			}
-		}
-	}
-	option = {
-		name = tfv_south_africa.1.c # ENG compromises
-		trigger = {}
-		
-		ai_chance = {
-			base = 20
-			modifier = {
-				is_historical_focus_on = yes
-				factor = 0 #don't do this if we are historical!
-			}
-			modifier = {
-				SAF = { NOT = { has_government = democratic} }
-				factor = 4
-			}
-		}
-		effect_tooltip = {
-			custom_effect_tooltip = SAF_colonies_tt
-		}
-		hidden_effect = {
-			SAF = {
-				country_event = { id = tfv_south_africa.4 }
-			}
-		}
-	}
 }
 
 #ENG transfers colonies
@@ -94,39 +56,16 @@ country_event = {
 		hidden_effect = {
 			news_event = { id = news.260 hours = 6 }
 		}
-	}
-		
-	
-}
-#ENG refuses
-country_event = {
-	id = tfv_south_africa.3
-	title = tfv_south_africa.3.t	#
-	desc = tfv_south_africa.3.d		#
-	picture = GFX_report_event_saf_soldiers_3
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = tfv_south_africa.3.a
-	}
-}
-#ENG compromises
-country_event = {
-	id = tfv_south_africa.4
-	title = tfv_south_africa.4.t	#
-	desc = tfv_south_africa.4.d		#
-	picture = GFX_report_event_saf_soldiers					#
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = tfv_south_africa.4.a
-		SAF = { transfer_state = 542 }
-		hidden_effect = {
-			news_event = { id = news.261 hours = 6 }
-			}
+		SAF = {
+			transfer_state = 542
+			transfer_state = 545
+			transfer_state = 546
+			transfer_state = 547
+			transfer_state = 548
+			transfer_state = 771
+			transfer_state = 770
 		}
-
+	}
 		
+	
 }

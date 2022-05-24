@@ -295,93 +295,86 @@
 			}
 		}
 	}
-
 	focus = {
-		id = JAP_exploit_the_southern_resource_area
-		icon = GFX_goal_generic_construction2
+		id = JAP_strike_on_the_southern_resource_area
+		icon = GFX_focus_jap_strike_south
 		prerequisite = { focus = JAP_strike_south_doctrine }
 		x = 0
-		y = 3
+		y = 2
 		relative_position_id = JAP_strike_south_doctrine
 
-		cost = 10
+		will_lead_to_war_with = ENG
 
-		ai_will_do = {
-			factor = 10
-		}
+		cost = 0.2
 
 		available = {
+			always = no
+		date > 1940.12.31
+		}
+
+
+		completion_reward = {
+			declare_war_on_all_allies = yes
+			if = { limit = { country_exists = MAN }	MAN = { add_to_war = { targeted_alliance = JAP enemy = ENG } } }
+			if = { limit = { country_exists = SIA }	SIA = { add_to_war = { targeted_alliance = JAP enemy = ENG } } }
+			add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 180 }
+			MAN = { add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 180 } }
+			SIA = { add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 180 } } 			
+	
+		}
+	}
+	focus = {
+		id = JAP_strike_on_the_northern_resource_area
+		icon = GFX_focus_jap_hokushin
+		prerequisite = { focus = JAP_strike_on_the_southern_resource_area }
+		x = 0
+		y = 1
+		relative_position_id = JAP_strike_on_the_southern_resource_area 
+
+		cost = 0.2
+
+		available = {
+			always = no
 			OR = {
-				has_full_control_of_state = 333
-				has_full_control_of_state = 672
-				has_full_control_of_state = 334
+				JAP = { 
+					has_full_control_of_state = 335
+				}
+				any_allied_country = { 	
+					has_full_control_of_state = 335
+				}
 			}
-			has_full_control_of_state = 336
-			has_full_control_of_state = 671
+			
+			OR = {
+				JAP = {
+					has_full_control_of_state = 285
+				}
+				any_allied_country = { 	
+					has_full_control_of_state = 285 
+				}
+			}
+			OR = {
+				JAP = {
+					has_full_control_of_state = 439
+				}
+				any_allied_country = { 	
+					has_full_control_of_state = 439 
+				}
+			}
 		}
 
-		bypass = {
-
-		}
+		bypass = {		has_war_with = SOV	}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-
-		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			336 = {
-				add_resource = {
-					type = aluminium
-					amount = 12
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
+			declare_war_on = {
+				target = SOV
+    			type = annex_everything
 			}
-			333 = {
-				if = {
-					limit = { is_fully_controlled_by = ROOT }
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			672 = {
-				if = {
-					limit = { is_fully_controlled_by = ROOT }
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			334 = {
-				if = {
-					limit = { is_fully_controlled_by = ROOT }
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			671 = {
-				add_resource = {
-					type = aluminium
-					amount = 6
-				}
-			}
-			if = {
-				limit = { has_dlc = "Waking the Tiger" }
-				unlock_decision_category_tooltip = prospect_for_resources
-			}
+			if = { limit = { country_exists = MAN }	MAN = { add_to_war = { targeted_alliance = JAP enemy = SOV } } }
+			if = { limit = { country_exists = SIA }	SIA = { add_to_war = { targeted_alliance = JAP enemy = SOV } } }
 		}
 	}
 	focus = {
@@ -1487,11 +1480,8 @@
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			custom_effect_tooltip = JAP_the_zero_tt
-			hidden_effect = {
 				set_technology = { cv_fighter2 = 1 }		
 				set_technology = { cv_naval_bomber2 = 1 } 
-			}
 		}
 	}
 
