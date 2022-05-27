@@ -5,9 +5,12 @@ MTG_naval_treaties = {
 			
 	
 		available = {
-			OR = {
-				threat > 0.2
-				has_global_flag = MTG_second_london_conference
+			AND = {
+				OR = {
+					threat > 0.2
+					has_global_flag = MTG_second_london_conference
+				}
+				date > 1938.1.1
 			}
 		}
 	

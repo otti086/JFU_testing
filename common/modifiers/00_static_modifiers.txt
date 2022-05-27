@@ -664,3 +664,4 @@ SOV_for_the_common_good_relation = { #For Right Oppo allies
 }
 
 trade_major = {trade_cost_for_target_factor = -0.8 	}
+trade_vichy = {trade_cost_for_target_factor = -1}

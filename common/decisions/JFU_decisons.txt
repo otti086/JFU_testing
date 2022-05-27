@@ -187,9 +187,9 @@ JFU_decisions = {
 			}
 			hidden_effect = {
 				if = { 
-					limit = { country_exists = ITA }
+					limit = { country_exists = SPR }
 					declare_war_on = {
-						target = ITA
+						target = SPR
 						type = annex_everything
 					}	 
 				} 

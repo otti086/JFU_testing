@@ -65,6 +65,13 @@ country_event = {
 			transfer_state = 771
 			transfer_state = 770
 		}
+		542 = { add_core_of = SAF }
+		545 = { add_core_of = SAF }
+		546 = { add_core_of = SAF }
+		547 = { add_core_of = SAF }
+		548 = { add_core_of = SAF }
+		771 = { add_core_of = SAF }
+		770 = { add_core_of = SAF }
 	}
 		
 	

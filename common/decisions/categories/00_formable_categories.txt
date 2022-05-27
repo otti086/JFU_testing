@@ -7,41 +7,6 @@
 #	}
 #}
 
-form_mutapa_category = {
-
-	icon = generic_formable_nations
-
-	picture = GFX_decision_cat_generic_mutapa
-
-	allowed = {
-		has_dlc = "Waking the Tiger"
-	}
-}
-
-form_roman_empire_category = {
-
-	icon = generic_formable_nations
-
-	picture = GFX_decision_cat_generic_roman_empire
-
-	allowed = {
-		has_dlc = "Waking the Tiger"
-	}
-}
-
-
-
-form_rattanakosin_kingdom_category = {
-
-	icon = generic_formable_nations
-
-	picture = GFX_decision_cat_generic_rattanakosin_kingdom
-
-	allowed = {
-		has_dlc = "Waking the Tiger"
-	}
-}
-
 
 form_greater_german_reich_category = {
 
