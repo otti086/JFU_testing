@@ -557,35 +557,6 @@ characters={
 
 	# Calinescu up there
 
-	ROM_iuliu_maniu={
-		name=ROM_iuliu_maniu
-		portraits={
-			army={
-				small="GFX_idea_ROM_iuliu_maniu"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = ROM_iuliu_maniu
-			allowed = {
-				original_tag = ROM
-			}
-			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
-			}
-			traits = {
-				democratic_reformer 
-			}
-		}
-	}
-
 	ROM_gheorghe_argeseanu={
 		name=ROM_gheorghe_argeseanu
 		portraits={

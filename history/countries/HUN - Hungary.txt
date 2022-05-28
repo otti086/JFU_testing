@@ -108,7 +108,6 @@ recruit_character = HUN_shvoy_kalman
 recruit_character = HUN_sandor_magyarossy
 recruit_character = HUN_bela_rakosi
 recruit_character = HUN_kalman_kanya
-recruit_character = HUN_jozsef_szell
 recruit_character = HUN_vilmos_roder
 recruit_character = HUN_zoltan_tildy
 recruit_character = HUN_kalman_daranyi

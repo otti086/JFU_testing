@@ -1081,38 +1081,6 @@ characters = {
 		}
 	}
 
-	BUL_zachari_zachariev = {
-		advisor = {
-			slot = air_chief
-			idea_token = BUL_zachari_zachariev
-			allowed = {
-				has_dlc = "Battle for the Bosporus"
-				original_tag = BUL
-			}
-			available = {
-				has_government = communism
-				has_country_flag = BUL_back_from_the_scw_flag
-			}
-			traits = {
-				air_chief_ground_support_3
-			}
-			cost = 200
-			ai_will_do = {
-				factor = 1.000
-				modifier = {
-					factor = 0.100
-					BUL_save_money_for_decisions = yes
-				}
-			}
-		}
-		name = BUL_zachari_zachariev
-		portraits = {
-			army = {
-				small = "GFX_idea_bul_zachari_zachariev"
-			}
-		}
-	}
-
 #############################
 ### MILITARY HIGH COMMAND ###
 #############################
@@ -1345,34 +1313,6 @@ characters = {
 		}
 	}
 
-	BUL_ferdinand_kozovski = {
-		advisor = {
-			slot = high_command
-			idea_token = BUL_ferdinand_kozovski
-			ledger = army
-			allowed = {
-				has_dlc = "Battle for the Bosporus"
-				original_tag = BUL
-			}
-			available = {
-				has_government = communism
-			}
-			traits = {
-				army_entrenchment_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-		name = BUL_ferdinand_kozovski
-		portraits = {
-			army = {
-				small = "GFX_idea_bul_ferdinand_kozovski"
-			}
-		}
-	}
-
 	BUL_stoyan_trendafilov = {
 		advisor = {
 			slot = high_command
@@ -1552,31 +1492,6 @@ characters = {
 		}
 	}
 
-	BUL_stoycho_mushanov = {
-		advisor = {
-			slot = political_advisor
-			idea_token = BUL_stoycho_mushanov
-			allowed = {
-				has_dlc = "Battle for the Bosporus"
-				original_tag = BUL
-			}
-			available = {
-			}
-			traits = {
-				democratic_reformer 
-			}
-			ai_will_do = {
-				base = 1.000
-			}
-		}
-		name = BUL_stoycho_mushanov
-		portraits = {
-			army = {
-				small = "GFX_idea_bul_stoycho_mushanov"
-			}
-		}
-	}
-
 	BUL_nikola_petkov = {
 		instance = {
 			allowed = {
@@ -1654,34 +1569,6 @@ characters = {
 			}
 			ai_will_do = {
 				base = 1.000
-			}
-		}
-	}
-
-	BUL_vasil_kolarov = {
-		advisor = {
-			slot = political_advisor
-			idea_token = BUL_vasil_kolarov
-			allowed = {
-				has_dlc = "Battle for the Bosporus"
-				original_tag = BUL
-			}
-			available = {
-				NOT = {
-					has_completed_focus = BUL_power_to_the_tsar 
-				}
-			}
-			traits = {
-				communist_revolutionary 
-			}
-			ai_will_do = {
-				base = 1.000
-			}
-		}
-		name = BUL_vasil_kolarov
-		portraits = {
-			army = {
-				small = "GFX_idea_bul_vasil_kolarov"
 			}
 		}
 	}
