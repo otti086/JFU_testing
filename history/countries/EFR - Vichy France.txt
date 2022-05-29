@@ -60,7 +60,7 @@ set_technology = {
 armored_car1 = 1		
 }
 add_relation_modifier = {
-	target = FRA
+	target = GER
 	modifier = trade_vichy
 }
 
