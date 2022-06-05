@@ -817,14 +817,6 @@ characters={
 					}
 					has_completed_focus = MEX_focus_confederation_of_mexican_workers 
 				}
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
 			}
 			traits = {
 				ambitious_union_boss 
@@ -852,14 +844,6 @@ characters={
 					}
 					has_completed_focus = MEX_focus_exile_calles 
 				}
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
 			}
 			traits = {
 				social_reformer 
@@ -886,14 +870,6 @@ characters={
 						has_dlc = "Man the Guns"
 					}
 					has_completed_focus = MEX_focus_jefe_maximo 
-				}
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
 				}
 			}
 			traits = {

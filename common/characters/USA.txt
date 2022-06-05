@@ -1389,14 +1389,6 @@ characters={
 				original_tag  = USA
 			}
 			available  = {
-				if  = {
-					limit  = {
-						has_dlc = "Man the Guns"
-					}
-					NOT  = {
-						has_autonomy_state  = autonomy_supervised_state
-					}
-				}
 			}
 			traits  = {
 				democratic_reformer 

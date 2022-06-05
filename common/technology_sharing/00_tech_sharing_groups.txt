@@ -10,7 +10,6 @@
 
     available = {
         is_in_faction_with = ENG
-        compare_autonomy_state > autonomy_puppet
     }
 
 }

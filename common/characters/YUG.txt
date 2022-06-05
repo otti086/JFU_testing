@@ -478,14 +478,6 @@ characters={
 			slot = political_advisor
 			idea_token = YUG_milovan_djilas
 			available  = {
-					if  = {
-						limit  = {
-							has_dlc = "Man the Guns"
-						}
-						not  = {
-							has_autonomy_state  = autonomy_supervised_state
-						}
-					}
 				}
 				allowed  = {
 					original_tag  = YUG
@@ -542,14 +534,6 @@ characters={
 			slot = political_advisor
 			idea_token = YUG_dimitrije_ljotic
 			available  = {
-					if  = {
-						limit  = {
-							has_dlc = "Man the Guns"
-						}
-						not  = {
-							has_autonomy_state  = autonomy_supervised_state
-						}
-					}
 				}
 				allowed  = {
 					original_tag  = YUG
@@ -573,14 +557,6 @@ characters={
 					original_tag  = YUG
 				}
 				available  = {
-					if  = {
-						limit  = {
-							has_dlc = "Man the Guns"
-						}
-						not  = {
-							has_autonomy_state  = autonomy_supervised_state
-						}
-					}
 				}
 				traits  = {
 					communist_revolutionary 

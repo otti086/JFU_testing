@@ -14,14 +14,6 @@ characters={
 			idea_token = ENG_winston_churchill
 			available  = {
 				has_government  = neutrality 
-				if  = {
-					limit  = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state  = autonomy_supervised_state
-					}
-				}
 			}
 			allowed  = {
 				original_tag  = ENG
@@ -1480,14 +1472,6 @@ characters={
 				if  = {
 					limit  = {
 						has_dlc = "Man the Guns"
-					}
-				}
-				if  = {
-					limit  = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state  = autonomy_supervised_state
 					}
 				}
 			}

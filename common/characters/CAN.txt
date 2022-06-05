@@ -673,14 +673,7 @@ characters={
 					}
 						has_completed_focus = CAN_strengthen_the_commonwealth_ties 
 				}
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
+
 			}
 			traits = {
 				democratic_reformer 

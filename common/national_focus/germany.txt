@@ -1742,6 +1742,8 @@ focus_tree = {
 		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = GER_demand_memel }
 		prerequisite = { focus = GER_mol_rib_pact }
+		will_lead_to_war_with = FRA
+		will_lead_to_war_with = ENG
 		will_lead_to_war_with = POL
 		cancel_if_invalid = no
 		x = -1

@@ -104,8 +104,6 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			set_rule = { can_create_factions = yes }
-			create_faction = JAP_greater_east_asian_co_prosperity_sphere
 		}
 	}
 
@@ -308,7 +306,6 @@
 		cost = 0.2
 
 		available = {
-			always = no
 		date > 1940.12.31
 		}
 

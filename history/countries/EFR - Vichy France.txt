@@ -63,7 +63,10 @@ add_relation_modifier = {
 	target = GER
 	modifier = trade_vichy
 }
-
+add_relation_modifier = {
+	target = ITA
+	modifier = trade_vichy
+}
 set_convoys = 15
 
 set_politics = {

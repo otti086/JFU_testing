@@ -635,14 +635,6 @@ characters={
 					}
 					has_completed_focus = ROM_appoint_german_friendly_government 
 				}
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
 			}
 			allowed = {
 				original_tag = ROM

@@ -79,8 +79,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				industrial_capacity_factory = -0.2
-				industrial_capacity_dockyard = -0.2
+				industrial_capacity_factory = -0.3
+				industrial_capacity_dockyard = -0.3
 			}
 		}
 		FRA_political_violence = {
@@ -1069,6 +1069,7 @@ ideas = {
 			modifier = {
 				max_planning = 0.25
 				planning_speed = -0.25
+				conversion_cost_civ_to_mil_factor= 2
 			}
 		}
 

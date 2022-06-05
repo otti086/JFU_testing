@@ -688,6 +688,22 @@ JFU_pre_grinded_generals_ON = {
 		recruit_character = ITA_ubaldo_soddu_grinded
 		recruit_character = ITA_rodolfo_graziani_grinded
 		add_ideas = { pre_grinded_gens_volunteers }
+		ETH = {
+			transfer_state = 271
+			transfer_state = 550
+			transfer_state = 559
+
+			271 = { add_core_of = ETH }
+			550 = { add_core_of = ETH }
+			559 = { add_core_of = ETH }
+				
+			inherit_technology = ITA	
+			}
+			
+		ITA = { 
+			puppet = ETH
+			air_experience = 80
+		}
 	}
 	BUL = {
 		recruit_character = BUL_ivan_markov_grinded
