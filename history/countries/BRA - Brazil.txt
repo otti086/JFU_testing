@@ -85,7 +85,8 @@ set_popularities = {
 
 
 set_convoys = 40
-
+add_equipment_to_stockpile = { type = train_equipment_1 amount = 50 }
+add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 }
 if = {
 	limit = {
 		has_dlc = "Man the Guns"

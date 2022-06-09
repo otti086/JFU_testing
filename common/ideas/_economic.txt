@@ -221,7 +221,9 @@ ideas = {
 						}
 					}
 				}
-
+				NOT = {
+					original_tag = FRA
+				}
 				if = {
 					limit = {
 						original_tag = HUN
@@ -307,6 +309,7 @@ ideas = {
 				}
 				NOT = {
 					original_tag = SPR
+					original_tag = FRA
 				}
 				if = {
 					limit = {

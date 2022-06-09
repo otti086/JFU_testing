@@ -166,7 +166,7 @@ set_popularities = {
 	neutrality = 15
 	communism = 20
 }
-
+add_equipment_to_stockpile = { type = train_equipment_1 amount = 200 }
 add_ideas = {
 	FRA_victors_of_wwi
 	FRA_disjointed_government

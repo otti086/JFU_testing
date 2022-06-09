@@ -23,9 +23,7 @@ if = {
 	}
 	set_oob = "ITA_1936_nsb"
 }
-
-starting_train_buffer = 1.5
-
+add_equipment_to_stockpile = { type = train_equipment_1 amount = 200 }
 set_research_slots = 4
 set_stability = 0.6
 set_war_support = 0.7

@@ -8,7 +8,8 @@ if = {
 		set_naval_oob = "NOR_1936_naval_legacy"
 	}
 }
-
+add_equipment_to_stockpile = { type = train_equipment_1 amount = 50 }
+add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 }
 recruit_character = NOR_johan_nygaardsvold
 recruit_character = NOR_vidkun_quisling
 recruit_character = NOR_johan_ludwig_mowinckel

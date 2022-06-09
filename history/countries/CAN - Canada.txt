@@ -32,7 +32,8 @@ set_research_slots = 3
 set_country_flag = monroe_doctrine
 set_stability = 0.8
 set_war_support = 0.1
-
+add_equipment_to_stockpile = { type = train_equipment_1 amount = 50 }
+add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 }
 recruit_character = CAN_mackenzie_king
 recruit_character = CAN_adrien_arcand
 recruit_character = CAN_tim_buck
@@ -78,6 +79,7 @@ set_technology = {
 	tech_engineers = 1
 	tech_recon = 1
 	gw_artillery = 1
+	interwar_antiair = 1
 	early_fighter = 1
 	naval_bomber1 = 1
 	early_bomber = 1

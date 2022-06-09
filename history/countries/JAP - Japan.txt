@@ -206,7 +206,7 @@ set_politics = {
 set_popularities = {
 	fascism = 100
 }
-
+add_equipment_to_stockpile = { type = train_equipment_1 amount = 200 }
 create_faction = JAP_greater_east_asian_co_prosperity_sphere
 add_to_faction = MAN
 add_to_faction = SIA

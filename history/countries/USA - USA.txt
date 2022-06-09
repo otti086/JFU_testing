@@ -9,7 +9,7 @@ set_variable = {
 
 oob = "USA_1936"
 
-starting_train_buffer = 5
+add_equipment_to_stockpile = { type = train_equipment_1 amount = 300 }
 
 if = {
 	limit = { has_dlc = "Man the Guns" }

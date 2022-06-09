@@ -495,7 +495,10 @@ JFU_decisions = {
 		}
 	}
 	ITA_join_WW2_mission = {
-		allowed = {original_tag = ITA}
+		allowed = {
+			always = no
+		}
+		visible = {original_tag = ITA}
 		icon = generic_operation
 		available = { EFR = { controls_state = 26} }
 		days_mission_timeout = 120

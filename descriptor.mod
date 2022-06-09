@@ -4,7 +4,7 @@ tags={
 	"Balance"
 }
 name="JFU testing"
-supported_version="1.11.11"
+supported_version="1.11.12"
 
 replace_path="common/abilities"
 replace_path="common/aces"
@@ -58,7 +58,6 @@ replace_path="common/scripted_guis"
 replace_path="common/scriptedlocalisation"
 replace_path="common/scripted_triggers"
 replace_path="common/state_category"
-replace_path="common/technologies"
 replace_path="common/technology_sharing"
 replace_path="common/technology_tags"
 replace_path="common/terrain"
