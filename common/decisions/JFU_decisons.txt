@@ -2,7 +2,7 @@
 
 
 JFU_decisions = {	
-	GER_fall_weiss = { 
+	"Fall Weiss" = { 
 		icon = ger_reichskommissariats
 		fire_only_once = yes		
 		allowed = { tag = GER }	
@@ -25,7 +25,7 @@ JFU_decisions = {
 		}
 	}
 
-	GER_fall_gelb = {
+	"Fall Gelb" = {
 		icon = ger_reichskommissariats
 		fire_only_once = yes	
 		allowed = { 	tag = GER 	}
@@ -47,7 +47,7 @@ JFU_decisions = {
 		}
 	}
 
-	GER_operation_weserubung = { 
+	"Operation Weserubung" = { 
 		icon = ger_reichskommissariats
 		fire_only_once = yes	
 		allowed = { 	tag = GER 	}
@@ -73,7 +73,7 @@ JFU_decisions = {
 		}	
 	}
 	
-	GER_operation_weserubung2 = { 
+	"Operation Weserubung2" = { 
 		icon = ger_reichskommissariats
 		fire_only_once = yes	
 		allowed = { 	tag = GER 	}
@@ -91,7 +91,7 @@ JFU_decisions = {
 		}	
 	}
 
-	GER_unt_barb = { 
+	"Unternehmen Barbarossa" = { 
 		icon = ger_reichskommissariats
 		fire_only_once = yes	
 		allowed = { 	tag = GER 	}
@@ -116,7 +116,7 @@ JFU_decisions = {
 		}
 	}
 
-	GER_operation_desert_flower = {
+	"Operation Desert Flower" = {
 		icon = generic_operation
 		fire_only_once = yes
 		allowed = { tag = GER }
@@ -136,7 +136,7 @@ JFU_decisions = {
 		}		
 	}
 
-	SOV_attack_finland = {
+	"Attack Finland" = {
 		icon = generic_operation
 		fire_only_once = yes
 		allowed = { tag = SOV }
@@ -150,7 +150,7 @@ JFU_decisions = {
 		}
 	}
 
-	SOV_operation_Icebreaker = {
+	"Operation Icebreaker" = {
 		icon = generic_operation
 		fire_only_once = yes
 		allowed = { tag =  SOV }
@@ -218,7 +218,7 @@ JFU_decisions = {
 		}
 	}
 
-	JAP_attack_china = {
+	"Attack china" = {
 		icon = generic_operation
 		fire_only_once = yes
 		allowed = { tag = JAP }
@@ -312,7 +312,7 @@ JFU_decisions = {
 			}
 		}
 	}
-	JAP_annex_Siam = {
+	"Annex Siam" = {
 		icon = generic_operation
 		fire_only_once = yes
 		allowed = { tag = JAP}
@@ -336,7 +336,7 @@ JFU_decisions = {
 		}
 	}
 
-	JAP_annex_Manchu = {
+	"annex Manchu" = {
 		icon = generic_operation
 		fire_only_once = yes
 		allowed = { tag = JAP }
@@ -365,7 +365,7 @@ JFU_decisions = {
 			else = { clr_country_flag = MAN_GETS_CHINA }
 		}
 	}
-	AST_annex_NEW_Zealand = {
+	"Annex New Zealand" = {
 		icon = generic_operation
 		fire_only_once = yes
 		allowed = { tag = AST }
@@ -384,7 +384,7 @@ JFU_decisions = {
 		}
 	}
 
-	CAN_annex_South_Africa = {
+	"Annex South Africa" = {
 		icon = generic_operation
 		fire_only_once = yes
 		allowed = { tag = CAN }
@@ -404,7 +404,7 @@ JFU_decisions = {
 		}
 	}
 
-	ROM_annex_Bulgaria = {
+	"Annex Bulgaria" = {
 		icon = generic_operation
 		fire_only_once = yes
 		allowed = { tag = ROM }
@@ -435,7 +435,7 @@ JFU_decisions = {
 #		}
 #	}	
 
-	ITA_attack_Yugoslavia = {
+	"Attack Yugoslavia" = {
 		icon = generic_operation
 		fire_only_once = yes
 		allowed = { tag = ITA }
@@ -455,7 +455,7 @@ JFU_decisions = {
 		}
 	}
 
-	ITA_attack_Greece = {
+	"Attack Greece" = {
 		icon = generic_operation
 		fire_only_once = yes
 		allowed = { tag = ITA }
@@ -481,7 +481,7 @@ JFU_decisions = {
 		}
 	}
 
-	ITA_joins_WW2 = {
+	"Join the War" = {
 		icon = generic_operation
 		fire_only_once = yes
 		allowed = { tag = ITA }
@@ -670,7 +670,7 @@ JFU_decisions = {
 			}
 		}	
 	}
-	operation_torch = {  
+	"Operation Torch" = {  
 	    icon = generic_civil_support 
         allowed = {   original_tag = ENG    }
         cost = 0 
@@ -687,7 +687,7 @@ JFU_decisions = {
 
 		}	
 	}
-	USA_joins_Allies = {
+	"Join the Allies" = {
 		icon = generic_operation
 		fire_only_once = yes
 		allowed = { tag = USA }
@@ -717,7 +717,7 @@ JFU_decisions = {
 			}
 		}
 	}
-	USA_joins_European_War = {
+	"Join the european War" = {
 		icon = generic_operation
 		fire_only_once = yes
 		allowed = { tag = USA }
