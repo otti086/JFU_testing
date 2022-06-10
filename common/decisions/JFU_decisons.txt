@@ -135,7 +135,26 @@ JFU_decisions = {
 			if = { limit = { country_exists = SPR }	SPR = { add_to_war = { targeted_alliance = GER enemy = IRQ } } }
 		}		
 	}
-
+	"Give Poland to Hungary" = {
+		icon = generic_operation
+		fire_only_once = yes
+		allowed = { tag = GER }
+		available = {	
+			POL = { has_capitulated = yes }
+		}
+		cost = 0
+		complete_effect = {
+			every_state = {
+				limit = {
+					AND = {
+						is_core_of = POL
+						is_controlled_by = HUN
+					}
+				}
+				set_compliance = 50 
+			}
+		} 
+	}
 	"Attack Finland" = {
 		icon = generic_operation
 		fire_only_once = yes
@@ -245,7 +264,7 @@ JFU_decisions = {
 		}
 
 	}
-	JAP_exploit_the_southern_resource_area = {
+	"Exploit the southern resource Area" = {
 		icon = generic_operation
 		fire_only_once = yes
 		allowed = { tag = JAP }
@@ -355,7 +374,7 @@ JFU_decisions = {
 		}
 	}
 
-	MAN_Gets_China = {
+	"Give China to Manchu" = {
 		icon = border_war
 		allowed = {	original_tag = JAP	}
 		visible = {	country_exists = CHI country_exists = MAN }
