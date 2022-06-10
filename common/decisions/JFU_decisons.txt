@@ -148,9 +148,11 @@ JFU_decisions = {
 				limit = {
 					AND = {
 						is_core_of = POL
-						is_controlled_by = HUN
+						is_controlled_by = GER
+						NOT = { is_core_of = GER }
 					}
 				}
+				transfer_state_to = HUN
 				set_compliance = 50 
 			}
 		} 
