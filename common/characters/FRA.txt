@@ -1319,34 +1319,6 @@ characters={
 		}
 	}
 
-	FRA_vincent_auriol={
-		name=FRA_vincent_auriol
-		portraits={
-			army={
-				small="GFX_idea_FRA_vincent_auriol"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = FRA_vincent_auriol
-			allowed  = {
-				original_tag  = FRA
-			}
-			available  = {
-			}
-			traits  = {
-				financial_expert 
-			}
-			on_add  = {
-			}
-			do_effect  = {
-			}
-			ai_will_do  = {
-				factor  = 1.000
-			}
-		}
-	}
-
 	FRA_roger_salengro={
 		name=FRA_roger_salengro
 		portraits={
