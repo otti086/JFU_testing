@@ -841,7 +841,15 @@ focus_tree = {
     focus = {
 		id = SPR_national_recovery
 		available = {
-			has_global_flag = scw_over
+			OR = {
+				has_global_flag = scw_over
+				NOT = {
+					AND = {
+						country_exists = SPA
+						country_exists = SPD
+					}
+				}
+			}
 		}
 		bypass = {
 		}

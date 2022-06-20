@@ -410,12 +410,7 @@ on_actions = {
 				set_global_flag = scw_over
 				every_state = {
 					limit = { 
-						AND = {
-							is_core_of = SPA
-							NOT = {
-								is_controlled_by = SPD
-							}
-						}
+						is_core_of = SPA
 					}
 					transfer_state_to = SPR 
 				}
@@ -438,6 +433,7 @@ on_actions = {
 						NOT = {	SPR = { has_war_with = SPD }}
 					}
 					set_global_flag = scw_over
+					country_event = { id = lar_news.1 hours = 6 }
 				}
 				every_state = {
 					limit = { 
@@ -460,6 +456,7 @@ on_actions = {
 						NOT = {	SPR = { has_war_with = SPA }}
 					}
 					set_global_flag = scw_over
+					country_event = { id = lar_news.1 hours = 6 }
 				}
 				every_state = {
 					limit = { 
@@ -471,6 +468,17 @@ on_actions = {
 						}
 					}
 					transfer_state_to = SPR 
+				}
+				every_state = {
+					limit = {
+						AND = {
+							is_core_of = SPR
+							NOT = {
+								is_controlled_by = SPR
+							}
+						}
+					}
+					transfer_state_to = SPA
 				}
 			}
 		}

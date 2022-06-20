@@ -1757,6 +1757,9 @@ focus_tree = {
 					add_stability = 0.3
 					add_war_support = 0.2
 				}
+				ITA = {
+					air_experience = 500
+				}
 			}
 			add_named_threat = { threat = 5 name = GER_danzig_or_war }
 		}
