@@ -25,6 +25,7 @@ allies = {
 		tag = USA
 		tag = RAJ
 		tag = SAF
+		tag = IRE
 	}
 }
 ai_country = {

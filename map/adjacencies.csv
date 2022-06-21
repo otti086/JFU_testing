@@ -206,7 +206,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 12100;4097;impassable;-1;-1;-1;-1;-1;; Spain Ceuta
 4135;7153;impassable;-1;-1;-1;-1;-1;; Spain Gibraltar
 10094;4135;impassable;-1;-1;-1;-1;-1;; Spain Gibraltar
-13228;4135;impassable;-1;-1;-1;-1;-1;; Spain Gibraltar
+13228;10094;impassable;-1;-1;-1;-1;-1;; Spain Gibraltar
+13228;1048;impassable;-1;-1;-1;-1;-1;; Spain Gibraltar 
 6183;9116;impassable;-1;-1;-1;-1;-1;; Norway Soviet
 11142;9116;impassable;-1;-1;-1;-1;-1;; Norway Soviet
 9140;9116;impassable;-1;-1;-1;-1;-1;; Norway Soviet

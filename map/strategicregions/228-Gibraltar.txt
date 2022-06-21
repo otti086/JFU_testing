@@ -3,7 +3,7 @@ strategic_region={
 	id=228
 	name="Gibraltar"
 	provinces={
-		 4135
+		13228 4135
 	}
 	weather={
 		period={

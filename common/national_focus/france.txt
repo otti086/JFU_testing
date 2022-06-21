@@ -1132,6 +1132,12 @@ focus = {
 				modifier = trade_major
 				}
 			}
+			USA = { 
+				add_relation_modifier = {
+				target = FRA
+				modifier = trade_major
+				}
+			}
 
 		}
 	}
