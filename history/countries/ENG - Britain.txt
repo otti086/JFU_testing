@@ -197,6 +197,11 @@ if = {
 		autonomous_state = autonomy_dominion
 		freedom_level = 0.2
 	}
+	set_autonomy = {
+		target = IRE
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+	}
 	else = {
 		puppet = RAJ
 	}
@@ -231,6 +236,7 @@ add_to_faction = NZL
 add_to_faction = SAF
 add_to_faction = NOR
 add_to_faction = RAJ
+add_to_faction = IRE
 
 # Order matters - here Chamberlain becomes starting leader
 recruit_character = ENG_stanley_baldwin

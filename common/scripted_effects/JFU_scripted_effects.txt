@@ -703,6 +703,7 @@ JFU_pre_grinded_generals_ON = {
 		ITA = { 
 			puppet = ETH
 			air_experience = 80
+			army_experience = 100
 		}
 	}
 	BUL = {
