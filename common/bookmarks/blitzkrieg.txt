@@ -211,7 +211,6 @@ bookmarks = {
 			}
 			focuses = {
 				CHI_renegotiate_the_unequal_treaties
-				CHI_invite_the_flying_tigers
 				CHI_war_of_resistance
 			}
 		}

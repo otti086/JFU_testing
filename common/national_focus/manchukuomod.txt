@@ -42,6 +42,9 @@ focus_tree = {
 		cost = 4
 		completion_reward = {
 			army_experience = 25
+			set_rule = {
+				can_use_kamikaze_pilots = yes
+			}
 		}
 	}
 
@@ -157,7 +160,7 @@ focus_tree = {
 		cost = 4
 
 
-		available = {		}
+		available = {CHI = { exists = no }}
 
 		available_if_capitulated = yes
 
@@ -209,14 +212,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		complete_tooltip = {
-
 		}
 
 		completion_reward = {
 			remove_ideas = MAN_kwantung_veto
-		army_experience = 75
-						MAN_low_legitimacy_level_down = yes
-
+			army_experience = 75
+			MAN_low_legitimacy_level_down = yes
 		}
 	}
 
@@ -301,7 +302,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = MAN_the_two_emperorsx
 		icon = GFX_goal_anschluss
 		prerequisite = { focus = MAN_national_cooperation_governmentx }
@@ -349,12 +350,12 @@ focus_tree = {
 
 		completion_reward = {
 		
-			add_ideas = MAN_five_year_plan_industry
+			country_event = wtt_manchukou.11
 			
 		}
 	}
 	
-		focus = {
+	focus = {
 		id = MAN_railways_opener 
 		icon = GFX_goal_develop_provinces
 		x = 0
@@ -371,13 +372,10 @@ focus_tree = {
 				custom_effect_tooltip = tooltip_MAN_railways
 
 				hidden_effect = { 
-		country_event = { id = wtt_manchukou.100 }
-		}
-						}
+					country_event = { id = wtt_manchukou.100 }
 				}
-				
-
-	
+		}
+	}
 	
 	focus = {
 		id = MAN_railways_kirin
@@ -409,7 +407,7 @@ focus_tree = {
 	
 	
 	
-			focus = {
+	focus = {
 		id = MAN_aluminum3
 		icon = GFX_focus_generic_aluminum
 		x = 0
@@ -427,18 +425,17 @@ focus_tree = {
 		}
 
 		completion_reward = {
-				328 = {
+			328 = {
 				add_resource = {
-				type = aluminium 
-				amount = 16
+					type = aluminium 
+					amount = 16
 				}
-				}
-
+			}
 		}
 	}
 	
 		
-			focus = {
+	focus = {
 		id = MAN_aluminum4
 		icon = GFX_goal_generic_construct_civilian
 		x = 0
@@ -455,19 +452,19 @@ focus_tree = {
 		}
 
 		completion_reward = {
-	328 = { 
-		add_extra_state_shared_building_slots = 2 
-		add_building_construction = {
-		type = industrial_complex 
-		level = 2
-		instant_build = yes
-		}
-		}
+			328 = { 
+				add_extra_state_shared_building_slots = 2 
+				add_building_construction = {
+					type = industrial_complex 
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 		
 	
-		focus = {
+	focus = {
 		id = MAN_aluminum
 		icon = GFX_goal_generic_construct_civilian
 		x = 0
@@ -482,17 +479,17 @@ focus_tree = {
 
 		completion_reward = {
 		
-	add_tech_bonus = {
+			add_tech_bonus = {
 				bonus = 1.0
 				uses = 1
 				category = construction_tech
-				}
+			}
 		}
 	}
 		
 		
 		
-			focus = {
+	focus = {
 		id = MAN_aluminum2
 		icon = GFX_goal_fengtian_light_metals
 		x = 0
@@ -511,8 +508,7 @@ focus_tree = {
 				bonus = 1.0
 				uses = 1
 				category = excavation_tech
-				}
-
+			}
 		}
 	}
 		
@@ -533,16 +529,14 @@ focus_tree = {
 		}
 
 		complete_tooltip = {
-
 		}
 
 		completion_reward = {
-					custom_effect_tooltip = MAN_bypass_tt
-
+			custom_effect_tooltip = MAN_bypass_tt
 		}
 	}	
 	
-		focus = {
+	focus = {
 		id = MAN_oil
 		icon = GFX_goal_oil_derrick
 		x = -1
@@ -555,15 +549,15 @@ focus_tree = {
 
 
 		completion_reward = {
-				add_tech_bonus = {
+			add_tech_bonus = {
 				bonus = 1.0
 				uses = 1
 				category = excavation_tech
-				}
+			}
 		}
 	}	
 	
-			focus = {
+	focus = {
 		id = MAN_oil2
 		icon = GFX_goal_oil_derrick
 		x = 0
@@ -576,16 +570,15 @@ focus_tree = {
 
 
 		completion_reward = {
-		add_tech_bonus = {
+			add_tech_bonus = {
 				bonus = 1.0
 				uses = 1
 				category = excavation_tech
-				}
+			}
 		}
 	}	
 		
-		
-		focus = {
+	focus = {
 		id = MAN_synth
 		icon = GFX_goal_oil
 		x = 1
@@ -597,19 +590,19 @@ focus_tree = {
 		relative_position_id = MAN_railways_heilungkiang
 
 		completion_reward = {
-		3 = {
-		add_extra_state_shared_building_slots = 2
-		add_building_construction = {
-		type = synthetic_refinery 
-		level = 2
-		instant_build = yes	
-		}
+			714 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_refinery 
+					level = 2
+					instant_build = yes	
+				}
 		
-		}
-	}	
-		}
+			}
+		}	
+	}
 		
-		focus = {
+	focus = {
 		id = MAN_synth2
 		icon = GFX_goal_generic_oil_refinery
 		x = 0
@@ -622,15 +615,15 @@ focus_tree = {
 		
 
 		completion_reward = {
-	add_tech_bonus = {
+			add_tech_bonus = {
 				bonus = 1.0
 				uses = 1
 				category = synth_resources
-				}
+			}
 		}
 	}	
 		
-		focus = {
+	focus = {
 		id = MAN_synth3
 		icon = GFX_goal_oil
 		x = -1
@@ -642,18 +635,16 @@ focus_tree = {
 		relative_position_id = MAN_synth2
 
 		completion_reward = {
-			492 = {
-		add_extra_state_shared_building_slots = 2
-		add_building_construction = {
-		type = synthetic_refinery 
-		level = 2
-		instant_build = yes	
-		}
-		
-		}
+			714 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_refinery 
+					level = 2
+					instant_build = yes	
+				}
+			}
 		}
 	}	
-		
 		
 	focus = {
 		id = MAN_railways_jehol
@@ -691,19 +682,19 @@ focus_tree = {
 
 
 		completion_reward = {
-		346 = {
-		add_building_construction = {
-		type = infrastructure 
-		level = 1
-		instant_build = yes
-		}
-		add_building_construction = {
-		type = naval_base 	
-		province = 3900
-		level = 1
-		instant_build = yes
-		}
-		}
+			609 = {
+				add_building_construction = {
+					type = infrastructure 
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base 	
+					province = 3900
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -748,48 +739,47 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		610 = {
-		add_extra_state_shared_building_slots = 1
-		add_building_construction = {
-				type = dockyard
-				level = 1
-				instant_build = yes
+			610 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
 			}
-		}
 	
 			create_equipment_variant = {
-			name = "Momi Class" 
-			type = ship_hull_light_1
-			name_group = JAP_DD_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_battery_slot = ship_light_battery_1
-				fixed_ship_anti_air_slot = empty
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = light_ship_engine_1
-				fixed_ship_torpedo_slot = ship_torpedo_1
-				mid_1_custom_slot = empty
-				rear_1_custom_slot = empty
-			}
-			obsolete = yes
+				name = "Momi Class" 
+				type = ship_hull_light_1
+				name_group = JAP_DD_HISTORICAL
+				parent_version = 0
+				modules = {
+					fixed_ship_battery_slot = ship_light_battery_1
+					fixed_ship_anti_air_slot = empty
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+					fixed_ship_radar_slot = empty
+					fixed_ship_engine_slot = light_ship_engine_1
+					fixed_ship_torpedo_slot = ship_torpedo_1
+					mid_1_custom_slot = empty
+					rear_1_custom_slot = empty
+				}
+				obsolete = yes
 		
-		}
-		add_equipment_production = {
-							equipment = {
-								type = ship_hull_light_1
-								creator = "MAN"
-								version_name = "Momi Class"
-							}
-							requested_factories = 1
-							progress = 1.0
-							amount = 1
-						}
+			}
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_light_1
+					creator = "MAN"
+					version_name = "Momi Class"
+				}
+				requested_factories = 1
+				progress = 1.0
+				amount = 1
+			}
 		}
 	}
 	
-	
-		focus = {
+	focus = {
 		id = MAN_dockyardss
 		icon = GFX_goal_generic_construct_naval_dockyard
 		x = -1
@@ -804,21 +794,19 @@ focus_tree = {
 
 
 		complete_tooltip = {
-
 		}
 
 		completion_reward = {
-		610 = {
-		add_extra_state_shared_building_slots = 2
-		add_building_construction = {
-				type = dockyard
-				level = 2
-				instant_build = yes
+			610 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
 			}
 		}
-		}
-		
-		}
+	}
 		
 	focus = {
 		id = MAN_ship_designs
@@ -833,7 +821,6 @@ focus_tree = {
 		
 
 		complete_tooltip = {
-
 		}
 
 		completion_reward = {
@@ -866,7 +853,7 @@ focus_tree = {
 
 
 		completion_reward = {
-		custom_effect_tooltip = MAN_bypass_tt
+			custom_effect_tooltip = MAN_bypass_tt
 		}
 	}	
 	
@@ -881,28 +868,22 @@ focus_tree = {
 		prerequisite = { focus = MAN_railways_liaotung }
 		relative_position_id = MAN_railways_liaotung
 		
-
-
-
 		completion_reward = {
-		
-		715 = { 
-		add_resource = {
-		type = steel
-		amount = 16
-		}
-		
-		
-		}
+			715 = { 
+				add_resource = {
+				type = steel
+				amount = 16
+				}
+			}
 			add_tech_bonus = {
 				bonus = 1.0
 				uses = 1
 				category = excavation_tech
-				}
+			}
 		}
 	}	
 	
-		focus = {
+	focus = {
 		id = MAN_showa_steel
 		icon = GFX_focus_generic_steel
 		x = 1
@@ -962,18 +943,18 @@ focus_tree = {
 		completion_reward = {
 			add_equipment_to_stockpile = {
 				type = convoy_1
-				amount = 25
+				amount = 50
 				producer = MAN
 			}
-	496 = { 
-	add_building_construction = {
+			716 = { 
+				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
 				}
-			492 = { 
-	add_building_construction = {
+			745 = { 
+				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
@@ -981,7 +962,6 @@ focus_tree = {
 				add_building_construction = {
 				type = naval_base
 					province = 1150
-					
 					level = 1
 					instant_build = yes
 				}
@@ -1008,41 +988,38 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
-	496 = { 
-	add_building_construction = {
+			716 = { 
+				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
-				}
+			}
 			527 = { 		
-	add_building_construction = {
+				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
-			add_resource = {
+				add_resource = {
 					type = tungsten
 					amount = 6
 				}
 			}
-		525 = { 
-		add_building_construction = {
+			525 = { 
+				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
-					add_building_construction = {
+				add_building_construction = {
 					type = naval_base
 					province = 4056
 					
 					level = 1
 					instant_build = yes
 				}
-				
-		
-		}
+			}
 		}
 	}	
 	
@@ -1106,7 +1083,7 @@ focus_tree = {
 		}
 	}	
 	
-		focus = {
+	focus = {
 		id = MAN_chahar1
 		icon = GFX_goal_shenyang_arsenal
 		x = -1
@@ -1122,19 +1099,18 @@ focus_tree = {
 
 
 		completion_reward = {
-		611 = {
-		add_extra_state_shared_building_slots = 1
-		add_building_construction = {
-		type = arms_factory
-		level = 1
-		instant_build = yes
-		}
-		
-		}
+			611 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}	
 	
-		focus = {
+	focus = {
 		id = MAN_chahar2
 		icon = GFX_focus_JAP_expansion
 		x = 0
@@ -1147,16 +1123,15 @@ focus_tree = {
 		
 
 		completion_reward = {
-	add_tech_bonus = {
+			add_tech_bonus = {
 				bonus = 1
 				uses = 2
 				category = infantry_weapons
-				}
-		
+			}
 		}
 	}	
 	
-		focus = {
+	focus = {
 		id = MAN_chahar3
 		icon = GFX_goal_generic_army_artillery
 		x = 1
@@ -1174,19 +1149,18 @@ focus_tree = {
 
 
 		completion_reward = {
-	611 = {
-		add_extra_state_shared_building_slots = 2
-		add_building_construction = {
-		type = arms_factory
-		level = 2
-		instant_build = yes
-		}
-		
-		}
+			611 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}	
 	
-		focus = {
+	focus = {
 		id = MAN_chahar4
 		icon = GFX_goal_generic_army_artillery2
 		x = 0
@@ -1198,17 +1172,16 @@ focus_tree = {
 		relative_position_id = MAN_chahar3
 		
 		completion_reward = {
-	add_tech_bonus = {
+			add_tech_bonus = {
 				bonus = 1
 				uses = 2
 				category = artillery
-				}
-		
+			}
 		}
 	}	
 	
 	
-			focus = {
+	focus = {
 		id = MAN_chahar5
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		x = 1
@@ -1223,7 +1196,7 @@ focus_tree = {
 		
 
 		completion_reward = {
-		army_experience = 25
+			army_experience = 25
 		}
 	}
 	
@@ -1245,7 +1218,7 @@ focus_tree = {
 		}
 	}	
 	
-		focus = {
+	focus = {
 		id = MAN_poppy2
 		icon = GFX_goal_golden_dragon
 		x = 0
@@ -1259,15 +1232,15 @@ focus_tree = {
 		
 
 		completion_reward = {
-		swap_ideas = { 
-			remove_idea = MAN_agriculturaltrade
-		add_idea = MAN_opiumtrade
+			swap_ideas = { 
+				remove_idea = MAN_agriculturaltrade
+				add_idea = MAN_opiumtrade
+			}
 		}
 	}
-	}
 	
 	
-		focus = {
+	focus = {
 		id = MAN_shanxi
 		icon = GFX_focus_generic_little_entente
 		x = 1
@@ -1281,8 +1254,7 @@ focus_tree = {
 		
 
 		completion_reward = {
-	army_experience = 50
-		
+			army_experience = 50
 		}
 	}
 	
@@ -1301,7 +1273,7 @@ focus_tree = {
 		
 
 		completion_reward = {
-			112 = {
+			612 = {
 				set_building_level = {
 					type = air_base
 					level = 4
@@ -1343,7 +1315,7 @@ focus_tree = {
 	}
 	
 	
-		focus = {
+	focus = {
 		id = MAN_motorized
 		icon = GFX_goal_generic_army_motorized
 		x = 0
@@ -1357,16 +1329,15 @@ focus_tree = {
 		
 
 		completion_reward = {
-		add_tech_bonus = {
-			bonus = 1.0
-			uses = 1
-			category = motorized_equipment
-		}
-		
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = motorized_equipment
+			}
 		}
 	}
 	
-		focus = {
+	focus = {
 		id = MAN_mechanized
 		icon = GFX_goal_generic_build_tank
 		x = 0
@@ -1380,16 +1351,15 @@ focus_tree = {
 		
 
 		completion_reward = {
-		add_tech_bonus = {
-			bonus = 1.0
-			uses = 2
-			category = cat_mechanized_equipment
-		}
-		
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = cat_mechanized_equipment
+			}
 		}
 	}
 	
-			focus = {
+	focus = {
 		id = MAN_armorf
 		icon = GFX_focus_JAP_armor
 		x = -2
@@ -1404,16 +1374,16 @@ focus_tree = {
 
 
 		completion_reward = {
-		add_tech_bonus = {
-			bonus = 1.0
-			ahead_reduction = 1
-			uses = 1
+			add_tech_bonus = {
+				bonus = 1.0
+				ahead_reduction = 1
+				uses = 1
 				category = armor
-		}	
+			}	
 		}
 	}
 	
-		focus = {
+	focus = {
 		id = MAN_tankplant_h
 		icon = GFX_goal_generic_production2
 		x = 1
@@ -1426,21 +1396,18 @@ focus_tree = {
 		relative_position_id = MAN_motorized
 
 		completion_reward = {
-		
-	761 = { 
-		add_extra_state_shared_building_slots = 1
-		add_building_construction = {
-		type = arms_factory
-		level = 1
-		instant_build = yes 
+			761 = { 
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes 
+				}
+			}		
 		}
-
-		
-		}		
-	}
 	}
 		
-		focus = {
+	focus = {
 		id = MAN_tankplant_p
 		icon = GFX_goal_generic_production2
 		x = -1
@@ -1452,18 +1419,17 @@ focus_tree = {
 		relative_position_id = MAN_motorized
 
 		completion_reward = {
-		761 = { 
-		add_extra_state_shared_building_slots = 1
-		add_building_construction = {
-		type = arms_factory
-		level = 1
-		instant_build = yes 
-		}
-		
-		}
+			761 = { 
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes 
+				}
+			}
 		}
 	}	
-			focus = {
+	focus = {
 		id = MAN_railways_sungkiang
 		icon = GFX_goal_generic_construct_infrastructure
 		x = -2
@@ -1477,13 +1443,10 @@ focus_tree = {
 		
 
 		available = {
-					has_country_flag = MAN_sungkiang
-
+			has_country_flag = MAN_sungkiang
 		}
 
 		completion_reward = {
-
-		
 		}
 	}
 	
@@ -1500,10 +1463,8 @@ focus_tree = {
 
 
 		completion_reward = {
-		custom_effect_tooltip = available_designer
-        show_ideas_tooltip = MAN_mamc		
-
-		
+			custom_effect_tooltip = available_designer
+        	show_ideas_tooltip = MAN_mamc	
 		}
 	}
 	
@@ -1516,30 +1477,28 @@ focus_tree = {
 
 		cost = 4
 
-				prerequisite = { focus = MAN_mamcc }
+		prerequisite = { focus = MAN_mamcc }
 		relative_position_id = MAN_mamcc
 		
 
 		available = {
 			is_ai = no
-
 		}
 
 
 		completion_reward = {
-	717 = {	
-		add_extra_state_shared_building_slots = 1	
-		add_building_construction = {
-		type = arms_factory
-		level = 1
-		instant_build = yes
-		}
-		}
-		
+			717 = {	
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}	
 		}
 	}
 	
-		focus = {
+	focus = {
 		id = MAN_mamc_pilot
 		icon = GFX_focus_generic_military_academy
 		x = -2
@@ -1547,19 +1506,18 @@ focus_tree = {
 
 		cost = 4
 
-				prerequisite = { focus = MAN_mamcc }
+		prerequisite = { focus = MAN_mamcc }
 		relative_position_id = MAN_mamcc
 		
 		completion_reward = {
-		add_tech_bonus = {
-		bonus = 1.0
-			uses = 2
-			category = air_doctrine
-		}
-		
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = air_doctrine
+			}
 		}
 	}
-		focus = {
+	focus = {
 		id = MAN_mamc_tac
 		icon = GFX_goal_generic_air_bomber
 		x = 1
@@ -1567,22 +1525,21 @@ focus_tree = {
 
 		cost = 4
 
-				mutually_exclusive = { focus = MAN_mamc_cas}
-				prerequisite = { focus = MAN_mamc_expansion }
+		mutually_exclusive = { focus = MAN_mamc_cas}
+		prerequisite = { focus = MAN_mamc_expansion }
 		relative_position_id = MAN_mamc_expansion
 
 		completion_reward = {
-	add_tech_bonus = {
+			add_tech_bonus = {
 				bonus = 1.0
 				uses = 1
-				ahead_reduction = 2
+				ahead_reduction = 1
 				category = tactical_bomber
 			}
-		
 		}
 	}
 	
-		focus = {
+	focus = {
 		id = MAN_mamc_cas
 		icon = GFX_goal_generic_CAS
 		x = -1
@@ -1591,7 +1548,7 @@ focus_tree = {
 		cost = 4
 
 		mutually_exclusive = { focus = MAN_mamc_tac}
-				prerequisite = { focus = MAN_mamc_expansion }
+		prerequisite = { focus = MAN_mamc_expansion }
 		relative_position_id = MAN_mamc_expansion
 		
 
@@ -1600,10 +1557,9 @@ focus_tree = {
 			add_tech_bonus = {
 				bonus = 1.0
 				uses = 1
-				ahead_reduction = 2
+				ahead_reduction = 1
 				category = cas_bomber
 			}
 		}
-	}
-		
+	}		
 }

@@ -13,23 +13,23 @@ country_event = {
 	option = {
 		name = wtt_manchukou.100.a #okay
 		
-		#trigger = { has_completed_focus = MAN_pacify_the_countrysidex }
+		trigger = { has_completed_focus = MAN_pacify_the_countrysidex }
 		
-				name = wtt_manchukou.129.a #okay
-				504 = {
-		add_extra_state_shared_building_slots = 3
-		add_building_construction = {
-		type = infrastructure 
-		level = 2
-		}
+		name = wtt_manchukou.129.a #okay
+		715 = {
+			add_extra_state_shared_building_slots = 3
 			add_building_construction = {
-		type = industrial_complex 
-		level = 1
-		}
+				type = infrastructure 
+				level = 1
+			}
+			add_building_construction = {
+				type = industrial_complex 
+				level = 1
+			}
 		}
 		
 		hidden_effect = {
-		country_event = { id = wtt_manchukou.120 days = 70 }
+		country_event = { id = wtt_manchukou.120 days = 140 }
 		}
 	}
 }
@@ -43,12 +43,12 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-	name = wtt_manchukou.101.a #Jehol
+		name = wtt_manchukou.101.a #Jehol
 	
-	trigger = { NOT = {  has_country_flag = MAN_jehol }   }  
+		trigger = { NOT = {  has_country_flag = MAN_jehol }   }  
 	
-	hidden_effect = {
-					country_event = { id = wtt_manchukou.121 days = 70 }
+		hidden_effect = {
+			country_event = { id = wtt_manchukou.121 days = 140 }
 		}
 	
 	}
@@ -56,33 +56,31 @@ country_event = {
 		
 		
 	option = {
-	name = wtt_manchukou.101.b #Kirin
+		name = wtt_manchukou.101.b #Kirin
 	
-	trigger = { NOT = { has_country_flag = MAN_kirin }   }
+		trigger = { NOT = { has_country_flag = MAN_kirin }   }
 	
 		ai_chance = {
 			factor = 5000
-			}
-	
-	hidden_effect = {
-					country_event = { id = wtt_manchukou.122 days = 70 }
 		}
-		
-		
+	
+		hidden_effect = {
+			country_event = { id = wtt_manchukou.122 days = 140 }
+		}
 	}
 	
 	
 
 	option = {
 		name = wtt_manchukou.101.c #Heilungkiang
-			trigger = { NOT = { has_country_flag = MAN_heilungkiang }   }
+		trigger = { NOT = { has_country_flag = MAN_heilungkiang }   }
 
 		ai_chance = {
 			factor = 1
-			}
+		}
 			
-			hidden_effect = {
-		country_event = { id = wtt_manchukou.128 days = 70 }
+		hidden_effect = {
+			country_event = { id = wtt_manchukou.128 days = 140 }
 		}
 	
 	}
@@ -93,8 +91,8 @@ country_event = {
 		
 		trigger = { NOT = { has_country_flag = MAN_chahar }   }
 		
-	hidden_effect = {
-		country_event = { id = wtt_manchukou.123 days = 70 }
+		hidden_effect = {
+			country_event = { id = wtt_manchukou.123 days = 140 }
 		}	
 	
 	}
@@ -104,14 +102,13 @@ country_event = {
 	option = {
 		name = wtt_manchukou.101.e #South Chahar
 		
-	trigger = { AND = { NOT = { has_country_flag = MAN_schahar}  }   
-	has_country_flag =  MAN_chahar 
-	has_country_flag =  MAN_jehol 
+		trigger = { AND = { NOT = { has_country_flag = MAN_schahar}  }   
+			has_country_flag =  MAN_chahar 
+			has_country_flag =  MAN_jehol 	
+		}
 	
-	}
-	
-	hidden_effect = {
-		country_event = { id = wtt_manchukou.124 days = 70 }
+		hidden_effect = {
+			country_event = { id = wtt_manchukou.124 days = 140 }
 		}	
 	
 	}
@@ -119,12 +116,11 @@ country_event = {
 	option = {
 		name = wtt_manchukou.101.f #Sungkiang
 		trigger = { AND = { NOT = { has_country_flag = MAN_sungkiang}  }   
-	has_country_flag = MAN_heilungkiang 
-	has_country_flag =  MAN_kirin 
-	
-	}
-			hidden_effect = {
-		country_event = { id =  wtt_manchukou.125 days = 70 } 
+			has_country_flag = MAN_heilungkiang 
+			has_country_flag =  MAN_kirin 
+		}
+		hidden_effect = {
+			country_event = { id =  wtt_manchukou.125 days = 140 } 
 		}
 	}
 	
@@ -133,20 +129,20 @@ country_event = {
 	option = {
 		name = wtt_manchukou.101.g #Hulunbuir
 		
-	trigger = { AND = { NOT = { has_country_flag = MAN_hulunbuir}  }   
-	has_country_flag =  MAN_heilungkiang 
-	has_country_flag = MAN_chahar 
+		trigger = { AND = { NOT = { has_country_flag = MAN_hulunbuir}  }   
+		has_country_flag =  MAN_heilungkiang 
+		has_country_flag = MAN_chahar 
 	
-	}
+		}
 		
-			hidden_effect = {
-		country_event = { id = wtt_manchukou.126 days = 70 }
+		hidden_effect = {
+			country_event = { id = wtt_manchukou.126 days = 140 }
 		}
 	}
 	
 	
 
-		option = {
+	option = {
 		name = wtt_manchukou.101.h #option leads to an event announcing the completion of the railroad network
 
 		trigger = {  AND = { 
@@ -154,7 +150,7 @@ country_event = {
 		has_country_flag = MAN_schahar
 		has_country_flag = MAN_sungkiang
 		} }
-		country_event = { id = wtt_manchukou.127 days = 70 }
+		country_event = { id = wtt_manchukou.127 days = 140 }
 	}
 	
 	
@@ -172,21 +168,21 @@ country_event = {
 	option = {
 		name = wtt_manchukou.100.a #okay
 		
-		#trigger = { has_completed_focus = MAN_pacify_the_countrysidex }
+		trigger = { has_completed_focus = MAN_pacify_the_countrysidex }
 
 		country_event = { id = wtt_manchukou.101  }
 
 		
 		hidden_effect = {
-		set_country_flag = MAN_liaotung 		complete_national_focus = MAN_railways_liaotung
-
+			set_country_flag = MAN_liaotung  
+			complete_national_focus = MAN_railways_liaotung
 		}
 		
-		496 = {
+		716 = {
 	    	add_extra_state_shared_building_slots = 3
 	        add_building_construction = {
 	        	 type = infrastructure 
-	        	 level = 2
+	        	 level = 1
 	    	}
 			add_building_construction = {
 		        type = industrial_complex 
@@ -208,29 +204,30 @@ country_event = {
 	option = {
 		name = wtt_manchukou.121.a #okay
 		
-				#trigger = { AND = { has_completed_focus = MAN_pacify_the_countrysidex  } NOT = { has_country_flag = MAN_jehol }            }
+		trigger = { 
+			AND = { has_completed_focus = MAN_pacify_the_countrysidex  } 
+			NOT = { has_country_flag = MAN_jehol }            
+		}
 
 		
-			446	= {
-		add_extra_state_shared_building_slots = 3
-		add_building_construction = {
-		type = infrastructure 
-		level = 2
-		}
+		610	= {
+			add_extra_state_shared_building_slots = 3
 			add_building_construction = {
-		type = industrial_complex 
-		level = 1
-		}
+				type = infrastructure 
+				level = 1
+			}
+			add_building_construction = {
+				type = industrial_complex 
+				level = 1
+			}
 		}
 		
-		hidden_effect = { set_country_flag = MAN_jehol 
-		complete_national_focus = MAN_railways_jehol
+		hidden_effect = { 
+			set_country_flag = MAN_jehol 
+			complete_national_focus = MAN_railways_jehol
 		}
-		
-				country_event = { id = wtt_manchukou.101  }
-				
-				
-				}
+		country_event = { id = wtt_manchukou.101  }		
+	}
 				
 }
 				
@@ -245,13 +242,13 @@ country_event = {
 	option = {
 		name = wtt_manchukou.122.a #okay
 		
-				#trigger = { AND = { has_completed_focus = MAN_pacify_the_countrysidex  } NOT = { has_country_flag = MAN_kirin }            }
+				trigger = { AND = { has_completed_focus = MAN_pacify_the_countrysidex  } NOT = { has_country_flag = MAN_kirin }            }
 
 				328 = {
 		add_extra_state_shared_building_slots = 3
 		add_building_construction = {
 		type = infrastructure 
-		level = 2
+		level = 1
 		}
 			add_building_construction = {
 		type = industrial_complex 
@@ -282,26 +279,23 @@ country_event = {
 		
 				#trigger = { AND = { has_completed_focus = MAN_pacify_the_countrysidex  } NOT = { has_country_flag = MAN_chahar }            }
 
-			112	= {
-		add_extra_state_shared_building_slots = 3
-		add_building_construction = {
-		type = infrastructure 
-		level = 2
-		}
-			add_building_construction = {
-		type = industrial_complex 
-		level = 1
-		}
-		}
+			612	= {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = infrastructure 
+					level = 1
+				}
+				add_building_construction = {
+					type = industrial_complex 
+					level = 1
+				}
+			}
 		
 		hidden_effect = { set_country_flag = MAN_chahar    		complete_national_focus = MAN_railways_chahar
 		}
 		
-				country_event = { id = wtt_manchukou.101  }
-				
-				
-	}
-				
+				country_event = { id = wtt_manchukou.101  }			
+	}				
 }
 
 country_event = {
@@ -318,15 +312,15 @@ country_event = {
 		trigger = { AND = { has_completed_focus = MAN_pacify_the_countrysidex  } NOT = { has_country_flag = MAN_schahar }            }
 
 		
-		112		= {
+		611	= {
 	    	add_extra_state_shared_building_slots = 3
 		    add_building_construction = {
-	    	    type = infrastructure 
-		      level = 2
+	    		type = infrastructure 
+		    	level = 1
 		    }
 			add_building_construction = {
-	    	    type = industrial_complex 
-		       level = 1
+	    		type = industrial_complex 
+		    	level = 1
 		    }
 		}
 		
@@ -357,11 +351,11 @@ country_event = {
 				trigger = { AND = { has_completed_focus = MAN_pacify_the_countrysidex  } NOT = { has_country_flag = MAN_sungkiang }            }
 
 		
-	    505	= {
+	    717	= {
 		    add_extra_state_shared_building_slots = 3
 	    	add_building_construction = {
 	    	    type = infrastructure 
-	        	level = 2
+	        	level = 1
 		    }
 			add_building_construction = {
 		       type = industrial_complex 
@@ -390,11 +384,11 @@ country_event = {
 		
 		trigger = { AND = { has_completed_focus = MAN_pacify_the_countrysidex  } NOT = { has_country_flag = MAN_hulunbuir }            }
 
-		451	= {
+		761	= {
 		    add_extra_state_shared_building_slots = 3
 		    add_building_construction = {
 		     type = infrastructure 
-		     level = 2
+		     level = 1
 		    }
 			add_building_construction = {
 		        type = industrial_complex 
@@ -423,11 +417,11 @@ country_event = {
 		trigger = { AND = { has_completed_focus = MAN_pacify_the_countrysidex  } NOT = { has_country_flag = MAN_heilungkiang }            }
 
 		
-		3	= {
+		714	= {
 		    add_extra_state_shared_building_slots = 3
 		    add_building_construction = {
 		        type = infrastructure 
-		        level = 2
+		        level = 1
 		    }
 			add_building_construction = {
 		        type = industrial_complex 
@@ -457,7 +451,9 @@ country_event = {
 	}
 				
 }
+
 add_namespace = ITA
+
 country_event = {
 	id = ITA.1000
 	title = "Italy joins THe War"

@@ -659,9 +659,6 @@ characters = {
 				}
 				available = {
 					NOT = {
-						has_completed_focus = BUL_join_the_tripartite_pact
-					}
-					NOT = {
 						has_government = fascism
 					}
 				}

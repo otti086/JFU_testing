@@ -180,7 +180,7 @@ foreign_support = {
 		available = {
 			has_equipment = { infantry_equipment > 999 }
 			FROM = {
-				has_completed_focus = CHI_mission_to_the_us
+
 				has_idea = CHI_soong_mei_ling
 				has_war_with = JAP
 			}
@@ -191,7 +191,6 @@ foreign_support = {
 
 		target_trigger = {
 			FROM = {
-				has_completed_focus = CHI_mission_to_the_us
 				has_idea = CHI_soong_mei_ling
 				has_war_with = JAP
 			}
@@ -200,7 +199,6 @@ foreign_support = {
 		visible = {
 			has_government = democratic
 			FROM = {
-				has_completed_focus = CHI_mission_to_the_us
 				has_idea = CHI_soong_mei_ling
 				has_war_with = JAP
 			}
@@ -212,7 +210,6 @@ foreign_support = {
 			modifier = {
 				factor = 3
 				FROM = {
-					has_completed_focus = CHI_mission_to_the_us
 					has_idea = CHI_soong_mei_ling
 					surrender_progress > 0.2
 					has_defensive_war = yes

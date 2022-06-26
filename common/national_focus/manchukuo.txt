@@ -57,7 +57,7 @@
 		x = 6
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -94,7 +94,7 @@
 		y = 1
 		relative_position_id = MAN_pacify_the_countryside
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -129,7 +129,7 @@
 		y = 1
 		relative_position_id = MAN_army_modernization
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -164,7 +164,7 @@
 		y = 1
 		relative_position_id = MAN_pacify_the_countryside
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -230,7 +230,7 @@
 		y = 1
 		relative_position_id = MAN_invite_japanese_settlers
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -272,7 +272,7 @@
 		y = 1
 		relative_position_id = MAN_collective_farms
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -308,7 +308,7 @@
 		y = 1
 		relative_position_id = MAN_pacify_the_countryside
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -349,7 +349,7 @@
 		y = 1
 		relative_position_id = MAN_trade_delegation
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 4
@@ -407,7 +407,7 @@
 		id = MAN_obedience
 		icon = GFX_focus_CZE_german_puppet
 		prerequisite = { focus = MAN_army_modernization }
-		x = -2
+		x = -1
 		y = 2
 		relative_position_id = MAN_army_modernization
 
@@ -447,7 +447,7 @@
 		y = 1
 		relative_position_id = MAN_obedience
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2
@@ -1052,45 +1052,10 @@
 	}
 
 	focus = {
-		id = MAN_vassalize_mengukuo
-		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = MAN_chinese_leadership }
-		x = -1
-		y = 1
-		relative_position_id = MAN_chinese_leadership
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			is_subject_of = JAP
-			NOT = { has_war_with = JAP }
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-		complete_tooltip = {
-
-		}
-
-		completion_reward = { }
-	}
-
-	focus = {
 		id = MAN_national_cooperation_government
 		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = MAN_chinese_leadership }
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = MAN_chinese_leadership
 
@@ -1122,13 +1087,13 @@
 				limit = { is_core_of = CHI }
 				add_core_of = ROOT
 			}
+			MAN_low_legitimacy_level_down = yes
 		}
 	}
 
 	focus = {
 		id = MAN_the_two_emperors
 		icon = GFX_goal_anschluss
-		prerequisite = { focus = MAN_vassalize_mengukuo }
 		prerequisite = { focus = MAN_national_cooperation_government }
 		x = 0
 		y = 2
@@ -1142,7 +1107,7 @@
 
 		available = {
 			is_subject_of = JAP
-			compare_autonomy_state > autonomy_wtt_imperial_protectorate			
+			CHI = { exists = no }		
 		}
 
 		bypass = {
@@ -1163,13 +1128,14 @@
 				value = 0.15
 				localization = MAN_the_two_emperors
 			}
+			MAN_low_legitimacy_clear_all = yes
 		}
 	}
 
 	focus = {
 		id = CHI_invite_foreign_investors 
 		icon = GFX_focus_generic_concessions
-		x = 25
+		x = 22
 		y = 0
 
 		cost = 10
@@ -1220,11 +1186,6 @@
 		}
 
 		available = {
-			OR = {
-				has_government = neutrality
-				GER = { has_government = ROOT }
-				GER_will_support = yes
-			}
 			NOT = {
 				has_war_with = GER
 			}
@@ -1288,7 +1249,6 @@
 
 		available = {
 			NOT = { has_global_flag = falkenhausen_recalled }
-			GER_will_support = yes
 		}
 
 		bypass = {
@@ -1329,19 +1289,6 @@
 		available = {
 			NOT = { has_idea = CHI_incompetent_officers }
 			NOT = { has_global_flag = falkenhausen_recalled }
-			if = {
-				limit = {
-					NOT = {
-						OR = {
-							has_government = neutrality
-							GER = {
-								has_government = ROOT
-							}
-						}
-					}
-				}
-				GER_will_support = yes
-			}
 		}
 
 		bypass = {
@@ -1376,7 +1323,6 @@
 
 		available = {
 			NOT = { has_global_flag = falkenhausen_recalled }
-			GER_will_support = yes
 		}
 
 		bypass = {
@@ -1421,7 +1367,6 @@
 		available = {
 			NOT = { has_war_with = GER }
 			NOT = { has_global_flag = falkenhausen_recalled }
-			GER_will_support = yes
 		}
 
 		bypass = {
@@ -1580,7 +1525,6 @@
 		}
 
 		available = {
-			GER_will_support = yes
 		}
 
 		bypass = {
@@ -1648,10 +1592,6 @@
 		available = {
 			capital_scope = { is_fully_controlled_by = ROOT }
 			has_tech = motorised_infantry
-			OR = {
-				GER_will_support = yes
-				SOV_will_support = yes
-			}
 		}
 
 		bypass = {
@@ -1774,10 +1714,6 @@
 
 
 		available = {
-			OR = {
-				GER_will_support = yes
-				SOV_will_support = yes
-			}
 		}
 
 		bypass = {
@@ -1811,7 +1747,6 @@
 
 
 		available = {
-			SOV_will_support = yes
 		}
 
 		bypass = {
@@ -1847,7 +1782,6 @@
 
 
 		available = {
-			SOV_will_support = yes
 		}
 
 		bypass = {
@@ -1884,13 +1818,7 @@
 		}
 
 		available = {
-			SOV = { has_government = communism }
-			OR = {
-				has_government = neutrality
-				SOV = { has_government = ROOT }
-				SOV_will_support = yes
-			}
-			not = {
+			NOT = {
 				has_War_with = SOV
 			}
 			SOV = {
@@ -1995,7 +1923,6 @@
 		}
 
 		available = {
-			SOV_will_support = yes	
 		}
 
 		bypass = {
@@ -2046,7 +1973,6 @@
 		}
 
 		available = {
-			SOV_will_support = yes
 		}
 
 		bypass = {
@@ -2189,10 +2115,6 @@
 		}
 
 		available = {
-			OR = {
-				FRA_will_support = yes
-				SOV_will_support = yes
-			}
 		}
 
 		bypass = {
@@ -2255,10 +2177,6 @@
 		}
 
 		available = {
-			OR = {
-				FRA_will_support = yes
-				SOV_will_support = yes
-			}
 		}
 
 		bypass = {
@@ -2300,8 +2218,6 @@
 		}
 
 		available = {
-			all_other_country = { NOT = { has_completed_focus = CHI_guarantee_the_hanoi_route } }
-			FRA_will_support = yes
 			325 = { #Yunnan
 				CONTROLLER = {
 					OR = {
@@ -2397,7 +2313,6 @@
 		}
 
 		available = {
-			FRA_will_support = yes
 		}
 
 		bypass = {
@@ -2492,7 +2407,6 @@
 		}
 
 		available = {
-			FRA_will_support = yes
 		}
 
 		bypass = {
@@ -2619,17 +2533,6 @@
 		}
 
 		available = {
-			OR = {
-				has_government = neutrality
-				ENG = { has_government = ROOT }
-				ENG_will_support = yes
-			}
-			not = {
-				has_War_with = ENG
-			}
-			ENG = {
-				has_capitulated = no
-			}
 		}
 
 		bypass = {
@@ -2698,12 +2601,6 @@
 		}
 
 		available = {
-			OR = {
-				is_subject = no
-				is_subject_of = ENG
-			}
-			all_other_country = { NOT = { has_completed_focus = CHI_burma_road } }
-			ENG_will_support = yes
 			325 = { #Yunnan
 				CONTROLLER = {
 					OR = {
@@ -2785,12 +2682,6 @@
 		}
 
 		available = {
-			OR = {
-				is_subject = no
-				is_subject_of = ENG
-			}
-			all_other_country = { NOT = { has_completed_focus = CHI_ledo_road } }
-			ENG_will_support = yes
 			325 = { #Yunnan
 				CONTROLLER = {
 					OR = {
@@ -2846,7 +2737,7 @@
 	focus = {
 		id = CHI_fighter_purchases
 		icon = GFX_goal_generic_build_airforce
-		prerequisite = { focus = CHI_british_cooperation focus = CHI_mission_to_the_us }
+		prerequisite = { focus = CHI_british_cooperation}
 		x = 3
 		y = 1
 		relative_position_id = CHI_british_cooperation
@@ -2862,16 +2753,6 @@
 		}
 
 		available = {
-			OR = {
-				AND = {
-					has_completed_focus = CHI_british_cooperation
-					ENG_will_support = yes
-				}
-				AND = {
-					has_completed_focus = CHI_mission_to_the_us
-					USA_will_support = yes
-				}
-			}
 		}
 
 		bypass = {
@@ -2892,20 +2773,6 @@
 						}
 					}
 					set_technology = { early_fighter = 1 }
-				}
-				if = {
-					limit = {
-						has_completed_focus = CHI_british_cooperation
-						not = { has_war_with = ENG }
-					}
-					add_equipment_to_stockpile = { type = fighter_equipment_0 amount = 50 producer = ENG }
-				}
-				if = {
-					limit = {
-						has_completed_focus = CHI_mission_to_the_us
-						not = { has_war_with = USA }
-					}
-					add_equipment_to_stockpile = { type = fighter_equipment_0 amount = 50 producer = USA }
 				}
 			}
 		}
@@ -2930,17 +2797,6 @@
 		}
 
 		available = {
-			OR = {
-				AND = {
-					has_completed_focus = CHI_british_cooperation
-					ENG_will_support = yes
-				}
-				AND = {
-					has_completed_focus = CHI_mission_to_the_us
-					USA_will_support = yes
-				}
-			}
-			is_subject = no
 		}
 
 		bypass = {
@@ -3026,7 +2882,6 @@
 		id = CHI_the_hump
 		icon = GFX_goal_generic_air_production
 		prerequisite = { focus = CHI_camco }
-		prerequisite = { focus = CHI_hire_chennault }
 		x = 1
 		y = 3
 		relative_position_id = CHI_fighter_purchases
@@ -3051,21 +2906,6 @@
 		}
 
 		available = {
-			OR = {
-				is_subject = no
-				is_subject_of = ENG
-			}
-			all_other_country = { NOT = { has_completed_focus = CHI_the_hump } }
-			OR = {
-				AND = {
-					has_completed_focus = CHI_british_cooperation
-					ENG_will_support = yes
-				}
-				AND = {
-					has_completed_focus = CHI_mission_to_the_us
-					USA_will_support = yes
-				}
-			}
 			601 = { #Xikang
 				CONTROLLER = {
 					OR = {
@@ -3107,47 +2947,6 @@
 	}
 
 	focus = {
-		id = CHI_chinese_expeditionary_force
-		icon = GFX_goal_generic_alliance
-		prerequisite = { focus = CHI_the_hump }
-		x = 0
-		y = 1
-		relative_position_id = CHI_the_hump
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 4
-				tag = CHI
-			}
-		}
-
-		available = {
-			NOT = { USA = { has_country_flag = joseph_stilwell_sent_to_china } }
-			USA_will_support = yes
-			USA = {
-				has_civil_war = no
-			}
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			USA = {
-				country_event = wtt_china_shared.12
-			}
-		}
-	}
-
-	focus = {
 		id = CHI_the_chu_x_po
 		icon = GFX_goal_generic_air_fighter
 		prerequisite = { focus = CHI_camco }
@@ -3185,37 +2984,29 @@
 			}
 		}
 	}
-
 	focus = {
-		id = CHI_mission_to_the_us
-		icon = GFX_focus_chi_mission_to_the_us
+		id = CHI_collaboration_with_the_japanese
+		icon = GFX_focus_chi_collaboration_with_the_japanese
 		prerequisite = { focus = CHI_invite_foreign_investors }
-		x = 8
-		y = 0
-		mutually_exclusive = { focus = CHI_collaboration_with_the_japanese }
-		relative_position_id = CHI_british_cooperation
+		x = 7
+		y = 1
+		relative_position_id = CHI_invite_foreign_investors
 
 		cost = 10
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 4
-				tag = CHI
-			}
 		}
 
 		available = {
 			OR = {
-				USA_will_support = yes
-				has_government = neutrality
-				USA = { has_government = ROOT }
+				JAP = { has_government = ROOT }
+				JAP_will_support = yes
 			}
-			USA = {
+			NOT = { has_wargoal_against = JAP }
+			NOT = { has_war_with = JAP }
+			JAP = {
 				has_capitulated = no
-				NOT = {
-					has_War_with = ROOT
-				}
 			}
 		}
 
@@ -3228,10 +3019,10 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			USA = {
+			JAP = {
 				add_opinion_modifier = {
 					target = ROOT
-					modifier = CHI_mission_to_the_us
+					modifier = CHI_collaboration_with_the_japanese
 				}
 				add_ai_strategy = {
 					type = alliance
@@ -3254,138 +3045,16 @@
 					value = 100
 				}
 			}
-			custom_effect_tooltip = CHI_mission_to_the_us_soong_us_decision
 		}
 	}
-
-	focus = {
-		id = CHI_hire_chennault
-		icon = GFX_focus_generic_military_mission
-		prerequisite = { focus = CHI_mission_to_the_us }
-		x = -3
-		y = 3
-		relative_position_id = CHI_mission_to_the_us
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 4
-				tag = CHI
-			}
-		}
-
-		available = {
-			USA_will_support = yes
-			is_subject = no
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			custom_effect_tooltip = available_theorist
-			show_ideas_tooltip = CHI_claire_lee_chennault_theorist
-			custom_effect_tooltip = available_chief_of_airforce
-			show_ideas_tooltip = CHI_claire_lee_chennault_air_chief
-		}
-	}
-
-	focus = {
-		id = CHI_invite_the_flying_tigers
-		icon = GFX_focus_chi_flying_tigers
-		prerequisite = { focus = CHI_hire_chennault }
-		x = 1
-		y = 1
-		relative_position_id = CHI_hire_chennault
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 4
-				tag = CHI
-			}
-		}
-
-		available = {
-			USA_will_support = yes
-			is_subject = no
-		}
-
-		bypass = {
-			any_other_country = {
-				has_completed_focus = CHI_invite_the_flying_tigers
-			}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			USA = {
-				country_event = wtt_china_shared.10
-			}
-		}
-	}
-
-	focus = {
-		id = CHI_sino_american_cooperative_organization
-		icon = GFX_focus_generic_paratrooper
-		prerequisite = { focus = CHI_invite_the_flying_tigers }
-		x = 1
-		y = 2
-		relative_position_id = CHI_hire_chennault
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 4
-				tag = CHI
-			}
-		}
-
-		available = {
-			USA_will_support = yes
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = CHI_sino_american_cooperative_organization
-				bonus = 1.0
-				uses = 2
-				category = recon_tech
-				category = para_tech
-			}
-		}
-	}
-
 	focus = {
 		id = CHI_light_cruiser_project
 		icon = GFX_goal_generic_navy_cruiser
-		prerequisite = { focus = CHI_mission_to_the_us }
 		prerequisite = { focus = CHI_order_destroyers }
-		x = 0
+		prerequisite = { focus = CHI_collaboration_with_the_japanese }
+		x = -1
 		y = 3
-		relative_position_id = CHI_mission_to_the_us
+		relative_position_id = CHI_collaboration_with_the_japanese
 
 		cost = 10
 
@@ -3533,10 +3202,10 @@
 	focus = {
 		id = CHI_investment_into_shipbuilding
 		icon = GFX_goal_generic_construct_naval_dockyard
-		prerequisite = { focus = CHI_mission_to_the_us focus = CHI_collaboration_with_the_japanese }
-		x = 1
+		prerequisite = { focus = CHI_collaboration_with_the_japanese }
+		x = 0
 		y = 1
-		relative_position_id = CHI_mission_to_the_us
+		relative_position_id = CHI_collaboration_with_the_japanese
 
 		cost = 10
 
@@ -3671,77 +3340,14 @@
 		}
 	}
 
-	focus = {
-		id = CHI_collaboration_with_the_japanese
-		icon = GFX_focus_chi_collaboration_with_the_japanese
-		prerequisite = { focus = CHI_invite_foreign_investors }
-		mutually_exclusive = { focus = CHI_mission_to_the_us }
-		x = 2
-		y = 0
-		relative_position_id = CHI_mission_to_the_us
 
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			OR = {
-				JAP = { has_government = ROOT }
-				JAP_will_support = yes
-			}
-			NOT = { has_wargoal_against = JAP }
-			NOT = { has_war_with = JAP }
-			JAP = {
-				has_capitulated = no
-			}
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			JAP = {
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = CHI_collaboration_with_the_japanese
-				}
-				add_ai_strategy = {
-					type = alliance
-					id = ROOT
-					value = 100
-				}
-				add_ai_strategy = {
-					type = protect
-					id = ROOT
-					value = 100
-				}
-				add_ai_strategy = {
-					type = send_volunteers_desire
-					id = ROOT
-					value = 100
-				}
-				add_ai_strategy = {
-					type = support
-					id = ROOT
-					value = 100
-				}
-			}
-		}
-	}
 
 	focus = {
 		id = CHI_modern_submarines
 		icon = GFX_goal_generic_navy_submarine
 		prerequisite = { focus = CHI_collaboration_with_the_japanese }
 		prerequisite = { focus = CHI_order_destroyers }
-		x = 0
+		x = 1
 		y = 3
 		relative_position_id = CHI_collaboration_with_the_japanese
 
@@ -3803,7 +3409,7 @@
 			add_tech_bonus = {
 				name = CHI_coastal_patrol_planes
 				bonus = 1.0
-				uses = 1
+				uses = 2
 				category = naval_bomber
 			}
 		}

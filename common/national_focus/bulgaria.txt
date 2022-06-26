@@ -2087,30 +2087,6 @@ focus_tree = {
 				}
 				custom_effect_tooltip = BUL_approach_germany_foreign_industry_tt
 			}
-			
-			if = {
-				limit = {
-					OR = {
-						NOT = { country_exists = GER }
-						has_war_with = GER
-						GER = { BUL_is_valid_subject = no }
-					}
-				}
-				hidden_effect = {
-					activate_targeted_decision = { target = GER decision = BUL_purchase_artillery }
-					activate_targeted_decision = { target = GER decision = BUL_purchase_military_vehicles }
-					activate_targeted_decision = { target = GER decision = BUL_purchase_aircraft }
-					activate_targeted_decision = { target = GER decision = BUL_purchase_infantry_equipment }
-					activate_targeted_decision = { target = GER decision = BUL_purchase_armor }
-				}
-			}
-			else = {
-				activate_targeted_decision = { target = GER decision = BUL_purchase_artillery }
-				activate_targeted_decision = { target = GER decision = BUL_purchase_military_vehicles }
-				activate_targeted_decision = { target = GER decision = BUL_purchase_aircraft }
-				activate_targeted_decision = { target = GER decision = BUL_purchase_infantry_equipment }
-				activate_targeted_decision = { target = GER decision = BUL_purchase_armor }
-			}
 
 			if = {
 				limit = {
@@ -2214,32 +2190,6 @@ focus_tree = {
 					target = BUL
 					modifier = BUL_approached_italy
 				}
-			}
-
-			if = {
-				limit = {
-					OR = {
-						NOT = { country_exists = ITA }
-						has_war_with = ITA
-						ITA = { BUL_is_valid_subject = no }
-					}
-				}
-				hidden_effect = {
-					activate_targeted_decision = { target = ITA decision = BUL_purchase_artillery }
-					activate_targeted_decision = { target = ITA decision = BUL_purchase_military_vehicles }
-					activate_targeted_decision = { target = ITA decision = BUL_purchase_aircraft }
-					activate_targeted_decision = { target = ITA decision = BUL_purchase_infantry_equipment }
-					activate_targeted_decision = { target = ITA decision = BUL_purchase_armor }
-					activate_targeted_decision = { target = ITA decision = BUL_purchase_ships }
-				}
-			}
-			else = {
-				activate_targeted_decision = { target = ITA decision = BUL_purchase_artillery }
-				activate_targeted_decision = { target = ITA decision = BUL_purchase_military_vehicles }
-				activate_targeted_decision = { target = ITA decision = BUL_purchase_aircraft }
-				activate_targeted_decision = { target = ITA decision = BUL_purchase_infantry_equipment }
-				activate_targeted_decision = { target = ITA decision = BUL_purchase_armor }
-				activate_targeted_decision = { target = ITA decision = BUL_purchase_ships }
 			}
 
 			ITA = {
