@@ -252,7 +252,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civ_factory
 		relative_position_id = BUL_expand_sofia_university
 		x = -1
-		y = 2
+		y = 1
 		cost = 10
 
 		available = {
@@ -411,7 +411,7 @@ focus_tree = {
 		icon = GFX_focus_generic_industry_3
 		relative_position_id = BUL_increase_industry_investments
 		x = 0
-		y = 2
+		y = 1
 		cost = 10
 		mutually_exclusive = { focus = BUL_nationalization }
 
@@ -553,7 +553,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construction2
 		relative_position_id = BUL_steel_plant_in_pernik
 		x = 0
-		y = 2
+		y = 1
 		cost = 10
 
 		available = {
@@ -749,7 +749,7 @@ focus_tree = {
 		icon = GFX_focus_generic_tank_production
 		relative_position_id = BUL_negotiate_bulgarian_rearmament
 		x = 0
-		y = 2
+		y = 1
 		cost = 10
 
 		available = {
@@ -776,7 +776,7 @@ focus_tree = {
 		icon = GFX_goal_generic_air_fighter
 		relative_position_id = BUL_pilot_training_program
 		x = 0
-		y = 2
+		y = 1
 		cost = 10
 		mutually_exclusive = { focus = BUL_foreign_aircraft_designers }
 
@@ -1260,7 +1260,6 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 10
-		mutually_exclusive = { focus = BUL_reinforce_naval_bases }
 
 		available = {
 			48 = {
@@ -1334,500 +1333,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = BUL_a_black_sea_fleet
 
-		prerequisite = { focus = BUL_negotiate_bulgarian_rearmament }
-		icon = GFX_focus_generic_destroyer
-		relative_position_id = BUL_negotiate_bulgarian_rearmament
-		x = 12
-		y = 1
-		cost = 10
-
-		available = {
-			NOT = { has_idea = BUL_army_restrictions }
-		}
-		
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		completion_reward = {
-			navy_experience = 15
-			add_doctrine_cost_reduction = {
-				name = BUL_a_black_sea_fleet
-			    cost_reduction = 0.35
-			    uses = 1
-				category = naval_doctrine
-			}
-			add_tech_bonus = {
-				name = BUL_a_black_sea_fleet
-			    bonus = 1.0
-			    uses = 2
-				category = dd_tech
-			}
-			if = { 
-				limit = { has_dlc = "Man the Guns" }
-				set_technology = { coastal_defense_ships = 1 } 
-			}
-
-			effect_tooltip = {
-				if = {
-					limit = {
-						country_exists = ENG
-						NOT = { has_war_with = ENG }
-						ENG = { BUL_is_valid_subject = yes }
-					}
-					activate_targeted_decision = { target = ENG decision = BUL_naval_agreements }
-				}
-				if = {
-					limit = {
-						country_exists = SOV
-						NOT = { has_war_with = SOV }
-						SOV = { BUL_is_valid_subject = yes }
-					}
-					activate_targeted_decision = { target = SOV decision = BUL_naval_agreements }
-				}
-				if = {
-					limit = {
-						country_exists = ITA
-						NOT = { has_war_with = ITA }
-						ITA = { BUL_is_valid_subject = yes }
-					}
-					activate_targeted_decision = { target = ITA decision = BUL_naval_agreements }
-				}
-			}
-			hidden_effect = {
-				activate_targeted_decision = { target = ENG decision = BUL_naval_agreements }
-				activate_targeted_decision = { target = SOV decision = BUL_naval_agreements }
-				activate_targeted_decision = { target = ITA decision = BUL_naval_agreements }
-			}
-		}
-	}
-
-	focus = {
-		id = BUL_improve_coastal_defenses
-
-		prerequisite = { focus = BUL_a_black_sea_fleet }
-		icon = GFX_focus_generic_coastal_fort
-		relative_position_id = BUL_a_black_sea_fleet
-		x = -3
-		y = 1
-		cost = 10
-
-		available = {
-			211 = {
-				is_owned_by = BUL
-			}
-		}
-		
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		completion_reward = {
-			211 = {
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = {
-						all_provinces = yes
-						limit_to_coastal = yes
-					}
-				}
-				add_building_construction = {
-					type = coastal_bunker
-					level = 2
-					instant_build = yes
-					province = {
-						all_provinces = yes
-						limit_to_coastal = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					77 = {
-						is_owned_by = BUL
-					}
-				}
-				77 = {
-					add_building_construction = {
-						type = bunker
-						level = 2
-						instant_build = yes
-						province = {
-							all_provinces = yes
-							limit_to_coastal = yes
-						}
-					}
-					add_building_construction = {
-						type = coastal_bunker
-						level = 2
-						instant_build = yes
-						province = {
-							all_provinces = yes
-							limit_to_coastal = yes
-						}
-					}
-				}
-			}
-			add_tech_bonus = {
-				name = BUL_improve_coastal_defenses
-			    bonus = 1.0
-			    uses = 1
-				category = artillery
-			}
-		}
-	}
-
-	focus = {
-		id = BUL_reinforce_naval_bases
-
-		prerequisite = { focus = BUL_improve_coastal_defenses }
-		icon = GFX_goal_generic_fortify_city
-		relative_position_id = BUL_improve_coastal_defenses
-		x = 0
-		y = 1
-		cost = 10
-		mutually_exclusive = { focus = BUL_defensive_lines }
-
-		available = {
-			any_controlled_state = {
-				OR = {
-					is_core_of = BUL
-					has_state_flag = BUL_historical_bulgarian_claim_flag
-				}
-				is_coastal = yes
-			}
-		}
-		
-		completion_reward = {
-			custom_effect_tooltip = BUL_reinforce_naval_bases_tt
-			every_controlled_state = {
-				limit = {
-					OR = {
-						is_core_of = BUL
-						has_state_flag = BUL_historical_bulgarian_claim_flag
-					}
-					is_coastal = yes
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = {
-						all_provinces = yes
-						limit_to_naval_base = yes
-						limit_to_victory_point > 0
-					}
-				}
-				add_building_construction = {
-					type = coastal_bunker
-					level = 2
-					instant_build = yes
-					province = {
-						all_provinces = yes
-						limit_to_naval_base = yes
-						limit_to_victory_point > 1
-					}
-				}
-				add_building_construction = {
-					type = anti_air_building
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = naval_base
-					level = 2
-					instant_build = yes
-					province = {
-						all_provinces = yes
-						limit_to_naval_base = yes
-						limit_to_victory_point > 0
-					}
-				}
-			}
-		}
-	}
-	focus = {
-		id = BUL_national_submarine_production
-
-		prerequisite = { focus = BUL_a_black_sea_fleet }
-		icon = GFX_goal_generic_navy_submarine
-		relative_position_id = BUL_a_black_sea_fleet
-		x = -1
-		y = 1
-		cost = 10
-
-		available = {
-
-		}
-		
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		completion_reward = {
-			add_tech_bonus = {
-				name = BUL_national_submarine_production
-			    bonus = 1.0
-			    uses = 2
-			    category = ss_tech
-			}
-		}
-	}
-
-	focus = {
-		id = BUL_bulgarian_shipping_chamber
-
-		prerequisite = { focus = BUL_a_black_sea_fleet }
-		icon = GFX_goal_generic_navy_cruiser
-		relative_position_id = BUL_a_black_sea_fleet
-		x = 0
-		y = 2
-		cost = 10
-
-		available = {
-			controls_state = 211
-		}
-		
-		search_filters = {FOCUS_FILTER_INDUSTRY}
-		completion_reward = {
-			211 = {
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = naval_base
-					level = 1
-					instant_build = yes
-					province = {
-						all_provinces = yes
-						limit_to_naval_base = yes
-					}
-				}
-			}
-			add_equipment_to_stockpile = {
-				type = convoy
-				amount = 50
-			}
-			add_ideas = BUL_bulgarian_shipping_chamber
-		}
-	}
-
-	focus = {
-		id = BUL_strike_from_the_seas
-
-		prerequisite = { focus = BUL_bulgarian_shipping_chamber }
-		icon = GFX_goal_generic_amphibious_assault
-		relative_position_id = BUL_bulgarian_shipping_chamber
-		x = 0
-		y = 1
-		cost = 10
-		mutually_exclusive = { focus = BUL_a_powerful_bulgarian_navy }
-
-		available = {
-
-		}
-		
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		completion_reward = {
-			army_experience = 15
-			navy_experience = 15
-			add_tech_bonus = {
-				name = BUL_strike_from_the_seas
-			    bonus = 1.0
-			    uses = 2
-			    category = marine_tech
-			    category = tp_tech
-			}
-		}
-	}
-
-	focus = {
-		id = BUL_expand_varna_naval_base
-
-		prerequisite = { focus = BUL_acquire_modern_tools }
-		icon = GFX_goal_generic_build_navy
-		relative_position_id = BUL_acquire_modern_tools
-		x = 15
-		y = 2
-		cost = 10
-
-		available = {
-			controls_state = 211
-		}
-		
-		search_filters = {FOCUS_FILTER_INDUSTRY}
-		completion_reward = {
-			navy_experience = 15
-			211 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = naval_base
-					level = 2
-					instant_build = yes
-					province = 9783
-				}
-			}
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = BUL_varna_naval_dockyard
-		}
-	}
-
-	focus = {
-		id = BUL_develop_burgas_shipyards
-
-		prerequisite = { focus = BUL_expand_varna_naval_base }
-		icon = GFX_goal_generic_construct_naval_dockyard
-		relative_position_id = BUL_expand_varna_naval_base
-		x = 0
-		y = 1
-		cost = 10
-
-		available = {
-			controls_state = 211
-		}
-		
-		search_filters = {FOCUS_FILTER_INDUSTRY}
-		completion_reward = {
-			navy_experience = 15
-			211 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = naval_base
-					level = 2
-					instant_build = yes
-					province = 9902
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = BUL_an_aegean_sea_fleet
-
-		prerequisite = { focus = BUL_a_black_sea_fleet }
-		prerequisite = { focus = BUL_develop_burgas_shipyards }
-		icon = GFX_focus_generic_cruiser2
-		relative_position_id = BUL_a_black_sea_fleet
-		x = 2
-		y = 2
-		cost = 10
-
-		available = {
-			any_controlled_state = {
-				BUL_state_is_in_the_aegean_sea = yes
-				dockyard > 0
-			}
-		}
-		
-		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
-		completion_reward = {
-			navy_experience = 25
-			add_tech_bonus = {
-				name = BUL_an_aegean_sea_fleet
-			    bonus = 1.0
-			    uses = 2
-			    category = cl_tech
-			    category = ca_tech
-			}
-			BUL_replace_national_naval_designer = yes
-
-			custom_effect_tooltip = BUL_an_aegean_sea_fleet_tt
-			every_controlled_state = {
-				limit = {
-					BUL_state_is_in_the_aegean_sea = yes
-					dockyard > 0
-				}
-				add_building_construction = {
-					type = naval_base
-					level = 1
-					instant_build = yes
-					province = {
-						all_provinces = yes
-						limit_to_naval_base = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = BUL_a_powerful_bulgarian_navy
-
-		prerequisite = { focus = BUL_an_aegean_sea_fleet }
-		icon = GFX_focus_generic_navy_battleship2
-		relative_position_id = BUL_an_aegean_sea_fleet
-		x = 0
-		y = 1
-		cost = 10
-		mutually_exclusive = { focus = BUL_strike_from_the_seas }
-
-		available = {
-
-		}
-		
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		completion_reward = {
-			navy_experience = 25
-			add_doctrine_cost_reduction = {
-				name = BUL_a_powerful_bulgarian_navy
-			    cost_reduction = 0.5
-			    uses = 1
-			    category = naval_doctrine
-			}
-			add_tech_bonus = {
-				name = BUL_a_powerful_bulgarian_navy
-				bonus = 0.75
-				uses = 1
-				category = bb_tech
-			}
-		}
-	}
-
-	focus = {
-		id = BUL_modern_tactics
-
-		prerequisite = { focus = BUL_strike_from_the_seas focus = BUL_a_powerful_bulgarian_navy }
-		icon = GFX_goal_generic_air_naval_bomber
-		relative_position_id = BUL_strike_from_the_seas
-		x = 1
-		y = 1
-		cost = 10
-
-		available = {
-
-		}
-		
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		completion_reward = {
-			navy_experience = 25
-			add_doctrine_cost_reduction = {
-				name = BUL_modern_tactics
-			    cost_reduction = 0.5
-			    uses = 2
-			    category = naval_doctrine
-			}
-			add_tech_bonus = {
-				name = BUL_modern_tactics
-			    bonus = 0.75
-			    uses = 1
-			    category = naval_air
-			}
-		}
-	}
 ##     ## ####  ######  ########  #######  ########  ####  ######     ###    ##          ########  ########     ###    ##    ##  ######  ##     ## 
 ##     ##  ##  ##    ##    ##    ##     ## ##     ##  ##  ##    ##   ## ##   ##          ##     ## ##     ##   ## ##   ###   ## ##    ## ##     ## 
 ##     ##  ##  ##          ##    ##     ## ##     ##  ##  ##        ##   ##  ##          ##     ## ##     ##  ##   ##  ####  ## ##       ##     ## 
@@ -1837,12 +1343,22 @@ focus_tree = {
 ##     ## ####  ######     ##     #######  ##     ## ####  ######  ##     ## ########    ########  ##     ## ##     ## ##    ##  ######  ##     ## 
 
 
+
+########    ###     ######   ######  ####  ######  ########    ########  ########     ###    ##    ##  ######  ##     ## 
+##         ## ##   ##    ## ##    ##  ##  ##    ##    ##       ##     ## ##     ##   ## ##   ###   ## ##    ## ##     ## 
+##        ##   ##  ##       ##        ##  ##          ##       ##     ## ##     ##  ##   ##  ####  ## ##       ##     ## 
+######   ##     ##  ######  ##        ##   ######     ##       ########  ########  ##     ## ## ## ## ##       ######### 
+##       #########       ## ##        ##        ##    ##       ##     ## ##   ##   ######### ##  #### ##       ##     ## 
+##       ##     ## ##    ## ##    ##  ##  ##    ##    ##       ##     ## ##    ##  ##     ## ##   ### ##    ## ##     ## 
+##       ##     ##  ######   ######  ####  ######     ##       ########  ##     ## ##     ## ##    ##  ######  ##     ## 
+
+
 	focus = {
 		id = BUL_power_to_the_tsar
 
 		icon = GFX_focus_BUL_power_to_the_tsar
 		relative_position_id = BUL_acquire_modern_tools
-		x = 22
+		x = 14
 		y = 0
 		cost = 1
 
@@ -1871,12 +1387,53 @@ focus_tree = {
 	}
 
 	focus = {
+		id = BUL_appoint_right_wing_ministers
+
+		prerequisite = { focus = BUL_power_to_the_tsar }
+		icon = GFX_focus_generic_diplomatic_treaty
+		relative_position_id = BUL_power_to_the_tsar
+		x = 0
+		y = 1
+		cost = 10
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS}
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.2
+			}
+			if = {
+				limit = {
+					NOT = { has_government = fascism }
+				}
+				set_politics = {
+					ruling_party = fascism
+				}
+			}
+			add_political_power = 70
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = BUL_nikola_zhekov
+			BUL_zveno_low_loyalty_increase_effect = yes
+			BUL_bs_low_loyalty_decrease_effect = yes
+			BUL_bzns_low_loyalty_increase_effect = yes
+			BUL_nsm_low_loyalty_increase_effect = yes
+			custom_effect_tooltip = BUL_appoint_right_wing_ministers_tt
+		}
+	}
+
+
+
+	focus = {
 		id = BUL_condemn_macedonian_organizations
 
 		prerequisite = { focus = BUL_power_to_the_tsar  }
 		icon = GFX_focus_BUL_condemn_macedonian_organizations
 		relative_position_id = BUL_power_to_the_tsar
-		x = -4
+		x = -2
 		y = 1
 		cost = 5
 		available = {
@@ -1921,7 +1478,7 @@ focus_tree = {
 		prerequisite = { focus = BUL_power_to_the_tsar  }
 		icon = GFX_focus_BUL_cooperate_with_the_zveno
 		relative_position_id = BUL_power_to_the_tsar
-		x = -2
+		x = 2
 		y = 1
 		cost = 5
 
@@ -1950,9 +1507,9 @@ focus_tree = {
 
 		prerequisite = { focus = BUL_appoint_right_wing_ministers }
 		icon = GFX_focus_BUL_promote_bulgarian_nationalism
-		relative_position_id = BUL_power_to_the_tsar
-		x = -4
-		y = 3
+		relative_position_id = BUL_appoint_right_wing_ministers
+		x = -3
+		y = 2
 		cost = 10
 
 		available = {
@@ -1972,9 +1529,9 @@ focus_tree = {
 
 		prerequisite = { focus = BUL_appoint_right_wing_ministers }
 		icon = GFX_focus_spr_crush_the_revolution
-		relative_position_id = BUL_power_to_the_tsar
-		x = -3
-		y = 2
+		relative_position_id = BUL_appoint_right_wing_ministers
+		x = -2
+		y = 1
 		cost = 5
 
 		available = {
@@ -2023,9 +1580,9 @@ focus_tree = {
 		prerequisite = { focus = BUL_promote_bulgarian_nationalism }
 
 		icon = GFX_focus_generic_concessions
-		relative_position_id = BUL_crush_the_communists
-		x = -2
-		y = 2
+		relative_position_id = BUL_promote_bulgarian_nationalism
+		x = -1
+		y = 1
 		cost = 10
 
 		available = {
@@ -2065,9 +1622,9 @@ focus_tree = {
 		prerequisite = { focus = BUL_promote_bulgarian_nationalism }
 
 		icon = GFX_focus_BUL_found_the_brannik
-		relative_position_id = BUL_crush_the_communists
-		x = -1
-		y = 3
+		relative_position_id = BUL_promote_bulgarian_nationalism
+		x = 0
+		y = 2
 		cost = 10
 
 		mutually_exclusive = { focus = BUL_depose_the_tsar }
@@ -2088,9 +1645,9 @@ focus_tree = {
 		prerequisite = { focus = BUL_promote_bulgarian_nationalism focus = BUL_the_path_towards_a_greater_bulgaria }
 
 		icon = GFX_goal_generic_territory_or_war
-		relative_position_id = BUL_crush_the_communists
-		x = 0
-		y = 2
+		relative_position_id = BUL_promote_bulgarian_nationalism
+		x = 1
+		y = 1
 		cost = 10
 
 		available = {
@@ -2107,45 +1664,6 @@ focus_tree = {
 			}
 		}
 	}
-########    ###     ######   ######  ####  ######  ########    ########  ########     ###    ##    ##  ######  ##     ## 
-##         ## ##   ##    ## ##    ##  ##  ##    ##    ##       ##     ## ##     ##   ## ##   ###   ## ##    ## ##     ## 
-##        ##   ##  ##       ##        ##  ##          ##       ##     ## ##     ##  ##   ##  ####  ## ##       ##     ## 
-######   ##     ##  ######  ##        ##   ######     ##       ########  ########  ##     ## ## ## ## ##       ######### 
-##       #########       ## ##        ##        ##    ##       ##     ## ##   ##   ######### ##  #### ##       ##     ## 
-##       ##     ## ##    ## ##    ##  ##  ##    ##    ##       ##     ## ##    ##  ##     ## ##   ### ##    ## ##     ## 
-##       ##     ##  ######   ######  ####  ######     ##       ########  ##     ## ##     ## ##    ##  ######  ##     ## 
-
-
-	focus = {
-		id = BUL_appoint_right_wing_ministers
-
-		prerequisite = { focus = BUL_power_to_the_tsar }
-		icon = GFX_focus_generic_diplomatic_treaty
-		relative_position_id = BUL_acquire_modern_tools
-		x = 22
-		y = 1
-		cost = 10
-
-		available = {
-
-		}
-		
-		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS}
-		completion_reward = {
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.05
-			}
-			add_political_power = 70
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = BUL_nikola_zhekov
-			BUL_zveno_low_loyalty_increase_effect = yes
-			BUL_bs_low_loyalty_decrease_effect = yes
-			BUL_bzns_low_loyalty_increase_effect = yes
-			BUL_nsm_low_loyalty_increase_effect = yes
-			custom_effect_tooltip = BUL_appoint_right_wing_ministers_tt
-		}
-	}
 
 	focus = {
 		id = BUL_the_path_towards_a_greater_bulgaria
@@ -2153,7 +1671,7 @@ focus_tree = {
 		prerequisite = { focus = BUL_appoint_right_wing_ministers }
 		icon = GFX_focus_generic_strike_at_democracy1
 		relative_position_id = BUL_appoint_right_wing_ministers
-		x = -2
+		x = -1
 		y = 2
 		cost = 10
 
@@ -2165,7 +1683,7 @@ focus_tree = {
 		completion_reward = {
 			add_popularity = {
 				ideology = fascism
-				popularity = 0.1
+				popularity = 0.02
 			}
 			add_war_support = 0.05
 			#Change economy law to the next one
@@ -2231,111 +1749,33 @@ focus_tree = {
 				}
 				remove_ideas = BUL_georgi_ivanov_kyoseivanov
 			}
-
-			if = { #Low Stability triggers a Civil War
+			random_unit_leader = {
 				limit = {
-					has_stability < 0.3
+					has_id = 1204 #Boydev
 				}
-				set_temp_variable = { BUL_fascist_cw_opposition = party_popularity@neutrality }
-				multiply_temp_variable = { BUL_fascist_cw_opposition = 0.25 }
-				add_to_temp_variable = { BUL_fascist_cw_opposition = party_popularity@democratic }
-				add_to_temp_variable = { BUL_fascist_cw_opposition = party_popularity@communism }
-				set_politics = {
-					ruling_party = fascism
-				}
-				hidden_effect = { #Generates undesired "Politics will change" tooltip
-					every_unit_leader = {
-						limit = {
-							OR = {
-								has_id = 1207 #Asen Nikolov
-								has_id = 1208 #Konstantin Lukash
-							}
-							NOT = { has_trait = trait_BUL_zveno_member }
-						}
-						add_unit_leader_trait = trait_BUL_tsar_loyalist
-					}
-
-					start_civil_war = {	
-						ideology = neutrality
-						size = BUL_fascist_cw_opposition
-						capital = 48
-						states = { 212 }
-						keep_unit_leaders_trigger = {
-							NOT = {	has_trait = trait_BUL_tsar_loyalist }
-						}
-					}
-
-					every_unit_leader = {
-						limit = {
-							has_trait = trait_BUL_tsar_loyalist
-						}
-						random_other_country = {
-							limit = {
-								original_tag = BUL
-								has_government = neutrality
-							}
-							PREV = { set_nationality = PREV }
-						}
-					}
-					random_other_country = {
-						limit = { 
-							original_tag = BUL 
-							has_government = neutrality }
-							promote_character = {
-								character = BUL_georgi_ivanov_kyoseivanov
-								ideology = moderatism 
-							}
-					}
-
-					#Operatives
-					if = {
-						limit = {
-							has_dlc = "La Resistance"
-						}
-						every_operative = {
-							limit = {
-								has_trait = trait_BUL_tsar_loyalist
-							}
-							retire = yes
-						}
-					}
-				}
-				custom_effect_tooltip = BUL_depose_the_tsar_cw_tt
-				clr_country_flag = BUL_factions_unlocked_flag
-				promote_character = { 
-					character = BUL_georgi_ivanov_kyoseivanov
-					ideology = moderatism
-				}		
+				retire = yes
 			}
-			else = {
-				random_unit_leader = {
-					limit = {
-						has_id = 1204 #Boydev
-					}
-					retire = yes
+			every_unit_leader = {
+				limit = {
+					NOT = { has_id = 1204 } #Boydev
+					has_trait = trait_BUL_tsar_loyalist
 				}
-				every_unit_leader = {
-					limit = {
-						NOT = { has_id = 1204 } #Boydev
-						has_trait = trait_BUL_tsar_loyalist
-					}
-					custom_effect_tooltip = BUL_remove_tsar_loyalist_trait_tt
-					remove_unit_leader_trait = trait_BUL_tsar_loyalist
-				}
-				if = {
-					limit = {
-						has_country_leader = {
-							character = BUL_boris_iii
-						}
-					}
-					retire_country_leader = yes
-				}
-				promote_character = { 
-					character = BUL_georgi_ivanov_kyoseivanov
-					ideology = moderatism
-				}
-				add_stability = -0.1
+				custom_effect_tooltip = BUL_remove_tsar_loyalist_trait_tt
+				remove_unit_leader_trait = trait_BUL_tsar_loyalist
 			}
+			if = {
+				limit = {
+					has_country_leader = {
+						character = BUL_boris_iii
+					}
+				}
+				retire_country_leader = yes
+			}
+			promote_character = { 
+				character = BUL_georgi_ivanov_kyoseivanov
+				ideology = moderatism
+			}
+			add_stability = -0.1
 
 			BUL_zveno_low_loyalty_increase_effect = yes
 			BUL_bs_low_loyalty_increase_effect = yes
@@ -2386,7 +1826,7 @@ focus_tree = {
 		prerequisite = { focus = BUL_appoint_right_wing_ministers }
 		icon = GFX_goal_generic_dangerous_deal
 		relative_position_id = BUL_appoint_right_wing_ministers
-		x = 0
+		x = 1
 		y = 2
 		cost = 10
 
@@ -2447,7 +1887,7 @@ focus_tree = {
 		prerequisite = { focus = BUL_appoint_right_wing_ministers }
 		icon = GFX_focus_generic_self_management
 		relative_position_id = BUL_appoint_right_wing_ministers
-		x = 1
+		x = 2
 		y = 1
 		cost = 10
 
@@ -2560,10 +2000,10 @@ focus_tree = {
 		prerequisite = { focus = BUL_bulgarian_irredentism }
 
 		icon = GFX_focus_chi_mission_to_germany
-		relative_position_id = BUL_bulgarian_irredentism
-		x = 2
-		y = 2
-		cost = 10
+		relative_position_id = BUL_the_path_towards_a_greater_bulgaria
+		x = 1
+		y = 3
+		cost = 5
 
 		bypass = {
 			OR = {
@@ -2723,7 +2163,7 @@ focus_tree = {
 		relative_position_id = BUL_approach_germany
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 
 		bypass = {
 			OR = {
@@ -2818,145 +2258,14 @@ focus_tree = {
 	}
 
 	focus = {
-		id = BUL_join_the_tripartite_pact
+		id = BUL_peaceful_development
 
 		prerequisite = { focus = BUL_approach_germany }
 
-		dynamic = yes
-
-		icon = GFX_goal_support_fascism
+		icon = GFX_goal_generic_position_armies
 		relative_position_id = BUL_approach_germany
 		x = 0
 		y = 2
-		cost = 5
-
-		bypass = {
-			OR = {
-				is_subject = yes
-				AND = {
-					is_in_faction_with = GER
-					OR = {
-						has_government = fascism
-						has_government = neutrality
-					}
-				}
-			}
-		}
-
-		available = {
-			threat > 0.35
-			OR = {
-				AND = {
-					GER = { is_faction_leader = yes }
-					NOT = { is_justifying_wargoal_against = ROOT }
-					NOT = { has_war_with = ROOT }
-				}
-				AND = {
-					ITA = {
-						is_faction_leader = yes
-						is_in_faction_with = GER
-						NOT = { is_justifying_wargoal_against = ROOT }
-						NOT = { has_war_with = ROOT }
-					}
-				}
-			}			
-			OR = {
-				AND = {
-					OR = {
-						has_government = fascism
-						has_government = neutrality
-					}
-					GER = { has_government = fascism }
-				}
-				AND = {
-					has_government = neutrality
-					GER = { has_government = neutrality }
-				}
-			}
-			is_in_faction = no
-			is_subject = no
-		}
-		
-		search_filters = {FOCUS_FILTER_ANNEXATION}
-		completion_reward = {
-			if = {
-				limit = {
-					OR = {
-						has_government = fascism
-						GER = { has_government = fascism }
-					}
-				}
-				#Using separate scopes for tooltip reasons
-				if = {
-					limit = {
-						has_unit_leader = 1203
-					}
-					random_unit_leader = {
-						limit = {
-							has_id = 1203 #Hadzhipetkov
-						}
-						retire = yes
-					}
-				}
-				if = {
-					limit = {
-						has_unit_leader = 1204
-					}
-					random_unit_leader = {
-						limit = {
-							has_id = 1204 #Boydev
-						}
-						retire = yes
-					}
-				}			
-			}
-			GER = { country_event = { id = generic.2 hours = 4 random_hours = 2 } }
-			custom_effect_tooltip = BUL_join_the_tripartite_pact_tt
-			if = {
-				limit = {
-					any_state = {
-						BUL_is_balkan_state = yes
-						has_state_flag = BUL_bulgarian_claim_warranted_flag
-					}
-				}
-				custom_effect_tooltip = BUL_join_the_tripartite_pact_warranted_claims_tt
-				every_state = {
-					limit = {
-						BUL_is_balkan_state = yes
-						has_state_flag = BUL_bulgarian_claim_warranted_flag
-					}
-				}
-			}
-
-			GER = {
-				add_ai_strategy = {
-					type = befriend
-					id = ROOT
-					value = 100
-				}
-			}
-			add_ai_strategy = {
-				type = befriend
-				id = GER
-				value = 100
-			}
-
-			add_ai_strategy = { #We want to garrison our potentially newly-acquired territorial claims
-				type = garrison
-				value = 25
-			}
-		}
-	}
-
-	focus = {
-		id = BUL_peaceful_development
-
-		prerequisite = { focus = BUL_join_the_tripartite_pact }
-
-		icon = GFX_goal_generic_position_armies
-		relative_position_id = BUL_join_the_tripartite_pact
-		x = 0
-		y = 1
 		cost = 10
 
 		bypass = {
@@ -2991,9 +2300,9 @@ focus_tree = {
 		prerequisite = { focus = BUL_peaceful_development  }
 
 		icon = GFX_focus_BUL_bulgarian_administration_of_the_balkans
-		relative_position_id = BUL_join_the_tripartite_pact
+		relative_position_id = BUL_peaceful_development
 		x = 0
-		y = 2
+		y = 1
 		cost = 20
 
 		available = {
@@ -3235,3 +2544,4 @@ focus_tree = {
 		}
 	}
 }
+
