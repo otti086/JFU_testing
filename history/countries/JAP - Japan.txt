@@ -193,8 +193,12 @@ if = {
 }
 set_autonomy = {
 		target = MAN
-		autonomous_state = autonomy_wtt_imperial_protectorate
-	}
+		autonomous_state = autonomy_wtt_imperial_associate 
+}
+set_autonomy = {
+		target = JAP
+		autonomous_state = autonomy_wtt_imperial_associate 
+}
 set_convoys = 400
 
 set_politics = {

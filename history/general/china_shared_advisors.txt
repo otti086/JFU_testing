@@ -51,7 +51,6 @@ every_possible_country = {
 			slot = air_chief
 			cost = 25
 			available = {
-				has_completed_focus = CHI_hire_chennault
 				NOT = { 
 					has_idea = CHI_claire_lee_chennault_theorist
 				}
@@ -67,7 +66,6 @@ every_possible_country = {
 			ledger = air
 			cost = 25
 			available = {
-				has_completed_focus = CHI_hire_chennault
 				NOT = { 
 					has_idea = CHI_claire_lee_chennault_air_chief
 				}
