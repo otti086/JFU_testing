@@ -95,7 +95,20 @@ JFU_decisions = {
 		icon = ger_reichskommissariats
 		fire_only_once = yes	
 		allowed = { 	tag = GER 	}
-		available = { 	date > 1941.6.21	}	
+		available = { 			
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = JFU_WAR_GOAL_DATES 
+						option = JFU_STANDARD
+					}
+				}
+				date > 1941.6.21
+			}
+			else = {
+				always = yes
+			}	
+		}	
 		cost = 0		
 		complete_effect = {
 			declare_war_on = {

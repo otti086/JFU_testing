@@ -286,7 +286,6 @@ CHI_befriend_britain = {
 	focus_factors = {
 		CHI_burma_road = 20
 		CHI_ledo_road = 20
-		CHI_fighter_purchases = 20
 	}
 
 	research = {
@@ -433,7 +432,6 @@ CHI_befriend_Soviet = {
 		}
 	}
 	focus_factors = {
-		CHI_the_soviet_volunteer_group = 20
 		CHI_rapprochement_with_soviet_union = 20
 		CHI_purchase_tanks = 20
 		CHI_experimental_mechanised_unit = 20

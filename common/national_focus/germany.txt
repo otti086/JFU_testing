@@ -1116,6 +1116,44 @@ focus_tree = {
 	}
 
 	focus = {
+		id = GER_form_the_reichskommissariats
+		icon = GFX_focus_ger_reichskommisariats
+		prerequisite = { focus = GER_german_war_economy focus = GER_integrate_war_economies }
+		available = {
+		}
+		allow_branch = {
+			has_game_rule = {
+				rule = JFU_REICHSKOMMISSARIATS 
+				option = JFU_ALTERNATIVE_RK
+			}
+		}
+		x = 1
+		y = 1
+		relative_position_id = GER_integrate_war_economies
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			every_state = {
+				limit = {
+					AND = {
+						OR = {
+							is_core_of = HOL
+							is_core_of = BEL
+							is_core_of = NOR 
+							is_core_of = DEN
+						}
+						is_controlled_by = GER
+					}
+				}
+				add_compliance = 50 
+			}
+		}
+	}
+
+	focus = {
 		id = GER_air_innovation
 		text = air_innovation
 		icon = GFX_goal_generic_build_airforce

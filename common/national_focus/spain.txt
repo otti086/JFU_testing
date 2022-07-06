@@ -1040,14 +1040,14 @@ focus_tree = {
 				290 = { 
 					remove_building = { type = air_base  level = 10 }		 
 				}
-				699 = { 
-					remove_building = { type = air_base  level = 10 }		 
-				}
-				178 = { 
-					remove_building = { type = air_base  level = 10 }		 
-				}
+
 				177 = { 
-					remove_building = { type = air_base  level = 10 }		 
+					remove_building = { type = air_base  level = 10 }
+					set_building_level = {
+						type = anti_air_building
+						level = 10
+						instant_build = yes
+					}		 
 				}
 			}
 		}

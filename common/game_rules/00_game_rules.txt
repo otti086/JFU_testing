@@ -427,6 +427,36 @@ JFU_USA_eco_option = {
 		desc = "Clicking this option will give USA Partial Mob before Germany declared on allies"
 	}
 }
+JFU_WAR_GOAL_DATES = {
+	name = "Wargoal timer Settings"
+	group = "HORST_GROUPKEY"
+	icon = "RULE_GROUP_GENERAL_UI"
+	default = {
+		name = "JFU_STANDARD"
+		text = "Standard JFU Settings"
+		desc = "Clicking this option will limit Germany and Japan to specific dates when they can declare (recommended when played with JFU Standart Ruleset)"
+	}
+	option = {
+		name = "JFU_ALTERNATIVE"
+		text = " Alternative Settings"
+		desc = "Clicking this option will disable limitations for Germany and Japan when they can declare on Soviet/Allies"
+	}
+}
+JFU_REICHSKOMMISSARIATS = {
+	name = "Reichskommissariats Compliance Settings"
+	group = "HORST_GROUPKEY"
+	icon = "RULE_GROUP_GENERAL_UI"
+	default = { 
+		name = "JFU_STANDARD_RK"
+		text = "Standard JFU Settings"
+		desc = "Clicking this option will give Germany free 50 compliance on the Benelux countries as well as Danemark and Norway when they capitulate (recommended when played with JFU Standart Ruleset)"
+	}
+	option = {
+		name = "JFU_ALTERNATIVE_RK"
+		text = " Alternative Settings"
+		desc = "Clicking this option will enable a focus for Germany after which Germany gets the compliance in the Benelux, Danemark and Norway"
+	}
+}
 
 
 

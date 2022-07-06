@@ -272,7 +272,7 @@
 		y = 1
 		relative_position_id = MAN_collective_farms
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 10
@@ -1487,7 +1487,6 @@
 		}
 
 		available = {
-			GER_will_support = yes
 		}
 
 		bypass = {
@@ -1739,7 +1738,7 @@
 		icon = GFX_goal_generic_soviet_construction
 		prerequisite = { focus = CHI_purchase_tanks }
 		prerequisite = { focus = CHI_rapprochement_with_soviet_union }
-		x = 2
+		x = 1
 		y = 1
 		relative_position_id = CHI_purchase_tanks
 
@@ -1766,35 +1765,6 @@
 			}
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = SOV_morozov_design_bureau
-		}
-	}
-
-	focus = {
-		id = CHI_joint_tank_development
-		icon = GFX_goal_generic_scientific_exchange
-		prerequisite = { focus = CHI_hire_soviet_designer }
-		x = 2
-		y = 3
-		relative_position_id = CHI_purchase_tanks
-
-		cost = 10
-
-
-
-		available = {
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			SOV = { add_to_tech_sharing_group = CHI_joint_tank_development }
-			add_to_tech_sharing_group = CHI_joint_tank_development
 		}
 	}
 
@@ -1955,42 +1925,6 @@
 	}
 
 	focus = {
-		id = CHI_the_soviet_volunteer_group
-		icon = GFX_goal_demand_sudetenland
-		prerequisite = { focus = CHI_invite_soviet_advisers }
-		x = 0
-		y = 1
-		relative_position_id = CHI_invite_soviet_advisers
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 4
-				tag = CHI
-			}
-		}
-
-		available = {
-		}
-
-		bypass = {
-			any_other_country = {
-				has_completed_focus = CHI_the_soviet_volunteer_group
-			}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			SOV = { country_event = wtt_china_shared.11 }
-		}
-	}
-
-	focus = {
 		id = CHI_reach_out_to_france
 		icon = GFX_focus_chi_reach_out_to_france
 		mutually_exclusive = { focus = CHI_british_cooperation }
@@ -2006,11 +1940,6 @@
 		}
 
 		available = {
-			OR = {
-				has_government = neutrality
-				FRA = { has_government = ROOT }
-				FRA_will_support = yes
-			}
 			not = {
 				has_war_with = FRA
 			}
@@ -2072,7 +2001,6 @@
 		}
 
 		available = {
-			FRA_will_support = yes
 		}
 
 		bypass = {
@@ -2087,7 +2015,7 @@
 			add_tech_bonus = {
 				name = CHI_small_arms_expertise
 				bonus = 1.0
-				uses = 1
+				uses = 2
 				category = infantry_weapons
 			}
 		}
@@ -2097,7 +2025,7 @@
 		id = CHI_elite_mountaineers
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = CHI_invite_soviet_advisers focus = CHI_small_arms_expertise }
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = CHI_small_arms_expertise
 
@@ -2166,7 +2094,7 @@
 		id = CHI_heavy_weapons
 		icon = GFX_goal_generic_army_artillery2
 		prerequisite = { focus = CHI_elite_mountaineers }
-		x = 0
+		x = -1
 		y = 2
 		relative_position_id = CHI_small_arms_expertise
 		
@@ -2191,7 +2119,7 @@
 			add_tech_bonus = {
 				name = CHI_heavy_weapons
 				bonus = 1.0
-				uses = 1
+				uses = 2
 				category = artillery
 			}
 		}
@@ -2273,10 +2201,6 @@
 		}
 
 		available = {
-			OR = {
-				FRA_will_support = yes
-				ENG_will_support = yes
-			}
 		}
 
 		bypass = {
@@ -2533,6 +2457,9 @@
 		}
 
 		available = {
+			not = {
+				has_war_with = ENG
+			}
 		}
 
 		bypass = {
@@ -2735,56 +2662,12 @@
 	}
 
 	focus = {
-		id = CHI_fighter_purchases
-		icon = GFX_goal_generic_build_airforce
-		prerequisite = { focus = CHI_british_cooperation}
-		x = 3
-		y = 1
-		relative_position_id = CHI_british_cooperation
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 4
-				tag = CHI
-			}
-		}
-
-		available = {
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			custom_effect_tooltip = CHI_purchase_fighters_tt
-			hidden_effect = {
-				if = {
-					limit = {
-						not = {
-							has_tech = early_fighter
-						}
-					}
-					set_technology = { early_fighter = 1 }
-				}
-			}
-		}
-	}
-
-	focus = {
 		id = CHI_camco
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = CHI_fighter_purchases }
-		x = 0
-		y = 1
-		relative_position_id = CHI_fighter_purchases
+		prerequisite = { focus = CHI_british_cooperation }
+		x = 3
+		y = 2
+		relative_position_id = CHI_british_cooperation
 
 		cost = 10
 
@@ -2819,8 +2702,8 @@
 		prerequisite = { focus = CHI_burma_road }
 		prerequisite = { focus = CHI_camco }
 		x = -2
-		y = 2
-		relative_position_id = CHI_fighter_purchases
+		y = 1
+		relative_position_id = CHI_camco
 
 		cost = 10
 
@@ -2883,8 +2766,8 @@
 		icon = GFX_goal_generic_air_production
 		prerequisite = { focus = CHI_camco }
 		x = 1
-		y = 3
-		relative_position_id = CHI_fighter_purchases
+		y = 2
+		relative_position_id = CHI_camco
 
 		cost = 10
 
@@ -3063,7 +2946,6 @@
 		}
 
 		available = {
-			USA_will_support = yes
 		}
 
 		bypass = {
@@ -3099,7 +2981,6 @@
 		}
 
 		available = {
-			USA_will_support = yes
 		}
 
 		bypass = {
@@ -3135,10 +3016,6 @@
 		}
 
 		available = {
-			OR = {
-				USA_will_support = yes
-				JAP_will_support = yes
-			}
 		}
 
 		bypass = {
@@ -3175,10 +3052,6 @@
 		}
 
 		available = {
-			OR = {
-				USA_will_support = yes
-				JAP_will_support = yes
-			}
 		}
 
 		bypass = {
@@ -3217,10 +3090,6 @@
 			any_state = {
 				is_controlled_by = ROOT
 				is_coastal = yes
-			}
-			OR = {
-				USA_will_support = yes
-				JAP_will_support = yes
 			}
 		}
 
@@ -3276,10 +3145,6 @@
 		}
 
 		available = {
-			OR = {
-				USA_will_support = yes
-				JAP_will_support = yes
-			}
 		}
 
 		bypass = {
@@ -3315,10 +3180,6 @@
 		}
 
 		available = {
-			OR = {
-				USA_will_support = yes
-				JAP_will_support = yes
-			}
 		}
 
 		bypass = {
@@ -3358,7 +3219,6 @@
 		}
 
 		available = {
-			JAP_will_support = yes
 		}
 
 		bypass = {
@@ -3394,7 +3254,6 @@
 		}
 
 		available = {
-			JAP_will_support = yes
 		}
 
 		bypass = {

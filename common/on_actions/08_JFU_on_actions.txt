@@ -170,7 +170,7 @@ on_actions = {
 					NOT = {
 						has_game_rule = {
 							rule = JFU_pre_grinded_generals
-							option = PRE_GRINDED_GENERALS_OFF
+							option = PRE_GRINDED_GENERALS_ON
 						}
 					}
 				}
@@ -200,64 +200,96 @@ on_actions = {
 	}
 	on_capitulation = {
 		effect = {
-			if = { 
+			if = {
 				limit = {
-					original_tag = HOL
-				}
-				every_state = {
-					limit = {
-						AND = {
-							is_core_of = HOL
-							is_controlled_by = GER
-						}
+					has_game_rule = {
+						rule = JFU_REICHSKOMMISSARIATS 
+						option = JFU_STANDARD_RK
 					}
-				
-					add_compliance = 50 
+				}
+				if = { 
+					limit = {
+						original_tag = HOL
+					}
+					every_state = {
+						limit = {
+							AND = {
+								is_core_of = HOL
+								is_controlled_by = GER
+							}
+						}
+					
+						add_compliance = 50 
+					}
 				}
 			}
-			if = { 
+			if = {
 				limit = {
-					original_tag = BEL
-				}
-				every_state = {
-					limit = {
-						AND = {
-							is_core_of = BEL
-							is_controlled_by = GER
-						}
+					has_game_rule = {
+						rule = JFU_REICHSKOMMISSARIATS 
+						option = JFU_STANDARD_RK
 					}
-				
-					add_compliance = 50 
+				}
+				if = { 
+					limit = {
+						original_tag = BEL
+					}
+					every_state = {
+						limit = {
+							AND = {
+								is_core_of = BEL
+								is_controlled_by = GER
+							}
+						}
+					
+						add_compliance = 50 
+					}
 				}
 			}
-			if = { 
+			if = {
 				limit = {
-					original_tag = NOR
-				}
-				every_state = {
-					limit = {
-						AND = {
-							is_core_of = NOR
-							is_controlled_by = GER
-						}
+					has_game_rule = {
+						rule = JFU_REICHSKOMMISSARIATS 
+						option = JFU_STANDARD_RK
 					}
-				
-					add_compliance = 50 
+				}
+				if = { 
+					limit = {
+						original_tag = NOR
+					}
+					every_state = {
+						limit = {
+							AND = {
+								is_core_of = NOR
+								is_controlled_by = GER
+							}
+						}
+					
+						add_compliance = 50 
+					}
 				}
 			}
-			if = { 
+			if = {
 				limit = {
-					original_tag = DEN
-				}
-				every_state = {
-					limit = {
-						AND = {
-							is_core_of = DEN
-							is_controlled_by = GER
-						}
+					has_game_rule = {
+						rule = JFU_REICHSKOMMISSARIATS 
+						option = JFU_STANDARD_RK
 					}
-				
-					add_compliance = 50 
+				}
+				if = { 
+					limit = {
+						original_tag = DEN
+					}
+					every_state = {
+						limit = {
+							AND = {
+								is_core_of = DEN
+								is_controlled_by = GER
+							}
+						}
+					
+						add_compliance = 50 
+					}
 				}
 			}
 			if = {

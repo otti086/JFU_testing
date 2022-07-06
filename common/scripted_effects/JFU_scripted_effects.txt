@@ -770,4 +770,8 @@ JFU_pre_grinded_generals_ON = {
 		recruit_character = USA_lucian_truscott_grinded
 		recruit_character = USA_george_s_patton_grinded
 	}
-}					
+}
+HMP_anti_building_exploit_effect = { #add to horst tool
+every_state = { limit = { ignore_aa_states = yes non_damaged_building_level  = { building = anti_air_building  level > 5 } } remove_building  = {  type = anti_air_building  level = 1 }  }  
+every_state = { limit = {  non_damaged_building_level  = { building = infrastructure  level > 5 } } remove_building  = {  type = infrastructure  level = 1 }  }  
+}				

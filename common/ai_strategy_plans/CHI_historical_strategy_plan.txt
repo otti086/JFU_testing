@@ -36,8 +36,6 @@ CHI_nationalist_historical_plan = {
 		CHI_invite_soviet_advisers #April 30 1938
 		CHI_army_reform #July 10 1938
 		CHI_burma_road #September 20 1938
-		CHI_the_soviet_volunteer_group #November 30 1938
-		CHI_fighter_purchases #February 10 1938
 		CHI_camco #April 20 1939
 		CHI_three_principles_of_the_people #June 30 1939
 		CHI_nationalism #September 10 1939

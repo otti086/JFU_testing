@@ -272,6 +272,11 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 4199;5407;impassable;-1;-1;-1;-1;-1;;Spainish Africa;Med;Border;;
 7215;5407;impassable;-1;-1;-1;-1;-1;;Spainish Africa;Med;Border;;
 12100;5407;impassable;-1;-1;-1;-1;-1;;Spainish Africa;Med;Border;;
+10821;5087;impassable;-1;-1;-1;-1;-1;;India Nordern Border;;
+10821;1970;impassable;-1;-1;-1;-1;-1;;India Nordern Border;;
+5042;1970;impassable;-1;-1;-1;-1;-1;;India Nordern Border;;
+5042;8112;impassable;-1;-1;-1;-1;-1;;India Nordern Border;;
+5042;4973;impassable;-1;-1;-1;-1;-1;;India Nordern Border;;
 
 2800;2776;;-1;-1;-1;-1;-1;Aden_Strait;Aden Strait;
 
