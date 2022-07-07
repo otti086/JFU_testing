@@ -453,7 +453,7 @@ JFU_REICHSKOMMISSARIATS = {
 	}
 	option = {
 		name = "JFU_ALTERNATIVE_RK"
-		text = " Alternative Settings"
+		text = "Alternative Settings"
 		desc = "Clicking this option will enable a focus for Germany after which Germany gets the compliance in the Benelux, Danemark and Norway"
 	}
 }
@@ -482,6 +482,21 @@ JFU_SPECIAL_FORCES_CAP = {
 		desc = "Clicking this option will remove the cap completly"
 	}
 
+}
+JFU_STRIKE_ON_NR = {
+	name = "Japan strike on the Northern Resource Area Settings"
+	group = "HORST_GROUPKEY"
+	icon = "RULE_GROUP_GENERAL_UI"
+	default = {
+		name = "JFU_STANDARD_NR"
+		text = "Standard JFU Settings"
+		desc = "Clicking this option will disable Strike on the Northern Resource Area"
+	}
+	option = {
+		name = "JFU_ALTERNATIVE_NR"
+		text = "Alternative Settings"
+		desc = "Clicking this option will enable Strike on the Northern Resource Area"
+	}
 }
 
 
