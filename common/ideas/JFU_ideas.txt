@@ -190,5 +190,56 @@ ideas = {
 				army_attack_factor = -0.2
 			}
 		}
+		DOUBLE_SF_CAP = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				special_forces_min = 200
+			}
+		}
+		QUADRUPLE_SF_CAP = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				special_forces_min = 600
+			}
+		}
+		NO_SF_CAP = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				special_forces_min = 8000
+			}
+		}
 	}
 }

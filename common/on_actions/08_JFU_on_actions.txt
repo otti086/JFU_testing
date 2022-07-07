@@ -190,6 +190,54 @@ on_actions = {
 					add_ideas = { HALVED_GRIND }
 				}
 			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = JFU_SPECIAL_FORCES_CAP
+						option = JFU_DOUBLE_CAP
+					}
+				}
+				every_possible_country = {
+					limit = { 
+						NOT = {
+							ai_country = yes 
+						}
+					}
+					add_ideas = DOUBLE_SF_CAP
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = JFU_SPECIAL_FORCES_CAP
+						option = JFU_QUADRUPLE_CAP
+					}
+				}
+				every_possible_country = {
+					limit = { 
+						NOT = {
+							ai_country = yes 
+						}
+					}
+					add_ideas = QUADRUPLE_SF_CAP
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = JFU_SPECIAL_FORCES_CAP
+						option = JFU_NO_CAP
+					}
+				}
+				every_possible_country = {
+					limit = { 
+						NOT = {
+							ai_country = yes 
+						}
+					}
+					add_ideas = NO_SF_CAP
+				}
+			}
 		}
 		
 	}

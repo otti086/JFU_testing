@@ -5896,6 +5896,21 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = SOV_Bessarabia
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = SOV_claims_in_baltic }
+		x = 0
+		y = 1
+		relative_position_id = SOV_claims_in_baltic
+		cost = 5
+
+		completion_reward = {
+			SOV = { transfer_state = 78 }
+			SOV = { transfer_state = 766 }
+			SOV = { transfer_state = 80 }
+		}
+	}
+	focus = {
 		id = SOV_the_threat_from_the_land_of_the_rising_sun
 		icon = GFX_focus_attack_japan
 		prerequisite = { focus = SOV_the_comintern }
