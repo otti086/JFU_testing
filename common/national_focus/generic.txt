@@ -1751,6 +1751,8 @@ focus_tree = {
 		mutually_exclusive = { focus = liberty_ethos}
 		available = {
 			NOT = {original_tag = BRA}
+			NOT = {original_tag = NOR}
+			NOT = {original_tag = IRE}
 		}
 		x = -1
 		y = 1

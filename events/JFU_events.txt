@@ -486,7 +486,7 @@ news_event = {
 }
 news_event = {
 	id = news.4005
-	title = "Italy joins THe War"
+	title = "Italy joins The War"
 	desc = "Italy joins the War against the Allies"
 	picture = GFX_news_event_italian_tank_desert
 
