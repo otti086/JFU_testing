@@ -360,21 +360,6 @@ on_actions = {
 			
 			#Clean up Franco in case of double Franco
 			hidden_effect = {
-				while_loop_effect = {
-					limit = {
-						has_country_leader = {
-							character = SPA_francisco_franco
-							ruling_only = yes
-						}
-						FROM = {
-							has_country_leader = {
-								character = SPA_francisco_franco
-								ruling_only = yes
-							}
-						}
-					}
-					retire_country_leader = yes
-				}
 				#Clean up Mola in case of double Mola
 				while_loop_effect = {
 					limit = {

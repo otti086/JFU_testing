@@ -1067,7 +1067,6 @@ ideas = {
 			picture = generic_wall_line
 			
 			modifier = {
-				max_planning = 0.25
 				planning_speed = -0.25
 				conversion_cost_civ_to_mil_factor= 2
 			}

@@ -1205,43 +1205,7 @@ ideas = {
 	tank_manufacturer = { 
 	
 		designer = yes
-	
-		marmon_herrington = {
-			
-			
-			allowed = {
-				original_tag = USA
-			}			
 
-			
-			research_bonus = {
-				armor = 0.15
-			}
-			
-			traits = { fast_tank_manufacturer }
-			
-			modifier = {
-			}
-		}
-		
-		chrysler = {
-			
-			
-			allowed = {
-				original_tag = USA
-			}
-			
-
-			
-			research_bonus = {
-				armor = 0.15
-			}
-			
-			traits = { medium_tank_manufacturer }
-			
-			modifier = {
-			}
-		}
 		detroit_arsenal = {
 			
 			picture = generic_industrial_concern_1
@@ -1309,25 +1273,6 @@ ideas = {
 
 			modifier = {
 
-			}
-		}
-		
-		army_ordnance_department = {
-			
-			
-			allowed = {
-				original_tag = USA
-			}
-			
-
-			
-			research_bonus = {
-				armor = 0.15
-			}
-			
-			traits = { heavy_tank_manufacturer }
-			
-			modifier = {
 			}
 		}	
 	}

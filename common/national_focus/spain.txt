@@ -754,10 +754,6 @@ focus_tree = {
 	focus = {
 		id = SPR_dictator_for_life
 		available = {
-			has_country_leader = {
-				character = SPA_francisco_franco
-				ruling_only = yes
-			}
 		}
 		bypass = {
 		}
