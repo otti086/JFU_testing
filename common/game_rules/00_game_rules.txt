@@ -498,6 +498,21 @@ JFU_STRIKE_ON_NR = {
 		desc = "Clicking this option will enable Strike on the Northern Resource Area"
 	}
 }
+JFU_DOWNTWIST_GAMECHANGES = {
+	name = "Presettings when played on specific server"
+	group = "HORST_GROUPKEY"
+	icon = "RULE_GROUP_GENERAL_UI"
+	default = {
+		name = "JFU_STANDARD_VERSION"
+		text = "Standard JFU Version"
+		desc = "Clicking this option will keep the Standard JFU Settings"
+	}
+	option = {
+		name = "JFU_ALTERNATIVE_GS"
+		text = "Alternative Settings1"
+		desc = "Clicking this option will enable the Presettings for the Hearts of Iron IV Germany Server"
+	}
+}
 
 
 
