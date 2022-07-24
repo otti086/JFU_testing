@@ -677,6 +677,30 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = SPR_end_the_civil_war
+		prerequisite = { focus = SPR_fuse_the_parties}
+		available = {
+			NOT = {
+				AND = {
+					country_exists = SPA
+					country_exists = SPD
+				}
+			}
+		}
+
+		icon = GFX_focus_generic_treaty
+		x = 0
+		y = 1 
+		relative_position_id = SPR_fuse_the_parties
+		cost = 0.2
+
+		completion_reward = {
+			set_global_flag = scw_over
+			set_global_flag = nationalist_victory
+			country_event = { id = lar_news.1 hours = 6 }
+		}
+	}
 
 	focus = {
 		id = SPR_adopt_the_26_points
@@ -685,7 +709,7 @@ focus_tree = {
 		icon = GFX_focus_generic_treaty
 		x = 4
 		y = 2
-		relative_position_id = SPR_fuse_the_parties
+		relative_position_id = SPR_end_the_civil_war
 		cost = 5
 
 		available_if_capitulated = yes
@@ -849,12 +873,12 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		prerequisite = {  focus = SPR_fuse_the_parties }
+		prerequisite = {  focus = SPR_end_the_civil_war }
 		
 		icon = GFX_goal_generic_consumer_goods
 		x = 0
 		y = 1
-		relative_position_id = SPR_fuse_the_parties
+		relative_position_id = SPR_end_the_civil_war
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1403,7 +1427,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_doctrines
 		x = -4
 		y = 2
-		relative_position_id = SPR_fuse_the_parties
+		relative_position_id = SPR_end_the_civil_war
 		cost = 10
 
 		available_if_capitulated = yes
