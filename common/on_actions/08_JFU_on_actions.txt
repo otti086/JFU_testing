@@ -625,9 +625,41 @@ on_actions = {
 					add_war_support = 0.1
 				}
 				GER = {  country_event = { id = france.14 }}
-				if = { limit = { country_exists = JAP } JAP = { transfer_state = 670 transfer_state = 286 transfer_state = 741 transfer_state = 671 transfer_state = 728 } }
+				if = {
+					limit = { 
+						AND = { 
+							country_exists = JAP 
+							SIA = { is_ai = yes} 
+						}
+						JAP = {
+							transfer_state = 670 
+							transfer_state = 286 
+							transfer_state = 741 
+							transfer_state = 671 
+							transfer_state = 728 
+						}
+					}
+				}
+				if = { 
+					limit = { 
+						AND = { 
+							country_exists = JAP 
+							SIA = {is_ai = no }
+						}
+					}
+					SIA = {
+						transfer_state = 741
+						transfer_state = 670
+					}
+					JAP = {
+						transfer_state = 286
+						transfer_state = 671
+						transfer_state = 728
+					}
+					741 = { add_core_of = SIA }
+					670 = { add_core_of = SIA}
+				}
 
-			}
 			if = {
 				limit = {
 					446 = { is_controlled_by = ITA }

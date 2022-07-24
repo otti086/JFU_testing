@@ -5892,7 +5892,7 @@ focus_tree = {
 			annex_country = { target = LIT  }
 			annex_country = { target = EST  }
 			add_named_threat = { threat = 1 name = SOV_claims_in_baltic }
-			add_political_power = -225
+			add_political_power = -75
 		}
 	}
 	focus = {
