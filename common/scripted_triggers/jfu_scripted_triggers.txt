@@ -10,6 +10,7 @@ axis = {
 		tag = SIA
 		tag = MAN
 		tag = EFR
+		tag = FIN
 	}
 }
 
@@ -26,6 +27,7 @@ allies = {
 		tag = RAJ
 		tag = SAF
 		tag = IRE
+		tag = NOR
 	}
 }
 ai_country = {
@@ -42,7 +44,6 @@ ai_country = {
 		tag = YUG
 		tag = GRE
 		tag = ALB
-		tag = NOR
 		tag = DEN
 		tag = CHI
 		tag = IRQ

@@ -1851,6 +1851,18 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			if = {
+				limit ={
+					has_game_rule = {
+					rule = JFU_DOWNTWIST_GAMECHANGES
+					option = JFU_ALTERNATIVE_GS
+					}
+				}
+				70 = { add_core_of = HUN }
+				71 = { add_core_of = HUN }
+				73 = { add_core_of = HUN }
+			}
+
 			HUN = {transfer_state = 70}
 			HUN = {transfer_state = 71}
 			HUN = {transfer_state = 73}
