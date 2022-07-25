@@ -4075,12 +4075,6 @@ focus_tree = {
 		relative_position_id = SOV_keep_commissars_organization
 		cost = 10
 
-		allow_branch = {
-			NOT = {
-				has_government = fascism
-				has_government = neutrality
-			}
-		}
 
 		available = {
 			any_enemy_country = {
@@ -5898,128 +5892,16 @@ focus_tree = {
 	focus = {
 		id = SOV_Bessarabia
 		icon = GFX_goal_generic_more_territorial_claims
-		prerequisite = { focus = SOV_claims_in_baltic }
-		x = 0
-		y = 1
-		relative_position_id = SOV_claims_in_baltic
-		cost = 5
-
-		completion_reward = {
-			SOV = { transfer_state = 78 }
-			SOV = { transfer_state = 766 }
-			SOV = { transfer_state = 80 }
-		}
-	}
-	focus = {
-		id = SOV_the_threat_from_the_land_of_the_rising_sun
-		icon = GFX_focus_attack_japan
 		prerequisite = { focus = SOV_the_comintern }
 		x = 3
 		y = 1
 		relative_position_id = SOV_the_comintern
 		cost = 5
 
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				has_civil_war = yes
-			}	
-		}
-
-		available = {
-			any_country = {
-				SOV_is_free_chinese_tag = yes
-				has_war_with = JAP
-			}
-			is_subject = no
-		}
-		
-		search_filters = {}
-
 		completion_reward = {
-			JAP = { add_opinion_modifier = { target = SOV modifier = SOV_supported_china_bad } }
-			every_other_country = {
-				limit = {
-					SOV_is_free_chinese_tag = yes
-				}
-				if = {
-					limit = {
-						ROOT = { has_government = communism }
-					}
-					add_ideas = SOV_support_in_china_communism
-				}
-				else_if = {
-					limit = {
-						ROOT = { has_government = democratic }
-					}
-					add_ideas = SOV_support_in_china_democratic
-				}
-				else_if = {
-					limit = {
-						ROOT = { has_government = fascism }
-					}
-					add_ideas = SOV_support_in_china_fascism
-				}
-				else_if = {
-					limit = {
-						ROOT = { has_government = neutrality }
-					}
-					add_ideas = SOV_support_in_china_neutrality
-				}
-				add_opinion_modifier = { target = SOV modifier = SOV_supported_china_good }
-			}
-		}
-	}
-
-	focus = {
-		id = SOV_support_the_kuomintang
-		icon = GFX_focus_chi_cooperation_with_the_nationalists
-		prerequisite = { focus = SOV_the_threat_from_the_land_of_the_rising_sun }
-		x = 3
-		y = 2
-		relative_position_id = SOV_the_comintern
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				has_civil_war = yes
-			}	
-		}
-		bypass = {
-			NOT = { country_exists = CHI }
-		}
-
-		available = {
-			NOT = { has_war_with = CHI }
-			is_subject = no
-		}
-		
-		search_filters = {}
-
-		completion_reward = {
-			CHI = {
-				add_opinion_modifier = { #Good relations with Mao
-					target = ROOT
-					modifier = SOV_cooperating_with_us
-				}
-				add_relation_modifier = {
-					target = ROOT
-					modifier = SOV_soviet_chinese_relations
-				}
-				every_other_country = {
-					limit = {
-						SOV_is_free_chinese_tag = yes
-					}
-					add_opinion_modifier = { #Bad Relations with other Chinese tags
-						target = ROOT
-						modifier = SOV_cooperating_with_other
-					}
-				}
-			}
-			custom_effect_tooltip = SOV_volunteers_allowed_kuomintang_tt
+			SOV = { transfer_state = 78 }
+			SOV = { transfer_state = 766 }
+			SOV = { transfer_state = 80 }
 		}
 	}
 }

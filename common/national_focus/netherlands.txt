@@ -2740,7 +2740,7 @@ focus_tree = {
 		x = 17
 		y = 0
 		relative_position_id = HOL_abandon_the_gold_standard
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -2770,13 +2770,12 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = HOL_form_new_government
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
 			add_political_power = 120
-			custom_effect_tooltip = HOL_gateway_to_europe_tt
 		}
 	}
 
@@ -2784,14 +2783,6 @@ focus_tree = {
 		id = HOL_cave_to_the_british
 		prerequisite = { focus = HOL_gateway_to_europe }
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = HOL_cave_to_the_british2_tt
-				check_variable = { var = ENG.eng_gateway_to_europe_influence value = 25 compare = greater_than_or_equals }
-			}
-			custom_trigger_tooltip = {
-				tooltip = HOL_cave_to_the_british_tt
-				check_variable = { var = eng_temp_trade_influence value = 15 compare = greater_than_or_equals }
-			}
 		}
 		bypass = {
 			OR = {
@@ -2821,21 +2812,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			effect_tooltip = {
-				ENG = {
-					custom_effect_tooltip = HOL_trade_influence_tt
-					add_political_power = HOL.gateway_to_europe_influence_pp_total
-				}
-			}
 			add_ideas = limited_exports
 			add_timed_idea = { idea = HOL_caved_to_the_british days = 1095 }
-			GER = {
-				add_opinion_modifier = { target = HOL modifier = HOL_caved_to_the_british_ger }
-				add_opinion_modifier = { target = HOL modifier = HOL_caved_to_the_british_ger_trade }
-			}	
-			ENG = {
-				add_opinion_modifier = { target = HOL modifier = HOL_caved_to_the_british_eng }
-			}
 			hidden_effect = { news_event = { id = mtg_news.11 hours = 6 } }
 		}
 	}
@@ -2852,7 +2830,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = HOL_cave_to_the_british
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL}
@@ -2961,23 +2939,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = HOL_de_vaarplicht
-		prerequisite = { focus = HOL_replace_the_defeatist_government }
-		prerequisite = { focus = HOL_go_with_britain }
-		icon = GFX_goal_generic_propaganda
-		x = -2
-		y = 1
-		relative_position_id = HOL_go_with_britain
-		cost = 10
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_MANPOWER}
-		completion_reward = {
-			add_ideas = HOL_de_vaarplicht
-		}
-	}
-
-	focus = {
 		id = HOL_request_allied_favors
 		available = {
 			is_in_faction_with = ENG
@@ -2987,11 +2948,11 @@ focus_tree = {
 				has_legitimacy > 40
 			}
 		}
-		prerequisite = { focus = HOL_de_vaarplicht }
+		prerequisite = { focus = HOL_replace_the_defeatist_government }
 		icon = GFX_goal_generic_major_alliance
 		x = 0
-		y = 2
-		relative_position_id = HOL_de_vaarplicht
+		y = 1
+		relative_position_id = HOL_replace_the_defeatist_government
 		cost = 10
 
 		available_if_capitulated = yes
@@ -3042,12 +3003,12 @@ focus_tree = {
 		available = {
 			has_war = yes
 		}
-		prerequisite = { focus = HOL_de_vaarplicht focus = HOL_the_singapore_conferences }
+		prerequisite = { focus = HOL_replace_the_defeatist_government focus = HOL_the_singapore_conferences }
 		icon = GFX_goal_generic_navy_submarine
 		x = 1
-		y = 1
-		relative_position_id = HOL_de_vaarplicht
-		cost = 10
+		y = 2
+		relative_position_id = HOL_replace_the_defeatist_government
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -3092,108 +3053,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = HOL_american_west_indies_protectorate
-		available = {
-			has_war = yes
-			NOT = { has_war_with = USA }
-		}
-		prerequisite = { focus = HOL_ship_a_day_sinking_quotas }
-		prerequisite = { focus = HOL_allied_technological_developments }
-		icon = GFX_focus_chi_mission_to_the_us
-		x = 0
-		y = 3
-		relative_position_id = HOL_go_with_britain
-		cost = 10
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
-		completion_reward = {
-			if = {
-				limit = {
-					is_in_faction_with = USA
-				}
-				695 = {
-					add_building_construction = {
-						type = coastal_bunker
-						level = 1
-						province = 153
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 1
-						province = 153
-						instant_build = yes
-					}
-				}
-				309 = {
-					add_building_construction = {
-						type = coastal_bunker
-						level = 1
-						province = 10906
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 1
-						province = 10906
-						instant_build = yes
-					}
-				}
-				division_template = {
-					name = "American Garrison"
-					priority = 1
-					division_names_group = USA_INF_01
-					is_locked = yes
-					regiments = {
-						infantry = { x = 0 y = 0 }
-						infantry = { x = 0 y = 1 }
-						infantry = { x = 0 y = 2 }
-						infantry = { x = 1 y = 0 }
-						infantry = { x = 1 y = 1 }
-						infantry = { x = 1 y = 2 }
-						infantry = { x = 2 y = 0 }
-						infantry = { x = 2 y = 1 }
-						infantry = { x = 2 y = 2 }
-						infantry = { x = 3 y = 0 }
-						infantry = { x = 3 y = 1 }
-						infantry = { x = 3 y = 2 }
-					}
-					support = {
-					    artillery = { x = 0 y = 0 }
-					    engineer = { x = 0 y = 1 }
-					}
-				}
-				695 = {
-					create_unit = {
-						division = "name = \"1. American Garrison\" division_template = \"American Garrison\" start_experience_factor = 0.5" 
-						owner = HOL
-					}
-				}
-				309 = {
-					create_unit = {
-						division = "name = \"2. American Garrison\" division_template = \"American Garrison\" start_experience_factor = 0.5" 
-						owner = HOL
-					}
-				}
-			}
-			if = {
-				limit = {
-					NOT = { is_in_faction_with = USA }
-				}
-				custom_effect_tooltip = HOL_american_west_indies_protectorate_tt
-				effect_tooltip = {
-					USA = {
-						add_war_support = 0.1
-						give_guarantee = HOL
-					}
-				}
-				USA = { country_event = { id = mtg_netherlands.26 } }
-			}
-		}
-	}
-
-	focus = {
 		id = HOL_combined_chiefs_of_staff_representation
 		available = {
 			is_in_faction_with = ENG
@@ -3205,10 +3064,10 @@ focus_tree = {
 			}
 		}
 		prerequisite = { focus = HOL_request_allied_favors }
-		prerequisite = { focus = HOL_american_west_indies_protectorate }
+		prerequisite = { focus = HOL_ship_a_day_sinking_quotas }
 		icon = GFX_focus_generic_military_academy
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = HOL_request_allied_favors
 		cost = 10
 
@@ -3232,9 +3091,9 @@ focus_tree = {
 		prerequisite = { focus = HOL_combined_chiefs_of_staff_representation }
 		icon = GFX_focus_hol_the_fourth_ally
 		x = -2
-		y = 5
+		y = 4
 		relative_position_id = HOL_go_with_britain
-		cost = 10
+		cost = 20
 
 		available_if_capitulated = yes
 
@@ -3250,10 +3109,10 @@ focus_tree = {
 							}
 						}
 					}
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 							type = dockyard
-							level = 2
+							level = 4
 							instant_build = yes
 					}
 				}
@@ -3269,10 +3128,10 @@ focus_tree = {
 							}
 						}
 					}
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 							type = dockyard
-							level = 2
+							level = 4
 							instant_build = yes
 					}
 				}
@@ -3289,11 +3148,12 @@ focus_tree = {
 			has_full_control_of_state = 309
 			has_full_control_of_state = 695
 		}
-		prerequisite = { focus = HOL_american_west_indies_protectorate }
+		prerequisite = { focus = HOL_the_singapore_conferences }
+		prerequisite = { focus = HOL_ship_a_day_sinking_quotas }
 		icon = GFX_goal_generic_construct_military
-		x = 0
-		y = 2
-		relative_position_id = HOL_american_west_indies_protectorate
+		x = 1
+		y = 1
+		relative_position_id = HOL_ship_a_day_sinking_quotas
 		cost = 10
 
 		available_if_capitulated = yes

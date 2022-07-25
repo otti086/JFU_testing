@@ -1,6 +1,31 @@
 ideas = {
 
 	country = {
+		GER_plan_z_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			picture = generic_navy_bonus
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				ship_hull_heavy = {
+					build_cost_ic = -0.2 instant = yes
+				}
+				ship_hull_carrier = {
+					build_cost_ic = -0.2 instant = yes
+				}
+				ship_hull_cruiser = {
+					build_cost_ic = -0.2 instant = yes
+				}
+				ship_hull_submarine = {
+					build_cost_ic = 0.5 instant = yes
+				}				
+			}
+		}
 		sour_loser = {
 			
 			allowed = {
@@ -15,9 +40,6 @@ ideas = {
 			
 			modifier = {
 				drift_defence_factor = 0.5
-			}
-			rule = {
-				can_create_factions = yes
 			}
 		}
 		

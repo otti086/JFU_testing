@@ -771,6 +771,24 @@ JFU_pre_grinded_generals_ON = {
 		recruit_character = USA_george_s_patton_grinded
 	}
 }
+JFU_alternative_gs = {
+	64 = {
+		add_extra_state_shared_building_slots = 5
+		add_building_construction = {
+			type = industrial_complex
+			level = 5
+			instant_build = yes
+		}
+	}
+	282 = {
+		add_extra_state_shared_building_slots = 5
+		add_building_construction = {
+			type = industrial_complex
+			level = 5
+			instant_build = yes
+		}
+	}
+}
 HMP_anti_building_exploit_effect = { #add to horst tool
 	every_state = { limit = { ignore_aa_states = yes non_damaged_building_level  = { building = anti_air_building  level > 5 } } remove_building  = {  type = anti_air_building  level = 1 }  }  
 	every_state = { limit = {  non_damaged_building_level  = { building = infrastructure  level > 5 } } remove_building  = {  type = infrastructure  level = 1 }  }  

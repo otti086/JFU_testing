@@ -40,7 +40,12 @@ autonomy_state = {
 	}
 
 	allowed = {
-		NOT = { OVERLORD = { original_tag = JAP } }
+		NOT = { 
+			OR = {
+				original_tag = ROM 
+				OVERLORD = { original_tag = JAP } 
+			}
+		}
 	}
 	
 	can_take_level = {

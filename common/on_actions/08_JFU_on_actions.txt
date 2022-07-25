@@ -238,6 +238,15 @@ on_actions = {
 					add_ideas = NO_SF_CAP
 				}
 			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = JFU_DOWNTWIST_GAMECHANGES
+						option = JFU_ALTERNATIVE_GS
+					}
+				}
+				SWE = { JFU_alternative_gs = yes}
+			}
 		}
 		
 	}
@@ -631,13 +640,13 @@ on_actions = {
 							country_exists = JAP 
 							SIA = { is_ai = yes} 
 						}
-						JAP = {
-							transfer_state = 670 
-							transfer_state = 286 
-							transfer_state = 741 
-							transfer_state = 671 
-							transfer_state = 728 
-						}
+					}
+					JAP = {
+						transfer_state = 670 
+						transfer_state = 286 
+						transfer_state = 741 
+						transfer_state = 671 
+						transfer_state = 728 
 					}
 				}
 				if = { 

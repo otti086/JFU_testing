@@ -61,7 +61,7 @@ set_autonomy = {
 }
 set_autonomy = {
 	target = ROM
-	autonomous_state = autonomy_dominion
+	autonomous_state = autonomy_satellite
 	freedom_level = 0.2
 }
 set_autonomy = {

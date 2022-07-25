@@ -647,7 +647,6 @@ SOV_dont_send_volunteers_that_early_to_china = {
 		OR = {
 			#Soviet focus plans are set so that they support a Chinese tag in 39-40
 			AND = {
-				has_completed_focus = SOV_support_the_kuomintang
 				country_exists = CHI
 				CHI = { has_war_with = JAP }
 			}
