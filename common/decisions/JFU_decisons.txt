@@ -501,7 +501,7 @@ JFU_decisions = {
 		available = {	
 			has_completed_focus = ITA_greece_war_goal
 			OR ={
-				threat < 0.2
+				threat < 0.25
 				ITA = { has_war_with = ENG }
 			}
 			} 

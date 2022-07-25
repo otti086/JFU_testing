@@ -232,9 +232,8 @@ BUL_is_balkan_state = {
 	OR = {
 		is_core_of = BUL
 		is_core_of = GRE
-		is_core_of = YUG
-		is_core_of = ALB
-		is_core_of = ROM
+		state = 106
+		state = 803
 	}
 	is_on_continent = europe
 }
