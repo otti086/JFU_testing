@@ -772,6 +772,16 @@ JFU_pre_grinded_generals_ON = {
 	}
 }
 JFU_alternative_gs = {
+	USA = {
+		add_ideas = {
+			Island_hopping4
+		}
+	}
+	JAP = {
+		add_ideas = {
+			Island_hopping4
+		}
+	}
 	64 = {
 		add_extra_state_shared_building_slots = 5
 		add_building_construction = {

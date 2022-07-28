@@ -695,21 +695,22 @@ on_actions = {
 				}
 				if = {
 					limit = {
-						any_state = {
-							pacific_war_states_USA = yes
-						}
-						FROM = { 
-							OR = { 
-								is_in_faction_with = USA 
-								tag = USA
+						all_state = {
+							pacific_war_states = yes
+							FROM = { 
+								OR = { 
+									is_in_faction_with = USA 
+									tag = USA
+								}
+							}
+							ROOT = { 
+								OR = { 
+									tag = JAP 
+									is_in_faction_with = JAP
+								}	 
 							}
 						}
-						ROOT = { 
-							OR = { 
-								tag = JAP 
-								is_in_faction_with = JAP
-							}	 
-						}
+
 					}
 					JAP = {
 						Island_hopping_up = yes
@@ -720,21 +721,22 @@ on_actions = {
 				}
 				if = {
 					limit = {
-						any_state = {
-							pacific_war_states_JAP = yes
-						}
-						FROM = { 
-							OR = { 
-								is_in_faction_with = JAP
-								tag = JAP
+						all_state = {
+							pacific_war_states = yes
+							FROM = { 
+								OR = { 
+									is_in_faction_with = JAP
+									tag = JAP
+								}
+							}
+							ROOT = { 
+								OR = { 
+									tag = USA
+									is_in_faction_with = USA
+								}	 
 							}
 						}
-						ROOT = { 
-							OR = { 
-								tag = USA
-								is_in_faction_with = USA
-							}	 
-						}
+
 					}
 					JAP = {
 						Island_hopping_down = yes

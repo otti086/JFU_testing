@@ -57,5 +57,4 @@ ignore_aa_states = { NOT = { OR = { is_core_of = SPR state = 219 }}}
 
 spanish_coastline = { OR = { state = 169 state = 290 state = 177  state = 173 state = 168 state = 167 state = 165 state = 172 state = 171	}}
 
-pacific_war_states_USA = { OR = { state = 629 state = 631 state = 630 }}
-pacific_war_states_JAP = { OR = { state = 648 state = 645 state = 526 }}
+pacific_war_states = { OR = { state = 629 state = 631 state = 632 state = 648 state = 645 state = 526 }}

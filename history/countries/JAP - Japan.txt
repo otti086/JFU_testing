@@ -16,7 +16,6 @@ add_ideas = {
 	JAP_zaibatsus
 	JAP_militarism
 	jap_oil_reserves
-	Island_hopping4
 }
 609 = {
 	start_resistance = yes
