@@ -1024,7 +1024,8 @@ SOV_capital_of_the_tsars = {
 }
 pacific_states_JAP = {
 	enable = { always = yes }
-
+	icon = jap_interservice_rivalry_balanced
+	
 	consumer_goods_factor = PJ_05
 	political_power_gain = PJ_15
 	war_support_factor = PJ_15
@@ -1032,6 +1033,7 @@ pacific_states_JAP = {
 }
 pacific_states_USA = {
 	enable = { always = yes }
+	icon = jap_interservice_rivalry_balanced
 
 	consumer_goods_factor = PJU_05
 	political_power_gain = PJU_15
