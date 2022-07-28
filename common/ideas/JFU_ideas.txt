@@ -241,5 +241,103 @@ ideas = {
 				special_forces_min = 8000
 			}
 		}
+
+		Island_hopping1 = {
+			allowed = {
+				always = no
+			}
+			picture = jap_interservice_rivalry_balanced	
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				political_power_gain = -0.15
+				war_support_factor = -0.15
+				stability_factor = -0.				
+			}
+		}
+		Island_hopping2 = {
+			allowed = {
+				always = no
+			}
+			picture = jap_interservice_rivalry_balanced	
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.03
+				political_power_gain = -0.1
+				war_support_factor = -0.1
+				stability_factor = -0.1
+			}
+		}
+		Island_hopping3 = {
+			allowed = {
+				always = no
+			}
+			picture = jap_interservice_rivalry_balanced	
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.01
+				political_power_gain = -0.05
+				war_support_factor = -0.05
+				stability_factor = -0.05 
+			}
+		}
+		Island_hopping4 = {
+			allowed = {
+				always = no
+			}
+			picture = jap_interservice_rivalry_balanced	
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0
+				war_support_factor = 0
+				stability_factor = 0 
+			}
+		}
+		Island_hopping5 = {
+			allowed = {
+				always = no
+			}
+			picture = jap_interservice_rivalry_balanced	
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.01
+				political_power_gain = 0.05
+				war_support_factor = 0.05
+				stability_factor = 0.05 
+			}
+		}
+		Island_hopping6 = {
+			allowed = {
+				always = no
+			}
+			picture = jap_interservice_rivalry_balanced	
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.03
+				political_power_gain = 0.1
+				war_support_factor = 0.1
+				stability_factor = 0.1
+			}
+		}
+		Island_hopping7 = {
+			allowed = {
+				always = no
+			}
+			picture = jap_interservice_rivalry_balanced	
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				political_power_gain = 0.15
+				war_support_factor = 0.15
+				stability_factor = 0.15 
+			}
+		}
 	}
 }

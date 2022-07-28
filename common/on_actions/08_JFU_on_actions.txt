@@ -686,6 +686,64 @@ on_actions = {
 				}
 				remove_ideas = ITA_VICTORY_IN_AFRICA
 			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = JFU_DOWNTWIST_GAMECHANGES
+						option = JFU_ALTERNATIVE_GS
+					}
+				}
+				if = {
+					limit = {
+						any_state = {
+							pacific_war_states_USA = yes
+						}
+						FROM = { 
+							OR = { 
+								is_in_faction_with = USA 
+								tag = USA
+							}
+						}
+						ROOT = { 
+							OR = { 
+								tag = JAP 
+								is_in_faction_with = JAP
+							}	 
+						}
+					}
+					JAP = {
+						Island_hopping_up = yes
+					}
+					USA = {
+						Island_hopping_down = yes
+					}
+				}
+				if = {
+					limit = {
+						any_state = {
+							pacific_war_states_JAP = yes
+						}
+						FROM = { 
+							OR = { 
+								is_in_faction_with = JAP
+								tag = JAP
+							}
+						}
+						ROOT = { 
+							OR = { 
+								tag = USA
+								is_in_faction_with = USA
+							}	 
+						}
+					}
+					JAP = {
+						Island_hopping_down = yes
+					}
+					USA = {
+						Island_hopping_up = yes
+					}
+				}
+			}
 		}
 	}
 	on_paradrop = {

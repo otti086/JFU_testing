@@ -792,4 +792,93 @@ JFU_alternative_gs = {
 HMP_anti_building_exploit_effect = { #add to horst tool
 	every_state = { limit = { ignore_aa_states = yes non_damaged_building_level  = { building = anti_air_building  level > 5 } } remove_building  = {  type = anti_air_building  level = 1 }  }  
 	every_state = { limit = {  non_damaged_building_level  = { building = infrastructure  level > 5 } } remove_building  = {  type = infrastructure  level = 1 }  }  
-}				
+}	
+
+Island_hopping_up = {
+	if = {
+		limit = { has_idea = Island_hopping6 }
+		swap_ideas = {
+			remove_idea = Island_hopping6
+			add_idea = Island_hopping7
+		}
+	}
+	else_if = {
+		limit = { has_idea = Island_hopping5 }
+		swap_ideas = {
+			remove_idea = Island_hopping5
+			add_idea = Island_hopping6
+		}
+	}
+	else_if = {
+		limit = { has_idea = Island_hopping4 }
+		swap_ideas = {
+			remove_idea = Island_hopping4
+			add_idea = Island_hopping5
+		}
+	}
+	else_if = {
+		limit = { has_idea = Island_hopping3 }
+		swap_ideas = {
+			remove_idea = Island_hopping3
+			add_idea = Island_hopping4
+		}
+	}
+	else_if = {
+		limit = { has_idea = Island_hopping2 }
+		swap_ideas = {
+			remove_idea = Island_hopping2
+			add_idea = Island_hopping3
+		}
+	}
+	else_if = {
+		limit = { has_idea = Island_hopping1 }
+		swap_ideas = {
+			remove_idea = Island_hopping1
+			add_idea = Island_hopping2
+		}
+	}
+}
+Island_hopping_down = {
+	if = {
+		limit = { has_idea = Island_hopping2 }
+		swap_ideas = {
+			remove_idea = Island_hopping2
+			add_idea = Island_hopping1
+		}
+	}
+	if = {
+		limit = { has_idea = Island_hopping3 }
+		swap_ideas = {
+			remove_idea = Island_hopping3
+			add_idea = Island_hopping2
+		}
+	}
+	if = {
+		limit = { has_idea = Island_hopping4 }
+		swap_ideas = {
+			remove_idea = Island_hopping4
+			add_idea = Island_hopping3
+		}
+	}
+	if = {
+		limit = { has_idea = Island_hopping5 }
+		swap_ideas = {
+			remove_idea = Island_hopping5
+			add_idea = Island_hopping4
+		}
+	}
+	if = {
+		limit = { has_idea = Island_hopping6 }
+		swap_ideas = {
+			remove_idea = Island_hopping6
+			add_idea = Island_hopping5
+		}
+	}
+	if = {
+		limit = { has_idea = Island_hopping7 }
+		swap_ideas = {
+			remove_idea = Island_hopping7
+			add_idea = Island_hopping6
+		}
+	}
+}

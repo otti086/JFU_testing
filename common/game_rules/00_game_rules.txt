@@ -499,7 +499,7 @@ JFU_STRIKE_ON_NR = {
 	}
 }
 JFU_DOWNTWIST_GAMECHANGES = {
-	name = "Presettings when played on specific server"
+	name = "Presettings when played on specific servers"
 	group = "HORST_GROUPKEY"
 	icon = "RULE_GROUP_GENERAL_UI"
 	default = {
