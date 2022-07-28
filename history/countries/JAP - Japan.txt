@@ -16,17 +16,7 @@ add_ideas = {
 	JAP_zaibatsus
 	JAP_militarism
 	jap_oil_reserves
-}
-if = {
-	limit = {
-		has_game_rule = {
-			rule = JFU_DOWNTWIST_GAMECHANGES
-			option = JFU_ALTERNATIVE_GS
-		}
-	}
-	add_ideas = {
-		Island_hopping4
-	}
+	Island_hopping4
 }
 609 = {
 	start_resistance = yes

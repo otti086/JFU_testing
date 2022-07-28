@@ -155,18 +155,9 @@ add_ideas = {
 	disarmed_nation
 	free_trade
 	home_of_the_free
+	Island_hopping4
 }
-if = {
-	limit = {
-		has_game_rule = {
-			rule = JFU_DOWNTWIST_GAMECHANGES
-			option = JFU_ALTERNATIVE_GS
-		}
-	}
-	add_ideas = {
-		Island_hopping4
-	}
-}
+
 recruit_character = USA_william_dudley_pelley
 recruit_character = USA_franklin_delano_roosevelt
 recruit_character = USA_mark_clark
