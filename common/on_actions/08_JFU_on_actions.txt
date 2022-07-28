@@ -692,59 +692,7 @@ on_actions = {
 						rule = JFU_DOWNTWIST_GAMECHANGES
 						option = JFU_ALTERNATIVE_GS
 					}
-				}
-				if = {
-					limit = {
-						all_state = {
-							pacific_war_states = yes
-							FROM = { 
-								OR = { 
-									is_in_faction_with = USA 
-									tag = USA
-								}
-							}
-							ROOT = { 
-								OR = { 
-									tag = JAP 
-									is_in_faction_with = JAP
-								}	 
-							}
-						}
-
-					}
-					JAP = {
-						Island_hopping_up = yes
-					}
-					USA = {
-						Island_hopping_down = yes
-					}
-				}
-				if = {
-					limit = {
-						all_state = {
-							pacific_war_states = yes
-							FROM = { 
-								OR = { 
-									is_in_faction_with = JAP
-									tag = JAP
-								}
-							}
-							ROOT = { 
-								OR = { 
-									tag = USA
-									is_in_faction_with = USA
-								}	 
-							}
-						}
-
-					}
-					JAP = {
-						Island_hopping_down = yes
-					}
-					USA = {
-						Island_hopping_up = yes
-					}
-				}
+				}	
 			}
 		}
 	}
@@ -754,4 +702,30 @@ on_actions = {
 		}
 	}
 	on_naval_invasion = { effect ={  if = { limit = { spanish_coastline = yes } teleport_armies = {limit = { allies = yes  } to_state = FROM }  PREV = { if = { limit = { SPR = { owns_state = 41 } }transfer_state_to = SPR}  else = { transfer_state_to = GER }  }  } }   }	
+	on_weekly_JAP = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = JFU_DOWNTWIST_GAMECHANGES
+						option = JFU_ALTERNATIVE_GS
+					}
+				}
+				JAP = { island_hopping_JAP = yes }
+			}
+		}
+	}
+	on_weekly_USA = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = JFU_DOWNTWIST_GAMECHANGES
+						option = JFU_ALTERNATIVE_GS
+					}
+				}
+				USA = { island_hopping_USA = yes }
+			}
+		}
+	}
 }

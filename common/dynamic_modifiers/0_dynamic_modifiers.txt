@@ -1022,3 +1022,19 @@ SOV_capital_of_the_tsars = {
 
 	state_production_speed_buildings_factor = 0.25
 }
+pacific_states_JAP = {
+	enable = { always = yes }
+
+	consumer_goods_factor = PJ_05
+	political_power_gain = PJ_15
+	war_support_factor = PJ_15
+	stability_factor = PJ_15
+}
+pacific_states_USA = {
+	enable = { always = yes }
+
+	consumer_goods_factor = PJU_05
+	political_power_gain = PJU_15
+	war_support_factor = PJU_15
+	stability_factor = PJU_15
+}

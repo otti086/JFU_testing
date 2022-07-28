@@ -253,7 +253,7 @@ ideas = {
 				consumer_goods_factor = 0.05
 				political_power_gain = -0.15
 				war_support_factor = -0.15
-				stability_factor = -0.				
+				stability_factor = -0.15				
 			}
 		}
 		Island_hopping2 = {

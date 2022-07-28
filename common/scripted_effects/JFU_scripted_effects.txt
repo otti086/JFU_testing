@@ -773,13 +773,13 @@ JFU_pre_grinded_generals_ON = {
 }
 JFU_alternative_gs = {
 	USA = {
-		add_ideas = {
-			Island_hopping4
+		add_dynamic_modifier = {
+			modifier = pacific_states_USA
 		}
 	}
 	JAP = {
-		add_ideas = {
-			Island_hopping4
+		add_dynamic_modifier = {
+			modifier = pacific_states_JAP
 		}
 	}
 	64 = {
@@ -803,92 +803,47 @@ HMP_anti_building_exploit_effect = { #add to horst tool
 	every_state = { limit = { ignore_aa_states = yes non_damaged_building_level  = { building = anti_air_building  level > 5 } } remove_building  = {  type = anti_air_building  level = 1 }  }  
 	every_state = { limit = {  non_damaged_building_level  = { building = infrastructure  level > 5 } } remove_building  = {  type = infrastructure  level = 1 }  }  
 }	
-
-Island_hopping_up = {
-	if = {
-		limit = { has_idea = Island_hopping6 }
-		swap_ideas = {
-			remove_idea = Island_hopping6
-			add_idea = Island_hopping7
-		}
+island_hopping_JAP = {
+	set_variable = { PJ_05 = 0 }	
+	set_variable = { PJ_15 = 0 }
+	if = { 
+		limit = { 
+			629 = { 
+				is_controlled_by = {axis = yes} 
+			} 
+		} 
+		add_to_variable = {
+			var = PJ_05 value = 0.02 
+		} 
+		add_to_variable = { 
+			var = PJ_15 value = 0.05 
+		} 
 	}
-	else_if = {
-		limit = { has_idea = Island_hopping5 }
-		swap_ideas = {
-			remove_idea = Island_hopping5
-			add_idea = Island_hopping6
-		}
+	if = { 
+		limit = { 
+			631 = { 
+				is_controlled_by = JAP
+			} 
+		} 
+		add_to_variable = {
+			var = PJ_05 value = 0.02 
+		} 
+		add_to_variable = { 
+			var = PJ_15 value = 0.05 
+		} 
 	}
-	else_if = {
-		limit = { has_idea = Island_hopping4 }
-		swap_ideas = {
-			remove_idea = Island_hopping4
-			add_idea = Island_hopping5
-		}
-	}
-	else_if = {
-		limit = { has_idea = Island_hopping3 }
-		swap_ideas = {
-			remove_idea = Island_hopping3
-			add_idea = Island_hopping4
-		}
-	}
-	else_if = {
-		limit = { has_idea = Island_hopping2 }
-		swap_ideas = {
-			remove_idea = Island_hopping2
-			add_idea = Island_hopping3
-		}
-	}
-	else_if = {
-		limit = { has_idea = Island_hopping1 }
-		swap_ideas = {
-			remove_idea = Island_hopping1
-			add_idea = Island_hopping2
-		}
-	}
+	if = { limit = { 632 = { is_controlled_by = {axis = yes} } } add_to_variable = { var = PJ_05 value = 0.02 } add_to_variable = { var = PJ_15 value = 0.05 } }
+	if = { limit = { 648 = { NOT = {is_controlled_by = {axis = yes} } } } add_to_variable = {	var = PJ_05 value = -0.02 } add_to_variable = { var = PJ_15 value = -0.05 } }
+	if = { limit = { 645 = { NOT = {is_controlled_by = {axis = yes} } } } add_to_variable = {	var = PJ_05 value = -0.02 } add_to_variable = { var = PJ_15 value = -0.05 } }
+	if = { limit = { 526 = { NOT = {is_controlled_by = {axis = yes} } } } add_to_variable = {	var = PJ_05 value = -0.02 } add_to_variable = { var = PJ_15 value = -0.05 } }
 }
-Island_hopping_down = {
-	if = {
-		limit = { has_idea = Island_hopping2 }
-		swap_ideas = {
-			remove_idea = Island_hopping2
-			add_idea = Island_hopping1
-		}
-	}
-	if = {
-		limit = { has_idea = Island_hopping3 }
-		swap_ideas = {
-			remove_idea = Island_hopping3
-			add_idea = Island_hopping2
-		}
-	}
-	if = {
-		limit = { has_idea = Island_hopping4 }
-		swap_ideas = {
-			remove_idea = Island_hopping4
-			add_idea = Island_hopping3
-		}
-	}
-	if = {
-		limit = { has_idea = Island_hopping5 }
-		swap_ideas = {
-			remove_idea = Island_hopping5
-			add_idea = Island_hopping4
-		}
-	}
-	if = {
-		limit = { has_idea = Island_hopping6 }
-		swap_ideas = {
-			remove_idea = Island_hopping6
-			add_idea = Island_hopping5
-		}
-	}
-	if = {
-		limit = { has_idea = Island_hopping7 }
-		swap_ideas = {
-			remove_idea = Island_hopping7
-			add_idea = Island_hopping6
-		}
-	}
+island_hopping_USA = {
+	set_variable = { PJU_05 = 0}	
+	set_variable = { PJU_15 = 0}
+	if = { limit = { 648 = { is_controlled_by = {allies = yes} } } add_to_variable = {	var = PJU_05 value = 0.02 } add_to_variable = { var = PJU_15 = value 0.05 } }
+	if = { limit = { 645 = { is_controlled_by = {allies = yes} } } add_to_variable = {	var = PJU_05 value = 0.02 } add_to_variable = { var = PJU_15 = value 0.05 } }
+	if = { limit = { 626 = { is_controlled_by = {allies = yes} } } add_to_variable = {	var = PJU_05 value = 0.02 } add_to_variable = { var = PJU_15 = value 0.05 } }
+	if = { limit = { 629 = { NOT = {is_controlled_by = {allies = yes} } } } add_to_variable = {	var = PJU_05 value = -0.02 } add_to_variable = { var = PJU_15 value = -0.05 } }
+	if = { limit = { 631 = { NOT = {is_controlled_by = {allies = yes} } } } add_to_variable = {	var = PJU_05 value = -0.02 } add_to_variable = { var = PJU_15 value = -0.05 } }
+	if = { limit = { 532 = { NOT = {is_controlled_by = {allies = yes} } } } add_to_variable = {	var = PJU_05 value = -0.02 } add_to_variable = { var = PJU_15 value = -0.05 } }
 }
