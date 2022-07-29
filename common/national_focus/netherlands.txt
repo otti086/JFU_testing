@@ -2594,7 +2594,7 @@ focus_tree = {
 				name = HOL_modernize_the_cruiser_fleet
 				bonus = 1
 				ahead_reduction = 2
-				uses = 2
+				uses = 1
 				category = cl_tech
 				category = ca_tech
 			}
@@ -2695,7 +2695,7 @@ focus_tree = {
 				name = HOL_escorts_for_the_new_fleet
 				bonus = 1
 				ahead_reduction = 2
-				uses = 2
+				uses = 1
 				category = dd_tech
 			}
 		}
