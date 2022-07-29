@@ -106,6 +106,103 @@ ideas = {
 			}
 
 		}
+		axis_fall_blau = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = generic_acquire_tanks
+
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+			modifier = {
+				supply_consumption_factor = -0.10
+			}
+		}
+		axis_operation_citadelle = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = generic_acquire_tanks
+
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+			modifier = {
+				supply_consumption_factor = -0.10
+			}
+		}
+		soviet_winter_offensive1= {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = generic_acquire_tanks
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.15
+			}
+			modifier = {
+				no_supply_grace = 72
+			}
+		}
+		soviet_winter_offensive2= {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_acquire_tanks
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			modifier = {
+				supply_consumption_factor = -0.10
+			}
+		}
+
+		soviet_winter_offensive3= {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_acquire_tanks
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.05
+			}
+			modifier = {
+				supply_consumption_factor = -0.10
+			}
+		}		
 		export_focus_idea = {
 			allowed = {
 				always = no
