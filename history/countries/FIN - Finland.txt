@@ -37,6 +37,7 @@ recruit_character = FIN_ake_henrik_gartz
 
 add_ideas = {
 	limited_conscription
+	volunteers_8
 }
 
 set_technology = {
