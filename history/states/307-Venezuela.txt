@@ -11,12 +11,6 @@ state={
 		owner = SWE
 		buildings = {
 			infrastructure = 2
-			8113 = {
-				naval_base = 3
-			}
-			10912 = {
-				naval_base = 2
-			}
 		}
 		add_core_of = SWE
 		victory_points = {

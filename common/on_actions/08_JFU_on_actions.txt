@@ -27,102 +27,8 @@ on_actions = {
 			else_if = { limit = {has_game_rule = {rule = horst_host_country option = BRA}} set_variable={host = BRA.id} }
 			var:host = { set_variable = { marked_states = 0 } set_country_flag = host	}
 			SWE = { HFU_fuel_startup_effect = yes }
-			ENG = {
-				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 12200 }
-				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 9600 }
-				add_equipment_to_stockpile = { type = support_equipment_1 amount = 259 }
-				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 100 }
-
-				add_equipment_to_stockpile = { type = light_tank_chassis_1 amount = 180 producer = ENG variant_name = "Light Tank Mk. VI" }
-			}
-			GER = {
-				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 24900 }
-				add_equipment_to_stockpile = { type = support_equipment_1 amount = 891 }
-				add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 607 }
-				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 349 }
-
-				add_equipment_to_stockpile = { type = light_tank_chassis_2 amount = 720 producer = GER variant_name = "Panzer II Ausf. A" }
-			}
-			FRA = {
-				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 14400 }
-				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 31300 }
-				add_equipment_to_stockpile = { type = support_equipment_1 amount = 766 }
-				add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 2500 }
-				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 217 }
-				add_equipment_to_stockpile = { type = light_tank_chassis_0 amount = 480 producer = FRA variant_name = "FT mod. 31" }
-				add_equipment_to_stockpile = { type = light_tank_chassis_0 amount = 240 producer = FRA variant_name = "FT Char Cannon" }
-				add_equipment_to_stockpile = { type = light_tank_chassis_1 amount = 480 producer = FRA variant_name = "H-35" }
-			}
-			JAP = {
-				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 7700 }
-				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 31700 }
-				add_equipment_to_stockpile = { type = support_equipment_1 amount = 801 }
-				add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 880 }
-				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 25 }
-
-				add_equipment_to_stockpile = { type = light_tank_chassis_1 amount = 180 producer = JAP variant_name = "Type 95 Ha-Go" }
-				
-			}
-			USA = {
-				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 11100 }
-				add_equipment_to_stockpile = { type = support_equipment_1 amount = 344 }
-				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 106 }
-			}
-			HUN = {
-				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 4700 }
-				add_equipment_to_stockpile = { type = support_equipment_1 amount = 11 }
-			}
-			ROM = {
-				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 9600 }
-				add_equipment_to_stockpile = { type = support_equipment_1 amount = 303 }
-				add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 70 }
-				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 87 }
-
-				add_equipment_to_stockpile = { type = light_tank_chassis_0 amount = 72 producer = ROM variant_name = "FT Char Cannon" }
-			}
-			SOV = {
-				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 16200 }
-				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 61700 }
-				add_equipment_to_stockpile = { type = support_equipment_1 amount = 443 }
-				add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 16000 }
-				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 814 }
-
-				add_equipment_to_stockpile = { type = light_tank_chassis_1 amount = 1300 producer = SOV variant_name = "T-26TU mod. 1933" }
-				add_equipment_to_stockpile = { type = light_tank_chassis_1 amount = 1000 producer = SOV variant_name = "BT-5" }
-				add_equipment_to_stockpile = { type = train_equipment_1 amount = 300 }
-			}
-			MAN = {
-				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 3900 }
-			}
-			BRA = {
-				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2900 }
-				add_equipment_to_stockpile = { type = support_equipment_1 amount = 75 }
-			}
-			MEX = {
-				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 5605 }
-				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 900 }
-				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 55 }
-			}
-			CAN = {
-				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2700 }
-			}
-
-			RAJ = {
-				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 3600 }
-			}
-			AST = {
-				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2300 }
-			}
-			NZL = {
-				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 700 }
-			}
-			SAF = {
-				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 815 }
-			}
 			SWE = { JFU_startup_on_action = yes }
-			SPR = {
-				country_event = { id = lar_spain.2 days = 230 }
-			}
+			SPR = {	country_lock_all_division_template = yes country_event = { id = lar_spain.2 days = 230 }}
 			if = { 
 				limit = {
 					has_game_rule = {
@@ -517,13 +423,6 @@ on_actions = {
 				limit = {
 					original_tag = SPA 
 				}
-				if = {
-					limit = {
-						NOT = {	SPR = { has_war_with = SPD }}
-					}
-					set_global_flag = scw_over
-					country_event = { id = lar_news.1 hours = 6 }
-				}
 				every_state = {
 					limit = { 
 						AND = {
@@ -539,13 +438,6 @@ on_actions = {
 			if = {
 				limit = {
 					original_tag = SPD
-				}
-				if = {
-					limit = {
-						NOT = {	SPR = { has_war_with = SPA }}
-					}
-					set_global_flag = scw_over
-					country_event = { id = lar_news.1 hours = 6 }
 				}
 				every_state = {
 					limit = { 
@@ -685,14 +577,6 @@ on_actions = {
 					}
 				}
 				remove_ideas = ITA_VICTORY_IN_AFRICA
-			}
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = JFU_DOWNTWIST_GAMECHANGES
-						option = JFU_ALTERNATIVE_GS
-					}
-				}	
 			}
 		}
 	}

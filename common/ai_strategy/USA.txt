@@ -266,7 +266,6 @@ USA_focus_on_africa = {
 	enable = {
 		is_historical_focus_on = yes
 		has_war_with = GER
-		has_global_flag = FRA_already_surrendered
 		OR = { # Check whole north-african coast
 			448 = { CONTROLLER = { has_war_with = ROOT } } # tripoli
 			450 = { CONTROLLER = { has_war_with = ROOT } } # benghazi
