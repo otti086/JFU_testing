@@ -28,7 +28,7 @@ focus_tree = {
 		
 		
 		icon = GFX_goal_generic_demand_territory
-		x = 5
+		x = 11
 		y = 0
 		cost = 28
 

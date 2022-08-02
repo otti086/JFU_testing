@@ -5822,10 +5822,6 @@ focus_tree = {
 					}
 				}
 				hidden_effect = { add_ideas = SOV_targeted_bonus_against_GER }
-				create_wargoal = {
-					type = puppet_wargoal_focus
-					target = GER
-				}
 			}
 			if = {
 				limit = {
@@ -5834,10 +5830,6 @@ focus_tree = {
 					}
 				}
 				hidden_effect = { add_ideas = SOV_targeted_bonus_against_ITA }
-				create_wargoal = {
-					type = puppet_wargoal_focus
-					target = ITA
-				}
 			}
 		}
 	}

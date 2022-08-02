@@ -2934,7 +2934,6 @@ focus_tree = {
 
 		completion_reward = {
 			remove_ideas = HOL_aloof_neutrality
-			ENG = { country_event = { id = generic.2 hours = 6 } }
 		}
 	}
 
