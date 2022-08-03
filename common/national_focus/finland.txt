@@ -364,7 +364,6 @@ focus_tree = {
 				uses = 2
 				technology = strategic_bomber1
 				technology = strategic_bomber2
-				technology = strategic_bomber3
 				category = tactical_bomber
 			}
 		}
@@ -1170,7 +1169,6 @@ focus_tree = {
 		id = fin_soviet_threat
 		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = fin_karelianism }
-		mutually_exclusive = { focus = fin_neutrality_focus }
 		available = { is_ai = no }
 		relative_position_id = fin_karelianism
 		x = 0

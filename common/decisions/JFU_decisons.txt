@@ -968,7 +968,7 @@ JFU_decisions = {
 
 		icon = generic_operation
 
-		allowed = { tag = SOV FIN = { is_ai = no} }
+		allowed = { tag = SOV }
 
 		visible = {
 			AND = {
@@ -976,6 +976,7 @@ JFU_decisions = {
 				NOT = {
 					GER = { has_war_with = SOV}
 				}
+				FIN = { is_ai = no}
 			}
 		}
 		icon = generic_operation
