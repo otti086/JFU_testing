@@ -578,6 +578,22 @@ on_actions = {
 				}
 				remove_ideas = ITA_VICTORY_IN_AFRICA
 			}
+			if = {
+				limit = {
+					AND = {
+						195 = { is_controlled_by = FIN }
+						NOT = {
+							Ger = { has_war_with = SOV }
+						}
+					}
+				}
+				SOV = { 
+					white_peace = {
+						tag = FIN 
+						message = FIN_agree_peace 
+					} 
+				}
+			}
 		}
 	}
 	on_paradrop = {
@@ -594,7 +610,7 @@ on_actions = {
 						rule = JFU_DOWNTWIST_GAMECHANGES
 						option = JFU_ALTERNATIVE_GS
 					}
-					date > 1.1.1941
+					date > 1941.1.1
 				}
 				JAP = { island_hopping_JAP = yes }
 			}
@@ -608,7 +624,7 @@ on_actions = {
 						rule = JFU_DOWNTWIST_GAMECHANGES
 						option = JFU_ALTERNATIVE_GS
 					}
-					date > 1.1.1941
+					date > 1941.1.1
 				}
 				USA = { island_hopping_USA = yes }
 			}

@@ -38,6 +38,7 @@ recruit_character = FIN_ake_henrik_gartz
 add_ideas = {
 	limited_conscription
 	volunteers_8
+	fin_sisu
 }
 
 set_technology = {
@@ -88,11 +89,6 @@ set_popularities = {
 	fascism = 10
 	communism = 1
 	neutrality = 79
-}
-
-
-add_ideas = {
-	sisu
 }
 
 ### VARIANTS ###
