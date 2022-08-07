@@ -412,6 +412,7 @@ on_actions = {
 
 				SPR = {
 					add_timed_idea = { idea = SPR_carlists_uprising days = 365 }
+					if = { limit = { country_exists = SPD } annex_country = { target = SPD} }
 				}
 				SOV = {
 					remove_ideas = { SPR_seized_spanish_gold_reserves}
@@ -423,6 +424,7 @@ on_actions = {
 				limit = {
 					original_tag = SPA 
 				}
+
 				every_state = {
 					limit = { 
 						AND = {
@@ -433,6 +435,21 @@ on_actions = {
 						}
 					}
 					transfer_state_to = SPR 
+				}
+				if = {
+					limit = {
+						has_global_flag = scw_early_end
+					}
+					clr_global_flag = scw_early_end
+					set_global_flag = scw_over
+					set_global_flag = nationalist_victory
+					country_event = { id = lar_news.1 hours = 6 }
+				}			
+				if = { 
+					limit = { 
+						country_exists = SPD
+					} 
+				set_global_flag = {scw_early_end}
 				}
 			}
 			if = {
@@ -461,6 +478,21 @@ on_actions = {
 					}
 					transfer_state_to = SPA
 				}
+				if = {
+					limit = {
+						has_global_flag = scw_early_end
+					}
+					clr_global_flag = scw_early_end
+					set_global_flag = scw_over
+					set_global_flag = nationalist_victory
+					country_event = { id = lar_news.1 hours = 6 }
+				}
+				if = { 
+					limit = { 
+						country_exists = SPA
+					} 
+				set_global_flag = {scw_early_end}
+				}				
 			}
 		}
 	}

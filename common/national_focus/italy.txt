@@ -1439,7 +1439,7 @@
 		completion_reward = {
 			add_state_claim = 102
 			add_state_claim = 103
-			add_named_threat = { threat = 8 name = ITA_slovenia_dalmatia_claims_threat }
+			add_named_threat = { threat = 4 name = ITA_slovenia_dalmatia_claims_threat }
 			USA = {
 				set_country_flag = { flag = USA_yugoslavia_window days = 60 value = 1 }
 			}
