@@ -471,9 +471,6 @@ JFU_decisions = {
 				
 				add_compliance = 90 
 				}
-				JAP = {
-					give_resource_rights = { receiver = GER state = 724 }
-				}
 			}
 		}
 	}
