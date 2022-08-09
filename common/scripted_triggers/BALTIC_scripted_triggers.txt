@@ -16,8 +16,6 @@
 is_baltic_state = {
 	OR = {
 		original_tag = LIT
-		original_tag = LAT
-		original_tag = EST
 	}
 }
 

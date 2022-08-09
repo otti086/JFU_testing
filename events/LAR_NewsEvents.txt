@@ -49,10 +49,6 @@ news_event = {
 					division_template = "Brigada de la Guardia Civil"
 					disband = yes
 				}
-				delete_unit_template_and_units = {
-					division_template = "Requeté Carlista"
-					disband = yes
-				}
 				if = {
 					limit = {
 						tag = SPR

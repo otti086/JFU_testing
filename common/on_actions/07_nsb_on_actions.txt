@@ -313,165 +313,6 @@ on_actions = {
 		}
 	}
 	#ROOT is winner #FROM gets annexed - This will also fire on_annex
-	on_civil_war_end = {
-		effect = {
-			#Restore Baltic capitals
-			if = {
-				limit = {
-					original_tag = LAT
-					808 = { is_capital = no }
-					controls_state = 808
-				}
-				set_capital = { state = 808 }
-			}
-			if = {
-				limit = {
-					original_tag = EST
-					812 = { is_capital = no }
-					controls_state = 812
-				}
-				set_capital = { state = 812 }
-			}
-			if = {
-				limit = {
-					original_tag = LIT
-					11 = { is_capital = no }
-					784 = { is_capital = no }
-					OR = {
-						controls_state = 11
-						controls_state = 784
-					}
-				}
-				if = {
-					limit = { controls_state = 784 }
-					set_capital = { state = 784 }
-				}
-				if = {
-					limit = { controls_state = 11 }
-					set_capital = { state = 11 }
-				}
-			}
-			if = {
-				limit = {
-					has_DLC = "No Step Back"
-					is_baltic_state = yes
-				}
-				add_ideas = BALTIC_popular_resistance
-			}
-
-			#Puppet Lithuania/Romania when civil war ends
-			if = {
-				limit = {
-					OR = {
-						has_country_flag = POL_lithuanian_personal_union_flag
-						has_country_flag = POL_romanian_personal_union_flag
-						has_country_flag = POL_czech_personal_union_flag
-					}
-					POL = { 
-						is_subject = no 
-						has_government = neutrality 
-					}
-				}
-				POL = {
-					set_autonomy = {
-						target = PREV
-						autonomy_state = autonomy_personal_union
-					}
-				}
-			}
-			#Puppet Poland when civil war ends
-			if = {
-				limit = {
-					has_country_flag = LIT_poland_personal_union_flag
-					LIT = { 
-						is_subject = no
-						has_government = neutrality 
-					}
-				}
-				LIT = {
-					set_autonomy = {
-						target = PREV
-						autonomy_state = autonomy_personal_union
-					}
-				}
-			}
-		}
-	}
-	
-	on_ruling_party_change = { 
-		# temp var old_ideology_token is available for effects
-		effect = {
-			if = {
-				limit = {
-					original_tag = LAT
-					has_government = fascism
-				}
-			}
-			if = {
-				limit = {
-					has_government = democratic
-					has_idea = democratic_opposition
-				}
-				remove_ideas = democratic_opposition
-			}
-			if = {
-				limit = {
-					has_government = democratic
-					has_idea = democratic_opposition_idea_1
-				}
-				remove_ideas = democratic_opposition_idea_1
-			}
-			if = {
-				limit = {
-					has_government = democratic
-					has_idea = democratic_opposition_idea_2
-				}
-				remove_ideas = democratic_opposition_idea_2
-			}
-			if = {
-				limit = {
-					has_government = fascism
-					any_owned_state = {
-						is_capital = yes
-						is_on_continent = south_america
-					}
-					is_in_faction = no
-					has_country_flag = SOV_political_influence_americas_flag
-				}
-				country_event = {
-					id = NSB_soviet_fascist_tsarist.8
-					days = 3
-				}
-			}
-		}
-		effect = { #SOV - make FT dirty to force reload and tweak loc and icons to fit the new (wrong ^.^' ) ideology
-			if = {
-				limit = {
-					original_tag = SOV
-				}
-				mark_focus_tree_layout_dirty = yes
-				SOV_replace_stuff_based_on_ideology_effect = yes
-				if = { #Remove Paranoia, if for whatever reason country changes ideology while still active
-					limit = {
-						NOT = { has_government = communism }
-						has_country_flag = SOV_paranoia_system_active_flag
-					}
-					SOV_remove_paranoia_effect = yes
-				}
-				if = {
-					limit = { #Kerensky comes back from exile if Democratic
-						has_government = democratic
-						SOV_aleksandr_kerensky = {
-							has_character_flag = SOV_exiled_flag
-						}
-					}
-					SOV_aleksandr_kerensky = {
-						clr_character_flag = SOV_exiled_flag
-					}
-				}
-			}
-		}
-	}
 	
 	#FROM - Country (owner)
 	#ROOT - leader
@@ -724,17 +565,6 @@ on_actions = {
 			}
 		}
 	}
-
-	on_government_change = {
-		effect = {
-			if = {
-				limit = {
-					original_tag = EST
-					has_government = fascism
-				}
-			}
-		}
-	}
 	on_peace = { 
 		effect = { 
 			IF = {
@@ -803,27 +633,11 @@ on_actions = {
 						limit = {
 							OR = {
 								is_core_of = LIT
-								is_core_of = LAT
-								is_core_of = EST
 							}
 						}
 						if = { #This is to check if territories of more than one country are being transferred
 							limit = {
 								is_core_of = LIT 
-								NOT = { is_core_of = event_target:BALTIC_country_to_transfer }
-							}
-							set_global_flag = BALTIC_more_than_one_territory
-						}
-						else_if = {
-							limit = {
-								is_core_of = LAT 
-								NOT = { is_core_of = event_target:BALTIC_country_to_transfer }
-							}
-							set_global_flag = BALTIC_more_than_one_territory
-						}
-						else_if = {
-							limit = {
-								is_core_of = EST 
 								NOT = { is_core_of = event_target:BALTIC_country_to_transfer }
 							}
 							set_global_flag = BALTIC_more_than_one_territory

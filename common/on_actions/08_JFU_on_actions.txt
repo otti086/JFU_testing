@@ -443,14 +443,26 @@ on_actions = {
 					clr_global_flag = scw_early_end
 					set_global_flag = scw_over
 					set_global_flag = nationalist_victory
-					country_event = { id = lar_news.1 hours = 6 }
+					SPR = { country_event = { id = lar_news.1 hours = 6 } }
+				}
+				if = {
+					limit = {
+						NOT = {
+							AND = {
+								country_exists = SPD
+								has_global_flag = scw_over
+							}
+						}
+					}
+					SPR = { country_event = { id = lar_news.1 hours = 6 } }
 				}			
 				if = { 
 					limit = { 
 						country_exists = SPD
 					} 
-				set_global_flag = {scw_early_end}
+					set_global_flag = scw_early_end
 				}
+
 			}
 			if = {
 				limit = {
@@ -485,13 +497,24 @@ on_actions = {
 					clr_global_flag = scw_early_end
 					set_global_flag = scw_over
 					set_global_flag = nationalist_victory
-					country_event = { id = lar_news.1 hours = 6 }
+					SPR = { country_event = { id = lar_news.1 hours = 6 } }
+				}
+				if = {
+					limit = {
+						NOT = {
+							AND = {
+								country_exists = SPA
+								has_global_flag = scw_over
+							}
+						}
+					}
+					SPR = { country_event = { id = lar_news.1 hours = 6 } }
 				}
 				if = { 
 					limit = { 
 						country_exists = SPA
 					} 
-				set_global_flag = {scw_early_end}
+				set_global_flag = scw_early_end
 				}				
 			}
 		}

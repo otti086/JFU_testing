@@ -13,10 +13,10 @@ political_actions = {
             }
         }
 
-	visible = {
+		visible = {
             NOT = { has_government = fascism }
             NOT = { has_government = communism }
-	}
+		}
 
         cost = 100
         fire_only_once = yes

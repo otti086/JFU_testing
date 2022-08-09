@@ -813,10 +813,6 @@ news_event = {
 	immediate = {
 		random_list = {
 			70 = {
-				modifier = {
-					factor = 0
-					has_global_flag = GER_air_safety_regulations_flag
-				}
 				USA = { news_event = { id = news.42 } }
 			}
 			30 = { USA = { news_event = { id = news.43 } } }
@@ -6713,8 +6709,6 @@ news_event = {
 		text = news.214.d_baltic
 		trigger = {
 			OR = {
-				tag = EST
-				tag = LAT
 				tag = LIT
 			}
 		}
@@ -6724,8 +6718,6 @@ news_event = {
 		trigger = {
 			NOT = {
 				OR = {
-					tag = EST
-					tag = LAT
 					tag = LIT
 				}
 			}
@@ -6744,8 +6736,6 @@ news_event = {
 		trigger = {
 			NOT = {
 				OR = {
-					tag = EST
-					tag = LAT
 					tag = LIT
 					tag = GER
 					tag = SOV
@@ -6772,8 +6762,6 @@ news_event = {
 		name = news.214.e
 		trigger = {
 			OR = {
-				tag = EST
-				tag = LAT
 				tag = LIT
 			}
 		}

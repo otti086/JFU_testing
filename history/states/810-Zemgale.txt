@@ -4,7 +4,7 @@ state={
 	name="STATE_810"
 
 	history={
-		owner = LAT
+		owner = LIT
 		victory_points = {
 			6222 3 #Jelgava
 		}
@@ -14,7 +14,7 @@ state={
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
-			industrial_complex = 1
+			industrial_complex = 9
 			air_base = 3
 			310 = {
 				bunker = 2
@@ -22,8 +22,8 @@ state={
 			}
 
 		}
-		add_core_of = LAT
-
+		add_core_of = LIT
+		add_extra_state_shared_building_slots = 8
 	}
 
 	provinces={

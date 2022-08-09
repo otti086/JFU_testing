@@ -598,11 +598,10 @@ JFU_startup_on_action = {
 	}
 	SAF = {
 		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 815 }
-	}
-	IRQ = {
-		give_resource_rights = { receiver = ENG state = 291 }
-		give_resource_rights = { receiver = ENG state = 676 }
 	}	
+	SIA = {
+		give_resource_rights = { receiver = GER state = 724 }
+	}
 }
 JFU_pre_grinded_generals_OFF = {
 	GER = { 

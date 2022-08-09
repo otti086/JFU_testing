@@ -189,17 +189,6 @@ bookmarks = {
 				ROM_preserve_greater_romania
 			}
 		}
-		
-		"YUG"={
-			minor = yes
-			history = "YUG_BLITZKRIEG_DESC"
-			ideology = neutrality
-			ideas = {
-				anti_german_military
-				YUG_idea_croatian_opposition
-				YUG_idea_orthodox_church_support
-			}
-		}
 		"CHI"={
 			minor = yes
 			history = "CHI_BLITZKRIEG_DESC"
@@ -282,46 +271,6 @@ bookmarks = {
 			}
 			focuses = {
 				BUL_the_third_bulgarian_empire
-			}
-		}
-		"LIT"={
-			minor = yes
-			history = "LIT_BLITZKRIEG_DESC"
-			ideology = neutrality
-			ideas = {
-				LIT_victory_in_trust_idea
-				LIT_invested_in_farms_1
-				BALTIC_forest_brothers_idea
-			}
-		}
-		
-		"LAT"={
-			minor = yes
-			history = "LAT_BLITZKRIEG_DESC"
-			ideology = neutrality
-			ideas = {
-				LAT_saeima_idea_military_1
-				LAT_the_sun_shines_equally_idea
-				LAT_paramilitary_idea_1
-			}
-		}
-		
-		"EST"={
-			minor = yes
-			history = "EST_BLITZKRIEG_DESC"
-			ideology = neutrality
-			ideas = {
-				EST_ismaaliit_idea
-				EST_national_council_idea
-				EST_exploit_the_banks_idea
-			}
-		}
-		"POL"={
-			minor = yes
-			history = "POL_BLITZKRIEG_DESC"
-			ideology = neutrality
-			ideas = {
-				deterrence
 			}
 		}
 	}

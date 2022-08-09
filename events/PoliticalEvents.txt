@@ -27,8 +27,6 @@ country_event = {
 				has_dlc = "No Step Back"
 				OR = {
 					original_tag = POL
-					original_tag = EST
-					original_tag = LAT
 					original_tag = LIT
 				}
 			}
@@ -131,8 +129,6 @@ country_event = {
 				has_dlc = "No Step Back"
 				OR = {
 					original_tag = POL
-					original_tag = EST
-					original_tag = LAT
 					original_tag = LIT
 				}
 			}
@@ -235,8 +231,6 @@ country_event = {
 				has_dlc = "No Step Back"
 				OR = {
 					original_tag = POL
-					original_tag = EST
-					original_tag = LAT
 					original_tag = LIT
 				}
 			}
@@ -339,8 +333,6 @@ country_event = {
 				has_dlc = "No Step Back"
 				OR = {
 					original_tag = POL
-					original_tag = EST
-					original_tag = LAT
 					original_tag = LIT
 				}
 			}
@@ -431,8 +423,6 @@ country_event = {
 				has_dlc = "No Step Back"
 				OR = {
 					original_tag = POL
-					original_tag = EST
-					original_tag = LAT
 					original_tag = LIT
 				}
 			}
@@ -494,8 +484,6 @@ country_event = {
 				has_dlc = "No Step Back"
 				OR = {
 					original_tag = POL
-					original_tag = EST
-					original_tag = LAT
 					original_tag = LIT}
 				}
 			}
@@ -545,8 +533,6 @@ country_event = {
 				has_dlc = "No Step Back"
 				OR = {
 					original_tag = POL
-					original_tag = EST
-					original_tag = LAT
 					original_tag = LIT
 				}
 			}
@@ -800,8 +786,6 @@ country_event = {
 				has_dlc = "No Step Back"
 				OR = {
 					original_tag = POL
-					original_tag = EST
-					original_tag = LAT
 					original_tag = LIT
 				}
 			}
@@ -916,8 +900,6 @@ country_event = {
 				has_dlc = "No Step Back"
 				OR = {
 					original_tag = POL
-					original_tag = EST
-					original_tag = LAT
 					original_tag = LIT
 				}
 			}
@@ -1033,8 +1015,6 @@ country_event = {
 				has_dlc = "No Step Back"
 				OR = {
 					original_tag = POL
-					original_tag = EST
-					original_tag = LAT
 					original_tag = LIT
 				}
 			}
@@ -1256,8 +1236,6 @@ country_event = {
 				has_dlc = "No Step Back"
 				OR = {
 					original_tag = POL
-					original_tag = EST
-					original_tag = LAT
 					original_tag = LIT
 					original_tag = ROM
 				}

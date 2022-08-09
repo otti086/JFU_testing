@@ -39,14 +39,11 @@ ai_country = {
 		tag = POL
 		tag = AUS
 		tag = LIT
-		tag = EST
-		tag = LAT
 		tag = YUG
 		tag = GRE
 		tag = ALB
 		tag = DEN
 		tag = CHI
-		tag = IRQ
 		tag = ETH
 		tag = PER
 	}

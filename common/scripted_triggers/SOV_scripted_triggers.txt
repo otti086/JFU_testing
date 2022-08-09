@@ -110,8 +110,6 @@ SOV_is_chinese_tag = {
 
 SOV_is_soviet_republic_tag_lax = {
 	OR = {
-		tag = EST
-		tag = LAT
 		tag = LIT
 		tag = POL
 		tag = FIN
@@ -133,14 +131,6 @@ SOV_is_valid_academy_of_sciences_target = {
 
 SOV_has_already_built_national_academy_of_sciences = {
 	OR = {
-		AND = {
-			FROM = { tag = EST }
-			ROOT = { has_country_flag = SOV_national_academy_of_sciences_built_EST_flag }
-		}
-		AND = {
-			FROM = { tag = LAT }
-			ROOT = { has_country_flag = SOV_national_academy_of_sciences_built_LAT_flag }
-		}
 		AND = {
 			FROM = { tag = LIT }
 			ROOT = { has_country_flag = SOV_national_academy_of_sciences_built_LIT_flag }
@@ -873,8 +863,6 @@ SOV_we_want_to_send_ultimatums = {
 	any_other_country = {
 		OR = {
 			original_tag = LIT
-			original_tag = LAT
-			original_tag = EST
 		}
 		NOT = { has_country_flag = SOV_ultimatum_sent_flag }
 	}

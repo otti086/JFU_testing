@@ -153,18 +153,6 @@ defined_text = { # Country
 	name = GetNaturaResource_BAL
 	text = {
 		trigger = {
-			tag = EST
-		}
-		localization_key = PRODUCTION_MATERIALS_OIL
-	}
-	text = {
-		trigger = {
-			tag = LAT
-		}
-		localization_key = PRODUCTION_MATERIALS_STEEL
-	}
-	text = {
-		trigger = {
 			tag = LIT
 		}
 		localization_key = grain
@@ -173,18 +161,6 @@ defined_text = { # Country
 
 defined_text = { # Country
 	name = GetExtraction_BAL
-	text = {
-		trigger = {
-			tag = EST
-		}
-		localization_key = refineries
-	}
-	text = {
-		trigger = {
-			tag = LAT
-		}
-		localization_key = mills
-	}
 	text = {
 		trigger = {
 			tag = LIT
@@ -202,12 +178,6 @@ defined_text = { # Country
 			}
 		}
 		localization_key = BALT_belarus_claims_tooltip
-	}
-	text = {
-		trigger = {
-			tag = LAT
-		}
-		localization_key = mills
 	}
 	text = {
 		localization_key = SOV_belarus_claims_tooltip

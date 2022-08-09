@@ -1811,8 +1811,17 @@ focus_tree = {
 				HUN = {
 					navy_experience = 200
 				}
+				if = {
+					limit = {
+						country_exists = SIA
+					}
+					SIA = { remove_resource_rights = 724 }
+				}
+				else = {
+					JAP = { remove_resource_rights = 724 }
+				}
+				add_named_threat = { threat = 5 name = GER_danzig_or_war }
 			}
-			add_named_threat = { threat = 5 name = GER_danzig_or_war }
 		}
 	}
 	focus = {

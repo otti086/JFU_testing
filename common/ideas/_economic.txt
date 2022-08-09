@@ -542,7 +542,6 @@ ideas = {
 
 					OR = {
 						tag = PER
-						tag = IRQ
 					}
 					is_in_faction = no
 				}
@@ -631,7 +630,6 @@ ideas = {
 
 						# Iraq & Iran are special oil snowflakes
 						tag = PER
-						tag = IRQ
 					}
 				}
 				modifier = {

@@ -95,25 +95,6 @@ JFU_decisions = {
 			}
 		}	
 	}
-	"Operation Desert Flower" = {
-		icon = generic_operation
-		fire_only_once = yes
-		allowed = { tag = GER }
-		available = {	ITA = { controls_state = 454 }	} 
-		cost = 0
-		complete_effect = {
-			hidden_effect = {  	ENG = { add_to_faction = IRQ }  }
-			declare_war_on = {
-			target = IRQ 
-			type = annex_everything
-			}
-			if = { limit = { country_exists = ITA }	ITA = { add_to_war = { targeted_alliance = GER enemy = IRQ } } }
-			if = { limit = { country_exists = HUN }	HUN = { add_to_war = { targeted_alliance = GER enemy = IRQ } } }
-			if = { limit = { country_exists = ROM }	ROM = { add_to_war = { targeted_alliance = GER enemy = IRQ } } }
-			if = { limit = { country_exists = BUL }	BUL = { add_to_war = { targeted_alliance = GER enemy = IRQ } } }
-			if = { limit = { country_exists = SPR }	SPR = { add_to_war = { targeted_alliance = GER enemy = IRQ } } }
-		}		
-	}
 	"Unternehmen Barbarossa" = { 
 		icon = ger_reichskommissariats
 		fire_only_once = yes	
@@ -473,6 +454,7 @@ JFU_decisions = {
 		icon = generic_operation
 		fire_only_once = yes
 		allowed = { tag = JAP}
+		available = { SIA = { is_ai = yes } }
 		cost = 0
 		complete_effect = {
 			annex_country = { target = SIA transfer_troops = yes }
@@ -489,6 +471,9 @@ JFU_decisions = {
 				
 				add_compliance = 90 
 				}
+				JAP = {
+					give_resource_rights = { receiver = GER state = 724 }
+				}
 			}
 		}
 	}
@@ -497,6 +482,7 @@ JFU_decisions = {
 		icon = generic_operation
 		fire_only_once = yes
 		allowed = { tag = JAP }
+		available = { MAN = { is_ai = yes } }
 		cost = 0
 		available = {	date < 1937.1.1	} 
 		complete_effect = {
@@ -526,6 +512,7 @@ JFU_decisions = {
 		icon = generic_operation
 		fire_only_once = yes
 		allowed = { tag = AST }
+		available = { NZL = { is_ai = yes } }
 		cost = 0
 		complete_effect = {
 			hidden_effect = { 
@@ -545,6 +532,7 @@ JFU_decisions = {
 		icon = generic_operation
 		fire_only_once = yes
 		allowed = { tag = CAN }
+		available = { SAF = { is_ai = yes } }
 		cost = 0
 		complete_effect = {
 			hidden_effect = { 
@@ -566,7 +554,7 @@ JFU_decisions = {
 		fire_only_once = yes
 		allowed = { tag = ROM }
 		cost = 0
-		available = { date > 1938.1.1 }
+		available = { BUL = { is_ai = yes } date > 1938.1.1 }
 		complete_effect = {
 			hidden_effect = {
 				ROM = { add_state_core = 211 add_state_core = 801 add_state_core = 212 add_state_core = 48}
@@ -580,7 +568,7 @@ JFU_decisions = {
 		fire_only_once = yes
 		allowed = { tag = ITA }
 		cost = 0
-		available = { date > 1938.1.1 }
+		available = {BUL = { is_ai = yes } date > 1938.1.1 }
 		complete_effect = {
 			hidden_effect = {
 				ITA = { add_state_core = 211 add_state_core = 801 add_state_core = 212 add_state_core = 48}
@@ -593,7 +581,7 @@ JFU_decisions = {
 		icon = generic_operation
 		fire_only_once = yes
 		allowed = { tag = ITA }
-		available = {	has_completed_focus = ITA_slovenia_dalmatia_claims } 
+		available = { has_completed_focus = ITA_slovenia_dalmatia_claims } 
 		cost = 0
 		complete_effect = {
             declare_war_on = {
