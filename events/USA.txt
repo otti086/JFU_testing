@@ -464,71 +464,7 @@ country_event = {
 	}
 
 	immediate = {
-		random_list = {
-			20 = { 
-				modifier = {
-					not = { congress_medium_support_trigger = yes }
-					factor = 1.25
-				}
-				modifier = {
-					not = { congress_low_support_trigger = yes }
-					factor = 2
-				}
-				country_event = { id = usa.40 days = 15 random_days = 6 } #small support
-			} 
-			20 = { 
-				modifier = {
-					check_variable = { var = senators_support value = quorum_high compare = greater_than_or_equals }
-					factor = 3
-				}
-				modifier = {
-					has_idea_with_trait = fascist_demagogue
-					factor = 2
-				}
-				modifier = {
-					has_idea_with_trait = communist_revolutionary
-					factor = 2
-				}
-				country_event = { id = usa.42 days = 20 random_days = 6 } #small opposition 
-			} 
-			15 = { 
-				modifier = {
-					not = { congress_medium_support_trigger = yes }
-					factor = 1.25
-				}
-				modifier = {
-					not = { congress_low_support_trigger = yes }
-					factor = 2
-				}
-				country_event = { id = usa.44 days = 20 random_days = 10 } #medium support
-			} 
-			15 = { 
-				modifier = {
-					check_variable = { var = senators_support value = quorum_high compare = greater_than_or_equals }
-					factor = 3
-				}
-				modifier = {
-					has_idea_with_trait = fascist_demagogue
-					factor = 2
-				}
-				modifier = {
-					has_idea_with_trait = communist_revolutionary
-					factor = 2
-				}
-				country_event = { id = usa.46 days = 20 random_days = 10 }  #medium opposition
-			}
-			30 = { #investment opportunity
-				modifier = {
-					has_country_flag = USA_congress_investment
-					factor = 0
-				}
-				modifier = {
-					has_completed_focus = USA_wpa
-					factor = 1.5
-				} 
-				country_event = { id = usa.60 days = 10 random_days = 15 } 
-			} 
-		}
+		country_event = { id = usa.44 days = 20 random_days = 10 } #medium support
 	}
 }
 
@@ -542,76 +478,7 @@ country_event = {
 	}
 
 	immediate = {
-		random_list = {
-			35 = { 
-				modifier = {
-					check_variable = { representatives_support < 218 }
-					factor = 1.5
-				}
-				modifier = {
-					check_variable = { representatives_support < 180 }
-					factor = 3
-				}
-				country_event = { id = usa.41 days = 15 random_days = 6 } #small support
-			} 
-			25 = {
-				modifier = {
-					check_variable = { representatives_support > 260 }
-					factor = 2
-				}
-				modifier = {
-					check_variable = { representatives_support < 180 }
-					factor = 0.5
-				}
-				modifier = {
-					has_idea_with_trait = fascist_demagogue
-					factor = 2
-				}
-				modifier = {
-					has_idea_with_trait = communist_revolutionary
-					factor = 2
-				} 
-				country_event = { id = usa.43 days = 20 random_days = 6 } #small opposition
-			} 
-			25 = { 
-				modifier = {
-					check_variable = { representatives_support < 180 }
-					factor = 1.5
-				}
-				modifier = {
-					check_variable = { representatives_support < 100 }
-					factor = 10
-				}
-				country_event = { id = usa.45 days = 25 random_days = 10 } #medium support
-			} 
-			15 = { 
-				modifier = {
-					check_variable = { representatives_support > 260 }
-					factor = 2
-				}
-				modifier = {
-					check_variable = { representatives_support > 400 }
-					factor = 10
-				}
-				modifier = {
-					check_variable = { representatives_support < 180 }
-					factor = 0.5
-				}
-				modifier = {
-					check_variable = { representatives_support < 100 }
-					factor = 0
-				}
-				modifier = {
-					has_idea_with_trait = fascist_demagogue
-					factor = 2
-				}
-				modifier = {
-					has_idea_with_trait = communist_revolutionary
-					factor = 2
-				}
-				country_event = { id = usa.47 days = 30 random_days = 15 } #medium opposition
-			} 
-		}
+		country_event = { id = usa.41 days = 15 random_days = 6 } #small support
 	}
 }
 # senator wants investment in their state - hidden dispatch event
