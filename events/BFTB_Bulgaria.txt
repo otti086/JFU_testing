@@ -2886,7 +2886,6 @@ country_event = {
 		hidden_effect = {
 			set_global_flag = BUL_fatherland_front_coup_flag
 			set_country_flag = BUL_ff_civil_war_flag
-			BUL_start_ff_civil_war = yes
 		}
 	}
 

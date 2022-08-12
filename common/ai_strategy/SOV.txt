@@ -696,44 +696,6 @@ SOV_have_some_train_production = {
 	}
 }
 
-# Don't ally the Soviet Union if it has civil war
-SOV_dont_ally_us_soviet_civil_was = {
-	allowed = { always = yes }
-	enable = {
-		has_global_flag = SOV_soviet_civil_war
-		NOT = {
-			original_tag = SOV
-		}
-	}
-	abort = {
-		has_global_flag = SOV_soviet_civil_war_over
-	}
-	ai_strategy = {
-		type = alliance
-		id = SOU
-		value = -500
-	}
-}
-
-SOV_dont_join_wars_during_civil_war = {
-	allowed = { always = yes }
-	enable = {
-		has_global_flag = SOV_soviet_civil_war
-		NOT = {
-			original_tag = SOV
-		}
-	}
-	abort = {
-		has_global_flag = SOV_soviet_civil_war_over
-	}
-	ai_strategy = {
-		type = dont_join_wars_with
-		id = SOU
-		# target_country = SOV
-		value = 200
-	}
-}
-
 # Make countries want to support the opposition IF
 SOV_support_opposition_with_arms = {
 

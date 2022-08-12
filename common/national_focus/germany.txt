@@ -1552,11 +1552,6 @@ focus_tree = {
 					}
 				}
 			}
-			add_tech_bonus = {
-				bonus = 1.0
-				uses = 2
-				category = artillery
-			}
 		}
 	}
 
@@ -1640,6 +1635,11 @@ focus_tree = {
 					technology = advanced_medium_tank_chassis
 					technology = mechanised_infantry
 				}
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = artillery
 			}
 		}
 	}

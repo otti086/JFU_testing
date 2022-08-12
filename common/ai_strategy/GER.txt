@@ -1674,38 +1674,6 @@ GER_xp_upgrade_spending_land = {
 	}
 }
 
-GER_vichy_has_served_its_purpose = {
-	allowed = {
-		original_tag = GER
-	}
-
-	enable = {
-		country_exists = VIC
-		VIC = {
-			OR = {
-				has_country_flag = case_anton # Germany has activated the decision
-
-				count_triggers = { # Conditions for decision GER_case_anton
-					amount = 3 # lost control of ca half french north africa
-					458 = { CONTROLLER = { has_war_with = ROOT } }
-					459 = { CONTROLLER = { has_war_with = ROOT } }
-					460 = { CONTROLLER = { has_war_with = ROOT } }
-					461 = { CONTROLLER = { has_war_with = ROOT } }
-					462 = { CONTROLLER = { has_war_with = ROOT } }
-					513 = { CONTROLLER = { has_war_with = ROOT } }
-					665 = { CONTROLLER = { has_war_with = ROOT } }
-				}
-			}
-		}
-	}
-
-	ai_strategy = {
-		type = prepare_for_war
-		id = VIC
-		value = 100
-	}
-}
-
 GER_dont_upgrade_to_weapons_3_too_early = {
 	allowed = {
 		original_tag = GER
