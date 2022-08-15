@@ -45,7 +45,6 @@ focus_tree = {
 				has_full_control_of_state = 334
 			}
 			has_full_control_of_state = 695
-			has_full_control_of_state = 309
 		}
 		bypass = {
 		}
@@ -74,7 +73,6 @@ focus_tree = {
 		id = HOL_the_western_possessions
 		available = {
 			has_full_control_of_state = 695
-			has_full_control_of_state = 309
 		}
 		prerequisite = { focus = HOL_obtain_foreign_colonial_investments }
 		icon = GFX_goal_generic_construct_infrastructure
@@ -180,7 +178,6 @@ focus_tree = {
 	focus = {
 		id = HOL_open_second_paranam_bauxite_mine
 		available = {
-			has_full_control_of_state = 309
 			OR = {
 				has_war = yes
 				GER = {
@@ -732,7 +729,6 @@ focus_tree = {
 			controls_state = 334
 			controls_state = 673
 			controls_state = 667
-			controls_state = 309
 		}
 		prerequisite = { focus = HOL_a_western_capital }
 		prerequisite = { focus = HOL_the_foundations_of_defense }
@@ -2210,13 +2206,6 @@ focus_tree = {
 							controls_state = 667
 						}
 					}
-					OR = {
-						controls_state = 309
-						any_country = {
-							is_subject_of = HOL
-							controls_state = 309
-						}
-					}
 				}
 				
 				NOT = {
@@ -3144,7 +3133,6 @@ focus_tree = {
 		available = {
 			is_in_faction_with = USA
 			has_war = yes
-			has_full_control_of_state = 309
 			has_full_control_of_state = 695
 		}
 		prerequisite = { focus = HOL_the_singapore_conferences }

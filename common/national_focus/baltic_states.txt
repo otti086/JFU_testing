@@ -1,0 +1,11 @@
+focus_tree = {
+	id = baltic_focus
+
+	country = {
+		factor = 0
+		modifier = {	add = 10  tag = LIT 	}
+	}
+
+	default = no
+	reset_on_civilwar = no
+}

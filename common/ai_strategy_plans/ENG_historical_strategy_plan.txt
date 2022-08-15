@@ -61,7 +61,6 @@ ENG_historical_plan = {
 		uk_new_zealand_focus
 		uk_south_africa_focus
 		UK_secret_focus
-		uk_jet_focus
 		ENG_tank_focus
 	}
 

@@ -50,7 +50,6 @@ HOL_obtain_foreign_colonial_investments = {
 				}
 			}
 			has_full_control_of_state = 695
-			has_full_control_of_state = 309
 		}
 
 		cost = 25
@@ -126,7 +125,6 @@ HOL_obtain_foreign_colonial_investments = {
 				}
 			}
 			has_full_control_of_state = 695
-			has_full_control_of_state = 309
 		}
 
 		cost = 25

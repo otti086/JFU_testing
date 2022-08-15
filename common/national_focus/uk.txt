@@ -23,24 +23,14 @@ focus_tree = {
 		id = crypto_bomb_focus
 		available = {
 				has_war_with = GER
-				POL = {
-					NOT = { is_in_faction_with = GER } #We assume POL will help vs Germany unless they are allied to them
-				}
 			}
 		
 		bypass = {
 			OR = {
 				AND = {
-					has_war_with = GER
-					POL = {
-							is_in_faction_with = GER # If POL is in GER's faction, no help for us
-						}
-				}
-				AND = {
 					has_war = yes
 					is_in_faction_with = USA
 				}
-				GER = { exists = no }
 			}
 		}
 		
@@ -1185,30 +1175,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = uk_jet_focus
-		prerequisite = { focus = aircraft_production_focus }
-		icon = GFX_goal_generic_build_airforce
-		x = 0
-		y = 1
-		relative_position_id = aircraft_production_focus
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		completion_reward = {
-			add_tech_bonus = {
-				name = uk_jet_focus
-				bonus = 1.0
-				uses = 4
-				category = jet_technology
-			}
-		}
-	}
-
-	focus = {
 		id = naval_rearmament_focus
 		prerequisite = { focus = general_rearmament_focus }
 		icon = GFX_goal_generic_construct_naval_dockyard 
@@ -1221,21 +1187,6 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-
-		bypass = {
-			custom_trigger_tooltip =  {
-				tooltip = naval_effort_tt
-				NOT = {
-					any_owned_state = {
-						free_building_slots = {
-							building = dockyard
-							size > 1
-							include_locked = yes
-						}
-					}
-				}
-			}
-		}
 
 		complete_tooltip = {
 			every_state = {

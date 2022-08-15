@@ -54,8 +54,6 @@ recruit_character = CZE_stefan_osusky
 recruit_character = CZE_ferdinand_catlos
 recruit_character = CZE_jozef_tiso
 recruit_character = CZE_vojtech_tuka
-recruit_character = CZE_konrad_henlein
-recruit_character = CZE_gustav_husak
 
 
 if = {

@@ -1,35 +1,15 @@
-﻿search_filter_prios = {
-	FOCUS_FILTER_POLITICAL = 1010
-
-	
- 
-	
-	
-	FOCUS_FILTER_RESEARCH = 522
-
-	
-	FOCUS_FILTER_INDUSTRY = 509
-
-	FOCUS_FILTER_SOV_POLITICAL_PARANOIA = 111
-	FOCUS_FILTER_PROPAGANDA = 110
-	FOCUS_FILTER_ARMY_XP = 103
-	FOCUS_FILTER_NAVY_XP = 102
-	FOCUS_FILTER_AIR_XP = 101
-
-}
+﻿
 
 focus_tree = {
-	id = generic_focus
+	id = siam_focus
 	
 	country = {
-		factor = 1
-	}
-	
-	default = yes
-	reset_on_civilwar = no
-
-	initial_show_position = {
-		focus = industrial_effort
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SIA
+		
+		}
 	}
 
 	focus = {
@@ -1718,11 +1698,6 @@ focus_tree = {
 		icon = GFX_goal_generic_national_unity #icon = GFX_goal_tripartite_pact
 		prerequisite = { focus = political_effort }
 		mutually_exclusive = { focus = liberty_ethos}
-		available = {
-			NOT = {original_tag = BRA}
-			NOT = {original_tag = NOR}
-			NOT = {original_tag = IRE}
-		}
 		x = -1
 		y = 1
 		relative_position_id = political_effort

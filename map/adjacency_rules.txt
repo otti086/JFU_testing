@@ -231,10 +231,10 @@ adjacency_rule =
 	offset = { -2 0 -9 }
 }
 
-#The Dardanelles
+#Strait of Taranto
 adjacency_rule =
 {
-	name = "DARDANELLES_STRAIT"
+	name = "STRAIT_OF_TARANTO"
 
 	contested =
 	{
@@ -259,21 +259,16 @@ adjacency_rule =
 	}
 	neutral =
 	{
-		army = no
-		navy = no
-		submarine = no
+		army = yes
+		navy = yes
+		submarine = yes
 		trade = yes
 	}
 	
-	required_provinces = { 849 6864 }
-
-	is_disabled = {
-		has_country_flag = DARDANELLES_STRAIT_BLOCKED_FOR_COUNTRY
-		tooltip = dardanelles_strait_blocked_tt
-	}
+	required_provinces = { 6979 11767 }
 	
-	icon = 849
-	offset = { 3 0 -5 } 
+	icon = 5864
+	offset = { 1 3 0 } 
 }
 
 #Kiel Canal

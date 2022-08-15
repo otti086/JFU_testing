@@ -20,15 +20,6 @@ state={
 		victory_points = {
 			3973 3
 		}
-		#victory_points = {
-		#	863 1
-		#}
-		#victory_points = {
-		#	3864 3
-		#}
-		#victory_points = {
-		#	976 1
-		#}
 		victory_points = {
 			7127 3
 		}
@@ -37,8 +28,9 @@ state={
 		}
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 3
+			industrial_complex = 6
 			dockyard = 1
+			arms_factory = 3
 			air_base = 4
 			4109 = {
 				naval_base = 9
@@ -47,7 +39,7 @@ state={
 
 		}
 		add_core_of = GRE
-
+		add_extra_state_shared_building_slots = 6
 	}
 
 	provinces={

@@ -1,4 +1,104 @@
 ideas = {
+
+
+	country = {
+
+		NOR_training = {
+			picture = FRA_army_of_aggression_focus
+			modifier = {
+				winter_attrition_factor = -0.25
+				acclimatization_cold_climate_gain_factor = 0.1
+			}
+		}
+		NOR_no_surrender = {
+			picture = FRA_army_of_aggression_focus
+			modifier = {
+				surrender_limit = 1 
+			}
+		}
+		nor_bad_debuffs = {
+			picture = generic_disjointed_gov
+			modifier = {
+				surrender_limit = -0.11
+				defensive_war_stability_factor = -0.20
+				industrial_capacity_dockyard = -0.80
+				conversion_cost_civ_to_mil_factor = 3.0
+				justify_war_goal_time = 100
+			}
+		}
+		nor_bad_debuffs2 = {
+			picture = chi_army_corruption
+			modifier = {
+				max_dig_in = -10
+				army_attack_factor = -0.70
+				army_defence_factor = -0.70
+				max_command_power = -50x`
+				command_power_gain_mult = -0.35	
+				production_speed_naval_base_factor = -1.2
+			}
+		}
+		NOR_spec_ops = {
+		picture = ast_volunteer_defence_corps
+			modifier = {
+				special_forces_training_time_factor = -0.5
+				max_command_power = 20
+			}
+		}
+		
+		NOR_army_buffs = {
+			picture = generic_manpower_bonus
+			modifier = {	
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.25
+					instant = yes
+					}
+				support_equipment = {
+					build_cost_ic = -0.25
+					instant = yes
+				}
+				artillery_equipment = {
+					build_cost_ic = -0.25
+					instant = yes
+				}
+					
+				anti_tank_equipment = {
+					build_cost_ic = -0.25
+					instant = yes
+				}
+					
+				anti_air_equipment = {
+					build_cost_ic = -0.25
+					instant = yes
+				}
+					
+				motorized_equipment = {
+					build_cost_ic = -0.25
+					instant = yes
+				}
+			}
+		}
+		
+		NOR_army_buffs2 = {
+			picture = generic_infantry_bonus
+			modifier = {
+				command_power_gain_mult = 0.2
+				training_time_factor = -0.2
+			}
+		}
+		
+		NOR_crofter = {
+			picture = generic_victors_of_ww1 
+			modifier = {
+				army_core_attack_factor = 0.10
+				army_core_defence_factor = 0.1
+				amphibious_invasion = 0.2
+				winter_attrition_factor = -0.25
+				out_of_supply_factor = -0.25
+			}
+		}
+	}
 	aircraft_manufacturer = {
 			
 		designer = yes

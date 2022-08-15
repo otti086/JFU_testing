@@ -478,10 +478,6 @@ opinion_modifiers = {
 		value = 25
 	}
 
-	CZE_german_leanings = {
-		value = 25
-	}
-
 	rejected_demands = {
 		value = -30
 	}

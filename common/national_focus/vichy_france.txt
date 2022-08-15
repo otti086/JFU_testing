@@ -1,11 +1,11 @@
 ﻿focus_tree = {
-	id = vichy_french_focus
+	id = vichy_focus
 	
 	country = {
 		factor = 0
 		
 		modifier = {
-			add = 1
+			add = 10
 			tag = EFR
 		}
 	}
@@ -28,7 +28,7 @@
 			factor = 1
 		}
 		available = {
-			has_country_leader = { ruling_only = yes character = FRA_philippe_petain }
+			26 = { is_controlled_by = EFR }
 		}
 		
 		bypass = {
@@ -490,18 +490,6 @@
 				can_create_factions = yes
 			}
 			remove_occupation_cost_effect = yes
-			if = {
-				limit = {
-					has_idea = VIC_produce_aircraft_parts
-				}
-				remove_ideas = VIC_produce_aircraft_parts
-			}
-			GER = { 
-				country_event = lar_end_the_occupation.1 
-				if = { limit = { has_idea = VIC_aircraft_parts }
-					remove_ideas = VIC_aircraft_parts
-				}
-			}
 		}
 	}
 	focus = {
@@ -881,7 +869,6 @@
 			x = 0
 			y = 0
 		}
-		allow_branch = { has_dlc = "Death or Dishonor" }
 		prerequisite = { 
 			focus = VIC_learn_from_the_enemy
 		}

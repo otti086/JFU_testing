@@ -547,68 +547,6 @@ characters={
 		}
 	}
 
-	CZE_gustav_husak={
-		name=CZE_gustav_husak
-		portraits={
-			army={
-				small="GFX_idea_CZE_gustav_husak"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = CZE_gustav_husak
-			allowed  = {
-				original_tag  = CZE
-			}
-			available  = {
-				if  = {
-					limit  = {
-						has_dlc = "Death or Dishonor"
-					}
-					has_completed_focus  = CZE_go_left 
-				}
-
-			}
-			traits  = {
-				communist_revolutionary 
-			}
-			ai_will_do  = {
-				factor  = 0.000
-			}
-		}
-	}
-	
-	CZE_konrad_henlein={
-		name=CZE_konrad_henlein
-		portraits={
-			army={
-				small="GFX_idea_CZE_konrad_henlein"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = CZE_konrad_henlein
-			allowed  = {
-				original_tag  = CZE
-			}
-			available  = {
-				if  = {
-					limit  = {
-						has_dlc = "Death or Dishonor"
-					}
-					has_completed_focus  = CZE_go_right 
-				}
-
-			}
-			traits  = {
-				fascist_demagogue 
-			}
-			ai_will_do  = {
-				factor  = 0.000
-			}
-		}		
-	}
-
 	
 
 	# Illusive Gentleman auto-generated

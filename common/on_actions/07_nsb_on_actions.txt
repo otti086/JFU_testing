@@ -1,84 +1,6 @@
 on_actions = {
 	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
 	on_state_control_changed = {
-		effect = {
-			if = {
-				limit = {
-					FROM.FROM = {
-						is_core_of = SOV
-					}
-					FROM = {
-						tag = SOV
-					}
-				}
-				SOV = { set_country_flag = achievement_lost_state }
-			}
-		}
-		effect = {
-			if = {
-				limit = {
-					FROM.FROM = {
-						is_core_of = GER
-						NOT = { #these two cores are given to germany in the Danzig or War event, but the states are not transfered immediately
-							state = 85
-							state = 807
-						}
-					}
-					has_global_flag = achievement_france_surrender
-					NOT = { tag = SOV }
-					NOT = { tag = GER }#in case Germany recaptures a state
-				}
-				set_global_flag = GER_lost_core_state
-			}
-		}
-		effect = {
-			if = {
-				limit = {
-					FROM.FROM = { state = 85 }
-				}
-				if = {
-					limit = {
-						ROOT = {
-							OR = {
-								original_tag = GER
-							}
-						}
-					}
-					85 = {
-						reset_state_name = yes
-					}
-					reset_province_name = 362
-				}
-				if = {
-					limit = { ROOT = { original_tag = POL } }
-					85 = { set_state_name = "Gdańsk" }
-					set_province_name = {
-						id = 362
-						name = "Gdańsk"
-					}
-				}
-			}
-			if = {
-				limit = {
-					FROM.FROM = { state = 119 }
-				}
-				if = {
-					limit = {
-						ROOT = { original_tag = IRE }
-					}
-					set_province_name = {
-						id = 385
-						name = "Derry"
-					}
-				}
-				if = {
-					limit = {
-						ROOT = { original_tag = ENG }
-					}
-					reset_province_name = 385
-				}
-			}
-		}
 
 		#SOVIET - If Death to Invaders Propaganda Campaign is active, manage the appropriate state modifier
 		effect = {
@@ -155,9 +77,6 @@ on_actions = {
 				}
 			}
 		}
-
-		#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
-		#SOVIET CIVIL WAR
 
 		#GERMANY - If Soviet Imports is active, remove it
 		effect = {
@@ -441,165 +360,11 @@ on_actions = {
 			}
 		}
 	}
-	on_peace = { 
-		effect = { 
-			IF = {
-				limit = {
-					THIS = {
-						has_country_flag = SOV_unrecognized_country_flag
-						has_country_flag = SOV_breakaway_country_flag
-					}
-				}
-				THIS = { clr_country_flag = SOV_unrecognized_country_flag }
-				set_rule = { can_join_factions = yes }
-			}
-		} 
-	}
-	
-	#ROOT - country that just went to peace
-	on_peaceconference_ended = { 
-		effect = {
-			if = {
-				limit = {
-					tag = GER
-					is_subject = yes
-				}
-				GER = { #Stop democratic Germany from doing Anschluss and awakening their ambition of global domination
-					uncomplete_national_focus = {
-						focus = GER_rhineland
-						uncomplete_children = yes
-					}
-					uncomplete_national_focus = {
-						focus = GER_oppose_hitler
-						uncomplete_children = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					POL = { is_subject_of = GER }
-					GER = { is_ai = yes }
-				}
-				GER = {
-					every_controlled_state = {
-						limit = {
-							OR = {
-								is_core_of = POL
-								is_claimed_by = POL
-							}
-							NOT = { is_core_of = GER }
-						}
-						POL = {
-							transfer_state = PREV
-						}
-					}
-				}
-			}
-			if = {
-				limit = {
-					is_baltic_state = yes
-					is_subject_of = SOV
-					SOV = { is_ai = yes }
-				}
-				SOV = { 	
-					clr_global_flag = BALTIC_more_than_one_territory
-					clear_global_event_target = BALTIC_loose_territory_country
-					clear_global_event_target = BALTIC_country_to_transfer
-					every_controlled_state = { #This transfers any baltic states SOV controls to the player if the player is a baltic country puppeted by SOV. 
-						limit = {
-							OR = {
-								is_core_of = LIT
-							}
-						}
-						if = { #This is to check if territories of more than one country are being transferred
-							limit = {
-								is_core_of = LIT 
-								NOT = { is_core_of = event_target:BALTIC_country_to_transfer }
-							}
-							set_global_flag = BALTIC_more_than_one_territory
-						}
-						save_global_event_target_as = BALTIC_country_to_transfer
-						random_country = { 
-							limit = {
-								is_baltic_state = yes
-								is_subject_of = SOV
-								is_ai = no
-							}
-							transfer_state = PREV
-						}
-					}
-					every_country = { #This gives the player playing a baltic country any other baltic country that is AI as long as they're both SOV puppets
-						limit = {
-							is_baltic_state = yes
-							is_subject_of = SOV
-							is_ai = yes
-						}
-						save_global_event_target_as = BALTIC_country_to_transfer
-						random_country = {
-							limit = {
-								is_baltic_state = yes
-								is_ai = yes
-								NOT = { tag = PREV } 	
-							}
-							save_global_event_target_as = BALTIC_loose_territory_country
-						}
-						random_country = {
-							limit = {
-								is_baltic_state = yes
-								is_subject_of = SOV
-								is_ai = no
-							}
-							country_event = { id = BALTIC_events.19 } #This lets the player know that they were given a baltic state. 
-							annex_country = {
-								target = PREV
-								transfer_troops = yes
-							}
-							country_event = { id = baltic.8 } #This lets the player know that they were given a baltic state. 
-						}
-					}
-				}
-			}
-		}
-		effect = { #SOV - Fourth Five Year Plan
-			if = {
-				limit = {
-					original_tag = SOV
-					has_country_flag = SOV_third_five_year_plan_locked_flag
-					NOT = { has_country_flag = SOV_fourth_five_year_plan_available_flag }
-					OR = {
-						NOT = {
-							any_country = {
-								has_country_flag = SOV_third_five_year_plan_disruptor_flag
-							}
-						}
-						any_country = {
-							has_country_flag = SOV_third_five_year_plan_disruptor_flag
-							NOT = { has_war_with = ROOT }
-						}
-					}
-				}
-				set_country_flag = SOV_fourth_five_year_plan_available_flag
-				clr_country_flag = SOV_great_patriotic_war_flag
-				complete_national_focus = SOV_restoration_and_development
-			}
-		}
-	}
 
 	#ROOT = attacking side
 	#FROM = defending side
 	#fired when two countries end up at war with each other (on_war is fired when a country goes to war against anyone and is not fired again when it enters war against another country unless it went to peace first)
 	on_war_relation_added = { # ---> Fires in 2nd place (1st is on_declare_war) -> This one is triggered ALWAYS 
-		effect = {
-			if = {
-				limit = {
-					original_tag = GER
-					FROM = {
-						original_tag = POL
-					}
-				}
-				SOV = { set_country_flag = achievement_GER_attacked_POL_first }
-			}
-		}
 		effect = { #SOV - Great Patriotic War and Third Five Year Plan
 			if = {
 				limit = {
@@ -832,72 +597,9 @@ on_actions = {
 			}
 		}
 	}
-	
-	#FROM is faction leader on join faction requests. THIS DOES NOT FIRE ON ADD_TO_FACTION EFFECT! USE ON_OFFER_JOIN_FACTION!
-	on_join_faction = {
-		effect = {
-			#Add to Baltic research
-			if = {
-				limit = {
-					any_other_country = {
-						is_in_faction_with = ROOT
-						is_in_tech_sharing_group = baltic_allied_research
-					}
-				}
-				add_to_tech_sharing_group = baltic_allied_research
-			}
-		}
-	}
-
-	# called when a country send volunteers to another
-	# ROOT is sender, FROM is receiver
-	on_send_volunteers = {
-		#Manage Soviet volunteers in China
-		effect = {
-			if = { #Russia has sent volunteers to a Chinese faction
-				limit = {
-					original_tag = SOV
-					FROM = {is_literally_china = yes }
-				}
-				FROM = { set_country_flag = SOV_russian_volunteers_in_china_flag }
-			}	
-		}
-	}
 
 	# ROOT is capitulated country, FROM is winner
 	on_capitulation = {
-		effect = {
-			if = {
-				limit = {
-					original_tag = GER
-					FROM = { tag = SOV }
-					SOV = {
-						NOT = { has_global_flag = GER_lost_core_state }
-						has_global_flag = achievement_france_surrender
-					}
-				}
-				SOV = { set_country_flag = achievement_race_for_germany }
-			}
-		}
-		effect = {
-			if = {
-				limit = {
-					tag = GER
-					FROM = {
-						original_tag = SOV
-					}
-					SOV = {
-						casualties_inflicted_by = {
-							opponent = GER
-							thousands < 1000
-						}
-					}
-				}
-				SOV = {
-					set_country_flag = achievement_no_statistics
-				}
-			}
-		}
 
 		#Spanish general from SPD/SPA exile in SOV -> NSB
 		effect = {
@@ -917,55 +619,6 @@ on_actions = {
 				SOV_manage_spanish_generals_exiled_in_ussr_effect = yes
 			}
 		}
-		effect = {
-			if = {
-				limit = {
-					tag = SOV
-					FROM = { 
-						tag = GER 
-					}
-					FROM = {
-						has_country_flag = achievement_stalingrad_not_taken
-					}
-				}
-				FROM = { set_country_flag = achievement_not_much_fun_in_stalingrad }
-			}
-		}
 	}
-	#ROOT = attacking side
-	#FROM = defending side
-	#fired when two countries end up at war with each other (on_war is fired when a country goes to war against anyone and is not fired again when it enters war against another country unless it went to peace first)
-	on_war_relation_added = {
-		effect = {
-			if = {
-				limit = {
-					tag = GER
-					FROM = { tag = SOV }
-				}
-			}
-			GER = {
-				set_country_flag = achievement_stalingrad_not_taken #will be removed in on_state_control_change if Germany takes Stalingrad
-			}
-		}
-	}
-
-	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
-	on_state_control_changed = {
-		effect = {
-			if = {
-				limit = {
-					FROM.FROM = {
-						state = 217
-					}
-					tag = GER
-					has_country_flag = achievement_stalingrad_not_taken
-					divisions_in_state = { state = 217 size > 1 } #only happens if Germany has at least one division in the state, because state control changes before on_capitulation fires
-				}
-				clr_country_flag = achievement_stalingrad_not_taken
-			}
-		}
-	}
-
-	
 }
 
