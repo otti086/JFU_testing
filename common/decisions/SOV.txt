@@ -51,53 +51,6 @@ debug_decisions = { #TODO_Manu: Comment these out
 			set_country_flag = SOV_debug_show_propaganda_system_flag
 		}
 	}
-	SOV_TEST_ULTIMATE_CONTINENTS_SHOW = {
-		priority = 200
-
-		icon = generic_prepare_civil_war
-
-		allowed = {
-			original_tag = SOV
-		}
-
-		available = {
-			always = yes
-		}
-
-		visible = {
-			always = yes
-		}
-
-		cost = 0
-
-		complete_effect = {
-			log = "WARNING: This takes a while"
-			every_state = {
-				limit = {
-					is_on_continent = africa
-				}
-				ETH = { transfer_state = PREV }
-			}
-			every_state = {
-				limit = {
-					is_on_continent = australia
-				}
-				NZL = { transfer_state = PREV }
-			}
-			every_state = {
-				limit = {
-					is_on_continent = north_america
-				}
-				CAN = { transfer_state = PREV }
-			}
-			every_state = {
-				limit = {
-					is_on_continent = south_america
-				}
-				PER = { transfer_state = PREV }
-			}
-		}
-	}
 }
 
 

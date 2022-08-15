@@ -314,18 +314,7 @@
 		cost = 0.2
 
 		available = {
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = JFU_WAR_GOAL_DATES 
-						option = JFU_STANDARD
-					}
-				}
-				date > 1940.12.31
-			}
-			else = {
-				always = yes
-			}
+			date > 1940.12.31
 		}
 
 

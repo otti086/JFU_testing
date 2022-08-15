@@ -537,14 +537,6 @@ ideas = {
 			ai_will_do = {
    				factor = 1
 
-   				modifier = {
-					factor = 300
-
-					OR = {
-						tag = PER
-					}
-					is_in_faction = no
-				}
 
 				modifier = {
 					factor = 300
@@ -627,9 +619,6 @@ ideas = {
 					OR = {
 						# portugal and sweden are special tungsten snowflakes
 						tag = SWE
-
-						# Iraq & Iran are special oil snowflakes
-						tag = PER
 					}
 				}
 				modifier = {

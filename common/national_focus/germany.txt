@@ -1133,8 +1133,8 @@ focus_tree = {
 		}
 		allow_branch = {
 			has_game_rule = {
-				rule = JFU_REICHSKOMMISSARIATS 
-				option = JFU_ALTERNATIVE_RK
+				rule = JFU_DOWNTWIST_GAMECHANGES 
+				option = JFU_ALTERNATIVE_GS
 			}
 		}
 		x = 1

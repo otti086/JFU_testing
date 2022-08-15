@@ -28,13 +28,13 @@ allies = {
 		tag = SAF
 		tag = IRE
 		tag = NOR
+		tag = HOL
 	}
 }
 ai_country = {
 	OR = {
 		tag = SWE
 		tag = BEL
-		tag = HOL
 		tag = CZE
 		tag = POL
 		tag = AUS
@@ -45,7 +45,6 @@ ai_country = {
 		tag = DEN
 		tag = CHI
 		tag = ETH
-		tag = PER
 	}
 }
 

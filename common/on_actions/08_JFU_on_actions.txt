@@ -166,8 +166,8 @@ on_actions = {
 			if = {
 				limit = {
 					has_game_rule = {
-						rule = JFU_REICHSKOMMISSARIATS 
-						option = JFU_STANDARD_RK
+						rule = JFU_DOWNTWIST_GAMECHANGES 
+						option = JFU_STANDARD_VERSION
 					}
 				}
 				if = { 
@@ -189,8 +189,8 @@ on_actions = {
 			if = {
 				limit = {
 					has_game_rule = {
-						rule = JFU_REICHSKOMMISSARIATS 
-						option = JFU_STANDARD_RK
+						rule = JFU_DOWNTWIST_GAMECHANGES 
+						option = JFU_STANDARD_VERSION
 					}
 				}
 				if = { 
@@ -212,8 +212,8 @@ on_actions = {
 			if = {
 				limit = {
 					has_game_rule = {
-						rule = JFU_REICHSKOMMISSARIATS 
-						option = JFU_STANDARD_RK
+						rule = JFU_DOWNTWIST_GAMECHANGES 
+						option = JFU_STANDARD_VERSION
 					}
 				}
 				if = { 
@@ -235,8 +235,8 @@ on_actions = {
 			if = {
 				limit = {
 					has_game_rule = {
-						rule = JFU_REICHSKOMMISSARIATS 
-						option = JFU_STANDARD_RK
+						rule = JFU_DOWNTWIST_GAMECHANGES 
+						option = JFU_STANDARD_VERSION
 					}
 				}
 				if = { 
@@ -248,6 +248,29 @@ on_actions = {
 							AND = {
 								is_core_of = DEN
 								is_controlled_by = GER
+							}
+						}
+					
+						add_compliance = 50 
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = JFU_YUGO_COLAB 
+						option = FREE_COLAB_YUGO
+					}
+				}
+				if = { 
+					limit = {
+						original_tag = YUG
+					}
+					every_state = {
+						limit = {
+							AND = {
+								is_core_of = YUG
+								is_controlled_by = ITA
 							}
 						}
 					
