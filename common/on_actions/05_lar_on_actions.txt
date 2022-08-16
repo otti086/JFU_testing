@@ -325,7 +325,6 @@ on_actions = {
 				}
 				FROM.FROM = {
 					remove_dynamic_modifier = { modifier = autonomous_state }
-					remove_dynamic_modifier = { modifier = semi_autonomous_state }
 				}
 			}
 		}
