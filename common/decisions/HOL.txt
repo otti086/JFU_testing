@@ -643,7 +643,6 @@ HOL_secret_staff_talks = {
 		}	
 
 	}
-
 }
 HOL_request_allied_favors = {
 	
@@ -908,7 +907,6 @@ HOL_request_allied_favors = {
 		}
 
 	}
-
 }
 political_actions = {
 	HOL_relocate_government_to_batavia = {
@@ -945,6 +943,5 @@ political_actions = {
 			hidden_effect = { news_event = { id = mtg_news.46 days = 1 } }
 		}
 	}
-
 }
 

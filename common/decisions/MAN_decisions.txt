@@ -578,10 +578,10 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
- highlight_state_targets = {
-			state = 716
-		} 
-}
+ 			highlight_state_targets = {
+				state = 716
+			} 
+		}
 
 		available = {
 			has_tech = construction2

@@ -725,7 +725,6 @@ prospect_for_resources = {
 			}
 		}
 	}
-
 	JAP_develop_suiyuan_steel_deposits = { #621
 		
 		icon = steel
@@ -777,7 +776,6 @@ prospect_for_resources = {
 			}
 		}	
 	}
-
 	JAP_develop_yunnan_aluminium_deposits = { #325
 
 		icon = aluminium

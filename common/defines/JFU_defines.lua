@@ -90,7 +90,12 @@ NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.05;
 
 NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0;
 NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 1.0;
+NDefines.NNavy.SUPREMACY_PER_SHIP_BASE =  15                        -- WAS 100 | reduced to relatively nerf subs in terms of naval supremacy, as most of their supremacy comes from a base value of 100; At HFU values
+NDefines.NNavy.NAVAL_TRANSFER_BASE_SPEED = 10                       -- WAS 6 | Increased so moving troops around the world is faster and theaters dont seem so disconnected (particularly aimed at improving Allied gameplay experience)
+NDefines.NNavy.ADMIRAL_TASKFORCE_CAP = 20                           -- WAS 10 | Increased so players can use their same submarine or escort admiral without penalties
+NDefines.NNavy.NAVAL_MINES_DECAY_AT_PEACE_TIME = 1                    -- WAS 0.25 
 
+NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 1                 -- License can be cancelled at any time now, down from 30 | 
 NDefines.NProduction.BASE_LICENSE_IC_COST = 0;	
 NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0;	
 NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 10000000;
