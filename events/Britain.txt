@@ -33,30 +33,6 @@ country_event = {
 			category = radar_tech
 		}
 	}
-	
-	option = {
-		name = britain.1.b	#no way 
-		ai_chance = { factor = 10 }
-		#add_opinion_modifier = { target = ENG modifier = tizard_refused }
-		ENG = {
-			country_event = { days = 1 id = britain.3 }
-		}
-	}
-
-	option = {
-		name = britain.1.c	#tech_sharing
-		trigger = { has_dlc = "Together for Victory"}
-		ai_chance = { factor = 90 }
-		add_political_power = -10
-		ENG = {
-			country_event = { days = 1 id = britain.21 }
-			add_opinion_modifier = {
-				target = ROOT
-				modifier = tizard_relations
-			}
-		}
-		add_to_tech_sharing_group = tizard_mission
-	}
 }
 
 # USA helps
@@ -81,144 +57,6 @@ country_event = {
 			uses = 2
 			category = radar_tech
 		}
-		USA = {
-			add_opinion_modifier = { target = ENG modifier = tizard_relations }
-		}
-	}
-}
-
-# USA says no
-country_event = {
-	id = britain.3
-	title = britain.3.t
-	desc = britain.3.d
-	picture = GFX_report_event_physics_lab_01
-
-	is_triggered_only = yes
-	
-	option = {
-		name = britain.3.a
-		add_opinion_modifier = { target = USA modifier = tizard_refused }
-	}
-}
-
-# Burma road china
-country_event = {
-	id = britain.4
-	title = britain.4.t
-	desc = britain.4.d
-	picture = GFX_report_event_burma_road
-
-	is_triggered_only = yes
-	
-	option = {
-		name = britain.4.a
-	}
-}
-
-# Burma road yunnan
-country_event = {
-	id = britain.5
-	title = britain.4.t
-	desc = britain.4.d
-	picture = GFX_report_event_burma_road
-
-	is_triggered_only = yes
-	
-	option = {
-		name = britain.4.a
-	}
-}
-
-#Time for India to be free
-country_event = {
-	id = britain.6
-	title = britain.6.t
-	desc = britain.6.d
-	picture = GFX_report_event_ghandi_women
-
-	trigger = {
-		tag = ENG
-		has_global_flag = indian_independence_promised
-		NOT = { has_idea = indian_independence_promised_idea }
-		RAJ = { is_puppet_of = ENG }
-	}
-	
-	mean_time_to_happen = {
-		days = 30
-	}
-	
-	option = {
-		name = britain.6.a
-		end_puppet = RAJ
-	}
-	option = {
-		name = britain.6.b
-		RAJ = {
-			add_stability = -0.3
-			add_war_support = -0.2
-		}
-	}
-}
-
-#End trade with Germany event for SWE/NOR
-country_event = {
-	id = britain.7
-	title = britain.7.t
-	desc = britain.7.d
-	picture = GFX_report_event_merchant_ship_01
-
-	is_triggered_only = yes
-
-	
-	option = {
-		name = britain.7.a
-		ai_chance = { factor = 60 }
-		GER = {
-				add_opinion_modifier = { target = ROOT modifier = embargo } 
-			}
-	}
-	option = {
-		name = britain.7.b
-		ai_chance = { factor = 40 }
-		ENG = {
-			country_event = britain.8
-		}
-	}
-}
-
-country_event = {
-	id = britain.8
-	title = britain.8.t
-	desc = britain.8.d
-	picture = GFX_report_event_merchant_ship_01
-
-	is_triggered_only = yes
-	
-	option = {
-		name = britain.8.a
-		ai_chance = { factor = 70 }
-		create_wargoal = {
-				type = take_state
-				target = FROM
-				generator = owned_states
-			}
-		if = {
-			limit = {
-				USA = {
-					NOT = {
-						has_opinion_modifier = unprovoked_aggression
-					}
-				}
-			}
-			USA = {
-				add_opinion_modifier = { target = ROOT modifier = unprovoked_aggression }
-			}
-		}
-	}
-	option = {
-		name = britain.8.b
-		ai_chance = { factor = 30 }
 	}
 }
 
@@ -236,75 +74,6 @@ country_event = {
 	option = {
 		name = britain.9.a
 
-	}
-}
-
-# React to Rise of the CommieNazis 
-country_event = {
-	id = britain.11
-	title = britain.11.t
-	desc = britain.11.d
-	picture = GFX_report_event_molotov_ribentrop_handshake
-
-	is_triggered_only = yes
-	trigger = {
-		is_faction_leader = yes
-	}
-	
-	option = {
-		name = britain.11.a
-		add_war_support = 0.1
-		every_other_country = {
-				limit = {
-					NOT = { has_war_with = ENG }
-					is_in_faction = no
-					has_government = democratic
-					is_puppet = no
-					OR = {
-						capital_scope = {
-								is_on_continent = europe
-						}
-						capital_scope = {
-								is_on_continent = asia
-						}
-						num_of_factories > 30
-					}
-				}
-				country_event = britain.12
-			}
-	}
-	
-	option = {
-		name = britain.11.b
-		ai_chance = { factor = 0 }
-	}
-}
-
-# React to British call
-country_event = {
-	id = britain.12
-	title = britain.12.t
-	desc = britain.12.d
-	picture = GFX_report_event_molotov_ribentrop_handshake
-
-	is_triggered_only = yes
-	
-	option = {
-		name = britain.12.a
-		add_war_support = 0.1 #glorious crusade to free Europe from commienazi menace
-		ENG = { add_to_faction = ROOT }
-		ROOT = {
-			add_ai_strategy = {
-				type = alliance
-				id = "ENG"
-				value = 200
-			}
-		}
-	}
-	
-	option = {
-		name = britain.12.b
-		ai_chance = { factor = 0 }
 	}
 }
 
@@ -469,4 +238,19 @@ country_event = {
 			set_state_flag = shadow_scheme_2AF
 		}
     }
+}
+country_event = {
+	id = britain.1113
+	title = britain.1113.t
+	desc = britain.1113.d
+	picture = GFX_report_event_degaulle_churchill
+
+	is_triggered_only = yes
+	
+	option = {
+		name = britain.1113.a
+		NOR = { set_rule = { can_join_factions = yes }}
+		add_to_faction = NOR
+		NOR = { country_event = { id = britain.1114} }
+	}
 }

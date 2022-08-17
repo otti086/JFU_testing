@@ -62,83 +62,6 @@ country_event = {
 	}
 }
 
-# Japan Demands Withdrawal of Falkenhausen
-country_event = {
-	id = germany.24
-	title = germany.24.t
-	desc = germany.24.d
-	picture = GFX_report_event_hitler_china
-
-	is_triggered_only = yes
-
-	option = { # Agree
-		name = germany.24.a
-		trigger = {
-			NOT = { has_country_flag = GER_von_falkenhausen_promise_to_china }
-		}
-		JAP = {
-			country_event = { days = 1 id = japan.8 }
-		}
-		CHI = {
-			country_event = { days = 1 id = china.2 }
-			effect_tooltip = {
-				remove_ideas = german_advisors
-				show_ideas_tooltip = german_advisors
-			}
-		}
-	}
-	option = { # Refuse
-		name = germany.24.b
-		trigger = {
-			NOT = { has_country_flag = GER_von_falkenhausen_promise_to_china }
-		}
-		JAP = {
-			country_event = { days = 1 id = japan.9 }
-		}
-	}
-
-	option = { # Refuse, promised the Chinese in return for Tsingtao
-		name = germany.24.c
-		trigger = {
-			has_country_flag = GER_von_falkenhausen_promise_to_china
-		}
-		JAP = {
-			country_event = { days = 1 id = japan.9 }
-		}
-	}
-}
-
-# German - Chinese Relations Poor, Mission Recalled
-country_event = {
-	id = germany.25
-	title = germany.25.t
-	desc = germany.25.d
-	picture = GFX_report_event_chinese_army_training
-
-	fire_only_once = yes
-
-	trigger = {
-		tag = GER
-		CHI = { has_idea = german_advisors }
-		has_opinion = { target = CHI value < -20 }
-	}
-
-	mean_time_to_happen = {
-		days = 1
-	}
-
-	immediate = {
-		CHI = { remove_ideas = german_advisors }
-	}
-
-	option = {
-		name = germany.25.a
-		CHI = {
-			country_event = { id = china.3 }
-		}
-	}
-}
-
 # Fortifying the Westwall
 country_event = {
 	id = germany.27
@@ -329,20 +252,6 @@ country_event = {
 				uses = 1
 				category = radar_tech
 			}
-	}
-}
-
-# Germany: Italy leaves faction
-country_event = {
-	id = germany.105
-	title = germany.105.t
-	desc = germany.105.d
-	picture = GFX_report_event_german_italian_pact
-
-	is_triggered_only = yes
-
-	option = {
-		name = germany.105.a
 	}
 }
 

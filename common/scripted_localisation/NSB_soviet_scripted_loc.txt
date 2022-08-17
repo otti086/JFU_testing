@@ -1640,19 +1640,6 @@ defined_text = {
 }
 
 defined_text = {
-	name = GetExpandTheRedFleetDesc
-	text = {
-		trigger = {
-			NOT = { has_government = communism }
-		}
-		localization_key = SOV_expand_the_red_fleet_desc_alt
-	}
-	text = {
-		localization_key = SOV_expand_the_red_fleet_desc_default
-	}
-}
-
-defined_text = {
 	name = GetNavalInfantryDesc
 	text = {
 		trigger = {
