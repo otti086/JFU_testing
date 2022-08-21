@@ -2269,7 +2269,6 @@ focus_tree = {
 						tank_nsb_engine_upgrade = 10
 						tank_nsb_armor_upgrade = 8
 					}
-					icon = "gfx/interface/technologies/SOV_advanced_medium_tank_destroyer.dds"
 				}
 			}
 			else_if = {
@@ -2292,7 +2291,6 @@ focus_tree = {
 						tank_nsb_engine_upgrade = 10
 						tank_nsb_armor_upgrade = 8
 					}
-					icon = "gfx/interface/technologies/SOV_advanced_medium_tank_destroyer.dds"
 				}
 			}
 			else_if = { #You really should invest some time in research AT...
@@ -2315,7 +2313,7 @@ focus_tree = {
 						tank_nsb_engine_upgrade = 10
 						tank_nsb_armor_upgrade = 8
 					}
-					icon = "gfx/interface/technologies/SOV_improved_medium_tank_destroyer.dds"
+					
 				}
 			}
 			else = { #This is just blasphemy
@@ -2335,7 +2333,7 @@ focus_tree = {
 						tank_nsb_engine_upgrade = 10
 						tank_nsb_armor_upgrade = 8
 					}
-					icon = "gfx/interface/technologies/SOV_improved_medium_tank_destroyer.dds"
+					
 				}
 			}
 
@@ -2360,7 +2358,7 @@ focus_tree = {
 						tank_nsb_engine_upgrade = 10
 						tank_nsb_armor_upgrade = 8
 					}
-					icon = "gfx/interface/technologies/SOV_improved_medium_tank_artillery.dds"
+					
 				}
 			}
 			else_if = {
@@ -2383,7 +2381,7 @@ focus_tree = {
 						tank_nsb_engine_upgrade = 10
 						tank_nsb_armor_upgrade = 8
 					}
-					icon = "gfx/interface/technologies/SOV_improved_medium_tank_artillery.dds"
+					
 				}
 			}
 			else = { #You really need some arty research
@@ -2403,7 +2401,7 @@ focus_tree = {
 						tank_nsb_engine_upgrade = 10
 						tank_nsb_armor_upgrade = 8
 					}
-					icon = "gfx/interface/technologies/SOV_improved_medium_tank_artillery.dds"
+					
 				}
 			}
 		}

@@ -1024,6 +1024,7 @@ operation_collaboration_government = { ### 10 2/55
 			target = FROM
 			value > 25
 		}
+		NOT = {tag = SOV }
 	}
 
 	equipment = {
