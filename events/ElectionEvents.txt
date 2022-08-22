@@ -575,10 +575,6 @@ country_event = {
 		ai_chance = {
 			base = 35
 		}
-		start_civil_war = {
-			ideology = fascism
-			size = 0.5
-		}
 	}
 }
 
@@ -619,10 +615,6 @@ country_event = {
 		name = election.12.b
 		ai_chance = {
 			base = 35			
-		}
-		start_civil_war = {
-			ideology = communism
-			size = 0.5
 		}
 	}
 }

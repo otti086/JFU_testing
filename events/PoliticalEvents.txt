@@ -769,36 +769,7 @@ country_event = {
 	picture = GFX_report_event_fascist_militia
 
 	trigger = {
-		fascism > 0.7
-		num_of_controlled_states > 1
-		#has_idea = fascist_revolutionaries
-		NOT = { has_government = fascism }
-		has_civil_war = no
-		check_has_focus_tree_to_switch_to_fascism = yes
-		NOT = {
-			AND = {
-				original_tag = SPR
-				has_dlc = "La Resistance"
-			}
-		}
-		NOT = {
-			AND = {
-				has_dlc = "No Step Back"
-				OR = {
-					original_tag = POL
-					original_tag = LIT
-				}
-			}
-		}
-
-		NOT = {
-			AND = {
-				has_dlc = "Battle for the Bosporus"
-				OR = {
-					original_tag = GRE
-				}
-			}
-		}
+		always = no
 	}
 
 	mean_time_to_happen = {
@@ -814,46 +785,12 @@ country_event = {
 		ai_chance = {
 			factor = 0
 		}
-		start_civil_war = {
-			ideology = fascism
-			size = 0.5
-		}
 	}
 
 	option = {
 		name = political.21.b
 		ai_chance = {
 			factor = 0
-		}
-		if = {
-			limit = {
-				has_government = democratic
-			}
-			start_civil_war = {
-				ruling_party = fascism
-				ideology = democratic
-				size = 0.5
-			}
-		}
-		if = {
-			limit = {
-				has_government = communism
-			}
-			start_civil_war = {
-				ruling_party = fascism
-				ideology = communism
-				size = 0.5
-			}
-		}
-		if = {
-			limit = {
-				has_government = neutrality
-			}
-			start_civil_war = {
-				ruling_party = fascism
-				ideology = neutrality
-				size = 0.5
-			}
 		}
 	}
 
@@ -878,48 +815,7 @@ country_event = {
 	picture = GFX_report_event_worker_protests
 
 	trigger = {
-		communism > 0.7
-		num_of_controlled_states > 1
-		#has_idea = communist_revolutionaries
-		NOT = { has_government = communism }
-		#Special case CHI
-		OR = {
-			NOT = { tag = CHI }
-			AND = {
-				tag = CHI
-			}			
-		}
-		NOT = {
-			AND = {
-				original_tag = USA
-				has_dlc = "Man the Guns"
-			}
-		}
-		NOT = {
-			AND = {
-				has_dlc = "No Step Back"
-				OR = {
-					original_tag = POL
-					original_tag = LIT
-				}
-			}
-		}
-		NOT = {
-			AND = {
-				has_dlc = "Battle for the Bosporus"
-				OR = {
-					original_tag = GRE
-				}
-			}
-		}
-		has_civil_war = no
-		check_has_focus_tree_to_switch_to_communism = yes
-		NOT = {
-			AND = {
-				original_tag = SPR
-				has_dlc = "La Resistance"
-			}
-		}
+		always = no
 	}
 
 	mean_time_to_happen = {
@@ -935,46 +831,12 @@ country_event = {
 		ai_chance = {
 			factor = 0
 		}
-		start_civil_war = {
-			ideology = communism
-			size = 0.5
-		}
 	}
 
 	option = {
 		name = political.22.b
 		ai_chance = {
 			factor = 0
-		}
-		if = {
-			limit = {
-				has_government = democratic
-			}
-			start_civil_war = {
-				ruling_party = communism
-				ideology = democratic
-				size = 0.5
-			}
-		}
-		if = {
-			limit = {
-				has_government = fascism
-			}
-			start_civil_war = {
-				ruling_party = communism
-				ideology = fascism
-				size = 0.5
-			}
-		}
-		if = {
-			limit = {
-				has_government = neutrality
-			}
-			start_civil_war = {
-				ruling_party = communism
-				ideology = neutrality
-				size = 0.5
-			}
 		}
 	}
 
@@ -999,42 +861,7 @@ country_event = {
 	picture = GFX_report_event_gathering_protest
 
 	trigger = {
-		democratic > 0.7
-		num_of_controlled_states > 1
-		#has_idea = democratic_revolutionaries
-		#Special case CHI 
-		NOT = { has_government = democratic }
-		OR = {
-			NOT = { tag = CHI }
-			AND = {
-				tag = CHI
-			}			
-		}
-		NOT = {
-			AND = {
-				has_dlc = "No Step Back"
-				OR = {
-					original_tag = POL
-					original_tag = LIT
-				}
-			}
-		}
-		NOT = {
-			AND = {
-				has_dlc = "Battle for the Bosporus"
-				OR = {
-					original_tag = GRE
-				}
-			}
-		}
-		has_civil_war = no
-		check_has_focus_tree_to_switch_to_democratic = yes
-		NOT = {
-			AND = {
-				original_tag = SPR
-				has_dlc = "La Resistance"
-	}
-		}
+		always = no
 	}
 
 	mean_time_to_happen = {
@@ -1050,48 +877,12 @@ country_event = {
 		ai_chance = {
 			factor = 0
 		}
-		start_civil_war = {
-			ideology = democratic
-			size = 0.5
-		}
 	}
 
 	option = {
 		name = political.23.b
 		ai_chance = {
 			factor = 0
-		}
-		if = {
-			limit = {
-				has_government = neutrality
-			}
-			start_civil_war = {
-				ruling_party = democratic
-				ideology = neutrality
-				size = 0.5
-			}
-		}
-		if = {
-			limit = {
-				has_government = fascism
-			}
-			add_timed_idea = { idea = fascism_defeated days = 730 }			
-			start_civil_war = {
-				ruling_party = democratic
-				ideology = fascism
-				size = 0.5
-			}
-		}
-		if = {
-			limit = {
-				has_government = communism
-			}
-			add_timed_idea = { idea = communism_defeated days = 730 }
-			start_civil_war = {
-				ruling_party = democratic
-				ideology = communism
-				size = 0.5
-			}
 		}
 	}
 

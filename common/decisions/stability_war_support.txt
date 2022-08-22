@@ -139,29 +139,6 @@ crisis = {
 			if = {
 				limit = {
 					has_idea = draft_dodging_3
-					has_stability < 0.21
-					NOT = {
-						has_government = communism
-					}
-				}
-				start_civil_war = {
-					ideology = communism
-				}
-			}
-			if = {
-				limit = {
-					has_idea = draft_dodging_3
-					has_stability < 0.21
-					has_government = communism
-					
-				}
-				start_civil_war = {
-					ideology = democratic
-				}
-			}
-			if = {
-				limit = {
-					has_idea = draft_dodging_3
 					has_stability < 0.41
 					NOT = {
 						has_government = communism
@@ -248,29 +225,6 @@ crisis = {
 			
 		}
 		timeout_effect = {
-			if = {
-				limit = {
-					has_idea = strikes_3
-					has_stability < 0.21
-					NOT = {
-						has_government = communism
-					}
-				}
-				start_civil_war = {
-					ideology = communism
-				}
-			}
-			if = {
-				limit = {
-					has_idea = strikes_3
-					has_stability < 0.21
-					has_government = communism
-					
-				}
-				start_civil_war = {
-					ideology = democratic
-				}
-			}
 			if = {
 				limit = {
 					has_idea = strikes_3
@@ -404,29 +358,6 @@ crisis = {
 			
 		}
 		timeout_effect = {
-			if = {
-				limit = {
-					has_idea = mutiny_3
-					has_stability < 0.21
-					NOT = {
-						has_government = communism
-					}
-				}
-				start_civil_war = {
-					ideology = communism
-				}
-			}
-			if = {
-				limit = {
-					has_idea = mutiny_3
-					has_stability < 0.21
-					has_government = communism
-					
-				}
-				start_civil_war = {
-					ideology = democratic
-				}
-			}
 			if = {
 				limit = {
 					has_idea = mutiny_3
@@ -585,29 +516,6 @@ demobilization = {
 			if = {
 				limit = {
 					has_idea = strikes_3
-					has_stability < 0.21
-					NOT = {
-						has_government = communism
-					}
-				}
-				start_civil_war = {
-					ideology = communism
-				}
-			}
-			if = {
-				limit = {
-					has_idea = strikes_3
-					has_stability < 0.21
-					has_government = communism
-					
-				}
-				start_civil_war = {
-					ideology = democratic
-				}
-			}
-			if = {
-				limit = {
-					has_idea = strikes_3
 					has_stability < 0.41
 					NOT = {
 						has_government = communism
@@ -747,24 +655,6 @@ demobilization = {
 		}
 		cancel_if_not_visible = yes
 		timeout_effect = {
-			if = {
-				limit = {
-					has_government = communism
-					has_stability < 0.2
-				}
-				start_civil_war = {
-					ideology = democratic
-				}
-			}
-			if = {
-				limit = {
-					NOT = { has_government = communism }
-					has_stability < 0.3
-				}
-				start_civil_war = {
-					ideology = communism
-				}
-			}
 			if = {
 				limit = {
 					has_stability > 0.2

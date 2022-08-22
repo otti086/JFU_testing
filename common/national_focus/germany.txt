@@ -1639,7 +1639,15 @@ focus_tree = {
 			add_tech_bonus = {
 				bonus = 1.0
 				uses = 2
-				category = artillery
+				technology = artillery2
+				technology = artillery3
+				technology = artillery4
+				technology = artillery5
+				technology = artillery2
+				technology = antitank2
+				technology = antitank3
+				technology = antitank4
+				technology = antitank5
 			}
 		}
 	}
