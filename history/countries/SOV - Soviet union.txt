@@ -38,9 +38,6 @@ recruit_character = SOV_lavrenty_beriya
 recruit_character = SOV_vsevolod_merkulov
 
 recruit_character = SOV_patriarch_sergy
-recruit_character = SOV_aleksandr_kerensky
-recruit_character = SOV_konstantin_rodzayevsky
-
 
 recruit_character = SOV_aleksandr_vasilevsky
 recruit_character = SOV_aleksandr_golovanov
@@ -149,12 +146,6 @@ SOV_lavrenty_beriya = { #NKVD Chiefs are always safe from regular purges, they'l
 }
 SOV_vsevolod_merkulov = {
 	set_character_flag = SOV_safe_from_purge_flag
-}
-SOV_konstantin_rodzayevsky = { #Not in the country
-	set_character_flag = SOV_exiled_flag
-}
-SOV_aleksandr_kerensky = { #Not in the country
-	set_character_flag = SOV_exiled_flag
 }
 SOV_patriarch_sergy = { #Priests are not political enemies at this point
 	set_character_flag = SOV_safe_from_purge_flag

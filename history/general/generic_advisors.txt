@@ -4,8 +4,7 @@
 # Political advisors
 every_possible_country = {
 	limit = {
-		NOT = { OR = { tag = GER tag = ENG tag = SOV original_tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = CZE tag = ROM tag = CHI tag = MAN tag = MEX tag = HOL original_tag = SPR original_tag = POL } }
-		# avoid generic advisors in temporary countries
+		NOT = { OR = {allies = yes axis = yes } }		# avoid generic advisors in temporary countries
 		is_dynamic_country = no
 		NOT = {
 			has_allowed_idea_with_traits = { idea = communist_revolutionary characters = yes }
@@ -34,7 +33,7 @@ every_possible_country = {
 
 every_possible_country = {
 	limit = {
-		NOT = { OR = { tag = GER tag = ENG tag = SOV original_tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = CZE tag = CHI tag = MAN tag = MEX tag = HOL original_tag = SPR original_tag = POL } }
+		NOT = { OR = {allies = yes axis = yes } }
 		is_dynamic_country = no
 		NOT = {
 			has_allowed_idea_with_traits = { idea = democratic_reformer characters = yes }
@@ -72,8 +71,7 @@ every_possible_country = {
 
 every_possible_country = {
 	limit = {
-		NOT = { OR = { tag = GER tag = ENG tag = SOV original_tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = ROM tag = CZE tag = CHI tag = MAN tag = MEX tag = HOL original_tag = SPR  original_tag = POL } }
-		is_dynamic_country = no
+		NOT = { OR = {allies = yes axis = yes } }		is_dynamic_country = no
 		NOT = {
 			has_allowed_idea_with_traits = { idea = fascist_demagogue characters = yes }
 		}

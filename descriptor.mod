@@ -4,7 +4,7 @@ tags={
 	"Balance"
 }
 name="JFU testing"
-supported_version="1.11.12"
+supported_version="1.11.13"
 
 replace_path="common/abilities"
 replace_path="common/aces"

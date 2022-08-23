@@ -88,64 +88,6 @@ SOV_is_valid_subject = {
 	}
 }
 
-SOV_is_free_chinese_tag = {
-	custom_trigger_tooltip = {
-		tooltip = SOV_is_free_chinese_tag_tt
-		OR = {
-			original_tag = CHI
-			original_tag = MAN
-		}
-		is_subject = no
-	}
-}
-
-SOV_is_chinese_tag = {
-	OR = {
-		original_tag = CHI
-		original_tag = MAN
-	}
-}
-
-
-
-SOV_is_soviet_republic_tag_lax = {
-	OR = {
-		tag = LIT
-		tag = POL
-		tag = FIN
-	}
-}
-
-SOV_is_valid_academy_of_sciences_target = {
-	OR = {
-		AND = {
-			has_government = communism
-			is_in_faction_with = ROOT
-		}
-		AND = {
-			has_government = communism
-			is_subject_of = ROOT
-		}
-	}
-}
-
-SOV_has_already_built_national_academy_of_sciences = {
-	OR = {
-		AND = {
-			FROM = { tag = LIT }
-			ROOT = { has_country_flag = SOV_national_academy_of_sciences_built_LIT_flag }
-		}
-		AND = {
-			FROM = { tag = POL }
-			ROOT = { has_country_flag = SOV_national_academy_of_sciences_built_POL_flag }
-		}
-		AND = {
-			FROM = { tag = FIN }
-			ROOT = { has_country_flag = SOV_national_academy_of_sciences_built_FIN_flag }
-		}
-	}
-}
-
 
 #####################
 ### TANK DESIGNER ###
@@ -352,62 +294,6 @@ SOV_has_active_ship_designer_sevastopol_marine_plant = {
 	}
 }
 
-SOV_has_ship_merged_1_baltic = {
-	OR = {
-		has_country_flag = SOV_merge_ship_nevskoye_design_bureau_1_flag
-		has_country_flag = SOV_merge_ship_rubin_design_bureau_1_flag
-	}
-}
-
-SOV_has_ship_merged_2_baltic = {
-	OR = {
-		has_country_flag = SOV_merge_ship_nevskoye_design_bureau_2_flag
-		has_country_flag = SOV_merge_ship_rubin_design_bureau_2_flag
-	}
-}
-
-SOV_has_ship_merged_3_baltic = {
-	OR = {
-		has_country_flag = SOV_merge_ship_nevskoye_design_bureau_3_flag
-		has_country_flag = SOV_merge_ship_rubin_design_bureau_3_flag
-	}
-}
-
-SOV_has_ship_merged_4_baltic = {
-	OR = {
-		has_country_flag = SOV_merge_ship_nevskoye_design_bureau_4_flag
-		has_country_flag = SOV_merge_ship_rubin_design_bureau_4_flag
-	}
-}
-
-SOV_has_ship_merged_1_black_sea = {
-	OR = {
-		has_country_flag = SOV_merge_ship_black_sea_shipyard_1_flag
-		has_country_flag = SOV_merge_ship_sevastopol_marine_plant_1_flag
-	}
-}
-
-SOV_has_ship_merged_2_black_sea = {
-	OR = {
-		has_country_flag = SOV_merge_ship_black_sea_shipyard_2_flag
-		has_country_flag = SOV_merge_ship_sevastopol_marine_plant_2_flag
-	}
-}
-
-SOV_has_ship_merged_3_black_sea = {
-	OR = {
-		has_country_flag = SOV_merge_ship_black_sea_shipyard_3_flag
-		has_country_flag = SOV_merge_ship_sevastopol_marine_plant_3_flag
-	}
-}
-
-SOV_has_ship_merged_4_black_sea = {
-	OR = {
-		has_country_flag = SOV_merge_ship_black_sea_shipyard_4_flag
-		has_country_flag = SOV_merge_ship_sevastopol_marine_plant_4_flag
-	}
-}
-
 
 #########################
 ### AIRCRAFT DESIGNER ###
@@ -594,12 +480,6 @@ SOV_has_materiel_merged_3 = {
 		has_country_flag = SOV_merge_materiel_tula_3_flag
 		has_country_flag = SOV_merge_materiel_gaz_3_flag
 	}
-}
-
-SOV_is_valid_collective_security_target = {
-	has_capitulated = no
-	NOT = { has_government = fascism }
-	NOT = { has_war_with = ROOT }
 }
 
 SOV_is_military_offensive_main_objective = {
