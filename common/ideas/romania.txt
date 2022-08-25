@@ -664,25 +664,6 @@ ideas = {
 			}
 		}
 
-		ROM_acquire_licenses = {
-
-			picture = generic_license_production
-
-			removal_cost = -1
-			
-			allowed = {
-				original_tag = ROM
-			}
-
-			allowed_civil_war = {
-
-			}
-			
-			modifier = {
-				license_air_purchase_cost = -0.1
-			}
-		}
-
 		ROM_acquire_modern_tanks = {
 
 			picture = generic_acquire_tanks

@@ -3399,12 +3399,6 @@ country_event = {
 				factor = 2
 				surrender_progress > 0.5
 			}
-			modifier = {
-				factor = 0.1
-				FROM = {
-					is_enemy_ideology = yes
-				}
-			}
 		}
 
 		add_opinion_modifier = {
