@@ -92,91 +92,12 @@
 	}
 
 	focus = {
-		id = ROM_trade_treaty_with_germany
-		icon = GFX_goal_generic_trade
+		id = ROM_license_german_equipment
+		icon = GFX_focus_generic_license_production
 		prerequisite = { focus = ROM_preserve_greater_romania }
 		x = -2
 		y = 1
 		relative_position_id = ROM_preserve_greater_romania
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 9
-		}
-
-		available = {
-			NOT = { has_war_with = GER }
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
-			add_popularity = { ideology = fascism popularity = 0.05 }
-			add_opinion_modifier = { target = GER modifier = ROM_trade_treaty_with_germany }
-			GER = { add_opinion_modifier = { target = ROOT modifier = ROM_trade_treaty_with_germany } }
-		}
-	}
-
-	focus = {
-		id = ROM_invite_german_advisors
-		icon = GFX_goal_generic_axis_build_infantry
-		prerequisite = { focus = ROM_trade_treaty_with_germany }
-		x = 0
-		y = 2
-		relative_position_id = ROM_trade_treaty_with_germany
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			NOT = { has_war_with = GER }
-			OR = {
-				is_in_faction = no
-				is_in_faction_with = GER
-			}
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_RESEARCH }
-
-		completion_reward = {
-			custom_effect_tooltip = ROM_invite_german_advisors_tt
-			hidden_effect = {
-				diplomatic_relation = {
-					country = GER
-					relation = military_access
-					active = yes
-				}
-			}
-			add_to_tech_sharing_group = ROM_invite_german_advisors_tech_group
-			GER = { add_to_tech_sharing_group = ROM_invite_german_advisors_tech_group }
-		}
-	}
-
-	focus = {
-		id = ROM_license_german_equipment
-		icon = GFX_focus_generic_license_production
-		prerequisite = { focus = ROM_invite_german_advisors }
-		x = 1
-		y = 3
-		relative_position_id = ROM_trade_treaty_with_germany
 
 		cost = 10
 
@@ -208,115 +129,6 @@
 		}
 	}
 
-	focus = {
-		id = ROM_join_axis
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = ROM_invite_german_advisors }
-		x = 0
-		y = 4
-		relative_position_id = ROM_trade_treaty_with_germany
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				GER = {
-					has_capitulated = yes
-				}
-			}
-		}
-
-		available = {
-			GER = { 
-				is_faction_leader = yes
-				has_government = fascism
-			}
-			is_in_faction = no
-			NOT = { has_war_with = GER }
-			is_subject = no
-			NOT = {
-				any_other_country = {
-					is_in_faction_with = GER
-					has_war_with = ROM
-				}
-			}
-		}
-
-		bypass = {
-			is_in_faction_with = GER
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-
-		completion_reward = {
-			GER = {
-				country_event = generic.2
-			}
-		}
-	}
-
-	focus = {
-		id = ROM_german_romanian_oil_exploitation_company
-		icon = GFX_goal_generic_oil_refinery
-		prerequisite = { focus = ROM_join_axis }
-		x = 0
-		y = 5
-		relative_position_id = ROM_trade_treaty_with_germany
-
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			is_in_faction_with = GER
-			GER = {
-				exists = yes
-				is_puppet = no
-			}
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-			random_owned_controlled_state = {
-				prioritize = { 46 }
-				limit = {
-					ROOT = { has_full_control_of_state = PREV }
-				}
-				add_resource = {
-					type = oil
-					amount = 19
-				}
-			}
-			GER = {
-				random_owned_controlled_state = {
-					limit = {
-						GER = { has_full_control_of_state = PREV }
-					}
-					add_resource = {
-						type = oil
-						amount = 4
-					}
-				}
-			}
-		}
-	}
-
 	############################
 	##### INDUSTRY BRANCH ######
 	############################
@@ -325,7 +137,7 @@
 		id = ROM_civil_works
 		icon = GFX_goal_generic_construction
 		prerequisite = { focus = ROM_preserve_greater_romania }
-		x = 2
+		x = 0
 		y = 1
 		relative_position_id = ROM_preserve_greater_romania
 
@@ -736,7 +548,7 @@
 			46 = {
 				add_resource = {
 					type = oil
-					amount = 40
+					amount = 60
 				}
 			}
 		}
@@ -798,7 +610,7 @@
 	focus = {
 		id = ROM_institute_royal_dictatorship
 		icon = GFX_focus_rom_royal_dictatorship
-		x = 10
+		x = 8
 		y = 0
 
 		cost = 10
@@ -1087,7 +899,7 @@
 	focus = {
 		id = ROM_expand_the_air_force
 		icon = GFX_goal_generic_build_airforce
-		x = 15
+		x = 13
 		y = 0
 
 		cost = 10
@@ -1405,7 +1217,7 @@
 	focus = {
 		id = ROM_army_maneuvers
 		icon = GFX_goal_generic_army_doctrines
-		x = 21
+		x = 19
 		y = 0
 
 		cost = 10
@@ -1887,7 +1699,7 @@
 	focus = {
 		id = ROM_expand_the_galati_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 23
+		x = 21
 		y = 0
 
 		cost = 5

@@ -1220,15 +1220,6 @@ focus_tree = {
 					target = ROOT
 					modifier = american_mexican_diplomacy
 				}
-				if = {
-					limit = {
-						is_in_faction = yes
-					}
-					country_event = {
-						id = mexico.8
-						days = 1
-					}
-				}
 			}
 		}
 	}
@@ -1265,61 +1256,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			set_rule = { can_send_volunteers = yes }
 			add_tech_bonus = {
 				name = air_equipment
 				bonus = 1.0
 				uses = 1
 				category = air_equipment
 			}
-			add_doctrine_cost_reduction = {
-				name = air_doctrine
-				cost_reduction = 0.5
-				uses = 1
-				category = air_doctrine
-			}
-			add_opinion_modifier = {
-				target = USA
-				modifier = aztec_eagles_opinion
-			}
-			USA = {
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = aztec_eagles_opinion
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = MEX_focus_international_peacekeepers
-		icon = GFX_focus_generic_paratrooper
-		prerequisite = { focus = MEX_focus_aztec_eagles }
-		x = 0
-		y = 1
-		relative_position_id = MEX_focus_aztec_eagles
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 100
-		}
-
-		available = {
-			has_offensive_war = no
-		}
-
-		bypass = {
-			
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
-		completion_reward = {
-			set_rule = { can_send_volunteers = yes }
-			add_ideas = MEX_international_peacekeepers
 		}
 	}
 	

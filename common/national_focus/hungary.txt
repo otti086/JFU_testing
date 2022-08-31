@@ -1326,45 +1326,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = HUN_joint_tank_procurement
-		icon = GFX_goal_generic_build_tank
-		prerequisite = { focus = HUN_develop_tanks focus = HUN_assault_gun_focus }
-		x = 1
-		y = 2
-		relative_position_id = HUN_mobile_focus
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 70
-		}
-
-		available = {
-			is_in_faction = yes
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-			add_to_tech_sharing_group = HUN_joint_tank_development_group
-			every_other_country = {
-				limit = {
-					is_in_faction_with = HUN
-				}
-				add_to_tech_sharing_group = HUN_joint_tank_development_group
-			}
-			
-		}
-	}
-
-	focus = {
 		id = HUN_armored_warfare
 		icon = GFX_goal_generic_army_artillery
 		prerequisite = { focus = HUN_the_botond }
@@ -1431,8 +1392,8 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = HUN_mobile_corps_doctrine
-				cost_reduction = 0.25
-				uses = 1
+				cost_reduction = 0.5
+				uses = 2
 				category = cat_mobile_warfare
 			}
 		}

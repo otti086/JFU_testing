@@ -74,7 +74,10 @@ SPR_civil_war_offensives = {
 	visible_when_empty = yes
 	
 	allowed = {
-		original_tag = SPR
+		OR = {
+			original_tag = SPR
+			original_tag = SPA	
+		}
 		has_dlc = "La Resistance"
 	}
 

@@ -319,7 +319,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				stability_factor = -0.1 #TODO_GABRIEL: replace with +15% resistance target in core states
+				stability_factor = 0.1 #TODO_GABRIEL: replace with +15% resistance target in core states
+				industrial_capacity_factory = 0.1
 			}
 		}
 		FRA_national_bureau_of_statistics = {
@@ -336,7 +337,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				research_speed_factor = 0.1 
+				research_speed_factor = 0.15
 			}
 		}
 		FRA_legionary_service_order = {
@@ -428,7 +429,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				production_factory_efficiency_gain_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.15
 			}
 		}
 		FRA_buy_from_the_enemy = {

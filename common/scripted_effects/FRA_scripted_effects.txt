@@ -129,32 +129,6 @@ increase_occupation_cost_effect = {
 	}
 }
 
-FRA_congress_of_paris_italian_claims_setup_effect = {
-	add_state_claim = 452
-	add_state_claim = 447
-	add_state_claim = 446
-	add_state_claim = 457
-	add_state_claim = 456
-	add_state_claim = 551
-	add_state_claim = 549
-	add_state_claim = 269
-	add_state_claim = 547
-	add_state_claim = 548
-	add_state_claim = 546
-}
-
-FRA_congress_of_paris_portugese_claims_setup_effect = {
-	add_state_claim = 295
-	add_state_claim = 771
-	add_state_claim = 770
-	add_state_claim = 545
-	add_state_claim = 542
-	add_state_claim = 541
-	add_state_claim = 681
-	add_state_claim = 275
-	add_state_claim = 719
-}
-
 FRA_right_wing_riot_effect = {
 	if = {
 		limit = {
