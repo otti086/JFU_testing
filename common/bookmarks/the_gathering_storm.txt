@@ -298,7 +298,6 @@ bookmarks = {
 			}
 			focuses = {
 				HOL_continue_the_war_in_batavia
-				HOL_liberation
 			}
 		}
 

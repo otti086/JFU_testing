@@ -818,7 +818,6 @@ opinion_modifiers = {
 	#Romanian focus
 	ROM_a_deal_with_the_devil = { value = 40 }
 
-	ROM_trade_treaty_with_germany = { trade = yes value = 25 }
 	
 	ROM_appoint_german_friendly_government = { value = 20 }
 	

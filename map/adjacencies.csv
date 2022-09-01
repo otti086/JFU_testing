@@ -277,6 +277,30 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 5042;1970;impassable;-1;-1;-1;-1;-1;;India Nordern Border;;
 5042;8112;impassable;-1;-1;-1;-1;-1;;India Nordern Border;;
 5042;4973;impassable;-1;-1;-1;-1;-1;;India Nordern Border;;
+4943;1822;impassable;-1;-1;-1;-1;-1;;Persia Soviet Border;;
+4943;12861;impassable;-1;-1;-1;-1;-1;;Persia Soviet Border;;
+4943;2071;impassable;-1;-1;-1;-1;-1;;Persia Soviet Border;;
+9816;2071;impassable;-1;-1;-1;-1;-1;;Persia Soviet Border;;
+9816;10523;impassable;-1;-1;-1;-1;-1;;Persia Soviet Border;;
+8125;10523;impassable;-1;-1;-1;-1;-1;;Persia Soviet Border;;
+8125;7969;impassable;-1;-1;-1;-1;-1;;Persia Soviet Border;;
+10922;7969;impassable;-1;-1;-1;-1;-1;;Persia Soviet Border;;
+10922;10837;impassable;-1;-1;-1;-1;-1;;Persia Soviet Border;;
+10922;12818;impassable;-1;-1;-1;-1;-1;;Persia Soviet Border;;
+5067;12818;impassable;-1;-1;-1;-1;-1;;Persia Soviet Border;;
+4983;12818;impassable;-1;-1;-1;-1;-1;;Persia Soviet Border;;
+4983;12704;impassable;-1;-1;-1;-1;-1;;Persia Soviet Border;;
+4983;10873;impassable;-1;-1;-1;-1;-1;;Persia Soviet Border;;
+1963;10873;impassable;-1;-1;-1;-1;-1;;Persia Soviet Border;;
+10828;10873;impassable;-1;-1;-1;-1;-1;;Persia Soviet Border;;
+10759;10873;impassable;-1;-1;-1;-1;-1;;Persia Soviet Border;;
+10890;10873;impassable;-1;-1;-1;-1;-1;;Persia Soviet Border;;
+10890;8009;impassable;-1;-1;-1;-1;-1;;Persia Soviet Border;;
+10890;1888;impassable;-1;-1;-1;-1;-1;;Persia Soviet Border;;
+7990;1888;impassable;-1;-1;-1;-1;-1;;Persia Soviet Border;;
+7990;10806;impassable;-1;-1;-1;-1;-1;;Persia Soviet Border;;
+5014;1822;impassable;-1;-1;-1;-1;-1;;Persia Soviet Border;;
+6826;1822;impassable;-1;-1;-1;-1;-1;;Persia Soviet Border;;
 
 2800;2776;;-1;-1;-1;-1;-1;Aden_Strait;Aden Strait;
 

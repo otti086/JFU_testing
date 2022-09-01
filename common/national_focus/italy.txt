@@ -1509,7 +1509,7 @@
 		x = -1
 		y = 1
 		relative_position_id = ITA_slovenia_dalmatia_claims
-		cost = 10
+		cost = 0.2
 		completion_reward = {
 			GER = {
 				add_opinion_modifier = { target = ITA modifier = pact_of_steel_opinion }

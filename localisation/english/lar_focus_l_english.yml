@@ -769,6 +769,8 @@
  FRA_revive_the_franco_polish_alliance_tt:0 "\nPoland would be invited into our faction if we were leaders of our own faction."
  FRA_buy_time:0 "Buy Time"
  FRA_buy_time_desc:0 "We are not ready to face the Germans in the field. Our allies are weak, our military is outdated. We might have to make some sacrifices if we want to survive."
+ FRA_colonial_infrastructure1:0 "Colonial Infrastructure 1"
+ FRA_colonial_infrastructure2:0 "Colonial Infrastructure 2"
  FRA_arms_purchases_in_the_us:1 "Arms Purchases in the US"
  FRA_arms_purchases_in_the_us_desc:0 "Our military industry is simply not up to the task of supplying our forces with the necessary modern weapons. The US, however, has production capacity to spare. Unless they decide to return to their isolationism, it would seem that they could be persuaded to sell us the weapons we need."
  FRA_france_leads:0 "France Leads"

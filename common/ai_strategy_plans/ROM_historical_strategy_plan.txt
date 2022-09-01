@@ -31,7 +31,6 @@ ROM_historical = {
 		ROM_flexible_foreign_policy
 		ROM_air_superiority
 		ROM_expand_the_galati_shipyards
-		ROM_trade_treaty_with_germany
 		ROM_iar_80
 		ROM_cas
 		ROM_royal_guards_divisions
@@ -39,12 +38,9 @@ ROM_historical = {
 		ROM_vanatori_de_munte
 		ROM_hunedoara_steel_works
 		ROM_appoint_german_friendly_government
-		ROM_invite_german_advisors
 		ROM_iron_guard
 		ROM_force_abdication
-		ROM_join_axis
 		ROM_expand_ploiesti_oil_production
-		ROM_german_romanian_oil_exploitation_company
 		ROM_expand_the_university_of_bucharest
 		ROM_acquire_modern_tanks
 		ROM_invest_in_the_iar

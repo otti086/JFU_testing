@@ -60,7 +60,7 @@
 		id = ERF_motorization_effort
 		icon = GFX_goal_generic_army_motorized
 		prerequisite = { focus = ERF_army_effort }
-		bypass = { has_tech = ERF_motorised_infantry }
+		bypass = { has_tech = motorised_infantry }
 		x = 1
 		y = 1
 		relative_position_id = ERF_army_effort
@@ -901,7 +901,6 @@
 		id = ERF_neutrality_focus
 		icon = GFX_goal_generic_neutrality_focus
 		prerequisite = { focus = ERF_liberty_ethos }
-		mutually_exclusive = { focus = ERF_interventionism_focus }
 		x = 0
 		y = 1
 		relative_position_id = ERF_liberty_ethos

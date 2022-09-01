@@ -1814,30 +1814,6 @@ ideas = {
 	materiel_manufacturer = {
 		
 		designer = yes
-
-		HOL_daf = {
-			
-			picture = HOL_daf
-
-			available = {
-				has_completed_focus = HOL_daf
-			}
-
-			allowed = {
-				tag = HOL
-				has_dlc = "Man the Guns"
-			}
-			
-			cost = 75
-
-			removal_cost = 10
-			
-			research_bonus = {
-				motorized_equipment = 0.15
-			}
-			
-			traits = { motorized_equipment_manufacturer }
-		}
 		
 		artillerie_inrichtingen = {
 			
