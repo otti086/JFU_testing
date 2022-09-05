@@ -32,7 +32,6 @@ recruit_character = IRE_s_muiris
 recruit_character = IRE_john_byrne
 recruit_character = IRE_sean_lemass
 recruit_character = IRE_douglas_hyde
-recruit_character = IRE_sean_ceallaigh
 
 
 set_politics = {

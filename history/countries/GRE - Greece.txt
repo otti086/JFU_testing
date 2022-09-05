@@ -167,7 +167,6 @@ if = {
 	recruit_character = GRE_markos_vafiadis
 	recruit_character = GRE_aristeidis_dimitratos
 	recruit_character = GRE_georgios_papandreou
-	recruit_character = GRE_sophoklis_venizelos
 	recruit_character = GRE_dimitris_glinos
 	recruit_character = GRE_aristotle_onassis
 	recruit_character = GRE_dimitrios_holevas

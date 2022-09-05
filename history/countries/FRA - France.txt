@@ -221,12 +221,9 @@ recruit_character = FRA_paul_reynaud
 recruit_character = FRA_pierre_pucheu
 recruit_character = FRA_charles_tillon
 recruit_character = FRA_zivony_peshkov
-recruit_character = FRA_roger_salengro
 recruit_character = FRA_leon_blum
 recruit_character = FRA_felix_gouin
-recruit_character = FRA_paul_baudouin
 recruit_character = FRA_maurice_gauche
-recruit_character = FRA_jacques_duclos
 
 
 if = {

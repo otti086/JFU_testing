@@ -388,45 +388,4 @@ characters={
 			}
 		}
 	}
-	DEN_viggo_kampman={
-		advisor={
-			slot = political_advisor
-			idea_token = DEN_viggo_kampman
-			allowed  = {
-					original_tag  = DEN
-				}
-				traits  = {
-					smooth_talking_charmer 
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="Viggo Kampmann"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_2"
-			}
-		}
-	}
-	DEN_knud_kristensen={
-		advisor={
-			slot = political_advisor
-			idea_token = DEN_knud_kristensen
-			allowed  = {
-					original_tag  = DEN
-				}
-				traits  = {
-					backroom_backstabber 
-				}
-				ai_will_do  = {
-					factor  = 0.000
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="Knud Kristensen"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_3"
-			}
-		}
-	}
 }

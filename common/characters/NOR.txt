@@ -479,25 +479,6 @@ characters={
 			}
 		}
 	}
-	NOR_halvdan_koht={
-		advisor={
-			slot = political_advisor
-			idea_token = NOR_halvdan_koht
-			allowed  = {
-					original_tag  = NOR
-				}
-				traits  = {
-					smooth_talking_charmer 
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="Halvdan Koht"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_1"
-			}
-		}
-	}
 	NOR_trygve_halvdan_lie={
 		advisor={
 			slot = political_advisor

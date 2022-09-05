@@ -417,22 +417,4 @@ characters={
 			}
 		}
 	}
-	ETH_makonnen_endelkatchew={
-		advisor={
-			slot = political_advisor
-			idea_token = ETH_makonnen_endelkatchew
-			allowed  = {
-					original_tag  = ETH
-				}
-				traits  = {
-					smooth_talking_charmer 
-				}
-		}
-		name=ETH_makonnen_endelkatchew
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_arab_3"
-			}
-		}
-	}
 }

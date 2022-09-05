@@ -833,26 +833,6 @@ characters = {
 		}
 	}
 
-
-	POL_jozef_beck={
-		name=POL_jozef_beck
-		portraits={
-			army={
-				small="GFX_idea_POL_jozef_beck"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = POL_jozef_beck
-			allowed = {
-				original_tag = POL
-			}
-			traits = {
-				smooth_talking_charmer 
-			}
-		}		
-	}
-
 	POL_eugeniusz_kwiatkowiski={
 		name=POL_eugeniusz_kwiatkowiski
 		portraits={

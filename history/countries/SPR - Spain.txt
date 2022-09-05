@@ -120,7 +120,6 @@ if = {
 	recruit_character = SPA_ricardo_rada
 	recruit_character = SPR_nicolas_molero
 	recruit_character = SPA_luis_valdes_cavanillas
-	recruit_character = SPA_tomas_garciano_goni
 	recruit_character = SPA_fidel_davila_arrondo
 	recruit_character = SPA_jose_antonio_giron
 	recruit_character = SPA_manuel_hedilla

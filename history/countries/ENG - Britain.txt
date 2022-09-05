@@ -298,7 +298,6 @@ recruit_character = ENG_alan_turing
 recruit_character = ENG_clement_attlee
 recruit_character = ENG_ernest_bevin
 recruit_character = ENG_leslie_hore_belisha
-recruit_character = ENG_nevile_henderson
 recruit_character = ENG_philip_kerr
 recruit_character = ENG_stewart_menzies
 recruit_character = ENG_maxwell_aitken

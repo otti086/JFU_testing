@@ -486,43 +486,6 @@ characters={
 
 	### POLITICAL ADVISORS ###
 
-	BRA_washington_luis_pereira={
-		name=BRA_washington_luis_pereira
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_south_america_1"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = BRA_washington_luis_pereira
-			allowed  = {
-				original_tag  = BRA
-			}
-			traits  = {
-				backroom_backstabber 
-			}
-		}		
-	}
-
-	BRA_osvaldo_aranha={
-		name=BRA_osvaldo_aranha
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_south_america_2"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = BRA_osvaldo_aranha
-			allowed  = {
-				original_tag  = BRA
-			}
-			traits  = {
-				compassionate_gentleman 
-			}
-		}		
-	}
 	
 	BRA_afranio_de_mello_franco={
 		name=BRA_afranio_de_mello_franco

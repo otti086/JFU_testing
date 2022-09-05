@@ -2335,45 +2335,6 @@ characters = {
 		}
 	}
 
-	SOV_anastasy_vonsyatsky = {
-		name = SOV_anastasy_vonsyatsky
-		portraits = {
-			army = {
-				small = "GFX_idea_SOV_anastasy_vonsyatsky"
-			}
-		}
-		allowed_civil_war = {
-			OR = {
-				has_government = neutrality 
-				has_government = fascism
-			}
-		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = SOV_anastasy_vonsyatsky
-			allowed = {
-				original_tag = SOV
-			}
-			visible = {
-				NOT = {
-					has_character_flag = SOV_character_purged_flag 
-				}
-			}
-			available = {
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
-			}
-			traits = {
-				the_foreign_connection
-			}
-		}		
-	}
-
 	SOV_grigory_semyonov = {
 		name = SOV_grigory_semyonov
 		portraits = {

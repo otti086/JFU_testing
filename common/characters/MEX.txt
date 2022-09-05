@@ -878,25 +878,6 @@ characters={
 		}
 	}
 
-	MEX_eduardo_hay={
-		name=MEX_eduardo_hay
-		portraits={
-			army={
-				small="GFX_idea_MEX_eduardo_hay"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = MEX_eduardo_hay
-			allowed = {
-				original_tag = MEX
-			}
-			traits = {
-				smooth_talking_charmer 
-			}
-		}
-	}
-
 	MEX_luis_montes_de_oca={
 		name=MEX_luis_montes_de_oca
 		portraits={

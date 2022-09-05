@@ -1921,28 +1921,6 @@ characters={
 		}
 	}
 
-	SPA_tomas_garciano_goni={
-		name=SPA_tomas_garciano_goni
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_1"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = SPA_tomas_garciano_goni
-			name = SPA_tomas_garciano_goni 
-			allowed = {
-				NOT = { has_dlc = "La Resistance" }
-				original_tag = SPR
-				has_government = fascism
-			}
-			traits = {
-				compassionate_gentleman 
-			}
-		}
-	}
-
 	SPA_fidel_davila_arrondo={
 		name=SPA_fidel_davila_arrondo
 		portraits={

@@ -29,6 +29,7 @@ allies = {
 		tag = IRE
 		tag = NOR
 		tag = HOL
+		tag = SOV
 	}
 }
 ai_country = {

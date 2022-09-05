@@ -68,7 +68,6 @@ recruit_character = CAN_newton_wesley_rowell
 recruit_character = CAN_james_ilsley
 recruit_character = CAN_leo_richer_lafleche
 recruit_character = CAN_r_b_bennett
-recruit_character = CAN_louis_st_laurent
 
 
 # Starting tech

@@ -406,23 +406,4 @@ characters={
 			}
 		}
 	}
-	IRE_sean_ceallaigh={
-		advisor={
-			slot = political_advisor
-			idea_token = IRE_sean_ceallaigh
-			allowed  = {
-					original_tag  = IRE
-				}
-				traits  = {
-					smooth_talking_charmer 
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="Seán T. O'Ceallaigh"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_1"
-			}
-		}
-	}
 }

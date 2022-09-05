@@ -1423,44 +1423,6 @@ characters={
 		}
 	}
 
-	USA_john_winant={
-		name=USA_john_winant
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_5"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = USA_john_winant
-			allowed  = {
-				original_tag  = USA
-			}
-			traits  = {
-				compassionate_gentleman 
-			}
-		}
-	}
-
-	USA_cordell_hull={
-		name=USA_cordell_hull
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_6"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = USA_cordell_hull
-			allowed  = {
-				original_tag  = USA
-			}
-			traits  = {
-				smooth_talking_charmer 
-			}
-		}		
-	}
-
 	USA_henry_morgenthau={
 		name=USA_henry_morgenthau
 		portraits={

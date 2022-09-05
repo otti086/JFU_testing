@@ -691,25 +691,6 @@ characters={
 			}
 		}		
 	}
-	
-	AST_robert_g_menzies={
-		name=AST_robert_g_menzies
-		portraits={
-			army={
-				small="GFX_idea_AST_robert_g_menzies" #small="GFX_idea_generic_political_advisor_europe_2"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = AST_robert_g_menzies
-			allowed = {
-				original_tag = AST
-			}
-			traits = {
-				backroom_backstabber 
-			}
-		}		
-	}
 
 	AST_herbert_v_evatt={
 		name=AST_herbert_v_evatt
@@ -755,26 +736,6 @@ characters={
 			}
 			traits = {
 				war_industrialist 
-			}
-		}		
-	}
-
-	AST_frank_forde={
-		name=AST_frank_forde
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_3"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = AST_frank_forde
-			allowed = {
-				original_tag = AST
-				has_dlc = "Together for Victory"
-			}
-			traits = {
-				compassionate_gentleman 
 			}
 		}		
 	}

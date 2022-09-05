@@ -137,7 +137,6 @@ recruit_character = POL_tomislaw_lupaszko
 recruit_character = POL_zygmunt_buhusz_szysko
 recruit_character = POL_witold_pilecki
 recruit_character = POL_irena_anders
-recruit_character = POL_jozef_beck
 recruit_character = POL_jan_kowalewski
 recruit_character = POL_eugeniusz_kwiatkowiski
 recruit_character = POL_karl_albrecht

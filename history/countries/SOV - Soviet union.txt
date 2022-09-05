@@ -108,8 +108,6 @@ if = {
 	limit = {
 		has_dlc = "No Step Back"
 	}
-	recruit_character = SOV_anastasy_vonsyatsky
-	# recruit_character = SOV_grigory_semyonov # starts as an advisor to Puyi
 	recruit_character = SOV_aleksandr_prokofyev_seversky
 	recruit_character = SOV_vyacheslav_tkachyov
 	recruit_character = SOV_yan_nagursky
@@ -154,9 +152,6 @@ if = {
 	limit = {
 		has_dlc = "No Step Back"
 	}
-	SOV_anastasy_vonsyatsky = { #Not in the country
-		set_character_flag = SOV_exiled_flag
-	}
 	SOV_aleksandr_prokofyev_seversky = { #Not in the country
 		set_character_flag = SOV_exiled_flag
 	}
@@ -178,10 +173,6 @@ if = {
 if = {
 	limit = {
 		has_dlc = "No Step Back"
-	}
-	SOV_anastasy_vonsyatsky = {
-		set_character_flag = SOV_aligned_the_exiles_flag
-		set_character_flag = SOV_exiled_flag
 	}
 	 
 	SOV_aleksandr_prokofyev_seversky = {

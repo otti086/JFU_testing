@@ -681,25 +681,6 @@ characters={
 		}
 	}
 
-	CHI_chen_yi={
-		name=CHI_chen_yi
-		portraits={
-			civilian={
-				small="GFX_idea_CHI_chen_yi"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = CHI_chen_yi
-			allowed  = {
-				original_tag  = CHI
-			}
-			traits  = {
-				compassionate_gentleman 
-			}
-		}
-	}
-
 	CHI_random_prince_of_terror={
 		portraits={
 			civilian={
@@ -744,26 +725,6 @@ characters={
 			}
 			traits  = {
 				popular_figurehead 
-			}
-		}
-	}
-
-	CHI_chen_guofu={
-		name=CHI_chen_guofu
-		portraits={
-			civilian={
-				small="GFX_idea_CHI_chen_guofu"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = CHI_chen_guofu
-			allowed  = {
-				original_tag  = CHI
-				has_dlc = "Waking the Tiger"
-			}
-			traits  = {
-				backroom_backstabber 
 			}
 		}
 	}

@@ -38,10 +38,6 @@ every_possible_country = {
 		NOT = {
 			has_allowed_idea_with_traits = { idea = democratic_reformer characters = yes }
 		}
-		if = {
-			limit = { has_dlc = "Battle for the Bosporus" }
-			NOT = { tag = GRE }
-		}
 	}
 	generate_character = {
 		token_base = generic_democratic_reformer # token will be TAG_token_base
@@ -71,13 +67,10 @@ every_possible_country = {
 
 every_possible_country = {
 	limit = {
-		NOT = { OR = {allies = yes axis = yes } }		is_dynamic_country = no
+		NOT = { OR = {allies = yes axis = yes } }		
+		is_dynamic_country = no
 		NOT = {
 			has_allowed_idea_with_traits = { idea = fascist_demagogue characters = yes }
-		}
-		if = {
-			limit = { has_dlc = "Battle for the Bosporus" }
-			NOT = {  tag = GRE }
 		}
 	}
 	generate_character = {
@@ -102,14 +95,6 @@ every_possible_country = {
 		has_dlc = "La Resistance"
 		# china gets a special one via focus
 		NOT = { original_tag = CHI }
-		if = {
-			limit = {
-				has_dlc = "Battle for the Bosporus"
-			}
-			NOT = {
-				tag = GRE
-			}
-		}
 		NOT = {
 			has_allowed_idea_with_traits = { idea = head_of_intelligence characters = yes }
 		}

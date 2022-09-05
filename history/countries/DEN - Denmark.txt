@@ -27,8 +27,6 @@ recruit_character = DEN_william_wain_prior
 recruit_character = DEN_aage_vedel
 recruit_character = DEN_wilhelm_prior
 recruit_character = DEN_ejnar_warum
-recruit_character = DEN_viggo_kampman
-recruit_character = DEN_knud_kristensen
 
 
 set_research_slots = 3

@@ -1529,25 +1529,6 @@ characters={
 		}		
 	}
 
-	ENG_nevile_henderson={
-		name=ENG_nevile_henderson
-		portraits={
-			army={
-				small="GFX_idea_ENG_nevile_henderson"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = ENG_nevile_henderson
-			allowed  = {
-				original_tag  = ENG
-			}
-			traits  = {
-				backroom_backstabber 
-			}
-		}
-	}
-
 	ENG_maxwell_aitken={
 		name=ENG_maxwell_aitken
 		portraits={
