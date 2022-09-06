@@ -460,6 +460,7 @@ JFU_decisions = {
 				
 				add_compliance = 90 
 				}
+				country_event = { id = JFU_events.1 hours = 1} 
 			}
 		}
 	}

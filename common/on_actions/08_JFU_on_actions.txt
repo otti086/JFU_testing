@@ -274,7 +274,7 @@ on_actions = {
 							}
 						}
 					
-						add_compliance = 50 
+						add_compliance = 75 
 					}
 				}
 			}

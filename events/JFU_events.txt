@@ -545,3 +545,17 @@ country_event = {
 	is_triggered_only = yes
 	option = { name = "Excellent!"}
 }
+
+add_namespace = JFU_events
+
+country_event = {
+	id = JFU_events.1
+	title = "Siam Rubber to germany"
+	desc = "Ok"
+	picture = GFX_report_event_generic_parliament
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		give_resource_rights = { receiver = GER state = 724 }
+	}
+}

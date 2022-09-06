@@ -439,7 +439,7 @@ JFU_YUGO_COLAB = {
 	option = {
 		name = "FREE_COLAB_YUGO"
 		text = "Free colab for Italy"
-		desc = "Clicking this option will give Italy 50% comliance on Yugoslavia"
+		desc = "Clicking this option will give Italy 75% comliance on Yugoslavia"
 	}
 }
 JFU_SPECIAL_FORCES_CAP = {
