@@ -104,10 +104,17 @@ ROOT_call_against_france = {
 				enemy = FRA
 			}
 		}
-
-	}
-							
+	}						
 }	
+ROOT_call_against_greece = {
+		for_each_scope_loop = {
+		array = ROOT.allies
+		add_to_war = {
+			targeted_alliance = ROOT
+			enemy = GRE
+		}
+	}		
+}
 air_to_germany = {
 	if = { limit = { tag = ITA }
 	send_equipment = { equipment = fighter_equipment amount = 10000 target = GER }

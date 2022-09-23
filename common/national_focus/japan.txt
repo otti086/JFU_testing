@@ -311,6 +311,32 @@
 
 
 		completion_reward = {
+			hidden_effect = {
+				if = {
+					limit = {
+						USA = {
+							NOT = {
+								is_in_faction_with = ENG 
+							}
+						}
+					}
+					ENG = { 
+						add_to_faction = USA 
+						if = {
+							limit = {
+								BRA = { is_ai = no }
+								
+							}
+						add_to_faction = BRA
+						}
+						if = {
+							limit = {
+								MEX = { is_ai = no }
+							}
+						add_to_faction = MEX
+						}
+					}
+				}
 			declare_war_on_all_allies = yes
 			if = { limit = { country_exists = MAN }	MAN = { add_to_war = { targeted_alliance = JAP enemy = ENG } } }
 			if = { limit = { country_exists = SIA }	SIA = { add_to_war = { targeted_alliance = JAP enemy = ENG } } }
