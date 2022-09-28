@@ -6,6 +6,9 @@ state=
 	
 	state_category = town
 	
+	resources={
+		steel=4 # was: 8
+	}
 	
 	history={
 		victory_points = {

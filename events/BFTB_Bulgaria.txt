@@ -4377,10 +4377,20 @@ country_event = {
 		set_country_flag = BUL_german_aircraft_donation_flag
 
 		GER = {
-			send_equipment = {
-				type = fighter_equipment
-				amount = 12
-				target = ROOT
+			if = {
+				limit = { NOT = { has_dlc = "By Blood Alone" } }
+				send_equipment = {
+					type = fighter_equipment_1
+					amount = 12
+					target = ROOT
+				}
+			}
+			else = {
+				send_equipment = {
+					type = small_plane_airframe
+					amount = 12
+					target = ROOT
+				}
 			}
 		}
 		if = {
@@ -4436,7 +4446,7 @@ country_event = {
 				}
 			}
 			send_equipment = {
-				type = fighter_equipment
+				type = small_plane_airframe
 				amount = 12
 				target = ROOT
 			}

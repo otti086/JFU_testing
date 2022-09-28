@@ -224,11 +224,6 @@ GER_unit_production = {
 	}
 	ai_strategy = {
 		type = equipment_variant_production_factor
-		id = strat_bomber_equipment
-		value = -100
-	}
-	ai_strategy = {
-		type = equipment_variant_production_factor
 		id = support_equipment
 		value = 30
 	}

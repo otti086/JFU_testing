@@ -1028,17 +1028,6 @@ SOV_scorched_earth_german_front_stalingrad = {
 	}
 }
 
-SOV_dont_do_so_many_naval_invasions_please = {
-
-	allowed = { original_tag = SOV }
-
-	ai_strategy = {
-		type = invasion_unit_request
-		tag = GER
-		value = -50
-	}
-}
-
 
 SOV_boost_div_upgrades = { #lets make sure sov upgrades divs when at war
 	allowed = {

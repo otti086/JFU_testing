@@ -21,8 +21,20 @@ state={
 			infrastructure = 1
 
 		}
-		add_core_of = SWE
+		if = {
+			limit = {
+				has_dlc = "Battle for the Bosporus"
+			}
+			add_core_of = SWE
 		}
+		if = {
+			limit = {
+				NOT = { has_dlc = "Battle for the Bosporus" }
+			}
+			add_core_of = SWE
+			add_core_of = SWE
+		}
+	}
 
 	provinces={
 		876 9858 9860 9868 9954 10399 11797  

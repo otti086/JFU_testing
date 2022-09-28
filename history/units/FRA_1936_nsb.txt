@@ -54,20 +54,6 @@ units = {
 	}
 }
 
-### Air Wings
-air_wings = {
-	21 = {
-		tac_bomber_equipment_1 =  {
-			owner = "FRA" 
-			amount = 60
-		}
-		tac_bomber_equipment_0 =  {
-			owner = "FRA" 
-			amount = 12
-		}
-	}
-}
-
 #########################
 ## STARTING PRODUCTION ##
 #########################
@@ -123,5 +109,5 @@ instant_effect = {
 		progress = 0.4
 		efficiency = 50
 	}
-
+}
 ###################

@@ -9,8 +9,7 @@ continuous_focus_palette = {
 	reset_on_civilwar = no
 			
 	position = { x = 50 y = 1000 }
-	
-		
+
 	focus = {
 		id = continuous_naval_production
 		
@@ -23,9 +22,40 @@ continuous_focus_palette = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0.25		
+				is_government_in_exile = yes 
+				original_tag = ETH
+			}
 		}
 		
 		supports_ai_strategy = ai_focus_naval
+		
+		daily_cost = 1
+		
+		available_if_capitulated = yes
+	}
+
+	focus = {
+		id = continuous_air_production
+		
+		icon = GFX_goal_continuous_air_production
+		
+		available = {
+		}
+		
+		idea = continuous_air_production
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.25		
+				is_government_in_exile = yes 
+				original_tag = ETH 
+			}
+		}
+		
+		supports_ai_strategy = ai_focus_aviation
 		
 		daily_cost = 1
 		
@@ -59,6 +89,11 @@ continuous_focus_palette = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0.25		
+				is_government_in_exile = yes 
+				original_tag = ETH 
+			}
 		}
 		
 		supports_ai_strategy = ai_focus_defense
@@ -82,6 +117,11 @@ continuous_focus_palette = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0.25		
+				is_government_in_exile = yes  
+				original_tag = ETH
+			}
 		}
 		
 		supports_ai_strategy = ai_focus_defense
@@ -245,5 +285,7 @@ continuous_focus_palette = {
 		
 		available_if_capitulated = yes
 	}
+
+	
 
 }

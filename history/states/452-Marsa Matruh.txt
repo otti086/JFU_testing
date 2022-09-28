@@ -13,10 +13,14 @@ state={
 		}
 
 		victory_points = {
-			9989 1
+			10061 2 # Mersa Matruh
 		}
 
-	add_core_of = SWE
+		victory_points = {
+			9989 1 #Sidi Barrani
+		}
+
+		add_core_of = SWE
 	}
 
 	provinces={

@@ -171,37 +171,6 @@ country_event = {
 	}
 }
 
-# Towards Indian Independence notification event
-country_event = {
-	id = mtg_britain.21
-	title = mtg_britain.21.t
-	desc = mtg_britain.18.d
-	picture = GFX_report_event_generic_sign_treaty3
-
-	is_triggered_only = yes
-	
-	# Ok
-	option = {
-		name = mtg_britain.18.a
-		effect_tooltip = {
-			swap_ideas = {
-				remove_idea = ENG_guided_by_britain_RAJ_1
-				add_idea = ENG_guided_by_britain_RAJ_2
-			}
-			if = {
-				limit = {
-					tag = RAJ
-					NOT = { is_subject = no }
-					NOT = { has_autonomy_state = autonomy_dominion }
-					has_dlc = "Together for Victory"
-				}
-				set_autonomy = { target = RAJ autonomy_state = autonomy_dominion }
-			}
-			retire_country_leader = yes
-		}
-	}
-}
-
 # Event for target saying they are in violation of the Washington Naval Treaty and ENG wants them to scuttle some ships
 country_event = {
 	id = mtg_britain.106

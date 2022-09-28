@@ -1,5 +1,4 @@
-﻿
-division_template = {
+﻿division_template = {
 	name = "50W"
 
 	regiments = {
@@ -54,8 +53,6 @@ units = {
 
 	}
 }
-
-
 ##### Starting Production #####
 instant_effect = {
 	add_equipment_production = {

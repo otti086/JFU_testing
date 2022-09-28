@@ -50,98 +50,7 @@ units = {
 	}
 }
 	
-air_wings = {
-	### 1 USAAF Wing -- Los Angeles
-	361 = {
-		# 7th Bombardment Group 
-		# 19th Bombardment Group 
-		tac_bomber_equipment_0 = {
-			owner = "USA" 
-			amount = 30
-		}
-		# 17th Attack Group 
-		CAS_equipment_1 = {
-			owner = "USA" 
-			amount = 24
-		}
-	}
 
-	### 2 USAAF Wing -- Norfolk
-	361 = { 
-		# 1st Pursuit Group 
-		# 8th Pursuit Group 
-		fighter_equipment_0 =  {
-			owner = "USA" 
-			amount = 72
-		}
-		# 2nd Bombardment Group 
-		# 9th Bombardment Group 
-		tac_bomber_equipment_0 = {
-			owner = "USA" 
-			amount = 48
-		}
-	}
-
-	### 3 USAAF Wing -- Louisiana
-	361 = { 
-		# 20th Pursuit Group 
-		fighter_equipment_0 =  {
-			owner = "USA" 
-			amount = 48
-		}
-		# 3rd Attack Group 
-		CAS_equipment_1 = {
-			owner = "USA" 
-			amount = 24
-		}
-	}
-
-	### 18th Composite Wing -- Hawaii
-	361 = { 
-		# 18th Pursuit Group 
-		fighter_equipment_0 =  {
-			owner = "USA" 
-			amount = 24
-		}
-		# 5th Composite Group 
-		tac_bomber_equipment_0 = {
-			owner = "USA" 
-			amount = 18
-		}
-	}
-
-	### 19th Composite Wing -- Panama Canal
-	361 = { 
-		# 16th Pursuit Group 
-		fighter_equipment_0 =  {
-			owner = "USA" 
-			amount = 48
-		}
-		# 6th Composite Group 
-		tac_bomber_equipment_0 = {
-			owner = "USA" 
-			amount = 6
-		}
-	}
-
-	### USN Atlantic Naval Patrol Division -- Norfolk
-	361 = { 
-		# Naval Patrol Wing 3 
-		nav_bomber_equipment_1 =  {
-			owner = "USA" 
-			amount = 18
-		}
-	}
-	### USN Pacific Naval Patrol Division -- San Diego
-	361 = { 
-		# Naval Patrol Wing 1 
-		# Naval Patrol Wing 2 
-		nav_bomber_equipment_1 =  {
-			owner = "USA" 
-			amount = 36
-		}
-	}
-}
 
 
 #########################
@@ -176,16 +85,6 @@ instant_effect = {
 		}
 		requested_factories = 1
 		progress = 0.3
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = cv_fighter_equipment_0
-			creator = "USA" 
-		}
-		requested_factories = 1
-		progress = 0.15
 		efficiency = 50
 	}
 

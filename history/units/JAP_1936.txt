@@ -51,103 +51,7 @@ units = {
 
 
 
-#AIRCRAFT
-air_wings = {
-	### IJA Air Forces ###
-	# 1 Hikodan -- Tokyo
-	282 = { 
-		# 1 Hiko Rentai -- Kawasaki Ki-10
-		fighter_equipment_0 = {
-			owner = "JAP" 
-			amount = 36
-		}
-		# 16 Hiko Rentai -- Kawasaki Ki-10
-		fighter_equipment_0 = {
-			owner = "JAP" 
-			amount = 36
-		}
-		# 6 Hiko Rentai -- Mitsubishi Ki-2
-		CAS_equipment_1 =  {
-			owner = "JAP" 
-			amount = 27
-		}
-		# 9 Hiko Rentai -- Mitsubishi Ki-1
-		tac_bomber_equipment_0 =  {
-			owner = "JAP" 
-			amount = 27
-		}
-	}
 
-	# 2 Hikodan -- Dalian
-	282 = {
-		# 3 Hiko Rentai -- Kawasaki Ki-10
-		fighter_equipment_0 = {
-			owner = "JAP" 
-			amount = 36
-		}
-		# 5 Hiko Rentai -- Kawasaki Ki-3
-		CAS_equipment_1 =  {
-			owner = "JAP" 
-			amount = 27
-		}
-	}
-
-	# 3 Hikodan -- Taiwan
-	282 = {
-		# 10 Hiko Rentai -- Kawasaki Ki-3
-		CAS_equipment_1 =  {
-			owner = "JAP" 
-			amount = 27
-		}
-
-	}
-
-	### IJN Air Forces ###
-	# 1 Rengo Kokutai -- Taiwan
-	282 = {
-		# Kizarazu Kokutai -- Aichi D1A2
-		cv_CAS_equipment_1 = {
-			owner = "JAP" 
-			amount = 30
-		}
-		# Kanoya Kokutai -- Aichi D1A2
-		cv_CAS_equipment_1 = {
-			owner = "JAP" 
-			amount = 30
-		}
-	}
-
-	# 2 Rengo Kokutai -- Taiwan
-	282 = {
-		# 12 Kokutai -- Nakajima A4N1
-		cv_fighter_equipment_0 = {
-			owner = "JAP" 
-			amount = 36
-		}
-		# 13 Kokutai -- Mitsubishi B2M2
-		cv_nav_bomber_equipment_1 = {
-			owner = "JAP" 
-			amount = 24
-		}
-	}
-
-	### Akagi CAG -- Hiroshima (while Akagi is refit)
-	282 = { 
-		cv_fighter_equipment_0 =  {
-			owner = "JAP" 
-			amount = 6
-		}
-		cv_CAS_equipment_1 = {
-			owner = "JAP" 
-			amount = 5
-		}
-		cv_nav_bomber_equipment_1 =  {
-			owner = "JAP" 
-			amount = 5
-		}
-
-	}
-}
 
 
 #########################
@@ -182,26 +86,6 @@ instant_effect =
 		}
 		requested_factories = 1
 		progress = 0.4
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = fighter_equipment_0
-			creator = "JAP" 
-		}
-		requested_factories = 1
-		progress = 0.15
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = cv_nav_bomber_equipment_1
-			creator = "JAP" 
-		}
-		requested_factories = 1
-		progress = 0.2
 		efficiency = 50
 	}
 }

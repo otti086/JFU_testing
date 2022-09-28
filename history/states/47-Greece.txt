@@ -4,8 +4,8 @@ state={
 	name="STATE_47" # Thessaly
 	manpower=2312500
 	resources={
-		steel=17 # was: 4
-		chromium=44 # was: 22
+		steel=3 # was: 4
+		chromium=12 # was: 22
 		aluminium=30 # was: 58
 		tungsten = 10 # was: 20
 	}
@@ -20,6 +20,15 @@ state={
 		victory_points = {
 			3973 3
 		}
+		#victory_points = {
+		#	863 1
+		#}
+		#victory_points = {
+		#	3864 3
+		#}
+		#victory_points = {
+		#	976 1
+		#}
 		victory_points = {
 			7127 3
 		}
@@ -28,9 +37,8 @@ state={
 		}
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 6
+			industrial_complex = 3
 			dockyard = 1
-			arms_factory = 3
 			air_base = 4
 			4109 = {
 				naval_base = 9
@@ -39,7 +47,7 @@ state={
 
 		}
 		add_core_of = GRE
-		add_extra_state_shared_building_slots = 6
+
 	}
 
 	provinces={

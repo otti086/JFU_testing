@@ -295,6 +295,22 @@ ideas = {
 			}
 		}
 
+		JAP_duplicate_research_efforts = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = jap_duplicate_research
+			
+			research_bonus = { air_equipment = -0.10 }
+		}
+
 		JAP_militarism = {
 			allowed = {
 				always = no
@@ -312,7 +328,9 @@ ideas = {
 				war_support_factor = 0.2
 				mobilization_laws_cost_factor = -0.25
 				justify_war_goal_time = -0.2
-
+				research_speed_factor = -0.05
+				production_speed_industrial_complex_factor = -0.1
+				ai_desired_divisions_factor = 0.25
 			}
 		}
 
@@ -405,6 +423,100 @@ ideas = {
 			}
 		}
 
+		JAP_the_unthinkable_option = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = jap_the_unthinkable_option
+			
+			modifier = {
+				stability_weekly = -0.01
+				communism_drift = 0.03
+			}
+		}
+
+		JAP_reeducation_campaign = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			available = { has_stability < 0.5 }
+			
+			removal_cost = -1
+
+			picture = socialist_science_focus
+			
+			modifier = {
+				stability_weekly = 0.05
+			}
+		}
+
+		JAP_red_brigades = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			removal_cost = -1
+
+			picture = generic_communist_army
+			
+			modifier = {
+				conscription = 0.02
+			}
+		}
+
+		JAP_communist_volunteers = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			removal_cost = -1
+
+			picture = generic_volunteer_expedition_bonus
+			
+			modifier = {
+				send_volunteer_divisions_required = -1
+				send_volunteer_size = 1
+			}
+		}
+
+		JAP_people_owned_mines = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			removal_cost = -1
+
+			picture = generic_exploit_mines
+			
+			modifier = {
+				local_resources_factor = 0.1
+			}
+		}
+
 		JAP_liaison_conference = {
 			allowed = {
 				always = no
@@ -420,6 +532,29 @@ ideas = {
 			
 			modifier = {
 				army_leader_start_planning_level = 1
+			}
+		}
+
+		JAP_anti_communist_volunteers = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = generic_volunteer_expedition_bonus
+			
+			rule = {
+				can_send_volunteers = yes
+			}
+			
+			modifier = {
+				send_volunteer_size = 3
+				send_volunteer_divisions_required = -1
 			}
 		}
 
@@ -544,8 +679,8 @@ ideas = {
 			picture = jap_supremacy_of_technology
 			
 			research_bonus = {
-				infantry_weapons = 0.1
-				armor = 0.1
+				infantry_weapons = 0.05
+				armor = 0.05
 			}
 		}
 
@@ -563,8 +698,6 @@ ideas = {
 			picture = jap_supremacy_of_will
 			
 			modifier = {
-				army_core_attack_factor = 0.2
-				army_core_defence_factor = 0.2
 				army_defence_factor = 0.1
 				army_attack_factor = 0.1
 				army_morale_factor = 0.1
@@ -585,7 +718,7 @@ ideas = {
 			picture = generic_naval_manufacturer_1
 			
 			modifier = {
-				special_forces_cap = 0.05
+				special_forces_cap = 0.02
 			}
 		}
 
@@ -804,12 +937,6 @@ ideas = {
 				naval_strike_attack_factor = 0.12
 				naval_strike_targetting_factor = 0.12
 				naval_strike_agility_factor = 0.12
-				army_attack_factor = 0.10
-				breakthrough_factor = 0.30
-				amphibious_invasion_defence = 0.50
-				supply_consumption_factor = -0.10
-				no_supply_grace = 150
-				
 			}
 		}
 
@@ -847,10 +974,10 @@ ideas = {
 			
 
 			equipment_bonus = {
-				CAS_equipment = {
+				small_plane_cas_airframe = {
 					build_cost_ic = -0.1 instant = yes
 				}
-				tac_bomber_equipment = {
+				medium_plane_airframe = {
 					build_cost_ic = -0.1 instant = yes
 				}
 			}
@@ -871,16 +998,16 @@ ideas = {
 			
 
 			equipment_bonus = {
-				cv_fighter_equipment = {
+				cv_small_plane_airframe = {
 					build_cost_ic = -0.2 instant = yes
 				}
-				cv_CAS_equipment = {
+				cv_small_plane_cas_airframe = {
 					build_cost_ic = -0.2 instant = yes
 				}
-				cv_nav_bomber_equipment = {
+				cv_small_plane_naval_bomber_airframe = {
 					build_cost_ic = -0.2 instant = yes
 				}
-				nav_bomber_equipment = {
+				small_plane_naval_bomber_airframe = {
 					build_cost_ic = -0.2 instant = yes
 				}
 			}
@@ -1111,5 +1238,24 @@ ideas = {
 			
 			traits = { motorized_equipment_manufacturer }
 		}
+	}
+	
+	
+	tank_manufacturer = {
+	
+		designer = yes
+	
+		osaka_army_arsenal = {
+			
+			allowed = {
+				original_tag = JAP
+			}
+				
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { tank_manufacturer }
+		}	
 	}
 }

@@ -13,8 +13,18 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
-
-		add_core_of = SWE
+		if = {
+			limit = {
+				has_dlc = "Battle for the Bosporus"
+			}
+			add_core_of = SWE
+		}
+		if = {
+			limit = {
+				NOT = { has_dlc = "Battle for the Bosporus" }
+			}
+			add_core_of = SWE
+		}
 	}
 
 	provinces={

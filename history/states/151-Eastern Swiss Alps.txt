@@ -1,0 +1,19 @@
+
+state={
+	id=151
+	name="STATE_151"
+	manpower = 1
+	state_category = rural
+	history={
+		owner = SWE
+		victory_points = { 658 1 }
+		buildings = {
+			infrastructure = 1 
+		}
+		add_core_of = SWE
+	}
+	provinces={
+		658 661 3660 3662 11601 
+	}
+	local_supplies=0.0 
+}

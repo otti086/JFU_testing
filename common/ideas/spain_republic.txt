@@ -932,7 +932,7 @@ ideas = {
 			picture = SPR_masters_of_our_own_fate
 
 			allowed = {
-				original_tag = SPA
+				original_tag = SPR
 				NOT = { has_government = fascism }
 			}
 
@@ -954,7 +954,7 @@ ideas = {
 			#picture = 
 
 			allowed = {
-				original_tag = SPA
+				original_tag = SPR
 				NOT = { has_government = fascism }
 			}
 
@@ -969,13 +969,12 @@ ideas = {
 			}
 		}
 
-
 		SPR_crush_the_revolution = {
 
 			picture = SPR_crush_the_revolution
 
 			allowed = {
-				original_tag = SPA
+				original_tag = SPR
 				NOT = { has_government = fascism }
 			}
 
@@ -984,7 +983,7 @@ ideas = {
 			}
 
 			targeted_modifier = {
-				tag = SPC
+				tag = SPD
 				attack_bonus_against = 0.15
 				defense_bonus_against = 0.05
 			}
@@ -1298,7 +1297,7 @@ ideas = {
 
 			name = SPR_popular_front
 
-			picture = SPA_the_popular_front
+			picture = SPR_the_popular_front
 
 			allowed = {
 				original_tag = SPR
@@ -1323,7 +1322,7 @@ ideas = {
 
 			name = SPR_popular_front
 
-			picture = SPA_the_popular_front
+			picture = SPR_the_popular_front
 
 			allowed = {
 				original_tag = SPR
@@ -1347,7 +1346,7 @@ ideas = {
 
 			name = SPR_popular_front
 
-			picture = SPA_the_popular_front
+			picture = SPR_the_popular_front
 
 			allowed = {
 				original_tag = SPR
@@ -1372,7 +1371,7 @@ ideas = {
 
 			name = SPR_popular_front
 
-			picture = SPA_the_popular_front
+			picture = SPR_the_popular_front
 
 			allowed = {
 				original_tag = SPR
@@ -1942,7 +1941,8 @@ ideas = {
 			
 			allowed = {
 				has_dlc = "La Resistance"
-				original_tag = SPR
+				original_tag = SPR						
+									
 			}
 
 			available = {
@@ -2057,35 +2057,6 @@ ideas = {
 			}
 			
 			traits = { support_equipment_manufacturer }
-			
-			modifier = {
-			}
-		}
-
-		SPR_hispano_suiza = {
-
-			picture = SPR_hispano_suiza
-			
-			allowed = {
-				has_dlc = "La Resistance"
-				original_tag = SPR
-			}
-
-			available = {
-				OR = {
-					custom_trigger_tooltip = {
-						tooltip = SPR_scw_not_in_progress_tt
-						NOT = { SPR_scw_in_progress = yes }
-					}
-					controls_state = 165
-				}
-			}
-			
-			research_bonus = {
-				motorized_equipment = 0.15
-			}
-			
-			traits = { motorized_equipment_manufacturer }
 			
 			modifier = {
 			}

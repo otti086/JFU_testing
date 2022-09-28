@@ -68,11 +68,14 @@ bookmarks = {
 			history = ITA_BLITZKRIEG_DESC
 			ideology = fascism
 			ideas={
-				vittoria_mutilata
-				victor_emmanuel
+				vittorio_emanuele_albania_ethiopia
+				ITA_camicie_nere
+				ITA_pact_of_steel
 			}
 			focuses = {
-				ITA_pact_of_steel
+				ITA_battaglioni_d_assalto
+				ITA_by_blood_alone
+				ITA_ferrea_mole_ferreo_cuore
 			}			
 		}
 		JAP = {

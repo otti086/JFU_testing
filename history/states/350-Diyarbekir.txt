@@ -2,6 +2,7 @@
 state={
 	id=350
 	name="STATE_350"
+
 	history={
 		owner = SWE
 		victory_points = {
@@ -17,10 +18,8 @@ state={
 			infrastructure = 2
 
 		}
-
-		add_core_of = SWE
-
-		}
+			add_core_of = SWE
+	}
 
 	provinces={
 		4512 9823 11759 11871 12387 12416 

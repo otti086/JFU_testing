@@ -1,28 +1,13 @@
 ﻿
 units= {
-
-	##### NAVAL UNITS #####
-	### Northern Fleet -- Murmansk
+	
+	### Baltic Fleet -- Leningrad
 	fleet = {
-		name = "Severnyy Flot"
-		naval_base = 3134 # Murmansk
+		name = "Baltiyskiy Flot"
+		naval_base = 3151 # Leningrad
 		task_force = {				
-			name = "Severnyy Flot"
-			location = 3134 # Murmansk
-			# 1ya Flotiliya Esmintsev
-			ship = { name = "Dzerzhinskiy" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }
-			ship = { name = "Nezamozhnik" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }
-			ship = { name = "Petrovskiy" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }
-			ship = { name = "Shaumyan" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }
-			# 2ya Flotiliya Esmintsev
-			ship = { name = "Izyaslav" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }
-			ship = { name = "Kalinin" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }
-			ship = { name = "D-1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }			
-			ship = { name = "D-2" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }			
-			ship = { name = "D-3" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }			
-			ship = { name = "D-4" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }			
-			ship = { name = "D-5" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }			
-			ship = { name = "D-6" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }		
+			name = "Baltiyskiy Flot"
+			location = 3151 # Leningrad
 			ship = { name = "Marat" pride_of_the_fleet = yes definition = battleship equipment = { battleship_1 = { amount = 1 owner = SOV } } }
 			ship = { name = "Oktyabrskaya Revolutsiya" definition = battleship equipment = { battleship_1 = { amount = 1 owner = SOV } } }
 			# 3ya Flotiliya Esmintsev
@@ -36,6 +21,19 @@ units= {
 			ship = { name = "Voykov" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
 			ship = { name = "Rykov" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }		
 			ship = { name = "Karl Libknekht" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }
+			ship = { name = "D-1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }			
+			ship = { name = "D-2" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }			
+			ship = { name = "D-3" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }			
+			ship = { name = "D-4" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }			
+			ship = { name = "D-5" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }			
+			ship = { name = "D-6" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }	
+			ship = { name = "Dzerzhinskiy" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }
+			ship = { name = "Nezamozhnik" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }
+			ship = { name = "Petrovskiy" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }
+			ship = { name = "Shaumyan" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }
+			# 2ya Flotiliya Esmintsev
+			ship = { name = "Izyaslav" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }
+			ship = { name = "Kalinin" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }	
 			ship = { name = "Shch-301" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }			
 			ship = { name = "Shch-302" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }			
 			ship = { name = "Shch-303" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }			
@@ -60,8 +58,6 @@ units= {
 			ship = { name = "Shch-203" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }			
 			ship = { name = "Shch-204" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }			
 			ship = { name = "Shch-309" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
-			ship = { name = "Uritskiy" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }
-			ship = { name = "Stalin" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }
 			ship = { name = "Shch-101" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }			
 			ship = { name = "Shch-102" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }			
 			ship = { name = "Shch-103" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }			
@@ -74,10 +70,12 @@ units= {
 			ship = { name = "Shch-109" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }			
 			ship = { name = "Shch-110" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }			
 			ship = { name = "Shch-111" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }			
-			ship = { name = "Shch-112" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }	
-
+			ship = { name = "Shch-112" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }
+			ship = { name = "Uritskiy" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }
+			ship = { name = "Stalin" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SOV } } }
 		}	
 	}
+
 	### Black Sea Fleet -- Sevastopol
 	fleet = {
 		name = "Chernomorskiy Flot"
@@ -90,6 +88,11 @@ units= {
 			ship = { name = "Krasny Krym" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SOV } } }
 			ship = { name = "Chervonaya Ukraina" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SOV } } }
 			ship = { name = "Komintern" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SOV } } }
+		}	
+		task_force = {	
+			name = "Chernomorskiy Podvodniy Flot"
+			location = 3686 # Sevastopopl
+			# 9iy Podvodniy Flot
 			ship = { name = "Shch-121" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }			
 			ship = { name = "Shch-122" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }			
 			ship = { name = "Shch-123" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }			

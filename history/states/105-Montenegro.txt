@@ -4,12 +4,15 @@ state={
 	name="STATE_105"
 	resources={
 		chromium=20.000
-		aluminium=84.000
+		aluminium=70.000
 	}
 
 	history={
 		victory_points = {
 			9809 3 
+		}
+		victory_points = {
+			9821 1
 		}
 		owner = YUG
 		buildings = {
@@ -17,9 +20,10 @@ state={
 			industrial_complex = 1
 			9809 = {
 				naval_base = 1
-
 			}
-
+			9821 = {
+				naval_base = 1
+			}
 		}
 		add_core_of = YUG
 

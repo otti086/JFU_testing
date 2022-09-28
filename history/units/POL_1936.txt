@@ -526,6 +526,8 @@ units = {
 	}
 }
 
+
+
 #########################
 ## STARTING PRODUCTION ##
 #########################
@@ -542,15 +544,6 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
-			creator = "POL"
-		}
-		requested_factories = 1
-		progress = 0.20
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = fighter_equipment_0
 			creator = "POL"
 		}
 		requested_factories = 1

@@ -6,7 +6,7 @@ state={
 	state_category = rural
 	
 	resources={
-		rubber=50 # was: 70
+		rubber=40 # was: 70
 	}
 
 
@@ -14,8 +14,6 @@ state={
 		owner = SIA
 		buildings = {
 			infrastructure = 2
-			air_base = 10
-			anti_air_building = 5
 		}
 		victory_points = {
 			7236 1 

@@ -279,12 +279,7 @@
 				date < 1939.1.1
 				OR = { 
 					# we dont want chinese minors to go crazy on slots early since they get eaten
-					tag = GXC 
-					tag = YUN
-					tag = SHX
-					tag = XSM
 					tag = BEL
-					tag = LUX
 					tag = HOL
 					tag = DEN
 
@@ -915,12 +910,6 @@
 			modifier = {
 				factor = 0
 				tag = AUS
-			}
-			modifier = {
-				factor = 0
-				tag = SAU
-				is_in_faction_with = SOV
-				SOV = { has_government = communism }
 			}
 		}
 
