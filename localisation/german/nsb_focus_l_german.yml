@@ -831,6 +831,8 @@
  POL_proclaim_slavic_unity_desc:0 "Nachdem alle russischen und polnischen Gebiete unter unserer Kontrolle sind, können wir erreichen, was kein Zar vor uns je erreicht hat. Mit der Einwilligung und Genehmigung sowohl der Russen als auch der Polen können wir die Vereinigung der slawischen Völker ausrufen."
  POL_niech_zyje_opor:0 "W imieniu Polski Podziemnej"
  POL_niech_zyje_opor_desc:0 "In ganz Polen ist Getuschel von Rebellion und Freiheit zu hören. In unseren Kirchen und im Untergrund streben mutige und patriotische Polen danach, einen unabhängigen polnischen Staat aufzubauen. Und mit der richtigen Provokation und Ausrüstung befreit sich Warschau vielleicht selbst!"
+ POL_niech_zyje_opor_no_mtg:0 "$POL_niech_zyje_opor$"
+ POL_niech_zyje_opor_no_mtg_desc:0 "$POL_niech_zyje_opor_desc$"
  POL_morges_pact:0 "Morges-Pakt"
  POL_morges_pact_desc:0 "Nachdem in Polen die Demokratie wiederhergestellt ist, sind die Ziele der Front von Morges fast vollständig erfüllt. Es bleibt nur noch, unsere Beziehung zu Frankreich zu stärken und die franko-polnische Allianz wiederherzustellen."
  POL_morges_economic_union:0 "Franko-polnischer Wirtschaftspakt"
@@ -1456,7 +1458,7 @@
  SOV_night_witches_nsb_tt:0 "Das §Y588. Nachtbomberregiment§!, §Y587. Bomberregiment§! und §Y586. Luftverteidigungsjägerregiment§! werden in Moskau aktiv."
 
  SOV_modify_red_fleet_ns_intro:0 "§Y[GetAppropriateRedFleetNsName]§! modifizieren um"
- SOV_pc_of_the_ussr_navy_ns_tt:0 "§Y[GetAppropriateRedFleetNsName]§! hinzufügen, verleiht (Marine-Neuausrüstungskosten: §G-5%§!, Schiff-Reparaturgeschwindigkeit: +5%: §G+5%§!) \n\n"
+ SOV_pc_of_the_ussr_navy_ns_tt:1 "§Y[GetAppropriateRedFleetNsName]§! wird hinzugefügt ($MODIFIER_INDUSTRIAL_REFIT_IC_COST_FACTOR$: §G-5%§!, $MODIFIER_REPAIR_SPEED_FACTOR$: §G+5%§!)\n\n"
  SOV_pc_of_the_ussr_navy_ns_name_default:0 "$SOV_the_red_fleet_dynamic_modifier$"
  SOV_pc_of_the_ussr_navy_ns_name_alt:0 "$SOV_the_red_fleet_dynamic_modifier_alt$"
  SOV_surface_warfare_ns_tt:0 "$SOV_modify_red_fleet_ns_intro$ \n$SOV_the_red_fleet_surface_1_bonus_tt$ \n\n"

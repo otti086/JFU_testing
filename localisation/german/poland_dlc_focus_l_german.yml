@@ -168,7 +168,7 @@
  POL_adaptive_designs:0 "Adaptive Entwürfe"
  POL_adaptive_designs_desc:0 "Es wird langsam zu teuer, unsere Lizenz für den Bau ausländischer Konstruktionen aufrechtzuerhalten. Aber vielleicht können wir unsere Militärentwürfe anpassen, so dass sie im privaten Sektor genutzt werden können. Indem wir einen Teil unserer Materialien auf die Reichen aufteilen, können wir die Kosten für diese ausländischen Konstruktionsgesellschaften vielleicht ein wenig minimieren."
  POL_complete_april_constitution:0 "Die Aprilverfassung vollenden"
- POL_complete_april_constitution_desc:0 "Die Aprilverfassung besteht aus einer Reihe von Reformen, die dazu dienen, Polen zu einem stärker zentralisierten autoritären Regime unter Führung des Präsidenten umzugestalten. Die Sanacja-Regierung wird durch diese Verfassung legitimiert, doch es gibt noch immer einige, die sich nach dem alten System zurücksehnen. Die Aprilverfassung muss vollendet und ergänzt werden, um die Macht von [ROOT.GetLeader] zu stärken und den polnischen Staat zu zentralisieren!"
+ POL_complete_april_constitution_desc:1 "Die Aprilverfassung besteht aus einer Reihe von Reformen, die dazu dienen, Polen zu einem stärker zentralisierten autoritären Regime unter Führung des Präsidenten umzugestalten. Die Sanacja-Regierung wird durch diese Verfassung legitimiert, doch es gibt noch immer einige, die sich nach dem alten System zurücksehnen. Die Aprilverfassung muss vollendet und ergänzt werden, um die Macht von [GetAppropriateLeaderNameInBookmark] zu stärken und den polnischen Staat zu zentralisieren!"
  POL_consolidate_sanation_government:0 "Die Sanacja-Regierung konsolidieren"
  POL_consolidate_sanation_government_desc:1 "Seit dem Tod von Józef Piłsudski ist die Sanacja-Regierung zersplittert und desorganisiert. Die Regierung hat sich in drei Zweige aufgespalten: Das Schloss, die Sanacja-Linke und die Sanacja-Rechte. Es ist ungewiss, ob das Schloss die Kontrolle über die Diktatur beibehalten kann, doch die Regierung muss diesen Zustand der Unsicherheit bald beenden, wenn sie den kommenden Sturm des Krieges überstehen will."
  POL_the_castle:0 "Das Schloss"
@@ -427,6 +427,16 @@
  polish_legionary:0 "Polnischer Legionär"
  democratic_restorationist:0 "Demokratischer Erneuerer"
  POL_annexation_refused:0 "Annektierung abgelehnt"
+ #NSB -> No MTG focus fallbacks (duplicates)
+ POL_expand_polish_intelligence_no_mtg:0 "$POL_expand_polish_intelligence$"
+ POL_expand_polish_intelligence_no_mtg_desc:0 "$POL_expand_polish_intelligence_desc$"
+ POL_the_long_push_home_no_mtg:0 "$POL_the_long_push_home$"
+ POL_the_long_push_home_no_mtg_desc:0 "$POL_the_long_push_home_desc$"
+ POL_the_bombe_no_mtg:0 "$POL_the_bombe$"
+ POL_the_bombe_no_mtg_desc:0 "$POL_the_bombe_desc$"
+ POL_the_cyclometer_no_mtg:0 "$POL_the_cyclometer$"
+ POL_the_cyclometer_no_mtg_desc:0 "$POL_the_cyclometer_desc$"
+
 
 # === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
  POL_april_constitution_dem_1:0 "Ergänzte Aprilverfassung"

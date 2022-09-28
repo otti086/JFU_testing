@@ -4,8 +4,6 @@ tags={
 	"Balance"
 }
 name="JFU testing"
-supported_version="1.12.1"
-
 replace_path="common/abilities"
 replace_path="common/aces"
 replace_path="common/achievements"
@@ -77,3 +75,5 @@ replace_path="history/states"
 replace_path="history/units"
 replace_path="events"
 replace_path="common/scripted_localisation"
+supported_version="1.12.1"
+remote_file_id="2868731116"

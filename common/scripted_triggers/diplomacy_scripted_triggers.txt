@@ -29,7 +29,7 @@
 #				}
 #			}
 #		}
-DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = { always = no}
+DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = { always = no } 
 DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
 	if = {
 		limit = {

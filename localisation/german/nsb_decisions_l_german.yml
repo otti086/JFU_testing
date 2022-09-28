@@ -81,6 +81,7 @@
  EST_anti_vaps_propaganda_desc:0 "Wir müssen den Antifaschismus in unserer Nation vereint fördern. Viele, die sich gegen den Faschismus stellen, sind zwar Demokraten und Kommunisten, doch vielleicht kann man sie überzeugen, die Diktatur zu unterstützen, damit wir gemeinsam den Aufstieg des Faschismus bremsen können."
  EST_delay_the_crackdown:0 "Die Razzia verzögern"
  EST_delay_the_crackdown_desc:0 "Wir würden die Freiheitskämpfer zwar gerne so schnell wie möglich aus dem Weg räumen, doch wir können es nicht riskieren, das Land ins Chaos zu stürzen. Die Razzia muss verschoben werden."
+ EST_vapsid_takeover:0 "Das Land wird bereits von einer Freiheitskämpfer-Regierung regiert"
  LAT_perkonkrust_revolt_category:1 "Die Pērkonkrusts-Revolte"
  LAT_perkonkrust_revolt_category_desc:1 "Das Donnerkreuz (Pērkonkrusts) besteht aus Ultranationalisten, die die baltischen Stämme und die lettische Ethnie glorifizieren. Sie stellen eine existenzielle Gefahr für das Lettisch dar, das wir mit so viel Kampf und Mühe erschaffen haben. Das Donnerkreuz ist eine Entzündung des verwundeten Nationalstolzes und muss ausgerottet werden."
  LAT_perkonkrust_uprising:1 "Pērkonkrusts-Aufstand"
@@ -354,7 +355,7 @@
  decision_only_once_tt:0 "\nDiese Entscheidung kann nur einmal aktiviert werden."
  
  decision_cost_CP_50_pp_15:0 "£command_power  §Y50§! £pol_power  §Y15§!"
- decision_cost_CP_50_pp_15_blocked:0 "£command_power  §Y50§! £pol_power  §Y15§!"
+ decision_cost_CP_50_pp_15_blocked:1 "£command_power  §R50§! £pol_power  §R15§!"
  decision_cost_CP_50_pp_15_tooltip:0 "Es kostet £command_power  §Y50§! £pol_power  §Y15§!, diese Entscheidung zu fällen"
  
 

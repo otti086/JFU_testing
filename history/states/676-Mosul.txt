@@ -5,9 +5,7 @@ state={
 	
 	state_category = town
 	
-	resources={
-		oil=8 # was: 10
-	}
+
 
 
 	history={
@@ -24,7 +22,7 @@ state={
 		victory_points = {
 			6826 1
 		}
-		add_core_of = ENG
+		add_core_of = SWE
 	}
 	
 	provinces={
