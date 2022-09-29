@@ -5437,33 +5437,6 @@ country_event = {
 	}
 }
 
-#Event for ETH when ITA backs down but SOV still want to puppet
-country_event = {
-	id = BBA_ethiopia_communist_events.28 
-	title = BBA_ethiopia_communist_events.28.t
-	desc = BBA_ethiopia_communist_events.28.desc
-	is_triggered_only = yes
-	picture = GFX_report_event_stalin_meeting
-	option = {
-		name = BBA_ethiopia_communist_events.28.a
-		ai_chance = {
-			base = 10
-		}
-		SOV = {
-			puppet = ETH
-			hidden_effect = {
-				set_autonomy = {
-					target = ETH
-					autonomous_state = autonomy_puppet
-					freedom_level = 0.4
-				}
-			}			
-			add_stability = 0.1
-		}
-
-	}
-}
-
 #Event for ETH when ITA backs down but SOV does **NOT** want to puppet
 country_event = {
 	id = BBA_ethiopia_communist_events.29

@@ -1077,9 +1077,163 @@ characters = {
 			}
 		}
 	}
+	ITA_emilio_de_bono_grinded={
+		name=ITA_emilio_de_bono_grinded
+		portraits={
+			army={
+				small="GFX_idea_emilio_de_bono"
+			}
+			army={
+				large="gfx/leaders/ITA/portrait_italy_emilio_de_bono.dds"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = emilio_de_bono_grinded
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				army_chief_defensive_1
+			}
+			cost =  50
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			traits={ old_guard pre_grinded trait_cautious defensive_doctrine infantry_leader ambusher trickster guerilla_fighter organizer logistics_wizard hill_fighter trait_mountaineer }
+			skill=4
+			attack_skill=5
+			defense_skill=6
+			planning_skill=5
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	ITA_giovanni_messe_grinded={
+		name=ITA_giovanni_messe_grinded
+		portraits={
+			army={
+				small="GFX_idea_giovanni_messe"
+			}
+			army={
+				large="gfx/leaders/ITA/Portrait_Italy_Giovanni_Messe.dds"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = giovanni_messe_grinded
+			ledger = army
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				military_theorist
+			}
+		}
+		
+		corps_commander={
+			traits={ armor_officer pre_grinded panzer_leader panzer_expert expert_improviser trickster desert_fox trait_mountaineer }
+			skill=4
+			attack_skill=8
+			defense_skill=6
+			planning_skill=6
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}	
+	ITA_ubaldo_soddu_grinded={
+		name=ITA_ubaldo_soddu_grinded
+		portraits={
+			army={
+				large="gfx/leaders/ITA/Portrait_Italy_Ubaldo_Soddu.dds"
+				small="gfx/interface/ideas/idea_ITA_ubaldo_soddu.dds"
+			}
+		}
+		corps_commander={
+			traits={  trait_cautious pre_grinded infantry_leader ambusher camouflage_expert trickster guerilla_fighter trait_mountaineer}
+			skill=4
+			attack_skill=5
+			defense_skill=6
+			planning_skill=5
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	ITA_rodolfo_graziani_grinded={
+		name=ITA_rodolfo_graziani_grinded
+		portraits={
+			army={
+				small="GFX_idea_rodolfo_graziani"
+			}
+			army={
+				large="gfx/leaders/ITA/portrait_italy_radolfo_graziani.dds"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = rodolfo_graziani_grinded
+			ledger = army
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				grand_battle_plan_expert
+			}
+			ai_will_do = {
+				factor = 3.000
+			}
+		}
 
-	
-
+		corps_commander={
+			traits={ trait_cautious pre_grinded politically_connected offensive_doctrine trait_engineer infantry_expert infantry_leader hill_fighter trait_mountaineer expert_improviser trickster fortress_buster }
+			skill=4
+			attack_skill=7
+			defense_skill=6
+			planning_skill=6
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	ITA_emilio_de_bono_grinded={
+		name=ITA_emilio_de_bono_grinded
+		portraits={
+			army={
+				small="GFX_idea_emilio_de_bono"
+			}
+			army={
+				large="gfx/leaders/ITA/portrait_italy_emilio_de_bono.dds"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = emilio_de_bono_grinded
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				army_chief_defensive_1
+			}
+			cost =  50
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			traits={ old_guard pre_grinded trait_cautious defensive_doctrine infantry_leader ambusher trickster guerilla_fighter organizer logistics_wizard hill_fighter trait_mountaineer }
+			skill=4
+			attack_skill=5
+			defense_skill=6
+			planning_skill=5
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
 
  #     #                             #                                                       
  ##    #    ##    #    #  #   #      #        ######    ##    #####   ######  #####    ####  

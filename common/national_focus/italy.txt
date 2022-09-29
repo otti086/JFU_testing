@@ -4505,6 +4505,7 @@ focus_tree = {
 		relative_position_id = ITA_bomber_designs
 		cost = 10
 		available = {
+			date > 01.01.1941
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_AIR_XP}
@@ -7163,6 +7164,7 @@ focus_tree = {
 		relative_position_id = ITA_triumph_in_africa_bba
 		cost = 5
 		available = {
+			always = no
 			is_at_peace_exiled_countries_excluded = yes
 			power_balance_value = {
 				id = ITA_power_balance
@@ -13546,8 +13548,6 @@ focus_tree = {
 		cost = 5
 
 		bypass = {
-			is_in_faction = yes
-			is_in_faction_with = GER
 		}
 
 		available = {
@@ -13556,7 +13556,6 @@ focus_tree = {
 				tooltip = ITA_germ_italy_same_tt
 				GER = { has_government = ROOT }
 			}
-			is_in_faction = no
 			GER = {
 				is_faction_leader = yes
 				is_subject = no
@@ -14388,27 +14387,7 @@ focus_tree = {
 		relative_position_id = ITA_corpo_di_truppe_volontarie
 		cost = 5
 		available = {
-			if = {
-				limit = {
-					NOT = { has_dlc = "La Resistance" }
-				}
-				any_other_country = {
-					original_tag = SPR
-					has_government = fascism
-					has_war = no
-					owns_state = 177
-				}
-			}
-			if = {
-				limit = {
-					has_dlc = "La Resistance"
-				}
-				SPA = {
-					has_war = no
-					owns_state = 177
-				}
-			}
-			is_puppet = no
+			always = no
 		}
 		cancel = {
 			if = {
