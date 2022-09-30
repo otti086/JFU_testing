@@ -40,8 +40,6 @@ NDefines.NGame.DIPLOMACY_ACCEPT_ATTACHE_OPINION_TRASHHOLD = 10;
 NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN = 5;
 
 NDefines.NAir.AIR_DEPLOYMENT_DAYS = 0;
-NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_STRATEGIC_BOMBER = 0.036;
-NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_TACTICAL_BOMBER = 0.096;		
 NDefines.NAir.SUPPLY_NEED_FACTOR = 0.14;
 NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane to create a mission
 	0.0, -- AIR_SUPERIORITY
@@ -83,10 +81,10 @@ NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 1                 -- License can 
 NDefines.NProduction.BASE_LICENSE_IC_COST = 0;	
 NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0;	
 NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 10000000;
-NDefines.NProduction.EQUIPMENT_MODULE_ADD_XP_COST = 0;				
-NDefines.NProduction.EQUIPMENT_MODULE_REPLACE_XP_COST = 0;				
-NDefines.NProduction.EQUIPMENT_MODULE_CONVERT_XP_COST = 0;				
-NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 0;
+NDefines.NProduction.EQUIPMENT_MODULE_ADD_XP_COST = 0.0;            -- XP cost for adding a new equipment module in an empty slot when creating an equipment variant.
+NDefines.NProduction.EQUIPMENT_MODULE_REPLACE_XP_COST = 0.0;        -- XP cost for replacing one equipment module with an unrelated module when creating an equipment variant.
+NDefines.NProduction.EQUIPMENT_MODULE_CONVERT_XP_COST = 0.0;        -- XP cost for converting one equipment module to a related module when creating an equipment variant.
+NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 0.0;  		-- XP cost for removing an equipment module and leaving the slot empty when creating an equipment variant.
 NDefines.NProduction.RAILWAY_GUN_MAX_MIL_FACTORIES_PER_LINE = 10;
 NDefines.NProduction.MAX_MIL_FACTORIES_PER_LINE = 300;
 NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 200;

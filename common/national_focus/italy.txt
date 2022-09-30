@@ -4505,7 +4505,6 @@ focus_tree = {
 		relative_position_id = ITA_bomber_designs
 		cost = 10
 		available = {
-			date > 01.01.1940
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_AIR_XP}

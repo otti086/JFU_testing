@@ -1734,7 +1734,7 @@ focus_tree = {
 			51 = { set_demilitarized_zone = no }
 			custom_effect_tooltip = GER_rhineland_ultimatum
 			add_political_power = 120
-			army_experience = 5
+			army_experience = 6
 			add_named_threat = { threat = 5 name = GER_rhineland }
 		}		
 	}

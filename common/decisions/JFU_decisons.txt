@@ -772,7 +772,7 @@ JFU_decisions = {
 			}
 		}	
 	}
-
+	 
 	send_air_to_hun = {
 	
 		icon = GFX_decision_generic_air

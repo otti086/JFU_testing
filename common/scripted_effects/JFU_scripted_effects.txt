@@ -117,21 +117,21 @@ ROOT_call_against_greece = {
 }
 air_to_germany = {
 	if = { limit = { tag = ITA }
-	send_equipment = { equipment = fighter_equipment amount = 10000 target = GER }
-	send_equipment = { equipment = CAS_equipment amount = 10000 target = GER }
-	send_equipment = { equipment = tac_bomber_equipment amount = 10000 target = GER }
-	send_equipment = { equipment = heavy_fighter_equipment amount = 10000 target = GER }	
-	send_equipment = { equipment = strat_bomber_equipment amount = 10000 target = GER }	
+		send_equipment = { equipment = small_plane_airframe amount = 10000 target = GER }
+		send_equipment = { equipment = small_plane_cas_airframe amount = 10000 target = GER }
+		send_equipment = { equipment = medium_plane_airframe amount = 10000 target = GER }
+		send_equipment = { equipment = medium_plane_fighter_airframe amount = 10000 target = GER }	
+		send_equipment = { equipment = large_plane_airframe amount = 10000 target = GER }	
 	}
 }
 
 air_to_hungary = {
 	if = { limit = { tag = ITA }
-	send_equipment = { equipment = fighter_equipment amount = 10000 target = HUN }
-	send_equipment = { equipment = CAS_equipment amount = 10000 target = HUN }
-	send_equipment = { equipment = tac_bomber_equipment amount = 10000 target = HUN }
-	send_equipment = { equipment = heavy_fighter_equipment amount = 10000 target = HUN }	
-	send_equipment = { equipment = strat_bomber_equipment amount = 10000 target = HUN }	
+		send_equipment = { equipment = small_plane_airframe amount = 10000 target = HUN }
+		send_equipment = { equipment = small_plane_cas_airframe amount = 10000 target = HUN }
+		send_equipment = { equipment = medium_plane_airframe amount = 10000 target = HUN }
+		send_equipment = { equipment = medium_plane_fighter_airframe amount = 10000 target = HUN }	
+		send_equipment = { equipment = large_plane_airframe amount = 10000 target = HUN }	
 	}
 }
 

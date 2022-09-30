@@ -48,6 +48,11 @@ ideas = {
 			modifier = {
 			  industrial_capacity_dockyard = -10
 			}
+			equipment_bonus = {
+				railway_gun_equipment  = {
+					build_cost_ic = 20 instant = yes
+				}
+			}
 		}
 
 
