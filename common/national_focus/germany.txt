@@ -1825,9 +1825,7 @@ focus_tree = {
 					}
 					SIA = { remove_resource_rights = 724 }
 				}
-				else = {
-					JAP = { remove_resource_rights = 724 }
-				}
+				JAP = { remove_resource_rights = 724 }
 				add_named_threat = { threat = 5 name = GER_danzig_or_war }
 			}
 		}

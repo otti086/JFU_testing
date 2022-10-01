@@ -399,7 +399,6 @@ on_actions = {
 					transfer_state = 803
 					transfer_state = 102
 					transfer_state = 853
-					transfer_state = 836
 				}
 			}
 
@@ -423,7 +422,7 @@ on_actions = {
 					transfer_state = 843
 					transfer_state = 844
 					transfer_state = 908
-
+					transfer_state = 836
 					271 = { add_core_of = ETH }
 					550 = { add_core_of = ETH }
 					559 = { add_core_of = ETH }
