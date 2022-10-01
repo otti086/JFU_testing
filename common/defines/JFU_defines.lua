@@ -19,7 +19,6 @@ NDefines.NCountry.SCORCHED_EARTH_STATE_COST = 1000;
 
 NDefines.NPolitics.LEADER_TRAITS_XP_SHOW = 0.01;
 
-NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 100;
 NDefines.NBuildings.MAX_SHARED_SLOTS = 50
 
 NDefines.NCharacter.SPECIALIST_ADVISOR_MIN_RANK = 2;
