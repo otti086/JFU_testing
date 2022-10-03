@@ -3636,9 +3636,6 @@ focus_tree = {
 		cost = 5
 
 		available = {
-			any_enemy_country = {
-				SOV_is_major_not_original_sov = yes
-			}
 		}
 		
 		search_filters = {}
@@ -3955,7 +3952,9 @@ focus_tree = {
 		cost = 5
 
 		available = {
-
+			any_enemy_country = {
+				SOV_is_major_not_original_sov = yes
+			}
 		}
 		
 		search_filters = {}
@@ -5858,13 +5857,6 @@ focus_tree = {
 		}
 
 		bypass = {
-			all_state = {
-				OR = {
-					is_core_of = LIT
-				}
-				NOT = { state = 188 }
-				is_controlled_by = ROOT
-			}
 		}
 		
 		search_filters = {FOCUS_FILTER_ANNEXATION}
@@ -5873,6 +5865,17 @@ focus_tree = {
 			annex_country = { target = LIT  }
 			add_named_threat = { threat = 1 name = SOV_claims_in_baltic }
 			add_political_power = -75
+			hidden_effect = {
+				every_state = {
+					limit = {
+						AND = {
+							is_core_of = LIT
+							is_controlled_by = SOV
+						}
+					}
+					add_compliance = 80 
+				}
+			}
 		}
 	}
 	focus = {

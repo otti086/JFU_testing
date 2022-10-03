@@ -2371,12 +2371,6 @@ ITA_balance_of_power_category = {
 			}
 			if = {
 				limit = {
-					has_completed_focus = ITA_struggle_in_ethiopia
-				}
-				has_completed_focus = ITA_undermine_the_duce
-			}
-			else_if = {
-				limit = {
 					has_completed_focus = ITA_solid_progress
 				}
 				has_completed_focus = ITA_triumph_in_africa_bba
@@ -2437,12 +2431,6 @@ ITA_balance_of_power_category = {
 				ruling_only = yes
 			}
 			if = {
-				limit = {
-					has_completed_focus = ITA_struggle_in_ethiopia
-				}
-				has_completed_focus = ITA_undermine_the_duce
-			}
-			else_if = {
 				limit = {
 					has_completed_focus = ITA_solid_progress
 				}
@@ -2515,7 +2503,6 @@ ITA_balance_of_power_category = {
 				ruling_only = yes
 			}
 			OR = {
-				has_completed_focus = ITA_conspiracies_in_the_shadows
 				has_completed_focus = ITA_triumph_in_africa_bba
 			}
 		}
@@ -2583,7 +2570,6 @@ ITA_balance_of_power_category = {
 				ruling_only = yes
 			}
 			OR = {
-				has_completed_focus = ITA_conspiracies_in_the_shadows
 				has_completed_focus = ITA_triumph_in_africa_bba
 			}
 		}
@@ -2651,7 +2637,6 @@ ITA_balance_of_power_category = {
 				ruling_only = yes
 			}
 			OR = {
-				has_completed_focus = ITA_conspiracies_in_the_shadows
 				has_completed_focus = ITA_triumph_in_africa_bba
 			}
 		}
@@ -2715,9 +2700,6 @@ ITA_balance_of_power_category = {
 
 		visible = {
 			OR = {
-				has_completed_focus = ITA_italo_balbo_focus
-				has_completed_focus = ITA_dino_grandi_focus
-				has_completed_focus = ITA_monarchia_d_italia
 				has_completed_focus = ITA_triumph_in_africa_bba
 			}
 		}
@@ -2804,8 +2786,6 @@ ITA_balance_of_power_category = {
 			original_tag = ITA
 			has_civil_war = no
 			OR = {
-				has_completed_focus = ITA_italo_balbo_focus
-				has_completed_focus = ITA_dino_grandi_focus
 				has_completed_focus = ITA_culto_del_duce
 			}
 		}
@@ -2891,9 +2871,6 @@ ITA_balance_of_power_category = {
 
 		visible = {
 			OR = {
-				has_completed_focus = ITA_italo_balbo_focus
-				has_completed_focus = ITA_dino_grandi_focus
-				has_completed_focus = ITA_monarchia_d_italia
 				has_completed_focus = ITA_triumph_in_africa_bba
 			}
 		}
@@ -2945,9 +2922,6 @@ ITA_balance_of_power_category = {
 
 		visible = {
 			OR = {
-				has_completed_focus = ITA_italo_balbo_focus
-				has_completed_focus = ITA_dino_grandi_focus
-				has_completed_focus = ITA_monarchia_d_italia
 				has_completed_focus = ITA_triumph_in_africa_bba
 			}
 		}
@@ -2999,9 +2973,6 @@ ITA_balance_of_power_category = {
 
 		visible = {
 			OR = {
-				has_completed_focus = ITA_italo_balbo_focus
-				has_completed_focus = ITA_dino_grandi_focus
-				has_completed_focus = ITA_monarchia_d_italia
 				has_completed_focus = ITA_triumph_in_africa_bba
 			}
 		}
@@ -3045,247 +3016,6 @@ ITA_balance_of_power_category = {
 
 	### MONARCHIST DECISIONS
 
-	ITA_bop_constitutional_draft = {
-		priority = 110
-		icon = GFX_decision_SWI_swiss_democratic_tradition_campaign
-
-		allowed = {
-			original_tag = ITA
-		}
-
-		visible = {
-			has_completed_focus = ITA_revoke_the_acerbo_law
-		}
-
-		available = {
-			has_government = democratic
-		}
-
-		cost = 70
-
-		fire_only_once = yes
-
-		complete_effect = {
-			ITA_bop_high_increase_effect = yes
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.1
-			}
-		}
-
-		ai_will_do = {
-			base = 1
-			modifier = {
-				factor = 5
-				power_balance_value = {
-					id = ITA_power_balance
-					value < 0.3
-				}
-			}
-			modifier = {
-				factor = 10
-				power_balance_value = {
-					id = ITA_power_balance
-					value < 0.15
-				}
-			}
-		}
-	}
-
-	ITA_bop_privileges_for_the_elites = {
-		priority = 109
-		icon = GFX_decision_eng_ally_imperialist_coup
-
-		allowed = {
-			original_tag = ITA
-		}
-
-		visible = {
-			has_completed_focus = ITA_power_to_the_king
-		}
-
-		available = {
-			has_government = neutrality
-		}
-
-		cost = 70
-
-		fire_only_once = yes
-
-		complete_effect = {
-			ITA_bop_medium_increase_effect = yes
-			add_popularity = {
-				ideology = neutrality
-				popularity = 0.1
-			}
-		}
-
-		ai_will_do = {
-			base = 1
-			modifier = {
-				factor = 5
-				power_balance_value = {
-					id = ITA_power_balance
-					value < 0.3
-				}
-			}
-			modifier = {
-				factor = 10
-				power_balance_value = {
-					id = ITA_power_balance
-					value < 0.15
-				}
-			}
-		}
-	}
-
-	ITA_bop_revoke_the_lateran_treaty = {
-		priority = 108
-		icon = GFX_decision_generic_break_treaty
-
-		allowed = {
-			original_tag = ITA
-		}
-
-		visible = {
-			has_completed_focus = ITA_power_to_the_king
-			NOT = { has_completed_focus = ITA_seek_papal_support }
-			NOT = { has_country_flag = ITA_expanded_lateran_treaty_flag }
-		}
-
-		available = {
-			NOT = { has_completed_focus = ITA_seek_papal_support }
-			NOT = { has_country_flag = ITA_expanded_lateran_treaty_flag }
-		}
-
-		cost = 70
-
-		fire_only_once = yes
-
-		complete_effect = {
-			set_country_flag = ITA_revoked_lateran_treaty_flag
-			add_stability = -0.05
-			ITA_bop_medium_increase_effect = yes
-
-			custom_effect_tooltip = ITA_bop_revoke_the_lateran_treaty_tt
-		}
-
-		ai_will_do = {
-			base = 0
-		}
-	}
-
-	ITA_bop_expand_the_lateran_treaty = {
-		priority = 107
-		icon = GFX_decision_hol_exchange_intelligence_data
-
-		allowed = {
-			original_tag = ITA
-		}
-
-		visible = {
-			has_completed_focus = ITA_seek_papal_support
-			NOT = { has_country_flag = ITA_revoked_lateran_treaty_flag }
-		}
-
-		available = {
-			has_government = neutrality
-			NOT = { has_country_flag = ITA_revoked_lateran_treaty_flag }
-		}
-
-		cost = 70
-
-		fire_only_once = yes
-
-		complete_effect = {
-			set_country_flag = ITA_expanded_lateran_treaty_flag
-			add_stability = 0.05
-			add_popularity = {
-				ideology = neutrality
-				popularity = 0.05
-			}
-			ITA_bop_medium_decrease_effect = yes
-		}
-
-		ai_will_do = {
-			base = 0
-		}
-	}
-
-	ITA_bop_liturgical_reforms = {
-		priority = 106
-		icon = GFX_decision_eng_trade_unions_support
-
-		allowed = {
-			original_tag = ITA
-		}
-
-		visible = {
-			has_completed_focus = ITA_strengthen_the_papacy
-		}
-
-		available = {
-			has_government = neutrality
-		}
-
-		cost = 70
-
-		days_re_enable = ITA_bop_liturgical_reforms_cd
-
-		complete_effect = {
-			add_stability = 0.1
-			ITA_bop_medium_decrease_effect = yes
-
-			custom_effect_tooltip = ITA_bop_liturgical_reforms_cd_tt
-		}
-
-		ai_will_do = {
-			base = 0
-		}
-	}
-
-	ITA_bop_condemn_fascism = {
-		priority = 105
-		icon = GFX_decision_eng_propaganda_campaigns
-
-		allowed = {
-			original_tag = ITA
-		}
-
-		visible = {
-			OR = {
-				has_completed_focus = ITA_seek_papal_support
-				has_completed_focus = ITA_disband_the_blackshirts
-			}
-		}
-
-		available = {
-			has_completed_focus = ITA_seek_papal_support
-			has_completed_focus = ITA_disband_the_blackshirts
-		}
-
-		cost = 70
-
-		fire_only_once = yes
-
-		complete_effect = {
-			add_stability = -0.05
-			add_popularity = {
-				ideology = neutrality
-				popularity = 0.1
-			}
-			add_popularity = {
-				ideology = fascism
-				popularity = -0.1
-			}
-			ITA_bop_low_decrease_effect = yes
-		}
-
-		ai_will_do = {
-			base = 0
-		}
-	}
-
 	ITA_bop_convoke_ecumenical_council = {
 		priority = 104
 		icon = GFX_decision_SWI_support_humanitarian_efforts
@@ -3318,201 +3048,6 @@ ITA_balance_of_power_category = {
 
 		ai_will_do = {
 			base = 0
-		}
-	}
-
-	ITA_bop_cooperation_with_anarchists = {
-		priority = 106
-		icon = GFX_decision_generic_civil_support
-
-		allowed = {
-			original_tag = ITA
-		}
-
-		visible = {
-			has_completed_focus = ITA_the_popular_front
-		}
-
-		available = {
-			has_government = communism
-		}
-
-		cost = 70
-
-		fire_only_once = yes
-
-		complete_effect = {
-			add_popularity = {
-				ideology = communism
-				popularity = 0.05
-			}
-			ITA_bop_medium_decrease_effect = yes
-		}
-
-		ai_will_do = {
-			base = 1
-		}
-	}
-
-	ITA_bop_unify_the_left = {
-		priority = 105
-		icon = GFX_decision_generic_speech
-
-		allowed = {
-			original_tag = ITA
-		}
-
-		visible = {
-			has_completed_focus = ITA_a_leader_steps_forward
-		}
-
-		available = {
-			has_government = communism
-		}
-
-		cost = 70
-
-		fire_only_once = yes
-
-		days_remove = 90
-
-		modifier = {
-			political_power_factor = -0.15
-		}
-
-		remove_effect = {
-			add_popularity = {
-				ideology = communism
-				popularity = 0.05
-			}
-			ITA_bop_medium_decrease_effect = yes
-		}
-
-		ai_will_do = {
-			base = 1
-		}
-	}
-
-	ITA_bop_concesions_to_the_bourgeoisie = {
-		priority = 104
-		icon = GFX_decision_generic_fundraising
-
-		allowed = {
-			original_tag = ITA
-		}
-
-		visible = {
-			has_completed_focus = ITA_common_ground
-		}
-
-		available = {
-			OR = {
-				has_government = communism
-				has_government = democratic
-			}
-		}
-
-		cost = ITA_bop_concesions_to_the_bourgeoisie_cost
-
-		fire_only_once = yes
-
-		days_remove = ITA_bop_concesions_to_the_bourgeoisie_days
-
-		complete_effect = {
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.1
-			}
-			ITA_bop_medium_increase_effect = yes
-		}
-
-		remove_effect = {
-			if = {
-				limit = {
-					has_government = communism
-				}
-				add_stability = 0.05
-			}
-			else = {
-				add_stability = 0.1
-				add_political_power = 100
-			}
-		}
-
-		modifier = {
-			consumer_goods_factor = -0.03
-		}
-
-	}
-
-	ITA_bop_cooperation_with_christian_democrats = {
-		priority = 103
-		icon = GFX_decision_generic_political_discourse
-
-		allowed = {
-			original_tag = ITA
-		}
-
-		visible = {
-			has_completed_focus = ITA_italian_socialism
-		}
-
-		available = {
-			has_government = democratic
-		}
-
-		cost = 70
-
-		fire_only_once = yes
-
-		complete_effect = {
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.05
-			}
-			ITA_bop_low_increase_effect = yes
-		}
-
-		ai_will_do = {
-			base = 1
-		}
-	}
-
-	ITA_bop_utilize_the_mafia = {
-		priority = 102
-		icon = GFX_decision_generic_assassination
-
-		allowed = {
-			original_tag = ITA
-		}
-
-		visible = {
-			has_completed_focus = ITA_cooperate_with_the_mafia
-		}
-
-		available = {
-			has_government = democratic
-		}
-
-		cost = 100
-
-		fire_only_once = yes
-
-		days_remove = 90
-
-		complete_effect = {
-			add_stability = -0.1
-		}
-
-		remove_effect = {
-			add_to_variable = { ITA_re_supply_node_range = 0.1 }
-			custom_effect_tooltip = ITA_bop_utilize_the_mafia_re_tt
-
-			ITA_bop_low_increase_effect = yes
-		}
-
-		ai_will_do = {
-			base = 0.5
 		}
 	}
 }
@@ -4061,17 +3596,6 @@ ITA_colonial_management_dec_cat = {
 				}
 			}
 		}
-
-		ai_will_do = {
-			base = 0.5
-			modifier = {
-				factor = 3
-				OR = {
-					has_completed_focus = ITA_comandante_diavolo
-					has_completed_focus = ITA_irregulars
-				}
-			}
-		}
 	}
 
 	#Re-organize Ascari
@@ -4301,7 +3825,6 @@ ITA_colonial_management_dec_cat = {
 				factor = 3
 				OR = {
 					has_completed_focus = ITA_strengthen_ascari_corps
-					has_completed_focus = ITA_ascari
 				}
 			}
 		}
@@ -4663,7 +4186,7 @@ ITA_naval_cooperation_programs_dec_cat = {
 		target_root_trigger = {
 			original_tag = ITA
 			has_civil_war = no
-			has_completed_focus = ITA_corpo_di_truppe_volontarie #It's totally ok that the decision gets unlocked even if the focus gets bypassed
+			always = no
 			NOT = { has_country_flag = ITA_ceded_aquila_class_destroyers_flag } #To prevent visible trigger to check every tick after this happens
 			OR = {
 				has_global_flag = spanish_civil_war
@@ -4795,143 +4318,6 @@ ITA_naval_cooperation_programs_dec_cat = {
 
 
 ITA_diplomacy_balkan_decision_category = {
-	ITA_pressure_country_government_balkan = {
-		priority = 50
-
-		icon = generic_political_discourse
-
-		ai_will_do = {
-			base = 0.8
-			modifier = {
-				factor = 2
-				has_political_power > 160
-			}
-			modifier = { #If ideological rallies happened, then it's better
-				factor = 4
-				FROM = { has_country_flag = ITA_ideological_rallies_promoted_flag }
-			}
-			modifier = { #Do it only once, don't spam
-				factor = 0
-				FROM = { has_country_flag = ITA_government_pressured_flag }
-			}
-		}
-
-		targets = { YUG BUL ROM }
-		#targets = { BUL GRE YUG ALB ROM  SLV BOS HRZ MAC SER CRO KOS MNT TRA } #These are all tags included in scripted trigger "BUL_is_balkan_nation = yes"
-
-		target_trigger = {
-			SOV_basic_pressure_government_triggers = yes
-		}
-
-		target_root_trigger = {
-			has_completed_focus = ITA_potential_allies_in_the_balkans
-			is_subject = no
-		}
-
-		allowed = {
-			original_tag = ITA
-		}
-
-		available = {
-			is_faction_leader = yes
-			FROM = {
-				has_opinion = {
-					target = ROOT
-					value > 49
-				}
-				SOV_is_valid_subject = yes # Italy might not give a sh*t about their petty overlord ;)
-				NOT = { has_war_with = ROOT }
-			}
-			NOT = { has_country_flag = ITA_pressure_government_active_flag }
-		}
-
-		visible = {
-		}
-
-		days_remove = ITA_pressure_government_days
-
-		days_re_enable = ITA_pressure_government_cd
-
-		cost = ITA_pressure_country_government_cost
-
-		modifier = {
-			political_power_gain = -0.25
-		}
-
-		complete_effect = {
-			set_country_flag = ITA_pressure_government_active_flag
-		}
-
-		remove_effect = {
-			FROM = {
-				country_event = { id = NSB_soviet_foreign_politics_events.1 hours = 4 random_hours = 2 }
-				set_country_flag = ITA_government_pressured_flag #For AI weights - don't spam
-			}
-			clr_country_flag = ITA_pressure_government_active_flag
-			custom_effect_tooltip = SOV_pressure_government_effects_tt
-			custom_effect_tooltip = ITA_pressure_government_cd_tt
-		}
-	}
-
-	ITA_promote_ideology_rallies_balkan = {
-		priority = 50
-
-		icon = generic_political_rally
-
-		ai_will_do = {
-			base = 1
-			modifier = {
-				factor = 2
-				has_political_power > 160
-			}
-		}
-
-		targets = { YUG BUL ROM }
-		#targets = { BUL GRE YUG ALB ROM  SLV BOS HRZ MAC SER CRO KOS MNT TRA } #These are all tags included in scripted trigger "BUL_is_balkan_nation = yes"
-
-		target_trigger = {
-			SOV_basic_promote_rallies_triggers = yes
-		}
-
-		target_root_trigger = {
-			has_completed_focus = ITA_potential_allies_in_the_balkans
-		}
-
-		allowed = {
-			original_tag = ITA
-		}
-
-		available = {
-			FROM = {
-				SOV_is_valid_subject = yes # Italy might not give a sh*t about their petty overlord ;)
-				NOT = { has_war_with = ROOT }
-			}
-		}
-
-		visible = {
-		}
-
-		days_remove = ITA_ideological_rallies_days
-
-		fire_only_once = yes
-
-		cost = ITA_promote_ideology_rallies_cost
-
-		modifier = {
-			political_power_gain = -0.25
-		}
-
-		complete_effect = {
-		}
-
-		remove_effect = {
-			FROM = {
-				country_event = { id = NSB_soviet_foreign_politics_events.2 hours = 4 random_hours = 2 }
-			}
-			custom_effect_tooltip = SOV_promote_rallies_effects_tt
-			custom_effect_tooltip = SOV_promote_ideological_rallies_cd_tt
-		}
-	}
 
 	ITA_send_ultimatum_to_country_balkan = {
 		priority = 50
@@ -4988,6 +4374,7 @@ ITA_diplomacy_balkan_decision_category = {
 		}
 
 		visible = {
+			always = no
 		}
 
 		cost = ITA_send_ultimatum_to_country_cost
@@ -5001,97 +4388,6 @@ ITA_diplomacy_balkan_decision_category = {
 			}
 			custom_effect_tooltip = SOV_ultimatum_generic_effects_tt
 			custom_effect_tooltip = SOV_decision_will_be_locked_tt
-		}
-	}
-
-	ITA_fight_alongside_country_comrades_balkan = {
-		priority = 100
-
-		icon = generic_prepare_civil_war
-
-		ai_will_do = {
-			base = 0
-			modifier = {
-				add = 0.01
-				has_stability > 0.4
-				FROM = {  #Join if it will not lead to a new war against a major
-					all_enemy_country = {
-						OR = {
-							is_major = no
-							has_war_with = ROOT
-						}
-					}
-				}
-			}
-			modifier = {
-				factor = 2
-				has_war = no
-			}
-			modifier = {
-				factor = 1.5
-				has_manpower > 100000
-			}
-			modifier = {
-				factor = 10
-				FROM = { is_neighbor_of = ROOT }
-			}
-		}
-
-		targets = { BUL GRE YUG ALB ROM } #These are all tags included in scripted trigger "BUL_is_balkan_nation = yes"
-
-		target_trigger = {
-			SOV_basic_fight_alongside_comrades_triggers = yes
-		}
-
-		target_root_trigger = {
-			has_completed_focus = ITA_potential_allies_in_the_balkans
-			is_subject = no
-		}
-
-		allowed = {
-			original_tag = ITA
-		}
-
-		available = {
-			has_war_support > 0.15
-			has_stability > 0.25
-			NOT = { has_war_with = FROM }
-		}
-
-		visible = {
-		}
-
-		complete_effect = {
-			hidden_effect = {
-				random_country = {
-					limit = {
-						original_tag = FROM
-						has_civil_war = yes
-						NOT = { has_government = ROOT }
-					}
-					ROOT = { add_to_war = { targeted_alliance = FROM enemy = PREV hostility_reason = asked_to_join } }
-				}
-			}
-			custom_effect_tooltip = BUL_fight_alongside_country_comrades_join_cw_tt #This tt works just fine :)
-
-			effect_tooltip = {
-				give_military_access = FROM
-				FROM = { give_military_access = ROOT }
-			}
-			hidden_effect = {
-				diplomatic_relation = {
-					country = FROM
-					relation = military_access
-					active = yes
-				}
-				FROM = {
-					diplomatic_relation = {
-						country = ROOT
-						relation = military_access
-						active = yes
-					}
-				}
-			}
 		}
 	}
 
@@ -5118,18 +4414,7 @@ ITA_diplomacy_balkan_decision_category = {
 		}
 
 		visible = {
-			ITA = {
-				OR = {
-					has_government = neutrality
-					has_government = fascism
-				}
-			}
-			44 = {
-				is_controlled_by = ITA
-			}
-			NOT = {
-				has_country_flag = ITA_established_albania
-			}
+			always = no
 		}
 
 		cost = 50
@@ -5242,349 +4527,6 @@ ITA_diplomacy_balkan_decision_category = {
 			}
 			hidden_effect = {
 				set_country_flag = ITA_bashkimi_kombetar
-			}
-		}
-	}
-
-	ITA_demand_dalmatia = {
-		priority = 38
-
-		icon = GFX_decision_generic_civil_support
-
-		ai_will_do = {
-			base = 10
-		}
-
-		allowed = {
-			original_tag = ITA
-		}
-
-		available = {
-			any_country = {
-				OR = {
-					is_in_faction_with = ITA
-					is_subject_of = ITA
-				}
-				controls_state = 103
-			}
-			NOT = {
-				103 = {
-					is_controlled_by = ITA
-				}
-			}
-		}
-
-		visible = {
-			ITA = {
-				OR = {
-					has_government = neutrality
-					has_government = fascism
-				}
-			}
-			NOT = {
-				has_country_flag = ITA_demanded_dalmatia
-			}
-		}
-
-		cost = 75
-
-		complete_effect = {
-			random_country = {
-				limit = { controls_state = 103 }
-				country_event = {
-				    id = BBA_italy_interaction_events.8
-				    days = 2
-				    random = 3
-				}
-			}
-			hidden_effect = {
-				set_country_flag = ITA_demanded_dalmatia
-			}
-		}
-	}
-
-	ITA_claim_the_montengrin_throne = {
-		priority = 37
-
-		icon = GFX_decision_eng_support_imperialist_coup
-
-		ai_will_do = {
-			base = 5
-		}
-
-		allowed = {
-			original_tag = ITA
-		}
-
-		available = {
-			OR = {
-				44 = {
-					is_controlled_by = ITA
-				}
-				any_subject_country = {
-					controls_state = 44
-				}
-				103 = {
-					is_controlled_by = ITA
-				}
-			}
-			NOT = {
-				105 = {
-					is_controlled_by = ITA
-				}
-			}
-			any_country = {
-				is_subject_of = ITA
-				NOT = {
-					controls_state = 105
-				}
-			}
-		}
-
-		visible = {
-			ITA = {
-				OR = {
-					has_government = neutrality
-					has_government = fascism
-				}
-			}
-			OR = {
-				44 = {
-					is_controlled_by = ITA
-				}
-				ITA = {
-					any_subject_country = {
-						controls_state = 44
-					}
-				}
-				103 = {
-					is_controlled_by = ITA
-				}
-			}
-			NOT = {
-				has_country_flag = ITA_demanded_montenegro
-			}
-		}
-
-		cost = 100
-
-		complete_effect = {
-			random_country = {
-				limit = { controls_state = 105 }
-				country_event = {
-				    id = BBA_italy_interaction_events.11
-				    days = 2
-				    random = 3
-				}
-			}
-			hidden_effect = {
-				set_country_flag = ITA_demanded_montenegro
-			}
-		}
-	}
-
-
-	ITA_support_the_hungarians = {
-		priority = 30
-
-		icon = GFX_decision_generic_speech
-
-		ai_will_do = {
-			base = 0.1
-			modifier = {
-				factor = 100
-				HUN = { is_ai = no }
-			}
-		}
-
-		allowed = {
-			original_tag = ITA
-		}
-
-		available = {
-			IF = {
-				limit = {
-					ITA = {
-						has_government = fascism
-					}
-				}
-				HUN = {
-					has_government = fascism
-				}
-			}
-			IF = {
-				limit = {
-					ITA = {
-						has_government = neutrality
-					}
-				}
-				HUN = {
-					has_government = neutrality
-				}
-			}
-		}
-
-		visible = {
-			ITA = {
-				OR = {
-					has_government = neutrality
-					has_government = fascism
-				}
-			}
-			NOT = {
-				has_country_flag = ITA_appeased_hungary
-			}
-		}
-
-		cost = 75
-
-		complete_effect = {
-
-			HUN = {
-				country_event = {
-					id = BBA_italy_interaction_events.30
-					hours = 2
-					random_hours = 5
-				}
-			}
-
-			hidden_effect = {
-				set_country_flag = ITA_appeased_hungary
-			}
-		}
-	}
-
-	ITA_demand_turkish_demilitarization = {
-		priority = 20
-
-		icon = GFX_decision_generic_operation
-
-		ai_will_do = {
-			base = 2
-			modifier = {
-				factor = 0.5
-				342 = {
-					controller = {
-						is_ai = no
-					}
-				}
-			}
-		}
-
-		allowed = {
-			original_tag = ITA
-		}
-
-		available = {
-			ITA = {
-				has_completed_focus = ITA_befriend_greece
-			}
-			any_country = {
-				controls_state = 342
-				controls_state = 339
-				has_war = no
-				NOT = {
-					is_in_faction_with = ITA
-				}
-			}
-		}
-
-		visible = {
-			ITA = {
-				OR = {
-					has_government = neutrality
-					has_government = fascism
-				}
-			}
-			NOT = {
-				has_country_flag = ITA_antalya_demilitarized
-			}
-		}
-
-		cost = 100
-
-		complete_effect = {
-			random_country = {
-				limit = { controls_state = 342 }
-				country_event = {
-				    id = BBA_italy_interaction_events.14
-				    days = 1
-				    random = 4
-				}
-			}
-
-			hidden_effect = {
-				set_country_flag = ITA_antalya_demilitarized
-			}
-		}
-	}
-
-
-	ITA_give_the_dodecanese_islands_to_greece_for_an_alliance = {
-		priority = 25
-
-		icon = GFX_decision_eng_trade_unions_support
-
-		ai_will_do = {
-			base = 10
-			modifier = {
-				factor = 10
-				GRE = { is_ai = no }
-			}
-		}
-
-		allowed = {
-			original_tag = ITA
-		}
-
-		available = {
-			ITA = {
-				has_completed_focus = ITA_befriend_greece
-				is_faction_leader = yes
-				controls_state = 164
-			}
-			GRE = {
-				has_civil_war = no
-				NOT = {
-					has_government = communism
-				}
-			}
-		}
-
-		visible = {
-			ITA = {
-				OR = {
-					has_government = neutrality
-					has_government = fascism
-				}
-				controls_state = 164
-			}
-			NOT = {
-				has_country_flag = ITA_dodecanese_offered_to_greece
-			}
-		}
-
-		cost = 75
-
-		complete_effect = {
-
-			random_country = {
-				limit = {
-					original_tag = GRE
-					has_civil_war = no
-					NOT = {
-						has_government = communism
-					}
-				}
-				country_event = {
-				    id = BBA_italy_interaction_events.18
-				    days = 1
-				    random = 4
-				}
-			}
-
-			hidden_effect = {
-				set_country_flag = ITA_dodecanese_offered_to_greece
 			}
 		}
 	}
@@ -5918,103 +4860,6 @@ ITA_vallo_alpino_del_littorio_dec_cat = {
 					}
 				}
 			}
-		}
-	}
-}
-
-political_actions = {
-	ITA_vittorio_abdicate = {
-		priority = 10
-
-		icon = GFX_decision_generic_monarchy
-
-		ai_will_do = {
-			base = 0
-		}
-
-		allowed = {
-			original_tag = ITA
-		}
-
-		visible = {
-			has_completed_focus = ITA_power_to_the_king
-			has_country_leader = {
-				character = ITA_vittorio_emanuele_iii
-				ruling_only = yes
-			}
-		}
-
-		available = {
-			has_country_leader = {
-				character = ITA_vittorio_emanuele_iii
-				ruling_only = yes
-			}
-		}
-
-		complete_effect = {
-			ITA_promote_umberto_to_country_leader = yes
-			retire_character = ITA_vittorio_emanuele_iii
-		}
-	}
-}
-
-ITA_italian_mafia_dec_cat = {
-	ITA_suppress_mafia_in_state = {
-		icon = GFX_decision_oppression
-		target_trigger = {
-			FROM = {
-				ITA_state_has_any_version_of_mafia_rising_modifier = yes
-			}
-		}
-		target_root_trigger = {
-			any_controlled_state = {
-				ITA_state_has_any_version_of_mafia_rising_modifier = yes
-			}
-			OR = {
-				NOT = { original_tag = ITA }
-				has_completed_focus = ITA_crush_the_mafia
-			}
-		}
-		state_target = yes
-		on_map_mode = map_only
-
-		custom_cost_trigger = {
-			has_equipment = {
-				infantry_equipment > 499
-			}
-			has_manpower > 999
-			command_power > 24
-		}
-		custom_cost_text = decision_cost_ie_500_MP_500_CP_25
-
-		days_remove = 90
-
-		available = {
-			FROM = {
-				ITA_state_has_any_version_of_mafia_rising_modifier = yes
-			}
-		}
-
-		complete_effect = {
-
-		}
-
-		remove_effect = {
-			FROM = {
-				if = {
-					limit = {
-						has_dynamic_modifier = { modifier = ITA_mafia_on_the_rise }
-					}
-					remove_dynamic_modifier = { modifier = ITA_mafia_on_the_rise }
-				}
-				else = {
-					remove_dynamic_modifier = { modifier = ITA_mafia_on_the_rise_no_lar }
-				}
-			}
-		}
-
-		ai_will_do = {
-			base = 0.1
 		}
 	}
 }

@@ -10,49 +10,6 @@
 # protect
 # influence
 
-stresa_front_ita = {
-	allowed = {
-		original_tag = ITA
-	}
-	enable = {
-		has_completed_focus = ITA_ratify_the_stresa_front
-	}
-	abort = {
-	}
-
-	ai_strategy = {
-		type = alliance
-		id = "ENG"
-		value = 400
-	}
-	ai_strategy = {
-		type = alliance
-		id = "FRA"
-		value = 400
-	}
-}
-
-stresa_front_eng_fra = {
-	allowed = {
-		OR = {
-			original_tag = FRA
-			original_tag = ENG
-		}
-	}
-	enable = {
-		ITA = {
-			has_completed_focus = ITA_ratify_the_stresa_front
-		}
-	}
-	abort = {
-	}
-
-	ai_strategy = {
-		type = alliance
-		id = "ITA"
-		value = 400
-	}
-}
 
 albania_war_goal = {
 	allowed = {
@@ -120,27 +77,6 @@ ita_shore_up_against_france = {
 
 }
 
-anti_uk_war_goals = {
-	allowed = {
-		original_tag = ITA
-	}
-	enable = {
-		has_completed_focus = ITA_war_with_the_uk
-		country_exists = ENG
-	}
-	abort = {
-		NOT = {
-			country_exists = ENG
-		}
-	}
-
-	ai_strategy = {
-		type = antagonize
-		id = "ENG"
-		value = 200
-	}
-}
-
 yugoslavia_war_goal = { #TODO_Manu: Check this with new focus
 	allowed = {
 		original_tag = ITA
@@ -183,102 +119,6 @@ germany_ally = {
 	ai_strategy = {
 		type = alliance
 		id = "GER"
-		value = 100
-	}
-}
-
-romania_ally = {
-	allowed = {
-		original_tag = ITA
-	}
-	enable = {
-		has_completed_focus = ITA_potential_allies_in_the_balkans
-		country_exists = ROM
-	}
-	abort = {
-		NOT = { country_exists = ROM }
-	}
-
-	ai_strategy = {
-		type = befriend
-		id = "ROM"
-		value = 200
-	}
-	ai_strategy = {
-		type = alliance
-		id = "ROM"
-		value = 200
-	}
-}
-
-bulgaria_ally = {
-	allowed = {
-		original_tag = ITA
-	}
-	enable = {
-		has_completed_focus = ITA_potential_allies_in_the_balkans
-		country_exists = BUL
-	}
-	abort = {
-		NOT = { country_exists = BUL }
-	}
-
-	ai_strategy = {
-		type = befriend
-		id = "BUL"
-		value = 200
-	}
-	ai_strategy = {
-		type = alliance
-		id = "BUL"
-		value = 200
-	}
-}
-
-yugoslavia_ally = { #TODO_Manu: Check this with new focus
-	allowed = {
-		original_tag = ITA
-	}
-	enable = {
-		has_completed_focus = ITA_potential_allies_in_the_balkans
-		country_exists = YUG
-	}
-	abort = {
-		NOT = { country_exists = YUG }
-	}
-
-	ai_strategy = {
-		type = befriend
-		id = "YUG"
-		value = 100
-	}
-	ai_strategy = {
-		type = alliance
-		id = "YUG"
-		value = 100
-	}
-}
-
-greece_ally = {
-	allowed = {
-		original_tag = ITA
-	}
-	enable = {
-		has_completed_focus = ITA_befriend_greece
-		country_exists = GRE
-	}
-	abort = {
-		NOT = { country_exists = GRE }
-	}
-
-	ai_strategy = {
-		type = befriend
-		id = "GRE"
-		value = 100
-	}
-	ai_strategy = {
-		type = alliance
-		id = "GRE"
 		value = 100
 	}
 }
@@ -915,31 +755,5 @@ ITA_invasion_buffer = {
 		area = italy
 		subtract_invasions_from_need = no
 		subtract_fronts_from_need = yes
-	}
-}
-
-ITA_prepare_british_invasion = {
-	allowed = {
-		original_tag = ENG
-	}
-	enable = {
-		NOT = {	has_war_with = ENG }
-		OR = {
-			focus_progress = { focus = ITA_war_with_the_uk progress > 0.1}
-			has_completed_focus = ITA_war_with_the_uk
-		}
-	}
-
-	abort = {
-		any_other_country = {
-			original_tag = ENG
-			has_government = fascism
-		} 
-	}
-
-	ai_strategy = {
-		type = prepare_for_war
-		id = "ENG"
-		value = 200
 	}
 }

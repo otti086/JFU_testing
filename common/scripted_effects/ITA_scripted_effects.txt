@@ -1593,15 +1593,6 @@ ITA_start_civil_war_effect = { #The one triggered via BoP
 					has_global_flag = ITA_democratic_cw_flag
 				}
 			}
-			if = { #ALT-FASCIST/MONARCHIST BRANCH
-				limit = {
-					has_completed_focus = ITA_convene_the_grand_council
-				}
-				uncomplete_national_focus = {
-					focus = ITA_convene_the_grand_council
-					uncomplete_children = yes
-				}
-			}
 			if = { #FASCIST FOREIGN AFFAIRS BRANCH
 				limit = {
 					has_completed_focus = ITA_foreign_affairs
@@ -1622,8 +1613,6 @@ ITA_start_civil_war_effect = { #The one triggered via BoP
 			}
 
 			#COMPLETE FOCUS
-			unlock_national_focus = ITA_unite_the_opposition
-			unlock_national_focus = ITA_defy_the_duce
 			hidden_effect = { #Just doing the key thing we're missing from the unlocked focus above
 				set_politics = {
 					ruling_party = neutrality
@@ -1631,24 +1620,6 @@ ITA_start_civil_war_effect = { #The one triggered via BoP
 			}
 		}
 		else = { #Going MONARCHIST
-			if = { #BALBO BRANCH
-				limit = {
-					has_completed_focus = ITA_italo_balbo_focus
-				}
-				uncomplete_national_focus = {
-					focus = ITA_italo_balbo_focus
-					uncomplete_children = yes
-				}
-			}
-			else_if = { #GRANDI BRANCH
-				limit = {
-					has_completed_focus = ITA_dino_grandi_focus
-				}
-				uncomplete_national_focus = {
-					focus = ITA_dino_grandi_focus
-					uncomplete_children = yes
-				}
-			}
 			if = { #PACT OF STEEL BRANCH
 				limit = {
 					has_completed_focus = ITA_pact_of_steel
@@ -1667,17 +1638,6 @@ ITA_start_civil_war_effect = { #The one triggered via BoP
 				}
 				unlock_national_focus = ITA_struggle_in_ethiopia
 			}
-			#COMPLETE FOCUS
-			if = {
-				limit = {
-					NOT = { has_completed_focus = ITA_triumph_in_africa_bba }
-				}
-				unlock_national_focus = ITA_undermine_the_duce
-				unlock_national_focus = ITA_conspiracies_in_the_shadows
-			}
-			unlock_national_focus = ITA_convene_the_grand_council
-			unlock_national_focus = ITA_depose_mussolini
-			unlock_national_focus = ITA_monarchia_d_italia
 		}
 
 		ITA_manage_national_spirits_in_civil_war = yes
@@ -2458,28 +2418,7 @@ ITA_set_special_characters_as_fascist_effect = {
 	ITA_aldo_pellegrini = { #Goes with player
 		set_character_flag = ITA_cw_character_fascist_side_flag
 	}
-
-	#Promote appropriate Duce
-	if = {
-		limit = {
-			has_completed_focus = ITA_italo_balbo_focus
-		}
-		ITA_italo_balbo = { promote_character = yes }
-	}
-	else_if = {
-		limit = {
-			has_completed_focus = ITA_dino_grandi_focus
-		}
-		ITA_dino_grandi = { promote_character = yes }
-	}
-	else = {
 		ITA_benito_mussolini = { promote_character = yes }
-	}
-
-	if = {
-		limit = {
-			NOT = { has_completed_focus = ITA_italo_balbo_focus }
-		}
 		ITA_italo_balbo = {
 			if = {
 				limit = {
@@ -2498,11 +2437,6 @@ ITA_set_special_characters_as_fascist_effect = {
 			set_unit_leader_flag = ITA_cw_unit_leader_monarchist_side_flag
 			set_character_flag = ITA_cw_character_monarchist_side_flag
 		}
-	}
-	if = {
-		limit = {
-			NOT = { has_completed_focus = ITA_dino_grandi_focus }
-		}
 		ITA_dino_grandi = {
 			if = {
 				limit = {
@@ -2513,7 +2447,6 @@ ITA_set_special_characters_as_fascist_effect = {
 			}
 			set_character_flag = ITA_cw_character_monarchist_side_flag
 		}
-	}
 
 	log = "Done with flags"
 }
@@ -2565,11 +2498,6 @@ ITA_set_special_characters_as_monarchist_effect = {
 	ITA_aldo_pellegrini = { #Goes with player
 		set_character_flag = ITA_cw_character_monarchist_side_flag
 	}
-
-	if = {
-		limit = {
-			NOT = { has_completed_focus = ITA_italo_balbo_focus }
-		}
 		ITA_italo_balbo = {
 			if = {
 				limit = {
@@ -2588,11 +2516,6 @@ ITA_set_special_characters_as_monarchist_effect = {
 			set_unit_leader_flag = ITA_cw_unit_leader_monarchist_side_flag
 			set_character_flag = ITA_cw_character_monarchist_side_flag
 		}
-	}
-	if = {
-		limit = {
-			NOT = { has_completed_focus = ITA_dino_grandi_focus }
-		}
 		ITA_dino_grandi = {
 			if = {
 				limit = {
@@ -2603,7 +2526,6 @@ ITA_set_special_characters_as_monarchist_effect = {
 			}
 			set_character_flag = ITA_cw_character_monarchist_side_flag
 		}
-	}
 }
 
 ITA_civil_war_deal_with_militias = {
@@ -2612,75 +2534,11 @@ ITA_civil_war_deal_with_militias = {
 		division_template = "Camicie Nere"
 	}
 	ITA_add_redshirts_div_template = yes
-	if = {
-		limit = {
-			OR = {
-				has_completed_focus = ITA_organize_strikes_in_the_north
-				has_completed_focus = ITA_the_southern_farmlands
-			}
-		}
-		capital_scope = {
-			create_unit = {
-				division = "division_template = \"Camicie Rosse\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-				owner = ROOT
-				count = 3
-			}
-		}
-		random_owned_state = {
-			limit = {
-				is_controlled_by = ROOT
-			}
-			create_unit = {
-				division = "division_template = \"Camicie Rosse\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-				owner = ROOT
-				count = 2
-			}
-		}
-	}
 }
 
 ITA_start_anti_fascist_civil_war = { #The one triggered via focus
 	#KILL BoP to prevent endless CW insde CW inside CW etc etc tack
 	ITA_bop_remove_bop_effect = yes
-
-	if = {
-		limit = {
-			has_completed_focus = ITA_organize_strikes_in_the_north
-		}
-		every_owned_state = {
-			limit = {
-				OR = {
-					state = 159 #LOMBARDIA
-					state = 850 #TRENTINO
-					state = 39 #ALTO ADIGE
-					state = 160 #VENETO
-					state = 736 #LITORALE
-					state = 852 #ISTRIA
-				}
-				is_controlled_by = ROOT
-			}
-			set_state_flag = ITA_cw_state_split
-		}
-	}
-	else_if = {
-		limit = {
-			has_completed_focus = ITA_the_southern_farmlands
-		}
-		every_owned_state = {
-			limit = {
-				OR = {
-					state = 2 #LAZIO
-					state = 849 #PUGLIA
-					state = 117 #CAMPANIA
-					state = 156 #CALABRIA
-					state = 114 #SARDEGNA
-				}
-				is_controlled_by = ROOT
-			}
-			set_state_flag = ITA_cw_state_split
-		}
-	}
-	else = {
 		every_owned_state = {
 			limit = {
 				OR = {
@@ -2692,47 +2550,6 @@ ITA_start_anti_fascist_civil_war = { #The one triggered via focus
 			}
 			set_state_flag = ITA_cw_state_split
 		}
-	}
-
-	if = {
-		limit = {
-			has_completed_focus = ITA_unite_the_opposition
-		}
-		start_civil_war = {
-			ideology = fascism
-			ruling_party = communism #Original tag
-			size = 0.5
-			states = all
-			states_filter = {
-				NOT = { has_state_flag = ITA_cw_state_split }
-			}
-
-			keep_unit_leaders_trigger = {
-				OR = {
-					has_unit_leader_flag = ITA_cw_unit_leader_antifascist_side_flag
-					has_unit_leader_flag = ITA_cw_unit_leader_monarchist_side_flag
-				}
-			}
-		}
-	}
-	else = {
-		start_civil_war = {
-			ideology = fascism
-			ruling_party = communism #Original tag
-			size = 0.6
-			states = all
-			states_filter = {
-				NOT = { has_state_flag = ITA_cw_state_split }
-			}
-
-			keep_unit_leaders_trigger = {
-				OR = {
-					has_unit_leader_flag = ITA_cw_unit_leader_antifascist_side_flag
-					has_unit_leader_flag = ITA_cw_unit_leader_monarchist_side_flag
-				}
-			}
-		}
-	}
 }
 
 ITA_anti_fascist_civil_war_deal_with_fascist_side = {
@@ -2752,146 +2569,7 @@ ITA_anti_fascist_civil_war_deal_with_fascist_side = {
 		ITA_manage_national_spirits_in_civil_war = yes
 
 		#DAMAGE FROM ANTIFA FOCUSES
-		if = {
-			limit = {
-				ROOT = { has_completed_focus = ITA_organize_strikes_in_the_north }
-			}
-			set_temp_variable = { temp_targets_index = 0 }
-			while_loop_effect = {
-				limit = {
-					check_variable = { temp_targets_index = 4 compare = less_than }
-					any_owned_state = {
-						NOT = { has_state_flag = ITA_sabotaged_state_flag }
-					}
-				}
-				random_owned_state = {
-					limit = {
-						NOT = { has_state_flag = ITA_sabotaged_state_flag }
-						is_core_of = PREV
-						OR = {
-							industrial_complex > 0
-							arms_factory > 0
-							dockyard > 0
-						}
-						#Exclude small states with low development
-						NOT = {
-							state = 114 # SARDEGNA
-							state = 852 # ISTRIA
-							#state = 39 # ALTO ADIGE
-							state = 850 # TRENTINO
-						}
-					}
-					if = {
-						limit = {
-							industrial_complex > 0
-						}
-						damage_building = {
-							type = industrial_complex
-							damage = 2
-						}
-					}
-					if = {
-						limit = {
-							arms_factory > 0
-						}
-						damage_building = {
-							type = arms_factory
-							damage = 2.5
-						}
-					}
-					if = {
-						limit = {
-							dockyard > 0
-						}
-						damage_building = {
-							type = dockyard
-							damage = 1.5
-						}
-					}
-					set_state_flag = ITA_sabotaged_state_flag
-					log = "Sabotage in [THIS.GetName]"
-				}
-				add_to_temp_variable = { temp_targets_index = 1 }
-			}
-			hidden_effect = {
-				every_owned_state = {
-					limit = {
-						has_state_flag = ITA_sabotaged_state_flag
-					}
-					clr_state_flag = ITA_sabotaged_state_flag
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				ROOT = { has_completed_focus = ITA_the_southern_farmlands }
-			}
-			set_temp_variable = { temp_targets_index = 0 }
-			while_loop_effect = {
-				limit = {
-					check_variable = { temp_targets_index = 5 compare = less_than }
-					any_owned_state = {
-						NOT = { has_state_flag = ITA_sabotaged_state_flag }
-					}
-				}
-				random_owned_state = {
-					limit = {
-						NOT = { has_state_flag = ITA_sabotaged_state_flag }
-						is_core_of = PREV
-						OR = {
-							industrial_complex > 0
-							arms_factory > 0
-							dockyard > 0
-						}
-						#Exclude small states with low development
-						NOT = {
-							state = 114 # SARDEGNA
-							state = 852 # ISTRIA
-							state = 39 # ALTO ADIGE
-							state = 850 # TRENTINO
-						}
-					}
-					damage_building = {
-						type = infrastructure
-						damage = 1.5
-					}
-					if = {
-						limit = {
-							supply_node > 0
-						}
-						damage_building = {
-							type = supply_node
-							damage = 1.5
-						}
-					}
-
-					damage_units = {
-						state = THIS
-						limit = { original_tag = ITA }
-						org_damage = 0.25
-						str_damage = 0.1
-						ratio = yes
-						army = yes
-					}
-
-					set_state_flag = ITA_sabotaged_state_flag
-				}
-				add_to_temp_variable = { temp_targets_index = 1 }
-				log = "Sabotage in [THIS.GetName]"
-			}
-			hidden_effect = {
-				every_owned_state = {
-					limit = {
-						has_state_flag = ITA_sabotaged_state_flag
-					}
-					clr_state_flag = ITA_sabotaged_state_flag
-				}
-			}
 			set_capital = { state = 159 } # LOMBARDY (Milano)
-		}
-		else = {
-			set_capital = { state = 159 } # LOMBARDY (Milano)
-		}
 
 		# SPAWN SOME BLACKSHIRTS TO HELP OUT AI
 		capital_scope = {
@@ -3724,18 +3402,6 @@ ITA_improve_regia_marina_dm_effect = {
 	}
 }
 
-ITA_add_correct_mafia_rising_modifier_version = {
-	if = {
-		limit = {
-			has_dlc = "La Resistance"
-		}
-		add_dynamic_modifier = { modifier = ITA_mafia_on_the_rise }
-	}
-	else = {
-		add_dynamic_modifier = { modifier = ITA_mafia_on_the_rise_no_lar }
-	}
-}
-
 
 ##    ##    ###    ##     ## ########     ######  ##     ##    ###    ##    ##  ######   ########  ######
 ###   ##   ## ##   ###   ### ##          ##    ## ##     ##   ## ##   ###   ## ##    ##  ##       ##    ##
@@ -4184,39 +3850,6 @@ ITA_promote_umberto_to_country_leader = {
 				}
 			}
 			ITA_prince_umberto = { promote_character = { ideology = conservatism } }
-		}
-	}
-	else_if = {
-		limit = {
-			has_completed_focus = ITA_democratic_king
-		}
-		add_country_leader_role = {
-			character =  ITA_prince_umberto
-			promote_leader = yes
-			country_leader = {
-				ideology = conservatism
-				traits = { inexperienced_monarch eager_commander }
-				expire = "1965.1.1.1"
-				id = -1
-			}
-		}
-		add_country_leader_role = { #Add the Non-Aligned role too, but without promoting
-			character =  ITA_prince_umberto
-			country_leader = {
-				ideology = despotism
-				traits = { inexperienced_monarch eager_commander }
-				expire = "1965.1.1.1"
-				id = -1
-			}
-		}
-		set_character_name = {
-			character = ITA_prince_umberto
-			name = ITA_prince_umberto_king
-		}
-		#BoP
-		set_power_balance = {
-			id = ITA_power_balance
-			right_side = ITA_king_umberto_side
 		}
 	}
 	else = {

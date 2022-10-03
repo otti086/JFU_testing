@@ -87,79 +87,12 @@ on_actions = {
 		# End of Collaborationalist Civil War 
 
 		#End of Italian CW - Manage BoP -> If Monarchist, bring it back, but against communists
-		effect = {
-			if = {
-				limit = {
-					tag = RDS
-					has_completed_focus = ITA_monarchia_d_italia
-					OR = {
-						has_government = neutrality
-						has_government = democratic
-					}
-					NOT = {
-						has_power_balance = { id = ITA_power_balance }
-					}
-				}
-				#BoP
-				set_power_balance = {
-					id = ITA_power_balance
-					left_side = ITA_communism_side
-					right_side = ITA_king_side
-					set_default = yes
-				}
-			}
-		}
 
 		effect = {
 			if = {
 				limit = {
 					tag = RSI
 				}
-				if = { #BALBO
-					limit = {
-						has_completed_focus = ITA_italo_balbo_focus
-					}
-					#BoP
-					set_power_balance = {
-						id = ITA_power_balance
-						left_side = ITA_grand_council_side
-						right_side = ITA_balbo_side
-						set_default = yes
-					}
-					if = {
-						limit = {
-							NOT = {
-								has_country_leader = {
-									character = ITA_italo_balbo
-								}
-							}
-						}
-						promote_character = ITA_italo_balbo
-					}
-				}
-				else_if = { #GRANDI
-					limit = {
-						has_completed_focus = ITA_dino_grandi_focus
-					}
-					#BoP
-					set_power_balance = {
-						id = ITA_power_balance
-						left_side = ITA_grand_council_side
-						right_side = ITA_grandi_side
-						set_default = yes
-					}
-					if = {
-						limit = {
-							NOT = {
-								has_country_leader = {
-									character = ITA_dino_grandi
-								}
-							}
-						}
-						promote_character = ITA_dino_grandi
-					}
-				}
-				else = { #MUSSOLINI
 					#BoP
 					set_power_balance = {
 						id = ITA_power_balance
@@ -177,7 +110,6 @@ on_actions = {
 						}
 						promote_character = ITA_benito_mussolini
 					}
-				}
 			}
 		}
 	}
@@ -701,34 +633,6 @@ on_actions = {
 				}
 			}
 		}
-
-		effect = {
-			#Italy defends Austria from Germany
-			if = {
-				limit = {
-					ROOT = { 
-						original_tag = GER 
-					}
-					FROM = { 
-						original_tag = AUS 
-					}
-					ITA = {
-						has_completed_focus = ITA_guarantee_austrian_independence
-					}
-				}
-
-				AUS = {
-					give_military_access = ITA
-				}
-				
-				ITA = {
-					add_timed_idea = {
-						idea = ITA_alpine_defense
-						days = 360
-					}
-				}
-			}
-		}
 	}
 
 	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
@@ -812,71 +716,6 @@ on_actions = {
 		}
 
 		#Cooperatives for Intensive Exploitation
-		effect = {
-			if = {
-				limit = {
-					ROOT = {
-						original_tag = ITA
-						has_completed_focus = ITA_cooperatives_for_intensive_exploitation
-					}
-					FROM.FROM = {
-						is_on_continent = africa
-						state_has_any_resource = yes
-						NOT = { has_dynamic_modifier = { modifier = ITA_cooperatives_for_intensive_exploitation_dm } }
-					}
-				}
-				FROM.FROM = {
-					add_dynamic_modifier = { modifier = ITA_cooperatives_for_intensive_exploitation_dm }
-				}
-			}
-		}
-
-		#Mafia State modifiers
-		effect = {
-			if = {
-				limit = {
-					FROM.FROM = {
-						ITA_state_has_any_version_of_mafia_rising_modifier = yes
-					}
-					ROOT = {
-						original_tag = ITA
-						has_completed_focus = ITA_cooperate_with_the_mafia
-					}
-				}
-				if = {
-					limit = {
-						has_dynamic_modifier = { modifier = ITA_mafia_on_the_rise_no_lar }
-					}
-					remove_dynamic_modifier = { modifier = ITA_mafia_on_the_rise_no_lar }
-					add_dynamic_modifier = { modifier = ITA_established_mafia_no_lar }
-				}
-				else = {
-					remove_dynamic_modifier = { modifier = ITA_mafia_on_the_rise }
-					add_dynamic_modifier = { modifier = ITA_established_mafia }
-				}
-			}
-			else_if = {
-				limit = {
-					FROM.FROM = {
-						ITA_state_has_any_version_of_mafia_rising_modifier = yes
-					}
-					ROOT = {
-						NOT = { original_tag = ITA }
-					}
-				}
-				if = {
-					limit = {
-						has_dynamic_modifier = { modifier = ITA_established_mafia_no_lar }
-					}
-					remove_dynamic_modifier = { modifier = ITA_established_mafia_no_lar }
-					add_dynamic_modifier = { modifier = ITA_mafia_on_the_rise_no_lar }
-				}
-				else = {
-					remove_dynamic_modifier = { modifier = ITA_established_mafia }
-					add_dynamic_modifier = { modifier = ITA_mafia_on_the_rise }
-				}
-			}
-		}
 
 		#RENAME STATES/VPs
 		effect = {
@@ -974,86 +813,6 @@ on_actions = {
 				}
 				retire_country_leader = yes
 				
-			}
-		}
-
-		#Italian Confederation -> Add NS to new subjects
-		effect = {
-			if = {
-				limit = {
-					FROM = {
-						original_tag = ITA
-						has_completed_focus = ITA_the_italian_confederation
-					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							has_completed_focus = ITA_planned_economy
-						}
-						NOT = { has_idea = ITA_italian_confederation_member_improved }
-					}
-					if = {
-						limit = {
-							has_idea = ITA_italian_confederation_member
-						}
-						swap_ideas = {
-							remove_idea = ITA_italian_confederation_member
-							add_idea = ITA_italian_confederation_member_improved
-						}
-					}
-					else = {
-						add_ideas = ITA_italian_confederation_member_improved
-					}
-				}
-				else_if = {
-					limit = {
-						NOT = { has_idea = ITA_italian_confederation_member }
-					}
-					add_ideas = ITA_italian_confederation_member
-				}
-			}
-		}
-	}
-
-	#used when puppeting through the occupied territories menu during peace time (or when releasing from non-core but owned territory, f.e. Britain releasing Egypt)
-	#ROOT = nation being released, FROM = overlord
-	on_release_as_puppet = {
-		#Italian Confederation -> Add NS to new subjects
-		effect = {
-			if = {
-				limit = {
-					FROM = {
-						original_tag = ITA
-						has_completed_focus = ITA_the_italian_confederation
-					}
-				}
-				if = {
-					limit = {
-						FROM = {
-							has_completed_focus = ITA_planned_economy
-						}
-						NOT = { has_idea = ITA_italian_confederation_member_improved }
-					}
-					if = {
-						limit = {
-							has_idea = ITA_italian_confederation_member
-						}
-						swap_ideas = {
-							remove_idea = ITA_italian_confederation_member
-							add_idea = ITA_italian_confederation_member_improved
-						}
-					}
-					else = {
-						add_ideas = ITA_italian_confederation_member_improved
-					}
-				}
-				else_if = {
-					limit = {
-						NOT = { has_idea = ITA_italian_confederation_member }
-					}
-					add_ideas = ITA_italian_confederation_member
-				}
 			}
 		}
 	}

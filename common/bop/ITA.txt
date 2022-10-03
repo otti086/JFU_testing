@@ -76,7 +76,6 @@ ITA_power_balance = {
 								ruling_only = yes
 							}
 						}
-						NOT = { has_completed_focus = ITA_crush_opposition }
 					}
 					hidden_effect = {
 						country_event = BBA_italy_council_deposes_duce.1
@@ -98,10 +97,6 @@ ITA_power_balance = {
 				war_support_factor = -0.15
 			}
 			on_activate = {
-				if = {
-					limit = {
-						NOT = { has_completed_focus = ITA_crush_opposition }
-					}
 					hidden_effect = {
 						country_event = BBA_italy_civil_war.1
 					}
@@ -112,7 +107,6 @@ ITA_power_balance = {
 							size = 0.5
 						}
 					}
-				}
 			}
 			on_deactivate = {
 				
@@ -442,21 +436,10 @@ ITA_power_balance = {
 							}
 						}
 					}
-					if = {
-						limit = {
-							has_completed_focus = ITA_democratic_king
-						}
-						promote_character = {
-							character = ITA_vittorio_emanuele_iii
-							ideology = democratic
-						}
-					}
-					else = {
 						promote_character = {
 							character = ITA_vittorio_emanuele_iii
 							ideology = neutrality
 						}
-					}
 				}
 			}
 			on_deactivate = {

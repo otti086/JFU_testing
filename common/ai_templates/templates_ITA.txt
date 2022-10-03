@@ -1173,14 +1173,6 @@ militia_ITA = {
 		militias
 	}
 	
-	upgrade_prio = {
-		factor = 2
-		modifier = {
-			factor = 0
-			has_completed_focus = ITA_disband_the_blackshirts
-		}
-	}
-	
 	match_to_count = 0.45
 
 	militia_default_ITA = {

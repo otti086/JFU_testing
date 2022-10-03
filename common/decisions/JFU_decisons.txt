@@ -626,11 +626,7 @@ JFU_decisions = {
 		allowed = { tag = ITA }
 		available = {	
 			has_completed_focus = ITA_war_with_greece
-			OR ={
-				threat < 0.25
-				ITA = { has_war_with = ENG }
-			}
-			} 
+		} 
 		cost = 0
 		complete_effect = {
             declare_war_on = {

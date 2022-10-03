@@ -150,27 +150,12 @@ ITA_is_protestant_or_orthodox_country_in_europe_for_pope = {
 	}
 }
 
-ITA_has_disbanded_blackshirts = {
-	if = {
-		limit = {
-			has_dlc = "By Blood Alone"
-		}
-		custom_trigger_tooltip = {
-			tooltip = ITA_has_disbanded_blackshirts_tt
-			has_completed_focus = ITA_disband_the_blackshirts
-		}
-	}
-}
-
 ITA_government_is_really_fascist = {
 	if = {
 		limit = {
 			has_dlc = "By Blood Alone"
 		}
 		NOT = {
-			has_completed_focus = ITA_defy_the_duce
-			has_completed_focus = ITA_disband_the_blackshirts
-			has_completed_focus = ITA_crush_opposition
 			has_government = communism
 		}
 	}
@@ -186,25 +171,12 @@ ITA_government_is_somewhat_fascist = {
 		}
 		OR = {
 			has_government = fascism
-			has_completed_focus = ITA_utilize_the_blackshirts
 		}
 	}
 	else = {
 		OR = {
 			has_government = fascism
 			has_government = neutrality
-		}
-	}
-}
-
-ITA_is_going_antifascist_in_bba = {
-	if = {
-		limit = {
-			has_dlc = "By Blood Alone"
-		}
-		OR = {
-			has_completed_focus = ITA_unite_the_opposition
-			has_completed_focus = ITA_defy_the_duce
 		}
 	}
 }
@@ -362,7 +334,6 @@ ITA_has_rejected_monarchy = { # Used to change NS names from Regio/a to somethin
 		has_government = communism
 		AND = {
 			has_government = democratic
-			has_completed_focus = ITA_the_italian_republic
 		}
 		has_completed_focus = ITA_capo_supremo
 		tag = RSI
@@ -382,13 +353,6 @@ ITA_basic_ultimatum_triggers = { #Used in foreign politics targeted decs - Expec
 ITA_has_peaced_out_eth_on_startup = {
 	hidden_trigger = {
 		has_global_flag = ITA_peace_with_eth_on_startup_flag
-	}
-}
-
-ITA_state_has_any_version_of_mafia_rising_modifier = {
-	OR = {
-		has_dynamic_modifier = { modifier = ITA_mafia_on_the_rise_no_lar }
-		has_dynamic_modifier = { modifier = ITA_mafia_on_the_rise }
 	}
 }
 
@@ -479,10 +443,6 @@ ITA_is_kinda_fascist = {
 				tooltip = ITA_is_constitutional_monarchy_tt
 				AND = {
 					has_government = democratic
-					OR = {
-						has_completed_focus = ITA_christian_democracy
-						has_completed_focus = ITA_democratic_king
-					}
 				}
 			}
 		}
@@ -501,10 +461,6 @@ ITA_is_anti_fascist = {
 				tooltip = ITA_is_not_constitutional_monarchy_tt
 				AND = {
 					has_government = democratic
-					OR = {
-						has_completed_focus = ITA_christian_democracy
-						has_completed_focus = ITA_democratic_king
-					}
 				}
 			}
 		}
@@ -539,7 +495,7 @@ ITA_is_italian_tag_for_music = {
 ITA_is_appropriate_cw_side_for_character_split = {
 	if = { #BoP CW
 		limit = {
-			NOT = { has_completed_focus = ITA_defy_the_duce }
+			has_completed_focus =  ITA_culto_del_duce
 		}
 		#FASCIST
 		if = {

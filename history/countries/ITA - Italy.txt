@@ -220,7 +220,7 @@ add_ideas = ITA_hidden_research_penalties_ns #TODO_Manu: Hidden NS to apply rese
 #REGIO ESERCITO
 #set_variable = { ITA_re_army_experience_loss_factor = -0.1 }
 set_variable = { ITA_re_army_max_dig_in_factor = 0.1 }
-set_variable = { ITA_re_land_doctrine_cost_factor = 0.1 }
+set_variable = { ITA_re_land_doctrine_cost_factor = 0 }
 #set_variable = { ITA_re_land_reinforce_rate = -0.05 }
 set_variable = { ITA_re_army_speed_factor = -0.1 }
 set_variable = { ITA_re_army_army_org_factor = -0.1 }
@@ -527,7 +527,6 @@ if = {
 	unlock_national_focus = ITA_topple_amhara_rulers #35
 	
 	#1937
-	unlock_national_focus = ITA_corpo_di_truppe_volontarie #35
 	complete_national_focus = ITA_army_primacy_bba #35
 	complete_national_focus = ITA_culto_del_duce
 	complete_national_focus = ITA_fiocchi_munizioni #35
@@ -599,12 +598,6 @@ if = {
 			popularity = 0.07
 		}
 	}
-	activate_targeted_decision = { target = YUG decision = ITA_pressure_country_government_balkan }
-	activate_targeted_decision = { target = ROM decision = ITA_pressure_country_government_balkan }
-	activate_targeted_decision = { target = BUL decision = ITA_pressure_country_government_balkan }
-	activate_targeted_decision = { target = YUG decision = ITA_promote_ideology_rallies_balkan }
-	activate_targeted_decision = { target = ROM decision = ITA_promote_ideology_rallies_balkan }
-	activate_targeted_decision = { target = BUL decision = ITA_promote_ideology_rallies_balkan }
 
 	# Effects from Albanian Occupation
 	add_named_threat = { threat = 2 name = ITA_albania_war_goal }

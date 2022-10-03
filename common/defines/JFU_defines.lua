@@ -40,6 +40,7 @@ NDefines.NGame.DIPLOMACY_ACCEPT_ATTACHE_OPINION_TRASHHOLD = 10;
 
 NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN = 5;
 
+NDefines.NAir.FUEL_COST_MULT = 0.25; -- vanilla 0.35 fuel multiplier for all air missions
 NDefines.NAir.AIR_DEPLOYMENT_DAYS = 0;
 NDefines.NAir.SUPPLY_NEED_FACTOR = 0.14;
 NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane to create a mission

@@ -3589,13 +3589,6 @@ country_event = {
 	trigger = {
 		original_tag = ITA
 		#date > 1940.01.01
-		NOT = {
-			has_completed_focus = ITA_italo_balbo_focus
-			focus_progress = {
-				focus = ITA_italo_balbo_focus
-				progress > 0
-			}
-		}
 		any_enemy_country = {
 			is_major = yes
 		}
@@ -3687,7 +3680,6 @@ country_event = {
 
 	trigger = {
 		has_character = ITA_italo_balbo
-		NOT = { has_completed_focus = ITA_italo_balbo_focus }
 	}
 
 	# Sayonara Balbo
@@ -5976,95 +5968,6 @@ country_event = {
 ##    ## ##     ## ##     ## ##     ## ##     ## ##   ###  ##  ##    ##    ##    
  ######   #######  ##     ## ##     ##  #######  ##    ## ####  ######     ##    
 
-
-#Communist Leadership - Event for ITA
-country_event = {
-	id = BBA_italy_communist_events.01
-	title = BBA_italy_communist_events.01.t
-	desc = BBA_italy_communist_events.01.desc
-	picture = GFX_report_event_communists_in_riga
-
-	is_triggered_only = yes
-
-	#GRAMSCI (COMMIE)
-	option = {
-		name = BBA_italy_communist_events.01.a
-
-		ai_chance = {
-			base = 3
-		}
-
-		trigger = {
-			has_completed_focus = ITA_liberate_gramsci
-		}
-
-		hidden_effect = {
-			if = {
-				limit = {
-					ITA_comitato_di_liberazione_nazionale = {
-						has_ideology = marxism
-					}
-				}
-				remove_country_leader_role = {
-					character = ITA_comitato_di_liberazione_nazionale
-					ideology = marxism
-				}
-			}
-			if = {
-				limit = {
-					ITA_comitato_di_liberazione_nazionale = {
-						has_ideology = socialism
-					}
-				}
-				remove_country_leader_role = {
-					character = ITA_comitato_di_liberazione_nazionale
-					ideology = socialism
-				}
-			}
-		}
-		ITA_add_country_leader_role_to_gramsci = yes		
-	}
-
-	#TOGLIATTI (COMMUNIST)
-	option = {
-		name = BBA_italy_communist_events.01.b
-
-		ai_chance = {
-			base = 1
-		}
-
-		hidden_effect = {
-			remove_country_leader_role = {
-				character = ITA_comitato_di_liberazione_nazionale
-				ideology = marxism
-			} 
-		}
-		promote_character = ITA_palmiro_togliatti
-	}
-
-	#PERTINI (SOCIALIST)
-	option = {
-		name = BBA_italy_communist_events.01.c
-
-		ai_chance = {
-			base = 1
-		}
-
-		hidden_effect = {
-			remove_country_leader_role = {
-				character = ITA_comitato_di_liberazione_nazionale
-				ideology = marxism
-			} 
-		}
-		promote_character = ITA_sandro_pertini
-		set_party_name = {
-			ideology = communism
-			name = ITA_partito_socialista_italiano
-			long_name = ITA_partito_socialista_italiano_long
-		}
-	}
-}
-
 # The New Italian Republic calls for aid - Event for communist an socialist countries
 country_event = {
 	id = BBA_italy_communist_events.02
@@ -6569,81 +6472,6 @@ country_event = {
 				}
 				ITA_add_correct_mafia_rising_modifier_version = yes
 				set_variable = { ROOT.ITA_mafia_epicenter_state = THIS }
-			}
-		}
-	}
-}
-
-#Mafia Spreads - HIDDEN event for ITA to add Mafia state modifier to a new state
-country_event = {
-	id = BBA_italy_democratic_events.04
-
-	hidden = yes
-	is_triggered_only = yes
-
-	trigger = {
-		original_tag = ITA
-		has_civil_war = yes
-	}
-
-	immediate = {
-		hidden_effect = {
-			if = {
-				limit = {
-					any_state = {
-						is_core_of = ITA
-						ITA_state_has_any_version_of_mafia_rising_modifier = no
-						any_neighbor_state = {
-							state = ITA_mafia_epicenter_state
-						}
-					}
-				}
-				var:ITA_mafia_epicenter_state = {
-					random_neighbor_state = {
-						limit = {
-							is_core_of = ITA
-							ITA_state_has_any_version_of_mafia_rising_modifier = no
-						}
-						ITA_add_correct_mafia_rising_modifier_version = yes
-						if= {
-							limit = {
-								controller = {
-									NOT = { has_country_flag = ITA_country_is_aware_of_mafia_flag }
-								}
-							}
-							controller = { country_event = { id = BBA_italy_democratic_events.05 hours = 1 } }
-						}
-					}
-				}
-			}
-			else = {
-				random_state = {
-					limit = {
-						is_core_of = ITA
-						ITA_state_has_any_version_of_mafia_rising_modifier = no
-					}
-					prioritize = { 117 156 } #CAMPANIA CALABRIA
-					ITA_add_correct_mafia_rising_modifier_version = yes
-					if= {
-						limit = {
-							controller = {
-								NOT = { has_country_flag = ITA_country_is_aware_of_mafia_flag }
-							}
-						}
-						controller = { country_event = { id = BBA_italy_democratic_events.05 hours = 1 } }
-					}
-				}
-			}
-
-			#REPEAT EVENT
-			if = {	
-				limit = {
-					any_state = {
-						is_core_of = ITA
-						ITA_state_has_any_version_of_mafia_rising_modifier = no
-					}
-				}
-				country_event = { id = BBA_italy_democratic_events.04 days = 40 random_days = 20 }
 			}
 		}
 	}
@@ -8776,12 +8604,6 @@ country_event = {
 				}
 			}
 			modifier = {
-				add = 25
-				ITA = {
-					has_completed_focus = ITA_anglo_italian_pact
-				}
-			}
-			modifier = {
 				add = 15
 				ITA = {
 					has_country_leader = {
@@ -8876,12 +8698,6 @@ country_event = {
 				}
 			}
 			modifier = {
-				add = 25
-				ITA = {
-					has_completed_focus = ITA_franco_italian_pact
-				}
-			}
-			modifier = {
 				add = 15
 				ITA = {
 					has_country_leader = {
@@ -8958,12 +8774,6 @@ country_event = {
 				has_opinion = {
 					target = ITA
 					value > 70
-				}
-			}
-			modifier = {
-				add = 25
-				ITA = {
-					has_completed_focus = ITA_anglo_italian_pact
 				}
 			}
 			modifier = {
@@ -9046,12 +8856,6 @@ country_event = {
 				}
 			}
 			modifier = {
-				add = 25
-				ITA = {
-					has_completed_focus = ITA_franco_italian_pact
-				}
-			}
-			modifier = {
 				add = 15
 				ITA = {
 					has_country_leader = {
@@ -9129,12 +8933,6 @@ country_event = {
 				has_opinion = {
 					target = ITA
 					value > 70
-				}
-			}
-			modifier = {
-				add = 25
-				ITA = {
-					has_completed_focus = ITA_anglo_italian_pact
 				}
 			}
 			modifier = {
@@ -10005,12 +9803,6 @@ country_event = {
 				has_opinion = {
 					target = ITA
 					value > 70
-				}
-			}
-			modifier = {
-				add = 25
-				ITA = {
-					has_completed_focus = ITA_anglo_italian_pact
 				}
 			}
 			modifier = {

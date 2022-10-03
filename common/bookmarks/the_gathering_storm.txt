@@ -105,7 +105,6 @@ bookmarks = {
 			}	
 			focuses = {
 				ITA_comandante_diavolo
-				ITA_il_sol_dell_avvenire
 				ITA_a_colonial_empire
 			}		
 		}
