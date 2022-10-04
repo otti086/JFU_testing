@@ -270,7 +270,7 @@ focus = {
 		completion_reward = {
 			custom_effect_tooltip = available_chief_of_army
 			show_ideas_tooltip = maxime_weygand
-			army_experience = 25
+			army_experience = 10
 		}
 	}
 	focus = {
@@ -354,7 +354,7 @@ focus = {
 		completion_reward = {
 			custom_effect_tooltip = available_chief_of_army
 			show_ideas_tooltip = maurice_gamelin
-			army_experience = 25
+			army_experience = 10
 
 			
 		}
@@ -396,7 +396,7 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 20
+			army_experience = 10
 			add_ideas = FRA_motorized_focus
 		}
 	}
@@ -443,11 +443,10 @@ focus = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			remove_ideas = FRA_victors_of_wwi
-			army_experience = 10
 			add_doctrine_cost_reduction = {
 				name = FRA_army_reform
 				cost_reduction = 0.5
-				uses = 2
+				uses = 1
 				category = land_doctrine
 			}
 			custom_effect_tooltip = available_designer
