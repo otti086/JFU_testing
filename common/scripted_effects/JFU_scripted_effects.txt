@@ -444,6 +444,8 @@ JFU_vichy_france_2 = {
 		add_state_core = 32 
 		transfer_state = 21
 		add_state_core = 21 
+		transfer_state = 851
+		add_state_core = 851
 		###NORTH AFRICA### #demilitarized so Vichy players aren't utter cancer
 		transfer_state = 460
 		460 = { set_demilitarized_zone = yes }
@@ -490,6 +492,8 @@ JFU_vichy_france_2 = {
 				transfer_state = 775
 				transfer_state = 298
 				transfer_state = 514
+				transfer_state = 899
+				transfer_state = 898
 			}
 			#if = { 
 			#	limit = { FRA = { check_variable = { FRA_legitimacy 	< 40 } }  }
@@ -511,6 +515,9 @@ JFU_vichy_france_2 = {
 			transfer_state = 718
 			transfer_state = 768
 			transfer_state = 769
+			transfer_state = 890
+			transfer_state = 889
+			transfer_state = 888
 		}
 	}
 

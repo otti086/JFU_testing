@@ -77,7 +77,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			403 = {
+			453 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 2
@@ -5873,7 +5873,7 @@ focus_tree = {
 							is_controlled_by = SOV
 						}
 					}
-					add_compliance = 80 
+					add_compliance = 40 
 				}
 			}
 		}

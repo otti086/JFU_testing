@@ -202,7 +202,25 @@ ideas = {
 			modifier = {
 				supply_consumption_factor = -0.10
 			}
-		}		
+		}	
+		free_trade_idea = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = free_trade
+
+			modifier = {
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				production_speed_buildings_factor = 0.15
+				research_speed_factor = 0.10
+				civilian_intel_to_others = 40.0
+				navy_intel_to_others = 20.0
+			}
+		}	
 		export_focus_idea = {
 			allowed = {
 				always = no
@@ -337,6 +355,23 @@ ideas = {
 			modifier = {
 				special_forces_min = 8000
 			}
+		}
+		GER_rubber_balance = { 
+		
+				allowed = {
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+				picture = generic_manpower_bonus
+				
+				modifier = { min_export = -0.3 }
+		
+		
 		}
 	}
 }
