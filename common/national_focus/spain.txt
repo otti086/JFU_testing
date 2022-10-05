@@ -677,7 +677,7 @@ focus_tree = {
 		x = 4
 		y = 2
 		relative_position_id = SPR_fuse_the_parties
-		cost = 5
+		cost = 10
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
@@ -791,35 +791,6 @@ focus_tree = {
 						ideology = despotism
 						trait = caudillo_2
 					}
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = SPR_the_tangiers_enclave
-		available = {
-			has_full_control_of_state = 290
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPR_dictator_for_life }
-		
-		icon = GFX_goal_generic_position_armies
-		x = 0
-		y = 1
-		relative_position_id = SPR_dictator_for_life
-		cost = 5
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_INDUSTRY}
-		completion_reward = {
-			290 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-        			type = industrial_complex
-					level = 2
-					instant_build = yes
 				}
 			}
 		}
@@ -1245,7 +1216,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = HOL_make_use_of_our_riches
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = excavation_tech
 			}
 			add_tech_bonus = {
@@ -1377,10 +1348,10 @@ focus_tree = {
 			remove_ideas = SPA_recovering_from_civil_war_3
 			random_owned_controlled_state = {
 				set_state_flag = SPA_ensure_agricultural_self_sufficiency_2civ
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 4
+					level = 3
 					instant_build = yes
 				}
 			}

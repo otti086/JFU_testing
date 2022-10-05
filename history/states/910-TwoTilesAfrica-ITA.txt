@@ -1,14 +1,13 @@
 
 state={
-	id=552
-	name="STATE_552"
+	id=910
+	name="STATE_910"
 	manpower = 18539
 	
 	state_category = wasteland
-	impassable = yes
 
 	history={
-		owner = ENG
+		owner = SWE
 		buildings = {
 			infrastructure = 0
 		}
@@ -18,7 +17,7 @@ state={
 	}
 
 	provinces={
-		2064 7216 10869 10907 12099 12733 12816 
+		1060 11951
 	}
 
 	local_supplies=0.0 

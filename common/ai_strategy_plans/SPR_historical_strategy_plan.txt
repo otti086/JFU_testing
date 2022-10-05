@@ -46,7 +46,6 @@ SPR_historical_plan = {
 		SPR_autarky
 		SPR_direct_the_universities
 		SPR_dictator_for_life
-		SPR_the_tangiers_enclave
 		SPR_the_national_and_popular_army_of_spain
 		SPR_the_army_of_africa_model
 		SPR_equipment_modernization
