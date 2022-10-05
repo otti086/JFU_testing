@@ -5854,6 +5854,7 @@ focus_tree = {
 		available = {
 			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
 			is_subject = no
+			date > 1.1.1937
 		}
 
 		bypass = {
@@ -5892,6 +5893,7 @@ focus_tree = {
 			SOV = { transfer_state = 78 }
 			SOV = { transfer_state = 766 }
 			SOV = { transfer_state = 80 }
+			date < 01.01.1941
 		}
 	}
 }
