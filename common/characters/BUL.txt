@@ -324,7 +324,7 @@ characters = {
 			}
 		}
 		field_marshal = {
-			traits = { old_guard pre_grinded trait_engineer infantry_leader infantry_expert commando trickster hill_fighter trait_mountaineer }
+			traits = { old_guard pre_grinded guerilla_fighter trait_engineer infantry_leader infantry_expert commando trickster hill_fighter trait_mountaineer }
 			skill = 5
 			attack_skill=8
 			defense_skill=6
