@@ -256,7 +256,7 @@ characters={
 		corps_commander={
 			traits={ trait_reckless pre_grinded armor_officer trickster expert_improviser desert_fox trait_mountaineer panzer_expert panzer_leader trait_engineer fortress_buster }
 			skill=4
-			attack_skill=8
+			attack_skill=7
 			defense_skill=6
 			planning_skill=6
 			logistics_skill=5
@@ -319,7 +319,7 @@ characters={
 		}
 		
 		corps_commander={
-			traits={ pre_grinded armor_officer trickster trait_engineer panzer_leader panzer_expert hill_fighter ranger trickster expert_improviser}
+			traits={ pre_grinded armor_officer tank_gens trickster trait_engineer panzer_leader panzer_expert hill_fighter ranger trickster expert_improviser}
 			skill=4
 			attack_skill=8
 			defense_skill=6
@@ -595,7 +595,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ career_officer pre_grinded infantry_leader infantry_expert hill_fighter trait_mountaineer winter_specialist trickster expert_improviser}
+			traits={ career_officer pre_grinded inf_gens infantry_leader infantry_expert hill_fighter trait_mountaineer winter_specialist trickster expert_improviser}
 			skill=4
 			attack_skill=5
 			defense_skill=6

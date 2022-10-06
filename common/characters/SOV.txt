@@ -374,7 +374,7 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = {  infantry_officer pre_grinded trait_engineer infantry_leader infantry_expert offensive_doctrine ranger trickster }
+			traits = {  infantry_officer pre_grinded inf_gens trait_engineer infantry_leader infantry_expert offensive_doctrine ranger trickster }
 			skill = 4
 			attack_skill=4
 			defense_skill=5
@@ -1047,7 +1047,7 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { trait_reckless pre_grinded panzer_expert panzer_leader trait_engineer trickster expert_improviser ranger hill_fighter }
+			traits = { trait_reckless pre_grinded tank_gens panzer_expert panzer_leader trait_engineer trickster expert_improviser ranger hill_fighter }
 			skill = 5
 			attack_skill=7
 			defense_skill=5

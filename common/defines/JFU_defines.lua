@@ -8,9 +8,11 @@ NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 2;
 NDefines.NMilitary.PROMOTE_LEADER_CP_COST = 1.0;	
 NDefines.NMilitary.UNIT_LEADER_ASSIGN_TRAIT_COST = 0.00;
 NDefines.NMilitary.UNIT_LEADER_MODIFIER_COOLDOWN_ON_GROUP_CHANGE = 0;
-NDefines.NMilitary.AIR_EQUIPMENT_BASE_COST = 0                 -- CHANGED AS EVERYTHING IS PRE-UPGPRADED (needs to be tested)
-NDefines.NMilitary.AIR_EQUIPMENT_RAMP_COST = 0					-- CHANGED AS EVERYTHING IS PRE-UPGPRADED (needs to be tested)
-
+NDefines.NMilitary.AIR_EQUIPMENT_BASE_COST = 0;                 -- CHANGED AS EVERYTHING IS PRE-UPGPRADED (needs to be tested)
+NDefines.NMilitary.AIR_EQUIPMENT_RAMP_COST = 0;					-- CHANGED AS EVERYTHING IS PRE-UPGPRADED (needs to be tested)
+NDefines.NMilitary.GARRISON_ORDER_ARMY_CAP_FACTOR = 1.0;			-- armies gets increased cap when they are garrisoned
+NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 72;			--vanilla 24 (removed garrison cap factor) how many divisions a corps commander is limited to. 0 = inf, < 0 = blocked
+NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 72;			--vanilla 24 (removed garrison cap factor) how many divisions a field marshall is limited to. 0 = inf, < 0 = blocked
 NDefines.NCountry.POPULATION_YEARLY_GROWTH_BASE = 0.0;
 NDefines.NCountry.BASE_FUEL_CAPACITY = 100000;
 NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 200;
@@ -20,7 +22,7 @@ NDefines.NCountry.SCORCHED_EARTH_STATE_COST = 1000;
 NDefines.NPolitics.LEADER_TRAITS_XP_SHOW = 0.01;
 
 NDefines.NBuildings.MAX_SHARED_SLOTS = 50
-NDefines.NBuildings.OWNER_CHANGE_EXTRA_SHARED_SLOTS_FACTOR = 1.0
+NDefines.NBuildings.OWNER_CHANGE_EXTRA_SHARED_SLOTS_FACTOR = 1.0;
 
 NDefines.NCharacter.SPECIALIST_ADVISOR_MIN_RANK = 2;
 NDefines.NCharacter.EXPERT_ADVISOR_MIN_RANK = 4;
@@ -76,11 +78,11 @@ NDefines.NNavy.MISSION_SUPREMACY_RATIOS = { 						-- supremacy multipliers for d
 
 NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0;
 NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 1.0;
-NDefines.NNavy.NAVAL_TRANSFER_BASE_SPEED = 10                       -- WAS 6 | Increased so moving troops around the world is faster and theaters dont seem so disconnected (particularly aimed at improving Allied gameplay experience)
-NDefines.NNavy.ADMIRAL_TASKFORCE_CAP = 20                           -- WAS 10 | Increased so players can use their same submarine or escort admiral without penalties
-NDefines.NNavy.NAVAL_MINES_DECAY_AT_PEACE_TIME = 1                    -- WAS 0.25 
+NDefines.NNavy.NAVAL_TRANSFER_BASE_SPEED = 10;                       -- WAS 6 | Increased so moving troops around the world is faster and theaters dont seem so disconnected (particularly aimed at improving Allied gameplay experience)
+NDefines.NNavy.ADMIRAL_TASKFORCE_CAP = 20;                           -- WAS 10 | Increased so players can use their same submarine or escort admiral without penalties
+NDefines.NNavy.NAVAL_MINES_DECAY_AT_PEACE_TIME = 1;                    -- WAS 0.25 
 
-NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 1                 -- License can be cancelled at any time now, down from 30 | 
+NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 1;                 -- License can be cancelled at any time now, down from 30 | 
 NDefines.NProduction.BASE_LICENSE_IC_COST = 0;	
 NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0;	
 NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 10000000;
