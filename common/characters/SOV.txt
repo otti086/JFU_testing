@@ -1096,20 +1096,6 @@ characters = {
 			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
-		advisor={
-			slot = army_chief
-			idea_token = andrey_grechko_grinded
-			allowed = {
-				original_tag = SOV
-			}
-			traits = {
-				army_chief_offensive_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
 	}
 
 	SOV_rodion_malinovsky = {

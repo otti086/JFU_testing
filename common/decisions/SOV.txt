@@ -2703,7 +2703,6 @@ SOV_propaganda_campaigns = {
 
 		visible = {
 			OR = {
-				has_completed_focus = SOV_anti_fascist_policies
 				has_country_flag = SOV_debug_unlock_propaganda_campaigns_flag #debug
 			}
 		}

@@ -1264,6 +1264,8 @@ focus = {
 				transfer_state = 775
 				transfer_state = 298
 				transfer_state = 514
+				transfer_state = 899
+				transfer_state = 898				
 			}
 		}
 	}
@@ -1364,6 +1366,9 @@ focus = {
 			transfer_state = 718
 			transfer_state = 768
 			transfer_state = 769
+			transfer_state = 890
+			transfer_state = 889
+			transfer_state = 888
 			}
 		}
 	}

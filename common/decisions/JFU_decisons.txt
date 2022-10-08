@@ -468,21 +468,16 @@ JFU_decisions = {
 		available = { SIA = { is_ai = yes } }
 		cost = 0
 		complete_effect = {
-			annex_country = { target = SIA transfer_troops = yes }
 			hidden_effect = { 
 				every_state = {
 					limit = {
-						AND = {
-							is_core_of = SIA
-							OR = {
-								is_controlled_by = JAP
-							}
-						}
+						is_core_of = SIA
 					}
-				
-				add_compliance = 90 
+				add_core_of = JAP
 				}
-				country_event = { id = JFU_events.1 hours = 1} 
+			}
+			annex_country = { target = SIA transfer_troops = yes }
+			country_event = { id = JFU_events.1 hours = 1} 
 			}
 		}
 	}
@@ -498,7 +493,7 @@ JFU_decisions = {
 			hidden_effect = { 
 				every_state = {
 					limit = {
-							is_core_of = MAN
+						is_core_of = MAN
 					}
 				add_core_of = JAP
 				}
@@ -597,10 +592,8 @@ JFU_decisions = {
                         target = YUG
                         type = annex_everything			
 			}
-			add_named_threat = { threat = 6 name = ITA_Balkan_expantion1 }
+			add_named_threat = { threat = 4 name = ITA_Balkan_expantion1 }
 			hidden_effect = { 
-				if = { limit = { country_exists = HUN }	HUN = { add_to_war = { targeted_alliance = GER enemy = YUG } } }
-				if = { limit = { country_exists = ROM }	ROM = { add_to_war = { targeted_alliance = GER enemy = YUG } } }
 				if = { limit = { country_exists = BUL }	BUL = { add_to_war = { targeted_alliance = GER enemy = YUG } } }
 			}	
 		}
@@ -619,7 +612,7 @@ JFU_decisions = {
                         target = GRE
                         type = annex_everything
             }
-			add_named_threat = { threat = 2 name = ITA_Balkan_expantion2 }				
+			add_named_threat = { threat = 4 name = ITA_Balkan_expantion2 }				
 			hidden_effect = {
 				if = {
 					limit = {
@@ -630,6 +623,7 @@ JFU_decisions = {
 					}
 					ROOT_call_against_greece = yes 
 				}
+				if = { limit = { country_exists = BUL }	BUL = { add_to_war = { targeted_alliance = GER enemy = YUG } } }
 			}	
 		}
 	}
