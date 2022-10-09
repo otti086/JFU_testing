@@ -24,7 +24,6 @@ JFU_decisions = {
 			}
 		}
 	}
-
 	"Fall Gelb" = {
 		icon = ger_reichskommissariats
 		fire_only_once = yes	
@@ -46,7 +45,6 @@ JFU_decisions = {
 			}
 		}
 	}
-
 	"Operation Weserubung" = { 
 		icon = ger_reichskommissariats
 		fire_only_once = yes	
@@ -72,7 +70,6 @@ JFU_decisions = {
 	
 		}	
 	}
-	
 	"Operation Weserubung2" = { 
 		icon = ger_reichskommissariats
 		fire_only_once = yes	
@@ -298,7 +295,6 @@ JFU_decisions = {
 			}
 		}
 	}
-
 	"Operation Icebreaker" = {
 		icon = generic_operation
 		fire_only_once = yes
@@ -366,7 +362,6 @@ JFU_decisions = {
 			}
 		}
 	}
-
 	"Attack china" = {
 		icon = generic_operation
 		fire_only_once = yes
@@ -478,10 +473,8 @@ JFU_decisions = {
 			}
 			annex_country = { target = SIA transfer_troops = yes }
 			country_event = { id = JFU_events.1 hours = 1} 
-			}
 		}
 	}
-
 	"Annex Manchu" = {
 		icon = generic_operation
 		fire_only_once = yes
@@ -501,7 +494,6 @@ JFU_decisions = {
 			annex_country = { target = MAN transfer_troops = yes }
 		}
 	}
-
 	"Give China to Manchu" = {
 		icon = border_war
 		allowed = {	original_tag = JAP	}
@@ -531,7 +523,6 @@ JFU_decisions = {
 			annex_country = { target = NZL transfer_troops = yes }			
 		}
 	}
-
 	"Annex South Africa" = {
 		icon = generic_operation
 		fire_only_once = yes
@@ -552,7 +543,6 @@ JFU_decisions = {
 
 		}
 	}
-
 	"Annex Bulgaria" = {
 		icon = generic_operation
 		fire_only_once = yes
@@ -566,7 +556,6 @@ JFU_decisions = {
 			annex_country = { target = BUL transfer_troops = yes }
 		}
 	}
-
 	"Annex Bulgaria ITA" = {
 		icon = generic_operation
 		fire_only_once = yes
@@ -580,7 +569,6 @@ JFU_decisions = {
 			annex_country = { target = BUL transfer_troops = yes }
 		}
 	}	
-
 	"Attack Yugoslavia" = {
 		icon = generic_operation
 		fire_only_once = yes
@@ -592,13 +580,11 @@ JFU_decisions = {
                         target = YUG
                         type = annex_everything			
 			}
-			add_named_threat = { threat = 4 name = ITA_Balkan_expantion1 }
 			hidden_effect = { 
 				if = { limit = { country_exists = BUL }	BUL = { add_to_war = { targeted_alliance = GER enemy = YUG } } }
 			}	
 		}
 	}
-
 	"Attack Greece" = {
 		icon = generic_operation
 		fire_only_once = yes
@@ -611,8 +597,7 @@ JFU_decisions = {
             declare_war_on = {
                         target = GRE
                         type = annex_everything
-            }
-			add_named_threat = { threat = 4 name = ITA_Balkan_expantion2 }				
+            }			
 			hidden_effect = {
 				if = {
 					limit = {
@@ -627,7 +612,6 @@ JFU_decisions = {
 			}	
 		}
 	}
-
 	"Join the War" = {
 		icon = generic_operation
 		fire_only_once = yes
@@ -679,7 +663,6 @@ JFU_decisions = {
 			}
 		}
 	}	
-
 	send_air_to_ger = {
 	
 		icon = GFX_decision_generic_air
@@ -698,7 +681,6 @@ JFU_decisions = {
 			activate_mission = send_air_to_ger1 set_country_flag = ITA_air_LL
 		}			
 	}
-	
 	send_air_to_ger1 = {
 	
 		icon = GFX_decision_generic_air
@@ -725,7 +707,6 @@ JFU_decisions = {
 			}
 		}	
 	}
-	
 	cancel_air_to_ger = {
 	
 		icon = GFX_decision_generic_air
@@ -748,7 +729,6 @@ JFU_decisions = {
 			}
 		}	
 	}
-	 
 	send_air_to_hun = {
 	
 		icon = GFX_decision_generic_air
@@ -767,7 +747,6 @@ JFU_decisions = {
 			activate_mission = send_air_to_hun1 set_country_flag = ITA_air_LL
 		}			
 	}
-	
 	send_air_to_hun1 = {
 	
 		icon = GFX_decision_generic_air
@@ -794,7 +773,6 @@ JFU_decisions = {
 			}
 		}	
 	}
-	
 	cancel_air_to_hun = {
 	
 		icon = GFX_decision_generic_air
@@ -942,7 +920,33 @@ JFU_decisions = {
 			}
 		}
 	}	
-
+	"Attack Japan" = {
+		icon = generic_operation
+		fire_only_once = yes
+		allowed = { tag = USA }
+		available = { date > 1941.4.1}
+		cost  = 0
+		complete_effect = {
+			declare_war_on = {
+                target = JAP
+        		type = annex_everything
+            }
+			hidden_effect = {
+				ENG = { add_to_war = { targeted_alliance = ENG enemy = JAP } }
+				CAN = { add_to_war = { targeted_alliance = ENG enemy = JAP } }	
+				RAJ = { add_to_war = { targeted_alliance = ENG enemy = JAP } }	
+				AST = { add_to_war = { targeted_alliance = ENG enemy = JAP } }		
+				FRA = { add_to_war = { targeted_alliance = ENG enemy = JAP } }	
+				HOL = { add_to_war = { targeted_alliance = ENG enemy = JAP } }
+				if = { limit = { country_exists = SAF }	SAF = { add_to_war = { targeted_alliance = ENG enemy = JAP } } }
+				if = { limit = { country_exists = NZL }	NZL = { add_to_war = { targeted_alliance = ENG enemy = JAP } } }
+				if = { limit = { BRA = { is_ai = no } } BRA = { add_to_war = { targeted_alliance = ENG enemy = JAP } } } 
+				if = { limit = { MEX = { is_ai = no } } MEX = { add_to_war = { targeted_alliance = ENG enemy = JAP } } } 
+				if = { limit = { country_exists = MAN }	MAN = { add_to_war = { targeted_alliance = JAP enemy = ENG } } }
+				if = { limit = { country_exists = SIA }	SIA = { add_to_war = { targeted_alliance = JAP enemy = ENG } } }
+			}
+		}
+	}
 	"Support France" = {
 		icon = eng_install_government
 		allowed = { original_tag = ENG }

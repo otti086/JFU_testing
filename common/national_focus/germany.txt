@@ -1761,6 +1761,7 @@ focus_tree = {
 				4 =		{ add_core_of = GER }
 				152 = 	{ add_core_of = GER }
 				153 = 	{ add_core_of = GER }
+				848 =   { add_core_of = GER }
 			}
 			annex_country = { target = AUS transfer_troops = no }
 			add_political_power = 75
@@ -1804,6 +1805,9 @@ focus_tree = {
 		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = GER_demand_memel }
 		prerequisite = { focus = GER_mol_rib_pact }
+		available = {
+			date > 1939.3.1
+		}
 		will_lead_to_war_with = FRA
 		will_lead_to_war_with = ENG
 		will_lead_to_war_with = POL
