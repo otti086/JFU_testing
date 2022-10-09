@@ -616,23 +616,6 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					446 = { is_controlled_by = ITA }
-				}
-				ITA = {
-					add_ideas = ITA_VICTORY_IN_AFRICA	
-				}
-			}
-			if = {
-				limit = {
-					AND = {
-						NOT = { 446 = { is_controlled_by = ITA } }
-						ITA = { has_idea = ITA_VICTORY_IN_AFRICA }
-					}
-				}
-				remove_ideas = ITA_VICTORY_IN_AFRICA
-			}
-			if = {
-				limit = {
 					AND = {
 						195 = { is_controlled_by = FIN }
 						NOT = {

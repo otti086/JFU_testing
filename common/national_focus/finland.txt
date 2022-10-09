@@ -1243,12 +1243,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = why_we_fight_focus
+			add_ideas = volunteers_100
 			custom_effect_tooltip = why_we_fight_effect
-			hidden_effect = {
-				if = {
-					limit = { NOT = { has_idea = neutrality_idea } }
-				}			
-			}
 		}
 	}
 	

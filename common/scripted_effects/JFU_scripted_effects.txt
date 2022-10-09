@@ -756,6 +756,9 @@ JFU_pre_grinded_generals_ON = {
 		}	
 		add_ideas = { pre_grinded_gens_volunteers }
 	}
+	FIN = {
+		add_ideas = { pre_grinded_gens_volunteers }
+	}
 	ROM = {
 		recruit_character = ROM_gheorghe_avramescu_grinded
 		recruit_character = ROM_ioan_mihail_racovita_grinded

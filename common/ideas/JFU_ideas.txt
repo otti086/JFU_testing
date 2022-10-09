@@ -65,6 +65,21 @@ ideas = {
 			}
 		
 		}
+		volunteers_100 = {
+			allowed = {
+				always = no
+			}
+			
+			picture = partial_economic_mobilisation
+			
+			removal_cost = -1
+
+			modifier = {
+				send_volunteer_size = 99
+				send_volunteer_divisions_required = -0.99
+			}
+		
+		}		
         jap_oil_reserves = {
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
