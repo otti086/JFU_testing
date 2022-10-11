@@ -808,6 +808,9 @@ JFU_pre_grinded_generals_ON = {
 		recruit_character = FRA_alphonse_juin_grinded
 		add_ideas = { pre_grinded_gens_volunteers }
 	}
+	MAN = {
+		add_ideas = { pre_grinded_gens_volunteers }
+	}
 	ENG = {
 		recruit_character = ENG_bernard_montgomery_grinded
 		recruit_character = ENG_claude_auchinleck_grinded
@@ -903,4 +906,1396 @@ island_hopping_USA = {
 	if = { limit = { NOT = { any_country = {allies = yes controls_state = 629}}} add_to_variable = {	var = PJU_05 value = 0.02 } add_to_variable = { var = PJU_15 value = -0.05 } }
 	if = { limit = { NOT = { any_country = {allies = yes controls_state = 631}}} add_to_variable = {	var = PJU_05 value = 0.02 } add_to_variable = { var = PJU_15 value = -0.05 } }
 	if = { limit = { NOT = { any_country = {allies = yes controls_state = 632}}} add_to_variable = {	var = PJU_05 value = 0.02 } add_to_variable = { var = PJU_15 value = -0.05 } }
+}
+ETH_escalate_the_war_effect = {
+	custom_effect_tooltip = ETH_war_escalation_inc_tt
+	add_to_variable = { ETH.ETH_war_escalation_level = 1 }
+}
+
+ETH_deescalate_the_war_effect = {
+	custom_effect_tooltip = ITA_war_deescalation_inc_tt #Change or use scripted loc if ETH ever has effects to de-escalate
+	subtract_from_variable = { ETH.ETH_war_escalation_level = 1 }
+}
+
+ETH_electrify_state_remove_effect = {
+	clr_country_flag = ETH_investments_in_progress_flag
+	FROM = {
+		clr_state_flag = ETH_can_electrify_state_flag
+		set_state_flag = ETH_state_is_electrified_flag #State has already been electrified (either by ETH or by ITA)
+	}
+	custom_effect_tooltip = ETH_electrify_state_tt
+	FROM = {
+		add_to_variable = { ETH_state_development_production_speed = 0.1 }
+			add_to_variable = { ETH_state_development_local_building_slots_factor = 0.1 }
+	}
+	IF = {
+		limit = { 
+			FROM = {
+				check_variable = { ETH_state_development_production_speed < -0.1 } 
+			}
+		}
+		FROM = { set_state_flag = ETH_can_improve_communication_state_flag }
+	}
+	IF = {
+		limit = { 
+			FROM = {
+				check_variable = { ETH_state_development_local_building_slots_factor < -0.1 } 
+			}
+		}
+		FROM = { set_state_flag = ETH_can_invest_local_industry_state_flag }
+	}
+}
+remove_worker_shortage_effect = {	
+	if = {
+		limit = { has_idea = FRA_worker_shortage }
+		remove_ideas = FRA_worker_shortage
+	}
+	else_if = {
+		limit = { has_idea = FRA_full_employment }
+		remove_ideas = FRA_full_employment
+	}
+}
+JAP_interservice_rivalry_towards_army = {
+	
+	if = {
+		limit = {  has_idea = JAP_interservice_rivalry_army_strengthened }
+		swap_ideas = {
+			remove_idea = JAP_interservice_rivalry_army_strengthened
+			add_idea = JAP_interservice_rivalry_army_dominant
+		}
+	}
+
+	if = {
+		limit = { has_idea = JAP_interservice_rivalry_balanced }
+		swap_ideas = {
+			remove_idea = JAP_interservice_rivalry_balanced
+			add_idea = JAP_interservice_rivalry_army_strengthened
+		}
+	}
+
+	if = {
+		limit = { has_idea = JAP_interservice_rivalry_navy_strengthened }
+		swap_ideas = {
+			remove_idea = JAP_interservice_rivalry_navy_strengthened
+			add_idea = JAP_interservice_rivalry_balanced
+		}
+	}
+
+	if = {
+		limit = { has_idea = JAP_interservice_rivalry_navy_dominant }
+		swap_ideas = {
+			remove_idea = JAP_interservice_rivalry_navy_dominant
+			add_idea = JAP_interservice_rivalry_navy_strengthened
+		}
+	}
+
+}
+
+JAP_interservice_rivalry_towards_navy = {
+
+	if = {
+		limit = { has_idea = JAP_interservice_rivalry_navy_strengthened }
+		swap_ideas = {
+			remove_idea = JAP_interservice_rivalry_navy_strengthened
+			add_idea = JAP_interservice_rivalry_navy_dominant
+		}
+	}	
+	if = {
+		limit = { has_idea = JAP_interservice_rivalry_balanced }
+		swap_ideas = {
+			remove_idea = JAP_interservice_rivalry_balanced
+			add_idea = JAP_interservice_rivalry_navy_strengthened
+		}
+	}
+	if = {
+		limit = { has_idea = JAP_interservice_rivalry_army_strengthened }
+		swap_ideas = {
+			remove_idea = JAP_interservice_rivalry_army_strengthened
+			add_idea = JAP_interservice_rivalry_balanced
+		}
+	}
+	if = {
+		limit = { has_idea = JAP_interservice_rivalry_army_dominant }
+		swap_ideas = {
+			remove_idea = JAP_interservice_rivalry_army_dominant
+			add_idea = JAP_interservice_rivalry_army_strengthened
+		}
+	}
+	
+	
+	
+}
+
+JAP_intervene_in_china_level_down = {
+
+	if = {
+		limit = { has_idea = JAP_intervene_in_china_1 }
+		remove_ideas = JAP_intervene_in_china_1
+	}
+	
+	if = {
+		limit = { has_idea = JAP_intervene_in_china_2 }
+		swap_ideas = {
+			remove_idea = JAP_intervene_in_china_2
+			add_idea = JAP_intervene_in_china_1
+		}
+	}
+	
+	if = {
+		limit = { has_idea = JAP_intervene_in_china_3 }
+		swap_ideas = {
+			remove_idea = JAP_intervene_in_china_3
+			add_idea = JAP_intervene_in_china_2
+		}
+	}
+	
+	if = {
+		limit = { has_idea = JAP_intervene_in_china_4 }
+		swap_ideas = {
+			remove_idea = JAP_intervene_in_china_4
+			add_idea = JAP_intervene_in_china_3
+		}
+	}
+
+	if = {
+		limit = { has_idea = JAP_intervene_in_china_5 }
+		swap_ideas = {
+			remove_idea = JAP_intervene_in_china_5
+			add_idea = JAP_intervene_in_china_4
+		}
+	}
+}
+
+JAP_intervene_in_china_remove = {
+
+	if = {
+		limit = { has_idea = JAP_intervene_in_china_5 }
+		remove_ideas = JAP_intervene_in_china_5
+	}
+	
+	if = {
+		limit = { has_idea = JAP_intervene_in_china_4 }
+		remove_ideas = JAP_intervene_in_china_4
+	}
+	
+	if = {
+		limit = { has_idea = JAP_intervene_in_china_3 }
+		remove_ideas = JAP_intervene_in_china_3
+	}
+	
+	if = {
+		limit = { has_idea = JAP_intervene_in_china_2 }
+		remove_ideas = JAP_intervene_in_china_2
+	}
+	else = {		
+		remove_ideas = JAP_intervene_in_china_1
+	}	
+}
+MAN_low_legitimacy_clear_all = {
+	if = {
+		limit = { has_idea = MAN_low_legitimacy_1 }
+		remove_ideas = MAN_low_legitimacy_1
+	}
+	else_if = {
+		limit = { has_idea = MAN_low_legitimacy_2 }
+		remove_ideas = MAN_low_legitimacy_2
+	}
+	else_if = {
+		limit = { has_idea = MAN_low_legitimacy_3 }
+		remove_ideas = MAN_low_legitimacy_3
+	}
+	else_if = {
+		limit = { has_idea = MAN_low_legitimacy_4 }
+		remove_ideas = MAN_low_legitimacy_4
+	}
+	else_if = {
+		limit = { has_idea = MAN_low_legitimacy_5 }
+		remove_ideas = MAN_low_legitimacy_5
+	}
+}
+
+#Important to put LOWEST first
+MAN_low_legitimacy_level_down = {
+	if = {
+		limit = { has_idea = MAN_low_legitimacy_1 }
+		#Makes the tooltip clearer if player looks at the effect early in the game
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = MAN_low_legitimacy_2
+				add_idea = MAN_low_legitimacy_1
+			}
+		}
+		hidden_effect = { remove_ideas = MAN_low_legitimacy_1 }
+	}
+	if = {
+		limit = { has_idea = MAN_low_legitimacy_2 }
+		swap_ideas = {
+			remove_idea = MAN_low_legitimacy_2
+			add_idea = MAN_low_legitimacy_1
+		}
+	}
+	if = {
+		limit = { has_idea = MAN_low_legitimacy_3 }
+		swap_ideas = {
+			remove_idea = MAN_low_legitimacy_3
+			add_idea = MAN_low_legitimacy_2
+		}
+	}
+	if = {
+		limit = { has_idea = MAN_low_legitimacy_4 }
+		swap_ideas = {
+			remove_idea = MAN_low_legitimacy_4
+			add_idea = MAN_low_legitimacy_3
+		}
+	}
+	if = {
+		limit = { has_idea = MAN_low_legitimacy_5 }
+		swap_ideas = {
+			remove_idea = MAN_low_legitimacy_5
+			add_idea = MAN_low_legitimacy_4
+		}
+	}
+}
+MEX_increase_church_power = {
+	if = {
+		limit = { has_idea = MEX_church_power_5 }
+		add_political_power = 25
+	}
+	else_if = {
+		limit = { has_idea = MEX_church_power_4 }
+		swap_ideas = {
+			remove_idea = MEX_church_power_4
+			add_idea = MEX_church_power_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = MEX_church_power_3 }
+		swap_ideas = {
+			remove_idea = MEX_church_power_3
+			add_idea = MEX_church_power_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = MEX_church_power_2 }
+		swap_ideas = {
+			remove_idea = MEX_church_power_2
+			add_idea = MEX_church_power_3
+		}		
+	}
+	else_if = {
+		limit = { has_idea = MEX_church_power_1 }
+		swap_ideas = {
+			remove_idea = MEX_church_power_1
+			add_idea = MEX_church_power_2
+		}
+	}
+}
+
+MEX_decrease_church_power = {
+	if = {
+		limit = { has_idea = MEX_church_power_1 }
+		add_political_power = 25
+	}
+	else_if = {
+		limit = { has_idea = MEX_church_power_2 }
+		swap_ideas = {
+			remove_idea = MEX_church_power_2
+			add_idea = MEX_church_power_1
+		}
+	}
+	else_if = {
+		limit = { has_idea = MEX_church_power_3 }
+		swap_ideas = {
+			remove_idea = MEX_church_power_3
+			add_idea = MEX_church_power_2
+		}
+	}
+	else_if = {
+		limit = { has_idea = MEX_church_power_4 }
+		swap_ideas = {
+			remove_idea = MEX_church_power_4
+			add_idea = MEX_church_power_3
+		}		
+	}
+	else_if = {
+		limit = { has_idea = MEX_church_power_5 }
+		swap_ideas = {
+			remove_idea = MEX_church_power_5
+			add_idea = MEX_church_power_4
+		}
+	}
+}
+
+MEX_remove_church_power = {
+	if = {
+		limit = {
+			has_idea = MEX_church_power_1
+		}
+		remove_ideas = MEX_church_power_1
+	}
+	else_if = {
+		limit = {
+			has_idea = MEX_church_power_2
+		}
+		remove_ideas = MEX_church_power_2
+	}
+	else_if = {
+		limit = {
+			has_idea = MEX_church_power_4
+		}
+		remove_ideas = MEX_church_power_4
+	}
+	else_if = {
+		limit = {
+			has_idea = MEX_church_power_5
+		}
+		remove_ideas = MEX_church_power_5
+	}
+	else_if = {
+		limit = {
+			always = yes
+		}
+		remove_ideas = MEX_church_power_4
+	}
+}
+
+MEX_remove_cedillo_tension = {
+	if = {
+		limit = {
+			has_idea = MEX_cedillo_tension_4
+		}
+		remove_ideas = MEX_cedillo_tension_4
+	}
+	else_if = {
+		limit = {
+			has_idea = MEX_cedillo_tension_3
+		}
+		remove_ideas = MEX_cedillo_tension_3
+	}
+	else_if = {
+		limit = {
+			has_idea = MEX_cedillo_tension_2
+		}
+		remove_ideas = MEX_cedillo_tension_2
+	}
+	else_if = {
+		limit = {
+			always = yes
+		}
+		remove_ideas = MEX_cedillo_tension
+	}
+}
+
+MEX_decrease_cedillo_tension = {
+	if = {
+		limit = {
+			has_idea = MEX_cedillo_tension_2
+		}
+		swap_ideas = {
+			remove_idea = MEX_cedillo_tension_2
+			add_idea = MEX_cedillo_tension
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = MEX_cedillo_tension_3
+		}
+		swap_ideas = {
+			remove_idea = MEX_cedillo_tension_3
+			add_idea = MEX_cedillo_tension_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = MEX_cedillo_tension_4
+		}
+		swap_ideas = {
+			remove_idea = MEX_cedillo_tension_4
+			add_idea = MEX_cedillo_tension_3
+		}
+	}
+}
+
+MEX_increase_cedillo_tension = {
+	if = {
+		limit = {
+			has_idea = MEX_cedillo_tension_3
+		}
+		swap_ideas = {
+			remove_idea = MEX_cedillo_tension_3
+			add_idea = MEX_cedillo_tension_4
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = MEX_cedillo_tension_2
+		}
+		swap_ideas = {
+			remove_idea = MEX_cedillo_tension_2
+			add_idea = MEX_cedillo_tension_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = MEX_cedillo_tension
+		}
+		swap_ideas = {
+			remove_idea = MEX_cedillo_tension
+			add_idea = MEX_cedillo_tension_2
+		}
+	}
+}
+update_operation_ai = {
+	# old target is no longer relevant
+	if = {
+		limit = {
+			NOT = { check_variable = { generic_operation_target = 0 } }
+			var:generic_operation_target = {
+				OR = {
+					exists = no
+					has_capitulated = yes
+					is_ally_with = PREV
+				}
+			}
+		}
+		set_variable = { generic_operation_target = 0 }
+	}
+
+
+	# pick an operation target
+	get_highest_scored_country = {
+		scorer = ai_generic_operation_target_scorer
+		var = generic_operation_target
+	}
+	
+	# this variable will be our limiting factor for actually doing operations
+	
+	# check if we have any operatives that are captured
+	# find the captor so they can be rescued
+	set_temp_variable = { captor = 0 }
+	
+	every_operative = {
+		limit = { is_operative_captured = yes }
+		add_to_temp_variable = { min_needed_operative_for_operations = 1 }
+		if = {
+			limit = { check_variable = { captor = 0 } }
+			set_temp_variable = { captor = operative_captor }
+		}
+	}
+	set_variable = { rescue_operative_from = 0 }
+	if = {
+		limit = { NOT = { check_variable = { captor = 0 } } }
+		set_variable = { rescue_operative_from = captor } # used in ai strat generic_operation_ai_rescue
+		add_to_temp_variable = { min_needed_operative_for_operations = 2 }
+	}
+	
+	
+	# if we have too few of operatives clear operative target
+	set_temp_variable = { t = min_needed_operative_for_operations }
+	subtract_from_temp_variable = { t = 2 }
+	if = {
+		limit = { num_of_operatives < t }
+		set_variable = { generic_operation_target = 0 }
+	}
+	
+	if = {
+		# if found a target pick an operation
+		limit = { 
+			NOT = { check_variable = { generic_operation_target = 0 } }
+			# if we are already preparing for current one no need to recalc
+			OR = {
+				check_variable = { generic_operation_type_to_run = 0 }
+				NOT = { 
+					is_preparing_operation = {
+						target = var:generic_operation_target
+						operation = var:generic_operation_type_to_run
+					}
+				}
+			}
+		}
+		
+		if = {
+			limit = { 
+				num_of_operatives > min_needed_operative_for_operations
+			}
+			
+			# these two arrays are filled with operation tokens and corresponding score
+			clear_temp_array = operation_types
+			clear_temp_array = operation_types_scores
+			
+			# civilian infiltration
+			set_temp_variable = { score = 100 }
+			add_to_temp_array = { operation_types = token:operation_infiltrate_civilian }
+			add_to_temp_array = { operation_types_scores = score }
+			
+			# army infiltration
+			set_temp_variable = { score = 50 }
+			add_to_temp_variable = { score = num_armies }
+			clamp_temp_variable = { var = score max = 180 }
+			add_to_temp_array = { operation_types = token:operation_infiltrate_armed_forces_army }
+			add_to_temp_array = { operation_types_scores = score }
+			
+			# air infiltration
+			set_temp_variable = { score = 50 }
+			add_to_temp_variable = { t = num_deployed_planes }
+			divide_temp_variable = { t = 10 }
+			add_to_temp_variable = { score = t }
+			clamp_temp_variable = { var = score max = 180 }
+			add_to_temp_array = { operation_types = token:operation_infiltrate_armed_forces_airforce }
+			add_to_temp_array = { operation_types_scores = score }
+			
+			# navy infiltration
+			var:generic_operation_target = {
+				if = {
+					limit = { 
+						has_navy_size = { size > 0 } 
+						PREV = {
+							has_navy_size = { size > 0 } 
+						}
+					}
+					set_temp_variable = { score = num_ships }
+					
+					set_temp_variable = { t = num_ships_with_type@carrier }
+					multiply_temp_variable = { t = 20 }
+					add_to_temp_variable = { score = t }
+					
+					set_temp_variable = { t = num_ships_with_type@capital }
+					multiply_temp_variable = { t = 10 }
+					add_to_temp_variable = { score = t }
+					
+					clamp_temp_variable = { var = score max = 180 }
+					
+					add_to_temp_array = { operation_types = token:operation_infiltrate_armed_forces_navy }
+					add_to_temp_array = { operation_types_scores = score }
+				}
+			}
+			
+			for_each_loop = {
+				array = operation_types
+				
+				# randomization by half
+				set_temp_variable = { t = random }
+				multiply_temp_variable = { t = 0.5 }
+				add_to_temp_variable = { t = 0.5 }
+				multiply_temp_variable = { operation_types_scores^i = t }
+				
+				if = {
+					limit = {
+						num_finished_operations = {
+							target = var:generic_operation_target
+							operation = var:v
+							value > 0
+						}
+						
+						# lower score if we have a finished operation
+						multiply_temp_variable = { operation_types_scores^i = 0.5 }
+								
+						# cancel if more than 1 is executed
+						if = {
+							limit = {
+								num_finished_operations = {
+									target = var:generic_operation_target
+									operation = var:v
+									value > 1
+								}
+								
+								set_temp_variable = { operation_types_scores^i = -1 }
+							}
+						}
+					}
+				}
+			}
+			
+			# highest score will be selected
+			find_highest_in_array = {
+				array = operation_types_scores
+			}
+			if = {
+				limit = { check_variable = { v > 0 } }
+				set_variable = { generic_operation_type_to_run = operation_types^i } # used in ai strat generic_operation_ai
+			}
+		}
+		else =
+		{
+			set_variable = { generic_operation_type_to_run = 0 }
+		}
+	}
+}
+#Add to scripted triggers if more levels of hyper inflation is added
+USA_depression_clear_all = {
+	remove_ideas = {
+		great_depression
+		great_depression_2
+		great_depression_3
+	}
+}
+
+#Important to put HIGHEST first
+USA_great_depression_level_up = {
+	# level 5 not relevant. Cannot go above.
+	custom_effect_tooltip = USA_great_depression_up_tt
+	if = {
+		limit = { has_idea = great_depression_2 }
+		swap_ideas = {
+			remove_idea = great_depression_2
+			add_idea = great_depression
+		}
+	}
+	else_if = {
+		limit = { has_idea = great_depression_3 }
+		swap_ideas = {
+			remove_idea = great_depression_3
+			add_idea = great_depression_2
+		}
+	}
+	
+}
+
+#Important to put LOWEST first
+USA_great_depression_level_down = {
+	if = {
+		limit = { has_idea = great_depression_3 }
+		custom_effect_tooltip = USA_great_depression_down_tt
+		remove_ideas = great_depression_3
+	}
+	if = {
+		limit = { has_idea = great_depression_2 }
+		custom_effect_tooltip = USA_great_depression_down_tt
+		swap_ideas = {
+			remove_idea = great_depression_2
+			add_idea = great_depression_3
+		}
+	}
+	if = {
+		limit = { has_idea = great_depression }
+		custom_effect_tooltip = USA_great_depression_down_tt
+		swap_ideas = {
+			remove_idea = great_depression
+			add_idea = great_depression_2
+		}
+	}
+}
+
+USA_congress_get_quorum = {
+	set_variable = { var = quorum_low value = senators_total }
+	multiply_variable = { var = quorum_low value = 0.4 }
+	set_variable = { var = quorum_medium value = senators_total }
+	multiply_variable = { var = quorum_medium value = 0.5 }
+	set_variable = { var = quorum_high value = senators_total }
+	multiply_variable = { var = quorum_high value = 0.6 }
+	round_variable = quorum_low 
+	round_variable = quorum_medium 
+	round_variable = quorum_high
+	USA_recalc_congress_icon_frames = yes
+}
+USA_congress_remove_state = {
+	custom_effect_tooltip = mtg_usa_congress_remove_state_tt
+	subtract_from_variable = { senators_total = 2 }
+	clamp_variable = { var = senators_support max = senators_total min = 0 }
+	USA_congress_get_quorum = yes
+	USA_recalc_congress_icon_frames = yes
+}
+USA_congress_add_state = {
+	custom_effect_tooltip = mtg_usa_congress_add_state_tt
+	add_to_variable = { senators_total = 2 }
+	add_to_variable = { senators_support = 2 }
+	USA_congress_get_quorum = yes
+	USA_recalc_congress_icon_frames = yes
+}
+USA_congress_small_opposition = {
+	custom_effect_tooltip = mtg_usa_congress_small_opposition_tt
+	hidden_effect = {
+		USA_senate_small_opposition = yes
+		USA_house_small_opposition = yes
+		
+	}
+}
+
+USA_senate_small_opposition = {
+	custom_effect_tooltip = mtg_usa_senate_small_opposition_tt
+	set_temp_variable = { temp_factor = random }
+	multiply_temp_variable = { temp_factor = -4 }
+	add_to_variable = { senators_support = temp_factor }
+	round_variable = senators_support
+	clamp_variable = { var = senators_support max = senators_total min = 0 }
+	USA_recalc_congress_icon_frames = yes
+}
+
+USA_house_small_opposition = {
+	custom_effect_tooltip = mtg_usa_house_small_opposition_tt
+	set_temp_variable = { temp_factor = random }
+	multiply_temp_variable = { temp_factor = -20 }
+	add_to_variable = { representatives_support = temp_factor }
+	round_variable = representatives_support
+	clamp_variable = { var = representatives_support max = representatives_total min = 0 }
+	USA_recalc_congress_icon_frames = yes
+}
+USA_senate_small_support = {
+	custom_effect_tooltip = mtg_usa_senate_small_support_tt
+	set_temp_variable = { temp_factor = random }
+	multiply_temp_variable = { temp_factor = 5 }
+	add_to_variable = { senators_support = temp_factor }
+	round_variable = senators_support
+	clamp_variable = { var = senators_support max = senators_total min = 0 }
+	USA_recalc_congress_icon_frames = yes
+}
+
+USA_house_small_support = {
+	custom_effect_tooltip = mtg_usa_house_small_support_tt
+	set_temp_variable = { temp_factor = random }
+	multiply_temp_variable = { temp_factor = 25 }
+	clamp_temp_variable = { var = temp_factor max = 25 min = 10 }
+	add_to_variable = { representatives_support = temp_factor }
+	round_variable = representatives_support
+	clamp_variable = { var = representatives_support max = representatives_total min = 0 }
+	USA_recalc_congress_icon_frames = yes
+}
+
+USA_senate_medium_opposition = {
+	custom_effect_tooltip = mtg_usa_senate_medium_opposition_tt
+	set_temp_variable = { temp_factor = random }
+	multiply_temp_variable = { temp_factor = -8 }
+	clamp_temp_variable = { var = temp_factor max = -3 min = -8 }
+	add_to_variable = { senators_support = temp_factor }
+	round_variable = senators_support
+	clamp_variable = { var = senators_support max = senators_total min = 0 }
+	USA_recalc_congress_icon_frames = yes
+}
+
+USA_house_medium_opposition = {
+	custom_effect_tooltip = mtg_usa_house_medium_opposition_tt
+	set_temp_variable = { temp_factor = random }
+	multiply_temp_variable = { temp_factor = -40 }
+	clamp_temp_variable = { var = temp_factor max = -20 min = -40 }
+	add_to_variable = { representatives_support = temp_factor }
+	round_variable = representatives_support
+	clamp_variable = { var = representatives_support max = representatives_total min = 0 }
+	USA_recalc_congress_icon_frames = yes
+}
+USA_senate_medium_support = {
+	custom_effect_tooltip = mtg_usa_senate_medium_support_tt
+	set_temp_variable = { temp_factor = random }
+	multiply_temp_variable = { temp_factor = 10 }
+	clamp_temp_variable = { var = temp_factor max = 10 min = 5 }
+	add_to_variable = { senators_support = temp_factor }
+	round_variable = senators_support
+	clamp_variable = { var = senators_support max = senators_total min = 0 }
+	USA_recalc_congress_icon_frames = yes
+}
+
+USA_house_medium_support = {
+	custom_effect_tooltip = mtg_usa_house_medium_support_tt
+	set_temp_variable = { temp_factor = random }
+	multiply_temp_variable = { temp_factor = 50 }
+	clamp_temp_variable = { var = temp_factor max = 50 min = 20 }
+	add_to_variable = { representatives_support = temp_factor }
+	round_variable = representatives_support
+	clamp_variable = { var = representatives_support max = representatives_total min = 0 }
+	USA_recalc_congress_icon_frames = yes
+}
+USA_senate_large_opposition = {
+	custom_effect_tooltip = mtg_usa_senate_large_opposition_tt
+	set_temp_variable = { temp_factor = random }
+	multiply_temp_variable = { temp_factor = -25 }
+	clamp_temp_variable = { var = temp_factor max = 25 min = -10 }
+	add_to_variable = { senators_support = temp_factor }
+	round_variable = senators_support
+	clamp_variable = { var = senators_support max = senators_total min = 0 }
+	USA_recalc_congress_icon_frames = yes
+}
+
+USA_house_large_opposition = {
+	custom_effect_tooltip = mtg_usa_house_large_opposition_tt
+	set_temp_variable = { temp_factor = random }
+	multiply_temp_variable = { temp_factor = -100 }
+	clamp_temp_variable = { var = temp_factor max = -50 min = -100 }
+	add_to_variable = { representatives_support = temp_factor }
+	round_variable = representatives_support
+	clamp_variable = { var = representatives_support max = representatives_total min = 0 }
+	USA_recalc_congress_icon_frames = yes
+}
+USA_senate_large_support = {
+	custom_effect_tooltip = mtg_usa_senate_large_support_tt
+	set_temp_variable = { temp_factor = random }
+	multiply_temp_variable = { temp_factor = 30 }
+	clamp_temp_variable = { var = temp_factor max = 30 min = 15 }
+	add_to_variable = { senators_support = temp_factor }
+	round_variable = senators_support
+	clamp_variable = { var = senators_support max = senators_total min = 0 }
+	USA_recalc_congress_icon_frames = yes
+}
+
+USA_house_large_support = {
+	custom_effect_tooltip = mtg_usa_house_large_support_tt
+	set_temp_variable = { temp_factor = random }
+	multiply_temp_variable = { temp_factor = 125 }
+	clamp_temp_variable = { var = temp_factor max = 125 min = 80 }
+	add_to_variable = { representatives_support = temp_factor }
+	round_variable = representatives_support
+	clamp_variable = { var = representatives_support max = representatives_total min = 0 }
+	USA_recalc_congress_icon_frames = yes
+}
+USA_congress_medium_opposition = {
+	custom_effect_tooltip = mtg_usa_congress_medium_opposition_tt
+	hidden_effect = {
+		USA_senate_medium_opposition = yes
+		USA_house_medium_opposition = yes
+		
+	}
+}
+
+USA_congress_large_opposition = {
+	custom_effect_tooltip = mtg_usa_congress_large_opposition_tt
+	hidden_effect = {
+		USA_senate_large_opposition = yes
+		USA_house_large_opposition = yes
+		
+	}
+}
+USA_congress_small_support = {
+	custom_effect_tooltip = mtg_usa_congress_small_support_tt
+	hidden_effect = {
+		USA_senate_small_support = yes
+		USA_house_small_support = yes
+		
+	}
+}
+
+USA_congress_medium_support = {
+	custom_effect_tooltip = mtg_usa_congress_medium_support_tt
+	hidden_effect = {
+		USA_senate_medium_support = yes
+		USA_house_medium_support = yes
+		
+	}
+}
+USA_congress_large_support = {
+	custom_effect_tooltip = mtg_usa_congress_large_support_tt
+	hidden_effect = {
+		USA_senate_large_support = yes
+		USA_house_large_support = yes
+		
+	}
+}
+USA_election_senate = {
+	set_variable = { var = senators_for_reelection value = senators_total } #not temp because needed for events
+	multiply_variable = { senators_for_reelection = 0.3 }
+	multiply_variable = { senators_for_reelection = election_factor }
+	add_to_variable = { senators_support = senators_for_reelection }
+	round_variable = senators_support
+	round_variable = senators_for_reelection
+	set_variable = { sen_loc = senators_for_reelection }
+	if = {
+		limit = {
+			check_variable = { sen_loc < 0 }
+		}
+		multiply_variable = { sen_loc = -1 }
+	}
+	clamp_variable = { var = senators_support max = senators_total min = 0 }
+	USA_recalc_congress_icon_frames = yes
+}
+USA_election_house = {
+	set_variable = { var = representatives_for_reelection value = representatives_total } #not temp because needed for events
+	multiply_variable = { representatives_for_reelection = 0.5 }
+	multiply_variable = { representatives_for_reelection = election_factor }
+	set_variable = { representatives_support = representatives_total }
+	multiply_variable = { representatives_support = 0.5 }
+	add_to_variable = { representatives_support = representatives_for_reelection }
+	round_variable = representatives_support
+	round_variable = representatives_for_reelection
+	set_variable = { ror_loc = representatives_for_reelection }
+	if = {
+		limit = {
+			check_variable = { ror_loc < 0 }
+		}
+		multiply_variable = { ror_loc = -1 }
+	}
+	clamp_variable = { var = senators_support max = representatives_total min = 0 }
+	USA_recalc_congress_icon_frames = yes
+}
+USA_recalc_congress_icon_frames = {
+	
+	set_temp_variable = { senators_temp = senators_support }
+	divide_temp_variable = { senators_temp = senators_total }
+	multiply_temp_variable = { senators_temp = 21 }
+	if = {
+		limit = { check_variable = { senators_temp > 0 } }
+		clamp_temp_variable = {
+			var = senators_temp
+			min = 1
+			max = 21
+		}
+	}
+	else = {
+		set_temp_variable = { senators_temp = 1 }
+	}
+	set_variable = { current_senate_icon_frame = senators_temp }
+
+	set_temp_variable = { house_temp = representatives_support }
+	divide_temp_variable = { house_temp = representatives_total }
+	multiply_temp_variable = { house_temp = 21 }
+	if = {
+		limit = { check_variable = { house_temp > 0 } }
+		clamp_temp_variable = {
+			var = house_temp
+			min = 1
+			max = 21
+		}
+	}
+	else = {
+		set_temp_variable = { house_temp = 1 }		
+	}
+	set_variable = { current_house_icon_frame = house_temp }
+}
+USA_calc_stars = {
+	if = {
+		limit = {
+			has_cosmetic_tag = USA_50
+		}
+		set_cosmetic_tag = USA_51
+	}
+	else_if = {
+		limit = {
+			has_cosmetic_tag = USA_49
+		}
+		set_cosmetic_tag = USA_50
+	}
+	else = {
+		set_cosmetic_tag = USA_49
+	}
+}
+# Reduce De Crisisjaren
+HOL_de_crisisjaren_level_down = {
+	if = {
+		limit = {
+			has_idea = HOL_de_crisisjaren_1
+		}
+		remove_ideas = HOL_de_crisisjaren_1
+	}
+	else_if = {
+		limit = {
+			has_idea = HOL_de_crisisjaren_2
+		}
+		swap_ideas = {
+			remove_idea = HOL_de_crisisjaren_2
+			add_idea = HOL_de_crisisjaren_1
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = HOL_de_crisisjaren_3
+		}
+		swap_ideas = {
+			remove_idea = HOL_de_crisisjaren_3
+			add_idea = HOL_de_crisisjaren_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = HOL_de_crisisjaren_4
+		}
+		swap_ideas = {
+			remove_idea = HOL_de_crisisjaren_4
+			add_idea = HOL_de_crisisjaren_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = HOL_de_crisisjaren_5
+		}
+		swap_ideas = {
+			remove_idea = HOL_de_crisisjaren_5
+			add_idea = HOL_de_crisisjaren_4
+		}
+	}
+}
+#Important to put HIGHEST first
+GER_mefo_bills_level_up = {
+	if = {
+		limit = { has_idea = GER_mefo_bills_17 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_17
+			add_idea = GER_mefo_bills_18
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_16 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_16
+			add_idea = GER_mefo_bills_17
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_15 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_15
+			add_idea = GER_mefo_bills_16
+		}		
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_14 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_14
+			add_idea = GER_mefo_bills_15
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_13 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_13
+			add_idea = GER_mefo_bills_14
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_12 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_12
+			add_idea = GER_mefo_bills_13
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_11 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_11
+			add_idea = GER_mefo_bills_12
+		}		
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_10 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_10
+			add_idea = GER_mefo_bills_11
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_9 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_9
+			add_idea = GER_mefo_bills_10
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_8 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_8
+			add_idea = GER_mefo_bills_9
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_7 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_7
+			add_idea = GER_mefo_bills_8
+		}		
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_6 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_6
+			add_idea = GER_mefo_bills_7
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_5 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_5
+			add_idea = GER_mefo_bills_6
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_4 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_4
+			add_idea = GER_mefo_bills_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_3 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_3
+			add_idea = GER_mefo_bills_4
+		}		
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_2 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_2
+			add_idea = GER_mefo_bills_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_1 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_1
+			add_idea = GER_mefo_bills_2
+		}
+	}
+}
+
+#Important to put HIGHEST first
+GER_remove_mefo_bills = {
+	if = {
+		limit = { has_idea = GER_mefo_bills_1 }
+		remove_ideas = GER_mefo_bills_1
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_2 }
+		remove_ideas = GER_mefo_bills_2
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_3 }
+		remove_ideas = GER_mefo_bills_3
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_4 }
+		remove_ideas = GER_mefo_bills_4
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_5 }
+		remove_ideas = GER_mefo_bills_5
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_6 }
+		remove_ideas = GER_mefo_bills_6
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_7 }
+		remove_ideas = GER_mefo_bills_7
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_8 }
+		remove_ideas = GER_mefo_bills_8
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_9 }
+		remove_ideas = GER_mefo_bills_9
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_10 }
+		remove_ideas = GER_mefo_bills_10
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_11 }
+		remove_ideas = GER_mefo_bills_11
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_12 }
+		remove_ideas = GER_mefo_bills_12
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_13 }
+		remove_ideas = GER_mefo_bills_13
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_14 }
+		remove_ideas = GER_mefo_bills_14
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_15 }
+		remove_ideas = GER_mefo_bills_15
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_16 }
+		remove_ideas = GER_mefo_bills_16
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_17 }
+		remove_ideas = GER_mefo_bills_17
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_18 }
+		remove_ideas = GER_mefo_bills_18
+	}
+}
+
+# Like the level up effect except it runs in reverse
+# For use when annexing the gold reserves of Austria, Czechoslovakia and Yugoslavia
+
+GER_mefo_bills_level_down = {
+	if = {
+		limit = { has_idea = GER_mefo_bills_2 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_2
+			add_idea = GER_mefo_bills_1
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_3 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_3
+			add_idea = GER_mefo_bills_2
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_4 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_4
+			add_idea = GER_mefo_bills_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_5 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_5
+			add_idea = GER_mefo_bills_4
+		}		
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_6 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_6
+			add_idea = GER_mefo_bills_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_7 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_7
+			add_idea = GER_mefo_bills_6
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_8 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_8
+			add_idea = GER_mefo_bills_7
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_9 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_9
+			add_idea = GER_mefo_bills_8
+		}		
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_10 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_10
+			add_idea = GER_mefo_bills_9
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_11 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_11
+			add_idea = GER_mefo_bills_10
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_12 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_12
+			add_idea = GER_mefo_bills_11
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_13 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_13
+			add_idea = GER_mefo_bills_12
+		}		
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_14 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_14
+			add_idea = GER_mefo_bills_13
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_15 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_15
+			add_idea = GER_mefo_bills_14
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_16 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_16
+			add_idea = GER_mefo_bills_15
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_17 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_17
+			add_idea = GER_mefo_bills_16
+		}		
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_18 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_18
+			add_idea = GER_mefo_bills_17
+		}
+	}
+}
+
+give_SOV_armor_research_bonuses = { #this effect is run for the Soviets!
+	if = {
+		limit = {
+			NOT = {
+				has_dlc = "No Step Back"
+			}
+		}
+		add_tech_bonus = {
+			name = med_armor_bonus
+			ahead_reduction = 2
+			category = cat_medium_armor
+		}
+		add_tech_bonus = {
+			name = armor_bonus
+			bonus = 1.0
+			uses = 1
+			category = armor
+		}
+	}
+	if = { #double if because history files don't like else and this effect is run in the Soviet history file
+		limit = {
+			has_dlc = "No Step Back"
+		}
+		create_equipment_variant = {
+			name = "A-20"
+			type = medium_tank_chassis_1
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_small_cannon_2
+				turret_type_slot = tank_medium_two_man_tank_turret
+				suspension_type_slot = tank_christie_suspension
+				armor_type_slot = tank_welded_armor
+				engine_type_slot = tank_diesel_engine
+				special_type_slot_1 = sloped_armor
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 8
+				tank_nsb_armor_upgrade = 2
+			}
+			icon = "gfx/interface/technologies/SOV_basic_main_tank.dds"
+		}
+		create_equipment_variant = {
+			name = "KV-1"
+			type = heavy_tank_chassis_1
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_medium_cannon
+				turret_type_slot = tank_heavy_three_man_tank_turret
+				suspension_type_slot = tank_torsion_bar_suspension
+				armor_type_slot = tank_welded_armor
+				engine_type_slot = tank_diesel_engine		
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 10
+				tank_nsb_armor_upgrade = 9
+			}
+			icon = "gfx/interface/technologies/SOV_imp_heavy_tank.dds"
+		}
+		add_tech_bonus = {
+			name = armor_bonus
+			bonus = 1.0
+			uses = 2
+			category = armor
+		}
+	}
 }
