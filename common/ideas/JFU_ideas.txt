@@ -65,7 +65,7 @@ ideas = {
 			}
 		
 		}
-		volunteers_100 = {
+		volunteers_40 = {
 			allowed = {
 				always = no
 			}
@@ -75,7 +75,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				send_volunteer_size = 99
+				send_volunteer_size = 49
 				send_volunteer_divisions_required = -0.99
 			}
 		

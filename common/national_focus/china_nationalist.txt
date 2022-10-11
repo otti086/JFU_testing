@@ -120,7 +120,6 @@
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
 			add_war_support = 0.1
-			CHI_hyper_inflation_level_up = yes
 		}
 	}
 
@@ -159,7 +158,6 @@
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
 			add_war_support = 0.1
-			CHI_hyper_inflation_level_up = yes
 		}
 	}
 
@@ -195,7 +193,6 @@
 
 		search_filters = { FOCUS_FILTER_CHI_INFLATION }
 		completion_reward = {
-			CHI_hyper_inflation_level_down = yes 
 		}
 	}
 
@@ -270,7 +267,6 @@
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {			
 			add_war_support = 0.1
-			CHI_hyper_inflation_level_up = yes
 		}
 	}
 
@@ -310,7 +306,6 @@
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
 			add_war_support = 0.1
-			CHI_hyper_inflation_level_up = yes
 		}
 	}
 
@@ -350,7 +345,6 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_research_slot = 1
-			CHI_hyper_inflation_level_up = yes
 		}
 	}
 
@@ -1706,7 +1700,6 @@
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			CHI_hyper_inflation_level_up = yes
 			custom_effect_tooltip = available_industrial_concern
 			show_ideas_tooltip = CHI_mining_commission			
 		}
@@ -1743,7 +1736,6 @@
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			CHI_hyper_inflation_level_up = yes
 			615 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
@@ -1784,7 +1776,6 @@
 		available_if_capitulated = no
 
 		complete_tooltip = {
-			CHI_hyper_inflation_level_up = yes
 			random_state = {
 				limit = {
 					has_state_flag = CHI_develop_the_hanyan_arsenal_AF
@@ -1800,7 +1791,6 @@
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			CHI_hyper_inflation_level_up = yes
 			random_owned_controlled_state = {
 				prioritize = { 620 }
 				limit = {
@@ -1883,7 +1873,6 @@
 
 		search_filters = { FOCUS_FILTER_CHI_INFLATION }
 		completion_reward = {
-			CHI_hyper_inflation_level_down = yes
 		}
 	}
 
@@ -1947,7 +1936,6 @@
 
 		search_filters = { FOCUS_FILTER_CHI_INFLATION }
 		completion_reward = {
-			CHI_hyper_inflation_level_down = yes
 		}
 	}
 

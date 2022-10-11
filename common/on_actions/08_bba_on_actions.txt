@@ -3,20 +3,6 @@ on_actions = {
 	on_startup = {
 		# Launch Ethipoian BoP events
 		effect = {
-			IF = {
-				limit = {
-					date < 1939.1.1
-				}
-				ETH = {
-					country_event = {
-						id = BBA_ethiopia_balance_of_power_events.50
-						days = 35 
-						random_days = 35
-					}
-				}
-			}
-		} 
-		effect = {
 			#Albania - Oil concessions to Italy
 			if = {
 				limit = {
@@ -555,35 +541,7 @@ on_actions = {
 	}
 	#ROOT is winner #FROM is loser
 	on_peaceconference_ended = {
-		effect = {
-			IF = {
-				limit = { 
-					OR = {
-						check_variable = { ETH.host_nation = ROOT }
-						ROOT = { 
-							OR = {
-								tag = ETH
-								is_in_faction_with = ETH  			
-							}
-						} 
-					}					
-				}
-				ETH_transfer_promised_states = yes 
-			}
-		}
 		# Drop AOI cosmetic tag to set correct flag
-		effect = {
-			if = {
-				limit = {
-					tag = ETH
-					FROM = {
-						original_tag = ITA
-					}
-					is_in_faction = no
-				}
-				set_country_flag = ETH_forced_ITA_peace_achievement
-			}
-		}
 
 		effect = { #Achievement This Time it will Stick
 			if = {
@@ -605,35 +563,6 @@ on_actions = {
 	}
 	#FROM is war target
   	#ROOT is country declaring war
-	on_declare_war = {
-		effect = {
-			IF = {
-				limit = {
-					ROOT = {
-						NOT = { has_dynamic_modifier = {modifier = african_union_defense_agreement_modifier} }
-					}
-					FROM = { has_dynamic_modifier =  {modifier = african_union_defense_agreement_modifier }}
-				}
-				set_variable = {
-					var = global.org_africa_attacked_country
-					value = FROM
-				}
-				every_other_country = {
-					limit = {
-						has_dynamic_modifier = {
-							modifier = african_union_defense_agreement_modifier
-						}
-						NOT = { has_war_with = FROM }
-						NOT = { tag = FROM }
-					}
-					country_event = {
-						id = BBA_african_union_events.18
-						hours = 1
-					}
-				}
-			}
-		}
-	}
 
 	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
 	on_state_control_changed = {
@@ -879,16 +808,6 @@ on_actions = {
 						type = liberate_wargoal
 					}
 				}				
-			}
-		}
-
-		# Give promised states to Ethiopia
-		effect = {
-			IF = {
-				limit = {
-					ROOT = { tag = ETH }
-				}
-				ETH_transfer_promised_states = yes 
 			}
 		}
 	}

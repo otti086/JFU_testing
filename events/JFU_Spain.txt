@@ -49,7 +49,7 @@ country_event = {
 		custom_effect_tooltip = nationalists_chosen
 		remove_ideas = SPR_military_disloyalty
 		remove_ideas = SPR_political_violence
-		SPR_clr_national_strikes = yes
+		remove_ideas = SPR_national_strikes_3
 		effect_tooltip = {
 			add_timed_idea = { idea = SPA_death_before_surrender days = 900 }
 			set_party_name = { ideology = neutrality long_name = SPR_neutrality_military_junta_party_long name = SPR_neutrality_military_junta_party }
