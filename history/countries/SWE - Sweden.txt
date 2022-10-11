@@ -9,7 +9,7 @@ if = {
 	}
 }
 
-set_research_slots = 3
+set_research_slots = 1
 
 add_ideas = {
 	neutrality_idea
@@ -93,7 +93,6 @@ set_popularities = {
 
 
 set_convoys = 25
-set_stability = 0.9
 
 
 recruit_character = SWE_per_albin_hansson

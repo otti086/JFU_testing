@@ -200,7 +200,6 @@ economy_decisions = {
 		days_re_enable = 90
 
 		complete_effect = {
-			CHI_hyper_inflation_level_down = yes
 			add_stability = -0.03
 			add_war_support = -0.03
 		}		
