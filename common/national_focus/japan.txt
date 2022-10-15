@@ -337,13 +337,13 @@
 						}
 					}
 				}
+			}
 			declare_war_on_all_allies = yes
 			if = { limit = { country_exists = MAN }	MAN = { add_to_war = { targeted_alliance = JAP enemy = ENG } } }
 			if = { limit = { country_exists = SIA }	SIA = { add_to_war = { targeted_alliance = JAP enemy = ENG } } }
 			add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 180 }
 			MAN = { add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 180 } }
 			SIA = { add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 180 } } 			
-			}
 		}
 	}
 	focus = {
