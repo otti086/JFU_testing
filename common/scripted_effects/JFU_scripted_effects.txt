@@ -506,6 +506,7 @@ JFU_vichy_france_2 = {
 			#	limit = { FRA = { check_variable = { FRA_legitimacy 	< 20 } }  }
 			#	transfer_state = 772				
 			#}
+		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 15000 }
 	}
 	FRA = {
 		if = { 

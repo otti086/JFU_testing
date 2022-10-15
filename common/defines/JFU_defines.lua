@@ -13,6 +13,7 @@ NDefines.NMilitary.AIR_EQUIPMENT_RAMP_COST = 0;					-- CHANGED AS EVERYTHING IS 
 NDefines.NMilitary.GARRISON_ORDER_ARMY_CAP_FACTOR = 1.0;			-- armies gets increased cap when they are garrisoned
 NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 72;			--vanilla 24 (removed garrison cap factor) how many divisions a corps commander is limited to. 0 = inf, < 0 = blocked
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 72;			--vanilla 24 (removed garrison cap factor) how many divisions a field marshall is limited to. 0 = inf, < 0 = blocked
+
 NDefines.NCountry.POPULATION_YEARLY_GROWTH_BASE = 0.0;
 NDefines.NCountry.BASE_FUEL_CAPACITY = 100000;
 NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 200;
@@ -20,6 +21,11 @@ NDefines.NCountry.SPECIAL_FORCES_CAP_BASE = 0.1;
 NDefines.NCountry.SCORCHED_EARTH_STATE_COST = 1000;	
 
 NDefines.NPolitics.LEADER_TRAITS_XP_SHOW = 0.01;
+
+NDefines.NResistance.RESISTANCE_TARGET_BASE = 25.0;	
+NDefines.NRESISTANCE_TARGET_MODIFIER_OCCUPIED_CAPITULATED = 5.0; -- resistance target modifier when the enemy is capitulated
+NDefines.NRESISTANCE_TARGET_MODIFIER_OCCUPIED_IS_EXILE_MIN = 1.0;   -- min & max resistance target modifier resistance target modifier for exile countries. interpolated using legitimacy
+NDefines.NRESISTANCE_TARGET_MODIFIER_OCCUPIED_IS_EXILE_MAX = 10.0;
 
 NDefines.NBuildings.MAX_SHARED_SLOTS = 50
 NDefines.NBuildings.OWNER_CHANGE_EXTRA_SHARED_SLOTS_FACTOR = 1.0;
@@ -46,6 +52,7 @@ NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN = 5;
 NDefines.NAir.FUEL_COST_MULT = 0.25; -- vanilla 0.35 fuel multiplier for all air missions
 NDefines.NAir.AIR_DEPLOYMENT_DAYS = 0;
 NDefines.NAir.SUPPLY_NEED_FACTOR = 0.14;
+NDefines.NAir.COMBAT_MAX_WINGS_AT_ONCE = 10000;
 NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane to create a mission
 	0.0, -- AIR_SUPERIORITY
 	0.0, -- CAS
