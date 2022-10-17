@@ -136,27 +136,6 @@ focus_tree = {
 					}
 				}
 			}
-			64 = {
-				add_building_construction = {
-				type = anti_air_building
-				level = 5
-				instant_build = yes
-				}
-			}
-			60 = {
-				add_building_construction = {
-				type = anti_air_building
-				level = 5
-				instant_build = yes
-				}
-			}
-			65 = {
-				add_building_construction = {
-				type = anti_air_building
-				level = 5
-				instant_build = yes
-				}
-			}
 		}
 	}
 
@@ -890,10 +869,10 @@ focus_tree = {
 					has_full_control_of_state = 65
 				}
 				65 = {
-					add_extra_state_shared_building_slots = 3
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = synthetic_refinery
-						level = 3
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -935,6 +914,12 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_kdf_wagen
 		cost = 10
+		bypass = {
+			has_game_rule = {
+				rule = JFU_Research_Rule
+				option = STARTING_RESEARCH_SLOTS
+			}	
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -1039,10 +1024,10 @@ focus_tree = {
 				add_ideas = war_economy
 			}
 			52_add = {
-				add_extra_state_shared_building_slots = 10
+				add_extra_state_shared_building_slots = 8
 				add_building_construction = {
 					type = arms_factory
-					level = 10
+					level = 8
 					instant_build = yes
 				}
 			}
@@ -1133,7 +1118,7 @@ focus_tree = {
 		}
 		allow_branch = {
 			has_game_rule = {
-				rule = JFU_DOWNTWIST_GAMECHANGES 
+				rule = JFU_pre_sets 
 				option = JFU_ALTERNATIVE_GS
 			}
 		}
@@ -1636,18 +1621,28 @@ focus_tree = {
 					technology = mechanised_infantry
 				}
 			}
-			add_tech_bonus = {
-				bonus = 1.0
-				uses = 2
-				technology = artillery2
-				technology = artillery3
-				technology = artillery4
-				technology = artillery5
-				technology = artillery2
-				technology = antitank2
-				technology = antitank3
-				technology = antitank4
-				technology = antitank5
+			if = { 
+				limit = {
+					NOT = {
+						has_game_rule = {
+							rule = JFU_pre_sets
+							option = COMPETITIVE_JFU
+						}
+					}		
+				}
+				add_tech_bonus = {
+					bonus = 1.0
+					uses = 2
+					technology = artillery2
+					technology = artillery3
+					technology = artillery4
+					technology = artillery5
+					technology = artillery2
+					technology = antitank2
+					technology = antitank3
+					technology = antitank4
+					technology = antitank5
+				}
 			}
 		}
 	}
@@ -1877,7 +1872,7 @@ focus_tree = {
 			if = {
 				limit ={
 					has_game_rule = {
-					rule = JFU_DOWNTWIST_GAMECHANGES
+					rule = JFU_pre_sets
 					option = JFU_ALTERNATIVE_GS
 					}
 				}
