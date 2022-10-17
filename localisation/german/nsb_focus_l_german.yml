@@ -1501,7 +1501,7 @@
 
  SOV_modify_the_politburo_ns_intro:0 "§Y$SOV_the_politburo_good_dynamic_modifier$§! modifizieren um"
  SOV_the_centre_ns_tt:0 "§Y$SOV_the_politburo_good_dynamic_modifier$§! hinzufügen. Verleiht (Tägliche Unterstützung des Kommunismus: §G+0,05§!) \n\n"
- SOV_socialism_in_one_country_ns_tt:0 "$SOV_modify_the_politburo_ns_intro$ \nVerteidigung gegen ideologische Abwanderung: §G+5,0%§! \nTägliche Unterstützung des Kommunismus: §G+0,05§! \nVerteidigungskriegmalus-Stabilitätsmodifikator: §G+25,00%§! \n\n"
+ SOV_socialism_in_one_country_ns_tt:0 "$SOV_modify_the_politburo_ns_intro$ \nVerteidigung gegen ideologische Abwanderung: §G+5,0%§! \nTägliche Unterstützung des Kommunismus: §G+0,05§! \nVerteidigungskriegmalus-Stabilitätsmodifikator: §G+15,00%§! \n\n"
  SOV_the_stalin_constitution_ns_tt:0 "$SOV_modify_the_politburo_ns_intro$ \nVerteidigung gegen ideologische Abwanderung: §G+5,0%§! \nPolitischer Machtzuwachs: §G+5%§! \n\n"
  SOV_secure_the_administration_ns_tt:0 "$SOV_modify_the_politburo_ns_intro$ \nWirtschaftsgesetze-Kosten: §G-20%§! \nHandelsgesetze-Kosten: §G-20%§! \nWehrpflichtgesetze-Kosten: §G-20%§! \n\n"
  SOV_the_collectivization_process_ns_tt:1 "$SOV_modify_the_politburo_ns_intro$ \nKonsumgüterfabriken: §Y-2,0%§! \nMax. Fabriken in einem Staat: §G+10%§! \nBaugeschwindigkeit: §G+5,00%§! \n\n"

@@ -1501,7 +1501,7 @@
 
  SOV_modify_the_politburo_ns_intro:0 "Modify §Y$SOV_the_politburo_good_dynamic_modifier$§! by"
  SOV_the_centre_ns_tt:0 "Add §Y$SOV_the_politburo_good_dynamic_modifier$§!, which grants (Daily Communism Support: §G+0.05§!) \n\n"
- SOV_socialism_in_one_country_ns_tt:0 "$SOV_modify_the_politburo_ns_intro$ \nIdeology drift defense: §G+5.0%§! \nDaily Communism Support: §G+0.05§! \nDefensive War Penalty Stability Modifier: §G+25.00%§! \n\n"
+ SOV_socialism_in_one_country_ns_tt:0 "$SOV_modify_the_politburo_ns_intro$ \nIdeology drift defense: §G+5.0%§! \nDaily Communism Support: §G+0.05§! \nDefensive War Penalty Stability Modifier: §G+15.00%§! \n\n"
  SOV_the_stalin_constitution_ns_tt:0 "$SOV_modify_the_politburo_ns_intro$ \nIdeology drift defense: §G+5.0%§! \nPolitical Power Gain: §G+5%§! \n\n"
  SOV_secure_the_administration_ns_tt:0 "$SOV_modify_the_politburo_ns_intro$ \nEconomy Laws Cost: §G-20%§! \nTrade Laws Cost: §G-20%§! \nConscription Laws Cost: §G-20%§! \n\n"
  SOV_the_collectivization_process_ns_tt:1 "$SOV_modify_the_politburo_ns_intro$ \nConsumer Goods Factories: §Y-2.0%§! \nMax Factories in a State: §G+10%§! \nConstruction Speed: §G+5.00%§! \n\n"
