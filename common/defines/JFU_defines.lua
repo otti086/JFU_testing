@@ -27,7 +27,7 @@ NDefines.NRESISTANCE_TARGET_MODIFIER_OCCUPIED_CAPITULATED = 5.0; -- resistance t
 NDefines.NRESISTANCE_TARGET_MODIFIER_OCCUPIED_IS_EXILE_MIN = 1.0;   -- min & max resistance target modifier resistance target modifier for exile countries. interpolated using legitimacy
 NDefines.NRESISTANCE_TARGET_MODIFIER_OCCUPIED_IS_EXILE_MAX = 10.0;
 
-NDefines.NBuildings.MAX_SHARED_SLOTS = 50
+NDefines.NBuildings.MAX_SHARED_SLOTS = 50;
 NDefines.NBuildings.OWNER_CHANGE_EXTRA_SHARED_SLOTS_FACTOR = 1.0;
 
 NDefines.NCharacter.SPECIALIST_ADVISOR_MIN_RANK = 2;
@@ -52,7 +52,7 @@ NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN = 5;
 NDefines.NAir.FUEL_COST_MULT = 0.25; -- vanilla 0.35 fuel multiplier for all air missions
 NDefines.NAir.AIR_DEPLOYMENT_DAYS = 0;
 NDefines.NAir.SUPPLY_NEED_FACTOR = 0.14;
-NDefines.NAir.COMBAT_MAX_WINGS_AT_ONCE = 10000;
+NDefines.NAir.COMBAT_MAX_WINGS_AT_ONCE = 99999;
 NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane to create a mission
 	0.0, -- AIR_SUPERIORITY
 	0.0, -- CAS
@@ -102,7 +102,7 @@ NDefines.NProduction.MAX_MIL_FACTORIES_PER_LINE = 300;
 NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 200;
 NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 200;
 NDefines.NProduction.DEFAULT_MAX_NAV_FACTORIES_PER_LINE = 200;
-NDefines.NProduction.ANNEX_FIELD_EQUIPMENT_RATIO = 1	-- WAS 0.25 | Annex decisions should give all troops, but incase I screwed up here is this -Thrasymachus | How much equipment from deployed divisions will be transferred on annexation
+NDefines.NProduction.ANNEX_FIELD_EQUIPMENT_RATIO = 1;	-- WAS 0.25 | Annex decisions should give all troops, but incase I screwed up here is this -Thrasymachus | How much equipment from deployed divisions will be transferred on annexation
 
 NDefines.NAI.GIVE_STATE_CONTROL_MIN_CONTROLLED = 0;      
 NDefines.NAI.GIVE_STATE_CONTROL_MIN_CONTROLLED = 0 ;    
