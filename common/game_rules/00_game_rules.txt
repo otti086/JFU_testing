@@ -31,7 +31,6 @@ allow_release_nations = {
 		desc = "RULE_ALLOW_RELEASE_NATIONS_BLOCKED_DESC"
 	}
 }
-
 allow_licensing = {
 	name = "RULE_ALLOW_LICENSING"
 	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
@@ -43,7 +42,6 @@ allow_licensing = {
 		desc = "RULE_ALLOW_LICENSING_FREE_DESC"
 	}
 }
-
 allow_lend_lease = {
 	name = "RULE_ALLOW_LEND_LEASE"
 	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
@@ -54,7 +52,6 @@ allow_lend_lease = {
 		desc = "RULE_ALLOW_LEND_LEASE_LIMITED_DESC"
 	}
 }
-
 allow_volunteers = {
 	name = "RULE_ALLOW_VOLUNTEERS"
 	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
@@ -65,14 +62,6 @@ allow_volunteers = {
 		desc = "RULE_ALLOW_VOLUNTEERS_LIMITED_DESC"
 	}
 }
-
-###  ### #   # ###  ## ###  ##  #  #     ### ### #   # ###  #    ##  ### ###  ## 
-#  #  #  #   #  #  #    #  #  # ## #      #  #   ## ## #  # #   #  #  #  #   #   
-#  #  #   # #   #   #   #  #  # # ##      #  ##  # # # ###  #   ####  #  ##   #  
-#  #  #   # #   #    #  #  #  # #  #      #  #   #   # #    #   #  #  #  #     # 
-###  ###   #   ### ##  ###  ##  #  #      #  ### #   # #    ### #  #  #  ### ##  
-
-
 allow_paratroopers = {
 	name = "RULE_ALLOW_PARATROOPERS"
 	group = "RULE_GROUP_GAMEPLAY"
@@ -88,30 +77,24 @@ allow_paratroopers = {
 		desc = "RULE_ALLOW_PARATROOPERS_BLOCKED_DESC"
 	}
 }
-
- #     #  ###       #####   #######  #######  #######  ###  #     #   #####    #####  
- #     #   #       #     #  #           #        #      #   ##    #  #     #  #     # 
- #     #   #       #        #           #        #      #   # #   #  #        #       
- #     #   #        #####   #####       #        #      #   #  #  #  #  ####   #####  
- #     #   #             #  #           #        #      #   #   # #  #     #        # 
- #     #   #       #     #  #           #        #      #   #    ##  #     #  #     # 
-  #####   ###       #####   #######     #        #     ###  #     #   #####    #####  
-
-
-obsolete_focus_branches_visibility = {
-	name = "OBSOLETE_FOCUS_BRANCHES_VISIBILITY"
-	required_dlc = "No Step Back"
-	group = "RULE_GROUP_GENERAL_UI"
+JFU_pre_sets = {
+	name = "JFU Pre Sets"
+	Group = "PRE_SETS"
+	icon = "GFX_decision_hol_draw_up_staff_plans"
 	default = {
-		name = HIDE
-		text = "RULE_OPTION_HIDE"
-		desc = "RULE_OPTION_HIDE_DESC"
+		name = "VANILLA_JFU"
+		text = "Normal JFU"
+		desc = "This option disables all pre set rule you may configurate your game manually with game rules below"
 	}
 	option = {
-		name = SHOW
-		text = "RULE_OPTION_SHOW"
-		desc = "RULE_OPTION_SHOW_DESC_DESC"
-		allow_achievements = yes
+		name = "COMPETITIVE_JFU"
+		text = "competive JFU Preset"
+		desc = "this Pre set is a competitive/rebalanced version of JFU. IT inclused Pre grinded generals, closed ecos, free colabs and more"
+	}
+	option = {
+		name = "JFU_ALTERNATIVE_GS"
+		text = "Alternative Settings1"
+		desc = "Clicking this option will enable the Presettings for the Hearts of Iron IV Germany Server"
 	}
 }
 horst_manchukuo = {
@@ -277,76 +260,6 @@ JFU_pre_grinded_generals = {
 		desc = "all Nations have pregrinded Generals Volunteers are not allowed"
 	}
 }
-JFU_allow_strategic_bombers = {
-	name = "Strategic Bomber Settings"
-	group = "HORST_GROUPKEY"					
-	icon = "GFX_nukes"			
-	default = {	
-		name = "JFU_ENABLE_STRATEGIC_BOMBERS"
-		text = "enable Strats"
-		desc = "Strategic Bombers 1 and 2 are both researchable"	
-	}
-	option = {
-		name = "JFU_DISABLE_STRATEGIC_BOMBER2"
-		text = "disable Strats 2"
-		desc = "Strategic Bombers 2 are disabled. Strategic Bombers 1 are researchable"
-	}
-	option = {	
-		name = "JFU_DISABLE_STRATEGIC_BOMBERS"
-		text = "diable all Strats"
-		desc = "Strategic Bombers 1 and 2 are both disabled"	
-	}
-}
-JFU_nuke_options = {
-	name = "Nuke Settings"
-	group = "HORST_GROUPKEY"				
-	icon = "GFX_nukes"
-	default = {	
-		name = "JFU_ENABLE_NUKES"
-		text = "enalbe Nukes"
-		desc = "Clicking this option will enable Nuclear Research"	
-	}
-	option = {	
-		name = "JFU_DISABLE_NUKES"
-		text = "disable Nukes"
-		desc = "Clicking this option will diable Nuclear Research"
-	}
-}
-JFU_sub_options = {
-	name = "Sub Settings"
-	group = "HORST_GROUPKEY"					
-	icon = "GFX_submarine_operations"
-	default = {	
-		name = "JFU_ENABLE_ALL_SUB"
-		text = "enable all subs"
-		desc = "you can research all submarine technologies at any time"	
-	}
-	option = {	
-		name = "JFU_ENABLE_SUB3_ONLY"
-		text = "disable sub 4s"
-		desc = "Clicking this option will disable 1944 Submarines"	
-	}
-	option = {
-		name = "JFU_DISABLE_ALL_SUB"
-		text = "disable subs 3 and 4"
-		desc = "Clicking this option will disable 1940 and 1944 Submarines"	
-	}
-}
-JFU_snorkel_options = {
-	name = "Snorkel Settings"
-	group = "HORST_GROUPKEY"					
-	icon = "GFX_submarine_offensive"			
-	default = {	
-		name = "JFU_ENABLE_SNORKEL2"
-		text = "enable snorkel 2"
-		desc = "Clicking this option will enable Snorkel 2"	
-	}
-	option = {	
-		name = "JFU_DISABLE_SNORKEL2"
-		text = "disable snorkel 2"
-		desc = "Clicking this option will disable Snorkel 2"	
-	}
-}
 JFU_closed_eco_JAPAN = {
 	name = "Japan Eco "
 	group = "HORST_GROUPKEY"
@@ -379,38 +292,20 @@ JFU_closed_eco_SOVIET = {
 		desc = "Clicking this option will give Soviet closed eco"
 	}
 }
-JFU_kamikaze = {
- 	name = "Kamikaze Settings"
- 	group = "HORST_GROUPKEY"					
-	icon = "GFX_nukes"	
-	
+JFU_Research_Rule = {
+	name = "JFU Reseach Slot Settings"
+	group = "HORST_GROUPKEY"
+	icon = "RULE_GROUP_GENERAL_UI"
 	default = {
-	name = "JFU_KAMIKAZE_ON"
-	text = "JFU Kamikaze"
-	desc = "Clicking this option will use Vanilla Kamikaze"
+		name = "STARTING_RESEARCH_SLOTS"
+		text = "Standard JFU Settings"
+		desc = "Clicking this option Germany, Japan and Soviets get 1 more starting reseach slot but are locked to 5 slots."
 	}
-	
-	
 	option = {
-	name = "JFU_KAMIKAZE_OFF"
-	text = "JFU Kamikaze Alternative"
-	desc = "Clicking this option will give Japan 1940 heavy modified carrier naval bombers"
-	}
-}
-JFU_Modern_tank_options = {
-	name = "Modern Tanks Settings"
-	group = "HORST_GROUPKEY"				
-	icon = "GFX_nukes"
-	default = {	
-		name = "JFU_ENABLE_MODERN_TANKS"
-		text = "enable Modern Tanks"
-		desc = "Clicking this option will enable the Modern Tanks"	
-	}
-	option = {	
-		name = "JFU_DISABLE_MODERN_TANKS"
-		text = "disable Modern Tanks"
-		desc = "Clicking this option will diable Modern Tanks"
-	}
+		name = "MORE_RESEARCH_SLOTS"
+		text = "Alternative Settings"
+		desc = "Clicking this option Germany, Japan and Soviets get 1 more starting research slot but all except Soviets may get 6 slots maximum. UK may get 2 Slots throught foci"
+	}	
 }
 JFU_YUGO_COLAB = {
 	name = "Yugoslavia Colab Settings"
@@ -466,21 +361,6 @@ JFU_STRIKE_ON_NR = {
 		name = "JFU_ALTERNATIVE_NR"
 		text = "Alternative Settings"
 		desc = "Clicking this option will enable Strike on the Northern Resource Area"
-	}
-}
-JFU_DOWNTWIST_GAMECHANGES = {
-	name = "Presettings when played on specific servers"
-	group = "HORST_GROUPKEY"
-	icon = "RULE_GROUP_GENERAL_UI"
-	default = {
-		name = "JFU_STANDARD_VERSION"
-		text = "Standard JFU Version"
-		desc = "Clicking this option will keep the Standard JFU Settings"
-	}
-	option = {
-		name = "JFU_ALTERNATIVE_GS"
-		text = "Alternative Settings1"
-		desc = "Clicking this option will enable the Presettings for the Hearts of Iron IV Germany Server"
 	}
 }
 
