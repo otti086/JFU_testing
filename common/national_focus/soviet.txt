@@ -2186,19 +2186,13 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					has_government = communism
+					has_game_rule = {
+						rule = JFU_pre_sets
+						option = VANILLA_JFU
+					}
 				}
 				add_tech_bonus = {
 					name = SOV_soviet_artillery_tech_bonus_name_default
-					bonus = 0.75
-					uses = 2
-					ahead_reduction = 2
-					category = artillery
-				}
-			}
-			else  ={
-				add_tech_bonus = {
-					name = SOV_soviet_artillery_tech_bonus_name_alt
 					bonus = 0.75
 					uses = 2
 					ahead_reduction = 2
@@ -2428,25 +2422,12 @@ focus_tree = {
 			add_to_variable = { SOV_defense_industry_army_artillery_defence_factor = 0.05 }
 			custom_effect_tooltip = SOV_pc_of_mortar_armament_ns_tt
 
-			if = { #DEFAULT COMMIE
-				limit = {
-					has_government = communism
-				}
 				add_tech_bonus = {
 					name = SOV_pc_of_mortar_armament_name_default
-					bonus = 0.75
+					bonus = 1
 					uses = 2
 					category = artillery
 				}
-			}
-			else = { #ALT IDEOLOGY
-				add_tech_bonus = {
-					name = SOV_pc_of_mortar_armament_name_alt
-					bonus = 0.75
-					uses = 2
-					category = artillery
-				}
-			}
 
 			219 = {
 				if = {
@@ -4179,7 +4160,7 @@ focus_tree = {
 		completion_reward = {
 			add_to_variable = { SOV_the_politburo_communism_drift = 0.05 }
 			add_to_variable = { SOV_the_politburo_drift_defence_factor = 0.05 } 
-			add_to_variable = { SOV_the_politburo_defensive_war_stability_factor = 0.25 } 
+			add_to_variable = { SOV_the_politburo_defensive_war_stability_factor = 0.15 } 
 			custom_effect_tooltip = SOV_socialism_in_one_country_ns_tt
 
 			add_political_power = 25
@@ -5713,7 +5694,7 @@ focus_tree = {
 		available = {
 			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
 			is_subject = no
-			date > 1937.1.1
+			date > 1939.1.1
 		}
 
 		bypass = {
