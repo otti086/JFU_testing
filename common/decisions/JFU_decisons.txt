@@ -1,7 +1,35 @@
 
 
 
-JFU_decisions = {	
+JFU_decisions = {
+	"Artillery bonus" = {
+		icon = ger_reichskommissariats
+		fire_only_once = yes		
+		allowed = {	tag = GER }	
+		visible = {
+			has_game_rule = {
+				rule = JFU_pre_sets 
+				option = COMPETITIVE_JFU
+			}			
+		}
+		available = { date > 1939.1.1	}		
+		cost = 0
+		complete_effect = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				technology = artillery2
+				technology = artillery3
+				technology = artillery4
+				technology = artillery5
+				technology = artillery2
+				technology = antitank2
+				technology = antitank3
+				technology = antitank4
+				technology = antitank5
+				}
+		}
+	}	
 	"Fall Weiss" = { 
 		icon = ger_reichskommissariats
 		fire_only_once = yes		
@@ -127,7 +155,7 @@ JFU_decisions = {
 		}
 		visible = {
 			has_game_rule = {
-				rule = JFU_DOWNTWIST_GAMECHANGES 
+				rule = JFU_pre_sets 
 				option = JFU_ALTERNATIVE_GS
 			}			
 		}
@@ -151,7 +179,7 @@ JFU_decisions = {
 		}
 		visible = {
 			has_game_rule = {
-				rule = JFU_DOWNTWIST_GAMECHANGES 
+				rule = JFU_pre_sets 
 				option = JFU_ALTERNATIVE_GS
 			}			
 		}
@@ -175,7 +203,7 @@ JFU_decisions = {
 		}
 		visible = {
 			has_game_rule = {
-				rule = JFU_DOWNTWIST_GAMECHANGES 
+				rule = JFU_pre_sets 
 				option = JFU_ALTERNATIVE_GS
 			}			
 		}
@@ -199,7 +227,7 @@ JFU_decisions = {
 		}
 		visible = {
 			has_game_rule = {
-				rule = JFU_DOWNTWIST_GAMECHANGES 
+				rule = JFU_pre_sets 
 				option = JFU_ALTERNATIVE_GS
 			}			
 		}
@@ -223,7 +251,7 @@ JFU_decisions = {
 		}
 		visible = {
 			has_game_rule = {
-				rule = JFU_DOWNTWIST_GAMECHANGES 
+				rule = JFU_pre_sets 
 				option = JFU_ALTERNATIVE_GS
 			}			
 		}
@@ -1063,5 +1091,26 @@ JFU_decisions = {
 				news_event = { id = news.5002 }
 			}
 		}
+	}
+	"Mechanised Bonus" = {
+		icon = generic_operation
+		fire_only_once = yes
+		allowed = { tag = SPR }
+		available = { date > 1937.1.1}
+		visible = {
+			has_game_rule = {
+				rule = JFU_pre_sets 
+				option = COMPETITIVE_JFU
+			}			
+		}
+		cost = 0
+		complete_effect = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				ahead_reduction = 2
+				uses = 1
+				category = motorized_equipment
+			}
+		}	
 	}	
 }
