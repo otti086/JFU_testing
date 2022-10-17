@@ -15,7 +15,6 @@ add_ideas = {
 	volunteers_4
 	JAP_zaibatsus
 	JAP_militarism
-	jap_oil_reserves
 }
 609 = {
 	start_resistance = yes
