@@ -51,8 +51,6 @@ NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN = 5;
 
 NDefines.NAir.FUEL_COST_MULT = 0.25; -- vanilla 0.35 fuel multiplier for all air missions
 NDefines.NAir.AIR_DEPLOYMENT_DAYS = 0;
-NDefines.NAir.SUPPLY_NEED_FACTOR = 0.14;
-NDefines.NAir.COMBAT_MAX_WINGS_AT_ONCE = 99999;
 NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane to create a mission
 	0.0, -- AIR_SUPERIORITY
 	0.0, -- CAS
