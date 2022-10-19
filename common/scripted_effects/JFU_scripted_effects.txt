@@ -399,7 +399,8 @@ JFU_vichy_france = {
 			add_compliance = 60
 		}
 	}
-
+	ENG = { news_event = { id = news.44 } }
+	GER = { country_event = { id = germany.107 } }
 	FRA = {
 	remove_ideas = FRA_protected_by_the_maginot_line
 	remove_ideas = FRA_victors_of_wwi
