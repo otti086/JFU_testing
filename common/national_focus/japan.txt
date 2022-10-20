@@ -213,18 +213,29 @@
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			605 = {
-				add_resource = {
-					type = aluminium
-					amount = 24
+
+			if = {
+				limit ={
+					NOT = {
+						has_game_rule = {
+							rule = JFU_pre_sets
+							option = JFU_ALTERNATIVE_GS2
+						}
+					}
 				}
-			}
-			325 = {
-				add_resource = {
-					type = aluminium
-					amount = 32
+				605 = {
+					add_resource = {
+						type = aluminium
+						amount = 24
+					}
 				}
-			}
+				325 = {
+					add_resource = {
+						type = aluminium
+						amount = 32
+					}
+				}
+			}	
 			if = {
 				limit = { has_dlc = "Waking the Tiger" }
 				unlock_decision_category_tooltip = prospect_for_resources

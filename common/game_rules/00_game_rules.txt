@@ -93,9 +93,14 @@ JFU_pre_sets = {
 	}
 	option = {
 		name = "JFU_ALTERNATIVE_GS"
-		text = "Alternative Settings1"
+		text = "Alternative Settings 1"
 		desc = "Clicking this option will enable the Presettings for the Hearts of Iron IV Germany Server"
 	}
+	option = {
+		name = "JFU_ALTERNATIVE_GS2"
+		text = "Alternative Settings 2"
+		desc = "Clicking this option will enable the Presettings for the Paradox Empire Server"
+	}	
 }
 horst_manchukuo = {
 	name = "Manchukuo Focus Tree"

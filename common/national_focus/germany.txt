@@ -1758,6 +1758,7 @@ focus_tree = {
 				153 = 	{ add_core_of = GER }
 				848 =   { add_core_of = GER }
 			}
+			news_event = { id = news.5003 }
 			annex_country = { target = AUS transfer_troops = no }
 			add_political_power = 75
 			set_country_flag = AUS_annexed
@@ -1844,6 +1845,7 @@ focus_tree = {
 			74 = { add_core_of = GER }
 			POL = {transfer_state = 72 }
 			}
+			news_event = { id = news.5004 }
 			GER = { transfer_state = 69 }
 			GER = { transfer_state = 74 }
 

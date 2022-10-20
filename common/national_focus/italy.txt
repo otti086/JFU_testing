@@ -4016,7 +4016,7 @@ focus_tree = {
 				}
 			}
 
-#			ITA_add_citta_dell_aria_templates = yes
+			ITA_add_citta_dell_aria_templates = yes
 		}
 	}
 
@@ -4108,6 +4108,18 @@ focus_tree = {
 
 		completion_reward = {
 			air_experience = 15
+			if = {
+				limit = {
+					country_exists = GER
+					NOT = { has_war_with = GER }
+				}
+				add_equipment_to_stockpile = { 
+					type = small_plane_cas_airframe_1
+					amount = 100
+					producer = GER
+					variant_name = "Ju 87"
+				}
+			}
 			else = {
 				add_tech_bonus = {
 					name = ITA_diving_bombers
@@ -4153,7 +4165,7 @@ focus_tree = {
 			#}
 
 			#Update NS icon
-#			ITA_improve_regia_aeronautica_dm_effect = yes
+			ITA_improve_regia_aeronautica_dm_effect = yes
 		}
 	}
 
@@ -4261,7 +4273,7 @@ focus_tree = {
 			}
 
 			#Update NS icon
-#			ITA_improve_regia_aeronautica_dm_effect = yes
+			ITA_improve_regia_aeronautica_dm_effect = yes
 		}
 	}
 
@@ -4318,7 +4330,7 @@ focus_tree = {
 			}
 
 			#Update NS icon
-#			ITA_improve_regia_aeronautica_dm_effect = yes
+			ITA_improve_regia_aeronautica_dm_effect = yes
 		}
 	}
 
@@ -4360,7 +4372,7 @@ focus_tree = {
 				}
 			}
 
-#			ITA_add_long_range_aircraft_templates = yes
+			ITA_add_long_range_aircraft_templates = yes
 		}
 	}
 
@@ -4398,7 +4410,7 @@ focus_tree = {
 				}
 			}
 
-#			ITA_add_bomber_designs_templates = yes
+			ITA_add_bomber_designs_templates = yes
 		}
 	}
 
@@ -4436,7 +4448,7 @@ focus_tree = {
 				}
 			}
 
-#			ITA_add_fighter_designs_templates = yes
+			ITA_add_fighter_designs_templates = yes
 		}
 	}
 
@@ -4478,7 +4490,7 @@ focus_tree = {
 				}
 			}
 
-#			ITA_add_multirole_aircraft_templates = yes
+			ITA_add_multirole_aircraft_templates = yes
 		}
 	}
 
@@ -4522,7 +4534,7 @@ focus_tree = {
 				}
 			}
 
-#			ITA_add_supremacy_in_the_skies_templates = yes
+			ITA_add_supremacy_in_the_skies_templates = yes
 		}
 	}
 
@@ -5220,7 +5232,7 @@ focus_tree = {
 				limit = {
 					has_dlc = "By Blood Alone"
 				}
-#				ITA_naval_air_coordination_templates = yes
+				ITA_naval_air_coordination_templates = yes
 			}
 
 			add_ace = {
@@ -7029,7 +7041,7 @@ focus_tree = {
 		icon = GFX_focus_ITA_devaluate_the_lire
 		prerequisite = { focus = ITA_triumph_in_africa_bba }
 
-		x = -3
+		x = -1
 		y = 1
 		relative_position_id = ITA_triumph_in_africa_bba
 		cost = 5
@@ -7045,186 +7057,11 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ITA_anglo_italian_agreements
-		icon = GFX_focus_chi_british_cooperation
-		prerequisite = { focus = ITA_triumph_in_africa_bba }
-
-		x = -1
-		y = 1
-		relative_position_id = ITA_triumph_in_africa_bba
-		cost = 5
-
-		bypass = {
-			NOT = { has_country_flag = SUEZ_SANCTIONS_FLAG }
-			OR = {
-				NOT = { country_exists = ETH }
-				has_subject = ETH
-			}
-		} 
-
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = ITA_anglo_italian_agreements_suez_tt
-				OR = {
-					NOT = { has_country_flag = SUEZ_SANCTIONS_FLAG }
-					has_country_flag = { flag = SUEZ_SANCTIONS_FLAG days > 365 }
-				}
-			}
-
-			core_compliance = {
-				occupied_country_tag = ETH
-				value > 40
-			}
-		}
-
-		search_filters = {}
-
-		completion_reward = {
-			#Suez Canal access
-			if = {
-				limit = {
-					has_country_flag = SUEZ_SANCTIONS_FLAG
-				}
-				clr_country_flag = SUEZ_SANCTIONS_FLAG
-				custom_effect_tooltip = ITA_anglo_italian_agreements_suez_unlocked_tt
-			}
-
-			#Deescalation
-			add_to_variable = { ETH.ETH_war_escalation_level = -1 }
-			custom_effect_tooltip = ETH_war_deescalation_inc_tt
-		}
-	}
-
-	focus = {
-		id = ITA_topple_amhara_rulers
-		icon = GFX_focus_ITA_topple_amhara_rulers
-		prerequisite = { focus = ITA_triumph_in_africa_bba }
-
-		x = 1
-		y = 1
-		relative_position_id = ITA_triumph_in_africa_bba
-		cost = 5
-		available = {
-			has_full_control_of_state = 835
-			has_full_control_of_state = 836
-			has_full_control_of_state = 837
-			has_full_control_of_state = 838
-			NOT = { has_global_flag = ITA_antifascist_civil_war_triggered_flag }
-		}
-
-		search_filters = {}
-
-		completion_reward = {#Changing stuff here will require changing stuff in History file for 1939 bookmark
-			effect_tooltip = {
-				if = {
-					limit = {
-						country_exists = ETH
-					}
-					ETH = {
-						add_legitimacy = -10
-					}
-				}
-			}
-			if = {
-				limit = {
-					835 = { has_resistance = yes } 
-				}
-				835 = { #HARARGHE
-					add_compliance = 10
-				}
-			}
-			else_if = {
-				limit = {
-					NOT = { controls_state = 835 }
-				}
-				effect_tooltip = {
-					835 = {
-						add_compliance = 10
-					}
-				}
-			}
-
-			if = {
-				limit = {
-					836 = { has_resistance = yes } 
-				}
-				836 = { #BALE
-					add_compliance = 10
-				}
-			}
-			else_if = {
-				limit = {
-					NOT = { controls_state = 836 }
-				}
-				effect_tooltip = {
-					836 = {
-						add_compliance = 10
-					}
-				}
-			}
-
-			if = {
-				limit = {
-					837 = { has_resistance = yes } 
-				}
-				837 = { #SIDAMO
-					add_compliance = 10
-				}
-			}
-			else_if = {
-				limit = {
-					NOT = { controls_state = 837 }
-				}
-				effect_tooltip = {
-					837 = {
-						add_compliance = 10
-					}
-				}
-			}
-
-			if = {
-				limit = {
-					838 = { has_resistance = yes } 
-				}
-				838 = { #ILLUBABOR
-					add_compliance = 10
-				}
-			}
-			else_if = {
-				limit = {
-					NOT = { controls_state = 838 }
-				}
-				effect_tooltip = {
-					838 = {
-						add_compliance = 10
-					}
-				}
-			}
-
-			if = {
-				limit = {
-					has_dlc = "By Blood Alone"
-				}
-				custom_effect_tooltip = ITA_topple_amhara_rulers_event_chain_tt
-				hidden_effect = {
-					ITA_haile_selassie_gugsa_doppleganger = { unit_leader_event = BBA_italy_local_rulers.1 }
-				}
-			}
-			hidden_effect = {
-				ETH = {
-					country_event = { id = BBA_italo_ethiopian_war_events.510 hours = 6 }
-				}
-			}
-
-		}
-	}
-
-	focus = {
 		id = ITA_the_new_emperor_of_ethiopia
 		icon = GFX_focus_ITA_the_new_emperor_of_ethiopia
 		prerequisite = { focus = ITA_triumph_in_africa_bba }
 
-		x = 3
+		x = 1
 		y = 1
 		relative_position_id = ITA_triumph_in_africa_bba
 		cost = 5
@@ -9271,7 +9108,7 @@ focus_tree = {
 		icon = GFX_goal_generic_dangerous_deal
 		prerequisite = { focus = ITA_triumph_in_africa_bba }
 
-		x = 14
+		x = 13
 		y = 1
 		relative_position_id = ITA_triumph_in_africa_bba
 		cost = 5
@@ -9388,44 +9225,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ITA_albanian_oil
-		icon = GFX_goal_generic_oil_refinery
-		prerequisite = { focus = ITA_albanian_occupation }
-
-		x = -2
-		y = 1
-		relative_position_id = ITA_albanian_occupation
-		cost = 5
-		available = {
-			44 = {
-				state_is_fully_controlled_by_ROOT_or_subject = yes
-			}
-			has_tech = synth_oil_experiments
-		}
-
-		search_filters = {FOCUS_FILTER_INDUSTRY}
-
-		completion_reward = {
-			44 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = synthetic_refinery
-					level = 1
-					instant_build = yes
-				}
-				add_resource = {
-					type = oil
-					amount = 2
-				}
-			}
-		}
-	}
-
-	focus = {
 		id = ITA_support_albanian_irredentism
 		icon = GFX_focus_ITA_albanian_irredentism
 		prerequisite = { focus = ITA_albanian_occupation }
@@ -9443,19 +9242,6 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
-			add_state_claim = 802 #KOSOVO
-			add_state_claim = 106 #MACEDONIA
-			add_state_claim = 185 #EPIRUS
-			add_state_claim = 105 #MONTENEGRO
-
-			hidden_effect = { #Representing the Albanian Irredentism recognized by ITA.
-				ALB = {
-					add_state_claim = 802 #KOSOVO
-					add_state_claim = 106 #MACEDONIA
-					add_state_claim = 185 #EPIRUS
-					add_state_claim = 105 #MONTENEGRO
-				}
-			}
 
 			every_state = {
 				limit = {
@@ -9465,58 +9251,7 @@ focus_tree = {
 					}
 					is_fully_controlled_by = ROOT
 				}
-				add_compliance = 10
-			}
-
-			if = {
-				limit = {
-					ALB = { is_subject_of = ROOT }
-				}
-				ALB = {
-					add_opinion_modifier = { target = ROOT modifier = ITA_supports_albanian_irredentism }
-					add_autonomy_score = {
-						value = -30
-						localization = ITA_support_albanian_irredentism
-					}
-					if = {
-						limit = { ROOT = { has_government = fascism } }
-						add_timed_idea = { idea = fascist_influence days = 1095 }
-					}
-					if = {
-						limit = { ROOT = { has_government = democratic } }
-						add_timed_idea = { idea = democratic_influence days = 1095 }
-					}
-					if = {
-						limit = { ROOT = { has_government = communism } }
-						add_timed_idea = { idea = communist_influence days = 1095 }
-					}
-					country_event = { id = generic.1 }
-				}
-			}
-			else = {
-				custom_effect_tooltip = ITA_support_albanian_irredentism_subject_effects_tt
-				effect_tooltip = {
-					ALB = {
-						add_opinion_modifier = { target = ROOT modifier = ITA_supports_albanian_irredentism }
-						add_autonomy_score = {
-							value = -30
-							localization = ITA_support_albanian_irredentism
-						}
-						if = {
-							limit = { ROOT = { has_government = fascism } }
-							add_timed_idea = { idea = fascist_influence days = 1095 }
-						}
-						if = {
-							limit = { ROOT = { has_government = democratic } }
-							add_timed_idea = { idea = democratic_influence days = 1095 }
-						}
-						if = {
-							limit = { ROOT = { has_government = communism } }
-							add_timed_idea = { idea = communist_influence days = 1095 }
-						}
-						country_event = { id = generic.1 }
-					}
-				}
+				add_compliance = 30
 			}
 		}
 	}
