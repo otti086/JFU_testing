@@ -1,5 +1,0 @@
-﻿
-
-##### SHIP CONSTRUCTION #####
-instant_effect = {
-}
