@@ -559,7 +559,7 @@ news_event = {
 	id = news.5004
 	title = "The Annexation of the Sudetenland"
 	desc = "The Czechoslovakia as cedes the Sudetenland to Germany after a Summit was hosted in Munich to slove this crisis"
-	pictrue = GFX_report_event_generic_parliament
+	picture = GFX_report_event_generic_parliament
 	is_triggered_only = yes
 	option = {
 		name ="Excellent!"
@@ -583,7 +583,7 @@ news_event = {
 		}
 	}
 }
-news_events = {
+news_event = {
 	id = news.5005
 	title = "The USA joins the allied cause in europe"
 	desc = "In Light of the reason developments has the United Staats of america decided to enter into a state of war with germany and the axis"
