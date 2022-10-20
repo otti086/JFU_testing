@@ -1736,7 +1736,7 @@ war_measures = {
         }
         visible = {
             has_war = yes
-            NOT = { tag = SPC }
+            NOT = { tag = SPR }
         }
 
         fire_only_once = no
