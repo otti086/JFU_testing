@@ -127,8 +127,8 @@ characters={
 			}
 		}
 		
-		field_marshal={
-			traits={ politically_connected JAP_samurai_lineage offensive_doctrine }
+		corps_commander={
+			traits={ JAP_samurai_lineage offensive_doctrine }
 			skill=4
 			attack_skill=4
 			defense_skill=4
@@ -194,7 +194,7 @@ characters={
 			}
 		}
 		
-		field_marshal={
+		corps_commander={
 			traits={ JAP_samurai_lineage offensive_doctrine }
 			skill=4
 			attack_skill=3

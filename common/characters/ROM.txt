@@ -110,7 +110,7 @@ characters={
 				small="GFX_idea_ROM_petre_dumitrescu"
 			}
 		}
-		field_marshal={
+		corps_commander={
 			traits={ logistics_wizard offensive_doctrine }
 			skill=4
 			attack_skill=4
@@ -168,7 +168,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ hill_fighter pre_grinded trait_engineer infantry_expert infantry_leader commando trickster expert_improviser ranger hill_fighter}
+			traits={ hill_fighter pre_grinded trait_engineer infantry_expert infantry_leader commando trickster expert_improviser ranger}
 			skill=5
 			attack_skill=8
 			defense_skill=6

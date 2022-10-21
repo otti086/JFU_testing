@@ -37,6 +37,7 @@ on_actions = {
 					}
 				}
 				SWE = { JFU_pre_grinded_generals_ON = yes }
+				SWE = {pregrinded_effect = yes}
 				JAP = {
 					add_ideas = closed_economy 
 					add_ideas = limited_exports_idea

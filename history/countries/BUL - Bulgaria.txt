@@ -187,7 +187,8 @@ if = { #DLC
 		neutrality = 55
 		communism = 5
 	}
-
+	recruit_character = BUL_ivan_markov
+	recruit_character = BUL_georgi_markov
 	recruit_character = BUL_boris_iii
 	recruit_character = BUL_georgi_dimitrov
 	recruit_character = BUL_nikola_mushanov

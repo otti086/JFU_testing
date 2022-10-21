@@ -461,7 +461,7 @@ characters={
 				}
 			}
 
-			field_marshal={
+			corps_commander={
 				traits={ logistics_wizard organisational_leader expert_delegator }
 				skill=3
 				attack_skill=3
@@ -526,7 +526,7 @@ characters={
 		}
 	}
 
-		SPA_francisco_franco_grinded={
+	SPA_francisco_franco_grinded={
 			name=SPA_francisco_franco_grinded
 			portraits={
 				army={

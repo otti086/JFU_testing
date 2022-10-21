@@ -399,7 +399,6 @@ USA_congress = {
 			USA_congress_add_state = yes
 			add_state_core = 463
 			add_state_core = 650
-			USA_calc_stars = yes
 		}
 	}
 	USA_statehood_for_hawaii = {
@@ -431,7 +430,6 @@ USA_congress = {
 		remove_effect = {
 			USA_congress_add_state = yes
 			add_state_core = 629
-			USA_calc_stars = yes
 		}
 	}
 	USA_statehood_for_puerto_rico = {
@@ -463,7 +461,6 @@ USA_congress = {
 		remove_effect = {
 			USA_congress_add_state = yes
 			add_state_core = 686
-			USA_calc_stars = yes
 		}
 	}
 }

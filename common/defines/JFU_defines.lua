@@ -19,6 +19,7 @@ NDefines.NCountry.BASE_FUEL_CAPACITY = 100000
 NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 200
 NDefines.NCountry.SPECIAL_FORCES_CAP_BASE = 0.1
 NDefines.NCountry.SCORCHED_EARTH_STATE_COST = 1000	
+NDefines.NCountry.REINFORCEMENT_MANPOWER_CHUNK = 1 
 
 NDefines.NPolitics.LEADER_TRAITS_XP_SHOW = 0.01
 
@@ -86,16 +87,16 @@ NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 1000.0
 NDefines.NNavy.NAVAL_TRANSFER_BASE_SPEED = 10                      -- WAS 6 | Increased so moving troops around the world is faster and theaters dont seem so disconnected (particularly aimed at improving Allied gameplay experience)
 NDefines.NNavy.ADMIRAL_TASKFORCE_CAP = 20                         -- WAS 10 | Increased so players can use their same submarine or escort admiral without penalties
 NDefines.NNavy.NAVAL_MINES_DECAY_AT_PEACE_TIME = 1000                    -- WAS 0.25 
-NDefines.NNavy.NAVAL_MINES_PLANTING_SPEED_MULT = 0						-- Value used to overall balance of the speed of planting naval mines
+NDefines.NNavy.SUPPLY_NEED_FACTOR = 0
 
 NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 1                 -- License can be cancelled at any time now, down from 30 | 
 NDefines.NProduction.BASE_LICENSE_IC_COST = 0	
 NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0	
 NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 10000000
-NDefines.NProduction.EQUIPMENT_MODULE_ADD_XP_COST = 0            -- XP cost for adding a new equipment module in an empty slot when creating an equipment variant.
-NDefines.NProduction.EQUIPMENT_MODULE_REPLACE_XP_COST = 0       -- XP cost for replacing one equipment module with an unrelated module when creating an equipment variant.
-NDefines.NProduction.EQUIPMENT_MODULE_CONVERT_XP_COST = 0        -- XP cost for converting one equipment module to a related module when creating an equipment variant.
-NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 0 		-- XP cost for removing an equipment module and leaving the slot empty when creating an equipment variant.
+NDefines.NProduction.EQUIPMENT_MODULE_ADD_XP_COST = 0.0            -- XP cost for adding a new equipment module in an empty slot when creating an equipment variant.
+NDefines.NProduction.EQUIPMENT_MODULE_REPLACE_XP_COST = 0.0        -- XP cost for replacing one equipment module with an unrelated module when creating an equipment variant.
+NDefines.NProduction.EQUIPMENT_MODULE_CONVERT_XP_COST = 0.0        -- XP cost for converting one equipment module to a related module when creating an equipment variant.
+NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 0.0  		-- XP cost for removing an equipment module and leaving the slot empty when creating an equipment variant.
 NDefines.NProduction.RAILWAY_GUN_MAX_MIL_FACTORIES_PER_LINE = 10
 NDefines.NProduction.MAX_MIL_FACTORIES_PER_LINE = 300
 NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 200

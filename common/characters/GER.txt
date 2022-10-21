@@ -104,7 +104,7 @@ characters={
 			}
 		}
 		
-		field_marshal={
+		corps_commander={
 			traits={ old_guard urban_assault_specialist defensive_doctrine }
 			skill=3
 			attack_skill=3
