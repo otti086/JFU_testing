@@ -3347,69 +3347,6 @@ leader_traits = {
 		}
 	}
 
-	operative_infiltrator = {
-		type = operative
-		trait_type = basic_trait
-
-		new_commander_weight = {
-			factor = 0.5
-		}
-
-		cost = 400
-		gain_xp_leader = {
-			OR = {
-				operative_leader_operation = operation_rescue_operative
-				operative_leader_operation = operation_infiltrate_civilian
-				operative_leader_operation = operation_infiltrate_armed_forces_army
-				operative_leader_operation = operation_infiltrate_armed_forces_navy
-				operative_leader_operation = operation_infiltrate_armed_forces_airforce
-			}
-		}
-
-		modifier = { 
-			operation_infiltrate_outcome = 0.25
-			operation_infiltrate_risk = -0.25
-		}
-	}
-
-	operative_master_interrogator = {
-		type = operative
-		trait_type = basic_trait
-
-		#new_commander_weight = {
-		#}
-
-		cost = 400
-		gain_xp_leader = {
-			OR = {
-				operative_leader_mission = root_out_resistance
-				operative_leader_mission = counter_intelligence
-			}
-		}
-
-		modifier = {
-			intelligence_agency_defense = 0.2
-		}
-	}
-
-	operative_linguist = {
-		type = operative
-		trait_type = basic_trait
-
-		#new_commander_weight = {
-		#}
-
-		cost = 400
-		gain_xp_leader = {
-			NOT = { operative_leader_mission = no_mission }
-			NOT = { has_nationality = FROM }
-		}
-
-		modifier = {
-			# something good
-		}
-	}
-
 	operative_double_agent = {
 		type = operative
 		trait_type = personality_trait
@@ -3447,44 +3384,6 @@ leader_traits = {
 			operation_capture_cipher_outcome = 0.25
 			operation_steal_tech_risk = -0.25
 			operation_steal_tech_outcome = 0.25
-		}
-	}
-
-	operative_well_groomed = {
-		type = operative
-		trait_type = basic_trait
-
-		#new_commander_weight = {
-		#}
-
-		cost = 400
-		gain_xp_leader = {
-			OR = {
-				operative_leader_mission = diplomatic_pressure
-				operative_leader_mission = control_trade
-			}
-		}
-
-		modifier = {
-			control_trade_mission_factor = 0.2
-			diplomatic_pressure_mission_factor = 0.2
-		}
-	}
-
-	operative_natural_orator = {
-		type = operative
-		trait_type = basic_trait
-
-		gain_xp_leader = {
-			OR = {
-				operative_leader_mission = propaganda
-				operative_leader_mission = boost_ideology
-			}
-		}
-		
-		cost = 400
-		modifier = {
-			boost_ideology_mission_factor = 0.2
 		}
 	}
 

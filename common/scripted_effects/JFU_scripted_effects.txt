@@ -1297,15 +1297,6 @@ update_operation_ai = {
 	# check if we have any operatives that are captured
 	# find the captor so they can be rescued
 	set_temp_variable = { captor = 0 }
-	
-	every_operative = {
-		limit = { is_operative_captured = yes }
-		add_to_temp_variable = { min_needed_operative_for_operations = 1 }
-		if = {
-			limit = { check_variable = { captor = 0 } }
-			set_temp_variable = { captor = operative_captor }
-		}
-	}
 	set_variable = { rescue_operative_from = 0 }
 	if = {
 		limit = { NOT = { check_variable = { captor = 0 } } }
