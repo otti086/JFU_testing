@@ -316,6 +316,7 @@ ideas = {
 						original_tag = ITA
 					}
 					NOT = { has_war_with = YUG }
+					date > 1939.1.1
 				}
 			}
 			on_add = {
