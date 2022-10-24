@@ -152,7 +152,6 @@ focus_tree = {
 				}
 			}
 			custom_effect_tooltip = SPR_petition_for_french_aid_tt
-			FRA = { country_event = { id = lar_spain.64 hours = 6 random_hours = 6 } }
 		}
 	}
 

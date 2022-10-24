@@ -684,7 +684,6 @@ SOV_paranoia_daunt_generals_effect = {
 				NOT = { has_character_flag = SOV_targeted_for_purge_flag }
 				NOT = { has_trait = trait_SOV_cowed_by_stalin_army }
 			}
-			add_unit_leader_trait = trait_SOV_cowed_by_stalin_army
 		}
 		add_to_temp_variable = { temp_targets_index = 1 }
 		log = "LOOP ROUND [?temp_targets_index]"
@@ -709,7 +708,6 @@ SOV_paranoia_daunt_generals_minor_effect = {
 				NOT = { has_character_flag = SOV_targeted_for_purge_flag }
 				NOT = { has_trait = trait_SOV_cowed_by_stalin_army }
 			}
-			add_unit_leader_trait = trait_SOV_cowed_by_stalin_army
 		}
 		add_to_temp_variable = { temp_targets_index = 1 }
 		log = "LOOP ROUND [?temp_targets_index]"

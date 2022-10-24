@@ -733,16 +733,6 @@ unit_leader_event = {
 
 		add_political_power = SOV_purge_event_pp_to_avoid_regular_pay
 
-		every_army_leader = { #Both characters get cowed
-			limit = {
-				OR = {
-					has_character_flag = SOV_purge_accuser_flag
-					has_character_flag = SOV_purge_accused_flag
-				}
-			}
-			add_unit_leader_trait = trait_SOV_cowed_by_stalin_army
-		}
-
 		#PARANOIA INCREASES
 		set_variable = { SOV_unit_leader_level = SOV_accused_unit_leader_level } #Set the appropriate var used in the scripted effect and clean vars and flags
 		add_to_variable = { SOV_unit_leader_level = SOV_accuser_unit_leader_level }
