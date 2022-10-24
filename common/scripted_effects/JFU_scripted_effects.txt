@@ -630,39 +630,6 @@ JFU_startup_on_action = {
 	}	
 }
 JFU_pre_grinded_generals_OFF = {
-	SOV = {
-		recruit_character = SOV_nikolay_vatutin
-		recruit_character = SOV_georgy_zhukov
-		recruit_character = SOV_vasily_chuykov
-		recruit_character = SOV_andrey_grechko
-		recruit_character = SOV_dmitry_lelyushenko
-		SOV_georgy_zhukov = { 
-			set_character_flag = SOV_safe_from_purge_flag
-		}
-		SOV_vasily_chuykov = {
-			set_character_flag = SOV_safe_from_purge_flag
-		}
-		SOV_dmitry_lelyushenko = {
-			set_character_flag = SOV_safe_from_purge_flag
-		}	
-		SOV_andrey_grechko = {
-			set_character_flag = SOV_safe_from_purge_flag
-		}
-		SOV_nikolay_vatutin = {
-			set_character_flag = SOV_safe_from_purge_flag
-		}				
-	}
-	FRA = {
-		recruit_character = FRA_charles_huntziger
-		recruit_character = FRA_maxime_weygand
-		recruit_character = FRA_alphonse_juin
-	}
-	ENG = {
-		recruit_character = ENG_bernard_montgomery
-		recruit_character = ENG_claude_auchinleck
-		recruit_character = ENG_alan_cunningham
-		recruit_character = ENG_william_slim
-	}
 	AST = {
 		recruit_character = AST_leslie_morshead
 		recruit_character = AST_thomas_blamey
@@ -693,54 +660,8 @@ JFU_pre_grinded_generals_OFF = {
 		recruit_character = SAF_george_edwin_brink
 		recruit_character = SAF_guy_hallifax
 	}
-	USA = {
-		recruit_character = USA_omar_bradley
-		recruit_character = USA_dwight_d_eisenhower
-		recruit_character = USA_geoffrey_keyes
-		recruit_character = USA_lucian_truscott
-		recruit_character = USA_george_s_patton
-	}
 }	
 JFU_pre_grinded_generals_ON = {
-	SOV = {
-		recruit_character = SOV_nikolay_vatutin_grinded
-		recruit_character = SOV_georgy_zhukov_grinded
-		recruit_character = SOV_vasily_chuykov_grinded
-		recruit_character = SOV_andrey_grechko_grinded
-		recruit_character = SOV_dmitry_lelyushenko_grinded
-		SOV_georgy_zhukov_grinded = { 
-			set_character_flag = SOV_safe_from_purge_flag
-		}
-		SOV_vasily_chuykov_grinded = {
-			set_character_flag = SOV_safe_from_purge_flag
-		}
-		SOV_dmitry_lelyushenko_grinded = {
-			set_character_flag = SOV_safe_from_purge_flag
-		}	
-		SOV_andrey_grechko_grinded = {
-			set_character_flag = SOV_safe_from_purge_flag
-		}
-		SOV_nikolay_vatutin_grinded = {
-			set_character_flag = SOV_safe_from_purge_flag
-		}	
-		add_ideas = { pre_grinded_gens_volunteers }
-	}
-	FIN = {
-		add_ideas = { pre_grinded_gens_volunteers }
-	}
-	FRA = {
-		recruit_character = FRA_charles_huntziger_grinded
-		recruit_character = FRA_charles_de_gaulle_grinded
-		recruit_character = FRA_maxime_weygand_grinded
-		recruit_character = FRA_alphonse_juin_grinded
-		add_ideas = { pre_grinded_gens_volunteers }
-	}
-	ENG = {
-		recruit_character = ENG_bernard_montgomery_grinded
-		recruit_character = ENG_claude_auchinleck_grinded
-		recruit_character = ENG_alan_cunningham_grinded
-		recruit_character = ENG_william_slim_grinded
-	}
 	AST = {
 		recruit_character = AST_leslie_morshead_grinded
 		recruit_character = AST_thomas_blamey_grinded
@@ -770,13 +691,6 @@ JFU_pre_grinded_generals_ON = {
 	SAF = {
 		recruit_character = SAF_george_edwin_brink_grinded
 		recruit_character = SAF_guy_hallifax_grinded
-	}
-	USA = {
-		recruit_character = USA_omar_bradley_grinded
-		recruit_character = USA_dwight_d_eisenhower_grinded
-		recruit_character = USA_geoffrey_keyes_grinded
-		recruit_character = USA_lucian_truscott_grinded
-		recruit_character = USA_george_s_patton_grinded
 	}
 }
 JFU_alternative_gs = {
@@ -1436,35 +1350,6 @@ update_operation_ai = {
 		}
 	}
 }
-#Add to scripted triggers if more levels of hyper inflation is added
-USA_depression_clear_all = {
-	remove_ideas = {
-		great_depression
-		great_depression_2
-		great_depression_3
-	}
-}
-
-#Important to put HIGHEST first
-USA_great_depression_level_up = {
-	# level 5 not relevant. Cannot go above.
-	custom_effect_tooltip = USA_great_depression_up_tt
-	if = {
-		limit = { has_idea = great_depression_2 }
-		swap_ideas = {
-			remove_idea = great_depression_2
-			add_idea = great_depression
-		}
-	}
-	else_if = {
-		limit = { has_idea = great_depression_3 }
-		swap_ideas = {
-			remove_idea = great_depression_3
-			add_idea = great_depression_2
-		}
-	}
-	
-}
 
 #Important to put LOWEST first
 USA_great_depression_level_down = {
@@ -1501,13 +1386,6 @@ USA_congress_get_quorum = {
 	round_variable = quorum_low 
 	round_variable = quorum_medium 
 	round_variable = quorum_high
-	USA_recalc_congress_icon_frames = yes
-}
-USA_congress_remove_state = {
-	custom_effect_tooltip = mtg_usa_congress_remove_state_tt
-	subtract_from_variable = { senators_total = 2 }
-	clamp_variable = { var = senators_support max = senators_total min = 0 }
-	USA_congress_get_quorum = yes
 	USA_recalc_congress_icon_frames = yes
 }
 USA_congress_add_state = {
@@ -2344,7 +2222,7 @@ pregrinded_effect = {
 		add_ideas = { pre_grinded_gens_volunteers }
 		HUN_geza_lakatos = { add_skill_level = 1 }
 		HUN_geza_lakatos = { add_attack = 3 }
-        HUN_geza_lakatos = { add_defense = 3 }
+        HUN_geza_lakatos = { add_defense = 1 }
         HUN_geza_lakatos = { add_planning = 1 }
 		HUN_geza_lakatos = { add_logistics = 2 }
         HUN_geza_lakatos = {
@@ -2357,19 +2235,21 @@ pregrinded_effect = {
 			add_unit_leader_trait = urban_assault_specialist
         }
 		HUN_ivan_hindy = { add_attack = 2 }
-        HUN_ivan_hindy = { add_defense = 3 }
+        HUN_ivan_hindy = { add_defense = 1 }
         HUN_ivan_hindy = { add_planning = 2 }
         HUN_ivan_hindy = {
         	add_unit_leader_trait = pre_grinded
             add_unit_leader_trait = organizer
-            add_unit_leader_trait = logistics_wizard
             add_unit_leader_trait = panzer_leader
-            add_unit_leader_trait = combined_arms_expert
-            add_unit_leader_trait = urban_assault_specialist
-			add_unit_leader_trait = thorough_planner
+            add_unit_leader_trait = combined_arms_expert	
 			add_unit_leader_trait = ranger
 			add_unit_leader_trait = hill_fighter
         }
+		HUN_ivan_hindy = { promote_leader = yes }
+		HUN_ivan_hindy = {
+            add_unit_leader_trait = logistics_wizard
+			add_unit_leader_trait = thorough_planner
+		}
 		HUN_karoly_beregfy = { add_skill_level = 3 }
 		HUN_karoly_beregfy = { add_attack = 3 }
         HUN_karoly_beregfy = { add_defense = 2 }
@@ -2380,11 +2260,15 @@ pregrinded_effect = {
             add_unit_leader_trait = organizer
             add_unit_leader_trait = infantry_leader
             add_unit_leader_trait = infantry_expert
-            add_unit_leader_trait = thorough_planner
-            add_unit_leader_trait = logistics_wizard
 			add_unit_leader_trait = trait_mountaineer
 			add_unit_leader_trait = trickster
         }
+		HUN_karoly_beregfy = { promote_leader = yes }
+		HUN_karoly_beregfy = {
+            add_unit_leader_trait = logistics_wizard
+			add_unit_leader_trait = thorough_planner
+		}
+
 		HUN_lajos_veress = { add_skill_level = 2 }
 		HUN_lajos_veress = { add_attack = 3 }
         HUN_lajos_veress = { add_defense = 2 }
@@ -2508,6 +2392,7 @@ pregrinded_effect = {
             add_unit_leader_trait = hill_fighter
 			add_unit_leader_trait = ranger
         }
+		SPA_francisco_franco = { promote_leader = yes }
 		SPA_francisco_franco = { promote_leader = yes }
 		SPR_mohamed_meziane = { add_attack = 3 }
         SPR_mohamed_meziane = { add_defense = 3 }
@@ -2643,13 +2528,229 @@ pregrinded_effect = {
         }				
 	}
 	MAN = {
-		add_ideas = { pre_grinded_gens_volunteers }
-		recruit_character = JAP_shizuichi_tanaka_grinded
-		recruit_character = JAP_akira_muto_grinded
-		recruit_character = JAP_shunroku_hata_grinded
-		recruit_character = JAP_hisaichi_terauchi_grinded
-		recruit_character = JAP_tomoyuki_yamashita_grinded
-		recruit_character = JAP_kenkichi_ueda_grinded		
+		add_ideas = { pre_grinded_gens_volunteers }		
 	}
-
+	FIN = {
+		add_ideas = { pre_grinded_gens_volunteers }
+	}
+	FRA = {
+		add_ideas = { pre_grinded_gens_volunteers }
+		FRA_alphonse_juin = { add_attack = 2 }
+		FRA_alphonse_juin = { add_defense = 2 }
+		FRA_alphonse_juin = {
+			add_unit_leader_trait = pre_grinded
+			add_unit_leader_trait = panzer_leader
+            add_unit_leader_trait = panzer_expert
+			add_unit_leader_trait = expert_improviser
+			add_unit_leader_trait = hill_fighter
+			add_unit_leader_trait = trickster
+		}
+		FRA_maxime_weygand = { add_skill_level = 1 }
+		FRA_maxime_weygand = { add_attack = 1 }
+		FRA_maxime_weygand = { add_defense = 1 }
+        FRA_maxime_weygand = { add_planning = 2 }
+		FRA_maxime_weygand = { add_logistics = 2 }		
+		FRA_maxime_weygand = {
+			add_unit_leader_trait = pre_grinded
+            add_unit_leader_trait = organizer
+			add_unit_leader_trait = infantry_leader
+			add_unit_leader_trait = infantry_expert
+		}
+		FRA_maxime_weygand = { promote_leader = yes }
+		FRA_maxime_weygand = {
+			add_unit_leader_trait = logistics_wizard
+			add_unit_leader_trait = unyielding_defender
+		}
+		FRA_charles_de_gaulle = { add_attack = 2 }
+		FRA_charles_de_gaulle = { add_planning = 1 }
+		FRA_charles_de_gaulle = { add_logistics = 2 }
+		FRA_charles_de_gaulle = {
+			add_unit_leader_trait = pre_grinded
+            add_unit_leader_trait = guerilla_fighter
+			add_unit_leader_trait = trickster
+			add_unit_leader_trait = panzer_expert
+			add_unit_leader_trait = panzer_leader
+			add_unit_leader_trait = urban_assault_specialist
+			add_unit_leader_trait = organizer
+		}
+		FRA_charles_de_gaulle = { promote_leader = yes }
+		FRA_charles_de_gaulle = {
+			add_unit_leader_trait = logistics_wizard
+		}
+		FRA_charles_huntziger = { add_skill_level = 1 }
+		FRA_charles_huntziger = { add_attack = 2 }
+		FRA_charles_huntziger = { add_defense = 3 }
+		FRA_charles_huntziger = { add_planning = 1 }
+		FRA_charles_huntziger = { add_logistics = 1 }
+		FRA_charles_huntziger = {
+			add_unit_leader_trait = pre_grinded
+            add_unit_leader_trait = infantry_expert
+			add_unit_leader_trait = infantry_leader
+			add_unit_leader_trait = trickster
+			add_unit_leader_trait = expert_improviser
+			add_unit_leader_trait = guerilla_fighter
+			add_unit_leader_trait = naval_invader
+			add_unit_leader_trait = trait_mountaineer
+		}
+	}
+	SOV = {
+		add_ideas = { pre_grinded_gens_volunteers }
+		SOV_georgy_zhukov = {
+			add_unit_leader_trait = pre_grinded
+			add_unit_leader_trait = infantry_leader
+			add_unit_leader_trait = ambusher
+			add_unit_leader_trait = organizer
+			add_unit_leader_trait = skilled_staffer
+			
+		}
+		SOV_georgy_zhukov = { promote_leader = yes }	
+		SOV_georgy_zhukov = {
+			add_unit_leader_trait = expert_delegator
+            add_unit_leader_trait = defensive_doctrine
+			add_unit_leader_trait = logistics_wizard
+		}
+		SOV_nikolay_vatutin = { add_skill_level = 1 }
+		SOV_nikolay_vatutin = { add_attack = 4 }
+		SOV_nikolay_vatutin = { add_defense = 1 }
+		SOV_nikolay_vatutin = { add_planning = 1 }
+		SOV_nikolay_vatutin = { add_logistics = 1 }
+		SOV_nikolay_vatutin = {
+			add_unit_leader_trait = pre_grinded
+			add_unit_leader_trait = inf_gens
+			add_unit_leader_trait = trait_engineer
+			add_unit_leader_trait = infantry_leader
+			add_unit_leader_trait = infantry_expert
+			add_unit_leader_trait = trickster	
+			add_unit_leader_trait = ranger		
+		}
+		SOV_dmitry_lelyushenko = { add_skill_level = 3 }
+		SOV_dmitry_lelyushenko = { add_attack = 6 }
+		SOV_dmitry_lelyushenko = { add_defense = 4 }
+		SOV_dmitry_lelyushenko = { add_planning = 3 }
+		SOV_dmitry_lelyushenko = { add_logistics = 4 }	
+		SOV_dmitry_lelyushenko = {
+			add_unit_leader_trait = pre_grinded
+			add_unit_leader_trait = tank_gens
+			add_unit_leader_trait = panzer_expert
+			add_unit_leader_trait = panzer_leader
+			add_unit_leader_trait = trait_engineer
+			add_unit_leader_trait = trickster	
+			add_unit_leader_trait = ranger	
+			add_unit_leader_trait = expert_improviser
+			add_unit_leader_trait = hill_fighter
+		}
+		SOV_andrey_grechko = { add_skill_level = 1 }
+		SOV_andrey_grechko = { add_attack = 5 }
+		SOV_andrey_grechko = { add_defense = 1 }
+		SOV_andrey_grechko = { add_planning = 1 }
+		SOV_andrey_grechko = { add_logistics = 1 }
+		SOV_andrey_grechko = {
+			add_unit_leader_trait = pre_grinded
+			add_unit_leader_trait = tank_gens
+			add_unit_leader_trait = infantry_leader
+			add_unit_leader_trait = trickster
+			add_unit_leader_trait = guerilla_fighter
+			add_unit_leader_trait = cavalry_leader	
+			add_unit_leader_trait = cavalry_expert				
+		}
+		SOV_vasily_chuykov = { add_skill_level = 3 }
+		SOV_vasily_chuykov = { add_attack = 4 }
+		SOV_vasily_chuykov = { add_defense = 3 }
+		SOV_vasily_chuykov = { add_planning = 3 }
+		SOV_vasily_chuykov = { add_logistics = 3 }	
+		SOV_vasily_chuykov = {
+			add_unit_leader_trait = pre_grinded
+			add_unit_leader_trait = organizer
+			add_unit_leader_trait = panzer_leader
+			add_unit_leader_trait = combined_arms_expert
+			add_unit_leader_trait = trickster
+			add_unit_leader_trait = hill_fighter	
+			add_unit_leader_trait = ranger			
+		}	
+		SOV_vasily_chuykov = { promote_leader = yes }
+		SOV_vasily_chuykov = {
+			add_unit_leader_trait = aggressive_assaulter
+			add_unit_leader_trait = logistics_wizard
+			add_unit_leader_trait = thorough_planner
+		}	
+	}
+	ENG = {
+		ENG_bernard_montgomery = { add_attack = 3 }
+		ENG_bernard_montgomery = {
+			add_unit_leader_trait = pre_grinded
+			add_unit_leader_trait = infantry_leader
+			add_unit_leader_trait = infantry_expert
+			add_unit_leader_trait = desert_fox
+		}
+		ENG_bernard_montgomery = { promote_leader = yes }
+		ENG_claude_auchinleck = {
+			add_unit_leader_trait = pre_grinded
+			add_unit_leader_trait = infantry_expert
+			add_unit_leader_trait = infantry_leader
+			add_unit_leader_trait = hill_fighter
+			add_unit_leader_trait = trickster
+		}
+		ENG_alan_cunningham = { add_defense = 3 }
+		ENG_alan_cunningham = {
+			add_unit_leader_trait = pre_grinded
+			add_unit_leader_trait = infantry_expert
+			add_unit_leader_trait = infantry_leader
+			add_unit_leader_trait = hill_fighter
+			add_unit_leader_trait = naval_invader			
+		}
+		ENG_alan_cunningham = { promote_leader = yes }
+		ENG_alan_cunningham = {
+			add_unit_leader_trait = logistics_wizard
+			add_unit_leader_trait = thorough_planner
+		}
+		ENG_william_slim = {
+			add_unit_leader_trait = pre_grinded
+			add_unit_leader_trait = expert_improviser
+			add_unit_leader_trait = trait_engineer
+			add_unit_leader_trait = trait_mountaineer
+			add_unit_leader_trait = infantry_expert	
+			add_unit_leader_trait = infantry_leader	
+		}
+	}
+	USA = {
+		USA_george_s_patton = { add_attack = 1}
+		USA_george_s_patton = {
+			add_unit_leader_trait = pre_grinded
+			add_unit_leader_trait = panzer_expert
+			add_unit_leader_trait = hill_fighter
+			add_unit_leader_trait = expert_improviser			
+		}
+		USA_omar_bradley = {
+			add_unit_leader_trait = pre_grinded
+			add_unit_leader_trait = panzer_expert
+			add_unit_leader_trait = hill_fighter
+			add_unit_leader_trait = panzer_leader						
+		}
+		USA_omar_bradley = { promote_leader = yes }
+		USA_omar_bradley = {
+			add_unit_leader_trait = logistics_wizard
+			add_unit_leader_trait = thorough_planner
+			add_unit_leader_trait = aggressive_assaulter			
+		}
+		USA_dwight_d_eisenhower = {
+			add_unit_leader_trait = trait_engineer
+			add_unit_leader_trait = pre_grinded
+			add_unit_leader_trait = infantry_expert
+			add_unit_leader_trait = infantry_leader
+			add_unit_leader_trait = hill_fighter
+		}
+		USA_dwight_d_eisenhower = { promote_leader = yes }
+		USA_geoffrey_keyes = { add_skill_level = 2 }
+		USA_geoffrey_keyes = { add_attack = 3 }
+		USA_geoffrey_keyes = { add_attack = 2 }
+		USA_geoffrey_keyes = { add_attack = 1 }
+		USA_geoffrey_keyes = { add_attack = 3 }
+		USA_geoffrey_keyes = {
+			add_unit_leader_trait = trickster
+			add_unit_leader_trait = pre_grinded
+			add_unit_leader_trait = infantry_expert
+			add_unit_leader_trait = infantry_leader
+			add_unit_leader_trait = hill_fighter	
+		}
+	}
 }

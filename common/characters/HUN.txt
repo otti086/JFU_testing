@@ -164,7 +164,7 @@ characters={
 				small="GFX_idea_HUN_ivan_hindy"
 			}
 		}
-		field_marshal={
+		corps_commander={
 			traits={ trickster }
 			skill=4
 			attack_skill=3
@@ -202,7 +202,7 @@ characters={
 				small="GFX_idea_HUN_karoly_beregfy"
 			}
 		}
-		field_marshal={
+		corps_commander={
 			skill=1
 			attack_skill=1
 			defense_skill=1

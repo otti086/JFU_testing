@@ -311,10 +311,17 @@ JFU_decisions = {
 			}
 			if = {
 				limit = {
-					has_game_rule = {
-						rule = JFU_pre_grinded_generals
-						option = PRE_GRINDED_GENERALS_ON
+					OR = {
+						has_game_rule = {
+							rule = JFU_pre_grinded_generals
+							option = PRE_GRINDED_GENERALS_ON
+						}
+						has_game_rule = {
+							rule = JFU_pre_sets
+							option = COMPETITIVE_JFU
+						}
 					}
+
 				}
 				SOV = {
 					transfer_state = 147

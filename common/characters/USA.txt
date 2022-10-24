@@ -210,7 +210,7 @@ characters={
 				}
 		}
 		
-		field_marshal={
+		corps_commander={
 			traits={ trait_cautious armor_officer politically_connected organizer logistics_wizard offensive_doctrine }
 			skill=5
 			attack_skill=3
@@ -306,25 +306,6 @@ characters={
 		corps_commander={
 			traits={ cavalry_officer trait_engineer commando }
 			skill=3
-			attack_skill=3
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=2
-			legacy_id=0
-		}
-	}
-
-	USA_lucian_truscott_grinded={
-		name=USA_lucian_truscott_grinded
-		portraits={
-			army={
-				large="gfx/leaders/USA/Portrait_USA_Lucian_Truscott.dds"
-				small="gfx/interface/ideas/idea_USA_lucian_truscott.dds"
-			}
-		}
-		field_marshal={
-			traits={  trait_engineer commando naval_invader pre_grinded trickster guerilla_fighter hill_fighter infantry_leader infantry_expert organizer logistics_wizard  }
-			skill=4
 			attack_skill=3
 			defense_skill=3
 			planning_skill=2

@@ -9,23 +9,6 @@ characters={
 				small="GFX_idea_ENG_winston_churchill"
 			}
 		}
-		advisor={
-			slot = political_advisor
-			idea_token = ENG_winston_churchill
-			available  = {
-				has_government  = neutrality 
-			}
-			allowed  = {
-				original_tag  = ENG
-				has_dlc = "Man the Guns"
-			}
-			traits  = {
-				royalist_bulldog 
-			}
-			ai_will_do  = {
-				factor  = 1.000
-			}
-		}
 
 		country_leader={
 			ideology=conservatism
@@ -143,7 +126,7 @@ characters={
 			}
 		}
 		
-		field_marshal={
+		corps_commander={
 			traits={ inflexible_strategist trait_cautious media_personality organizer logistics_wizard offensive_doctrine }
 			skill=4
 			attack_skill=2
@@ -179,7 +162,7 @@ characters={
 		}
 		
 		field_marshal={
-			traits={ inflexible_strategist pre_grinded organizer logistics_wizard offensive_doctrine infantry_leader infantry_expert deser_fox }
+			traits={ inflexible_strategist pre_grinded organizer logistics_wizard offensive_doctrine infantry_leader infantry_expert desert_fox }
 			skill=4
 			attack_skill=4
 			defense_skill=6

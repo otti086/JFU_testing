@@ -198,7 +198,7 @@ characters={
 			}
 		}
 		
-		field_marshal={
+		corps_commander={
 			traits={ old_guard inflexible_strategist career_officer defensive_doctrine }
 			skill=3
 			attack_skill=3
@@ -464,21 +464,6 @@ characters={
 			}
 			army={
 				large="gfx/leaders/FRA/portrait_france_charles_huntziger.dds"
-			}
-		}
-		advisor={	
-			slot = high_command
-			idea_token = charles_huntziger
-			ledger = army
-			allowed = {
-				original_tag = FRA
-			}
-			traits = {
-				army_logistics_1
-			}
-			cost =  50
-			ai_will_do = {
-				factor = 1.000
 			}
 		}
 		
