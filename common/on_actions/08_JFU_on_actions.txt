@@ -459,29 +459,29 @@ on_actions = {
 					ITA = {has_war_with = ETH}
 				}
 				
-				ETH = {
-					transfer_state = 271
-					transfer_state = 550
-					transfer_state = 559
-					transfer_state = 835
-					transfer_state = 837
-					transfer_state = 838
-					transfer_state = 839
-					transfer_state = 840
-					transfer_state = 841
-					transfer_state = 842
-					transfer_state = 843
-					transfer_state = 844
-					transfer_state = 908
-					transfer_state = 836
-					271 = { add_core_of = ETH }
-					550 = { add_core_of = ETH }
-					559 = { add_core_of = ETH }
-				
-					inherit_technology = ITA	
-				}
-			
-				ITA = { puppet = ETH }	
+#				ETH = {
+#					transfer_state = 271
+#					transfer_state = 550
+#					transfer_state = 559
+#					transfer_state = 835
+#					transfer_state = 837
+#					transfer_state = 838
+#					transfer_state = 839
+#					transfer_state = 840
+#					transfer_state = 841
+#					transfer_state = 842
+#					transfer_state = 843
+#					transfer_state = 844
+#					transfer_state = 908
+#					transfer_state = 836
+#					271 = { add_core_of = ETH }
+#					550 = { add_core_of = ETH }
+#					559 = { add_core_of = ETH }
+#				
+#					inherit_technology = ITA
+#				}			
+#				ITA = { puppet = ETH }
+				ITA = { annex_country = ETH	}
 			}
 			if = {
 				limit = {
@@ -579,6 +579,26 @@ on_actions = {
 					} 
 				set_global_flag = scw_early_end
 				}				
+			}
+			if = {
+				limit = {
+					original_tag = JAP 
+				}
+				USA = {
+					annex_country = { target = JAP }
+					if = {
+						limit = {
+							country_exists = MAN 
+						}
+						annex_country = { target = MAN}
+					}
+					if = {
+						limit = {
+							country_exists = SIA 
+						}
+						annex_country = { target = SIA}
+					}
+				}
 			}
 		}
 	}
