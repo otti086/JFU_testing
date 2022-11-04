@@ -48,7 +48,6 @@ JFU_decisions = {
 			hidden_effect = { 
 				ENG = { add_to_faction = POL } 
 				declare_war_on_all_allies = yes
-				country_event = { id = germany.110 days = 3 }   
 			}
 		}
 	}

@@ -534,63 +534,6 @@ news_event = {
 		}
 	}
 }
-news_event = {
-	id = news.5003
-	title = "The Anschluss of Austria"
-	desc = ""
-	picture = GFX_report_event_generic_parliament
-	is_triggered_only = yes
-	option = {
-		name = "Excellent!"
-		trigger = {
-			axis = yes
-		}
-	}
-	option = {
-		name = "Nothing we can do"
-		trigger = {
-			NOT = {
-				axis = yes
-			}
-		}
-	}
-}
-news_event = {
-	id = news.5004
-	title = "The Annexation of the Sudetenland"
-	desc = "The Czechoslovakia as cedes the Sudetenland to Germany after a Summit was hosted in Munich to slove this crisis"
-	picture = GFX_report_event_generic_parliament
-	is_triggered_only = yes
-	option = {
-		name ="Excellent!"
-		trigger = {
-			original_tag = GER
-		}
-	}
-	option = {
-		name = "Peace is maintained"
-		trigger = {
-			allies = yes
-		}
-	}
-	option = {
-		name= "who will be next"
-		trigger = {
-			NOT = {
-				original_tag = GER 
-				allies = yes
-			}
-		}
-	}
-}
-news_event = {
-	id = news.5005
-	title = "The USA joins the allied cause in europe"
-	desc = "In Light of the reason developments has the United Staats of america decided to enter into a state of war with germany and the axis"
-	picture = GFX_report_event_generic_parliament
-	is_triggered_only = yes
-	option = { name = "Interesting"}
-}
 add_namespace = usa
 
 country_event = {

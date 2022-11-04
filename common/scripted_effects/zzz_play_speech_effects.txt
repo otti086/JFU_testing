@@ -23,10 +23,6 @@ play_day_of_infamy_effect = {
 	set_global_flag = day_of_infamy_happened
 }
 
-play_war_with_germany_effect = {
-	hidden_effect = { play_song = "war_with_germany" } 
-}
-
 play_no_invincible_armies_effect = {
 	hidden_effect = { play_song = "no_invincible_armies" } 
 }
@@ -41,10 +37,6 @@ play_arsenal_of_democracy_effect = {
 
 play_warning_to_japan_effect = {
 	hidden_effect = { play_song = "warning_to_japan" } 
-}
-
-play_blood_toil_tears_sweat_effect = {
-	hidden_effect = { play_song = "blood_toil_tears_and_sweat" }  
 }
 
 play_guns_are_silent_effect = {

@@ -77,6 +77,22 @@ allow_paratroopers = {
 		desc = "RULE_ALLOW_PARATROOPERS_BLOCKED_DESC"
 	}
 }
+obsolete_focus_branches_visibility = {
+	name = "OBSOLETE_FOCUS_BRANCHES_VISIBILITY"
+	required_dlc = "No Step Back"
+	group = "RULE_GROUP_GENERAL_UI"
+	default = {
+		name = HIDE
+		text = "RULE_OPTION_HIDE"
+		desc = "RULE_OPTION_HIDE_DESC"
+	}
+	option = {
+		name = SHOW
+		text = "RULE_OPTION_SHOW"
+		desc = "RULE_OPTION_SHOW_DESC_DESC"
+		allow_achievements = yes
+	}
+}
 JFU_pre_sets = {
 	name = "JFU Pre Sets"
 	Group = "PRE_SETS"

@@ -129,6 +129,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 5407;2400;;-1;-1;-1;-1;-1;GIBRALTAR_STRAIT;Gibraltar South
 2455;2506;;-1;-1;-1;-1;-1;DANISH_BELTS_STRAIT;Øresund
 5412;7678;;-1;-1;-1;-1;-1;BOSPHORUS_STRAIT;Bosphorus
+2919;2943;;-1;-1;-1;-1;-1;HORMUZ_STRAIT;hormuz
 10825;1991;impassable;-1;-1;-1;-1;-1;;Himalayas
 10825;8029;impassable;-1;-1;-1;-1;-1;;Himalayas
 10910;1991;impassable;-1;-1;-1;-1;-1;;Himalayas
@@ -243,6 +244,9 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 11710;5284;impassable;-1;2744;1328;2744;1328;;Spanish;North-Atlantic;Coast;;
 9689;5284;impassable;-1;2744;1328;2744;1328;;Spanish;North-Atlantic;Coast;;
 6734;5284;impassable;-1;2744;1328;2744;1328;;Spanish;North-Atlantic;Coast;;
+12070;6884;impassable;-1;2744;1328;2744;1328;;Spanish;Gibraltar-Strait;Coast;;
+12070;9765;impassable;-1;2744;1328;2744;1328;;Spanish;Gibraltar-Strait;Coast;;
+12070;6880;impassable;-1;2744;1328;2744;1328;;Spanish;Gibraltar-Strait;Coast;;
 12070;5382;impassable;-1;2744;1328;2744;1328;;Spanish;Gibraltar-Strait;Coast;;
 9815;5382;impassable;-1;2744;1328;2744;1328;;Spanish;Gibraltar-Strait;Coast;;
 4080;5382;impassable;-1;2744;1328;2744;1328;;Spanish;Gibraltar-Strait;Coast;;
@@ -283,42 +287,4 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 7990;10806;impassable;-1;-1;-1;-1;-1;;Persia Soviet Border;;
 5014;1822;impassable;-1;-1;-1;-1;-1;;Persia Soviet Border;;
 6826;1822;impassable;-1;-1;-1;-1;-1;;Persia Soviet Border;;
-10113;10013;impassable;-1;-1;-1;-1;-1;; Spain Ceuta
-10113;1194;impassable;-1;-1;-1;-1;-1;; Spain Ceuta
-12087;10013;impassable;-1;-1;-1;-1;-1;; Spain Ceuta
-4199;10013;impassable;-1;-1;-1;-1;-1;; Spain Ceuta
-4199;4097;impassable;-1;-1;-1;-1;-1;; Spain Ceuta
-7215;4097;impassable;-1;-1;-1;-1;-1;; Spain Ceuta
-12100;989;impassable;-1;-1;-1;-1;-1;; Spain Ceuta
-12100;1111;impassable;-1;-1;-1;-1;-1;; Spain Ceuta
-12100;4097;impassable;-1;-1;-1;-1;-1;; Spain Ceuta
-4135;7153;impassable;-1;-1;-1;-1;-1;; Spain Gibraltar
-10094;4135;impassable;-1;-1;-1;-1;-1;; Spain Gibraltar
-13228;10094;impassable;-1;-1;-1;-1;-1;; Spain Gibraltar
-13228;1048;impassable;-1;-1;-1;-1;-1;; Spain Gibraltar 
-6183;9116;impassable;-1;-1;-1;-1;-1;; Norway Soviet
-11142;9116;impassable;-1;-1;-1;-1;-1;; Norway Soviet
-9140;9116;impassable;-1;-1;-1;-1;-1;; Norway Soviet
-3761;6521;sea;;-1;-1;-1;-1;Berlin-Madrid;Berlin-Madrid
-6955;11666;sea;;-1;-1;-1;-1;Vienna-Madrid;Vienna-Madrid
-9853;9824;impassable;-1;-1;-1;-1;-1;; Spain France
-9853;11779;impassable;-1;-1;-1;-1;-1;; Spain France
-11779;6915;impassable;-1;-1;-1;-1;-1;; Spain France
-6915;3898;impassable;-1;-1;-1;-1;-1;; Spain France
-3898;6931;impassable;-1;-1;-1;-1;-1;; Spain France
-3898;3915;impassable;-1;-1;-1;-1;-1;; Spain France
-3915;3899;impassable;-1;-1;-1;-1;-1;; Spain France
-9882;3899;impassable;-1;-1;-1;-1;-1;; Spain France
-9882;899;impassable;-1;-1;-1;-1;-1;; Spain France
-9882;915;impassable;-1;-1;-1;-1;-1;; Spain France
-9884;915;impassable;-1;-1;-1;-1;-1;; Spain France
-9884;11838;impassable;-1;-1;-1;-1;-1;; Spain France
-11697;11838;impassable;-1;-1;-1;-1;-1;; Spain France
-11697;3931;impassable;-1;-1;-1;-1;-1;; Spain France
-743;3931;impassable;-1;-1;-1;-1;-1;; Spain France
-743;3737;impassable;-1;-1;-1;-1;-1;; Spain France
-743;6756;impassable;-1;-1;-1;-1;-1;; Spain France
-2800;2776;;-1;-1;-1;-1;-1;Aden_Strait;Aden Strait;
-
-
 -1;-1;;-1;-1;-1;-1;-1;-1

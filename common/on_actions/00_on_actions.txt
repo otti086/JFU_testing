@@ -374,14 +374,6 @@ on_actions = {
 				}
 				play_day_of_infamy_effect = yes
 			}
-			if = {
-				limit = {
-					tag = ENG
-					has_war_with = GER
-					has_country_leader = { character = ENG_neville_chamberlain ruling_only = yes }
-				}
-				play_war_with_germany_effect = yes
-			}
 		}
 	}
 	#ROOT = attacking side

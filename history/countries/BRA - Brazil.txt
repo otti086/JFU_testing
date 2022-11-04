@@ -73,6 +73,8 @@ recruit_character = BRA_artur_da_costa_e_silva
 recruit_character = BRA_ismael_motta_paes
 recruit_character = BRA_jorge_martins
 recruit_character = BRA_newton_cavalcanti
+recruit_character = BRA_eurico_gaspar_dutra
+recruit_character = BRA_mascarenhas_de_morais
 recruit_character = BRA_afranio_de_mello_franco
 recruit_character = BRA_arlindo_veiga_dos_santos
 

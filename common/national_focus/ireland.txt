@@ -11,6 +11,7 @@ focus_tree = {
 		
 		}
 	}
+	default = no
 
 	focus = {
 		id = ire_army_effort
