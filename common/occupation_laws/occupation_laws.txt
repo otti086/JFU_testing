@@ -66,10 +66,6 @@ no_garrison = {
 	icon = 1
 	sound_effect = "Martial_Law_Interface_No_Garrison"
 
-	visible = {
-		always = no
-	}
-
 	state_modifier = {
 		resistance_target = 0.4
 		no_compliance_gain = 1
@@ -145,9 +141,8 @@ autonomous_occupation = {
 
 foreign_civilian_oversight = {
 	icon = 3
-	default_law = yes
 	sound_effect = "Martial_Law_Interface_Foreign_Cvilian_Oversight"
-
+    default_law = yes
 	state_modifier = {
 		#resistance_target 				= 0.0
 		required_garrison_factor 		= -0.20
@@ -161,7 +156,7 @@ foreign_civilian_oversight = {
 	ai_will_do = {
 		base = 120
 		modifier = {
-			check_variable  = { resistance_target_without_law > 0.24}
+			check_variable  = { resistance_target_without_law > 0.05}
 			add = 100
 		}
 	}
@@ -173,7 +168,7 @@ local_police_force_garrison = {
 	sound_effect = "Martial_Law_Interface_Local_Police_Force_Garrison"
 
 	state_modifier = {
-		resistance_target 				= -0.10
+		resistance_target 				= -0.15
 		compliance_gain 				= -0.025
 		required_garrison_factor 		= -0.30
 		resistance_damage_to_garrison	= -0.5
@@ -185,7 +180,7 @@ local_police_force_garrison = {
 	ai_will_do = {
 		base = 100
 		modifier = {
-			check_variable  = { resistance_target_without_law > 0.44}
+			check_variable  = { resistance_target_without_law > 0.09}
 			add = 200
 		}
 
@@ -249,7 +244,7 @@ military_governor_occupation = {
 	sound_effect = "Martial_Law_Interface_Military_Governor_Occupation"
 
 	state_modifier = {
-		resistance_target 			= -0.3
+		resistance_target 			= -0.35
 		compliance_gain 			= -0.045
 		required_garrison_factor 	= 0.0
 		#local_factories 			= 0.00
@@ -272,7 +267,7 @@ military_governor_occupation = {
 		#	add = 150
 		#}
 		modifier = {
-			check_variable  = { resistance_target_without_law > 0.45}
+			check_variable  = { resistance_target_without_law > 0.24}
 			add = 400
 		}
 	}
@@ -295,7 +290,7 @@ martial_law_occupation = {
 		base = 0
 
 		modifier = {
-			check_variable = { resistance_target_without_law > 0.69}
+			check_variable = { resistance_target_without_law > 0.44}
 
 			set_temp_variable = { resistance_limit = 40 }
 			set_temp_variable = { requirement_limit = 0.8 }
@@ -458,7 +453,7 @@ brutally_oppressive_occupation = {
 		base = 0
 
 		modifier = {
-			check_variable  = { resistance_target_without_law > 0.94 }
+			check_variable  = { resistance_target_without_law > 0.84 }
 
 			set_temp_variable = { resistance_limit = 40 }
 			set_temp_variable = { requirement_limit = 2.0 }
@@ -472,6 +467,32 @@ brutally_oppressive_occupation = {
 
 			add = 1000
 		}
+	}
+}
+
+reconciliation = {
+	icon = 12
+	sound_effect = "Martial_Law_Interface_Autonomous_Occupation_Unique_DEM"
+
+	visible = {
+		original_tag = TUR
+		has_dlc = "Battle for the Bosporus"
+		OR = {
+			has_completed_focus = TUR_a_common_destiny_for_all_of_turkey
+			has_completed_focus = TUR_permit_regional_elections
+		}
+		FROM = { original_tag = KUR }
+	}
+
+	state_modifier = {
+		compliance_gain 				= 0.03
+		required_garrison_factor 		= -0.5
+		resistance_damage_to_garrison 	= -0.3
+		resistance_decay 				= 0.5
+	}
+
+	ai_will_do = {
+		base = 200
 	}
 }
 

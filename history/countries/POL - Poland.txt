@@ -78,15 +78,6 @@ if = {
 	}
 }
 
-if = {
-	limit = {
-		has_dlc = "Poland: United and Ready"
-	}
-	add_ideas = {
-		uncontrolled_exports
-	}
-}
-
 
 
 set_convoys = 10

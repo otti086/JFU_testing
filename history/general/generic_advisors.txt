@@ -4,7 +4,7 @@
 # Political advisors
 every_possible_country = {
 	limit = {
-		NOT = { OR = {allies = yes axis = yes } }	
+		NOT = { OR = {allies = yes axis = yes } }
 		# avoid generic advisors in temporary countries
 		is_dynamic_country = no
 		NOT = {
@@ -12,11 +12,26 @@ every_possible_country = {
 		}
 		if = {
 			limit = { has_dlc = "Battle for the Bosporus" }
-			NOT = {  tag = GRE }
+			NOT = { tag = GRE }
 		}
 		if = {
 			limit = { has_dlc = "By Blood Alone" }
-			NOT = { OR = { tag = ETH  } }
+			NOT = { OR = { tag = ETH } }
+		}
+	}
+	generate_character = {
+		token_base = generic_communist_revolutionary # token will be TAG_token_base
+		advisor = {
+			slot = political_advisor
+			traits = { communist_revolutionary }
+			available = {
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		portraits = { 
+			army = { small = GFX_idea_generic_communist_revolutionary }
 		}
 	}
 }
@@ -30,11 +45,11 @@ every_possible_country = {
 		}
 		if = {
 			limit = { has_dlc = "Battle for the Bosporus" }
-			NOT = {  tag = GRE }
+			NOT = { tag = GRE }
 		}
 		if = {
 			limit = { has_dlc = "By Blood Alone" }
-			NOT = { OR = { tag = ETH  } }
+			NOT = { OR = { tag = ETH } }
 		}
 	}
 	generate_character = {
@@ -72,11 +87,26 @@ every_possible_country = {
 		}
 		if = {
 			limit = { has_dlc = "Battle for the Bosporus" }
-			NOT = {  tag = GRE }
+			NOT = { tag = GRE }
 		}
 		if = {
 			limit = { has_dlc = "By Blood Alone" }
-			NOT = { OR = { tag = ETH  } }
+			NOT = { OR = { tag = ETH } }
+		}
+	}
+	generate_character = {
+		token_base = generic_fascist_demagogue # token will be TAG_token_base
+		advisor = {
+			slot = political_advisor
+			traits = { fascist_demagogue }
+			available = {			
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		portraits = { 
+			army = { small = GFX_idea_generic_fascist_demagogue }
 		}
 	}
 }
@@ -86,6 +116,7 @@ every_possible_country = {
 		has_dlc = "La Resistance"
 		# china gets a special one via focus
 		NOT = { original_tag = CHI }
+		NOT = { is_chinese_warlord = yes }
 		if = {
 			limit = {
 				has_dlc = "Battle for the Bosporus"
@@ -96,7 +127,7 @@ every_possible_country = {
 		}
 		if = {
 			limit = { has_dlc = "By Blood Alone" }
-			NOT = { OR = { tag = ETH  } }
+			NOT = { OR = { tag = ETH } }
 		}
 		NOT = {
 			has_allowed_idea_with_traits = { idea = head_of_intelligence characters = yes }

@@ -3,7 +3,7 @@
 every_possible_country = {
 	limit = {
 		OR = {
-			is_literally_china = yes
+			tag = CHI
 			tag = MAN
 		}
 		has_dlc = "Waking the Tiger"
@@ -51,6 +51,7 @@ every_possible_country = {
 			slot = air_chief
 			cost = 25
 			available = {
+				has_completed_focus = CHI_hire_chennault
 				NOT = { 
 					has_idea = CHI_claire_lee_chennault_theorist
 				}
@@ -66,6 +67,7 @@ every_possible_country = {
 			ledger = air
 			cost = 25
 			available = {
+				has_completed_focus = CHI_hire_chennault
 				NOT = { 
 					has_idea = CHI_claire_lee_chennault_air_chief
 				}
@@ -74,7 +76,6 @@ every_possible_country = {
 			traits = { air_warfare_theorist }
 		}
 	}
-	
 	
 	generate_character = {
 		token_base = CHI_dai_li_wtt
@@ -90,6 +91,7 @@ every_possible_country = {
 			allowed  = {
 				OR = {
 					original_tag  = CHI
+					is_chinese_warlord = yes 
 				}
 				NOT  = {
 					has_dlc = "La Resistance"
@@ -117,6 +119,7 @@ every_possible_country = {
 			allowed  = {
 				OR = {
 					original_tag = CHI
+					is_chinese_warlord = yes 
 				}
 				has_dlc = "La Resistance"
 				NOT = { original_tag = MAN }
@@ -126,6 +129,7 @@ every_possible_country = {
 			}
 		}
 	}
+
 	generate_character = {
 		token_base = CHI_t_v_soong
 		name = CHI_t_v_soong
@@ -139,12 +143,43 @@ every_possible_country = {
 			}
 			allowed  = {
 				OR = {
-					original_tag = CHI 
+					original_tag = CHI
+					is_chinese_warlord = yes 
 				}
 				has_dlc = "Waking the Tiger"
 			}
 			traits  = {
 				financial_expert 
+			}
+		}
+	}
+	generate_character = {
+		token_base = CHI_kwong_jiang
+		name = CHI_kwong_jiang
+		portraits = {
+			army = { small="GFX_idea_generic_political_advisor_asia_1" }
+		}
+		advisor={
+			slot = political_advisor
+			available  = {
+				has_completed_focus  = CHI_legislative_yuan 
+				if  = {
+					limit  = {
+						has_dlc = "Man the Guns"
+					}
+					not  = {
+						has_autonomy_state  = autonomy_supervised_state
+					}
+				}
+			}
+			allowed = {
+				OR = {
+					original_tag = CHI
+					is_chinese_warlord = yes
+				}
+			}
+			traits  = {
+				democratic_reformer 
 			}
 		}
 	}

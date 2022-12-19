@@ -3,6 +3,21 @@
 
 peace_ai_desires = {
 
+    # don't create warlord or PRC puppets
+
+
+    # Try to grab cities and hainan
+    JAP_take_chinese_cities_if_possible = {
+        peace_action_type = take_states
+        enable = {
+            FROM.FROM.FROM = {
+               is_state_japan_wants = yes
+            }
+            ROOT = { original_tag = JAP }
+        }
+        ai_desire = 150
+    }
+
 
     # If Mengkukuo exists, increase the Inner Mongolian state
     JAP_inner_mongolia = {
@@ -18,5 +33,30 @@ peace_ai_desires = {
             ROOT = { original_tag = JAP }
         }
         ai_desire = 100
+    }
+
+
+    # Create a chinese puppet state from the rest of China
+    JAP_create_chinese_puppet = {
+        peace_action_type = puppet
+        enable = {
+            FROM = {
+                original_tag = CHI
+            }
+            FROM.FROM.FROM = {
+                NOT = {
+                    is_state_japan_wants = yes
+                }
+                any_neighbor_state = {
+                    OR = {
+                        is_owned_by = ROOT.FROM
+                        pc_is_state_claimed_by = ROOT.FROM
+                        is_coastal = yes
+                    }
+                }
+            }
+            ROOT = { original_tag = JAP }
+        }
+        ai_desire = 80
     }
 }

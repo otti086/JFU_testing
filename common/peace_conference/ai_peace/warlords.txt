@@ -22,7 +22,6 @@ peace_ai_desires = {
             }
             ROOT = {
                 OR = {
-                    
                     tag = MAN
                 }
             }

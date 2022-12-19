@@ -746,6 +746,12 @@ leader_traits = {
 					has_completed_focus = ITA_strengthen_ascari_corps
 				}
 			}
+			modifier = { #ITALY
+				factor = 2
+				FROM = {
+					has_completed_focus = ITA_novus_ordo
+				}
+			}
 		}
 
 		defense_skill_factor = 1
@@ -761,7 +767,6 @@ leader_traits = {
 			FROM = {
 				OR = {
 					original_tag = ITA
-					original_tag = SWI
 				}
 			}
 		}
@@ -775,7 +780,6 @@ leader_traits = {
 			owner = {
 				OR = {
 					original_tag = ITA
-					original_tag = SWI
 				}
 				NOT = {
 					OR = {
@@ -808,6 +812,15 @@ leader_traits = {
 					OR = {
 						has_completed_focus = ITA_strengthen_the_blackshirts
 						#TODO_Manu: Alt-hist focuses
+					}
+				}
+			}
+			modifier = { #ITALY
+				factor = 2
+				FROM = {
+					OR = {
+						has_completed_focus = ITA_divino_duce
+						has_completed_focus = ITA_a_greater_purpose
 					}
 				}
 			}
@@ -1221,6 +1234,37 @@ leader_traits = {
 		
 		trait_type = basic_terrain_trait
 		gui_row = 7
+	}
+
+	adaptable = { 
+		type = corps_commander
+		gain_xp = {
+			always = no # not gainable
+		}
+		cost = 1000
+		modifier = {
+			terrain_penalty_reduction = 0.30
+			acclimatization_cold_climate_gain_factor = 0.1
+			acclimatization_hot_climate_gain_factor = 0.1
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		trait_type = assignable_terrain_trait
+		gui_row = 3
+				
+		parent = desert_fox
+		parent = swamp_fox
+		parent = trait_mountaineer
+		parent = hill_fighter
+		parent = jungle_rat
+		parent = ranger
+		parent = urban_assault_specialist
+		parent = winter_specialist
+		
+		num_parents_needed = 2
 	}
 
 	winter_expert = { 
@@ -3191,7 +3235,13 @@ leader_traits = {
 				FROM = {
 					OR = {
 						neutrality < 0.05
+						has_completed_focus = BUL_overthrow_the_tsar
+						has_completed_focus = BUL_abolish_the_monarchy
 						has_completed_focus = BUL_depose_the_tsar
+						AND = {
+							has_completed_focus = BUL_plot_against_boris
+							NOT = { has_completed_focus = BUL_the_return_of_ferdinand_i }
+						}
 					}
 				}
 			}
@@ -3328,6 +3378,7 @@ leader_traits = {
 		modifier = {
 			own_operative_detection_chance_factor = -0.1
 			target_sabotage_factor = 0.25
+			target_sabotage_risk = -0.25
 			operation_capture_cipher_outcome = 0.25
 			operation_capture_cipher_risk = -0.25
 		}
@@ -3344,6 +3395,70 @@ leader_traits = {
 			operation_infiltrate_outcome = 0.25
 			operation_infiltrate_risk = -0.25
 			own_operative_detection_chance_factor = -0.2
+		}
+	}
+
+	operative_infiltrator = {
+		type = operative
+		trait_type = basic_trait
+
+		new_commander_weight = {
+			factor = 0.5
+		}
+
+		cost = 400
+		gain_xp_leader = {
+			OR = {
+				operative_leader_operation = operation_rescue_operative
+				operative_leader_operation = operation_infiltrate_civilian
+				operative_leader_operation = operation_infiltrate_armed_forces_army
+				operative_leader_operation = operation_infiltrate_armed_forces_navy
+				operative_leader_operation = operation_infiltrate_armed_forces_airforce
+				operative_leader_operation = operation_make_resistance_contacts
+			}
+		}
+
+		modifier = { 
+			operation_infiltrate_outcome = 0.25
+			operation_infiltrate_risk = -0.25
+		}
+	}
+
+	operative_master_interrogator = {
+		type = operative
+		trait_type = basic_trait
+
+		#new_commander_weight = {
+		#}
+
+		cost = 400
+		gain_xp_leader = {
+			OR = {
+				operative_leader_mission = root_out_resistance
+				operative_leader_mission = counter_intelligence
+			}
+		}
+
+		modifier = {
+			intelligence_agency_defense = 0.2
+		}
+	}
+
+	operative_linguist = {
+		type = operative
+		trait_type = basic_trait
+
+		#new_commander_weight = {
+		#}
+
+		cost = 400
+		gain_xp_leader = {
+			NOT = { operative_leader_mission = no_mission }
+			NOT = { has_nationality = FROM }
+		}
+
+		modifier = {
+			# something good
 		}
 	}
 
@@ -3387,6 +3502,46 @@ leader_traits = {
 		}
 	}
 
+	operative_well_groomed = {
+		type = operative
+		trait_type = basic_trait
+
+		#new_commander_weight = {
+		#}
+
+		cost = 400
+		gain_xp_leader = {
+			OR = {
+				operative_leader_mission = diplomatic_pressure
+				operative_leader_mission = control_trade
+			}
+		}
+
+		modifier = {
+			control_trade_mission_factor = 0.2
+			diplomatic_pressure_mission_factor = 0.2
+		}
+	}
+
+	operative_natural_orator = {
+		type = operative
+		trait_type = basic_trait
+
+		gain_xp_leader = {
+			OR = {
+				operative_leader_mission = propaganda
+				operative_leader_mission = boost_ideology
+			}
+		}
+		
+		cost = 400
+		modifier = {
+			operation_coup_government_risk = -0.25
+			operation_coup_government_cost = -0.25
+			boost_ideology_mission_factor = 0.2
+		}
+	}
+
 	operative_escape_artist = {
 		type = operative
 		trait_type = basic_trait
@@ -3404,11 +3559,15 @@ leader_traits = {
 		cost = 400
 		gain_xp_leader = {
 			OR = {
+				operative_leader_operation = operation_targeted_sabotage_industry
+				operative_leader_operation = operation_targeted_sabotage_infrastructure
+				operative_leader_operation = operation_targeted_sabotage_resources
 			}
 		}
 
 		modifier = {
 			target_sabotage_factor = 0.25
+			target_sabotage_cost = -0.25
 			boost_resistance_factor = 0.25
 		}
 	}

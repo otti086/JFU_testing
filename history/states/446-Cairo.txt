@@ -10,7 +10,10 @@ state={
 		buildings = {
 			infrastructure = 3
 			
+			12049 = {
+				naval_base = 2
 
+			}
 
 		}
 		
@@ -22,12 +25,12 @@ state={
 			4073 3 
 		}
 		
-		add_core_of = SWE
+		add_core_of = EGY
 
 	}
 
 	provinces={
-		1155  9947  
+		1155 4073 9947 12049 
 	}
 
 	buildings_max_level_factor=1.000

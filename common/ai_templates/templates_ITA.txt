@@ -1173,7 +1173,11 @@ militia_ITA = {
 		militias
 	}
 	
-	match_to_count = 0.45
+	upgrade_prio = {
+		factor = 2
+	}
+	
+	match_to_count = 0.45 #If a template is 45% matching the target template, then it will be considered a militias role template
 
 	militia_default_ITA = {
 	

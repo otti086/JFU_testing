@@ -4,20 +4,6 @@ oob = "LIT_1936"
 
 set_research_slots = 3
 
-if = {
-	limit = {
-		has_DLC = "No Step Back"
-	}
-	add_ideas = {
-		limited_conscription
-	}
-}
-
-set_variable = {
-	var = iron_wolf_days_var
-	value = 100
-}
-
 recruit_character = LIT_antanas_smetona
 recruit_character = LIT_petras_schatz
 recruit_character = LIT_feliksas_baltusis

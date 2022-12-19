@@ -50,7 +50,7 @@ ITA_power_balance = {
 				war_support_factor = -0.05
 			}
 			on_activate = {
-				
+				custom_effect_tooltip = ITA_bop_cap_for_colonies_impact_tt
 			}
 			on_deactivate = {
 				
@@ -440,6 +440,11 @@ ITA_power_balance = {
 							character = ITA_vittorio_emanuele_iii
 							ideology = neutrality
 						}
+					hidden_effect = {
+						ITA_grand_council = {
+							set_character_name = ITA_grand_council
+						}
+					}
 				}
 			}
 			on_deactivate = {
@@ -492,6 +497,7 @@ ITA_power_balance = {
 						}
 					}
 					ITA_vittorio_emanuele_iii = { promote_character = yes }
+					ITA_add_king_vittorio_emanuele_back_as_idea = yes
 				}
 			}
 			on_deactivate = {
@@ -554,6 +560,11 @@ ITA_power_balance = {
 					promote_character = {
 						character = ITA_prince_umberto
 						ideology = neutrality
+					}
+				}
+				hidden_effect = {
+					ITA_grand_council = {
+						set_character_name = ITA_grand_council
 					}
 				}
 			}
