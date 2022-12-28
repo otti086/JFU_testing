@@ -1233,25 +1233,6 @@ ITA_pacified_italian_east_africa_modifier = {
 	resistance_decay = 0.1
 }
 
-ITA_fronte_militare_clandestino_modifier = { #In a RSI state
-	enable = { always = yes }
-	remove_trigger = {
-		ROOT = { is_controlled_by = RDS } # ROOT refers to the state on which the modifier is added
-	}
-	icon = GFX_modifiers_SOV_invaders_must_die
-
-	#INITIAL (FRONTE MILITARE CLANDESTINO)
-	required_garrison_factor = 2.ITA_fronte_militare_clandestino_required_garrison_factor #0.15
-	resistance_growth_on_our_occupied_states = 2.ITA_fronte_militare_clandestino_resistance_growth_on_our_occupied_states #0.1
-
-	#GAPPISTI
-	resistance_damage_to_garrison_on_our_occupied_states = 2.ITA_fronte_militare_clandestino_resistance_damage_to_garrison_on_our_occupied_states #0.1
-	resistance_target_on_our_occupied_states = 2.ITA_fronte_militare_clandestino_resistance_target_on_our_occupied_states #0.1
-
-	#PARTISAN REPUBLICS
-	compliance_growth_on_our_occupied_states = 2.ITA_fronte_militare_clandestino_compliance_growth_on_our_occupied_states #-0.1
-}
-
 ITA_cooperatives_for_intensive_exploitation_dm = {
 	enable = { always = yes }
 	remove_trigger = { # ROOT refers to the state on which the modifier is added

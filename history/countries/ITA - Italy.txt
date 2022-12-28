@@ -879,10 +879,6 @@ ITA_benito_mussolini = { unit_leader_event = { id = BBA_italy_missiolinis.00 day
 # Next Missiolini is random and comes in JUN 39, next one in JUN 40.
 
 
-#CIVIL WAR SPLIT FLAGS
-ITA_set_up_character_cw_flags_effect = yes
-
-
 #PURGE FLAGS
 ITA_achille_starace = { set_character_flag = ITA_character_can_be_purged }
 ITA_renato_ricci = { set_character_flag = ITA_character_can_be_purged }

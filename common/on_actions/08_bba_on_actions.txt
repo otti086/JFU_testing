@@ -69,37 +69,6 @@ on_actions = {
 		}
 	}
 
-	on_civil_war_end = { # ROOT is civil war winner, FROM gets annexed.
-		# End of Collaborationalist Civil War 
-
-		#End of Italian CW - Manage BoP -> If Monarchist, bring it back, but against communists
-
-		effect = {
-			if = {
-				limit = {
-					tag = RSI
-				}
-					#BoP
-					set_power_balance = {
-						id = ITA_power_balance
-						left_side = ITA_grand_council_side
-						right_side = ITA_mussolini_side
-						set_default = yes
-					}
-					if = {
-						limit = {
-							NOT = {
-								has_country_leader = {
-									character = ITA_benito_mussolini
-								}
-							}
-						}
-						promote_character = ITA_benito_mussolini
-					}
-			}
-		}
-	}
-
 	on_peace = {
 		effect = {
 			# The 2nd Italo Ethiopian war is over if either participant has peace
@@ -225,32 +194,6 @@ on_actions = {
 				ITA_end_the_italo_ethiopian_war = yes 
 			}
 			# Haile Selassie Will set up a government in the appropriate country if he has left the country already
-			IF = {
-				limit = { 
-					tag = ETH 
-					has_country_flag = ETH_selassie_left_ethiopia_flag
-					has_government = neutrality
-				}
-				var:ETH.host_nation = {
-					ETH = {
-						become_exiled_in = { 
-							target = PREV
-							legitimacy = 5
-						}
-						remove_power_balance = {
-							id = ETH_centralization_balance
-						}
-					}
-				}
-				ITA = {
-					country_event = {
-						id = BBA_italo_ethiopian_war_events.20
-						hours = 1
-						random_hours = 6
-					}
-				}
-				clr_country_flag = ETH_selassie_left_ethiopia_flag # He's now the government in exile, not personally left the country, so no need for this flag anymore. 
-			}
 			# Ethiopian civil war capitulation 
 			# Italy capitulates to Ethiopian host with liberate wargoal 
 			IF = {
@@ -758,34 +701,6 @@ on_actions = {
 				ITA_replace_stuff_based_on_ideology_effect = yes
 			}
 		}
-	}
-
-	on_government_change = {
-		effect = {
-			#Change BoP when changing gov
-			IF = {
-				limit = {
-					original_tag = ETH
-					has_government = communism
-				}
-				set_power_balance = {
-					id = ETH_centralization_balance
-					left_side = ETH_decentralization_anarchist
-					right_side = ETH_communist_side
-				}
-			}
-			ELSE_IF = {
-				limit = {
-					original_tag = ETH
-					NOT = { has_government = communism }
-				}
-				set_power_balance = {
-					id = ETH_centralization_balance
-					left_side = ETH_mesafint_side
-					right_side = ETH_mekwanint_side
-				}
-			}
-		}	
 	}
 	#on_unit_leader_promote_from_ranks_green
 

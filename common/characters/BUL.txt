@@ -203,7 +203,7 @@ characters = {
 			}
 		}
 		field_marshal = {
-			traits = { career_officer politically_connected trait_BUL_tsar_loyalist fortress_buster }
+			traits = { career_officer politically_connected fortress_buster }
 			skill = 4
 			attack_skill = 4
 			defense_skill = 2
@@ -395,7 +395,7 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { trait_cautious trait_BUL_tsar_loyalist }
+			traits = { trait_cautious  }
 			skill = 2
 			attack_skill = 2
 			defense_skill = 2
@@ -825,7 +825,7 @@ characters = {
 				}
 			}
 			corps_commander = {
-				traits = { cavalry_officer trait_BUL_tsar_loyalist }
+				traits = { cavalry_officer  }
 				skill = 3
 				attack_skill = 3
 				defense_skill = 2

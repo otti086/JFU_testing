@@ -485,7 +485,6 @@ country_event = {
 			set_country_flag = BUL_zveno_dissident_event_not_addressed_flag
 			random_unit_leader = {
 				limit = {
-					NOT = { has_trait = trait_BUL_tsar_loyalist }
 					NOT = { has_trait = trait_BUL_ff_sympathizer }
 				}
 				add_unit_leader_trait = trait_BUL_zveno_member

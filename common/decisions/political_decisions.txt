@@ -11,7 +11,6 @@ political_actions = {
                 original_tag = USA
                 original_tag = FRA
                 original_tag = CAN
-                original_tag = TUR
             }
         }
 
@@ -61,7 +60,6 @@ political_actions = {
                 original_tag = USA
                 original_tag = FRA
                 original_tag = CAN
-                original_tag = TUR
             }
 		}
 

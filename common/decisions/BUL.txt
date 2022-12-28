@@ -3539,17 +3539,6 @@ BUL_internal_factions = {
 					}
 
 					#Operatives in the FF
-					if = {
-						limit = {
-							has_dlc = "La Resistance"
-						}
-						every_operative = {
-							limit = {
-								has_trait = trait_BUL_tsar_loyalist
-							}
-							set_nationality = BUL
-						}
-					}
 				}
 			
 				#Operatives in original BUL

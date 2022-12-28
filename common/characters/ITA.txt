@@ -2630,20 +2630,6 @@ characters = {
 			ITA_is_appropriate_cw_side_for_character_split = yes
 		}
 		
-		field_marshal = {
-			traits = { infantry_officer expert_delegator } #Regno del Sud, Commander of Royal Carabinieri
-			skill = 2
-			attack_skill = 1
-			defense_skill = 2
-			planning_skill = 2
-			logistics_skill = 2
-			legacy_id = 0
-			visible = {
-				OR = {
-					has_completed_focus = ITA_the_carabinieri
-				}
-			}
-		}
 	}
 
 	ITA_giovanni_duca = {
@@ -2688,21 +2674,7 @@ characters = {
 		allowed_civil_war = {
 			ITA_is_appropriate_cw_side_for_character_split = yes
 		}
-		
-		corps_commander = {
-			traits = { infantry_officer urban_assault_specialist }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-			legacy_id = 0
-			visible = { 
-				OR = {
-					has_completed_focus = ITA_the_carabinieri
-				}
-			}
-		}
+	
 	}
 
 	ITA_enrico_fermi = {
@@ -2878,27 +2850,6 @@ characters = {
 
 		allowed_civil_war = {
 			ITA_is_appropriate_cw_side_for_character_split = yes
-		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = ITA_giuseppe_borea
-			allowed = {
-				original_tag = ITA
-				has_dlc = "By Blood Alone"
-			}
-			available = {
-				OR = {
-					ITA_is_in_liberation_war = yes
-				}
-			}
-			traits = {
-				anti_fascist_chaplain
-			}
-
-			ai_will_do = {
-				base = 0.300
-			}
 		}		
 	}	
 
@@ -2937,9 +2888,6 @@ characters = {
 			legacy_id = 0
 			visible = {
 				OR = {
-					ITA_is_in_liberation_war = yes
-				}
-				OR = {
 					has_government = communism
 					has_government = democratic
 				}
@@ -2969,9 +2917,6 @@ characters = {
 			logistics_skill = 2
 			legacy_id = 0
 			visible = {
-				OR = {
-					ITA_is_in_liberation_war = yes
-				}
 				OR = {
 					has_government = communism
 					has_government = democratic
@@ -3019,9 +2964,7 @@ characters = {
 			logistics_skill = 2
 			legacy_id = 0
 			visible = {
-				OR = {
-					ITA_is_in_liberation_war = yes
-				}
+
 				OR = {
 					has_government = communism
 					has_government = democratic
@@ -3052,9 +2995,7 @@ characters = {
 			logistics_skill = 1
 			legacy_id = 0
 			visible = {
-				OR = {
-					ITA_is_in_liberation_war = yes
-				}
+
 				OR = {
 					has_government = communism
 					has_government = democratic

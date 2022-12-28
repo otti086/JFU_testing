@@ -746,12 +746,6 @@ leader_traits = {
 					has_completed_focus = ITA_strengthen_ascari_corps
 				}
 			}
-			modifier = { #ITALY
-				factor = 2
-				FROM = {
-					has_completed_focus = ITA_novus_ordo
-				}
-			}
 		}
 
 		defense_skill_factor = 1
@@ -812,15 +806,6 @@ leader_traits = {
 					OR = {
 						has_completed_focus = ITA_strengthen_the_blackshirts
 						#TODO_Manu: Alt-hist focuses
-					}
-				}
-			}
-			modifier = { #ITALY
-				factor = 2
-				FROM = {
-					OR = {
-						has_completed_focus = ITA_divino_duce
-						has_completed_focus = ITA_a_greater_purpose
 					}
 				}
 			}
@@ -3219,35 +3204,6 @@ leader_traits = {
 		}
 	}
 
-	trait_BUL_tsar_loyalist = {
-
-		type = all
-		trait_type = personality_trait
-
-		allowed = {
-			FROM = { original_tag = BUL }
-		}
-
-		new_commander_weight = {
-			factor = 1
-			modifier = {
-				factor = 0
-				FROM = {
-					OR = {
-						neutrality < 0.05
-						has_completed_focus = BUL_overthrow_the_tsar
-						has_completed_focus = BUL_abolish_the_monarchy
-						has_completed_focus = BUL_depose_the_tsar
-						AND = {
-							has_completed_focus = BUL_plot_against_boris
-							NOT = { has_completed_focus = BUL_the_return_of_ferdinand_i }
-						}
-					}
-				}
-			}
-		}
-	}
-
 	trait_BUL_ff_sympathizer = {
 
 		type = all
@@ -3266,20 +3222,6 @@ leader_traits = {
 					FROM = { has_completed_focus = BUL_crush_the_communists }
 				}
 			}
-		}
-	}
-
-	trait_TUR_kemalist_champion = {
-
-		type = all
-		trait_type = personality_trait
-
-		allowed = {
-			FROM = { original_tag = TUR }
-		}
-
-		new_commander_weight = {
-			factor = 0
 		}
 	}
 

@@ -64,14 +64,6 @@ ITA_is_antifascist_civil_war_over = {
 	has_civil_war = no
 }
 
-ITA_cw_branches_are_visible = {
-	has_global_flag = ITA_antifascist_civil_war_triggered_flag
-	OR = {
-		tag = RDS
-		tag = RSI
-	}
-}
-
 ITA_is_compatible_spanish_tag = { #THIS is Spanish tag, ROOT is ITA
 	OR = { #Nationalist Spain
 		AND = {
@@ -178,13 +170,6 @@ ITA_government_is_somewhat_fascist = {
 			has_government = fascism
 			has_government = neutrality
 		}
-	}
-}
-
-ITA_is_in_liberation_war = {
-	custom_trigger_tooltip = {
-		tooltip = ITA_is_in_liberation_war_tt
-		has_completed_focus = ITA_the_italian_liberation_war
 	}
 }
 
@@ -336,7 +321,6 @@ ITA_has_rejected_monarchy = { # Used to change NS names from Regio/a to somethin
 			has_government = democratic
 		}
 		has_completed_focus = ITA_capo_supremo
-		tag = RSI
 	}
 }
 
@@ -364,8 +348,6 @@ ITA_is_advisor_available = {
 ITA_is_italian_tag = {
 	OR = {
 		original_tag = ITA
-		tag = RDS
-		tag = RSI
 	}
 }
 

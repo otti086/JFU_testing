@@ -7456,12 +7456,6 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation4
-			if = {
-				limit = {
-					original_tag = TUR
-				}
-				has_idea = petrol_ofisi
-			}
 			num_of_civilian_factories_available_for_projects > 15
 			owns_state = 350
 			controls_state = 350
@@ -7550,12 +7544,6 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation5
-			if = {
-				limit = {
-					original_tag = TUR
-				}
-				has_idea = petrol_ofisi
-			}
 			num_of_civilian_factories_available_for_projects > 24
 			owns_state = 350
 			controls_state = 350

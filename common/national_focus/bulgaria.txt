@@ -1755,14 +1755,6 @@ focus_tree = {
 				}
 				retire = yes
 			}
-			every_unit_leader = {
-				limit = {
-					NOT = { has_id = 1204 } #Boydev
-					has_trait = trait_BUL_tsar_loyalist
-				}
-				custom_effect_tooltip = BUL_remove_tsar_loyalist_trait_tt
-				remove_unit_leader_trait = trait_BUL_tsar_loyalist
-			}
 			if = {
 				limit = {
 					has_country_leader = {
