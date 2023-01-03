@@ -2546,7 +2546,7 @@ pregrinded_effect = {
 			add_unit_leader_trait = logistics_wizard
 		}
 		SOV_nikolay_vatutin = { add_skill_level = 1 }
-		SOV_nikolay_vatutin = { add_attack = 4 }
+		SOV_nikolay_vatutin = { add_attack = 3 }
 		SOV_nikolay_vatutin = { add_defense = 1 }
 		SOV_nikolay_vatutin = { add_planning = 1 }
 		SOV_nikolay_vatutin = { add_logistics = 1 }
@@ -2560,7 +2560,7 @@ pregrinded_effect = {
 			add_unit_leader_trait = ranger		
 		}
 		SOV_dmitry_lelyushenko = { add_skill_level = 3 }
-		SOV_dmitry_lelyushenko = { add_attack = 6 }
+		SOV_dmitry_lelyushenko = { add_attack = 4 }
 		SOV_dmitry_lelyushenko = { add_defense = 4 }
 		SOV_dmitry_lelyushenko = { add_planning = 3 }
 		SOV_dmitry_lelyushenko = { add_logistics = 4 }	
@@ -2576,7 +2576,7 @@ pregrinded_effect = {
 			add_unit_leader_trait = hill_fighter
 		}
 		SOV_andrey_grechko = { add_skill_level = 1 }
-		SOV_andrey_grechko = { add_attack = 5 }
+		SOV_andrey_grechko = { add_attack = 3 }
 		SOV_andrey_grechko = { add_defense = 1 }
 		SOV_andrey_grechko = { add_planning = 1 }
 		SOV_andrey_grechko = { add_logistics = 1 }
