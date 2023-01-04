@@ -198,9 +198,24 @@ ideas = {
 
 		relief_of_command_spirit = {
 			ledger = army
-			visible = { has_government = democratic }
+			visible = { 
+				has_government = democratic 
+				NOT = { tag = FRA } 
+			}
 			modifier = {
 				experience_gain_army_factor = 0.25
+				army_advisor_cost_factor = -0.5
+			}
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		relief_of_command_spirit_FRA = {
+			ledger = army
+			visible = { 
+				tag = FRA 
+			}
+			modifier = {
 				army_advisor_cost_factor = -0.5
 			}
 			ai_will_do = {

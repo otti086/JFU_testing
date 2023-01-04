@@ -270,7 +270,6 @@ focus = {
 		completion_reward = {
 			custom_effect_tooltip = available_chief_of_army
 			show_ideas_tooltip = maxime_weygand
-			army_experience = 10
 		}
 	}
 	focus = {
@@ -308,7 +307,6 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 10
 			add_ideas = FRA_infantry_focus
 		}
 	}
@@ -354,7 +352,6 @@ focus = {
 		completion_reward = {
 			custom_effect_tooltip = available_chief_of_army
 			show_ideas_tooltip = maurice_gamelin
-			army_experience = 10
 
 			
 		}
@@ -396,7 +393,6 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 10
 			add_ideas = FRA_motorized_focus
 		}
 	}
@@ -412,7 +408,6 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 10
 			add_tech_bonus = {
 				name = FRA_light_medium_armor
 				bonus = 1.0
