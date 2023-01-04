@@ -500,22 +500,18 @@ ideas = {
 					limit = {
 						original_tag = SOV
 					}
-					NOT = {
-						has_game_rule = {
-							rule = JFU_closed_eco_SOVIET
-							option = ENABLE_CLOSED_ECO
-						}
+					has_game_rule = {
+						rule = JFU_closed_eco_SOVIET
+						option = DISABLE_CLOSED_ECO
 					}
 				}
 				if = {
 					limit = {
 						original_tag = JAP
 					}
-					NOT = {
-						has_game_rule = {
-							rule = JFU_closed_eco_JAPAN
-							option = ENABLE_CLOSED_ECO
-						}
+					has_game_rule = {
+						rule = JFU_closed_eco_JAPAN
+						option = DISABLE_CLOSED_ECO
 					}
 				}
 			}
@@ -570,22 +566,18 @@ ideas = {
 					limit = {
 						original_tag = SOV
 					}
-					NOT = {
-						has_game_rule = {
-							rule = JFU_closed_eco_SOVIET
-							option = ENABLE_CLOSED_ECO
-						}
+					has_game_rule = {
+						rule = JFU_closed_eco_SOVIET
+						option = DISABLE_CLOSED_ECO
 					}
 				}
 				if = {
 					limit = {
 						original_tag = JAP
 					}
-					NOT = {
-						has_game_rule = {
-							rule = JFU_closed_eco_JAPAN
-							option = ENABLE_CLOSED_ECO
-						}
+					has_game_rule = {
+						rule = JFU_closed_eco_JAPAN
+						option = DISABLE_CLOSED_ECO
 					}
 				}
 			}
@@ -664,22 +656,18 @@ ideas = {
 					limit = {
 						original_tag = SOV
 					}
-					NOT = {
-						has_game_rule = {
-							rule = JFU_closed_eco_SOVIET
-							option = ENABLE_CLOSED_ECO
-						}
+					has_game_rule = {
+						rule = JFU_closed_eco_SOVIET
+						option = DISABLE_CLOSED_ECO
 					}
 				}
 				if = {
 					limit = {
 						original_tag = JAP
 					}
-					NOT = {
-						has_game_rule = {
-							rule = JFU_closed_eco_JAPAN
-							option = ENABLE_CLOSED_ECO
-						}
+					has_game_rule = {
+						rule = JFU_closed_eco_JAPAN
+						option = DISABLE_CLOSED_ECO
 					}
 				}
 			}
