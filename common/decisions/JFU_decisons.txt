@@ -1116,7 +1116,8 @@ JFU_decisions = {
 			has_game_rule = {
 				rule = JFU_pre_sets 
 				option = COMPETITIVE_JFU
-			}			
+			}	
+			FIN = { is_ai = yes}	
 		}
 		cost = 0
 		complete_effect = {
@@ -1126,6 +1127,7 @@ JFU_decisions = {
 				uses = 1
 				category = motorized_equipment
 			}
+			army_experience = 100
 		}	
 	}
 	"Join the Axis" = {
