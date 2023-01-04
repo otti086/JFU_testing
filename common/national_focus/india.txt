@@ -1627,40 +1627,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = RAJ_clamp_down_on_corruption
-		icon = GFX_focus_RAJ_clamp_down_on_corruption
-		prerequisite = { focus = RAJ_east_india_railways }
-		x = -2
-		y = 1
-		relative_position_id = RAJ_east_india_railways
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 30
-		}
-
-		available = {
-			if = {
-				limit = { NOT = { has_government = fascism } }
-				compare_autonomy_state > autonomy_colony
-			}
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			remove_ideas = RAJ_risk_of_famine
-		}
-	}
-
-	focus = {
 		id = RAJ_strengthen_ties_with_british_investors
 		icon = GFX_focus_RAJ_british_investors
 		prerequisite = { focus = RAJ_ishapore_arsenal }
