@@ -198,6 +198,39 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 9650;3684;impassable;-1;-1;-1;-1;-1;;austrian alps
 3314;6336;sea;2752;2885;1578;2890;1581;;Afsluitdijk
 
+3761;6521;sea;;-1;-1;-1;-1;Berlin-Madrid;Berlin-Madrid
+6955;11666;sea;;-1;-1;-1;-1;Vienna-Madrid;Vienna-Madrid
+9853;9824;impassable;-1;-1;-1;-1;-1;; Spain France
+9853;11779;impassable;-1;-1;-1;-1;-1;; Spain France
+11779;6915;impassable;-1;-1;-1;-1;-1;; Spain France
+6915;3898;impassable;-1;-1;-1;-1;-1;; Spain France
+3898;6931;impassable;-1;-1;-1;-1;-1;; Spain France
+3898;3915;impassable;-1;-1;-1;-1;-1;; Spain France
+3915;3899;impassable;-1;-1;-1;-1;-1;; Spain France
+9882;3899;impassable;-1;-1;-1;-1;-1;; Spain France
+9882;899;impassable;-1;-1;-1;-1;-1;; Spain France
+9882;915;impassable;-1;-1;-1;-1;-1;; Spain France
+9884;915;impassable;-1;-1;-1;-1;-1;; Spain France
+9884;11838;impassable;-1;-1;-1;-1;-1;; Spain France
+11697;11838;impassable;-1;-1;-1;-1;-1;; Spain France
+11697;3931;impassable;-1;-1;-1;-1;-1;; Spain France
+743;3931;impassable;-1;-1;-1;-1;-1;; Spain France
+743;3737;impassable;-1;-1;-1;-1;-1;; Spain France
+743;6756;impassable;-1;-1;-1;-1;-1;; Spain France
+10113;10013;impassable;-1;-1;-1;-1;-1;; Spain Ceuta
+10113;1194;impassable;-1;-1;-1;-1;-1;; Spain Ceuta
+12087;10013;impassable;-1;-1;-1;-1;-1;; Spain Ceuta
+4199;10013;impassable;-1;-1;-1;-1;-1;; Spain Ceuta
+4199;4097;impassable;-1;-1;-1;-1;-1;; Spain Ceuta
+7215;4097;impassable;-1;-1;-1;-1;-1;; Spain Ceuta
+12100;989;impassable;-1;-1;-1;-1;-1;; Spain Ceuta
+12100;1111;impassable;-1;-1;-1;-1;-1;; Spain Ceuta
+12100;4097;impassable;-1;-1;-1;-1;-1;; Spain Ceuta
+4135;7153;impassable;-1;-1;-1;-1;-1;; Spain Gibraltar
+10094;4135;impassable;-1;-1;-1;-1;-1;; Spain Gibraltar
+13228;10094;impassable;-1;-1;-1;-1;-1;; Spain Gibraltar
+13228;1048;impassable;-1;-1;-1;-1;-1;; Spain Gibraltar
+
 7153;5407;impassable;-1;2744;1328;2744;1328;;Spanish;Med;Coast;;
 9979;5407;impassable;-1;2744;1328;2744;1328;;Spanish;Med;Coast;Malaga;
 7068;5407;impassable;-1;2744;1328;2744;1328;;Spanish;Med;Coast;;
@@ -287,4 +320,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 7990;10806;impassable;-1;-1;-1;-1;-1;;Persia Soviet Border;;
 5014;1822;impassable;-1;-1;-1;-1;-1;;Persia Soviet Border;;
 6826;1822;impassable;-1;-1;-1;-1;-1;;Persia Soviet Border;;
+
+2800;2776;;-1;-1;-1;-1;-1;Aden_Strait;Aden Strait;
+
 -1;-1;;-1;-1;-1;-1;-1;-1
