@@ -12,6 +12,7 @@ CHI_army_reform = {
 		available = {
 			has_army_experience > 99
 			has_completed_focus = CHI_army_reform
+			always = no
 		}
 
 		cost = 0
