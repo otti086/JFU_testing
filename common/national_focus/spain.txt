@@ -802,10 +802,8 @@ focus_tree = {
 			OR = {
 				has_global_flag = scw_over
 				NOT = {
-					AND = {
-						country_exists = SPA
-						country_exists = SPD
-					}
+					country_exists = SPA
+					country_exists = SPD
 				}
 			}
 		}

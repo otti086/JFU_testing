@@ -563,12 +563,6 @@ JFU_decisions = {
 		allowed = { tag = CAN }
 		available = { SAF = { is_ai = yes } }
 		visible = {
-			NOT = {
-				has_game_rule = {
-					rule = JFU_pre_sets 
-					option = JFU_ALTERNATIVE_GS2
-				}			
-			}
 		}
 		cost = 0
 		complete_effect = {
