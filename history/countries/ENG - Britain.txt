@@ -11,11 +11,6 @@ set_variable = {
 set_country_flag=fuel_system_enabled
 #set_country_flag=host
 
-add_relation_modifier = {
-	target = SOV
-	modifier = trade_soviet
-}
-
 if = {
 	limit = {
 		NOT = {

@@ -683,4 +683,5 @@ ETH_support_spain_static_modifier = {
 }
 trade_major = {trade_cost_for_target_factor = -0.9 extra_trade_to_target_factor = 1.0	}
 trade_vichy = { trade_cost_for_target_factor = -0.9 }
-trade_soviet = { trade_cost_for_target_factor = -0.5 } 
+trade_soviet = { trade_cost_for_target_factor = -0.5 }
+trade_spain = { trade_cost_for_target_factor = -0.5 } 
