@@ -1733,6 +1733,9 @@ focus_tree = {
 			add_political_power = 120
 			army_experience = 6
 			add_named_threat = { threat = 5 name = GER_rhineland }
+			hidden_effect = {
+				news_event = { hours = 6 id = news.25 }
+			}
 		}		
 	}
 	focus = {
@@ -1793,6 +1796,9 @@ focus_tree = {
 			86 = { add_core_of = GER }
 			762 = { add_claim_by = GER }
 			add_named_threat = { threat = 3 name = GER_demand_memel_threat }
+			hidden_effect = {
+				news_event = { hours = 6 id = news.19 }
+			}
 		}
 	}
 
