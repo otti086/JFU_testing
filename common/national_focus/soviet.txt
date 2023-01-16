@@ -5702,17 +5702,6 @@ focus_tree = {
 			annex_country = { target = LIT  }
 			add_named_threat = { threat = 1 name = SOV_claims_in_baltic }
 			add_political_power = -75
-			hidden_effect = {
-				every_state = {
-					limit = {
-						AND = {
-							is_core_of = LIT
-							is_controlled_by = SOV
-						}
-					}
-					add_compliance = 40 
-				}
-			}
 		}
 	}
 	focus = {
