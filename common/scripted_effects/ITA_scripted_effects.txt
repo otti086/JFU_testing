@@ -2289,10 +2289,6 @@ ITA_promote_umberto_to_country_leader = {
 			name = ITA_prince_umberto_king
 		}
 		#BoP
-		set_power_balance = {
-			id = ITA_power_balance
-			right_side = ITA_king_umberto_side
-		}
 
 	}
 

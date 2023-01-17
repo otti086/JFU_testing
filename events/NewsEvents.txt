@@ -34,36 +34,6 @@ news_event = {
 	}
 }
 
-# Marco Polo Bridge II
-news_event = {
-	id = news.2
-	title = news.1.t
-	desc = news.2.d
-	picture = GFX_news_event_018
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = news.2.a
-		trigger = {
-			NOT = {
-				TAG = JAP
-				TAG = CHI
-			}
-		}
-	}
-	option = {
-		name = news.2.b
-		trigger = { TAG = JAP }
-	}
-	option = {
-		name = news.2.c
-		trigger = { TAG = CHI }
-	}
-}
-
 # Soviet - Japanese Border Conflict (Soviets Win)
 news_event = {
 	id = news.7
@@ -195,52 +165,6 @@ news_event = {
 	}
 }
 
-# Treaty of Craiova
-news_event = {
-	id = news.21
-	title = news.21.t
-	desc = news.21.d
-	picture = GFX_news_event_009
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = news.21.a
-		trigger = {
-			NOT = {
-				TAG = BUL
-				TAG = ROM
-			}
-		}
-	}
-	option = {
-		name = news.21.b
-		trigger = { TAG = BUL }
-	}
-	option = {
-		name = news.21.c
-		trigger = { TAG = ROM }
-	}
-}
-
-# Reichstag Speech (The Polish Question)
-news_event = {
-	id = news.24
-	title = news.24.t
-	desc = news.24.d
-	picture = GFX_news_event_hitler_speech
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = news.24.a
-	}
-}
-
 # Remilitarization of the Rhineland (Peaceful)
 news_event = {
 	id = news.25
@@ -369,50 +293,6 @@ news_event = {
 					is_in_faction_with = SOV
 					is_in_faction_with = GER
 				}
-			}
-		}
-	}
-}
-
-# USSR Occupies Eastern Poland
-news_event = {
-	id = news.33
-	title = news.33.t
-	desc = news.33.d
-	picture = GFX_news_event_006
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = news.33.a
-		trigger = {
-			NOT = {
-				TAG = GER
-				TAG = SOV
-				is_in_faction_with = GER
-				is_in_faction_with = SOV
-			}
-		}
-	}
-	option = { 
-		name = news.33.b
-		trigger = { 
-			NOT = { TAG = SOV } #fix for unholy alliance
-			OR = {
-				TAG = GER
-				is_in_faction_with = GER
-			}
-		}
-	}
-	option = {
-		name = news.33.c
-		trigger = { 
-			NOT = { TAG = GER } # fix for unholy alliance
-			OR = {
-				TAG = SOV
-				is_in_faction_with = SOV
 			}
 		}
 	}

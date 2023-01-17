@@ -949,7 +949,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-				ROM = { country_event = DOD_hungary.140 }
 
 			custom_effect_tooltip = HUN_bled_agreement_custom_effect_tooltip
 		}

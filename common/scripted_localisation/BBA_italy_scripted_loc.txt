@@ -359,50 +359,6 @@ defined_text = {
 	}
 }
 
-
-defined_text = {
-	name = GetItalyAsksEngland
-	text = {
-		trigger = {
-			has_country_flag = ITA_italy_asks_ehtiopian_host_for_help
-		}
-		localization_key = BBA_italy_interaction_events.27.desc_hosting_ethiopia
-	}
-	text = {
-		localization_key = BBA_italy_interaction_events.27.desc_standard
-	}
-}
-
-defined_text = {
-	name = GetItaloEthiopianPeaceDemands
-	text = {
-		trigger = {
-			FROM = {
-				has_country_flag = ITA_italy_asks_ehtiopian_host_for_help
-			}
-		}
-		localization_key = BBA_italo_ethiopian_war_events.500.desc_guarantees
-	}
-	text = {
-		localization_key = BBA_italo_ethiopian_war_events.500.desc_territories
-	}
-}
-
-defined_text = {
-	name = GetItalyRefusesPeaceTalks
-	text = {
-		trigger = {
-			ROOT = {
-				has_country_flag = ITA_italy_asks_ehtiopian_host_for_help
-			}
-		}
-		localization_key = BBA_italo_ethiopian_war_events.502.desc_guarantees
-	}
-	text = {
-		localization_key = BBA_italo_ethiopian_war_events.502.desc_territories
-	}
-}
-
 defined_text = {
 	name = GetItalianConquestofParisDesc
 	text = {
@@ -439,21 +395,6 @@ defined_text = { #Color for Strengthened Industry missiolini tooltip.
 	}
 	text = {
 		localization_key = SOV_propaganda_campaigns_taken_requirement_color_red
-	}
-}
-
-
-#Italy negotiates for Somaliland
-defined_text = { 
-	name = GetRatifyStresaFrontEventDesc
-	text = { #If Italy signed a peace treaty with Ethiopia
-		trigger = { 
-			has_country_flag = ITA_italy_suing_for_peace_flag 	
-		}
-		localization_key = BBA_italy_interaction_events.31.desc_peace_signed
-	}
-	text = { #If there is no war between Italy or Ethiopia, or England doesn't host Ethiopia's exiled government
-		localization_key = BBA_italy_interaction_events.31.desc_no_war
 	}
 }
 

@@ -796,31 +796,6 @@
 		}
 
 		completion_reward = {
-			if = {
-				limit = {
-					MAN = {
-						OR = {
-							is_in_faction_with = JAP
-							is_puppet_of = JAP
-						}
-					}
-				}
-				create_wargoal = {
-					type = annex_everything
-					target = MAN
-					expire = 0
-				}
-				else = {
-					create_wargoal = {
-						type = annex_everything
-						target = JAP
-						expire = 0
-					}	
-				}
-			}
-			hidden_effect = {
-				news_event = { id = wtt_news.35 days = 1}
-			}
 		}
 	}
 	focus = {

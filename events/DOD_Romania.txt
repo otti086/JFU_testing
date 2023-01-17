@@ -647,44 +647,6 @@ country_event = {
 	}
 }
 
-#rename city
-country_event = {
-	id = DOD_romania.999
-	title = DOD_romania.999.t
-	desc = DOD_romania.999.desc
-	picture = GFX_report_event_german_reichstag_gathering
-
-	fire_only_once = yes
-
-	trigger = {
-		tag = ROM
-		ROM = {
-			has_country_leader = { id = 550 } #Carol II
-			owns_state = 217
-			owns_state = 195
-		}
-	}
-
-	option = { #a great idea!
-		name = DOD_romania.a
-		ai_chance = {
-			base = 100
-		}
-		set_province_name = { id = 3529 name = "Magdagrad" }
-		set_province_name = { id = 3151 name = "Zizigrad" }
-		set_global_flag = ROM_king_is_silly
-	}
-
-	option = { #rather not
-		name = DOD_romania.b
-		ai_chance = {
-			base = 0
-		}
-		add_timed_idea = { idea = ROM_king_carol_ii_consumer_penalty days = 90 }
-	}
-
-}
-
 country_event = { #if Codreanu is still in power, kill him and replace with Goga, then change name of party
 	id = DOD_romania.163
 	title = DOD_romania.163.t
