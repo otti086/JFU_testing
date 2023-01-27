@@ -6,7 +6,10 @@ set_variable = {
     var = min_fuel
     value = 0.600
 }
-
+add_relation_modifier = {
+	target = SOV
+	modifier = trade_soviet
+}
 oob = "USA_1936"
 
 add_equipment_to_stockpile = { type = train_equipment_1 amount = 300 }

@@ -19,8 +19,8 @@ NDefines.NCountry.BASE_FUEL_CAPACITY = 100000
 NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 200
 NDefines.NCountry.SPECIAL_FORCES_CAP_BASE = 0.1
 NDefines.NCountry.SCORCHED_EARTH_STATE_COST = 1000	
-NDefines.NCountry.REINFORCEMENT_MANPOWER_CHUNK = 1 
-
+NDefines.NCountry.REINFORCEMENT_MANPOWER_CHUNK = 20.0
+NDefines.NCountry.REINFORCEMENT_MANPOWER_CHUNK = 0.2,				-- Chunk size of manpower reinforcement delivery, in % of total manpower needed by the template.
 NDefines.NPolitics.LEADER_TRAITS_XP_SHOW = 0.01
 
 NDefines.NResistance.RESISTANCE_TARGET_BASE = 25.0	
