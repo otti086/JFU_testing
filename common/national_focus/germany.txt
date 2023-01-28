@@ -1821,6 +1821,10 @@ focus_tree = {
 		completion_reward = {
 			hidden_effect = {
 				add_to_faction = SPR
+				SPR = {
+					add_war_support = 0.2
+					add_stability = 0.2					
+				}
 				HUN = {
 					navy_experience = 200
 				}
