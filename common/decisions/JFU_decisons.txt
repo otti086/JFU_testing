@@ -333,30 +333,49 @@ JFU_decisions = {
 		icon = generic_operation
 		fire_only_once = yes
 		allowed = { tag =  SOV }
-		available = { 
-			OR = { 
-				date > 1942.1.1
-				NOT = {
-					AND = {
-						ENG = { controls_state = 119 }
-						ENG = { controls_state = 120 }
-						ENG = { controls_state = 121 }
-						ENG = { controls_state = 122 }
-						ENG = { controls_state = 123 }
-						ENG = { controls_state = 125 }
-						ENG = { controls_state = 126 }
-						ENG = { controls_state = 127 }
-						ENG = { controls_state = 128 }
-						ENG = { controls_state = 129 }
-						ENG = { controls_state = 130 }
-						ENG = { controls_state = 131 }
-						ENG = { controls_state = 132 }
-						ENG = { controls_state = 133 }
-						ENG = { controls_state = 136 }
-						ENG = { controls_state = 338 }
-					} 
+		available = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = JFU_pre_sets 
+						option = JFU_ALTERNATIVE_GS2
+					}					
 				}
+				OR = {
+					date > 1942.6.1
+					AND = {
+						date > 1942.1.1
+						NOT = {
+							ENG = { controls_state = 126 }
+						}						
+					}
+				}				
 			}
+			else = {
+				OR = { 
+					date > 1942.1.1
+					NOT = {
+						AND = {
+							ENG = { controls_state = 119 }
+							ENG = { controls_state = 120 }
+							ENG = { controls_state = 121 }
+							ENG = { controls_state = 122 }
+							ENG = { controls_state = 123 }
+							ENG = { controls_state = 125 }
+							ENG = { controls_state = 126 }
+							ENG = { controls_state = 127 }
+							ENG = { controls_state = 128 }
+							ENG = { controls_state = 129 }
+							ENG = { controls_state = 130 }
+							ENG = { controls_state = 131 }
+							ENG = { controls_state = 132 }
+							ENG = { controls_state = 133 }
+							ENG = { controls_state = 136 }
+							ENG = { controls_state = 338 }
+						} 
+					}
+				}
+			} 
 		}
 		cost = 0
 		complete_effect = {
@@ -853,10 +872,21 @@ JFU_decisions = {
 		fire_only_once = yes
 		allowed = { tag = USA }
 		available = {
-			date > 1940.8.1
 			NOT = {
 				is_in_faction_with = ENG
 			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = JFU_pre_sets 
+						option = JFU_ALTERNATIVE_GS2
+					}					
+				}
+				JAP = { has_war_with = USA }
+			}	
+			else = {
+			date > 1940.8.1				
+			}	
 		}
 		cost = 0
 		complete_effect = {
@@ -961,7 +991,15 @@ JFU_decisions = {
 		icon = generic_operation
 		fire_only_once = yes
 		allowed = { tag = USA }
-		available = { date > 1941.4.1}
+		available = { 
+			NOT = {
+				has_game_rule = {
+					rule = JFU_pre_sets 
+					option = JFU_ALTERNATIVE_GS2
+				}				
+			}
+			date > 1941.4.1
+		}
 		cost  = 0
 		complete_effect = {
 			declare_war_on = {
