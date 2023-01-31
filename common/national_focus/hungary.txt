@@ -988,7 +988,8 @@ focus_tree = {
 	focus = {
 		id = HUN_indigenous_designs
 		icon = GFX_goal_generic_air_production
-		prerequisite = { focus = HUN_establish_the_air_force focus = HUN_boost_hungarian_aviation_industry }
+		prerequisite = { focus = HUN_establish_the_air_force }
+		prerequisite = { focus = HUN_boost_hungarian_aviation_industry }
 		x = 0
 		y = 6
 		relative_position_id = HUN_establish_the_air_force
@@ -1024,7 +1025,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = HUN_heavy_fighter_effort
 				bonus = 1.0
-				ahead_reduction = 2
+				ahead_reduction = 1
 				uses = 1
 				category = cat_heavy_fighter
 			}
@@ -1051,7 +1052,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = HUN_light_fighter_effort
 				bonus = 1.0
-				ahead_reduction = 2
+				ahead_reduction = 1
 				uses = 1
 				category = light_fighter
 			}
@@ -1077,7 +1078,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = HUN_cas_focus
 				bonus = 1.0
-				ahead_reduction = 2
+				ahead_reduction = 1
 				uses = 1
 				category = cas_bomber
 			}
@@ -1131,11 +1132,11 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			army_experience = 10
+			army_experience = 50
 			add_doctrine_cost_reduction = {
 				name = HUN_army_maneuvers
 				cost_reduction = 0.5
-				uses = 1
+				uses = 2
 				category = land_doctrine
 			}
 		}
@@ -1164,9 +1165,9 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = HUN_mobile_focus
-				cost_reduction = 0.25
-				uses = 1
-				category = cat_mobile_warfare
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
 			}
 		}
 	}
@@ -1175,7 +1176,7 @@ focus_tree = {
 		id = HUN_the_botond
 		icon = GFX_goal_generic_army_motorized
 		prerequisite = { focus = HUN_mobile_focus }
-		x = -2
+		x = -1
 		y = 1
 		relative_position_id = HUN_mobile_focus
 
@@ -1212,8 +1213,8 @@ focus_tree = {
 		id = HUN_motorized_logistics
 		icon = GFX_goal_generic_army_motorized
 		prerequisite = { focus = HUN_the_botond }
-		x = -1
-		y = 4
+		x = 0
+		y = 2
 		relative_position_id = HUN_mobile_focus
 
 		cost = 10
@@ -1251,7 +1252,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = HUN_mobile_focus }
 		mutually_exclusive = { focus = HUN_assault_gun_focus }
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = HUN_mobile_focus
 
@@ -1289,7 +1290,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_artillery2
 		prerequisite = { focus = HUN_mobile_focus focus = HUN_home_defense }
 		mutually_exclusive = { focus = HUN_develop_tanks }
-		x = 2
+		x = 3
 		y = 1
 		relative_position_id = HUN_mobile_focus
 
@@ -1321,7 +1322,7 @@ focus_tree = {
 		id = HUN_armored_warfare
 		icon = GFX_goal_generic_army_artillery
 		prerequisite = { focus = HUN_the_botond }
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = HUN_the_botond
 
@@ -1350,43 +1351,6 @@ focus_tree = {
 				bonus = 1.0
 				uses = 1
 				category = armor
-			}
-		}
-	}
-
-	focus = {
-		id = HUN_mobile_corps_doctrine
-		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = HUN_armored_warfare }
-		x = 0
-		y = 2
-		relative_position_id = HUN_the_botond
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 60
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-			add_doctrine_cost_reduction = {
-				name = HUN_mobile_corps_doctrine
-				cost_reduction = 0.5
-				uses = 2
-				category = cat_mobile_warfare
 			}
 		}
 	}
@@ -1426,9 +1390,9 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = HUN_home_defense
-				cost_reduction = 0.25
-				uses = 1
-				category = cat_grand_battle_plan
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
 			}
 		}
 	}
@@ -1437,7 +1401,7 @@ focus_tree = {
 		id = HUN_danuvia_submachine_guns
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = HUN_home_defense }
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = HUN_home_defense
 
@@ -1557,7 +1521,7 @@ focus_tree = {
 						support = {
 							recon = { x = 0 y = 0 }
 							artillery = { x = 0 y = 1 }
-							engineer = { x = 0 y = 1 }
+							engineer = { x = 0 y = 2 }
 						}
 					}
 					else = {
@@ -1578,7 +1542,6 @@ focus_tree = {
 							support = {
 								recon = { x = 0 y = 0 }
 								artillery = { x = 0 y = 1 }
-								engineer = { x = 0 y = 1 }
 							}
 						}					
 					}
