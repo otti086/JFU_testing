@@ -723,7 +723,7 @@
 			else = {
 				add_tech_bonus = {
 					name = AST_cac_boomerang
-					bonus = 0.75
+					bonus = 2.0
 					uses = 1
 					category = light_fighter
 				}
@@ -864,13 +864,6 @@
 				}
 			}
 			else = {
-				add_tech_bonus = {
-					name = AST_cac_woomera
-					bonus = 2
-					uses = 2
-					category = tactical_bomber
-					category = naval_air
-				}
 				create_equipment_variant = {
 					name = "CAC Woomera" #
 					type = medium_plane_airframe_1
@@ -1112,13 +1105,8 @@
 		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = AST_naval_bombers
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = naval_bomber
-			}
+			air_experience = 50
+			navy_experience = 50
 		}
 	}
 
