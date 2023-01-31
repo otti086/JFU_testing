@@ -1470,6 +1470,10 @@ focus_tree = {
 
 		completion_reward = {
 			air_experience = 50
+			add_relation_modifier = {
+				target = ENG  
+				modifier = ROM_license_german_equipment
+			}
 		}
 	}
 

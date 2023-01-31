@@ -685,3 +685,8 @@ trade_major = {trade_cost_for_target_factor = -0.9 extra_trade_to_target_factor 
 trade_vichy = { trade_cost_for_target_factor = -0.9 }
 trade_soviet = { trade_cost_for_target_factor = -0.5 }
 trade_spain = { trade_cost_for_target_factor = -0.5 } 
+
+SOV_license_UK = {
+	license_production_speed = 0.25 #speed  increase for being a license
+	license_tech_difference_speed = 0.25 #less cost increase for each tech level between the license and own tech level
+}
