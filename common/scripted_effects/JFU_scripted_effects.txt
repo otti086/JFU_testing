@@ -616,14 +616,6 @@ JFU_startup_on_action = {
 		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 815 }
 	}
 	if = {
-		limit ={
-			NOT = {
-				has_game_rule = {
-					rule = JFU_pre_sets
-					option = JFU_ALTERNATIVE_GS2
-				}
-			}
-		}
 		SIA = {
 			give_resource_rights = { receiver = GER state = 724 }
 		}
