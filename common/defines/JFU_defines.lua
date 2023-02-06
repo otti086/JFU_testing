@@ -23,6 +23,8 @@ NDefines.NCountry.REINFORCEMENT_MANPOWER_CHUNK = 20.0
 NDefines.NCountry.REINFORCEMENT_MANPOWER_CHUNK = 0.2				-- Chunk size of manpower reinforcement delivery, in % of total manpower needed by the template.
 NDefines.NPolitics.LEADER_TRAITS_XP_SHOW = 0.01
 
+NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 20				--vanilla 10 This much progress can be saved while not having a focus selected
+
 NDefines.NResistance.RESISTANCE_TARGET_BASE = 25.0	
 NDefines.NRESISTANCE_TARGET_MODIFIER_OCCUPIED_CAPITULATED = 5.0 -- resistance target modifier when the enemy is capitulated
 NDefines.NRESISTANCE_TARGET_MODIFIER_OCCUPIED_IS_EXILE_MIN = 1.0   -- min & max resistance target modifier resistance target modifier for exile countries. interpolated using legitimacy
