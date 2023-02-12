@@ -13,13 +13,14 @@ NDefines.NMilitary.AIR_EQUIPMENT_RAMP_COST = 0					-- CHANGED AS EVERYTHING IS P
 NDefines.NMilitary.GARRISON_ORDER_ARMY_CAP_FACTOR = 1.0			-- armies gets increased cap when they are garrisoned
 NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 72			--vanilla 24 (removed garrison cap factor) how many divisions a corps commander is limited to. 0 = inf, < 0 = blocked
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 72			--vanilla 24 (removed garrison cap factor) how many divisions a field marshall is limited to. 0 = inf, < 0 = blocked
+NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 1
 
 NDefines.NCountry.POPULATION_YEARLY_GROWTH_BASE = 0.0
 NDefines.NCountry.BASE_FUEL_CAPACITY = 100000
 NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 200
 NDefines.NCountry.SPECIAL_FORCES_CAP_BASE = 0.1
 NDefines.NCountry.SCORCHED_EARTH_STATE_COST = 1000	
-NDefines.NCountry.REINFORCEMENT_MANPOWER_CHUNK = 20.0
+NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 20.0
 NDefines.NCountry.REINFORCEMENT_MANPOWER_CHUNK = 0.2				-- Chunk size of manpower reinforcement delivery, in % of total manpower needed by the template.
 NDefines.NPolitics.LEADER_TRAITS_XP_SHOW = 0.01
 
