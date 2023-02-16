@@ -1703,7 +1703,7 @@ focus_tree = {
 		icon = GFX_goal_molotov_ribbentrop_pact
 		prerequisite = { focus = GER_anschluss }
 		cancel_if_invalid = no
-		x = 5
+		x = 6
 		y = 0
 		relative_position_id = GER_soviet_treaty
 		cost = 10
@@ -1721,7 +1721,7 @@ focus_tree = {
 	focus = {
 		id = GER_rhineland
 		icon = GFX_goal_generic_military_sphere
-		x = 21
+		x = 22
 		y = 0
 		cost = 10
 		search_filters = { FOCUS_FILTER_POLITICAL }	
@@ -1861,7 +1861,6 @@ focus_tree = {
 			set_country_flag = sudetenland_acquired
 			add_war_support = 0.1
 			add_stability = 0.05
-			play_peace_in_our_time_effect = yes
 			add_named_threat = { threat = 3 name = GER_demand_sudetenland_threat }
 		}
 	}
@@ -2302,5 +2301,54 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = GER_modular_construction
 		}
+	}
+	focus = {
+		id = GER_endsieg_1
+ 		icon = GFX_focus_GER_volkssturm
+		prerequisite = { focus = GER_anschluss }
+		x = -4
+		y = 1
+		relative_position_id = GER_anschluss
+		available = {
+			always = no
+			NOT = { controls_state = 16 } 
+			NOT = { controls_state = 6 }
+			NOT = { controls_state = 7 }
+			surrender_progress > 0.1 			
+		}
+		cost = 1 
+		completion_reward = {
+			
+		}
+	}
+	focus = { 
+		id = GER_endsieg_5
+		icon = GFX_focus_GER_endsieg
+		prerequisite = { focus = GER_endsieg_1 }
+		x = -4
+		y = 2
+		relative_position_id = GER_anschluss
+		available = {
+			always = no 
+		OR ={  
+			NOT = { controls_state = 16 } 
+			NOT = { controls_state = 6 }
+			NOT = { controls_state = 7 }
+			surrender_progress > 0.2 
+			}
+		}
+		cost = 1
+		
+		completion_reward = {
+			hidden_effect = { delete_unit_template_and_units = { division_template = "Endsieg Infanterie" } load_oob = "GER_army2" }
+			if = { limit = {  has_idea = extensive_conscription }  add_ideas = service_by_requirement  }
+			add_timed_idea = {
+				idea = endsieg
+				days = 365
+			} 
+		
+			add_to_variable = { germany_war_army_core_attack_factor = 0.3	} 
+			add_to_variable = { germany_war_army_core_defence_factor = 0.3	} 
+		}	
 	}
 }

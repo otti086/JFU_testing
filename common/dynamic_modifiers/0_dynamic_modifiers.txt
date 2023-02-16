@@ -1238,3 +1238,7 @@ pacific_states_USA = {
 	war_support_factor = PJU_15
 	stability_factor = PJU_15
 }
+GER_endsieg = {
+	army_core_attack_factor = germany_war_army_core_attack_factor
+	army_core_defence_factor = germany_war_army_core_defence_factor	
+}

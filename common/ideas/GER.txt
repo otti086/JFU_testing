@@ -835,6 +835,39 @@ ideas = {
 				consumer_goods_factor = 0.20
 			}
 		}
+		endsieg = {
+			picture = generic_fascism_drift_2
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				dig_in_speed_factor = 1
+				max_dig_in_factor = 0.1
+			}
+		}
+		GER_steiner_idea = {
+			picture = generic_fascism_drift_2
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.2 
+			}
+		}
 	}
 
 	# TECHNOLOGY
