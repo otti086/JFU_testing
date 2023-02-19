@@ -83,16 +83,9 @@ country_event = {
 	title = britain.16.t
 	desc = britain.16.d
 	picture = GFX_report_event_europe_funeral
-	
-	trigger = {
-		tag = ENG
-		date > 1936.1.19
-		has_start_date < 1936.01.02
-	}	
+	is_triggered_only = yes	
 
 	fire_only_once = yes
-
-	mean_time_to_happen = { days = 7 }
 
 	immediate = {
 		hidden_effect = {
@@ -117,16 +110,9 @@ country_event = {
 	title = britain.17.t
 	desc = britain.17.d
 	picture = GFX_report_event_generic_sign_treaty2
-	
-	trigger = {
-		tag = ENG
-		has_country_flag = ENG_king_died
-		date > 1936.12.1
-	}
+	is_triggered_only = yes
 	
 	fire_only_once = yes
-
-	mean_time_to_happen = { days = 14 }
 	
 	immediate = {
 		hidden_effect = {
@@ -150,21 +136,8 @@ country_event = {
     title = britain.22.t
     desc = britain.22.d
     picture = GFX_report_event_royal_parade
- 
+ 	is_triggered_only = yes
     fire_only_once = yes
- 
-    trigger = {
-        original_tag = ENG
-        has_government = democratic
-        has_idea = ENG_george_vi
-        date > 1937.5.27
-        has_start_date < 1936.01.02
-        NOT = { has_country_flag = baldwin_resigned }
-    }
-
-    mean_time_to_happen = {
-        days = 7
-    }
 
     option = {
         name = britain.22.a
@@ -188,18 +161,8 @@ country_event = {
     title = britain.24.t
     desc = britain.24.d
     picture = GFX_report_event_generic_factory
- 
+  	is_triggered_only = yes
     fire_only_once = yes
- 
-    trigger = {
-        original_tag = ENG
-        has_completed_focus = shadow_scheme_focus
-        has_war = yes
-    }
-
-    mean_time_to_happen = {
-        days = 7
-    }
 
     option = {
         name = britain.24.a

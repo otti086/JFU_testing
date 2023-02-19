@@ -207,17 +207,8 @@ country_event = {
 	desc = mexico.15.desc
 	
 	picture = GFX_report_event_europe_funeral
-	
+	is_triggered_only
 	fire_only_once = yes
-	
-	trigger = {
-		tag = MEX
-		has_dlc = "Man the Guns"
-	}
-	
-	mean_time_to_happen = {
-		months = 6 # Historically died in May 1936
-	}
 	
 	option = {
 		name = mexico.15.a # Rest in peace
@@ -1225,25 +1216,8 @@ country_event = {
 	desc = mexico.27.desc
 	
 	picture = GFX_report_event_europe_funeral
-	
+ 	is_triggered_only = yes
 	fire_only_once = yes
-	
-	trigger = {
-		tag = MEX
-		
-		date > 1937.1.1
-		
-		has_civil_war = no
-
-		NOT = {
-			has_global_flag = flag_second_mexican_civil_war
-		}
-		has_dlc = "Man the Guns"
-	}
-	
-	mean_time_to_happen = {
-		months = 6 # Historically published 28 March 1937
-	}
 	
 	option = {
 		name = mexico.27.a # It is good that the anti-Church violence has ended.

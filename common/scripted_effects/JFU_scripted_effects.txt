@@ -529,7 +529,24 @@ JFU_vichy_france_2 = {
 
 
 JFU_startup_on_action = {
-	if = {	limit = { has_game_rule = { rule = horst_manchukuo	option = HORST_ENABLE_MOD_MANCHUKUO	} }	MAN = { load_focus_tree = manchukuomod_focus } 	}
+	if = {	limit = { has_game_rule = { rule = horst_manchukuo	option = HORST_ENABLE_MOD_MANCHUKUO	} }	MAN = { load_focus_tree = manchukuomod_focus } }
+	if = {	limit = { has_game_rule = { rule = JFU_pre_sets option = COMPETITIVE_JFU } } SWE = {pregrinded_effect = yes} SWE = { JAP_closed_eco_effect = yes } SWE = { SOV_closed_eco_effect = yes } }
+	if = {	limit = { has_game_rule = { rule = JFU_pre_sets option = JFU_ALTERNATIVE_GS2 } } SWE = { JFU_alternative_gs2 = yes} }
+	if = {	limit = { has_game_rule = { rule = JFU_pre_sets option = JFU_ALTERNATIVE_GS } } SWE = { JFU_alternative_gs = yes} }
+	if = { 	limit = { has_game_rule = { rule = JFU_closed_eco_JAPAN option = ENABLE_CLOSED_ECO } } SWE = { JAP_closed_eco_effect = yes } }
+	if = {	limit = { has_game_rule = { rule = JFU_closed_eco_SOVIET option = ENABLE_CLOSED_ECO } } SWE = { SOV_closed_eco_effect = yes } }
+	if = {	limit = { has_game_rule = { rule = JFU_pre_grinded_generals option = PRE_GRINDED_GENERALS_ON } } SWE = {pregrinded_effect = yes} }
+	if = {	limit = { has_game_rule = { rule = JFU_pre_grinded_generals option = HALVED_GRIND_TIME } } every_possible_country = { limit = { NOT = { ai_country = yes } } add_ideas = { HALVED_GRIND } } }
+	if = {	limit = { has_game_rule = { rule = JFU_SPECIAL_FORCES_CAP option = JFU_DOUBLE_CAP } } every_possible_country = { limit = { NOT = { ai_country = yes } } add_ideas = DOUBLE_SF_CAP } }
+	if = {	limit = { has_game_rule = { rule = JFU_SPECIAL_FORCES_CAP option = JFU_QUADRUPLE_CAP } } every_possible_country = { limit = { NOT = { ai_country = yes } } add_ideas = QUADRUPLE_SF_CAP } }	
+	if = {	limit = { has_game_rule = { rule = JFU_SPECIAL_FORCES_CAP option = JFU_NO_CAP } } every_possible_country = { limit = { NOT = { ai_country = yes } } add_ideas = NO_SF_CAP } }
+	if = {	limit = { has_game_rule = { rule = JFU_AFRICA_TILES option = ONE_TILE_AFRICA } } SWE = { transfer_state = 909 } SWE = { transfer_state = 910 } }
+	if = {	limit = { has_game_rule = { rule = JFU_YUGO_COLAB option = FREE_COLAB_YUGO } } set_global_flag = YUGO_FREE_COLAB_FLAG }
+	if = {	has_game_rule = { rule = JFU_pre_sets option = COMPETITIVE_JFUm} set_global_flag = YUGO_FREE_COLAB_FLAG	}
+	SWE = { HFU_fuel_startup_effect = yes }
+	SWE = { JFU_startup_on_action = yes }												
+	SWE = { JFU_scripted_events_effect = yes}
+	SPR = {	country_lock_all_division_template = yes country_event = { id = lar_spain.2 days = 230 }}
 	ENG = {
 		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 12200 }
 		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 9600 }
@@ -620,6 +637,13 @@ JFU_startup_on_action = {
 			give_resource_rights = { receiver = GER state = 724 }
 		}
 	}	
+}
+JFU_scripted_events_effect = {
+	ENG = { country_event = { id = britain.16 days = 21 }}
+	ENG = { country_event = { id = britain.17 days = 349 }}	
+	ENG = { country_event = { id = britain.22 days = 520 }}
+	MEX = { country_event = { id = mexico.15 days = 180 }}
+	MEX = { country_event = { id = mexico.27 days = 120 }}
 }
 JFU_alternative_gs = {
 	USA = {
@@ -2869,4 +2893,36 @@ pregrinded_effect = {
 			add_unit_leader_trait = defensive_doctrine
 		}
 	}
+}
+SOV_closed_eco_effect = {
+	SOV = {
+		add_ideas = closed_economy 
+		add_ideas = export_focus_idea
+		403 = {
+			add_extra_state_shared_building_slots = 12
+			add_building_construction = {
+				type = industrial_complex
+				level = 12
+				instant_build = yes
+				}
+		}
+	}	
+}
+JAP_closed_eco_effect = {
+	JAP = {
+		add_ideas = closed_economy 
+		add_ideas = limited_exports_idea
+	}	
+}
+JFU_alternative_gs2 = {
+	USA = {
+		add_dynamic_modifier = {
+			modifier = pacific_states_USA
+		}
+	}
+	JAP = {
+		add_dynamic_modifier = {
+			modifier = pacific_states_JAP
+		}
+	}	
 }

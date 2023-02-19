@@ -26,177 +26,7 @@ on_actions = {
 			else_if = { limit = {has_game_rule = {rule = horst_host_country option = BUL}} set_variable={host = BUL.id} }
 			else_if = { limit = {has_game_rule = {rule = horst_host_country option = BRA}} set_variable={host = BRA.id} }
 			var:host = { set_variable = { marked_states = 0 } set_country_flag = host	}
-			SWE = { HFU_fuel_startup_effect = yes }
-			SWE = { JFU_startup_on_action = yes }
-			SPR = {	country_lock_all_division_template = yes country_event = { id = lar_spain.2 days = 230 }}
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = JFU_pre_sets
-						option = COMPETITIVE_JFU
-					}
-				}
-				SWE = {pregrinded_effect = yes}
-				JAP = {
-					add_ideas = closed_economy 
-					add_ideas = limited_exports_idea
-				}
-				SOV = {
-					add_ideas = closed_economy 
-					add_ideas = export_focus_idea
-					403 = {
-						add_extra_state_shared_building_slots = 12
-						add_building_construction = {
-							type = industrial_complex
-							level = 12
-							instant_build = yes
-							}
-					}
-				}
-			}
-			if = {
-				limit = {
-					has_game_rule = {
-					rule = JFU_pre_sets 
-					option = JFU_ALTERNATIVE_GS2
-					}
-				}
-				USA = {
-					add_dynamic_modifier = {
-						modifier = pacific_states_USA
-					}
-				}
-				JAP = {
-					add_dynamic_modifier = {
-						modifier = pacific_states_JAP
-					}
-				}
-			}
-			if = { 
-				limit = {
-					has_game_rule = {
-						rule = JFU_closed_eco_JAPAN
-						option = ENABLE_CLOSED_ECO
-					}
-				}
-				JAP = {
-					add_ideas = closed_economy 
-					add_ideas = limited_exports_idea
-				}
-				
-			}
-			if = { 
-				limit = {
-					has_game_rule = {
-						rule = JFU_closed_eco_SOVIET
-						option = ENABLE_CLOSED_ECO
-					}
-				}
-				SOV = {
-					add_ideas = closed_economy 
-					add_ideas = export_focus_idea
-					403 = {
-						add_extra_state_shared_building_slots = 12
-						add_building_construction = {
-							type = industrial_complex
-							level = 12
-							instant_build = yes
-							}
-					}
-				}
-			}
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = JFU_pre_grinded_generals
-						option = PRE_GRINDED_GENERALS_ON
-					}
-				}
-				SWE = {pregrinded_effect = yes}
-			}
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = JFU_pre_grinded_generals
-						option = HALVED_GRIND_TIME
-					}
-				}
-				every_possible_country = {
-					limit = {
-						NOT = { ai_country = yes }
-					}
-					add_ideas = { HALVED_GRIND }
-				}
-			}
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = JFU_SPECIAL_FORCES_CAP
-						option = JFU_DOUBLE_CAP
-					}
-				}
-				every_possible_country = {
-					limit = { 
-						NOT = {
-							ai_country = yes 
-						}
-					}
-					add_ideas = DOUBLE_SF_CAP
-				}
-			}
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = JFU_SPECIAL_FORCES_CAP
-						option = JFU_QUADRUPLE_CAP
-					}
-				}
-				every_possible_country = {
-					limit = { 
-						NOT = {
-							ai_country = yes 
-						}
-					}
-					add_ideas = QUADRUPLE_SF_CAP
-				}
-			}
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = JFU_SPECIAL_FORCES_CAP
-						option = JFU_NO_CAP
-					}
-				}
-				every_possible_country = {
-					limit = { 
-						NOT = {
-							ai_country = yes 
-						}
-					}
-					add_ideas = NO_SF_CAP
-				}
-			}
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = JFU_pre_sets
-						option = JFU_ALTERNATIVE_GS
-					}
-				}
-				SWE = { JFU_alternative_gs = yes}
-			}
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = JFU_AFRICA_TILES
-						option = ONE_TILE_AFRICA
-					}
-				}
-				SWE = { transfer_state = 909 }
-				SWE = { transfer_state = 910 }
-			}
-		}
-		
+		}		
 	}
 	on_daily = {
 		effect = {
@@ -307,33 +137,7 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					has_game_rule = {
-						rule = JFU_YUGO_COLAB 
-						option = FREE_COLAB_YUGO
-					}
-				}
-				if = { 
-					limit = {
-						original_tag = YUG
-					}
-					every_state = {
-						limit = {
-							AND = {
-								is_core_of = YUG
-								is_controlled_by = ITA
-							}
-						}
-					
-						add_compliance = 75 
-					}
-				}
-			}
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = JFU_pre_sets 
-						option = COMPETITIVE_JFU
-					}
+					has_global_flag = YUGO_FREE_COLAB_FLAG
 				}
 				if = { 
 					limit = {
@@ -409,7 +213,6 @@ on_actions = {
 						JAP = {
 							has_country_flag = MAN_GETS_CHINA
 						}
-					
 					}
 					MAN = {
 						annex_country = { target = CHI }
@@ -427,6 +230,9 @@ on_actions = {
 				limit = {
 					original_tag = FIN 
 					SOV = { has_war_with = FIN}
+					NOT = {
+						GER = { has_war_with = SOV }
+					}
 				}
 				white_peace = SOV
 				SOV = {
@@ -460,35 +266,11 @@ on_actions = {
 					transfer_state = 853
 				}
 			}
-
 			if = {
 				limit = {
 					original_tag = ETH
 					ITA = {has_war_with = ETH}
 				}
-				
-#				ETH = {
-#					transfer_state = 271
-#					transfer_state = 550
-#					transfer_state = 559
-#					transfer_state = 835
-#					transfer_state = 837
-#					transfer_state = 838
-#					transfer_state = 839
-#					transfer_state = 840
-#					transfer_state = 841
-#					transfer_state = 842
-#					transfer_state = 843
-#					transfer_state = 844
-#					transfer_state = 908
-#					transfer_state = 836
-#					271 = { add_core_of = ETH }
-#					550 = { add_core_of = ETH }
-#					559 = { add_core_of = ETH }
-#				
-#					inherit_technology = ITA
-#				}			
-#				ITA = { puppet = ETH }
 				ITA = { annex_country = { target =  ETH	} }
 			}
 			if = {

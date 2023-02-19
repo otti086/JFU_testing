@@ -48,6 +48,9 @@ JFU_decisions = {
 			hidden_effect = { 
 				ENG = { add_to_faction = POL } 
 				declare_war_on_all_allies = yes
+				ENG = { country_event = { id = britain.24 days = 5 }}
+				GER_remove_mefo_bills = yes
+				set_country_flag = mefo_bills_removed_through_war
 			}
 		}
 	}
@@ -141,7 +144,7 @@ JFU_decisions = {
 			HUN = { add_timed_idea = { idea = axis_barbarossa days = 180 } }
 			ROM = { add_timed_idea = { idea = axis_barbarossa days = 180 } }	
 			BUL = { add_timed_idea = { idea = axis_barbarossa days = 180 } }	
-			SPR = { add_timed_idea = { idea = axis_barbarossa days = 180 } }
+			SPR = { add_timed_idea = { idea = axis_barbarossa days = 180 } }		
 			}
 		}
 	}
@@ -431,6 +434,7 @@ JFU_decisions = {
 			unlock_decision_tooltip = JAP_china_step_up_war_effort
 			hidden_effect = {
 				country_event = { days = 5 id = news.1 }
+				USA = { country_event = { id = panay_incident.1 days = 60 }}
 			}
 			USA = { set_country_flag = { flag = USA_china_window days = 60 value = 1 } }
 			if = {
