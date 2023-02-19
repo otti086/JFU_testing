@@ -1274,11 +1274,11 @@ focus_tree = {
 		id = fin_continuation
 		icon = GFX_focus_eng_expose_the_belly_of_the_bear
 		available = {
-		date > 1941.6.22
-		is_ai = no
+			date > 1941.6.22
+			is_ai = no
 		}
-				prerequisite = { focus = fin_continuation_prep }
-			relative_position_id = fin_continuation_prep
+		prerequisite = { focus = fin_continuation_prep }
+		relative_position_id = fin_continuation_prep
 		x = 0
 		y = 1
 	
@@ -1288,6 +1288,7 @@ focus_tree = {
 
 		completion_reward = {
 			FIN = { add_to_war = { targeted_alliance = GER enemy = SOV } }
+			FIN = { add_timed_idea = { idea = axis_barbarossa days = 180 } }
 		}
 	}
 
