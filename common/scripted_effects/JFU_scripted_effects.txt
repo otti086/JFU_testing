@@ -543,10 +543,9 @@ JFU_startup_on_action = {
 	if = {	limit = { has_game_rule = { rule = JFU_AFRICA_TILES option = ONE_TILE_AFRICA } } SWE = { transfer_state = 909 } SWE = { transfer_state = 910 } }
 	if = {	limit = { has_game_rule = { rule = JFU_YUGO_COLAB option = FREE_COLAB_YUGO } } set_global_flag = YUGO_FREE_COLAB_FLAG }
 	if = {	limit = { has_game_rule = { rule = JFU_pre_sets option = COMPETITIVE_JFU } } set_global_flag = YUGO_FREE_COLAB_FLAG }
-	SWE = { HFU_fuel_startup_effect = yes }
-	SWE = { JFU_startup_on_action = yes }												
+	SWE = { HFU_fuel_startup_effect = yes }											
 	SWE = { JFU_scripted_events_effect = yes}
-	SPR = {	country_lock_all_division_template = yes country_event = { id = lar_spain.2 days = 230 }}
+	SPR = {	country_lock_all_division_template = yes country_event = { id = lar_spain.2 days = 230 } }
 	ENG = {
 		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 12200 }
 		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 9600 }
