@@ -22,6 +22,8 @@ NDefines.NCountry.SPECIAL_FORCES_CAP_BASE = 0.1
 NDefines.NCountry.SCORCHED_EARTH_STATE_COST = 999	
 NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 20.0
 NDefines.NCountry.REINFORCEMENT_MANPOWER_CHUNK = 0.2				-- Chunk size of manpower reinforcement delivery, in % of total manpower needed by the template.
+NDefines.NCountry.WAR_SUPPORT_DEFENSIVE_WAR = 0.3,				--vanilla 0.2 Impact of being in defensive war
+
 NDefines.NPolitics.LEADER_TRAITS_XP_SHOW = 0.01
 
 NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 20				--vanilla 10 This much progress can be saved while not having a focus selected
