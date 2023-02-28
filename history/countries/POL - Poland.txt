@@ -21,9 +21,6 @@ set_technology = {
 	tech_recon = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-	early_fighter = 1
-	early_bomber = 1
-	CAS1 = 1
 	trench_warfare = 1
 	fuel_silos = 1
 	synth_oil_experiments = 1
@@ -164,17 +161,6 @@ if = {
 		available_to_spy_master = yes
 		female = yes
 		nationalities = { POL }
-	}
-}
-
-create_equipment_variant = {
-	name = "PZL P.24"
-	type = fighter_equipment_0
-	upgrades = {
-		plane_gun_upgrade = 3
-		plane_range_upgrade = 0  
-		plane_engine_upgrade = 1
-		plane_reliability_upgrade = 3
 	}
 }
 

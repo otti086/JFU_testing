@@ -456,46 +456,27 @@ ideas = {
 		law = yes
 		use_list_view = yes
 
-		uncontrolled_exports = {
-
-
-			allowed = {
-				always = no
-			}
-			removal_cost = -1
-			picture = isolation
-
-			modifier = {
-				min_export = 0.25
-				consumer_goods_factor = 0.05
-				civilian_intel_to_others = 40.0
-				navy_intel_to_others = 40.0
-				agency_upgrade_time = 0.15
-			}
-
-			allowed_to_remove = {
-				OR = {
-					has_war = yes
-					NOT = {
-						owns_state = 85
-						owns_state = 807
-					}
-					any_owned_state = {
-						NOT = {
-							state = 85
-							state = 807
-						}
-						is_coastal = yes
-					}
-				}
-			}
-
-			cancel_if_invalid = no
-		}
-
 		free_trade = {
 
 			available = {
+				if = {
+					limit = {
+						original_tag = SOV
+					}
+					has_game_rule = {
+						rule = JFU_pre_sets
+						option = COMPETITIVE_JFU
+					}
+				}
+				if = {
+					limit = {
+						original_tag = JAP
+					}
+					has_game_rule = {
+						rule = JFU_pre_sets
+						option = COMPETITIVE_JFU
+					}
+				}
 				if = {
 					limit = {
 						original_tag = SOV
@@ -554,7 +535,24 @@ ideas = {
 		export_focus = {
 
 			available = {
-
+				if = {
+					limit = {
+						original_tag = SOV
+					}
+					has_game_rule = {
+						rule = JFU_pre_sets
+						option = COMPETITIVE_JFU
+					}
+				}
+				if = {
+					limit = {
+						original_tag = JAP
+					}
+					has_game_rule = {
+						rule = JFU_pre_sets
+						option = COMPETITIVE_JFU
+					}
+				}
 				if = {
 					limit = {
 						original_tag = CHI
@@ -614,10 +612,6 @@ ideas = {
 						tag = SWE
 					}
 				}
-				modifier = {
-					factor = 1000
-					has_idea = uncontrolled_exports #Poland should try and escape this as soon as they can
-				}
    			}
 		}
 
@@ -659,6 +653,24 @@ ideas = {
 					has_game_rule = {
 						rule = JFU_closed_eco_SOVIET
 						option = DISABLE_CLOSED_ECO
+					}
+				}
+				if = {
+					limit = {
+						original_tag = SOV
+					}
+					has_game_rule = {
+						rule = JFU_pre_sets
+						option = COMPETITIVE_JFU
+					}
+				}
+				if = {
+					limit = {
+						original_tag = JAP
+					}
+					has_game_rule = {
+						rule = JFU_pre_sets
+						option = COMPETITIVE_JFU
 					}
 				}
 				if = {
