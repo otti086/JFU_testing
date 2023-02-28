@@ -285,11 +285,16 @@ on_actions = {
 					}
 					transfer_state_to = SPR 
 				}
-
 				SPR = {
-					add_timed_idea = { idea = SPR_carlists_uprising days = 365 }
+					add_timed_idea = { idea = SPR_carlists_uprising days = 730 }
 					if = { limit = { country_exists = SPD } annex_country = { target = SPD} }
 				}
+				ENG = { add_war_support = 0.1}
+				CAN = { add_war_support = 0.1}
+				if = { limit = { country_exists = SAF } SAF = { add_war_support = 0.1} }
+				if = { limit = { country_exists = NZL } NZL = { add_war_support = 0.1} }
+				RAJ = { add_war_support = 0.1}
+				SOV = { add_war_support = 0.1}
 
 			}
 			if = {
