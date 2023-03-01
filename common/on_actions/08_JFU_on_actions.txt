@@ -34,6 +34,25 @@ on_actions = {
 			HFU_fuel_on_daily_scripted_effect = yes			
 		}
 	}
+	on_monthly = {
+		effect = {
+			every_country = {
+				limit = {
+					OR = {
+						axis = yes
+						allies = yes
+					}
+					NOT = {
+						OR = {
+							has_war = yes
+							has_idea = peace_training
+						}
+					}
+				}
+				add_ideas = peace_training
+			}
+		}
+	}
 	on_capitulation = {
 		effect = {
 			if = {
