@@ -403,5 +403,135 @@ ideas = {
 				experience_gain_navy_unit_factor = 10
 			}
 		}
+		Battle_of_the_Buldge = {
+			allowed = {
+				always = no
+			}
+			cancel = {
+				has_war = yes
+			}
+			removal_cost = -1
+			picture = generic_acquire_tanks
+			targeted_modifier = {
+				tag = ENG
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = USA
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = CAN
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = SAF
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = FRA
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = AST
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = RAJ
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = NZL
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = BRA
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = MEX
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = -0.15
+				defense_bonus_against = -0.1
+			}			
+		}
+		Steiners_counter = {
+			allowed = {
+				always = no
+			}
+			cancel = {
+				has_war = yes
+			}
+			removal_cost = -1
+			picture = generic_acquire_tanks
+				targeted_modifier = {
+					tag = ENG
+					attack_bonus_against = -0.15
+					defense_bonus_against = -0.1
+				}
+				targeted_modifier = {
+					tag = USA
+					attack_bonus_against = -0.15
+					defense_bonus_against = -0.1
+				}
+				targeted_modifier = {
+					tag = CAN
+					attack_bonus_against = -0.15
+					defense_bonus_against = -0.1
+				}
+				targeted_modifier = {
+					tag = SAF
+					attack_bonus_against = -0.15
+					defense_bonus_against = -0.1
+				}
+				targeted_modifier = {
+					tag = FRA
+					attack_bonus_against = -0.15
+					defense_bonus_against = -0.1
+				}
+				targeted_modifier = {
+					tag = AST
+					attack_bonus_against = -0.15
+					defense_bonus_against = -0.1
+				}
+				targeted_modifier = {
+					tag = RAJ
+					attack_bonus_against = -0.15
+					defense_bonus_against = -0.1
+				}
+				targeted_modifier = {
+					tag = NZL
+					attack_bonus_against = -0.15
+					defense_bonus_against = -0.1
+				}
+				targeted_modifier = {
+					tag = BRA
+					attack_bonus_against = -0.15
+					defense_bonus_against = -0.1
+				}
+				targeted_modifier = {
+					tag = MEX
+					attack_bonus_against = -0.15
+					defense_bonus_against = -0.1
+				}
+				targeted_modifier = {
+					tag = SOV
+					attack_bonus_against = 0.15
+					defense_bonus_against = 0.1
+				}
+		}
 	}
 }

@@ -2306,8 +2306,8 @@ focus_tree = {
 		id = GER_endsieg_1
  		icon = GFX_focus_GER_volkssturm
 		prerequisite = { focus = GER_anschluss }
-		x = -4
-		y = 1
+		x = -3
+		y = 3
 		relative_position_id = GER_anschluss
 		available = {
 			always = no
@@ -2321,13 +2321,39 @@ focus_tree = {
 			
 		}
 	}
-	focus = { 
-		id = GER_endsieg_5
+	focus = {
+		id = GER_endsieg_2
 		icon = GFX_focus_GER_endsieg
 		prerequisite = { focus = GER_endsieg_1 }
-		x = -4
+		mutually_exclusive = { focus = GER_endsieg_3  }	
+		x = -1
+		y = 1
+		relative_position_id = GER_endsieg_1	
+		available = {}
+		cost = 1
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GER_endsieg_3
+		icon = GFX_focus_GER_endsieg
+		prerequisite = { focus = GER_endsieg_1 }
+		mutually_exclusive = { focus = GER_endsieg_2  }
+		x = 1
+		y = 1
+		relative_position_id = GER_endsieg_1
+		available = {}
+		cost = 1
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GER_endsieg_4
+		icon = GFX_focus_GER_endsieg
+		prerequisite = { focus = GER_endsieg_2 focus = GER_endsieg_3 }
+		x = 0
 		y = 2
-		relative_position_id = GER_anschluss
+		relative_position_id = GER_endsieg_1
 		available = {
 			always = no 
 		OR ={  
