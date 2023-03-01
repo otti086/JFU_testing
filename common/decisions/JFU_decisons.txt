@@ -861,10 +861,15 @@ JFU_decisions = {
 			allowed = {
 		}
 		
-		available = {} 
+		available = {
+			OR = {
+				NOT = { FRA = { owns_state = 16} }
+				date > 1940.01.01
+			}			
+		} 
 		fire_only_once = no
 		visible = {
-			original_tag = ENG
+			original_tag = USA
 			NOT = {has_country_flag = ENG_air_LL}
 		}
 		
@@ -908,7 +913,7 @@ JFU_decisions = {
 		available = {always = yes} 
 		fire_only_once = no
 		visible = {
-			original_tag = ENG
+			original_tag = USA
 			has_country_flag = ENG_air_LL
 		}
 	
