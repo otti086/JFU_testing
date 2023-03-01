@@ -306,6 +306,7 @@ on_actions = {
 				}
 				SPR = {
 					add_timed_idea = { idea = SPR_carlists_uprising days = 730 }
+					add_ideas = { idea = SPA_recovering_from_civil_war}
 					if = { limit = { country_exists = SPD } annex_country = { target = SPD} }
 				}
 				ENG = { add_war_support = 0.1}
