@@ -2311,14 +2311,15 @@ focus_tree = {
 		relative_position_id = GER_anschluss
 		available = {
 			always = no
-			NOT = { controls_state = 16 } 
-			NOT = { controls_state = 6 }
-			NOT = { controls_state = 7 }
-			surrender_progress > 0.1 			
+			NOT = { controls_state = 14 } 
+			NOT = { controls_state = 10 }
+			GER = { has_war_with = SOV }			
 		}
 		cost = 1 
 		completion_reward = {
-			
+			hidden_effect = {
+				GER = { Endsieg_Tanks_spawn_ins = yes }
+			}			
 		}
 	}
 	focus = {
@@ -2329,9 +2330,15 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = GER_endsieg_1	
-		available = {}
+		available = {
+			NOT = { controls_state = 16 } 			
+		}
 		cost = 1
 		completion_reward = {
+			add_timed_idea = {
+				idea = Battle_of_the_Buldge
+				days = 180
+			} 
 		}
 	}
 	focus = {
@@ -2342,9 +2349,15 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GER_endsieg_1
-		available = {}
+		available = {
+			NOT = { controls_state = 5 } 	
+		}
 		cost = 1
 		completion_reward = {
+			add_timed_idea = {
+				idea = Steiners_counter
+				days = 180
+			} 
 		}
 	}
 	focus = {
@@ -2355,13 +2368,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = GER_endsieg_1
 		available = {
-			always = no 
-		OR ={  
-			NOT = { controls_state = 16 } 
-			NOT = { controls_state = 6 }
-			NOT = { controls_state = 7 }
 			surrender_progress > 0.2 
-			}
 		}
 		cost = 1
 		
@@ -2372,7 +2379,9 @@ focus_tree = {
 				idea = endsieg
 				days = 365
 			} 
-		
+		add_dynamic_modifier = {
+			modifier = GER_endsieg
+		}	
 			add_to_variable = { germany_war_army_core_attack_factor = 0.3	} 
 			add_to_variable = { germany_war_army_core_defence_factor = 0.3	} 
 		}	

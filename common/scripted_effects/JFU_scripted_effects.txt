@@ -2943,3 +2943,76 @@ JFU_alternative_gs2 = {
 		}
 	}	
 }
+Endsieg_Tanks_spawn_ins = {
+	GER = {
+		set_technology = { mechanised_infantry = 1 }
+	}
+	create_equipment_variant = {
+		name = "ENDSIEG TANK GER"
+		type = medium_tank_chassis_1
+		allow_without_tech = yes
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_high_velocity_cannon_2
+			turret_type_slot = tank_medium_three_man_tank_turret
+			suspension_type_slot = tank_torsion_bar_suspension
+			armor_type_slot = tank_welded_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_2
+			special_type_slot_2 = secondary_turret_small_cannon
+			special_type_slot_3 = secondary_turret_small_cannon 
+			special_type_slot_4 = easy_maintenance 
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 9
+			tank_nsb_armor_upgrade = 0
+		}
+		icon = "GFX_GER_basic_medium_tank_medium"
+	}
+	create_equipment_variant = {
+		name = "ENDSIEG TD GER"
+		type = medium_tank_destroyer_chassis_1
+		allow_without_tech = yes
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_high_velocity_cannon_3
+			turret_type_slot = tank_medium_fixed_superstructure_turret
+			suspension_type_slot = tank_torsion_bar_suspension
+			armor_type_slot = tank_welded_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = squeezebore_adaptor
+			special_type_slot_2 = secondary_turret_small_cannon
+			special_type_slot_3 = secondary_turret_small_cannon 
+			special_type_slot_4 = easy_maintenance 
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 9
+			tank_nsb_armor_upgrade = 0
+		}
+		icon = "GFX_GER_basic_medium_td"
+	}
+	create_equipment_variant = {
+		name = "ENDSIEG SPAA GER"
+		type = medium_tank_aa_chassis_1
+		allow_without_tech = yes
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_anti_air_cannon_3
+			turret_type_slot = tank_medium_three_man_tank_turret
+			suspension_type_slot = tank_torsion_bar_suspension
+			armor_type_slot = tank_welded_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = additional_machine_guns
+			special_type_slot_2 = additional_machine_guns
+			special_type_slot_3 = additional_machine_guns 
+			special_type_slot_4 = easy_maintenance 
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 9
+			tank_nsb_armor_upgrade = 0
+		}
+		icon = "GFX_GER_basic_medium_td"
+	}
+	load_oob = "GER_endsieg"
+
+}

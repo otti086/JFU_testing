@@ -847,6 +847,46 @@ characters={
 			legacy_id=35
 		}
 	}
+	GER_felix_steiner_allies={
+		name=GER_felix_steiner_allies
+		portraits={
+			army={
+				large="GFX_portrait_ger_felix_steiner"
+				small="gfx/interface/ideas/idea_GER_felix_steiner.dds"
+			}
+		}
+		corps_commander={
+		visible = { any_country =  { has_completed_focus = GER_endsieg_2 } }
+			traits = { panzer_leader panzer_expert expert_improviser trickster hill_fighter  urban_assault_specialist  commando skirmisher camouflage_expert}
+			skill=4
+			attack_skill=8
+			defense_skill=6
+			planning_skill=8
+			logistics_skill=7
+			legacy_id=-1
+		}
+	}
+	GER_felix_steiner_soviet={
+		name=GER_felix_steiner_soviet
+		portraits={
+			army={
+				large="GFX_portrait_ger_felix_steiner"
+				small="gfx/interface/ideas/idea_GER_felix_steiner.dds"
+			}
+		}
+		corps_commander={
+		visible = { any_country =  { has_completed_focus = GER_endsieg_3 } }
+			traits = { panzer_leader panzer_expert expert_improviser trickster ranger  urban_assault_specialist  commando skirmisher camouflage_expert}
+			skill=4
+			attack_skill=8
+			defense_skill=6
+			planning_skill=8
+			logistics_skill=7
+			legacy_id=-1
+		}
+	}
+
+
 
 	GER_karl_donitz={
 		name=GER_karl_donitz

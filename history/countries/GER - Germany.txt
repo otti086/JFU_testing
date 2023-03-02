@@ -264,6 +264,8 @@ recruit_character = GER_erwin_von_witzleben
 recruit_character = GER_gerd_von_rundstedt
 recruit_character = GER_wilhelm_ritter_von_leeb
 recruit_character = GER_wolfram_von_richthofen
+recruit_character = GER_felix_steiner_allies
+recruit_character = GER_felix_steiner_soviet
 
 recruit_character = GER_heinrich_himmler
 recruit_character = GER_walther_funk

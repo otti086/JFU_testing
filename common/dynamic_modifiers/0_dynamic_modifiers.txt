@@ -1239,6 +1239,9 @@ pacific_states_USA = {
 	stability_factor = PJU_15
 }
 GER_endsieg = {
+	enable = { always = yes }
+	icon = generic_acquire_tanks
+	
 	army_core_attack_factor = germany_war_army_core_attack_factor
 	army_core_defence_factor = germany_war_army_core_defence_factor	
 }
