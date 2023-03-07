@@ -885,9 +885,6 @@ characters={
 			legacy_id=-1
 		}
 	}
-
-
-
 	GER_karl_donitz={
 		name=GER_karl_donitz
 		portraits={

@@ -3014,5 +3014,4 @@ Endsieg_Tanks_spawn_ins = {
 		icon = "GFX_GER_basic_medium_td"
 	}
 	load_oob = "GER_endsieg"
-
 }

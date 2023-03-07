@@ -1265,7 +1265,7 @@ JFU_decisions = {
 			}
 		
 		}		
-	}		
+	}	
 }
 JFU_Templates_decision = {
 	"TANK Template" = {
