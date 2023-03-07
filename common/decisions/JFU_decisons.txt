@@ -896,7 +896,7 @@ JFU_decisions = {
 		
 		timeout_effect = {
 			if = { 
-				limit =  { has_country_flag = ITA_air_LL 
+				limit =  { has_country_flag = ENG_air_LL 
 				}
 			air_to_england = yes
 			activate_mission = send_air_to_eng1

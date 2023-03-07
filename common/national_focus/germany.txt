@@ -2310,7 +2310,6 @@ focus_tree = {
 		y = 3
 		relative_position_id = GER_anschluss
 		available = {
-			always = no
 			NOT = { controls_state = 14 } 
 			NOT = { controls_state = 10 }
 			GER = { has_war_with = SOV }				
@@ -2368,13 +2367,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = GER_endsieg_1
 		available = {
-			always = no 
-		OR ={  
-			NOT = { controls_state = 16 } 
-			NOT = { controls_state = 6 }
-			NOT = { controls_state = 7 }
 			surrender_progress > 0.2 
-			}
 		}
 		cost = 1
 		
