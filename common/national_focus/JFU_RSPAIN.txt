@@ -204,7 +204,6 @@ focus_tree = {
 				add_idea = SPR_popular_front_2
 			}
 			custom_effect_tooltip = SPR_crush_the_revolution_tt
-			hidden_effect = { country_event = lar_spain.9 }
 		}
 	}
 
