@@ -563,7 +563,8 @@ JFU_startup_on_action = {
 	}
 	SWE = { HFU_fuel_startup_effect = yes }											
 	SWE = { JFU_scripted_events_effect = yes}
-	SPR = {	country_lock_all_division_template = yes country_event = { id = lar_spain.2 days = 230 } }
+	SPR = {	country_lock_all_division_template = yes country_event = { id = lar_spain.2 days = 230 } 
+			activate_mission = days_till_civil_war }
 	ENG = {
 		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 12200 }
 		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 9600 }
