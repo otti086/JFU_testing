@@ -10,24 +10,9 @@ SPA_historical_plan = {
 	}
 	abort = {
 		has_global_flag = SOV_covert_support_for_poum_flag #Soviet Right Opposition is providing support to the POUM
-		NOT = { has_completed_focus = SPA_maintain_the_second_republic }
 	}
 
-	ai_national_focuses = {
-		SPA_the_popular_front
-		SPA_maintain_the_second_republic
-		SPA_new_leadership
-		SPA_the_future_of_the_republic
-		SPA_petition_for_french_aid
-		SPA_reaffirm_the_popular_front_strategy
-		SPA_crush_the_revolution
-		SPA_relocate_the_gold_reserves
-		SPA_strengthen_the_euzko_gudarostea
-		SPA_fortify_the_iron_ring
-		SPA_ensure_loyalty
-		SPA_enlist_the_carabineros
-		SPA_the_popular_army
-	}
+	ai_national_focuses = {}
 
 	research = {
 

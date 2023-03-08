@@ -859,7 +859,6 @@ SPR_civil_war_offensives = {
 				factor = 0
 				is_historical_focus_on = yes
 				SPA = { is_ai = yes }
-				has_completed_focus = SPA_the_popular_front
 			}
 			modifier = {
 				factor = 10

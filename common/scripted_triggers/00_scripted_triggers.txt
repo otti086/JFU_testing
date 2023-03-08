@@ -100,9 +100,6 @@ check_has_focus_tree_to_switch_to_fascism = {
 	NOT = {
 		AND = {
 			original_tag = SPA
-			OR = {
-				has_completed_focus = SPA_the_popular_front
-			}
 			has_dlc = "La Resistance"
 		}
 	}
