@@ -859,7 +859,6 @@ SPR_civil_war_offensives = {
 				factor = 0
 				is_historical_focus_on = yes
 				SPA = { is_ai = yes }
-				has_completed_focus = SPA_the_popular_front
 			}
 			modifier = {
 				factor = 10
@@ -3275,6 +3274,20 @@ SPR_civil_war_offensives = {
 }
 
 political_actions = {
+
+	days_till_civil_war = {
+    	activation = {}
+		available = { has_war = yes }
+    	allowed = { original_tag = SPR }
+    	cancel_trigger = { has_war = yes }
+    	icon = mission_icon
+		selectable_mission = no
+    	is_good = no
+		fire_only_once = yes
+    	days_mission_timeout = 230
+   		complete_effect = {}
+    	timeout_effect = {}
+	}
 	
 	SPA_carlist_uprising_mission = {
 
