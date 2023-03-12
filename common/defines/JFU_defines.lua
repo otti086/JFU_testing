@@ -76,7 +76,6 @@ NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane t
 	0.0, -- MISSION_RECON
 }
 NDefines.NAir.AIR_MORE_GROUND_CREWS_COST = 0					-- vanilla 20.0 CP cost to maintain more ground crews
-NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_TACTICAL_BOMBER = 0.096	-- vanilla 0.192 How much efficiency to regain per day. Gain applied hourly.
 NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_STRATEGIC_BOMBER = 0.036	-- vanilla 0.072 How much efficiency to regain per day. Gain applied hourly.
 NDefines.NNavy.MISSION_SUPREMACY_RATIOS = { 						-- supremacy multipliers for different mission types   | Strikeforce/Naval Invasion Support now 0 supremacy to avoid free supremacy
 		0.0, -- HOLD
