@@ -1114,9 +1114,6 @@ ideas = {
 
 			allowed = {
 				original_tag = ROM
-				NOT = {
-					has_dlc = "Death or Dishonor"
-				}
 			}
 			
 			research_bonus = {
