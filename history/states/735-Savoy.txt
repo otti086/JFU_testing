@@ -2,8 +2,11 @@ state = {
 	id = 735
 	name = "STATE_735"
 
-	state_category = town
+	resources={
+		aluminium=110
+	}
 
+	state_category = town
 	history = {
 		owner = FRA
 		add_core_of = OCC
