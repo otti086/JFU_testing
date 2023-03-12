@@ -360,7 +360,6 @@ focus_tree = {
 				technology = early_fighter
 				technology = fighter1
 				technology = fighter2
-				technology = fighter3
 				technology = heavy_fighter1
 				technology = heavy_fighter2
 				technology = heavy_fighter3
@@ -484,31 +483,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = bra_CAS_effort
-		icon = GFX_goal_generic_CAS
-		prerequisite = { focus = bra_aviation_effort_2 }
-		prerequisite = { focus = bra_motorization_effort }
-		x = -1
-		y = 1
-		relative_position_id = bra_aviation_effort_2
-		cost = 10
-
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = CAS_bonus
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = cas_bomber
-			}
-		}
-	}
-
-	focus = {
 		id = bra_rocket_effort
 		icon = GFX_focus_rocketry
 		prerequisite = { focus = bra_aviation_effort_2 }
@@ -536,31 +510,6 @@ focus_tree = {
 			modifier = {
 				factor = 0.25
 				always = yes
-			}
-		}
-	}
-
-	focus = {
-		id = bra_NAV_effort
-		icon = GFX_goal_generic_air_naval_bomber
-		prerequisite = { focus = bra_aviation_effort_2 }
-		prerequisite = { focus = bra_flexible_navy }
-		x = 1
-		y = 1
-		relative_position_id = bra_aviation_effort_2
-		cost = 10
-
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = nav_bomber_bonus
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = naval_bomber
 			}
 		}
 	}
