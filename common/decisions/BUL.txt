@@ -4831,6 +4831,7 @@ BUL_rearmament = {
 				}
 			}
 			NOT = { has_country_flag = BUL_rearmament_negotiations_ongoing_flag }
+			date > 1937.6.1
 		}
 
 		fire_only_once = yes
