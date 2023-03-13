@@ -3112,6 +3112,7 @@ SOV_propaganda_campaigns = {
 		}
 
 		visible = {
+			always = no
 			OR = {
 				has_completed_focus = SOV_the_komsomol
 				has_country_flag = SOV_debug_unlock_propaganda_campaigns_flag #debug

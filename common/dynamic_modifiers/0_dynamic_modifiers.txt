@@ -1245,3 +1245,13 @@ GER_endsieg = {
 	army_core_attack_factor = germany_war_army_core_attack_factor
 	army_core_defence_factor = germany_war_army_core_defence_factor	
 }
+SOV_BARB_Debuff = {
+	enable = { always = yes }
+
+	icon = GFX_idea_generic_manpower_bonus
+
+	army_attack_factor = SOV_barb_attack_debuff
+	army_defence_factor = SOV_barb_defence_debuff
+	air_attack_factor = SOV_barb_AIR_attack_modifier
+	air_defence_factor = SOV_barb_AIR_defence_modifer
+}

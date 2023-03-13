@@ -144,7 +144,14 @@ JFU_decisions = {
 			HUN = { add_timed_idea = { idea = axis_barbarossa days = 180 } }
 			ROM = { add_timed_idea = { idea = axis_barbarossa days = 180 } }	
 			BUL = { add_timed_idea = { idea = axis_barbarossa days = 180 } }	
-			SPR = { add_timed_idea = { idea = axis_barbarossa days = 180 } }		
+			SPR = { add_timed_idea = { idea = axis_barbarossa days = 180 } }
+			hidden_effect = {
+#				SOV = {
+#					set_variable = { SOV_barb_attack_debuff = -0.2}
+#					set_variable = { SOV_barb_defence_debuff = -0.1}
+#					add_dynamic_modifier = { modifier = SOV_BARB_Debuff days = 140}
+#				}
+#			}		
 			}
 		}
 	}
