@@ -1011,7 +1011,6 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			has_war = yes
 		}
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -2310,8 +2309,10 @@ focus_tree = {
 		y = 3
 		relative_position_id = GER_anschluss
 		available = {
-			NOT = { controls_state = 14 } 
-			NOT = { controls_state = 10 }
+			OR = {
+				NOT = { controls_state = 14 } 
+				NOT = { controls_state = 10 }
+			}
 			GER = { has_war_with = SOV }				
 		}
 		cost = 1 
