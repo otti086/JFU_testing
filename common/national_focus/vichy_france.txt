@@ -1119,6 +1119,7 @@
 				}
 				remove_ideas = { FRA_disjointed_government }
 			}
+			add_ideas = volunteers_50
 		}
 	}
 	focus = {
