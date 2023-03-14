@@ -519,7 +519,7 @@ focus = {
 			focus = FRA_laissez_faire
 		}
 		relative_position_id = FRA_laissez_faire
-		cost = 5
+		cost = 10
 
 
 		cancel_if_invalid = yes
@@ -761,7 +761,7 @@ focus = {
 			focus = FRA_review_foreign_policy
 		}
 		relative_position_id = FRA_review_foreign_policy
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1

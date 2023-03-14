@@ -155,7 +155,7 @@ ideas = {
 				line_change_production_efficiency_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.1
 			}
-			research_bonus = { industry = 0.05}
+			research_bonus = { industry = 0.1}
 		}
 		FRA_firepower = {
 			picture = generic_artillery_regiments
