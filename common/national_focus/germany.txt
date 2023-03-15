@@ -789,7 +789,7 @@ focus_tree = {
 				technology = excavation4
 				technology = excavation5
 			}
-			add_ideas = GER_autarky_idea
+#			add_ideas = GER_autarky_idea
 		}
 	}
 

@@ -232,7 +232,6 @@ bookmarks = {
 				MEX_capital_reserves
 			}
 			focuses = {
-				MEX_focus_aztec_eagles
 			}
 		}
 

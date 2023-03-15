@@ -945,6 +945,12 @@ focus_tree = {
 					uses = 1
 					category = air_doctrine
 				}
+				add_tech_bonus = {
+					name = fighter_command_engine
+					bonus = 0.5
+					uses = 1
+					category = air_equipment
+				}
 			}
 		}
 	}

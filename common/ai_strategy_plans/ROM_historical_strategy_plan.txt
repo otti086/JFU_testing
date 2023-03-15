@@ -19,20 +19,15 @@ ROM_historical = {
 	ai_national_focuses = {
 		ROM_preserve_greater_romania
 		ROM_army_maneuvers
-		ROM_expand_the_air_force
 		ROM_civil_works
 		ROM_agrarian_reform
-		ROM_local_development
 		ROM_army_war_college
 		ROM_danubian_transport_network
 		ROM_malaxa
 		ROM_institute_royal_dictatorship
 		ROM_revise_the_constitution
 		ROM_flexible_foreign_policy
-		ROM_air_superiority
 		ROM_expand_the_galati_shipyards
-		ROM_iar_80
-		ROM_cas
 		ROM_royal_guards_divisions
 		ROM_the_zb_53
 		ROM_vanatori_de_munte

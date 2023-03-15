@@ -237,7 +237,7 @@ focus_tree = {
 	focus = {
 		id = fin_naval_effort
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 6
+		x = 5
 		y = 0
 		cost = 10
 
@@ -279,7 +279,7 @@ focus_tree = {
 	focus = {
 		id = fin_industrial_effort
 		icon = GFX_goal_generic_production
-		x = 9
+		x = 7
 		y = 0
 		cost = 10
 
@@ -839,7 +839,7 @@ focus_tree = {
 	focus = {
 		id = fin_political_effort
 		icon = GFX_goal_generic_demand_territory
-		x = 13
+		x = 11
 		y = 0
 		cost = 10
 

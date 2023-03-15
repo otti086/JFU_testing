@@ -301,7 +301,6 @@ bookmarks = {
 				MEX_oil_concessions
 			}
 			focuses = {
-				MEX_focus_aztec_eagles
 			}
 		}
 

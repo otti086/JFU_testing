@@ -24,11 +24,8 @@ NZL_historical = {
 		NZL_new_zealand_steel										
 		NZL_wairarapa_sheep_farms
 		#1937									
-		NZL_ratana_alliance											
-		NZL_expand_the_nzpaf										
-		NZL_form_the_rnzaf											
+		NZL_ratana_alliance																					
 		NZL_social_security_act										
-		NZL_defend_our_islands
 		#1938										
 		NZL_army_reforms											
 		NZL_charlton_automatic_rifle								
@@ -45,14 +42,9 @@ NZL_historical = {
 		NZL_domestic_arms_industry									
 		NZL_long_range_patrol										
 		NZL_bob_semple_tank											
-		#1941
-		NZL_fighter_focus											
-		NZL_think_big																		
-		NZL_expand_devonport_naval_base								
-		NZL_destroyer_effort										
-		#1942
-		NZL_coastal_defense											
-		NZL_light_cruiser_effort									
+		#1941										
+		NZL_think_big																																	
+		#1942																	
 		NZL_schofield_tank											
 		NZL_artillery_focus											
 		NZL_the_manpower_act										

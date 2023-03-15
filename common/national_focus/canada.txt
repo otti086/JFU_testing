@@ -2658,11 +2658,11 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = CAN_we_have_the_hurricane
-				bonus = 1.0
-				uses = 1
-				category = light_fighter
+			add_doctrine_cost_reduction = {
+				name = CAN_rcaf_station_borden
+				cost_reduction = 0.5
+				uses = 2
+				category = air_doctrine
 			}
 		}
 	}

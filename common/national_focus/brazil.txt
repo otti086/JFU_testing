@@ -253,271 +253,11 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = bra_aviation_effort
-		icon = GFX_goal_generic_build_airforce
-		x = 5
-		y = 0
-		cost = 10
-		
-		search_filters = {   FOCUS_FILTER_RESEARCH }
-
-		available_if_capitulated = yes
-
-
-		complete_tooltip = {
-			air_experience = 50
-			if = { limit = { has_country_flag = aviation_effort_AB }
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-			}			
-			add_doctrine_cost_reduction = {
-				name = air_doc_bonus
-				cost_reduction = 0.5
-				uses = 1
-				category = air_doctrine
-			}			
-		}
-
-		completion_reward = {
-			air_experience = 50
-
-			if = {
-				limit = {
-					capital_scope = {
-						NOT = {
-							free_building_slots = {
-								building = air_base
-								size > 1
-							}
-						}
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = air_base
-							size > 1
-						}
-					}
-					add_building_construction = {
-						type = air_base
-						level = 2
-						instant_build = yes
-					}
-					ROOT = { set_country_flag = aviation_effort_AB }
-				}
-			}
-			if = {
-				limit = {
-					capital_scope = {
-						free_building_slots = {
-							building = air_base
-							size > 1
-						}
-					}
-				}
-				capital_scope = {
-					add_building_construction = {
-						type = air_base
-						level = 2
-						instant_build = yes
-					}
-					ROOT = { set_country_flag = aviation_effort_AB }
-				}
-			}
-			add_doctrine_cost_reduction = {
-				name = air_doc_bonus
-				cost_reduction = 0.5
-				uses = 1
-				category = air_doctrine
-			}
-		}
-	}
-
-	focus = {
-		id = bra_fighter_focus
-		icon = GFX_goal_generic_air_fighter
-		prerequisite = { focus = bra_aviation_effort }
-		mutually_exclusive = { focus = bra_bomber_focus }
-		x = -1
-		y = 1
-		relative_position_id = bra_aviation_effort
-		cost = 10
-
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = fighter_bonus
-				bonus = 1.0
-				uses = 2
-				technology = early_fighter
-				technology = fighter1
-				technology = fighter2
-				technology = heavy_fighter1
-				technology = heavy_fighter2
-				technology = heavy_fighter3
-			}
-		}
-	}
-
-	focus = {
-		id = bra_bomber_focus
-		icon = GFX_goal_generic_air_bomber
-		prerequisite = { focus = bra_aviation_effort }
-		mutually_exclusive = { focus = bra_fighter_focus }
-		x = 1
-		y = 1
-		relative_position_id = bra_aviation_effort
-		cost = 10
-
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = bomber_bonus
-				bonus = 1.0
-				uses = 2
-				technology = strategic_bomber1
-				technology = strategic_bomber2
-				category = tactical_bomber
-			}
-		}
-	}
-
-	focus = {
-		id = bra_aviation_effort_2
-		icon = GFX_goal_generic_air_doctrine
-		prerequisite = { focus = bra_bomber_focus focus = bra_fighter_focus }
-		x = -1
-		y = 1
-		relative_position_id = bra_bomber_focus
-		cost = 10
-
-		search_filters = {   FOCUS_FILTER_RESEARCH }
-		
-		available_if_capitulated = yes
-
-
-		complete_tooltip = {
-			air_experience = 25
-			if = { limit = { has_country_flag = aviation_effort_2_AB }
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-			}
-			add_doctrine_cost_reduction = {
-				name =  air_doc_bonus
-				cost_reduction = 0.5
-				uses = 1
-				category = air_doctrine
-			}
-		}
-		completion_reward = {
-			air_experience = 25
-			if = {
-				limit = {
-					capital_scope = {
-						OR = {
-							NOT = { is_controlled_by = ROOT }
-							NOT = {
-								free_building_slots = {
-									building = air_base
-									size > 1
-								}
-							}
-						}
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = air_base
-							size > 1
-						}
-					}
-					add_building_construction = {
-						type = air_base
-						level = 2
-						instant_build = yes
-					}
-					ROOT = { set_country_flag = aviation_effort_2_AB }
-				}
-			}
-			if = {
-				limit = {
-					capital_scope = {
-						is_controlled_by = ROOT
-						free_building_slots = {
-							building = air_base
-							size > 1
-						}
-					}
-				}
-				capital_scope = {
-					add_building_construction = {
-						type = air_base
-						level = 2
-						instant_build = yes
-					}				
-					ROOT = { set_country_flag = aviation_effort_2_AB }
-				}
-			}
-			add_doctrine_cost_reduction = {
-				name =  air_doc_bonus
-				cost_reduction = 0.5
-				uses = 1
-				category = air_doctrine
-			}
-		}
-	}
-
-	focus = {
-		id = bra_rocket_effort
-		icon = GFX_focus_rocketry
-		prerequisite = { focus = bra_aviation_effort_2 }
-		prerequisite = { focus = bra_infrastructure_effort }
-		x = 0
-		y = 2
-		relative_position_id = bra_aviation_effort_2
-		cost = 10
-
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = jet_rocket_bonus
-				ahead_reduction = 2
-				uses = 2
-				category = jet_technology
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0.25
-				always = yes
-			}
-		}
-	}
 
 	focus = {
 		id = bra_naval_effort
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 9
+		x = 4
 		y = 0
 		cost = 10
 
@@ -643,244 +383,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = bra_flexible_navy
-		icon = GFX_goal_generic_build_navy
-		prerequisite = { focus = bra_naval_effort }
-		mutually_exclusive = { focus = bra_large_navy }
-		x = -1
-		y = 1
-		relative_position_id = bra_naval_effort
-		cost = 10
-		
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-
-		available_if_capitulated = yes
-
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-
-		completion_reward = {
-			add_doctrine_cost_reduction = {
-				name = sub_op_bonus
-				cost_reduction = 0.5
-				uses = 2
-				technology = convoy_interdiction_ti
-				technology = unrestricted_submarine_warfare
-				technology = wolfpacks
-				technology = advanced_submarine_warfare
-				technology = combined_operations_raiding
-			}
-		}
-	}
-
-	focus = {
-		id = bra_large_navy
-		icon = GFX_goal_generic_navy_doctrines_tactics
-		prerequisite = { focus = bra_naval_effort }
-		mutually_exclusive = { focus = bra_flexible_navy }
-		x = 1
-		y = 1
-		relative_position_id = bra_naval_effort
-		cost = 10
-		
-		search_filters = {   FOCUS_FILTER_RESEARCH }
-
-		available_if_capitulated = yes
-
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-
-		completion_reward = {
-			add_doctrine_cost_reduction = {
-				name = fleet_in_being_bonus
-				cost_reduction = 0.25
-				uses = 2
-				category = fleet_in_being_tree
-			}
-		}
-	}
-
-	focus = {
-		id = bra_submarine_effort
-		icon = GFX_goal_generic_navy_submarine
-		prerequisite = { focus = bra_flexible_navy focus = bra_large_navy }
-		x = 0
-		y = 1
-		relative_position_id = bra_flexible_navy
-		cost = 10
-		
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
-		available_if_capitulated = yes
-
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = ss_bonus
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = ss_tech
-			}
-		}
-	}
-
-	focus = {
-		id = bra_cruiser_effort
-		icon = GFX_goal_generic_navy_cruiser
-		prerequisite = { focus = bra_large_navy focus = bra_flexible_navy }
-		x = 0
-		y = 1
-		relative_position_id = bra_large_navy
-		cost = 10
-		
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-
-		available_if_capitulated = yes
-
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = cr_bonus
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = cl_tech
-				category = ca_tech
-			}
-		}
-	}
-
-	focus = {
-		id = bra_destroyer_effort
-		icon = GFX_goal_generic_wolf_pack
-		prerequisite = { focus = bra_submarine_effort }
-		x = 0
-		y = 1
-		relative_position_id = bra_submarine_effort
-		cost = 10
-
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
-		available_if_capitulated = yes
-
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = dd_bonus
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = dd_tech
-			}
-		}
-	}
-
-	focus = {
-		id = bra_capital_ships_effort
-		icon = GFX_goal_generic_navy_battleship
-		prerequisite = { focus = bra_cruiser_effort }
-		x = 0
-		y = 1
-		relative_position_id = bra_cruiser_effort
-		cost = 10
-
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
-		available_if_capitulated = yes
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-
-		completion_reward = {
-			navy_experience = 25
-			add_tech_bonus = {
-				name = capital_ships_bonus
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = bc_tech
-				category = bb_tech
-				category = cv_tech
-			}
-		}
-	}
-
-	focus = {
 		id = bra_industrial_effort
 		icon = GFX_goal_generic_production
-		x = 13
+		x = 7
 		y = 0
 		cost = 10
 
@@ -1478,6 +983,38 @@ focus_tree = {
 		}
 	}
 
+
+	focus = {
+		id = bra_rocket_effort
+		icon = GFX_focus_rocketry
+		prerequisite = { focus = bra_infrastructure_effort_2 }
+		x = -2
+		y = 1
+		relative_position_id = bra_infrastructure_effort_2
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = jet_rocket_bonus
+				ahead_reduction = 2
+				uses = 2
+				category = jet_technology
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.25
+				always = yes
+			}
+		}
+	}
+
 	focus = {
 		id = bra_construction_effort_3
 		icon = GFX_goal_generic_construct_civ_factory
@@ -1629,7 +1166,7 @@ focus_tree = {
 	focus = {
 		id = bra_political_effort
 		icon = GFX_goal_generic_demand_territory
-		x = 16
+		x = 10
 		y = 0
 		cost = 10
 	
