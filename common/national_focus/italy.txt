@@ -9159,7 +9159,7 @@ focus_tree = {
 		icon = GFX_goal_generic_more_territorial_claims
 		prerequisite = {  focus = ITA_balkan_ambition }
 
-		x = -4
+		x = -2
 		y = 1
 		relative_position_id = ITA_balkan_ambition
 		cost = 5
@@ -9173,133 +9173,29 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_ANNEXATION FOCUS_FILTER_STABILITY FOCUS_FILTER_MANPOWER}
 
 		completion_reward = {
+			annex_country = { target = ALB }
+			add_named_threat = { threat = 2 name = ITA_albania_war_goal }
 			if = {
 				limit = {
-					ALB = { has_war = no }
+					has_idea = vittorio_emanuele
 				}
-				ALB = { country_event = { id = italy.3 hours = 1 } }
-			}
-			else = {
-				create_wargoal = {
-					type = take_state_focus
-					target = ALB
-					generator = { 44 }
+				swap_ideas = {
+					remove_idea = vittorio_emanuele
+					add_idea = vittorio_emanuele_king_of_albania
 				}
 			}
-
-			effect_tooltip = {
-				custom_effect_tooltip = if_they_accept_tt
-				annex_country = { target = ALB }
-				add_named_threat = { threat = 2 name = ITA_albania_war_goal }
-				# The king is an idea
-				if = {
-					limit = {
-						has_idea = vittorio_emanuele
-					}
-					swap_ideas = {
-						remove_idea = vittorio_emanuele
-						add_idea = vittorio_emanuele_king_of_albania
-					}
-				}
-				else_if = {
-					limit = {
-						has_idea = vittorio_emanuele_emperor_of_ethiopia
-					}
-					swap_ideas = {
-						remove_idea = vittorio_emanuele_emperor_of_ethiopia
-						add_idea = vittorio_emanuele_albania_ethiopia
-					}
-				}
-				ITA_vittorio_emanuele_iii = { add_country_leader_trait = king_of_albania }
-			}
-		}
-	}
-
-	focus = {
-		id = ITA_support_albanian_irredentism
-		icon = GFX_focus_ITA_albanian_irredentism
-		prerequisite = { focus = ITA_albanian_occupation }
-
-		x = 0
-		y = 1
-		relative_position_id = ITA_albanian_occupation
-		cost = 5
-		available = {
-			44 = {
-				state_is_fully_controlled_by_ROOT_or_subject = yes
-			}
-		}
-
-		search_filters = {}
-
-		completion_reward = {
-
-			every_state = {
+			else_if = {
 				limit = {
-					OR = {
-						is_core_of = ALB
-						is_claimed_by = ALB
-					}
-					is_fully_controlled_by = ROOT
+					has_idea = vittorio_emanuele_emperor_of_ethiopia
 				}
-				add_compliance = 30
-			}
-		}
-	}
-
-	focus = {
-		id = ITA_albanian_fascist_militia
-		icon = GFX_focus_ITA_albanian_fascist_militia
-		prerequisite = { focus = ITA_support_albanian_irredentism }
-
-		x = 0
-		y = 1
-		relative_position_id = ITA_support_albanian_irredentism
-		cost = 5
-		available = {
-			44 = {
-				state_is_fully_controlled_by_ROOT_or_subject = yes
-			}
-		}
-
-		search_filters = {FOCUS_FILTER_MANPOWER}
-
-		completion_reward = {
-			if = {
-				limit = {
-					NOT = { has_completed_focus = ITA_regional_development }
+				swap_ideas = {
+					remove_idea = vittorio_emanuele_emperor_of_ethiopia
+					add_idea = vittorio_emanuele_albania_ethiopia
 				}
-				custom_effect_tooltip = ITA_albanian_fascist_militia_occupation_law_full_tt
-				show_ideas_tooltip = ITA_fake_colonial_police_law
 			}
-			else = {
-				custom_effect_tooltip = ITA_albanian_fascist_militia_occupation_law_tt
-			}
-
-			every_controlled_state = {
-				limit = {
-					is_core_of = ALB
-					is_fully_controlled_by = ROOT
-				}
-				#set_occupation_law = colonial_police #MM: Not working
-				add_compliance = 10
-			}
-
-			custom_effect_tooltip = ITA_blackshirts_div_cap_8_tt
 			hidden_effect = {
-				add_to_variable = { ITA_militias_cap = 8 }
-				set_division_template_cap = {  division_template = "Camicie Nere" division_cap = ITA_militias_cap }
-			}
-
-			44 = {
-				custom_effect_tooltip = ITA_albanian_fascist_militia_spawn_divs_tt
-				hidden_effect = {
-					create_unit = { #Historically 14 battalions
-						division = "division_template = \"Camicie Nere\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-						owner = ROOT
-						count = 3
-					}
-				}
+				44 = { add_core_of = GER }
+				805 = { add_core_of = GER }
 			}
 		}
 	}
@@ -9368,43 +9264,11 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ITA_sea_wolves_bba
-		icon = GFX_goal_generic_wolf_pack
-		prerequisite = { focus = ITA_german_military_cooperation }
-
-		x = -1
-		y = 1
-		relative_position_id = ITA_german_military_cooperation
-		cost = 5
-		available = {
-			NOT = { has_country_flag = ENG_ditched_by_the_germans_flag }
-		}
-		
-		search_filters = {FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH}
-
-		completion_reward = {
-			navy_experience = 25
-			add_tech_bonus = {
-				name = ITA_sea_wolves_bba
-				bonus = 1.0
-				uses = 1
-				category = ss_tech
-			}
-			add_doctrine_cost_reduction = {
-				name = ITA_sea_wolves_bba
-				cost_reduction = 0.5
-				uses = 2
-				category = submarine_doctrine
-			}
-		}
-	}
-
-	focus = {
 		id = ITA_secret_weapons
 		icon = GFX_goal_generic_secret_weapon
 		prerequisite = { focus = ITA_german_military_cooperation }
 
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = ITA_german_military_cooperation
 		cost = 5
