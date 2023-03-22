@@ -133,132 +133,142 @@ horst_manchukuo = {
 		desc = "Clicking this option will give Manchukuo a powerful new focus tree that was created by Thrasymachus"	
 	}
 }
-horst_host_country = {
-	name = "Select Host (TEST IN SP FIRST!!!)"
-	group = "HORST_GROUPKEY"
-	icon = "GFX_volunteers"
-	
+hosttool_game_rule = {
+	name = "HOSTTOOL_GAME_RULE"
+	group = "Hosttool"
+	icon = "GFX_decision_category_ger_reichskommissariats"
+
 	default = {
-		name = ENG
-		text = "United Kingdom"
-		desc = "Clicking this option will give the United Kingdom access to the Horst Tools (please test this in SP before enabling in MP)"
+		name = OFF
+		text = "HOSTTOOL_NONE"
+		desc = ""
 	}
 	option = {
 		name = GER
 		text = "Germany"
-		desc = "Clicking this option will give Germany access to the Horst Tools (please test this in SP before enabling in MP)"
+		desc = ""
+		allow_achievements = yes
 	}
 	option = {
 		name = ITA
 		text = "Italy"
-		desc = "Clicking this option will give Italy access to the Horst Tools (please test this in SP before enabling in MP)"
+		desc = ""
+		allow_achievements = yes
 	}
 	option = {
 		name = ROM
 		text = "Romania"
-		desc = "Clicking this option will give Romania access to the Horst Tools (please test this in SP before enabling in MP)"
+		desc = ""
+		allow_achievements = yes
 	}
 	option = {
 		name = HUN
 		text = "Hungary"
-		desc = "Clicking this option will give Hungary access to the Horst Tools (please test this in SP before enabling in MP)"
+		desc = ""
+		allow_achievements = yes
+	}
+	option = {
+		name = BUL
+		text = "Bulgaria"
+		desc = ""
+		allow_achievements = yes
+	}
+	option = {
+		name = FIN
+		text = "Finland"
+		desc = ""
+		allow_achievements = yes
+	}
+	option = {
+		name = ENG
+		text = "United Kingdom"
+		desc = ""
+		allow_achievements = yes
 	}
 	option = {
 		name = USA
 		text = "USA"
-		desc = "Clicking this option will give America access to the Horst Tools (please test this in SP before enabling in MP)"
+		desc = ""
+		allow_achievements = yes
 	}
 	option = {
 		name = CAN
 		text = "Canada"
-		desc = "Clicking this option will give Canada access to the Horst Tools (please test this in SP before enabling in MP)"
+		desc = ""
+		allow_achievements = yes
 	}
 	option = {
 		name = SAF
 		text = "South Africa"
-		desc = "Clicking this option will give South Africa access to the Horst Tools (please test this in SP before enabling in MP)"
+		desc = ""
+		allow_achievements = yes
 	}
 	option = {
 		name = RAJ
 		text = "British Raj"
-		desc = "Clicking this option will give British Raj access to the Horst Tools (please test this in SP before enabling in MP)"
+		desc = ""
+		allow_achievements = yes
 	}
 	option = {
 		name = AST
 		text = "Australia"
-		desc = "Clicking this option will give Australia access to the Horst Tools (please test this in SP before enabling in MP)"
+		desc = ""
+		allow_achievements = yes
 	}
 	option = {
 		name = NZL
 		text = "New Zealand"
-		desc = "Clicking this option will give New Zealand access to the Horst Tools (please test this in SP before enabling in MP)"
+		desc = ""
+		allow_achievements = yes
 	}
 	option = {
 		name = JAP
 		text = "Japan"
-		desc = "Clicking this option will give Japan access to the Horst Tools (please test this in SP before enabling in MP)"
+		desc = ""
+		allow_achievements = yes
 	}
 	option = {
 		name = MAN
 		text = "Manchukuo"
-		desc = "Clicking this option will give Manchukuo access to the Horst Tools (please test this in SP before enabling in MP)"
+		desc = ""
+		allow_achievements = yes
 	}
 	option = {
 		name = SOV
 		text = "Soviet Union"
-		desc = "Clicking this option will give the Soviet Union access to the Horst Tools (please test this in SP before enabling in MP)"
+		desc = ""
+		allow_achievements = yes
 	}
 	option = {
 		name = FRA
 		text = "France"
-		desc = "Clicking this option will give France access to the Horst Tools (please test this in SP before enabling in MP)"
+		desc = ""
+		allow_achievements = yes
+	}
+	option = {
+		name = BRA
+		text = "Brazil"
+		desc = ""
+		allow_achievements = yes
+	}
+	option = {
+		name = MEX
+		text = "Mexico"
+		desc = ""
+		allow_achievements = yes
+	}
+	option = {
+		name = IRE
+		text = "Ireland"
+		desc = ""
+		allow_achievements = yes
 	}
 	option = {
 		name = SPR
 		text = "Spain"
-		desc = "Clicking this option will give Spain access to the Horst Tools (please test this in SP before enabling in MP)"
+		desc = ""
+		allow_achievements = yes
 	}
-		option = {
-		name = NOR
-		text = "Norway"
-		desc = "Clicking this option will give Norway access to the Horst Tools (please test this in SP before enabling in MP)"
-	}
-		option = {
-		name = FIN
-		text = "Finland"
-		desc = "Clicking this option will give Finland access to the Horst Tools (please test this in SP before enabling in MP)"
-	}	
-		option = {
-		name = ETH
-		text = "Italian East Africa"
-		desc = "Clicking this option will give Italian East Africa access to the Horst Tools (please test this in SP before enabling in MP) - Horst tool is transferred to Italy upon capitulation"
-	}		
-			option = {
-		name = BRA
-		text = "Brazil"
-		desc = "Clicking this option will give Brazil access to the Horst Tools (please test this in SP before enabling in MP)"
-	}		
-		option = {
-		name = EFR
-		text = "Vichy France"
-		desc = "Clicking this option will give Vichy France access to the Horst Tools (please test this in SP before enabling in MP) - Horst tool is transferred to Germany upon capitulation"
-	}		
-	option = {
-		name = CZE
-		text = "Slovakia"
-		desc = "Clicking this option will give Croatia access to the Horst Tools (please test this in SP before enabling in MP) - Horst tool is transferred to Germany upon capitulation"
-	}		
-			option = {
-		name = YUG
-		text = "Croatia"
-		desc = "Clicking this option will give Croatia access to the Horst Tools (please test this in SP before enabling in MP) - Horst tool is transferred to Germany upon capitulation"
-	}		
-		
-			option = {
-		name = BUL
-		text = "Bulgaria"
-		desc = "Clicking this option will give Bulgaria access to the Horst Tools (please test this in SP before enabling in MP)"
-	}		
 }
 JFU_pre_grinded_generals = {
 	name = "pre grinded Generals Settings"
