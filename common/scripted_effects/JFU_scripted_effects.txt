@@ -531,7 +531,15 @@ JFU_vichy_france_2 = {
 			transfer_state = 888
 		}
 	}
-
+	if = { 
+		limit = {
+			EFR = { is_ai = yes }
+		}
+		SWE = { Vichy_ai_Building = yes }
+	}
+	FRA = {
+		transfer_state = 713
+	}
 }
 
 
@@ -3019,4 +3027,22 @@ Endsieg_Tanks_spawn_ins = {
 		icon = "GFX_GER_basic_medium_td"
 	}
 	load_oob = "GER_endsieg"
+}
+Vichy_ai_Building = {
+	set_temp_variable = { vichy_mils = 0 } 
+	set_temp_variable = { vichy_civs = 0 }
+	set_temp_variable = { vichy_docks = 0 }
+	EFR = {
+		every_controlled_state = {
+			limit = { is_core_of = EFR }
+			add_to_temp_variable = { vichy_mils = arms_factory_level }
+			add_to_temp_variable = { vichy_civs = industrial_complex_level }
+			add_to_temp_variable = { vichy_docks = building_level@dockyard }
+		}
+	}
+	GER = {
+		add_offsite_building = { type = arms_factory level = vichy_mils }
+		add_offsite_building = { type = industrial_complex level = vichy_civs }
+		add_offsite_building = { type = dockyard level = vichy_docks }
+	}
 }

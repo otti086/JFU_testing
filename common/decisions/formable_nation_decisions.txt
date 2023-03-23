@@ -10,9 +10,16 @@ form_greater_german_reich_category = {
 		}
 
 		available = {
-			is_subject = no
-			has_full_control_of_state = 195
-			has_full_control_of_state = 217
+			OR = {
+				has_offensive_war_with = SOV
+				AND = {
+					has_full_control_of_state = 195
+					has_full_control_of_state = 217
+				}
+			}
+			NOT = {
+				has_idea = axis_barbarossa
+			}
 		}
 
 		visible = {

@@ -9,7 +9,6 @@ set_variable = {
 }
 
 set_variable = { var = FRA_legitimacy value = 0 }
-
 if = {
 	limit = {
 		NOT = {

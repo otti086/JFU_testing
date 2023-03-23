@@ -951,6 +951,16 @@ JFU_decisions = {
 				GER = { add_to_faction = EFR }
 				EFR = { add_to_war = { targeted_alliance = GER enemy = ENG } }
 				USA = { country_event = { id = usa.996  days = 0 }  }
+				GER = {
+					if = {
+						limit = { 
+							EFR = { is_ai = yes }
+						}
+						EFR = { 
+							every_core_state = { transfer_state_to = GER }
+						}
+					}
+				}
 			}
 			news_event = { id = news.5001 }
 
