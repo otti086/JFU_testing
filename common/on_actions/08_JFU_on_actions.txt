@@ -418,7 +418,7 @@ on_actions = {
 				}
 				if = { 
 					limit = { 
-						country_exists = SPD
+						has_war = yes
 					} 
 					set_global_flag = scw_early_end
 				}
@@ -461,9 +461,9 @@ on_actions = {
 				}
 				if = { 
 					limit = { 
-						country_exists = SPA
+						has_war = yes
 					} 
-				set_global_flag = scw_early_end
+					set_global_flag = scw_early_end
 				}				
 			}
 			if = {
