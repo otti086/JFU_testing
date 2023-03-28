@@ -398,31 +398,13 @@ on_actions = {
 
 				every_state = {
 					limit = { 
-						AND = {
-							is_core_of = SPA
-							NOT = {
-								is_controlled_by = SPD
-							}
-						}
+						is_core_of = SPA
 					}
 					transfer_state_to = SPR 
 				}
-				if = {
-					limit = {
-						has_global_flag = scw_early_end
-					}
-					clr_global_flag = scw_early_end
-					set_global_flag = scw_over
-					set_global_flag = nationalist_victory
-					SPR = { country_event = { id = lar_news.1 hours = 6 } }
-				}
-				if = { 
-					limit = { 
-						has_war = yes
-					} 
-					set_global_flag = scw_early_end
-				}
-
+				set_global_flag = scw_over
+				set_global_flag = nationalist_victory
+				SPR = { country_event = { id = lar_news.1 hours = 6 } }
 			}
 			if = {
 				limit = {

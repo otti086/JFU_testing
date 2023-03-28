@@ -51,7 +51,6 @@ ITA_historical_plan = {
 		#1940 (Oct -> Invasion of Greece)
 		ITA_german_military_cooperation #35
 		ITA_italian_irredentism
-		ITA_support_albanian_irredentism #35
 		ITA_a_bandits_war
 		ITA_superesercito #35 #Jun 40
 		ITA_treaty_with_germany #35

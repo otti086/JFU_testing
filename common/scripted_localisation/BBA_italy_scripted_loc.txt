@@ -333,24 +333,10 @@ defined_text = {
 }
 
 defined_text = {
-	name = GetAlbanianStates
-	text = {
-		trigger = {
-			has_completed_focus = ITA_albanian_fascist_militia
-		}
-		localization_key = BBA_italy_colonial_management_albanian_states
-	}
-	text = {
-		localization_key = generic_null
-	}
-}
-
-defined_text = {
 	name = GetAndOrNothing
 	text = {
 		trigger = {
 			has_completed_focus = ITA_ministry_of_italian_africa
-			has_completed_focus = ITA_albanian_fascist_militia
 		}
 		localization_key = BBA_italy_colonial_management_and
 	}
