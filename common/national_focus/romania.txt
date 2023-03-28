@@ -548,7 +548,7 @@
 			46 = {
 				add_resource = {
 					type = oil
-					amount = 60
+					amount = 30
 				}
 			}
 		}
