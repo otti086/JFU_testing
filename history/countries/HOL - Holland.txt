@@ -8,7 +8,10 @@ if = {
 		set_naval_oob = "HOL_1936_naval_legacy"
 	}
 }
-
+add_relation_modifier = {
+	target = SOV
+	modifier = trade_soviet
+}
 set_research_slots = 3
 set_stability = 0.75
 set_war_support = 0
