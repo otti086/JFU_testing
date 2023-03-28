@@ -405,7 +405,7 @@ JFU_vichy_france = {
 				}
 			}
 				
-			add_compliance = 60
+			add_compliance = 80
 		}
 	}
 	ENG = { news_event = { id = news.44 } }
