@@ -270,7 +270,7 @@ on_actions = {
 						}
 					}
 				
-					set_compliance = 70 
+					set_compliance = 60 
 				}
 			}
 			if = {
