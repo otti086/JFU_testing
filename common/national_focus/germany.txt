@@ -1290,8 +1290,8 @@ focus_tree = {
 				name = bomber_bonus
 				bonus = 1.0
 				uses = 1
-				category = tactical_bomber
-				category = cas_bomber			
+				category = light_air
+				category = medium_air			
 			}
 		}
 	}
@@ -1340,7 +1340,7 @@ focus_tree = {
 				name = nav_bomber_bonus
 				bonus = 1.0
 				uses = 2
-				category = naval_bomber
+				category = light_air
 			}
 		}
 	}
@@ -1371,7 +1371,7 @@ focus_tree = {
 				name = bomber_bonus
 				bonus = 1.0
 				uses = 1
-				category = cat_strategic_bomber
+				category = heavy_air
 			}
 		}
 	}
@@ -1725,7 +1725,7 @@ focus_tree = {
 		cost = 10
 		search_filters = { FOCUS_FILTER_POLITICAL }	
 		completion_reward = {
-			add_named_threat = { threat = 5 name = GER_rhineland }
+			add_named_threat = { threat = 7 name = GER_rhineland }
 			42 = { set_demilitarized_zone = no }
 			51 = { set_demilitarized_zone = no }
 			add_political_power = 150
