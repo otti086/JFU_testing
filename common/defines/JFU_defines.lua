@@ -75,6 +75,7 @@ NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane t
 	0.0, -- NAVAL_MINES_SWEEPING
 	0.0, -- MISSION_RECON
 }
+NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.10
 NDefines.NAir.AIR_MORE_GROUND_CREWS_COST = 0					-- vanilla 20.0 CP cost to maintain more ground crews
 NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_STRATEGIC_BOMBER = 0.036	-- vanilla 0.072 How much efficiency to regain per day. Gain applied hourly.
 NDefines.NNavy.MISSION_SUPREMACY_RATIOS = { 						-- supremacy multipliers for different mission types   | Strikeforce/Naval Invasion Support now 0 supremacy to avoid free supremacy
@@ -91,7 +92,7 @@ NDefines.NNavy.MISSION_SUPREMACY_RATIOS = { 						-- supremacy multipliers for d
 	}
 
 NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0
-NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 1000.0
+NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 1.0
 NDefines.NNavy.NAVAL_TRANSFER_BASE_SPEED = 10                      -- WAS 6 | Increased so moving troops around the world is faster and theaters dont seem so disconnected (particularly aimed at improving Allied gameplay experience)
 NDefines.NNavy.ADMIRAL_TASKFORCE_CAP = 20                         -- WAS 10 | Increased so players can use their same submarine or escort admiral without penalties
 NDefines.NNavy.NAVAL_MINES_DECAY_AT_PEACE_TIME = 1000                    -- WAS 0.25 
