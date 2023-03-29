@@ -48,7 +48,13 @@ ai_country = {
 		tag = NOR
 	}
 }
-
+africa_oil_states = {
+	OR = {
+		state = 291
+		state = 907
+		state = 451
+	}
+}
 
 ignore_aa_states = { NOT = { OR = { is_core_of = SPR state = 219 }}}
 
