@@ -902,6 +902,10 @@ focus_tree = {
 
 			set_technology = { fuel_refining2 = 1 }
 			set_technology = { fuel_refining3 = 1}
+			ITA = {
+				set_technology = { fuel_refining2 = 1 }
+				set_technology = { fuel_refining3 = 1}				
+			}
 		}
 	}
 

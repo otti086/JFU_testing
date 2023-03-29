@@ -322,9 +322,6 @@ JFU_decisions = {
 					}
 				}
 			}
-			give_resource_rights = { receiver = ROM state = 291 }
-			give_resource_rights = { receiver = ROM state = 907 }
-			give_resource_rights = { receiver = ROM state = 451 }
 		}		
 	}
 	"Attack Finland" = {
