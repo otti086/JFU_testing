@@ -5,11 +5,7 @@ state={
 	manpower = 1430700
 	
 	state_category = pastoral
-	
-	resources={
-		aluminium=2 # was: 2
-		chromium=2 # was: 3
-	}
+
 
 	history={
 		owner = CHI

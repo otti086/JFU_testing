@@ -4,7 +4,7 @@ state={
 	name="STATE_82"
 	manpower = 941500
 	resources={
-		aluminium=4 # was: 6
+		aluminium=10 # was: 6
 	}
 	
 	state_category = rural
@@ -19,7 +19,6 @@ state={
 			industrial_complex = 2
 		}
 		add_core_of = ROM
-		add_core_of = TRA
 	}
 
 	provinces={
