@@ -253,11 +253,10 @@ on_actions = {
 				limit = {
 					original_tag = YUG
 					NOT = {
-						GER ={ has_completed_focus = GER_Anschluss }
+						GER ={ has_completed_focus = GER_anschluss }
 					}
-					add_threat = 50
 				}
-
+				add_threat = 50
 			}
 			if = {
 				limit = { 
