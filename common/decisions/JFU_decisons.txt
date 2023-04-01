@@ -150,7 +150,8 @@ JFU_decisions = {
 					set_variable = { SOV_barb_AIR_defence_modifer = 0.2}
 #					set_variable = { SOV_barb_attack_debuff = -0.2}
 #					set_variable = { SOV_barb_defence_debuff = -0.1}
-					add_dynamic_modifier = { modifier = SOV_BARB_Debuff}
+#					add_dynamic_modifier = { modifier = SOV_BARB_Debuff days = 140 }
+					add_dynamic_modifier = { modifier = SOV_BARB_Debuff1 }
 				}
 			}		
 			}
@@ -972,10 +973,7 @@ JFU_decisions = {
         cost = 0 
         fire_only_once = yes 
 		available = {
-			OR = {
-				GER = { has_war_with = SOV }
-				date > 1941.9.1
-			}
+			date > 1941.9.1
 		}
 		complete_effect = { 
 			hidden_effect = {

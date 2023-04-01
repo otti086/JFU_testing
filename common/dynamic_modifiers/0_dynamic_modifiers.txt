@@ -1252,6 +1252,11 @@ SOV_BARB_Debuff = {
 
 	army_attack_factor = SOV_barb_attack_debuff
 	army_defence_factor = SOV_barb_defence_debuff
-	air_attack_factor = SOV_barb_AIR_attack_modifier
-	air_defence_factor = SOV_barb_AIR_defence_modifer
+}
+SOV_BARB_Debuff1 = {
+	enable = { always = yes }
+
+	icon = GFX_idea_generic_manpower_bonus
+
+	air_defence_factor = SOV_barb_AIR_defence_modifer	
 }

@@ -652,14 +652,14 @@ on_actions = {
 			}
 		}
 	}
-#	on_weekly_SOV = {
-#		effect = {
-#			if = {
-#				limit = {
-#					has_dynamic_modifier = { modifier = SOV_BARB_Debuff }
-#				}
-#			SOV_Barb_debuff_effect = yes
-#			}
-#		}
-#	}
+	on_weekly_SOV = {
+		effect = {
+			if = {
+				limit = {
+					has_dynamic_modifier = { modifier = SOV_BARB_Debuff }
+				}
+			SOV_Barb_debuff_effect = yes
+			}
+		}
+	}
 }
