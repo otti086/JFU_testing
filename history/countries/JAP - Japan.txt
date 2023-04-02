@@ -101,6 +101,7 @@ set_technology = {
 	synth_oil_experiments = 1
 	fuel_refining = 1
 	interwar_antiair = 1
+	bicycle_infantry = 1 
 }
 
 if = {

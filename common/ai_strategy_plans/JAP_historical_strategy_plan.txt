@@ -35,7 +35,6 @@ JAP_historical_plan = {
 		JAP_small_arms_modernization #June 30 1939	
 		JAP_cruiser_modernization #November 30 1938	
 		JAP_long_lance_torpedoes #February 10 1939	
-		JAP_bicycle_battalions #April 20 1939	
 		#1940
 		JAP_torpedo_cruisers #September 10 1939	
 		JAP_strike_south_doctrine #November 20 1939	
@@ -47,7 +46,6 @@ JAP_historical_plan = {
 		#1942
 		JAP_range_focus #January 20 1941	
 		JAP_modern_artillery #June 10 1941		
-		JAP_strategic_bomber_effort #March 20 1942	
 		JAP_modern_escorts #May 30 1942	
 		#1943
 		JAP_warrior_spirit #December 30 1942	
