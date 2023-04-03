@@ -323,7 +323,12 @@ recruit_character = ENG_stewart_menzies
 recruit_character = ENG_maxwell_aitken
 recruit_character = ENG_thomas_moore
 
-
+909 = {
+	add_dynamic_modifier = { modifier = no_entrenchment_africa }
+}
+452 = {
+	add_dynamic_modifier = { modifier = no_entrenchment_africa }	
+}
 
 if = {
 	limit = {
