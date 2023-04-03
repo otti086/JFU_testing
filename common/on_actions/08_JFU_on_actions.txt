@@ -521,7 +521,8 @@ on_actions = {
 					add_to_temp_variable = { AXIScasualtiesk = BUL.casualties_k }	
 					divide_temp_variable  = { AXIScasualtiesk  = 3  }
 					add_to_variable = { var = FRA_legitimacy value = AXIScasualtiesk }
-
+					divide_variable = { DAYSFRANCEHELD = 4 }
+					add_to_variable = { var = FRA_legitimacy value = DAYSFRANCEHELD }
 				}
 
 				JFU_vichy_france = yes
@@ -659,6 +660,19 @@ on_actions = {
 				}
 			SOV_Barb_debuff_effect = yes
 			}
+		}
+	}
+	on_daily_FRA = {
+		effect = {
+			if = {
+				limit = {
+					AND = {
+						GER = { has_war = yes }
+						NOT = { france_is_kill  = yes }
+					}
+				}
+			}
+			add_to_variable = { DAYSFRANCEHELD value = 1 }
 		}
 	}
 }

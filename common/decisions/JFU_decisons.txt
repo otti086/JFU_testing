@@ -46,6 +46,7 @@ JFU_decisions = {
 			if = { limit = { country_exists = BUL }	BUL = { add_to_war = { targeted_alliance = GER enemy = ENG } } }	
 			if = { limit = { country_exists = SPR }	SPR = { add_to_war = { targeted_alliance = GER enemy = ENG } } }		
 			hidden_effect = { 
+				set_variable = { DAYSFRANCEHELD= 0 }
 				ENG = { add_to_faction = POL } 
 				declare_war_on_all_allies = yes
 				ENG = { country_event = { id = britain.24 days = 5 }}
