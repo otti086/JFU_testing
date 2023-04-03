@@ -667,12 +667,12 @@ on_actions = {
 			if = {
 				limit = {
 					AND = {
-						GER = { has_war = yes }
-						NOT = { france_is_kill  = yes }
+						GER = { has_completed_focus = GER_danzig_or_war }
+						NOT = { FRA = { has_country_flag = france_is_kill} }
 					}
 				}
 			}
-			add_to_variable = { DAYSFRANCEHELD value = 1 }
+			add_to_variable = { var = DAYSFRANCEHELD value = 1 }
 		}
 	}
 }
