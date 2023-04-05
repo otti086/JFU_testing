@@ -148,12 +148,13 @@ JFU_decisions = {
 			SPR = { add_timed_idea = { idea = axis_barbarossa days = 180 } }
 			hidden_effect = {
 				SOV = {
-					set_variable = { SOV_barb_AIR_defence_modifer = 0.2}
+					set_variable = { SOV_barb_AIR_defence_modifier = 0.1 }
+					set_variable = { SOV_barb_AIR_attack_modifier = -0.2 }
 #					set_variable = { SOV_barb_attack_debuff = -0.2}
 #					set_variable = { SOV_barb_defence_debuff = -0.1}
 #					add_dynamic_modifier = { modifier = SOV_BARB_Debuff days = 140 }
 					add_dynamic_modifier = { modifier = SOV_BARB_Debuff1 }
-				}
+				}	
 			}		
 			}
 		}
@@ -728,7 +729,10 @@ JFU_decisions = {
 		icon = generic_operation
 		fire_only_once = yes
 		allowed = { tag = ITA }
-		available = { has_completed_focus = ITA_balkan_ambition } 
+		available = { 
+			has_completed_focus = ITA_balkan_ambition
+			date > 1938.01.01
+		} 
 		cost = 0
 		complete_effect = {
             declare_war_on = {
@@ -737,6 +741,15 @@ JFU_decisions = {
 			}
 			hidden_effect = { 
 				if = { limit = { country_exists = BUL }	BUL = { add_to_war = { targeted_alliance = GER enemy = YUG } } }
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = JFU_TOT_MOB_ITA  
+							option = TOT_MOB_ITA_ON
+						}
+					}
+					add_ideas = tot_economic_mobilisation
+				}   
 			}	
 		}
 	}
@@ -745,7 +758,7 @@ JFU_decisions = {
 		fire_only_once = yes
 		allowed = { tag = ITA }
 		available = {	
-			has_completed_focus = ITA_war_with_greece
+			has_completed_focus = ITA_italian_irredentism
 		} 
 		cost = 0
 		complete_effect = {

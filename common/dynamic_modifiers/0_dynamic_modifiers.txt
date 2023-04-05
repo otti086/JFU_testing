@@ -1258,7 +1258,8 @@ SOV_BARB_Debuff1 = {
 
 	icon = GFX_idea_generic_manpower_bonus
 
-	air_defence_factor = SOV_barb_AIR_defence_modifer	
+	air_defence_factor = SOV_barb_AIR_defence_modifier
+	air_attack_factor = SOV_barb_AIR_attack_modifier	
 }
 no_entrenchment_africa = {
 	enable = { always = yes }
