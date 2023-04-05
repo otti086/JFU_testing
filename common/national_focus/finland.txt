@@ -44,7 +44,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_doctrine_cost_reduction = {
+			add_tech_bonus = {
 				name = infantry_artillery_bonus
 				bonus = 1.0
 				uses = 1
