@@ -759,6 +759,7 @@ JFU_decisions = {
 		allowed = { tag = ITA }
 		available = {	
 			has_completed_focus = ITA_italian_irredentism
+			date > 1938.01.01
 		} 
 		cost = 0
 		complete_effect = {
