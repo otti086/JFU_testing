@@ -1929,10 +1929,12 @@ pregrinded_effect = {
 			add_unit_leader_trait = pre_grinded
 			add_unit_leader_trait = tank_gens
 			add_unit_leader_trait = ranger
-			add_unit_leader_trait = hill_fighter
+			add_unit_leader_trait = urban_assault_specialist
 			add_unit_leader_trait = panzer_leader
 			add_unit_leader_trait = panzer_expert
 			add_unit_leader_trait = expert_improviser
+			add_unit_leader_trait = trait_engineer
+			add_unit_leader_trait = fortress_buster
 		}	
 		GER_fedor_von_bock = { add_attack = 1 }
 		GER_fedor_von_bock = { add_defense = 1 }
@@ -1953,6 +1955,7 @@ pregrinded_effect = {
 			GER_fedor_von_bock = {
 			add_unit_leader_trait = logistics_wizard
 			add_unit_leader_trait = thorough_planner
+			add_unit_leader_trait = aggressive_assaulter
 		}	
 		GER_erwin_von_witzleben = { add_attack = 1 }
 		GER_erwin_von_witzleben = { add_defense = 1 }
@@ -2599,19 +2602,23 @@ pregrinded_effect = {
 			add_unit_leader_trait = expert_improviser
 			add_unit_leader_trait = panzer_leader
 			add_unit_leader_trait = panzer_expert
+			add_unit_leader_trait = trait_engineer
+			add_unit_leader_trait = fortress_buster
 		}
 		SAF_guy_hallifax = {
 			add_unit_leader_trait = trickster
 			add_unit_leader_trait = pre_grinded
-			add_unit_leader_trait = guerilla_fighter
+			add_unit_leader_trait = combined_arms_expert
 			add_unit_leader_trait = panzer_leader
-			add_unit_leader_trait = panzer_expert
 			add_unit_leader_trait = hill_fighter	
 			add_unit_leader_trait = organizer		
 		}
 		SAF_guy_hallifax = { promote_leader = yes }
 		SAF_guy_hallifax = {
+			add_unit_leader_trait = organizer
 			add_unit_leader_trait = logistics_wizard
+			add_unit_leader_trait = thorough_planner
+			add_unit_leader_trait = aggressive_assaulter
 		}
 	}
 	AST = {
@@ -2634,13 +2641,15 @@ pregrinded_effect = {
 			add_unit_leader_trait = guerilla_fighter
 			add_unit_leader_trait = infantry_leader
 			add_unit_leader_trait = infantry_expert
-			add_unit_leader_trait = hill_fighter	
+			add_unit_leader_trait = commando	
 			add_unit_leader_trait = organizer
-			add_unit_leader_trait = naval_invader			
+			add_unit_leader_trait = trait_mountaineer			
 		}
 		AST_thomas_blamey = { promote_leader = yes }
 		AST_thomas_blamey = {
 			add_unit_leader_trait = logistics_wizard
+			add_unit_leader_trait = thorough_planner
+			add_unit_leader_trait = aggressive_assaulter
 		}
 		AST_henry_wynter = {
 			add_unit_leader_trait = trickster
@@ -2648,8 +2657,11 @@ pregrinded_effect = {
 			add_unit_leader_trait = trait_engineer
 			add_unit_leader_trait = infantry_expert
 			add_unit_leader_trait = infantry_leader
-			add_unit_leader_trait = hill_fighter	
-			add_unit_leader_trait = expert_improviser			
+			add_unit_leader_trait = desert_fox	
+			add_unit_leader_trait = expert_improviser
+			add_unit_leader_trait = trait_engineer
+			add_unit_leader_trait = fortress_buster
+			add_unit_leader_trait = commando			
 		}
 		AST_alan_vasey = {
 			add_unit_leader_trait = trickster
