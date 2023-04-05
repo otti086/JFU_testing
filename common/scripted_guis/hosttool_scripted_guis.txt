@@ -91,7 +91,7 @@ scripted_gui = {
 			observer_click = {
 				owner = {
 					set_temp_variable = { ROOT.marks = this }
-					URG = { change_tag_from = var:marks }
+					SWE = { change_tag_from = var:marks }
 				}	
 			}
 			whitepeace_click = {
