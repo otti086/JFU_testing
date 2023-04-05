@@ -1910,9 +1910,9 @@ focus_tree = {
 							}
 						}
 					}
-				
-				add_compliance = 50 
-			}
+					add_compliance = 50
+				}
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 50000 } 			
 			}
 			set_global_flag = end_of_czechoslovakia
 			add_named_threat = { threat = 5 name = GER_end_of_czechoslovakia }

@@ -1470,10 +1470,6 @@ focus_tree = {
 
 		completion_reward = {
 			air_experience = 50
-			add_relation_modifier = {
-				target = ENG  
-				modifier = ROM_license_german_equipment
-			}
 		}
 	}
 
@@ -5706,6 +5702,9 @@ focus_tree = {
 			annex_country = { target = LIT  }
 			add_named_threat = { threat = 1 name = SOV_claims_in_baltic }
 			add_political_power = -75
+			hidden_effect = {
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 60000 }
+			}
 		}
 	}
 	focus = {
@@ -5719,7 +5718,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_claims_in_baltic
-		cost = 5
+		cost = 1
 
 		completion_reward = {
 			SOV = { transfer_state = 78 }
