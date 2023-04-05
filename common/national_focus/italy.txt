@@ -9099,7 +9099,7 @@ focus_tree = {
 		icon = GFX_goal_generic_dangerous_deal
 		prerequisite = { focus = ITA_triumph_in_africa_bba }
 
-		x = 13
+		x = 11
 		y = 1
 		relative_position_id = ITA_triumph_in_africa_bba
 		cost = 5
@@ -9149,7 +9149,6 @@ focus_tree = {
 						105 = { is_fully_controlled_by = YUG }
 					}
 				}
-				activate_targeted_decision = { target = YUG decision = ITA_send_ultimatum_to_country_balkan }
 			}	
 		}
 	}
@@ -9334,7 +9333,7 @@ focus_tree = {
 		icon = GFX_focus_ITA_italian_irredentism
 		prerequisite = { focus = ITA_balkan_ambition }
 
-		x = 3
+		x = 2
 		y = 1
 		relative_position_id = ITA_balkan_ambition
 		cost = 5
@@ -9406,23 +9405,4 @@ focus_tree = {
 			}
 		}
 	}
-
-	focus = {
-		id = ITA_war_with_greece
-		icon = GFX_focus_generic_attack_greece
-		prerequisite = { focus = ITA_italian_irredentism }
-		x = 0
-		y = 1
-		relative_position_id = ITA_italian_irredentism
-		cost = 5
-		available = {
-		}
-		continue_if_invalid = yes
-		will_lead_to_war_with = GRE
-
-		search_filters = {}
-
-		completion_reward = {
-		}
-	}  
 }

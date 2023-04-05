@@ -32,27 +32,6 @@ albania_war_goal = {
 	}
 }
 
-greece_war_goal = {
-	allowed = {
-		original_tag = ITA
-	}
-	enable = {
-		has_completed_focus = ITA_war_with_greece
-		country_exists = GRE
-	}
-	abort = {
-		NOT = {
-			country_exists = GRE
-		}
-	}
-
-	ai_strategy = {
-		type = antagonize
-		id = "GRE"
-		value = 200
-	}
-}
-
 ita_shore_up_against_france = {
 	allowed = {
 		original_tag = ITA
@@ -83,7 +62,6 @@ yugoslavia_war_goal = { #TODO_Manu: Check this with new focus
 	}
 	enable = {
 		has_completed_focus = ITA_balkan_ambition
-		has_completed_focus = ITA_war_with_greece
 		country_exists = YUG
 	}
 	abort = {
@@ -693,36 +671,6 @@ ITA_attack_south = {
 		ratio = 0.2
 
 		priority = 100
-		ordertype = front
-		execution_type = rush
-		execute_order = yes
-	}
-}
-
-ITA_prepare_yugoslavian_invasion = {
-	allowed = {
-		original_tag = ITA
-	}
-	enable = {
-		NOT = {	has_war_with = YUG }
-		has_decision = ITA_send_ultimatum_to_country_balkan
-	}
-
-	abort = {
-		any_enemy_country = {
-			is_major = yes
-		}
-		has_war_with = YUG
-	}
-
-	ai_strategy = {
-		type = front_control
-
-		tag = YUG
-
-		ratio = 0.2
-
-		priority = 200
 		ordertype = front
 		execution_type = rush
 		execute_order = yes
