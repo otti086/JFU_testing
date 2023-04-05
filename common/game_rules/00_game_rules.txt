@@ -409,6 +409,21 @@ JFU_AFRICA_TILES = {
 		desc = "enables modded Africa - 3 tile El-Alamein"
 	}	
 }
+JFU_TOT_MOB_ITA = {
+	name = "Total Mob Italy Settings"
+	group = "HORST_GROUPKEY"
+	icon = "RULE_GROUP_GENERAL_UI"
+	default = {
+		name = "TOT_MOB_ITA_ON"
+		text = "Total Mob on"
+		desc = "gives Italy Total Mobilisation when declaring on Yugoslavia "
+	}
+	option = {
+		name = "TOT_MOB_ITA_OFF"
+		text = "Total Mob off"
+		desc = "keep Total Mobilisation disabled until Italy joins WW2"
+	}		
+}
 
 
 
