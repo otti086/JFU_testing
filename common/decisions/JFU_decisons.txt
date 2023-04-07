@@ -499,22 +499,6 @@ JFU_decisions = {
 			}
 		}	
 	}
-	"Uk Engine IV" = {
-		icon = generic_operation
-		fire_only_once = yes
-		allowed = { tag = SOV }
-		available = { 
-			ENG = {
-				has_tech = engines_4
-			}  
-		}
-		cost = 0
-		complete_effect = {
-			set_technology = {
-				engines_4 = 1
-			}
-		}
-	}
 	"Attack china" = {
 		icon = generic_operation
 		fire_only_once = yes
