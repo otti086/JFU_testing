@@ -499,6 +499,75 @@ JFU_decisions = {
 			}
 		}	
 	}
+	"Italy Fighter 2" = {
+		icon = generic_operation
+		fire_only_once = yes
+		allowed = { tag = GER }
+		available = { 
+			ITA = {
+				has_tech = improved_small_airframe
+				has_tech = survivability_studies
+				has_tech = range_improvements
+			}  
+		}
+		cost = 0
+		complete_effect = {
+			set_technology = {
+				improved_small_airframe = 1
+				survivability_studies = 1
+				range_improvements = 1
+				aa_hmg = 1
+			}
+		}		
+	}
+	"Italy Engines III" = {
+		icon = generic_operation
+		fire_only_once = yes
+		allowed = { tag = GER }
+		available = { 
+			ITA = {
+				has_tech = engines_3
+			}  
+		}
+		cost = 0
+		complete_effect = {
+			set_technology = {
+				engines_3 = 1
+			}
+		}	
+	}
+	"Italy Engines IV" = {
+		icon = generic_operation
+		fire_only_once = yes
+		allowed = { tag = GER }
+		available = { 
+			ITA = {
+				has_tech = engines_4
+			}  
+		}
+		cost = 0
+		complete_effect = {
+			set_technology = {
+				engines_4 = 1
+			}
+		}	
+	}
+	"Italy Fighter 3" = {
+		icon = generic_operation
+		fire_only_once = yes
+		allowed = { tag = GER }
+		available = { 
+			ITA = {
+				has_tech = advanced_small_airframe
+			}  
+		}
+		cost = 0
+		complete_effect = {
+			set_technology = {
+				advanced_small_airframe = 1
+			}
+		}		
+	}	
 	"Attack china" = {
 		icon = generic_operation
 		fire_only_once = yes
