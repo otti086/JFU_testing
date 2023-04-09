@@ -609,17 +609,13 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					907 = { is_controlled_by = { any_country = { axis = yes }  } }
+					any_country = { axis = yes controls_state = 907 }
 				}
 				SWE = { AXIS_AFRICA_EFFECT = yes }
 			}
 			if = {
 				limit = {
-					AND = {
-						907 = { is_controlled_by = { any_country = { allies = yes } } }
-						GER = { has_dynamic_modifier = AXIS_Africa }
-					}
-						
+					any_country = { allies = yes controls_state = 907 }	
 				}
 				SWE = { ALLIES_AFRICA_EFFECT = yes }
 			}
