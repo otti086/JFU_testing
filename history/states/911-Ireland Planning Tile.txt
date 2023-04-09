@@ -1,0 +1,15 @@
+state={
+	id=911
+	name="Ireland Planning Tile"
+	state_category = town
+	manpower = 1
+	history={
+		owner = SWE
+		buildings = {}
+	}
+	provinces={
+		337 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

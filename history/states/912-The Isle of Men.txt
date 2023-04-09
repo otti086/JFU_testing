@@ -1,0 +1,15 @@
+state={
+	id=912
+	name="The Isle of Men"
+	state_category = town
+	manpower = 1
+	history={
+		owner = SWE
+		buildings = {}
+	}
+	provinces={
+		3311 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
