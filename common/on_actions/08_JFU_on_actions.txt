@@ -607,18 +607,6 @@ on_actions = {
 					transfer_state = 334
 				}
 			}
-#			if = {
-#				limit = {
-#					any_country = { axis = yes controls_state = 907 }
-#				}
-#				SWE = { AXIS_AFRICA_EFFECT = yes }
-#			}
-#			if = {
-#				limit = {
-#					any_country = { allies = yes controls_state = 907 }	
-#				}
-#				SWE = { ALLIES_AFRICA_EFFECT = yes }
-#			}
 		}
 	}
 	on_paradrop = {

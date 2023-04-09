@@ -145,6 +145,7 @@ USA_aid_britain = {
 				}
 			}
 			ENG = { has_defensive_war = yes }
+			always = no
 		}
 
 		cost = 50
