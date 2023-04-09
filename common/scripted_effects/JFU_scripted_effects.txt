@@ -574,12 +574,14 @@ JFU_startup_on_action = {
 			axis = yes
 		}
 		add_dynamic_modifier = { modifier = AXIS_Africa }
+		set_variable = { var = axis_factory_output value = 0 }
 	}
 	every_country = {
 		limit = {
 			allies = yes
 		}
 		add_dynamic_modifier = { modifier = ALLIES_Africa }
+		set_variable = { var = allies_factory_output value = 0 }
 	}
 	SWE = { HFU_fuel_startup_effect = yes }											
 	SWE = { JFU_scripted_events_effect = yes}
@@ -675,7 +677,7 @@ JFU_startup_on_action = {
 			give_resource_rights = { receiver = GER state = 724 }
 		}
 	}	
-	set_variable = { var = axis_factory_output value = 0 }
+
 	set_variable = { var = allies_factory_output value = 0 }
 }
 JFU_scripted_events_effect = {
@@ -2906,10 +2908,31 @@ Vichy_ai_Building = {
 	}
 }
 AXIS_AFRICA_EFFECT = {
+	every_country = {
+		limit = {
+			axis = yes
+		}
 		add_to_variable = { var = axis_factory_output value = 0.1 }
-		add_to_variable = { var = allies_factory_output value = -0.1}		
+	}
+	every_country = {
+		limit = {
+			allies = yes
+		}
+		add_to_variable = { var = allies_factory_output value = -0.1}	
+	}	
 }
 ALLIES_AFRICA_EFFECT = {
+	every_country = {
+		limit = {
+			axis = yes
+		}
 		add_to_variable = { var = axis_factory_output value = -0.1 }
-		add_to_variable = { var = allies_factory_output value = 0.1}		
+	}
+	every_country = {
+		limit = {
+			allies = yes
+		}
+		add_to_variable = { var = allies_factory_output value = 0.1}	
+	}	
+		
 }
