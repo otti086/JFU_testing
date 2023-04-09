@@ -10928,3 +10928,49 @@ news_event = {
 		}
 	}
 }
+news_event = {
+	id = news.1010
+	title = news.1010.t
+	desc = news.1010.d
+	picture = GFX_news_event_042
+	hidden = yes
+	major = yes
+	trigger = {
+		907 = { is_controlled_by = ITA }
+		907 = { is_owned_by = ENG }
+		GER = { has_war_with = ENG }
+		NOT = { has_global_flag = fall_of_cairo }
+	}
+	immediate = {
+		set_global_flag = fall_of_cairo
+		GER = { add_ideas = { GER_triumph_in_africa } }
+		ITA = { add_ideas = { GER_triumph_in_africa } }
+		ENG = { add_timed_idea = { idea=ENG_lose_in_africa } }
+		FRA = { add_timed_idea = { idea=ENG_lose_in_africa } }
+		CAN = { add_timed_idea = { idea=ENG_lose_in_africa } }
+		SAF = { add_timed_idea = { idea=ENG_lose_in_africa } }
+		NZL = { add_timed_idea = { idea=ENG_lose_in_africa } }
+		AST = { add_timed_idea = { idea=ENG_lose_in_africa } }
+		RAJ = { add_timed_idea = { idea=ENG_lose_in_africa } }
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
+	option = {
+		name = news.1010.a
+		trigger = {
+			NOT = {
+				TAG = GER
+				TAG = ENG
+			}
+		}
+	}
+	option = {
+		name = news.1010.b
+		trigger = { TAG = GER }
+	}
+	option = {
+		name = news.1010.c
+		trigger = { TAG = ENG }
+	}
+}

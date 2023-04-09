@@ -407,9 +407,6 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			cancel = {
-				has_war = yes
-			}
 			removal_cost = -1
 			picture = generic_acquire_tanks
 			targeted_modifier = {
@@ -472,9 +469,6 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			cancel = {
-				has_war = yes
-			}
 			removal_cost = -1
 			picture = generic_acquire_tanks
 			targeted_modifier = {
@@ -531,6 +525,34 @@ ideas = {
 				tag = SOV
 				attack_bonus_against = 0.15
 				defense_bonus_against = 0.1
+			}
+		}
+		ENG_lose_in_africa = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			cancel={
+				907 ={ is_controlled_by = ENG }
+			}
+			picture = HUN_treaty_of_triannon
+			modifier = {
+				industrial_capacity_factory = -0.1
+			}
+		}
+		GER_triumph_in_africa = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			cancel={
+				NOT={
+					907= { is_controlled_by_ROOT_or_ally = yes }
+				}
+			}
+			picture = HUN_treaty_of_triannon
+			modifier = {
+				industrial_capacity_factory = 0.1
 			}
 		}
 	}

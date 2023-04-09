@@ -1270,15 +1270,3 @@ no_entrenchment_africa = {
 	dig_in_speed_factor = -1
 	max_dig_in = -30
 }
-ALLIES_Africa = {
-	enable = { always = yes }
-	icon = jap_interservice_rivalry_balanced
-
-	industrial_capacity_factory = allies_factory_output
-}
-AXIS_Africa = {
-	enable = { always = yes }
-	icon = jap_interservice_rivalry_balanced
-
-	industrial_capacity_factory = axis_factory_output	
-}
