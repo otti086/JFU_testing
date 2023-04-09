@@ -2891,3 +2891,25 @@ Vichy_ai_Building = {
 		add_offsite_building = { type = dockyard level = vichy_docks }
 	}
 }
+AXIS_AFRICA_EFFECT = {
+	set_variable = { var = axis_factory_output value = 0 }
+	set_variable = { var = allies_factory_output value = 0 }
+	every_country = { 
+		limit = {
+			axis = yes
+		}
+		add_dynamic_modifier = { modifier = AXIS_Africa }
+	}
+	every_country = {
+		limit = {
+			allies = yes
+		}
+		add_dynamic_modifier = { modifier = ALLIES_Africa }
+	}
+	add_to_variable = { var = axis_factory_output value = 0.1 }
+	add_to_variable = { var = allies_factory_output value = -0.1}
+}
+ALLIES_AFRICA_EFFECT = {
+	add_to_variable = { var = axis_factory_output value = -0.1 }
+	add_to_variable = { var = allies_factory_output value = 0.1}
+}

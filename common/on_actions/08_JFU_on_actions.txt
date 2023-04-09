@@ -607,6 +607,22 @@ on_actions = {
 					transfer_state = 334
 				}
 			}
+			if = {
+				limit = {
+					907 = { is_controlled_by = { any_country = { axis = yes }  } }
+				}
+				SWE = { AXIS_AFRICA_EFFECT = yes }
+			}
+			if = {
+				limit = {
+					AND = {
+						907 = { is_controlled_by = { any_country = { allies = yes } } }
+						GER = { has_dynamic_modifier = AXIS_Africa }
+					}
+						
+				}
+				SWE = { ALLIES_AFRICA_EFFECT = yes }
+			}
 		}
 	}
 	on_paradrop = {
