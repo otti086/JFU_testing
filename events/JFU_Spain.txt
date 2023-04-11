@@ -284,7 +284,6 @@ country_event = {
 					tree = JFU_RSPAIN_focus
 					keep_completed = no
 				}
-				complete_national_focus = SPA_maintain_the_second_republic
 				inherit_technology = SPR
 				country_lock_all_division_template = no
 				set_capital = { state = 41 }

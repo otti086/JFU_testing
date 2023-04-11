@@ -569,20 +569,6 @@ JFU_startup_on_action = {
 		}
 		add_ideas = peace_training
 	}
-	every_country = { 
-		limit = {
-			axis = yes
-		}
-		add_dynamic_modifier = { modifier = AXIS_Africa }
-		set_variable = { var = axis_factory_output value = 0 }
-	}
-	every_country = {
-		limit = {
-			allies = yes
-		}
-		add_dynamic_modifier = { modifier = ALLIES_Africa }
-		set_variable = { var = allies_factory_output value = 0 }
-	}
 	SWE = { HFU_fuel_startup_effect = yes }											
 	SWE = { JFU_scripted_events_effect = yes}
 	SPR = {	country_lock_all_division_template = yes country_event = { id = lar_spain.2 days = 230 } 

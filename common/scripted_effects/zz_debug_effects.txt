@@ -161,24 +161,6 @@ d_spawn_3D_models = {
 
 	if = {
 		limit = {
-			NOT = { has_template = "Truppe Irregolari di Cammelli" }
-		}
-		division_template = {
-			name = "Truppe Irregolari di Cammelli"		
-			division_names_group = ITA_CAM_02
-			override_model = ITA_camelry_alt_3_entity
-			is_locked = yes
-			# Note: Represents irregular cavalry from the colonies (ascari, dubats and other "bands")
-			regiments = {
-				camelry = { x = 0 y = 0 }
-				camelry = { x = 0 y = 1 }
-			}
-			priority = 0
-		}
-	}
-
-	if = {
-		limit = {
 			NOT = { has_template = "Bersaglieri" }
 		}
 		division_template = { #TODO_Manu: Possibly not a real template in-game
@@ -285,13 +267,6 @@ d_spawn_3D_models = {
 		#Irregular Cavalry Eritrean
 		create_unit = {
 			division = "name = \"Gruppo Bande Amhara\" division_template = \"Eritrean Irregular Cavalry\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
-			owner = ROOT
-			count = 1
-		}
-
-		#Irregular Camelry Eritrean
-		create_unit = {
-			division = "division_template = \"Truppe Irregolari di Cammelli\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
 			owner = ROOT
 			count = 1
 		}
