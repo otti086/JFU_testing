@@ -3638,7 +3638,6 @@ BUL_macedonian_revolutionary_organizations = {
 
 		available = {
 			NOT = { has_country_flag = BUL_macedonian_affairs_ongoing_flag }
-			has_manpower > 2000
 			has_equipment = { support_equipment > 199 }
 			has_equipment = { infantry_equipment > 799 }
 		}
@@ -3657,7 +3656,6 @@ BUL_macedonian_revolutionary_organizations = {
 		complete_effect = {
 			set_country_flag = BUL_macedonian_affairs_ongoing_flag
 			set_country_flag = { flag = BUL_repress_imro_flag value = 2 }
-			add_manpower = -2000
 			add_equipment_to_stockpile = {
 				type = support_equipment
 				amount = -200
@@ -3774,7 +3772,6 @@ BUL_macedonian_revolutionary_organizations_foreign = {
 
 		available = {
 			NOT = { has_country_flag = BUL_macedonian_affairs_ongoing_flag }
-			has_manpower > 2000
 			has_equipment = { support_equipment > 249 }
 			has_equipment = { infantry_equipment > 999 }
 		}
@@ -3792,7 +3789,6 @@ BUL_macedonian_revolutionary_organizations_foreign = {
 		complete_effect = {
 			set_country_flag = BUL_macedonian_affairs_ongoing_flag
 			set_country_flag = BUL_repress_imro_flag
-			add_manpower = -2000
 			add_equipment_to_stockpile = {
 				type = support_equipment
 				amount = -250
