@@ -817,3 +817,13 @@
  GER_endsieg_2:0 "Throw out the Allies"
  GER_endsieg_3:0 "Push back the Soviet"
  GER_endsieg_4:0 "Volkssturm"
+
+ peace_training:0 "Peace Time Training"
+ QUADRUPLE_SF_CAP:0 "Quadrupled Special Forces Cap"
+ pre_grinded_gens_volunteers:0 "Not Allowed To Send Volunteers"
+ volunteers_3:0 "3 Allowed Volunteers"
+ volunteers_4:0 "4 Allowed Volunteers"
+ volunteers_7:0 "7 Allowed Volunteers"
+ volunteers_8:0 "8 Allowed Volunteers"
+ volunteers_50:0 "50 Allowed Volunteers"
+ scw_pre_grinded_nerf:0 "Disorganized Army"
