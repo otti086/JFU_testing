@@ -1202,7 +1202,12 @@ focus_tree = {
 				uses = 2
 				category = battlefield_support_tree
 			}
-
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 1
+				category = light_air			
+			}
 			if = {
 				limit = {
 					NOT = {
@@ -1562,8 +1567,14 @@ focus_tree = {
 			add_tech_bonus = {
 				name = radar_tech_bonus
 				bonus = 1.0
-				uses = 1
+				uses = 2
 				category = radar_tech
+			}
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 2.0
+				uses = 1
+				category = light_air			
 			}
 			if = {
 				limit = {
