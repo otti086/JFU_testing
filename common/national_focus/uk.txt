@@ -2503,6 +2503,7 @@ focus_tree = {
 
 	focus = {
 		id = uk_colony_focus
+		text = "Commonwealth Construction Effort"
 		prerequisite = { focus = uk_commonwealth_focus }
 		icon = GFX_goal_generic_construct_civilian
 		x = 1
@@ -2569,7 +2570,7 @@ focus_tree = {
 	focus = {
 		id = uk_develope_focus
 		prerequisite = { focus = uk_colony_focus }
-
+		text = "Development Of Our Colonies"
 		available = { }
 
 		continue_if_invalid = no
