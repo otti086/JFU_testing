@@ -21,6 +21,7 @@ state= {
 				bunker = 1
 			}
 		}
+		add_extra_state_shared_building_slots = 1
 		victory_points = { 
 			4196 3 
 		}
