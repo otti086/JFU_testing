@@ -1093,6 +1093,24 @@ ideas = {
 			equipment_bonus = {
 				
 			}
+		}
+		raiding_fleet_designer = {
+			
+			
+			allowed = {
+				original_tag = JAP
+			}
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { raiding_fleet_naval_manufacturer }
+			
+			modifier = {
+			}
 		}	
 	}
 	
