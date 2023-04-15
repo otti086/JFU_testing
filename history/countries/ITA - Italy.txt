@@ -347,6 +347,7 @@ set_technology = {
 	fuel_silos = 1
 	fuel_refining = 1
 	basic_train = 1
+	synth_oil_experiments = 1
 }
 if = {
 	limit = {
