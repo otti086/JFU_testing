@@ -2020,6 +2020,7 @@ pregrinded_effect = {
             add_unit_leader_trait = guerilla_fighter
             add_unit_leader_trait = trickster
 			add_unit_leader_trait = trait_mountaineer
+			add_unit_leader_trait = organizer
         }
 		ITA_rodolfo_graziani = { add_skill_level = 2 }
 		ITA_rodolfo_graziani = { add_attack = 2 }
@@ -2036,7 +2037,28 @@ pregrinded_effect = {
 			add_unit_leader_trait = expert_improviser
 			add_unit_leader_trait = trickster
 			add_unit_leader_trait = fortress_buster
-        }		
+        }
+		ITA_ugo_cavallero = { add_skill_level = 2 }
+		ITA_ugo_cavallero = { add_attack = 6 }
+        ITA_ugo_cavallero = { add_defense = 3 }
+        ITA_ugo_cavallero = { add_planning = 3 }
+		ITA_ugo_cavallero = { add_logistics = 3 }
+        ITA_ugo_cavallero = {
+        	add_unit_leader_trait = pre_grinded
+            add_unit_leader_trait = panzer_leader
+            add_unit_leader_trait = combined_arms_expert
+            add_unit_leader_trait = expert_improviser
+            add_unit_leader_trait = trickster
+            add_unit_leader_trait = desert_fox
+            add_unit_leader_trait = hill_fighter
+        }
+		ITA_ugo_cavallero = { promote_leader = yes }
+		ITA_ugo_cavallero = { 
+			add_unit_leader_trait = logistics_wizard
+			add_unit_leader_trait = offensive_doctrine
+			add_unit_leader_trait = thorough_planner
+			add_unit_leader_trait = aggressive_assaulter
+		}					
 	}
 	HUN = {
 		add_ideas = { pre_grinded_gens_volunteers }
@@ -2053,7 +2075,10 @@ pregrinded_effect = {
             add_unit_leader_trait = expert_improviser
             add_unit_leader_trait = ranger
 			add_unit_leader_trait = urban_assault_specialist
-        }
+			add_unit_leader_trait = desert_fox 
+			add_unit_leader_trait = trait_engineer
+			add_unit_leader_trait = fortress_buster
+		}
 		HUN_ivan_hindy = { add_attack = 2 }
         HUN_ivan_hindy = { add_defense = 1 }
         HUN_ivan_hindy = { add_planning = 2 }
@@ -2062,13 +2087,14 @@ pregrinded_effect = {
             add_unit_leader_trait = organizer
             add_unit_leader_trait = panzer_leader
             add_unit_leader_trait = combined_arms_expert	
-			add_unit_leader_trait = ranger
 			add_unit_leader_trait = hill_fighter
+			add_unit_leader_trait = urban_assault_specialist
         }
 		HUN_ivan_hindy = { promote_leader = yes }
 		HUN_ivan_hindy = {
             add_unit_leader_trait = logistics_wizard
 			add_unit_leader_trait = thorough_planner
+			add_unit_leader_trait = aggressive_assaulter
 		}
 		HUN_karoly_beregfy = { add_skill_level = 3 }
 		HUN_karoly_beregfy = { add_attack = 3 }
@@ -2119,9 +2145,14 @@ pregrinded_effect = {
             add_unit_leader_trait = thorough_planner
             add_unit_leader_trait = trickster
 			add_unit_leader_trait = hill_fighter
-			add_unit_leader_trait = ranger
+			add_unit_leader_trait = trait_mountaineer
+            add_unit_leader_trait = commando
         }
 		ROM_petre_dumitrescu = { promote_leader = yes }
+		ROM_petre_dumitrescu = {
+            add_unit_leader_trait = thorough_planner
+            add_unit_leader_trait = logistics_wizard
+		}
 		ROM_ioan_mihail_racovita = { add_skill_level = 1 }
 		ROM_ioan_mihail_racovita = { add_attack = 4 }
         ROM_ioan_mihail_racovita = { add_defense = 2 }
@@ -2136,6 +2167,8 @@ pregrinded_effect = {
             add_unit_leader_trait = trickster
 			add_unit_leader_trait = expert_improviser
 			add_unit_leader_trait = ranger
+			add_unit_leader_trait = trait_engineer
+			add_unit_leader_trait = fortress_buster
         }
 				
 	}
@@ -2349,6 +2382,104 @@ pregrinded_effect = {
 	}
 	MAN = {
 		add_ideas = { pre_grinded_gens_volunteers }		
+		MAN_tomoyuki_yamashita = { add_attack = 3 }
+        MAN_tomoyuki_yamashita = { add_defense = 1 }
+        MAN_tomoyuki_yamashita = { add_planning = 2 }
+		MAN_tomoyuki_yamashita = { add_logistics = 1 }
+        MAN_tomoyuki_yamashita = {
+        	add_unit_leader_trait = pre_grinded
+            add_unit_leader_trait = commando
+            add_unit_leader_trait = fortress_buster
+            add_unit_leader_trait = trait_mountaineer
+            add_unit_leader_trait = hill_fighter
+            add_unit_leader_trait = infantry_expert
+			add_unit_leader_trait = infantry_leader
+			add_unit_leader_trait = expert_improviser
+        }
+		MAN_hisaichi_terauchi = { add_attack = 1 }
+        MAN_hisaichi_terauchi = { add_defense = 1 }
+        MAN_hisaichi_terauchi = { add_planning = 1 }
+		MAN_hisaichi_terauchi = { add_logistics = 2 }
+        MAN_hisaichi_terauchi = {
+        	add_unit_leader_trait = pre_grinded
+            add_unit_leader_trait = organizer
+            add_unit_leader_trait = infantry_expert
+            add_unit_leader_trait = infantry_leader
+            add_unit_leader_trait = trait_engineer
+            add_unit_leader_trait = trickster
+			add_unit_leader_trait = hill_fighter
+			add_unit_leader_trait = trait_mountaineer
+        }
+		MAN_hisaichi_terauchi = { promote_leader = yes}
+		MAN_hisaichi_terauchi = {
+			add_unit_leader_trait = logistics_wizard
+			add_unit_leader_trait = thorough_planner
+		}
+		MAN_shunroku_hata = { add_attack = 3 }
+        MAN_shunroku_hata = { add_defense = 1 }
+        MAN_shunroku_hata = { add_planning = 2 }
+        MAN_shunroku_hata = {
+        	add_unit_leader_trait = pre_grinded
+            add_unit_leader_trait = organizer
+            add_unit_leader_trait = panzer_expert
+            add_unit_leader_trait = panzer_leader
+            add_unit_leader_trait = trait_engineer
+            add_unit_leader_trait = trickster
+			add_unit_leader_trait = hill_fighter
+			add_unit_leader_trait = trait_mountaineer
+        }
+		MAN_shunroku_hata = { promote_leader = yes}
+		MAN_shunroku_hata = {
+			add_unit_leader_trait = logistics_wizard
+			add_unit_leader_trait = thorough_planner
+		}
+		MAN_akira_muto = { add_skill_level = 1 }
+		MAN_akira_muto = { add_attack = 4 }
+        MAN_akira_muto = { add_defense = 4 }
+        MAN_akira_muto = { add_planning = 2 }
+		MAN_akira_muto = { add_logistics = 3 }
+        MAN_akira_muto = {
+        	add_unit_leader_trait = pre_grinded
+            add_unit_leader_trait = naval_invader
+            add_unit_leader_trait = infantry_expert
+            add_unit_leader_trait = infantry_leader
+            add_unit_leader_trait = guerilla_fighter
+            add_unit_leader_trait = trickster
+			add_unit_leader_trait = hill_fighter
+			add_unit_leader_trait = urban_assault_specialist
+			add_unit_leader_trait = commando
+			add_unit_leader_trait = thorough_planner
+        }
+		MAN_shizuichi_tanaka = { add_attack = 4 }
+        MAN_shizuichi_tanaka = { add_defense = 3 }
+        MAN_shizuichi_tanaka = { add_planning = 3 }
+		MAN_shizuichi_tanaka = { add_logistics = 1 }
+        MAN_shizuichi_tanaka = {
+        	add_unit_leader_trait = pre_grinded
+            add_unit_leader_trait = infantry_expert
+            add_unit_leader_trait = infantry_leader
+            add_unit_leader_trait = naval_invader
+            add_unit_leader_trait = commando
+            add_unit_leader_trait = expert_improviser
+			add_unit_leader_trait = jungle_rat
+			add_unit_leader_trait = trait_mountaineer
+			add_unit_leader_trait = trait_engineer
+        }
+		MAN_kenkichi_ueda = { add_attack = 5 }
+        MAN_kenkichi_ueda = { add_defense = 4 }
+        MAN_kenkichi_ueda = { add_planning = 1 }
+		MAN_kenkichi_ueda = { add_logistics = 1 }
+        MAN_kenkichi_ueda = {
+        	add_unit_leader_trait = pre_grinded
+            add_unit_leader_trait = trait_engineer
+            add_unit_leader_trait = panzer_expert
+            add_unit_leader_trait = panzer_leader
+            add_unit_leader_trait = trickster
+            add_unit_leader_trait = commando
+			add_unit_leader_trait = expert_improviser
+			add_unit_leader_trait = jungle_rat
+			add_unit_leader_trait = trait_mountaineer
+        }				
 	}
 	FIN = {
 		add_ideas = { pre_grinded_gens_volunteers }
@@ -2458,6 +2589,9 @@ pregrinded_effect = {
 			add_unit_leader_trait = ranger	
 			add_unit_leader_trait = expert_improviser
 			add_unit_leader_trait = hill_fighter
+			add_unit_leader_trait = cavalry_leader
+			add_unit_leader_trait = fortress_buster
+			add_unit_leader_trait = winter_specialist
 		}
 		SOV_andrey_grechko = { add_skill_level = 1 }
 		SOV_andrey_grechko = { add_attack = 3 }
@@ -2482,10 +2616,13 @@ pregrinded_effect = {
 			add_unit_leader_trait = pre_grinded
 			add_unit_leader_trait = organizer
 			add_unit_leader_trait = panzer_leader
+			add_unit_leader_trait = cavalry_leader
 			add_unit_leader_trait = combined_arms_expert
 			add_unit_leader_trait = trickster
 			add_unit_leader_trait = hill_fighter	
-			add_unit_leader_trait = ranger			
+			add_unit_leader_trait = ranger
+			add_unit_leader_trait = winter_specialist
+			add_unit_leader_trait = fortress_buster			
 		}	
 		SOV_vasily_chuykov = { promote_leader = yes }
 		SOV_vasily_chuykov = {
@@ -2578,23 +2715,26 @@ pregrinded_effect = {
 		CAN_thomas_victor_anderson = {
 			add_unit_leader_trait = pre_grinded
 			add_unit_leader_trait = trickster
-			add_unit_leader_trait = hill_fighter
+			add_unit_leader_trait = ranger
 			add_unit_leader_trait = panzer_leader
 			add_unit_leader_trait = panzer_expert
 			add_unit_leader_trait = trait_engineer
+            add_unit_leader_trait = fortress_buster
+			add_unit_leader_trait = organizer
 		}
 		CAN_charles_foulkes = {
 			add_unit_leader_trait = pre_grinded
 			add_unit_leader_trait = organizer
 			add_unit_leader_trait = hill_fighter
 			add_unit_leader_trait = panzer_leader
-			add_unit_leader_trait = panzer_expert
-			add_unit_leader_trait = trait_engineer	
-			add_unit_leader_trait = guerilla_fighter		
+			add_unit_leader_trait = combined_arms_expert
+			add_unit_leader_trait = trait_engineer		
 		}
 		CAN_charles_foulkes = { promote_leader = yes }
 		CAN_charles_foulkes = {
-			add_unit_leader_trait = logistics_wizard		
+			add_unit_leader_trait = logistics_wizard
+			add_unit_leader_trait = thorough_planner
+			add_unit_leader_trait = aggressive_assaulter	
 		}
 	}
 	SAF = {
@@ -2788,7 +2928,7 @@ SOV_closed_eco_effect = {
 JAP_closed_eco_effect = {
 	JAP = {
 		add_ideas = closed_economy 
-		add_ideas = limited_exports_idea
+		add_ideas = free_trade_idea
 	}	
 }
 JFU_alternative_gs2 = {

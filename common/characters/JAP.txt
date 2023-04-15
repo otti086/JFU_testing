@@ -316,25 +316,6 @@ characters={
 		}
 	}
 
-	JAP_shizuichi_tanaka_grinded={
-		name=JAP_shizuichi_tanaka_grinded
-		portraits={
-			army={
-				large="gfx/leaders/JAP/Portrait_Japan_Shizuichi_Tanaka.dds"
-				small="gfx/interface/ideas/idea_JAP_shizuichi_tanaka.dds"
-			}
-		}
-		corps_commander={
-			traits={ infantry_officer pre_grinded trickster infantry_expert infantry_leader naval_invader commando expert_improviser jungle_rat trait_mountaineer trait_engineer }
-			skill=4
-			attack_skill=8
-			defense_skill=6
-			planning_skill=6
-			logistics_skill=5
-			legacy_id=0
-		}
-	}
-
 	JAP_yasuji_okamura={
 		name=JAP_yasuji_okamura
 		portraits={
