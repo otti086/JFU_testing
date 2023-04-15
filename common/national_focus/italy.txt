@@ -9319,7 +9319,6 @@ focus_tree = {
 			add_state_claim = 185 #CORFU
 			add_state_claim = 1 #CORSICA
 			add_state_claim = 116 #MALTA
-			add_state_claim = 846 #TICINO
 
 			if = {
 				limit = {

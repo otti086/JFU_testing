@@ -1554,6 +1554,9 @@ war_measures = {
         }
 
         available = {
+			NOT = {
+				tag = ITA
+			}
             has_war = yes
             has_idea = tot_economic_mobilisation
             OR = {

@@ -414,21 +414,6 @@ characters = {
 		allowed_civil_war = {
 			ITA_is_appropriate_cw_side_for_character_split = yes
 		}
-
-		advisor = {
-			slot = army_chief
-			idea_token = ugo_cavallero
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
-			traits = {
-				army_chief_organizational_1 # Was army_chief_maneuver_2 (replaced by Alberto Pariani)
-			}
-			cost = 50
-			ai_will_do = {
-				base = 1.000
-			}
-		}
 		
 		corps_commander = {
 			traits = { old_guard career_officer trait_cautious organisational_leader }
