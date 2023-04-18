@@ -1862,4 +1862,127 @@ ideas = {
 		}
 	}
 
+	tank_manufacturer = { 
+	
+		designer = yes
+		
+		soft_attack_designer = {
+			picture = vickers_armstrong_eng
+				
+			
+			allowed = {
+				NOT = { OR = {  axis = yes ai_country = yes tag = SOV}}
+			
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { medium_tank_manufacturer }
+			
+			modifier = {
+				
+			}
+		}
+
+		hard_attack_designer = {
+			picture = renault
+			
+			
+			allowed = {
+				NOT = { OR = {  axis = yes ai_country = yes tag = SOV}}
+			
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { heavy_tank_manufacturer }
+			
+			modifier = {
+				
+			}
+		}
+
+		mobile_tank_designer = {
+			picture = generic_tank_manufacturer_3
+			
+			
+			allowed = {
+				NOT = { OR = {  axis = yes ai_country = yes tag = SOV}}
+			
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { fast_tank_manufacturer }
+			
+			modifier = {
+				
+			}
+		}
+		GER_MAN = {
+			picture = GER_MAN
+			
+			
+			allowed = {
+				NOT = { OR = {  allies = yes ai_country = yes tag = SOV}}
+			
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { medium_tank_manufacturer }
+			
+			modifier = {
+				
+			}
+		}
+
+		porsche = {
+			picture = porsche
+			
+			
+			allowed = {
+				NOT = { OR = {  allies = yes ai_country = yes tag = SOV}}
+			
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+
+			traits = { heavy_tank_manufacturer }
+			
+			modifier = {
+				
+			}
+		}
+
+		henschel = {
+			picture = henschel
+			
+			
+			allowed = {
+				NOT = { OR = {  allies = yes ai_country = yes tag = SOV }}
+			
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { fast_tank_manufacturer }
+			
+			modifier = {
+				
+			}
+		}
+	}
 }

@@ -561,27 +561,6 @@ ideas = {
 		}
 	}
 
-	# TECHNOLOGY
-	tank_manufacturer = {
-
-		designer = yes
-
-		vickers_armstrong_can = {
-
-			allowed = {
-				original_tag = CAN
-			}
-
-			research_bonus = {
-				armor = 0.15
-			}
-
-			traits = { medium_tank_manufacturer }
-
-			# quite the useless tanks the vickers 6-ton
-		}
-	}
-
 	industrial_concern = {
 
 

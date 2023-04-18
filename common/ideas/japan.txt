@@ -1263,21 +1263,5 @@ ideas = {
 	}
 	
 	
-	tank_manufacturer = {
-	
-		designer = yes
-	
-		osaka_army_arsenal = {
-			
-			allowed = {
-				original_tag = JAP
-			}
-				
-			research_bonus = {
-				armor = 0.15
-			}
-			
-			traits = { tank_manufacturer }
-		}	
-	}
+
 }

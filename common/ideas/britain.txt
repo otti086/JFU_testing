@@ -2019,25 +2019,4 @@ ideas = {
 		}
 		
 	}	
-
-	
-	tank_manufacturer = {
-		vickers_armstrong_eng = {
-			
-			allowed = {
-				original_TAG = ENG
-			}
-			
-
-			
-			research_bonus = {
-				armor = 0.15
-			}
-			
-			traits = { medium_tank_manufacturer }
-			
-			modifier = {
-			}
-		}
-	}
 }

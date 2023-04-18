@@ -311,7 +311,9 @@ ideas = {
 			allowed = {
 				always = no
 			}
-
+			cancel={
+				GER = { has_war = yes }
+			}
 			removal_cost = -1
 
 			picture = partial_economic_mobilisation
@@ -320,6 +322,23 @@ ideas = {
 				army_attack_factor = -0.2
 			}
 		}
+		scw_pre_grinded_nerf2 = {
+			allowed = {
+				always = no
+			}
+			cancel={
+				GER = { has_war = yes }
+			}
+			removal_cost = -1
+
+			picture = partial_economic_mobilisation
+
+			modifier = {
+				army_attack_factor = -0.4
+				army_speed_factor = -0.3
+			}
+		}
+
 		DOUBLE_SF_CAP = {
 			allowed = {
 				always = no
