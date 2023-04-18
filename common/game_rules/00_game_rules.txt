@@ -424,6 +424,21 @@ JFU_TOT_MOB_ITA = {
 		desc = "keep Total Mobilisation disabled until Italy joins WW2"
 	}		
 }
+JFU_SPAIN = {
+	name = "Spain CW Settings"
+	group = "HORST_GROUPKEY"
+	icon = "RULE_GROUP_GENERAL_UI"
+	default = {
+		name = "SPAIN_NORMAL"
+		text = "Normal Spain"
+		desc = "Spain gets -40% attack in the civil War (disable if played without pregrinded)"
+	}
+	option = {
+		name = "SPAIN_EASY"
+		text = "Easy Spain"
+		desc = "Spain gets no minus attack in civil War"
+	}			
+}
 
 
 

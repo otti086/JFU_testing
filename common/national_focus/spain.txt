@@ -822,7 +822,7 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = { idea = SPA_national_recovery_1 days = 730 }
 			add_ideas = SPR_no_airfields
-			remove_ideas = {scw_pre_grinded_nerf}
+			remove_ideas = {scw_pre_grinded_nerf2}
 			hidden_effect = {
 				169 = { 
 					remove_building = { type = air_base  level = 10 }  

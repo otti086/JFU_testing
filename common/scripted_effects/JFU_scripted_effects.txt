@@ -2217,7 +2217,16 @@ pregrinded_effect = {
 		}	
 	}
 	SPR = {
-		add_ideas = { scw_pre_grinded_nerf }
+		if = {	
+			limit = { 
+				has_game_rule = {
+					rule = JFU_SPAIN 
+					option = SPAIN_NORMAL 
+				} 
+			} 
+		add_ideas = { scw_pre_grinded_nerf2 }
+		}			
+		add_ideas = { scw_pre_grinded_nerf2 }
 		SPR_antonio_cordon_garcia = { add_skill_level = 2 }
 		SPR_antonio_cordon_garcia = { add_attack = 3 }
         SPR_antonio_cordon_garcia = { add_defense = 3 }
