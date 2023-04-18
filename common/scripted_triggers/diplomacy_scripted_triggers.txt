@@ -40,6 +40,15 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
 		}
 		always = yes #handled by game logic, see above
 	}
+	if = {
+		limit = {
+			tag = USA 
+		}
+		OR = {
+			has_global_flag = JFU_vichy_france
+			date > 01.01.1940
+		}
+	}
 }
 DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = {
 	if = {
