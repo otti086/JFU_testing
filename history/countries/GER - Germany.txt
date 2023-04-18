@@ -88,6 +88,11 @@ set_autonomy = {
 	autonomous_state = autonomy_satellite
 	freedom_level = 0.2
 }
+set_autonomy = {
+	target = BUL
+	autonomous_state = autonomy_dominion
+	freedom_level = 0.2	
+}
 
 if = {
 	limit = {
