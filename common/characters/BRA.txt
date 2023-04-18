@@ -81,7 +81,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ ranger }
+			traits={ jungle_rat }
 			skill=3
 			attack_skill=4
 			defense_skill=3
