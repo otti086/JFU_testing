@@ -2503,14 +2503,13 @@ pregrinded_effect = {
             add_unit_leader_trait = commando 
             add_unit_leader_trait = trait_mountaineer
             add_unit_leader_trait = ambusher
-            add_unit_leader_trait = gurilla_fighter
-            add_unit_leader_trait = camoflage_expert
+            add_unit_leader_trait = guerilla_fighter
+            add_unit_leader_trait = camouflage_expert
             add_unit_leader_trait = trickster
         } 
 		FIN_erik_heinrichs = { promote_leader = yes }
 		FIN_erik_heinrichs = {
-			add_unit_leader_trait = logistic_wizard
-			add_unit_leader_trait = unyiedling_defender
+			add_unit_leader_trait = logistics_wizard
 			add_unit_leader_trait = defensive_doctrine
 		}	
 		FIN_vilho_petter_nenonen = {
@@ -2518,9 +2517,9 @@ pregrinded_effect = {
             add_unit_leader_trait = ranger
             add_unit_leader_trait = infantry_expert
             add_unit_leader_trait = infantry_leader
-            add_unit_leader_trait = engineer
+            add_unit_leader_trait = trait_engineer
 			add_unit_leader_trait = fortress_buster
-            add_unit_leader_trait = camoflage_expert
+            add_unit_leader_trait = camouflage_expert
             add_unit_leader_trait = trickster
             add_unit_leader_trait = ambusher
         }		
