@@ -334,8 +334,7 @@ ideas = {
 			picture = partial_economic_mobilisation
 
 			modifier = {
-				army_attack_factor = -0.4
-				army_speed_factor = -0.3
+				army_attack_factor = -0.3
 			}
 		}
 

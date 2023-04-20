@@ -33,45 +33,29 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = { always = no }
 DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
 	if = {
 		limit = {
-			has_game_rule = {
-				rule = allow_lend_lease
-				option = LIMITED
-			}
-		}
-		always = yes #handled by game logic, see above
-	}
-	if = {
-		limit = {
 			tag = USA 
 		}
 		OR = {
-			has_global_flag = JFU_vichy_france
-			date > 01.01.1940
+			16 = { is_controlled_by = GER }
+			date > 1940.01.01
 		}
 	}
 }
-DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = {
-	if = {
-		limit = {
-			has_game_rule = {
-				rule = allow_lend_lease
-				option = LIMITED
-			}
-		}
-		always = yes #handled by game logic, see above
-	}
-}
+DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = {}
 DIPLOMACY_CALL_ALLY_ENABLE_TRIGGER = { always = no } 
 DIPLOMACY_JOIN_ALLY_ENABLE_TRIGGER = { always = no } 
-DIPLOMACY_REQUEST_LICENSED_PRODUCTION_ENABLE_TRIGGER = {
-	if = {
+DIPLOMACY_REQUEST_ACCESS_TO_LICENCE_PRODUCTION_ENABLE_TRIGGER = {
+	if = { 
 		limit = {
-			has_game_rule = {
-				rule = allow_licensing
-				option = FREE
-			}
+			FROM = { axis = yes}
 		}
-		always = yes
+		NOT = {	ROOT = { allies = yes } }
+	}
+	if = { 
+		limit = {
+			FROM = { allies = yes}
+		}
+		NOT = {	ROOT = { axis = yes } }
 	}
 }
 DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = { always = no }
@@ -79,11 +63,11 @@ DIPLOMACY_WAR_ENABLE_TRIGGER = {always = no }
 DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
 	if = {
 		limit = {
-			has_game_rule = {
-				rule = allow_volunteers
-				option = LIMITED
+			NOT = { tag = CHI }
+			FROM = {
+				tag = CHI
 			}
 		}
-		always = yes
+		always = no
 	}
 }
