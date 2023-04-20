@@ -16,7 +16,6 @@ state={
 			153 1
 		}
 		buildings = {
-			fuel_silo = 1
 			infrastructure = 2
 			153 = {
 				naval_base = 1
