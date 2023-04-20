@@ -72,6 +72,7 @@ if = {
 }
 add_ideas = {
 	volunteers_7
+	free_trade
 }
 add_relation_modifier = {
 	target = GER
