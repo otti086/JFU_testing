@@ -586,6 +586,9 @@ if = {
 			basic_small_airframe = 1
 			basic_medium_airframe = 1
 			aircraft_construction = 1
+			survivability_studies = 1
+			range_improvements = 1
+			aircraft_construction = 1
 		}
 	else = {
 		set_air_oob = "SOV_1936_air_legacy"

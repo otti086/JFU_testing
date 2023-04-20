@@ -470,6 +470,7 @@ JFU_decisions = {
 			ENG = {
 				has_tech = survivability_studies
 				has_tech = range_improvements
+				has_tech = aa_hmg
 			}  
 		}
 		cost = 0
@@ -505,6 +506,7 @@ JFU_decisions = {
 			ITA = {
 				has_tech = survivability_studies
 				has_tech = range_improvements
+				has_tech = aa_hmg
 			}  
 		}
 		cost = 0
