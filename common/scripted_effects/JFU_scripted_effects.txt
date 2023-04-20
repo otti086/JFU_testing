@@ -3093,3 +3093,17 @@ Vichy_ai_Building = {
 		add_offsite_building = { type = dockyard level = vichy_docks }
 	}
 }
+SPR_NO_CW = {
+	SPR = {
+		annex_country = { target = SPA }
+	}
+	set_global_flag = scw_over
+	set_global_flag = nationalist_victory
+	SPR = { country_event = { id = lar_news.1 hours = 6 } }		
+	ENG = { add_war_support = 0.1}
+	CAN = { add_war_support = 0.1}
+	if = { limit = { country_exists = SAF } SAF = { add_war_support = 0.1} }
+	if = { limit = { country_exists = NZL } NZL = { add_war_support = 0.1} }
+	RAJ = { add_war_support = 0.1}
+	SOV = { add_war_support = 0.1}	
+}

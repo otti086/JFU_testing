@@ -230,7 +230,6 @@ focus_tree = {
 		bypass = {
 			OR = {
 				controls_province = 858
-				has_global_flag = scw_over
 			}
 		}
 		prerequisite = { focus = SPR_unify_the_nationalist_front }
@@ -336,6 +335,15 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_SPA_CARLIST_UPRISING}
 		completion_reward = {
 			add_war_support = 0.1
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = JFU_SPAIN
+						option = SPAIN_NO_CW
+					}
+				}
+				add_ideas = war_economy								
+			}
 		}
 	}
 
@@ -347,9 +355,6 @@ focus_tree = {
 			controls_state = 176
 			controls_state = 792
 			controls_state = 790
-		}
-		bypass = {
-			has_global_flag = scw_over
 		}
 		prerequisite = { focus = SPR_unify_the_nationalist_front }
 		

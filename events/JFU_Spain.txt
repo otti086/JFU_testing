@@ -295,11 +295,11 @@ country_event = {
 			if = {
 				limit = {
 					has_game_rule = {
-						rule = JFU_pre_grinded_generals
-						option = PRE_GRINDED_GENERALS_ON
+						rule = JFU_SPAIN
+						option = SPAIN_NO_CW
 					}
 				}
-				add_named_threat = { threat = 3 name = SPR_Civil_war_Volunteers }
+				country_event = { id = JFU_events.3 days = 1 }
 			}
 		}
 	}
