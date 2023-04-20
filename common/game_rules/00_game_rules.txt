@@ -323,21 +323,6 @@ JFU_closed_eco_SOVIET = {
 		desc = "Clicking this option will give Soviet closed eco"
 	}
 }
-JFU_Research_Rule = {
-	name = "JFU Reseach Slot Settings"
-	group = "HORST_GROUPKEY"
-	icon = "RULE_GROUP_GENERAL_UI"
-	default = {
-		name = "STARTING_RESEARCH_SLOTS"
-		text = "Standard JFU Settings"
-		desc = "Clicking this option Germany, Japan and Soviets get 1 more starting reseach slot but are locked to 5 slots."
-	}
-	option = {
-		name = "MORE_RESEARCH_SLOTS"
-		text = "Alternative Settings"
-		desc = "Clicking this option Germany, Japan and Soviets get 1 more starting research slot but all except Soviets may get 6 slots maximum. UK may get 2 Slots throught foci"
-	}	
-}
 JFU_YUGO_COLAB = {
 	name = "Yugoslavia Colab Settings"
 	group = "HORST_GROUPKEY"
@@ -379,34 +364,34 @@ JFU_SPECIAL_FORCES_CAP = {
 	}
 
 }
-JFU_STRIKE_ON_NR = {
-	name = "Japan strike on the Northern Resource Area Settings"
-	group = "HORST_GROUPKEY"
-	icon = "RULE_GROUP_GENERAL_UI"
-	default = {
-		name = "JFU_STANDARD_NR"
-		text = "Standard JFU Settings"
-		desc = "Clicking this option will disable Strike on the Northern Resource Area"
-	}
-	option = {
-		name = "JFU_ALTERNATIVE_NR"
-		text = "Alternative Settings"
-		desc = "Clicking this option will enable Strike on the Northern Resource Area"
-	}
-}
+#JFU_STRIKE_ON_NR = {
+#	name = "Japan strike on the Northern Resource Area Settings"
+#	group = "HORST_GROUPKEY"
+#	icon = "RULE_GROUP_GENERAL_UI"
+#	default = {
+#		name = "JFU_STANDARD_NR"
+#		text = "Standard JFU Settings"
+#		desc = "Clicking this option will disable Strike on the Northern Resource Area"
+#	}
+#	option = {
+#		name = "JFU_ALTERNATIVE_NR"
+#		text = "Alternative Settings"
+#		desc = "Clicking this option will enable Strike on the Northern Resource Area"
+#	}
+#}
 JFU_AFRICA_TILES = {
 	name = "AFRICA Tiles Settings"
 	group = "HORST_GROUPKEY"
 	icon = "RULE_GROUP_GENERAL_UI"
 	default = {
-		name = "ONE_TILE_AFRICA"
-		text = "Vanilla Africa"
-		desc = "disables modded Africa - 1 tile El-Alamein"
-	}
-	option = {
 		name = "THREE_TILE_AFRICA"
 		text = "Modded Africa"
 		desc = "enables modded Africa - 3 tile El-Alamein"
+	}
+	option = {
+		name = "ONE_TILE_AFRICA"
+		text = "Vanilla Africa"
+		desc = "disables modded Africa - 1 tile El-Alamein"
 	}	
 }
 JFU_TOT_MOB_ITA = {
@@ -437,6 +422,11 @@ JFU_SPAIN = {
 		name = "SPAIN_EASY"
 		text = "Easy Spain"
 		desc = "Spain gets no minus attack in civil War"
+	}
+	option = {
+		name = "SPAIN_NO_CW"
+		text = "NO Civil War Spain"
+		desc = "Spain gets the civil war bypassed"
 	}			
 }
 
