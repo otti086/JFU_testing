@@ -574,3 +574,15 @@ country_event = {
 		452 = { remove_dynamic_modifier = { modifier = no_entrenchment_africa } }		
 	}
 }
+
+country_event = {
+	id = JFU_events.3
+	title = "NO SCW"
+	desc = "Okö"
+	picture = GFX_report_event_generic_parliament
+	hidden = yes
+	is_triggered_only = yes	
+	immediate = {
+		SPR_NO_CW = yes
+	}
+}
