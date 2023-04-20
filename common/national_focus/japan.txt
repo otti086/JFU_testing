@@ -601,10 +601,7 @@
 			factor = 4
 		}
 		allow_branch = {
-			has_game_rule = {
-				rule = JFU_Research_Rule
-				option = MORE_RESEARCH_SLOTS
-			}
+			always = no
 		}
 		available = {
 

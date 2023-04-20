@@ -1830,15 +1830,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			add_ideas = { ENG_colonial_elite }
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = JFU_Research_Rule
-						option = MORE_RESEARCH_SLOTS
-					}
-				}				
-				add_research_slot = 1	
-			}
 		}
 	}
 
