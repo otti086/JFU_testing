@@ -64,6 +64,7 @@ JAP_intervene_in_china = {
 				has_capitulated = no
 				exists = yes
 			}
+			date > 1938.09.01
 		}
 
 		visible = {
