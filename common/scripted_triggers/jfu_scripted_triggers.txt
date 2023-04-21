@@ -53,6 +53,7 @@ ai_country_allies = {
 		tag = HOL
 		tag = BEL
 		tag = POL
+		tag = DEN
 	}
 }
 africa_oil_states = {
