@@ -12,7 +12,7 @@
 	
 	default = no
 		focus = {
-		id = ERF_army_effort
+		id = EFR_army_effort
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 1
 		y = 0
@@ -33,12 +33,12 @@
 	}
 
 	focus = {
-		id = ERF_equipment_effort
+		id = EFR_equipment_effort
 		icon = GFX_goal_generic_small_arms
-		prerequisite = { focus = ERF_army_effort }
+		prerequisite = { focus = EFR_army_effort }
 		x = -1
 		y = 1
-		relative_position_id = ERF_army_effort
+		relative_position_id = EFR_army_effort
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -57,13 +57,13 @@
 	}
 
 	focus = {
-		id = ERF_motorization_effort
+		id = EFR_motorization_effort
 		icon = GFX_goal_generic_army_motorized
-		prerequisite = { focus = ERF_army_effort }
+		prerequisite = { focus = EFR_army_effort }
 		bypass = { has_tech = motorised_infantry }
 		x = 1
 		y = 1
-		relative_position_id = ERF_army_effort
+		relative_position_id = EFR_army_effort
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -80,12 +80,12 @@
 	}
 
 	focus = {
-		id = ERF_doctrine_effort
+		id = EFR_doctrine_effort
 		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = ERF_army_effort }
+		prerequisite = { focus = EFR_army_effort }
 		x = 0
 		y = 2
-		relative_position_id = ERF_army_effort
+		relative_position_id = EFR_army_effort
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -104,12 +104,12 @@
 	}
 
 	focus = {
-		id = ERF_equipment_effort_2
+		id = EFR_equipment_effort_2
 		icon = GFX_goal_generic_army_artillery
-		prerequisite = { focus = ERF_equipment_effort }
+		prerequisite = { focus = EFR_equipment_effort }
 		x = 0
 		y = 2
-		relative_position_id = ERF_equipment_effort
+		relative_position_id = EFR_equipment_effort
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -128,12 +128,12 @@
 	}
 
 	focus = {
-		id = ERF_mechanization_effort
+		id = EFR_mechanization_effort
 		icon = GFX_goal_generic_build_tank
-		prerequisite = { focus = ERF_motorization_effort }
+		prerequisite = { focus = EFR_motorization_effort }
 		x = 0
 		y = 2
-		relative_position_id = ERF_motorization_effort
+		relative_position_id = EFR_motorization_effort
 		cost = 10
 		
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -151,12 +151,12 @@
 	}
 
 	focus = {
-		id = ERF_doctrine_effort_2
+		id = EFR_doctrine_effort_2
 		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = ERF_doctrine_effort }
+		prerequisite = { focus = EFR_doctrine_effort }
 		x = 0
 		y = 2
-		relative_position_id = ERF_doctrine_effort
+		relative_position_id = EFR_doctrine_effort
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -175,12 +175,12 @@
 	}
 
 	focus = {
-		id = ERF_equipment_effort_3
+		id = EFR_equipment_effort_3
 		icon = GFX_goal_generic_army_artillery2
-		prerequisite = { focus = ERF_equipment_effort_2 }
+		prerequisite = { focus = EFR_equipment_effort_2 }
 		x = 0
 		y = 2
-		relative_position_id = ERF_equipment_effort_2
+		relative_position_id = EFR_equipment_effort_2
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -199,12 +199,12 @@
 	}
 
 	focus = {
-		id = ERF_armor_effort
+		id = EFR_armor_effort
 		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = ERF_mechanization_effort }
+		prerequisite = { focus = EFR_mechanization_effort }
 		x = 0
 		y = 2
-		relative_position_id = ERF_mechanization_effort
+		relative_position_id = EFR_mechanization_effort
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -222,14 +222,14 @@
 	}
 
 	focus = {
-		id = ERF_special_forces
+		id = EFR_special_forces
 		icon = GFX_goal_generic_special_forces
-		prerequisite = { focus = ERF_equipment_effort_3 }
-		prerequisite = { focus = ERF_doctrine_effort_2 }
-		prerequisite = { focus = ERF_armor_effort }
+		prerequisite = { focus = EFR_equipment_effort_3 }
+		prerequisite = { focus = EFR_doctrine_effort_2 }
+		prerequisite = { focus = EFR_armor_effort }
 		x = 1
 		y = 1
-		relative_position_id = ERF_equipment_effort_3
+		relative_position_id = EFR_equipment_effort_3
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -253,7 +253,7 @@
 	}
 
 	focus = {
-		id = ERF_industrial_effort
+		id = EFR_industrial_effort
 		icon = GFX_goal_generic_production
 		x = 5
 		y = 0
@@ -291,12 +291,12 @@
 	}
 
 	focus = {
-		id = ERF_construction_effort
+		id = EFR_construction_effort
 		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = ERF_industrial_effort }
+		prerequisite = { focus = EFR_industrial_effort }
 		x = -1
 		y = 1
-		relative_position_id = ERF_industrial_effort
+		relative_position_id = EFR_industrial_effort
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
@@ -318,12 +318,12 @@
 	}
 
 	focus = {
-		id = ERF_production_effort
+		id = EFR_production_effort
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = ERF_industrial_effort }
+		prerequisite = { focus = EFR_industrial_effort }
 		x = 1
 		y = 1
-		relative_position_id = ERF_industrial_effort
+		relative_position_id = EFR_industrial_effort
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
@@ -344,12 +344,12 @@
 	}
 
 	focus = {
-		id = ERF_construction_effort_2
+		id = EFR_construction_effort_2
 		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = ERF_construction_effort }
+		prerequisite = { focus = EFR_construction_effort }
 		x = 0
 		y = 1
-		relative_position_id = ERF_construction_effort
+		relative_position_id = EFR_construction_effort
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
@@ -370,12 +370,12 @@
 	}
 
 	focus = {
-		id = ERF_production_effort_2
+		id = EFR_production_effort_2
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = ERF_production_effort }
+		prerequisite = { focus = EFR_production_effort }
 		x = 0
 		y = 1
-		relative_position_id = ERF_production_effort
+		relative_position_id = EFR_production_effort
 		cost = 10
 		
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
@@ -396,12 +396,12 @@
 	}
 
 	focus = {
-		id = ERF_infrastructure_effort
+		id = EFR_infrastructure_effort
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = ERF_construction_effort_2 }
+		prerequisite = { focus = EFR_construction_effort_2 }
 		x = 0
 		y = 1
-		relative_position_id = ERF_construction_effort_2
+		relative_position_id = EFR_construction_effort_2
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -492,12 +492,12 @@
 	}
 
 	focus = {
-		id = ERF_production_effort_3
+		id = EFR_production_effort_3
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = ERF_production_effort_2 }
+		prerequisite = { focus = EFR_production_effort_2 }
 		x = 0
 		y = 1
-		relative_position_id = ERF_production_effort_2
+		relative_position_id = EFR_production_effort_2
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
@@ -518,12 +518,12 @@
 	}
 
 	focus = {
-		id = ERF_infrastructure_effort_2
+		id = EFR_infrastructure_effort_2
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = ERF_infrastructure_effort }
+		prerequisite = { focus = EFR_infrastructure_effort }
 		x = 0
 		y = 1
-		relative_position_id = ERF_infrastructure_effort
+		relative_position_id = EFR_infrastructure_effort
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -614,12 +614,12 @@
 	}
 
 	focus = {
-		id = ERF_construction_effort_3
+		id = EFR_construction_effort_3
 		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = ERF_infrastructure_effort }
+		prerequisite = { focus = EFR_infrastructure_effort }
 		x = 2
 		y = 1
-		relative_position_id = ERF_infrastructure_effort
+		relative_position_id = EFR_infrastructure_effort
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
@@ -640,12 +640,12 @@
 	}
 
 	focus = {
-		id = ERF_extra_tech_slot
+		id = EFR_extra_tech_slot
 		icon = GFX_focus_research
-		prerequisite = { focus = ERF_infrastructure_effort_2 }
+		prerequisite = { focus = EFR_infrastructure_effort_2 }
 		x = 0
 		y = 1
-		relative_position_id = ERF_infrastructure_effort_2
+		relative_position_id = EFR_infrastructure_effort_2
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_RESEARCH } 
@@ -658,9 +658,9 @@
 	}
 	
 	focus = {
-		id = ERF_extra_tech_slot_2
+		id = EFR_extra_tech_slot_2
 		icon = GFX_focus_research
-		prerequisite = { focus = ERF_extra_tech_slot }
+		prerequisite = { focus = EFR_extra_tech_slot }
 		available = {
 			num_of_factories > 50
 		}
@@ -668,7 +668,7 @@
 		continue_if_invalid = yes
 		x = 0
 		y = 1
-		relative_position_id = ERF_extra_tech_slot
+		relative_position_id = EFR_extra_tech_slot
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_RESEARCH } 
@@ -681,12 +681,12 @@
 	}	
 
 	focus = {
-		id = ERF_secret_weapons
+		id = EFR_secret_weapons
 		icon = GFX_goal_generic_secret_weapon
-		prerequisite = { focus = ERF_infrastructure_effort_2 }
+		prerequisite = { focus = EFR_infrastructure_effort_2 }
 		x = 2
 		y = 1
-		relative_position_id = ERF_infrastructure_effort_2
+		relative_position_id = EFR_infrastructure_effort_2
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_RESEARCH } 
@@ -714,7 +714,7 @@
 	}
 
 	focus = {
-		id = ERF_political_effort
+		id = EFR_political_effort
 		icon = GFX_goal_generic_demand_territory
 		x = 9
 		y = 0
@@ -730,10 +730,10 @@
 	}
 
 	focus = {
-		id = ERF_collectivist_ethos
+		id = EFR_collectivist_ethos
 		icon = GFX_goal_generic_national_unity #icon = GFX_goal_tripartite_pact
-		prerequisite = { focus = ERF_political_effort }
-		mutually_exclusive = { focus = ERF_liberty_ethos}
+		prerequisite = { focus = EFR_political_effort }
+		mutually_exclusive = { focus = EFR_liberty_ethos}
 		available = {
 			OR = {
 				has_government = fascism
@@ -742,7 +742,7 @@
 		}
 		x = -1
 		y = 1
-		relative_position_id = ERF_political_effort
+		relative_position_id = EFR_political_effort
 		cost = 10
 	
 		search_filters = { FOCUS_FILTER_POLITICAL   }
@@ -774,9 +774,9 @@
 	}
 
 	focus = {
-		id = ERF_nationalism_focus
+		id = EFR_nationalism_focus
 		icon = GFX_goal_support_fascism #icon = GFX_goal_tripartite_pact
-		prerequisite = { focus = ERF_collectivist_ethos }
+		prerequisite = { focus = EFR_collectivist_ethos }
 		available = {
 			OR = {
 				has_government = fascism
@@ -785,7 +785,7 @@
 		}
 		x = 0
 		y = 1
-		relative_position_id = ERF_collectivist_ethos
+		relative_position_id = EFR_collectivist_ethos
 		cost = 10
 	
 		search_filters = { FOCUS_FILTER_POLITICAL  }
@@ -824,10 +824,10 @@
 	}	
 
 	focus = {
-		id = ERF_liberty_ethos
+		id = EFR_liberty_ethos
 		icon = GFX_goal_support_democracy
-		prerequisite = { focus = ERF_political_effort }
-		mutually_exclusive = { focus = ERF_collectivist_ethos }
+		prerequisite = { focus = EFR_political_effort }
+		mutually_exclusive = { focus = EFR_collectivist_ethos }
 		available = {
 			OR = {
 				has_government = democratic
@@ -836,7 +836,7 @@
 		}
 		x = 1
 		y = 1
-		relative_position_id = ERF_political_effort
+		relative_position_id = EFR_political_effort
 		cost = 10
 	
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -870,12 +870,12 @@
 	}
 
 	focus = {
-		id = ERF_militarism
+		id = EFR_militarism
 		icon = GFX_goal_generic_political_pressure
-		prerequisite = { focus = ERF_nationalism_focus }
+		prerequisite = { focus = EFR_nationalism_focus }
 		x = 0
 		y = 1
-		relative_position_id = ERF_nationalism_focus
+		relative_position_id = EFR_nationalism_focus
 		cost = 10
 	
 		search_filters = { FOCUS_FILTER_POLITICAL  }
@@ -893,12 +893,12 @@
 	}
 
 	focus = {
-		id = ERF_neutrality_focus
+		id = EFR_neutrality_focus
 		icon = GFX_goal_generic_neutrality_focus
-		prerequisite = { focus = ERF_liberty_ethos }
+		prerequisite = { focus = EFR_liberty_ethos }
 		x = 0
 		y = 1
-		relative_position_id = ERF_liberty_ethos
+		relative_position_id = EFR_liberty_ethos
 		cost = 10
 	
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -923,12 +923,12 @@
 	}
 
 	focus = {
-		id = ERF_military_youth
+		id = EFR_military_youth
 		icon = GFX_goal_generic_more_territorial_claims
-		prerequisite = { focus = ERF_militarism }
+		prerequisite = { focus = EFR_militarism }
 		x = 0
 		y = 1
-		relative_position_id = ERF_militarism
+		relative_position_id = EFR_militarism
 		cost = 10
 	
 		search_filters = { FOCUS_FILTER_POLITICAL  }
@@ -955,12 +955,12 @@
 	}
 
 	focus = {
-		id = ERF_deterrence
+		id = EFR_deterrence
 		icon = GFX_goal_generic_defence
-		prerequisite = { focus = ERF_neutrality_focus }
+		prerequisite = { focus = EFR_neutrality_focus }
 		x = 0
 		y = 2
-		relative_position_id = ERF_neutrality_focus
+		relative_position_id = EFR_neutrality_focus
 		cost = 10
 	
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
@@ -973,12 +973,12 @@
 	}
 
 	focus = {
-		id = ERF_paramilitarism
+		id = EFR_paramilitarism
 		icon = GFX_goal_generic_military_sphere
-		prerequisite = { focus = ERF_military_youth }
+		prerequisite = { focus = EFR_military_youth }
 		x = 0
 		y = 1
-		relative_position_id = ERF_military_youth
+		relative_position_id = EFR_military_youth
 		cost = 10
 	
 		search_filters = { FOCUS_FILTER_POLITICAL  }
@@ -991,9 +991,9 @@
 	}
 
 	focus = {
-		id = ERF_why_we_fight
+		id = EFR_why_we_fight
 		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = ERF_deterrence }
+		prerequisite = { focus = EFR_deterrence }
 		available = { 
 			OR = { 
 				threat > 0.75 
@@ -1005,7 +1005,7 @@
 		
 		x = 0
 		y = 1
-		relative_position_id = ERF_deterrence
+		relative_position_id = EFR_deterrence
 		cost = 10
 	
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1025,9 +1025,9 @@
 	}
 	
 	focus = {
-		id = ERF_technology_sharing
+		id = EFR_technology_sharing
 		icon = GFX_goal_generic_scientific_exchange
-		prerequisite = { focus = ERF_paramilitarism focus = ERF_why_we_fight }
+		prerequisite = { focus = EFR_paramilitarism focus = EFR_why_we_fight }
 		available = {
 			has_war = yes
 			is_in_faction = yes
@@ -1041,7 +1041,7 @@
 		}		
 		x = -1
 		y = 1
-		relative_position_id = ERF_why_we_fight
+		relative_position_id = EFR_why_we_fight
 		cost = 10
 	
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH }
