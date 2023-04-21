@@ -789,7 +789,7 @@ focus_tree = {
 				technology = excavation4
 				technology = excavation5
 			}
-#			add_ideas = GER_autarky_idea
+			add_ideas = GER_autarky_idea
 		}
 	}
 
@@ -1829,6 +1829,9 @@ focus_tree = {
 				GER = { remove_resource_rights = 724 }
 				remove_ideas = GER_rubber_balance
 				add_named_threat = { threat = 5 name = GER_danzig_or_war }
+				USA = { add_ideas = JFU_WW_vision }
+				MEX = { add_ideas = JFU_WW_vision }
+				BRA = { add_ideas = JFU_WW_vision }
 			}
 		}
 	}

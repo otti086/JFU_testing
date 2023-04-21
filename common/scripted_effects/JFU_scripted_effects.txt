@@ -560,6 +560,7 @@ JFU_startup_on_action = {
 	if = {	limit = { has_game_rule = { rule = JFU_AFRICA_TILES option = ONE_TILE_AFRICA } } SWE = { transfer_state = 909 } SWE = { transfer_state = 910 } SWE = { transfer_state = 911 } }
 	if = {	limit = { has_game_rule = { rule = JFU_YUGO_COLAB option = FREE_COLAB_YUGO } } set_global_flag = YUGO_FREE_COLAB_FLAG }
 	if = {	limit = { has_game_rule = { rule = JFU_pre_sets option = COMPETITIVE_JFU } } set_global_flag = YUGO_FREE_COLAB_FLAG }
+	if = {  limit = { ai_country_allies = yes } country_lock_all_division_template = yes }
 	every_country = { limit = { OR = { axis = yes allies = yes } } add_ideas = peace_training }
 	SWE = { JFU_apply_intel = yes }
 	SWE = { HFU_fuel_startup_effect = yes }											
@@ -3113,6 +3114,7 @@ JFU_apply_intel = {
                 original_tag = MAN
                 original_tag = SIA
                 original_tag = SPR
+				original_tag = EFR
             }
         }
         if = {
@@ -3302,6 +3304,25 @@ JFU_apply_intel = {
             }
             add_operation_token = {
                 tag = FIN
+                token = E_token_airforce
+            }
+        }
+        if = {
+            limit = { NOT = { tag = EFR }}
+            add_operation_token = {
+                tag = EFR
+                token = E_token_civilian
+            }
+            add_operation_token = {
+                tag = EFR
+                token = E_token_army
+            }
+            add_operation_token = {
+                tag = EFR
+                token = E_token_navy
+            }
+            add_operation_token = {
+                tag = EFR
                 token = E_token_airforce
             }
         }
