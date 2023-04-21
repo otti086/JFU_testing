@@ -61,7 +61,7 @@ NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN = 5
 
 NDefines.NAir.FUEL_COST_MULT = 0.25 -- vanilla 0.35 fuel multiplier for all air missions
 NDefines.NAir.AIR_DEPLOYMENT_DAYS = 0
-NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.35 -- Higher value = more shot down planes
+NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.5 -- Higher value = more shot down planes
 NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane to create a mission
 	0.0, -- AIR_SUPERIORITY
 	0.0, -- CAS
