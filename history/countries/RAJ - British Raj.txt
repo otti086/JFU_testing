@@ -2,7 +2,10 @@
 
 oob = "RAJ_1936"
 
-
+add_relation_modifier = {
+	target = SOV
+	modifier = trade_soviet
+}
 set_variable = {
     var = min_fuel
     value = 0.200
