@@ -819,7 +819,6 @@
  GER_endsieg_4:0 "Volkssturm"
 
  peace_training:0 "Peace Time Training"
- QUADRUPLE_SF_CAP:0 "Quadrupled Special Forces Cap"
  pre_grinded_gens_volunteers:0 "Not Allowed To Send Volunteers"
  volunteers_3:0 "3 Allowed Volunteers"
  volunteers_4:0 "4 Allowed Volunteers"
@@ -867,3 +866,5 @@
  EFR_armor_effort_desc:0 "Applying what we have learned from mechanizing our infantry, we can improve our armored vehicles as well."
  EFR_special_forces:0 "Special Forces"
  EFR_special_forces_desc:0 "We have need of elite forces; mountain troops and paratroopers should be our priority."
+
+ continuous_morb:0 "Morbilization"
