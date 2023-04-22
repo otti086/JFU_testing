@@ -581,5 +581,15 @@ ideas = {
 			
 			rule = { can_send_volunteers = yes }					
 		}
+		NO_naval_raiding = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				convoy_raiding_efficiency_factor = -2
+			}						
+		}
 	}
 }
