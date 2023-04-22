@@ -468,6 +468,9 @@ country_event = {
 		hidden_effect = {
 			ITA = { add_to_war = { targeted_alliance = GER enemy = ENG } }
 			ETH = { add_to_war = { targeted_alliance = GER enemy = ENG } }
+			ITA = { add_ideas = NO_naval_raiding days = 40}
+			ENG = { add_ideas = NO_naval_raiding days = 40}
+			FRA = { add_ideas = NO_naval_raiding days = 40}
 #			country_event = { id = JFU_events.2 days = 60 }
 		}
 	}

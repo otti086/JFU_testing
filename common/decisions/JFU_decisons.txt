@@ -1180,6 +1180,7 @@ JFU_decisions = {
 					}
 				}
 			}
+			USA = { add_to_war = { targeted_alliance = ENG enemy = GER } }
 			hidden_effect = {
 				if = { limit = { country_exists = HUN }	HUN = { add_to_war = { targeted_alliance = GER enemy = USA } } }
 				if = { limit = { country_exists = ROM }	ROM = { add_to_war = { targeted_alliance = GER enemy = USA } } }
@@ -1188,7 +1189,6 @@ JFU_decisions = {
 				if = { limit = { country_exists = ITA }	ITA = { add_to_war = { targeted_alliance = GER enemy = USA } } }
 				if = { limit = { country_exists = ETH }	ETH = { add_to_war = { targeted_alliance = GER enemy = USA } } }			
 			}
-			USA = { add_to_war = { targeted_alliance = ENG enemy = GER } }
 			if = {
 				limit = {
 					BRA = { is_ai = no }
@@ -1251,6 +1251,30 @@ JFU_decisions = {
 		custom_effect_tooltip = "French Legitimacy will increase by 20"
 			add_to_variable =  { var = FRA.FRA_legitimacy value = 20 }
 		}
+	}
+	"Update Generals" = {
+		icon = generic_operation
+		fire_only_once = yes
+		allowed = { tag = ENG }
+		available = { 
+			date > 1941.1.1
+		}
+		visible = {
+			OR = {
+				has_game_rule = {
+					rule = JFU_pre_sets 
+					option = COMPETITIVE_JFU
+				}
+				has_game_rule = {
+					rule = JFU_pre_grinded_generals 
+					option = PRE_GRINDED_GENERALS_ON
+				}					
+			}			
+			tag = ENG }
+		cost = 0
+		complete_effect = {
+			JFU_update_generals = yes
+		}				
 	}
 	SOV_END_WINTER_WAR = {
 
