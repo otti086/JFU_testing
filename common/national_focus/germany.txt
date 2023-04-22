@@ -2374,7 +2374,6 @@ focus_tree = {
 		y = 2
 		relative_position_id = GER_endsieg_1
 		available = {
-			surrender_progress > 0.2 
 		}
 		cost = 1
 		
