@@ -116,8 +116,6 @@ on_actions = {
 					interwar_antiair = 1
 
 					basic_train = 1
-
-					gwtank = 1
 				}
 			}
 		}		

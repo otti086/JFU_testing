@@ -1583,6 +1583,9 @@ war_measures = {
             }
         }
         visible = {
+			NOT = {
+				tag = ITA
+			}
             has_war = yes
         }
         cost = 100
