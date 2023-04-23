@@ -117,6 +117,8 @@ on_actions = {
 
 					basic_train = 1
 					gwtank_chassis = 1 #nsb man
+
+					fuel_silos = 1 #juggle button
 				}
 			}
 		}		
