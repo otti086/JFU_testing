@@ -818,6 +818,8 @@
  GER_endsieg_3:0 "Push back the Soviet"
  GER_endsieg_4:0 "Volkssturm"
 
+ GER_endsieg_1_tt:0 "Get 4 Tank Divs"
+
  peace_training:0 "Peace Time Training"
  pre_grinded_gens_volunteers:0 "Not Allowed To Send Volunteers"
  volunteers_3:0 "3 Allowed Volunteers"
@@ -866,7 +868,8 @@
  EFR_armor_effort_desc:0 "Applying what we have learned from mechanizing our infantry, we can improve our armored vehicles as well."
  EFR_special_forces:0 "Special Forces"
  EFR_special_forces_desc:0 "We have need of elite forces; mountain troops and paratroopers should be our priority."
-
+ 
+ vichy_france_established:0 "Vichy France established"
  continuous_morb:0 "Morbilization"
 
  naldo:0 "Naldo"

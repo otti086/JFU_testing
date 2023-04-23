@@ -1,4 +1,4 @@
-﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_POLITICAL}
 ### search_filters = {FOCUS_FILTER_RESEARCH}
 ### search_filters = {FOCUS_FILTER_INDUSTRY}
 ### search_filters = {FOCUS_FILTER_STABILITY}
@@ -2310,24 +2310,48 @@ focus_tree = {
 	focus = {
 		id = GER_endsieg_1
  		icon = GFX_focus_GER_volkssturm
-		prerequisite = { focus = GER_anschluss }
+		prerequisite = { focus = GER_danzig_or_war }
 		x = -3
 		y = 3
 		relative_position_id = GER_anschluss
 		available = {
+			GER = { has_war_with = SOV }
+			POL = { has_capitulated = yes }
+			EFR = { has_country_flag = vichy_france_established }
 			OR = {
-				NOT = { controls_state = 14 } 
-				NOT = { controls_state = 10 }
+				any_state = {
+					OR = {
+						is_core_of = GER
+						#POL
+						state = 98
+						state = 10
+						state = 92
+						state = 88
+						#DDAY
+						state = 31
+						state = 25
+						state = 33
+						state = 24
+						state = 16
+						state = 785
+						state = 34
+					}
+					controller = { has_war_with = GER }
+				}
+				any_country = {
+					is_in_faction_with = GER
+					surrender_progress > 0.1
+				}
 			}
-			GER = { has_war_with = SOV }				
 		}
 		cost = 1 
 		completion_reward = {
 			hidden_effect = {
 				GER = { Endsieg_Tanks_spawn_ins = yes }
-			}			
+			}
+			custom_effect_tooltip = GER_endsieg_1_tt
 		}
-				}
+	}
 	focus = {
 		id = GER_endsieg_2
 		icon = GFX_focus_GER_endsieg
