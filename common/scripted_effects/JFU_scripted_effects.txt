@@ -2713,8 +2713,7 @@ pregrinded_effect = {
 		ENG_william_slim = {
 			add_unit_leader_trait = pre_grinded
 			add_unit_leader_trait = expert_improviser
-			add_unit_leader_trait = trait_engineer
-			add_unit_leader_trait = trait_mountaineer
+			add_unit_leader_trait = hill_fighter
 			add_unit_leader_trait = infantry_expert	
 			add_unit_leader_trait = infantry_leader	
 		}
@@ -3048,15 +3047,13 @@ JFU_update_generals = {
 		}
 		ENG_alan_cunningham = {
 			add_unit_leader_trait = trait_engineer
-            add_unit_leader_trait = fortress_buster
-			add_unit_leader_trait = infantry_leader
-			add_unit_leader_trait = hill_fighter
-			add_unit_leader_trait = naval_invader			
+            add_unit_leader_trait = fortress_buster		
 		}
 		ENG_alan_cunningham = {
 			add_unit_leader_trait = thorough_planner
 		}
 		ENG_william_slim = {
+			add_unit_leader_trait = trait_mountaineer
 			add_unit_leader_trait = expert_improviser
 			add_unit_leader_trait = trait_engineer
 			add_unit_leader_trait = fortress_buster
