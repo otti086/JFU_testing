@@ -2,6 +2,13 @@
 
 
 JFU_decisions = {
+	#	 ██████╗ ███████╗██████╗ 
+	#	██╔════╝ ██╔════╝██╔══██╗
+	#	██║  ███╗█████╗  ██████╔╝
+	#	██║   ██║██╔══╝  ██╔══██╗
+	#	╚██████╔╝███████╗██║  ██║
+	#	 ╚═════╝ ╚══════╝╚═╝  ╚═╝
+
 	"Artillery bonus" = {
 		icon = ger_reichskommissariats
 		fire_only_once = yes		
@@ -327,177 +334,7 @@ JFU_decisions = {
 			}
 		}		
 	}
-	"Attack Finland" = {
-		icon = generic_operation
-		fire_only_once = yes
-		allowed = { tag = SOV }
-		available = { GER = { has_completed_focus = GER_mol_rib_pact } }
-		cost = 0
-		complete_effect = {
-			if = {
-				limit = {
-					NOT = {
-						OR = {
-							has_game_rule = {
-								rule = JFU_pre_grinded_generals
-								option = PRE_GRINDED_GENERALS_ON
-							}
-							has_game_rule = {
-								rule = JFU_pre_sets
-								option = COMPETITIVE_JFU
-							}	
-						}
-					}
-				}
-				declare_war_on = {
-					target = FIN
-					type = annex_everything
-				}				
-			}
-			if = {
-				limit = {
-					OR = {
-						has_game_rule = {
-							rule = JFU_pre_grinded_generals
-							option = PRE_GRINDED_GENERALS_ON
-						}
-						has_game_rule = {
-							rule = JFU_pre_sets
-							option = COMPETITIVE_JFU
-						}
-					}
 
-				}
-				SOV = {
-					transfer_state = 147
-					transfer_state = 146
-				}
-			}
-		}
-	}
-	"Operation Icebreaker" = {
-		icon = generic_operation
-		fire_only_once = yes
-		allowed = { tag =  SOV }
-		available = {
-			NOT = { has_war_with = GER}
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = JFU_pre_sets 
-						option = JFU_ALTERNATIVE_GS2
-					}					
-				}
-				OR = {
-					date > 1942.6.1
-					AND = {
-						date > 1942.1.1
-						NOT = {
-							ENG = { controls_state = 126 }
-						}						
-					}
-				}				
-			}
-			else = {
-				OR = { 
-					date > 1942.1.1
-					NOT = {
-						AND = {
-							ENG = { controls_state = 119 }
-							ENG = { controls_state = 120 }
-							ENG = { controls_state = 121 }
-							ENG = { controls_state = 122 }
-							ENG = { controls_state = 123 }
-							ENG = { controls_state = 125 }
-							ENG = { controls_state = 126 }
-							ENG = { controls_state = 127 }
-							ENG = { controls_state = 128 }
-							ENG = { controls_state = 129 }
-							ENG = { controls_state = 130 }
-							ENG = { controls_state = 131 }
-							ENG = { controls_state = 132 }
-							ENG = { controls_state = 133 }
-							ENG = { controls_state = 136 }
-							ENG = { controls_state = 338 }
-						} 
-					}
-				}
-			} 
-		}
-		cost = 0
-		complete_effect = {
-			declare_war_on = {
-				target = GER
-				type = annex_everything
-			}
-			hidden_effect = {
-				if = { 
-					limit = { country_exists = SPR }
-					declare_war_on = {
-						target = SPR
-						type = annex_everything
-					}	 
-				} 
-				if = { 
-					limit = { country_exists = HUN }
-					declare_war_on = {
-						target = HUN
-						type = annex_everything
-					}	 
-				} 
-				if = { 
-					limit = { country_exists = ROM }
-					declare_war_on = {
-						target = ROM
-						type = annex_everything
-					}	 
-				} 
-				if = { 
-					limit = { country_exists = BUL }
-					declare_war_on = {
-						target = BUL
-						type = annex_everything
-					}	 
-				} 
-			}
-		}
-	}
-	"Uk Fighter Modules" = {
-		icon = generic_operation
-		fire_only_once = yes
-		allowed = { OR = { tag = SOV tag = USA } }
-		available = { 
-			ENG = {
-				has_tech = survivability_studies
-				has_tech = range_improvements
-				has_tech = aa_hmg
-			}  
-		}
-		cost = 0
-		complete_effect = {
-			set_technology = {
-				survivability_studies = 1
-				range_improvements = 1
-				aa_hmg = 1
-			}
-		}		
-	}
-	"Uk Engines III" = {
-		icon = generic_operation
-		fire_only_once = yes
-		allowed = { OR = { tag = SOV tag = USA } }
-		available = { 
-			ENG = {
-				has_tech = engines_3
-			}  
-		}
-		cost = 0
-		complete_effect = {
-			set_technology = {
-				engines_3 = 1
-			}
-		}	
-	}
 	"Italy Fighter Modules" = {
 		icon = generic_operation
 		fire_only_once = yes
@@ -534,216 +371,15 @@ JFU_decisions = {
 			}
 		}	
 	}
-	"Attack china" = {
-		icon = generic_operation
-		fire_only_once = yes
-		allowed = { tag = JAP }
-		available = { has_completed_focus = JAP_intervene_in_china  }
-		cost = 0
-		complete_effect = {
-			declare_war_on = {
-			target = CHI 
-			type = annex_everything
-			}
-			if = { limit = { country_exists = MAN }	MAN = { add_to_war = { targeted_alliance = JAP enemy = CHI } } }
-			add_ideas = JAP_intervene_in_china_5
-			unlock_decision_tooltip = JAP_china_step_up_war_effort
-			hidden_effect = {
-				country_event = { days = 5 id = news.1 }
-				USA = { country_event = { id = panay_incident.1 days = 60 }}
-			}
-			USA = { set_country_flag = { flag = USA_china_window days = 60 value = 1 } }
-			if = {
-				limit = {
-					has_country_leader = { id = 700 ruling_only = yes }
-				}
-				remove_country_leader_trait = imperial_sanction
-			}
-		}
 
-	}
-	"Exploit the southern resource Area" = {
-		icon = generic_operation
-		fire_only_once = yes
-		allowed = { tag = JAP }
-		available = {
-			OR = {
-				has_full_control_of_state = 333
-				has_full_control_of_state = 672
-				has_full_control_of_state = 334
-			}
-			has_full_control_of_state = 336
-			has_full_control_of_state = 671
-		}
-		complete_effect = {
-			336 = {
-				add_resource = {
-					type = aluminium
-					amount = 24
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			333 = {
-				if = {
-					limit = { is_fully_controlled_by = ROOT }
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			672 = {
-				if = {
-					limit = { is_fully_controlled_by = ROOT }
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			334 = {
-				if = {
-					limit = { is_fully_controlled_by = ROOT }
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			671 = {
-				add_resource = {
-					type = aluminium
-					amount = 12
-				}
-			}
-			if = {
-				limit = { has_dlc = "Waking the Tiger" }
-				unlock_decision_category_tooltip = prospect_for_resources
-			}
-		}
-	}
-	"Annex Siam" = {
-		icon = generic_operation
-		fire_only_once = yes
-		allowed = { tag = JAP}
-		available = { SIA = { is_ai = yes } }
-		cost = 0
-		complete_effect = {
-			hidden_effect = { 
-				every_state = {
-					limit = {
-						is_core_of = SIA
-					}
-				add_core_of = JAP
-				}
-			}
-			annex_country = { target = SIA transfer_troops = yes }
-			country_event = { id = JFU_events.1 hours = 1} 
-		}
-	}
-	"Annex Manchu" = {
-		icon = generic_operation
-		fire_only_once = yes
-		allowed = { tag = JAP }
-		available = { MAN = { is_ai = yes } }
-		cost = 0
-		available = {	date < 1937.1.1	} 
-		complete_effect = {
-			hidden_effect = { 
-				every_state = {
-					limit = {
-						is_core_of = MAN
-					}
-				add_core_of = JAP
-				}
-			}
-			annex_country = { target = MAN transfer_troops = yes }
-		}
-	}
-	"Give China to Manchu" = {
-		icon = border_war
-		allowed = {	original_tag = JAP	}
-		visible = {	country_exists = CHI country_exists = MAN }
-		fire_only_once = no
-		complete_effect = {
-			if = { limit = { NOT = { has_country_flag = MAN_GETS_CHINA }}  set_country_flag = MAN_GETS_CHINA}
-			else = { clr_country_flag = MAN_GETS_CHINA }
-		}
-	}
-	"Annex New Zealand" = {
-		icon = generic_operation
-		fire_only_once = yes
-		allowed = { tag = AST }
-		available = { NZL = { is_ai = yes } }
-		cost = 0
-		complete_effect = {
-			hidden_effect = { 
-				every_state = {
-					limit = {
-							is_core_of = NZL
-					}
-				
-				add_core_of = AST
-				}
-			}
-			annex_country = { target = NZL transfer_troops = yes }			
-		}
-	}
-	"Annex South Africa" = {
-		icon = generic_operation
-		fire_only_once = yes
-		allowed = { tag = CAN }
-		available = { SAF = { is_ai = yes } }
-		visible = {
-		}
-		cost = 0
-		complete_effect = {
-			hidden_effect = { 
-				every_state = {
-					limit = {
-							is_core_of = SAF
-					}
-				
-				add_core_of = CAN
-				}
-			}
-			annex_country = { target = SAF transfer_troops = yes }
+	#	██╗████████╗ █████╗ 
+	#	██║╚══██╔══╝██╔══██╗
+	#	██║   ██║   ███████║
+	#	██║   ██║   ██╔══██║
+	#	██║   ██║   ██║  ██║
+	#	╚═╝   ╚═╝   ╚═╝  ╚═╝
+	
 
-		}
-	}
-	"Annex Bulgaria" = {
-		icon = generic_operation
-		fire_only_once = yes
-		allowed = { tag = ROM }
-		cost = 0
-		available = { BUL = { is_ai = yes } date > 1938.1.1 }
-		complete_effect = {
-			hidden_effect = {
-				ROM = { add_state_core = 211 add_state_core = 801 add_state_core = 212 add_state_core = 48}
-			}
-			annex_country = { target = BUL transfer_troops = yes }
-		}
-	}
-	"Annex Bulgaria ITA" = {
-		icon = generic_operation
-		fire_only_once = yes
-		allowed = { tag = ITA }
-		cost = 0
-		available = {BUL = { is_ai = yes } date > 1938.1.1 }
-		complete_effect = {
-			hidden_effect = {
-				ITA = { add_state_core = 211 add_state_core = 801 add_state_core = 212 add_state_core = 48}
-			}
-			annex_country = { target = BUL transfer_troops = yes }
-		}
-	}	
 	"Attack Yugoslavia" = {
 		icon = generic_operation
 		fire_only_once = yes
@@ -983,6 +619,495 @@ JFU_decisions = {
 			}
 		}	
 	}
+	women_in_the_workforce_ITA = {
+
+		icon = generic_industry
+
+        allowed = {
+            always = yes
+        }
+
+        available = {
+            tag = ITA
+            has_idea = tot_economic_mobilisation
+        }
+        visible = {
+			tag = ITA
+            has_war = yes
+        }
+        cost = 100
+        days_remove = -1
+        remove_trigger = {
+        	OR = {
+            	not = { has_idea = tot_economic_mobilisation }
+            }
+        }
+        modifier = {
+            conscription = 0.03
+            stability_factor = -0.05
+        }
+        ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 3
+				has_manpower < 100000
+			}
+		}
+		complete_effect = {
+        }
+   	}
+
+	#	███████╗██████╗ ██████╗ 
+	#	██╔════╝██╔══██╗██╔══██╗
+	#	███████╗██████╔╝██████╔╝
+	#	╚════██║██╔═══╝ ██╔══██╗
+	#	███████║██║     ██║  ██║
+	#	╚══════╝╚═╝     ╚═╝  ╚═╝
+	
+	"Mechanised Bonus" = {
+		icon = generic_operation
+		fire_only_once = yes
+		allowed = { tag = SPR }
+		available = { date > 1937.1.1}
+		visible = {
+			has_game_rule = {
+				rule = JFU_pre_sets 
+				option = COMPETITIVE_JFU
+			}	
+			FIN = { is_ai = yes}	
+		}
+		cost = 0
+		complete_effect = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				ahead_reduction = 2
+				uses = 1
+				category = motorized_equipment
+			}
+			army_experience = 100
+		}	
+	}
+
+	#	     ██╗ █████╗ ██████╗ 
+	#	     ██║██╔══██╗██╔══██╗
+	#	     ██║███████║██████╔╝
+	#	██   ██║██╔══██║██╔═══╝ 
+	#	╚█████╔╝██║  ██║██║     
+	#	 ╚════╝ ╚═╝  ╚═╝╚═╝     
+
+	"Attack china" = {
+		icon = generic_operation
+		fire_only_once = yes
+		allowed = { tag = JAP }
+		available = { has_completed_focus = JAP_intervene_in_china  }
+		cost = 0
+		complete_effect = {
+			declare_war_on = {
+			target = CHI 
+			type = annex_everything
+			}
+			if = { limit = { country_exists = MAN }	MAN = { add_to_war = { targeted_alliance = JAP enemy = CHI } } }
+			add_ideas = JAP_intervene_in_china_5
+			unlock_decision_tooltip = JAP_china_step_up_war_effort
+			hidden_effect = {
+				country_event = { days = 5 id = news.1 }
+				USA = { country_event = { id = panay_incident.1 days = 60 }}
+			}
+			USA = { set_country_flag = { flag = USA_china_window days = 60 value = 1 } }
+			if = {
+				limit = {
+					has_country_leader = { id = 700 ruling_only = yes }
+				}
+				remove_country_leader_trait = imperial_sanction
+			}
+		}
+	}
+	"Exploit the southern resource Area" = {
+		icon = generic_operation
+		fire_only_once = yes
+		allowed = { tag = JAP }
+		available = {
+			OR = {
+				has_full_control_of_state = 333
+				has_full_control_of_state = 672
+				has_full_control_of_state = 334
+			}
+			has_full_control_of_state = 336
+			has_full_control_of_state = 671
+		}
+		complete_effect = {
+			336 = {
+				add_resource = {
+					type = aluminium
+					amount = 24
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			333 = {
+				if = {
+					limit = { is_fully_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			672 = {
+				if = {
+					limit = { is_fully_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			334 = {
+				if = {
+					limit = { is_fully_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			671 = {
+				add_resource = {
+					type = aluminium
+					amount = 12
+				}
+			}
+			if = {
+				limit = { has_dlc = "Waking the Tiger" }
+				unlock_decision_category_tooltip = prospect_for_resources
+			}
+		}
+	}
+	"Annex Siam" = {
+		icon = generic_operation
+		fire_only_once = yes
+		allowed = { tag = JAP}
+		available = { SIA = { is_ai = yes } }
+		cost = 0
+		complete_effect = {
+			hidden_effect = { 
+				every_state = {
+					limit = {
+						is_core_of = SIA
+					}
+				add_core_of = JAP
+				}
+			}
+			annex_country = { target = SIA transfer_troops = yes }
+			country_event = { id = JFU_events.1 hours = 1} 
+		}
+	}
+	"Annex Manchu" = {
+		icon = generic_operation
+		fire_only_once = yes
+		allowed = { tag = JAP }
+		available = { MAN = { is_ai = yes } }
+		cost = 0
+		available = {	date < 1937.1.1	} 
+		complete_effect = {
+			hidden_effect = { 
+				every_state = {
+					limit = {
+						is_core_of = MAN
+					}
+				add_core_of = JAP
+				}
+			}
+			annex_country = { target = MAN transfer_troops = yes }
+		}
+	}
+	"Give China to Manchu" = {
+		icon = border_war
+		allowed = {	original_tag = JAP	}
+		visible = {	country_exists = CHI country_exists = MAN }
+		fire_only_once = no
+		complete_effect = {
+			if = { limit = { NOT = { has_country_flag = MAN_GETS_CHINA }}  set_country_flag = MAN_GETS_CHINA}
+			else = { clr_country_flag = MAN_GETS_CHINA }
+		}
+	}
+	"Join the Axis" = {
+		icon = generic_operation
+		fire_only_once = yes
+		allowed = { tag = JAP }
+		available = { has_war_with = ENG NOT = { is_in_faction = yes}}
+		visible = {
+			has_game_rule = {
+				rule = JFU_pre_sets 
+				option = JFU_ALTERNATIVE_GS2
+			}			
+		}
+		complete_effect = {
+			GER = {
+				add_to_faction = JAP
+				if = {
+					limit = {
+						MAN = { is_ai = no }
+					}
+				add_to_faction = MAN
+				}
+				if = {
+					limit = {
+						SIA = { is_ai = no }
+					}
+				add_to_faction = SIA
+				}
+			}
+		
+		}		
+	}
+
+	#	███████╗ ██████╗ ██╗   ██╗
+	#	██╔════╝██╔═══██╗██║   ██║
+	#	███████╗██║   ██║██║   ██║
+	#	╚════██║██║   ██║╚██╗ ██╔╝
+	#	███████║╚██████╔╝ ╚████╔╝ 
+	#	╚══════╝ ╚═════╝   ╚═══╝  
+	"Attack Finland" = {
+		icon = generic_operation
+		fire_only_once = yes
+		allowed = { tag = SOV }
+		available = { GER = { has_completed_focus = GER_mol_rib_pact } }
+		cost = 0
+		complete_effect = {
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							has_game_rule = {
+								rule = JFU_pre_grinded_generals
+								option = PRE_GRINDED_GENERALS_ON
+							}
+							has_game_rule = {
+								rule = JFU_pre_sets
+								option = COMPETITIVE_JFU
+							}	
+						}
+					}
+				}
+				declare_war_on = {
+					target = FIN
+					type = annex_everything
+				}				
+			}
+			if = {
+				limit = {
+					OR = {
+						has_game_rule = {
+							rule = JFU_pre_grinded_generals
+							option = PRE_GRINDED_GENERALS_ON
+						}
+						has_game_rule = {
+							rule = JFU_pre_sets
+							option = COMPETITIVE_JFU
+						}
+					}
+
+				}
+				SOV = {
+					transfer_state = 147
+					transfer_state = 146
+				}
+			}
+		}
+	}
+	"Operation Icebreaker" = {
+		icon = generic_operation
+		fire_only_once = yes
+		allowed = { tag =  SOV }
+		available = {
+			NOT = { has_war_with = GER}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = JFU_pre_sets 
+						option = JFU_ALTERNATIVE_GS2
+					}					
+				}
+				OR = {
+					date > 1942.6.1
+					AND = {
+						date > 1942.1.1
+						NOT = {
+							ENG = { controls_state = 126 }
+						}						
+					}
+				}				
+			}
+			else = {
+				OR = { 
+					date > 1942.1.1
+					NOT = {
+						AND = {
+							ENG = { controls_state = 119 }
+							ENG = { controls_state = 120 }
+							ENG = { controls_state = 121 }
+							ENG = { controls_state = 122 }
+							ENG = { controls_state = 123 }
+							ENG = { controls_state = 125 }
+							ENG = { controls_state = 126 }
+							ENG = { controls_state = 127 }
+							ENG = { controls_state = 128 }
+							ENG = { controls_state = 129 }
+							ENG = { controls_state = 130 }
+							ENG = { controls_state = 131 }
+							ENG = { controls_state = 132 }
+							ENG = { controls_state = 133 }
+							ENG = { controls_state = 136 }
+							ENG = { controls_state = 338 }
+						} 
+					}
+				}
+			} 
+		}
+		cost = 0
+		complete_effect = {
+			declare_war_on = {
+				target = GER
+				type = annex_everything
+			}
+			hidden_effect = {
+				if = { 
+					limit = { country_exists = SPR }
+					declare_war_on = {
+						target = SPR
+						type = annex_everything
+					}	 
+				} 
+				if = { 
+					limit = { country_exists = HUN }
+					declare_war_on = {
+						target = HUN
+						type = annex_everything
+					}	 
+				} 
+				if = { 
+					limit = { country_exists = ROM }
+					declare_war_on = {
+						target = ROM
+						type = annex_everything
+					}	 
+				} 
+				if = { 
+					limit = { country_exists = BUL }
+					declare_war_on = {
+						target = BUL
+						type = annex_everything
+					}	 
+				} 
+			}
+		}
+	}
+	SOV_END_WINTER_WAR = {
+
+		icon = generic_operation
+
+		allowed = { tag = SOV }
+
+		visible = {
+			AND = {
+				SOV = { has_war_with = FIN }
+				NOT = {
+					GER = { has_war_with = SOV}
+				}
+				FIN = { is_ai = no}
+			}
+		}
+		icon = generic_operation
+
+		available = { 			
+			has_war_with = FIN
+		}
+		days_mission_timeout = 120
+
+		fire_only_once = yes
+
+		activation = {
+			SOV = { has_war_with = FIN}
+		}
+
+		cancel_trigger = {
+		}
+
+		remove_effect = {
+		}
+
+		complete_effect = {
+		}
+
+		timeout_effect = {
+			SOV = { 
+				white_peace = {
+					tag = FIN 
+					message = FIN_agree_peace 
+				} 
+			}
+		}
+	}
+
+	# ███████╗ ██████╗ ██╗   ██╗    ██╗   ██╗███████╗ █████╗ 
+	# ██╔════╝██╔═══██╗██║   ██║    ██║   ██║██╔════╝██╔══██╗
+	# ███████╗██║   ██║██║   ██║    ██║   ██║███████╗███████║
+	# ╚════██║██║   ██║╚██╗ ██╔╝    ██║   ██║╚════██║██╔══██║
+	# ███████║╚██████╔╝ ╚████╔╝     ╚██████╔╝███████║██║  ██║
+	# ╚══════╝ ╚═════╝   ╚═══╝       ╚═════╝ ╚══════╝╚═╝  ╚═╝
+
+	"Uk Fighter Modules" = {
+		icon = generic_operation
+		fire_only_once = yes
+		allowed = { OR = { tag = SOV tag = USA } }
+		available = { 
+			ENG = {
+				has_tech = survivability_studies
+				has_tech = range_improvements
+				has_tech = aa_hmg
+			}  
+		}
+		cost = 0
+		complete_effect = {
+			set_technology = {
+				survivability_studies = 1
+				range_improvements = 1
+				aa_hmg = 1
+			}
+		}		
+	}
+	"Uk Engines III" = {
+		icon = generic_operation
+		fire_only_once = yes
+		allowed = { OR = { tag = SOV tag = USA } }
+		available = { 
+			ENG = {
+				has_tech = engines_3
+			}  
+		}
+		cost = 0
+		complete_effect = {
+			set_technology = {
+				engines_3 = 1
+			}
+		}	
+	}
+
+	#	██╗   ██╗███████╗ █████╗ 
+	#	██║   ██║██╔════╝██╔══██╗
+	#	██║   ██║███████╗███████║
+	#	██║   ██║╚════██║██╔══██║
+	#	╚██████╔╝███████║██║  ██║
+	#	 ╚═════╝ ╚══════╝╚═╝  ╚═╝
+	
 	send_air_to_eng = {
 	
 		icon = GFX_decision_generic_air
@@ -1052,35 +1177,6 @@ JFU_decisions = {
 				}
 				clr_country_flag = ENG_air_LL
 			}
-		}	
-	}
-	"Operation Torch" = {  
-	    icon = generic_civil_support 
-        allowed = {   original_tag = ENG    }
-        cost = 0 
-        fire_only_once = yes 
-		available = {
-			date > 1941.9.1
-		}
-		complete_effect = { 
-			hidden_effect = {
-				EFR = { every_owned_state = { set_demilitarized_zone = no }}
-				GER = { add_to_faction = EFR }
-				EFR = { add_to_war = { targeted_alliance = GER enemy = ENG } }
-				USA = { country_event = { id = usa.996  days = 0 }  }
-				GER = {
-					if = {
-						limit = { 
-							EFR = { is_ai = yes }
-						}
-						EFR = { 
-							every_core_state = { transfer_state_to = GER }
-						}
-					}
-				}
-			}
-			news_event = { id = news.5001 }
-
 		}	
 	}
 	"Join the Allies" = {
@@ -1202,7 +1298,7 @@ JFU_decisions = {
 				MEX = { add_to_war = { targeted_alliance = ENG enemy = GER } }
 			}
 		}
-	}	
+	}
 	"Attack Japan" = {
 		icon = generic_operation
 		fire_only_once = yes
@@ -1238,6 +1334,44 @@ JFU_decisions = {
 			}
 		}
 	}
+	
+	#	███████╗███╗   ██╗ ██████╗ 
+	#	██╔════╝████╗  ██║██╔════╝ 
+	#	█████╗  ██╔██╗ ██║██║  ███╗
+	#	██╔══╝  ██║╚██╗██║██║   ██║
+	#	███████╗██║ ╚████║╚██████╔╝
+	#	╚══════╝╚═╝  ╚═══╝ ╚═════╝ 
+	
+	"Operation Torch" = {  
+	    icon = generic_civil_support 
+        allowed = {   original_tag = ENG    }
+        cost = 0 
+        fire_only_once = yes 
+		available = {
+			date > 1941.9.1
+		}
+		complete_effect = { 
+			hidden_effect = {
+				EFR = { every_owned_state = { set_demilitarized_zone = no }}
+				GER = { add_to_faction = EFR }
+				EFR = { add_to_war = { targeted_alliance = GER enemy = ENG } }
+				USA = { country_event = { id = usa.996  days = 0 }  }
+				GER = {
+					if = {
+						limit = { 
+							EFR = { is_ai = yes }
+						}
+						EFR = { 
+							every_core_state = { transfer_state_to = GER }
+						}
+					}
+				}
+			}
+			news_event = { id = news.5001 }
+
+		}	
+	}
+	
 	"Support France" = {
 		icon = eng_install_government
 		allowed = { original_tag = ENG }
@@ -1276,65 +1410,6 @@ JFU_decisions = {
 			JFU_update_generals = yes
 		}				
 	}
-	SOV_END_WINTER_WAR = {
-
-		icon = generic_operation
-
-		allowed = { tag = SOV }
-
-		visible = {
-			AND = {
-				SOV = { has_war_with = FIN }
-				NOT = {
-					GER = { has_war_with = SOV}
-				}
-				FIN = { is_ai = no}
-			}
-		}
-		icon = generic_operation
-
-		available = { 			
-			has_war_with = FIN
-		}
-		days_mission_timeout = 120
-
-		fire_only_once = yes
-
-		activation = {
-			SOV = { has_war_with = FIN}
-		}
-
-		cancel_trigger = {
-		}
-
-		remove_effect = {
-		}
-
-		complete_effect = {
-		}
-
-		timeout_effect = {
-			SOV = { 
-				white_peace = {
-					tag = FIN 
-					message = FIN_agree_peace 
-				} 
-			}
-		}
-	}
-	"Annex Ireland" = {
-		icon = generic_operation
-		fire_only_once = yes
-		allowed = { tag = ENG }
-		available = { IRE = { is_ai = yes } date > 1939.9.1}
-		cost = 0
-		complete_effect = {
-			hidden_effect = {
-				ENG = { add_state_core = 113 add_state_core = 134 add_state_core = 135 }
-			}
-			annex_country = { target = IRE }		
-		}		
-	}
 	"Operation Countenance" = {
 		icon = generic_operation
 		fire_only_once = yes
@@ -1368,99 +1443,97 @@ JFU_decisions = {
 			}
 		}
 	}
-	"Mechanised Bonus" = {
+
+	#	 █████╗ ███╗   ██╗███╗   ██╗███████╗██╗  ██╗
+	#	██╔══██╗████╗  ██║████╗  ██║██╔════╝╚██╗██╔╝
+	#	███████║██╔██╗ ██║██╔██╗ ██║█████╗   ╚███╔╝ 
+	#	██╔══██║██║╚██╗██║██║╚██╗██║██╔══╝   ██╔██╗ 
+	#	██║  ██║██║ ╚████║██║ ╚████║███████╗██╔╝ ██╗
+	#	╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝
+
+	"Annex New Zealand" = {
 		icon = generic_operation
 		fire_only_once = yes
-		allowed = { tag = SPR }
-		available = { date > 1937.1.1}
+		allowed = { tag = AST }
+		available = { NZL = { is_ai = yes } }
+		cost = 0
+		complete_effect = {
+			hidden_effect = { 
+				every_state = {
+					limit = {
+							is_core_of = NZL
+					}
+				
+				add_core_of = AST
+				}
+			}
+			annex_country = { target = NZL transfer_troops = yes }			
+		}
+	}
+	"Annex South Africa" = {
+		icon = generic_operation
+		fire_only_once = yes
+		allowed = { tag = CAN }
+		available = { SAF = { is_ai = yes } }
 		visible = {
-			has_game_rule = {
-				rule = JFU_pre_sets 
-				option = COMPETITIVE_JFU
-			}	
-			FIN = { is_ai = yes}	
 		}
 		cost = 0
 		complete_effect = {
-			add_tech_bonus = {
-				name = motorized_bonus
-				ahead_reduction = 2
-				uses = 1
-				category = motorized_equipment
+			hidden_effect = { 
+				every_state = {
+					limit = {
+							is_core_of = SAF
+					}
+				
+				add_core_of = CAN
+				}
 			}
-			army_experience = 100
-		}	
+			annex_country = { target = SAF transfer_troops = yes }
+
+		}
 	}
-	"Join the Axis" = {
+	"Annex Bulgaria" = {
 		icon = generic_operation
 		fire_only_once = yes
-		allowed = { tag = JAP }
-		available = { has_war_with = ENG NOT = { is_in_faction = yes}}
-		visible = {
-			has_game_rule = {
-				rule = JFU_pre_sets 
-				option = JFU_ALTERNATIVE_GS2
-			}			
-		}
+		allowed = { tag = ROM }
+		cost = 0
+		available = { BUL = { is_ai = yes } date > 1938.1.1 }
 		complete_effect = {
-			GER = {
-				add_to_faction = JAP
-				if = {
-					limit = {
-						MAN = { is_ai = no }
-					}
-				add_to_faction = MAN
-				}
-				if = {
-					limit = {
-						SIA = { is_ai = no }
-					}
-				add_to_faction = SIA
-				}
+			hidden_effect = {
+				ROM = { add_state_core = 211 add_state_core = 801 add_state_core = 212 add_state_core = 48}
 			}
-		
+			annex_country = { target = BUL transfer_troops = yes }
+		}
+	}
+	"Annex Bulgaria ITA" = {
+		icon = generic_operation
+		fire_only_once = yes
+		allowed = { tag = ITA }
+		cost = 0
+		available = {BUL = { is_ai = yes } date > 1938.1.1 }
+		complete_effect = {
+			hidden_effect = {
+				ITA = { add_state_core = 211 add_state_core = 801 add_state_core = 212 add_state_core = 48}
+			}
+			annex_country = { target = BUL transfer_troops = yes }
+		}
+	}
+	"Annex Ireland" = {
+		icon = generic_operation
+		fire_only_once = yes
+		allowed = { tag = ENG }
+		available = { IRE = { is_ai = yes } date > 1939.9.1}
+		cost = 0
+		complete_effect = {
+			hidden_effect = {
+				ENG = { add_state_core = 113 add_state_core = 134 add_state_core = 135 }
+			}
+			annex_country = { target = IRE }		
 		}		
 	}
-	women_in_the_workforce_ITA = {
-
-		icon = generic_industry
-
-        allowed = {
-            always = yes
-        }
-
-        available = {
-            tag = ITA
-            has_idea = tot_economic_mobilisation
-        }
-        visible = {
-			tag = ITA
-            has_war = yes
-        }
-        cost = 100
-        days_remove = -1
-        remove_trigger = {
-        	OR = {
-            	not = { has_idea = tot_economic_mobilisation }
-            }
-        }
-        modifier = {
-            conscription = 0.03
-            stability_factor = -0.05
-        }
-        ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 3
-				has_manpower < 100000
-			}
-		}
-		complete_effect = {
-        }
-   }	
 }
 JFU_Templates_decision = {
+	
 	"TANK Template" = {
 		icon = generic_operation
 		fire_only_once = yes
