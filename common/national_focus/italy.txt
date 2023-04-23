@@ -1078,7 +1078,7 @@ focus_tree = {
 		id = ITA_litoranea_balbo
 		icon = GFX_focus_generic_improve_roads
 		prerequisite = { focus = ITA_regional_development }
-
+		text = "Litoranea Balbo"
 		x = -3
 		y = 1
 		relative_position_id = ITA_regional_development
@@ -3163,7 +3163,7 @@ focus_tree = {
 		id = ITA_moschettieri_del_duce
 		icon = GFX_focus_ITA_moschettieri_del_duce
 		prerequisite = { focus = ITA_preserve_army_traditions }
-
+		text = "Moschettieri del duce"
 		x = 0
 		y = 2
 		relative_position_id = ITA_preserve_army_traditions
