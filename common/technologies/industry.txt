@@ -755,7 +755,14 @@ technologies = {
 			building = fuel_silo
 			level = 3
 		}
-				
+		path = {
+			leads_to_tech = naldo 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = johannes
+			research_cost_coeff = 1
+		}		
 		path = {
 			leads_to_tech = synth_oil_experiments 
 			research_cost_coeff = 1
@@ -843,6 +850,124 @@ technologies = {
 				date < "1938.1.1"
 			}
 		}
+	}
+
+	johannes = {
+
+		
+		
+		research_cost = 0
+		start_year = 1936
+		folder = {
+			name = industry_folder
+			position = { x = -2 y = 0 }
+		}
+		
+		categories = {
+			
+		}
+
+		
+		XOR = {
+			naldo
+		}
+		
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+			modifier = {
+				is_major = no
+				factor = 0.25
+			}
+			modifier = {
+				factor = 1.5
+				num_of_military_factories > 10
+			}	
+			modifier = {
+				factor = 1.5
+				num_of_military_factories > 20
+			}	
+			modifier = {
+				factor = 1.5
+				num_of_military_factories > 30
+			}	
+
+			modifier = {
+				factor = 1.5
+				num_of_naval_factories > 10
+			}	
+			modifier = {
+				factor = 1.5
+				num_of_naval_factories > 20
+			}	
+			modifier = {
+				factor = 1.5
+				num_of_naval_factories > 30
+			}
+		}
+		
+	}
+
+	naldo = {
+
+		
+		
+		research_cost = 0
+		start_year = 1936
+		folder = {
+			name = industry_folder
+			position = { x = -4 y = 0 }
+		}
+		
+		categories = {
+			
+		}
+
+		
+		XOR = {
+			johannes
+		}
+		
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+			modifier = {
+				is_major = no
+				factor = 0.25
+			}
+			modifier = {
+				factor = 1.5
+				num_of_military_factories > 10
+			}	
+			modifier = {
+				factor = 1.5
+				num_of_military_factories > 20
+			}	
+			modifier = {
+				factor = 1.5
+				num_of_military_factories > 30
+			}	
+
+			modifier = {
+				factor = 1.5
+				num_of_naval_factories > 10
+			}	
+			modifier = {
+				factor = 1.5
+				num_of_naval_factories > 20
+			}	
+			modifier = {
+				factor = 1.5
+				num_of_naval_factories > 30
+			}
+		}
+		
 	}
 
 	fuel_refining = {
