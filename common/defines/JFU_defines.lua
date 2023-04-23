@@ -23,8 +23,11 @@ NDefines.NCountry.BASE_FUEL_CAPACITY = 100000
 NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 200
 NDefines.NCountry.SPECIAL_FORCES_CAP_BASE = 0.1
 NDefines.NCountry.SCORCHED_EARTH_STATE_COST = 999	
-NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 20.0
-NDefines.NCountry.REINFORCEMENT_MANPOWER_CHUNK = 0.2				-- Chunk size of manpower reinforcement delivery, in % of total manpower needed by the template.
+NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 80.0      -- vanilla 10 Modifier for army manpower reinforcement delivery speed (travel time)
+NDefines.NCountry.REINFORCEMENT_MANPOWER_CHUNK = 0.5				-- Chunk size of manpower reinforcement delivery, in % of total manpower needed by the template.
+NDefines.NCountry.EQUIPMENT_UPGRADE_CHUNK_MAX_SIZE = 50			-- vanilla 10  Maximum chunk size of equipment upgrade distribution per update.
+NDefines.NMilitary.REINFORCEMENT_REQUEST_MAX_WAITING_DAYS = 7   -- Every X days the equipment will be sent, regardless if still didn't produced all that has been requested.
+NDefines.NMilitary.REINFORCEMENT_REQUEST_DAYS_FREQUENCY = 4	   -- How many days must pass until we may give another reinforcement request
 NDefines.NCountry.WAR_SUPPORT_DEFENSIVE_WAR = 0.3				--vanilla 0.2 Impact of being in defensive war
 NDefines.NCountry.AIR_SUPPLY_CONVERSION_SCALE = 0.01
 

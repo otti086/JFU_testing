@@ -1886,6 +1886,15 @@ give_SOV_armor_research_bonuses = { #this effect is run for the Soviets!
 	}
 }
 pregrinded_effect = {
+	every_country = {
+		limit = {
+			OR = {
+				allies = yes
+				axis = yes
+			}
+		}
+		add_ideas = { NO_GRINDING }
+	}
 	GER = {
 		add_ideas = { pre_grinded_gens_volunteers }
 		GER_gerd_von_rundstedt = { add_skill_level = 1 }
