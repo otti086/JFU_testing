@@ -1093,6 +1093,7 @@ focus_tree = {
 				bonus = 1.0
 				uses = 4
 				category = jet_technology
+				category = rocketry
 			}
 		}
 	}
