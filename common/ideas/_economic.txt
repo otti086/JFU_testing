@@ -503,6 +503,9 @@ ideas = {
 		export_focus = {
 
 			available = {
+				NOT = {
+					tag = EFR
+				}
 				if = {
 					limit = {
 						original_tag = SOV
@@ -589,6 +592,9 @@ ideas = {
 
 		limited_exports = {
 			available = {
+				NOT = {
+					tag = EFR
+				}				
 				OR = {
 					AND = {
 						has_government = democratic
