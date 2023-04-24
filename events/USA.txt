@@ -162,12 +162,10 @@ country_event = {
 			}
 		}		
 		add_ideas = new_deal
-			set_variable = { election_factor = random }
-			add_to_variable = { election_factor = -0.5 }
-			USA_election_senate = yes
-			USA_election_house = yes
-			custom_effect_tooltip = usa_congress_elections_tt_bad
-			country_event = usa.30
+		USA_election_senate = yes
+		USA_election_house = yes
+		custom_effect_tooltip = usa_congress_elections_tt_bad
+		country_event = usa.30
 	}
 }
 
@@ -199,12 +197,10 @@ country_event = {
 		ai_chance = {
 			factor = 75
 		}
-			set_variable = { election_factor = random }
-			add_to_variable = { election_factor = -0.5 }
-			USA_election_senate = yes
-			USA_election_house = yes
-			custom_effect_tooltip = usa_congress_elections_tt_bad
-			country_event = usa.30
+		USA_election_senate = yes
+		USA_election_house = yes
+		custom_effect_tooltip = usa_congress_elections_tt_bad
+		country_event = usa.30
 	}
 }
 
@@ -222,10 +218,6 @@ country_event = {
 
 	option = {
 		name = usa.30.a
-		clear_variable = sen_loc
-		clear_variable = ror_loc
-		clear_variable = senators_for_reelection
-		clear_variable = representatives_for_reelection
 	}
 
 }
@@ -240,10 +232,6 @@ country_event = {
 
 	option = {
 		name = usa.31.a
-		clear_variable = sen_loc
-		clear_variable = ror_loc
-		clear_variable = senators_for_reelection
-		clear_variable = representatives_for_reelection
 	}
 
 }
@@ -257,22 +245,9 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-			random_list = {
-				50 = {
-					set_variable = { election_factor = random }
-					add_to_variable = { election_factor = -0.6 }
-					USA_election_senate = yes
-					USA_election_house = yes
-					country_event = usa.30
-				}
-				50 = {
-					set_variable = { election_factor = random }
-					add_to_variable = { election_factor = -0.3 }
-					USA_election_senate = yes
-					USA_election_house = yes
-					country_event = usa.30
-				}
-			}
+		USA_election_senate = yes
+		USA_election_house = yes
+		country_event = usa.30
 	}
 
 	option = {
