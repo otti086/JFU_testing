@@ -2564,8 +2564,9 @@ pregrinded_effect = {
 			add_unit_leader_trait = panzer_leader
             add_unit_leader_trait = panzer_expert
 			add_unit_leader_trait = expert_improviser
-			add_unit_leader_trait = hill_fighter
+			add_unit_leader_trait = ranger
 			add_unit_leader_trait = trickster
+			add_unit_leader_trait = desert_fox
 		}
 		FRA_maxime_weygand = { add_skill_level = 1 }
 		FRA_maxime_weygand = { add_attack = 2 }
@@ -2800,7 +2801,7 @@ pregrinded_effect = {
 		CAN_thomas_victor_anderson = {
 			add_unit_leader_trait = pre_grinded
 			add_unit_leader_trait = trickster
-			add_unit_leader_trait = ranger
+			add_unit_leader_trait = desert_fox
 			add_unit_leader_trait = panzer_leader
 			add_unit_leader_trait = panzer_expert
 			add_unit_leader_trait = organizer
@@ -3063,10 +3064,12 @@ JFU_update_generals = {
 			add_unit_leader_trait = expert_improviser
 			add_unit_leader_trait = trait_engineer
 			add_unit_leader_trait = fortress_buster
+			add_unit_leader_trait = hill_fighter
 		}
 		SAF_guy_hallifax = {
 			add_unit_leader_trait = trait_engineer
 			add_unit_leader_trait = fortress_buster	
+			add_unit_leader_trait = urban_assault_specialist
 		}
 		SAF_guy_hallifax = {
 			add_unit_leader_trait = thorough_planner
@@ -3078,10 +3081,12 @@ JFU_update_generals = {
 			add_unit_leader_trait = trait_engineer
             add_unit_leader_trait = fortress_buster
 			add_unit_leader_trait = expert_improviser
+			add_unit_leader_trait = ranger
 		}
 		CAN_charles_foulkes = {
             add_unit_leader_trait = fortress_buster
-			add_unit_leader_trait = expert_improviser	
+			add_unit_leader_trait = expert_improviser
+			add_unit_leader_trait = trait_mountaineer
 		}
 		CAN_charles_foulkes = {
 			add_unit_leader_trait = thorough_planner
@@ -3120,9 +3125,6 @@ JFU_update_generals = {
 		}
 	}
 	FRA = {
-		FRA_alphonse_juin = {
-			add_unit_leader_trait = ranger
-		}
 		FRA_maxime_weygand = {
 			add_unit_leader_trait = desert_fox
             add_unit_leader_trait = expert_improviser
@@ -3134,7 +3136,7 @@ JFU_update_generals = {
 			add_unit_leader_trait = thorough_planner
 		}
 		FRA_charles_de_gaulle = {
-			add_unit_leader_trait = trait_mountaineer
+			add_unit_leader_trait = ranger
             add_unit_leader_trait = trait_engineer
 			add_unit_leader_trait = fortress_buster
 		}
