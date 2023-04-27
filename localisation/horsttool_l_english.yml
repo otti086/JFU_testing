@@ -874,3 +874,11 @@
 
  naldo:0 "Naldo"
  johannes:0 "Johannes"
+
+ building_limiter_tech:0 "Johann's certified level 10 Airports"
+ JFU_SOVIET_SMALL:0 "Soviet anti-cancer AC"
+ SOV_small_barb_enable_tt:0 "Gives Soviet only one Airport to manage, so ACing is easier"
+ SOV_small_barb:0 "Germans clicked Small Barb Decision"
+
+ PRE_SETS: "JFU Presets"
+ HORST_GROUPKEY: "JFU Rules"
