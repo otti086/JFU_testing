@@ -1,5 +1,13 @@
 technologies = {
 
+	building_limiter_tech = {
+		start_year = 1918
+		allow = {always = no	}
+		enable_building = {
+			building = air_base
+			level = 10 #max is 100
+		}	
+	}	
 	basic_machine_tools = {
 	
 		production_factory_max_efficiency_factor = 0.1

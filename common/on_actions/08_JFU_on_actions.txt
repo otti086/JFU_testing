@@ -119,6 +119,8 @@ on_actions = {
 					gwtank_chassis = 1 #nsb man
 
 					fuel_silos = 1 #juggle button
+
+					building_limiter_tech = 1 #air base max level
 				}
 			}
 		}		

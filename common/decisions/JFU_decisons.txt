@@ -371,7 +371,18 @@ JFU_decisions = {
 			}
 		}	
 	}
-
+	"Enable Small Barb" = {
+		icon = generic_operation
+		fire_only_once = yes
+		allowed = { tag = GER }
+		available = { 
+			date > 1941.06.01
+		}
+		cost = 0
+		complete_effect = {
+			set_global_flag = SOV_small_barb
+		}		
+	}
 	#	██╗████████╗ █████╗ 
 	#	██║╚══██╔══╝██╔══██╗
 	#	██║   ██║   ███████║
@@ -1055,6 +1066,28 @@ JFU_decisions = {
 				} 
 			}
 		}
+	}
+	"Small Barb" = {
+		icon = generic_operation
+		fire_only_once = yes
+		allowed = { tag = SOV }
+		available = { has_global_flag = SOV_small_barb }
+		cost = 0
+		complete_effect = {
+			add_ideas = JFU_SOVIET_SMALL
+			219 = {
+				add_building_construction = {
+				type = anti_air_building
+				level = 10
+				instant_build = yes
+				}
+				add_building_construction = {
+				type = air_base
+				level = 100
+				instant_build = yes
+				}								
+			}
+		}		
 	}
 
 	# ███████╗ ██████╗ ██╗   ██╗    ██╗   ██╗███████╗ █████╗ 

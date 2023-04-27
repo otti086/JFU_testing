@@ -613,5 +613,15 @@ ideas = {
 				convoy_raiding_efficiency_factor = -2
 			}						
 		}
+		JFU_SOVIET_SMALL = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				air_range_factor = 2
+			}				
+		}
 	}
 }
