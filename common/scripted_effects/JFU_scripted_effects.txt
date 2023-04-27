@@ -3111,7 +3111,7 @@ JFU_update_generals = {
 			add_unit_leader_trait = infantry_leader
 			add_unit_leader_trait = trait_mountaineer
 			add_unit_leader_trait = naval_invader	
-			add_unit_leader_trait = amphibious		
+			add_unit_leader_trait = invader_ii		
 		}
 		ENG_alan_cunningham = {
 			add_unit_leader_trait = thorough_planner
