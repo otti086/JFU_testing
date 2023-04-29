@@ -484,6 +484,13 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}	
 		completion_reward = {
 			add_ideas = british_austerity_idea
+			add_tech_bonus = {
+				name = fighter_command_focus
+				bonus = 1.0
+				uses = 1
+				category = light_air
+				category = heavy_air
+			}
 		}
 	}
 
@@ -942,7 +949,7 @@ focus_tree = {
 				add_tech_bonus = {
 					name = fighter_command_focus
 					bonus = 1.0
-					uses = 2
+					uses = 1
 					category = light_air
 					category = heavy_air
 				}
