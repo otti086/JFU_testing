@@ -894,7 +894,6 @@
 			NOR = { has_completed_focus = nor_infrastructure_effort_2 }
 			NOR = { has_capitulated = yes }
 			NOR = { is_ai = no }
-			always = no
 		}		
 
 		relative_position_id = nor_winter_mountain_training
