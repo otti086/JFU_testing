@@ -214,6 +214,7 @@ on_actions = {
 					limit = {
 						original_tag = NOR
 					}
+					NOR = { transfer_state = 912 }
 					every_state = {
 						limit = {
 							AND = {

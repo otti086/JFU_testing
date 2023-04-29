@@ -1,11 +1,16 @@
 state={
 	id=912
 	name="The Isle of Men"
-	state_category = town
+	state_category = megalopolis
 	manpower = 1
 	history={
 		owner = SWE
-		buildings = {}
+		buildings = {
+			infrastructure = 3
+			3311 = {
+				naval_base = 10
+			}
+		}
 	}
 	provinces={
 		3311 

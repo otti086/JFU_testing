@@ -57,6 +57,12 @@ DIPLOMACY_REQUEST_ACCESS_TO_LICENCE_PRODUCTION_ENABLE_TRIGGER = {
 		}
 		NOT = {	ROOT = { axis = yes } }
 	}
+	if = {
+		limit = { 
+			FROM = { tag = NOR } 
+		}
+		has_global_flag = NOR_RUGES_PLAN 
+	}
 }
 DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = { always = no }
 DIPLOMACY_WAR_ENABLE_TRIGGER = {always = no }
