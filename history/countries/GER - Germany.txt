@@ -67,6 +67,7 @@ if = {
 			survivability_studies = 1
 			range_improvements = 1
 			aircraft_construction = 1
+			photo_reconnaisance = 1
 		}
 	else = {
 		set_air_oob = "GER_1936_air_legacy"
