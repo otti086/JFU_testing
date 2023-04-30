@@ -36,7 +36,6 @@ recruit_character = NOR_trygve_halvdan_lie
 
 set_research_slots = 3
 
-set_global_flag = NOR_RUGES_PLAN
 add_ideas = {
 	limited_conscription
 	nor_bad_debuffs2

@@ -562,6 +562,7 @@ JFU_startup_on_action = {
 	if = {	limit = { has_game_rule = { rule = JFU_pre_sets option = COMPETITIVE_JFU } } set_global_flag = YUGO_FREE_COLAB_FLAG }
 	if = {  limit = { ai_country_allies = yes } country_lock_all_division_template = yes }
 	every_country = { limit = { OR = { axis = yes allies = yes } } add_ideas = peace_training }
+	SWE = { set_global_flag = NOR_RUGES_PLAN }
 	SWE = { JFU_apply_intel = yes }
 	SWE = { HFU_fuel_startup_effect = yes }											
 	SWE = { JFU_scripted_events_effect = yes }
@@ -655,9 +656,7 @@ JFU_startup_on_action = {
 		SIA = {
 			give_resource_rights = { receiver = GER state = 724 }
 		}
-	}	
-
-	set_variable = { var = allies_factory_output value = 0 }
+	}
 }
 JFU_scripted_events_effect = {
 	ENG = { country_event = { id = britain.16 days = 21 }}

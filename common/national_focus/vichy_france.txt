@@ -829,10 +829,6 @@
 		prerequisite = { focus = EFR_political_effort }
 		mutually_exclusive = { focus = EFR_collectivist_ethos }
 		available = {
-			OR = {
-				has_government = democratic
-				has_government = neutrality
-			}
 		}
 		x = 1
 		y = 1
