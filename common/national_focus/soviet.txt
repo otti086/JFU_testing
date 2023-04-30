@@ -1470,6 +1470,12 @@ focus_tree = {
 
 		completion_reward = {
 			air_experience = 50
+			add_tech_bonus = {
+				name = SOV_increase_aircraft_production
+				bonus = 1.0
+				uses = 1
+				category = light_air
+			}
 		}
 	}
 
@@ -1559,12 +1565,6 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = SOV_increase_aircraft_production
-				bonus = 1.0
-				uses = 1
-				category = light_air
-			}
 			add_to_variable = { SOV_soviet_airforce_air_fuel_consumption_factor = -0.05 }
 			add_to_variable = { SOV_soviet_airforce_air_range_factor = 0.05 }
 			add_to_variable = { SOV_soviet_airforce_air_agility_factor = 0.05 }
