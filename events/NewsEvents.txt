@@ -10946,15 +10946,7 @@ news_event = {
 		GER = { add_ideas = { GER_triumph_in_africa } }
 		ITA = { add_ideas = { GER_triumph_in_africa } }
 		ENG = { add_ideas = { idea=ENG_lose_in_africa } }
-		FRA = { add_ideas = { idea=ENG_lose_in_africa } }
-		CAN = { add_ideas = { idea=ENG_lose_in_africa } }
-		SAF = { add_ideas = { idea=ENG_lose_in_africa } }
-		NZL = { add_ideas = { idea=ENG_lose_in_africa } }
-		AST = { add_ideas = { idea=ENG_lose_in_africa } }
-		RAJ = { add_ideas = { idea=ENG_lose_in_africa } }
 		USA = { add_ideas = { idea=ENG_lose_in_africa } }
-		BRA = { add_ideas = { idea=ENG_lose_in_africa } }
-		MEX = { add_ideas = { idea=ENG_lose_in_africa } }
 	}
 	mean_time_to_happen = {
 		days = 2
