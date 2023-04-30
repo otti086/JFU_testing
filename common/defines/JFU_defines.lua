@@ -17,6 +17,8 @@ NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 1
 NDefines.NMilitary.COMBAT_VALUE_ORG_IMPORTANCE = 0 		-- VANILLA 1 - changed to force tanks into battle first (most of the time) |   Multiplier on TotalOrganisation when determining the combat value of a division
 NDefines.NMilitary.COMBAT_VALUE_STR_IMPORTANCE = 0 		-- VANILLA 1  - changed to force tanks into battle first (most of the time)    |  Multiplier on TotalStrength when determining the combat value of a division
 NDefines.NMilitary.UNIT_DIGIN_CAP = 0                           --   vanilla 10 | "how "deep" you can dig you can dig in until hitting max bonus
+NDefines.NMilitary.REINFORCEMENT_REQUEST_MAX_WAITING_DAYS = 7   -- Every X days the equipment will be sent, regardless if still didn't produced all that has been requested.
+NDefines.NMilitary.REINFORCEMENT_REQUEST_DAYS_FREQUENCY = 4	   -- How many days must pass until we may give another reinforcement request
 
 NDefines.NCountry.POPULATION_YEARLY_GROWTH_BASE = 0.0
 NDefines.NCountry.BASE_FUEL_CAPACITY = 100000
@@ -26,10 +28,7 @@ NDefines.NCountry.SCORCHED_EARTH_STATE_COST = 999
 NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 80.0      -- vanilla 10 Modifier for army manpower reinforcement delivery speed (travel time)
 NDefines.NCountry.REINFORCEMENT_MANPOWER_CHUNK = 0.5				-- Chunk size of manpower reinforcement delivery, in % of total manpower needed by the template.
 NDefines.NCountry.EQUIPMENT_UPGRADE_CHUNK_MAX_SIZE = 50			-- vanilla 10  Maximum chunk size of equipment upgrade distribution per update.
-NDefines.NMilitary.REINFORCEMENT_REQUEST_MAX_WAITING_DAYS = 7   -- Every X days the equipment will be sent, regardless if still didn't produced all that has been requested.
-NDefines.NMilitary.REINFORCEMENT_REQUEST_DAYS_FREQUENCY = 4	   -- How many days must pass until we may give another reinforcement request
 NDefines.NCountry.WAR_SUPPORT_DEFENSIVE_WAR = 0.3				--vanilla 0.2 Impact of being in defensive war
-NDefines.NCountry.AIR_SUPPLY_CONVERSION_SCALE = 0.01
 
 NDefines.NPolitics.LEADER_TRAITS_XP_SHOW = 0.01
 
@@ -88,6 +87,7 @@ NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_STRATEGIC_BOMBER = 0.036	-- va
 NDefines.NAir.DISRUPTION_FACTOR = 4 
 NDefines.NAir.ESCORT_FACTOR = 5.5
 NDefines.NAir.ACCIDENT_CHANCE_BASE = 0
+NDefines.NAir.SUPPLY_NEED_FACTOR = 0.01				-- How much supply planes need
 -- NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_FACTOR = 0.4  -- vanilla 0.8
 
 NDefines.NNavy.MISSION_SUPREMACY_RATIOS = { 						-- supremacy multipliers for different mission types   | Strikeforce/Naval Invasion Support now 0 supremacy to avoid free supremacy
