@@ -87,7 +87,7 @@ NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_STRATEGIC_BOMBER = 0.036	-- va
 NDefines.NAir.DISRUPTION_FACTOR = 4 
 NDefines.NAir.ESCORT_FACTOR = 5.5
 NDefines.NAir.ACCIDENT_CHANCE_BASE = 0
-NDefines.NAir.SUPPLY_NEED_FACTOR = 0.01				-- How much supply planes need
+NDefines.NAir.SUPPLY_NEED_FACTOR = 0.1				-- How much supply planes need
 -- NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_FACTOR = 0.4  -- vanilla 0.8
 
 NDefines.NNavy.MISSION_SUPREMACY_RATIOS = { 						-- supremacy multipliers for different mission types   | Strikeforce/Naval Invasion Support now 0 supremacy to avoid free supremacy

@@ -19,7 +19,7 @@ set_variable = {
     value = 0.200
 }
 
-starting_train_buffer = 1.5
+starting_train_buffer = 3
 
 set_research_slots = 4
 set_stability = 0.6
