@@ -331,6 +331,18 @@ JFU_decisions = {
 						set_compliance = 80
 					}
 				}
+				if = {
+					limit = {
+						280 = { is_controlled_by = EFR} 
+					}
+					ITA = {
+						transfer_state = 680 
+						transfer_state = 677
+						transfer_state = 554
+						transfer_state = 553
+						transfer_state = 799
+					}
+				}
 			}
 		}		
 	}
