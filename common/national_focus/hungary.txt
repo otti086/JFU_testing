@@ -905,17 +905,9 @@ focus_tree = {
 		y = 2
 		relative_position_id = HUN_secret_rearmament
 
-		cost = 10
+		cost = 0.1
 
-		bypass = {
-			OR = {
-				AND = {
-					NOT = { has_idea = HUN_treaty_of_triannon }
-					NOT = { has_idea = HUN_treaty_of_triannon_2 }
-				}
-				has_idea = HUN_treaty_of_triannon_3
-			}
-		}
+		bypass = { always = yes }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -963,8 +955,9 @@ focus_tree = {
 		icon = GFX_goal_generic_air_production
 		prerequisite = { focus = HUN_establish_the_air_force }
 		prerequisite = { focus = HUN_boost_hungarian_aviation_industry }
+		allow_branch = { always = no }
 		x = 0
-		y = 6
+		y = 5
 		relative_position_id = HUN_establish_the_air_force
 
 		cost = 10
@@ -1085,69 +1078,17 @@ focus_tree = {
 	####### ARMY STUFFS ########
 	############################
 
-	focus = {
-		id = HUN_army_maneuvers
-		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = HUN_bled_agreement }
-		x = 3
-		y = 1
-		relative_position_id = HUN_bled_agreement
-
-		cost = 10
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-			army_experience = 50
-			add_doctrine_cost_reduction = {
-				name = HUN_army_maneuvers
-				cost_reduction = 0.5
-				uses = 2
-				category = land_doctrine
-			}
-		}
-	}
-
 	############################
 	###### MOBILE BRANCH #######
 	############################
 
 	focus = {
-		id = HUN_mobile_focus
-		icon = GFX_goal_generic_cavalry
-		prerequisite = { focus = HUN_army_maneuvers }
-		mutually_exclusive = { focus = HUN_home_defense }
-		x = -2
-		y = 1
-		relative_position_id = HUN_army_maneuvers
-
-		cost = 10
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-			add_doctrine_cost_reduction = {
-				name = HUN_mobile_focus
-				cost_reduction = 0.5
-				uses = 2
-				category = land_doctrine
-			}
-		}
-	}
-
-	focus = {
 		id = HUN_the_botond
 		icon = GFX_goal_generic_army_motorized
-		prerequisite = { focus = HUN_mobile_focus }
-		x = -1
+		prerequisite = { focus = HUN_home_defense }
+		x = -3
 		y = 1
-		relative_position_id = HUN_mobile_focus
+		relative_position_id = HUN_home_defense
 
 		cost = 10
 
@@ -1182,9 +1123,9 @@ focus_tree = {
 		id = HUN_motorized_logistics
 		icon = GFX_goal_generic_army_motorized
 		prerequisite = { focus = HUN_the_botond }
-		x = 0
-		y = 2
-		relative_position_id = HUN_mobile_focus
+		x = 1
+		y = 1
+		relative_position_id = HUN_the_botond
 
 		cost = 10
 
@@ -1219,11 +1160,10 @@ focus_tree = {
 	focus = {
 		id = HUN_develop_tanks
 		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = HUN_mobile_focus }
-		mutually_exclusive = { focus = HUN_assault_gun_focus }
-		x = 1
+		prerequisite = { focus = HUN_home_defense }
+		x = -1
 		y = 1
-		relative_position_id = HUN_mobile_focus
+		relative_position_id = HUN_home_defense
 
 		cost = 10
 
@@ -1251,17 +1191,18 @@ focus_tree = {
 				uses = 1
 				category = armor
 			}
+			
 		}
 	}
 
 	focus = {
 		id = HUN_assault_gun_focus
 		icon = GFX_goal_generic_army_artillery2
-		prerequisite = { focus = HUN_mobile_focus focus = HUN_home_defense }
+		prerequisite = { focus = HUN_home_defense }
 		mutually_exclusive = { focus = HUN_develop_tanks }
-		x = 3
+		x = 1
 		y = 1
-		relative_position_id = HUN_mobile_focus
+		relative_position_id = HUN_home_defense
 
 		cost = 10
 
@@ -1331,11 +1272,10 @@ focus_tree = {
 	focus = {
 		id = HUN_home_defense
 		icon = GFX_goal_generic_fortify_city
-		prerequisite = { focus = HUN_army_maneuvers }
-		mutually_exclusive = { focus = HUN_mobile_focus }
+		prerequisite = { focus = HUN_bled_agreement }
 		x = 2
 		y = 1
-		relative_position_id = HUN_army_maneuvers
+		relative_position_id = HUN_bled_agreement
 
 		cost = 10
 
@@ -1357,6 +1297,13 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			army_experience = 50
+			add_doctrine_cost_reduction = {
+				name = HUN_army_maneuvers
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
 			add_doctrine_cost_reduction = {
 				name = HUN_home_defense
 				cost_reduction = 0.5
@@ -1370,7 +1317,7 @@ focus_tree = {
 		id = HUN_danuvia_submachine_guns
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = HUN_home_defense }
-		x = 1
+		x = 3
 		y = 1
 		relative_position_id = HUN_home_defense
 
@@ -1407,7 +1354,7 @@ focus_tree = {
 		id = HUN_artillery_effort
 		icon = GFX_goal_generic_army_artillery
 		prerequisite = { focus = HUN_danuvia_submachine_guns }
-		x = 0
+		x = 2
 		y = 2
 		relative_position_id = HUN_home_defense
 
@@ -1444,7 +1391,7 @@ focus_tree = {
 		id = HUN_light_infantry_divisions_doctrine
 		icon = GFX_goal_generic_special_forces
 		prerequisite = { focus = HUN_danuvia_submachine_guns }
-		x = 2
+		x = 4
 		y = 2
 		relative_position_id = HUN_home_defense
 
@@ -1525,37 +1472,6 @@ focus_tree = {
 				}
 			}
 			hidden_effect = { set_technology = { HUN_light_infantry_tech = 1 } }
-		}
-	}
-
-	focus = {
-		id = HUN_form_parachute_battalions
-		icon = GFX_focus_generic_paratrooper
-		prerequisite = { focus = HUN_light_infantry_divisions_doctrine }
-		x = 2
-		y = 3
-		relative_position_id = HUN_home_defense
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 50
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
 			add_tech_bonus = {
 				name = HUN_form_parachute_battalions
 				bonus = 3.0
