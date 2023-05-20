@@ -15,6 +15,31 @@ ideas = {
 			}
 			
 			removal_cost = -1
+
+			cancel = {
+				AND = {
+					OR = {
+						any_country = {axis = yes controls_state = 645}
+						any_country = {axis = yes controls_state = 524}
+					}
+					AND = {
+						528 = { OWNER = { tag = JAP } }
+						530 = { OWNER = { tag = JAP } }
+						529 = { OWNER = { tag = JAP } }
+						531 = { OWNER = { tag = JAP } }
+						532 = { OWNER = { tag = JAP } }
+						535 = { OWNER = { tag = JAP } }
+						282 = { OWNER = { tag = JAP } }
+						534 = { OWNER = { tag = JAP } }
+						533 = { OWNER = { tag = JAP } }
+						536 = { OWNER = { tag = JAP } }
+					}
+				}
+			}
+
+			on_remove = {
+				JAP = { add_ideas = { state_shintoism_modified } }
+			}
 	
 
 			modifier = {
@@ -37,7 +62,7 @@ ideas = {
 			cancel = {
 				AND = {
 					any_country = {allies = yes controls_state = 645}
-					any_country = {allies = yes controls_state = 526}
+					any_country = {allies = yes controls_state = 524}
 				}
 			}
 

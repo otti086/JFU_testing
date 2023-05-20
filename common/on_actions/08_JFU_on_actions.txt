@@ -632,18 +632,6 @@ on_actions = {
 				}
 				JAP = { island_hopping_JAP = yes }
 			}
-			if = {
-				limit = {
-					date > 1936.1.1
-					any_country = {axis = yes controls_state = 645}
-					any_country = {axis = yes controls_state = 526}
-					has_idea = state_shintoism
-				}
-				swap_ideas = {
-					remove_idea = state_shintoism
-					add_idea = state_shintoism_modified
-				}
-			}
 		}
 	}
 	on_weekly_USA = {
