@@ -8,7 +8,7 @@ set_war_support = 0.8
 set_research_slots = 5
 set_fuel_ratio = 1.0
 add_ideas = {
-	state_shintoism_modified
+	state_shintoism
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation
