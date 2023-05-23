@@ -34,9 +34,7 @@ HUN_historical = {
 		HUN_reaffirm_territorial_claims
 		HUN_demand_southern_slovakia
 		HUN_civilian_industry
-		HUN_invite_foreign_investors
-		HUN_army_maneuvers
-		HUN_mobile_focus
+		HUN_invite_foreign_investors	
 		HUN_joint_aluminum_mining_company
 		HUN_expand_the_manfred_weiss_steel_works
 		HUN_develop_tanks
