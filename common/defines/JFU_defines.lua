@@ -105,7 +105,7 @@ NDefines.NNavy.MISSION_SUPREMACY_RATIOS = { 						-- supremacy multipliers for d
 
 NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0
 NDefines.NNavy.ACCIDENTS_CHANCE_BALANCE_FACTOR = 0					-- WAS 0.004
-NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 1.0
+NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 2.0
 NDefines.NNavy.NAVAL_TRANSFER_BASE_SPEED = 10                      -- WAS 6 | Increased so moving troops around the world is faster and theaters dont seem so disconnected (particularly aimed at improving Allied gameplay experience)
 NDefines.NNavy.ADMIRAL_TASKFORCE_CAP = 20                         -- WAS 10 | Increased so players can use their same submarine or escort admiral without penalties
 NDefines.NNavy.NAVAL_MINES_DECAY_AT_PEACE_TIME = 1000                    -- WAS 0.25 
