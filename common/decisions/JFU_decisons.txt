@@ -1084,6 +1084,7 @@ JFU_decisions = {
 		icon = generic_operation
 		allowed = { tag = SOV }
 		available = { has_global_flag = SOV_small_barb }
+		visible = { always = no }
 		cost = 0
 		complete_effect = {
 			add_ideas = JFU_SOVIET_SMALL

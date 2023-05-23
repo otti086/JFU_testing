@@ -860,8 +860,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_coal_liquidization
-				bonus = 3.0
-				uses = 1
+				bonus = 2.0
+				uses = 2
 				category = synth_resources
 			}
 			if = {
@@ -897,7 +897,7 @@ focus_tree = {
         	modify_building_resources = {
         	   building = synthetic_refinery
         	   resource = rubber
-        	   amount = 2
+        	   amount = 4
         	}
 
 			set_technology = { fuel_refining2 = 1 }

@@ -16,30 +16,30 @@ ideas = {
 			
 			removal_cost = -1
 
-			cancel = {
-				AND = {
-					OR = {
-						any_country = {axis = yes controls_state = 645}
-						any_country = {axis = yes controls_state = 524}
-					}
-					AND = {
-						528 = { OWNER = { tag = JAP } }
-						530 = { OWNER = { tag = JAP } }
-						529 = { OWNER = { tag = JAP } }
-						531 = { OWNER = { tag = JAP } }
-						532 = { OWNER = { tag = JAP } }
-						535 = { OWNER = { tag = JAP } }
-						282 = { OWNER = { tag = JAP } }
-						534 = { OWNER = { tag = JAP } }
-						533 = { OWNER = { tag = JAP } }
-						536 = { OWNER = { tag = JAP } }
-					}
-				}
-			}
+#			cancel = {
+#				AND = {
+#					OR = {
+#						any_country = {axis = yes controls_state = 645}
+#						any_country = {axis = yes controls_state = 524}
+#					}
+#					AND = {
+#						528 = { OWNER = { tag = JAP } }
+#						530 = { OWNER = { tag = JAP } }
+#						529 = { OWNER = { tag = JAP } }
+#						531 = { OWNER = { tag = JAP } }
+#						532 = { OWNER = { tag = JAP } }
+#						535 = { OWNER = { tag = JAP } }
+#						282 = { OWNER = { tag = JAP } }
+#						534 = { OWNER = { tag = JAP } }
+#						533 = { OWNER = { tag = JAP } }
+#						536 = { OWNER = { tag = JAP } }
+#					}
+#				}
+#			}
 
-			on_remove = {
-				JAP = { add_ideas = { state_shintoism_modified } }
-			}
+#			on_remove = {
+#				JAP = { add_ideas = { state_shintoism_modified } }
+#			}
 	
 
 			modifier = {
@@ -757,6 +757,7 @@ ideas = {
 				army_defence_factor = 0.1
 				army_attack_factor = 0.1
 				army_morale_factor = 0.1
+				army_core_attack_factor = 0.1
 			}
 		}
 
@@ -993,7 +994,8 @@ ideas = {
 				naval_strike_attack_factor = 0.2
 				naval_strike_targetting_factor = 0.2
 				naval_strike_agility_factor = 0.2
-				army_attack_factor = 0.10
+				army_attack_factor = 0.20
+				army_defence_factor = 0.20
 				breakthrough_factor = 0.20
 				amphibious_invasion_defence = 0.50
 				supply_consumption_factor = -0.10
