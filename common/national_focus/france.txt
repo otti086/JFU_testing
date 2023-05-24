@@ -1287,7 +1287,7 @@ focus = {
 			factor = 1
 		}
 		available = {
-
+			EFR = { controls_state = 554 }
 			check_variable = {  FRA_legitimacy > 100  }
 				
 
