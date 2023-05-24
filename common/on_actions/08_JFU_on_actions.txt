@@ -131,12 +131,11 @@ on_actions = {
 			# spain faggotry
 			if = {
 				limit = {
+					has_global_flag = scw_over
 					num_planes_stationed_in_regions = {
 						value > 0
 						regions = { 210 209 41 }
 					}
-					#spanish cw done
-					has_global_flag = scw_over
 				}
 				every_state = {
 					if = {
