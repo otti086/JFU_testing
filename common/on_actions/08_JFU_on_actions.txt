@@ -127,7 +127,34 @@ on_actions = {
 	}
 	on_daily = {
 		effect = {
-			HFU_fuel_on_daily_scripted_effect = yes			
+			HFU_fuel_on_daily_scripted_effect = yes
+			# spain faggotry
+			if = {
+				limit = {
+					num_planes_stationed_in_regions = {
+						value > 0
+						regions = { 210 209 41 }
+					}
+					#spanish cw done
+					has_global_flag = scw_over
+				}
+				every_state = {
+					if = {
+						limit = {
+							OR = {
+								is_owned_by = SPR
+								is_owned_by = SPA
+							}
+							air_base > 0
+						}
+						damage_building = {
+							type = air_base
+							damage = 1000
+						}
+					}
+				}
+			}
+			
 		}
 	}
 	on_monthly = {

@@ -1,4 +1,30 @@
 debug_decisions = {
+	mkairports = {
+		icon = generic_research
+
+		available = {
+			is_debug = yes
+			is_ai = no
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			every_owned_state = {
+				set_building_level = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
 	add_efficiency_growth_debug = {
 		icon = generic_research
 
