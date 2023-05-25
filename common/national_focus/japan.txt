@@ -343,6 +343,12 @@
 			hidden_effect = {
 				909 = { remove_dynamic_modifier = { modifier = no_entrenchment_africa } }
 				452 = { remove_dynamic_modifier = { modifier = no_entrenchment_africa } }
+				every_country = {
+					limit = {
+						allies = yes 
+					}
+					add_timed_idea = { idea = Allies_Asia_debuff days = 180 }
+				}
 			} 			
 		}
 	}
