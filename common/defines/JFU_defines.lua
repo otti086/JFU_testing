@@ -19,10 +19,10 @@ NDefines.NMilitary.COMBAT_VALUE_STR_IMPORTANCE = 0 		-- VANILLA 1  - changed to 
 NDefines.NMilitary.UNIT_DIGIN_CAP = 0                           --   vanilla 10 | "how "deep" you can dig you can dig in until hitting max bonus
 NDefines.NMilitary.REINFORCEMENT_REQUEST_MAX_WAITING_DAYS = 7   -- Every X days the equipment will be sent, regardless if still didn't produced all that has been requested.
 NDefines.NMilitary.REINFORCEMENT_REQUEST_DAYS_FREQUENCY = 4	   -- How many days must pass until we may give another reinforcement request
-NDefines.NMilitary.RETREAT_SPEED_FACTOR = 0.35 -- vanilla 0.25 
+NDefines.NMilitary.RETREAT_SPEED_FACTOR = 0.35 		-- VANILLA 0.25 
 NDefines.NMilitary.BATALION_CHANGED_EXPERIENCE_DROP = 0.0 
 NDefines.NMilitary.BATALION_NOT_CHANGED_EXPERIENCE_DROP = 0.0
-
+NDefines.NMilitary.COMBAT_MINIMUM_TIME = 2 		-- VANILLA 4
 NDefines.NCountry.POPULATION_YEARLY_GROWTH_BASE = 0.0
 NDefines.NCountry.BASE_FUEL_CAPACITY = 100000
 NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 200
