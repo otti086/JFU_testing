@@ -20,7 +20,9 @@ focus_tree = {
 		y = 0
 		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
+		available = {
+			SIA = { is_ai = no }
+		}			
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -42,9 +44,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = sia_army_effort
 		cost = 10
-		available = {
-			SIA = { is_ai = no }
-		}	
+
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
 		available_if_capitulated = yes

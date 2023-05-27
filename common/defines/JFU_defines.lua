@@ -20,6 +20,8 @@ NDefines.NMilitary.UNIT_DIGIN_CAP = 0                           --   vanilla 10 
 NDefines.NMilitary.REINFORCEMENT_REQUEST_MAX_WAITING_DAYS = 7   -- Every X days the equipment will be sent, regardless if still didn't produced all that has been requested.
 NDefines.NMilitary.REINFORCEMENT_REQUEST_DAYS_FREQUENCY = 4	   -- How many days must pass until we may give another reinforcement request
 NDefines.NMilitary.RETREAT_SPEED_FACTOR = 0.35 -- vanilla 0.25 
+NDefines.NMilitary.BATALION_CHANGED_EXPERIENCE_DROP = 0.0 
+NDefines.NMilitary.BATALION_NOT_CHANGED_EXPERIENCE_DROP = 0.0
 
 NDefines.NCountry.POPULATION_YEARLY_GROWTH_BASE = 0.0
 NDefines.NCountry.BASE_FUEL_CAPACITY = 100000
