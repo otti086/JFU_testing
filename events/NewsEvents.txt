@@ -10945,8 +10945,6 @@ news_event = {
 		set_global_flag = fall_of_cairo
 		GER = { add_ideas = { GER_triumph_in_africa } }
 		ITA = { add_ideas = { GER_triumph_in_africa } }
-		ENG = { add_ideas = { idea=ENG_lose_in_africa } }
-		USA = { add_ideas = { idea=ENG_lose_in_africa } }
 	}
 	mean_time_to_happen = {
 		days = 2
