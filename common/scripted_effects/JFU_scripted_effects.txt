@@ -628,7 +628,7 @@ JFU_startup_on_action = {
 		add_equipment_to_stockpile = { type = light_tank_chassis_2 amount = 720 producer = GER variant_name = "Panzer II Ausf. A" }
 	}
 	FRA = {
-		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 25h000 }
+		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 25000 }
 		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 30000 }
 		add_equipment_to_stockpile = { type = support_equipment_1 amount = 766 }
 		add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 2500 }
