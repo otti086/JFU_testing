@@ -5,6 +5,7 @@ tags={
 }
 replace_path="history/countries"
 replace_path="history/units"
+replace_path="common/bookmarks"
 replace_path="common/ai_strategy"
 replace_path="common/ai_strategy_plans"
 replace_path="common/ai_templates"

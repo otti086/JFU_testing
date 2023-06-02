@@ -79,42 +79,6 @@ characters={
 		}
 	}
 
-	USA_george_s_patton_grinded={
-		name=USA_george_s_patton_grinded
-		portraits={
-			army={
-				large="gfx/leaders/USA/Portrait_USA_George_S_Patton.dds"
-			}
-			army={
-				small="GFX_idea_george_patton"
-			}
-		}
-		advisor={
-			cost = 150
-			
-			slot = theorist
-			idea_token = USA_george_s_patton_grinded
-			ledger = army
-				allowed = {
-					original_tag = USA
-				}
-				
-				traits = {
-					mobile_warfare_expert
-				}
-		}
-
-		corps_commander={
-			traits={ trait_reckless pre_grinded armor_officer war_hero trickster panzer_leader panzer_expert hill_fighter expert_improviser }
-			skill=5
-			attack_skill=7
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=4
-			legacy_id=0
-		}
-	}
-
 	USA_omar_bradley={
 		name=USA_omar_bradley
 		portraits={
@@ -141,41 +105,6 @@ characters={
 
 		corps_commander={
 			traits={ brilliant_strategist trait_cautious harsh_leader trait_engineer }
-			skill=5
-			attack_skill=3
-			defense_skill=5
-			planning_skill=4
-			logistics_skill=4
-			legacy_id=0
-		}
-	}
-
-	USA_omar_bradley_grinded={
-		name=USA_omar_bradley_grinded
-		portraits={
-			army={
-				small="GFX_idea_omar_bradley"
-			}
-			army={
-				large="gfx/leaders/USA/Portrait_USA_Omar_Bradley.dds"
-			}
-		}
-		advisor={
-			cost = 150
-			slot = theorist
-			idea_token = USA_omar_bradley_grinded
-			ledger = army
-			allowed = {
-				original_tag = USA
-			}
-			
-			traits = {
-				superior_firepower_expert
-			}
-		}
-
-		corps_commander={
-			traits={ brilliant_strategist trait_cautious harsh_leader trait_engineer pre_grinded infantry_expert infantry_leader hill_fighter trickster expert_improviser }
 			skill=5
 			attack_skill=3
 			defense_skill=5
@@ -221,42 +150,6 @@ characters={
 		}
 	}
 
-	USA_dwight_d_eisenhower_grinded={
-		name=USA_dwight_d_eisenhower_grinded
-		portraits={
-			army={
-				large="gfx/leaders/USA/Portrait_USA_Dwight_D_Eisenhower.dds"
-			}
-			army={
-				small="GFX_idea_dwight_eisenhower"
-			}
-		}
-		advisor={
-			slot = army_chief
-			idea_token = USA_dwight_d_eisenhower_grinded
-			allowed = {
-					original_tag = USA
-				}
-				traits = {
-					army_chief_offensive_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		
-		field_marshal={
-			traits={ trait_cautious pre_grinded armor_officer politically_connected organizer panzer_expert panzer_leader logistics_wizard offensive_doctrine hill_fighter trickster }
-			skill=5
-			attack_skill=3
-			defense_skill=3
-			planning_skill=5
-			logistics_skill=5
-			legacy_id=-1
-		}
-	}
-
 	USA_geoffrey_keyes={
 		name=USA_geoffrey_keyes
 		portraits={
@@ -268,25 +161,6 @@ characters={
 		corps_commander={
 			traits={ career_officer armor_officer }
 			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
-
-	USA_geoffrey_keyes_grinded={
-		name=USA_geoffrey_keyes_grinded
-		portraits={
-			army={
-				large="gfx/leaders/USA/Portrait_USA_Geoffrey_Keyes.dds"
-				small="gfx/interface/ideas/idea_USA_geoffrey_keyes.dds"
-			}
-		}
-		corps_commander={
-			traits={ career_officer naval_invader pre_grinded trickster hill_fighter infantry_leader infantry_expert organizer logistics_wizard }
-			skill=4
 			attack_skill=2
 			defense_skill=2
 			planning_skill=2

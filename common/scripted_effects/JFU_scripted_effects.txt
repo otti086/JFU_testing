@@ -475,6 +475,11 @@ JFU_vichy_france_2 = {
 				transfer_state = 677
 				transfer_state = 799
 				transfer_state = 553
+				add_state_core = 554
+				add_state_core = 680
+				add_state_core = 677
+				add_state_core = 799
+				add_state_core = 553
 			}
 
 			if = { 
@@ -483,6 +488,10 @@ JFU_vichy_france_2 = {
 				transfer_state = 706
 				transfer_state = 708
 				transfer_state = 713
+				add_state_core = 543
+				add_state_core = 706
+				add_state_core = 708
+				add_state_core = 713
 			}
 
 			if = { 
@@ -504,6 +513,23 @@ JFU_vichy_france_2 = {
 				transfer_state = 514
 				transfer_state = 899
 				transfer_state = 898
+				add_state_core = 557
+				add_state_core = 272
+				add_state_core = 780
+				add_state_core = 556
+				add_state_core = 779
+				add_state_core = 778
+				add_state_core = 777
+				add_state_core = 776
+				add_state_core = 781
+				add_state_core = 782
+				add_state_core = 786
+				add_state_core = 515
+				add_state_core = 775
+				add_state_core = 298
+				add_state_core = 514
+				add_state_core = 899
+				add_state_core = 898
 			}
 			#if = { 
 			#	limit = { FRA = { check_variable = { FRA_legitimacy 	< 40 } }  }
@@ -559,7 +585,27 @@ JFU_startup_on_action = {
 	if = {	limit = { has_game_rule = { rule = JFU_SPECIAL_FORCES_CAP option = JFU_NO_CAP } } every_possible_country = { limit = { NOT = { ai_country = yes } } add_ideas = NO_SF_CAP } }
 	if = {	limit = { has_game_rule = { rule = JFU_AFRICA_TILES option = ONE_TILE_AFRICA } } SWE = { transfer_state = 909 } SWE = { transfer_state = 910 } SWE = { transfer_state = 911 } }
 	if = {	limit = { has_game_rule = { rule = JFU_YUGO_COLAB option = FREE_COLAB_YUGO } } set_global_flag = YUGO_FREE_COLAB_FLAG }
-	if = {	limit = { has_game_rule = { rule = JFU_pre_sets option = COMPETITIVE_JFU } } set_global_flag = YUGO_FREE_COLAB_FLAG }
+	if = {	limit = { has_game_rule = { rule = JFU_pre_sets option = COMPETITIVE_JFU } } set_global_flag = YUGO_FREE_COLAB_FLAG  }
+	if = {
+		limit = { 
+			has_game_rule = { 
+				rule = JFU_pre_sets 
+				option = COMPETITIVE_JFU 
+			} 
+		}			
+		551 = {
+			set_building_level = {
+				type = anti_air_building
+				level = 10
+				instant_build = yes
+			}
+			set_building_level = {
+				type = air_base
+				level = 40
+				instant_build = yes
+			}								
+		}
+	}
 	if = {  limit = { ai_country_allies = yes } country_lock_all_division_template = yes }
 	every_country = { limit = { OR = { axis = yes allies = yes } } add_ideas = peace_training }
 	SWE = { set_global_flag = NOR_RUGES_PLAN }
@@ -582,8 +628,8 @@ JFU_startup_on_action = {
 		add_equipment_to_stockpile = { type = light_tank_chassis_2 amount = 720 producer = GER variant_name = "Panzer II Ausf. A" }
 	}
 	FRA = {
-		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 14400 }
-		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 31300 }
+		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 25h000 }
+		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 30000 }
 		add_equipment_to_stockpile = { type = support_equipment_1 amount = 766 }
 		add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 2500 }
 		add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 217 }
@@ -605,7 +651,7 @@ JFU_startup_on_action = {
 		add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 106 }
 	}
 	HUN = {
-		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 4700 }
+		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 7000 }
 		add_equipment_to_stockpile = { type = support_equipment_1 amount = 11 }
 	}
 	ROM = {
@@ -616,8 +662,8 @@ JFU_startup_on_action = {
 		add_equipment_to_stockpile = { type = light_tank_chassis_0 amount = 72 producer = ROM variant_name = "FT Char Cannon" }
 	}
 	SOV = {
-		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 16200 }
-		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 61700 }
+		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 20000 }
+		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 60000 }
 		add_equipment_to_stockpile = { type = support_equipment_1 amount = 443 }
 		add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 1600 }
 		add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 814 }
@@ -638,19 +684,19 @@ JFU_startup_on_action = {
 		add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 55 }
 	}
 	CAN = {
-		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2700 }
+		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 4000 }
 	}
 	RAJ = {
-		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 3600 }
+		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 4000 }
 	}
 	AST = {
-		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2300 }
+		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 4000 }
 	}
 	NZL = {
-		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 700 }
+		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 1000 }
 	}
 	SAF = {
-		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 815 }
+		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2000 }
 	}
 	if = {
 		SIA = {
@@ -1931,7 +1977,6 @@ pregrinded_effect = {
 			add_unit_leader_trait = cavalry_leader
 			add_unit_leader_trait = trait_reckless
 			add_unit_leader_trait = trait_engineer
-			add_unit_leader_trait = fortress_buster
 
 		}
 		GER_fedor_von_bock = { promote_leader = yes }

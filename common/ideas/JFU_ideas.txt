@@ -303,16 +303,16 @@ ideas = {
 			picture = generic_acquire_tanks		
 
 			modifier = {	
-				trait_organizer_xp_gain_factor = -1
-				trait_panzer_leader_xp_gain_factor = -1
-				trait_cavalry_leader_xp_gain_factor = -1
-				trait_infantry_leader_xp_gain_factor = -1
-				trait_naval_invader_xp_gain_factor = -1
-				trait_commando_xp_gain_factor = -1
-				trait_trickster_xp_gain_factor = -1
-				trait_engineer_xp_gain_factor = -1
-				terrain_trait_xp_gain_factor = -1	
-				experience_gain_factor = -1
+				trait_organizer_xp_gain_factor = -2
+				trait_panzer_leader_xp_gain_factor = -2
+				trait_cavalry_leader_xp_gain_factor = -2
+				trait_infantry_leader_xp_gain_factor = -2
+				trait_naval_invader_xp_gain_factor = -2
+				trait_commando_xp_gain_factor = -2
+				trait_trickster_xp_gain_factor = -2
+				trait_engineer_xp_gain_factor = -2
+				terrain_trait_xp_gain_factor = -2	
+				experience_gain_factor = -2
 			}		
 		}
 		pre_grinded_gens_volunteers = {
@@ -638,6 +638,16 @@ ideas = {
 				tag = JAP
 				attack_bonus_against = -0.1
 			}	
+		}
+		ONE_DIV_TRAINING = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				experience_gain_army = 0.3
+			}			
 		}
 	}
 }

@@ -87,25 +87,6 @@ characters={
 		}
 	}
 
-	AST_leslie_morshead_grinded={
-		name=AST_leslie_morshead_grinded
-		portraits={
-			army={
-				large="GFX_AST_leslie_morshead"
-				small="gfx/interface/ideas/idea_AST_leslie_morshead.dds"
-			}
-		}
-		field_marshal={
-			traits = {trickster pre_grinded hill_fighter organizer guerilla_fighter logistics_wizard panzer_leader panzer_expert trait_engineer}
-			skill=4
-			attack_skill=4
-			defense_skill=2
-			planning_skill=5
-			logistics_skill=2
-			legacy_id=-1
-		}
-	}
-
 	AST_thomas_blamey={
 		name=AST_thomas_blamey
 		portraits={
@@ -115,25 +96,6 @@ characters={
 			}
 		}
 		corps_commander={
-			skill=4
-			attack_skill=4
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=3
-			legacy_id=-1
-		}
-	}
-
-	AST_thomas_blamey_grinded={
-		name=AST_thomas_blamey_grinded
-		portraits={
-			army={
-				large="GFX_AST_thomas_blamey"
-				small="gfx/interface/ideas/idea_AST_thomas_blamey.dds"
-			}
-		}
-		field_marshal={
-			traits = {naval_invader pre_grinded trickster hill_fighter infantry_leader guerilla_fighter infantry_expert organizer logistics_wizard}
 			skill=4
 			attack_skill=4
 			defense_skill=3
@@ -161,25 +123,6 @@ characters={
 		}
 	}
 
-	AST_henry_wynter_grinded={
-		name=AST_henry_wynter_grinded
-		portraits={
-			army={
-				large="GFX_AST_henry_wynter"
-				small="gfx/interface/ideas/idea_AST_henry_wynter.dds"
-			}
-		}
-		corps_commander={
-			traits = {trickster pre_grinded hill_fighter expert_improviser infantry_expert infantry_leader trait_engineer}
-			skill=4
-			attack_skill=3
-			defense_skill=4
-			planning_skill=3
-			logistics_skill=3
-			legacy_id=-1
-		}
-	}
-
 	AST_alan_vasey={
 		name=AST_alan_vasey
 		portraits={
@@ -191,24 +134,6 @@ characters={
 		corps_commander={
 			traits={ hill_fighter }
 			skill=3
-			attack_skill=2
-			defense_skill=4
-			planning_skill=3
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-	AST_alan_vasey_grinded={
-		name=AST_alan_vasey_grinded
-		portraits={
-			army={
-				large="GFX_AST_alan_vasey"
-				small="gfx/interface/ideas/idea_AST_alan_vasey.dds"
-			}
-		}
-		corps_commander={
-			traits={ trickster pre_grinded hill_fighter expert_improviser panzer_leader panzer_expert trait_engineer }
-			skill=4
 			attack_skill=2
 			defense_skill=4
 			planning_skill=3

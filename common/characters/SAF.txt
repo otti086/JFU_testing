@@ -74,25 +74,6 @@ characters={
 		}
 	}
 
-	SAF_george_edwin_brink_grinded={
-		name=SAF_george_edwin_brink_grinded
-		portraits={
-			army={
-				large="GFX_SAF_george_edwin_brink"
-				small="gfx/interface/ideas/idea_SAF_george_edwin_brink.dds"
-			}
-		}
-		corps_commander={
-			traits={ desert_fox trickster pre_grinded expert_improviser panzer_leader panzer_expert trait_engineer }
-			skill=4
-			attack_skill=4
-			defense_skill=4
-			planning_skill=4
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-
 	SAF_guy_hallifax={
 		name=SAF_guy_hallifax
 		portraits={
@@ -108,25 +89,6 @@ characters={
 			defense_skill=2
 			planning_skill=2
 			logistics_skill=2
-			legacy_id=-1
-		}
-	}
-
-	SAF_guy_hallifax_grinded={
-		name=SAF_guy_hallifax_grinded
-		portraits={
-			army={
-				large="GFX_SAF_guy_halifax"
-				small="gfx/interface/ideas/idea_SAF_guy_halifax.dds"
-			}
-		}
-		field_marshal={
-			traits={ trickster pre_grinded hill_fighter guerilla_fighter organizer logistics_wizard panzer_leader panzer_expert trait_engineer }
-			skill=4
-			attack_skill=4
-			defense_skill=2
-			maneuvering_skill=2
-			coordination_skill=2
 			legacy_id=-1
 		}
 	}

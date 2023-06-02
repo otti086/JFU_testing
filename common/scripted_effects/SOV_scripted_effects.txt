@@ -641,7 +641,7 @@ SOV_paranoia_daunt_generals_effect = {
 			}
 		}
 		add_to_temp_variable = { temp_targets_index = 1 }
-		log = "LOOP ROUND [?temp_targets_index]"
+		#log = "LOOP ROUND [?temp_targets_index]"
 	}
 
 	custom_effect_tooltip = SOV_daunt_generals_tt
@@ -665,7 +665,7 @@ SOV_paranoia_daunt_generals_minor_effect = {
 			}
 		}
 		add_to_temp_variable = { temp_targets_index = 1 }
-		log = "LOOP ROUND [?temp_targets_index]"
+		#log = "LOOP ROUND [?temp_targets_index]"
 	}
 
 	custom_effect_tooltip = SOV_daunt_generals_minor_tt
@@ -690,7 +690,7 @@ SOV_paranoia_daunt_admirals_effect = {
 			add_unit_leader_trait = trait_SOV_cowed_by_stalin_navy
 		}
 		add_to_temp_variable = { temp_targets_index = 1 }
-		log = "LOOP ROUND [?temp_targets_index]"
+		#log = "LOOP ROUND [?temp_targets_index]"
 	}
 
 	custom_effect_tooltip = SOV_daunt_admirals_tt
@@ -715,7 +715,7 @@ SOV_paranoia_daunt_admirals_minor_effect = {
 			add_unit_leader_trait = trait_SOV_cowed_by_stalin_navy
 		}
 		add_to_temp_variable = { temp_targets_index = 1 }
-		log = "LOOP ROUND [?temp_targets_index]"
+		#log = "LOOP ROUND [?temp_targets_index]"
 	}
 
 	custom_effect_tooltip = SOV_daunt_admirals_minor_tt
@@ -1152,7 +1152,7 @@ SOV_pick_regular_purge_administration_type_effect = {
 		limit = {
 			check_variable = { SOV_random_purge_test = 0 }
 		}
-		log = "RANDOM PURGE FAILED. NO VALID PURGE AVAILABLE"
+		#log = "RANDOM PURGE FAILED. NO VALID PURGE AVAILABLE"
 	}
 }
 
@@ -1244,7 +1244,7 @@ SOV_pick_regular_purge_army_type_effect = {
 		limit = {
 			check_variable = { SOV_random_purge_test = 0 }
 		}
-		log = "RANDOM PURGE FAILED. NO VALID PURGE AVAILABLE"
+		#log = "RANDOM PURGE FAILED. NO VALID PURGE AVAILABLE"
 	}
 }
 
@@ -1288,7 +1288,7 @@ SOV_pick_great_purge_army_type_effect = {
 		limit = {
 			check_variable = { SOV_random_purge_test = 0 }
 		}
-		log = "RANDOM PURGE FAILED. NO VALID PURGE AVAILABLE"
+		#log = "RANDOM PURGE FAILED. NO VALID PURGE AVAILABLE"
 	}
 }
 
@@ -1335,7 +1335,7 @@ SOV_pick_regular_purge_navy_type_effect = {
 		limit = {
 			check_variable = { SOV_random_purge_test = 0 }
 		}
-		log = "RANDOM PURGE FAILED. NO VALID PURGE AVAILABLE"
+		#log = "RANDOM PURGE FAILED. NO VALID PURGE AVAILABLE"
 	}
 }
 
@@ -1378,7 +1378,7 @@ SOV_pick_great_purge_navy_type_effect = {
 		limit = {
 			check_variable = { SOV_random_purge_test = 0 }
 		}
-		log = "RANDOM PURGE FAILED. NO VALID PURGE AVAILABLE"
+		#log = "RANDOM PURGE FAILED. NO VALID PURGE AVAILABLE"
 	}
 }
 
@@ -1406,7 +1406,7 @@ SOV_pick_regular_purge_airforce_type_effect = {
 		limit = {
 			check_variable = { SOV_random_purge_test = 0 }
 		}
-		log = "RANDOM PURGE FAILED. NO VALID PURGE AVAILABLE"
+		#log = "RANDOM PURGE FAILED. NO VALID PURGE AVAILABLE"
 	}
 }
 
@@ -2297,7 +2297,7 @@ SOV_trigger_regular_purge_airforce_anti_saboteur_campaign_effect = {
 SOV_trigger_great_purge_design_bureau_dissolved_effect = {
 	hidden_effect = {
 		set_variable = { SOV_random_bureau_to_dissolve = random } # THIS IS NOW PASSED TO THE EVENT, BUT NEEDS TO BE DONE HERE AND STORED IN VAR
-		log = "Random bureau to dissolve: [?SOV_random_bureau_to_dissolve]"
+		#log = "Random bureau to dissolve: [?SOV_random_bureau_to_dissolve]"
 	}
 
 	country_event = NSB_soviet_paranoia_system_events.48 # TRIGGER EVENT
@@ -2630,7 +2630,7 @@ SOV_clean_military_offensive_effect = {
 
 SOV_manage_spanish_generals_exiled_in_ussr_effect = {
 	#log = "FROM is [FROM.GetName] // ROOT is [ROOT.GetName]" #Debug
-	#Exiled SPD/SPA Generals
+	#Exiled SPD/SPC Generals
 	if = { #Líster
 		limit = {
 			ROOT = { tag = SPD }

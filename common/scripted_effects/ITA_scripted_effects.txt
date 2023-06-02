@@ -2809,6 +2809,10 @@ ITA_add_reggianes_exports_templates = {
 
 ITA_naval_air_coordination_templates = {
 
+	if = { #CANT Z.1007 Alcione also unlocked in Bomber Designs focus
+		limit = {
+			NOT = { has_completed_focus = ITA_bomber_designs }
+		}
 	create_equipment_variant = {
 		name = "CANT Z.1007 Alcione"
 		type = medium_plane_airframe_1
@@ -2817,13 +2821,16 @@ ITA_naval_air_coordination_templates = {
 				fixed_main_weapon_slot = medium_bomb_bay
 				fixed_auxiliary_weapon_slot_1 = bomb_locks
 				fixed_auxiliary_weapon_slot_2 = torpedo_mounting
+				fixed_auxiliary_weapon_slot_3 = torpedo_mounting
 				special_type_slot_1 = lmg_defense_turret_2x
 				special_type_slot_2 = hmg_defense_turret_2x
-				engine_type_slot = engine_1_3x
+				engine_type_slot = engine_3_3x #Increased tier due to thrust/weight issues
 			}
 		icon = "GFX_ITA_tactical_bomber1_medium"
+		}
 	}
 }
+
 
 ITA_add_long_range_aircraft_templates = {
 
@@ -2863,11 +2870,12 @@ ITA_add_long_range_aircraft_templates = {
 		modules = {
 				fixed_main_weapon_slot = torpedo_mounting
 				fixed_auxiliary_weapon_slot_1 = torpedo_mounting
-				fixed_auxiliary_weapon_slot_2 = torpedo_mounting
+				#fixed_auxiliary_weapon_slot_2 = torpedo_mounting
 				fixed_auxiliary_weapon_slot_3 = large_bomb_bay
 				special_type_slot_1 = hmg_defense_turret_2x
 				special_type_slot_2 = hmg_defense_turret_2x
-				special_type_slot_3 = flying_boat_large
+				special_type_slot_3 = hmg_defense_turret_2x
+				special_type_slot_4 = flying_boat_large
 				engine_type_slot = engine_3_4x
 
 			}
@@ -2889,6 +2897,10 @@ ITA_add_bomber_designs_templates = {
 		icon = "GFX_ITA_CAS2_medium"
 	}
 
+	if = { #CANT Z.1007 Alcione also unlocked in Naval-Air Coordination focus
+		limit = {
+			NOT = { has_completed_focus = ITA_naval_air_coordination }
+		}
 	create_equipment_variant = {
 		name = "CANT Z.1007 Alcione"
 		type = medium_plane_airframe_1
@@ -2900,11 +2912,13 @@ ITA_add_bomber_designs_templates = {
 				fixed_auxiliary_weapon_slot_3 = torpedo_mounting
 				special_type_slot_1 = lmg_defense_turret_2x
 				special_type_slot_2 = hmg_defense_turret_2x
-				engine_type_slot = engine_2_3x
+					engine_type_slot = engine_3_3x #Increased tier due to thrust/weight issues
 			}
 		icon = "GFX_ITA_tactical_bomber1_medium"
+		}
 	}
 }
+
 
 ITA_add_fighter_designs_templates = {
 
@@ -2979,8 +2993,11 @@ ITA_add_supremacy_in_the_skies_templates = {
 		modules = {
 				fixed_main_weapon_slot = medium_bomb_bay
 				fixed_auxiliary_weapon_slot_1 = torpedo_mounting
-				engine_type_slot = engine_2_3x
+				fixed_auxiliary_weapon_slot_2 = torpedo_mounting
+				engine_type_slot = engine_3_3x
 				special_type_slot_1 = hmg_defense_turret_2x
+				special_type_slot_2 = hmg_defense_turret_2x
+				special_type_slot_3 = armor_plate_medium
 			}
 		icon = "GFX_ITA_tactical_bomber2_medium"
 	}
@@ -3056,7 +3073,7 @@ ITA_add_the_king_of_the_skies_template_production_and_wing = {
 ITA_add_basic_light_flamethrower_template = {
 	create_equipment_variant = {
 		name = "L3 Lf"
-		type = light_tank_chassis_1
+		type = light_tank_flame_chassis_1
 		parent_version = 0
 		modules = {
 			main_armament_slot = flamethrower
@@ -3070,6 +3087,50 @@ ITA_add_basic_light_flamethrower_template = {
 			tank_nsb_armor_upgrade = 1
 		}
 		icon = "GFX_ITA_basic_light_tank_medium"
+	}
+}
+ITA_add_basic_light_tank_destroyer_template = {
+	#L3 cc
+	if = {
+		limit = {
+			has_dlc = "Axis Armor Pack"
+		}
+		create_equipment_variant = {
+			name = "L3 cc"
+			type = light_tank_destroyer_chassis_1
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_high_velocity_cannon
+				turret_type_slot = tank_light_fixed_superstructure_turret
+				suspension_type_slot = tank_bogie_suspension
+				armor_type_slot = tank_riveted_armor
+				engine_type_slot = tank_gasoline_engine
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 1
+				tank_nsb_armor_upgrade = 1
+			}
+			icon = "GFX_ITA_basic_light_td_medium"
+		}
+	}
+	else = {
+		create_equipment_variant = {
+			name = "L3 cc"
+			type = light_tank_destroyer_chassis_1
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_high_velocity_cannon
+				turret_type_slot = tank_light_fixed_superstructure_turret
+				suspension_type_slot = tank_bogie_suspension
+				armor_type_slot = tank_riveted_armor
+				engine_type_slot = tank_gasoline_engine
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 1
+				tank_nsb_armor_upgrade = 1
+			}
+			icon = "GFX_ITA_basic_light_tank_medium"
+		}
 	}
 }
 
@@ -3100,7 +3161,7 @@ ITA_add_improved_light_tank_templates = {
 		#L40 da 47/32
 		create_equipment_variant = {
 			name = "Semovente L40 da 47/32"
-			type = light_tank_destroyer_chassis_1
+			type = light_tank_destroyer_chassis_2
 			parent_version = 0
 			modules = {
 				main_armament_slot = tank_medium_cannon
@@ -3120,7 +3181,7 @@ ITA_add_improved_light_tank_templates = {
 		#L40 da 47/32
 		create_equipment_variant = {
 			name = "Semovente L40 da 47/32"
-			type = light_tank_destroyer_chassis_1
+			type = light_tank_destroyer_chassis_2
 			parent_version = 0
 			modules = {
 				main_armament_slot = tank_medium_cannon
@@ -3185,7 +3246,8 @@ ITA_add_basic_medium_tank_templates = {
 		}
 		create_equipment_variant = {
 			name = "Semovente da 75/18"
-			type = medium_tank_chassis_1
+			type = medium_tank_artillery_chassis_1
+
 			parent_version = 0
 			modules = {
 				main_armament_slot = tank_close_support_gun
@@ -3205,7 +3267,8 @@ ITA_add_basic_medium_tank_templates = {
 	else = {
 		create_equipment_variant = {
 			name = "Semovente da 75/18"
-			type = medium_tank_chassis_1
+			type = medium_tank_artillery_chassis_1
+
 			parent_version = 0
 			modules = {
 				main_armament_slot = tank_close_support_gun
@@ -3230,7 +3293,8 @@ ITA_add_basic_medium_tank_templates = {
 		}
 		create_equipment_variant = {
 			name = "Semovente da 90/53"
-			type = medium_tank_chassis_1
+			type = medium_tank_destroyer_chassis_1
+
 			parent_version = 0
 			modules = {
 				main_armament_slot = tank_high_velocity_cannon_2
@@ -3243,13 +3307,17 @@ ITA_add_basic_medium_tank_templates = {
 				tank_nsb_engine_upgrade = 3
 				tank_nsb_armor_upgrade = 3
 			}
-			icon = "GFX_ITA_advanced_medium_td_medium"
+			icon = GFX_ITA_advanced_medium_td_medium
+			role_icon_index = 2
+			model = ITA_medium_tank_destroyer_brigade_2_entity
+
 		}
 	}
 	else = {
 		create_equipment_variant = {
 			name = "Semovente da 90/53"
-			type = medium_tank_chassis_1
+			type = medium_tank_destroyer_chassis_1
+
 			parent_version = 0
 			modules = {
 				main_armament_slot = tank_high_velocity_cannon_2
@@ -3316,7 +3384,8 @@ ITA_add_improved_medium_tank_templates = {
 		}
 		create_equipment_variant = {
 			name = "Semovente da 75/34"
-			type = medium_tank_chassis_2
+			type = medium_tank_destroyer_chassis_2
+
 			parent_version = 0
 			modules = {
 				main_armament_slot = tank_high_velocity_cannon
@@ -3330,13 +3399,15 @@ ITA_add_improved_medium_tank_templates = {
 				tank_nsb_engine_upgrade = 4
 				tank_nsb_armor_upgrade = 4
 			}
-			icon = "GFX_ITA_basic_light_td_medium"
+			icon = "GFX_ITA_improved_medium_td_medium"
 		}
 	}
 	else = {
 		create_equipment_variant = {
+
 			name = "Semovente da 75/34"
-			type = medium_tank_chassis_2
+			type = medium_tank_destroyer_chassis_2
+
 			parent_version = 0
 			modules = {
 				main_armament_slot = tank_high_velocity_cannon
@@ -3361,10 +3432,12 @@ ITA_add_improved_medium_tank_templates = {
 		}
 		create_equipment_variant = {
 			name = "Semovente da 105/25"
-			type = medium_tank_chassis_2
+			type = medium_tank_artillery_chassis_2
+
 			parent_version = 0
 			modules = {
-				main_armament_slot = tank_high_velocity_cannon_2
+				main_armament_slot = tank_medium_howitzer_2
+
 				turret_type_slot = tank_medium_fixed_superstructure_turret
 				suspension_type_slot = tank_bogie_suspension
 				armor_type_slot = tank_welded_armor
@@ -3376,16 +3449,19 @@ ITA_add_improved_medium_tank_templates = {
 				tank_nsb_engine_upgrade = 4
 				tank_nsb_armor_upgrade = 6
 			}
-			icon = "GFX_ITA_improved_medium_td_medium"
+			icon = "GFX_ITA_advanced_medium_art_medium"
 		}
 	}
 	else = {
 		create_equipment_variant = {
+
 			name = "Semovente da 105/25"
-			type = medium_tank_chassis_2
+			type = medium_tank_artillery_chassis_2
+
 			parent_version = 0
 			modules = {
-				main_armament_slot = tank_high_velocity_cannon_2
+				main_armament_slot = tank_medium_howitzer_2
+
 				turret_type_slot = tank_medium_fixed_superstructure_turret
 				suspension_type_slot = tank_bogie_suspension
 				armor_type_slot = tank_welded_armor
@@ -3468,7 +3544,7 @@ ITA_add_improved_heavy_tank_templates = {
 }
 
 ITA_add_advanced_medium_tank_templates = {
-	#SEMOVENTE da 75/46 (Nedium AT)
+	#SEMOVENTE da 75/46 (Medium AT)
 	if = {
 		limit = {
 			has_dlc = "Axis Armor Pack"
@@ -3523,7 +3599,8 @@ ITA_add_advanced_medium_tank_templates = {
 			type = medium_tank_artillery_chassis_3
 			parent_version = 0
 			modules = {
-				main_armament_slot = tank_medium_howitzer_2
+				main_armament_slot = tank_medium_howitzer
+
 				turret_type_slot = tank_medium_fixed_superstructure_turret
 				suspension_type_slot = tank_bogie_suspension
 				armor_type_slot = tank_riveted_armor
@@ -3542,7 +3619,8 @@ ITA_add_advanced_medium_tank_templates = {
 			type = medium_tank_artillery_chassis_3
 			parent_version = 0
 			modules = {
-				main_armament_slot = tank_medium_howitzer_2
+				main_armament_slot = tank_medium_howitzer
+
 				turret_type_slot = tank_medium_fixed_superstructure_turret
 				suspension_type_slot = tank_bogie_suspension
 				armor_type_slot = tank_riveted_armor
@@ -3573,7 +3651,9 @@ ITA_add_advanced_medium_tank_templates = {
 			tank_nsb_engine_upgrade = 6
 			tank_nsb_armor_upgrade = 3
 		}
-		icon = "GFX_ITA_basic_medium_tank_medium"
+		icon = "GFX_ITA_improved_medium_tank_medium"
+		model = ITA_medium_armor_1_entity
+
 	}
 }
 
@@ -3742,7 +3822,7 @@ ITA_create_francesco_de_martini_operative = { #INITIAL
 	create_operative_leader = {
 		name = "Francesco de Martini"
 		GFX = GFX_portrait_ITA_francesco_de_martini
-		traits = { operative_commando operative_demolition_expert  }
+		traits = { operative_commando operative_demolition_expert operative_linguist }
 		bypass_recruitment = no
 		available_to_spy_master = yes
 		nationalities = { ITA  ETH }
@@ -3786,7 +3866,7 @@ ITA_create_pietro_koch_operative = { #FASCIST
 	create_operative_leader = {
 		name = "Pietro Koch"
 		GFX = GFX_portrait_ITA_pietro_koch
-		traits = {  operative_tough  }
+		traits = { operative_master_interrogator operative_natural_orator }
 		bypass_recruitment = no
 		available_to_spy_master = yes
 		nationalities = { ITA GER }
@@ -3797,7 +3877,7 @@ ITA_create_carmelo_borg_pisani_operative = { #FASCIST/MONARCHIST
 	create_operative_leader = {
 		name = "Carmelo Borg Pisani"
 		GFX = GFX_portrait_ITA_carmelo_borg_pisani
-		traits = {   }
+		traits = { operative_natural_orator operative_well_groomed }
 		bypass_recruitment = no
 		available_to_spy_master = yes
 		nationalities = { ITA ENG }

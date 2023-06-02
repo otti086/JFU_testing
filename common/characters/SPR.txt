@@ -429,25 +429,6 @@ characters={
 		}
 	}
 
-	SPR_antonio_cordon_garcia_grinded={
-		name=SPR_antonio_cordon_garcia_grinded
-		portraits={
-			army={
-				large="GFX_portrait_SPR_antonio_cordon_garcia"
-				small="gfx/interface/ideas/idea_SPR_antonio_cordon_garcia.dds"
-			}
-		}
-		field_marshal={
-			traits={ infantry_leader trait_SPA_nationalist_sympathies pre_grinded infantry_leader infantry_expert thorough_planner logistics_wizard ranger trickster }
-			skill=4
-			attack_skill=8
-			defense_skill=6
-			planning_skill=6
-			logistics_skill=5
-			legacy_id=-1
-		}
-	}
-
 	SPA_francisco_franco={
 		instance = {
 			allowed = {
@@ -526,25 +507,6 @@ characters={
 		}
 	}
 
-	SPA_francisco_franco_grinded={
-			name=SPA_francisco_franco_grinded
-			portraits={
-				army={
-					large="GFX_portrait_spain_francisco_franco"
-					small="gfx/interface/ideas/idea_SPA_francisco_franco.dds"
-				}
-			}
-			field_marshal={
-			traits={ logistics_wizard trait_SPA_nationalist_sympathies pre_grinded organisational_leader expert_delegator organizer trickster panzer_leader panzer_expert hill_fighter ranger }
-			skill=5
-			attack_skill=8
-			defense_skill=6
-			planning_skill=6
-			logistics_skill=5
-			legacy_id=-1
-		}
-	}
-
 	SPR_mohamed_meziane={
 		name=SPR_mohamed_meziane
 		portraits={
@@ -564,25 +526,6 @@ characters={
 		}
 	}
 
-	SPR_mohamed_meziane_grinded={
-		name=SPR_mohamed_meziane_grinded
-		portraits={
-			army={
-				large="GFX_portrait_SPA_mohamed_meziane"
-				small="gfx/interface/ideas/idea_SPA_mohamed_meziane.dds"
-			}
-		}
-		corps_commander={
-			traits={ career_officer pre_grinded harsh_leader trait_SPA_nationalist_sympathies panzer_leader panzer_expert trait_engineer fortress_buster trickster expert_improviser hill_fighter ranger }
-			skill=4
-			attack_skill=9
-			defense_skill=6
-			planning_skill=6
-			logistics_skill=5
-			legacy_id=-1
-		}
-	}
-
 	SPR_gonzalo_queipo_de_llano={
 		name=SPR_gonzalo_queipo_de_llano
 		portraits={
@@ -599,25 +542,6 @@ characters={
 			planning_skill=2
 			logistics_skill=2
 			legacy_id=1110
-		}
-	}
-
-	SPR_gonzalo_queipo_de_llano_grinded={
-		name=SPR_gonzalo_queipo_de_llano_grinded
-		portraits={
-			army={
-				large="GFX_portrait_SPA_gonzalo_queipo_de_llano"
-				small="gfx/interface/ideas/idea_SPA_gonzalo_queipo_de_llano.dds"
-			}
-		}
-		corps_commander={
-			traits={ infantry_officer pre_grinded trait_SPA_nationalist_sympathies trait_engineer infantry_leader infantry_expert trickster expert_improviser ranger hill_fighter}
-			skill=4
-			attack_skill=8
-			defense_skill=6
-			planning_skill=6
-			logistics_skill=5
-			legacy_id=-1
 		}
 	}
 
