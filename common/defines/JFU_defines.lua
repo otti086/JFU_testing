@@ -23,6 +23,8 @@ NDefines.NMilitary.RETREAT_SPEED_FACTOR = 0.35 		-- VANILLA 0.25
 NDefines.NMilitary.BATALION_CHANGED_EXPERIENCE_DROP = 0.0 
 NDefines.NMilitary.BATALION_NOT_CHANGED_EXPERIENCE_DROP = 0.0
 NDefines.NMilitary.COMBAT_MINIMUM_TIME = 2 		-- VANILLA 4
+NDefines.NMilitary.ARMY_FUEL_COST_MULT = 0.2	-- VANILLA 0.5             --fuel cost multiplier for all army related stuff
+
 NDefines.NCountry.POPULATION_YEARLY_GROWTH_BASE = 0.0
 NDefines.NCountry.BASE_FUEL_CAPACITY = 100000
 NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 200
