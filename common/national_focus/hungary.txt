@@ -1200,7 +1200,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_home_defense
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 50
@@ -1427,7 +1427,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_light_infantry_divisions_doctrine
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 60
@@ -1465,7 +1465,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = HUN_light_infantry_divisions_doctrine
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 60
