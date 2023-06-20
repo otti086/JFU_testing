@@ -1397,7 +1397,11 @@ focus_tree = {
 				name = HUN_artillery_effort
 				bonus = 1.0
 				uses = 2
-				category = artillery
+				technology = artillery2
+				technology = artillery3
+				technology = artillery4
+				technology = artillery5
+				technology = artillery2
 			}
 		}
 	}
