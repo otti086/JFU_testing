@@ -229,29 +229,6 @@ recruit_character = USA_harold_ickes
 recruit_character = USA_henry_stimson
 
 
-if = {
-	limit = { has_dlc = "La Resistance" }
-	create_operative_leader = {
-		name = "Josephine Baker"
-		GFX = GFX_portrait_josephine_baker
-		traits = {  }
-		bypass_recruitment = no
-		available_to_spy_master = yes
-		female = yes
-		nationalities = { USA }
-	}
-
-	create_operative_leader = {
-		name = "Virginia Hall"
-		GFX = GFX_portrait_virginia_hall
-		traits = { }
-		bypass_recruitment = no
-		available_to_spy_master = yes
-		female = yes
-		nationalities = { USA }
-	}
-}
-
 
 ### VARIANTS ###
 # 1936 Start #

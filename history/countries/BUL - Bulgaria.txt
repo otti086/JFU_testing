@@ -238,21 +238,6 @@ if = { #DLC
 
 	activate_advisor = BUL_georgi_ivanov_kyoseivanov
 
-	if = {
-		limit = {
-			has_dlc = "La Resistance"
-		}
-		create_operative_leader = { #DLC
-			name = "Vladimir Zaimov"
-			GFX = GFX_portrait_bul_vladimir_zaimov
-			traits = {  operative_commando }
-			bypass_recruitment = no
-			available_to_spy_master = yes
-			nationalities = { BUL }
-		}
-		recruit_character = BUL_stefan_nedev
-	}
-
 	#TECHNOLOGY
 	set_research_slots = 3 #DLC
 

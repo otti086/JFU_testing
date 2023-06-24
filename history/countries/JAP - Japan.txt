@@ -317,31 +317,6 @@ recruit_character = JAP_tomoyuki_yamashita
 recruit_character = JAP_kenkichi_ueda
 recruit_character = JAP_kingoro_hashimoto
 recruit_character = JAP_hiroshi_oshima
-
-
-if = {
-	limit = {
-		has_dlc = "La Resistance"
-	}
-	create_operative_leader = {
-		name = "Yoshiko Kawashima"
-		GFX = GFX_portrait_yoshiko_kawashima
-		traits = { }
-		bypass_recruitment = no
-		available_to_spy_master = yes
-		female = yes
-		nationalities = { MAN JAP CHI }
-	}
-
-	create_operative_leader = {
-		name = "Takeo Yoshikawa"
-		GFX = GFX_portrait_takeo_yoshikawa
-		traits = { }
-		bypass_recruitment = no
-		available_to_spy_master = yes
-		nationalities = { JAP }
-	}
-}
 if = {
 	limit = {
 		has_dlc = "No Step Back"

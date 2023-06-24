@@ -1930,15 +1930,6 @@ country_event = {
 
 	option = { #WELCOME TO THE NKVD
 		name = NSB_soviet_great_patriotic_war.01.a
-
-		create_operative_leader = {
-			name = "Nikolay Ivanovich Kuznetsov"
-			GFX = GFX_Portrait_nikolay_kuznetsov
-			traits = { operative_commando  }
-			bypass_recruitment = no
-			available_to_spy_master = yes
-			nationalities = { SOV GER  }
-		}
 	}
 }
 

@@ -716,38 +716,6 @@ set_popularities = {
 create_faction = Comintern
 add_to_faction = SOV
 
-if = {
-	limit = {
-		has_dlc = "La Resistance"
-	}
-	create_operative_leader = {
-		name = "Alexander Radó"
-		GFX = GFX_portrait_alexander_rado
-		traits = {  }
-		bypass_recruitment = no
-		available_to_spy_master = yes
-		nationalities = { SOV HUN }
-	}
-
-	create_operative_leader = {
-		name = "Kim Philby"
-		GFX = GFX_portrait_kim_philby
-		traits = { operative_double_agent  }
-		bypass_recruitment = no
-		available_to_spy_master = yes
-		nationalities = { SOV ENG }
-	}
-	create_operative_leader = {
-		name = "Richard Sorge"
-		GFX = GFX_portrait_richard_sorge
-		traits = {  }
-		bypass_recruitment = no
-		available_to_spy_master = yes
-		nationalities = { SOV GER }
-	}
-}
-
-
 ### VARIANTS ###
 # 1936 Start #
 

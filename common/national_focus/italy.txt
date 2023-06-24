@@ -6887,7 +6887,6 @@ focus_tree = {
 				}
 				add_ideas = ITA_servizio_informazione_militare_ns
 
-				ITA_create_rosa_dainelli_operative = yes
 			}
 			else = {
 				add_ideas = ITA_servizio_informazione_militare_ns_vanilla
@@ -7518,7 +7517,6 @@ focus_tree = {
 					remove_idea = ITA_servizio_informazione_militare_ns
 					add_idea = ITA_servizio_informazione_militare_banda_carita
 				}
-				ITA_create_padre_ildefonso_operative = yes
 			}
 			IF = {
 				limit = {
@@ -7558,7 +7556,6 @@ focus_tree = {
 				remove_idea = ITA_servizio_informazione_militare_banda_carita
 				add_idea = ITA_servizio_informazione_militare_banda_koch
 			}
-			ITA_create_pietro_koch_operative = yes
 		}
 	}
 
@@ -9319,13 +9316,6 @@ focus_tree = {
 			add_state_claim = 185 #CORFU
 			add_state_claim = 1 #CORSICA
 			add_state_claim = 116 #MALTA
-
-			if = {
-				limit = {
-					has_dlc = "La Resistance"
-				}
-				ITA_create_carmelo_borg_pisani_operative = yes
-			}
 
 			if = {
 				limit = {

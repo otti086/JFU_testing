@@ -131,22 +131,3 @@ if = {
 	recruit_character = GRE_evripidis_bakirtris
 	recruit_character = GRE_georgios_papandreou
 }
-
-if = {
-	limit = {
-		AND = {
-			has_dlc = "La Resistance"
-			has_dlc = "Battle for the Bosporus"
-		}
-	}
-	create_operative_leader = {
-		name = "Patrick Leigh Fermor"
-		GFX = GFX_portrait_eng_patrick_fermor
-		traits = { operative_tough operative_commando }
-		bypass_recruitment = no
-		available_to_spy_master = yes
-		female = no
-		nationalities = { ENG GRE }
-	}
-	recruit_character = GRE_father_dimistrios
-}

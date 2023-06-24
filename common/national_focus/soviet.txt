@@ -3829,20 +3829,6 @@ focus_tree = {
 				limit = {
 					has_dlc = "La Resistance"
 				}
-				if = {
-					limit = {
-						has_government = communism
-					}
-					create_operative_leader = {
-						name = "Dmitry Medvedev"
-						GFX = GFX_Portrait_dmitry_medvedev
-						female = yes
-						traits = {  operative_commando }
-						bypass_recruitment = no
-						available_to_spy_master = yes
-						nationalities = { SOV }
-					}
-				}
 
 				add_timed_idea = {
 					idea = SOV_central_headquarters_of_the_partisan_movement
@@ -4749,14 +4735,6 @@ focus_tree = {
 			if = {
 				limit = {
 					has_dlc = "La Resistance"
-				}
-				create_operative_leader = {
-					name = "Ramón Mercader"
-					GFX = GFX_portrait_SOV_ramon_mercader
-					traits = { operative_tough  }
-					bypass_recruitment = no
-					available_to_spy_master = yes
-					nationalities = { SOV SPR MEX }
 				}
 
 				#Extra operative slot
