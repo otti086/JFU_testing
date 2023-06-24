@@ -320,7 +320,6 @@ JFU_decisions = {
 		}
 		cost = 0
 		complete_effect = {
-			hidden_effect = {
 				ITA = {
 					every_state = {
 						limit = {
@@ -336,7 +335,6 @@ JFU_decisions = {
 					transfer_state = 553
 					transfer_state = 799
 				}
-			}
 		}		
 	}
 
@@ -1357,16 +1355,16 @@ JFU_decisions = {
         		type = annex_everything
             }
 			hidden_effect = {
-				ENG = { add_to_war = { targeted_alliance = ENG enemy = JAP } }
-				CAN = { add_to_war = { targeted_alliance = ENG enemy = JAP } }	
-				RAJ = { add_to_war = { targeted_alliance = ENG enemy = JAP } }	
-				AST = { add_to_war = { targeted_alliance = ENG enemy = JAP } }		
-				FRA = { add_to_war = { targeted_alliance = ENG enemy = JAP } }	
-				HOL = { add_to_war = { targeted_alliance = ENG enemy = JAP } }
-				if = { limit = { country_exists = SAF }	SAF = { add_to_war = { targeted_alliance = ENG enemy = JAP } } }
-				if = { limit = { country_exists = NZL }	NZL = { add_to_war = { targeted_alliance = ENG enemy = JAP } } }
-				if = { limit = { BRA = { is_ai = no } } BRA = { add_to_war = { targeted_alliance = ENG enemy = JAP } } } 
-				if = { limit = { MEX = { is_ai = no } } MEX = { add_to_war = { targeted_alliance = ENG enemy = JAP } } } 
+				ENG = { add_to_war = { targeted_alliance = USA enemy = JAP } }
+				CAN = { add_to_war = { targeted_alliance = USA enemy = JAP } }	
+				RAJ = { add_to_war = { targeted_alliance = USA enemy = JAP } }	
+				AST = { add_to_war = { targeted_alliance = USA enemy = JAP } }		
+				FRA = { add_to_war = { targeted_alliance = USA enemy = JAP } }	
+				HOL = { add_to_war = { targeted_alliance = USA enemy = JAP } }
+				if = { limit = { country_exists = SAF }	SAF = { add_to_war = { targeted_alliance = USA enemy = JAP } } }
+				if = { limit = { country_exists = NZL }	NZL = { add_to_war = { targeted_alliance = USA enemy = JAP } } }
+				if = { limit = { BRA = { is_ai = no } } BRA = { add_to_war = { targeted_alliance = USA enemy = JAP } } }
+				if = { limit = { MEX = { is_ai = no } } MEX = { add_to_war = { targeted_alliance = USA enemy = JAP } } }
 				if = { limit = { country_exists = MAN }	MAN = { add_to_war = { targeted_alliance = JAP enemy = ENG } } }
 				if = { limit = { country_exists = SIA }	SIA = { add_to_war = { targeted_alliance = JAP enemy = ENG } } }
 			}

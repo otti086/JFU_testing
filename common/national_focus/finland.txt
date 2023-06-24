@@ -959,10 +959,7 @@ focus_tree = {
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = fin_deterrence focus = fin_soviet_threat }
 		available = { 
-			OR = { 
-				threat > 0.75 
-				has_defensive_war = yes 
-			}
+			date > 1941.1.1
 		}
 
 		continue_if_invalid = yes
