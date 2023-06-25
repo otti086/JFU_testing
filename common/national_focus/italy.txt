@@ -9133,8 +9133,8 @@ focus_tree = {
 				}
 			}
 			hidden_effect = {
-				44 = { add_core_of = GER }
-				805 = { add_core_of = GER }
+				44 = { add_core_of = ITA }
+				805 = { add_core_of = ITA }
 			}
 		}
 	}

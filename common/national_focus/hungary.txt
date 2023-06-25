@@ -287,7 +287,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_industrial_revitalization
 
-		cost = 5
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -454,41 +454,22 @@ focus_tree = {
 		id = HUN_civilian_industry
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = HUN_announce_the_gyor_program }
-		x = -1
+		mutually_exclusive = { focus = HUN_domestic_arms_industry }
+		x = -2
 		y = 1
 		relative_position_id = HUN_announce_the_gyor_program
 
-		cost = 10
+		cost = 5
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-		complete_tooltip = {
-			random_state = {
-				limit = {
-					has_state_flag = HUN_civilian_industry_IC
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
 
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
+			155 = {
+				add_extra_state_shared_building_slots = 8
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -509,7 +490,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_civilian_industry
 
-		cost = 10
+		cost = 5
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -529,17 +510,21 @@ focus_tree = {
 		y = 2
 		relative_position_id = HUN_civilian_industry
 
-		cost = 10
+		cost = 5
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-		complete_tooltip = {
-			random_state = {
-				limit = {
-					has_state_flag = HUN_expand_the_manfred_weiss_steel_works_IC
+
+		completion_reward = {
+			43 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
 				}
 				add_resource = {
 					type = steel
@@ -547,30 +532,37 @@ focus_tree = {
 				}
 			}
 		}
+	}
 
+	focus = {
+		id = HUN_expand_the_technical_university_of_budapest
+		icon = GFX_focus_research
+		prerequisite = { focus = HUN_expand_the_aluminum_industry  focus = HUN_expand_the_manfred_weiss_steel_works }
+		x = 0
+		y = 3
+		relative_position_id = HUN_civilian_industry
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			random_owned_controlled_state = {
-				prioritize = { 43 }
-				limit = {
-					ROOT = { has_full_control_of_state = PREV } 
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = HUN_expand_the_manfred_weiss_steel_works_IC
-				add_resource = {
-					type = steel
-					amount = 12
-				}
-			}
+			add_research_slot = 1
 		}
 	}
 
@@ -591,9 +583,15 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			43 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
 				add_resource = {
 					type = aluminium
-					amount = 16
+					amount = 20
 				}
 			}
 		}
@@ -607,6 +605,7 @@ focus_tree = {
 		id = HUN_domestic_arms_industry
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = HUN_announce_the_gyor_program }
+		mutually_exclusive = { focus = HUN_civilian_industry }
 		x = 2
 		y = 1
 		relative_position_id = HUN_announce_the_gyor_program
@@ -630,33 +629,13 @@ focus_tree = {
 		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-		complete_tooltip = {
-			random_state = {
-				limit = {
-					has_state_flag = HUN_domestic_arms_industry_AF1
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
 
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
+			155 = {
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 				set_state_flag = HUN_domestic_arms_industry_AF1
@@ -725,33 +704,13 @@ focus_tree = {
 		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-		complete_tooltip = {
-			random_state = {
-				limit = {
-					has_state_flag = HUN_boost_hungarian_aviation_industry_AF1
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
 
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
+			155 = {
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 				set_state_flag = HUN_boost_hungarian_aviation_industry_AF1
