@@ -574,8 +574,6 @@ JFU_vichy_france_2 = {
 JFU_startup_on_action = {
 	if = {	limit = { has_game_rule = { rule = horst_manchukuo	option = HORST_ENABLE_MOD_MANCHUKUO	} }	MAN = { load_focus_tree = manchukuomod_focus } }
 	if = {	limit = { has_game_rule = { rule = JFU_pre_sets option = COMPETITIVE_JFU } } SWE = {pregrinded_effect = yes} SWE = { JAP_closed_eco_effect = yes } SWE = { SOV_closed_eco_effect = yes } }
-	if = {	limit = { has_game_rule = { rule = JFU_pre_sets option = JFU_ALTERNATIVE_GS2 } } SWE = { JFU_alternative_gs2 = yes} }
-	if = {	limit = { has_game_rule = { rule = JFU_pre_sets option = JFU_ALTERNATIVE_GS } } SWE = { JFU_alternative_gs = yes} }
 	if = { 	limit = { has_game_rule = { rule = JFU_closed_eco_JAPAN option = ENABLE_CLOSED_ECO } } SWE = { JAP_closed_eco_effect = yes } }
 	if = {	limit = { has_game_rule = { rule = JFU_closed_eco_SOVIET option = ENABLE_CLOSED_ECO } } SWE = { SOV_closed_eco_effect = yes } }
 	if = {	limit = { has_game_rule = { rule = JFU_pre_grinded_generals option = PRE_GRINDED_GENERALS_ON } } SWE = {pregrinded_effect = yes} }
@@ -585,7 +583,7 @@ JFU_startup_on_action = {
 	if = {	limit = { has_game_rule = { rule = JFU_SPECIAL_FORCES_CAP option = JFU_NO_CAP } } every_possible_country = { limit = { NOT = { ai_country = yes } } add_ideas = NO_SF_CAP } }
 	if = {	limit = { has_game_rule = { rule = JFU_AFRICA_TILES option = ONE_TILE_AFRICA } } SWE = { transfer_state = 909 } SWE = { transfer_state = 910 } SWE = { transfer_state = 911 } }
 	if = {	limit = { has_game_rule = { rule = JFU_YUGO_COLAB option = FREE_COLAB_YUGO } } set_global_flag = YUGO_FREE_COLAB_FLAG }
-	if = {	limit = { has_game_rule = { rule = JFU_pre_sets option = COMPETITIVE_JFU } } set_global_flag = YUGO_FREE_COLAB_FLAG  }
+	if = {	limit = { has_game_rule = { rule = JFU_pre_sets option = COMPETITIVE_JFU } } set_global_flag = YUGO_FREE_COLAB_FLAG }
 	if = {
 		limit = { 
 			has_game_rule = { 
@@ -604,6 +602,40 @@ JFU_startup_on_action = {
 				level = 40
 				instant_build = yes
 			}								
+		}
+		ITA = {
+			ITA_benito_mussolini = { unit_leader_event = { id = BBA_italo_ethiopian_war_events.01 } }
+			annex_country = { target = ETH transfer_troops = no }
+			ITA_end_the_italo_ethiopian_war = yes 
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = { 
+				rule = JFU_pre_sets 
+				option = PRE_GRINDED_GENERALS_OFF 
+			}		
+		}
+		GER = {
+			add_ideas = { volunteers_7 }
+		}
+		HUN = {
+			add_ideas = { volunteers_4 }			
+		}
+		ROM = {
+			add_ideas = { volunteers_3 }			
+		}
+		BUL = {
+			add_ideas = { volunteers_3 }			
+		}
+		MAN = {
+			add_ideas = { volunteers_3 }			
+		}
+		SOV = {
+			add_ideas = { volunteers_8 }			
+		}
+		FRA = {
+			add_ideas = { volunteers_4 }			
 		}
 	}
 	if = {  limit = { ai_country_allies = yes } country_lock_all_division_template = yes }
@@ -710,34 +742,6 @@ JFU_scripted_events_effect = {
 	ENG = { country_event = { id = britain.22 days = 520 }}
 	MEX = { country_event = { id = mexico.15 days = 180 }}
 	MEX = { country_event = { id = mexico.27 days = 120 }}
-}
-JFU_alternative_gs = {
-	USA = {
-		add_dynamic_modifier = {
-			modifier = pacific_states_USA
-		}
-	}
-	JAP = {
-		add_dynamic_modifier = {
-			modifier = pacific_states_JAP
-		}
-	}
-	64 = {
-		add_extra_state_shared_building_slots = 5
-		add_building_construction = {
-			type = industrial_complex
-			level = 5
-			instant_build = yes
-		}
-	}
-	282 = {
-		add_extra_state_shared_building_slots = 5
-		add_building_construction = {
-			type = industrial_complex
-			level = 5
-			instant_build = yes
-		}
-	}
 }
 HMP_anti_building_exploit_effect = { #add to horst tool
 	every_state = { limit = { ignore_aa_states = yes non_damaged_building_level  = { building = anti_air_building  level > 5 } } remove_building  = {  type = anti_air_building  level = 1 }  }  
@@ -3241,7 +3245,7 @@ JFU_update_generals = {
 SOV_closed_eco_effect = {
 	SOV = {
 		add_ideas = closed_economy 
-		add_ideas = export_focus_idea
+		add_ideas = free_trade_idea
 		403 = {
 			add_extra_state_shared_building_slots = 16
 			add_building_construction = {
@@ -3256,18 +3260,6 @@ JAP_closed_eco_effect = {
 	JAP = {
 		add_ideas = closed_economy 
 		add_ideas = free_trade_idea
-	}	
-}
-JFU_alternative_gs2 = {
-	USA = {
-		add_dynamic_modifier = {
-			modifier = pacific_states_USA
-		}
-	}
-	JAP = {
-		add_dynamic_modifier = {
-			modifier = pacific_states_JAP
-		}
 	}	
 }
 Endsieg_Tanks_spawn_ins = {

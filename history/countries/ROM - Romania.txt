@@ -131,7 +131,6 @@ if = {
 		has_dlc = "Death or Dishonor"
 	}
 	add_ideas = {
-		volunteers_3
 		ROM_king_carol_ii_hedonist
 	}
 }

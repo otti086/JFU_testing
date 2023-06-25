@@ -1101,44 +1101,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER_form_the_reichskommissariats
-		icon = GFX_focus_ger_reichskommisariats
-		prerequisite = { focus = GER_german_war_economy focus = GER_integrate_war_economies }
-		available = {
-		}
-		allow_branch = {
-			has_game_rule = {
-				rule = JFU_pre_sets 
-				option = JFU_ALTERNATIVE_GS
-			}
-		}
-		x = 1
-		y = 1
-		relative_position_id = GER_integrate_war_economies
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		
-		completion_reward = {
-			every_state = {
-				limit = {
-					AND = {
-						OR = {
-							is_core_of = HOL
-							is_core_of = BEL
-							is_core_of = NOR 
-							is_core_of = DEN
-						}
-						is_controlled_by = GER
-					}
-				}
-				add_compliance = 50 
-			}
-		}
-	}
-
-	focus = {
 		id = GER_air_innovation
 		text = air_innovation
 		icon = GFX_goal_generic_build_airforce
@@ -1516,6 +1478,12 @@ focus_tree = {
 					uses = 2
 					category = armor
 				}
+				add_tech_bonus = {
+					name = motorized_bonus
+					ahead_reduction = 2
+					uses = 1
+					category = motorized_equipment
+				}
 			}
 			else = {
 				effect_tooltip = {
@@ -1529,6 +1497,12 @@ focus_tree = {
 						bonus = 1.0
 						uses = 2
 						category = armor
+					}
+					add_tech_bonus = {
+						name = motorized_bonus
+						ahead_reduction = 2
+						uses = 1
+						category = motorized_equipment
 					}
 				}
 			}
@@ -1875,17 +1849,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			if = {
-				limit ={
-					has_game_rule = {
-					rule = JFU_pre_sets
-					option = JFU_ALTERNATIVE_GS
-					}
-				}
-				70 = { add_core_of = HUN }
-				71 = { add_core_of = HUN }
-				73 = { add_core_of = HUN }
-			}
 
 			HUN = {transfer_state = 70}
 			HUN = {transfer_state = 71}
