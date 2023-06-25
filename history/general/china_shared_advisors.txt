@@ -58,7 +58,7 @@ every_possible_country = {
 		advisor={
 			slot = political_advisor
 			available  = {
-				has_completed_focus = CHI_bureau_of_investigation_and_statistics 
+				always = no
 			}
 			allowed  = {
 				OR = {
@@ -85,7 +85,7 @@ every_possible_country = {
 			slot = political_advisor
 			available  = {
 				has_intelligence_agency  = yes 
-				has_completed_focus  = CHI_bureau_of_investigation_and_statistics 
+				always = no
 			}
 			allowed  = {
 				OR = {
@@ -109,7 +109,7 @@ every_possible_country = {
 		advisor={
 			slot = political_advisor
 			available  = {
-				has_completed_focus  = CHI_financial_policy 
+				always = no
 			}
 			allowed  = {
 				OR = {
@@ -131,7 +131,7 @@ every_possible_country = {
 		advisor={
 			slot = political_advisor
 			available  = {
-				has_completed_focus  = CHI_legislative_yuan 
+				always = no
 			}
 			allowed = {
 				OR = {

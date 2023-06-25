@@ -612,7 +612,7 @@ JFU_startup_on_action = {
 	if = {
 		limit = {
 			has_game_rule = { 
-				rule = JFU_pre_sets 
+				rule = JFU_pre_grinded_generals 
 				option = PRE_GRINDED_GENERALS_OFF 
 			}		
 		}
