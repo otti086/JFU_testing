@@ -107,16 +107,6 @@ JFU_pre_sets = {
 		text = "competive JFU Preset"
 		desc = "this Pre set is a competitive/rebalanced version of JFU. IT inclused Pre grinded generals, closed ecos, free colabs and more"
 	}
-	option = {
-		name = "JFU_ALTERNATIVE_GS"
-		text = "Alternative Settings 1"
-		desc = "Clicking this option will enable the Presettings for the Hearts of Iron IV Germany Server"
-	}
-	option = {
-		name = "JFU_ALTERNATIVE_GS2"
-		text = "Alternative Settings 2"
-		desc = "Clicking this option will enable the Presettings for the Paradox Empire Server"
-	}	
 }
 horst_manchukuo = {
 	name = "Manchukuo Focus Tree"

@@ -174,10 +174,7 @@ JFU_decisions = {
 			date > 1942.6.1
 		}
 		visible = {
-			has_game_rule = {
-				rule = JFU_pre_sets 
-				option = JFU_ALTERNATIVE_GS
-			}			
+			always = no
 		}
 		cost = 0
 		complete_effect = {
@@ -198,10 +195,7 @@ JFU_decisions = {
 			date > 1943.6.1
 		}
 		visible = {
-			has_game_rule = {
-				rule = JFU_pre_sets 
-				option = JFU_ALTERNATIVE_GS
-			}			
+			always = no		
 		}
 		cost = 0
 		complete_effect = {
@@ -222,10 +216,7 @@ JFU_decisions = {
 			date > 1941.11.1
 		}
 		visible = {
-			has_game_rule = {
-				rule = JFU_pre_sets 
-				option = JFU_ALTERNATIVE_GS
-			}			
+			always = no		
 		}
 		cost = 0
 		complete_effect = {
@@ -246,10 +237,7 @@ JFU_decisions = {
 			date > 1942.11.1
 		}
 		visible = {
-			has_game_rule = {
-				rule = JFU_pre_sets 
-				option = JFU_ALTERNATIVE_GS
-			}			
+			always = no			
 		}
 		cost = 0
 		complete_effect = {
@@ -270,10 +258,7 @@ JFU_decisions = {
 			date > 1943.11.1
 		}
 		visible = {
-			has_game_rule = {
-				rule = JFU_pre_sets 
-				option = JFU_ALTERNATIVE_GS
-			}			
+			always = no		
 		}
 		cost = 0
 		complete_effect = {
@@ -685,13 +670,7 @@ JFU_decisions = {
 		fire_only_once = yes
 		allowed = { tag = SPR }
 		available = { date > 1937.1.1}
-		visible = {
-			has_game_rule = {
-				rule = JFU_pre_sets 
-				option = COMPETITIVE_JFU
-			}	
-			FIN = { is_ai = yes}	
-		}
+		visible = { always = no }
 		cost = 0
 		complete_effect = {
 			add_tech_bonus = {
@@ -853,36 +832,6 @@ JFU_decisions = {
 			else = { clr_country_flag = MAN_GETS_CHINA }
 		}
 	}
-	"Join the Axis" = {
-		icon = generic_operation
-		fire_only_once = yes
-		allowed = { tag = JAP }
-		available = { has_war_with = ENG NOT = { is_in_faction = yes}}
-		visible = {
-			has_game_rule = {
-				rule = JFU_pre_sets 
-				option = JFU_ALTERNATIVE_GS2
-			}			
-		}
-		complete_effect = {
-			GER = {
-				add_to_faction = JAP
-				if = {
-					limit = {
-						MAN = { is_ai = no }
-					}
-				add_to_faction = MAN
-				}
-				if = {
-					limit = {
-						SIA = { is_ai = no }
-					}
-				add_to_faction = SIA
-				}
-			}
-		
-		}		
-	}
 
 	#	███████╗ ██████╗ ██╗   ██╗
 	#	██╔════╝██╔═══██╗██║   ██║
@@ -944,48 +893,29 @@ JFU_decisions = {
 		allowed = { tag =  SOV }
 		available = {
 			NOT = { has_war_with = GER}
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = JFU_pre_sets 
-						option = JFU_ALTERNATIVE_GS2
-					}					
-				}
-				OR = {
-					date > 1942.6.1
+			OR = { 
+				date > 1942.1.1
+				NOT = {
 					AND = {
-						date > 1942.1.1
-						NOT = {
-							ENG = { controls_state = 126 }
-						}						
-					}
-				}				
-			}
-			else = {
-				OR = { 
-					date > 1942.1.1
-					NOT = {
-						AND = {
-							ENG = { controls_state = 119 }
-							ENG = { controls_state = 120 }
-							ENG = { controls_state = 121 }
-							ENG = { controls_state = 122 }
-							ENG = { controls_state = 123 }
-							ENG = { controls_state = 125 }
-							ENG = { controls_state = 126 }
-							ENG = { controls_state = 127 }
-							ENG = { controls_state = 128 }
-							ENG = { controls_state = 129 }
-							ENG = { controls_state = 130 }
-							ENG = { controls_state = 131 }
-							ENG = { controls_state = 132 }
-							ENG = { controls_state = 133 }
-							ENG = { controls_state = 136 }
-							ENG = { controls_state = 338 }
-						} 
-					}
+						ENG = { controls_state = 119 }
+						ENG = { controls_state = 120 }
+						ENG = { controls_state = 121 }
+						ENG = { controls_state = 122 }
+						ENG = { controls_state = 123 }
+						ENG = { controls_state = 125 }
+						ENG = { controls_state = 126 }
+						ENG = { controls_state = 127 }
+						ENG = { controls_state = 128 }
+						ENG = { controls_state = 129 }
+						ENG = { controls_state = 130 }
+						ENG = { controls_state = 131 }
+						ENG = { controls_state = 132 }
+						ENG = { controls_state = 133 }
+						ENG = { controls_state = 136 }
+						ENG = { controls_state = 338 }
+					} 
 				}
-			} 
+			}
 		}
 		cost = 0
 		complete_effect = {
@@ -1218,23 +1148,14 @@ JFU_decisions = {
 	"Join the Allies" = {
 		icon = generic_operation
 		fire_only_once = yes
-		allowed = { tag = USA }
-		available = {
+		visible = { 			
 			NOT = {
 				is_in_faction_with = ENG
-			}
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = JFU_pre_sets 
-						option = JFU_ALTERNATIVE_GS2
-					}					
-				}
-				JAP = { has_war_with = USA }
-			}	
-			else = {
-			date > 1940.8.1				
-			}	
+			}	 
+		}
+		allowed = { tag = USA }
+		available = {
+			date > 1940.8.1					
 		}
 		cost = 0
 		complete_effect = {
@@ -1340,12 +1261,6 @@ JFU_decisions = {
 		fire_only_once = yes
 		allowed = { tag = USA }
 		available = { 
-			NOT = {
-				has_game_rule = {
-					rule = JFU_pre_sets 
-					option = JFU_ALTERNATIVE_GS2
-				}				
-			}
 			date > 1941.4.1
 		}
 		cost  = 0
@@ -1422,30 +1337,6 @@ JFU_decisions = {
 			add_to_variable =  { var = FRA.FRA_legitimacy value = 20 }
 		}
 	}
-	"Update Generals" = {
-		icon = generic_operation
-		fire_only_once = yes
-		allowed = { tag = ENG }
-		available = { 
-			date > 1941.1.1
-		}
-		visible = {
-			OR = {
-				has_game_rule = {
-					rule = JFU_pre_sets 
-					option = COMPETITIVE_JFU
-				}
-				has_game_rule = {
-					rule = JFU_pre_grinded_generals 
-					option = PRE_GRINDED_GENERALS_ON
-				}					
-			}			
-			tag = ENG }
-		cost = 0
-		complete_effect = {
-			JFU_update_generals = yes
-		}				
-	}
 	"Operation Countenance" = {
 		icon = generic_operation
 		fire_only_once = yes
@@ -1476,6 +1367,21 @@ JFU_decisions = {
 					transfer_state = 419
 				}
 				news_event = { id = news.5002 }
+				if = {
+					limit = {
+						OR = {
+							has_game_rule = {
+								rule = JFU_pre_sets 
+								option = COMPETITIVE_JFU
+							}
+							has_game_rule = {
+								rule = JFU_pre_grinded_generals 
+								option = PRE_GRINDED_GENERALS_ON
+							}					
+						}	
+					}	
+					JFU_update_generals = yes											
+				}
 			}
 		}
 	}
@@ -1533,7 +1439,8 @@ JFU_decisions = {
 		fire_only_once = yes
 		allowed = { tag = ROM }
 		cost = 0
-		available = { BUL = { is_ai = yes } date > 1938.1.1 }
+		visible = { 212 = { is_controlled_by = BUL } }
+		available = { BUL = { is_ai = yes } date > 1938.1.1 212 = { is_controlled_by = BUL } }
 		complete_effect = {
 			hidden_effect = {
 				ROM = { add_state_core = 211 add_state_core = 801 add_state_core = 212 add_state_core = 48}
@@ -1546,7 +1453,8 @@ JFU_decisions = {
 		fire_only_once = yes
 		allowed = { tag = ITA }
 		cost = 0
-		available = {BUL = { is_ai = yes } date > 1938.1.1 }
+		visible = { 212 = { is_controlled_by = BUL } }
+		available = { BUL = { is_ai = yes } date > 1938.1.1 }
 		complete_effect = {
 			hidden_effect = {
 				ITA = { add_state_core = 211 add_state_core = 801 add_state_core = 212 add_state_core = 48}
@@ -1575,7 +1483,7 @@ JFU_decisions = {
 		cost = 0
 		complete_effect = {
 			hidden_effect = {
-				ENG = { add_state_core = 277 add_state_core = 474 add_state_core = 475 add_state_core = 476 add_state_core = 477 add_state_core = 478 add_state_core = 479 add_state_core = 480 add_state_core = 481 add_state_core = 482 add_state_core = 483 add_state_core = 484 add_state_core = 485 }
+				BRA = { add_state_core = 277 add_state_core = 474 add_state_core = 475 add_state_core = 476 add_state_core = 477 add_state_core = 478 add_state_core = 479 add_state_core = 480 add_state_core = 481 add_state_core = 482 add_state_core = 483 add_state_core = 484 add_state_core = 485 }
 			}
 			annex_country = { target = MEX }		
 		}			

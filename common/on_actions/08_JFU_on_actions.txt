@@ -177,105 +177,61 @@ on_actions = {
 	}
 	on_capitulation = {
 		effect = {
-			if = {
+			if = { 
 				limit = {
-					NOT = {
-						has_game_rule = {
-							rule = JFU_pre_sets 
-							option = JFU_ALTERNATIVE_GS
-						}
-					}
+					original_tag = HOL
 				}
-				if = { 
+				every_state = {
 					limit = {
-						original_tag = HOL
-					}
-					every_state = {
-						limit = {
-							AND = {
-								is_core_of = HOL
-								is_controlled_by = GER
-							}
+						AND = {
+							is_core_of = HOL
+							is_controlled_by = GER
 						}
-					
-						add_compliance = 50 
 					}
+					add_compliance = 50 
 				}
 			}
 			if = {
 				limit = {
-					NOT = {
-						has_game_rule = {
-							rule = JFU_pre_sets 
-							option = JFU_ALTERNATIVE_GS
-						}
-					}
+					original_tag = BEL
 				}
-				if = { 
+				every_state = {
 					limit = {
-						original_tag = BEL
-					}
-					every_state = {
-						limit = {
-							AND = {
-								is_core_of = BEL
-								is_controlled_by = GER
-							}
+						AND = {
+							is_core_of = BEL
+							is_controlled_by = GER
 						}
-					
-						add_compliance = 50 
 					}
+					add_compliance = 50 
 				}
 			}
 			if = {
 				limit = {
-					NOT = {
-						has_game_rule = {
-							rule = JFU_pre_sets 
-							option = JFU_ALTERNATIVE_GS
-						}
-					}
+					original_tag = NOR
 				}
-				if = { 
+				NOR = { transfer_state = 912 }
+				every_state = {
 					limit = {
-						original_tag = NOR
-					}
-					NOR = { transfer_state = 912 }
-					every_state = {
-						limit = {
-							AND = {
-								is_core_of = NOR
-								is_controlled_by = GER
-							}
+						AND = {
+							is_core_of = NOR
+							is_controlled_by = GER
 						}
-					
-						add_compliance = 50 
 					}
+					add_compliance = 50 
 				}
 			}
 			if = {
 				limit = {
-					NOT = {
-						has_game_rule = {
-							rule = JFU_pre_sets 
-							option = JFU_ALTERNATIVE_GS
-						}
-					}
+					original_tag = DEN
 				}
-				if = { 
+				every_state = {
 					limit = {
-						original_tag = DEN
-					}
-					every_state = {
-						limit = {
-							AND = {
-								is_core_of = DEN
-								is_controlled_by = GER
-							}
+						AND = {
+							is_core_of = DEN
+							is_controlled_by = GER
 						}
-					
-						add_compliance = 50 
 					}
+					add_compliance = 50 
 				}
 			}
 			if = {
@@ -646,34 +602,26 @@ on_actions = {
 		}
 	}
 	on_naval_invasion = { effect ={  if = { limit = { spanish_coastline = yes } teleport_armies = {limit = { allies = yes  } to_state = FROM }  PREV = { if = { limit = { SPR = { owns_state = 41 } }transfer_state_to = SPR}  else = { transfer_state_to = GER }  }  } }   }	
-	on_weekly_JAP = {
-		effect = {
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = JFU_pre_sets
-						option = JFU_ALTERNATIVE_GS
-					}
-					date > 1941.1.1
-				}
-				JAP = { island_hopping_JAP = yes }
-			}
-		}
-	}
-	on_weekly_USA = {
-		effect = {
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = JFU_pre_sets
-						option = JFU_ALTERNATIVE_GS
-					}
-					date > 1941.1.1
-				}
-				USA = { island_hopping_USA = yes }
-			}
-		}
-	}
+#	on_weekly_JAP = {
+#		effect = {
+#			if = {
+#				limit = {
+#					date > 1941.1.1
+#				}
+#				JAP = { island_hopping_JAP = yes }
+#			}
+#		}
+#	}
+#	on_weekly_USA = {
+#		effect = {
+#			if = {
+#				limit = {
+#					date > 1941.1.1
+#				}
+#				USA = { island_hopping_USA = yes }
+#			}
+#		}
+#	}
 	on_monthly_SOV = {
 		effect = {
 			if = { limit = { AND = { date > 1937.8.20

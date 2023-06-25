@@ -304,16 +304,16 @@ ideas = {
 			picture = generic_acquire_tanks		
 
 			modifier = {	
-				trait_organizer_xp_gain_factor = -2
-				trait_panzer_leader_xp_gain_factor = -2
-				trait_cavalry_leader_xp_gain_factor = -2
-				trait_infantry_leader_xp_gain_factor = -2
-				trait_naval_invader_xp_gain_factor = -2
-				trait_commando_xp_gain_factor = -2
-				trait_trickster_xp_gain_factor = -2
-				trait_engineer_xp_gain_factor = -2
-				terrain_trait_xp_gain_factor = -2	
-				experience_gain_factor = -2
+				trait_organizer_xp_gain_factor = -0.99
+				trait_panzer_leader_xp_gain_factor = -0.99
+				trait_cavalry_leader_xp_gain_factor = -0.99
+				trait_infantry_leader_xp_gain_factor = -0.99
+				trait_naval_invader_xp_gain_factor = -0.99
+				trait_commando_xp_gain_factor = -0.99
+				trait_trickster_xp_gain_factor = -0.99
+				trait_engineer_xp_gain_factor = -0.99
+				terrain_trait_xp_gain_factor = -0.99	
+				experience_gain_factor = -0.99
 			}		
 		}
 		pre_grinded_gens_volunteers = {
@@ -326,7 +326,7 @@ ideas = {
 			picture = partial_economic_mobilisation
 
 			modifier = {
-				send_volunteer_size = -10
+				send_volunteer_size = -100
 				send_volunteer_divisions_required = -0.99
 			}
 		}
