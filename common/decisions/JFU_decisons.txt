@@ -1612,7 +1612,7 @@ JFU_templates = {
 			set_country_flag = JFU_open_inf_templates
 		}
 	}
-	"20W Infantry" = {
+	"Infantry 20W" = {
 		icon = generic_military
 		fire_only_once = yes
 		allowed = {}
@@ -1643,7 +1643,7 @@ JFU_templates = {
 			}
 		}
 	}	
-	"20W Cavalery" = {
+	"Cavalery 20W" = {
 		icon = generic_cavalry
 		fire_only_once = yes
 		allowed = {}
@@ -1674,7 +1674,7 @@ JFU_templates = {
 			}
 		}
 	}	
-	"40W Infantry" = {
+	"Infantry 40W" = {
 		icon = generic_military
 		fire_only_once = yes
 		allowed = {}
@@ -1731,7 +1731,7 @@ JFU_templates = {
 			set_country_flag = JFU_open_special_templates
 		}
 	}
-	"25W Mountain" = {
+	"Mountain 25W" = {
 		icon = generic_mountain_fortification
 		fire_only_once = yes
 		allowed = {}
@@ -1765,7 +1765,7 @@ JFU_templates = {
 			}
 		}
 	}	
-	"42W Mountain" = {
+	"Mountain 42W" = {
 		icon = generic_mountain_fortification
 		fire_only_once = yes
 		allowed = {}
