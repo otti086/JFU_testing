@@ -763,7 +763,10 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = why_we_fight_focus
 			custom_effect_tooltip = why_we_fight_effect
-			add_ideas = volunteers_50
+			swap_ideas = {
+				remove_idea = pre_grinded_gens_volunteers
+				add_idea = volunteers_50
+			}
 		}
 	}
 	
