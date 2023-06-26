@@ -3,7 +3,7 @@ JFU_decisions = {
 	visible = {
 	}
 }
-JFU_Templates_decision = {
+JFU_templates = {
 	icon = generic_research
 	visible = {
 	}	
