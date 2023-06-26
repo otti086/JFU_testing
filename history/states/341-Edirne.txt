@@ -7,7 +7,7 @@ state= {
 
 	}
 	
-	state_category = town
+	state_category = wasteland
 
 	history= {
 		owner = SWE

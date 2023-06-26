@@ -810,8 +810,8 @@
  send_air_to_eng:0 "Send Planes to UK"
  send_air_to_eng_desc:0 "Sends all Planes expect Carrier Planes and Naval Patrolbombers to the UK"
  cancel_air_to_eng:0 "Cancel sending Planes to UK"
- JFU_templates_decision:0 "JFU Template Decisions"
  JFU_decisions:0 " JFU Decisions"
+ JFU_templates:0 "JFU Template Decisions"
 
  GER_endsieg_1:0 "Panzersturm"
  GER_endsieg_2:0 "Throw out the Allies"

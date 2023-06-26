@@ -1,7 +1,7 @@
 state={
 	id=912
 	name="The Isle of Men"
-	state_category = megalopolis
+	state_category = wasteland
 	manpower = 1
 	history={
 		owner = SWE

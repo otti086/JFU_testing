@@ -3,7 +3,7 @@ state={
 	id=342
 	name="STATE_342" # Antalya
 	manpower = 1
-	state_category = rural
+	state_category = wasteland
 
 	history={
 		owner = SWE
