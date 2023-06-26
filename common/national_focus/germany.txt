@@ -1355,6 +1355,12 @@ focus_tree = {
 				uses = 2
 				category = land_doctrine
 			}
+			add_tech_bonus = {
+				name = motorized_bonus
+				ahead_reduction = 2
+				uses = 1
+				category = motorized_equipment
+			}
 			custom_effect_tooltip = available_chief_of_army
 			show_ideas_tooltip = walther_von_brauchitsch			
 		}
@@ -1478,12 +1484,6 @@ focus_tree = {
 					uses = 2
 					category = armor
 				}
-				add_tech_bonus = {
-					name = motorized_bonus
-					ahead_reduction = 2
-					uses = 1
-					category = motorized_equipment
-				}
 			}
 			else = {
 				effect_tooltip = {
@@ -1497,12 +1497,6 @@ focus_tree = {
 						bonus = 1.0
 						uses = 2
 						category = armor
-					}
-					add_tech_bonus = {
-						name = motorized_bonus
-						ahead_reduction = 2
-						uses = 1
-						category = motorized_equipment
 					}
 				}
 			}
