@@ -521,7 +521,12 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_tech_mountaineers_medium"
 		texturefile = "gfx/interface/technologies/mountain.dds"
-	}	
+	}
+
+	SpriteType = {
+		name = "GFX_rangers_medium"
+		texturefile = "gfx/technologies/TECH_rangers.dds"
+	}
 
 	SpriteType = {
 		name = "GFX_marines3_medium"
