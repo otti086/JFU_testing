@@ -608,13 +608,64 @@ JFU_startup_on_action = {
 			annex_country = { target = ETH transfer_troops = no }
 			ITA_end_the_italo_ethiopian_war = yes 
 		}
+		BEL = {
+			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 30000 }
+			add_equipment_to_stockpile = { type = support_equipment_1 amount = 1500 }
+		}
+		CZE = {
+			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 30000 }
+		}
+		LIT = {
+			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 30000 }
+		}
+		POL = {
+			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 50000 }			
+		}
+		10 = {
+			add_extra_state_shared_building_slots = 10
+			add_building_construction = {
+				type = arms_factory
+				level = 10
+				instant_build = yes
+			}
+		}
+		BEL = {
+			add_ideas = ai_imiter
+		}
+		AUS = {
+			add_ideas = ai_imiter
+		}
+		POL = {
+			add_ideas = ai_imiter
+		}
+		CZE = {
+			add_ideas = ai_imiter
+		}
+		DEN = {
+			add_ideas = ai_imiter
+		}		
+		HOL = {
+			add_ideas = ai_imiter
+		}	
+		LIT = {
+			add_ideas = ai_imiter
+		}	
 	}
 	if = {
 		limit = {
-			has_game_rule = { 
-				rule = JFU_pre_grinded_generals 
-				option = PRE_GRINDED_GENERALS_OFF 
-			}		
+			AND = {
+				has_game_rule = { 
+					rule = JFU_pre_grinded_generals 
+					option = PRE_GRINDED_GENERALS_OFF 
+				}
+				NOT = {
+					has_game_rule = { 
+						rule = JFU_pre_sets 
+						option = COMPETITIVE_JFU 
+					}					
+				}
+			}
+		
 		}
 		GER = {
 			add_ideas = { volunteers_7 }
@@ -642,7 +693,7 @@ JFU_startup_on_action = {
 	every_country = { limit = { OR = { axis = yes allies = yes } } add_ideas = peace_training }
 	SWE = { set_global_flag = NOR_RUGES_PLAN }
 	SWE = { JFU_apply_intel = yes }
-	SWE = { HFU_fuel_startup_effect = yes }											
+	SWE = { HFU_fuel_startup_effect = yes }										
 	SWE = { JFU_scripted_events_effect = yes }
 	SPR = {	country_lock_all_division_template = yes country_event = { id = lar_spain.2 days = 230 } activate_mission = days_till_civil_war }
 	ENG = {

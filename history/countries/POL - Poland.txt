@@ -9,7 +9,7 @@ if = {
 	}
 }
 
-set_research_slots = 3
+set_research_slots = 0
 
 # Starting tech
 set_technology = {
@@ -61,17 +61,6 @@ if = {
 		basic_battery = 1
 		basic_torpedo = 1
 		basic_depth_charges = 1
-	}
-}
-if = {
-	limit = { has_dlc = "No Step Back" }
-	set_variable = {
-		var = pol_peasant_democracy
-		value = 30
-	}
-	set_variable = {
-		var = pol_peasant_communism
-		value = 30
 	}
 }
 
@@ -157,11 +146,7 @@ if = {
 		}
 		icon = "gfx/interface/technologies/POL_imp_light_tank.dds"
 	}
-#	add_equipment_to_stockpile = {
-#		type = light_tank_chassis_0
-#		amount = 550
-#		variant_name = "TKS"
-#	}
+
 }
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }

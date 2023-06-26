@@ -106,8 +106,6 @@ if = {
 	}		
 	add_ideas = {
 		CHI_army_corruption_1
-		CHI_ineffective_bureaucracy
-		CHI_incompetent_officers
 		free_trade
 	}
 }

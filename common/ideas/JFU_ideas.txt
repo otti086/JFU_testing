@@ -650,5 +650,18 @@ ideas = {
 				experience_gain_army = 0.3
 			}			
 		}
+		ai_imiter = {
+            allowed = { always = yes }
+			available = { is_ai = yes }
+            removal_cost = -1
+            picture = generic_goods_red_bonus
+            modifier = {
+				consumer_goods_factor = 1.05
+				industrial_capacity_factory = -1.35
+				industrial_capacity_dockyard = -1.35
+				production_factory_max_efficiency_factor = -0.4 
+				political_power_factor = -2.3
+            }
+		}
 	}
 }

@@ -12,10 +12,9 @@ add_relation_modifier = {
 	target = SOV
 	modifier = trade_soviet
 }
-set_research_slots = 3
-set_stability = 0.75
+set_research_slots = 0
+set_stability = 1
 set_war_support = 0
-add_command_power = 10
 
 set_technology = {
 	infantry_weapons = 1
@@ -70,24 +69,6 @@ if = {
 	}
 }
 
-set_variable = { var = gateway_to_europe_influence_pp_total value = 0 }
-
-add_ideas = {
-	HOL_wilhelmina
-}
-
-if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	add_ideas = {
-		HOL_aloof_neutrality
-		HOL_shell_shocked_spectator_5
-		HOL_de_crisisjaren_5
-		HOL_weak_government
-	}
-}
-
 recruit_character = HOL_hendrikus_colijn
 recruit_character = HOL_anton_mussert
 recruit_character = HOL_lou_de_visser
@@ -125,13 +106,10 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 93
-	fascism = 4
-	communism = 3
+	democratic = 100
 }
 
-set_convoys = 150
-set_stability = 0.75
+set_convoys = 800
 
 
 if = {

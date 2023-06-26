@@ -2002,35 +2002,6 @@ ideas = {
 	materiel_manufacturer = {
 		
 		designer = yes
-		
-		artillerie_inrichtingen = {
-			
-			picture = artillerie_inrichtingen
-
-			available = {
-				has_completed_focus = HOL_expand_the_artillerieinrichtingen
-			}
-			
-			allowed = {
-				original_tag = HOL
-				has_dlc = "Man the Guns"
-			}
-
-			cost = 75
-			
-			research_bonus = {
-				infantry_weapons = 0.15
-			}
-			
-			equipment_bonus = {
-				# more research needed
-			}
-			
-			traits = { infantry_equipment_manufacturer }
-			
-			modifier = {
-			}
-		}
 	
 		hih_siderius = {
 				
@@ -2055,53 +2026,5 @@ ideas = {
 			modifier = {
 			}
 		}
-	}
-
-	industrial_concern = {
-	
-		HOL_royal_dutch_shell = {
-
-			available = {
-				has_completed_focus = HOL_expand_curacao_oil_refineries
-			}
-			
-			allowed = {
-				original_tag = HOL
-				has_dlc = "Man the Guns"
-			}
-
-			cost = 75
-
-			picture = HOL_royal_dutch_shell
-			
-			research_bonus = {
-				industry = 0.15
-				
-			}
-			
-			traits = { industrial_concern }
-		}
-
-		HOL_philips = {
-
-			available = {
-				has_completed_focus = HOL_philips_focus
-			}
-			
-			allowed = {
-				original_tag = HOL
-				has_dlc = "Man the Guns"
-			}
-
-			cost = 75
-
-			picture = HOL_philips
-			
-			research_bonus = {
-				electronics = 0.15
-			}
-			
-			traits = { electronics_concern }
-		}		
 	}
 }

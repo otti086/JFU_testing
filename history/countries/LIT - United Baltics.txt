@@ -2,7 +2,7 @@
 
 oob = "LIT_1936"
 
-set_research_slots = 3
+set_research_slots = 0
 
 recruit_character = LIT_antanas_smetona
 recruit_character = LIT_petras_schatz
@@ -44,8 +44,5 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 30
-	fascism = 15
-	communism = 15
-	neutrality = 40
+	neutrality = 100
 }

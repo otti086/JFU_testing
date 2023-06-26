@@ -223,20 +223,6 @@ bookmarks = {
 				RAJ_indian_gurkhas
 			}
 		}
-		"CZE"={
-			minor = yes
-			history = "CZE_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-				CZE_skoda_works
-				CZE_divided_nation
-			}
-			focuses = {
-				CZE_sudeten_1
-				CZE_industrial_legacy
-				CZE_military_research_institute
-			}
-		}
 
 		"HUN"={
 			minor = yes
@@ -287,20 +273,6 @@ bookmarks = {
 				MEX_oil_concessions
 			}
 			focuses = {
-			}
-		}
-
-		"HOL"={
-			minor = yes
-			history = "NETHERLANDS_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-				HOL_wilhelmina
-				HOL_shell_shocked_spectator_5
-				HOL_de_crisisjaren_5
-			}
-			focuses = {
-				HOL_continue_the_war_in_batavia
 			}
 		}
 

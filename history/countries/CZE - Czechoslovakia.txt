@@ -53,7 +53,7 @@ if = {
 	}
 }
 
-set_research_slots = 3
+set_research_slots = 0
 
 set_politics = {
 	ruling_party = democratic
@@ -63,20 +63,7 @@ set_politics = {
 }
 
 set_popularities = {
-	democratic = 65
-	neutrality = 20
-	fascism = 5
-	communism = 10
-}
-
-if = {
-	limit = {
-		has_dlc = "Death or Dishonor"
-	}
-	add_ideas = {
-		CZE_skoda_works
-		CZE_divided_nation
-}
+	democratic = 100
 }
 
 if = {
@@ -133,15 +120,6 @@ if = {
 			tank_nsb_engine_upgrade = 2
 			tank_nsb_armor_upgrade = 3
 		}
-	}
-}
-
-if = {
-	limit = {
-		NOT = { has_dlc = "Death or Dishonor" }
-	}
-	add_ideas = {
-		CZE_fortification_focus
 	}
 }
 
