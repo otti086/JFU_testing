@@ -1147,7 +1147,6 @@ equipment_modules = {
 
 		mission_type_stats = {
 			limit = {
-				cas
 				naval_bomber
 				port_strike
 			}
@@ -1155,6 +1154,15 @@ equipment_modules = {
 				air_defence = 4
 			}
 		}
+		mission_type_stats = {
+			limit = {
+				cas
+			}
+			add_stats = {
+				air_defence = 19
+			}
+		}	
+
 		dismantle_cost_ic = 2 #you essentially have to redesign part of the wing
 		xp_cost = 0
 	}

@@ -10,7 +10,14 @@ ability = {
 		allowed = {
 			is_leading_army_group = no
 			is_border_war = no
-			always = no
+			OWNER = {
+				if = {
+					limit = {
+						has_dlc = "Waking the Tiger"
+					}
+					always = yes
+				}
+			}
 		}
 		
 		ai_will_do = {
