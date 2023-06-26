@@ -1881,11 +1881,11 @@ JFU_templates = {
 					marine = { x = 1 y = 3 }
 					marine = { x = 1 y = 4 }
 
-					mot_rocket_artillery_brigade = { x = 2 y = 0 }
-					mot_rocket_artillery_brigade = { x = 2 y = 1 }
-					mot_rocket_artillery_brigade = { x = 2 y = 2 }
-					mot_rocket_artillery_brigade = { x = 2 y = 3 }
-					mot_rocket_artillery_brigade = { x = 2 y = 4 }
+					motorized_rocket_brigade = { x = 2 y = 0 }
+					motorized_rocket_brigade = { x = 2 y = 1 }
+					motorized_rocket_brigade = { x = 2 y = 2 }
+					motorized_rocket_brigade = { x = 2 y = 3 }
+					motorized_rocket_brigade = { x = 2 y = 4 }
 
 					marine = { x = 3 y = 0 }
 					marine = { x = 3 y = 1 }
