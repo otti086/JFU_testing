@@ -1810,6 +1810,50 @@ JFU_templates = {
 			}
 		}
 	}		
+	"Katjuscha Marines" = {
+		icon = generic_trucks
+
+		fire_only_once = yes
+		allowed = {}
+		visible = {
+			NOT = {
+				has_country_flag = JFU_templates_hide
+			}
+			has_country_flag = JFU_open_special_templates
+		}
+		cost = 0
+		complete_effect = {
+			division_template = {
+				name = "Katjuscha Marine.43"
+				division_names_group = GER_ARM_01
+				regiments = {
+					marine = { x = 0 y = 0 }
+					marine = { x = 0 y = 1 }
+					marine = { x = 0 y = 2 }
+					marine = { x = 0 y = 3 }
+					marine = { x = 0 y = 4 }
+
+					marine = { x = 1 y = 0 }
+					marine = { x = 1 y = 1 }
+					marine = { x = 1 y = 2 }
+					marine = { x = 1 y = 3 }
+					marine = { x = 1 y = 4 }
+
+					motorized_rocket_brigade = { x = 2 y = 0 }
+					motorized_rocket_brigade = { x = 2 y = 1 }
+					motorized_rocket_brigade = { x = 2 y = 2 }
+					motorized_rocket_brigade = { x = 2 y = 3 }
+					motorized_rocket_brigade = { x = 2 y = 4 }
+
+					marine = { x = 3 y = 0 }
+					marine = { x = 3 y = 1 }
+					marine = { x = 3 y = 2 }
+					marine = { x = 3 y = 3 }
+
+				}
+			}
+		}
+	}	
 	"Marines" = {
 		icon = generic_army_support
 		fire_only_once = yes
@@ -1853,7 +1897,7 @@ JFU_templates = {
 			}
 		}
 	}	
-	"Katjuscha Marines" = {
+	"Ranger 42W" = {
 		icon = generic_army_support
 		fire_only_once = yes
 		allowed = {}
@@ -1866,36 +1910,78 @@ JFU_templates = {
 		cost = 0
 		complete_effect = {
 			division_template = {
-				name = "Katjuscha Marine.43"
+				name = "Ranger.42"
 				division_names_group = GER_ARM_01
 				regiments = {
-					marine = { x = 0 y = 0 }
-					marine = { x = 0 y = 1 }
-					marine = { x = 0 y = 2 }
-					marine = { x = 0 y = 3 }
-					marine = { x = 0 y = 4 }
+					rangers = { x = 0 y = 0 }
+					rangers = { x = 0 y = 1 }
+					rangers = { x = 0 y = 2 }
+					rangers = { x = 0 y = 3 }
+					rangers = { x = 0 y = 4 }
 
-					marine = { x = 1 y = 0 }
-					marine = { x = 1 y = 1 }
-					marine = { x = 1 y = 2 }
-					marine = { x = 1 y = 3 }
-					marine = { x = 1 y = 4 }
+					rangers = { x = 1 y = 0 }
+					rangers = { x = 1 y = 1 }
+					rangers = { x = 1 y = 2 }
+					rangers = { x = 1 y = 3 }
+					rangers = { x = 1 y = 4 }
 
-					motorized_rocket_brigade = { x = 2 y = 0 }
-					motorized_rocket_brigade = { x = 2 y = 1 }
-					motorized_rocket_brigade = { x = 2 y = 2 }
-					motorized_rocket_brigade = { x = 2 y = 3 }
-					motorized_rocket_brigade = { x = 2 y = 4 }
+					rangers = { x = 2 y = 0 }
+					rangers = { x = 2 y = 1 }
+					rangers = { x = 2 y = 2 }
+					rangers = { x = 2 y = 3 }
+					rangers = { x = 2 y = 4 }
 
-					marine = { x = 3 y = 0 }
-					marine = { x = 3 y = 1 }
-					marine = { x = 3 y = 2 }
-					marine = { x = 3 y = 3 }
+					artillery_brigade = { x = 3 y = 0 }
+					artillery_brigade = { x = 3 y = 1 }
+					artillery_brigade = { x = 3 y = 2 }
 
+					anti_tank_brigade = { x = 4 y = 0 }
+					anti_tank_brigade = { x = 4 y = 1 }
+					anti_tank_brigade = { x = 4 y = 2 }
 				}
 			}
 		}
-	}	
+	}		
+	"Camels 30W" = {
+		icon = generic_cavalry
+		fire_only_once = yes
+		allowed = {}
+		visible = {			
+        	has_tech = camelry
+
+
+			NOT = {
+				has_country_flag = JFU_templates_hide
+			}
+			has_country_flag = JFU_open_special_templates
+		}
+		cost = 0
+		complete_effect = {
+			division_template = {
+				name = "Camels.30"
+				division_names_group = GER_ARM_01
+				regiments = {
+					camelry = { x = 0 y = 0 }
+					camelry = { x = 0 y = 1 }
+					camelry = { x = 0 y = 2 }
+					camelry = { x = 0 y = 3 }
+					camelry = { x = 0 y = 4 }
+
+					camelry = { x = 1 y = 0 }
+					camelry = { x = 1 y = 1 }
+					camelry = { x = 1 y = 2 }
+					camelry = { x = 1 y = 3 }
+					camelry = { x = 1 y = 4 }
+
+					camelry = { x = 2 y = 0 }
+					camelry = { x = 2 y = 1 }
+					camelry = { x = 2 y = 2 }
+					camelry = { x = 2 y = 3 }
+					camelry = { x = 2 y = 4 }
+				}
+			}
+		}
+	}		
 
 	"Close template tab - CAN NOT BE UNDONE" = {
 		icon = generic_operation
