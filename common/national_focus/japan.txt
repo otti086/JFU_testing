@@ -104,6 +104,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			hidden_effect = { CHI = { load_oob = "CHI_spawn" } }
 		}
 	}
 

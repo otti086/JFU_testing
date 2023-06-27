@@ -65,8 +65,8 @@ JFU_decisions = {
 	"Fall Gelb" = {
 		icon = ger_reichskommissariats
 		fire_only_once = yes	
-		allowed = { 	tag = GER 	}
-		available = { has_war_with = ENG	}
+		allowed = { tag = GER }
+		available = { has_war_with = ENG }
 		cost = 0
 		complete_effect = {
 			hidden_effect = {  ENG = { add_to_faction = HOL add_to_faction = BEL }  }
@@ -83,11 +83,11 @@ JFU_decisions = {
 			}
 		}
 	}
-	"Operation Weserubung" = { 
+	"Operation Weserubung Danemark" = { 
 		icon = ger_reichskommissariats
 		fire_only_once = yes	
-		allowed = { 	tag = GER 	}
-		available = { 	has_war_with = ENG	}	
+		allowed = { tag = GER }
+		available = { has_war_with = ENG }	
 		cost = 0		
 		complete_effect = {				
 			add_tech_bonus = {
@@ -108,7 +108,7 @@ JFU_decisions = {
 	
 		}	
 	}
-	"Operation Weserubung2" = { 
+	"Operation Weserubung Norway" = { 
 		icon = ger_reichskommissariats
 		fire_only_once = yes	
 		allowed = { 	tag = GER 	}
@@ -270,28 +270,6 @@ JFU_decisions = {
 				SPR = { add_timed_idea = { idea = soviet_winter_offensive3 days = 180 } }
 			}
 		}
-	}
-	"Give Poland to Hungary" = {
-		icon = generic_operation
-		fire_only_once = yes
-		allowed = { tag = GER }
-		available = {	
-			POL = { has_capitulated = yes }
-		}
-		cost = 0
-		complete_effect = {
-			every_state = {
-				limit = {
-					AND = {
-						is_core_of = POL
-						is_controlled_by = GER
-						NOT = { is_core_of = GER }
-					}
-				}
-				transfer_state_to = HUN
-				set_compliance = 50 
-			}
-		} 
 	}
 	"Iraq Oil" = {
 		icon = generic_operation
@@ -955,52 +933,6 @@ JFU_decisions = {
 			}
 		}
 	}
-	SOV_END_WINTER_WAR = {
-
-		icon = generic_operation
-
-		allowed = { tag = SOV }
-
-		visible = {
-			AND = {
-				SOV = { has_war_with = FIN }
-				NOT = {
-					GER = { has_war_with = SOV}
-				}
-				FIN = { is_ai = no}
-			}
-		}
-		icon = generic_operation
-
-		available = { 			
-			has_war_with = FIN
-		}
-		days_mission_timeout = 120
-
-		fire_only_once = yes
-
-		activation = {
-			SOV = { has_war_with = FIN}
-		}
-
-		cancel_trigger = {
-		}
-
-		remove_effect = {
-		}
-
-		complete_effect = {
-		}
-
-		timeout_effect = {
-			SOV = { 
-				white_peace = {
-					tag = FIN 
-					message = FIN_agree_peace 
-				} 
-			}
-		}
-	}
 	"Small Barb" = {
 		icon = generic_operation
 		allowed = { tag = SOV }
@@ -1428,6 +1360,9 @@ JFU_decisions = {
 					}
 				
 				add_core_of = CAN
+				}
+				CAN = {
+					add_ideas = SAF_annex_eco
 				}
 			}
 			annex_country = { target = SAF transfer_troops = yes }
