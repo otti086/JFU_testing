@@ -238,47 +238,6 @@ defined_text = {
 	}
 }
 
-defined_text = {
-	name = GetSuperHeavyAircraftTooltip
-	text = {
-		trigger = {
-			has_completed_focus = ITA_the_king_of_the_skies #Focus grants bonuses
-		}
-		localization_key = ITA_the_king_of_the_skies_dynamic_modifier_tt
-	}
-	text = {
-		localization_key = generic_null
-	}
-}
-
-defined_text = {
-	name = GetSuperHeavyTanksTooltip
-	text = {
-		trigger = {
-			OR = {
-				has_completed_focus = ITA_modern_musculus #Focus grants bonuses
-			}
-		}
-		localization_key = ITA_modern_musculus_dynamic_modifier_tt
-	}
-	text = {
-		localization_key = generic_null
-	}
-}
-
-defined_text = {
-	name = GetSuperHeavyShipsTooltip
-	text = {
-		trigger = {
-			has_completed_focus = ITA_caligulas_pride #Focus grants bonuses
-		}
-		localization_key = ITA_caligulas_pride_dynamic_modifier_tt
-	}
-	text = {
-		localization_key = generic_null
-	}
-}
-
 
 
 
