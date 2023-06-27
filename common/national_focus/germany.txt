@@ -2261,7 +2261,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_endsieg_1
- 		icon = GFX_focus_GER_volkssturm
+ 		icon = GFX_focus_generic_army_tanks2
 		prerequisite = { focus = GER_danzig_or_war }
 		x = -3
 		y = 3
@@ -2306,7 +2306,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_endsieg_2
-		icon = GFX_focus_GER_endsieg
+		icon = GFX_goal_generic_attack_allies
 		prerequisite = { focus = GER_endsieg_1 }
 		mutually_exclusive = { focus = GER_endsieg_3  }	
 		x = -1
@@ -2325,7 +2325,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_endsieg_3
-		icon = GFX_focus_GER_endsieg
+		icon = GFX_focus_attack_soviet
 		prerequisite = { focus = GER_endsieg_1 }
 		mutually_exclusive = { focus = GER_endsieg_2  }	
 		x = 1
@@ -2344,7 +2344,7 @@ focus_tree = {
 	}
 	focus = { 
 		id = GER_endsieg_4
-		icon = GFX_focus_GER_endsieg
+		icon = GFX_goal_generic_axis_build_infantry
 		prerequisite = { focus = GER_endsieg_2 focus = GER_endsieg_3 }
 		x = 0
 		y = 2
