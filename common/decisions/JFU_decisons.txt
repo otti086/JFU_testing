@@ -1520,7 +1520,6 @@ JFU_templates = {
 		complete_effect = {
 			division_template = {
 				name = "Mot. Medium.42"
-				division_names_group = GER_ARM_01
 				regiments = {
 					motorized = { x = 0 y = 0 }
 					motorized = { x = 0 y = 1 }
@@ -1657,7 +1656,6 @@ JFU_templates = {
 		complete_effect = {
 			division_template = {
 				name = "CAV.20"
-				division_names_group = GER_ARM_01
 				regiments = {
 					cavalry = { x = 0 y = 0 }
 					cavalry = { x = 0 y = 1 }
@@ -1897,15 +1895,12 @@ JFU_templates = {
 			}
 		}
 	}	
-	"Ranger 42W" = {
+	"Ranger Template" = {
 		icon = generic_army_support
 		fire_only_once = yes
 		allowed = {}
 		visible = {
-			NOT = {
-				has_country_flag = JFU_templates_hide
-			}
-			has_country_flag = JFU_open_special_templates
+			has_tech = rangers
 		}
 		cost = 0
 		complete_effect = {
