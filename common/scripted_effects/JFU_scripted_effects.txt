@@ -407,6 +407,7 @@ JFU_vichy_france = {
 				
 			add_compliance = 80
 		}
+		complete_national_focus = GER_fall_of_france
 	}
 	ENG = { news_event = { id = news.44 } }
 	GER = { country_event = { id = germany.107 } }
@@ -611,7 +612,7 @@ JFU_startup_on_action = {
 		BEL = {
 			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 30000 }
 			add_equipment_to_stockpile = { type = support_equipment_1 amount = 1500 }
-			add_ideas = ai_limit
+			add_ideas = ai_limiter
 		}
 		CZE = {
 			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 30000 }

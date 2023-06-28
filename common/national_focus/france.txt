@@ -21,10 +21,7 @@
 		icon = GFX_focus_fra_devalue_the_franc
 		x = 0
 		y = 0
-		offset = {
-			x = 0
-			y = 0
-		}
+
 		prerequisite = {}
 		mutually_exclusive = { }
 		cost = 10
@@ -224,10 +221,7 @@ focus = {
 		icon = GFX_goal_generic_construct_mil_factory
 		x = 4
 		y = 0
-		offset = {
-			x = 0
-			y = 0
-		}
+		available = { GER = { has_completed_focus = GER_rhineland} }
 		prerequisite = {}
 		mutually_exclusive = { }
 		cost = 10
@@ -315,10 +309,6 @@ focus = {
 		icon = GFX_goal_generic_amphibious_assault
 		x = 0
 		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
 		prerequisite = { focus = FRA_infantry_focus }
 		mutually_exclusive = { }
 		relative_position_id = FRA_infantry_focus
@@ -457,10 +447,7 @@ focus = {
 		icon = GFX_focus_generic_strike_at_democracy2
 		x = 10
 		y = 0
-		offset = {
-			x = 0
-			y = 0
-		}
+
 
 		cost = 10
 		ai_will_do = {
@@ -484,10 +471,7 @@ focus = {
 		icon = GFX_goal_generic_consumer_goods
 		x = 1
 		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
+
 		prerequisite = {
 			focus = FRA_revive_the_national_bloc
 		}
@@ -536,10 +520,7 @@ focus = {
 		icon = GFX_goal_generic_construct_civilian
 		x = 0
 		y = 3
-		offset = {
-			x = 0
-			y = 0
-		}
+
 		prerequisite = {
 			focus = FRA_promote_entrepeneurship
 		}
@@ -571,10 +552,7 @@ focus = {
 		icon = GFX_goal_generic_positive_trade_relations
 		x = 0
 		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
+
 		prerequisite = {
 			focus = FRA_laissez_faire
 		}
@@ -638,10 +616,7 @@ focus = {
 		icon = GFX_goal_generic_propaganda
 		x = 0
 		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
+
 		prerequisite = {
 			focus = FRA_economic_devolution
 		}
@@ -661,10 +636,7 @@ focus = {
 		icon = GFX_goal_generic_national_unity
 		x = -2
 		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
+
 		prerequisite = {
 			focus = FRA_protect_the_rights_of_man
 		}
@@ -696,10 +668,7 @@ focus = {
 		icon = GFX_goal_support_democracy
 		x = 0
 		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
+
 		prerequisite = {
 			focus = FRA_protect_the_rights_of_man
 		}
@@ -719,10 +688,7 @@ focus = {
 		icon = GFX_focus_focus_fra_intervention_spain
 		x = -1
 		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
+
 		prerequisite = {
 			focus = FRA_revive_the_national_bloc
 		}
@@ -1084,10 +1050,7 @@ focus = {
 		icon = GFX_goal_generic_propaganda
 		x = 20
 		y = 8
-		offset = {
-			x = 0
-			y = 0
-		}
+
 		prerequisite = {}
 		mutually_exclusive = { }
 		
@@ -1142,10 +1105,7 @@ focus = {
 		icon = GFX_goal_generic_radar
 		x = 0
 		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
+
 		prerequisite = { 
 			focus = FRA_appeal_to_the_french_nation
 		}
@@ -1183,10 +1143,7 @@ focus = {
 		icon = GFX_goal_generic_position_armies
 		x = 4
 		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
+
 		prerequisite = { 
 			focus = FRA_appeal_to_overseas_territories
 		}
@@ -1214,10 +1171,7 @@ focus = {
 		icon = GFX_goal_generic_position_armies
 		x = -2
 		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
+
 		prerequisite = { 
 			focus = FRA_appeal_to_overseas_territories
 		}
@@ -1273,10 +1227,7 @@ focus = {
 		icon = GFX_goal_generic_position_armies
 		x = 2
 		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
+
 		prerequisite = { 
 			focus = FRA_appeal_to_overseas_territories
 		}
@@ -1324,10 +1275,7 @@ focus = {
 		icon = GFX_goal_generic_position_armies
 		x = -4
 		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
+
 		prerequisite = { 
 			focus = FRA_appeal_to_overseas_territories
 		}
@@ -1376,10 +1324,7 @@ focus = {
 		icon = GFX_goal_generic_position_armies
 		x = 0
 		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
+
 		prerequisite = { 
 			focus = FRA_appeal_to_overseas_territories
 		}
@@ -1421,10 +1366,7 @@ focus = {
 		icon = GFX_goal_generic_intelligence_exchange
 		x = 0
 		y = 3
-		offset = {
-			x = 0
-			y = 0
-		}
+
 		prerequisite = { 
 			focus = FRA_intervention_in_madagascar
 			focus = FRA_intervention_in_syria
@@ -1465,10 +1407,7 @@ focus = {
 		icon = GFX_goal_generic_major_war
 		x = 9
 		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
+
 		prerequisite = { 
 			focus = FRA_appeal_to_the_french_nation
 		}
@@ -1521,10 +1460,7 @@ focus = {
 		icon = GFX_goal_generic_build_navy
 		x = -2
 		y = 2
-		offset = {
-			x = 0
-			y = 0
-		}
+
 		prerequisite = { 
 			focus = FRA_continue_the_fight
 		}
@@ -1570,10 +1506,7 @@ focus = {
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 0
 		y = 2
-		offset = {
-			x = 0
-			y = 0
-		}
+
 		prerequisite = { 
 			focus = FRA_continue_the_fight
 		}
@@ -1608,10 +1541,7 @@ focus = {
 		icon = GFX_focus_fra_regiment_normandie
 		x = 2
 		y = 2
-		offset = {
-			x = 0
-			y = 0
-		}
+
 		prerequisite = { 
 			focus = FRA_continue_the_fight
 		}
@@ -1653,10 +1583,7 @@ focus = {
 		icon = GFX_goal_generic_demand_territory
 		x = 10
 		y = 8
-		offset = {
-			x = 0
-			y = 0
-		}
+
 		prerequisite = { 
 		
 		}
@@ -1685,10 +1612,7 @@ focus = {
 		icon = GFX_focus_focus_fra_maquis
 		x = -2
 		y = 2
-		offset = {
-			x = 0
-			y = 0
-		}
+
 		prerequisite = { 
 			focus = FRA_refus_absurde
 		}
@@ -1729,10 +1653,7 @@ focus = {
 		icon = GFX_goal_generic_major_alliance
 		x = 0
 		y = 2
-		offset = {
-			x = 0
-			y = 0
-		}
+
 		prerequisite = { 
 			focus = FRA_refus_absurde
 		}
@@ -1762,10 +1683,7 @@ focus = {
 		icon = GFX_focus_generic_soviet_politics
 		x = 0
 		y = 2
-		offset = {
-			x = 0
-			y = 0
-		}
+
 		prerequisite = { 
 			focus = FRA_reach_out_to_trade_unions
 		}
@@ -1804,10 +1722,7 @@ focus = {
 		icon = GFX_goal_generic_intelligence_exchange
 		x = 2
 		y = 2
-		offset = {
-			x = 0
-			y = 0
-		}
+
 		prerequisite = { 
 			focus = FRA_refus_absurde
 		}
@@ -1837,10 +1752,7 @@ focus = {
 		icon = GFX_goal_generic_military_deal
 		x = 0
 		y = 2
-		offset = {
-			x = 0
-			y = 0
-		}
+
 		prerequisite = { 
 			focus = FRA_connections_to_industrialists
 		}
@@ -1873,10 +1785,7 @@ focus = {
 		icon = GFX_focus_focus_fra_national_resistance_council
 		x = 0
 		y = 2
-		offset = {
-			x = 0
-			y = 0
-		}
+
 		prerequisite = { 
 			focus = FRA_the_civil_and_military_organization
 		}
@@ -1915,10 +1824,7 @@ focus = {
 		icon = GFX_goal_generic_dangerous_deal
 		x = -2
 		y = 2
-		offset = {
-			x = 0
-			y = 0
-		}
+
 		prerequisite = { 
 			focus = FRA_national_council_of_the_resistance
 		}
@@ -1947,10 +1853,7 @@ focus = {
 		icon = GFX_focus_prc_infiltration
 		x = 2
 		y = 2
-		offset = {
-			x = 0
-			y = 0
-		}
+
 		prerequisite = { 
 			focus = FRA_national_council_of_the_resistance
 		}
