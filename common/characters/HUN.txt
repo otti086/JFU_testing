@@ -183,7 +183,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ armor_officer }
+			traits={ armor_officer, commando }
 			skill=2
 			attack_skill=2
 			defense_skill=1
