@@ -1424,9 +1424,10 @@ JFU_decisions = {
 		}			
 	}
 }
+
 JFU_templates = {
 
-	"Show Tank Templates" = {
+	"Show Yalu Certified Tank Templates" = {
 		icon = generic_tank
 		fire_only_once = yes
 		allowed = {}
@@ -1674,6 +1675,9 @@ JFU_templates = {
 			}
 			has_country_flag = JFU_open_special_templates
 		}
+		available = {
+			has_tech = tech_mountaineers
+		}
 		cost = 0
 		complete_effect = {
 			division_template = {
@@ -1702,6 +1706,9 @@ JFU_templates = {
 		icon = generic_mountain_fortification
 		fire_only_once = yes
 		allowed = {}
+		available = {
+			has_tech = tech_mountaineers
+		}
 		visible = {
 			NOT = {
 				has_country_flag = JFU_templates_hide
@@ -1754,6 +1761,10 @@ JFU_templates = {
 			}
 			has_country_flag = JFU_open_special_templates
 		}
+		available = {
+			has_tech = motorized_rocket_unit
+			has_tech = marines
+		}
 		cost = 0
 		complete_effect = {
 			division_template = {
@@ -1791,6 +1802,9 @@ JFU_templates = {
 		icon = generic_army_support
 		fire_only_once = yes
 		allowed = {}
+		available = {
+			has_tech = marines
+		}
 		visible = {
 			NOT = {
 				has_country_flag = JFU_templates_hide
@@ -1835,6 +1849,12 @@ JFU_templates = {
 		fire_only_once = yes
 		allowed = {}
 		visible = {
+			has_country_flag = JFU_open_special_templates
+			NOT = {
+				has_country_flag = JFU_templates_hide
+			}
+		}
+		available = {
 			has_tech = rangers
 		}
 		cost = 0
@@ -1878,12 +1898,10 @@ JFU_templates = {
 		allowed = {}
 		visible = {			
         	has_tech = camelry
-
-
+			has_country_flag = JFU_open_special_templates
 			NOT = {
 				has_country_flag = JFU_templates_hide
 			}
-			has_country_flag = JFU_open_special_templates
 		}
 		cost = 0
 		complete_effect = {
