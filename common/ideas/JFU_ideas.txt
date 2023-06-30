@@ -116,8 +116,6 @@ ideas = {
 			}
 			modifier = { 
 				supply_consumption_factor = -0.10
-				production_speed_infrastructure_factor = 0.4
-				production_speed_rail_way_factor = 0.4
 				no_supply_grace = 72
 			}
 
@@ -678,6 +676,18 @@ ideas = {
 				industrial_capacity_factory = 0.10
 				industrial_capacity_dockyard = 0.10				
 			}		
+		}
+		GER_prepare_barb_idea = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.3
+				production_speed_rail_way_factor = 0.3
+				production_speed_air_base_factor = 0.3
+			}
 		}
 	}
 }

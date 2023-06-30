@@ -7693,7 +7693,18 @@ focus_tree = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = ITA_gian_galeazzo_ciano
 			hidden_effect = {
-				YUG = { load_oob = "YUG_spawn"}
+				if = {
+					limit = { 
+						NOT = {
+							has_game_rule = { 
+								rule = JFU_pre_sets 
+								option = COMPETITIVE_JFU 
+							} 
+						}
+					}
+					YUG = { load_oob = "YUG_spawn"}	
+				}
+
 			}
 		}
 	}
@@ -7713,9 +7724,19 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
-			custom_effect_tooltip = "Enables decision to attack Yugoslavia after 01.01.1938"
+			custom_effect_tooltip = ITA_yugo_attack_desc_tt
 			hidden_effect = {
-				GRE = { load_oob = "GRE_spawn"}
+				if = {
+					limit = { 
+						NOT = {
+							has_game_rule = { 
+								rule = JFU_pre_sets 
+								option = COMPETITIVE_JFU 
+							} 
+						}
+					}
+					GRE = { load_oob = "GRE_spawn"}
+				}
 			}
 		}
 	}
@@ -7917,9 +7938,8 @@ focus_tree = {
 				ideology = fascism
 				popularity = 0.05
 			}
-			add_ideas = ITA_italian_irredentism_ns
 			add_named_threat = { threat = 4 name = ITA_italian_irredentism }
-			custom_effect_tooltip = "Enables decision to attack Greece after 01.01.1938" 
+			custom_effect_tooltip = ITA_greece_attack_desc_tt
 		}
 	}
 }
