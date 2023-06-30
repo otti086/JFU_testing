@@ -3433,8 +3433,9 @@ SPR_NO_CW = {
 	CAN = { add_war_support = 0.1}
 	if = { limit = { country_exists = SAF } SAF = { add_war_support = 0.1} }
 	if = { limit = { country_exists = NZL } NZL = { add_war_support = 0.1} }
-	RAJ = { add_war_support = 0.1}
-	SOV = { add_war_support = 0.1}	
+	RAJ = { add_war_support = 0.1 }
+	SOV = { add_war_support = 0.1 }	
+	NOR = { add_war_support = 0.1 }
 }
 JFU_apply_intel = {
     every_country = {
