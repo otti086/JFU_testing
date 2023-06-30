@@ -59,7 +59,6 @@ German_historical = {
 		GER_extra_tech_slot		
 		#1941
 		GER_rocketry_focus
-		GER_naval_air_effort
 		GER_air_innovation
 		#1942
 		GER_tactical_air_effort

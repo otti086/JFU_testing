@@ -62,54 +62,6 @@ BUL_befriend_GER = {
 	}
 }
 
-BUL_befriend_ITA = {
-	allowed = {
-		original_tag = BUL
-		has_dlc = "Battle for the Bosporus"
-	}
-	enable = {
-		has_completed_focus = BUL_approach_germany
-		country_exists = ITA
-		ITA = {
-			has_opinion	= {
-				target = ROOT
-				value < 50
-			}
-			has_capitulated = no
-			is_subject = no
-		}
-		OR = {
-			has_government = neutrality
-			has_government = fascism
-		}
-	}
-	abort = {
-		OR = {
-			NOT = { country_exists = ITA }
-			has_war_with = ITA
-			ITA = {
-				OR = {
-					has_government = democratic
-					has_government = communism
-					has_opinion	= {
-						target = ROOT
-						value > 80
-					}
-					has_capitulated = yes
-					is_subject = yes
-				}
-			}
-		}
-	}
-
-	ai_strategy = {
-		type = diplo_action_desire
-		id = ITA
-		target = improve_relation
-		value = 50
-	}
-}
-
 BUL_occupying_instead_of_dieing = {
 	allowed = {
 		original_tag = BUL

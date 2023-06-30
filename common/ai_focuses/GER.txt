@@ -22,7 +22,6 @@ ai_historical_focus_list_GER = {
 		GER_danzig_or_war
 		GER_extra_tech_slot
 		GER_rocketry_focus
-		GER_naval_air_effort
 		GER_autobahn
 		GER_air_innovation
 		GER_tactical_air_effort
