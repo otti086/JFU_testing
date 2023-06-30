@@ -1753,10 +1753,9 @@ leader_traits = {
 
 	hardened_officer = { #Kimon Georgiev and Hristo Lukov
 		random = no
-		conscription_factor = 0.05
-		army_core_defence_factor = 0.05
-		dig_in_speed_factor = 0.05
-		max_dig_in = 5
+		conscription_factor = 0.1
+		army_core_defence_factor = 0.1
+		dig_in_speed_factor = 0.1
 	}
 
 	incompetent_leader = { #Georgi Kyoseivanov
@@ -1830,10 +1829,9 @@ leader_traits = {
 
 	hardened_officer_regency_council = { #Regency Council (led by Hristo Lukov)
 		random = no
-		conscription_factor = 0.05
-		army_core_defence_factor = 0.05
-		dig_in_speed_factor = 0.05
-		max_dig_in = 5
+		conscription_factor = 0.1
+		army_core_defence_factor = 0.1
+		dig_in_speed_factor = 0.1
 	}
 
 	political_manipulator_regency_council = { #Regency Council (led by Bogdan Filov)

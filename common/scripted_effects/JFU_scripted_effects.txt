@@ -2315,7 +2315,7 @@ pregrinded_effect = {
         }
 		BUL_georgi_markov = { promote_leader = yes }
 		BUL_georgi_markov = {
-			add_unit_leader_trait = defensive_doctrine
+			add_unit_leader_trait = offensive_doctrine
 			add_unit_leader_trait = thorough_planner
 			add_unit_leader_trait = aggressive_assaulter
 			add_unit_leader_trait = logistics_wizard

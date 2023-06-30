@@ -883,5 +883,17 @@
  SOV_small_barb_enable_tt:0 "Gives Soviet only one Airport to manage, so ACing is easier"
  SOV_small_barb:0 "Germans clicked Small Barb Decision"
 
+ BUL_foreign_investor_soviet_tt:0 "Modify §YForeign Investors§! by \nProduction Efficiency Base: §G+20%§! \n§YMilitary Factory§! construction Speed: §G+10%§!"
+ BUL_foreign_investor_britain_tt:0 "Modify §YForeign Investors§! by \n£prod_eff Production Efficiency Growth: §G+20%§! \n§YMilitary Factory§! construction Speed: §G+10%§!"
+ BUL_foreign_investor_germany_tt:0 "Modify §YForeign Investors§! by \nProduction Efficiency Retention: §G+20%§! \n§YMilitary Factory§! construction Speed: §G+10%§!"
+ BUL_foreign_industry:0 "Invited Foreign Investors"
+
+ ITA_yugo_attack_desc_tt:0 "Enables decision to attack Yugoslavia"
+ ITA_greece_attack_desc_tt:0 "Enables decision to attack Greece" 
+
+ GER_prepare_barb_idea:0 "Prepare for Operation Barbarossa"
+ GER_prepare:0 "Build up the East"
+
+
  PRE_SETS: "JFU Presets"
  HORST_GROUPKEY: "JFU Rules"

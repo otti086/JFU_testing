@@ -4869,7 +4869,7 @@ BUL_rearmament = {
 BUL_foreign_agreements = {
 
 	BUL_german_industrial_agreements = {
-
+		fire_only_once = yes
 		priority = 59
 
 		icon = generic_factory
@@ -4878,69 +4878,15 @@ BUL_foreign_agreements = {
 			base = 10
 		}
 
-		allowed = { always = no } #Activated from effect
+		allowed = { tag = BUL } 
 
 		available = {
-			GER = {
-				has_opinion = {
-					target = ROOT
-					value > 14
-				}
-				BUL_is_valid_subject = yes
-			}
-			#Manage Cap
-			if = { # Being in faction grants 10 civs cap
-				limit = {
-					is_in_faction_with = GER
-					has_completed_focus = BUL_approach_germany
-				}
-				custom_trigger_tooltip = {
-					tooltip = BUL_german_industrial_agreements_cap_faction_tt
-					check_variable = { BUL_german_industrial_investments < BUL_industrial_investments_max_cap }
-				}
-			}
-			else_if = { # Approaching country grants 5 civs cap
-				limit = {
-					has_completed_focus = BUL_approach_germany
-				}
-				custom_trigger_tooltip = {
-					tooltip = BUL_german_industrial_agreements_cap_approach_tt
-					check_variable = { BUL_german_industrial_investments < BUL_industrial_investments_medium_cap }
-				}
-			}
-			else = { #Basic Cap
-				custom_trigger_tooltip = {
-					tooltip = BUL_german_industrial_agreements_cap_basic_tt
-					check_variable = { BUL_german_industrial_investments < BUL_industrial_investments_basic_cap }
-				}
-			}
 			NOT = { has_war_with = GER }
-			NOT = { is_justifying_wargoal_against = GER }
-			OR = {
-				is_in_faction_with = GER
-				AND = {
-					BUL_foreign_agreements_in_faction_with_eng = yes
-					BUL_foreign_agreements_in_faction_with_sov = yes
-				}
-			}
-			if = {
-				limit = {
-					has_country_flag = BUL_british_military_agreements_flag
-				}
-				NOT = { ENG = { has_war_with = GER } }
-			}
-			if = {
-				limit = {
-					has_country_flag = BUL_soviet_military_agreements_flag
-				}
-				NOT = { SOV = { has_war_with = GER } }
-			}
 		}
 
 		visible = {
-			country_exists = GER
-			check_variable = { BUL_german_industrial_investments < BUL_industrial_investments_max_cap }
 			NOT = { has_completed_focus = BUL_nationalization }
+			BUL = { has_completed_focus = BUL_attract_foreign_capitals }
 		}
 
 		cancel_trigger = {
@@ -4948,7 +4894,7 @@ BUL_foreign_agreements = {
 		}
 
 		cost = BUL_german_civ_industries_cost
-		days_remove = 70
+		days_remove = 35
 		days_re_enable = 1
 		
 		modifier = {
@@ -4956,37 +4902,16 @@ BUL_foreign_agreements = {
 		}
 		
 		complete_effect = {
-			GER = {
-				add_opinion_modifier = {
-					target = BUL
-					modifier = BUL_industrial_investments_in_bulgaria
-				}
-			}
-			add_opinion_modifier = {
-				target = GER
-				modifier = BUL_industrial_investments_in_bulgaria
-			}
+			set_country_flag = foreign_contract_done
 		}
 		
 		remove_effect = {
-			if = {
-				limit = { 
-					NOT = { GER = { has_country_flag = BUL_industrial_investments_in_bulgaria_flag } }
-				}
-				GER = { set_country_flag = BUL_industrial_investments_in_bulgaria_flag }
+			hidden_effect = {
+				set_variable = { BFI_MCS = 0.1 }
+				set_variable = { BFI_RF = 0.2 }
 			}
-			
-			add_to_variable = { BUL_german_industrial_investments = 1 }
-
-			random_owned_controlled_state = {
-				limit = {
-					ROOT = { has_full_control_of_state = PREV }
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
+				custom_effect_tooltip = BUL_foreign_investor_germany_tt			
+			801 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -4994,63 +4919,29 @@ BUL_foreign_agreements = {
 					instant_build = yes
 				}
 			}
-			add_to_variable = { BUL_foreign_industry_consumer_goods_modifier = 0.005 }
-			custom_effect_tooltip = BUL_increase_foreign_industry_ns_tt
 		}
 	}
 
 	BUL_british_industrial_agreements = {
 
 		priority = 58
-
+		fire_only_once = yes
 		icon = generic_factory
-
-		allowed = { always = no } #Activated from effect
 
 		ai_will_do = {
 			base = 10
 		}
 
+		allowed = { tag = BUL } 
+
 		available = {
-			ENG = {
-				has_opinion = {
-					target = ROOT
-					value > 14
-				}
-				BUL_is_valid_subject = yes
-			}
-			#Manage Cap #Basic Cap
-			custom_trigger_tooltip = {
-					tooltip = BUL_british_industrial_agreements_cap_basic_tt
-					check_variable = { BUL_british_industrial_investments < BUL_industrial_investments_basic_cap }
-				}
 			NOT = { has_war_with = ENG }
-			NOT = { is_justifying_wargoal_against = ENG }
-			OR = {
-				is_in_faction_with = ENG
-				AND = {
-					BUL_foreign_agreements_in_faction_with_ger = yes
-					BUL_foreign_agreements_in_faction_with_sov = yes
-				}
-			}
-			if = {
-				limit = {
-					has_country_flag = BUL_german_military_agreements_flag
-				}
-				NOT = { GER = { has_war_with = ENG } }
-			}
-			if = {
-				limit = {
-					has_country_flag = BUL_soviet_military_agreements_flag
-				}
-				NOT = { SOV = { has_war_with = ENG } }
-			}
 		}
 
 		visible = {
-			country_exists = ENG
-			check_variable = { BUL_british_industrial_investments < BUL_industrial_investments_max_cap }
 			NOT = { has_completed_focus = BUL_nationalization }
+			BUL = { has_completed_focus = BUL_attract_foreign_capitals }
+			NOT = { has_country_flag = foreign_contract_done }
 		}
 
 		cancel_trigger = {
@@ -5058,7 +4949,7 @@ BUL_foreign_agreements = {
 		}
 
 		cost = BUL_british_civ_industries_cost
-		days_remove = 70
+		days_remove = 35
 		days_re_enable = 1
 		
 		modifier = {
@@ -5066,37 +4957,17 @@ BUL_foreign_agreements = {
 		}
 		
 		complete_effect = {
-			ENG = {
-				add_opinion_modifier = {
-					target = BUL
-					modifier = BUL_industrial_investments_in_bulgaria
-				}
-			}
-			add_opinion_modifier = {
-				target = ENG
-				modifier = BUL_industrial_investments_in_bulgaria
-			}
+			set_country_flag = foreign_contract_done
 		}
 		
 		remove_effect = {
-			if = {
-				limit = { 
-					NOT = { ENG = { has_country_flag = BUL_industrial_investments_in_bulgaria_flag } }
-				}
-				ENG = { set_country_flag = BUL_industrial_investments_in_bulgaria_flag }
-			}
-			
-			add_to_variable = { BUL_british_industrial_investments = 1 }
 
-			random_owned_controlled_state = {
-				limit = {
-					ROOT = { has_full_control_of_state = PREV }
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
+			hidden_effect = {
+				set_variable = { BFI_MCS = 0.1 }
+				set_variable = { BFI_EGF = 0.2 }
+			}
+			custom_effect_tooltip = BUL_foreign_investor_britain_tt
+			801 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -5104,74 +4975,29 @@ BUL_foreign_agreements = {
 					instant_build = yes
 				}
 			}
-			add_to_variable = { BUL_foreign_industry_consumer_goods_modifier = 0.005 }
-			custom_effect_tooltip = BUL_increase_foreign_industry_ns_tt
 		}
 	}
 
 	BUL_soviet_industrial_agreements = {
 
 		priority = 57
-
+		fire_only_once = yes
 		icon = generic_factory
 
 		ai_will_do = {
 			base = 10
 		}
 
-		allowed = { always = no } #Activated from effect
+		allowed = { tag = BUL } 
 
 		available = {
-			SOV = {
-				has_opinion = {
-					target = ROOT
-					value > 14
-				}
-				BUL_is_valid_subject = yes
-			}
-			#Manage Cap
-			if = { # Being in faction grants 10 civs cap
-				limit = {
-					is_in_faction_with = SOV
-				}
-				custom_trigger_tooltip = {
-					tooltip = BUL_soviet_industrial_agreements_cap_faction_tt
-					check_variable = { BUL_soviet_industrial_investments < BUL_industrial_investments_max_cap }
-				}
-			}
-			else = { #Basic Cap
-				custom_trigger_tooltip = {
-					tooltip = BUL_soviet_industrial_agreements_cap_basic_tt
-					check_variable = { BUL_soviet_industrial_investments < BUL_industrial_investments_basic_cap }
-				}
-			}
 			NOT = { has_war_with = SOV }
-			NOT = { is_justifying_wargoal_against = SOV }
-			OR = {
-				is_in_faction_with = SOV
-				AND = {
-					BUL_foreign_agreements_in_faction_with_ger = yes
-					BUL_foreign_agreements_in_faction_with_eng = yes
-				}
-			}
-			if = {
-				limit = {
-					has_country_flag = BUL_british_military_agreements_flag
-				}
-				NOT = { ENG = { has_war_with = SOV } }
-			}
-			if = {
-				limit = {
-					has_country_flag = BUL_german_military_agreements_flag
-				}
-				NOT = { GER = { has_war_with = SOV } }
-			}
 		}
 
 		visible = {
-			country_exists = SOV
-			check_variable = { BUL_soviet_industrial_investments < BUL_industrial_investments_max_cap }
 			NOT = { has_completed_focus = BUL_nationalization }
+			BUL = { has_completed_focus = BUL_attract_foreign_capitals }
+			NOT = { has_country_flag = foreign_contract_done }
 		}
 
 		cancel_trigger = {
@@ -5179,7 +5005,7 @@ BUL_foreign_agreements = {
 		}
 
 		cost = BUL_soviet_civ_industries_cost
-		days_remove = 70
+		days_remove = 35
 		days_re_enable = 1
 		
 		modifier = {
@@ -5187,46 +5013,23 @@ BUL_foreign_agreements = {
 		}
 		
 		complete_effect = {
-			SOV = {
-				add_opinion_modifier = {
-					target = BUL
-					modifier = BUL_industrial_investments_in_bulgaria
-				}
-			}
-			add_opinion_modifier = {
-				target = SOV
-				modifier = BUL_industrial_investments_in_bulgaria
-			}
+			set_country_flag = foreign_contract_done
 		}
 		
 		remove_effect = {
-			if = {
-				limit = { 
-					NOT = { SOV = { has_country_flag = BUL_industrial_investments_in_bulgaria_flag } }
-				}
-				SOV = { set_country_flag = BUL_industrial_investments_in_bulgaria_flag }
+			hidden_effect = {
+				set_variable = { BFI_MCS = 0.1 }
+				set_variable = { BFI_SEF = 0.2 }
 			}
-			
-			add_to_variable = { BUL_soviet_industrial_investments = 1 }
-
-			random_owned_controlled_state = {
-				limit = {
-					ROOT = { has_full_control_of_state = PREV }
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
+				custom_effect_tooltip = BUL_foreign_investor_soviet_tt
+			801 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
 					instant_build = yes
 				}
-			}
-			add_to_variable = { BUL_foreign_industry_consumer_goods_modifier = 0.005 }
-			custom_effect_tooltip = BUL_increase_foreign_industry_ns_tt
+			}			
 		}
 	}
 
@@ -5765,144 +5568,6 @@ prospect_for_resources = {
 			}
 			remove_ideas = BUL_buhovo_uranium_mines
 			add_ideas = BUL_uranium_concession_agreement_ns
-		}
-	}
-}
-
-BUL_negotiate_claims_in_the_balkans = {
-	BUL_demand_our_historical_claims = {
-
-		icon = hol_draw_up_staff_plans
-
-		ai_will_do = {
-			base = 800
-			modifier = {
-				factor = 10
-				is_historical_focus_on = yes
-			}
-		}
-
-		available = {
-			
-		}
-
-		visible = {
-			has_completed_focus = BUL_approach_germany
-			country_exists = GER
-			NOT = { has_war_with = GER }
-			GER = {
-				has_capitulated = no
-				is_subject = no
-			}
-			any_state = {
-				has_state_flag = BUL_historical_bulgarian_claim_flag
-				controller = {
-					OR = {
-						tag = GER
-						AND = {
-							NOT = { is_in_faction_with = GER }
-							NOT = { tag = BUL }
-						}
-					}
-				}
-			}
-		}
-
-		cost = 75
-
-		fire_only_once = yes
-		
-		complete_effect = {		
-			GER = { country_event = { id = bftb_bulgarian_claims.1 hours = 1 } }
-		}
-	}
-
-	BUL_secure_occupation_in_balkan_state = {
-
-		icon = hol_draw_up_staff_plans
-
-		on_map_mode = map_and_decisions_view
-
-		state_target = yes
-
-		target_trigger = {
-			FROM = {
-				BUL_is_balkan_state = yes
-				NOT = { is_controlled_by = BUL }
-				any_neighbor_state = {
-					is_fully_controlled_by = BUL
-				}
-				controller = {
-					PREV = {
-						NOT = { is_core_of = PREV }
-						is_fully_controlled_by = PREV
-					}
-					is_in_faction_with = ROOT
-				}
-			}
-		}
-
-		ai_will_do = {
-			base = 0
-			modifier = {
-				add = 100
-				FROM = {
-					OR = {
-						has_state_flag = BUL_initial_bulgarian_state_flag
-						has_state_flag = BUL_historical_bulgarian_claim_flag
-					}
-				}
-			}
-			modifier = {
-				factor = 100
-				is_historical_focus_on = yes
-			}
-			modifier = {
-				factor = 0
-				FROM = {
-					OR = {
-						owner = {
-							has_capitulated = no
-						}
-						controller = {
-							NOT = { has_full_control_of_state = FROM }
-						}
-					}
-				}
-			}
-		}
-
-		available = {
-			has_manpower > 4999
-		}
-
-		visible = {
-			has_completed_focus = BUL_peaceful_development
-			is_in_faction = yes
-			FROM = {
-				NOT = { is_controlled_by = BUL }
-				any_neighbor_state = {
-					is_fully_controlled_by = BUL
-				}
-				controller = {
-					PREV = {
-						NOT = { is_core_of = PREV }
-						is_fully_controlled_by = PREV
-					}
-					is_in_faction_with = ROOT
-				}
-			}
-		}
-
-		cost = 25
-		
-		complete_effect = {
-			FROM = {
-				controller = {
-					country_event = { id = bftb_bulgarian_claims.7 hours = 1 }
-				}
-			}
-			custom_effect_tooltip = BUL_secure_occupation_in_balkan_state_tt
 		}
 	}
 }

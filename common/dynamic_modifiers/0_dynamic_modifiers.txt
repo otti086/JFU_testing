@@ -1270,3 +1270,13 @@ no_entrenchment_africa = {
 	dig_in_speed_factor = -1
 	max_dig_in = -30
 }
+BUL_foreign_industry = {
+	enable = { always = yes }
+
+	icon = GFX_idea_SOV_second_five_year_plan
+
+	production_speed_arms_factory_factor = BFI_MCS
+	line_change_production_efficiency_factor = BFI_RF
+	production_factory_efficiency_gain_factor = BFI_EGF
+	production_factory_start_efficiency_factor = BFI_SEF
+}
