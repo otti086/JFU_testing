@@ -1492,7 +1492,7 @@ JFU_decisions = {
 		allowed = { tag = ITA }
 		cost = 0
 		visible = { 212 = { is_controlled_by = BUL } }
-		available = { BUL = { is_ai = yes } date > 1938.1.1 }
+		available = { BUL = { is_ai = yes } date > 1938.4.1 }
 		complete_effect = {
 			hidden_effect = {
 				ITA = { add_state_core = 211 add_state_core = 801 add_state_core = 212 add_state_core = 48}
