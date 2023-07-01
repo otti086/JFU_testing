@@ -2406,6 +2406,7 @@ pregrinded_effect = {
 			add_unit_leader_trait = ranger
 			add_unit_leader_trait = hill_fighter
 			add_unit_leader_trait = fortress_buster
+			add_unit_leader_trait = commando
         }
 				
 	}
