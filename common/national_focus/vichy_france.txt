@@ -749,25 +749,6 @@
 
 		available_if_capitulated = yes
 
-
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				factor = 0
-				OR = {
-					AND = {
-						is_historical_focus_on = yes
-						has_government = neutrality
-					}
-					has_idea = neutrality_idea
-				}
-			}
-			modifier = {
-				factor = 20
-				has_idea = SOV_russian_political_influence
-			}
-		}
-
 		completion_reward = {
 			add_timed_idea = { idea = collectivist_ethos_focus days = 1095 }
 		}
@@ -878,11 +859,7 @@
 
 		available_if_capitulated = yes
 
-		completion_reward = {
-			if = {
-				limit = { has_idea = neutrality_idea }
-				remove_ideas = neutrality_idea
-			}			
+		completion_reward = {		
 			add_ideas = militarism_focus
 			army_experience = 20
 		}
@@ -910,10 +887,6 @@
 		}
 
 		completion_reward = {
-			if = {
-				limit = { NOT = { has_idea = neutrality_idea } }
-				add_ideas = neutrality_idea
-			}
 			add_political_power = 150
 		}
 	}
@@ -1011,11 +984,7 @@
 		completion_reward = {
 			add_ideas = why_we_fight_focus
 			custom_effect_tooltip = why_we_fight_effect
-			hidden_effect = {
-				if = {
-					limit = { NOT = { has_idea = neutrality_idea } }
-					set_rule = { can_create_factions = yes }
-				}			
+			hidden_effect = {		
 			}
 		}
 	}

@@ -654,7 +654,6 @@
 				ideology = neutrality
 				popularity = 65
 			}
-			remove_ideas = neutrality_idea
 			hidden_effect = {
 				country_event = {
 					id = DOD_romania.163

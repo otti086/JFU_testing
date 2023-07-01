@@ -1132,9 +1132,9 @@ focus = {
 				type = industrial_complex
 				level = 2
 			}
-			hidden_effect = {
-				country_event = lar_appeal_to_overseas_territories.1
-			}
+#			hidden_effect = {
+#				country_event = lar_appeal_to_overseas_territories.1
+#			}
 			add_ideas = tot_economic_mobilisation
 		}
 	}
