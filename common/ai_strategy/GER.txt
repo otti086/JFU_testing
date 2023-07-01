@@ -1254,62 +1254,6 @@ GER_share_borders_with_ITA_against_SOV = {
 	}
 }
 
-GER_we_dont_fight_pathetic_sweden = { # :O
-	allowed = {
-		original_tag = GER
-	}
-	enable = {
-		is_historical_focus_on = no
-		has_government = fascism
-		SWE = {
-			has_idea = neutrality_idea
-		}
-	}
-	abort = {
-		SWE = {
-			not = { has_idea = neutrality_idea }
-		}
-	}
-	ai_strategy = {
-		type = antagonize
-		id = SWE
-		value = -200 #keep the iron coming and no one gets hurt
-	}
-	ai_strategy = {
-		type = protect
-		id = SWE
-		value = 100 #keep the iron coming and no one gets hurt
-	}
-}
-
-GER_we_dont_fight_pathetic_sweden_on_historical = { # :O
-	allowed = {
-		original_tag = GER
-	}
-	enable = {
-		is_historical_focus_on = yes
-		has_government = fascism
-		SWE = {
-			has_idea = neutrality_idea
-		}
-	}
-	abort = {
-		SWE = {
-			not = { has_idea = neutrality_idea }
-		}
-	}
-	ai_strategy = {
-		type = antagonize
-		id = SWE
-		value = -50 #keep the iron coming and no one gets hurt
-	}
-	ai_strategy = {
-		type = protect
-		id = SWE
-		value = 50 #keep the iron coming and no one gets hurt
-	}
-}
-
 GER_we_are_bad_at_espionage_because_it_is_expensive_and_not_tanks = {
 	allowed = {
 		original_tag = GER

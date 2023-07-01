@@ -243,7 +243,6 @@ bookmarks = {
 			ideology = neutrality
 			ideas = {
 				ROM_king_carol_ii_hedonist
-				neutrality_idea
 			}
 			focuses = {
 				ROM_institute_royal_dictatorship

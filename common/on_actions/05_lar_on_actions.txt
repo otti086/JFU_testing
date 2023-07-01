@@ -198,6 +198,60 @@ on_actions = {
 				}
 				ROOT = { clr_country_flag = just_freed_operative_flag }
 			}
+			every_operative = { #add target nationality if linguist
+				if = {
+					limit = {
+						has_trait = operative_linguist
+						NOT = { has_nationality = FROM }
+					}
+					random_list = {
+						20 = { add_nationality = FROM }
+						80 = {}
+					}
+				}
+			}
+			every_operative = {
+				if = {
+					limit = {
+						has_nationality = FRA
+					}
+					ROOT = {
+						add_to_variable = {
+							var = fra_nat
+							value = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_nationality = ENG
+					}
+					ROOT = {
+						add_to_variable = {
+							var = eng_nat
+							value = 1
+						}
+					}
+				}
+			}
+			ROOT = {
+				if = {
+					limit = {
+						check_variable = { fra_nat > 0 }
+						check_variable = { eng_nat > 0 }
+					}
+					set_country_flag = achievement_listen_carefully_flag
+				}
+				set_variable = {
+					var = fra_nat
+					value = 0
+				}
+				set_variable = {
+					var = eng_nat
+					value = 0
+				}
+			}
+
 		}
 	}
 
@@ -263,4 +317,31 @@ on_actions = {
 			}
 		}
 	}
+	on_weekly = {
+		effect = {
+			if = {
+				limit = { 
+					has_intelligence_agency = yes
+					is_ai = yes
+				}
+				update_operation_ai = yes
+			}
+		}
+	}
+	# scope is operative
+	# from scope is the country 
+	#on_operative_recruited = {
+	#	effect = {
+	#	
+	#	}
+	#}
+	
+	# scope is operative
+	# from scope is the country 
+	#on_operative_created = {
+	#	effect = {
+	#	
+	#	}
+	#}
+
 }

@@ -106,6 +106,7 @@ ideas = {
 			modifier = {
 				air_range_factor = 0.2
 				drift_defence_factor = 0.5
+				operative_slot = 1
 			}
 			rule = {
 				can_create_factions = yes
