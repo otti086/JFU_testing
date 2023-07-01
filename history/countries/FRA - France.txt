@@ -25,16 +25,16 @@ if = {
 }
 
 starting_train_buffer = 2
-
-if = {
-	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "FRA_1936_naval_mtg"
-		set_war_support = 0.1
-	else = {
-		set_naval_oob = "FRA_1936_naval_legacy"
-		set_war_support = 0.15
-	}
-}
+set_war_support = 0.15
+#if = {
+#	limit = { has_dlc = "Man the Guns" }
+#		set_naval_oob = "FRA_1936_naval_mtg"
+#		set_war_support = 0.1
+#	else = {
+#		set_naval_oob = "FRA_1936_naval_legacy"
+#		set_war_support = 0.15
+#	}
+#}
 if = {
 	limit = { has_dlc = "By Blood Alone" }
 		set_air_oob = "FRA_1936_air_bba"
