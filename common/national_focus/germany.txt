@@ -1651,7 +1651,8 @@ focus_tree = {
 				name = GER_long_range_escorts
 				bonus = 1.0
 				uses = 2
-				category = cat_heavy_fighter
+				category = heavy_air
+				category = medium_air
 			}
 		}
 	}
@@ -2338,6 +2339,7 @@ focus_tree = {
 								is_controlled_by = GER
 								is_controlled_by = HUN 
 							}
+							NOT = { state = 667 }
 						}
 					}
 					add_compliance = 50

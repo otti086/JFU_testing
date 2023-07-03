@@ -41,7 +41,9 @@ focus_tree = {
 		x = 10
 		y = 0
 		cost = 5
-
+		available = {
+			BUL = { is_ai = no }
+		}	
 		available = {
 
 		}
@@ -1506,10 +1508,9 @@ focus_tree = {
 		x = 3
 		y = 1
 		cost = 10
-
 		available = {
-
-		}
+			BUL = { is_ai = no }
+		}	
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_INTERNAL_AFFAIRS}
 		completion_reward = {

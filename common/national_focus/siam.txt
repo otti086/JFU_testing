@@ -267,7 +267,9 @@ focus_tree = {
 		search_filters = {  FOCUS_FILTER_INDUSTRY }
 		
 		available_if_capitulated = yes
-
+		available = {
+			SIA = { is_ai = no }
+		}	
 
 		available = {
 			any_state = {
@@ -312,7 +314,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 		
 		available_if_capitulated = yes
-
+		available = {
+			SIA = { is_ai = no }
+		}		
 		completion_reward = {
 			add_tech_bonus = {
 				name = industrial_bonus

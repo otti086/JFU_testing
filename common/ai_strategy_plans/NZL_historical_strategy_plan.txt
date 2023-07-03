@@ -33,8 +33,7 @@ NZL_historical = {
 		NZL_department_of_scientific_and_industrial_research		
 		#1939
 		NZL_arrest_pacifist_leaders									
-		NZL_technology_sharing_with_britain							
-		NZL_transfer_the_new_zealand_division						
+		NZL_technology_sharing_with_britain												
 		NZL_maori_affairs_act										
 		NZL_form_the_rnzn											
 		#1940											

@@ -402,10 +402,16 @@ JFU_decisions = {
 					transfer_state = 45
 					transfer_state = 764
 				}
-				BUL = {
-					transfer_state = 803
-					transfer_state = 106				
+				if = {
+					limit = {
+						212 = { is_controlled_by = BUL } 
+					}
+					BUL = {
+						transfer_state = 803
+						transfer_state = 106				
+					}
 				}
+
 				ITA = { annex_country = { target = YUG transfer_troops = no } }
 				hidden_effect = {
 					if = {
@@ -485,9 +491,14 @@ JFU_decisions = {
 			}
 			else = {
 				add_threat = 10
-				BUL = {
-					transfer_state = 731
-					transfer_state = 184				
+				if = {
+					limit = {
+						212 = { is_controlled_by = BUL } 
+					}
+					BUL = {
+						transfer_state = 731
+						transfer_state = 184				
+					}
 				}
 				ITA = { annex_country = { target = GRE transfer_troops = no } }
 				hidden_effect = {
@@ -613,72 +624,6 @@ JFU_decisions = {
 		}	
 	}
 	cancel_air_to_ger = {
-	
-		icon = GFX_decision_generic_air
-			
-			allowed = {
-		}
-		
-		available = {always = yes} 
-		fire_only_once = no
-		visible = {
-			original_tag = ITA
-			has_country_flag = ITA_air_LL
-		}
-	
-		complete_effect = {
-			if = { 
-			limit =  { has_country_flag = ITA_air_LL 
-				}
-				clr_country_flag = ITA_air_LL
-			}
-		}	
-	}
-	send_air_to_hun = {
-	
-		icon = GFX_decision_generic_air
-			
-			allowed = {
-		}
-		
-		available = {} 
-		fire_only_once = no
-		visible = {
-			original_tag = ITA
-			NOT = {has_country_flag = ITA_air_LL}
-		}
-		
-		complete_effect = {
-			activate_mission = send_air_to_hun1 set_country_flag = ITA_air_LL
-		}			
-	}
-	send_air_to_hun1 = {
-	
-		icon = GFX_decision_generic_air
-			
-			allowed = {
-		}
-		
-		available = {NOT = {has_country_flag = ITA_air_LL}} 
-		fire_only_once = no
-		visible = {
-			original_tag = ITA
-			always = yes
-		}
-		days_mission_timeout = 7
-		is_good = yes
-		activation = { always = no	}
-		
-		timeout_effect = {
-			if = { 
-				limit =  { has_country_flag = ITA_air_LL 
-				}
-			air_to_hungary = yes
-			activate_mission = send_air_to_hun1
-			}
-		}	
-	}
-	cancel_air_to_hun = {
 	
 		icon = GFX_decision_generic_air
 			
@@ -1244,7 +1189,7 @@ JFU_decisions = {
 		}
 		cost = 0
 		complete_effect = {
-#			news_event = { id = news.5005 }
+			#news_event = { id = news.5005 }
 			if = {
 				limit = {
 					NOT = {
@@ -1483,7 +1428,7 @@ JFU_decisions = {
 			hidden_effect = {
 				ROM = { add_state_core = 211 add_state_core = 801 add_state_core = 212 add_state_core = 48}
 			}
-			annex_country = { target = BUL transfer_troops = yes }
+			annex_country = { target = BUL transfer_troops = no }
 		}
 	}
 	"Annex Bulgaria ITA" = {
@@ -1492,12 +1437,12 @@ JFU_decisions = {
 		allowed = { tag = ITA }
 		cost = 0
 		visible = { 212 = { is_controlled_by = BUL } }
-		available = { BUL = { is_ai = yes } date > 1938.4.1 }
+		available = { BUL = { is_ai = yes } date > 1938.1.1 }
 		complete_effect = {
 			hidden_effect = {
 				ITA = { add_state_core = 211 add_state_core = 801 add_state_core = 212 add_state_core = 48}
 			}
-			annex_country = { target = BUL transfer_troops = yes }
+			annex_country = { target = BUL transfer_troops = no }
 		}
 	}
 	"Annex Ireland" = {
@@ -1517,13 +1462,13 @@ JFU_decisions = {
 		icon = generic_operation
 		fire_only_once = yes
 		allowed = { tag = BRA }
-		available = { MEX = { is_ai = yes } }
+		available = { MEX = { is_ai = yes } date > 1936.1.2 }
 		cost = 0
 		complete_effect = {
 			hidden_effect = {
 				BRA = { add_state_core = 277 add_state_core = 474 add_state_core = 475 add_state_core = 476 add_state_core = 477 add_state_core = 478 add_state_core = 479 add_state_core = 480 add_state_core = 481 add_state_core = 482 add_state_core = 483 add_state_core = 484 add_state_core = 485 }
 			}
-			annex_country = { target = MEX }		
+			annex_country = { target = MEX transfer_troops = no}		
 		}			
 	}
 }
