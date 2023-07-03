@@ -882,6 +882,8 @@
  JFU_SOVIET_SMALL:0 "Soviet anti-cancer AC"
  SOV_small_barb_enable_tt:0 "Gives Soviet only one Airport to manage, so ACing is easier"
  SOV_small_barb:0 "Germans clicked Small Barb Decision"
+ NO_GRINDING:0 "No Grinding"
+
 
  BUL_foreign_investor_soviet_tt:0 "Modify §YForeign Investors§! by \nProduction Efficiency Base: §G+20%§! \n§YMilitary Factory§! construction Speed: §G+10%§!"
  BUL_foreign_investor_britain_tt:0 "Modify §YForeign Investors§! by \n£prod_eff Production Efficiency Growth: §G+20%§! \n§YMilitary Factory§! construction Speed: §G+10%§!"

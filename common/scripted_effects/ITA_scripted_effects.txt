@@ -3285,7 +3285,6 @@ ITA_add_basic_medium_tank_templates = {
 			icon = "GFX_ITA_medium_BBA_camo"
 		}
 	}
-
 	#SEMOVENTE da 90/53 (AT)
 	if = {
 		limit = {
@@ -3294,10 +3293,9 @@ ITA_add_basic_medium_tank_templates = {
 		create_equipment_variant = {
 			name = "Semovente da 90/53"
 			type = medium_tank_destroyer_chassis_1
-
 			parent_version = 0
 			modules = {
-				main_armament_slot = tank_high_velocity_cannon_2
+				main_armament_slot = tank_high_velocity_cannon
 				turret_type_slot = tank_medium_fixed_superstructure_turret
 				suspension_type_slot = tank_bogie_suspension
 				armor_type_slot = tank_riveted_armor
@@ -3310,17 +3308,15 @@ ITA_add_basic_medium_tank_templates = {
 			icon = GFX_ITA_advanced_medium_td_medium
 			role_icon_index = 2
 			model = ITA_medium_tank_destroyer_brigade_2_entity
-
 		}
 	}
 	else = {
 		create_equipment_variant = {
 			name = "Semovente da 90/53"
 			type = medium_tank_destroyer_chassis_1
-
 			parent_version = 0
 			modules = {
-				main_armament_slot = tank_high_velocity_cannon_2
+				main_armament_slot = tank_high_velocity_cannon
 				turret_type_slot = tank_medium_fixed_superstructure_turret
 				suspension_type_slot = tank_bogie_suspension
 				armor_type_slot = tank_riveted_armor
