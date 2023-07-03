@@ -383,7 +383,6 @@ leader_traits = {
 				division_has_majority_template = bicycle_battalion
 				division_has_majority_template = marine
 				division_has_majority_template = mountaineers
-				division_has_majority_template = camelry
 				division_has_majority_template = paratrooper
 				division_has_majority_template = penal_battalion
 				
@@ -455,6 +454,7 @@ leader_traits = {
 				division_has_majority_template = cavalry
 				division_has_majority_template = motorized
 				division_has_majority_template = mechanized
+				division_has_majority_template = camelry
 			}
 			owner = {
 				NOT = {
@@ -636,12 +636,14 @@ leader_traits = {
 		}
 
 		unit_type = {
+			type = camelry
 			type = cavalry
 			type = irregular_infantry
 		}
 
 		unit_trigger = {
 			OR = {
+				division_has_majority_template = camelry
 				division_has_majority_template = cavalry
 				division_has_majority_template = irregular_infantry
 			}

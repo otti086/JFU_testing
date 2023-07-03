@@ -1155,6 +1155,21 @@ JFU_decisions = {
 				add_to_faction = MEX
 				}
 			}
+			hidden_effect = { 
+				ENG = { 
+					annex_country = HOL transfer_troops = no 
+				} 
+				every_state = {
+					limit = {
+						AND = {
+							is_core_of = HOL
+							is_controlled_by = ENG
+						}
+					add_compliance = 80
+					}
+				}
+			}
+
 		}
 	}
 	"Join the european War" = {

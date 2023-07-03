@@ -117,6 +117,7 @@ ideas = {
 			modifier = { 
 				supply_consumption_factor = -0.10
 				no_supply_grace = 72
+				supply_node_range = 0.1 
 			}
 
 		}

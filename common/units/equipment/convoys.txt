@@ -50,5 +50,6 @@ equipments = {
 		archetype = convoy
 		active = yes
 		priority = 10
+		can_license = no
 	}
 }

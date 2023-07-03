@@ -457,10 +457,6 @@ technologies = {
 			}
 		}
 		on_research_complete = {
-			hidden_effect = {
-				load_oob = "unlock_paratroopers"
-			}
-			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 		}
 		
 		categories = {
@@ -583,10 +579,6 @@ technologies = {
 			}
 		}
 		on_research_complete = {
-			hidden_effect = {
-				load_oob = "unlock_marines"
-			}			
-			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 		}
 
 		path = {
@@ -705,10 +697,6 @@ technologies = {
 			}
 		}
 		on_research_complete = {
-			hidden_effect = {
-				load_oob = "unlock_mountineers"
-			}
-			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 		}
 		
 		path = {
@@ -1273,7 +1261,7 @@ technologies = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
-		camelry = {
+		rangers = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
@@ -1368,7 +1356,7 @@ technologies = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
-		camelry = {
+		rangers = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
@@ -1469,7 +1457,7 @@ technologies = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
-		camelry = {
+		rangers = {
 			defense = 0.03
 			breakthrough = 0.03
 		}		
@@ -1557,7 +1545,7 @@ technologies = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
-		camelry = {
+		rangers = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
@@ -1642,10 +1630,6 @@ technologies = {
 			}
 		}
 		on_research_complete = {
-			hidden_effect = {
-				load_oob = "unlock_motorized"
-			}			
-			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 		}
 		
 		path = {
