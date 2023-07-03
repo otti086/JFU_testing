@@ -321,8 +321,8 @@
 		}
 
 		completion_reward = {
-			add_offsite_building = { type = industrial_complex level = 2 }
-			add_offsite_building = { type = arms_factory level = 2 }
+			add_offsite_building = { type = industrial_complex level = 1 }
+			add_offsite_building = { type = arms_factory level = 1 }
 		}
 	}
 
@@ -370,8 +370,8 @@
 		}
 
 		completion_reward = {
-			add_offsite_building = { type = industrial_complex level = 2 }
-			add_offsite_building = { type = arms_factory level = 2 }
+			add_offsite_building = { type = industrial_complex level = 1 }
+			add_offsite_building = { type = arms_factory level = 1 }
 		}
 	}
 
@@ -391,7 +391,7 @@
 
 		completion_reward = {
 			add_offsite_building = { type = industrial_complex level = 2 }
-			add_offsite_building = { type = arms_factory level = 2 }
+			add_offsite_building = { type = arms_factory level = 1 }
 		}
 	}
 
@@ -411,7 +411,6 @@
 
 		completion_reward = {
 			add_offsite_building = { type = industrial_complex level = 2 }
-			add_offsite_building = { type = arms_factory level = 2 }
 		}
 	}
 
