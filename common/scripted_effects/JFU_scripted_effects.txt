@@ -808,11 +808,12 @@ JFU_startup_on_action = {
 	}
 }
 JFU_scripted_events_effect = {
-	ENG = { country_event = { id = britain.16 days = 21 }}
-	ENG = { country_event = { id = britain.17 days = 349 }}	
-	ENG = { country_event = { id = britain.22 days = 520 }}
-	MEX = { country_event = { id = mexico.15 days = 180 }}
-	MEX = { country_event = { id = mexico.27 days = 120 }}
+	ENG = { country_event = { id = britain.16 days = 21 } }
+	ENG = { country_event = { id = britain.17 days = 349 } }	
+	ENG = { country_event = { id = britain.22 days = 520 } }
+	MEX = { country_event = { id = mexico.15 days = 180 } }
+	MEX = { country_event = { id = mexico.27 days = 120 } }
+	GER = { country_event = { id = JFU_events.4 days = 1703 }}
 }
 HMP_anti_building_exploit_effect = { #add to horst tool
 	every_state = { limit = { ignore_aa_states = yes non_damaged_building_level  = { building = anti_air_building  level > 5 } } remove_building  = {  type = anti_air_building  level = 1 }  }  

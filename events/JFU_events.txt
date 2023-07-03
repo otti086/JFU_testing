@@ -539,6 +539,41 @@ news_event = {
 		}
 	}
 }
+
+news_event = {
+	id = news.15
+	title = news.15.t
+	desc = news.15.d
+	picture = GFX_news_event_009
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.15.a
+		trigger = {
+			NOT = {
+				TAG = GER
+				TAG = ROM
+				TAG = HUN
+			}
+		}
+	}
+	option = {
+		name = news.15.b
+		trigger = { TAG = GER }
+	}
+	option = {
+		name = news.15.c
+		trigger = { TAG = ROM }
+	}
+	option = {
+		name = news.15.e
+		trigger = { TAG = HUN }
+	}
+}
+
 add_namespace = usa
 
 country_event = {
@@ -587,5 +622,23 @@ country_event = {
 	is_triggered_only = yes	
 	immediate = {
 		SPR_NO_CW = yes
+	}
+}
+
+country_event = {
+	id = JFU_events.4
+	title = "Second Vienna Award"
+	desc = "Recognizing that a new order has been established in Europe, we have been asked by Hungary and Romania to arbitrate in a territorial dispute between the two countries."
+	picture = GFX_report_event_vienna_award_hungary
+	is_triggered_only = yes	
+	option = {
+		name = "Give Hungary Northern Transylvania"
+		HUN = { 
+			transfer_state = 76
+		}
+		hidden_effect = {
+			country_event = { days = 1 id = news.15 }
+			complete_national_focus = GER_second_vienna_award
+		}
 	}
 }
