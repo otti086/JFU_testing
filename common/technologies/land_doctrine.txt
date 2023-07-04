@@ -3243,7 +3243,7 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 
-		land_reinforce_rate = 0.06
+		land_reinforce_rate = 0.03
 		category_army = {
 			default_morale = 0.3
 		}				
@@ -3296,7 +3296,7 @@ technologies = {
 			hard_attack = 0.2
 		}
 		land_night_attack = 0.25
-		land_reinforce_rate = 0.04
+		land_reinforce_rate = 0.02
 		path = {
 			leads_to_tech = guerilla_warfare
 			research_cost_coeff = 1
