@@ -1157,7 +1157,7 @@ JFU_decisions = {
 			}
 			hidden_effect = { 
 				ENG = { 
-					annex_country = HOL transfer_troops = no 
+					annex_country = { target = HOL transfer_troops = no }
 				} 
 				every_state = {
 					limit = {
