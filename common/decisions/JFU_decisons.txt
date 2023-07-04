@@ -1165,8 +1165,8 @@ JFU_decisions = {
 							is_core_of = HOL
 							is_controlled_by = ENG
 						}
-					add_compliance = 80
 					}
+					set_compliance = 80
 				}
 			}
 
