@@ -492,7 +492,7 @@ technologies = {
 		}
 
 		category_all_armor = {
-			default_morale = 0.1
+			default_morale = 0.15
 		}
 		armored_car = {
 			default_morale = 0.1
@@ -563,6 +563,9 @@ technologies = {
 			default_morale = 0.2
 			max_organisation = 10
 		}
+		category_all_armor = {
+			default_morale = 0.05
+		}
 		# faster planning
 		planning_speed = 0.2
 		
@@ -627,6 +630,9 @@ technologies = {
 		}
 		category_tanks = {
 			max_organisation = 2
+		}
+		category_all_armor = {
+			default_morale = 0.05
 		}
 		armored_car = {
 			max_organisation = 2
@@ -728,7 +734,7 @@ technologies = {
 		}
 
 		category_all_armor = {
-			default_morale = 0.2
+			default_morale = 0.05
 		}
 		armored_car = {
 			max_organisation = 3
@@ -3203,7 +3209,7 @@ technologies = {
 			soft_attack = 0.1
 		}
 		attrition = -0.1
-		land_reinforce_rate = 0.03	
+		land_reinforce_rate = 0.04	
 		
 		path = {
 			leads_to_tech = large_front_offensive
@@ -3243,7 +3249,7 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 
-		land_reinforce_rate = 0.03
+		land_reinforce_rate = 0.01
 		category_army = {
 			default_morale = 0.3
 		}				
@@ -3296,7 +3302,6 @@ technologies = {
 			hard_attack = 0.2
 		}
 		land_night_attack = 0.25
-		land_reinforce_rate = 0.02
 		path = {
 			leads_to_tech = guerilla_warfare
 			research_cost_coeff = 1
