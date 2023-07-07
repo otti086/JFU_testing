@@ -2337,7 +2337,7 @@ focus_tree = {
 				add_tech_bonus = {
 					name = ITA_brescia_small_arms_industry2
 					bonus = 1
-					uses = w
+					uses = 2
 					category = infantry_weapons
 				}				
 			}
