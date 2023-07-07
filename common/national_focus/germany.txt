@@ -2266,6 +2266,7 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
+
 	focus = {
 		id = GER_demand_sudetenland
 		icon = GFX_goal_demand_sudetenland
@@ -2298,15 +2299,34 @@ focus_tree = {
 	}
 
 	focus = {
+		id = GER_first_vienna_award
+		icon = GFX_GER_first_vienna_award_icon
+		prerequisite = { focus = GER_demand_sudetenland }
+		x = 0
+		y = 1
+		relative_position_id = GER_demand_sudetenland
+		cost = 1
+		bypass = { HUN = { owns_state = 578 }}
+		completion_reward = {
+		if = { limit = { country_exists = HUN }   
+			HUN = {
+				transfer_state = 578
+				country_event = { id = germany.51 }
+			}
+		}
+			else = { transfer_state = 578 }
+		}
+	}
+	focus = {
 		id = GER_end_of_czechoslovakia
 		icon = GFX_goal_generic_territory_or_war
-		prerequisite = { focus = GER_demand_sudetenland }
+		prerequisite = { focus = GER_first_vienna_award }
 		available = { 
 			HUN = { controls_state = 664 }	
 		}
 		x = 0
 		y = 1
-		relative_position_id = GER_demand_sudetenland
+		relative_position_id = GER_first_vienna_award
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
@@ -2350,7 +2370,7 @@ focus_tree = {
 		icon = GFX_goal_generic_cavalry
 		prerequisite = { focus = GER_end_of_czechoslovakia }
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = GER_end_of_czechoslovakia
 		cost = 10
 		available = {

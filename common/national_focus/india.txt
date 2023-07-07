@@ -1592,19 +1592,6 @@ focus_tree = {
 		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-		complete_tooltip = {
-			random_state = {
-				limit = {
-					has_state_flag = RAJ_ishapore_arsenal_AF
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
 
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -1654,34 +1641,6 @@ focus_tree = {
 		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-		complete_tooltip = {
-			add_autonomy_ratio = {
-				value = -0.15
-				localization = RAJ_strengthen_ties_with_british_investors
-			}
-			random_state = {
-				limit = {
-					has_state_flag = RAJ_strengthen_ties_with_british_investors_AF1
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_state = {
-				limit = {
-					has_state_flag = RAJ_strengthen_ties_with_british_investors_AF2
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
 
 		completion_reward = {
 			add_autonomy_ratio = {
@@ -1751,35 +1710,6 @@ focus_tree = {
 		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-		complete_tooltip = {
-			add_autonomy_ratio = {
-				value = -0.25
-				localization = RAJ_british_rail_investors
-			}
-			add_ideas = RAJ_british_rail_investors
-			random_state = {
-				limit = {
-					has_state_flag = RAJ_british_rail_investors_IC1
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_state = {
-				limit = {
-					has_state_flag = RAJ_british_rail_investors_IC2
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
 
 		completion_reward = {
 			add_autonomy_ratio = {
@@ -1813,10 +1743,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 				set_state_flag = RAJ_british_rail_investors_IC2
@@ -1851,34 +1781,6 @@ focus_tree = {
 		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-		complete_tooltip = {
-			add_autonomy_ratio = {
-				value = -0.25
-				localization = RAJ_british_arms_investors
-			}
-			random_state = {
-				limit = {
-					has_state_flag = RAJ_british_arms_investors_AF1
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_state = {
-				limit = {
-					has_state_flag = RAJ_british_arms_investors_AF2
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
 
 		completion_reward = {
 			add_autonomy_ratio = {
@@ -1911,10 +1813,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 				set_state_flag = RAJ_british_arms_investors_AF2

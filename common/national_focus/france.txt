@@ -888,7 +888,7 @@ focus = {
 		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 13
 		y = 0
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
@@ -905,29 +905,9 @@ focus = {
 
 		completion_reward = {
 			navy_experience = 25
-			21 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = dockyard
-						level = 2
-						instant_build = yes
-					}
-					set_state_flag = FRA_naval_rearmament_2NB
-				}
-			}
-			14 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = dockyard
-						level = 2
-						instant_build = yes
-					}
-					set_state_flag = FRA_naval_rearmament_2NB
-				}
+			add_offsite_building = {
+				type = dockyard
+				level = 4
 			}
 		}
 	}
@@ -939,7 +919,7 @@ focus = {
 		x = 0
 		y = 1
 		relative_position_id = FRA_naval_rearmament
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -992,6 +972,10 @@ focus = {
 					set_state_flag = FRA_colonial_naval_bases
 				}
 			}
+			add_offsite_building = {
+				type = dockyard
+				level = 2
+			}
 		}
 	}
 
@@ -1002,46 +986,14 @@ focus = {
 		x = 0
 		y = 1
 		relative_position_id = FRA_colonial_naval_bases
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			459 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = dockyard
-						level = 2
-						instant_build = yes
-					}
-					set_state_flag = FRA_colonial_dockyards
-				}
-			}
-			272 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = dockyard
-						level = 2
-						instant_build = yes
-					}
-					set_state_flag = FRA_colonial_dockyards
-				}
-			}
-			286 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = dockyard
-						level = 2
-						instant_build = yes
-					}
-					set_state_flag = FRA_colonial_dockyards
-				}
+			add_offsite_building = {
+				type = dockyard
+				level = 2
 			}
 		}
 	}
@@ -1069,6 +1021,7 @@ focus = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
+			add_ideas = tot_economic_mobilisation
 			if = {
 				limit = { not = { has_dlc = "Man the Guns" } }
 				add_manpower = 10000
@@ -1097,7 +1050,10 @@ focus = {
 				type = convoy
 				amount = 400
 			}
-
+			add_offsite_building = {
+				type = industrial_complex
+				level = 2
+			}
 		}
 	}
 	focus = {
@@ -1135,7 +1091,7 @@ focus = {
 #			hidden_effect = {
 #				country_event = lar_appeal_to_overseas_territories.1
 #			}
-			add_ideas = tot_economic_mobilisation
+			
 		}
 	}
 	focus = {
