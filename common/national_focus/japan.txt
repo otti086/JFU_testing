@@ -304,6 +304,7 @@
 
 		available = {
 			date > 1940.12.31
+			NOT = { has_war = yes }
 		}
 
 

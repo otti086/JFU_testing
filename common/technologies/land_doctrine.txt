@@ -3142,8 +3142,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		
-		supply_consumption_factor = -0.10
+	
 		conscription = 0.05
 
 		enable_tactic = tactic_human_wave_tactics
@@ -3340,7 +3339,6 @@ technologies = {
 	guerilla_warfare = {
 		xp_research_type = army
 		xp_unlock_cost = 100
-		out_of_supply_factor = -0.30
 		category_support_battalions = {
 			max_organisation = 25
 			soft_attack = 0.25

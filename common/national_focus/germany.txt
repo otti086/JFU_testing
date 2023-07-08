@@ -2306,15 +2306,15 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_demand_sudetenland
 		cost = 1
-		bypass = { HUN = { owns_state = 578 }}
+		bypass = { HUN = { owns_state = 664 }}
 		completion_reward = {
 			if = { limit = { country_exists = HUN }   
 				HUN = {
-					transfer_state = 578
+					transfer_state = 664
 					country_event = { id = JFU_events.5 }
 				}
 			}
-			else = { transfer_state = 578 }
+			else = { transfer_state = 664 }
 		}
 	}
 
@@ -2322,9 +2322,6 @@ focus_tree = {
 		id = GER_end_of_czechoslovakia
 		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = GER_first_vienna_award }
-		available = { 
-			HUN = { controls_state = 664 }	
-		}
 		x = 0
 		y = 1
 		relative_position_id = GER_first_vienna_award
