@@ -1080,12 +1080,12 @@ technologies = {
 		#Change the custom tooltip too: HUN_light_infantry_divisions_doctrine_effect
 		infantry = {
 			forest = {
-				attack = 0.05
+				attack = 0.03
 				movement = 0.1
 			}
 
 			urban = {
-				attack = 0.1
+				attack = 0.03
 				movement = 0.1
 			}
 		}
