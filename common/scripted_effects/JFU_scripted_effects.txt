@@ -2212,9 +2212,9 @@ pregrinded_effect = {
             add_unit_leader_trait = organizer
             add_unit_leader_trait = infantry_leader
             add_unit_leader_trait = infantry_expert
-			add_unit_leader_trait = trait_mountaineer
+			add_unit_leader_trait = hill_fighter
 			add_unit_leader_trait = trickster
-			add_unit_leader_trait = ranger
+			add_unit_leader_trait = urban_assault_specialist
         }
 		HUN_karoly_beregfy = { promote_leader = yes }
 		HUN_karoly_beregfy = {
@@ -2233,8 +2233,10 @@ pregrinded_effect = {
             add_unit_leader_trait = infantry_leader
             add_unit_leader_trait = infantry_expert
             add_unit_leader_trait = ranger
+			add_unit_leader_trait = urban_assault_specialist
             add_unit_leader_trait = expert_improviser
 			add_unit_leader_trait = trait_mountaineer
+			add_unit_leader_trait = desert_fox
 			add_unit_leader_trait = trickster
         }				
 	}
@@ -2841,6 +2843,7 @@ pregrinded_effect = {
 			add_unit_leader_trait = trait_mountaineer
 			add_unit_leader_trait = infantry_expert	
 			add_unit_leader_trait = infantry_leader	
+			add_unit_leader_trait = ranger
 		}
 	}
 	USA = {
