@@ -3558,7 +3558,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ITA_air_innovations_bba
-		cost = 10
+		cost = 5
 		available = {
 			has_full_control_of_state = 2
 		}
@@ -3594,7 +3594,7 @@ focus_tree = {
 		x = 4
 		y = 1
 		relative_position_id = ITA_air_innovations_bba
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -3621,7 +3621,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = ITA_citta_dell_aria
-		cost = 10
+		cost = 5
 		available = {
 			has_full_control_of_state = 161
 		}
@@ -3909,7 +3909,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = ITA_standardization
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -3950,7 +3950,7 @@ focus_tree = {
 		x = 2
 		y = 0
 		relative_position_id = ITA_long_range_aircraft
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -3988,7 +3988,7 @@ focus_tree = {
 		x = 4
 		y = 0
 		relative_position_id = ITA_long_range_aircraft
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -4026,7 +4026,7 @@ focus_tree = {
 		x = 6
 		y = 0
 		relative_position_id = ITA_long_range_aircraft
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -4068,7 +4068,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ITA_bomber_designs
-		cost = 10
+		cost = 5
 		available = {
 			date > 1941.1.1
 		}
@@ -4224,7 +4224,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = ITA_naval_power_projection
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -4376,7 +4376,7 @@ focus_tree = {
 		x = -4
 		y = 1
 		relative_position_id = ITA_expand_naval_facilities
-		cost = 10
+		cost = 5
 		available = {
 			OR = {
 				has_full_control_of_state = 448
@@ -4585,7 +4585,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = ITA_expand_naval_facilities
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -4709,7 +4709,7 @@ focus_tree = {
 		x = 4
 		y = 1
 		relative_position_id = ITA_expand_naval_facilities
-		cost = 10
+		cost = 5
 		available = {
 			has_tech = marines
 		}
@@ -4772,7 +4772,7 @@ focus_tree = {
 		x = -6
 		y = 1
 		relative_position_id = ITA_supermarina
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -4967,7 +4967,7 @@ focus_tree = {
 		x = 6
 		y = 1
 		relative_position_id = ITA_supermarina
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -5004,7 +5004,7 @@ focus_tree = {
 		x = -4
 		y = 1
 		relative_position_id = ITA_incrociatori_leggeri
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -5094,7 +5094,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = ITA_incrociatori_leggeri
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -5600,7 +5600,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = ITA_incrociatori_pesanti
-		cost = 10
+		cost = 5
 		available = {
 			if = { # MTG tech
 				limit = {
@@ -5724,7 +5724,7 @@ focus_tree = {
 		x = 4
 		y = 1
 		relative_position_id = ITA_incrociatori_pesanti
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -5858,7 +5858,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ITA_ispettorato_dei_mezzi_antisommergibili
-		cost = 10
+		cost = 5
 		available = {
 		}
 
