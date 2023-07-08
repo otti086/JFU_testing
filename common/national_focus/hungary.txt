@@ -174,32 +174,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = HUN_demand_southern_slovakia
-		icon = GFX_goal_generic_occupy_states_ongoing_war
+		id = HUN_proclaim_greater_hungary
+		icon = GFX_focus_proclaim_the_restauration_of_Austria_Hungary
 		prerequisite = { focus = HUN_reaffirm_territorial_claims }
 		x = 0
 		y = 1
-		relative_position_id = HUN_reaffirm_territorial_claims
-		will_lead_to_war_with = CZE
-		cost = 10
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-		completion_reward = {
-			transfer_state = 664
-			
-		}
-	}
-	focus = {
-		id = HUN_proclaim_greater_hungary
-		icon = GFX_focus_proclaim_the_restauration_of_Austria_Hungary
-		prerequisite = { focus = HUN_demand_southern_slovakia }
-		x = 0
-		y = 2
 		relative_position_id = HUN_reaffirm_territorial_claims
 
 		cost = 10
@@ -329,7 +308,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = HUN_industrial_revitalization
 
-		cost = 5
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -377,7 +356,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = HUN_industrial_revitalization
-		cost = 5
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no

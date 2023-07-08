@@ -2308,15 +2308,16 @@ focus_tree = {
 		cost = 1
 		bypass = { HUN = { owns_state = 578 }}
 		completion_reward = {
-		if = { limit = { country_exists = HUN }   
-			HUN = {
-				transfer_state = 578
-				country_event = { id = germany.51 }
+			if = { limit = { country_exists = HUN }   
+				HUN = {
+					transfer_state = 578
+					country_event = { id = JFU_events.5 }
+				}
 			}
-		}
 			else = { transfer_state = 578 }
 		}
 	}
+
 	focus = {
 		id = GER_end_of_czechoslovakia
 		icon = GFX_goal_generic_territory_or_war
@@ -2377,6 +2378,7 @@ focus_tree = {
 			always = no 
 		}
 		completion_reward = {
+			custom_effect_tooltip = GER_second_vienna_focus_tt
 		}
 	}	
 	focus = {

@@ -642,3 +642,17 @@ country_event = {
 		}
 	}
 }
+
+# Hungary (First Vienna Award)
+country_event = {
+	id = JFU_events.5
+	title = JFU_events.5.t
+	desc = JFU_events.5.d
+	picture = GFX_report_event_vienna_award_negotiations
+
+	is_triggered_only = yes
+
+	option = {
+		name = JFU_events.5.a
+	}
+}

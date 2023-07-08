@@ -896,6 +896,11 @@
  GER_prepare_barb_idea:0 "Prepare for Operation Barbarossa"
  GER_prepare:0 "Build up the East"
 
+ JFU_events.5.t:0 "First Vienna Award"
+ JFU_events.5.d:0 "Czechoslovakia is a cancer tumor in the heart of Europe, and at last the Germans have decided to take decisive action against them. The Sudetenland has already been surrendered to Germany, and now, as a consequence of the Munich Agreement, the Czechoslovakian territory that rightfully belongs to Hungary is to be returned to us."
+ JFU_events.5.a:0 "About time!"
+ GER_second_vienna_focus_tt:0 "This focus is automatically completed by an event which triggers in August 1940.\n\n"
+
 
  PRE_SETS: "JFU Presets"
  HORST_GROUPKEY: "JFU Rules"
