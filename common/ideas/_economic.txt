@@ -152,12 +152,6 @@ ideas = {
 						NOT = { has_idea = HUN_treaty_of_triannon }
 					}
 				}
-				if = {
-					limit = {
-						original_tag = USA
-					}
-					GER = { has_war = yes }
-				}
 			}
 
 			cost = 150
@@ -204,6 +198,7 @@ ideas = {
 				}
 				NOT = {
 					original_tag = FRA
+					original_tag = SPR
 				}
 				if = {
 					limit = {
@@ -282,13 +277,6 @@ ideas = {
 				NOT = {
 					original_tag = SPR
 					original_tag = FRA
-				}
-				if = {
-					limit = {
-						original_tag = ITA
-					}
-					NOT = { has_war_with = YUG }
-					date > 1939.1.1
 				}
 			}
 			ai_will_do = {
