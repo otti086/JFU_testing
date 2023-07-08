@@ -33,15 +33,43 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = { always = no }
 DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
 	if = {
 		limit = {
-			tag = USA 
+			tag = USA
+			tag = BRA
+			tag = MEX 
 		}
 		OR = {
 			16 = { is_controlled_by = GER }
 			date > 1940.01.01
 		}
 	}
+	if = { limit = { ROOT = { axis = yes  } } 	NOT = { FROM = { OR = { tag = MAN tag = JAP } } } }
+	if = { 
+		limit = {
+			FROM = { axis = yes}
+		}
+		NOT = {	ROOT = { allies = yes } }
+	}
+	if = { 
+		limit = {
+			FROM = { allies = yes}
+		}
+		NOT = {	ROOT = { axis = yes } }
+	}
 }
-DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = {}
+DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = {
+	if = { 
+		limit = {
+			FROM = { axis = yes}
+		}
+		NOT = {	ROOT = { allies = yes } }
+	}
+	if = { 
+		limit = {
+			FROM = { allies = yes}
+		}
+		NOT = {	ROOT = { axis = yes } }
+	}
+}
 DIPLOMACY_CALL_ALLY_ENABLE_TRIGGER = { always = no } 
 DIPLOMACY_JOIN_ALLY_ENABLE_TRIGGER = { always = no } 
 DIPLOMACY_REQUEST_ACCESS_TO_LICENCE_PRODUCTION_ENABLE_TRIGGER = {
@@ -76,4 +104,12 @@ DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
 		}
 		always = no
 	}
+}
+DIPLOMACY_GIVESTATECONTROL_ENABLE_TRIGGER = { NOT = { FROM = { tag = SPR } } }
+DIPLOMACY_ASKSTATECONTROL_ENABLE_TRIGGER = { NOT = { tag = SPR} }
+DIPLOMACY_EMBARGO_ENABLE_TRIGGER = { 
+	always=  no 
+}
+DIPLOMACY_REVOKE_EMBARGO_ENABLE_TRIGGER = { 
+	always=  no 
 }
