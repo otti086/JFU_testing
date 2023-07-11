@@ -76,6 +76,12 @@ ITA_power_balance_lost_core_4 = {
 ITA_power_balance_lost_core_5 = {
 	power_balance_weekly = -0.005
 }
+ITA_JFU_BOP_change_1 = {
+	power_balance_weekly = -0.5
+}
+ITA_JFU_BOP_change_2 = {
+	power_balance_weekly = -1
+}
 
 
 #TODO_Manu: Old stuff for easy reference. Delete in the future tack
