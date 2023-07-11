@@ -641,6 +641,41 @@ on_actions = {
 			}
 		}
 	}
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					AND = {
+						GER = { has_war_with = SOV }
+						NOT = {
+							907 = { is_controlled_by = ITA }	  
+						}
+						451 = { is_controlled_by = ITA }
+					}
+				}
+				add_power_balance_modifier = {
+					id = ITA_power_balance
+					modifier = ITA_JFU_BOP_change_1
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+						GER = { has_war_with = SOV }
+						NOT = {
+							907 = { is_controlled_by = ITA }
+							451 = { is_controlled_by = ITA }	  
+						}	
+					}
+				}
+				add_power_balance_modifier = {
+					id = ITA_power_balance
+					modifier = ITA_JFU_BOP_change_2
+				}			
+			}
+		}
+	}
+
 	on_daily_FRA = {
 		effect = {
 			if = {
