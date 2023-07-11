@@ -4405,7 +4405,7 @@ focus_tree = {
 						instant_build = yes
 						province = 1149
 					}
-					add_building_construction = {
+					set_building_level = {
 						type = coastal_bunker
 						level = 1
 						instant_build = yes
@@ -4425,7 +4425,7 @@ focus_tree = {
 						instant_build = yes
 						province = 1130
 					}
-					add_building_construction = {
+					set_building_level = {
 						type = coastal_bunker
 						level = 1
 						instant_build = yes
@@ -4445,7 +4445,7 @@ focus_tree = {
 						instant_build = yes
 						province = 10007
 					}
-					add_building_construction = {
+					set_building_level = {
 						type = coastal_bunker
 						level = 1
 						instant_build = yes
@@ -4465,7 +4465,7 @@ focus_tree = {
 						instant_build = yes
 						province = 12766
 					}
-					add_building_construction = {
+					set_building_level = {
 						type = coastal_bunker
 						level = 1
 						instant_build = yes
@@ -4485,7 +4485,7 @@ focus_tree = {
 						instant_build = yes
 						province = 12991
 					}
-					add_building_construction = {
+					set_building_level = {
 						type = coastal_bunker
 						level = 1
 						instant_build = yes
@@ -4505,7 +4505,7 @@ focus_tree = {
 						instant_build = yes
 						province = 12941
 					}
-					add_building_construction = {
+					set_building_level = {
 						type = coastal_bunker
 						level = 1
 						instant_build = yes
@@ -4526,7 +4526,7 @@ focus_tree = {
 						instant_build = yes
 						province = 4076
 					}
-					add_building_construction = {
+					set_building_level = {
 						type = coastal_bunker
 						level = 1
 						instant_build = yes
@@ -4546,7 +4546,7 @@ focus_tree = {
 						instant_build = yes
 						province = 9994
 					}
-					add_building_construction = {
+					set_building_level = {
 						type = coastal_bunker
 						level = 1
 						instant_build = yes
@@ -4566,7 +4566,7 @@ focus_tree = {
 						instant_build = yes
 						province = 7132
 					}
-					add_building_construction = {
+					set_building_level = {
 						type = coastal_bunker
 						level = 1
 						instant_build = yes
@@ -4605,7 +4605,7 @@ focus_tree = {
 					is_fully_controlled_by = ROOT
 					naval_base > 0
 				}
-				add_building_construction = {
+				set_building_level = {
 					type = coastal_bunker
 					level = 2
 					instant_build = yes

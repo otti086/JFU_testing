@@ -7,6 +7,14 @@ technologies = {
 			building = air_base
 			level = 10 #max is 100
 		}	
+		enable_building = {
+			building = bunker
+			level = 5
+		}
+		enable_building = {
+			building = coastal_bunker
+			level = 5
+		}
 	}	
 	basic_machine_tools = {
 	

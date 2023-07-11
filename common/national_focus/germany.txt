@@ -70,25 +70,25 @@ focus_tree = {
 					limit = { is_controlled_by = ROOT }
 					custom_effect_tooltip = GER_west_wall_forts
 					hidden_effect = {
-						add_building_construction = {
+						set_building_level = {
 							type = bunker
 							level = 3
 							province = 11640
 							instant_build = yes
 						}
-						add_building_construction = {
+						set_building_level = {
 							type = bunker
 							level = 3
 							province = 6712
 							instant_build = yes
 						}
-						add_building_construction = {
+						set_building_level = {
 							type = bunker
 							level = 3
 							province = 6542
 							instant_build = yes
 						}
-						add_building_construction = {
+						set_building_level = {
 							type = bunker
 							level = 3
 							province = 3530
@@ -108,26 +108,26 @@ focus_tree = {
 				42 = {
 					if = {
 						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
+						set_building_level = {
 							type = bunker
 							level = 3
 							province = 3558
 							instant_build = yes
 						}
 						
-						add_building_construction = {
+						set_building_level = {
 							type = bunker
 							level = 3
 							province = 563
 							instant_build = yes
 						}
-						add_building_construction = {
+						set_building_level = {
 							type = bunker
 							level = 3
 							province = 11531
 							instant_build = yes
 						}
-						add_building_construction = {
+						set_building_level = {
 							type = bunker
 							level = 3
 							province = 9575
@@ -188,7 +188,7 @@ focus_tree = {
 				}
 				hidden_effect = {
 					191 = {
-						add_building_construction = {
+						set_building_level = {
 							type = bunker
 							level = 2
 							province = 4640
@@ -209,13 +209,13 @@ focus_tree = {
 				}
 				hidden_effect = {
 					209 = {
-						add_building_construction = {
+						set_building_level = {
 							type = bunker
 							level = 1
 							province = 415
 							instant_build = yes
 						}
-						add_building_construction = {
+						set_building_level = {
 							type = bunker
 							level = 1
 							province = 3310
@@ -236,19 +236,19 @@ focus_tree = {
 				}
 				hidden_effect = {
 					210 = {
-						add_building_construction = {
+						set_building_level = {
 							type = bunker
 							level = 1
 							province = 3333
 							instant_build = yes
 						}
-						add_building_construction = {
+						set_building_level = {
 							type = bunker
 							level = 1
 							province = 11259
 							instant_build = yes
 						}
-						add_building_construction = {
+						set_building_level = {
 							type = bunker
 							level = 1
 							province = 9386
@@ -269,25 +269,25 @@ focus_tree = {
 				}
 				hidden_effect = {
 					207 = {
-						add_building_construction = {
+						set_building_level = {
 							type = bunker
 							level = 1
 							province = 323
 							instant_build = yes
 						}
-						add_building_construction = {
+						set_building_level = {
 							type = bunker
 							level = 3
 							province = 11241
 							instant_build = yes
 						}
-						add_building_construction = {
+						set_building_level = {
 							type = bunker
 							level = 1
 							province = 11220
 							instant_build = yes
 						}
-						add_building_construction = {
+						set_building_level = {
 							type = bunker
 							level = 1
 							province = 3331
@@ -308,13 +308,13 @@ focus_tree = {
 				}
 				hidden_effect = {
 					206 = {
-						add_building_construction = {
+						set_building_level = {
 							type = bunker
 							level = 1
 							province = 9289
 							instant_build = yes
 						}
-						add_building_construction = {
+						set_building_level = {
 							type = bunker
 							level = 1
 							province = 3378
@@ -335,7 +335,7 @@ focus_tree = {
 				}
 				hidden_effect = {
 					204 = {
-						add_building_construction = {
+						set_building_level = {
 							type = bunker
 							level = 1
 							province = 6373
@@ -356,19 +356,19 @@ focus_tree = {
 				}
 				hidden_effect = {
 					194 = {
-						add_building_construction = {
+						set_building_level = {
 							type = bunker
 							level = 1
 							province = 6319
 							instant_build = yes
 						}
-						add_building_construction = {
+						set_building_level = {
 							type = bunker
 							level = 1
 							province = 9249
 							instant_build = yes
 						}
-						add_building_construction = {
+						set_building_level = {
 							type = bunker
 							level = 1
 							province = 3507
@@ -389,25 +389,25 @@ focus_tree = {
 				}
 				hidden_effect = {
 					202 = {
-						add_building_construction = {
+						set_building_level = {
 							type = bunker
 							level = 1
 							province = 9568
 							instant_build = yes
 						}
-						add_building_construction = {
+						set_building_level = {
 							type = bunker
 							level = 1
 							province = 3543
 							instant_build = yes
 						}
-						add_building_construction = {
+						set_building_level = {
 							type = bunker
 							level = 5
 							province = 525
 							instant_build = yes
 						}
-						add_building_construction = {
+						set_building_level = {
 							type = bunker
 							level = 1
 							province = 3494
@@ -428,25 +428,25 @@ focus_tree = {
 				}
 				hidden_effect = {
 					203 = {
-						add_building_construction = {
+						set_building_level = {
 							type = bunker
 							level = 1
 							province = 11454
 							instant_build = yes
 						}
-						add_building_construction = {
+						set_building_level = {
 							type = bunker
 							level = 1
 							province = 488
 							instant_build = yes
 						}
-						add_building_construction = {
+						set_building_level = {
 							type = bunker
 							level = 1
 							province = 3468
 							instant_build = yes
 						}
-						add_building_construction = {
+						set_building_level = {
 							type = bunker
 							level = 1
 							province = 6478
@@ -467,13 +467,13 @@ focus_tree = {
 				}
 				hidden_effect = {
 					226 = {
-						add_building_construction = {
+						set_building_level = {
 							type = bunker
 							level = 1
 							province = 9433
 							instant_build = yes
 						}
-						add_building_construction = {
+						set_building_level = {
 							type = bunker
 							level = 3
 							province = 11437
@@ -494,19 +494,19 @@ focus_tree = {
 				}
 				hidden_effect = {
 					200 = {
-						add_building_construction = {
+						set_building_level = {
 							type = bunker
 							level = 3
 							province = 11405
 							instant_build = yes
 						}
-						add_building_construction = {
+						set_building_level = {
 							type = bunker
 							level = 1
 							province = 6596
 							instant_build = yes
 						}
-						add_building_construction = {
+						set_building_level = {
 							type = bunker
 							level = 1
 							province = 11700
@@ -566,22 +566,22 @@ focus_tree = {
 					}
 					19 = {
 						#Fortify naval bases
-						add_building_construction = {
+						set_building_level = {
 							type = coastal_bunker
 							province = {
 								all_provinces = yes
 								limit_to_naval_base = yes
 							}
-							level = 2
+							level = 3
 							instant_build = yes
 						}
-						add_building_construction = {
+						set_building_level = {
             	    	    type = coastal_bunker
             	    	    province = {
             	    	        all_provinces = yes
             	    	        limit_to_coastal = yes
             	    	    }
-            	    	    level = 1
+            	    	    level = 2
             	    	    instant_build = yes
             	    	}
 					}
@@ -598,22 +598,22 @@ focus_tree = {
 					}
 					23 = {
 						#Fortify naval bases
-						add_building_construction = {
+						set_building_level = {
 							type = coastal_bunker
 							province = {
 								all_provinces = yes
 								limit_to_naval_base = yes
 							}
-							level = 2
+							level = 3
 							instant_build = yes
 						}
-						add_building_construction = {
+						set_building_level = {
             	    	    type = coastal_bunker
             	    	    province = {
             	    	        all_provinces = yes
             	    	        limit_to_coastal = yes
             	    	    }
-            	    	    level = 1
+            	    	    level = 2
             	    	    instant_build = yes
             	    	}
 					}
@@ -630,22 +630,22 @@ focus_tree = {
 					}
 					30 = {
 						#Fortify naval bases
-						add_building_construction = {
+						set_building_level = {
 							type = coastal_bunker
 							province = {
 								all_provinces = yes
 								limit_to_naval_base = yes
 							}
-							level = 2
+							level = 3
 							instant_build = yes
 						}
-						add_building_construction = {
+						set_building_level = {
             	    	    type = coastal_bunker
             	    	    province = {
             	    	        all_provinces = yes
             	    	        limit_to_coastal = yes
             	    	    }
-            	    	    level = 1
+            	    	    level = 2
             	    	    instant_build = yes
             	    	}
 					}
@@ -662,22 +662,22 @@ focus_tree = {
 					}
 					14 = {
 						#Fortify naval bases
-						add_building_construction = {
+						set_building_level = {
 							type = coastal_bunker
 							province = {
 								all_provinces = yes
 								limit_to_naval_base = yes
 							}
-							level = 2
+							level = 3
 							instant_build = yes
 						}
-						add_building_construction = {
+						set_building_level = {
             	    	    type = coastal_bunker
             	    	    province = {
             	    	        all_provinces = yes
             	    	        limit_to_coastal = yes
             	    	    }
-            	    	    level = 1
+            	    	    level = 2
             	    	    instant_build = yes
             	    	}
 					}
@@ -694,22 +694,22 @@ focus_tree = {
 					}
 					15 = {
 						#Fortify naval bases a bit extra close to Calais
-						add_building_construction = {
+						set_building_level = {
 							type = coastal_bunker
 							province = {
 								all_provinces = yes
 								limit_to_naval_base = yes
 							}
-							level = 3
+							level = 4
 							instant_build = yes
 						}
-						add_building_construction = {
+						set_building_level = {
             	    	    type = coastal_bunker
             	    	    province = {
             	    	        all_provinces = yes
             	    	        limit_to_coastal = yes
             	    	    }
-            	    	    level = 1
+            	    	    level = 2
             	    	    instant_build = yes
             	    	}
 					}
@@ -726,34 +726,34 @@ focus_tree = {
 					}
 					29 = {
 						#Fortify naval bases
-						add_building_construction = {
+						set_building_level = {
 							type = coastal_bunker
 							province = {
 								all_provinces = yes
 								limit_to_naval_base = yes
 							}
-							level = 2
+							level = 3
 							instant_build = yes
 						}
 	
 						#Bonus Fortifications on Calais coastline
-						add_building_construction = {
+						set_building_level = {
             	    	    type = coastal_bunker
             	    	    province = {
             	    	        all_provinces = yes
             	    	        limit_to_coastal = yes
             	    	    }
-            	    	    level = 2
+            	    	    level = 3
             	    	    instant_build = yes
             	    	}
             	    	#Biggest fortifications on Calais itself
-						add_building_construction = {
+						set_building_level = {
             	    	    type = coastal_bunker
             	    	    province = {
             	    	        all_provinces = yes
             	    	        limit_to_victory_point = yes
             	    	    }
-            	    	    level = 3
+            	    	    level = 4
             	    	    instant_build = yes
             	    	}
 					}
@@ -770,22 +770,22 @@ focus_tree = {
 					}
 					6 = {
 						#Fortify naval bases
-						add_building_construction = {
+						set_building_level = {
 							type = coastal_bunker
 							province = {
 								all_provinces = yes
 								limit_to_naval_base = yes
 							}
-							level = 2
+							level = 3
 							instant_build = yes
 						}
-						add_building_construction = {
+						set_building_level = {
             	    	    type = coastal_bunker
             	    	    province = {
             	    	        all_provinces = yes
             	    	        limit_to_coastal = yes
             	    	    }
-            	    	    level = 1
+            	    	    level = 2
             	    	    instant_build = yes
             	    	}
 					}
@@ -802,22 +802,22 @@ focus_tree = {
 					}
 					7 = {
 						#Fortify naval bases a bit extra close to Calais
-						add_building_construction = {
+						set_building_level = {
 							type = coastal_bunker
 							province = {
 								all_provinces = yes
 								limit_to_naval_base = yes
 							}
-							level = 3
+							level = 4
 							instant_build = yes
 						}
-						add_building_construction = {
+						set_building_level = {
             	    	    type = coastal_bunker
             	    	    province = {
             	    	        all_provinces = yes
             	    	        limit_to_coastal = yes
             	    	    }
-            	    	    level = 1
+            	    	    level = 2
             	    	    instant_build = yes
             	    	}
 					}
@@ -834,22 +834,22 @@ focus_tree = {
 					}	
 					36 = {
 						#Fortify naval bases
-						add_building_construction = {
+						set_building_level = {
 							type = coastal_bunker
 							province = {
 								all_provinces = yes
 								limit_to_naval_base = yes
 							}
-							level = 2
+							level = 3
 							instant_build = yes
 						}
-						add_building_construction = {
+						set_building_level = {
             	    	    type = coastal_bunker
             	    	    province = {
             	    	        all_provinces = yes
             	    	        limit_to_coastal = yes
             	    	    }
-            	    	    level = 1
+            	    	    level = 2
             	    	    instant_build = yes
             	    	}
 					}
@@ -866,22 +866,22 @@ focus_tree = {
 					}		
 					56 = {
 						#Fortify naval bases
-						add_building_construction = {
+						set_building_level = {
 							type = coastal_bunker
 							province = {
 								all_provinces = yes
 								limit_to_naval_base = yes
 							}
-							level = 2
+							level = 3
 							instant_build = yes
 						}
-						add_building_construction = {
+						set_building_level = {
             	    	    type = coastal_bunker
             	    	    province = {
             	    	        all_provinces = yes
             	    	        limit_to_coastal = yes
             	    	    }
-            	    	    level = 1
+            	    	    level = 2
             	    	    instant_build = yes
             	    	}
 					}
@@ -898,22 +898,22 @@ focus_tree = {
 					}		
 					59 = {
 						#Fortify naval bases
-						add_building_construction = {
+						set_building_level = {
 							type = coastal_bunker
 							province = {
 								all_provinces = yes
 								limit_to_naval_base = yes
 							}
-							level = 2
+							level = 3
 							instant_build = yes
 						}
-						add_building_construction = {
+						set_building_level = {
             	    	    type = coastal_bunker
             	    	    province = {
             	    	        all_provinces = yes
             	    	        limit_to_coastal = yes
             	    	    }
-            	    	    level = 1
+            	    	    level = 2
             	    	    instant_build = yes
             	    	}
 					}
@@ -930,22 +930,22 @@ focus_tree = {
 					}		
 					58 = {
 						#Fortify naval bases
-						add_building_construction = {
+						set_building_level = {
 							type = coastal_bunker
 							province = {
 								all_provinces = yes
 								limit_to_naval_base = yes
 							}
-							level = 2
+							level = 3
 							instant_build = yes
 						}
-						add_building_construction = {
+						set_building_level = {
             	    	    type = coastal_bunker
             	    	    province = {
             	    	        all_provinces = yes
             	    	        limit_to_coastal = yes
             	    	    }
-            	    	    level = 1
+            	    	    level = 2
             	    	    instant_build = yes
             	    	}
 					}
@@ -962,22 +962,22 @@ focus_tree = {
 					}		
 					99 = {
 						#Fortify naval bases
-						add_building_construction = {
+						set_building_level = {
 							type = coastal_bunker
 							province = {
 								all_provinces = yes
 								limit_to_naval_base = yes
 							}
-							level = 2
+							level = 3
 							instant_build = yes
 						}
-						add_building_construction = {
+						set_building_level = {
             	    	    type = coastal_bunker
             	    	    province = {
             	    	        all_provinces = yes
             	    	        limit_to_coastal = yes
             	    	    }
-            	    	    level = 1
+            	    	    level = 2
             	    	    instant_build = yes
             	    	}
 					}
@@ -994,22 +994,22 @@ focus_tree = {
 					}		
 					110 = {
 						#Fortify naval bases
-						add_building_construction = {
+						set_building_level = {
 							type = coastal_bunker
 							province = {
 								all_provinces = yes
 								limit_to_naval_base = yes
 							}
-							level = 2
+							level = 3
 							instant_build = yes
 						}
-						add_building_construction = {
+						set_building_level = {
             	    	    type = coastal_bunker
             	    	    province = {
             	    	        all_provinces = yes
             	    	        limit_to_coastal = yes
             	    	    }
-            	    	    level = 1
+            	    	    level = 2
             	    	    instant_build = yes
             	    	}
 					}
@@ -1026,22 +1026,22 @@ focus_tree = {
 					}		
 					142 = {
 						#Fortify naval bases
-						add_building_construction = {
+						set_building_level = {
 							type = coastal_bunker
 							province = {
 								all_provinces = yes
 								limit_to_naval_base = yes
 							}
-							level = 2
+							level = 3
 							instant_build = yes
 						}
-						add_building_construction = {
+						set_building_level = {
             	    	    type = coastal_bunker
             	    	    province = {
             	    	        all_provinces = yes
             	    	        limit_to_coastal = yes
             	    	    }
-            	    	    level = 1
+            	    	    level = 2
             	    	    instant_build = yes
             	    	}
 					}
@@ -1058,22 +1058,22 @@ focus_tree = {
 					}		
 					143 = {
 						#Fortify naval bases
-						add_building_construction = {
+						set_building_level = {
 							type = coastal_bunker
 							province = {
 								all_provinces = yes
 								limit_to_naval_base = yes
 							}
-							level = 2
+							level = 3
 							instant_build = yes
 						}
-						add_building_construction = {
+						set_building_level = {
             	    	    type = coastal_bunker
             	    	    province = {
             	    	        all_provinces = yes
             	    	        limit_to_coastal = yes
             	    	    }
-            	    	    level = 1
+            	    	    level = 2
             	    	    instant_build = yes
             	    	}
 					}
@@ -1090,22 +1090,22 @@ focus_tree = {
 					}		
 					144 = {
 						#Fortify naval bases
-						add_building_construction = {
+						set_building_level = {
 							type = coastal_bunker
 							province = {
 								all_provinces = yes
 								limit_to_naval_base = yes
 							}
-							level = 2
+							level = 3
 							instant_build = yes
 						}
-						add_building_construction = {
+						set_building_level = {
             	    	    type = coastal_bunker
             	    	    province = {
             	    	        all_provinces = yes
             	    	        limit_to_coastal = yes
             	    	    }
-            	    	    level = 1
+            	    	    level = 2
             	    	    instant_build = yes
             	    	}
 					}
@@ -1122,22 +1122,22 @@ focus_tree = {
 					}
 					785 = {
 						#Fortify naval bases
-						add_building_construction = {
+						set_building_level = {
 							type = coastal_bunker
 							province = {
 								all_provinces = yes
 								limit_to_naval_base = yes
 							}
-							level = 2
+							level = 3
 							instant_build = yes
 						}
-						add_building_construction = {
+						set_building_level = {
             	    	    type = coastal_bunker
             	    	    province = {
             	    	        all_provinces = yes
             	    	        limit_to_coastal = yes
             	    	    }
-            	    	    level = 1
+            	    	    level = 2
             	    	    instant_build = yes
             	    	}
 					}
