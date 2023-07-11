@@ -19,7 +19,7 @@ ideas = {
 		nor_bad_debuffs = {
 			picture = generic_disjointed_gov
 			modifier = {
-				surrender_limit = -0.35
+				surrender_limit = -0.60
 				industrial_capacity_dockyard = -0.80
 				conversion_cost_civ_to_mil_factor = 3.0
 			}
@@ -30,8 +30,6 @@ ideas = {
 				max_dig_in = -10
 				army_attack_factor = -0.90
 				army_defence_factor = -0.90
-				max_command_power = -50x`
-				command_power_gain_mult = -0.35	
 				production_speed_naval_base_factor = -1.2
 			}
 		}

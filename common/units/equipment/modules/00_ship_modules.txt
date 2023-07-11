@@ -22,9 +22,6 @@ equipment_modules = {
 		multiply_stats = {
 			naval_speed = -0.01
 		}
-		add_average_stats = {
-			lg_armor_piercing = 1
-		}
 		
 		can_convert_from = {
 			module_category = ship_light_battery
@@ -47,9 +44,6 @@ equipment_modules = {
 		}
 		multiply_stats = {
 			naval_speed = -0.02
-		}
-		add_average_stats = {
-			lg_armor_piercing = 2
 		}
 		
 		can_convert_from = {
@@ -75,9 +69,6 @@ equipment_modules = {
 			build_cost_ic = 150			
 		}
 		
-		add_average_stats = {
-			lg_armor_piercing = 2.5
-		}
 		multiply_stats = {
 			naval_speed = -0.03
 		}
@@ -109,9 +100,6 @@ equipment_modules = {
 		multiply_stats = {
 			naval_speed = -0.04
 		}
-		add_average_stats = {
-			lg_armor_piercing = 2.5
-		}
 		
 		can_convert_from = {
 			module_category = ship_light_battery
@@ -142,9 +130,6 @@ equipment_modules = {
 		build_cost_resources = {
 			steel = 1
 		}
-		add_average_stats = {
-			lg_armor_piercing = 0.5
-		}
 		
 		can_convert_from = {
 			module_category = ship_light_battery
@@ -169,9 +154,6 @@ equipment_modules = {
 		}
 		build_cost_resources = {
 			steel = 1
-		}
-		add_average_stats = {
-			lg_armor_piercing = 1
 		}
 		
 		can_convert_from = {
@@ -203,9 +185,6 @@ equipment_modules = {
 		build_cost_resources = {
 			steel = 1
 		}
-		add_average_stats = {
-			lg_armor_piercing = 1.75
-		}
 		
 		can_convert_from = {
 			module_category = ship_light_battery
@@ -235,9 +214,6 @@ equipment_modules = {
 		}
 		build_cost_resources = {
 			steel = 1
-		}
-		add_average_stats = {
-			lg_armor_piercing = 1.75
 		}
 		
 		can_convert_from = {
