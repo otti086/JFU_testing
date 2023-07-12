@@ -996,7 +996,6 @@ ideas = {
 				naval_strike_targetting_factor = 0.2
 				naval_strike_agility_factor = 0.2
 				army_attack_factor = 0.20
-				army_defence_factor = 0.10
 				breakthrough_factor = 0.20
 				amphibious_invasion_defence = 0.50
 				supply_consumption_factor = -0.10

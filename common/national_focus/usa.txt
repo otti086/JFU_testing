@@ -1235,7 +1235,7 @@ focus_tree = {
 		completion_reward = {
 			650 = {
 				#Fortify naval bases
-				add_building_construction = {
+				set_building_level = {
 					type = coastal_bunker
 					province = 13067
 					level = 2
@@ -1250,7 +1250,7 @@ focus_tree = {
 			}
 			631 = {
 				#Fortify naval bases
-				add_building_construction = {
+				set_building_level = {
 					type = coastal_bunker
 					province = 13052
 					level = 2
@@ -1265,7 +1265,7 @@ focus_tree = {
 			}
 			632 = {
 				#Fortify naval bases
-				add_building_construction = {
+				set_building_level = {
 					type = coastal_bunker
 					province = 13047
 					level = 2
@@ -1280,7 +1280,7 @@ focus_tree = {
 			}
 			638 = {
 				#Fortify naval bases
-				add_building_construction = {
+				set_building_level = {
 					type = coastal_bunker
 					province = 12140
 					level = 2
@@ -1295,7 +1295,7 @@ focus_tree = {
 			}
 			642 = {
 				#Fortify naval bases
-				add_building_construction = {
+				set_building_level = {
 					type = coastal_bunker
 					province = 13050
 					level = 2

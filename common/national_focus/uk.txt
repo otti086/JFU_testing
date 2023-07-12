@@ -1641,7 +1641,7 @@ focus_tree = {
 				add_ideas = ENG_fortify_the_empire_1
 			}
 			447 = {
-				add_building_construction = {
+				set_building_level = {
 					type = coastal_bunker
 					level = 3
 					province = 4076
@@ -1674,26 +1674,14 @@ focus_tree = {
 		cost = 5
 		completion_reward = {
 			118 = {
-				add_building_construction = {
-					type = bunker
-					level = 4
-					province = 4135
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = coastal_bunker
-					level = 1
-					province = 4135
-					instant_build = yes
-				}
-				add_building_construction = {
+				set_building_level = {
 					type = air_base
-					level = 2
+					level = 10
 					instant_build = yes
 				}
-				add_building_construction = {
+				set_building_level = {
 					type = anti_air_building
-					level = 2
+					level = 5
 					instant_build = yes
 				}
 			}
@@ -1748,7 +1736,7 @@ focus_tree = {
 
 		completion_reward = {
 			447 = {
-				add_building_construction = {
+				set_building_level = {
 					type = coastal_bunker
 					level = 2
 					province = 4076
@@ -1759,7 +1747,7 @@ focus_tree = {
 					level = 3
 					instant_build = yes
 				}
-				add_building_construction = {
+				set_building_level = {
 					type = bunker
 					level = 2
 					province = 1071
@@ -1804,7 +1792,7 @@ focus_tree = {
 		completion_reward = {
 			116 = {
 				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
+				set_building_level = {
 					type = coastal_bunker
 					level = 2
 					province = 12003
@@ -2129,7 +2117,7 @@ focus_tree = {
 			navy_experience = 25
 			336 = {
 				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
+				set_building_level = {
 					type = coastal_bunker
 					level = 3
 					province = 12299
@@ -2660,7 +2648,7 @@ focus_tree = {
 				if = {
 					limit = { is_controlled_by = ROOT }
 					#Plymouth
-					add_building_construction = {
+					set_building_level = {
 						type = coastal_bunker
 						level = 2
 						province = 271
@@ -2673,7 +2661,7 @@ focus_tree = {
 				if = {
 					limit = { is_controlled_by = ROOT }
 					#London
-					add_building_construction = {
+					set_building_level = {
 						type = coastal_bunker
 						level = 2
 						province = 11374
@@ -2686,14 +2674,14 @@ focus_tree = {
 				if = {
 					limit = { is_controlled_by = ROOT }
 					#Dover
-					add_building_construction = {
+					set_building_level = {
 						type = coastal_bunker
 						level = 2
 						province = 3501
 						instant_build = yes
 					}
 					#Portsmouth
-					add_building_construction = {
+					set_building_level = {
 						type = coastal_bunker
 						level = 2
 						province = 9458
@@ -2706,7 +2694,7 @@ focus_tree = {
 				if = {
 					limit = { is_controlled_by = ROOT }
 					#Plymouth
-					add_building_construction = {
+					set_building_level = {
 						type = coastal_bunker
 						level = 2
 						province = 540
