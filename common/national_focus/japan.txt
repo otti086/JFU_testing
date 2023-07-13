@@ -344,10 +344,7 @@
 			SIA = { add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 180 } }
 			hidden_effect = {
 				909 = { remove_dynamic_modifier = { modifier = no_entrenchment_africa } }
-				452 = { remove_dynamic_modifier = { modifier = no_entrenchment_africa } }
-				ENG = {
-					load_naval_oob = "FRA_1936_naval_mtg"
-				}							
+				452 = { remove_dynamic_modifier = { modifier = no_entrenchment_africa } }						
 			} 			
 		}
 	}
