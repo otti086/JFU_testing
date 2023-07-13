@@ -688,8 +688,6 @@ technologies = {
 			air_attack = 0.1
 		}
 
-		tech_air_damage_factor = -0.02
-
 		path = {
 			leads_to_tech = antiair2
 			research_cost_coeff = 1
@@ -794,8 +792,6 @@ technologies = {
 			tank_heavy_cannon_2
 		}
 
-		tech_air_damage_factor = -0.02
-
 		path = {
 			leads_to_tech = antiair4
 			research_cost_coeff = 1
@@ -844,8 +840,6 @@ technologies = {
 		mot_anti_air_brigade = {
 			air_attack = 0.1
 		}
-
-		tech_air_damage_factor = -0.02
 
 		path = {
 			leads_to_tech = antiair5
