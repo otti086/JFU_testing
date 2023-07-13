@@ -232,14 +232,6 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			16 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
 			29 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -532,7 +524,7 @@ focus = {
 		}
 
 		available = {
-			
+			NOT = { 16 = { is_controlled_by = FRA} }
 		}
 		
 		bypass = {
@@ -1022,13 +1014,7 @@ focus = {
 		available_if_capitulated = yes
 		completion_reward = {
 			add_ideas = tot_economic_mobilisation
-			if = {
-				limit = { not = { has_dlc = "Man the Guns" } }
-				add_manpower = 10000
-			}
-			else = {
-				add_manpower = 10000
-			}
+			add_manpower = 100000
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = 10000
@@ -1052,7 +1038,7 @@ focus = {
 			}
 			add_offsite_building = {
 				type = industrial_complex
-				level = 2
+				level = 4
 			}
 		}
 	}
@@ -1387,7 +1373,7 @@ focus = {
 		completion_reward = {
 			add_offsite_building = {
 				type = arms_factory
-				level = 2
+				level = 5
 			}
 			create_corps_commander = {
 				name = "Marie-Pierre Koenig"
