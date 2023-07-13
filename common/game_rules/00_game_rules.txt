@@ -98,14 +98,14 @@ JFU_pre_sets = {
 	Group = "PRE_SETS"
 	icon = "GFX_decision_hol_draw_up_staff_plans"
 	default = {
-		name = "VANILLA_JFU"
-		text = "Normal JFU"
-		desc = "This option disables all pre set rule you may configurate your game manually with game rules below"
-	}
-	option = {
 		name = "COMPETITIVE_JFU"
 		text = "competive JFU Preset"
 		desc = "this Pre set is a competitive/rebalanced version of JFU. IT inclused Pre grinded generals, closed ecos, free colabs and more"
+	}
+	option = {
+		name = "VANILLA_JFU"
+		text = "Normal JFU"
+		desc = "This option disables all pre set rule you may configurate your game manually with game rules below"
 	}
 }
 horst_manchukuo = {
@@ -332,7 +332,7 @@ JFU_SPECIAL_FORCES_CAP = {
 	name = "Special Forces Cap Settings"
 	group = "HORST_GROUPKEY"
 	icon = "RULE_GROUP_GENERAL_UI"
-	default = {
+	option = {
 		name =  "JFU_STANDARD_CAP"
 		text = "Standard JFU Settings"
 		desc = "Clicking this option will keep the inital Cap at 200"
@@ -347,7 +347,7 @@ JFU_SPECIAL_FORCES_CAP = {
 		text = "quaduple SF Cap"
 		desc = "Clicking this option will quadrople the cap to 800"
 	}
-	option = {
+	default = {
 		name = "JFU_NO_CAP"
 		text = "remove SF Cap"
 		desc = "Clicking this option will remove the cap completly"
@@ -403,7 +403,7 @@ JFU_SPAIN = {
 	name = "Spain CW Settings"
 	group = "HORST_GROUPKEY"
 	icon = "RULE_GROUP_GENERAL_UI"
-	default = {
+	option = {
 		name = "SPAIN_NORMAL"
 		text = "Normal Spain"
 		desc = "Spain gets -40% attack in the civil War (disable if played without pregrinded)"
@@ -413,7 +413,7 @@ JFU_SPAIN = {
 		text = "Easy Spain"
 		desc = "Spain gets no minus attack in civil War"
 	}
-	option = {
+	default = {
 		name = "SPAIN_NO_CW"
 		text = "NO Civil War Spain"
 		desc = "Spain gets the civil war bypassed"
