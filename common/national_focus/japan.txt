@@ -345,6 +345,9 @@
 			hidden_effect = {
 				909 = { remove_dynamic_modifier = { modifier = no_entrenchment_africa } }
 				452 = { remove_dynamic_modifier = { modifier = no_entrenchment_africa } }
+				ENG = {
+					load_naval_oob = "FRA_1936_naval_mtg"
+				}							
 			} 			
 		}
 	}
@@ -974,6 +977,12 @@
 
 
 		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
 			custom_effect_tooltip = available_chief_of_army
 			show_ideas_tooltip = hajime_sugiyama
 		}
