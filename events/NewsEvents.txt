@@ -1492,7 +1492,6 @@ news_event = {
 	}
 	
 	immediate = {
-		set_global_flag = fall_of_cairo
 	}
 	
 	mean_time_to_happen = {
@@ -1664,7 +1663,6 @@ news_event = {
 	}
 	
 	immediate = {
-		set_global_flag = fall_of_cairo_ita
 	}
 	
 	mean_time_to_happen = {
