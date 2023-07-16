@@ -2747,22 +2747,6 @@ focus_tree = {
 			}
 		}
 	}
-
-	focus = {
-		id = GER_modular_construction
-		icon = GFX_goal_generic_construct_naval_dockyard
-		prerequisite = { focus = GER_trade_interdiction }
-		x = 0
-		y = 1
-		relative_position_id = GER_trade_interdiction
-		cost = 5
-			
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			add_ideas = GER_modular_construction
-		}
-	}
 	focus = {
 		id = GER_endsieg_1
  		icon = GFX_focus_generic_army_tanks2

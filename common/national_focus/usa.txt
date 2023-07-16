@@ -300,6 +300,40 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = USA_reach_out_to_the_ware_group
+		icon = GFX_goal_generic_propaganda
+		x = -2
+		y = 1
+		prerequisite = { focus = USA_fair_labour_standards_act }
+		relative_position_id = USA_fair_labour_standards_act
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = -0.05
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = harry_white
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = victor_perlo
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = whittaker_chambers
+		}
+	}
+	focus = {
 		id = USA_office_of_scientific_research_and_development
 		icon = GFX_focus_research
 		x = 2
@@ -1392,12 +1426,7 @@ focus_tree = {
 			else = {
 				add_political_power = 150
 			}
-			if = {
-				limit = {
-					has_war_support < 0.1
-				}
-				set_war_support = 0.1
-			}
+			add_war_support = 0.1
 			if = {
 				limit = {
 					has_war_support < 0.4 

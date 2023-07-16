@@ -1357,4 +1357,109 @@ characters={
 			}
 		}		
 	}
+
+	USA_harry_white={
+		name=USA_harry_white
+		portraits={
+			army={
+				small="GFX_idea_USA_harry_white"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = harry_white
+			allowed  = {
+				original_tag  = USA
+			}
+			available  = {
+				has_completed_focus  = USA_reach_out_to_the_ware_group 
+				NOT  = {
+					has_idea  = USA_henry_morgenthau 
+				}
+			}
+			visible  = {
+				has_dlc = "Man the Guns"
+			}
+			traits  = {
+				financial_expert 
+			}
+			cost  = 0.000
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 0.000
+			}
+		}
+		allowed_civil_war = {
+			has_government = communism 
+		}
+	}
+
+	USA_victor_perlo={
+		name=USA_victor_perlo
+		portraits={
+			army={
+				small=GFX_portrait_USA_victor_perlo_small
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = victor_perlo
+			allowed  = {
+				original_tag  = USA
+			}
+			available  = {
+				has_completed_focus  = USA_reach_out_to_the_ware_group 
+			}
+			visible  = {
+				has_dlc = "Man the Guns"
+			}
+			traits  = {
+				economist 
+			}
+			cost  = 0.000
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 0.000
+			}
+		}
+		allowed_civil_war  = {
+			has_government  = communism 
+		}
+	}
+
+	USA_whittaker_chambers={
+		name=USA_whittaker_chambers
+		portraits={
+			army={
+				small="GFX_idea_USA_whittaker_chambers"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = whittaker_chambers
+			allowed  = {
+				original_tag  = USA
+			}
+			available  = {
+				has_completed_focus  = USA_reach_out_to_the_ware_group 
+			}
+			visible  = {
+				has_dlc = "Man the Guns"
+			}
+			traits  = {
+				editor 
+			}
+			cost  = 0.000
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 0.000
+			}
+		}
+		allowed_civil_war  = {
+			has_government  = communism 
+		}
+	}
 }
