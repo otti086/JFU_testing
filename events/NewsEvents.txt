@@ -1482,6 +1482,7 @@ news_event = {
 	desc = news.109.d
 	picture = GFX_news_event_042
 	
+	fire_only_once = yes
 	major = yes
 	
 	trigger = {
@@ -1654,7 +1655,7 @@ news_event = {
 	picture = GFX_news_event_italian_tank_desert
 	
 	major = yes
-	
+	fire_only_once = yes	
 	trigger = {
 		446 = { is_controlled_by = ITA }
 		446 = { is_owned_by = ENG }
