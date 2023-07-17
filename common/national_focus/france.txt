@@ -319,6 +319,12 @@ focus = {
 				uses = 2
 				bonus = 1
 			}
+			add_tech_bonus = {
+				name = FRA_gun_bonus
+				bonus = 1.0
+				uses = 2
+				category = infantry_weapons
+			}
 		}
 	}
 
@@ -360,7 +366,13 @@ focus = {
 				bonus = 1.0
 				uses = 1
 				category = cat_mechanized_equipment
-			}			
+			}	
+			add_tech_bonus = {
+				name = FRA_light_medium_armor
+				bonus = 1.0
+				uses = 1
+				category = armor
+			}		
 		}
 	}
 	focus = {
@@ -393,10 +405,8 @@ focus = {
 			add_tech_bonus = {
 				name = FRA_light_medium_armor
 				bonus = 1.0
-				uses = 2
-				category = cat_light_armor
-				category = cat_medium_armor
-				category = cat_heavy_armor
+				uses = 1
+				category = armor
 			}
 		}
 	}

@@ -1077,13 +1077,9 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = SAF_q_services_corps
-				bonus = 1.0
-				uses = 2
-				technology = motorised_infantry
-				technology = tech_logistics_company
-				technology = tech_logistics_company2
-				technology = tech_logistics_company3
-				technology = tech_logistics_company4
+				bonus = 3.0
+				uses = 1
+				category = motorized_equipment
 			}
 		}
 	}
@@ -1122,6 +1118,12 @@
 				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
+			}
+			add_tech_bonus = {
+				name = SAF_armor_effort
+				bonus = 1.0
+				uses = 1
+				category = armor
 			}
 		}
 	}
@@ -1345,7 +1347,7 @@
 			add_tech_bonus = {
 				name = SAF_armor_effort
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = armor
 			}
 		}
