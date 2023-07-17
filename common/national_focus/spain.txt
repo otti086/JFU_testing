@@ -817,7 +817,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			add_timed_idea = { idea = SPA_national_recovery_1 days = 730 }
+			add_timed_idea = { idea = SPA_national_recovery_1 days = 1460 }
 			add_ideas = SPR_no_airfields
 			remove_ideas = {scw_pre_grinded_nerf2}
 			hidden_effect = {
