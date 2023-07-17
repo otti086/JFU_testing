@@ -6511,12 +6511,12 @@ focus_tree = {
 				limit = {
 					has_dlc = "La Resistance"
 				}
-				if = {
-					limit = {
-						has_intelligence_agency = no
-					}
-					create_intelligence_agency = yes
-				}
+#				if = {
+#					limit = {
+#						has_intelligence_agency = no
+#					}
+#					create_intelligence_agency = yes
+#				}
 				add_ideas = ITA_servizio_informazione_militare_ns
 
 			}
