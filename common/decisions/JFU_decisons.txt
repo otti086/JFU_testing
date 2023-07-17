@@ -304,24 +304,24 @@ JFU_decisions = {
 		}		
 	}
 
-	"Italy Fighter Modules" = {
-		icon = generic_operation
-		fire_only_once = yes
-		allowed = { tag = GER }
-		available = { 
-			ITA = {
-				has_tech = engines_3
-				has_tech = aa_hmg
-			}  
-		}
-		cost = 0
-		complete_effect = {
-			set_technology = {
-				engines_3 = 1
-				aa_hmg = 1
-			}
-		}		
-	}
+#	"Italy Fighter Modules" = {
+#		icon = generic_operation
+#		fire_only_once = yes
+#		allowed = { tag = GER }
+#		available = { 
+#			ITA = {
+#				has_tech = engines_3
+#				has_tech = aa_hmg
+#			}  
+#		}
+#		cost = 0
+#		complete_effect = {
+#			set_technology = {
+#				engines_3 = 1
+#				aa_hmg = 1
+#			}
+#		}		
+#	}
 	"Enable Small Barb" = {
 		icon = generic_operation
 		fire_only_once = yes
@@ -956,24 +956,24 @@ JFU_decisions = {
 	# ███████║╚██████╔╝ ╚████╔╝     ╚██████╔╝███████║██║  ██║
 	# ╚══════╝ ╚═════╝   ╚═══╝       ╚═════╝ ╚══════╝╚═╝  ╚═╝
 
-	"Uk Fighter Modules" = {
-		icon = generic_operation
-		fire_only_once = yes
-		allowed = { OR = { tag = SOV tag = USA } }
-		available = { 
-			ENG = {
-				has_tech = aa_hmg
-				has_tech = engines_3
-			}  
-		}
-		cost = 0
-		complete_effect = {
-			set_technology = {
-				aa_hmg = 1
-				engines_3 = 1
-			}
-		}		
-	}
+#	"Uk Fighter Modules" = {
+#		icon = generic_operation
+#		fire_only_once = yes
+#		allowed = { OR = { tag = SOV tag = USA } }
+#		available = { 
+#			ENG = {
+#				has_tech = aa_hmg
+#				has_tech = engines_3
+#			}  
+#		}
+#		cost = 0
+#		complete_effect = {
+#			set_technology = {
+#				aa_hmg = 1
+#				engines_3 = 1
+#			}
+#		}		
+#	}
 
 	#	██╗   ██╗███████╗ █████╗ 
 	#	██║   ██║██╔════╝██╔══██╗
