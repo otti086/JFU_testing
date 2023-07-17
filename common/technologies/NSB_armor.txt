@@ -298,68 +298,6 @@ technologies = {
 		}
 	}
 
-
-
-	amphibious_tank_chassis = { #SchwimmPanzer II
-
-		enable_equipments = {
-			amphibious_tank_chassis_1
-		}
-
-		enable_subunits = {
-			amphibious_armor
-		}
-
-		path = {
-			leads_to_tech = amphibious_drive
-			research_cost_coeff = 1
-		}
-
-		allow_branch = {
-			has_dlc = "Man the Guns"
-		}
-
-		research_cost = 2
-		start_year = 1938
-
-		folder = {
-			name = nsb_armour_folder
-			position = { x = -4 y = 5 }
-		}
-
-		ai_will_do = {
-			factor = 0.5
-
-			modifier = {
-				factor = 2
-				is_major = yes
-				NOT = {
-					TAG = GER
-				}
-			}
-			modifier = {
-				OR = {
-					original_tag = USA
-					original_tag = JAP
-				}
-				factor = 2
-			}
-			modifier = {
-				not = {
-					any_controlled_state = {
-						is_coastal = yes
-					}
-				}
-				factor = 0
-			}
-		}
-
-		categories = {
-			armor
-			tp_tech
-		}
-	}
-
 	advanced_light_tank_chassis = { #Leopard
 
 		enable_equipments = {
@@ -419,9 +357,9 @@ technologies = {
 
 	basic_medium_tank_chassis = { #Panzer III
 
-	sub_technologies = {
-		amphibious_drive
-	}
+		sub_technologies = {
+			amphibious_tank_chassis
+		}
 
 		enable_equipments = {
 			medium_tank_chassis_1
@@ -509,30 +447,18 @@ technologies = {
 		}
 	}
 
-	amphibious_drive = { #SchwimmPanzer II
-
-
-		enable_equipment_modules = {
-			amphibious_drive
-		}
+	amphibious_tank_chassis = { #SchwimmPanzer II
 
 		enable_equipments = {
-			light_tank_amphibious_chassis_0
-			medium_tank_amphibious_chassis_0
-			heavy_tank_amphibious_chassis_0
-			light_tank_amphibious_chassis_1
-			medium_tank_amphibious_chassis_1
-			heavy_tank_amphibious_chassis_1
-			light_tank_amphibious_chassis_2
-			medium_tank_amphibious_chassis_2
-			heavy_tank_amphibious_chassis_2
-			light_tank_amphibious_chassis_3
-			medium_tank_amphibious_chassis_3
-			heavy_tank_amphibious_chassis_3
+			amphibious_tank_chassis_1
+		}
+
+		enable_subunits = {
+			amphibious_armor
 		}
 
 		research_cost = 2
-		start_year = 1940
+		start_year = 1938
 
 		ai_will_do = {
 			factor = 0.5
@@ -540,6 +466,9 @@ technologies = {
 			modifier = {
 				factor = 2
 				is_major = yes
+				NOT = {
+					TAG = GER
+				}
 			}
 			modifier = {
 				OR = {
@@ -564,10 +493,12 @@ technologies = {
 		}
 	}
 
-
-
 	improved_medium_tank_chassis = { #Panzer IV
 
+
+		sub_technologies = {
+			amphibious_drive
+		}
 
 		enable_equipments = {
 			medium_tank_chassis_2
@@ -660,6 +591,61 @@ technologies = {
 		}
 	}
 
+	amphibious_drive = { #SchwimmPanzer II
+
+
+		enable_equipment_modules = {
+			amphibious_drive
+		}
+
+		enable_equipments = {
+			light_tank_amphibious_chassis_0
+			medium_tank_amphibious_chassis_0
+			heavy_tank_amphibious_chassis_0
+			light_tank_amphibious_chassis_1
+			medium_tank_amphibious_chassis_1
+			heavy_tank_amphibious_chassis_1
+			light_tank_amphibious_chassis_2
+			medium_tank_amphibious_chassis_2
+			heavy_tank_amphibious_chassis_2
+			light_tank_amphibious_chassis_3
+			medium_tank_amphibious_chassis_3
+			heavy_tank_amphibious_chassis_3
+		}
+
+		research_cost = 2
+		start_year = 1940
+
+		ai_will_do = {
+			factor = 0.5
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				OR = {
+					original_tag = USA
+					original_tag = JAP
+				}
+				factor = 2
+			}
+			modifier = {
+				not = {
+					any_controlled_state = {
+						is_coastal = yes
+					}
+				}
+				factor = 0
+			}
+		}
+
+		categories = {
+			armor
+			tp_tech
+		}
+	}
+	
 	advanced_medium_tank_chassis = { #Panther
 
 		enable_equipments = {
@@ -670,14 +656,14 @@ technologies = {
 		}
 
 		enable_equipment_modules = {
-			rocket_artillery_equipment_2
 			tank_anti_air_cannon_3
 			tank_high_velocity_cannon_3
 			tank_heavy_cannon_3
 			auto_loader
 			tank_heavy_howitzer
 			tank_medium_howitzer_2
-								  }
+			tank_rocket_launcher_2
+		}
 
 		path = {
 			leads_to_tech = main_battle_tank_chassis
@@ -784,6 +770,16 @@ technologies = {
 
 		enable_subunits = {
 			heavy_armor
+		}
+
+		enable_equipment_modules = {
+			tank_high_velocity_cannon
+			tank_medium_cannon
+			tank_heavy_cannon
+			tank_small_cannon_2
+			secondary_turret_close_support_gun
+			tank_auto_cannon_2
+			squeezebore_adaptor
 		}
 
 		on_research_complete_limit = {
@@ -932,14 +928,14 @@ technologies = {
 		}
 
 		enable_equipment_modules = {
-			rocket_artillery_equipment_2
 			tank_anti_air_cannon_3
 			tank_high_velocity_cannon_3
 			tank_heavy_cannon_3
 			auto_loader
 			tank_heavy_howitzer
 			tank_medium_howitzer_2
-								  }
+			tank_rocket_launcher_2
+		}
 
 		path = {
 			leads_to_tech = main_battle_tank_chassis
@@ -999,14 +995,14 @@ technologies = {
 		}
 		
 		enable_equipment_modules = {
-			rocket_artillery_equipment_2
 			tank_anti_air_cannon_3
 			tank_high_velocity_cannon_3
 			tank_heavy_cannon_3
 			auto_loader
 			tank_heavy_howitzer
 			tank_medium_howitzer_2
-								  }
+			tank_rocket_launcher_2
+		}
 
 		enable_subunits = {
 			super_heavy_armor
