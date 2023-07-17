@@ -2804,19 +2804,19 @@ guiTypes = {
 				pdx_tooltip = ""
 			}
 
-			instantTextBoxType = {
-				name = "airtech_subtitle_engines"
-				position = { x = 1520 y = 110 }
-				textureFile = ""
-				font = "hoi_33"
-				borderSize = {x = 0 y = 4}
-				text = "AIR_TITLE_ENGINES"
-				maxWidth = 300
-				maxHeight = 62
-				format = center
-				Orientation = "UPPER_LEFT"
-				pdx_tooltip = "nav_bomber_equipment_desc"
-			}
+#			instantTextBoxType = {
+#				name = "airtech_subtitle_engines"
+#				position = { x = 1520 y = 110 }
+#				textureFile = ""
+#				font = "hoi_33"
+#				borderSize = {x = 0 y = 4}
+#				text = "AIR_TITLE_ENGINES"
+#				maxWidth = 300
+#				maxHeight = 62
+#				format = center
+#				Orientation = "UPPER_LEFT"
+#				pdx_tooltip = "nav_bomber_equipment_desc"
+#			}
 
 			containerWindowType = {
 				name = "tiled_research_bg"
