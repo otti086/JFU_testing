@@ -58,6 +58,7 @@ NDefines.NResistance.NRESISTANCE_TARGET_MODIFIER_OCCUPIED_IS_EXILE_MAX = 10.0
 
 NDefines.NBuildings.MAX_SHARED_SLOTS = 50
 NDefines.NBuildings.OWNER_CHANGE_EXTRA_SHARED_SLOTS_FACTOR = 1.0
+NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 100
 
 NDefines.NCharacter.SPECIALIST_ADVISOR_MIN_RANK = 2
 NDefines.NCharacter.EXPERT_ADVISOR_MIN_RANK = 4
@@ -113,6 +114,7 @@ NDefines.NAir.DETECT_CHANCE_FROM_AIRCRAFTS_EFFECTIVE_COUNT = 1500  -- WAS 3000, 
 NDefines.NAir.FIELD_EXPERIENCE_SCALE = 0.0008						-- WAS 0.0004 | This affects how much XP you get from various missions (AFAIK this will affect XP gained from bombing and CAS missions as well)
 NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO = 0.03       -- WAS 0.05 | Changed due to plane count changes 
 NDefines.NAir.AIR_WING_MAX_STATS_BOMBING = 200	-- vanilla 100
+
 
 NDefines.NNavy.MISSION_SUPREMACY_RATIOS = { 						-- supremacy multipliers for different mission types   | Strikeforce/Naval Invasion Support now 0 supremacy to avoid free supremacy
 		0.0, -- HOLD
