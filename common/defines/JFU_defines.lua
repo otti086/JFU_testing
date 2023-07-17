@@ -24,13 +24,13 @@ NDefines.NMilitary.BATALION_NOT_CHANGED_EXPERIENCE_DROP = 0.0
 NDefines.NMilitary.COMBAT_MINIMUM_TIME = 2 		-- VANILLA 4
 NDefines.NMilitary.ARMY_FUEL_COST_MULT = 0.2	-- VANILLA 0.5             --fuel cost multiplier for all army related stuff
 NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.10 -- VANILLA 0.25
+NDefines.NMilitary.UNIT_EXPERIENCE_PER_TRAINING_DAY = 0  -- VANILLA 0.0015
 
-
-NDefines.NMilitary.COMBAT_MOVEMENT_SPEED = 0.125 -- VANILLA 0.33
-NDefines.NMilitary.LAND_SPEED_MODIFIER = 0.02	-- VANILLA 0.05
+NDefines.NMilitary.COMBAT_MOVEMENT_SPEED = 0.33 -- VANILLA 0.33
+NDefines.NMilitary.LAND_SPEED_MODIFIER = 0.05	-- VANILLA 0.05
 NDefines.NMilitary.RETREAT_SPEED_FACTOR = 0.4		-- VANILLA 0.25 
 NDefines.NMilitary.WITHDRAWING_SPEED_FACTOR = 0.25	-- VANILLA 0.15
-NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER = 0.0475 -- VANILLA 0.060
+NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER = 0.060 -- VANILLA 0.0525
 NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.0575	-- VANILLA 0.053
 
 
@@ -105,6 +105,7 @@ NDefines.NAir.DISRUPTION_FACTOR = 4
 NDefines.NAir.ESCORT_FACTOR = 5.5
 NDefines.NAir.ACCIDENT_CHANCE_BASE = 0
 NDefines.NAir.SUPPLY_NEED_FACTOR = 0.1				-- How much supply planes need
+NDefines.NAir.AIR_WING_FLIGHT_SPEED_MULT = 0.2 --makes redeployement of fighters faster vanilla is 0.02
 -- NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_FACTOR = 0.4  -- vanilla 0.8
 
 NDefines.NAir.AIRBASE_CAPACITY_MULT = 100  -- vanilla 200

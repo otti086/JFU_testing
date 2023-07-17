@@ -1092,7 +1092,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "armour_subtitle_medium"
-					position = { x = 150 y = 300 }
+					position = { x = 150 y = 230 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -1110,18 +1110,6 @@ guiTypes = {
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
 					text = "ARMOUR_TITLE_LIGHT"
-					maxWidth = 200
-					maxHeight = 62
-					format = center
-					Orientation = "UPPER_LEFT"
-				}
-				instantTextBoxType = {
-					name = "armour_subtitle_amphibious"
-					position = { x = -400 y = 305 }
-					textureFile = ""
-					font = "hoi_33"
-					borderSize = {x = 0 y = 4}
-					text = "ARMOUR_TITLE_AMPH"
 					maxWidth = 200
 					maxHeight = 62
 					format = center

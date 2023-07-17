@@ -253,7 +253,16 @@ focus_tree = {
 				name = HUN_industrial_revitalization
 				bonus = 1.0
 				uses = 1
-				category = industry
+				technology = advanced_machine_tools
+				technology = flexible_line
+				technology = assembly_line_production
+				technology = streamlined_line
+				technology = concentrated_industry3
+				technology = concentrated_industry4
+				technology = concentrated_industry5
+				technology = dispersed_industry3 
+				technology = dispersed_industry4 
+				technology = dispersed_industry5
 			}
 		}
 	}
@@ -420,7 +429,16 @@ focus_tree = {
 				name = HUN_announce_the_gyor_program
 				bonus = 1.0
 				uses = 2
-				category = industry
+				technology = advanced_machine_tools
+				technology = flexible_line
+				technology = assembly_line_production
+				technology = streamlined_line
+				technology = concentrated_industry3
+				technology = concentrated_industry4
+				technology = concentrated_industry5
+				technology = dispersed_industry3 
+				technology = dispersed_industry4 
+				technology = dispersed_industry5
 			}
 		}
 	}
@@ -989,8 +1007,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = HUN_develop_tanks
-				ahead_reduction = 2
-				uses = 1
+				bonus = 1.0
+				uses = 2
 				category = armor
 			}
 		}

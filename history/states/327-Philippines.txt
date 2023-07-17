@@ -3,7 +3,11 @@ state=
 	id=327
 	name="STATE_327" # Luzon
 	manpower = 3548684
-	
+
+	resources={
+		rubber=25 # was: 28
+	}
+
 	state_category = town
 	history=
 	{

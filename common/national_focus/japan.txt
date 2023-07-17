@@ -344,7 +344,7 @@
 			SIA = { add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 180 } }
 			hidden_effect = {
 				909 = { remove_dynamic_modifier = { modifier = no_entrenchment_africa } }
-				452 = { remove_dynamic_modifier = { modifier = no_entrenchment_africa } }
+				452 = { remove_dynamic_modifier = { modifier = no_entrenchment_africa } }						
 			} 			
 		}
 	}
@@ -974,6 +974,12 @@
 
 
 		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
 			custom_effect_tooltip = available_chief_of_army
 			show_ideas_tooltip = hajime_sugiyama
 		}

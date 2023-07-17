@@ -441,6 +441,7 @@ ideas = {
 				training_time_army_factor = -0.89
 				air_training_xp_gain_factor = 10
 				experience_gain_navy_unit_factor = 10
+				experience_gain_army = 0.3
 			}
 		}
 		Battle_of_the_Buldge = {
@@ -690,5 +691,17 @@ ideas = {
 				production_speed_air_base_factor = 0.3
 			}
 		}
+		ITA_BARB_DEBUFF = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = -0.4
+				defense_bonus_against = -0.4
+			}			
+		}		
 	}
 }
