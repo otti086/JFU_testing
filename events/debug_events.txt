@@ -13,7 +13,7 @@ country_event = {
 
 
 	immediate = {
-		create_intelligence_agency = yes
+#		create_intelligence_agency = yes
 		upgrade_intelligence_agency = upgrade_form_department
 	}
 

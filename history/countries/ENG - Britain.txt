@@ -12,7 +12,7 @@ add_relation_modifier = {
 }
 
 set_country_flag=fuel_system_enabled
-create_intelligence_agency = yes
+#create_intelligence_agency = yes
 909 = {
 	add_dynamic_modifier = { modifier = no_entrenchment_africa }
 }

@@ -547,7 +547,7 @@ set_technology = {
 ####
 
 capital = 219
-create_intelligence_agency = yes
+#create_intelligence_agency = yes
 
 
 if = {

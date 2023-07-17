@@ -27,7 +27,7 @@ add_relation_modifier = {
 }
 starting_train_buffer = 2
 set_fuel_ratio = 0.8
-create_intelligence_agency = yes
+#create_intelligence_agency = yes
 # starting_truck_buffer = 0.8
 
 # Starting tech
