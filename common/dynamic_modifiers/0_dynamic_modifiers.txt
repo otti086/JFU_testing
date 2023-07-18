@@ -1251,7 +1251,7 @@ SOV_BARB_Debuff = {
 	icon = GFX_idea_generic_manpower_bonus
 
 	army_core_attack_factor = SOV_barb_attack_debuff
-#	army_core_defence_factor = SOV_barb_defence_debuff
+	army_core_defence_factor = SOV_barb_defence_debuff
 }
 SOV_BARB_Debuff1 = {
 	enable = { always = yes }
