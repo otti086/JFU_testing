@@ -466,11 +466,13 @@ country_event = {
 		name = "So it be"
 
 		hidden_effect = {
-			ITA = { add_to_war = { targeted_alliance = GER enemy = ENG } }
+			ITA = { add_to_war = { targeted_alliance = GER enemy = ENG } add_timed_idea = { idea = GER_the_blitzkrieg days = 365 } }
 			ETH = { add_to_war = { targeted_alliance = GER enemy = ENG } }
-			ITA = { add_timed_idea =  { idea = NO_naval_raiding days = 40 } }
-			ENG = { add_timed_idea =  { idea = NO_naval_raiding days = 40 } }
-			FRA = { add_timed_idea =  { idea = NO_naval_raiding days = 40 } }
+			GER = { add_timed_idea = { idea = GER_the_blitzkrieg days = 365 } }
+			SPR = { add_timed_idea = { idea = GER_the_blitzkrieg days = 365 } }
+			HUN = { add_timed_idea = { idea = GER_the_blitzkrieg days = 365 } }
+			BUL = { add_timed_idea = { idea = GER_the_blitzkrieg days = 365 } }
+			ROM = { add_timed_idea = { idea = GER_the_blitzkrieg days = 365 } }
 #			country_event = { id = JFU_events.2 days = 60 }
 		}
 	}
