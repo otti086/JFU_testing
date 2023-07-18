@@ -596,7 +596,10 @@ on_actions = {
 			}
 			if = {
 				limit = {
+					FROM = { tag = CHI }
+					FROM.FROM = { is_core_of = CHI }
 					CHI = { surrender_progress > 0.6 }
+					747 = { is_controlled_by = CHI }
 				}
 				if = { 
 					limit = {
@@ -610,10 +613,15 @@ on_actions = {
 					add_threat = 40
 				}
 				else = {
+					if = {
+						limit = {
+							country_exists = CHI
+						}
+						add_threat = 40
+					}
 					JAP = {
 						annex_country = { target = CHI }
 					}
-					add_threat = 40
 					every_state = {
 					limit = {
 							is_core_of = CHI
