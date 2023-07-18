@@ -841,7 +841,7 @@ island_hopping_USA = {
 }
 SOV_Barb_debuff_effect = {
 	add_to_variable	= { var = SOV_barb_attack_debuff value = 0.005}
-	add_to_variable = { var = SOV_barb_defence_debuff value = 0.005}
+#	add_to_variable = { var = SOV_barb_defence_debuff value = 0.005}
 }
 ETH_escalate_the_war_effect = {
 	custom_effect_tooltip = ETH_war_escalation_inc_tt

@@ -217,13 +217,13 @@
 			328 = {
 				add_resource = {
 					type = aluminium
-					amount = 92
+					amount = 100
 				}
 			}
 			716 = {
 				add_resource = {
 					type = steel
-					amount = 8
+					amount = 40
 				}
 			}
 		}

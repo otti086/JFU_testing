@@ -932,9 +932,6 @@ ideas = {
 				motorized_equipment = {
 					build_cost_ic = -0.05
 				}
-				mechanized_equipment = {
-					build_cost_ic = -0.05
-				}
 			}
 
 			modifier = {

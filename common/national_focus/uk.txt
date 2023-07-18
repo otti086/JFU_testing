@@ -2375,7 +2375,7 @@ focus_tree = {
 				original_tag = RAJ
 				is_in_faction_with = ROOT
 			}
-			date > 1939.1.1
+			date > 1938.6.1
 		} 
 		icon = GFX_goal_generic_construct_civ_factory
 		x = -3
@@ -2500,7 +2500,7 @@ focus_tree = {
 		cost = 20
 
 		available = {
-			date > 1939.1.1
+			date > 1938.6.1
 		}
 
 		completion_reward = {
