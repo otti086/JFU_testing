@@ -596,43 +596,18 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					FROM = { tag = CHI }
-					FROM.FROM = { is_core_of = CHI }
-					CHI = { surrender_progress > 0.6 }
-					747 = { is_controlled_by = CHI }
+					FROM = { tag = SOV }
+					FROM.FROM = { is_core_of = SOV }
+					OR ={  AND = {  SOV = { surrender_progress > 0.8 NOT = { controls_state = 249 } NOT = { controls_state = 251 } } }	SOV = { surrender_progress	> 0.9 }	}
+					NOT = { SOV = { has_country_flag = soviet_is_kill }}
 				}
-				if = { 
-					limit = {
-						JAP = {
-							has_country_flag = MAN_GETS_CHINA
-						}
-					}
-					MAN = {
-						annex_country = { target = CHI }
-					}
-					add_threat = 40
+				SOV = {
+					white_peace = GER
+					set_country_flag = soviet_is_kill
 				}
-				else = {
-					if = {
-						limit = {
-							country_exists = CHI
-						}
-						add_threat = 40
-					}
-					JAP = {
-						annex_country = { target = CHI }
-					}
-					every_state = {
-					limit = {
-							is_core_of = CHI
-							is_controlled_by = JAP
-						}
-					set_compliance = 90
-					}
-				}
-				JAP = {
-					add_ideas = peace_training 
-				}	
+				GER = {
+					SOV_cap_Building = yes
+				}				
 			}
 		}
 	}

@@ -110,6 +110,7 @@ ideas = {
 				army_attack_factor = -0.3
 				command_power_gain_mult = -0.7
 				conscription_factor = -0.35
+				surrender_limit = -0.40
 			}
 
 		}
