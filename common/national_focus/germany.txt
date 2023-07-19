@@ -1898,7 +1898,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = GER_soviet_treaty
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -1939,14 +1939,6 @@ focus_tree = {
 				}
 			}
 			if = { 
-				limit = {
-					NOT = {
-						has_game_rule = {
-							rule = JFU_pre_sets
-							option = COMPETITIVE_JFU
-						}
-					}		
-				}
 				add_tech_bonus = {
 					bonus = 1.0
 					uses = 2
