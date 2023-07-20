@@ -323,6 +323,13 @@ on_actions = {
 						annex_country = { target = CHI }
 					}
 					add_threat = 40
+                    every_state = {
+                        limit = {
+                            is_core_of = CHI
+                            is_controlled_by = JAP
+                        }
+                        set_compliance = 90
+                    }
 				}
 				JAP = {
 					add_ideas = peace_training 
