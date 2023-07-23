@@ -2497,7 +2497,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = uk_commonwealth_focus
-		cost = 20
+		cost = 10
 
 		available = {
 			date > 1938.6.1

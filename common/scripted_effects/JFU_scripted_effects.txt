@@ -3457,6 +3457,7 @@ SPR_NO_CW = {
 	RAJ = { add_war_support = 0.1 }
 	SOV = { add_war_support = 0.1 }	
 	NOR = { add_war_support = 0.1 }
+	add_threat = 2
 }
 JFU_apply_intel = {
     every_country = {

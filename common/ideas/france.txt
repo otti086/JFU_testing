@@ -152,7 +152,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				line_change_production_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.1
 			}
 			research_bonus = { industry = 0.1}

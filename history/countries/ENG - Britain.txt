@@ -13,18 +13,6 @@ add_relation_modifier = {
 
 set_country_flag=fuel_system_enabled
 #create_intelligence_agency = yes
-909 = {
-	add_dynamic_modifier = { modifier = no_entrenchment_africa }
-}
-452 = {
-	add_dynamic_modifier = { modifier = no_entrenchment_africa }	
-}
-907 = {
-	add_dynamic_modifier = { modifier = no_entrenchment_africa }	
-}
-447 = {
-	add_dynamic_modifier = { modifier = no_entrenchment_africa }	
-}
 if = {
 	limit = {
 		NOT = {
@@ -165,6 +153,7 @@ if = {
 		early_ship_hull_cruiser = 1
 		basic_ship_hull_cruiser = 1
 		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
 		early_ship_hull_carrier = 1
 		basic_ship_hull_carrier = 1
 		basic_battery = 1
