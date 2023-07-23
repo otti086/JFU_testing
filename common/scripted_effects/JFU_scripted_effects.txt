@@ -428,7 +428,35 @@ JFU_vichy_france = {
 			}
 	}
 	JFU_vichy_france_2 = yes
-			
+	ENG = { 
+		add_to_faction = USA 
+		if = {
+			limit = {
+				BRA = { is_ai = no }	
+			}
+		add_to_faction = BRA
+		}
+		if = {
+			limit = {
+				MEX = { is_ai = no }
+			}
+		add_to_faction = MEX
+		}
+		hidden_effect = { 
+			ENG = { 
+				annex_country = { target = HOL transfer_troops = no }
+			} 
+			every_state = {
+				limit = {
+					AND = {
+						is_core_of = HOL
+						is_controlled_by = ENG
+					}
+				}
+				set_compliance = 80
+			}
+		}
+	}			
 }
 
 
