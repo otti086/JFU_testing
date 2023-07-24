@@ -601,7 +601,8 @@ JFU_vichy_france_2 = {
 
 
 JFU_startup_on_action = {
-	if = {	limit = { has_game_rule = { rule = horst_manchukuo	option = HORST_ENABLE_MOD_MANCHUKUO	} }	MAN = { load_focus_tree = manchukuomod_focus } }
+	if = {	limit = { has_game_rule = { rule = horst_manchukuo option = HORST_ENABLE_MOD_MANCHUKUO	} }	MAN = { load_focus_tree = manchukuomod_focus } }
+	if = {	limit = { has_game_rule = { rule = finland_focus option = HORST_ENABLE_MOD_FINLAND	} }	FIN = { load_focus_tree = finlandmod_focus } }
 	if = {	limit = { has_game_rule = { rule = JFU_pre_sets option = COMPETITIVE_JFU } } SWE = {pregrinded_effect = yes} SWE = { JAP_closed_eco_effect = yes } SWE = { SOV_closed_eco_effect = yes } }
 	if = { 	limit = { has_game_rule = { rule = JFU_closed_eco_JAPAN option = ENABLE_CLOSED_ECO } } SWE = { JAP_closed_eco_effect = yes } }
 	if = {	limit = { has_game_rule = { rule = JFU_closed_eco_SOVIET option = ENABLE_CLOSED_ECO } } SWE = { SOV_closed_eco_effect = yes } }

@@ -312,11 +312,11 @@ ideas = {
 
 			equipment_bonus = {
 				artillery_equipment = {
-					soft_attack = 0.1
+					soft_attack = 0.05
 					instant = yes
 				}
 				rocket_artillery_equipment = {
-					soft_attack = 0.1
+					soft_attack = 0.05
 					instant = yes
 				}
 			}
@@ -514,7 +514,7 @@ ideas = {
 			
 			modifier = {
 				conscription = 0.01
-				war_support_factor = 0.05
+				war_support_factor = 0.1
 			}
 		}
 		

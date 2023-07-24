@@ -773,12 +773,7 @@ characters={
 				original_tag = MEX
 			}
 			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					has_completed_focus = MEX_focus_confederation_of_mexican_workers 
-				}
+				always = no
 			}
 			traits = {
 				ambitious_union_boss 

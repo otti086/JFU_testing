@@ -694,13 +694,7 @@ country_event = {
 		name = mexico.19.e
 		
 		trigger = {
-			has_completed_focus = MEX_focus_confederation_of_mexican_workers
-			NOT = {
-				has_country_leader = {
-					character = MEX_vicente_lombardo
-				}
-			}
-			has_government = democratic
+			always = no
 		}
 
 		add_country_leader_role = {
@@ -867,13 +861,7 @@ country_event = {
 		name = mexico.19.i
 		
 		trigger = {
-			has_completed_focus = MEX_focus_confederation_of_mexican_workers
-			NOT = {
-				has_country_leader = {
-					character = MEX_vicente_lombardo
-				}
-			}
-			has_government = communism
+			always = no
 		}
 
 		add_country_leader_role = {
