@@ -419,6 +419,18 @@ JFU_SPAIN = {
 		desc = "Spain gets the civil war bypassed"
 	}			
 }
-
-
-
+FIN_WAR = {
+	name = "Finnland War"
+	group = "HORST_GROUPKEY"
+	icon = "RULE_GROUP_GENERAL_UI"
+	option = {
+		name = "FINNLAND_BARB"
+		text = "Finnland joins BARB, Winter War"
+		desc = "..."
+	}
+	default = {
+		name = "FIN_VOLUNTEER"
+		text = "Voluntter Only, No Winter War"
+		desc = "..."
+	}			
+}

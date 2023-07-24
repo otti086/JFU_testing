@@ -13,10 +13,7 @@ MEX_category_military_issues = {
 		}
 		
 		available = {
-			OR = {
-				has_completed_focus = MEX_focus_support_general_cedillo
-				has_completed_focus = MEX_focus_arrest_general_cedillo
-			}
+			has_completed_focus = MEX_focus_support_general_cedillo
 		}
 
 		days_mission_timeout = 150
@@ -105,10 +102,7 @@ MEX_category_military_issues = {
 
 			has_civil_war = no
 			
-			OR = { # Domestic violence or antagonised world powers
 				has_completed_focus = MEX_focus_triumph_over_the_cristeros
-				has_completed_focus = MEX_focus_ejido_worker_militias
-			}
 		}
 
 		allowed = {
@@ -142,10 +136,7 @@ MEX_category_military_issues = {
 			
 			NOT = { has_government = democratic } # Government has a genuine commitment to reform
 			
-			OR = { # Domestic violence or antagonised world powers
 				has_completed_focus = MEX_focus_triumph_over_the_cristeros
-				has_completed_focus = MEX_focus_ejido_worker_militias
-			}
 		}
 
 		days_remove = 150
@@ -157,11 +148,8 @@ MEX_category_military_issues = {
 		visible = {
 			NOT = { has_global_flag = flag_second_mexican_civil_war }
 			OR = {
-				NOT = {
-					OR = {
+				NOT = {	
 						has_completed_focus = MEX_focus_triumph_over_the_cristeros
-						has_completed_focus = MEX_focus_ejido_worker_militias
-					}
 				}
 				has_stability > 0.6
 				has_idea = MEX_church_power_2
@@ -215,7 +203,6 @@ MEX_category_military_issues = {
 				has_completed_focus = MEX_focus_purge_the_bureaucracy
 				has_completed_focus = MEX_focus_womens_suffrage
 				has_completed_focus = MEX_focus_end_land_reform
-				has_completed_focus = MEX_focus_reform_the_cristero_guard
 			}
 		}
 
@@ -254,7 +241,6 @@ MEX_category_military_issues = {
 				has_completed_focus = MEX_focus_purge_the_bureaucracy
 				has_completed_focus = MEX_focus_womens_suffrage
 				has_completed_focus = MEX_focus_end_land_reform
-				has_completed_focus = MEX_focus_reform_the_cristero_guard
 			}
 		}
 
@@ -272,7 +258,6 @@ MEX_category_military_issues = {
 						has_completed_focus = MEX_focus_purge_the_bureaucracy
 						has_completed_focus = MEX_focus_womens_suffrage
 						has_completed_focus = MEX_focus_end_land_reform
-						has_completed_focus = MEX_focus_reform_the_cristero_guard
 					}
 				}
 				has_stability > 0.6
