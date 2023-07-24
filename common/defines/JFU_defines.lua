@@ -143,6 +143,7 @@ NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 200
 NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 200
 NDefines.NProduction.DEFAULT_MAX_NAV_FACTORIES_PER_LINE = 200
 NDefines.NProduction.ANNEX_FIELD_EQUIPMENT_RATIO = 1	-- WAS 0.25 | Annex decisions should give all troops, but incase I screwed up here is this -Thrasymachus | How much equipment from deployed divisions will be transferred on annexation
+NDefines.NProduction.LICENSE_EQUIPMENT_SPEED_NOT_FACTION = 0     --VANILLA -0.10		-- MIC speed modifier for licensed equipment for not being in faction
 
 NDefines.NAI.GIVE_STATE_CONTROL_MIN_CONTROLLED = 0     
 NDefines.NAI.GIVE_STATE_CONTROL_MIN_CONTROLLED = 0     
