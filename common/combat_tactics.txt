@@ -415,11 +415,6 @@ tactic_blitz = {
 		is_attacker = yes
 		hardness > 0.5
 		phase = no
-		OR = {
-			skill > 2
-			has_trait = panzer_leader
-			skill_advantage > 1
-		}
 		OWNER = { NOT = { has_tech = masterful_blitz } } #Soviet improved version of blitz will replace this
 	}
 	
@@ -889,11 +884,6 @@ tactic_masterful_blitz = { #Improved version of Blitz for Soviets
 		is_attacker = yes
 		hardness > 0.5
 		phase = no
-		OR = {
-			skill > 2
-			has_trait = panzer_leader
-			skill_advantage > 1
-		}
 	}
 	
 	active = no
@@ -913,7 +903,6 @@ tactic_masterful_blitz = { #Improved version of Blitz for Soviets
 	countered_by = tactic_elastic_defense
 	
 	attacker_movement_speed = 0.5
-	combat_width = 0.1
 	attacker = 0.2
 	defender = -0.2
 }

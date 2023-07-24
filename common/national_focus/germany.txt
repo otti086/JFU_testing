@@ -1463,10 +1463,30 @@ focus_tree = {
 		cost = 10
 
 		bypass = {
-			has_war_with = SOV
 		}
 		completion_reward = {
 			custom_effect_tooltip = GER_ussr_war_goal_focus_tt
+		}
+	}
+
+	focus = {
+		id = GER_fall_blau
+		icon = GFX_goal_generic_war_with_comintern
+		prerequisite = { focus = GER_ussr_war_goal}
+		available_if_capitulated = no
+		
+		available = {
+			always = no
+		}
+		x = 0
+		y = 1
+		relative_position_id = GER_ussr_war_goal
+		cost = 10
+
+		bypass = {
+		}
+		completion_reward = {
+			custom_effect_tooltip = GER_fall_blau_focus_tt
 		}
 	}
 
@@ -1787,7 +1807,7 @@ focus_tree = {
 			has_full_control_of_state = 28
 		}
 		cancel_if_invalid = yes
-		x = 1
+		x = -1
 		y = 1
 		relative_position_id = GER_fall_of_france
 		cost = 5
@@ -2147,7 +2167,7 @@ focus_tree = {
 		id = GER_endsieg_1
  		icon = GFX_focus_generic_army_tanks2
 		prerequisite = { focus = GER_fall_of_france }
-		x = -1
+		x = 1
 		y = 1
 		relative_position_id = GER_fall_of_france
 		available = {

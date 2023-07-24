@@ -109,6 +109,8 @@ JFU_decisions = {
 		allowed = { 	tag = GER 	}
 		available = { 			
 			date > 1941.6.22
+			has_completed_focus = GER_prepare
+			
 		}	
 		cost = 0		
 		complete_effect = {
@@ -147,9 +149,6 @@ JFU_decisions = {
 		available = {
 			date > 1942.6.1
 		}
-		visible = {
-			always = no
-		}
 		cost = 0
 		complete_effect = {
 			GER = { add_timed_idea = { idea = axis_fall_blau days = 180 } }
@@ -159,6 +158,8 @@ JFU_decisions = {
 				BUL = { add_timed_idea = { idea = axis_fall_blau days = 180 } }	
 				SPR = { add_timed_idea = { idea = axis_fall_blau days = 180 } }
 			}
+			complete_national_focus = GER_fall_blau
+			set_global_flag = GER_fall_blau
 		}
 	}
 	"Operation Citadelle" = {

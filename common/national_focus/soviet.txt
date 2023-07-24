@@ -3759,7 +3759,10 @@ focus_tree = {
 		cost = 5
 
 		available = {
-			NOT = { has_idea = SOV_desperate_measures_ns }
+			GER = {
+				has_global_flag = GER_fall_blau
+			}
+			custom_effect_tooltip = fall_blau_effect
 		}
 		
 		search_filters = {FOCUS_FILTER_ARMY_XP}
@@ -3771,8 +3774,6 @@ focus_tree = {
 
 			custom_effect_tooltip = SOV_lessons_of_war_ns_tt
 
-			unlock_decision_tooltip = SOV_order_227
-			custom_effect_tooltip = SOV_lessons_of_war_unlock_military_operations_tt
 
 			custom_effect_tooltip = SOV_lessons_of_war_cowed_trait_tt
 			hidden_effect = {
@@ -4030,15 +4031,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_keep_commissars_organization
-		cost = 10
-
-
-		available = {
-			any_enemy_country = {
-				SOV_is_major_not_original_sov = yes
-			}
-			surrender_progress < 0.05
-		}
+		cost = 5
 		
 		search_filters = {FOCUS_FILTER_ARMY_XP}
 
