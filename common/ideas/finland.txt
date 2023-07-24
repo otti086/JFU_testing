@@ -116,7 +116,6 @@ ideas = {
 				army_core_attack_factor = 0.2
 			}
 		}
-		}
 
 		fin_trade = {
 			name = "Trade Agreement"
