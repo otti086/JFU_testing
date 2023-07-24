@@ -724,9 +724,9 @@ focus_tree = {
 		cost = 1
 		
 		available = {
-			not = {
-				controls_state = 146
-				controls_state = 147
+			or = {
+				has_war = yes
+				date > 1940.01.01
 				}
 					}
 
