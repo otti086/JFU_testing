@@ -783,7 +783,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = fin_continuation_war
 			GER = { add_to_faction = FIN }
 		}
 	}
