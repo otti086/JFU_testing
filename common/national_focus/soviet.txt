@@ -3762,7 +3762,6 @@ focus_tree = {
 			GER = {
 				has_global_flag = GER_fall_blau
 			}
-			custom_effect_tooltip = fall_blau_effect
 		}
 		
 		search_filters = {FOCUS_FILTER_ARMY_XP}
