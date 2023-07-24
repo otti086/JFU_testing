@@ -123,6 +123,23 @@ horst_manchukuo = {
 		desc = "Clicking this option will give Manchukuo a powerful new focus tree that was created by Thrasymachus"	
 	}
 }
+
+finland_focus = {
+	name = "Finland Focus Tree"
+	group = "HORST_GROUPKEY"					
+	icon = "GFX_decision_hol_draw_up_staff_plans"			
+	default = {	
+		name = "HORST_ENABLE_MOD_FINLAND"
+		text = "Finland Modded Focus Tree"
+		desc = "Clicking this option will give Finland a powerful new focus tree that was created by Leo"	
+	}
+	option = {	
+		name = "HORST_ENABLE_VANILLA_FINLAND" 
+		text = "Finland Vanilla Focus Tree"
+		desc = "Vanilla Focus Tree for Finland"	
+	}
+}
+
 hosttool_game_rule = {
 	name = "HOSTTOOL_GAME_RULE"
 	group = "Hosttool"
