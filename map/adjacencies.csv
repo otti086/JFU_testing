@@ -268,6 +268,29 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 5014;1822;impassable;-1;-1;-1;-1;-1;;Persia Soviet Border;;
 6826;1822;impassable;-1;-1;-1;-1;-1;;Persia Soviet Border;;
 
+142;6012;impassable;-1;-1;-1;-1;-1;;Finnland Soviet Border;;
+9203;6012;impassable;-1;-1;-1;-1;-1;;Finnland Soviet Border;;
+74;6012;impassable;-1;-1;-1;-1;-1;;Finnland Soviet Border;;
+74;6128;impassable;-1;-1;-1;-1;-1;;Finnland Soviet Border;;
+74;11085;impassable;-1;-1;-1;-1;-1;;Finnland Soviet Border;;
+15;11085;impassable;-1;-1;-1;-1;-1;;Finnland Soviet Border;;
+9123;11085;impassable;-1;-1;-1;-1;-1;;Finnland Soviet Border;;
+11181;9158;impassable;-1;-1;-1;-1;-1;;Finnland Soviet Border;;
+9198;9158;impassable;-1;-1;-1;-1;-1;;Finnland Soviet Border;;
+9074;9158;impassable;-1;-1;-1;-1;-1;;Finnland Soviet Border;;
+9074;6045;impassable;-1;-1;-1;-1;-1;;Finnland Soviet Border;;
+3073;9074;impassable;-1;-1;-1;-1;-1;;Finnland Soviet Border;;
+3073;6175;impassable;-1;-1;-1;-1;-1;;Finnland Soviet Border;;
+6134;6175;impassable;-1;-1;-1;-1;-1;;Finnland Soviet Border;;
+7;6175;impassable;-1;-1;-1;-1;-1;;Finnland Soviet Border;;
+7;6098;impassable;-1;-1;-1;-1;-1;;Finnland Soviet Border;;
+7;80;impassable;-1;-1;-1;-1;-1;;Finnland Soviet Border;;
+6183;74;impassable;-1;-1;-1;-1;-1;;Finnland Soviet Border;;
+3185;80;impassable;-1;-1;-1;-1;-1;;Finnland Soviet Border;;
+6210;80;impassable;-1;-1;-1;-1;-1;;Finnland Soviet Border;;
+2998;6210;impassable;-1;-1;-1;-1;-1;;Finnland Soviet Border;;
+
+
 2800;2776;;-1;-1;-1;-1;-1;Aden_Strait;Aden Strait;
 
 -1;-1;;-1;-1;-1;-1;-1;-1

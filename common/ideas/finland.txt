@@ -36,7 +36,7 @@ ideas = {
 
 			targeted_modifier = {
 				tag = GER
-				cic_to_target_factor = 0.75
+				cic_to_target_factor = 0.5
 			}
 		}
 
@@ -159,7 +159,7 @@ ideas = {
 
 			modifier = {
 				stability_factor = 0.1
-				production_speed_buildings_factor = 0.05
+				production_speed_arms_factory_factor = 0.2
 			}
 		}
 
@@ -213,7 +213,7 @@ ideas = {
 			modifier = {
 				stability_factor = 0.1
 				industrial_capacity_factory = 0.05
-				production_speed_buildings_factor = 0.05
+				production_speed_arms_factory_factor = 0.2
 			}
 		}
 

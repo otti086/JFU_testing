@@ -830,6 +830,7 @@ JFU_decisions = {
 			}
 		}
 	}
+
 	"Operation Icebreaker" = {
 		icon = generic_operation
 		fire_only_once = yes

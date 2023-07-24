@@ -724,12 +724,11 @@ focus_tree = {
 		cost = 1
 		
 		available = {
-			OR = {
-				has_war_with = SOV
-				date > 1940.01.01
-			}
-			
-		}
+			not = {
+				controls_state = 146
+				controls_state = 147
+				}
+					}
 
 		ai_will_do = {
 			factor = 100
@@ -952,7 +951,7 @@ focus_tree = {
 		
 		available = {
 			controls_state = 146
-			has_war = no
+			controls_state = 147
 		}
 
 		ai_will_do = {
@@ -1140,7 +1139,7 @@ focus_tree = {
 
 	focus = {
 		id = FIN_foreign_support
-		text = "Ausländer"
+		text = "Foreign Volunteers"
 		icon = GFX_focus_generic_little_entente
 		cost = 1
 		x = -2

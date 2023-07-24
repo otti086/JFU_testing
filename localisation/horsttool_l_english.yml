@@ -882,6 +882,7 @@
  JFU_SOVIET_SMALL:0 "Soviet anti-cancer AC"
  SOV_small_barb_enable_tt:0 "Gives Soviet only one Airport to manage, so ACing is easier"
  SOV_small_barb:0 "Germans clicked Small Barb Decision"
+ SOV_ULTIMATUM_TT:0 "Will send Finnland an Ultimatum for §YKrajala§! and §YSalla§!"
  NO_GRINDING:0 "No Grinding"
 
 
@@ -906,6 +907,7 @@
  GER_wesserubung_1_tt:0 "This focus is automatically completed in case of war with §YDenmark§!."
  GER_wesserubung_2_tt:0 "This focus is automatically completed in case of war with §YNorway§!."
  GER_fall_of_france_tt:0 "This focus is automatically completed upon the capitulation of §YFrance§!."
+
 
 
  PRE_SETS: "JFU Presets"
