@@ -5085,8 +5085,8 @@ SOV_great_patriotic_war = {
 			army_speed_factor = -0.1
 			dig_in_speed_factor = 0.5
 			army_defence_factor = 0.05
-			out_of_supply_factor = -0.5
-			pocket_penalty = -0.1
+			out_of_supply_factor = -0.25
+			pocket_penalty = -0.25
 			no_supply_grace = 168
 		}
 	}
@@ -5126,16 +5126,16 @@ SOV_great_patriotic_war = {
 			mobilization_speed = 0.25
 			org_loss_when_moving = -0.1
 			pocket_penalty = -0.2
-			out_of_supply_factor = -0.5
+			out_of_supply_factor = -0.25
 			army_defence_factor = 0.1
-			dig_in_speed_factor = 1	
+			dig_in_speed_factor = 0.5
 			no_supply_grace = 336
 			supply_consumption_factor = -0.1
 		}
 
 		complete_effect = {
 			hidden_effect = { add_political_power = -50 }
-			news_event = { id = mtg_news.792 days = 0 }
+			news_event = { id = news.5004 days = 0 }
 			set_country_flag = SOV_order_227_flag
 			custom_effect_tooltip = SOV_order_227_decisions_tt
 		}
