@@ -680,6 +680,10 @@ focus_tree = {
 			add_state_core = 215
 			add_state_core = 216
 			add_popularity = { ideology = fascism popularity = 0.1 }
+			swap_ideas = {
+				remove_idea = fin_sisu
+				add_idea = fin_sisu_attack
+			}
 		}
 	}
 	

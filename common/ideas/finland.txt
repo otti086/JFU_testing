@@ -77,6 +77,47 @@ ideas = {
 			}
 		}
 
+		fin_continuation_war = {
+			name = "Prepare for War"
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				mobilization_speed = 1
+				conscription = 0.15
+				winter_attrition_factor = -0.2
+			}
+		}
+
+		fin_sisu_attack = {
+			name = "Sisu Attack"
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				army_morale_factor = 0.20
+				attrition = -0.1
+				army_core_attack_factor = 0.2
+			}
+		}
+		}
+
 		fin_trade = {
 			name = "Trade Agreement"
 			
