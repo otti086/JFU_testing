@@ -98,7 +98,7 @@ NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane t
 	0.0, -- NAVAL_MINES_SWEEPING
 	0.0, -- MISSION_RECON
 }
-NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.10
+NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.12
 NDefines.NAir.AIR_MORE_GROUND_CREWS_COST = 0					-- vanilla 20.0 CP cost to maintain more ground crews
 NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_STRATEGIC_BOMBER = 0.036	-- vanilla 0.072 How much efficiency to regain per day. Gain applied hourly.
 NDefines.NAir.DISRUPTION_FACTOR = 4 
@@ -111,14 +111,14 @@ NDefines.NAir.AIR_WING_FLIGHT_SPEED_MULT = 0.2 --makes redeployement of fighters
 NDefines.NNavy.MISSION_SUPREMACY_RATIOS = { 						-- supremacy multipliers for different mission types   | Strikeforce/Naval Invasion Support now 0 supremacy to avoid free supremacy
 		0.0, -- HOLD
 		1.0, -- PATROL		
-		1.0, -- STRIKE FORCE 
+		0.1, -- STRIKE FORCE 
 		0.2, -- CONVOY RAIDING
 		0.5, -- CONVOY ESCORT
 		0.0, -- MINES PLANTING	
 		0.0, -- MINES SWEEPING	
 		0.0, -- TRAIN
 		0.0, -- RESERVE_FLEET
-		0.2, -- NAVAL_INVASION_SUPPORT
+		0.1, -- NAVAL_INVASION_SUPPORT
 	}
 
 NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0

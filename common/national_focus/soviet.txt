@@ -3759,8 +3759,11 @@ focus_tree = {
 		cost = 5
 
 		available = {
-			GER = {
-				has_global_flag = GER_fall_blau
+			OR = {
+				GER = {
+					has_global_flag = GER_fall_blau
+				}
+				date > 1942.08.01
 			}
 		}
 		
