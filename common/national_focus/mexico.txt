@@ -33,7 +33,7 @@ focus_tree = {
 		x = 20
 		y = 0
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 100
@@ -65,7 +65,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_focus_plan_of_agua_prieta
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 100
@@ -99,7 +99,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_focus_plan_of_agua_prieta
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 100
@@ -176,7 +176,7 @@ focus_tree = {
 		x = 9
 		y = 0
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 100
@@ -207,8 +207,8 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = MEX_focus_national_bank
-
-		cost = 5
+		mutually_exclusive = { focus = MEX_focus_liberalize_the_banking_sector }
+		cost = 10
 
 		ai_will_do = {
 			factor = 100
@@ -245,7 +245,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_focus_agricultural_credit_bank
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 100
@@ -294,7 +294,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_focus_rural_infrastructure
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 100
@@ -373,8 +373,8 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = MEX_focus_national_bank
-
-		cost = 5
+		mutually_exclusive = { focus = MEX_focus_agricultural_credit_bank }
+		cost = 10
 
 		ai_will_do = {
 			factor = 100
@@ -453,7 +453,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_focus_strike_breaking
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 100
@@ -511,12 +511,12 @@ focus_tree = {
 	focus = {
 		id = MEX_focus_end_land_reform
 		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = MEX_focus_liberalize_the_banking_sector }
-		x = 2
+		prerequisite = { focus = MEX_focus_national_bank }
+		x = 3
 		y = 1
-		relative_position_id = MEX_focus_liberalize_the_banking_sector
+		relative_position_id = MEX_focus_national_bank
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 100
@@ -1746,7 +1746,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_focus_antidisestablishmentarianism
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 100
@@ -2163,7 +2163,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_focus_revolutionary_women
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 100
@@ -2196,7 +2196,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = MEX_focus_revolutionary_women
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 100
@@ -2250,7 +2250,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_focus_control_the_army
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 100
@@ -2367,7 +2367,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_focus_national_bank
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 100

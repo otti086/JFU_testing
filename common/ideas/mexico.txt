@@ -92,7 +92,7 @@ ideas = {
 			}
 			
 			modifier = {
-				industrial_capacity_factory = 0.2
+				industrial_capacity_factory = 0.15
 				stability_factor = -0.05
 			}
 		}
@@ -113,7 +113,7 @@ ideas = {
 			}
 			
 			modifier = {
-				industrial_capacity_factory = 0.1
+				industrial_capacity_factory = 0.08
 			}
 		}
 		

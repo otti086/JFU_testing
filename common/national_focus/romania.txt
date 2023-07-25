@@ -15,48 +15,6 @@
 	default = no
 
 	continuous_focus_position = { x = 50 y = 1200 }
-
-#	focus = {
-#		id = ROM_
-#		icon = GFX_
-#		prerequisite = { focus = }
-#		mutually_exclusive = { focus =  }
-#		x = -3
-#		y = 0
-#		relative_position_id = 
-#
-#		cost = 10
-#
-#		ai_will_do = {
-#			factor = 1
-#		}
-#
-#		available = {
-#
-#		}
-#		
-#		bypass = {
-#
-#		}
-#
-#		cancel_if_invalid = yes
-#		continue_if_invalid = no
-#		available_if_capitulated = no
-#
-#		complete_tooltip = {
-#
-#		}
-#
-#		completion_reward = {
-#
-#		}
-#	} 
-
-	############################
-	##### CATEGORY HERE ! ######
-	############################
-
-
 	############################
 	##### PRESERVE G ROM #######
 	############################
@@ -67,7 +25,7 @@
 		x = 3
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 9
@@ -654,13 +612,6 @@
 				ideology = neutrality
 				popularity = 65
 			}
-			hidden_effect = {
-				country_event = {
-					id = DOD_romania.163
-					days = 5
-					random_days = 10
-				}
-			}
 		}		
 	}
 
@@ -703,7 +654,7 @@
 		id = ROM_the_royal_foundation
 		icon = GFX_focus_research
 		prerequisite = { focus = ROM_revise_the_constitution }
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = ROM_revise_the_constitution
 
@@ -735,7 +686,7 @@
 		id = ROM_flexible_foreign_policy
 		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = ROM_revise_the_constitution }
-		x = -1
+		x = 0
 		y = 2
 		relative_position_id = ROM_institute_royal_dictatorship
 
@@ -817,10 +768,10 @@
 		id = ROM_iron_guard
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = ROM_appoint_german_friendly_government }
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = ROM_appoint_german_friendly_government
-
+		mutually_exclusive = { focus = ROM_national_christian_party }
 		cost = 10
 
 		cancel_if_invalid = yes
@@ -828,7 +779,8 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			add_ideas = ROM_iron_guard	
+					
 			ROM_ion_antonescu = { #Making Antonescu into a Country leader and removing him from his other roles. 
 				add_country_leader_role = {
 					country_leader = {
@@ -851,11 +803,62 @@
 			}
 		}
 	}
+	
+	focus = {
+		id = ROM_national_christian_party
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = ROM_appoint_german_friendly_government }
+		x = 1
+		y = 1
+		relative_position_id = ROM_appoint_german_friendly_government
+		mutually_exclusive = { focus = ROM_iron_guard }
+		
+		cost = 10
 
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			ROM_octavian_goga = {
+				promote_character = {
+					ideology = fascism_ideology
+				}
+			}
+			set_party_name = {
+				ideology = fascism
+				long_name = ROM_fascism_party2_long
+				name = ROM_fascism_party2
+			}
+			if = {
+				limit = { has_idea = ROM_the_sentinel_of_the_motherland }
+				swap_ideas = {
+					add_idea = ROM_national_christian_party_in_power
+					remove_idea = ROM_the_sentinel_of_the_motherland
+				}
+				else = {
+					remove_ideas = ROM_the_sentinel_of_the_motherland
+					add_ideas = ROM_national_christian_party_in_power
+				}
+			}
+		}
+	}
 	focus = {
 		id = ROM_force_abdication
 		icon = GFX_focus_rom_abdicate
-		prerequisite = { focus = ROM_iron_guard  }
+		prerequisite = { focus = ROM_iron_guard  focus = ROM_national_christian_party}
 		x = 0				
 		y = 3
 		relative_position_id = ROM_flexible_foreign_policy
@@ -898,10 +901,10 @@
 	focus = {
 		id = ROM_army_maneuvers
 		icon = GFX_goal_generic_army_doctrines
-		x = 11
+		x = 13
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -927,7 +930,7 @@
 		y = 1
 		relative_position_id = ROM_army_maneuvers
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -971,7 +974,7 @@
 		y = 1
 		relative_position_id = ROM_army_war_college
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1007,7 +1010,7 @@
 		y = 1
 		relative_position_id = ROM_the_zb_53
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1075,7 +1078,7 @@
 		y = 1
 		relative_position_id = ROM_the_zb_53
 
-		cost = 10
+		cost = 5
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1100,7 +1103,7 @@
 		y = 2
 		relative_position_id = ROM_the_zb_53
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 5
@@ -1137,7 +1140,7 @@
 		y = 2
 		relative_position_id = ROM_the_zb_53
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1169,7 +1172,7 @@
 		y = 1
 		relative_position_id = ROM_army_maneuvers
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 9
@@ -1260,7 +1263,7 @@
 		y = 1
 		relative_position_id = ROM_royal_guards_divisions
 
-		cost = 10
+		cost = 5
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1279,7 +1282,7 @@
 		y = 2
 		relative_position_id = ROM_royal_guards_divisions
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1312,7 +1315,7 @@
 		y = 1
 		relative_position_id = ROM_acquire_modern_tanks
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 9
@@ -1344,7 +1347,7 @@
 		y = 3
 		relative_position_id = ROM_reserve_divisions
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1366,9 +1369,8 @@
 			add_tech_bonus = {
 				name = ROM_the_maresal
 				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = cat_heavy_armor
+				uses = 2
+				category = armor
 			}
 		}
 	}
@@ -1380,7 +1382,7 @@
 	focus = {
 		id = ROM_expand_the_galati_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 13
+		x = 15
 		y = 0
 
 		cost = 5
@@ -1392,12 +1394,10 @@
 		complete_tooltip = {
 			navy_experience = 25
 			random_state = {
-				limit = {
-					has_state_flag = ROM_expand_the_galati_shipyards_AB
-				}
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 			}
