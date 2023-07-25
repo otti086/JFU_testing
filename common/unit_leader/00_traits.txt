@@ -1601,11 +1601,10 @@ leader_traits = {
 		}
 		cost = 700
 		modifier = {
-			fort = {
-				attack = 0.15
-			}
+			fort = { attack = 0.1 }
+			fortification_damage = 1
+			fortification_collateral_chance = 1 
 		}
-		enable_ability = siege_artillery
 		
 		slot = high_command
 		specialist_advisor_trait = army_artillery_1
