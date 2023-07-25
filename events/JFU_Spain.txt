@@ -86,13 +86,13 @@ country_event = {
 					}
 				}
 			}
-			transfer_units_fraction = {
-				target = SPA
-				size = 0.5 
-				stockpile_ratio = 0.5
-				army_ratio = 0.5
-				air_ratio = 0.5
-			}
+#			transfer_units_fraction = {
+#				target = SPA
+#				size = 0.5 
+#				stockpile_ratio = 0.5
+#				army_ratio = 0.5
+#				air_ratio = 0.5
+#			}
 			set_cosmetic_tag = SPR_nationalist_spain
 			set_politics = {
 				ruling_party = neutrality

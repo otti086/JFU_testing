@@ -428,7 +428,35 @@ JFU_vichy_france = {
 			}
 	}
 	JFU_vichy_france_2 = yes
-			
+	ENG = { 
+		add_to_faction = USA 
+		if = {
+			limit = {
+				BRA = { is_ai = no }	
+			}
+		add_to_faction = BRA
+		}
+		if = {
+			limit = {
+				MEX = { is_ai = no }
+			}
+		add_to_faction = MEX
+		}
+		hidden_effect = { 
+			ENG = { 
+				annex_country = { target = HOL transfer_troops = no }
+			} 
+			every_state = {
+				limit = {
+					AND = {
+						is_core_of = HOL
+						is_controlled_by = ENG
+					}
+				}
+				set_compliance = 80
+			}
+		}
+	}			
 }
 
 
@@ -573,7 +601,8 @@ JFU_vichy_france_2 = {
 
 
 JFU_startup_on_action = {
-	if = {	limit = { has_game_rule = { rule = horst_manchukuo	option = HORST_ENABLE_MOD_MANCHUKUO	} }	MAN = { load_focus_tree = manchukuomod_focus } }
+	if = {	limit = { has_game_rule = { rule = horst_manchukuo option = HORST_ENABLE_MOD_MANCHUKUO	} }	MAN = { load_focus_tree = manchukuomod_focus } }
+	if = {	limit = { has_game_rule = { rule = finland_focus option = HORST_ENABLE_MOD_FINLAND	} }	FIN = { load_focus_tree = finlandmod_focus } }
 	if = {	limit = { has_game_rule = { rule = JFU_pre_sets option = COMPETITIVE_JFU } } SWE = {pregrinded_effect = yes} SWE = { JAP_closed_eco_effect = yes } SWE = { SOV_closed_eco_effect = yes } }
 	if = { 	limit = { has_game_rule = { rule = JFU_closed_eco_JAPAN option = ENABLE_CLOSED_ECO } } SWE = { JAP_closed_eco_effect = yes } }
 	if = {	limit = { has_game_rule = { rule = JFU_closed_eco_SOVIET option = ENABLE_CLOSED_ECO } } SWE = { SOV_closed_eco_effect = yes } }
@@ -3426,6 +3455,21 @@ Vichy_ai_Building = {
 		add_offsite_building = { type = arms_factory level = vichy_mils }
 		add_offsite_building = { type = industrial_complex level = vichy_civs }
 		add_offsite_building = { type = dockyard level = vichy_docks }
+	}
+}
+SOV_cap_Building = {
+	set_temp_variable = { SOV_mils = 0 }
+	set_temp_variable = { SOV_civs = 0 }
+	EFR = {
+		every_controlled_state = {
+			limit = { is_core_of = SOV }
+			add_to_temp_variable = { SOV_mils = arms_factory_level }
+			add_to_temp_variable = { SOV_civs = industrial_complex_level }
+		}
+	}
+	GER = {
+		add_offsite_building = { type = arms_factory level = vichy_mils }
+		add_offsite_building = { type = industrial_complex level = vichy_civs }
 	}
 }
 SPR_NO_CW = {

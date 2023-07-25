@@ -302,8 +302,8 @@ focus_tree = {
 	focus = {
 		id = USA_reach_out_to_the_ware_group
 		icon = GFX_goal_generic_propaganda
-		x = -2
-		y = 1
+		x = 0
+		y = 2
 		prerequisite = { focus = USA_fair_labour_standards_act }
 		relative_position_id = USA_fair_labour_standards_act
 		cost = 10

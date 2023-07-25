@@ -22,7 +22,21 @@ ideas = {
 				fascism_acceptance = 100
 			}
 		}
-	
+		ROM_national_christian_party_in_power = {
+			picture = generic_production_bonus
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = ROM
+			}
+
+			allowed_civil_war = {
+
+			}
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}	
 		ROM_revenge_against_germany = {
 
 			picture = generic_communism_drift_bonus
@@ -339,7 +353,7 @@ ideas = {
 			}			
 
 			modifier = {
-				conscription = 0.01
+				conscription = 0.02
 			}
 		}
 
@@ -930,9 +944,6 @@ ideas = {
 
 			equipment_bonus = {
 				motorized_equipment = {
-					build_cost_ic = -0.05
-				}
-				mechanized_equipment = {
 					build_cost_ic = -0.05
 				}
 			}

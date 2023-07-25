@@ -37,6 +37,7 @@ recruit_character = FIN_ake_henrik_gartz
 
 add_ideas = {
 	limited_conscription
+	partial_economic_mobilisation
 	fin_sisu
 }
 
@@ -72,6 +73,8 @@ if = {
 }
 
 set_convoys = 5
+
+set_war_support = 0.40
 
 add_ideas = {
 	limited_conscription

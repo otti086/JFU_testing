@@ -4,7 +4,7 @@ state={
 
 	history={
 		owner = USA
-		add_core_of = SWE
+		add_core_of = USA
 		buildings = {
 			infrastructure = 1
 			air_base = 1

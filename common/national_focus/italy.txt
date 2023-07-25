@@ -3379,8 +3379,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_to_variable = { ITA_military_industry_dm_equipment_upgrade_xp_cost = -0.15 }
-			add_to_variable = { ITA_military_industry_dm_industrial_capacity_factory = 0.05 }
-			add_to_variable = { ITA_military_industry_dm_industrial_capacity_dockyard = 0.05 }
+			add_to_variable = { ITA_military_industry_dm_industrial_capacity_factory = 0.1 }
+			add_to_variable = { ITA_military_industry_dm_industrial_capacity_dockyard = 0.1 }
 			custom_effect_tooltip = ITA_modernize_ansaldo_facilities_military_industry_tt
 
 			add_to_variable = { ITA_iri_consumer_goods_factor = 0.01 }
@@ -3790,7 +3790,6 @@ focus_tree = {
 		id = ITA_standardization
 		icon = GFX_goal_generic_production2
 		prerequisite = { focus = ITA_superaereo }
-		mutually_exclusive = { focus = ITA_specialization }
 		x = -1
 		y = 1
 		relative_position_id = ITA_superaereo
@@ -3847,7 +3846,6 @@ focus_tree = {
 		id = ITA_specialization
 		icon = GFX_goal_generic_air_production
 		prerequisite = { focus = ITA_superaereo }
-		mutually_exclusive = { focus = ITA_standardization }
 		x = 1
 		y = 1
 		relative_position_id = ITA_superaereo

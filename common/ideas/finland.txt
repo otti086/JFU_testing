@@ -1,108 +1,291 @@
 ideas = {
 
 	country = {
-		sisu = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				NOT = {
-					has_government = communism
-				}
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				army_morale_factor = 0.25
-				attrition = -0.1
-				army_core_attack_factor = 0.2
-				army_core_defence_factor = 0.2
-			}
-		}
-
-		winter_war_ns = {
-			picture = tur_sub_zero_survival_training
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = no
-			}
-
-			cancel = {
-				NOT = { has_war_with = SOV }
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				conscription = 0.03
-				mobilization_speed = 0.85
-				winter_attrition_factor = -0.1
-				army_core_defence_factor = 0.1
-			}
-		}
-		fin_sisu = {
-			
-			allowed = {
-				always = no
-			}
-			
-			picture = sisu
-
-			allowed_civil_war = {
-				NOT = {
-					has_government = communism
-				}
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				army_morale_factor = 0.25
-				attrition = -0.1
-				army_core_attack_factor = 0.2
-				army_core_defence_factor = 0.2
-				enemy_justify_war_goal_time = 10000.0
-				drift_defence_factor = 1.0
-			}
-		}
-		fin_sisu_attack = {
 		
-				allowed = {
+		german_advisor1 = {
+			name = "German Advisors"
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
 				always = no
 			}
 			
-			picture = sisu
+			removal_cost = -1
 
-			allowed_civil_war = {
-				NOT = {
-					has_government = communism
-				}
+			modifier = {
+				research_speed_factor = 0.1
+				land_doctrine_cost_factor = -0.1
+			}
+		}
+
+		FIN_arms_purchases = {
+			name = "German Payments"
+
+			allowed = {
+				always = no
 			}
 
-			removal_cost = -1
+			allowed_civil_war = {
+				always = no
+			}
 			
+			removal_cost = -1
+
+			targeted_modifier = {
+				tag = GER
+				cic_to_target_factor = 0.5
+			}
+		}
+
+		FIN_kitchens = {
+			name = "Field Kitchens"
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.025
+				experience_loss_factor = -0.25
+			}
+		}
+
+		stockpile_supplies = {
+			name = "Stockpile Supplies"
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				local_resources = 0.1
+			}
+		}
+
+		fin_continuation_war = {
+			name = "Prepare for War"
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				mobilization_speed = 1
+				conscription = 0.15
+				winter_attrition_factor = -0.2
+			}
+		}
+
+		fin_sisu_attack = {
+			name = "Sisu Attack"
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+
 			modifier = {
 				army_morale_factor = 0.20
 				attrition = -0.1
 				army_core_attack_factor = 0.2
-				enemy_justify_war_goal_time = 10000.0
-				drift_defence_factor = 1.0
-
 			}
-		
 		}
-		
-		fin_continuation_war = {
-		
+
+		fin_trade = {
+			name = "Trade Agreement"
+			
 			allowed = {
 				always = no
 			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			targeted_modifier = {
+				tag = FIN
+				trade_cost_for_target_factor = -0.5
+			}
+		}
+
+		FIN_white_guard1 = {
+			name = "The White Guard"
+				allowed = {
+					always = no
+				}
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.05
+			}
+		}
+
+		FIN_white_guard2 = {
+			name = "The White Guard"
+				allowed = {
+					always = no
+				}
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.075
+			}
+		}
+
+		finnish_subsidies1 = {
+			name = "Finnish Subsidies"
+				allowed = {
+					always = no
+				}
+			
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.1
+			}
+		}
+
+		finnish_subsidies2 = {
+			name = "Finnish Subsidies"
+				allowed = {
+					always = no
+				}
+			
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.1
+				production_speed_arms_factory_factor = 0.2
+			}
+		}
+
+		finnish_subsidies3 = {
+			name = "Finnish Subsidies"
+				allowed = {
+					always = no
+				}
+			
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.1
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		finnladen_rausen = {
+			name = "Finish Volunteers"
+				allowed = {
+					always = no
+				}
+			
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				send_volunteer_size = 179
+			}
+		}
+
+		finnish_subsidies4 = {
+			name = "Finnish Subsidies"
+				allowed = {
+					always = no
+				}
+			
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.1
+				industrial_capacity_factory = 0.05
+				production_speed_arms_factory_factor = 0.2
+			}
+		}
+
+		german_engineering = {
+			name = "German Engineering"
+				allowed = {
+					always = no
+				}
+			
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.1
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+
+		fin_sisu = {
+
+			name = "Sisu"
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = sisu
 
 			allowed_civil_war = {
 				NOT = {
@@ -112,12 +295,68 @@ ideas = {
 
 			removal_cost = -1
 			
-			picture = FRA_army_of_aggression_focus
+			modifier = {
+				army_morale_factor = 0.25
+				attrition = -0.1
+				army_core_attack_factor = 0.2
+				army_core_defence_factor = 0.2
+			}
+		}
+		fin_sisu2 = {
+			
+			name = "Sisu"
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = sisu
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
 			
 			modifier = {
-				mobilization_speed = 1.0
-				conscription = 0.15
+				army_morale_factor = 0.25
+				attrition = -0.1
+				army_core_attack_factor = 0.2
+				army_core_defence_factor = 0.2
+				acclimatization_cold_climate_gain_factor = 0.5
 				winter_attrition_factor = -0.2
+			}
+		}
+		fin_sisu3 = {
+			
+			name = "Sisu"
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = sisu
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_morale_factor = 0.25
+				attrition = -0.1
+				army_core_attack_factor = 0.2
+				army_core_defence_factor = 0.2
+				acclimatization_cold_climate_gain_factor = 0.5
+				winter_attrition_factor = -0.2
+				supply_consumption_factor = -0.2
+				pocket_penalty = -0.3
+				no_supply_grace = 24
 			}
 		}
 	}

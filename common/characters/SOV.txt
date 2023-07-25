@@ -206,9 +206,9 @@ characters = {
 				}
 			}
 			traits = {
-				army_armored_3
+				army_armored_2
 			}
-				cost = 200
+				cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}

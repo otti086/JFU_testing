@@ -8,35 +8,6 @@ JFU_decisions = {
 	#	██║   ██║██╔══╝  ██╔══██╗
 	#	╚██████╔╝███████╗██║  ██║
 	#	 ╚═════╝ ╚══════╝╚═╝  ╚═╝
-
-	"Artillery bonus" = {
-		icon = ger_reichskommissariats
-		fire_only_once = yes		
-		allowed = {	tag = GER }	
-		visible = {
-			has_game_rule = {
-				rule = JFU_pre_sets 
-				option = COMPETITIVE_JFU
-			}			
-		}
-		available = { date > 1939.1.1	}		
-		cost = 0
-		complete_effect = {
-			add_tech_bonus = {
-				bonus = 1.0
-				uses = 2
-				technology = artillery2
-				technology = artillery3
-				technology = artillery4
-				technology = artillery5
-				technology = artillery2
-				technology = antitank2
-				technology = antitank3
-				technology = antitank4
-				technology = antitank5
-				}
-		}
-	}	
 	"Fall Weiss" = { 
 		icon = ger_reichskommissariats
 		fire_only_once = yes		
@@ -138,6 +109,8 @@ JFU_decisions = {
 		allowed = { 	tag = GER 	}
 		available = { 			
 			date > 1941.6.22
+			has_completed_focus = GER_prepare
+			
 		}	
 		cost = 0		
 		complete_effect = {
@@ -176,9 +149,6 @@ JFU_decisions = {
 		available = {
 			date > 1942.6.1
 		}
-		visible = {
-			always = no
-		}
 		cost = 0
 		complete_effect = {
 			GER = { add_timed_idea = { idea = axis_fall_blau days = 180 } }
@@ -188,6 +158,8 @@ JFU_decisions = {
 				BUL = { add_timed_idea = { idea = axis_fall_blau days = 180 } }	
 				SPR = { add_timed_idea = { idea = axis_fall_blau days = 180 } }
 			}
+			complete_national_focus = GER_fall_blau
+			set_global_flag = GER_fall_blau
 		}
 	}
 	"Operation Citadelle" = {
@@ -859,6 +831,7 @@ JFU_decisions = {
 			}
 		}
 	}
+
 	"Operation Icebreaker" = {
 		icon = generic_operation
 		fire_only_once = yes
@@ -1057,9 +1030,7 @@ JFU_decisions = {
 		icon = generic_operation
 		fire_only_once = yes
 		visible = { 			
-			NOT = {
-				is_in_faction_with = ENG
-			}	 
+			always = no
 		}
 		allowed = { tag = USA }
 		available = {
@@ -1236,20 +1207,6 @@ JFU_decisions = {
 		}	
 	}
 	
-	"Support France" = {
-		icon = eng_install_government
-		allowed = { original_tag = ENG }
-		days_remove = 60
-
-		available = {NOT = { FRA = { owns_state = 16 }}  check_variable = { FRA.FRA_legitimacy < 100 }
-						FRA = { has_country_flag = france_is_kill}}
-		visible = {	tag = ENG }
-		cost = 50
-		complete_effect = {
-		custom_effect_tooltip = "French Legitimacy will increase by 20"
-			add_to_variable =  { var = FRA.FRA_legitimacy value = 20 }
-		}
-	}
 	"Operation Countenance" = {
 		icon = generic_operation
 		fire_only_once = yes
@@ -1296,6 +1253,21 @@ JFU_decisions = {
 					JFU_update_generals = yes											
 				}
 			}
+		}
+	}
+
+	"Support France" = {
+		icon = eng_install_government
+		allowed = { original_tag = ENG }
+		days_remove = 60
+
+		available = {NOT = { FRA = { owns_state = 16 }}  check_variable = { FRA.FRA_legitimacy < 100 }
+						FRA = { has_country_flag = france_is_kill}}
+		visible = {	tag = ENG }
+		cost = 50
+		complete_effect = {
+		custom_effect_tooltip = "French Legitimacy will increase by 20"
+			add_to_variable =  { var = FRA.FRA_legitimacy value = 20 }
 		}
 	}
 

@@ -39,7 +39,7 @@ NDefines.NCountry.POPULATION_YEARLY_GROWTH_BASE = 0.0
 NDefines.NCountry.BASE_FUEL_CAPACITY = 100000
 NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 200
 NDefines.NCountry.SPECIAL_FORCES_CAP_BASE = 0.1
-NDefines.NCountry.SCORCHED_EARTH_STATE_COST = 999	
+NDefines.NCountry.SCORCHED_EARTH_STATE_COST = 998	
 NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 100.0      -- vanilla 10 Modifier for army manpower reinforcement delivery speed (travel time)
 NDefines.NCountry.REINFORCEMENT_MANPOWER_CHUNK = 0.5				-- vanilla 0.1 Chunk size of manpower reinforcement delivery, in % of total manpower needed by the template.
 NDefines.NCountry.EQUIPMENT_UPGRADE_CHUNK_MAX_SIZE = 50			-- vanilla 10  Maximum chunk size of equipment upgrade distribution per update.
@@ -99,7 +99,7 @@ NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane t
 	0.0, -- NAVAL_MINES_SWEEPING
 	0.0, -- MISSION_RECON
 }
-NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.10
+NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.12
 NDefines.NAir.AIR_MORE_GROUND_CREWS_COST = 0					-- vanilla 20.0 CP cost to maintain more ground crews
 NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_STRATEGIC_BOMBER = 0.036	-- vanilla 0.072 How much efficiency to regain per day. Gain applied hourly.
 NDefines.NAir.DISRUPTION_FACTOR = 4 
@@ -119,14 +119,14 @@ NDefines.NAir.AIR_WING_MAX_STATS_BOMBING = 200	-- vanilla 100
 NDefines.NNavy.MISSION_SUPREMACY_RATIOS = { 						-- supremacy multipliers for different mission types   | Strikeforce/Naval Invasion Support now 0 supremacy to avoid free supremacy
 		0.0, -- HOLD
 		1.0, -- PATROL		
-		1.0, -- STRIKE FORCE 
+		0.1, -- STRIKE FORCE 
 		0.2, -- CONVOY RAIDING
 		0.5, -- CONVOY ESCORT
 		0.0, -- MINES PLANTING	
 		0.0, -- MINES SWEEPING	
 		0.0, -- TRAIN
 		0.0, -- RESERVE_FLEET
-		0.2, -- NAVAL_INVASION_SUPPORT
+		0.1, -- NAVAL_INVASION_SUPPORT
 	}
 
 NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0
@@ -151,6 +151,7 @@ NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 200
 NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 200
 NDefines.NProduction.DEFAULT_MAX_NAV_FACTORIES_PER_LINE = 200
 NDefines.NProduction.ANNEX_FIELD_EQUIPMENT_RATIO = 1	-- WAS 0.25 | Annex decisions should give all troops, but incase I screwed up here is this -Thrasymachus | How much equipment from deployed divisions will be transferred on annexation
+NDefines.NProduction.LICENSE_EQUIPMENT_SPEED_NOT_FACTION = 0     --VANILLA -0.10		-- MIC speed modifier for licensed equipment for not being in faction
 
 NDefines.NAI.GIVE_STATE_CONTROL_MIN_CONTROLLED = 0     
 NDefines.NAI.GIVE_STATE_CONTROL_MIN_CONTROLLED = 0     

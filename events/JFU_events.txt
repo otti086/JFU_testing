@@ -466,11 +466,13 @@ country_event = {
 		name = "So it be"
 
 		hidden_effect = {
-			ITA = { add_to_war = { targeted_alliance = GER enemy = ENG } }
+			ITA = { add_to_war = { targeted_alliance = GER enemy = ENG } add_timed_idea = { idea = GER_the_blitzkrieg days = 365 } }
 			ETH = { add_to_war = { targeted_alliance = GER enemy = ENG } }
-			ITA = { add_timed_idea =  { idea = NO_naval_raiding days = 40 } }
-			ENG = { add_timed_idea =  { idea = NO_naval_raiding days = 40 } }
-			FRA = { add_timed_idea =  { idea = NO_naval_raiding days = 40 } }
+			GER = { add_timed_idea = { idea = GER_the_blitzkrieg days = 365 } }
+			SPR = { add_timed_idea = { idea = GER_the_blitzkrieg days = 365 } }
+			HUN = { add_timed_idea = { idea = GER_the_blitzkrieg days = 365 } }
+			BUL = { add_timed_idea = { idea = GER_the_blitzkrieg days = 365 } }
+			ROM = { add_timed_idea = { idea = GER_the_blitzkrieg days = 365 } }
 #			country_event = { id = JFU_events.2 days = 60 }
 		}
 	}
@@ -539,7 +541,28 @@ news_event = {
 		}
 	}
 }
-
+news_event = {
+	id = news.5003
+	title = "Order 270"
+	desc = news.5003.d
+	picture = GFX_news_event_soldiers_marching
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = "Soviet divisions are inspired to stand and fight!"
+	}
+}
+news_event = {
+	id = news.5004
+	title = "Order 227"
+    desc = news.5004.d
+	picture = GFX_news_event_soldiers_marching
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = "Not a step back!"
+	}
+}
 news_event = {
 	id = news.15
 	title = news.15.t
