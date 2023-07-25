@@ -13,7 +13,7 @@ NDefines.NMilitary.AIR_EQUIPMENT_RAMP_COST = 0					-- CHANGED AS EVERYTHING IS P
 NDefines.NMilitary.GARRISON_ORDER_ARMY_CAP_FACTOR = 1.0			-- armies gets increased cap when they are garrisoned
 NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 72			--vanilla 24 (removed garrison cap factor) how many divisions a corps commander is limited to. 0 = inf, < 0 = blocked
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 72			--vanilla 24 (removed garrison cap factor) how many divisions a field marshall is limited to. 0 = inf, < 0 = blocked
-NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 1
+NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 0.5    --vanilla 3 
 NDefines.NMilitary.COMBAT_VALUE_ORG_IMPORTANCE = 0 		-- VANILLA 1 - changed to force tanks into battle first (most of the time) |   Multiplier on TotalOrganisation when determining the combat value of a division
 NDefines.NMilitary.COMBAT_VALUE_STR_IMPORTANCE = 0 		-- VANILLA 1  - changed to force tanks into battle first (most of the time)    |  Multiplier on TotalStrength when determining the combat value of a division
 NDefines.NMilitary.UNIT_DIGIN_CAP = 0                           --   vanilla 10 | "how "deep" you can dig you can dig in until hitting max bonus
@@ -58,6 +58,7 @@ NDefines.NResistance.NRESISTANCE_TARGET_MODIFIER_OCCUPIED_IS_EXILE_MAX = 10.0
 
 NDefines.NBuildings.MAX_SHARED_SLOTS = 50
 NDefines.NBuildings.OWNER_CHANGE_EXTRA_SHARED_SLOTS_FACTOR = 1.0
+NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 100
 
 NDefines.NCharacter.SPECIALIST_ADVISOR_MIN_RANK = 2
 NDefines.NCharacter.EXPERT_ADVISOR_MIN_RANK = 4
@@ -107,6 +108,13 @@ NDefines.NAir.ACCIDENT_CHANCE_BASE = 0
 NDefines.NAir.SUPPLY_NEED_FACTOR = 0.1				-- How much supply planes need
 NDefines.NAir.AIR_WING_FLIGHT_SPEED_MULT = 0.2 --makes redeployement of fighters faster vanilla is 0.02
 -- NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_FACTOR = 0.4  -- vanilla 0.8
+
+NDefines.NAir.AIRBASE_CAPACITY_MULT = 100  -- vanilla 200
+NDefines.NAir.DETECT_CHANCE_FROM_AIRCRAFTS_EFFECTIVE_COUNT = 1500  -- WAS 3000, halved because plane counts halved | Max amount of aircrafts in region to give full detection bonus.
+NDefines.NAir.FIELD_EXPERIENCE_SCALE = 0.0008						-- WAS 0.0004 | This affects how much XP you get from various missions (AFAIK this will affect XP gained from bombing and CAS missions as well)
+NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO = 0.03       -- WAS 0.05 | Changed due to plane count changes 
+NDefines.NAir.AIR_WING_MAX_STATS_BOMBING = 200	-- vanilla 100
+
 
 NDefines.NNavy.MISSION_SUPREMACY_RATIOS = { 						-- supremacy multipliers for different mission types   | Strikeforce/Naval Invasion Support now 0 supremacy to avoid free supremacy
 		0.0, -- HOLD

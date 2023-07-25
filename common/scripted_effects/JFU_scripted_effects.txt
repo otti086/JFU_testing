@@ -444,7 +444,17 @@ JFU_vichy_france = {
 		}
 		hidden_effect = { 
 			ENG = { 
-				annex_country = { target = HOL transfer_troops = no }
+				every_state = {
+					limit = {
+						AND = {
+							is_controlled_by = HOL
+							is_on_continent = asia
+						}
+					}
+					transfer_state_to = ENG
+				}
+				transfer_state = 695
+				transfer_state = 669
 			} 
 			every_state = {
 				limit = {
@@ -2396,7 +2406,7 @@ pregrinded_effect = {
             add_unit_leader_trait = organizer
             add_unit_leader_trait = trickster
             add_unit_leader_trait = panzer_leader
-            add_unit_leader_trait = panzer_expert
+            add_unit_leader_trait = combined_arms_expert
             add_unit_leader_trait = hill_fighter
 			add_unit_leader_trait = ranger
 			add_unit_leader_trait = trait_engineer

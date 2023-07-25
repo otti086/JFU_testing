@@ -10,33 +10,14 @@ air_wings = {
 			amount = 100
 			version_name = "I-15"
 		}
-	}
-	# MVO Aviatsya Komandovaniya
-	219 = {
-		# 3ya Dal'nyaya Bombardirovochnye Aviabrigada
-		# 13ya Dal'nyaya Bombardirovochnye Aviabrigada
-		large_plane_airframe_0 =  {
-			owner = "SOV" 
-			amount = 48
-			version_name = "TB-3"
-		}
-		# TODO -- 46ya Transporta Aviabrigada -- transport planes
-	}
-	# BOVO Aviatsya Komandovaniya -- Minsk
-	219 = {
-		# 16ya Bombardirovochnye Aviabrigada
 		medium_plane_airframe_0 =  {
 			owner = "SOV" 
-			amount = 120
+			amount = 100
 			version_name = "DB-3"
 		}
-	}
-	# Dal'nevostochniy Aviatsya Komandovaniya -- Vladivostock	
-	219 = {
-		# 5ya Dal'nyaya Bombardirovochnye Aviabrigada
 		large_plane_airframe_0 =  {
 			owner = "SOV" 
-			amount = 24
+			amount = 50
 			version_name = "TB-3"
 		}
 	}

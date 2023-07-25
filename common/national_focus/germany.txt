@@ -1470,7 +1470,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER_fall_blau
+		id = GER_focus_fall_blau
 		icon = GFX_goal_generic_war_with_comintern
 		prerequisite = { focus = GER_ussr_war_goal}
 		available_if_capitulated = no
