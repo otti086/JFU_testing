@@ -138,6 +138,9 @@ ideas = {
 
 		FIN_white_guard1 = {
 			name = "The White Guard"
+
+			picture = SOV_purged_junior_army_officers
+
 				allowed = {
 					always = no
 				}
@@ -154,6 +157,9 @@ ideas = {
 
 		FIN_white_guard2 = {
 			name = "The White Guard"
+
+			picture = SOV_purged_junior_army_officers
+			
 				allowed = {
 					always = no
 				}
@@ -170,6 +176,9 @@ ideas = {
 
 		finnish_subsidies1 = {
 			name = "Finnish Subsidies"
+
+			picture = SOV_third_five_year_plan_civilian
+
 				allowed = {
 					always = no
 				}
@@ -187,6 +196,9 @@ ideas = {
 
 		finnish_subsidies2 = {
 			name = "Finnish Subsidies"
+
+			picture = SOV_third_five_year_plan_civilian
+
 				allowed = {
 					always = no
 				}
@@ -205,6 +217,9 @@ ideas = {
 
 		finnish_subsidies3 = {
 			name = "Finnish Subsidies"
+
+			picture = SOV_third_five_year_plan_civilian
+
 				allowed = {
 					always = no
 				}
@@ -223,6 +238,9 @@ ideas = {
 
 		finnladen_rausen = {
 			name = "Finish Volunteers"
+
+			picture = partial_economic_mobilisation
+
 				allowed = {
 					always = no
 				}
@@ -241,6 +259,9 @@ ideas = {
 
 		finnish_subsidies4 = {
 			name = "Finnish Subsidies"
+
+			picture = SOV_third_five_year_plan_civilian
+
 				allowed = {
 					always = no
 				}
