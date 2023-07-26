@@ -5046,10 +5046,6 @@ SOV_great_patriotic_war = {
 
 		icon = GFX_decision_generic_military
 
-		ai_will_do = {
-			base = 0.5
-		}
-
 		allowed = {
 			original_tag = SOV
 		}
@@ -5062,23 +5058,12 @@ SOV_great_patriotic_war = {
 		visible = {
 			NOT = { has_country_flag = SOV_order_227_flag }
 		}
-
-		ai_hint_pp_cost = 15
-		custom_cost_trigger = {
-			command_power > 49
-			has_political_power > 14
-		}
-		custom_cost_text = decision_cost_CP_50_pp_15
-
+		fire_only_once = yes 
+		cost = 15
 		days_remove = 90
 
 		cancel_trigger = {
 			surrender_progress < 0.05
-		}
-
-		complete_effect = {
-			set_country_flag = SOV_order_270_flag
-			news_event = { id = news.5003 days = 0 }
 		}
 
 		modifier = {
@@ -5088,6 +5073,11 @@ SOV_great_patriotic_war = {
 			out_of_supply_factor = -0.25
 			pocket_penalty = -0.25
 			no_supply_grace = 168
+		}
+
+		complete_effect = {
+			set_country_flag = SOV_order_270_flag
+			news_event = { id = news.5003 days = 0 }
 		}
 	}
 

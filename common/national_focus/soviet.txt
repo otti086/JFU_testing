@@ -3764,6 +3764,7 @@ focus_tree = {
 					has_global_flag = GER_fall_blau
 				}
 				date > 1942.08.01
+				surrender_progress > 0.6
 			}
 		}
 		
@@ -3791,6 +3792,7 @@ focus_tree = {
 					}
 					remove_unit_leader_trait =  trait_SOV_cowed_by_stalin_navy
 				}
+				JFU_update_SOV_generals = yes
 			}
 		}
 	}
