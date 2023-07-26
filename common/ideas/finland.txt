@@ -234,7 +234,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				send_volunteer_size = 179
+				send_volunteer_size = 180
+				send_volunteer_divisions_required = -0.99
 			}
 		}
 

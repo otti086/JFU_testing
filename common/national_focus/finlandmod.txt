@@ -737,7 +737,10 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = tot_economic_mobilisation
 			add_ideas = service_by_requirement
-			add_ideas = finnladen_rausen
+			swap_ideas = {
+				remove_idea = pre_grinded_gens_volunteers
+				add_idea = finnladen_rausen
+			}
 		}
 	}
 	
