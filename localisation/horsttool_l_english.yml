@@ -916,6 +916,10 @@
  fall_blau_effect:0 "enables after Germany started Fall Blau"
  SOV_BARB_Debuff:0 "Suprise Attack"
 
+ wtt_manchukou.11.C:0 "Build up our Civillian Industry"
+ wtt_manchukou.11.M:0 "Invest in ou Military Industry"
+ wtt_manchukou.11.F:0 "Focus on our Fleet"
+
 
  PRE_SETS: "JFU Presets"
  HORST_GROUPKEY: "JFU Rules"
