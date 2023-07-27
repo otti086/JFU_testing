@@ -12,7 +12,7 @@ country_event = {
 	
 	#Air
 	option = {
-		name = wtt_manchukou.11.a
+		name = wtt_manchukou.11.C
 		ai_chance = {
 			base = 3
 		}
@@ -20,7 +20,7 @@ country_event = {
 	}	
 	#Tank
 	option = {
-		name = wtt_manchukou.11.b
+		name = wtt_manchukou.11.M
 		ai_chance = {
 			base = 3
 		}
@@ -28,7 +28,7 @@ country_event = {
 	}	
 	#Industry
 	option = {
-		name = wtt_manchukou.11.c
+		name = wtt_manchukou.11.F
 		ai_chance = {
 			base = 10
 		}

@@ -13,6 +13,7 @@ ability = {
 			OWNER = {
 				OR = {
 					has_completed_focus = JAP_warrior_spirit
+					has_completed_focus = MAN_mukden_military_academy
 				}
 			}
 		}

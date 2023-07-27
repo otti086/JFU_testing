@@ -585,6 +585,9 @@
 			else = {
 				add_ideas = war_economy
 			}
+			MAN = {
+				add_ideas = war_economy
+			}
 		}
 	}
 
@@ -664,6 +667,9 @@
 			else = {
 				add_ideas = tot_economic_mobilisation
 			}
+		MAN = {
+			add_ideas = tot_economic_mobilisation
+		}
 		}
 	}
 

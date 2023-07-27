@@ -134,7 +134,7 @@ ideas = {
 			
 			modifier = {
 				stability_factor = -0.5
-				war_support_factor = -0.5
+
 			}
 		}
 		MAN_low_legitimacy_4 = {
@@ -155,7 +155,7 @@ ideas = {
 			
 			modifier = {
 				stability_factor = -0.4
-				war_support_factor = -0.4
+			
 			}
 		}
 		MAN_low_legitimacy_3 = {
@@ -176,7 +176,7 @@ ideas = {
 			
 			modifier = {
 				stability_factor = -0.3
-				war_support_factor = -0.3
+		
 			}
 		}
 		MAN_low_legitimacy_2 = {
@@ -197,7 +197,7 @@ ideas = {
 			
 			modifier = {
 				stability_factor = -0.2
-				war_support_factor = -0.2
+				
 			}
 		}
 		MAN_low_legitimacy_1 = {
@@ -218,7 +218,6 @@ ideas = {
 			
 			modifier = {
 				stability_factor = -0.1
-				war_support_factor = -0.1
 			}
 		}
 
@@ -302,7 +301,7 @@ ideas = {
 
 		MAN_five_year_plan_air = {
 
-			name = MAN_five_year_plan
+			name = "Build up our Civillian Industry"
 
 			allowed = {
 				always = no
@@ -315,17 +314,16 @@ ideas = {
 			removal_cost = -1
 
 			picture = man_five_year_plan_air
-			
-			research_bonus = { air_equipment = 0.1 }
 
 			modifier = {
-				production_speed_arms_factory_factor = 0.1
-				production_speed_air_base_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				research_speed_factor = 0.15
+				consumer_goods_factor = -0.03
 			}
 		}
 		MAN_five_year_plan_tank = {
 
-			name = MAN_five_year_plan
+			name = "Invest in the Military Industry"
 
 			allowed = {
 				always = no
@@ -339,10 +337,11 @@ ideas = {
 
 			picture = man_five_year_plan_tank
 
-			research_bonus = { armor = 0.05 }
+			research_bonus = { armor = 0.15 }
 			
 			modifier = {
 				production_speed_arms_factory_factor = 0.1
+				industrial_capacity_factory = 0.1
 			}
 		}
 
@@ -368,7 +367,7 @@ ideas = {
 		}
 		MAN_five_year_plan_industry = {
 
-			name = MAN_five_year_plan
+			name = "Modernize the Navy"
 
 			allowed = {
 				always = no
@@ -382,9 +381,10 @@ ideas = {
 
 			picture = man_five_year_plan_industry
 			
-			research_bonus = { industry = 0.05 }
+			research_bonus = { navy = 0.15 }
 			modifier = {
-				production_speed_industrial_complex_factor = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_speed_dockyard_factor = 0.2
 			}
 		}
 		MAN_underground_gun_shops = {
