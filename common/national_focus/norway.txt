@@ -238,7 +238,7 @@
 	focus = {
 		id = nor_naval_effort
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 3
+		x = 4
 		y = 0
 		cost = 10
 
@@ -718,7 +718,7 @@
 		
 	focus = {
 		id = nor_winter_mountain_training
-		icon = GFX_focus_NOR_defense_union
+		icon = GFX_focus_generic_manpower
 		available = {
 		NOR = { has_completed_focus = nor_construction_effort_2 }
 		OR = {
@@ -727,7 +727,7 @@
 
 		}
 		}	
-		x = 13
+		x = 14
 		y = 0
 
 		cost = 10
@@ -749,7 +749,7 @@
 		
 	focus = {
 		id = nor_norway_in_exile
-		icon = GFX_focus_NOR_royal_guards
+		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = nor_winter_mountain_training }
 		available = {
 			NOR = { has_completed_focus = nor_infrastructure_effort_2 }
@@ -799,13 +799,17 @@
 				logistics_skill = 3
 			}				
 		}
+		912 = {
+			add_extra_state_shared_building_slots = 5
+
+		}
 	}
 		
 					
 		
 		focus = {
 			id = nor_ruges_plan
-			icon = GFX_focus_NOR_army
+			icon = GFX_focus_ETH_freedom_at_gunpoint
 			mutually_exclusive = { focus = nor_fleischers_plan }
 			prerequisite = { focus = nor_norway_in_exile }
 			available = { NOR = { is_ai = no } }	
@@ -831,7 +835,7 @@
 		
 		focus = {
 		id = nor_fleischers_plan
-		icon = GFX_focus_NOR_expand_the_forsvaret
+		icon = GFX_focus_focus_fra_maquis
 		mutually_exclusive = { focus = nor_ruges_plan }
 		prerequisite = { focus = nor_norway_in_exile }
 		
@@ -889,9 +893,9 @@
 		}
 		}
 		
-			focus = {
+		focus = {
 		id = nor_drill_exile_army
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_generic_army_artillery
 		prerequisite = { focus = nor_ruges_plan }
 		available = {
 		NOR = { is_ai = no }
@@ -919,7 +923,7 @@
 		
 			focus = {
 		id = nor_prepare_operation_crofter
-		icon = GFX_goal_generic_position_armies
+		icon = GFX_focus_research2
 		prerequisite = { focus = nor_drill_exile_army focus = nor_train_with_sas }
 		available = {
 		NOR = { is_ai = no }
@@ -944,7 +948,7 @@
 		
 		}
 			
-						focus = {
+		focus = {
 		id = nor_operation_crofter
 		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = nor_prepare_operation_crofter  }

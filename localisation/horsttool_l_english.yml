@@ -986,9 +986,15 @@
  SOV_BARB_Debuff:0 "Suprise Attack"
 
  wtt_manchukou.11.C:0 "Build up our Civillian Industry"
- wtt_manchukou.11.M:0 "Invest in ou Military Industry"
+ wtt_manchukou.11.M:0 "Invest in our Military Industry"
  wtt_manchukou.11.F:0 "Focus on our Fleet"
 
+ nor_bad_debuffs:0 "Norway Debuff"
+ nor_bad_debuffs2:0 "Not ready for the German Attack"
+ NOR_army_buffs:0 "Ruge's Plan"
+ NOR_army_buffs2:0 "Expand the Ruge's Plan"
+ NOR_spec_ops:0 "Fleischer's Plan"
+ NOR_crofter:0 "Operation Crofter"
 
  PRE_SETS: "JFU Presets"
  HORST_GROUPKEY: "JFU Rules"

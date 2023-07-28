@@ -661,7 +661,7 @@ focus_tree = {
 
 	focus = {
 		id = fin_karelianism
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_focus_generic_fascist_troops
 		prerequisite = { focus = fin_liberty_ethos }
 		mutually_exclusive = { focus = fin_neutrality_focus }
 		available = {
@@ -689,7 +689,7 @@ focus_tree = {
 	
 	focus = {
 		id = fin_soviet_threat
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_goal_generic_axis_build_infantry
 		prerequisite = { focus = fin_karelianism }
 		available = { is_ai = no }
 		relative_position_id = fin_karelianism
@@ -745,7 +745,7 @@ focus_tree = {
 
 	focus = {
 		id = fin_why_we_fight
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_focus_chi_mission_to_germany
 		prerequisite = { focus = fin_deterrence focus = fin_soviet_threat }
 		available = { 
 			date > 1941.1.1
@@ -772,7 +772,7 @@ focus_tree = {
 	
 		focus = {
 		id = fin_continuation_prep
-		icon = GFX_focus_FIN_sisu
+		icon = GFX_focus_chi_mission_to_germany
 		available = {
 			date > 1941.1.1
 			is_ai = no
@@ -788,7 +788,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = fin_continuation_war
-			GER = { add_to_faction = FIN }
 		}
 	}
 	

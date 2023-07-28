@@ -1002,8 +1002,8 @@ focus = {
 	focus = {
 		id = FRA_appeal_to_the_french_nation
 		icon = GFX_goal_generic_propaganda
-		x = 20
-		y = 8
+		x = 27
+		y = 0
 
 		prerequisite = {}
 		mutually_exclusive = { }
@@ -1317,7 +1317,7 @@ focus = {
 		id = FRA_form_the_national_committee
 		icon = GFX_goal_generic_intelligence_exchange
 		x = 0
-		y = 3
+		y = 2
 
 		prerequisite = { 
 			focus = FRA_intervention_in_madagascar
@@ -1411,7 +1411,7 @@ focus = {
 		id = FRA_the_free_french_navy
 		icon = GFX_goal_generic_build_navy
 		x = -2
-		y = 2
+		y = 1
 
 		prerequisite = { 
 			focus = FRA_continue_the_fight
@@ -1457,7 +1457,7 @@ focus = {
 		id = FRA_colonial_recruitment
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 0
-		y = 2
+		y = 1
 
 		prerequisite = { 
 			focus = FRA_continue_the_fight
@@ -1492,7 +1492,7 @@ focus = {
 		id = FRA_the_regiment_normandie
 		icon = GFX_focus_fra_regiment_normandie
 		x = 2
-		y = 2
+		y = 1
 
 		prerequisite = { 
 			focus = FRA_continue_the_fight
@@ -1533,8 +1533,8 @@ focus = {
 	focus = {
 		id = FRA_refus_absurde
 		icon = GFX_goal_generic_demand_territory
-		x = 10
-		y = 8
+		x = 18
+		y = 0
 
 		prerequisite = { 
 		
@@ -1563,7 +1563,7 @@ focus = {
 		id = FRA_the_maquis
 		icon = GFX_focus_focus_fra_maquis
 		x = -2
-		y = 2
+		y = 1
 
 		prerequisite = { 
 			focus = FRA_refus_absurde
@@ -1604,7 +1604,7 @@ focus = {
 		id = FRA_reach_out_to_trade_unions
 		icon = GFX_goal_generic_major_alliance
 		x = 0
-		y = 2
+		y = 1
 
 		prerequisite = { 
 			focus = FRA_refus_absurde
@@ -1634,7 +1634,7 @@ focus = {
 		id = FRA_cooperation_with_the_communists
 		icon = GFX_focus_generic_soviet_politics
 		x = 0
-		y = 2
+		y = 1
 
 		prerequisite = { 
 			focus = FRA_reach_out_to_trade_unions
@@ -1673,7 +1673,7 @@ focus = {
 		id = FRA_connections_to_industrialists
 		icon = GFX_goal_generic_intelligence_exchange
 		x = 2
-		y = 2
+		y = 1
 
 		prerequisite = { 
 			focus = FRA_refus_absurde
@@ -1703,7 +1703,7 @@ focus = {
 		id = FRA_the_civil_and_military_organization
 		icon = GFX_goal_generic_military_deal
 		x = 0
-		y = 2
+		y = 1
 
 		prerequisite = { 
 			focus = FRA_connections_to_industrialists
@@ -1735,7 +1735,7 @@ focus = {
 	focus = {
 		id = FRA_national_council_of_the_resistance
 		icon = GFX_focus_focus_fra_national_resistance_council
-		x = 0
+		x = -1
 		y = 2
 
 		prerequisite = { 
@@ -1774,8 +1774,8 @@ focus = {
 	focus = {
 		id = FRA_national_uprising
 		icon = GFX_goal_generic_dangerous_deal
-		x = -2
-		y = 2
+		x = -1
+		y = 1
 
 		prerequisite = { 
 			focus = FRA_national_council_of_the_resistance
@@ -1803,8 +1803,8 @@ focus = {
 	focus = {
 		id = FRA_french_forces_of_the_interior
 		icon = GFX_focus_prc_infiltration
-		x = 2
-		y = 2
+		x = 1
+		y = 1
 
 		prerequisite = { 
 			focus = FRA_national_council_of_the_resistance
