@@ -9,7 +9,7 @@ JFU_decisions = {
 	#	╚██████╔╝███████╗██║  ██║
 	#	 ╚═════╝ ╚══════╝╚═╝  ╚═╝
 	"Fall Weiss" = { 
-		icon = ger_reichskommissariats
+		icon = category_generic_fascism
 		fire_only_once = yes		
 		allowed = { tag = GER }	
 		available = { has_completed_focus = GER_danzig_or_war	}		
@@ -33,78 +33,8 @@ JFU_decisions = {
 			}
 		}
 	}
-	"Fall Gelb" = {
-		icon = ger_reichskommissariats
-		fire_only_once = yes	
-		allowed = { tag = GER }
-		available = { has_war_with = ENG }
-		cost = 0
-		complete_effect = {
-			hidden_effect = {  ENG = { add_to_faction = HOL add_to_faction = BEL }  }
-			declare_war_on = {
-				target = HOL
-				type = annex_everything
-			}
-				declare_war_on = {
-				target = BEL
-				type = annex_everything
-			}	
-			hidden_effect = { 
-				ROOT_call_against_beligum = yes  ROOT_call_against_holland = yes
-			}
-			complete_national_focus = GER_around_maginot
-		}
-	}
-	"Operation Weserubung Danemark" = { 
-		icon = ger_reichskommissariats
-		fire_only_once = yes	
-		allowed = { tag = GER }
-		available = { has_war_with = ENG }	
-		cost = 0		
-		complete_effect = {				
-			add_tech_bonus = {
-				name = tp_bonus
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = tp_tech
-			}
-			hidden_effect = {  	ENG = { add_to_faction = DEN }  }
-			declare_war_on = {
-				target = DEN
-				type = annex_everything
-			}	
-					hidden_effect = { 
-				ROOT_call_against_denmark = yes 
-			}		
-			complete_national_focus = GER_weserubung	
-		}	
-	}
-	"Operation Weserubung Norway" = { 
-		icon = ger_reichskommissariats
-		fire_only_once = yes	
-		allowed = { 	tag = GER 	}
-		available = {  NOT = { DEN = { controls_state = 99 }}	}	
-		visible = { NOT = { has_war_with = NOR }}
-		cost = 0		
-		complete_effect = {
-			hidden_effect = {
-				ENG = {
-					add_to_faction = NOR
-				}
-			}
-			declare_war_on = {
-				target = NOR
-				type = annex_everything
-			}	
-			hidden_effect = {  
-				ROOT_call_against_norway = yes 
-			}
-			complete_national_focus = GER_weserubung2 
-		}	
-	}
 	"Unternehmen Barbarossa" = { 
-		icon = ger_reichskommissariats
+		icon = category_generic_fascism
 		fire_only_once = yes	
 		allowed = { 	tag = GER 	}
 		available = { 			
@@ -142,8 +72,79 @@ JFU_decisions = {
 			complete_national_focus = GER_ussr_war_goal
 		}
 	}
+	"Fall Gelb" = {
+		icon = category_ger_reichskommissariats
+		fire_only_once = yes	
+		allowed = { tag = GER }
+		available = { has_war_with = ENG }
+		cost = 0
+		complete_effect = {
+			hidden_effect = {  ENG = { add_to_faction = HOL add_to_faction = BEL }  }
+			declare_war_on = {
+				target = HOL
+				type = annex_everything
+			}
+				declare_war_on = {
+				target = BEL
+				type = annex_everything
+			}	
+			hidden_effect = { 
+				ROOT_call_against_beligum = yes  ROOT_call_against_holland = yes
+			}
+			complete_national_focus = GER_around_maginot
+		}
+	}
+	"Operation Weserubung Danemark" = { 
+		icon = category_ger_reichskommissariats
+		fire_only_once = yes	
+		allowed = { tag = GER }
+		available = { has_war_with = ENG }	
+		cost = 0		
+		complete_effect = {				
+			add_tech_bonus = {
+				name = tp_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = tp_tech
+			}
+			hidden_effect = {  	ENG = { add_to_faction = DEN }  }
+			declare_war_on = {
+				target = DEN
+				type = annex_everything
+			}	
+					hidden_effect = { 
+				ROOT_call_against_denmark = yes 
+			}		
+			complete_national_focus = GER_weserubung	
+		}	
+	}
+	"Operation Weserubung Norway" = { 
+		icon = category_ger_reichskommissariats
+		fire_only_once = yes	
+		allowed = { 	tag = GER 	}
+		available = {  NOT = { DEN = { controls_state = 99 }}	}	
+		visible = { NOT = { has_war_with = NOR }}
+		cost = 0		
+		complete_effect = {
+			hidden_effect = {
+				ENG = {
+					add_to_faction = NOR
+				}
+			}
+			declare_war_on = {
+				target = NOR
+				type = annex_everything
+			}	
+			hidden_effect = {  
+				ROOT_call_against_norway = yes 
+			}
+			complete_national_focus = GER_weserubung2 
+		}	
+	}
+
 	"Fall Blau" = {
-		icon = ger_reichskommissariats
+		icon = category_ger_military_buildup
 		fire_only_once = yes	
 		allowed = { 	tag = GER 	}
 		available = {
@@ -247,7 +248,7 @@ JFU_decisions = {
 		}
 	}
 	"Iraq Oil" = {
-		icon = generic_operation
+		icon = oil
 		fire_only_once = yes
 		allowed = { tag = GER }
 		available = { 
@@ -316,7 +317,7 @@ JFU_decisions = {
 	
 
 	"Attack Yugoslavia" = {
-		icon = generic_operation
+		icon = ITA_italian_east_africa
 		fire_only_once = yes
 		allowed = { tag = ITA }
 		available = { 
@@ -409,7 +410,7 @@ JFU_decisions = {
 		}
 	}
 	"Attack Greece" = {
-		icon = generic_operation
+		icon = ITA_italian_east_africa
 		fire_only_once = yes
 		allowed = { tag = ITA }
 		available = {	
@@ -485,7 +486,7 @@ JFU_decisions = {
 		}
 	}
 	"Join the War" = {
-		icon = generic_operation
+		icon = ITA_italian_east_africa
 		fire_only_once = yes
 		allowed = { tag = ITA }
 		available = { EFR = { controls_state = 26} }
@@ -635,7 +636,7 @@ JFU_decisions = {
 	#	 ╚════╝ ╚═╝  ╚═╝╚═╝     
 
 	"Attack china" = {
-		icon = generic_operation
+		icon = jap_conquer_china
 		fire_only_once = yes
 		allowed = { tag = JAP }
 		available = { has_completed_focus = JAP_intervene_in_china  }
@@ -662,7 +663,7 @@ JFU_decisions = {
 		}
 	}
 	"Exploit the southern resource Area" = {
-		icon = generic_operation
+		icon = aluminium
 		fire_only_once = yes
 		allowed = { tag = JAP }
 		available = {
@@ -784,7 +785,7 @@ JFU_decisions = {
 	#	███████║╚██████╔╝ ╚████╔╝ 
 	#	╚══════╝ ╚═════╝   ╚═══╝  
 	"Attack Finland" = {
-		icon = generic_operation
+		icon = generic_prepare_civil_war
 		fire_only_once = yes
 		allowed = { tag = SOV }
 		available = { GER = { has_completed_focus = GER_mol_rib_pact } }
@@ -833,7 +834,7 @@ JFU_decisions = {
 	}
 
 	"Operation Icebreaker" = {
-		icon = generic_operation
+		icon = infiltrate_state
 		fire_only_once = yes
 		allowed = { tag =  SOV }
 		available = {
@@ -901,7 +902,7 @@ JFU_decisions = {
 		}
 	}
 	"Small Barb" = {
-		icon = generic_operation
+		icon = generic_air
 		allowed = { tag = SOV }
 		available = { has_global_flag = SOV_small_barb }
 		cost = 0
@@ -1027,7 +1028,7 @@ JFU_decisions = {
 		}	
 	}
 	"Join the Allies" = {
-		icon = generic_operation
+		icon = generic_form_nation
 		fire_only_once = yes
 		visible = { 			
 			always = no
@@ -1072,7 +1073,7 @@ JFU_decisions = {
 		}
 	}
 	"Join the european War" = {
-		icon = generic_operation
+		icon = generic_intelligence_operation
 		fire_only_once = yes
 		allowed = { tag = USA }
 		available = { 
@@ -1188,7 +1189,7 @@ JFU_decisions = {
 	#	╚══════╝╚═╝  ╚═══╝ ╚═════╝ 
 	
 	"Operation Torch" = {  
-	    icon = generic_civil_support 
+	    icon = generic_prepare_civil_war
         allowed = {   original_tag = ENG    }
         cost = 0 
         fire_only_once = yes 
@@ -1208,7 +1209,7 @@ JFU_decisions = {
 	}
 	
 	"Operation Countenance" = {
-		icon = generic_operation
+		icon = generic_reorganize_irregulars
 		fire_only_once = yes
 		allowed = { tag = ENG }
 		available = {
