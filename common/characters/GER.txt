@@ -935,7 +935,7 @@ characters={
 			}
 		}
 		corps_commander = {
-			skill = 3
+			skill = 6
 			attack_skill = 2
 			defense_skill = 2
 			planning_skill = 3
@@ -943,7 +943,7 @@ characters={
 			legacy_id = 603
 			traits = { infantry_officer }
 			visible = {
-				has_global_flag = falkenhausen_recalled
+				has_completed_focus = CHI_give_falkenhausen_citizenship
 			}
 		}
 	}
