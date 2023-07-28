@@ -17,6 +17,62 @@ country_event = {
 			base = 3
 		}
 		add_timed_idea = { days = 1825 idea = MAN_five_year_plan_air }
+		610 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	}	
+	#Tank
+	option = {
+		name = wtt_manchukou.11.M
+		ai_chance = {
+			base = 3
+		}
+		add_timed_idea = { days = 1825 idea = MAN_five_year_plan_tank }
+		610 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+
+	}	
+	#Industry
+	option = {
+		name = wtt_manchukou.11.F
+		ai_chance = {
+			base = 10
+		}
+		add_timed_idea = { days = 1825 idea = MAN_five_year_plan_industry }
+		610 = {
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = wtt_manchukou.sfyp
+	title = wtt_manchukou.11.t
+	desc = wtt_manchukou.11.desc
+	picture = GFX_report_event_generic_factory
+
+	is_triggered_only = yes
+	
+	#Air
+	option = {
+		name = wtt_manchukou.11.C
+		ai_chance = {
+			base = 3
+		}
+		add_timed_idea = { days = 1825 idea = MAN_five_year_plan_air }
 	}	
 	#Tank
 	option = {

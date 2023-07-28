@@ -768,23 +768,7 @@
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			if = {
-				limit = {
-					has_idea = MAN_five_year_plan_air
-				}
-				remove_ideas = MAN_five_year_plan_air
-			}
-			else_if = {
-				limit = {
-					has_idea = MAN_five_year_plan_tank
-				}
-				remove_ideas = MAN_five_year_plan_tank
-			}
-			else = {
-				remove_ideas = MAN_five_year_plan_industry
-			}
-
-			country_event = wtt_manchukou.11
+	
 		}
 	}
 
