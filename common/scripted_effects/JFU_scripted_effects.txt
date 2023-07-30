@@ -631,7 +631,8 @@ JFU_startup_on_action = {
 				option = COMPETITIVE_JFU 
 			} 
 		}			
-		551 = {
+		
+		885 = {
 			set_building_level = {
 				type = anti_air_building
 				level = 10
@@ -641,8 +642,9 @@ JFU_startup_on_action = {
 				type = air_base
 				level = 40
 				instant_build = yes
-			}								
+			}			
 		}
+
 		ITA = {
 			ITA_benito_mussolini = { unit_leader_event = { id = BBA_italo_ethiopian_war_events.01 } }
 			annex_country = { target = ETH transfer_troops = no }
@@ -880,7 +882,7 @@ island_hopping_USA = {
 }
 SOV_Barb_debuff_effect = {
 	add_to_variable	= { var = SOV_barb_attack_debuff value = 0.005 }
-	add_to_variable = { var = SOV_barb_defence_debuff value = 0.005 }
+#	add_to_variable = { var = SOV_barb_defence_debuff value = 0.005 }
 }
 ETH_escalate_the_war_effect = {
 	custom_effect_tooltip = ETH_war_escalation_inc_tt

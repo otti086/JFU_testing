@@ -119,14 +119,14 @@ NDefines.NAir.AIR_WING_MAX_STATS_BOMBING = 200	-- vanilla 100
 NDefines.NNavy.MISSION_SUPREMACY_RATIOS = { 						-- supremacy multipliers for different mission types   | Strikeforce/Naval Invasion Support now 0 supremacy to avoid free supremacy
 		0.0, -- HOLD
 		1.0, -- PATROL		
-		0.1, -- STRIKE FORCE 
+		0.0, -- STRIKE FORCE 
 		0.2, -- CONVOY RAIDING
 		0.5, -- CONVOY ESCORT
 		0.0, -- MINES PLANTING	
 		0.0, -- MINES SWEEPING	
 		0.0, -- TRAIN
 		0.0, -- RESERVE_FLEET
-		0.1, -- NAVAL_INVASION_SUPPORT
+		0.2, -- NAVAL_INVASION_SUPPORT
 	}
 
 NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0

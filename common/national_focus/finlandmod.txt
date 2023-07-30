@@ -20,7 +20,9 @@ focus_tree = {
 		y = 0
 
 		cost = 10
-
+		available = {
+			is_ai = no
+		}
 		ai_will_do = {
 			factor = 8
 		}
@@ -331,7 +333,9 @@ focus_tree = {
 		icon = GFX_goal_generic_defence
 		x = 5
 		y = 0
-
+		available = {
+			is_ai = no
+		}
 		cost = 10
 
 		ai_will_do = {
@@ -532,6 +536,7 @@ focus_tree = {
 		
 		available = {
 			date > 1936.06.01
+			is_ai = no
 		}
 
 		ai_will_do = {
@@ -578,8 +583,8 @@ focus_tree = {
 				uses = 1
 				technology = improved_infantry_weapons
 			}
+		}
 	}
-}
 	
 	focus = {
 		id = FIN_ski_infantry
@@ -727,8 +732,9 @@ focus_tree = {
 			or = {
 				has_war_with = SOV
 				date > 1940.01.01
-				}
-					}
+			}
+			is_ai = no
+		}
 
 		ai_will_do = {
 			factor = 100

@@ -187,6 +187,31 @@ focus_tree = {
 		}
 	}
 
+
+	focus = {
+		id = ENG_prep_africa
+		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = limited_rearmament_focus
+		x = 2
+		y = 1
+
+		cost = 2
+		available = {
+			551 = { is_controlled_by = ENG }
+			date > 1941.06.01
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			551 = {
+				set_building_level = {
+					type = air_base
+					level = 40
+					instant_build = yes
+				}								
+			}
+		}
+	}
+
 	focus = {
 		id = ENG_motorized_focus
 		prerequisite = { focus = limited_rearmament_focus }
