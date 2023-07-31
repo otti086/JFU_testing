@@ -309,47 +309,21 @@ characters={
 	}
 
 	SPR_jose_asensio_torrado={
-		instance = {
-			allowed = {
-				has_dlc = "La Resistance"
-			}
-			name=SPR_jose_asensio_torrado
-			portraits={
-				army={
-					large="GFX_portrait_SPR_jose_asensio_torrado"
-					small="gfx/interface/ideas/idea_SPR_jose_asensio_torrado.dds"
-				}
-			}
-			corps_commander={
-				traits={ career_officer infantry_leader }
-				skill=2
-				attack_skill=1
-				defense_skill=3
-				planning_skill=2
-				logistics_skill=1
-				legacy_id=1101
+		name=SPR_jose_asensio_torrado
+		portraits={
+			army={
+				large="GFX_portrait_SPR_jose_asensio_torrado"
+				small="gfx/interface/ideas/idea_SPR_jose_asensio_torrado.dds"
 			}
 		}
-		instance = {
-			allowed = {
-				NOT = { has_dlc = "La Resistance" }
-			}
-			name=SPR_jose_asensio_torrado
-			portraits={
-				army={
-					large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-					small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
-				}
-			}
-			corps_commander={
-				traits={ defensive_doctrine organisational_leader }
-				skill=2
-				attack_skill=1
-				defense_skill=3
-				planning_skill=2
-				logistics_skill=1
-				legacy_id=1100
-			}
+		corps_commander={
+			traits={ career_officer infantry_leader }
+			skill=2
+			attack_skill=1
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=1101
 		}
 	}
 

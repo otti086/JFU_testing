@@ -329,39 +329,6 @@ characters = {
 				large = "GFX_portrait_SOV_ivan_konev"
 			}
 		}
-		advisor = {
-			slot = high_command
-			idea_token = ivan_konev
-			ledger = army
-			allowed = {
-				original_tag = SOV
-			}
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = SOV_konev_civil_war
-					NOT = {
-						any_other_country = {
-							has_war_with = SOV
-							original_tag = SOV
-							has_unit_leader = 408.000
-						}
-					}
-				}
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
-			}
-			traits = {
-				army_concealment_2
-			}
-				cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
 
 		corps_commander = {
 			traits = { harsh_leader armor_officer politically_connected }
