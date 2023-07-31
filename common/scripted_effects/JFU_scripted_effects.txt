@@ -758,8 +758,8 @@ JFU_startup_on_action = {
 	SWE = { JFU_scripted_events_effect = yes }
 	SPR = {	country_lock_all_division_template = yes country_event = { id = lar_spain.2 days = 230 } activate_mission = days_till_civil_war }
 	ENG = {
-		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 12200 }
-		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 9600 }
+		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 30000 }
+		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 20000 }
 		add_equipment_to_stockpile = { type = support_equipment_1 amount = 259 }
 		add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 100 }
 		add_equipment_to_stockpile = { type = light_tank_chassis_1 amount = 180 producer = ENG variant_name = "Light Tank Mk. VI" }
@@ -806,8 +806,8 @@ JFU_startup_on_action = {
 		add_equipment_to_stockpile = { type = light_tank_chassis_0 amount = 72 producer = ROM variant_name = "FT Char Cannon" }
 	}
 	SOV = {
-		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 20000 }
-		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 60000 }
+		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 80000 }
+		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 80000 }
 		add_equipment_to_stockpile = { type = support_equipment_1 amount = 443 }
 		add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 1600 }
 		add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 814 }
@@ -2241,7 +2241,6 @@ pregrinded_effect = {
 		HUN_ivan_hindy = {
             add_unit_leader_trait = logistics_wizard
 			add_unit_leader_trait = thorough_planner
-			add_unit_leader_trait = aggressive_assaulter
 		}
 		HUN_karoly_beregfy = { add_skill_level = 3 }
 		HUN_karoly_beregfy = { add_attack = 3 }
@@ -2364,6 +2363,39 @@ pregrinded_effect = {
 			add_unit_leader_trait = thorough_planner
 			add_unit_leader_trait = aggressive_assaulter
 			add_unit_leader_trait = logistics_wizard
+		}
+		BUL_nikola_mihov = { add_attack = 3 }
+        BUL_nikola_mihov = { add_defense = 3 }
+        BUL_nikola_mihov = { add_planning = 2 }
+		BUL_nikola_mihov = { add_logistics = 2 }
+        BUL_nikola_mihov = {
+        	add_unit_leader_trait = pre_grinded
+            add_unit_leader_trait = panzer_leader
+            add_unit_leader_trait = panzer_expert
+            add_unit_leader_trait = trickster
+            add_unit_leader_trait = expert_improviser
+            add_unit_leader_trait = ranger
+			add_unit_leader_trait = hill_fighter
+			add_unit_leader_trait = trait_engineer
+		}
+		BUL_georgi_popov = { add_attack = 3 }
+        BUL_georgi_popov = { add_defense = 1 }
+        BUL_georgi_popov = { add_planning = 2 }
+		BUL_georgi_popov = { add_logistics = 1 }
+        BUL_georgi_popov = {
+        	add_unit_leader_trait = pre_grinded
+            add_unit_leader_trait = panzer_leader
+            add_unit_leader_trait = panzer_expert
+            add_unit_leader_trait = trickster
+            add_unit_leader_trait = trait_mountaineer
+			add_unit_leader_trait = hill_fighter
+			add_unit_leader_trait = trait_engineer
+		}	
+		BUL_georgi_popov = { promote_leader = yes }
+		BUL_georgi_popov = {
+			add_unit_leader_trait = offensive_doctrine
+			add_unit_leader_trait = thorough_planner
+			add_unit_leader_trait = logistics_wizard
 		}	
 	}
 	SPR = {
@@ -2408,7 +2440,7 @@ pregrinded_effect = {
             add_unit_leader_trait = organizer
             add_unit_leader_trait = trickster
             add_unit_leader_trait = panzer_leader
-            add_unit_leader_trait = combined_arms_expert
+            add_unit_leader_trait = panzer_expert
             add_unit_leader_trait = hill_fighter
 			add_unit_leader_trait = ranger
 			add_unit_leader_trait = trait_engineer
@@ -2452,7 +2484,10 @@ pregrinded_effect = {
 			add_unit_leader_trait = fortress_buster
 			add_unit_leader_trait = commando
         }
-				
+		SPR_jose_asensio_torrado = { add_skill_level = 2 }	
+		SPR_jose_asensio_torrado = {
+			add_unit_leader_trait = combined_arms_expert
+		}		
 	}
 	JAP = {
 		add_ideas = { pre_grinded_gens_volunteers }
