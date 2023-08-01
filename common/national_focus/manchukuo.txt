@@ -1540,14 +1540,9 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = CHI_hire_soviet_designer
-				bonus = 1.0
-				uses = 1
-				category = armor
-			}
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = SOV_morozov_design_bureau
+			
+			add_ideas = chi_mukden_arsenal
+		
 		}
 	}
 
@@ -1678,7 +1673,7 @@
 	focus = {
 		id = CHI_invite_soviet_advisers
 		text = "Manschurian Red Army"
-		icon = focus_SOV_builder_of_the_red_army
+		icon = GFX_focus_SOV_builder_of_the_red_army
 		prerequisite = { focus = CHI_mission_to_the_soviet_union }
 		x = 1
 		y = 1
@@ -1769,13 +1764,15 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			#ressource rights in sov
+			#
 		}
 	}
 
 	focus = {
 		id = MAN_PLATZHALTE_6
-		icon = GFX_focus_chi_mission_to_the_soviet_union
+		text = "Soviet Five Year Plan"
+		icon = GFX_focus_generic_industry_2
 		prerequisite = { focus = CHI_hire_soviet_designer }
 		
 		x = -11
@@ -1801,13 +1798,14 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			add_ideas = MAN_SOV_FIVE_YEAR_PLAN
 		}
 	}
 
 	focus = {
 		id = MAN_PLATZHALTE_2
-		icon = GFX_focus_chi_mission_to_the_soviet_union
+		icon = GFX_focus_SOV_organize_wreckers
+		text = "Produce Even Cheaper Guns"
 		prerequisite = { focus = CHI_invite_ntmkf }
 		
 		x = -9
@@ -1833,13 +1831,17 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = maN_red_army2
+				add_idea = maN_red_army3
+			}
 		}
 	}
 
 	focus = {
 		id = MAN_PLATZHALTE_3
-		icon = GFX_focus_chi_mission_to_the_soviet_union
+		icon = GFX_focus_SOV_organization_centralization_discipline
+		text = "Every Soldier Gets a Gun"
 		prerequisite = { focus = MAN_PLATZHALTE_6 }
 		prerequisite = { focus = MAN_PLATZHALTE_2 }
 		
@@ -1866,13 +1868,17 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = maN_red_army3
+				add_idea = maN_red_army4
+			}
 		}
 	}
 
 	focus = {
 		id = MAN_PLATZHALTE_4
-		icon = GFX_focus_chi_mission_to_the_soviet_union
+		text = "Industrial Modernizaition"
+		icon = GFX_goal_reichsautobahn
 		prerequisite = { focus = MAN_PLATZHALTE_6 }
 		
 		x = -11
@@ -1898,12 +1904,19 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = SOV_industrial_modernization
+				ahead_reduction = 2
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
 		}
 	}
 
 	focus = {
 		id = MAN_PLATZHALTE_5
+		text = "Red Guard"
 		icon = GFX_focus_chi_mission_to_the_soviet_union
 		prerequisite = { focus = MAN_PLATZHALTE_2 }
 		
@@ -1930,7 +1943,8 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			#recovery 5
+			#3 pop factor
 		}
 	}
 	

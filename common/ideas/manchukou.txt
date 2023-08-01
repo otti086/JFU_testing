@@ -421,6 +421,88 @@ ideas = {
 		}
 	}
 
+	maN_red_army3 = {
+		name = "Manschurian Red Army"
+
+		picture = idea_saf_soviet_advisers
+
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			original_tag = MAN
+		}
+		
+		removal_cost = -1
+
+		modifier = {
+			army_org_factor = 0.1
+			mobilization_laws_cost_factor = -0.1
+			experience_loss_factor = 0.15
+		}
+		
+		equipment_bonus = {
+			infantry_equipment = {
+			build_cost_ic = -0.1 instant = yes
+		}
+	}
+}
+
+maN_red_army4 = {
+	name = "Manschurian Red Army"
+
+	picture = idea_saf_soviet_advisers
+
+	allowed = {
+		always = no
+	}
+
+	allowed_civil_war = {
+		original_tag = MAN
+	}
+	
+	removal_cost = -1
+
+	modifier = {
+		army_org_factor = 0.1
+		mobilization_laws_cost_factor = -0.1
+		experience_loss_factor = 0.15
+	}
+	
+	equipment_bonus = {
+		infantry_equipment = {
+		build_cost_ic = -0.2 
+		soft_attack = -0.2
+		defense = -0.2
+		instant = yes
+	}
+}
+}
+
+MAN_SOV_FIVE_YEAR_PLAN = {
+	name = "Five Year Plan"
+
+	picture = idea_SOV_third_five_year_plan
+
+	allowed = {
+		always = no
+	}
+
+	allowed_civil_war = {
+		original_tag = MAN
+	}
+	
+	removal_cost = -1
+
+	modifier = {
+		production_factory_max_efficiency_factor = 0.1
+		production_factory_efficiency_gain_factor = -0.2
+		production_factory_start_efficiency_factor = -0.05
+	}
+	
+}
+
 		MAN_five_year_plan_air = {
 
 			name = "Build up our Civillian Industry"
