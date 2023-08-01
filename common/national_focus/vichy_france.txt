@@ -18,7 +18,9 @@
 		y = 0
 		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
+		available = {
+			is_ai = no
+		}
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -262,7 +264,9 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 		
 		available_if_capitulated = yes
-
+		available = {
+			is_ai = no
+		}
 		completion_reward = {
 			add_tech_bonus = {
 				name = industrial_bonus
@@ -723,7 +727,9 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	
 		available_if_capitulated = yes
-
+		available = {
+			is_ai = no
+		}
 		completion_reward = {
 			add_political_power = 120
 		}
@@ -1067,6 +1073,7 @@
 		}
 		available = {
 			26 = { is_controlled_by = EFR }
+			is_ai = no
 		}
 		
 		bypass = {

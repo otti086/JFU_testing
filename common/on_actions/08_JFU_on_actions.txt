@@ -109,8 +109,14 @@ on_actions = {
 					infantry_weapons = 1
 					infantry_weapons1 = 1
 
+					rangers = 1 #special forces weil clown minors
+					marines = 1
+					tech_mountaineers = 1
+
 					motorised_infantry = 1
 					tech_support = 1
+					tech_engineers = 1
+					tech_recon = 1
 
 					gw_artillery = 1
 					interwar_antiair = 1
@@ -328,7 +334,7 @@ on_actions = {
                             is_core_of = CHI
                             is_controlled_by = JAP
                         }
-                        set_compliance = 90
+                        set_compliance = 100
                     }
 				}
 				JAP = {

@@ -32,7 +32,7 @@ NDefines.NMilitary.RETREAT_SPEED_FACTOR = 0.4		-- VANILLA 0.25
 NDefines.NMilitary.WITHDRAWING_SPEED_FACTOR = 0.25	-- VANILLA 0.15
 NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER = 0.060 -- VANILLA 0.0525
 NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.0575	-- VANILLA 0.053
-
+NDefines.NMilitary.PREFERRED_TACTIC_CHARACTER_SKILL_LEVEL_REQUIRED = 4 -- VANILLA 5(pregrinded change) -- Which level a field marhal or general has to be before they can pick their preferred tactic
 
 
 NDefines.NCountry.POPULATION_YEARLY_GROWTH_BASE = 0.0
@@ -119,14 +119,14 @@ NDefines.NAir.AIR_WING_MAX_STATS_BOMBING = 200	-- vanilla 100
 NDefines.NNavy.MISSION_SUPREMACY_RATIOS = { 						-- supremacy multipliers for different mission types   | Strikeforce/Naval Invasion Support now 0 supremacy to avoid free supremacy
 		0.0, -- HOLD
 		1.0, -- PATROL		
-		0.1, -- STRIKE FORCE 
+		0.0, -- STRIKE FORCE 
 		0.2, -- CONVOY RAIDING
 		0.5, -- CONVOY ESCORT
 		0.0, -- MINES PLANTING	
 		0.0, -- MINES SWEEPING	
 		0.0, -- TRAIN
 		0.0, -- RESERVE_FLEET
-		0.1, -- NAVAL_INVASION_SUPPORT
+		0.2, -- NAVAL_INVASION_SUPPORT
 	}
 
 NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0

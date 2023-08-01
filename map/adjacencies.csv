@@ -290,6 +290,16 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 6210;80;impassable;-1;-1;-1;-1;-1;;Finnland Soviet Border;;
 2998;6210;impassable;-1;-1;-1;-1;-1;;Finnland Soviet Border;;
 
+5047;2003;impassable;-1;-1;-1;-1;-1;;Ethiopia Border;;
+5017;2003;impassable;-1;-1;-1;-1;-1;;Ethiopia Border;;
+5017;2088;impassable;-1;-1;-1;-1;-1;;Ethiopia Border;;
+12723;2088;impassable;-1;-1;-1;-1;-1;;Ethiopia Border;;
+13251;2088;impassable;-1;-1;-1;-1;-1;;Ethiopia Border;;
+1984;12862;impassable;-1;-1;-1;-1;-1;;Ethiopia Border;;
+2040;12862;impassable;-1;-1;-1;-1;-1;;Ethiopia Border;;
+2040;4918;impassable;-1;-1;-1;-1;-1;;Ethiopia Border;;
+4954;4918;impassable;-1;-1;-1;-1;-1;;Ethiopia Border;;
+
 
 2800;2776;;-1;-1;-1;-1;-1;Aden_Strait;Aden Strait;
 

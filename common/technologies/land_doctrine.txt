@@ -2710,7 +2710,6 @@ technologies = {
 		category_all_infantry = {
 			max_organisation = 10
 		}		
-		enemy_army_bonus_air_superiority_factor = -0.1
 
 		path = {
 			leads_to_tech = large_front_operations
@@ -3247,6 +3246,8 @@ technologies = {
 	large_front_offensive = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
+		enable_tactic = tactic_breakthrough
 
 		land_reinforce_rate = 0.01
 		category_army = {
@@ -3345,7 +3346,7 @@ technologies = {
 			hard_attack = 0.15
 		}
 		
-#		enable_tactic = tactic_guerrilla_tactics
+		enable_tactic = tactic_elastic_defense
 		
 		doctrine = yes	
 		research_cost = 4.5

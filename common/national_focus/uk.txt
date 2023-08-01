@@ -187,6 +187,31 @@ focus_tree = {
 		}
 	}
 
+
+	focus = {
+		id = ENG_prep_africa
+		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = limited_rearmament_focus
+		x = 2
+		y = 1
+
+		cost = 2
+		available = {
+			551 = { is_controlled_by = ENG }
+			date > 1941.06.01
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			551 = {
+				set_building_level = {
+					type = air_base
+					level = 40
+					instant_build = yes
+				}								
+			}
+		}
+	}
+
 	focus = {
 		id = ENG_motorized_focus
 		prerequisite = { focus = limited_rearmament_focus }
@@ -373,16 +398,6 @@ focus_tree = {
 					NOT = { has_government = democratic }
 				}
 			}
-			if = {
-				limit = {
-					NOT = { has_dlc = "Man the Guns" }
-				}
-				OR = {
-					threat > 0.05
-					has_war = yes
-					NOT = { has_government = democratic }
-				}
-			}
 		}
 
 		continue_if_invalid = yes
@@ -423,7 +438,16 @@ focus_tree = {
 				name = industrial_bonus
 				bonus = 1.0
 				uses = 2
-				category = industry
+				technology = advanced_machine_tools
+				technology = flexible_line
+				technology = assembly_line_production
+				technology = streamlined_line
+				technology = concentrated_industry3
+				technology = concentrated_industry4
+				technology = concentrated_industry5
+				technology = dispersed_industry3 
+				technology = dispersed_industry4 
+				technology = dispersed_industry5 
 			}
 		}
 	}
@@ -1946,155 +1970,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = uk_burma_focus
-		prerequisite = { focus = uk_asia_focus } 
-		available = {
-			CHI = { 
-				has_war_with = JAP 
-				NOT = { has_war_with = ENG }
-			}
-			JAP = { NOT = { is_in_faction_with = ENG } }
-		}
-
-		bypass = {
-			CHI = { exists = no }
-		}
-
-		icon = GFX_goal_generic_construct_infrastructure
-		x = -1
-		y = 1
-		relative_position_id = uk_asia_focus
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-			640 = {
-				free_building_slots = {
-					building = infrastructure
-					size < 1
-				}
-			}
-			325 = {
-				free_building_slots = {
-					building = infrastructure
-					size < 1
-				}
-			}
-			601 = {
-				free_building_slots = {
-					building = infrastructure
-					size < 2
-				}
-				free_building_slots = {
-					building = air_base
-					size < 1
-				}
-				free_building_slots = {
-					building = arms_factory
-					size < 1
-					include_locked = yes
-				}
-			}
-		}
-		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WAR_SUPPORT}
-		completion_reward = {
-			640 = {
-				if = {
-					limit = { 
-						OR = { 
-							ENG = { controls_state = 640 }
-							any_other_country = {
-								is_in_faction_with = ENG
-								controls_state = 640
-							} 
-						}
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 2
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = air_base
-						level = 2
-						instant_build = yes
-					}
-				}
-			}
-			325 = {
-				if = {
-					limit = { 
-					OR = { 
-							CHI = { controls_state = 325 }
-							any_other_country = {
-								is_in_faction_with = CHI
-								controls_state = 640
-							} 
-						}
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 2
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = air_base
-						level = 2
-						instant_build = yes
-					}
-				}
-			}
-			601 = {
-				if = {
-					limit = { 
-						OR = { 
-							CHI = { controls_state = 601 }
-							any_other_country = {
-								is_in_faction_with = CHI
-								controls_state = 601
-							} 
-						} }
-					add_building_construction = {
-						type = infrastructure
-						level = 2
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = air_base
-						level = 1
-						instant_build = yes
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			add_war_support = 0.05
-			CHI = {
-				add_opinion_modifier = { target = ENG modifier = burma_road_good } 
-				country_event = britain.4
-			}
-			JAP = {
-				add_opinion_modifier = { target = ENG modifier = burma_road_bad } 
-			} 
-		}
-	}
-
-	focus = {
 		id = singapore_focus
 		prerequisite = { focus = uk_asia_focus }
 		icon = GFX_goal_generic_fortify_city
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = uk_asia_focus
-		cost = 5
+		cost = 10
 
 		available = {
 			336 = {
@@ -2116,25 +1998,46 @@ focus_tree = {
 		completion_reward = { 
 			navy_experience = 25
 			336 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				set_building_level = {
 					type = coastal_bunker
 					level = 3
 					province = 12299
 					instant_build = yes
 				}
-				if = {
-					limit = {
-						CONTROLLER = {
-							NOT = { tag = ENG }
-						}
-					}
-					CONTROLLER = {
-						add_autonomy_ratio = {
-							value = -0.02
-							localization = singapore_focus
-						}
-					}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 12299
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 7329
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 4310
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 7342
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
 				}
 			}
 		}
@@ -2188,49 +2091,6 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}
-				if = {
-					limit = {
-						CONTROLLER = {
-							NOT = { tag = ENG }
-						}
-					}
-					CONTROLLER = {
-						add_autonomy_ratio = {
-							value = -0.02
-							localization = sp_landward_forts_focus
-						}
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = peninsular_focus
-		prerequisite = { focus = sp_landward_forts_focus }
-		icon = GFX_goal_generic_construction2
-		x = 0
-		y = 1
-		relative_position_id = sp_landward_forts_focus
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}	
-		available = {
-			336 = {
-				CONTROLLER = {
-					OR = {
-						tag = ENG
-						is_subject_of = ENG
-					}
-				}
-			}
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			336 = {
 				add_building_construction = {
 					type = bunker
 					level = 3
@@ -2253,19 +2113,6 @@ focus_tree = {
 					type = air_base
 					level = 2
 					instant_build = yes
-				}
-				if = {
-					limit = {
-						CONTROLLER = {
-							NOT = { tag = ENG }
-						}
-					}
-					CONTROLLER = {
-						add_autonomy_ratio = {
-							value = -0.02
-							localization = peninsular_focus
-						}
-					}
 				}
 			}
 		}

@@ -40,7 +40,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = fin_army_effort
 		cost = 10
-
+		available = {
+			is_ai = no
+		}
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -282,7 +284,9 @@ focus_tree = {
 		x = 7
 		y = 0
 		cost = 10
-
+		available = {
+			is_ai = no
+		}
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -631,7 +635,9 @@ focus_tree = {
 		x = 11
 		y = 0
 		cost = 10
-
+		available = {
+			is_ai = no
+		}
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -770,15 +776,19 @@ focus_tree = {
 		}
 	}
 	
-		focus = {
+	focus = {
 		id = fin_continuation_prep
 		icon = GFX_focus_chi_mission_to_germany
 		available = {
 			date > 1941.1.1
 			is_ai = no
+			has_game_rule = { 
+				rule = FIN_WAR
+				option = FINNLAND_BARB
+			}
 		}
-				prerequisite = { focus = fin_why_we_fight }
-			relative_position_id = fin_why_we_fight
+		prerequisite = { focus = fin_why_we_fight }
+		relative_position_id = fin_why_we_fight
 		x = 1
 		y = 1
 	
@@ -787,6 +797,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			GER = { add_to_faction = FIN }
 			add_ideas = fin_continuation_war
 		}
 	}
@@ -796,9 +807,12 @@ focus_tree = {
 		id = fin_continuation
 		icon = GFX_focus_eng_expose_the_belly_of_the_bear
 		available = {
-#			date > 1941.6.22
-#			is_ai = no
-			always = no
+			date > 1941.6.22
+			is_ai = no
+			has_game_rule = { 
+				rule = FIN_WAR
+				option = FINNLAND_BARB
+			}
 		}
 		prerequisite = { focus = fin_continuation_prep }
 		relative_position_id = fin_continuation_prep
