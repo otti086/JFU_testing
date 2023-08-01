@@ -1764,7 +1764,7 @@
 
 		completion_reward = {
 			#ressource rights in sov
-			#
+			#in einem no impact stahl irgendwas near border
 		}
 	}
 
