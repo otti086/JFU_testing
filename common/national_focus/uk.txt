@@ -190,6 +190,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_prep_africa
+		prerequisite = { focus = limited_rearmament_focus }
 		icon = GFX_goal_generic_construct_infrastructure
 		relative_position_id = limited_rearmament_focus
 		x = 2
@@ -202,7 +203,7 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			551 = {
+			549 = {
 				set_building_level = {
 					type = air_base
 					level = 40
