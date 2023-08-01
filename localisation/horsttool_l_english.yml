@@ -997,5 +997,8 @@
  NOR_spec_ops:0 "Fleischer's Plan"
  NOR_crofter:0 "Operation Crofter"
 
+ GULF_OF_ADEN:0 "Gulf of Aden"
+ LOWER_EGYPT:0 "Lower Egypt"
+
  PRE_SETS: "JFU Presets"
  HORST_GROUPKEY: "JFU Rules"
