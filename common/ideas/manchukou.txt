@@ -480,6 +480,104 @@ maN_red_army4 = {
 }
 }
 
+maN_red_army5 = {
+	name = "Manschurian Red Army"
+
+	picture = idea_saf_soviet_advisers
+
+	allowed = {
+		always = no
+	}
+
+	allowed_civil_war = {
+		original_tag = MAN
+	}
+	
+	removal_cost = -1
+
+	modifier = {
+		army_org_factor = 0.1
+		mobilization_laws_cost_factor = -0.1
+		experience_loss_factor = 0.15
+		army_morale_factor = 0.05
+		conscription_factor = 0.03
+	}
+	
+	equipment_bonus = {
+		infantry_equipment = {
+		build_cost_ic = -0.2 
+		soft_attack = -0.2
+		defense = -0.2
+		instant = yes
+	}
+}
+}
+
+maN_red_army6 = {
+	name = "Manschurian Red Army"
+
+	picture = idea_saf_soviet_advisers
+
+	allowed = {
+		always = no
+	}
+
+	allowed_civil_war = {
+		original_tag = MAN
+	}
+	
+	removal_cost = -1
+
+	modifier = {
+		army_org_factor = 0.1
+		mobilization_laws_cost_factor = -0.1
+		experience_loss_factor = 0.15
+		army_morale_factor = 0.05
+		conscription_factor = 0.03
+	}
+	
+	equipment_bonus = {
+		infantry_equipment = {
+		build_cost_ic = -0.1
+		
+		instant = yes
+	}
+}
+}
+
+maN_red_army7 = {
+	name = "Manschurian Red Army"
+
+	picture = idea_saf_soviet_advisers
+
+	allowed = {
+		always = no
+	}
+
+	allowed_civil_war = {
+		original_tag = MAN
+	}
+	
+	removal_cost = -1
+
+	modifier = {
+		army_org_factor = 0.1
+		mobilization_laws_cost_factor = -0.1
+		experience_loss_factor = 0.15
+		army_morale_factor = 0.05
+		conscription_factor = 0.03
+	}
+	
+	equipment_bonus = {
+		infantry_equipment = {
+		build_cost_ic = -0.2 
+		soft_attack = -0.2
+		defense = -0.2
+		instant = yes
+	}
+}
+}
+
 MAN_SOV_FIVE_YEAR_PLAN = {
 	name = "Five Year Plan"
 

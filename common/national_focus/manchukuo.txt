@@ -1758,7 +1758,6 @@
 		bypass = {
 			
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -1868,11 +1867,23 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			if = { limit ={
+				NOT = {
+					has_completed_focus = MAN_PLATZHALTE_5
+				}
+			}
 			swap_ideas = {
 				remove_idea = maN_red_army3
 				add_idea = maN_red_army4
-			}
-		}
+						}
+					}
+			else = {
+				swap_ideas = {
+					remove_idea = maN_red_army3
+					add_idea = maN_red_army5
+				}
+				   }
+							}
 	}
 
 	focus = {
@@ -1917,7 +1928,7 @@
 	focus = {
 		id = MAN_PLATZHALTE_5
 		text = "Red Guard"
-		icon = GFX_focus_chi_mission_to_the_soviet_union
+		icon = GFX_focus_SOV_support_spanish_poum
 		prerequisite = { focus = MAN_PLATZHALTE_2 }
 		
 		x = -9
@@ -1943,8 +1954,22 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			#recovery 5
-			#3 pop factor
+			if = { limit ={
+				NOT = {
+					has_completed_focus = MAN_PLATZHALTE_3
+				}
+			}
+			swap_ideas = {
+				remove_idea = maN_red_army3
+				add_idea = maN_red_army6
+						}
+					}
+			else = {
+				swap_ideas = {
+					remove_idea = maN_red_army3
+					add_idea = maN_red_army7
+				}
+				   }
 		}
 	}
 	
