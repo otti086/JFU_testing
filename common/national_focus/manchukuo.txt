@@ -1521,8 +1521,8 @@
 		id = CHI_hire_soviet_designer
 		icon = GFX_goal_generic_soviet_construction
 		prerequisite = { focus = CHI_rapprochement_with_soviet_union }
-		x = 3
-		y = 0
+		x = 4
+		y = -1
 		relative_position_id = CHI_purchase_tanks
 
 		cost = 10
@@ -1739,6 +1739,201 @@
 			}
 		}
 	}
+
+	focus = {
+		id = MAN_PLATZHALTE_1
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		prerequisite = { focus = CHI_invite_ntmkf }
+		prerequisite = { focus = CHI_hire_soviet_designer }
+		
+		x = -10
+		y = 4
+		relative_position_id = CHI_invite_foreign_investors
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = MAN_PLATZHALTE_6
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		prerequisite = { focus = CHI_hire_soviet_designer }
+		
+		x = -11
+		y = 5
+		relative_position_id = CHI_invite_foreign_investors
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = MAN_PLATZHALTE_2
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		prerequisite = { focus = CHI_invite_ntmkf }
+		
+		x = -9
+		y = 5
+		relative_position_id = CHI_invite_foreign_investors
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = MAN_PLATZHALTE_3
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		prerequisite = { focus = MAN_PLATZHALTE_6 }
+		prerequisite = { focus = MAN_PLATZHALTE_2 }
+		
+		x = -10
+		y = 6
+		relative_position_id = CHI_invite_foreign_investors
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = MAN_PLATZHALTE_4
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		prerequisite = { focus = MAN_PLATZHALTE_6 }
+		
+		x = -11
+		y = 7
+		relative_position_id = CHI_invite_foreign_investors
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = MAN_PLATZHALTE_5
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		prerequisite = { focus = MAN_PLATZHALTE_2 }
+		
+		x = -9
+		y = 7
+		relative_position_id = CHI_invite_foreign_investors
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	
 
 	focus = {
 		id = CHI_reach_out_to_france
@@ -2231,7 +2426,7 @@
 	focus = {
 		id = CHI_renegotiate_the_unequal_treaties
 		icon = GFX_focus_renounce_the_treaty_of_trianon
-		prerequisite = { focus = CHI_modern_logistics focus = CHI_combined_arms_warfare focus = CHI_naval_aviation focus = CHI_GER_TANK} 
+		prerequisite = { focus = CHI_modern_logistics focus = CHI_combined_arms_warfare focus = CHI_naval_aviation focus = CHI_GER_TANK focus = MAN_PLATZHALTE_5 focus = MAN_PLATZHALTE_4} 
 		x = 0
 		y = 1
 		relative_position_id = CHI_modern_logistics
