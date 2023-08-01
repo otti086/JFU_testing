@@ -347,6 +347,14 @@ set_technology = {
 	fuel_refining = 1
 	basic_train = 1
 	synth_oil_experiments = 1
+
+	rangers = 1 #special forces weil clown minors
+	marines = 1
+	tech_recon = 1
+
+	gwtank_chassis = 1 #nsb man
+
+	building_limiter_tech = 1 #air base max level
 }
 if = {
 	limit = {
