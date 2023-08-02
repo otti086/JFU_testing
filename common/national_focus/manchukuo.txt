@@ -1080,7 +1080,7 @@
 	focus = {
 		id = CHI_invite_foreign_investors 
 		icon = GFX_focus_generic_concessions
-		x = 23
+		x = 18
 		y = 0
 
 		cost = 10
@@ -1119,9 +1119,8 @@
 			focus = CHI_british_cooperation
 			focus = CHI_Italy_jka
 			focus = CHI_collaboration_with_the_japanese
-			focus = CHI_mission_to_the_usa
 		}
-		x = -15
+		x = -13
 		y = 1
 		relative_position_id = CHI_invite_foreign_investors
 		cost = 10
@@ -1556,9 +1555,8 @@
 			focus = CHI_british_cooperation
 			focus = CHI_Italy_jka
 			focus = CHI_collaboration_with_the_japanese
-			focus = CHI_mission_to_the_usa
 		}
-		x = -10
+		x = -8
 		y = 1
 		relative_position_id = CHI_invite_foreign_investors
 
@@ -1587,55 +1585,6 @@
 				uses = 2
 				category = cat_mass_assault
 			}
-		}
-	}
-
-	focus = {
-		id = CHI_mission_to_the_usa
-		icon = GFX_focus_usa_recruit_the_free_corps
-		text = "Mission to USA"
-		prerequisite = { focus = CHI_invite_foreign_investors }
-		mutually_exclusive = {
-			focus = CHI_mission_to_the_soviet_union
-			focus = CHI_mission_to_germany
-			focus = CHI_reach_out_to_france
-			focus = CHI_british_cooperation
-			focus = CHI_Italy_jka
-			focus = CHI_collaboration_with_the_japanese
-		}
-		x = -5
-		y = 1
-		relative_position_id = CHI_invite_foreign_investors
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 4
-				tag = CHI
-			}
-		}
-
-		available = {
-			NOT = {
-				has_War_with = USA
-			}
-			USA = {
-				has_capitulated = no
-			}
-		}
-
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-
 		}
 	}
 
@@ -1737,11 +1686,12 @@
 
 	focus = {
 		id = MAN_PLATZHALTE_1
-		icon = GFX_focus_chi_mission_to_the_soviet_union
+		icon = GFX_goal_continuous_non_factory_construct
+		text = "Soviet Manchurian Mining Company"
 		prerequisite = { focus = CHI_invite_ntmkf }
 		prerequisite = { focus = CHI_hire_soviet_designer }
 		
-		x = -10
+		x = -8
 		y = 4
 		relative_position_id = CHI_invite_foreign_investors
 
@@ -1763,8 +1713,18 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			#ressource rights in sov
-			#in einem no impact stahl irgendwas near border
+			715 = {
+				add_resource = {
+					type = steel
+					amount = 18
+				}
+			}
+			657 ={
+				add_resource = {
+					type = steel
+					amount = -18
+				}
+			}
 		}
 	}
 
@@ -1774,7 +1734,7 @@
 		icon = GFX_focus_generic_industry_2
 		prerequisite = { focus = CHI_hire_soviet_designer }
 		
-		x = -11
+		x = -9
 		y = 5
 		relative_position_id = CHI_invite_foreign_investors
 
@@ -1807,7 +1767,7 @@
 		text = "Produce Even Cheaper Guns"
 		prerequisite = { focus = CHI_invite_ntmkf }
 		
-		x = -9
+		x = -7
 		y = 5
 		relative_position_id = CHI_invite_foreign_investors
 
@@ -1844,7 +1804,7 @@
 		prerequisite = { focus = MAN_PLATZHALTE_6 }
 		prerequisite = { focus = MAN_PLATZHALTE_2 }
 		
-		x = -10
+		x = -8
 		y = 6
 		relative_position_id = CHI_invite_foreign_investors
 
@@ -1892,7 +1852,7 @@
 		icon = GFX_goal_reichsautobahn
 		prerequisite = { focus = MAN_PLATZHALTE_6 }
 		
-		x = -11
+		x = -9
 		y = 7
 		relative_position_id = CHI_invite_foreign_investors
 
@@ -1931,7 +1891,7 @@
 		icon = GFX_focus_SOV_support_spanish_poum
 		prerequisite = { focus = MAN_PLATZHALTE_2 }
 		
-		x = -9
+		x = -7
 		y = 7
 		relative_position_id = CHI_invite_foreign_investors
 
@@ -1985,10 +1945,8 @@
 			focus = CHI_british_cooperation
 			focus = CHI_Italy_jka
 			focus = CHI_collaboration_with_the_japanese
-			focus = CHI_mission_to_the_usa
-			focus = CHI_mission_to_the_usa
 		}
-		x = 0
+		x = -3
 		y = 1
 		relative_position_id = CHI_invite_foreign_investors
 
@@ -1999,12 +1957,7 @@
 		}
 
 		available = {
-			not = {
-				has_war_with = FRA
-			}
-			FRA = {
-				has_capitulated = no
-			}
+			
 		}
 
 		bypass = {
@@ -2016,31 +1969,11 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			FRA = {
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = CHI_reach_out_to_france
-				}
-				add_ai_strategy = {
-					type = alliance
-					id = ROOT
-					value = 100
-				}
-				add_ai_strategy = {
-					type = protect
-					id = ROOT
-					value = 100
-				}
-				add_ai_strategy = {
-					type = send_volunteers_desire
-					id = ROOT
-					value = 100
-				}
-				add_ai_strategy = {
-					type = support
-					id = ROOT
-					value = 100
-				}
+			add_doctrine_cost_reduction = {
+				name = ITA_preserve_army_traditions
+				cost_reduction = 1
+				uses = 2
+				category = cat_grand_battle_plan
 			}
 		}
 	}
@@ -2049,7 +1982,7 @@
 		id = CHI_small_arms_expertise
 		icon = GFX_focus_secret_rearmament
 		prerequisite = { focus = CHI_reach_out_to_france }
-		x = -2
+		x = -1
 		y = 1
 		relative_position_id = CHI_reach_out_to_france
 
@@ -2084,28 +2017,19 @@
 		id = CHI_elite_mountaineers
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = CHI_small_arms_expertise }
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = CHI_small_arms_expertise
 
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 0.1
-				NOT = {
-					has_tech = tech_mountaineers # Wait for the full benefit
-				}
-			}
-
 		}
 
 		available = {
 		}
 
 		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
@@ -2120,32 +2044,6 @@
 				uses = 1
 				category = mountaineers_tech
 			}
-			if = {
-				limit = {
-					has_tech = tech_mountaineers
-				}
-				custom_effect_tooltip = CHI_free_mountain_template_tt
-				division_template = {
-					name = "Chinese Mountain Division"
-					division_names_group = CHI_MNT_01
-					regiments = {
-						mountaineers = { x = 0 y = 0 }
-						mountaineers = { x = 0 y = 1 }
-						mountaineers = { x = 0 y = 2 }
-			
-						mountaineers = { x = 1 y = 0 }
-						mountaineers = { x = 1 y = 1 }
-						mountaineers = { x = 1 y = 2 }
-			
-						mountaineers = { x = 2 y = 0 }
-						artillery_brigade = { x = 2 y = 1 }
-						artillery_brigade = { x = 2 y = 2 }
-					}
-					support = {
-						artillery = { x = 0 y = 0 }
-					}
-				}
-			}
 		}
 	}
 
@@ -2153,8 +2051,8 @@
 		id = CHI_heavy_weapons
 		icon = GFX_goal_generic_army_artillery2
 		prerequisite = { focus = CHI_elite_mountaineers }
-		x = -1
-		y = 2
+		x = 0
+		y = 3
 		relative_position_id = CHI_small_arms_expertise
 		
 		cost = 10
@@ -2188,41 +2086,18 @@
 		id = CHI_guarantee_the_hanoi_route
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = CHI_reach_out_to_france }
-		x = 0
-		y = 1
+		x = 1
+		y = 2
 		relative_position_id = CHI_reach_out_to_france
 
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				FRA = {
-					has_war = yes
-				}
-				factor = 0
-			}
+			
 		}
 
 		available = {
-			325 = { #Yunnan
-				CONTROLLER = {
-					OR = {
-						tag = ROOT
-						is_subject_of = ROOT
-						is_in_faction_with = ROOT
-					}
-				}
-			}
-			671 = { #Tonkin
-				CONTROLLER = {
-					NOT = { has_war_with = ROOT }
-					OR = {
-						original_tag = FRA
-						is_subject_of = FRA
-					}
-				}
-			}
+			
 		}
 
 		bypass = {
@@ -2247,9 +2122,42 @@
 
 	focus = {
 		id = CHI_construction_battalions
+		text = "Focus on Quantität"
 		icon = GFX_goal_generic_construction2
 		prerequisite = { focus = CHI_guarantee_the_hanoi_route focus = CHI_burma_road }
+		mutually_exclusive = { focus = CHI_local_fighter_production }
 		x = 1
+		y = 1
+		relative_position_id = CHI_guarantee_the_hanoi_route
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = CHI_PLATZHALTER_2
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = CHI_guarantee_the_hanoi_route }
+		prerequisite = { focus = CHI_elite_mountaineers }
+		x = -1
 		y = 1
 		relative_position_id = CHI_guarantee_the_hanoi_route
 
@@ -2282,12 +2190,12 @@
 	}
 
 	focus = {
-		id = CHI_french_military_mission
-		icon = GFX_goal_generic_defence
+		id = CHI_PLATZHALTER_1
+		icon = GFX_goal_generic_construction2
 		prerequisite = { focus = CHI_guarantee_the_hanoi_route }
 		x = 0
-		y = 3
-		relative_position_id = CHI_reach_out_to_france
+		y = 2
+		relative_position_id = CHI_guarantee_the_hanoi_route
 
 		cost = 10
 
@@ -2304,170 +2212,136 @@
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		completion_reward = {
-			air_experience = 25
-			if = {
-				limit = {
-					NOT = {
-						any_other_country = {
-							any_army_leader = {
-								has_id = 604
-							}
-						}
-					}
-				}
-				create_corps_commander = {
-					name = "Charles Berger"
-					gfx = GFX_europe_generic_land_1
-					attack_skill = 2
-					defense_skill = 3
-					planning_skill = 2
-					logistics_skill = 3
-					id = 604
-					skill = 3
-				}
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						any_other_country = {
-							any_army_leader = {
-								has_id = 605
-							}
-						}
-					}
-				}
-				create_corps_commander = {
-					name = "Jean Beauton"
-					gfx = GFX_europe_generic_land_2
-					attack_skill = 2
-					defense_skill = 3
-					planning_skill = 2
-					logistics_skill = 3
-					id = 605
-					skill = 3
-				}
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						any_other_country = {
-							any_army_leader = {
-								has_id = 606
-							}
-						}
-					}
-				}
-				create_corps_commander = {
-					name = "Thierry BÃ©nÃ©dicte"
-					gfx = GFX_europe_generic_land_3
-					attack_skill = 2
-					defense_skill = 3
-					planning_skill = 2
-					logistics_skill = 3
-					id = 606
-					skill = 3
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = CHI_french_drill
-		icon = GFX_goal_generic_build_tank
-		prerequisite = { focus = CHI_heavy_weapons }
-		prerequisite = { focus = CHI_french_military_mission }
-		x = 0
-		y = 5
-		relative_position_id = CHI_reach_out_to_france
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			every_army_leader = {
-				add_defense = 1
-			}
-			add_ideas = CHI_french_drill		
-		}
-	}
-
-	focus = {
-		id = CHI_modern_logistics
-		icon = GFX_goal_generic_army_motorized
-		prerequisite = { focus = CHI_french_drill focus = CHI_ledo_road }
-		x = 0
-		y = 1
-		relative_position_id = CHI_french_drill
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 4
-				tag = CHI
-			}
-		}
-
-		available = {
-			OR = {
-				FRA_will_support = yes
-				ENG_will_support = yes
-			}
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			every_army_leader = {
-				add_logistics = 1
-			}
-			add_ideas = CHI_modern_logistics
+			add_ideas = CHI_construction_battalions
 			add_tech_bonus = {
-				name = CHI_modern_logistics
+				name = CHI_construction_battalions
 				bonus = 1.0
 				uses = 1
-				technology = tech_field_hospital
-				technology = tech_field_hospital2
-				technology = tech_field_hospital3
-				technology = tech_field_hospital4
-				technology = tech_logistics_company
-				technology = tech_logistics_company2
-				technology = tech_logistics_company3
-				technology = tech_logistics_company4
+				category = engineers_tech
 			}
 		}
 	}
+
+	focus = {
+		id = CHI_PLATZHALTER_5
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = CHI_PLATZHALTER_1 }
+		prerequisite = { focus = CHI_heavy_weapons }
+		x = -1
+		y = 3
+		relative_position_id = CHI_guarantee_the_hanoi_route
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = CHI_construction_battalions
+			add_tech_bonus = {
+				name = CHI_construction_battalions
+				bonus = 1.0
+				uses = 1
+				category = engineers_tech
+			}
+		}
+	}
+
+	focus = {
+		id = CHI_PLATZHALTER_3
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = CHI_PLATZHALTER_1 }
+		x = 0
+		y = 4
+		relative_position_id = CHI_guarantee_the_hanoi_route
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = CHI_construction_battalions
+			add_tech_bonus = {
+				name = CHI_construction_battalions
+				bonus = 1.0
+				uses = 1
+				category = engineers_tech
+			}
+		}
+	}
+
+	focus = {
+		id = CHI_PLATZHALTER_4
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = CHI_heavy_weapons }
+		x = -2
+		y = 4
+		relative_position_id = CHI_guarantee_the_hanoi_route
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = CHI_construction_battalions
+			add_tech_bonus = {
+				name = CHI_construction_battalions
+				bonus = 1.0
+				uses = 1
+				category = engineers_tech
+			}
+		}
+	}
+
+
 
 	focus = {
 		id = CHI_renegotiate_the_unequal_treaties
 		icon = GFX_focus_renounce_the_treaty_of_trianon
-		prerequisite = { focus = CHI_modern_logistics focus = CHI_combined_arms_warfare focus = CHI_naval_aviation focus = CHI_GER_TANK focus = MAN_PLATZHALTE_5 focus = MAN_PLATZHALTE_4} 
-		x = 0
-		y = 1
+		prerequisite = { focus = CHI_combined_arms_warfare focus = CHI_naval_aviation focus = CHI_GER_TANK focus = MAN_PLATZHALTE_5 focus = MAN_PLATZHALTE_4 focus = CHI_PLATZHALTER_4 focus = CHI_PLATZHALTER_3 focus = CHI_ENG_PLATZHALTER1 focus = CHI_ENG_PLATZHALTER3} 
+		x = 18
+		y = 8
 		relative_position_id = CHI_modern_logistics
 
 		cost = 10
@@ -2503,30 +2377,19 @@
 			focus = CHI_collaboration_with_the_japanese
 			focus = CHI_reach_out_to_france
 			focus = CHI_Italy_jka
-			focus = CHI_mission_to_the_usa
 		}
-		x = 5
+		x = 3
 		y = 1
 		relative_position_id = CHI_invite_foreign_investors
 
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 4
-				tag = CHI
-			}
-			modifier = {
-				factor = 10
-				has_country_flag = ENG_influenced_by_britain_flag
-			}
+			
 		}
 
 		available = {
-			not = {
-				has_war_with = ENG
-			}
+			
 		}
 
 		bypass = {
@@ -2538,31 +2401,11 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			ENG = {
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = CHI_british_cooperation
-				}
-				add_ai_strategy = {
-					type = alliance
-					id = ROOT
-					value = 100
-				}
-				add_ai_strategy = {
-					type = protect
-					id = ROOT
-					value = 100
-				}
-				add_ai_strategy = {
-					type = send_volunteers_desire
-					id = ROOT
-					value = 100
-				}
-				add_ai_strategy = {
-					type = support
-					id = ROOT
-					value = 100
-				}
+			add_doctrine_cost_reduction = {
+				name = ITA_preserve_army_traditions
+				cost_reduction = 1
+				uses = 2
+				category = cat_grand_battle_plan
 			}
 		}
 	}
@@ -2578,9 +2421,8 @@
 			focus = CHI_british_cooperation
 			focus = CHI_reach_out_to_france
 			focus = CHI_collaboration_with_the_japanese
-			focus = CHI_mission_to_the_usa
 		}
-		x = 10
+		x = 8
 		y = 1
 		relative_position_id = CHI_invite_foreign_investors
 
@@ -2613,57 +2455,18 @@
 		id = CHI_burma_road
 		icon = GFX_goal_generic_army_motorized
 		prerequisite = { focus = CHI_british_cooperation }
-		x = 0
-		y = 1
+		x = -1
+		y = 2
 		relative_position_id = CHI_british_cooperation
 
 		cost = 10
 
 		ai_will_do = {
-			factor = 1		
-			modifier = {
-				factor = 4
-				tag = CHI
-			}
-			modifier = {
-				RAJ = {
-					exists = yes
-					NOT = {
-						is_in_faction_with = ENG
-					}
-				}
-				factor = 0
-			}
+			
 		}
 
 		available = {
-			325 = { #Yunnan
-				CONTROLLER = {
-					OR = {
-						tag = ROOT
-						is_subject_of = ROOT
-						is_in_faction_with = ROOT
-					}
-				}
-			}
-			288 = { #Burma
-				CONTROLLER = {
-					NOT = { has_war_with = ROOT }
-					OR = {
-						original_tag = ENG
-						is_subject_of = ENG
-					}				
-				}
-			}
-			640 = { #Mandalay
-				CONTROLLER = {
-					NOT = { has_war_with = ROOT }
-					OR = {
-						original_tag = ENG
-						is_subject_of = ENG
-					}				
-				}
-			}
+			
 		}
 
 		bypass = {
@@ -2675,17 +2478,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			288 = { #Burma
-				set_state_flag = CHI_needed_for_burma_road
-			}
-			325 = { #Yunnan
-				set_state_flag = CHI_needed_for_burma_road
-			}
-			640 = { #Mandalay
-				set_state_flag = CHI_needed_for_burma_road
-			}
-			set_variable = { CHI_burma_road_current_level = 2 }
-			add_offsite_building = { type = arms_factory level = 2 }
+			add_offsite_building = { type = industrial_complex level = 3 }
 		}
 	}
 
@@ -2693,9 +2486,9 @@
 		id = CHI_ledo_road
 		icon = GFX_goal_generic_construction2
 		prerequisite = { focus = CHI_burma_road }
-		prerequisite = { focus = CHI_the_hump }
+		prerequisite = { focus = CHI_the_chu_x_po }
 		x = 0
-		y = 5
+		y = 3
 		relative_position_id = CHI_british_cooperation
 
 		cost = 10
@@ -2774,8 +2567,8 @@
 		id = CHI_camco
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = CHI_british_cooperation }
-		x = 3
-		y = 2
+		x = 1
+		y = 1
 		relative_position_id = CHI_british_cooperation
 
 		cost = 10
@@ -2807,21 +2600,22 @@
 
 	focus = {
 		id = CHI_local_fighter_production
+		text = "Focus on Qualität"
 		icon = GFX_goal_generic_air_fighter2
-		prerequisite = { focus = CHI_burma_road }
-		prerequisite = { focus = CHI_camco }
-		x = -2
-		y = 1
+		prerequisite = { focus = CHI_burma_road focus = CHI_guarantee_the_hanoi_route }
+		mutually_exclusive = { focus = CHI_construction_battalions }
+		x = -3
+		y = 2
 		relative_position_id = CHI_camco
 
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
+			
 		}
 
 		available = {
-			has_idea = CHI_camco_1
+			
 		}
 
 		bypass = {
@@ -2833,16 +2627,15 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = CHI_camco_2
+			
 		}
 	}
 
 	focus = {
 		id = CHI_local_bomber_production
 		icon = GFX_goal_generic_air_bomber
-		prerequisite = { focus = CHI_local_fighter_production }
-		x = 0
+		prerequisite = { focus = CHI_burma_road }
+		x = 1
 		y = 1
 		relative_position_id =  CHI_local_fighter_production
 
@@ -2871,11 +2664,50 @@
 	}
 
 	focus = {
+		id = CHI_the_chu_x_po
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = CHI_camco }
+		x = 0
+		y = 1
+		relative_position_id = CHI_camco
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 4
+				tag = CHI
+			}
+		}
+
+		available = {
+			NOT = { has_tech = fighter3 }
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = CHI_the_chu_x_po
+				ahead_reduction = 2
+				technology = fighter3				
+			}
+		}
+	}
+
+	focus = {
 		id = CHI_the_hump
 		icon = GFX_goal_generic_air_production
-		prerequisite = { focus = CHI_camco }
-		x = 1
-		y = 2
+		prerequisite = { focus = CHI_the_chu_x_po }
+		x = 0
+		y = 3
 		relative_position_id = CHI_camco
 
 		cost = 10
@@ -2939,43 +2771,91 @@
 	}
 
 	focus = {
-		id = CHI_the_chu_x_po
-		icon = GFX_goal_generic_air_fighter
-		prerequisite = { focus = CHI_camco }
-		x = 0
-		y = 1
-		relative_position_id = CHI_camco
+		id = CHI_ENG_PLATZHALTER2
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = CHI_local_bomber_production }
+		prerequisite = { focus = CHI_the_hump }
+		x = 2
+		y = 2
+		relative_position_id =  CHI_local_fighter_production
 
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 4
-				tag = CHI
-			}
 		}
 
 		available = {
-			NOT = { has_tech = fighter3 }
 		}
 
 		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = CHI_the_chu_x_po
-				ahead_reduction = 2
-				technology = fighter3				
-			}
+			
 		}
 	}
+
+	focus = {
+		id = CHI_ENG_PLATZHALTER1
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = CHI_local_bomber_production }
+		x = 1
+		y = 3
+		relative_position_id =  CHI_local_fighter_production
+
+		cost = 10
+
+		ai_will_do = {
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = CHI_ENG_PLATZHALTER3
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = CHI_the_hump }
+		x = 3
+		y = 3
+		relative_position_id =  CHI_local_fighter_production
+
+		cost = 10
+
+		ai_will_do = {
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+
 	focus = {
 		id = CHI_collaboration_with_the_japanese
 		icon = GFX_focus_chi_collaboration_with_the_japanese
@@ -2986,9 +2866,8 @@
 			focus = CHI_british_cooperation
 			focus = CHI_reach_out_to_france
 			focus = CHI_Italy_jka
-			focus = CHI_mission_to_the_usa
 		}
-		x = 15
+		x = 13
 		y = 1
 		relative_position_id = CHI_invite_foreign_investors
 
