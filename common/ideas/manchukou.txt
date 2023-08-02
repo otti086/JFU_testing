@@ -36,7 +36,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = e
+			picture = idea_man_five_year_plan_industry
 
 			equipment_bonus = {
 			artillery_equipment = {
@@ -60,7 +60,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = e
+			picture = idea_man_five_year_plan_industry
 
 			equipment_bonus = {
 			artillery_equipment = {
@@ -85,7 +85,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = e
+			picture = idea_man_five_year_plan_industry
 
 			equipment_bonus = {
 			artillery_equipment = {
@@ -113,7 +113,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = e
+			picture = idea_man_five_year_plan_industry
 
 			equipment_bonus = {
 			artillery_equipment = {
@@ -143,7 +143,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = e
+			picture = idea_man_five_year_plan_industry
 
 			equipment_bonus = {
 				artillery_equipment = {
@@ -172,7 +172,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = e
+			picture = idea_man_five_year_plan_industry
 
 			equipment_bonus = {
 			artillery_equipment = {
@@ -201,7 +201,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = e
+			picture = idea_man_five_year_plan_industry
 
 			equipment_bonus = {
 				
@@ -226,7 +226,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = e
+			picture = idea_man_five_year_plan_industry
 
 			equipment_bonus = {
 			
