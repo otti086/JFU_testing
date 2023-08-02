@@ -32,7 +32,7 @@ leader_traits = {
 		
 		
 		non_shared_modifier = {
-			max_commander_army_size = 128
+			max_commander_army_size = 428
 		}
 
 		new_commander_weight = {
