@@ -347,7 +347,7 @@
 					limit = {
 						axis = yes
 					}
-					remove_idea = { GER_the_blitzkrieg }
+					remove_ideas = { GER_the_blitzkrieg }
 				}						
 			} 			
 		}

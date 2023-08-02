@@ -43,7 +43,9 @@ ideas = {
 	
 		CHI_elite_mountaineers = {
 
-			picture = ast_volunteer_defence_corps
+			name = "Great War Tactics"
+
+			picture = FRA_fortification_focus
 			
 			allowed = {
 				always = no
@@ -57,6 +59,49 @@ ideas = {
 			
 			modifier = {
 				special_forces_defence_factor = 0.1
+			}
+		}
+
+		CHI_elite_mountaineers2 = {
+
+			name = "Modern Infantry Tactics"
+
+			picture = idea_eng_special_air_service
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				special_forces_attack_factor = 0.05
+			}
+		}
+
+		CHI_elite_mountaineers3 = {
+
+			name = "Modern Infantry Tactics"
+
+			picture = idea_eng_special_air_service
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				special_forces_attack_factor = 0.05
+				max_planning = 0.1
 			}
 		}
 
@@ -101,6 +146,8 @@ ideas = {
 		CHI_construction_battalions = {
 
 			picture = ast_all_in
+			
+			name = "Elite Enginners"
 			
 			allowed = {
 				always = no

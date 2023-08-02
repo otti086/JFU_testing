@@ -2022,7 +2022,8 @@
 
 	focus = {
 		id = CHI_elite_mountaineers
-		icon = GFX_goal_generic_allies_build_infantry
+		text = "Great War Tactics"
+		icon = GFX_focus_secret_rearmament
 		prerequisite = { focus = CHI_small_arms_expertise }
 		x = -1
 		y = 1
@@ -2047,7 +2048,7 @@
 			add_ideas = CHI_elite_mountaineers
 			add_tech_bonus = {
 				name = CHI_elite_mountaineers
-				bonus = 1.0
+				bonus = 3.0
 				uses = 1
 				category = mountaineers_tech
 			}
@@ -2084,13 +2085,13 @@
 				name = CHI_heavy_weapons
 				bonus = 1.0
 				uses = 1
-				category = artillery3
+				technology = artillery3
 			}
 			add_tech_bonus = {
 				name = CHI_heavy_weapons
 				bonus = 1.0
 				uses = 1
-				category = artillery4
+				technology = artillery4
 			}
 		}
 	}
@@ -2136,9 +2137,9 @@
 	focus = {
 		id = CHI_construction_battalions
 		text = "Focus on Quantität"
-		icon = GFX_goal_generic_construction2
+		icon = GFX_focus_SWI_issue_war_bonds
 		prerequisite = { focus = CHI_guarantee_the_hanoi_route focus = CHI_burma_road }
-		mutually_exclusive = { focus = CHI_local_fighter_production }
+		mutually_exclusive = { focus = CHI_local_fighter_production }		
 		x = 1
 		y = 1
 		relative_position_id = CHI_guarantee_the_hanoi_route
@@ -2161,7 +2162,27 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			if = {
+				limit = {
+					has_idea = qualitänt4a 
+				}
+				swap_ideas = {
+					remove_idea = qualitänt4a
+					add_idea = qualitänt2a
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = qualitänt4b
+				}
+				swap_ideas = {
+					remove_idea = qualitänt4b
+					add_idea = qualitänt3b
+				}
+			}
+			else = {
+				add_ideas = qualitänt1a
+			}
 		}
 	}
 
@@ -2204,8 +2225,8 @@
 
 	focus = {
 		id = CHI_PLATZHALTER_1
-		text = "Elite Mountainer"
-		icon = GFX_focus_secret_rearmament
+		text = "Elite Engineers"
+		icon = GFX_goal_generic_construction2
 		prerequisite = { focus = CHI_guarantee_the_hanoi_route }
 		x = 0
 		y = 2
@@ -2232,7 +2253,7 @@
 			add_ideas = CHI_construction_battalions
 			add_tech_bonus = {
 				name = CHI_construction_battalions
-				bonus = 1.0
+				bonus = 3.0
 				uses = 1
 				category = engineers_tech
 			}
@@ -2241,8 +2262,10 @@
 
 	focus = {
 		id = CHI_PLATZHALTER_5
-		icon = GFX_goal_generic_construction2
+		icon = GFX_focus_SWI_issue_war_bonds
+		text = "Focus on Quantität"
 		prerequisite = { focus = CHI_PLATZHALTER_1 focus = CHI_local_bomber_production }
+
 		mutually_exclusive = { focus = CHI_ENG_PLATZHALTER2}
 		x = 1
 		y = 3
@@ -2266,19 +2289,34 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = CHI_construction_battalions
-			add_tech_bonus = {
-				name = CHI_construction_battalions
-				bonus = 1.0
-				uses = 1
-				category = engineers_tech
+			if = {
+				limit = {
+					has_idea = qualitänt1a 
+				}
+				swap_ideas = {
+					remove_idea = qualitänt1a
+					add_idea = qualitänt2a
+				}
 			}
-		}
-	}
+			else_if = {
+				limit = {
+					has_idea = qualitänt1b
+				}
+				swap_ideas = {
+					remove_idea = qualitänt1b
+					add_idea = qualitänt3a
+				}
+			}
+			else = {
+				add_ideas = qualitänt4a
+			}
+			}
+		}	
 
 	focus = {
 		id = CHI_PLATZHALTER_3
-		icon = GFX_goal_generic_construction2
+		text = "French Drill"
+		icon = GFX_focus_fra_french_union
 		prerequisite = { focus = CHI_PLATZHALTER_1 }
 		prerequisite = { focus = CHI_heavy_weapons }
 		x = -1
@@ -2303,23 +2341,21 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = CHI_construction_battalions
-			add_tech_bonus = {
-				name = CHI_construction_battalions
-				bonus = 1.0
-				uses = 1
-				category = engineers_tech
+			every_army_leader = {
+				add_planning = 1
+				add_defense = 1
+				add_logistics = 1
 			}
 		}
 	}
 
 	focus = {
 		id = CHI_renegotiate_the_unequal_treaties
+		text = "Develop Our New Conquered States in the North"
 		icon = GFX_focus_renounce_the_treaty_of_trianon
 		prerequisite = { focus = CHI_combined_arms_warfare focus = CHI_naval_aviation focus = CHI_GER_TANK focus = MAN_PLATZHALTE_5 focus = MAN_PLATZHALTE_4  focus = CHI_PLATZHALTER_3 focus = CHI_ENG_PLATZHALTER1 } 
-		x = 18
+		x = 20
 		y = 8
-		relative_position_id = CHI_modern_logistics
 
 		cost = 10
 
@@ -2340,7 +2376,12 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			609 = {
+				transfer_state_to = MAN
+			}
+			745 = {
+				transfer_state_to = MAN
+			}
 		}
 	}
 	focus = {
@@ -2462,7 +2503,7 @@
 
 	focus = {
 		id = CHI_camco
-		text = "Force Chinese Prisioners of War to Research Guns "
+		text = "Force Chinese Prisioners of War to Research Guns"
 		icon = GFX_focus_ETH_freedom_at_gunpoint
 		prerequisite = { focus = CHI_british_cooperation }
 		x = 0
@@ -2509,7 +2550,7 @@
 	focus = {
 		id = CHI_local_fighter_production
 		text = "Focus on Qualität"
-		icon = GFX_goal_generic_air_fighter2
+		icon = GFX_focus_fra_devalue_the_franc
 		prerequisite = { focus = CHI_burma_road focus = CHI_guarantee_the_hanoi_route }
 		mutually_exclusive = { focus = CHI_construction_battalions }
 		x = -2
@@ -2535,13 +2576,34 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			if = {
+				limit = {
+					has_idea = qualitänt4b
+				}
+				swap_ideas = {
+					remove_idea = qualitänt4b
+					add_idea = qualitänt2b
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = qualitänt4a
+				}
+				swap_ideas = {
+					remove_idea = qualitänt4b
+					add_idea = qualitänt2b
+				}
+			}
+			else = {
+				add_ideas = qualitänt1b
+			}
 		}
 	}
 
 	focus = {
 		id = CHI_local_bomber_production
-		icon = GFX_goal_generic_air_bomber
+		text = "Heavy Weapons"
+		icon = GFX_goal_generic_army_artillery2
 		prerequisite = { focus = CHI_burma_road }
 		x = 1
 		y = 1
@@ -2550,11 +2612,9 @@
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
 		}
 
 		available = {
-			has_idea = CHI_camco_2
 		}
 
 		bypass = {
@@ -2566,14 +2626,25 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = CHI_camco_3
+			add_tech_bonus = {
+				name = CHI_heavy_weapons
+				bonus = 1.0
+				uses = 1
+				technology = artillery3
+			}
+			add_tech_bonus = {
+				name = CHI_heavy_weapons
+				bonus = 1.0
+				uses = 1
+				technology = artillery4
+			}
 		}
 	}
 
 	focus = {
 		id = CHI_the_chu_x_po
-		icon = GFX_goal_generic_air_fighter
+		text = "Modern Infantry Tactics"
+		icon = GFX_focus_eng_special_air_service
 		prerequisite = { focus = CHI_camco }
 		x = 1
 		y = 1
@@ -2582,19 +2653,12 @@
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 4
-				tag = CHI
-			}
 		}
 
 		available = {
-			NOT = { has_tech = fighter3 }
 		}
 
 		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
@@ -2602,16 +2666,19 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_ideas = CHI_elite_mountaineers2
 			add_tech_bonus = {
-				name = CHI_the_chu_x_po
-				ahead_reduction = 2
-				technology = fighter3				
+				name = CHI_elite_mountaineers
+				bonus = 3.0
+				uses = 1
+				category = mountaineers_tech
 			}
 		}
 	}
 
 	focus = {
 		id = CH_he_chu_x_p
+		text = "Expand the Herrscher Werke"
 		icon = GFX_goal_generic_air_fighter
 		prerequisite = { focus = CHI_burma_road }
 		prerequisite = { focus = CHI_the_chu_x_po }
@@ -2642,13 +2709,14 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			add_offsite_building = {type = arms_factory level = 2}
 		}
 	}
 
 	focus = {
 		id = CHI_the_hump
-		icon = GFX_goal_generic_air_production
+		text = "Central Planning Staff"
+		icon = GFX_focus_usa_build_the_pentagon
 		prerequisite = { focus = CHI_the_chu_x_po }
 		x = 1
 		y = 3
@@ -2657,45 +2725,12 @@
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 4
-				tag = CHI
-			}
-			modifier = {
-				RAJ = {
-					exists = yes
-					NOT = {
-						is_in_faction_with = ENG
-					}
-				}
-				factor = 0
-			}
 		}
 
 		available = {
-			601 = { #Xikang
-				CONTROLLER = {
-					OR = {
-						tag = ROOT
-						is_subject_of = ROOT
-						is_in_faction_with = ROOT
-					}
-				}
-			}
-			434 = { #Arunachal Pradesh
-				CONTROLLER = {
-					NOT = { has_war_with = ROOT }
-					OR = {
-						original_tag = ENG
-						is_subject_of = ENG
-					}				
-				}
-			}
 		}
 
 		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
@@ -2703,21 +2738,19 @@
 		available_if_capitulated = no
 
 		completion_reward = {		
-			434 = { #Arunachal Pradesh
-				set_state_flag = CHI_needed_for_the_hump
+			swap_ideas = {
+				remove_idea = CHI_elite_mountaineers2
+				add_idea = CHI_elite_mountaineers3
 			}
-			601 = { #Xikang
-				set_state_flag = CHI_needed_for_the_hump
-			}	
-			set_variable = { CHI_the_hump_current_level = 1 }
-			add_offsite_building = { type = arms_factory level = 1 }
 		}
 	}
 
 	focus = {
 		id = CHI_ENG_PLATZHALTER2
-		icon = GFX_goal_generic_air_bomber
+		text = "Focus on Qualität"
+		icon = GFX_focus_fra_devalue_the_franc
 		prerequisite = { focus = CHI_local_bomber_production focus = CHI_PLATZHALTER_1 }
+
 		mutually_exclusive = { focus = CHI_PLATZHALTER_5 }
 		x = 0
 		y = 2
@@ -2739,13 +2772,34 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			if = {
+				limit = {
+					has_idea = qualitänt1a
+				}
+				swap_ideas = {
+					remove_idea = qualitänt1a
+					add_idea = qualitänt3b
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = qualitänt1b
+				}
+				swap_ideas = {
+					remove_idea = qualitänt1b
+					add_idea = qualitänt2b
+				}
+			}
+			else = {
+				add_ideas = qualitänt4b
+			}
 		}
 	}
 
 	focus = {
 		id = CHI_ENG_PLATZHALTER1
-		icon = GFX_goal_generic_air_bomber
+		text = "British Drill"
+		icon = GFX_focus_eng_expose_the_belly_of_the_bear
 		prerequisite = { focus = CHI_local_bomber_production }
 		prerequisite = { focus = CHI_the_hump }
 		x = 2
@@ -2768,7 +2822,11 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			every_army_leader = {
+			add_planning = 1
+			add_attack = 1
+			add_logistics = 1
+			}
 		}
 	}
 
@@ -2794,15 +2852,7 @@
 		}
 
 		available = {
-			OR = {
-				JAP = { has_government = ROOT }
-				JAP_will_support = yes
-			}
-			NOT = { has_wargoal_against = JAP }
-			NOT = { has_war_with = JAP }
-			JAP = {
-				has_capitulated = no
-			}
+		
 		}
 
 		bypass = {
