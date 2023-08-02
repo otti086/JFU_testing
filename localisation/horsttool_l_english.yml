@@ -989,7 +989,6 @@
  wtt_manchukou.11.C:0 "Build up our Civillian Industry"
  wtt_manchukou.11.M:0 "Invest in our Military Industry"
  wtt_manchukou.11.F:0 "Focus on our Fleet"
- MAN_FIVE_YEAR_DEC_TT:0 "Depending on your §YFirst Five Year Plan§! the effect of this focus will change"
 
  nor_bad_debuffs:0 "Norway Debuff"
  nor_bad_debuffs2:0 "Not ready for the German Attack"
@@ -998,6 +997,8 @@
  NOR_spec_ops:0 "Fleischer's Plan"
  NOR_crofter:0 "Operation Crofter"
 
+ GULF_OF_ADEN:0 "Gulf of Aden"
+ LOWER_EGYPT:0 "Lower Egypt"
 
  PRE_SETS: "JFU Presets"
  HORST_GROUPKEY: "JFU Rules"

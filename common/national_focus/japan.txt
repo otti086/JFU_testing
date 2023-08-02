@@ -343,8 +343,12 @@
 			MAN = { add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 180 } }
 			SIA = { add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 180 } }
 			hidden_effect = {
-				909 = { remove_dynamic_modifier = { modifier = no_entrenchment_africa } }
-				452 = { remove_dynamic_modifier = { modifier = no_entrenchment_africa } }						
+				every_country = {
+					limit = {
+						axis = yes
+					}
+					remove_idea = { GER_the_blitzkrieg }
+				}						
 			} 			
 		}
 	}
