@@ -2164,24 +2164,24 @@
 		completion_reward = {
 			if = {
 				limit = {
-					has_idea = qualitänt4a 
+					has_idea = qualitant4a 
 				}
 				swap_ideas = {
-					remove_idea = qualitänt4a
-					add_idea = qualitänt2a
+					remove_idea = qualitant4a
+					add_idea = qualitant2a
 				}
 			}
 			else_if = {
 				limit = {
-					has_idea = qualitänt4b
+					has_idea = qualitant4b
 				}
 				swap_ideas = {
-					remove_idea = qualitänt4b
-					add_idea = qualitänt3b
+					remove_idea = qualitant4b
+					add_idea = qualitant3b
 				}
 			}
 			else = {
-				add_ideas = qualitänt1a
+				add_ideas = qualitant1a
 			}
 		}
 	}
@@ -2291,24 +2291,24 @@
 		completion_reward = {
 			if = {
 				limit = {
-					has_idea = qualitänt1a 
+					has_idea = qualitant1a 
 				}
 				swap_ideas = {
-					remove_idea = qualitänt1a
-					add_idea = qualitänt2a
+					remove_idea = qualitant1a
+					add_idea = qualitant2a
 				}
 			}
 			else_if = {
 				limit = {
-					has_idea = qualitänt1b
+					has_idea = qualitant1b
 				}
 				swap_ideas = {
-					remove_idea = qualitänt1b
-					add_idea = qualitänt3a
+					remove_idea = qualitant1b
+					add_idea = qualitant3a
 				}
 			}
 			else = {
-				add_ideas = qualitänt4a
+				add_ideas = qualitant4a
 			}
 			}
 		}	
@@ -2578,24 +2578,24 @@
 		completion_reward = {
 			if = {
 				limit = {
-					has_idea = qualitänt4b
+					has_idea = qualitant4b
 				}
 				swap_ideas = {
-					remove_idea = qualitänt4b
-					add_idea = qualitänt2b
+					remove_idea = qualitant4b
+					add_idea = qualitant2b
 				}
 			}
 			else_if = {
 				limit = {
-					has_idea = qualitänt4a
+					has_idea = qualitant4a
 				}
 				swap_ideas = {
-					remove_idea = qualitänt4b
-					add_idea = qualitänt2b
+					remove_idea = qualitant4b
+					add_idea = qualitant2b
 				}
 			}
 			else = {
-				add_ideas = qualitänt1b
+				add_ideas = qualitant1b
 			}
 		}
 	}
@@ -2774,24 +2774,24 @@
 		completion_reward = {
 			if = {
 				limit = {
-					has_idea = qualitänt1a
+					has_idea = qualitant1a
 				}
 				swap_ideas = {
-					remove_idea = qualitänt1a
-					add_idea = qualitänt3b
+					remove_idea = qualitant1a
+					add_idea = qualitant3b
 				}
 			}
 			else_if = {
 				limit = {
-					has_idea = qualitänt1b
+					has_idea = qualitant1b
 				}
 				swap_ideas = {
-					remove_idea = qualitänt1b
-					add_idea = qualitänt2b
+					remove_idea = qualitant1b
+					add_idea = qualitant2b
 				}
 			}
 			else = {
-				add_ideas = qualitänt4b
+				add_ideas = qualitant4b
 			}
 		}
 	}

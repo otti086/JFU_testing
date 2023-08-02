@@ -22,7 +22,7 @@ ideas = {
 			}
 		}
 
-		qualitänt1a = {
+		qualitant1a = {
 
 			name = "Army Priority"
 			
@@ -39,14 +39,14 @@ ideas = {
 			picture = idea_man_five_year_plan_industry
 
 			equipment_bonus = {
-			artillery_equipment = {
-				build_cost_ic = -0.1
-				instant = yes
-			}
+				artillery_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
 			}
 		}
 
-		qualitänt1b = {
+		qualitant1b = {
 
 			name = "Army Priority"
 			
@@ -63,15 +63,15 @@ ideas = {
 			picture = idea_man_five_year_plan_industry
 
 			equipment_bonus = {
-			artillery_equipment = {
-				build_cost_ic = 0.05
-				soft_attack = 0.1
-				instant = yes
-			}
+				artillery_equipment = {
+					build_cost_ic = 0.05
+					soft_attack = 0.1
+					instant = yes
+				}
 			}
 		}
 
-		qualitänt2a = {
+		qualitant2a = {
 
 			name = "Army Priority"
 			
@@ -88,18 +88,18 @@ ideas = {
 			picture = idea_man_five_year_plan_industry
 
 			equipment_bonus = {
-			artillery_equipment = {
-				build_cost_ic = -0.1
-				instant = yes
-			}
-			anti_tank_equipment = {
-				build_cost_ic = -0.1
-				instant = yes
-			}
+				artillery_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				anti_tank_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
 			}
 		}
 
-		qualitänt2b = {
+		qualitant2b = {
 
 			name = "Army Priority"
 			
@@ -116,20 +116,20 @@ ideas = {
 			picture = idea_man_five_year_plan_industry
 
 			equipment_bonus = {
-			artillery_equipment = {
-				build_cost_ic = 0.05
-				soft_attack = 0.1
-				instant = yes
-			}
-			anti_tank_equipment = {
-				build_cost_ic = 0.05
-				soft_attack = 0.1
-				instant = yes
-			}
+				artillery_equipment = {
+					build_cost_ic = 0.05
+					soft_attack = 0.1
+					instant = yes
+				}
+				anti_tank_equipment = {
+					build_cost_ic = 0.05
+					soft_attack = 0.1
+					instant = yes
+				}
 			}
 		}
 
-		qualitänt3a = {
+		qualitant3a = {
 
 			name = "Army Priority"
 			
@@ -158,7 +158,7 @@ ideas = {
 			}
 		}
 
-		qualitänt3b = {
+		qualitant3b = {
 
 			name = "Army Priority"
 			
@@ -175,19 +175,19 @@ ideas = {
 			picture = idea_man_five_year_plan_industry
 
 			equipment_bonus = {
-			artillery_equipment = {
-				build_cost_ic = -0.1
-				instant = yes
-			}
-			anti_tank_equipment = {
-				build_cost_ic = 0.05
-				soft_attack = 0.1
-				instant = yes
-			}
+				artillery_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				anti_tank_equipment = {
+					build_cost_ic = 0.05
+					soft_attack = 0.1
+					instant = yes
+				}
 			}
 		}
 
-		qualitänt4a = {
+		qualitant4a = {
 
 			name = "Army Priority"
 			
@@ -212,7 +212,7 @@ ideas = {
 			}
 		}
 
-		qualitänt4b = {
+		qualitant4b = {
 
 			name = "Army Priority"
 			
@@ -230,11 +230,11 @@ ideas = {
 
 			equipment_bonus = {
 			
-			anti_tank_equipment = {
-				build_cost_ic = 0.05
-				soft_attack = 0.1
-				instant = yes
-			}
+				anti_tank_equipment = {
+					build_cost_ic = 0.05
+					soft_attack = 0.1
+					instant = yes
+				}
 			}
 		}
 
