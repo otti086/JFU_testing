@@ -1080,7 +1080,7 @@
 	focus = {
 		id = CHI_invite_foreign_investors 
 		icon = GFX_focus_generic_concessions
-		x = 18
+		x = 20
 		y = 0
 
 		cost = 10
@@ -2009,13 +2009,13 @@
 				name = CHI_small_arms_expertise
 				bonus = 1.0
 				uses = 1
-				category = improved_infantry_weapons_2
+				technology = improved_infantry_weapons_2
 			}
 			add_tech_bonus = {
 				name = CHI_small_arms_expertise
 				bonus = 1.0
 				uses = 1
-				category = advanced_infantry_weapons
+				technology = advanced_infantry_weapons
 			}
 		}
 	}
@@ -2462,7 +2462,7 @@
 
 	focus = {
 		id = CHI_camco
-		text = "Force Chinese Prisioners of War Researching Guns "
+		text = "Force Chinese Prisioners of War to Research Guns "
 		icon = GFX_focus_ETH_freedom_at_gunpoint
 		prerequisite = { focus = CHI_british_cooperation }
 		x = 0
@@ -2495,13 +2495,13 @@
 				name = CHI_small_arms_expertise
 				bonus = 1.0
 				uses = 1
-				category = improved_infantry_weapons_2
+				technology = improved_infantry_weapons_2
 			}
 			add_tech_bonus = {
 				name = CHI_small_arms_expertise
 				bonus = 1.0
 				uses = 1
-				category = advanced_infantry_weapons
+				technology = advanced_infantry_weapons
 			}
 		}
 	}
