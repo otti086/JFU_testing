@@ -2839,7 +2839,7 @@ prospect_for_resources = {
 			387 = {
 				add_resource = {
 					type = tungsten
-					amount = 6
+					amount = 12
 				}
 			}
 		}
@@ -2948,7 +2948,7 @@ prospect_for_resources = {
 			378 = {
 				add_resource = {
 					type = tungsten
-					amount = 6
+					amount = 12
 				}
 			}
 		}

@@ -720,6 +720,15 @@ ideas = {
 #			equipment_bonus = {
 #				small_plane_airframe = {  air_defence = 0.2 instant = yes }
 #			}
-		}	
+		}
+		JFU_soviet_synthetics = {
+			allowed = {	always = no	}
+			available = {  always = yes  }
+			removal_cost = -1
+			picture = GFX_goal_generic_oil_refinery		
+			modifier = {
+				production_speed_synthetic_refinery_factor = 2
+			}	
+		}
 	}
 }

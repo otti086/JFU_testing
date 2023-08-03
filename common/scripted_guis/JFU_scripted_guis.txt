@@ -52,6 +52,7 @@ scripted_gui = {
 		}
 
 		effects = {
+			horsttool_helpbutton2_click = {		ROOT = { country_event = { id =  horsthelp.1 } }	     }
 			refresh_button_click =  {
 				fuel_system_refresh_list = yes
 			}

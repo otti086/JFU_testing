@@ -648,7 +648,14 @@ JFU_startup_on_action = {
 		ITA = {
 			ITA_benito_mussolini = { unit_leader_event = { id = BBA_italo_ethiopian_war_events.01 } }
 			annex_country = { target = ETH transfer_troops = no }
-			ITA_end_the_italo_ethiopian_war = yes 
+			ITA_end_the_italo_ethiopian_war = yes
+			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 10000 }
+			add_equipment_to_stockpile = { type = support_equipment_1 amount = 20000 }
+			add_equipment_to_stockpile = { type = support_equipment_1 amount = 800 }
+			add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 400 }
+			add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 350 }
+			add_equipment_to_stockpile = { type = light_tank_chassis_1 amount = 370 producer = ITA variant_name = "L3/35" }
+			add_equipment_to_stockpile = { type = train_equipment_1 amount = 100 }
 		}
 		BEL = {
 			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 30000 }
