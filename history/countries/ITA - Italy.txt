@@ -2,17 +2,30 @@
 
 if = {
 	limit = {
-		NOT = {
-			has_dlc = "No Step Back"
+		AND = {
+			NOT = {
+				has_dlc = "No Step Back"
+			}
+			has_war = yes
 		}
 	}
 	set_oob = "ITA_1936"
 }
 if = {
 	limit = {
-		has_dlc = "No Step Back"
+		NOT = { 
+			has_war = yes
+		}
 	}
-	set_oob = "ITA_1936_nsb"
+	set_oob = "ITA_1936_no_war" 
+}
+if = {
+	limit = {
+		AND = {
+			has_dlc = "No Step Back"
+			has_war = yes
+		}
+	}
 }
 set_variable = {
     var = min_fuel

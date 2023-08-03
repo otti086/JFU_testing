@@ -750,7 +750,6 @@ focus_tree = {
 					include_locked = yes
 				}
 			}
-			SOV_third_five_year_plan_available = yes
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -840,65 +839,37 @@ focus_tree = {
 		cost = 5
 
 		available = {
-			has_tech = rubber_processing
-			SOV_third_five_year_plan_available = yes
-			has_full_control_of_state = 219 #MOSCOW
-			OR = {
-				has_full_control_of_state = 260 #VORONEZH
-				has_full_control_of_state = 223 #TULA
+			NOT = {
+				AND = {
+					672 = { is_controlled_by = ENG }
+					334 = { is_controlled_by = ENG }
+					336 = { is_controlled_by = ENG }
+				}
+				OR = {
+					335 = { is_controlled_by = ENG }
+					422 = { is_controlled_by = ENG }
+				}
 			}
+			has_full_control_of_state = 651 
+			has_full_control_of_state = 582
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			# ADD SYNTHETICS IN HISTORICAL STATES (VORONEZH AND TULA)
-			if = {
-				limit = {
-					has_full_control_of_state = 260 #VORONEZH
-				}
-				260 = { #VORONEZH
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = synthetic_refinery
-						level = 1
-						instant_build = yes
-					}
-				}
-				if = {
-					limit = {
-						has_full_control_of_state = 254 #RYAZAN
-						has_full_control_of_state = 258 #LIPETSK
-					}
-					# Moscow - Voronezh
-					build_railway = {
-						path = { 6380 6414 9348 9282 11268 9330 3356 6279 6230 6398 6341 413 3527 }
-					}
-				}
-			}
-			if = {
-				limit = {
-					has_full_control_of_state = 223 #TULA
-				}
-				223 = { #TULA
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = synthetic_refinery
-						level = 1
-						instant_build = yes
-					}
-				}
-				# Moscow - Tula
-				build_railway = {
-					path = { 6380 6414 9348 6290 6396 6262 }
-				}
-			}
 			add_tech_bonus = {
-				name = SOV_synthetic_rubber
-				bonus = 0.75
+				name = "Soviet Emergency Rubber"
+				bonus = 3.0
 				uses = 2
-				category = cat_synth_rubber
+				category = synth_resources
 			}
+			651 = {
+				add_resource = {
+					type = rubber
+					amount = 40
+				}
+			}
+			add_timed_idea = { idea = JFU_soviet_synthetics days = 100}
 		}
 	}
 

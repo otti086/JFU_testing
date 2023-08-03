@@ -50,4 +50,9 @@ spriteTypes = {
 		texturefile = "gfx/host_gui/hosttool/host_pingtool.dds"
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
     }
+    spriteType = {
+        name = "GFX_horst_help"
+        texturefile = "gfx/host_gui/hosttool/horst_help.dds"
+        effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+    }
 }

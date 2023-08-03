@@ -954,7 +954,7 @@
  SOV_small_barb:0 "Germans clicked Small Barb Decision"
  SOV_ULTIMATUM_TT:0 "Will send Finnland an Ultimatum for §YKrajala§! and §YSalla§!"
  NO_GRINDING:0 "No Grinding"
-
+ JFU_soviet_synthetics:0 "Emergency Rubber Programm"
 
  BUL_foreign_investor_soviet_tt:0 "Modify §YForeign Investors§! by \nProduction Efficiency Base: §G+20%§! \n§YMilitary Factory§! construction Speed: §G+10%§!"
  BUL_foreign_investor_britain_tt:0 "Modify §YForeign Investors§! by \n£prod_eff Production Efficiency Growth: §G+20%§! \n§YMilitary Factory§! construction Speed: §G+10%§!"
@@ -999,6 +999,11 @@
 
  GULF_OF_ADEN:0 "Gulf of Aden"
  LOWER_EGYPT:0 "Lower Egypt"
+
+ horsthelp.1.t:0 "Help with Fuel Manager"
+ horsthelp.1.d:0 "The Fuel Manager is made so that the faction leader of one faction can manage all of the fuel in a faction.\n\nYou can assign a percentage of required fuel reserves to the country that the country should have. The Fuel Manager will try to keep the assigned percentage by taking fuel from the UK, Germany, or Japan. You can also assign a priority based on the position that nation has in the system. To change the priority of a country, click on the arrows."
+ horsthelp.1.a:0 "Thank you Horst, very cool!"
+
 
  PRE_SETS: "JFU Presets"
  HORST_GROUPKEY: "JFU Rules"
