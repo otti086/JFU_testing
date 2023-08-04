@@ -2172,8 +2172,6 @@ focus_tree = {
 		relative_position_id = GER_fall_of_france
 		available = {
 			GER = { has_war_with = SOV }
-			POL = { has_capitulated = yes }
-			EFR = { has_country_flag = vichy_france_established }
 			OR = {
 				any_state = {
 					OR = {

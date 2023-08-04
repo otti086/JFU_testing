@@ -972,7 +972,7 @@
  JFU_events.5.a:0 "About time!"
  GER_second_vienna_focus_tt:0 "This focus is automatically completed by an event which triggers in §YAugust 1940§!."
  GER_ussr_war_goal_focus_tt:0 "This focus is automatically completed in case of war with the §YSoviet Union§!."
- GER_focus_fall_blau_:0 "Fall Blau"
+ GER_focus_fall_blau:0 "Fall Blau"
  GER_danzi_or_war_tt:0 "With the claim of Danzig, this focus justifies a war against §YPoland§!."
  GER_around_maginot_tt:0 "This focus is automatically completed in case of war with §YBelgium, Nehterlands and Luxemburg§!."
  GER_wesserubung_1_tt:0 "This focus is automatically completed in case of war with §YDenmark§!."

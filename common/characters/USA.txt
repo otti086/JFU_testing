@@ -89,19 +89,6 @@ characters={
 				large="gfx/leaders/USA/Portrait_USA_Omar_Bradley.dds"
 			}
 		}
-		advisor={
-			cost = 150
-			slot = theorist
-			idea_token = omar_bradley
-			ledger = army
-			allowed = {
-				original_tag = USA
-			}
-			
-			traits = {
-				superior_firepower_expert
-			}
-		}
 
 		corps_commander={
 			traits={ brilliant_strategist trait_cautious harsh_leader trait_engineer }

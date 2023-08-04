@@ -606,9 +606,9 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				production_speed_buildings_factor = 0.05
+				production_speed_buildings_factor = 0.03
 				production_factory_efficiency_gain_factor = 0.02
-				production_factory_max_efficiency_factor = 0.02
+				production_factory_max_efficiency_factor = 0.01
 				consumer_goods_factor = 0.04
 			}
 		}
@@ -627,9 +627,9 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				production_speed_buildings_factor = 0.1
+				production_speed_buildings_factor = 0.07
 				production_factory_efficiency_gain_factor = 0.05
-				production_factory_max_efficiency_factor = 0.05
+				production_factory_max_efficiency_factor = 0.03
 				consumer_goods_factor = 0.1
 			}
 		}
@@ -648,9 +648,9 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				production_speed_buildings_factor = 0.15
+				production_speed_buildings_factor = 0.10
 				production_factory_efficiency_gain_factor = 0.1
-				production_factory_max_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
 				global_building_slots_factor = 0.2
 			}
 		}
@@ -2806,7 +2806,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				synth_resources = 0.05
+				synth_resources = 0.15
 				industry = 0.05
 			}
 			
@@ -2866,7 +2866,7 @@ ideas = {
 			}		
 			
 			research_bonus = {
-				electronics = 0.1
+				electronics = 0.15
 			}
 			
 			traits = { electronics_developer }
@@ -2925,7 +2925,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				industry = 0.05
+				industry = 0.15
 			}
 			
 			traits = { construction_company }
@@ -2986,7 +2986,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				industry = 0.1
+				industry = 0.15
 			}
 			
 			traits = { industrial_concern }
@@ -3017,168 +3017,6 @@ ideas = {
 				local_building_slots_factor = 0.05
 				local_resources_factor = 0.05
 			}
-		}
-
-		BUL_german_industrial_concern = { #DLC
-			name = krupp
-			
-			picture = krupp
-
-			cost = 75
-		
-			allowed = {
-				original_tag = BUL
-				has_dlc = "Battle for the Bosporus"
-			}
-
-			available = {
-				if = {
-					limit = {
-						NOT = { has_country_flag = BUL_contract_with_german_industrial_concern_flag }
-					}
-					GER = { #Scripted trigger for this generates confusing tt due to indentation
-						has_opinion = {
-							target = ROOT
-							value > 49
-						}
-						has_capitulated = no
-						BUL_is_valid_subject = yes
-					}
-				}
-				NOT = { has_war_with = GER }
-				OR = {
-					is_subject = no
-					is_subject_of = GER
-				}
-				custom_trigger_tooltip = {
-					tooltip = BUL_foreign_industrial_concern_requirements_ger_tt
-					NOT = { check_variable = { BUL_german_industrial_investments < BUL_industrial_investments_medium_cap } }
-				}
-				NOT = { has_completed_focus = BUL_nationalization }
-			}
-
-			on_add = {
-				if = {
-					limit = {
-						NOT = { has_country_flag = BUL_contract_with_german_industrial_concern_flag }
-					}
-					set_country_flag = BUL_contract_with_german_industrial_concern_flag
-				}		
-			}
-			
-			research_bonus = {
-				industry = 0.15
-			}
-			
-			traits = { industrial_concern }
-		}
-
-		BUL_british_industrial_concern = { #DLC
-			name = english_electric
-			
-			picture = english_electric
-
-			cost = 75
-		
-			allowed = {
-				original_tag = BUL
-				has_dlc = "Battle for the Bosporus"
-			}
-
-			available = {
-				if = {
-					limit = {
-						NOT = { has_country_flag = BUL_contract_with_british_industrial_concern_flag }
-					}
-					ENG = { #Scripted trigger for this generates confusing tt due to indentation
-						has_opinion = {
-							target = ROOT
-							value > 49
-						}
-						has_capitulated = no
-						BUL_is_valid_subject = yes
-					}
-				}
-				NOT = { has_war_with = ENG }
-				OR = {
-					is_subject = no
-					is_subject_of = ENG
-				}
-				custom_trigger_tooltip = {
-					tooltip = BUL_foreign_industrial_concern_requirements_eng_tt
-					NOT = { check_variable = { BUL_british_industrial_investments < BUL_industrial_investments_medium_cap } }
-				}
-				NOT = { has_completed_focus = BUL_nationalization }
-			}
-
-			on_add = {
-				if = {
-					limit = {
-						NOT = { has_country_flag = BUL_contract_with_british_industrial_concern_flag }
-					}
-					set_country_flag = BUL_contract_with_british_industrial_concern_flag
-				}		
-			}
-			
-			research_bonus = {
-				electronics = 0.15
-			}
-			
-			traits = { electronics_concern }
-		}
-
-		BUL_soviet_industrial_concern = { #DLC
-			name = stalingrad_tractor_factory
-			
-			picture = stalingrad_tractor_factory
-
-			cost = 75
-		
-			allowed = {
-				original_tag = BUL
-				has_dlc = "Battle for the Bosporus"
-			}
-
-			available = {
-				if = {
-					limit = {
-						NOT = { has_country_flag = BUL_contract_with_soviet_industrial_concern_flag }
-					}
-					SOV = { #Scripted trigger for this generates confusing tt due to indentation
-						has_opinion = {
-							target = ROOT
-							value > 49
-						}
-						has_capitulated = no
-						BUL_is_valid_subject = yes
-					}
-				}
-				NOT = { has_war_with = SOV }
-				OR = {
-					is_subject = no
-					is_subject_of = SOV
-				}
-				custom_trigger_tooltip = {
-					tooltip = BUL_foreign_industrial_concern_requirements_sov_tt
-					NOT = { check_variable = { BUL_soviet_industrial_investments < BUL_industrial_investments_medium_cap } }
-				}
-				NOT = { has_completed_focus = BUL_nationalization }
-			}
-
-			on_add = {
-				if = {
-					limit = {
-						NOT = { has_country_flag = BUL_contract_with_soviet_industrial_concern_flag }
-					}
-					set_country_flag = BUL_contract_with_soviet_industrial_concern_flag
-				}		
-			}
-			
-			research_bonus = {
-				industry = 0.15
-			}
-			
-			traits = { industrial_concern }
 		}
 	}
 

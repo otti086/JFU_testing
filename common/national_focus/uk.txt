@@ -203,7 +203,7 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			549 = {
+			551 = {
 				set_building_level = {
 					type = air_base
 					level = 40

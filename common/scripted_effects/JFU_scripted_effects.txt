@@ -2116,11 +2116,10 @@ pregrinded_effect = {
 			add_unit_leader_trait = inf_gens
 			add_unit_leader_trait = infantry_leader
 			add_unit_leader_trait = infantry_expert
-			add_unit_leader_trait = hill_fighter
-			add_unit_leader_trait = trait_mountaineer
 			add_unit_leader_trait = winter_specialist
 			add_unit_leader_trait = trickster
-			add_unit_leader_trait = expert_improviser
+			add_unit_leader_trait = guerilla_fighter
+			add_unit_leader_trait = organizer
 		}	
 	}
 	ITA = {
@@ -2212,7 +2211,21 @@ pregrinded_effect = {
 			add_unit_leader_trait = offensive_doctrine
 			add_unit_leader_trait = thorough_planner
 			add_unit_leader_trait = aggressive_assaulter
-		}					
+		}
+		ITA_sebastiano_visconti_prasca = { add_skill_level = 3 }
+		ITA_sebastiano_visconti_prasca = { add_attack = 3 }
+        ITA_sebastiano_visconti_prasca = { add_defense = 2 }
+        ITA_sebastiano_visconti_prasca = { add_planning = 2 }
+		ITA_sebastiano_visconti_prasca = { add_logistics = 2 }
+		ITA_sebastiano_visconti_prasca = {
+			add_unit_leader_trait = pre_grinded
+			add_unit_leader_trait = organizer
+            add_unit_leader_trait = infantry_expert
+            add_unit_leader_trait = infantry_leader
+			add_unit_leader_trait = trickster
+			add_unit_leader_trait = guerilla_fighter	
+			add_unit_leader_trait = inf_gens2		
+		}				
 	}
 	HUN = {
 		add_ideas = { pre_grinded_gens_volunteers }
