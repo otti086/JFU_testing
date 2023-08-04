@@ -41,7 +41,6 @@ country_event = {
 			}
 			OR = {
 				has_idea = undisturbed_isolation
-				has_idea = isolation
 				has_idea = civilian_economy
 			}
 		}
@@ -60,10 +59,6 @@ country_event = {
 		modifier = {
 			factor = 2.5
 			has_idea = undisturbed_isolation
-		}
-		modifier = {
-			factor = 2.0
-			has_idea = isolation
 		}
 		modifier = {
 			factor = 1.5
