@@ -2004,7 +2004,6 @@ focus_tree = {
 				bonus = 3.0
 				uses = 1
 				category = medium_air
-				category = heavy_air
 			}
 		}
 	}
