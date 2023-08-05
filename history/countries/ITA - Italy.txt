@@ -1,32 +1,7 @@
 ﻿capital = 2
 
-if = {
-	limit = {
-		AND = {
-			NOT = {
-				has_dlc = "No Step Back"
-			}
-			has_war = yes
-		}
-	}
-	set_oob = "ITA_1936"
-}
-if = {
-	limit = {
-		NOT = { 
-			has_war = yes
-		}
-	}
-	set_oob = "ITA_1936_no_war" 
-}
-if = {
-	limit = {
-		AND = {
-			has_dlc = "No Step Back"
-			has_war = yes
-		}
-	}
-}
+
+set_oob = "ITA_1936_no_war"
 set_variable = {
     var = min_fuel
     value = 0.200

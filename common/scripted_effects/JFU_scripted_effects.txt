@@ -755,6 +755,10 @@ JFU_startup_on_action = {
 		FRA = {
 			add_ideas = { volunteers_4 }			
 		}
+		ITA = {
+			add_ideas = { volunteers_4 }
+			load_oob = "ITA_1936_nsb"
+		}
 	}
 	if = {  limit = { ai_country_allies = yes } country_lock_all_division_template = yes }
 	every_country = { limit = { OR = { axis = yes allies = yes } } add_ideas = peace_training }
