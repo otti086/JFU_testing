@@ -16,7 +16,7 @@ NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 72			--vanilla 24 (removed garr
 NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 0.5    --vanilla 3 
 NDefines.NMilitary.COMBAT_VALUE_ORG_IMPORTANCE = 0 		-- VANILLA 1 - changed to force tanks into battle first (most of the time) |   Multiplier on TotalOrganisation when determining the combat value of a division
 NDefines.NMilitary.COMBAT_VALUE_STR_IMPORTANCE = 0 		-- VANILLA 1  - changed to force tanks into battle first (most of the time)    |  Multiplier on TotalStrength when determining the combat value of a division
-NDefines.NMilitary.UNIT_DIGIN_CAP = 0                           --   vanilla 10 | "how "deep" you can dig you can dig in until hitting max bonus
+NDefines.NMilitary.UNIT_DIGIN_CAP = 10                           --   vanilla 10 | "how "deep" you can dig you can dig in until hitting max bonus
 NDefines.NMilitary.REINFORCEMENT_REQUEST_MAX_WAITING_DAYS = 7   -- Every X days the equipment will be sent, regardless if still didn't produced all that has been requested.
 NDefines.NMilitary.REINFORCEMENT_REQUEST_DAYS_FREQUENCY = 4	   -- How many days must pass until we may give another reinforcement request
 NDefines.NMilitary.BATALION_CHANGED_EXPERIENCE_DROP = 0.0 
@@ -58,7 +58,7 @@ NDefines.NResistance.NRESISTANCE_TARGET_MODIFIER_OCCUPIED_IS_EXILE_MAX = 10.0
 
 NDefines.NBuildings.MAX_SHARED_SLOTS = 50
 NDefines.NBuildings.OWNER_CHANGE_EXTRA_SHARED_SLOTS_FACTOR = 1.0
-NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 100
+NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 200
 
 NDefines.NCharacter.SPECIALIST_ADVISOR_MIN_RANK = 2
 NDefines.NCharacter.EXPERT_ADVISOR_MIN_RANK = 4
@@ -73,7 +73,7 @@ NDefines.NDiplomacy.DIPLOMACY_HOURS_BETWEEN_REQUESTS = 2
 
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 480			
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 20
-NDefines.NGame.GAME_SPEED_SECONDS = { 600.0, 0.5, 0.2, 0.1, 0.0 }
+NDefines.NGame.GAME_SPEED_SECONDS = { 600.0, 0.5, 0.2, 0.08, 0.0 }
 NDefines.NGame.DIPLOMACY_ACCEPT_ATTACHE_BASE = 200
 NDefines.NGame.DIPLOMACY_ACCEPT_ATTACHE_OPINION_TRASHHOLD = 10
 
