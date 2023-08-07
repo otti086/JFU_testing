@@ -473,7 +473,6 @@ country_event = {
 			HUN = { add_timed_idea = { idea = GER_the_blitzkrieg days = 365 } }
 			BUL = { add_timed_idea = { idea = GER_the_blitzkrieg days = 365 } }
 			ROM = { add_timed_idea = { idea = GER_the_blitzkrieg days = 365 } }
-#			country_event = { id = JFU_events.2 days = 60 }
 		}
 	}
 }
@@ -619,20 +618,6 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		give_resource_rights = { receiver = GER state = 724 }
-	}
-}
-
-
-country_event = {
-	id = JFU_events.2
-	title = "remove Entrenchment debuff"
-	desc = "Ok"
-	picture = GFX_report_event_generic_parliament
-	hidden = yes
-	is_triggered_only = yes
-	immediate = {
-		909 = { remove_dynamic_modifier = { modifier = no_entrenchment_africa } }
-		452 = { remove_dynamic_modifier = { modifier = no_entrenchment_africa } }		
 	}
 }
 

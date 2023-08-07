@@ -644,6 +644,55 @@ on_actions = {
 			}
 		}
 	}
+	on_weekly_GER = {
+		effect = {
+			if = {
+				limit = {
+					AND = {
+						date > 1942.01.01
+						any_state = {
+							limit = {
+								atlantikwall_states = yes
+							}
+							has_dynamic_modifier = { modifier = Atlantikwall_modifier}
+						}
+					}
+				}
+				GER = {
+					every_state = {
+						limit = {
+							atlantikwall_states = yes
+							is_controlled_by = GER								
+						}
+						remove_dynamic_modifier = { modifier = Atlantikwall_modifier}
+					}
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+						date > 1941.06.21
+						907 = { is_controlled_by = ENG }
+						any_state = {
+							limit = {
+								atlantikwall_states = yes
+							}
+							has_dynamic_modifier = { modifier = Atlantikwall_modifier}
+						}
+					}
+				}
+				GER = {
+					every_state = {
+						limit = {
+							atlantikwall_states = yes
+							is_controlled_by = GER								
+						}
+						remove_dynamic_modifier = { modifier = Atlantikwall_modifier}
+					}
+				}
+			}
+		}
+	}
 	on_state_control_changed = {
 		effect = {
 			if = {

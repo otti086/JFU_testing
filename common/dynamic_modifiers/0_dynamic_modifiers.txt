@@ -1279,3 +1279,11 @@ BUL_foreign_industry = {
 	production_factory_efficiency_gain_factor = BFI_EGF
 	production_factory_start_efficiency_factor = BFI_SEF
 }
+Atlantikwall_modifier = {
+	enable = { always = yes }
+
+	icon = GFX_idea_generic_manpower_bonus	
+
+	max_dig_in_factor = 10
+	naval_invasion_penalty = 1
+}
