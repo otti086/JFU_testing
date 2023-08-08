@@ -111,7 +111,10 @@ equipments = {
 			module = self_sealing_fuel_tanks_small
 			count < 2
 		}
-
+		module_count_limit = {
+			module = armor_plate_small
+			count < 3
+		}
 		module_count_limit = {
 			module = non_strategic_materials_small
 			count < 2
