@@ -376,6 +376,7 @@ technologies = {
 			secondary_turret_close_support_gun
 			tank_auto_cannon_2
 			squeezebore_adaptor
+			tank_medium_howitzer
 		}
 
 		enable_subunits = {
@@ -510,7 +511,7 @@ technologies = {
 		enable_equipment_modules = {
 
 			tank_anti_air_cannon_2
-			tank_medium_howitzer
+			tank_medium_howitzer_2
 			tank_rocket_launcher
 			tank_high_velocity_cannon_2
 			tank_medium_cannon_2
@@ -661,7 +662,6 @@ technologies = {
 			tank_heavy_cannon_3
 			auto_loader
 			tank_heavy_howitzer
-			tank_medium_howitzer_2
 			tank_rocket_launcher_2
 		}
 
@@ -766,6 +766,7 @@ technologies = {
 			heavy_tank_destroyer_chassis_1
 			heavy_tank_artillery_chassis_1
 			heavy_tank_aa_chassis_1
+			tank_medium_howitzer
 		}
 
 		enable_subunits = {
@@ -849,13 +850,12 @@ technologies = {
 		enable_equipment_modules = {
 
 			tank_anti_air_cannon_2
-			tank_medium_howitzer
+			tank_medium_howitzer_2
 			tank_rocket_launcher
 			tank_high_velocity_cannon_2
 			tank_medium_cannon_2
 			tank_heavy_cannon_2
-
-								   }
+		}
 
 		path = {
 			leads_to_tech = advanced_heavy_tank_chassis
@@ -933,7 +933,6 @@ technologies = {
 			tank_heavy_cannon_3
 			auto_loader
 			tank_heavy_howitzer
-			tank_medium_howitzer_2
 			tank_rocket_launcher_2
 		}
 
@@ -1000,7 +999,6 @@ technologies = {
 			tank_heavy_cannon_3
 			auto_loader
 			tank_heavy_howitzer
-			tank_medium_howitzer_2
 			tank_rocket_launcher_2
 		}
 
