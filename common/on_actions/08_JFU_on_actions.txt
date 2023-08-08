@@ -605,26 +605,38 @@ on_actions = {
 		}
 	}
 	on_naval_invasion = { effect ={  if = { limit = { spanish_coastline = yes } teleport_armies = {limit = { allies = yes  } to_state = FROM }  PREV = { if = { limit = { SPR = { owns_state = 41 } }transfer_state_to = SPR}  else = { transfer_state_to = GER }  }  } }   }	
-#	on_weekly_JAP = {
-#		effect = {
-#			if = {
-#				limit = {
-#					date > 1941.1.1
-#				}
-#				JAP = { island_hopping_JAP = yes }
-#			}
-#		}
-#	}
-#	on_weekly_USA = {
-#		effect = {
-#			if = {
-#				limit = {
-#					date > 1941.1.1
-#				}
-#				USA = { island_hopping_USA = yes }
-#			}
-#		}
-#	}
+	on_weekly_JAP = {
+		effect = {
+			if = {
+				limit = {
+					AND = {
+						date > 1941.1.1
+						has_game_rule = { 
+							rule = CASUAL_STUFF 
+							option = CASUAL_STUFF_ON 
+						} 
+					}
+				}
+				JAP = { island_hopping_JAP = yes }
+			}
+		}
+	}
+	on_weekly_USA = {
+		effect = {
+			if = {
+				limit = {
+					AND = {
+						date > 1941.1.1
+						has_game_rule = { 
+							rule = CASUAL_STUFF 
+							option = CASUAL_STUFF_ON 
+						} 
+					}
+				}
+				USA = { island_hopping_USA = yes }
+			}
+		}
+	}
 	on_monthly_SOV = {
 		effect = {
 			if = { limit = { AND = { date > 1937.8.20
@@ -651,9 +663,6 @@ on_actions = {
 					AND = {
 						date > 1942.01.01
 						any_state = {
-							limit = {
-								atlantikwall_states = yes
-							}
 							has_dynamic_modifier = { modifier = Atlantikwall_modifier}
 						}
 					}
@@ -674,9 +683,6 @@ on_actions = {
 						date > 1941.06.21
 						907 = { is_controlled_by = ENG }
 						any_state = {
-							limit = {
-								atlantikwall_states = yes
-							}
 							has_dynamic_modifier = { modifier = Atlantikwall_modifier}
 						}
 					}

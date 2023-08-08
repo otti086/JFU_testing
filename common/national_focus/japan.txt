@@ -363,7 +363,10 @@
 		cost = 0.2
 
 		available = {
-			always = no
+			has_game_rule = { 
+				rule = CASUAL_STUFF 
+				option = CASUAL_STUFF_ON 
+			} 		
 			OR = {
 				JAP = { 
 					has_full_control_of_state = 335

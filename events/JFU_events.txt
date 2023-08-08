@@ -563,6 +563,31 @@ news_event = {
 	}
 }
 news_event = {
+	id = news.5005
+	title = "Operation Countenance Japan "
+	desc = "Japan invaded neutral Iran "
+	picture = GFX_news_event_italian_tank_desert
+
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = "unfortunate"
+
+		trigger = {
+			has_government = fascism
+		}
+	}
+	option = {
+		name =  "Let them come"
+
+		trigger = {
+			NOT = {
+				has_government = fascism
+			}
+		}
+	}
+}
+news_event = {
 	id = news.15
 	title = news.15.t
 	desc = news.15.d

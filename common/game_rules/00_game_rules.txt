@@ -108,38 +108,6 @@ JFU_pre_sets = {
 		desc = "This option disables all pre set rule you may configurate your game manually with game rules below"
 	}
 }
-horst_manchukuo = {
-	name = "Manchukuo Focus Tree"
-	group = "HORST_GROUPKEY"					
-	icon = "GFX_decision_hol_draw_up_staff_plans"			
-	default = {	
-		name = "HORST_ENABLE_VANILLA_MANCHUKUO"
-		text = "Vanilla Manchukuo Focus Tree"
-		desc = "Clicking this option will keep the vanilla Manchukuo focus tree that is used in Horst"	
-	}
-	option = {	
-		name = "HORST_ENABLE_MOD_MANCHUKUO" 
-		text = "Modded Manchukuo Focus Tree"
-		desc = "Clicking this option will give Manchukuo a powerful new focus tree that was created by Thrasymachus"	
-	}
-}
-
-finland_focus = {
-	name = "Finland Focus Tree"
-	group = "HORST_GROUPKEY"					
-	icon = "GFX_decision_hol_draw_up_staff_plans"			
-	default = {	
-		name = "HORST_ENABLE_MOD_FINLAND"
-		text = "Finland Modded Focus Tree"
-		desc = "Clicking this option will give Finland a powerful new focus tree that was created by Leo"	
-	}
-	option = {	
-		name = "HORST_ENABLE_VANILLA_FINLAND" 
-		text = "Finland Vanilla Focus Tree"
-		desc = "Vanilla Focus Tree for Finland"	
-	}
-}
-
 hosttool_game_rule = {
 	name = "HOSTTOOL_GAME_RULE"
 	group = "Hosttool"
@@ -298,22 +266,6 @@ JFU_pre_grinded_generals = {
 		desc = "all Nations have pregrinded Generals Volunteers are not allowed"
 	}
 }
-JFU_closed_eco_JAPAN = {
-	name = "Japan Eco "
-	group = "HORST_GROUPKEY"
-	icon = "RULE_GROUP_GENERAL_UI"
-
-	default = {
-		name = "DISABLE_CLOSED_ECO"
-		text = "Vanilla eco Japan"
-		desc = "Clicking this option will give Japan vanilla eco"
-	}
-	option = {
-		name = "ENABLE_CLOSED_ECO"
-		text = "closed eco Japan"
-		desc = "Clicking this option will give Japan closed eco"
-	}
-}
 JFU_closed_eco_SOVIET = {
 	name = "Soviet eco"
 	group = "HORST_GROUPKEY"
@@ -345,6 +297,21 @@ JFU_YUGO_COLAB = {
 		desc = "Clicking this option will give Italy 75% comliance on Yugoslavia"
 	}
 }
+JFU_TOT_MOB_ITA = {
+	name = "Total Mob Italy Settings"
+	group = "HORST_GROUPKEY"
+	icon = "RULE_GROUP_GENERAL_UI"
+	default = {
+		name = "TOT_MOB_ITA_ON"
+		text = "Total Mob on"
+		desc = "gives Italy Total Mobilisation when declaring on Yugoslavia "
+	}
+	option = {
+		name = "TOT_MOB_ITA_OFF"
+		text = "Total Mob off"
+		desc = "keep Total Mobilisation disabled until Italy joins WW2"
+	}		
+}
 JFU_SPECIAL_FORCES_CAP = {
 	name = "Special Forces Cap Settings"
 	group = "HORST_GROUPKEY"
@@ -371,21 +338,6 @@ JFU_SPECIAL_FORCES_CAP = {
 	}
 
 }
-#JFU_STRIKE_ON_NR = {
-#	name = "Japan strike on the Northern Resource Area Settings"
-#	group = "HORST_GROUPKEY"
-#	icon = "RULE_GROUP_GENERAL_UI"
-#	default = {
-#		name = "JFU_STANDARD_NR"
-#		text = "Standard JFU Settings"
-#		desc = "Clicking this option will disable Strike on the Northern Resource Area"
-#	}
-#	option = {
-#		name = "JFU_ALTERNATIVE_NR"
-#		text = "Alternative Settings"
-#		desc = "Clicking this option will enable Strike on the Northern Resource Area"
-#	}
-#}
 JFU_AFRICA_TILES = {
 	name = "AFRICA Tiles Settings"
 	group = "HORST_GROUPKEY"
@@ -400,21 +352,6 @@ JFU_AFRICA_TILES = {
 		text = "Vanilla Africa"
 		desc = "disables modded Africa - 1 tile El-Alamein"
 	}	
-}
-JFU_TOT_MOB_ITA = {
-	name = "Total Mob Italy Settings"
-	group = "HORST_GROUPKEY"
-	icon = "RULE_GROUP_GENERAL_UI"
-	default = {
-		name = "TOT_MOB_ITA_ON"
-		text = "Total Mob on"
-		desc = "gives Italy Total Mobilisation when declaring on Yugoslavia "
-	}
-	option = {
-		name = "TOT_MOB_ITA_OFF"
-		text = "Total Mob off"
-		desc = "keep Total Mobilisation disabled until Italy joins WW2"
-	}		
 }
 JFU_SPAIN = {
 	name = "Spain CW Settings"
@@ -450,4 +387,65 @@ FIN_WAR = {
 		text = "Voluntter Only, No Winter War"
 		desc = "..."
 	}			
+}
+CASUAL_STUFF = {
+	name = "changes for casual JFU"
+	group = "HORST_GROUPKEY"
+	icon = "RULE_GROUP_GENERAL_UI"
+	default = {
+		name = "CASUAL_STUFF_OFF"
+		text = "Disabled - Normal JFU"
+		desc = "keeps Island hoping, Japan declaring on soviets, Clown front for Japan...disabled"
+	}
+	option = {
+		name = "CASUAL_STUFF_ON"
+		text = "Enabled - more casual/larp JFU"
+		desc = "enabled Island hoping, Japan declaring on soviets, Clown front for Japan..."
+	}		
+}
+JFU_closed_eco_JAPAN = {
+	name = "Japan Eco "
+	group = "JAP_GROUPKEY"
+	icon = "RULE_GROUP_GENERAL_UI"
+
+	default = {
+		name = "DISABLE_CLOSED_ECO"
+		text = "Vanilla eco Japan"
+		desc = "Clicking this option will give Japan vanilla eco"
+	}
+	option = {
+		name = "ENABLE_CLOSED_ECO"
+		text = "closed eco Japan"
+		desc = "Clicking this option will give Japan closed eco"
+	}
+}
+horst_manchukuo = {
+	name = "Manchukuo Focus Tree"
+	group = "MODDED_FOCI"					
+	icon = "GFX_decision_hol_draw_up_staff_plans"			
+	default = {	
+		name = "HORST_ENABLE_VANILLA_MANCHUKUO"
+		text = "Vanilla Manchukuo Focus Tree"
+		desc = "Clicking this option will keep the vanilla Manchukuo focus tree that is used in Horst"	
+	}
+	option = {	
+		name = "HORST_ENABLE_MOD_MANCHUKUO" 
+		text = "Modded Manchukuo Focus Tree"
+		desc = "Clicking this option will give Manchukuo a powerful new focus tree that was created by Thrasymachus"	
+	}
+}
+finland_focus = {
+	name = "Finland Focus Tree"
+	group = "MODDED_FOCI"					
+	icon = "GFX_decision_hol_draw_up_staff_plans"			
+	default = {	
+		name = "HORST_ENABLE_MOD_FINLAND"
+		text = "Finland Modded Focus Tree"
+		desc = "Clicking this option will give Finland a powerful new focus tree that was created by Leo"	
+	}
+	option = {	
+		name = "HORST_ENABLE_VANILLA_FINLAND" 
+		text = "Finland Vanilla Focus Tree"
+		desc = "Vanilla Focus Tree for Finland"	
+	}
 }

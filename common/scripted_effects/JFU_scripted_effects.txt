@@ -624,6 +624,7 @@ JFU_startup_on_action = {
 	if = {	limit = { has_game_rule = { rule = JFU_AFRICA_TILES option = ONE_TILE_AFRICA } } SWE = { transfer_state = 909 } SWE = { transfer_state = 910 } SWE = { transfer_state = 911 } }
 	if = {	limit = { has_game_rule = { rule = JFU_YUGO_COLAB option = FREE_COLAB_YUGO } } set_global_flag = YUGO_FREE_COLAB_FLAG }
 	if = {	limit = { has_game_rule = { rule = JFU_pre_sets option = COMPETITIVE_JFU } } set_global_flag = YUGO_FREE_COLAB_FLAG }
+	if = {	limit = { has_game_rule = { rule = CASUAL_STUFF option = CASUAL_STUFF_ON } } JAP = { add_dynamic_modifier = { modifier = pacific_states_JAP } } USA = { add_dynamic_modifier = { modifier = pacific_states_USA } } }	
 	if = {
 		limit = { 
 			has_game_rule = { 
