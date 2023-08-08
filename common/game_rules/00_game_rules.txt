@@ -108,6 +108,210 @@ JFU_pre_sets = {
 		desc = "This option disables all pre set rule you may configurate your game manually with game rules below"
 	}
 }
+JFU_pre_grinded_generals = {
+	name = "pre grinded Generals Settings"
+	group = "HORST_GROUPKEY"
+	icon = "RULE_GROUP_GENERAL_UI"
+
+	default = {
+		name = "PRE_GRINDED_GENERALS_OFF"
+		text = "Pre grinded Generals OFF"
+		desc = "normal Vanilla grinding no pre grinded Generals"
+	}
+	option = {
+		name = "HALVED_GRIND_TIME"
+		text = "+50% trait Xp gain"
+		desc = "Trait XP gained is mulitpled by 50% does not affect level XP"
+	}
+	option = {
+		name = "PRE_GRINDED_GENERALS_ON"
+		text = "Pre grinded Generals ON"
+		desc = "all Nations have pregrinded Generals Volunteers are not allowed"
+	}
+}
+JFU_closed_eco_SOVIET = {
+	name = "Soviet eco"
+	group = "HORST_GROUPKEY"
+	icon = "RULE_GROUP_GENERAL_UI"
+
+	default = {
+		name = "DISABLE_CLOSED_ECO"
+		text = "Vanilla eco Soviet"
+		desc = "Clicking this option will give Soviet vanilla eco"
+	}
+		option = {
+		name = "ENABLE_CLOSED_ECO"
+		text = "closed eco Soviet"
+		desc = "Clicking this option will give Soviet closed eco"
+	}
+}
+JFU_closed_eco_JAPAN = {
+	name = "Japan Eco "
+	group = "HORST_GROUPKEY"
+	icon = "RULE_GROUP_GENERAL_UI"
+
+	default = {
+		name = "DISABLE_CLOSED_ECO"
+		text = "Vanilla eco Japan"
+		desc = "Clicking this option will give Japan vanilla eco"
+	}
+	option = {
+		name = "ENABLE_CLOSED_ECO"
+		text = "closed eco Japan"
+		desc = "Clicking this option will give Japan closed eco"
+	}
+}
+JFU_YUGO_COLAB = {
+	name = "Yugoslavia Colab Settings"
+	group = "HORST_GROUPKEY"
+	icon = "RULE_GROUP_GENERAL_UI"
+	default = {
+		name = "NO_FREE_COLAB"
+		text = "Standard JFU Settings"
+		desc = "Clicking this option will disable the free colab on yugoslavia for Italy"
+	}
+	option = {
+		name = "FREE_COLAB_YUGO"
+		text = "Free colab for Italy"
+		desc = "Clicking this option will give Italy 75% comliance on Yugoslavia"
+	}
+}
+JFU_TOT_MOB_ITA = {
+	name = "Total Mob Italy Settings"
+	group = "HORST_GROUPKEY"
+	icon = "RULE_GROUP_GENERAL_UI"
+	default = {
+		name = "TOT_MOB_ITA_ON"
+		text = "Total Mob on"
+		desc = "gives Italy Total Mobilisation when declaring on Yugoslavia "
+	}
+	option = {
+		name = "TOT_MOB_ITA_OFF"
+		text = "Total Mob off"
+		desc = "keep Total Mobilisation disabled until Italy joins WW2"
+	}		
+}
+JFU_SPECIAL_FORCES_CAP = {
+	name = "Special Forces Cap Settings"
+	group = "HORST_GROUPKEY"
+	icon = "RULE_GROUP_GENERAL_UI"
+	option = {
+		name =  "JFU_STANDARD_CAP"
+		text = "Standard JFU Settings"
+		desc = "Clicking this option will keep the inital Cap at 200"
+	}
+	option = {
+		name = "JFU_DOUBLE_CAP"
+		text = "double SF Cap"
+		desc = "Clicking this option will double the cap to 400"
+	}
+	option = {
+		name = "JFU_QUADRUPLE_CAP"
+		text = "quaduple SF Cap"
+		desc = "Clicking this option will quadrople the cap to 800"
+	}
+	default = {
+		name = "JFU_NO_CAP"
+		text = "remove SF Cap"
+		desc = "Clicking this option will remove the cap completly"
+	}
+
+}
+JFU_AFRICA_TILES = {
+	name = "AFRICA Tiles Settings"
+	group = "HORST_GROUPKEY"
+	icon = "RULE_GROUP_GENERAL_UI"
+	default = {
+		name = "THREE_TILE_AFRICA"
+		text = "Modded Africa"
+		desc = "enables modded Africa - 3 tile El-Alamein"
+	}
+	option = {
+		name = "ONE_TILE_AFRICA"
+		text = "Vanilla Africa"
+		desc = "disables modded Africa - 1 tile El-Alamein"
+	}	
+}
+JFU_SPAIN = {
+	name = "Spain CW Settings"
+	group = "HORST_GROUPKEY"
+	icon = "RULE_GROUP_GENERAL_UI"
+	option = {
+		name = "SPAIN_NORMAL"
+		text = "Normal Spain"
+		desc = "Spain gets -40% attack in the civil War (disable if played without pregrinded)"
+	}
+	option = {
+		name = "SPAIN_EASY"
+		text = "Easy Spain"
+		desc = "Spain gets no minus attack in civil War"
+	}
+	default = {
+		name = "SPAIN_NO_CW"
+		text = "NO Civil War Spain"
+		desc = "Spain gets the civil war bypassed"
+	}			
+}
+FIN_WAR = {
+	name = "Finnland War"
+	group = "HORST_GROUPKEY"
+	icon = "RULE_GROUP_GENERAL_UI"
+	option = {
+		name = "FINNLAND_BARB"
+		text = "Finnland joins BARB, Winter War"
+		desc = "..."
+	}
+	default = {
+		name = "FIN_VOLUNTEER"
+		text = "Voluntter Only, No Winter War"
+		desc = "..."
+	}			
+}
+CASUAL_STUFF = {
+	name = "changes for casual JFU"
+	group = "HORST_GROUPKEY"
+	icon = "RULE_GROUP_GENERAL_UI"
+	default = {
+		name = "CASUAL_STUFF_OFF"
+		text = "Disabled - Normal JFU"
+		desc = "keeps Island hoping, Japan declaring on soviets, Clown front for Japan...disabled"
+	}
+	option = {
+		name = "CASUAL_STUFF_ON"
+		text = "Enabled - more casual/larp JFU"
+		desc = "enabled Island hoping, Japan declaring on soviets, Clown front for Japan..."
+	}		
+}
+horst_manchukuo = {
+	name = "Manchukuo Focus Tree"
+	group = "MODDED_FOCI"					
+	icon = "GFX_decision_hol_draw_up_staff_plans"			
+	default = {	
+		name = "HORST_ENABLE_VANILLA_MANCHUKUO"
+		text = "Vanilla Manchukuo Focus Tree"
+		desc = "Clicking this option will keep the vanilla Manchukuo focus tree that is used in Horst"	
+	}
+	option = {	
+		name = "HORST_ENABLE_MOD_MANCHUKUO" 
+		text = "Modded Manchukuo Focus Tree"
+		desc = "Clicking this option will give Manchukuo a powerful new focus tree that was created by Thrasymachus"	
+	}
+}
+finland_focus = {
+	name = "Finland Focus Tree"
+	group = "MODDED_FOCI"					
+	icon = "GFX_decision_hol_draw_up_staff_plans"			
+	default = {	
+		name = "HORST_ENABLE_MOD_FINLAND"
+		text = "Finland Modded Focus Tree"
+		desc = "Clicking this option will give Finland a powerful new focus tree that was created by Leo"	
+	}
+	option = {	
+		name = "HORST_ENABLE_VANILLA_FINLAND" 
+		text = "Finland Vanilla Focus Tree"
+		desc = "Vanilla Focus Tree for Finland"	
+	}
+}
 hosttool_game_rule = {
 	name = "HOSTTOOL_GAME_RULE"
 	group = "Hosttool"
@@ -243,209 +447,5 @@ hosttool_game_rule = {
 		text = "Spain"
 		desc = ""
 		allow_achievements = yes
-	}
-}
-JFU_pre_grinded_generals = {
-	name = "pre grinded Generals Settings"
-	group = "HORST_GROUPKEY"
-	icon = "RULE_GROUP_GENERAL_UI"
-
-	default = {
-		name = "PRE_GRINDED_GENERALS_OFF"
-		text = "Pre grinded Generals OFF"
-		desc = "normal Vanilla grinding no pre grinded Generals"
-	}
-	option = {
-		name = "HALVED_GRIND_TIME"
-		text = "+50% trait Xp gain"
-		desc = "Trait XP gained is mulitpled by 50% does not affect level XP"
-	}
-	option = {
-		name = "PRE_GRINDED_GENERALS_ON"
-		text = "Pre grinded Generals ON"
-		desc = "all Nations have pregrinded Generals Volunteers are not allowed"
-	}
-}
-JFU_closed_eco_SOVIET = {
-	name = "Soviet eco"
-	group = "HORST_GROUPKEY"
-	icon = "RULE_GROUP_GENERAL_UI"
-
-	default = {
-		name = "DISABLE_CLOSED_ECO"
-		text = "Vanilla eco Soviet"
-		desc = "Clicking this option will give Soviet vanilla eco"
-	}
-		option = {
-		name = "ENABLE_CLOSED_ECO"
-		text = "closed eco Soviet"
-		desc = "Clicking this option will give Soviet closed eco"
-	}
-}
-JFU_YUGO_COLAB = {
-	name = "Yugoslavia Colab Settings"
-	group = "HORST_GROUPKEY"
-	icon = "RULE_GROUP_GENERAL_UI"
-	default = {
-		name = "NO_FREE_COLAB"
-		text = "Standard JFU Settings"
-		desc = "Clicking this option will disable the free colab on yugoslavia for Italy"
-	}
-	option = {
-		name = "FREE_COLAB_YUGO"
-		text = "Free colab for Italy"
-		desc = "Clicking this option will give Italy 75% comliance on Yugoslavia"
-	}
-}
-JFU_TOT_MOB_ITA = {
-	name = "Total Mob Italy Settings"
-	group = "HORST_GROUPKEY"
-	icon = "RULE_GROUP_GENERAL_UI"
-	default = {
-		name = "TOT_MOB_ITA_ON"
-		text = "Total Mob on"
-		desc = "gives Italy Total Mobilisation when declaring on Yugoslavia "
-	}
-	option = {
-		name = "TOT_MOB_ITA_OFF"
-		text = "Total Mob off"
-		desc = "keep Total Mobilisation disabled until Italy joins WW2"
-	}		
-}
-JFU_SPECIAL_FORCES_CAP = {
-	name = "Special Forces Cap Settings"
-	group = "HORST_GROUPKEY"
-	icon = "RULE_GROUP_GENERAL_UI"
-	option = {
-		name =  "JFU_STANDARD_CAP"
-		text = "Standard JFU Settings"
-		desc = "Clicking this option will keep the inital Cap at 200"
-	}
-	option = {
-		name = "JFU_DOUBLE_CAP"
-		text = "double SF Cap"
-		desc = "Clicking this option will double the cap to 400"
-	}
-	option = {
-		name = "JFU_QUADRUPLE_CAP"
-		text = "quaduple SF Cap"
-		desc = "Clicking this option will quadrople the cap to 800"
-	}
-	default = {
-		name = "JFU_NO_CAP"
-		text = "remove SF Cap"
-		desc = "Clicking this option will remove the cap completly"
-	}
-
-}
-JFU_AFRICA_TILES = {
-	name = "AFRICA Tiles Settings"
-	group = "HORST_GROUPKEY"
-	icon = "RULE_GROUP_GENERAL_UI"
-	default = {
-		name = "THREE_TILE_AFRICA"
-		text = "Modded Africa"
-		desc = "enables modded Africa - 3 tile El-Alamein"
-	}
-	option = {
-		name = "ONE_TILE_AFRICA"
-		text = "Vanilla Africa"
-		desc = "disables modded Africa - 1 tile El-Alamein"
-	}	
-}
-JFU_SPAIN = {
-	name = "Spain CW Settings"
-	group = "HORST_GROUPKEY"
-	icon = "RULE_GROUP_GENERAL_UI"
-	option = {
-		name = "SPAIN_NORMAL"
-		text = "Normal Spain"
-		desc = "Spain gets -40% attack in the civil War (disable if played without pregrinded)"
-	}
-	option = {
-		name = "SPAIN_EASY"
-		text = "Easy Spain"
-		desc = "Spain gets no minus attack in civil War"
-	}
-	default = {
-		name = "SPAIN_NO_CW"
-		text = "NO Civil War Spain"
-		desc = "Spain gets the civil war bypassed"
-	}			
-}
-FIN_WAR = {
-	name = "Finnland War"
-	group = "HORST_GROUPKEY"
-	icon = "RULE_GROUP_GENERAL_UI"
-	option = {
-		name = "FINNLAND_BARB"
-		text = "Finnland joins BARB, Winter War"
-		desc = "..."
-	}
-	default = {
-		name = "FIN_VOLUNTEER"
-		text = "Voluntter Only, No Winter War"
-		desc = "..."
-	}			
-}
-CASUAL_STUFF = {
-	name = "changes for casual JFU"
-	group = "HORST_GROUPKEY"
-	icon = "RULE_GROUP_GENERAL_UI"
-	default = {
-		name = "CASUAL_STUFF_OFF"
-		text = "Disabled - Normal JFU"
-		desc = "keeps Island hoping, Japan declaring on soviets, Clown front for Japan...disabled"
-	}
-	option = {
-		name = "CASUAL_STUFF_ON"
-		text = "Enabled - more casual/larp JFU"
-		desc = "enabled Island hoping, Japan declaring on soviets, Clown front for Japan..."
-	}		
-}
-JFU_closed_eco_JAPAN = {
-	name = "Japan Eco "
-	group = "JAP_GROUPKEY"
-	icon = "RULE_GROUP_GENERAL_UI"
-
-	default = {
-		name = "DISABLE_CLOSED_ECO"
-		text = "Vanilla eco Japan"
-		desc = "Clicking this option will give Japan vanilla eco"
-	}
-	option = {
-		name = "ENABLE_CLOSED_ECO"
-		text = "closed eco Japan"
-		desc = "Clicking this option will give Japan closed eco"
-	}
-}
-horst_manchukuo = {
-	name = "Manchukuo Focus Tree"
-	group = "MODDED_FOCI"					
-	icon = "GFX_decision_hol_draw_up_staff_plans"			
-	default = {	
-		name = "HORST_ENABLE_VANILLA_MANCHUKUO"
-		text = "Vanilla Manchukuo Focus Tree"
-		desc = "Clicking this option will keep the vanilla Manchukuo focus tree that is used in Horst"	
-	}
-	option = {	
-		name = "HORST_ENABLE_MOD_MANCHUKUO" 
-		text = "Modded Manchukuo Focus Tree"
-		desc = "Clicking this option will give Manchukuo a powerful new focus tree that was created by Thrasymachus"	
-	}
-}
-finland_focus = {
-	name = "Finland Focus Tree"
-	group = "MODDED_FOCI"					
-	icon = "GFX_decision_hol_draw_up_staff_plans"			
-	default = {	
-		name = "HORST_ENABLE_MOD_FINLAND"
-		text = "Finland Modded Focus Tree"
-		desc = "Clicking this option will give Finland a powerful new focus tree that was created by Leo"	
-	}
-	option = {	
-		name = "HORST_ENABLE_VANILLA_FINLAND" 
-		text = "Finland Vanilla Focus Tree"
-		desc = "Vanilla Focus Tree for Finland"	
 	}
 }
