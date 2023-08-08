@@ -47,7 +47,7 @@
 		id = JAP_liaison_conference
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = JAP_purge_the_kodoha_faction }
-		x = -2
+		x = -1
 		y = 1
 		relative_position_id = JAP_purge_the_kodoha_faction
 
@@ -81,7 +81,7 @@
 		id = JAP_greater_east_asian_co_prosperity_sphere
 		icon = GFX_goal_generic_alliance
 		prerequisite = { focus = JAP_liaison_conference }
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = JAP_liaison_conference
 
@@ -233,7 +233,7 @@
 		id = JAP_strike_south_doctrine
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		prerequisite = { focus = JAP_greater_east_asian_co_prosperity_sphere }
-		x = 1
+		x = 0
 		y = 2
 		relative_position_id = JAP_liaison_conference
 
@@ -413,7 +413,7 @@
 		id = JAP_guide_the_zaibatsus
 		icon = GFX_focus_jap_zaibatsu
 		prerequisite = { focus = JAP_purge_the_kodoha_faction }
-		x = 2
+		x = 1
 		y = 1
 		relative_position_id = JAP_purge_the_kodoha_faction
 
@@ -477,7 +477,8 @@
 	focus = {
 		id = JAP_nationalize_war_industry
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = JAP_national_mobilization_law }
+		prerequisite = { focus = JAP_national_mobilization_law  }
+		prerequisite = { focus = JAP_guide_the_zaibatsus }
 		x = 0
 		y = 2
 		relative_position_id = JAP_guide_the_zaibatsus
@@ -542,7 +543,7 @@
 			add_tech_bonus = {
 				name = JAP_coal_liquification
 				bonus = 1.0
-				uses = 1
+				uses = 2
 				category = synth_resources	
 			}
 		}
@@ -552,7 +553,7 @@
 		id = JAP_national_mobilization_law
 		icon = GFX_goal_generic_axis_build_infantry
 		prerequisite = { focus = JAP_guide_the_zaibatsus  }
-		x = 0
+		x = 2
 		y = 1
 		relative_position_id = JAP_guide_the_zaibatsus
 
@@ -607,9 +608,6 @@
 
 		ai_will_do = {
 			factor = 4
-		}
-		allow_branch = {
-			always = no
 		}
 		available = {
 
