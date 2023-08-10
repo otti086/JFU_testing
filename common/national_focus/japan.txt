@@ -610,7 +610,9 @@
 			factor = 4
 		}
 		available = {
-
+			716 = {
+				NOT = { is_fully_controlled_by = MAN}
+			}
 		}
 
 		bypass = {
