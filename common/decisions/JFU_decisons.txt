@@ -191,18 +191,12 @@ JFU_decisions = {
 		available = {
 			date > 1941.11.1
 		}
-		visible = {
-			always = no
-		}
+#		visible = {
+#			always = no
+#		}
 		cost = 0
 		complete_effect = {
-			GER = { add_timed_idea = { idea = soviet_winter_offensive1 days = 180 } }
-			hidden_effect = {
-				HUN = { add_timed_idea = { idea = soviet_winter_offensive1 days = 180 } }
-				ROM = { add_timed_idea = { idea = soviet_winter_offensive1 days = 180 } }	
-				BUL = { add_timed_idea = { idea = soviet_winter_offensive1 days = 180 } }	
-				SPR = { add_timed_idea = { idea = soviet_winter_offensive1 days = 180 } }
-			}
+			SOV = { add_timed_idea = { idea = soviet_winter_offensive1 days = 120 } }
 		}
 	}
 	"Winter 42 Counter Offensive" = {
@@ -212,18 +206,12 @@ JFU_decisions = {
 		available = {
 			date > 1942.11.1
 		}
-		visible = {
-			always = no			
-		}
+#		visible = {
+#			always = no			
+#		}
 		cost = 0
 		complete_effect = {
-			GER = { add_timed_idea = { idea = soviet_winter_offensive2 days = 180 } }
-			hidden_effect = {
-				HUN = { add_timed_idea = { idea = soviet_winter_offensive2 days = 180 } }
-				ROM = { add_timed_idea = { idea = soviet_winter_offensive2 days = 180 } }	
-				BUL = { add_timed_idea = { idea = soviet_winter_offensive2 days = 180 } }	
-				SPR = { add_timed_idea = { idea = soviet_winter_offensive2 days = 180 } }
-			}
+			SOV = { add_timed_idea = { idea = soviet_winter_offensive2 days = 120 } }
 		}
 	}
 	"Winter 43 Counter Offensive" = {
@@ -239,12 +227,6 @@ JFU_decisions = {
 		cost = 0
 		complete_effect = {
 			GER = { add_timed_idea = { idea = soviet_winter_offensive3 days = 180 } }
-			hidden_effect = {
-				HUN = { add_timed_idea = { idea = soviet_winter_offensive3 days = 180 } }
-				ROM = { add_timed_idea = { idea = soviet_winter_offensive3 days = 180 } }	
-				BUL = { add_timed_idea = { idea = soviet_winter_offensive3 days = 180 } }	
-				SPR = { add_timed_idea = { idea = soviet_winter_offensive3 days = 180 } }
-			}
 		}
 	}
 	"Iraq Oil" = {
