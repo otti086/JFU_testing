@@ -536,7 +536,14 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = GER_atlantikwall_idea
 			every_state = { 
-				limit = { atlantikwall_states = yes }
+				limit = { 
+					AND = {
+						atlantikwall_states = yes
+						NOT = {
+							is_core_of = NOR
+						}
+					}
+				}
 				set_building_level = {
 					type = coastal_bunker
 					level = 5
