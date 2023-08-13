@@ -10948,6 +10948,7 @@ news_event = {
 			limit = {
 				atlantikwall_states = yes
 				is_controlled_by = GER
+				NOT = { is_core_of = NOR }
 			}
 			add_dynamic_modifier = {
 				modifier = Atlantikwall_modifier
