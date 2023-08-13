@@ -120,13 +120,13 @@ characters={
 				small="gfx/interface/ideas/idea_RAJ_herbert_fitzherbert.dds"
 			}
 		}
-		navy_leader={
-			traits={ old_guard_navy }
+		corps_commander = {
+			traits={ }
 			skill=2
 			attack_skill=2
 			defense_skill=2
-			maneuvering_skill=1
-			coordination_skill=2
+			planning_skill=1
+			logistics_skill=2
 			legacy_id=-1
 		}
 	}

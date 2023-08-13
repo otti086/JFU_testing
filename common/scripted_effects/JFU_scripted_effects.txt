@@ -3241,17 +3241,23 @@ JFU_update_generals = {
 	}
 	BRA = {
 		BRA_eurico_gaspar_dutra = {
-			add_unit_leader_trait = commando			
+			add_unit_leader_trait = commando
+			add_unit_leader_trait = trait_mountaineer		
 		}
 		BRA_eurico_gaspar_dutra = {
 			add_unit_leader_trait = aggressive_assaulter
 			add_unit_leader_trait = thorough_planner
+			add_unit_leader_trait = trait_mountaineer	
 		}
 		BRA_mascarenhas_de_morais = {
 			add_unit_leader_trait = expert_improviser	
 			add_unit_leader_trait = trait_engineer
 			add_unit_leader_trait = fortress_buster
 			add_unit_leader_trait = commando	
+		}
+		BRA_augusto_rademaker = { add_skill_level = 1 }
+		BRA_augusto_rademaker = {
+			add_unit_leader_trait = commando
 		}
 	}
 	AST = {
@@ -3280,6 +3286,10 @@ JFU_update_generals = {
 		}
 		AST_alan_vasey = {	
 			add_unit_leader_trait = expert_improviser				
+		}
+		AST_horace_robertson = { add_skill_level = 1 }
+		AST_horace_robertson = {
+			add_unit_leader_trait = commando
 		}
 	}
 	SAF = {
@@ -3348,6 +3358,9 @@ JFU_update_generals = {
 			add_unit_leader_trait = fortress_buster
 			add_unit_leader_trait = commando
 		}
+		ENG_neil_ritchie = {
+			add_unit_leader_trait = commando
+		}
 	}
 	FRA = {
 		FRA_maxime_weygand = {
@@ -3390,6 +3403,10 @@ JFU_update_generals = {
 		RAJ_douglas_gracey = {
 			add_unit_leader_trait = thorough_planner
 		}
+		RAJ_herbert_fitzherbert = { add_skill_level = 2 }
+		RAJ_herbert_fitzherbert = {
+			add_unit_leader_trait = commando
+		}
 	}
 	NZL = {
 		NZL_robert_row = {
@@ -3407,6 +3424,9 @@ JFU_update_generals = {
 		}
 		NZL_william_stevens = {
 			add_unit_leader_trait = thorough_planner
+		}
+		NZL_bernard_freyberg = {
+			add_unit_leader_trait = commando
 		}
 	}
 	IRE = {
