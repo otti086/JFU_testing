@@ -592,6 +592,23 @@ ideas = {
 				}
 			}
 		}
+		GER_over_extented_military = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			cancel={
+				NOT = {
+					551 = { is_controlled_by_ROOT_or_ally = yes }
+				}
+			}
+			picture = HUN_treaty_of_triannon	
+			modifier = {
+				supply_consumption_factor = -0.2 
+				army_org_regain = -0.2 
+				supply_node_range = -0.1					
+			}		
+		}
 		JFU_WW_vision = {
 			allowed = {
 				always = yes
@@ -707,7 +724,12 @@ ideas = {
 					}
 				}
 			}
-			modifier = {  army_strength_factor = 0.2 supply_consumption_factor = -0.1 army_org_regain = 0.1 supply_node_range = 0.1	}
+			modifier = {  
+#				army_strength_factor = 0.2 
+				supply_consumption_factor = -0.1 
+				army_org_regain = 0.1 
+				supply_node_range = 0.1	
+			}
 #			equipment_bonus = {
 #				small_plane_airframe = {  air_defence = 0.2 instant = yes }
 #			}

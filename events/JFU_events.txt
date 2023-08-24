@@ -588,6 +588,37 @@ news_event = {
 	}
 }
 news_event = {
+	id = news.5006
+	title = news.5006.t
+	desc = news.5006.d
+	picture = GFX_news_event_italian_tank_desert
+	hidden = yes
+	major = yes
+	trigger = {
+		551 = { is_controlled_by = ITA }
+		551 = { is_owned_by = ENG }
+		GER = { has_war_with = ENG }
+		NOT = { has_global_flag = fall_of_aswan }
+	}
+	immediate = {
+		set_global_flag = fall_of_aswan
+		if = {
+			limit = {
+				NOT = { GER = { has_war_with = SOV } }
+			}
+			GER = {
+				add_timed_idea = { idea = GER_over_extented_military days = 210 }
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
+	option = {
+		name = "ok"
+	}
+}
+news_event = {
 	id = news.15
 	title = news.15.t
 	desc = news.15.d

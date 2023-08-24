@@ -980,6 +980,7 @@
  GER_fall_of_france_tt:0 "This focus is automatically completed upon the capitulation of §YFrance§!."
  GER_fall_blau_focus_tt:0 "This focus is automatically completed upon pressing the Fall Blau decision"
  axis_fall_blau:0 "Fall Blau"
+ SOV_Bessarabia:0 "Demand Besserabia"
 
  news.5003.d:0 "Since the start of Operation Barbarossa the Workers' and Peasants' Red Army has been plagued by routing, leaving many Soviet industrial and urban centers near the border under Axis control. Joseph Stalin has responded with an order to all Red Army commanders to cease unauthorized retreats and set up special detachments for dealing with deserters."
  news.5004.d:0 "Following a long and arduous process of recovering from the trials of the Great Purge, the Red Army, through the fire and flames of war, has proven itself to be just as tactically competent as the Wehrmacht, despite the retreats. Joseph Stalin has ordered an end to retreating: 'Not one step back'."
@@ -987,6 +988,7 @@
  SOV_BARB_Debuff:0 "Suprise Attack"
  attache_idea_tt:0 "gains the attache modifiers as long as the recieving country is at war"
  attache_idea:0 "Attache Send"
+decision_cost_CP_50_pp_100:0 "£command_power  §Y50§! £pol_power  §Y100§!"
 
  wtt_manchukou.11.C:0 "Build up our Civillian Industry"
  wtt_manchukou.11.M:0 "Invest in our Military Industry"
