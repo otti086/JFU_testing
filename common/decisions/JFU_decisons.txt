@@ -1320,6 +1320,7 @@ JFU_decisions = {
 			GER = {
 				has_war_with = SOV
 			}
+			ENG = { controls_state = 883 }
 		}
 		cost = 0
 		complete_effect = {
