@@ -1433,6 +1433,61 @@ JFU_decisions = {
 			annex_country = { target = MEX transfer_troops = no}		
 		}			
 	}
+	"Send Attache" = {
+		icon = generic_operation
+		fire_only_once = no
+		allowed = { always = yes}
+		visible = {
+			is_ai = no
+		}
+		available = { 
+			AND = {
+				OR = {
+					AND = {
+						SPR = {
+							has_war_with = SPA
+						}
+						NOT = {
+							tag = SPR
+						}
+						NOT = {
+							has_game_rule = {
+								rule = JFU_SPAIN
+								option = SPAIN_NO_CW
+							}
+						}
+					}
+					AND = {
+						JAP = {
+							has_war_with = CHI
+						}
+						NOT = {
+							tag = JAP
+						}
+					}
+					GER = { has_war = yes }
+				}
+				NOT = {
+					has_idea = attache_idea
+				}
+			}
+		}
+		custom_cost_trigger = {
+			command_power > 49
+			has_political_power > 99
+		}
+		custom_cost_text = decision_cost_CP_50_pp_100
+		complete_effect = {
+			hidden_effect = {
+				add_ideas = {
+					attache_idea
+				}
+				add_political_power = -100
+				add_command_power = -50
+			}
+			custom_effect_tooltip = attache_idea_tt
+		}	
+	}
 }
 
 JFU_templates = {

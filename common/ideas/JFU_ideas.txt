@@ -721,5 +721,15 @@ ideas = {
 				production_speed_synthetic_refinery_factor = 2
 			}	
 		}
+		attache_idea = {
+			allowed = {	always = no	}
+			available = {  always = yes  }
+			removal_cost = -1
+			picture = generic_infantry_bonus
+			modifier = {
+				max_command_power = -50
+				war_support_factor = 0.1
+			}			
+		}
 	}
 }

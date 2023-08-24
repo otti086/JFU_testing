@@ -70,6 +70,10 @@ NDefines.NDiplomacy.VOLUNTEERS_DIVISIONS_REQUIRED = 1
 NDefines.NDiplomacy.OPINION_PER_VOLUNTEER = 10
 NDefines.NDiplomacy.MAX_OPINION_FROM_VOLUNTEERS = 50
 NDefines.NDiplomacy.DIPLOMACY_HOURS_BETWEEN_REQUESTS = 2
+NDefines.NDiplomacy.BASE_SEND_ATTACHE_COST = 0				-- vanilla 100 Political power cost to send attache
+NDefines.NDiplomacy.BASE_SEND_ATTACHE_CP_COST = 0			-- vanilla 50 Command Power sent attache usage cost
+
+
 
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 480			
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 20

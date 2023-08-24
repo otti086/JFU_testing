@@ -314,6 +314,9 @@ on_actions = {
 				}
 				JAP = {
 					add_ideas = peace_training 
+				}
+				every_country = {
+					remove_ideas = { attache_idea}
 				}		
 			}
 			if = {
@@ -385,6 +388,9 @@ on_actions = {
 				if = { limit = { country_exists = NZL } NZL = { add_war_support = 0.1} }
 				RAJ = { add_war_support = 0.1}
 				SOV = { add_war_support = 0.1}
+				every_country = {
+					remove_ideas = { attache_idea}
+				}		
 
 			}
 			if = {
@@ -401,6 +407,9 @@ on_actions = {
 				set_global_flag = scw_over
 				set_global_flag = nationalist_victory
 				SPR = { country_event = { id = lar_news.1 hours = 6 } }
+				every_country = {
+					remove_ideas = { attache_idea}
+				}		
 			}
 			if = {
 				limit = {

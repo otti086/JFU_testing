@@ -1602,9 +1602,6 @@ focus_tree = {
 				GER = { remove_resource_rights = 724 }
 				remove_ideas = GER_rubber_balance
 				add_named_threat = { threat = 5 name = GER_danzig_or_war }
-				USA = { add_ideas = JFU_WW_vision }
-				MEX = { add_ideas = JFU_WW_vision }
-				BRA = { add_ideas = JFU_WW_vision }
 			}
 			custom_effect_tooltip = GER_danzi_or_war_tt
 		}
