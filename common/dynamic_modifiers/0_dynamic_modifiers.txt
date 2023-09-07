@@ -1284,6 +1284,6 @@ Atlantikwall_modifier = {
 
 	icon = GFX_idea_generic_manpower_bonus	
 
-	max_dig_in_factor = 10
-	naval_invasion_penalty = 1
+	max_dig_in = AW_dig
+	naval_invasion_penalty = AW_nip
 }

@@ -4309,3 +4309,29 @@ update_operation_ai = {
 		}
 	}
 }
+Atlantikwall_modifier_change_small = {
+	if = { limit = { any_country = { axis = yes } controls_state = } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
+	if = { limit = { any_country = { axis = yes } controls_state = } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
+	if = { limit = { any_country = { axis = yes } controls_state = } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
+	if = { limit = { any_country = { axis = yes } controls_state = } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
+	if = { limit = { any_country = { axis = yes } controls_state = } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
+	if = { limit = { any_country = { axis = yes } controls_state = } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
+	if = { limit = { any_country = { axis = yes } controls_state = } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
+	if = { limit = { any_country = { axis = yes } controls_state = } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
+	if = { limit = { any_country = { axis = yes } controls_state = } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
+	if = { limit = { any_country = { axis = yes } controls_state = } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
+	if = { limit = { any_country = { axis = yes } controls_state = } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
+	if = { limit = { any_country = { axis = yes } controls_state = } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
+	if = { limit = { any_country = { axis = yes } controls_state = } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
+	if = { limit = { any_country = { axis = yes } controls_state = } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
+	if = { limit = { any_country = { axis = yes } controls_state = } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
+	if = { limit = { any_country = { axis = yes } controls_state = } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
+	if = { limit = { any_country = { axis = yes } controls_state = } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
+	if = { limit = { any_country = { axis = yes } controls_state = } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
+	if = { limit = { any_country = { axis = yes } controls_state = } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
+	if = { limit = { any_country = { axis = yes } controls_state = } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
+
+}
+Atlantikwall_modifier_change_big = {
+	add_tovariable = { var = AW_dig value = -1 } add_to_variable = { var = AW_nip value = -0.05 } 
+}

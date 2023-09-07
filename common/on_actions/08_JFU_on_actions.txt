@@ -670,21 +670,22 @@ on_actions = {
 			if = {
 				limit = {
 					AND = {
-						date > 1942.01.01
+						date > 1941.01.01
 						any_state = {
 							has_dynamic_modifier = { modifier = Atlantikwall_modifier}
 						}
+						465 = { 
+							is_controlled_by = {
+								any_country = {
+									limit = {
+										axis = yes 
+									}
+								}
+							}
+						}								
 					}
 				}
-				GER = {
-					every_state = {
-						limit = {
-							atlantikwall_states = yes
-							is_controlled_by = GER								
-						}
-						remove_dynamic_modifier = { modifier = Atlantikwall_modifier}
-					}
-				}
+				Atlantikwall_modifier_change_small = yes
 			}
 			if = {
 				limit = {
