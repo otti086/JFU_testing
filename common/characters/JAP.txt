@@ -699,7 +699,7 @@ characters={
 		}
 		
 		navy_leader={
-			traits={ bold aviation_enthusiast superior_tactician spotter air_controller flight_deck_manager fleet_protector }
+			traits={ bold aviation_enthusiast superior_tactician spotter air_controller flight_deck_manager }
 			skill=5
 			attack_skill=5
 			defense_skill=2
@@ -850,7 +850,7 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ bold navy_career_officer aviation_enthusiast blockade_runner superior_tactician }
+			traits={ bold navy_career_officer aviation_enthusiast blockade_runner superior_tactician fleet_protector }
 			skill=5
 			attack_skill=5
 			defense_skill=3
