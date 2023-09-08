@@ -5,6 +5,7 @@ ideas = {
 			ledger = army
 			available = { has_military_academy = yes }
 			modifier = {
+				breakthrough_factor = 0.05
 				custom_modifier_tooltip = bold_attack_spirit_tt
 			}
 			ai_will_do = {
@@ -15,6 +16,7 @@ ideas = {
 			ledger = army
 			available = { has_military_academy = yes }
 			modifier = {
+				army_defence_factor  = 0.03
 				custom_modifier_tooltip = tenacious_defense_spirit_tt
 			}
 			ai_will_do = {
@@ -25,6 +27,7 @@ ideas = {
 			ledger = army
 			available = { has_military_academy = yes }
 			modifier = {
+				max_planning = 0.03
 				custom_modifier_tooltip = meticulous_preparation_spirit_tt
 			}
 			ai_will_do = {
@@ -35,11 +38,11 @@ ideas = {
 			ledger = army
 			available = { has_military_academy = yes }
 			visible = { 
-				has_government = democratic
+				OR = { has_government = neutrality has_government = democratic }
 			}
 			modifier = {
+				army_org = 4
 				army_leader_start_level = 2
-				army_intel_to_others = -5.0
 				custom_modifier_tooltip = best_of_the_best_spirit_tt
 			}
 			ai_will_do = {
@@ -54,6 +57,7 @@ ideas = {
 				has_government = communism
 			}
 			modifier = {
+				attrition = -0.2
 				army_leader_start_level = 1
 				army_leader_cost_factor = -0.3 
 				unit_leader_as_advisor_cp_cost_factor = -0.75
@@ -85,10 +89,10 @@ ideas = {
 			ledger = army
 			available = { has_military_academy = yes }
 			modifier = {
+				recon_factor = 0.15
+				max_command_power = 30
+				planning_speed = 0.10
 				custom_modifier_tooltip = inventive_leadership_spirit_tt
-				trait_naval_invader_xp_gain_factor = 0.2
-				trait_commando_xp_gain_factor = 0.2
-				trait_trickster_xp_gain_factor = 0.2
 			}
 			ai_will_do = {
 				factor = 1
@@ -100,7 +104,8 @@ ideas = {
 			visible = { has_tech = mobile_warfare }
 			modifier = {
 				custom_modifier_tooltip = mobile_warfare_academy_spirit_tt
-				trait_panzer_leader_xp_gain_factor = 0.2
+				army_fuel_capacity_factor = 0.25
+				army_org_regain = 0.03
 			}
 			ai_will_do = {
 				factor = 1
@@ -112,9 +117,8 @@ ideas = {
 			visible = { has_tech = superior_firepower }
 			modifier = {
 				custom_modifier_tooltip = superior_firepower_academy_spirit_tt
-				trait_engineer_xp_gain_factor = 0.2
-				trait_fortress_buster_xp_gain_factor = 0.1
-				trait_scavenger_xp_gain_factor = 0.1
+				air_cas_present_factor = 0.075
+				initiative_factor = 0.04
 			}
 			ai_will_do = {
 				factor = 1
@@ -126,7 +130,10 @@ ideas = {
 			visible = { has_tech = trench_warfare }
 			modifier = {
 				custom_modifier_tooltip = theatre_training_academy_spirit_tt
-				terrain_trait_xp_gain_factor = 0.2
+				acclimatization_cold_climate_gain_factor = 0.50 
+				acclimatization_hot_climate_gain_factor  = 0.50
+				truck_attrition_factor = -0.25
+				supply_node_range = 0.025
 			}
 			ai_will_do = {
 				factor = 1
@@ -138,7 +145,7 @@ ideas = {
 			visible = { has_tech = mass_assault }
 			modifier = {
 				custom_modifier_tooltip = mass_assault_academy_spirit_tt
-				trait_infantry_leader_xp_gain_factor = 0.2
+				modifier_army_sub_unit_infantry_speed_factor = 0.25  
 			}
 			ai_will_do = {
 				factor = 1
@@ -162,10 +169,8 @@ ideas = {
 		elevated_engineering_corps_spirit = {
 			ledger = army
 			modifier = {
-				trait_engineer_xp_gain_factor = 0.25
-				unit_engineer_design_cost_factor = -1
-				dig_in_speed_factor = 0.1
-				railway_gun_bombardment_factor = 0.20
+				dig_in_speed_factor = 0.25
+				railway_gun_bombardment_factor = 0.2
 			}
 			ai_will_do = {
 				factor = 1
@@ -175,9 +180,8 @@ ideas = {
 		proper_heritage_spirit = {
 			ledger = army
 			modifier = {
-				unit_cavalry_design_cost_factor = -1
 				cavalry_attack_factor = 0.05
-				supply_combat_penalties_on_core_factor = -0.2
+				out_of_supply_factor = -0.2
 			}
 			ai_will_do = {
 				factor = 1
@@ -199,7 +203,7 @@ ideas = {
 		relief_of_command_spirit = {
 			ledger = army
 			visible = { 
-				has_government = democratic 
+				OR = { has_government = neutrality has_government = democratic }
 				NOT = { tag = FRA } 
 			}
 			modifier = {
@@ -228,7 +232,7 @@ ideas = {
 			visible = { has_government = communism }
 			modifier = {
 				pocket_penalty = -0.2
-				weekly_manpower = 500
+				weekly_manpower = 5000
 			}
 			ai_will_do = {
 				factor = 1
@@ -251,19 +255,8 @@ ideas = {
 			visible = { has_tech = mobile_warfare }
 			ledger = army
 			modifier = {
-
-				experience_gain_motorized_combat_factor = 0.1
-				experience_gain_mechanized_combat_factor = 0.1
-				unit_light_armor_design_cost_factor = -1
-				#light_tank_destroyer_brigade
-				unit_medium_armor_design_cost_factor = -1
-				#medium_tank_destroyer_brigade 
-				unit_modern_armor_design_cost_factor = -1
-				unit_heavy_armor_design_cost_factor = -1
-				#heavy_tank_destroyer_brigade 
-				unit_super_heavy_armor_design_cost_factor = -1
-				unit_motorized_design_cost_factor = -1
-				unit_mechanized_design_cost_factor = -1
+				army_armor_speed_factor = 0.05 
+				army_fuel_capacity_factor = 0.25
 			}
 			ai_will_do = {
 				factor = 1
@@ -274,15 +267,8 @@ ideas = {
 			visible = { has_tech = superior_firepower  }
 			ledger = army
 			modifier = {
-				experience_gain_artillery_combat_factor = 0.1
-				unit_infantry_design_cost_factor = -1
-				unit_artillery_brigade_design_cost_factor = -1
-				unit_artillery_design_cost_factor = -1
-				unit_mot_artillery_brigade_design_cost_factor = -1
-				unit_light_sp_artillery_brigade_design_cost_factor = -1
-				unit_medium_sp_artillery_brigade_design_cost_factor = -1
-				unit_heavy_sp_artillery_brigade_design_cost_factor = -1
-				unit_super_heavy_sp_artillery_brigade_design_cost_factor = -1
+				army_artillery_attack_factor = 0.05
+				army_artillery_defence_factor = 0.05
 			}
 			ai_will_do = {
 				factor = 1
@@ -293,13 +279,11 @@ ideas = {
 			visible = { has_tech = trench_warfare }
 			ledger = army
 			modifier = {
-				unit_marine_design_cost_factor = -1
-				unit_mountaineers_design_cost_factor = -1
-				unit_paratrooper_design_cost_factor = -1
 				naval_invasion_capacity = 10
 				extra_paratrooper_supply_grace = 24
 				extra_marine_supply_grace = 24
 				naval_invasion_planning_bonus_speed = 1
+				special_forces_out_of_supply_factor = -0.2
 			}
 			ai_will_do = {
 				factor = 1
@@ -310,10 +294,7 @@ ideas = {
 			ledger = army
 			visible = { has_tech = mass_assault }
 			modifier = {
-				experience_gain_infantry_combat_factor = 0.1
-				unit_infantry_design_cost_factor = -1
-				unit_motorized_design_cost_factor = -1
-				unit_mechanized_design_cost_factor = -1
+				army_infantry_defence_factor = 0.05
 			}
 			ai_will_do = {
 				factor = 1
@@ -342,7 +323,7 @@ ideas = {
 				tactic_elastic_defense_preferred_weight_factor = 1
 				tactic_overwhelming_fire_preferred_weight_factor = 1
 				max_dig_in_factor = 0.1
-				dig_in_speed_factor = 0.1
+				dig_in_speed_factor = 0.25
 			}
 			ai_will_do = {
 				factor = 1
@@ -354,7 +335,7 @@ ideas = {
 			modifier = {
 				org_loss_when_moving = -0.15
 				army_speed_factor = 0.05
-				choose_preferred_tactics_cost = -15
+				land_reinforce_rate	= 0.01
 			}
 			ai_will_do = {
 				factor = 1
@@ -365,8 +346,8 @@ ideas = {
 			ledger = army
 			modifier = {
 				tactic_infantry_charge_preferred_weight_factor = 1
-				intel_from_combat_factor = 0.15
-				recon_factor = 0.15
+				intel_from_combat_factor = 0.25
+				recon_factor = 0.25
 			}
 			ai_will_do = {
 				factor = 1
@@ -378,6 +359,7 @@ ideas = {
 			modifier = {
 				tactic_delay_preferred_weight_factor = 1
 				training_time_army_factor = -0.15
+				experience_loss_factor = -0.15
 			}
 			ai_will_do = {
 				factor = 1
@@ -388,7 +370,7 @@ ideas = {
 			ledger = army
 			modifier = {
 				tactic_human_wave_tactics_preferred_weight_factor = 1
-				org_loss_at_low_org_factor = -0.15
+				org_loss_at_low_org_factor = -0.25
 			}
 			ai_will_do = {
 				factor = 1
