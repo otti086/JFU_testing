@@ -549,6 +549,21 @@ focus_tree = {
 					}
 				}
 			}
+			if = {
+				limit = {
+					any_country = { axis = yes controls_state = 456 }
+				}
+				every_state = {
+					limit = {
+						atlantikwall_states = yes
+						is_controlled_by = GER
+						NOT = { is_core_of = NOR }
+					}
+					add_dynamic_modifier = {
+						modifier = Atlantikwall_modifier
+					}
+				}			
+			}
 		}
 	}
 

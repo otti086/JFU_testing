@@ -669,14 +669,9 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-					AND = {
-						date > 1941.01.01
-						any_state = {
-							has_dynamic_modifier = { modifier = Atlantikwall_modifier}
-						}							
-					}
-				Atlantikwall_modifier_effect = yes
+					has_completed_focus = GER_atlantikwall
 				}
+				Atlantikwall_modifier_effect = yes
 			}
 		}
 	}

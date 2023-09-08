@@ -317,17 +317,6 @@ on_actions = {
 			}
 		}
 	}
-	on_weekly = {
-		effect = {
-			if = {
-				limit = { 
-					has_intelligence_agency = yes
-					is_ai = yes
-				}
-				update_operation_ai = yes
-			}
-		}
-	}
 	# scope is operative
 	# from scope is the country 
 	#on_operative_recruited = {

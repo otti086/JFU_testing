@@ -1,6 +1,7 @@
 ﻿capital = 64
 
-
+set_variable = { var = Atlantikwall_dig_in_modifier value = 10 }
+set_variable = { var = Atlantikwall_invasion_penalty_modifier value = 0.5 }
 set_variable = {
     var = min_fuel
     value = 0.300

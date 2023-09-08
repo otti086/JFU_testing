@@ -878,12 +878,12 @@ HMP_anti_building_exploit_effect = { #add to horst tool
 island_hopping_JAP = {
 	set_variable = { PJ_05 = 0 }	
 	set_variable = { PJ_15 = 0 }
-	if = { limit = { any_country = {axis = yes controls_state = 629}} 	add_to_variable = {var = PJ_05 value = -0.02 } add_to_variable = { var = PJ_15 value = 0.05 } }
-	if = { limit = { any_country = {axis = yes controls_state = 631}} add_to_variable = {	var = PJ_05 value = -0.02 } add_to_variable = { 	var = PJ_15 value = 0.05 } }
-	if = { limit = { any_country = {axis = yes controls_state =632 }} add_to_variable = { var = PJ_05 value = -0.02 } add_to_variable = { var = PJ_15 value = 0.05 } }
-	if = { limit = { NOT = { any_country = {axis = yes controls_state = 648}}} add_to_variable = {	var = PJ_05 value = 0.02 } add_to_variable = { var = PJ_15 value = -0.05 } }
-	if = { limit = { NOT = { any_country = {axis = yes controls_state = 645}}} add_to_variable = {	var = PJ_05 value = 0.02 } add_to_variable = { var = PJ_15 value = -0.05 } }
-	if = { limit = { NOT = { any_country = {axis = yes controls_state = 526}}} add_to_variable = {	var = PJ_05 value = 0.02 } add_to_variable = { var = PJ_15 value = -0.05 } }
+	if = { limit = { any_country = {axis = yes controls_state = 629 } } add_to_variable = { var = PJ_05 value = -0.02 } add_to_variable = { var = PJ_15 value = 0.05 } }
+	if = { limit = { any_country = {axis = yes controls_state = 631 } } add_to_variable = {	var = PJ_05 value = -0.02 } add_to_variable = { var = PJ_15 value = 0.05 } }
+	if = { limit = { any_country = {axis = yes controls_state = 632 } } add_to_variable = { var = PJ_05 value = -0.02 } add_to_variable = { var = PJ_15 value = 0.05 } }
+	if = { limit = { NOT = { any_country = {axis = yes controls_state = 648 } } } add_to_variable = { var = PJ_05 value = 0.02 } add_to_variable = { var = PJ_15 value = -0.05 } }
+	if = { limit = { NOT = { any_country = {axis = yes controls_state = 645 } } } add_to_variable = { var = PJ_05 value = 0.02 } add_to_variable = { var = PJ_15 value = -0.05 } }
+	if = { limit = { NOT = { any_country = {axis = yes controls_state = 526 } } } add_to_variable = { var = PJ_05 value = 0.02 } add_to_variable = { var = PJ_15 value = -0.05 } }
 }
 island_hopping_USA = {
 	set_variable = { PJU_05 = 0}	
@@ -4085,261 +4085,37 @@ JFU_apply_intel = {
         }
     }
 }
-update_operation_ai = {
-	# old target is no longer relevant
-	if = {
-		limit = {
-			NOT = { check_variable = { generic_operation_target = 0 } }
-			var:generic_operation_target = {
-				OR = {
-					exists = no
-					has_capitulated = yes
-					is_ally_with = PREV
-				}
-			}
-		}
-		set_variable = { generic_operation_target = 0 }
-	}
-
-
-	# pick an operation target
-	get_highest_scored_country = {
-		scorer = ai_generic_operation_target_scorer
-		var = generic_operation_target
-	}
-	
-	# this variable will be our limiting factor for actually doing operations
-	
-	# check if we have any operatives that are captured
-	# find the captor so they can be rescued
-	set_temp_variable = { captor = 0 }
-	
-	every_operative = {
-		limit = { is_operative_captured = yes }
-		add_to_temp_variable = { min_needed_operative_for_operations = 1 }
-		if = {
-			limit = { check_variable = { captor = 0 } }
-			set_temp_variable = { captor = operative_captor }
-		}
-	}
-	set_variable = { rescue_operative_from = 0 }
-	if = {
-		limit = { NOT = { check_variable = { captor = 0 } } }
-		set_variable = { rescue_operative_from = captor } # used in ai strat generic_operation_ai_rescue
-		add_to_temp_variable = { min_needed_operative_for_operations = 2 }
-	}
-	
-	
-	# if we have too few of operatives clear operative target
-	set_temp_variable = { t = min_needed_operative_for_operations }
-	subtract_from_temp_variable = { t = 2 }
-	if = {
-		limit = { num_of_operatives < t }
-		set_variable = { generic_operation_target = 0 }
-	}
-	
-	if = {
-		# if found a target pick an operation
-		limit = { 
-			NOT = { check_variable = { generic_operation_target = 0 } }
-			# if we are already preparing for current one no need to recalc
-			OR = {
-				check_variable = { generic_operation_type_to_run = 0 }
-				NOT = { 
-					is_preparing_operation = {
-						target = var:generic_operation_target
-						operation = var:generic_operation_type_to_run
-					}
-				}
-			}
-		}
-		
-		if = {
-			limit = { 
-				num_of_operatives > min_needed_operative_for_operations
-			}
-			
-			# these two arrays are filled with operation tokens and corresponding score
-			clear_temp_array = operation_types
-			clear_temp_array = operation_types_scores
-			
-			# civilian infiltration
-			set_temp_variable = { score = 100 }
-			add_to_temp_array = { operation_types = token:operation_infiltrate_civilian }
-			add_to_temp_array = { operation_types_scores = score }
-			
-			# army infiltration
-			set_temp_variable = { score = 50 }
-			add_to_temp_variable = { score = num_armies }
-			clamp_temp_variable = { var = score max = 180 }
-			add_to_temp_array = { operation_types = token:operation_infiltrate_armed_forces_army }
-			add_to_temp_array = { operation_types_scores = score }
-			
-			# air infiltration
-			set_temp_variable = { score = 50 }
-			add_to_temp_variable = { t = num_deployed_planes }
-			divide_temp_variable = { t = 10 }
-			add_to_temp_variable = { score = t }
-			clamp_temp_variable = { var = score max = 180 }
-			add_to_temp_array = { operation_types = token:operation_infiltrate_armed_forces_airforce }
-			add_to_temp_array = { operation_types_scores = score }
-			
-			# navy infiltration
-			var:generic_operation_target = {
-				if = {
-					limit = { 
-						has_navy_size = { size > 0 } 
-						PREV = {
-							has_navy_size = { size > 0 } 
-						}
-					}
-					set_temp_variable = { score = num_ships }
-					
-					set_temp_variable = { t = num_ships_with_type@carrier }
-					multiply_temp_variable = { t = 20 }
-					add_to_temp_variable = { score = t }
-					
-					set_temp_variable = { t = num_ships_with_type@capital }
-					multiply_temp_variable = { t = 10 }
-					add_to_temp_variable = { score = t }
-					
-					clamp_temp_variable = { var = score max = 180 }
-					
-					add_to_temp_array = { operation_types = token:operation_infiltrate_armed_forces_navy }
-					add_to_temp_array = { operation_types_scores = score }
-				}
-			}
-			
-			# get token for boost resistance
-			var:generic_operation_target = {
-				# only do on fascist
-				if = {
-					limit = { 
-						PREV = {
-							NOT = { tag = ENG } # ENG already does it against GER
-							NOT = { has_government = fascism } 
-							NOT = {
-								has_operation_token = {
-									tag = var:generic_operation_target
-									token = token_resistance_contacts
-								}
-							}
-						}
-						has_government = fascism
-						check_variable = { occupied_countries^num > 0 }
-						has_added_tension_amount > 20
-					}
-					
-					# ~number of occupied_states
-					set_temp_variable = { t = 1 }
-					add_to_temp_variable = { t = num_controlled_states }
-					subtract_from_temp_variable = { t = num_owned_states }
-					clamp_temp_variable = { var = t min = 1 }
-					
-					set_temp_variable = { score = t }
-					multiply_temp_variable = { score = 15 }
-					add_to_temp_variable = { score = 50 }
-					clamp_temp_variable = { var = score max = 200 }
-					
-					add_to_temp_array = { operation_types = token:operation_make_resistance_contacts }
-					add_to_temp_array = { operation_types_scores = score }
-				}
-			}
-			# boost resistance
-			if = {
-				limit = { 
-					has_operation_token = {
-						tag = var:generic_operation_target
-						token = token_resistance_contacts
-					}
-				}
-			
-				add_to_temp_array = { operation_types = token:operation_boost_resistance }
-				add_to_temp_array = { operation_types_scores = 1000 }
-			}
-			
-			for_each_loop = {
-				array = operation_types
-				
-				# randomization by half
-				set_temp_variable = { t = random }
-				multiply_temp_variable = { t = 0.5 }
-				add_to_temp_variable = { t = 0.5 }
-				multiply_temp_variable = { operation_types_scores^i = t }
-				
-				if = {
-					limit = {
-						num_finished_operations = {
-							target = var:generic_operation_target
-							operation = var:v
-							value > 0
-						}
-						
-						# lower score if we have a finished operation
-						multiply_temp_variable = { operation_types_scores^i = 0.5 }
-								
-						# cancel if more than 1 is executed
-						if = {
-							limit = {
-								num_finished_operations = {
-									target = var:generic_operation_target
-									operation = var:v
-									value > 1
-								}
-								
-								set_temp_variable = { operation_types_scores^i = -1 }
-							}
-						}
-					}
-				}
-			}
-			
-			# highest score will be selected
-			find_highest_in_array = {
-				array = operation_types_scores
-			}
-			if = {
-				limit = { check_variable = { v > 0 } }
-				set_variable = { generic_operation_type_to_run = operation_types^i } # used in ai strat generic_operation_ai
-			}
-		}
-		else =
-		{
-			set_variable = { generic_operation_type_to_run = 0 }
-		}
-	}
-}
 Atlantikwall_modifier_effect = {
-	set_variable = { AW_dig = 10 }
-	set_variable = { AW_nig = 0.5 }
-	if = { limit = { any_country = { allies = yes controls_state = 456 } } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
-	if = { limit = { any_country = { allies = yes controls_state = 907 } } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
-	if = { limit = { any_country = { allies = yes controls_state = 291 } } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
-	if = { limit = { any_country = { allies = yes controls_state = 461 } } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
-	if = { limit = { any_country = { allies = yes controls_state = 458 } } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
-	if = { limit = { any_country = { allies = yes controls_state = 448 } } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
-	if = { limit = { any_country = { allies = yes controls_state = 450 } } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
-	if = { limit = { any_country = { allies = yes controls_state = 451 } } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
-	if = { limit = { any_country = { allies = yes controls_state = 447 } } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
-	if = { limit = { any_country = { allies = yes controls_state = 454 } } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
-	if = { limit = { any_country = { axis = yes controls_state = 808 } } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
-	if = { limit = { any_country = { axis = yes controls_state = 195 } } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
-	if = { limit = { any_country = { axis = yes controls_state = 242 } } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
-	if = { limit = { any_country = { axis = yes controls_state = 209 } } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
-	if = { limit = { any_country = { axis = yes controls_state = 219 } } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
-	if = { limit = { any_country = { axis = yes controls_state = 202 } } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
-	if = { limit = { any_country = { axis = yes controls_state = 220 } } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
-	if = { limit = { any_country = { axis = yes controls_state = 221 } } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
-	if = { limit = { any_country = { axis = yes controls_state = 218 } } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
-	if = { limit = { any_country = { axis = yes controls_state = 217 } } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
-	if = { limit = { date > 1942.02.01 } add_to_variable = { var = AW_dig value = -1 } add_to_variable = { var = AW_nip value = -0.05 } }
-	if = { limit = { date > 1942.03.01 } add_to_variable = { var = AW_dig value = -1 } add_to_variable = { var = AW_nip value = -0.05 } }	
-	if = { limit = { date > 1942.04.01 } add_to_variable = { var = AW_dig value = -1 } add_to_variable = { var = AW_nip value = -0.05 } }
-	if = { limit = { date > 1942.05.01 } add_to_variable = { var = AW_dig value = -1 } add_to_variable = { var = AW_nip value = -0.05 } }
-	if = { limit = { date > 1942.06.01 } add_to_variable = { var = AW_dig value = -1 } add_to_variable = { var = AW_nip value = -0.05 } }
-	if = { limit = { date > 1942.07.01 } add_to_variable = { var = AW_dig value = -1 } add_to_variable = { var = AW_nip value = -0.05 } }
-	if = { limit = { date > 1942.08.01 } add_to_variable = { var = AW_dig value = -1 } add_to_variable = { var = AW_nip value = -0.05 } }
-	if = { limit = { date > 1942.09.01 } add_to_variable = { var = AW_dig value = -1 } add_to_variable = { var = AW_nip value = -0.05 } }
-	if = { limit = { date > 1942.10.01 } add_to_variable = { var = AW_dig value = -1 } add_to_variable = { var = AW_nip value = -0.05 } }
-	if = { limit = { check_variable = { AW_dig < 0 } } every_state = { limit = { has_dynamic_modifier = { modifier = Atlantikwall_modifier } } remove_dynamic_modifier = { modifier = Atlantikwall_modifier } } }
+	set_variable = { Atlantikwall_dig_in_modifier = 10 }
+	set_variable = { Atlantikwall_invasion_penalty_modifier = 0.5 }
+	if = { limit = { any_country = { allies = yes controls_state = 456 } } add_to_variable = { var = Atlantikwall_dig_in_modifier value = -0.5 } add_to_variable = { var = Atlantikwall_invasion_penalty_modifier value = -0.025 } }
+	if = { limit = { any_country = { allies = yes controls_state = 907 } } add_to_variable = { var = Atlantikwall_dig_in_modifier value = -0.5 } add_to_variable = { var = Atlantikwall_invasion_penalty_modifier value = -0.025 } }
+	if = { limit = { any_country = { allies = yes controls_state = 291 } } add_to_variable = { var = Atlantikwall_dig_in_modifier value = -0.5 } add_to_variable = { var = Atlantikwall_invasion_penalty_modifier value = -0.025 } }
+	if = { limit = { any_country = { allies = yes controls_state = 461 } } add_to_variable = { var = Atlantikwall_dig_in_modifier value = -0.5 } add_to_variable = { var = Atlantikwall_invasion_penalty_modifier value = -0.025 } }
+	if = { limit = { any_country = { allies = yes controls_state = 458 } } add_to_variable = { var = Atlantikwall_dig_in_modifier value = -0.5 } add_to_variable = { var = Atlantikwall_invasion_penalty_modifier value = -0.025 } }
+	if = { limit = { any_country = { allies = yes controls_state = 448 } } add_to_variable = { var = Atlantikwall_dig_in_modifier value = -0.5 } add_to_variable = { var = Atlantikwall_invasion_penalty_modifier value = -0.025 } }
+	if = { limit = { any_country = { allies = yes controls_state = 450 } } add_to_variable = { var = Atlantikwall_dig_in_modifier value = -0.5 } add_to_variable = { var = Atlantikwall_invasion_penalty_modifier value = -0.025 } }
+	if = { limit = { any_country = { allies = yes controls_state = 451 } } add_to_variable = { var = Atlantikwall_dig_in_modifier value = -0.5 } add_to_variable = { var = Atlantikwall_invasion_penalty_modifier value = -0.025 } }
+	if = { limit = { any_country = { allies = yes controls_state = 447 } } add_to_variable = { var = Atlantikwall_dig_in_modifier value = -0.5 } add_to_variable = { var = Atlantikwall_invasion_penalty_modifier value = -0.025 } }
+	if = { limit = { any_country = { allies = yes controls_state = 454 } } add_to_variable = { var = Atlantikwall_dig_in_modifier value = -0.5 } add_to_variable = { var = Atlantikwall_invasion_penalty_modifier value = -0.025 } }
+	if = { limit = { any_country = { axis = yes controls_state = 808 } } add_to_variable = { var = Atlantikwall_dig_in_modifier value = -0.5 } add_to_variable = { var = Atlantikwall_invasion_penalty_modifier value = -0.025 } }
+	if = { limit = { any_country = { axis = yes controls_state = 195 } } add_to_variable = { var = Atlantikwall_dig_in_modifier value = -0.5 } add_to_variable = { var = Atlantikwall_invasion_penalty_modifier value = -0.025 } }
+	if = { limit = { any_country = { axis = yes controls_state = 242 } } add_to_variable = { var = Atlantikwall_dig_in_modifier value = -0.5 } add_to_variable = { var = Atlantikwall_invasion_penalty_modifier value = -0.025 } }
+	if = { limit = { any_country = { axis = yes controls_state = 209 } } add_to_variable = { var = Atlantikwall_dig_in_modifier value = -0.5 } add_to_variable = { var = Atlantikwall_invasion_penalty_modifier value = -0.025 } }
+	if = { limit = { any_country = { axis = yes controls_state = 219 } } add_to_variable = { var = Atlantikwall_dig_in_modifier value = -0.5 } add_to_variable = { var = Atlantikwall_invasion_penalty_modifier value = -0.025 } }
+	if = { limit = { any_country = { axis = yes controls_state = 202 } } add_to_variable = { var = Atlantikwall_dig_in_modifier value = -0.5 } add_to_variable = { var = Atlantikwall_invasion_penalty_modifier value = -0.025 } }
+	if = { limit = { any_country = { axis = yes controls_state = 220 } } add_to_variable = { var = Atlantikwall_dig_in_modifier value = -0.5 } add_to_variable = { var = Atlantikwall_invasion_penalty_modifier value = -0.025 } }
+	if = { limit = { any_country = { axis = yes controls_state = 221 } } add_to_variable = { var = Atlantikwall_dig_in_modifier value = -0.5 } add_to_variable = { var = Atlantikwall_invasion_penalty_modifier value = -0.025 } }
+	if = { limit = { any_country = { axis = yes controls_state = 218 } } add_to_variable = { var = Atlantikwall_dig_in_modifier value = -0.5 } add_to_variable = { var = Atlantikwall_invasion_penalty_modifier value = -0.025 } }
+	if = { limit = { any_country = { axis = yes controls_state = 217 } } add_to_variable = { var = Atlantikwall_dig_in_modifier value = -0.5 } add_to_variable = { var = Atlantikwall_invasion_penalty_modifier value = -0.025 } }
+	if = { limit = { date > 1942.02.01 } add_to_variable = { var = Atlantikwall_dig_in_modifier value = -1 } add_to_variable = { var = Atlantikwall_invasion_penalty_modifier value = -0.05 } }
+	if = { limit = { date > 1942.03.01 } add_to_variable = { var = Atlantikwall_dig_in_modifier value = -1 } add_to_variable = { var = Atlantikwall_invasion_penalty_modifier value = -0.05 } }	
+	if = { limit = { date > 1942.04.01 } add_to_variable = { var = Atlantikwall_dig_in_modifier value = -1 } add_to_variable = { var = Atlantikwall_invasion_penalty_modifier value = -0.05 } }
+	if = { limit = { date > 1942.05.01 } add_to_variable = { var = Atlantikwall_dig_in_modifier value = -1 } add_to_variable = { var = Atlantikwall_invasion_penalty_modifier value = -0.05 } }
+	if = { limit = { date > 1942.06.01 } add_to_variable = { var = Atlantikwall_dig_in_modifier value = -1 } add_to_variable = { var = Atlantikwall_invasion_penalty_modifier value = -0.05 } }
+	if = { limit = { date > 1942.07.01 } add_to_variable = { var = Atlantikwall_dig_in_modifier value = -1 } add_to_variable = { var = Atlantikwall_invasion_penalty_modifier value = -0.05 } }
+	if = { limit = { date > 1942.08.01 } add_to_variable = { var = Atlantikwall_dig_in_modifier value = -1 } add_to_variable = { var = Atlantikwall_invasion_penalty_modifier value = -0.05 } }
+	if = { limit = { date > 1942.09.01 } add_to_variable = { var = Atlantikwall_dig_in_modifier value = -1 } add_to_variable = { var = Atlantikwall_invasion_penalty_modifier value = -0.05 } }
+	if = { limit = { date > 1942.10.01 } add_to_variable = { var = Atlantikwall_dig_in_modifier value = -1 } add_to_variable = { var = Atlantikwall_invasion_penalty_modifier value = -0.05 } }
+	if = { limit = { check_variable = { Atlantikwall_dig_in_modifier < 0 } } every_state = { remove_dynamic_modifier = { modifier = Atlantikwall_modifier } } }
 }

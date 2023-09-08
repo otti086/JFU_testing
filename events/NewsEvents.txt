@@ -10944,18 +10944,6 @@ news_event = {
 		set_global_flag = fall_of_cairo
 		GER = { add_ideas = { GER_triumph_in_africa } }
 		ITA = { add_ideas = { GER_triumph_in_africa } }
-		every_state = {
-			limit = {
-				atlantikwall_states = yes
-				is_controlled_by = GER
-				NOT = { is_core_of = NOR }
-			}
-			add_dynamic_modifier = {
-				modifier = Atlantikwall_modifier
-			}
-		}
-		set_variable = { AW_dig = 10 }
-		set_variable = { AW_nig = 0.5 }
 	}
 	mean_time_to_happen = {
 		days = 2

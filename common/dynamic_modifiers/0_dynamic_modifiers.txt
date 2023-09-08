@@ -1282,8 +1282,8 @@ BUL_foreign_industry = {
 Atlantikwall_modifier = {
 	enable = { always = yes }
 
-	icon = GFX_idea_generic_manpower_bonus	
+	icon = GFX_modifiers_sabotaged_resource	
 
-	max_dig_in = AW_dig
-	naval_invasion_penalty = AW_nip
+	max_dig_in = Atlantikwall_dig_in_modifier
+	naval_invasion_penalty = Atlantikwall_invasion_penalty_modifier
 }

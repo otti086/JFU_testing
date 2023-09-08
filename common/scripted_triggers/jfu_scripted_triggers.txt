@@ -68,29 +68,25 @@ ignore_aa_states = { NOT = { OR = { is_core_of = SPR state = 219 }}}
 
 spanish_coastline = { OR = { state = 169 state = 290 state = 177  state = 173 state = 168 state = 167 state = 165 state = 172 state = 171	}}
 atlantikwall_states = {
-	is_on_continent = europe
-	is_coastal = yes
-	AND = {
-		is_owned_by = GER 
-		NOT = {
-			state = 110
-			state = 188
-			state = 763
-			state = 5
-			state = 85
-			state = 63
-			state = 62
-			state = 61 
-			state = 37
-			state = 807
-		}
-		NOT = { 
-			OR = { 
-				is_core_of = GRE 
-				is_core_of = ITA 
-				is_core_of = EFR
-				is_core_of = LIT
-			}  
-		}
+	OR = {
+		state = 144
+		state = 143
+		state = 142
+		state = 110
+		state = 99
+		state = 58
+		state = 59
+		state = 56
+		state = 7
+		state = 35
+		state = 6
+		state = 29
+		state = 785
+		state = 15
+		state = 14
+		state = 30
+		state = 23
+		state = 19
+		state = 806
 	}
 }
