@@ -4309,29 +4309,37 @@ update_operation_ai = {
 		}
 	}
 }
-Atlantikwall_modifier_change_small = {
-	if = { limit = { any_country = { axis = yes } controls_state = } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
-	if = { limit = { any_country = { axis = yes } controls_state = } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
-	if = { limit = { any_country = { axis = yes } controls_state = } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
-	if = { limit = { any_country = { axis = yes } controls_state = } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
-	if = { limit = { any_country = { axis = yes } controls_state = } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
-	if = { limit = { any_country = { axis = yes } controls_state = } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
-	if = { limit = { any_country = { axis = yes } controls_state = } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
-	if = { limit = { any_country = { axis = yes } controls_state = } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
-	if = { limit = { any_country = { axis = yes } controls_state = } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
-	if = { limit = { any_country = { axis = yes } controls_state = } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
-	if = { limit = { any_country = { axis = yes } controls_state = } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
-	if = { limit = { any_country = { axis = yes } controls_state = } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
-	if = { limit = { any_country = { axis = yes } controls_state = } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
-	if = { limit = { any_country = { axis = yes } controls_state = } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
-	if = { limit = { any_country = { axis = yes } controls_state = } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
-	if = { limit = { any_country = { axis = yes } controls_state = } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
-	if = { limit = { any_country = { axis = yes } controls_state = } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
-	if = { limit = { any_country = { axis = yes } controls_state = } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
-	if = { limit = { any_country = { axis = yes } controls_state = } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
-	if = { limit = { any_country = { axis = yes } controls_state = } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
-
-}
-Atlantikwall_modifier_change_big = {
-	add_tovariable = { var = AW_dig value = -1 } add_to_variable = { var = AW_nip value = -0.05 } 
+Atlantikwall_modifier_effect = {
+	set_variable = { AW_dig = 10 }
+	set_variable = { AW_nig = 0.5 }
+#	if = { limit = { any_country = { allies = yes controls_state = 456 } } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
+#	if = { limit = { any_country = { allies = yes controls_state = 907 } } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
+#	if = { limit = { any_country = { allies = yes controls_state = 291 } } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
+#	if = { limit = { any_country = { allies = yes controls_state = 461 } } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
+#	if = { limit = { any_country = { allies = yes controls_state = 458 } } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
+#	if = { limit = { any_country = { allies = yes controls_state = 448 } } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
+#	if = { limit = { any_country = { allies = yes controls_state = 450 } } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
+#	if = { limit = { any_country = { allies = yes controls_state = 451 } } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
+#	if = { limit = { any_country = { allies = yes controls_state = 447 } } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
+#	if = { limit = { any_country = { allies = yes controls_state = 454 } } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
+#	if = { limit = { any_country = { axis = yes controls_state = 808 } } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
+#	if = { limit = { any_country = { axis = yes controls_state = 195 } } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
+#	if = { limit = { any_country = { axis = yes controls_state = 242 } } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
+#	if = { limit = { any_country = { axis = yes controls_state = 209 } } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
+#	if = { limit = { any_country = { axis = yes controls_state = 219 } } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
+#	if = { limit = { any_country = { axis = yes controls_state = 202 } } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
+#	if = { limit = { any_country = { axis = yes controls_state = 220 } } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
+#	if = { limit = { any_country = { axis = yes controls_state = 221 } } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
+#	if = { limit = { any_country = { axis = yes controls_state = 218 } } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
+#	if = { limit = { any_country = { axis = yes controls_state = 217 } } add_to_variable = { var = AW_dig value = -0.5 } add_to_variable = { var = AW_nip value = -0.025 } }
+#	if = { limit = { date > 1942.02.01 } add_to_variable = { var = AW_dig value = -1 } add_to_variable = { var = AW_nip value = -0.05 } }
+#	if = { limit = { date > 1942.03.01 } add_to_variable = { var = AW_dig value = -1 } add_to_variable = { var = AW_nip value = -0.05 } }	
+#	if = { limit = { date > 1942.04.01 } add_to_variable = { var = AW_dig value = -1 } add_to_variable = { var = AW_nip value = -0.05 } }
+#	if = { limit = { date > 1942.05.01 } add_to_variable = { var = AW_dig value = -1 } add_to_variable = { var = AW_nip value = -0.05 } }
+#	if = { limit = { date > 1942.06.01 } add_to_variable = { var = AW_dig value = -1 } add_to_variable = { var = AW_nip value = -0.05 } }
+#	if = { limit = { date > 1942.07.01 } add_to_variable = { var = AW_dig value = -1 } add_to_variable = { var = AW_nip value = -0.05 } }
+#	if = { limit = { date > 1942.08.01 } add_to_variable = { var = AW_dig value = -1 } add_to_variable = { var = AW_nip value = -0.05 } }
+#	if = { limit = { date > 1942.09.01 } add_to_variable = { var = AW_dig value = -1 } add_to_variable = { var = AW_nip value = -0.05 } }
+#	if = { limit = { date > 1942.10.01 } add_to_variable = { var = AW_dig value = -1 } add_to_variable = { var = AW_nip value = -0.05 } }
+	if = { limit = { check_variable = { AW_dig < 0 } } every_state = { limit = { has_dynamic_modifier = { modifier = Atlantikwall_modifier } } remove_dynamic_modifier = { modifier = Atlantikwall_modifier } } }
 }

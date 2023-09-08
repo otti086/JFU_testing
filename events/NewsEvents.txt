@@ -10954,6 +10954,8 @@ news_event = {
 				modifier = Atlantikwall_modifier
 			}
 		}
+		set_variable = { AW_dig = 10 }
+		set_variable = { AW_nig = 0.5 }
 	}
 	mean_time_to_happen = {
 		days = 2
