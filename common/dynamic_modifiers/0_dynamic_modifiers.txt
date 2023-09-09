@@ -1284,6 +1284,6 @@ Atlantikwall_modifier = {
 
 	icon = GFX_modifiers_sabotaged_resource	
 
-	max_dig_in = Atlantikwall_dig_in_modifier
-	naval_invasion_penalty = Atlantikwall_invasion_penalty_modifier
+	max_dig_in = GER.Atlantikwall_dig_in_modifier
+	naval_invasion_penalty = GER.Atlantikwall_invasion_penalty_modifier
 }
