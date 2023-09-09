@@ -675,12 +675,6 @@ JFU_startup_on_action = {
 			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 50000 }			
 			add_ideas = ai_limiter
 		}
-		CHI = {
-			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 80000 }	
-			add_equipment_to_stockpile = { type = support_equipment_1 amount = 5000 }	
-			add_ideas = ai_limiter
-			country_lock_all_division_template = yes					
-		}
 		YUG = {
 			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 30000 }	
 			add_equipment_to_stockpile = { type = support_equipment_1 amount = 1000 }	
@@ -821,7 +815,7 @@ JFU_startup_on_action = {
 		add_equipment_to_stockpile = { type = light_tank_chassis_0 amount = 72 producer = ROM variant_name = "FT Char Cannon" }
 	}
 	SOV = {
-		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 80000 }
+		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 280000 }
 		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 80000 }
 		add_equipment_to_stockpile = { type = support_equipment_1 amount = 443 }
 		add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 1600 }
@@ -857,10 +851,15 @@ JFU_startup_on_action = {
 	SAF = {
 		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2000 }
 	}
-	if = {
-		SIA = {
-			give_resource_rights = { receiver = GER state = 724 }
-		}
+	SIA = {
+		give_resource_rights = { receiver = GER state = 724 }
+	}
+	CHI = {
+		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 100000 }	
+		add_equipment_to_stockpile = { type = support_equipment_1 amount = 8000 }
+		add_equipment_to_stockpile = { type = train_equipment_1 amount = 100 }	
+		add_ideas = ai_limiter
+		country_lock_all_division_template = yes					
 	}
 }
 JFU_scripted_events_effect = {

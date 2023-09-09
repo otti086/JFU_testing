@@ -309,4 +309,5 @@ set_technology = { #VANILLA & DLC
 	motorised_infantry = 1
 	tech_recon = 1
 	gwtank_chassis = 1
+	building_limiter_tech = 1
 }
