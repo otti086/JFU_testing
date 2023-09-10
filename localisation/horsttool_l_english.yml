@@ -989,7 +989,7 @@
  attache_idea_tt:0 "gains the attache modifiers as long as the recieving country is at war"
  attache_idea:0 "Attache Send"
  decision_cost_CP_50_pp_100:0 "£command_power  §Y50§! £pol_power  §Y100§!"
-# Atlantikwall_modifier:0 "current Atlantik wall strength §G[?GER.Atlantikwall_dig_in_modifier|+0]§!"
+ Atlantikwall_modifier:0 "Atlantik Wall"
 
  fra_legit_idea:0 "French Legitimacy is §G[?FRA.FRA_legitimacy|+0]§!\n\nWe gain 1 legitimacy for every 3k Axis soldiers wounded/killed and another 5 legitimacy for every 10 days we hold mainland France, up to December 30th, 1939."
 

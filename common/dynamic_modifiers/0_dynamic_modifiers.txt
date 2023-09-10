@@ -1227,6 +1227,8 @@ pacific_states_JAP = {
 	political_power_gain = PJ_15
 	war_support_factor = PJ_15
 	stability_factor = PJ_15
+	army_core_attack_factor = PJ_60
+	army_core_defence_factor = PJ_60
 }
 pacific_states_USA = {
 	enable = { always = yes }
@@ -1236,6 +1238,8 @@ pacific_states_USA = {
 	political_power_gain = PJU_15
 	war_support_factor = PJU_15
 	stability_factor = PJU_15
+	army_core_attack_factor = PJU_60
+	army_core_defence_factor = PJU_60
 }
 GER_endsieg = {
 	enable = { always = yes }
