@@ -31,7 +31,7 @@ ITA_power_balance = {
 			max = -0.1
 			modifier = {
 				political_advisor_cost_factor = -0.1
-				army_core_defence_factor = -0.11
+				army_core_defence_factor = -0.10
 			}
 			on_activate = {
 				
@@ -47,9 +47,9 @@ ITA_power_balance = {
 			max = -0.3
 			modifier = {
 				political_advisor_cost_factor = -0.15
-				offensive_war_stability_factor = -0.05
-				war_support_factor = -0.1
-				army_core_defence_factor = -0.22
+				offensive_war_stability_factor = -0.1
+				war_support_factor = -0.15
+				army_core_defence_factor = -0.25
 			}
 			on_activate = {
 				custom_effect_tooltip = ITA_bop_cap_for_colonies_impact_tt
@@ -65,9 +65,9 @@ ITA_power_balance = {
 			max = -0.6
 			modifier = {
 				political_advisor_cost_factor = -0.2
-				offensive_war_stability_factor = -0.10
-				war_support_factor = -0.25
-				army_core_defence_factor = -0.33
+				offensive_war_stability_factor = -0.15
+				war_support_factor = -0.3
+				army_core_defence_factor = -0.40
 			}
 			on_activate = {
 			}
@@ -82,9 +82,9 @@ ITA_power_balance = {
 			max = -0.9
 			modifier = {
 				political_advisor_cost_factor = -0.25
-				offensive_war_stability_factor = -0.2
-				war_support_factor = -0.4
-				army_core_defence_factor = -0.45
+				offensive_war_stability_factor = -0.25
+				war_support_factor = -0.5
+				army_core_defence_factor = -0.55
 			}
 			on_activate = {
 			}
@@ -104,9 +104,9 @@ ITA_power_balance = {
 			min = 0.1
 			max = 0.3
 			modifier = {
-				political_power_factor = 0.05
-				war_support_factor = 0.01
-				stability_factor = 0.01
+				political_power_factor = 0.1
+				war_support_factor = 0.03
+				stability_factor = 0.03
 			}
 			on_activate = {
 				if = {
@@ -133,9 +133,9 @@ ITA_power_balance = {
 			min = 0.3
 			max = 0.6
 			modifier = {
-				political_power_factor = 0.07
-				war_support_factor = 0.02
-				stability_factor = 0.02
+				political_power_factor = 0.15
+				war_support_factor = 0.05
+				stability_factor = 0.05
 			}
 			on_activate = {
 				
@@ -150,12 +150,9 @@ ITA_power_balance = {
 			min = 0.6
 			max = 0.9
 			modifier = {
-				political_power_factor = 0.1
-				war_support_factor = 0.03
-				stability_factor = 0.03
-				experience_gain_army = -0.05
-				experience_gain_air = -0.05
-				experience_gain_navy = -0.05
+				political_power_factor = 0.2
+				war_support_factor = 0.07
+				stability_factor = 0.07
 			}
 			on_activate = {
 				
@@ -170,12 +167,9 @@ ITA_power_balance = {
 			min = 0.9
 			max = 1
 			modifier = {
-				political_power_factor = 0.15
-				war_support_factor = 0.05
-				stability_factor = 0.05
-				experience_gain_army = -0.05
-				experience_gain_air = -0.05
-				experience_gain_navy = -0.05
+				political_power_factor = 0.25
+				war_support_factor = 0.1
+				stability_factor = 0.1
 			}
 			on_activate = {
 				set_power_balance_gfx = {

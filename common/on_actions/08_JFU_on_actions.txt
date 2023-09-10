@@ -479,10 +479,31 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
+				FROM = { tag = ITA }
+				FROM.FROM = { is_core_of = ITA }
+				OR = { AND = { ITA = { surrender_progress > 0.3 NOT = { AND = { controls_state = 115 controls_state = 117 controls_state = 2 controls_state = 114 } } } } ITA = { surrender_progress > 0.7} }
+				NOT = { ITA = { has_country_flag = ITA_is_kill } }
+				}
+				ITA = {
+					set_country_flag = ITA_is_kill
+					set_cosmetic_tag = ITA_SRI
+					
+					remove_power_balance = ITA_power_balance
+				}
+				GER = {
+					set_autonomy = {
+						target = ITA
+						autonomous_state = autonomy_dominion
+						freedom_level = 0.2
+					}
+				}
+			}
+			if = {
+				limit = {
 					FROM = { tag = FRA }
 					FROM.FROM = { is_core_of = FRA }
 					OR ={  AND ={  FRA = { surrender_progress > 0.32 NOT = { controls_state = 16 } } }	FRA = { surrender_progress	> 0.5	}	 }
-					NOT = { FRA = { has_country_flag = france_is_kill }}
+					NOT = { FRA = { has_country_flag = france_is_kill } }
 				}
 
 				tp_divs_out_of_france = yes 

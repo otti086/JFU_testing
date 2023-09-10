@@ -7942,7 +7942,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 50
-			add_war_support = 0.03
 			add_popularity = {
 				ideology = fascism
 				popularity = 0.05
