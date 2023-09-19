@@ -993,8 +993,6 @@
  decision_cost_CP_50_pp_100:0 "£command_power  §Y50§! £pol_power  §Y100§!"
  Atlantikwall_modifier:0 "Atlantik Wall"
 
- fra_legit_idea:0 "French Legitimacy is §G[?FRA.FRA_legitimacy|+0]§!\n\nWe gain 1 legitimacy for every 3k Axis soldiers wounded/killed and another 5 legitimacy for every 10 days we hold mainland France, up to December 30th, 1939."
-
  wtt_manchukou.11.C:0 "Build up our Civillian Industry"
  wtt_manchukou.11.M:0 "Invest in our Military Industry"
  wtt_manchukou.11.F:0 "Focus on our Fleet"
