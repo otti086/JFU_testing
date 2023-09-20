@@ -488,9 +488,18 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = FRA_laissez_faire
-				category = industry
 				uses = 3
-				bonus = 1.5
+				bonus = 1
+				technology = advanced_machine_tools
+				technology = flexible_line
+				technology = assembly_line_production
+				technology = streamlined_line
+				technology = concentrated_industry3
+				technology = concentrated_industry4
+				technology = concentrated_industry5
+				technology = dispersed_industry3 
+				technology = dispersed_industry4 
+				technology = dispersed_industry5
 			}
 			hidden_effect = { country_event = { id = lar_fra_inefficient_economy.1 days = 730 } }
 			custom_effect_tooltip = FRA_laissez_faire_tt
@@ -1002,7 +1011,7 @@ focus = {
 	focus = {
 		id = FRA_appeal_to_the_french_nation
 		icon = GFX_goal_generic_propaganda
-		x = 27
+		x = 25
 		y = 0
 
 		prerequisite = {}
@@ -1091,37 +1100,9 @@ focus = {
 		}
 	}
 	focus = {
-		id = FRA_intervention_in_north_africa
-		icon = GFX_goal_generic_position_armies
-		x = 4
-		y = 1
-
-		prerequisite = { 
-			focus = FRA_appeal_to_overseas_territories
-		}
-		relative_position_id = FRA_appeal_to_overseas_territories
-		
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			
-		}
-		
-		bypass = {
-
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-		completion_reward = {}
-	}
-	focus = {
 		id = FRA_intervention_in_west_africa
 		icon = GFX_goal_generic_position_armies
-		x = -2
+		x = -1
 		y = 1
 
 		prerequisite = { 
@@ -1177,7 +1158,7 @@ focus = {
 	focus = {
 		id = FRA_intervention_in_syria
 		icon = GFX_goal_generic_position_armies
-		x = 2
+		x = 3
 		y = 1
 
 		prerequisite = { 
@@ -1225,7 +1206,7 @@ focus = {
 	focus = {
 		id = FRA_intervention_in_central_africa
 		icon = GFX_goal_generic_position_armies
-		x = -4
+		x = -3
 		y = 1
 
 		prerequisite = { 
@@ -1274,7 +1255,7 @@ focus = {
 	focus = {
 		id = FRA_intervention_in_madagascar
 		icon = GFX_goal_generic_position_armies
-		x = 0
+		x = 1
 		y = 1
 
 		prerequisite = { 
@@ -1322,7 +1303,6 @@ focus = {
 		prerequisite = { 
 			focus = FRA_intervention_in_madagascar
 			focus = FRA_intervention_in_syria
-			focus = FRA_intervention_in_north_africa
 			focus = FRA_intervention_in_west_africa
 			focus = FRA_intervention_in_central_africa
 		}
@@ -1357,7 +1337,7 @@ focus = {
 	focus = {
 		id = FRA_continue_the_fight
 		icon = GFX_goal_generic_major_war
-		x = 9
+		x = 8
 		y = 1
 
 		prerequisite = { 
@@ -1533,7 +1513,7 @@ focus = {
 	focus = {
 		id = FRA_refus_absurde
 		icon = GFX_goal_generic_demand_territory
-		x = 18
+		x = 17
 		y = 0
 
 		prerequisite = { 

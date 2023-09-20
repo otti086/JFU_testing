@@ -1452,7 +1452,7 @@ focus_tree = {
 	}
 	focus = { #should already be signed in 39
 		id = GER_prepare
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_GER_Generalplan_Ost
 		prerequisite = { focus = GER_mol_rib_pact }
 		cancel_if_invalid = no
 		x = 1
@@ -1466,7 +1466,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_ussr_war_goal
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_GER_barb
 		prerequisite = { focus = GER_prepare}
 		available_if_capitulated = no
 		will_lead_to_war_with = SOV
@@ -1482,13 +1482,13 @@ focus_tree = {
 		bypass = {
 		}
 		completion_reward = {
-			custom_effect_tooltip = GER_ussr_war_goal_focus_tt
+			custom_effect_tooltip = GER_decision_focus_tt
 		}
 	}
 
 	focus = {
 		id = GER_focus_fall_blau
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_GER_danzig_or_war_icon
 		prerequisite = { focus = GER_ussr_war_goal}
 		available_if_capitulated = no
 		
@@ -1503,7 +1503,7 @@ focus_tree = {
 		bypass = {
 		}
 		completion_reward = {
-			custom_effect_tooltip = GER_fall_blau_focus_tt
+			custom_effect_tooltip = GER_decision_focus_tt
 		}
 	}
 
@@ -1537,7 +1537,6 @@ focus_tree = {
 		cost = 10
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			add_named_threat = { threat = 10 name = germany.4.t }
 			hidden_effect = {
 				if = {
 					limit = {
@@ -1549,11 +1548,12 @@ focus_tree = {
 				152 = 	{ add_core_of = GER }
 				153 = 	{ add_core_of = GER }
 				848 =   { add_core_of = GER }
+				add_named_threat = { threat = 10 name = germany.4.t }
 			}
-			annex_country = { target = AUS transfer_troops = no }
 			add_political_power = 100
 			add_war_support = 0.1
 			add_stability = 0.05
+			annex_country = { target = AUS transfer_troops = no }
 			hidden_effect = { 
 				GER_mefo_bills_level_down = yes
 				GER_mefo_bills_level_down = yes
@@ -1575,22 +1575,22 @@ focus_tree = {
 		cost = 10
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			transfer_state = 188
-			add_state_core = 188
+			188 = { add_core_of = GER }
 			85 = { add_core_of = GER }
 			807 = { add_core_of = GER }
 			86 = { add_core_of = GER }
 			762 = { add_claim_by = GER }
-			add_named_threat = { threat = 3 name = GER_demand_memel_threat }
+			transfer_state = 188
 			hidden_effect = {
 				news_event = { hours = 6 id = news.19 }
+				add_named_threat = { threat = 3 name = GER_demand_memel_threat }
 			}
 		}
 	}
 
 	focus = {
 		id = GER_danzig_or_war
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_GER_danzig_or_war_icon
 		prerequisite = { focus = GER_demand_memel }
 		available = {
 			date > 1939.6.1
@@ -1618,12 +1618,12 @@ focus_tree = {
 				remove_ideas = GER_rubber_balance
 				add_named_threat = { threat = 5 name = GER_danzig_or_war }
 			}
-			custom_effect_tooltip = GER_danzi_or_war_tt
+			custom_effect_tooltip = GER_danzig_or_war_tt
 		}
 	}
 	focus = {
 		id = GER_around_maginot
-		icon = GFX_goal_generic_major_war
+		icon = GFX_r56_goal_generic_attack_belgium
 		prerequisite = { focus = GER_danzig_or_war }
 		
 		available = {
@@ -1636,7 +1636,7 @@ focus_tree = {
 		cost = 4
 
 		completion_reward = {
-			custom_effect_tooltip = GER_around_maginot_tt
+			custom_effect_tooltip = GER_decision_focus_tt
 		}
 	}
 	focus = {
@@ -1656,7 +1656,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			custom_effect_tooltip = GER_wesserubung_1_tt
+			custom_effect_tooltip = GER_decision_focus_tt
 		}
 	}
 	focus = { 
@@ -1676,13 +1676,13 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			custom_effect_tooltip = GER_wesserubung_2_tt
+			custom_effect_tooltip = GER_decision_focus_tt
 		}
 	}
 	focus = { 
 		id = GER_fall_of_france
 		text = "Fall of France"
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_focus_attack_france
 		prerequisite = { focus = GER_weserubung focus = GER_around_maginot }
 		
 		available = {
@@ -1717,23 +1717,23 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			hidden_effect = {
-			69 = { add_core_of = GER }
-			74 = { add_core_of = GER }
-			POL = {transfer_state = 72 }
+				69 = { add_core_of = GER }
+				74 = { add_core_of = GER }
+				POL = { transfer_state = 72 }
+				add_named_threat = { threat = 3 name = GER_demand_sudetenland_threat }
 			}
+			add_war_support = 0.1
+			add_stability = 0.05
 			GER = { transfer_state = 69 }
 			GER = { transfer_state = 74 }
 
 			set_country_flag = sudetenland_acquired
-			add_war_support = 0.1
-			add_stability = 0.05
-			add_named_threat = { threat = 3 name = GER_demand_sudetenland_threat }
 		}
 	}
 
 	focus = {
 		id = GER_first_vienna_award
-		icon = GFX_focus_chi_mission_to_germany
+		icon = GFX_GER_first_vienna_award_icon
 		prerequisite = { focus = GER_demand_sudetenland }
 		x = 0
 		y = 1
@@ -1798,7 +1798,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_second_vienna_award
-		icon = GFX_goal_generic_cavalry
+		icon = GFX_GER_second_vienna_award_icon
 		prerequisite = { focus = GER_end_of_czechoslovakia }
 		x = 0
 		y = 2
@@ -1837,8 +1837,8 @@ focus_tree = {
 
 	focus = {
 		id = GER_naval_rearmament
-		icon = GFX_goal_generic_build_navy
-		x = 25
+		icon = GFX_focus_GER_naval_rearm
+		x = 28
 		y = 0
 		cost = 5
 
@@ -1909,7 +1909,7 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		prerequisite = { focus = GER_naval_rearmament }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = GER_naval_rearmament
 		cost = 5
 
@@ -2041,11 +2041,11 @@ focus_tree = {
 
 	focus = {
 		id = GER_plan_z
-		icon = GFX_goal_generic_navy_battleship
+		icon = GFX_focus_GER_plan_z
 		prerequisite = { focus = GER_naval_effort }
 		mutually_exclusive = { focus = GER_u_boat_effort  }
-		x = -1
-		y = 3
+		x = -2
+		y = 2
 		relative_position_id = GER_naval_effort
 		cost = 5
 
@@ -2084,14 +2084,141 @@ focus_tree = {
 			add_ideas = GER_plan_z_idea
 		}
 	}
+	focus = {
+		id = GER_plan_z_bb
+		icon = GFX_focus_GER_bismarck
+		prerequisite = { focus = GER_plan_z }
+		x = -1
+		y = 1
+		relative_position_id = GER_plan_z
+		cost = 1
+		available = { has_tech = improved_ship_hull_heavy }
 
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_equipment_variant = {
+				name = "Bismarck-Klasse"
+				type = ship_hull_heavy_3
+				name_group = GER_BB_HISTORICAL
+				parent_version = 0
+				modules = {
+					fixed_ship_battery_slot = ship_heavy_battery_3
+					fixed_ship_anti_air_slot = ship_anti_air_3
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+					fixed_ship_radar_slot = empty
+					fixed_ship_engine_slot = heavy_ship_engine_3
+					fixed_ship_secondaries_slot = ship_secondaries_2
+					fixed_ship_armor_slot = ship_armor_bb_3
+					front_1_custom_slot = ship_heavy_battery_3
+					mid_1_custom_slot = ship_anti_air_3
+					mid_2_custom_slot = ship_anti_air_3
+					mid_3_custom_slot = ship_heavy_battery_3
+					rear_1_custom_slot = ship_heavy_battery_3
+
+				}
+			}
+			custom_effect_tooltip="Adds two Bismarck-Klasse Battleships to the production queue, at 85% and 90% completion, respectively."
+			hidden_effect = {
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_heavy_3
+						creator = "GER"
+						version_name = "Bismarck-Klasse"
+					}
+					name = "Bismarck"
+					requested_factories = 1
+					progress = 0.9
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_heavy_3
+						creator = "GER"
+						version_name = "Bismarck-Klasse"
+					}
+					name = "Tirpitz"
+					requested_factories = 1
+					progress = 0.85
+					amount = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = GER_plan_z_cv
+		icon = GFX_focus_GER_graf 
+		prerequisite = { focus = GER_plan_z }
+		x = 1
+		y = 1
+		relative_position_id = GER_plan_z
+		cost = 1
+		available = { has_tech = improved_ship_hull_carrier }
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = "Adds three Graf Zeppelin-Klasse Carriers to the production queue, at 80%. 60% and 35% completion, respectively."
+
+			create_equipment_variant = {
+				name = "Graf Zeppelin-Klasse"
+				type = ship_hull_carrier_2
+				name_group = GER_CV_HISTORICAL
+				parent_version = 0
+				modules = {
+					fixed_ship_deck_slot_1 = ship_deck_space
+					fixed_ship_deck_slot_2 = ship_deck_space
+					fixed_ship_anti_air_slot = ship_anti_air_3
+					fixed_ship_radar_slot = empty
+					fixed_ship_engine_slot = carrier_ship_engine_3
+					fixed_ship_secondaries_slot = empty
+					front_1_custom_slot = ship_deck_space
+					mid_1_custom_slot = ship_deck_space
+				}
+			}
+			hidden_effect = {
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_carrier_2
+						creator = "GER" 
+						version_name = "Graf Zeppelin-Klasse"
+					}
+					name = "Graf Zeppelin" 
+					requested_factories = 20
+					progress = 0.8
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_carrier_2
+						creator = "GER" 
+						version_name = "Graf Zeppelin-Klasse"
+					}
+					name = "Peter Strasser" 
+					requested_factories = 20
+					progress = 0.6
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_carrier_2
+						creator = "GER" 
+						version_name = "Graf Zeppelin-Klasse"
+					}
+					name = "Julian Leis" 
+					requested_factories = 20
+					progress = 0.35
+					amount = 1
+				}
+			}
+		}
+	}
 	focus = {
 		id = GER_u_boat_effort
-		icon = GFX_goal_generic_navy_submarine
+		icon = GFX_focus_GER_sub_plan
 		prerequisite = { focus = GER_naval_effort }
 		mutually_exclusive = { focus = GER_plan_z }
-		x = 1
-		y = 3
+		x = 2
+		y = 2
 		relative_position_id = GER_naval_effort
 		cost = 5
 
@@ -2157,26 +2284,21 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER_trade_interdiction
-		icon = GFX_goal_generic_wolf_pack
+		id = GER_modular_construction
+		icon = GFX_focus_GER_sub
 		prerequisite = { focus = GER_u_boat_effort }
 		x = 0
 		y = 1
 		relative_position_id = GER_u_boat_effort
-		cost = 5
-			
+		cost = 2
+
 		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_RESEARCH }
+
 		completion_reward = {
-			add_doctrine_cost_reduction = {
-				name = ti_bonus
-				name = GER_trade_interdiction
-				cost_reduction = 0.25
-				uses = 2
-				category = trade_interdiction_tree
-			}
+			add_ideas = GER_modular_construction
 		}
 	}
+
 	focus = {
 		id = GER_endsieg_1
  		icon = GFX_focus_generic_army_tanks2
@@ -2217,7 +2339,7 @@ focus_tree = {
 			hidden_effect = {
 				GER = { Endsieg_Tanks_spawn_ins = yes }
 			}
-			custom_effect_tooltip = GER_endsieg_1_tt
+			custom_effect_tooltip = endsieg_tanks_tt
 		}
 	}
 	focus = {
@@ -2270,17 +2392,28 @@ focus_tree = {
 		cost = 1
 		
 		completion_reward = {
-			hidden_effect = { delete_unit_template_and_units = { division_template = "Endsieg Infanterie" } load_oob = "GER_army2" }
-			if = { limit = {  has_idea = extensive_conscription }  add_ideas = service_by_requirement  }
-			add_timed_idea = {
-				idea = endsieg
-				days = 365
-			} 
-			add_dynamic_modifier = {
-				modifier = GER_endsieg
-			}			
-			add_to_variable = { germany_war_army_core_attack_factor = 0.3	} 
-			add_to_variable = { germany_war_army_core_defence_factor = 0.3	} 
+			custom_effect_tooltip = endsieg_tt 
+			hidden_effect = { 
+				delete_unit_template_and_units = { 
+					division_template = "Endsieg Infanterie" 
+				} 
+				load_oob = "GER_army2" 
+				if = { 
+					limit = {  
+						has_idea = extensive_conscription 
+					} 
+					add_ideas = service_by_requirement 
+				}
+				add_timed_idea = {
+					idea = endsieg
+					days = 365
+				} 
+				add_dynamic_modifier = {
+					modifier = GER_endsieg
+				}			
+				add_to_variable = { germany_war_army_core_attack_factor = 0.3	} 
+				add_to_variable = { germany_war_army_core_defence_factor = 0.3	} 
+			}
 		}	
 	}
 }
