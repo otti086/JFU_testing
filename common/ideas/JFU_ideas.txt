@@ -753,5 +753,21 @@ ideas = {
 				war_support_factor = 0.1
 			}			
 		}
+		desperate_defense_idea = { 
+			picture = generic_fortify_the_borders
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier =  {
+					army_defence_factor  = 0.2
+					dig_in_speed_factor = 0.5
+			}
+		}
 	}
 }

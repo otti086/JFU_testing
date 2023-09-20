@@ -13,7 +13,10 @@
 ###Todo remove commented advisor experience gains
 
 leader_traits = {
-
+	lombardy = {
+		random = no
+		war_support_weekly = -0.03
+	}
 	dictator = {
 		random = no
 		political_power_factor = 0.25

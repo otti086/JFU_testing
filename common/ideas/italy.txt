@@ -1889,10 +1889,9 @@ ideas = {
 			}
 
 			modifier = {
-				stability_factor = -0.1
-				industrial_capacity_factory = 0.1
-				consumer_goods_factor = -0.05
-				surrender_limit = 0.1
+				stability_factor = -0.2
+				industrial_capacity_factory = 0.3
+				consumer_goods_factor = -0.1
 			}
 		}
 
