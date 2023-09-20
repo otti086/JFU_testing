@@ -45,8 +45,22 @@ ideas = {
 			}
 
 			removal_cost = -1
-			modifier = {
-			  industrial_capacity_dockyard = -10
+			equipment_bonus = {
+			  	ship_hull_heavy = {
+					build_cost_ic = 10 instant = yes
+				}
+				ship_hull_cruiser = {
+					build_cost_ic = 10 instant = yes
+				}
+				ship_hull_light = {
+					build_cost_ic = 10 instant = yes
+				}
+				ship_hull_carrier = {
+					build_cost_ic = 10 instant = yes
+				}
+				ship_hull_submarine = {
+					build_cost_ic = 10 instant = yes
+				}
 			}
 			equipment_bonus = {
 				railway_gun_equipment  = {

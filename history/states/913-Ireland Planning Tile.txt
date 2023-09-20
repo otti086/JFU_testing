@@ -3,8 +3,8 @@ state={
 	name="Ireland Planning Tile"
 	state_category = wasteland
 	manpower = 1
-	history={
-		owner = SWE
+	history = {
+		owner = IRE
 		buildings = {}
 	}
 	provinces={

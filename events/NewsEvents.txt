@@ -140,7 +140,6 @@ news_event = {
 		trigger = {
 			NOT = {
 				TAG = GER
-				TAG = LIT
 				is_in_faction_with = GER
 			}
 		}
@@ -150,15 +149,10 @@ news_event = {
 		trigger = { TAG = GER }
 	}
 	option = {
-		name = news.19.c
-		trigger = { TAG = LIT }
-	}
-	option = {
 		name = news.19.e
 		trigger = {
 			NOT = {
 				TAG = GER
-				TAG = LIT
 			}
 			is_in_faction_with = GER
 		}

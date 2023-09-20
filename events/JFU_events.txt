@@ -720,8 +720,42 @@ country_event = {
 		name = JFU_events.5.a
 	}
 }
+# Britain
+country_event = {
+	id = JFU_events.6
+	title = JFU_events.6.t
+	desc = {
+		text = JFU_events.6.d
+		trigger = { NOT = { has_war_with = GER } }
+	}
+	desc = {
+		text = JFU_events.6.d_2
+		trigger = { has_war_with = GER }
+	}
+	desc = {
+		text = JFU_events.6.d_3
+		trigger = {
+			NOT = { has_war_with = GER }
+			tag = HOL
+		}
+	}
+	picture = GFX_report_event_german_politician_speech
+	
+	is_triggered_only = yes
+	
+	option = { # Abandon the Czechs
+		name = JFU_events.6.a
+
+		trigger = {
+			NOT = { has_war_with = GER } 
+			is_puppet = no # can't do anything if puppet
+		}
+	}
+	
+}
 
 add_namespace = horsthelp
+
 country_event = {   
 	id = horsthelp.1
 	title = horsthelp.1.t
