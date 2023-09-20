@@ -1,0 +1,54 @@
+spriteTypes = {	 
+	SpriteType = {
+		name = "GFX_focus_GER_bismarck"
+		texturefile = "gfx/interface/goals/focus_GER_bismarck.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GER_graf"
+		texturefile = "gfx/interface/goals/focus_GER_graf.dds"
+	} 
+	SpriteType = {
+		name = "GFX_focus_GER_sub"
+		texturefile = "gfx/interface/goals/focus_GER_sub.dds"
+	}
+	SpriteType = { 
+    	name = "GFX_GER_Generalplan_Ost"
+		texturefile = "gfx/interface/goals/GER_Generalplan_Ost.dds"
+	}
+	SpriteType = { 
+    	name = "GFX_GER_barb"
+		texturefile = "gfx/interface/goals/GER_barbarossa.dds"
+	}
+	SpriteType = { 
+    	name = "GFX_GER_danzig_or_war_icon"
+		texturefile = "gfx/interface/goals/GER_danzig_or_war_icon.dds"
+	}
+    SpriteType = {   
+		name = "GFX_GER_first_vienna_award_icon"
+		texturefile = "gfx/interface/goals/GER_first_vienna_award_icon.dds"
+	}
+   	SpriteType = {   
+		name = "GFX_GER_second_vienna_award_icon"
+		texturefile = "gfx/interface/goals/GER_second_vienna_award_icon.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_GER_plan_z"
+		texturefile = "gfx/interface/goals/focus_GER_plan_z.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_GER_sub_plan"
+		texturefile = "gfx/interface/goals/focus_GER_sub_plan.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_GER_naval_rearm"
+		texturefile = "gfx/interface/goals/focus_GER_naval_rearm.dds"
+	}
+    SpriteType = {                     
+		name = "GFX_r56_goal_generic_attack_belgium"       
+		texturefile = "gfx/interface/goals/r56_goal_generic_attack_belgium.dds"  
+	} 
+	SpriteType = {
+		name = "GFX_focus_GER_cze"
+		texturefile = "gfx/interface/goals/focus_GER_cze.dds"
+	}
+}

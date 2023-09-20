@@ -8,7 +8,7 @@ JFU_decisions = {
 	#	██║   ██║██╔══╝  ██╔══██╗
 	#	╚██████╔╝███████╗██║  ██║
 	#	 ╚═════╝ ╚══════╝╚═╝  ╚═╝
-	"Fall Weiss" = { 
+	GER_fall_weiss = { 
 		icon = category_generic_fascism
 		fire_only_once = yes		
 		allowed = { tag = GER }	
@@ -33,7 +33,79 @@ JFU_decisions = {
 			}
 		}
 	}
-	"Unternehmen Barbarossa" = { 
+
+	GER_fall_gelb = {
+		icon = category_ger_reichskommissariats
+		fire_only_once = yes	
+		allowed = { tag = GER }
+		available = { has_war_with = ENG }
+		cost = 0
+		complete_effect = {
+			hidden_effect = {  ENG = { add_to_faction = HOL add_to_faction = BEL }  }
+			declare_war_on = {
+				target = HOL
+				type = annex_everything
+			}
+				declare_war_on = {
+				target = BEL
+				type = annex_everything
+			}	
+			hidden_effect = { 
+				ROOT_call_against_beligum = yes  ROOT_call_against_holland = yes
+			}
+			complete_national_focus = GER_around_maginot
+		}
+	}
+	GER_weserbung_operation = { 
+		icon = category_ger_reichskommissariats
+		fire_only_once = yes	
+		allowed = { tag = GER }
+		available = { has_war_with = ENG }	
+		cost = 0		
+		complete_effect = {				
+			add_tech_bonus = {
+				name = tp_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = tp_tech
+			}
+			hidden_effect = {  	ENG = { add_to_faction = DEN }  }
+			declare_war_on = {
+				target = DEN
+				type = annex_everything
+			}	
+					hidden_effect = { 
+				ROOT_call_against_denmark = yes 
+			}		
+			complete_national_focus = GER_weserubung	
+		}	
+	}
+	GER_weserbung_operation2 = { 
+		icon = category_ger_reichskommissariats
+		fire_only_once = yes	
+		allowed = { 	tag = GER 	}
+		available = {  NOT = { DEN = { controls_state = 99 }}	}	
+		visible = { NOT = { has_war_with = NOR }}
+		cost = 0		
+		complete_effect = {
+			hidden_effect = {
+				ENG = {
+					add_to_faction = NOR
+				}
+			}
+			declare_war_on = {
+				target = NOR
+				type = annex_everything
+			}	
+			hidden_effect = {  
+				ROOT_call_against_norway = yes 
+			}
+			complete_national_focus = GER_weserubung2 
+		}	
+	}
+
+	GER_unt_barb = { 
 		icon = category_generic_fascism
 		fire_only_once = yes	
 		allowed = { 	tag = GER 	}
@@ -72,78 +144,8 @@ JFU_decisions = {
 			complete_national_focus = GER_ussr_war_goal
 		}
 	}
-	"Fall Gelb" = {
-		icon = category_ger_reichskommissariats
-		fire_only_once = yes	
-		allowed = { tag = GER }
-		available = { has_war_with = ENG }
-		cost = 0
-		complete_effect = {
-			hidden_effect = {  ENG = { add_to_faction = HOL add_to_faction = BEL }  }
-			declare_war_on = {
-				target = HOL
-				type = annex_everything
-			}
-				declare_war_on = {
-				target = BEL
-				type = annex_everything
-			}	
-			hidden_effect = { 
-				ROOT_call_against_beligum = yes  ROOT_call_against_holland = yes
-			}
-			complete_national_focus = GER_around_maginot
-		}
-	}
-	"Operation Weserubung Danemark" = { 
-		icon = category_ger_reichskommissariats
-		fire_only_once = yes	
-		allowed = { tag = GER }
-		available = { has_war_with = ENG }	
-		cost = 0		
-		complete_effect = {				
-			add_tech_bonus = {
-				name = tp_bonus
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = tp_tech
-			}
-			hidden_effect = {  	ENG = { add_to_faction = DEN }  }
-			declare_war_on = {
-				target = DEN
-				type = annex_everything
-			}	
-					hidden_effect = { 
-				ROOT_call_against_denmark = yes 
-			}		
-			complete_national_focus = GER_weserubung	
-		}	
-	}
-	"Operation Weserubung Norway" = { 
-		icon = category_ger_reichskommissariats
-		fire_only_once = yes	
-		allowed = { 	tag = GER 	}
-		available = {  NOT = { DEN = { controls_state = 99 }}	}	
-		visible = { NOT = { has_war_with = NOR }}
-		cost = 0		
-		complete_effect = {
-			hidden_effect = {
-				ENG = {
-					add_to_faction = NOR
-				}
-			}
-			declare_war_on = {
-				target = NOR
-				type = annex_everything
-			}	
-			hidden_effect = {  
-				ROOT_call_against_norway = yes 
-			}
-			complete_national_focus = GER_weserubung2 
-		}	
-	}
 
-	"Fall Blau" = {
+	GER_fall_blau = {
 		icon = category_ger_military_buildup
 		fire_only_once = yes	
 		allowed = { 	tag = GER 	}
@@ -159,7 +161,7 @@ JFU_decisions = {
 				BUL = { add_timed_idea = { idea = axis_fall_blau days = 180 } }	
 				SPR = { add_timed_idea = { idea = axis_fall_blau days = 180 } }
 			}
-			complete_national_focus = GER_fall_blau
+			complete_national_focus = GER_focus_fall_blau
 			set_global_flag = GER_fall_blau
 		}
 	}
@@ -718,16 +720,16 @@ JFU_decisions = {
 		available = { SIA = { is_ai = yes } }
 		cost = 0
 		complete_effect = {
+			annex_country = { target = SIA transfer_troops = yes }
+			country_event = { id = JFU_events.1 hours = 1} 
 			hidden_effect = { 
 				every_state = {
 					limit = {
 						is_core_of = SIA
 					}
-				add_core_of = JAP
+				set_compliance = 100
 				}
 			}
-			annex_country = { target = SIA transfer_troops = yes }
-			country_event = { id = JFU_events.1 hours = 1} 
 		}
 	}
 	"Annex Manchu" = {
