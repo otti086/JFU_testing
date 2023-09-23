@@ -1012,6 +1012,9 @@
  
  news.5003.d:0 "Since the start of Operation Barbarossa the Workers' and Peasants' Red Army has been plagued by routing, leaving many Soviet industrial and urban centers near the border under Axis control. Joseph Stalin has responded with an order to all Red Army commanders to cease unauthorized retreats and set up special detachments for dealing with deserters."
  news.5004.d:0 "Following a long and arduous process of recovering from the trials of the Great Purge, the Red Army, through the fire and flames of war, has proven itself to be just as tactically competent as the Wehrmacht, despite the retreats. Joseph Stalin has ordered an end to retreating: 'Not one step back'."
+ JFU_events.7.t:0 "Britain Welcomes Us"
+ JFU_events.7.d:0 "Our diplomats have phoned us from London, informing us that we have successfully entered into a formal military alliance with Britain and her allies. As a member of the Allies, every struggle from from London to Wellington, Oslo to Cairo is now part of our struggle for Norway."
+ JFU_events.7.a:0 "God Save Our Kings!"
  fall_blau_effect:0 "enables after Germany started Fall Blau"
  SOV_BARB_Debuff:0 "Suprise Attack"
  attache_idea_tt:0 "gains the attache modifiers as long as the recieving country is at war"
