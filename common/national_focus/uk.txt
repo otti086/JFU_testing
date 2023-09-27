@@ -257,7 +257,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = armor_bonus
 				bonus = 1.0
-				uses = 1
+				uses = 2
 				category = armor
 			}
 		}
@@ -267,25 +267,8 @@ focus_tree = {
 		id = air_defense_focus
 		prerequisite = { focus = limited_rearmament_focus }
 		available = {
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				OR = {
-					threat > 0.05
-					has_war = yes
-					NOT = { has_government = democratic }
-				}
-			}
-			if = {
-				limit = {
-					NOT = { has_dlc = "Man the Guns" }
-				}
-				OR = {
-					threat > 0.05
-					has_war = yes
-					NOT = { has_government = democratic }
-				}
+			OR = {
+				threat > 0.05
 			}
 		}
 
@@ -316,42 +299,26 @@ focus_tree = {
 		}
 
 		complete_tooltip = {
-			air_experience = 25
-			if = {
-				limit = { has_country_flag = air_defense_focus_built_max }
-				custom_effect_tooltip = air_defense_focus_tt			
-			}
-			if = {
-				limit = { NOT = { has_country_flag = air_defense_focus_built_max } }
-				every_state = {
-					limit = { has_state_flag = ENG_air_defense_focus_built_2 }
-					add_building_construction = {
-						type = anti_air_building
-						level = 2
-						instant_build = yes
-					}
-				}
-			}
 		}
 
 		completion_reward = {
 			air_experience = 25
 			123 = {
-				add_building_construction = {
+				set_building_level = {
 					type = anti_air_building
 					level = 5
 					instant_build = yes
 				}
 			}
 			125 = {
-				add_building_construction = {
+				set_building_level = {
 					type = anti_air_building
 					level = 5
 					instant_build = yes
 				}
 			}
 			127 = {
-				add_building_construction = {
+				set_building_level = {
 					type = anti_air_building
 					level = 5
 					instant_build = yes
@@ -389,16 +356,7 @@ focus_tree = {
 		id = shadow_scheme_focus
 		prerequisite = { focus = limited_rearmament_focus }
 		available = {
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				OR = {
-					threat > 0.05
-					has_war = yes
-					NOT = { has_government = democratic }
-				}
-			}
+			threat > 0.05
 		}
 
 		continue_if_invalid = yes
@@ -1136,7 +1094,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = general_rearmament_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1144,72 +1102,25 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		complete_tooltip = {
-			every_state = {
-				limit = { has_state_flag = ENG_naval_rearmament_focus_1dockyard }
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
 		}
 
 		completion_reward = {
 			navy_experience = 50
-			random_owned_controlled_state = {
-				limit = {
-					is_coastal = yes
-					free_building_slots = {
-						building = dockyard
-						size > 0
-						include_locked = yes
-					}
-					is_core_of = ROOT
-				}
-				add_extra_state_shared_building_slots = 1
+			126 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
-					level = 1
+					level = 2
 					instant_build = yes
 				}
-				set_state_flag = ENG_naval_rearmament_focus_1dockyard
 			}
-			random_owned_controlled_state = {
-				limit = {
-					is_coastal = yes
-					free_building_slots = {
-						building = dockyard
-						size > 0
-						include_locked = yes
-					}
-					is_core_of = ROOT
-				}
-				add_extra_state_shared_building_slots = 1
+			127 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
-					level = 1
+					level = 2
 					instant_build = yes
 				}
-				set_state_flag = ENG_naval_rearmament_focus_1dockyard
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_coastal = yes
-					free_building_slots = {
-						building = dockyard
-						size > 0
-						include_locked = yes
-					}
-					is_core_of = ROOT
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-				set_state_flag = ENG_naval_rearmament_focus_1dockyard
 			}
 		}
 	}
@@ -1247,7 +1158,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = naval_rearmament_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1271,16 +1182,13 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = uk_destroyer_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 
 		available_if_capitulated = yes
 
-		allow_branch = {
-			has_dlc = "Man the Guns"
-		}
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			add_tech_bonus = {
@@ -1300,7 +1208,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = uk_destroyer_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1318,15 +1226,8 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		x = 0
 		y = 2
-		offset = {
-			x = 0
-			y = -1
-			trigger = {
-				NOT = { has_dlc = "Man the Guns" }
-			}
-		}
 		relative_position_id = uk_convoy_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1351,7 +1252,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = naval_rearmament_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1376,7 +1277,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = uk_waves_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 0.25
 		}
@@ -1403,7 +1304,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = uk_waves_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1458,7 +1359,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = uk_battleship_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1511,7 +1412,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = uk_battleship_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1521,7 +1422,6 @@ focus_tree = {
 		}
 
 		available = {
-			date > 1944.1.1
 			has_tech = advanced_ship_hull_heavy
 			has_full_control_of_state = 133
 		}
@@ -1767,9 +1667,9 @@ focus_tree = {
 					province = 4076
 					instant_build = yes
 				}
-				add_building_construction = {
+				set_building_level = {
 					type = air_base
-					level = 3
+					level = 10
 					instant_build = yes
 				}
 				set_building_level = {
@@ -1778,7 +1678,7 @@ focus_tree = {
 					province = 1071
 					instant_build = yes
 				}
-				add_building_construction = {
+				set_building_level = {
 					type = anti_air_building
 					level = 2
 					instant_build = yes
@@ -1800,20 +1700,6 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
-		# Needs province based trigger to work properly
-		#bypass = {
-		#	116 = {
-		#		free_building_slots = {
-		#			building = coastal_bunker
-		#			size < 2
-		#		}
-		#		free_building_slots = {
-		#			building = air_base
-		#			size < 1
-		#		}
-		#	}
-		#}
-
 		completion_reward = {
 			116 = {
 				add_extra_state_shared_building_slots = 1
@@ -1823,12 +1709,12 @@ focus_tree = {
 					province = 12003
 					instant_build = yes
 				}
-				add_building_construction = {
+				set_building_level = {
 					type = air_base
-					level = 3
+					level = 10
 					instant_build = yes
 				}
-				add_building_construction = {
+				set_building_level = {
 					type = anti_air_building
 					level = 2
 					instant_build = yes
@@ -1977,7 +1863,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = uk_asia_focus
-		cost = 10
+		cost = 5
 
 		available = {
 			336 = {
@@ -2006,38 +1892,38 @@ focus_tree = {
 					province = 12299
 					instant_build = yes
 				}
-				add_building_construction = {
+				set_building_level = {
 					type = bunker
 					level = 4
 					province = 12299
 					instant_build = yes
 				}
-				add_building_construction = {
+				set_building_level = {
 					type = anti_air_building
 					level = 2
 					instant_build = yes
 				}
-				add_building_construction = {
+				set_building_level = {
 					type = bunker
 					level = 3
 					province = 7329
 					instant_build = yes
 				}
-				add_building_construction = {
+				set_building_level = {
 					type = bunker
 					level = 3
 					province = 4310
 					instant_build = yes
 				}
-				add_building_construction = {
+				set_building_level = {
 					type = bunker
 					level = 3
 					province = 7342
 					instant_build = yes
 				}
-				add_building_construction = {
+				set_building_level = {
 					type = air_base
-					level = 2
+					level = 10
 					instant_build = yes
 				}
 			}
@@ -2081,38 +1967,33 @@ focus_tree = {
 		completion_reward = {
 			336 = {
 				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
+				set_building_level = {
 					type = bunker
 					level = 4
 					province = 12299
 					instant_build = yes
 				}
-				add_building_construction = {
+				set_building_level = {
 					type = anti_air_building
-					level = 2
+					level = 4
 					instant_build = yes
 				}
-				add_building_construction = {
+				set_building_level = {
 					type = bunker
 					level = 3
 					province = 7329
 					instant_build = yes
 				}
-				add_building_construction = {
+				set_building_level = {
 					type = bunker
 					level = 3
 					province = 4310
 					instant_build = yes
 				}
-				add_building_construction = {
+				set_building_level = {
 					type = bunker
 					level = 3
 					province = 7342
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = air_base
-					level = 2
 					instant_build = yes
 				}
 			}
@@ -2132,40 +2013,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			random_country = {
-				limit = {
-					original_tag = CAN
-					is_in_faction_with = ROOT
+			every_country = {
+				limit = { 
+					is_subject_of = ENG
 				}
-				add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties }
-			}
-			random_country = {
-				limit = {
-					original_tag = AST
-					is_in_faction_with = ROOT
-				}
-				add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties }
-			}
-			random_country = {
-				limit = {
-					original_tag = RAJ
-					is_in_faction_with = ROOT
-				}
-				add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties }
-			}
-			random_country = {
-				limit = {
-					original_tag = NZL
-					is_in_faction_with = ROOT
-				}
-				add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties }
-			}
-			random_country = {
-				limit = {
-					original_tag = SAF
-					is_in_faction_with = ROOT
-				}
-				add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties }
+				army_experience = 25
+				navy_experience = 25
+				air_experience = 25			
 			}
 		}
 	}
@@ -2183,13 +2037,6 @@ focus_tree = {
 		}
 
 		available = {
-			OR = {
-				CAN = { is_in_faction_with = ENG }
-				SAF = { is_in_faction_with = ENG }
-				RAJ = { is_in_faction_with = ENG }
-				AST = { is_in_faction_with = ENG }
-				NZL = { is_in_faction_with = ENG }
-			}
 		}
 
 		bypass = {
@@ -2410,12 +2257,13 @@ focus_tree = {
 	focus = {
 		id = uk_develope_focus
 		prerequisite = { focus = uk_colony_focus }
-		text = "Development Of Our Colonies"
+		text = "Imperial Conference"
 		available = { }
 
 		continue_if_invalid = no
 
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_focus_eng_imperial_federation
+
 
 		x = 0
 		y = 1
