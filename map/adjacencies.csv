@@ -295,6 +295,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 5017;2088;impassable;-1;-1;-1;-1;-1;;Ethiopia Border;;
 12723;2088;impassable;-1;-1;-1;-1;-1;;Ethiopia Border;;
 13251;2088;impassable;-1;-1;-1;-1;-1;;Ethiopia Border;;
+1984;2088;impassable;-1;-1;-1;-1;-1;;Ethiopia Border;;
 1984;12862;impassable;-1;-1;-1;-1;-1;;Ethiopia Border;;
 2040;12862;impassable;-1;-1;-1;-1;-1;;Ethiopia Border;;
 2040;4918;impassable;-1;-1;-1;-1;-1;;Ethiopia Border;;
@@ -302,5 +303,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 
 
 2800;2776;;-1;-1;-1;-1;-1;Aden_Strait;Aden Strait;
+5838;5864;;-1;-1;-1;-1;-1;OTRANTO_STRAIT;Italy-Albania
 
 -1;-1;;-1;-1;-1;-1;-1;-1
