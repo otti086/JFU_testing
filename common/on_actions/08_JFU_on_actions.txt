@@ -188,21 +188,6 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					original_tag = NOR
-				}
-				NOR = { transfer_state = 912 }
-				every_state = {
-					limit = {
-						AND = {
-							is_core_of = NOR
-							is_controlled_by = GER
-						}
-					}
-					add_compliance = 50 
-				}
-			}
-			if = {
-				limit = {
 					original_tag = DEN
 				}
 				every_state = {
@@ -613,6 +598,31 @@ on_actions = {
 					CHI = { NOT = { controls_state = 608 } NOT = { controls_state = 597 } }		
 				}	
 				CHI = { load_oob = "CHI_spawn2" }
+			}
+			if = {
+				limit = {
+					FROM = { tag = NOR }
+					FROM.FROM = { is_core_of = NOR }
+					NOR = { NOT = { controls_state = 110 } }
+				}
+				tp_divs_out_of_norway = yes
+
+				NOR = { transfer_state = 912 }
+				GER = {
+					transfer_state = 110
+					transfer_state = 142
+					transfer_state = 143
+					transfer_state = 144
+				}
+				every_state = {
+					limit = {
+						AND = {
+							is_core_of = NOR
+							is_controlled_by = GER
+						}
+					}
+					add_compliance = 50 
+				}
 			}
 		}
 	}

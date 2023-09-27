@@ -146,7 +146,9 @@ air_to_england = {
 
 
 
-tp_divs_out_of_france = {  every_country = { limit ={ is_in_faction_with = ENG }  every_state = { limit = { OR = { is_core_of = FRA  }}  teleport_armies = { to_state = 5139 }   } }  }
+tp_divs_out_of_france = { every_country = { limit ={ is_in_faction_with = ENG }  every_state = { limit = { OR = { is_core_of = FRA  } } teleport_armies = { to_state = 5139 } } } }
+
+tp_divs_out_of_norway = { every_country = { limit ={ is_in_faction_with = ENG } every_state = { limit = { OR = { is_core_of = NOR  } } teleport_armies = { to_state = 6103 } } } }
 
 HFU_fuel_startup_effect = { 
 	every_country={
@@ -892,6 +894,13 @@ JFU_startup_on_action = {
 			country_lock_all_division_template = yes 
 			add_ideas = ai_limiter 	
 		}
+	}
+	251 = {
+		set_building_level = {
+			type = air_base
+			level = 40
+			instant_build = yes
+		}			
 	}
 }
 JFU_scripted_events_effect = {
