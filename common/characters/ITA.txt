@@ -2395,34 +2395,6 @@ characters = {
 		}
 	}
 
-	ITA_roberto_farinacci = {
-		name = ITA_roberto_farinacci
-		portraits = {
-			army = {
-				small = GFX_portrait_ITA_roberto_farinacci_small
-			}
-		}
-
-		allowed_civil_war = {
-			ITA_is_appropriate_cw_side_for_character_split = yes
-		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = ITA_roberto_farinacci
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
-			available = {
-				ITA_government_is_really_fascist = yes
-			}
-			traits = {
-				backroom_backstabber 
-			}
-
-		}
-	}
-
 	ITA_carlo_scorza = {
 		name = ITA_carlo_scorza
 		portraits = {
@@ -2563,35 +2535,6 @@ characters = {
 
 		allowed_civil_war = {
 			ITA_is_appropriate_cw_side_for_character_split = yes
-		}
-	}
-
-	### MONARCHIST ###
-	ITA_pietro_d_acquarone = {
-		name = ITA_pietro_d_acquarone
-		portraits = {
-			army = {
-				small = GFX_portrait_ITA_pietro_d_acquarone_small
-			}
-		}
-
-		allowed_civil_war = {
-			ITA_is_appropriate_cw_side_for_character_split = yes
-		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = ITA_pietro_d_acquarone
-			allowed = {
-				original_tag = ITA
-				has_dlc = "By Blood Alone"
-			}
-			available = {
-				always = no
-			}
-			traits = {
-				staunch_monarchist
-			}
 		}
 	}
 

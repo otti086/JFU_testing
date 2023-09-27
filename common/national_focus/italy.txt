@@ -4971,23 +4971,6 @@ focus_tree = {
 		completion_reward = {
 			navy_experience = 25
 			custom_effect_tooltip = ITA_cooperation_programs_decisions_tt
-			if = { #Historical agreement with Sweden
-				limit = {
-					NOT = {
-						has_war_with = SWE
-						any_enemy_country = { is_in_faction_with = SWE }
-					}
-				}
-				SWE = { country_event = { id = BBA_italy_naval_cooperation_programs.08 hours = 1 } }
-				custom_effect_tooltip = if_they_accept
-				effect_tooltip = {
-					custom_effect_tooltip = ITA_cooperation_programs_deal_sweden_tt
-					add_timed_idea = {
-						idea = ITA_sold_obsolete_escort_ships_ns
-						days = 365
-					}
-				}
-			}
 		}
 	}
 

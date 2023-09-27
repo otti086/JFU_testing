@@ -6,43 +6,7 @@ bookmarks = {
 		picture = "GFX_select_date_1936"
 		default_country = "GER"
 		default = yes
-		
-		"FRA"={
-			history = "FRA_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-				FRA_victors_of_wwi
-				FRA_disjointed_government
-				FRA_protected_by_the_maginot_line
-			}
-			focuses = {
-				FRA_revive_the_national_bloc
-			}
-		}
-		"USA"={
-			history = "USA_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-				home_of_the_free
-				great_depression
-				undisturbed_isolation
-			}
-			focuses = {
-				USA_war_plan_black
-			}
-		}
-		"ENG"={
-			history = "ENG_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-				stiff_upper_lip
-				ENG_the_war_to_end_all_wars
-				george_v
-			}
-			focuses = {
-				tizard_mission_focus
-			}
-		}
+
 		"GER"={
 			history = "GER_GATHERING_STORM_DESC"
 			ideology = fascism
@@ -57,19 +21,61 @@ bookmarks = {
 				GER_ussr_war_goal
 			}
 		}
-		"ITA"={
-			history = "ITA_GATHERING_STORM_DESC"
-			ideology = fascism
+		"SOV"={
+			history = "SOV_GATHERING_STORM_DESC"
+			ideology = communism
 			ideas = {
-				vittorio_emanuele
-				ITA_iri_fake_ns
-				ITA_re_fake_ns
-			}	
+				trotskyite_plot_nsb
+				SOV_second_five_year_plan_fake_1936_ns
+				SOV_politicized_military
+			}
 			focuses = {
-				ITA_comandante_diavolo
-				ITA_a_colonial_empire
-				ITA_pact_of_steel
-			}		
+				SOV_third_five_year_plan
+				SOV_patriarch_of_all_russia
+				SOV_lessons_of_war
+			}	
+		}		
+		"ENG"={
+			history = "ENG_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				stiff_upper_lip
+				ENG_the_war_to_end_all_wars
+				george_v
+			}
+			focuses = {
+				general_rearmament_focus
+				tizard_mission_focus
+				uk_develope_focus
+			}
+		}
+		"USA"={
+			history = "USA_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				home_of_the_free
+				great_depression
+				undisturbed_isolation
+			}
+			focuses = {
+				USA_war_plan_black
+				USA_the_giant_wakes
+				USA_two_ocean_navy_act
+			}
+		}
+		"FRA"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				FRA_victors_of_wwi
+				FRA_disjointed_government
+				FRA_protected_by_the_maginot_line
+			}
+			focuses = {
+				FRA_revive_the_national_bloc
+				FRA_strengthen_government_support
+				FRA_army_reform
+			}
 		}
 		"JAP"={
 			history = "JAP_GATHERING_STORM_DESC"
@@ -85,19 +91,19 @@ bookmarks = {
 				JAP_strike_on_the_southern_resource_area
 			}			
 		}
-		"SOV"={
-			history = "SOV_GATHERING_STORM_DESC"
-			ideology = communism
+		"ITA"={
+			history = "ITA_GATHERING_STORM_DESC"
+			ideology = fascism
 			ideas = {
-				trotskyite_plot_nsb
-				SOV_second_five_year_plan_fake_1936_ns
-				SOV_politicized_military
-			}
-			focuses = {
-				SOV_third_five_year_plan
-				SOV_patriarch_of_all_russia
-				SOV_lessons_of_war
+				vittorio_emanuele
+				ITA_iri_fake_ns
+				ITA_re_fake_ns
 			}	
+			focuses = {
+				ITA_comandante_diavolo
+				ITA_a_colonial_empire
+				ITA_pact_of_steel
+			}		
 		}
 
 		"---"={
@@ -106,6 +112,20 @@ bookmarks = {
 
 
 		# minors from DLC ####
+		"RAJ"={
+			minor = yes
+			history = "RAJ_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				RAJ_agrarian_society
+				RAJ_princely_states
+			}
+			focuses = {
+				RAJ_indian_gurkhas
+				RAJ_strengthen_ties_with_british_investors
+				RAJ_indian_national_congress
+			}
+		}
 		"CAN"={
 			minor = yes
 			history = "CAN_GATHERING_STORM_DESC"
@@ -114,26 +134,10 @@ bookmarks = {
 				CAN_great_depression_1
 				CAN_conscription_crisis
 			}
-		}
-		"AST"={
-			minor = yes
-			history = "AST_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-				AST_great_depression_1
-			}
-		}
-		"NZL"={
-			minor = yes
-			history = "NZL_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-				
-			}
 			focuses = {
-				NZL_bob_semple_tank
-				NZL_maori_volunteers
-				AST_hmas_assault
+				CAN_if_day
+				CAN_send_in_the_zombies
+				CAN_shadow_factories
 			}
 		}
 		"SAF"={
@@ -150,18 +154,87 @@ bookmarks = {
 				SAF_outlaw_strikes
 			}
 		}
-		"RAJ"={
+		"AST"={
 			minor = yes
-			history = "RAJ_GATHERING_STORM_DESC"
-			ideology = neutrality
+			history = "AST_GATHERING_STORM_DESC"
+			ideology = democratic
 			ideas = {
-				RAJ_agrarian_society
-				RAJ_princely_states
+				AST_great_depression_1
 			}
 			focuses = {
-				RAJ_indian_gurkhas
+				AST_support_the_policy_of_appeasement
+				AST_fight_work_or_perish
+				AST_rats_of_tobruk
+			}		
+		}
+		"NZL"={
+			minor = yes
+			history = "NZL_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				NZL_bob_semple_tank
+				NZL_maori_volunteers
+				AST_hmas_assault
 			}
 		}
+		"BRA"={
+			minor = yes
+			history = ""
+			ideology = neutrality
+			ideas = {
+				
+			}
+			focuses = {
+				bra_deterrence
+				bra_rocket_effort
+				bra_liberty_ethos
+			}			
+		}
+
+
+		"MEX"={
+			minor = yes
+			history = "MEXICO_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				MEX_church_power_2
+				MEX_politicised_army
+				MEX_oil_concessions
+			}
+			focuses = {
+				MEX_focus_knights_of_columbus
+				MEX_focus_state_education
+				MEX_focus_nationalize_the_oil_fields
+			}
+		}
+		"NOR"={
+			minor = yes
+			history = ""
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+				nor_norway_in_exile
+				nor_ruges_plan
+				nor_operation_crofter
+			}					
+		}
+		"IRE"={
+			minor = yes
+			history = ""
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+				ire_deterrence
+				ire_rocket_effort
+				ire_equipment_effort_3
+			}			
+		}
+
 
 		"HUN"={
 			minor = yes
@@ -173,6 +246,7 @@ bookmarks = {
 			focuses = {
 				HUN_secret_rearmament
 				HUN_renounce_the_treaty_of_trianon
+				HUN_announce_the_gyor_program
 			}
 		}
 
@@ -186,33 +260,9 @@ bookmarks = {
 			focuses = {
 				ROM_institute_royal_dictatorship
 				ROM_preserve_greater_romania
-			}
-		}
-		"MAN"={
-			minor = yes
-			history = "MAN_GATHERING_STORM_DESC"
-			ideology = fascism
-			ideas = {
-				MAN_banditry
-				MAN_kwantung_veto
-				MAN_low_legitimacy_5
-			}
-			focuses = {
-				MAN_obedience
+				ROM_mountain_artillery
 			}
 		}	
-		"MEX"={
-			minor = yes
-			history = "MEXICO_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-				MEX_church_power_2
-				MEX_politicised_army
-				MEX_oil_concessions
-			}
-			focuses = {
-			}
-		}
 
 		"SPR"={
 			minor = yes
@@ -225,6 +275,8 @@ bookmarks = {
 			}
 			focuses = {
 				SPR_caudillo_of_spain
+				SPR_fuse_the_parties
+				SPR_adopt_the_26_points
 			}
 		}
 
@@ -240,7 +292,50 @@ bookmarks = {
 			focuses = {
 				BUL_restore_the_bulgarian_patriarchate
 				BUL_prussia_of_the_balkans
+				BUL_utmost_optimization
 			}
+		}
+		"MAN"={
+			minor = yes
+			history = "MAN_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				MAN_banditry
+				MAN_kwantung_veto
+				MAN_low_legitimacy_5
+			}
+			focuses = {
+				MAN_obedience
+				MAN_the_two_emperors
+				MAN_first_five_year_plan
+			}
+		}
+		"FIN"={
+			minor = yes
+			history = ""
+			ideology = fascism
+			ideas = {
+				MAN_banditry
+				MAN_kwantung_veto
+				MAN_low_legitimacy_5
+			}
+			focuses = {
+				FIN_winter_war
+				FIN_marshal_of_finland
+				FIN_mining
+			}			
+		}
+		"EFR"={
+			minor = yes
+			history = ""
+			ideology = fascism
+			ideas = {
+			}
+			focuses = {
+				VIC_emergency_powers_to_petain
+				VIC_anti_bolshevist_volunteers
+				VIC_a_nation_reborn
+			}						
 		}
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !

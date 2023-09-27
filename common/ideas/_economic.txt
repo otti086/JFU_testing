@@ -155,6 +155,7 @@ ideas = {
 				NOT = {
 					original_tag = FRA
 					original_tag = SPR
+					original_tag = NOR
 				}
 				if = {
 					limit = {
@@ -233,6 +234,7 @@ ideas = {
 				NOT = {
 					original_tag = SPR
 					original_tag = FRA
+					original_tag = NOR
 				}
 			}
 

@@ -1931,13 +1931,6 @@ ITA_characters_to_purge_effect = {
 		}
 		ITA_renato_ricci = { set_character_flag = ITA_purge_advisor }
 	}
-	else_if = {#Second alternative if the first one isn't available
-		limit = {
-			has_character = ITA_roberto_farinacci
-			ITA_roberto_farinacci = { has_character_flag = ITA_character_can_be_purged }
-		}
-		ITA_roberto_farinacci = { set_character_flag = ITA_purge_advisor }
-	}
 	else = {#Third, random alternative if the first two aren't available
 		random_character = {
 			limit = {

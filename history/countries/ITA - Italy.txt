@@ -561,7 +561,6 @@ recruit_character = ITA_rino_corso_fougier
 recruit_character = ITA_giacomo_acerbo
 recruit_character = ITA_giovanni_marinelli
 recruit_character = ITA_serafino_mazzolini
-recruit_character = ITA_roberto_farinacci
 recruit_character = ITA_ivanoe_bonomi
 recruit_character = ITA_luigi_einaudi
 recruit_character = ITA_amadeo_bordiga
@@ -594,7 +593,6 @@ recruit_character = ITA_giuseppe_borea
 recruit_character = ITA_raffaele_de_courten
 
 recruit_character = ITA_sandro_pertini
-recruit_character = ITA_pietro_d_acquarone
 recruit_character = ITA_alberto_de_stefani
 recruit_character = ITA_ugo_luca
 recruit_character = ITA_pompeo_colajanni
@@ -634,7 +632,6 @@ ITA_benito_mussolini = { unit_leader_event = { id = BBA_italy_missiolinis.00 day
 ITA_achille_starace = { set_character_flag = ITA_character_can_be_purged }
 ITA_renato_ricci = { set_character_flag = ITA_character_can_be_purged }
 ITA_carlo_scorza = { set_character_flag = ITA_character_can_be_purged }
-ITA_roberto_farinacci = { set_character_flag = ITA_character_can_be_purged }
 ITA_alberto_beneduce = { set_character_flag = ITA_character_can_be_purged }
 ITA_carlo_favagrossa = { set_character_flag = ITA_character_can_be_purged }
 ITA_giacomo_acerbo = { set_character_flag = ITA_character_can_be_purged }
