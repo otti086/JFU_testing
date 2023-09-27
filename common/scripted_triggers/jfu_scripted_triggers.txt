@@ -66,7 +66,7 @@ africa_oil_states = {
 
 ignore_aa_states = { NOT = { OR = { is_core_of = SPR state = 219 }}}
 
-spanish_coastline = { OR = { state = 169 state = 290 state = 177  state = 173 state = 168 state = 167 state = 165 state = 172 state = 171	}}
+spanish_coastline = { OR = { state = 169 state = 290 state = 177  state = 173 state = 168 state = 167 state = 165 state = 172 state = 171 } }
 atlantikwall_states = {
 	OR = {
 		state = 144
@@ -85,6 +85,7 @@ atlantikwall_states = {
 		state = 15
 		state = 14
 		state = 30
+		state = 36
 		state = 23
 		state = 19
 		state = 806
