@@ -10,7 +10,6 @@ bookmarks = {
 		"FRA"={
 			history = "FRA_GATHERING_STORM_DESC"
 			ideology = democratic
-			available = { NOT = { has_dlc = "La Resistance" } }
 			ideas = {
 				FRA_victors_of_wwi
 				FRA_disjointed_government
@@ -19,17 +18,6 @@ bookmarks = {
 			focuses = {
 				FRA_revive_the_national_bloc
 			}
-		}
-		"FRA"={
-			history = "FRA_GATHERING_STORM_DESC"
-			ideology = democratic
-			available = { has_dlc = "La Resistance" } 
-			ideas = {
-				FRA_victors_of_wwi
-				FRA_disjointed_government
-				FRA_protected_by_the_maginot_line
-			}
-
 		}
 		"USA"={
 			history = "USA_GATHERING_STORM_DESC"
@@ -46,17 +34,6 @@ bookmarks = {
 		"ENG"={
 			history = "ENG_GATHERING_STORM_DESC"
 			ideology = democratic
-			available = { has_dlc = "Man the Guns" }
-			ideas = {
-				stiff_upper_lip
-				ENG_the_war_to_end_all_wars
-				george_v
-			}
-		}
-		"ENG"={
-			history = "ENG_GATHERING_STORM_DESC"
-			ideology = democratic
-			available = { NOT = { has_dlc = "Man the Guns" } }
 			ideas = {
 				stiff_upper_lip
 				ENG_the_war_to_end_all_wars
@@ -69,7 +46,6 @@ bookmarks = {
 		"GER"={
 			history = "GER_GATHERING_STORM_DESC"
 			ideology = fascism
-			available = { has_dlc = "Waking the Tiger" }
 			ideas = {
 				sour_loser
 				general_staff
@@ -78,26 +54,12 @@ bookmarks = {
 			focuses = {
 				GER_anschluss
 				GER_danzig_or_war
-			}
-		}
-		"GER"={
-			history = "GER_GATHERING_STORM_DESC"
-			ideology = fascism
-			available = { NOT = { has_dlc = "Waking the Tiger" } }
-			ideas = {
-				sour_loser
-				general_staff
-				GER_mefo_bills_1
-			}
-			focuses = {
-				GER_anschluss
-				GER_danzig_or_war
+				GER_ussr_war_goal
 			}
 		}
 		"ITA"={
 			history = "ITA_GATHERING_STORM_DESC"
 			ideology = fascism
-			available = { has_dlc = "By Blood Alone" }
 			ideas = {
 				vittorio_emanuele
 				ITA_iri_fake_ns
@@ -106,21 +68,7 @@ bookmarks = {
 			focuses = {
 				ITA_comandante_diavolo
 				ITA_a_colonial_empire
-			}		
-		}
-		"ITA"={
-			history = "ITA_GATHERING_STORM_DESC"
-			ideology = fascism
-			available = { NOT = { has_dlc = "By Blood Alone" } }
-			ideas = {
-				vittorio_emanuele
-				ITA_iri_fake_ns
-				ITA_re_fake_ns
-			}	
-			focuses = {
-				ITA_comandante_diavolo
-				ITA_to_live_as_a_lion
-				ITA_a_colonial_empire
+				ITA_pact_of_steel
 			}		
 		}
 		"JAP"={
@@ -133,34 +81,22 @@ bookmarks = {
 			}	
 			focuses = {
 				JAP_the_zero
-				JAP_warrior_spirit
+				JAP_intervene_in_china
+				JAP_strike_on_the_southern_resource_area
 			}			
 		}
 		"SOV"={
 			history = "SOV_GATHERING_STORM_DESC"
 			ideology = communism
-			available = { has_dlc = "No Step Back" }
 			ideas = {
 				trotskyite_plot_nsb
 				SOV_second_five_year_plan_fake_1936_ns
 				SOV_politicized_military
 			}
 			focuses = {
-				SOV_behead_the_snake
-			}	
-		}
-		"SOV"={
-			history = "SOV_GATHERING_STORM_DESC"
-			ideology = communism
-			available = { NOT = { has_dlc = "No Step Back" } }
-			ideas = {
-				trotskyite_plot_nsb
-				SOV_second_five_year_plan_fake_1936_ns
-				SOV_politicized_military
-			}
-			focuses = {
-				SOV_behead_the_snake
-				SOV_father_of_nations
+				SOV_third_five_year_plan
+				SOV_patriarch_of_all_russia
+				SOV_lessons_of_war
 			}	
 		}
 
@@ -197,6 +133,7 @@ bookmarks = {
 			focuses = {
 				NZL_bob_semple_tank
 				NZL_maori_volunteers
+				AST_hmas_assault
 			}
 		}
 		"SAF"={
@@ -208,7 +145,9 @@ bookmarks = {
 				SAF_history_of_segregation
 			}
 			focuses = {
+				SAF_expand_the_cape_corps
 				SAF_secure_interests_in_africa
+				SAF_outlaw_strikes
 			}
 		}
 		"RAJ"={

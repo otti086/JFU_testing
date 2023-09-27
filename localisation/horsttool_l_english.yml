@@ -1002,6 +1002,10 @@
  GER_plan_z_bb:0 "Lay Down the Bismarck"
  GER_plan_z_bb_desc:0 ""
  
+
+
+ SOV_behead_the_snake_JFU_tt:0 "Trotsky will be §Rautomatically assasinated §Win 100 days."
+
  SOV_Bessarabia:0 "Demand Besserabia"
  GER_fall_gelb:0 "§gFall§! §YGelb (Belgium and Netherlands)§!"
  GER_fall_weiss:0 "§gFall§! §WWeiss (Poland)§! and §gFall§! §RRot (France)§!"
@@ -1009,17 +1013,27 @@
  GER_weserbung_operation2:0 "Unternehmen Weserübung (Norway)"
  GER_unt_barb:0 "Unternehmen Barbarossa (Soviet Union)"
  GER_fall_blau:0 "§gFall§! §CBlau (Soviet Union)§!"
- 
+ ENG_permit_saf:0 "Permit an African Mandate for South Africa"
+ ENG_permit_saf_desc:0 "Our overseas colonies in the Southern half of Africa are too difficult for us to maintain - we should encourage our dominion, South Africa, to take stewardship of them."
+
+
  news.5003.d:0 "Since the start of Operation Barbarossa the Workers' and Peasants' Red Army has been plagued by routing, leaving many Soviet industrial and urban centers near the border under Axis control. Joseph Stalin has responded with an order to all Red Army commanders to cease unauthorized retreats and set up special detachments for dealing with deserters."
  news.5004.d:0 "Following a long and arduous process of recovering from the trials of the Great Purge, the Red Army, through the fire and flames of war, has proven itself to be just as tactically competent as the Wehrmacht, despite the retreats. Joseph Stalin has ordered an end to retreating: 'Not one step back'."
  JFU_events.7.t:0 "Britain Welcomes Us"
  JFU_events.7.d:0 "Our diplomats have phoned us from London, informing us that we have successfully entered into a formal military alliance with Britain and her allies. As a member of the Allies, every struggle from from London to Wellington, Oslo to Cairo is now part of our struggle for Norway."
  JFU_events.7.a:0 "God Save Our Kings!"
  fall_blau_effect:0 "enables after Germany started Fall Blau"
+
+
  SOV_BARB_Debuff:0 "Suprise Attack"
  attache_idea_tt:0 "gains the attache modifiers as long as the recieving country is at war"
  attache_idea:0 "Attache Send"
+ Battle_of_the_Buldge:0 "Battle of the Buldge"
+ Steiners_counter:0 "Steiners Counterattack"
+
  decision_cost_CP_50_pp_100:0 "£command_power  §Y50§! £pol_power  §Y100§!"
+ decision_cost_CP_50_pp_100_blocked:0 "£command_power  §R50§! £pol_power  §R100§!"
+ decision_cost_CP_50_pp_100_tooltip:0 "It costs £command_power  §Y50§! £pol_power  §Y100§! to take the decision"
  Atlantikwall_modifier:0 "Atlantik Wall"
 
  wtt_manchukou.11.C:0 "Build up our Civillian Industry"
@@ -1040,6 +1054,7 @@
  horsthelp.1.d:0 "The Fuel Manager is made so that the faction leader of one faction can manage all of the fuel in a faction.\n\nYou can assign a percentage of required fuel reserves to the country that the country should have. The Fuel Manager will try to keep the assigned percentage by taking fuel from the UK, Germany, or Japan. You can also assign a priority based on the position that nation has in the system. To change the priority of a country, click on the arrows."
  horsthelp.1.a:0 "Thank you Horst, very cool!"
 
+ ENG_permitted_SAF:0 "Westminster has approved of a South African Mandate"
 
  desperate_defense_idea:0 "Desperate Defense"
  desperate_defense_idea_desc:0 "We can't fall back any further. Our soldiers have to dig in and hold the line."

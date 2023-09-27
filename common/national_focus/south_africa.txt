@@ -511,9 +511,7 @@
 		}
 
 		available = {
-			NOT = { has_war_with = ENG }
-			ENG = { is_puppet = no }
-
+			SAF = { has_country_flag = ENG_permitted_SAF } 
 		}
 		
 		bypass = {
@@ -526,9 +524,9 @@
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
-		ENG = { custom_effect_tooltip = needs_approval 
+			ENG = { 
 				country_event = tfv_south_africa.1
-				}
+			}
 		}
 	}
 

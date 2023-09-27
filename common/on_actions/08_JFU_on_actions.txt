@@ -607,9 +607,12 @@ on_actions = {
 				}				
 			}
 			if = {
+				limit = {
 					FROM = { tag = CHI }
 					FROM.FROM = { is_core_of = CHI }
-					CHI = { NOT = { controls_state = 608 } NOT = { controls_state = 597 } }			
+					CHI = { NOT = { controls_state = 608 } NOT = { controls_state = 597 } }		
+				}	
+				CHI = { load_oob = "CHI_spawn2" }
 			}
 		}
 	}

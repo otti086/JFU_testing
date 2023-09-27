@@ -472,7 +472,15 @@ JFU_vichy_france = {
 
 JFU_vichy_france_2 = {
 	ITA = {   transfer_state = 735 transfer_state = 665 transfer_state = 458 transfer_state = 1 } #Italian claims, includes territory from Tunisia+Corsica+South Eastern France that was occupied in 1942
-	539 = { set_building_level = { type = infrastructure level = 5 }}
+	539 = { set_building_level = { type = infrastructure level = 5 } }
+	if = {
+		limit = {
+			FRA = {
+				is_ai = yes 
+			}
+		}
+		set_variable = { FRA_legitimacy = 90 }
+	}
 	EFR ={ 
 		set_country_flag = vichy_france_established
 		###SOUTHERN FRANCE###
@@ -604,6 +612,14 @@ JFU_vichy_france_2 = {
 	}
 	FRA = {
 		transfer_state = 713
+	}
+	if = {
+		limit = {
+			FRA = {
+				is_ai = yes 
+			}
+		}
+		ENG = { annex_country = { target = FRA transfer_troops = no } }
 	}
 }
 
@@ -766,7 +782,6 @@ JFU_startup_on_action = {
 	if = {  limit = { ai_country_allies = yes } country_lock_all_division_template = yes }
 	every_country = { limit = { OR = { axis = yes allies = yes } } add_ideas = peace_training }
 	every_country = { limit = { OR = { axis = yes allies = yes } } set_rule = { can_be_spymaster = no } }
-	if = { limit = { FRA = { is_ai = yes } } country_lock_all_division_template = yes add_ideas = ai_limiter }
 	SWE = { set_global_flag = NOR_RUGES_PLAN }
 	SWE = { JFU_apply_intel = yes }
 	SWE = { HFU_fuel_startup_effect = yes }
@@ -866,6 +881,17 @@ JFU_startup_on_action = {
 		add_equipment_to_stockpile = { type = train_equipment_1 amount = 100 }	
 		add_ideas = ai_limiter
 		country_lock_all_division_template = yes					
+	}
+	if = { 
+		limit = { 
+			FRA = { 
+				is_ai = yes 
+			} 
+		} 
+		FRA = {
+			country_lock_all_division_template = yes 
+			add_ideas = ai_limiter 	
+		}
 	}
 }
 JFU_scripted_events_effect = {
