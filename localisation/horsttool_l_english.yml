@@ -1015,7 +1015,7 @@
  GER_fall_blau:0 "§gFall§! §CBlau (Soviet Union)§!"
  ENG_permit_saf:0 "Permit an African Mandate for South Africa"
  ENG_permit_saf_desc:0 "Our overseas colonies in the Southern half of Africa are too difficult for us to maintain - we should encourage our dominion, South Africa, to take stewardship of them."
-
+ UK_imperial_conference_tt:0 " Add §YImperial Conference Economy Agreements§!, which grants (Factory Output §G+15.00%§!, Dockyard Output §G+15.00%§!).\n Add §YImperial Conference Economy Agreements§! which grants (§YCivilian Factory§! construction Speed §G+15.00%§!, §YMilitary Factory§! construction speed §G+15.00%§!, §!Dockyard§! construction Speed §G+15.00%§!)\n Gain Base War Support §G+10.00%§!\n(@AST§YAustralia, @CANDominion of Canada, @RAJBritish Raj,\n @NZLNew Zealand and @SAFSouth Africa§!):\n    Add §YImperial Conference Defense Agreements§! which grants (Factory Output §G+10.00%§!, Dockyard Output §G+10.00%§!).\n    Add §YImperial Conference Economy Agreements§! which grants (§YCivilian Factory§! construction Speed §G+10.00%§!, §YMilitary Factory§! construction speed §G+10.00%§!, §!Dockyard§! construction Speed §G+10.00%§!)\n   Gain Base War Support §G+10.00%§! "
 
  news.5003.d:0 "Since the start of Operation Barbarossa the Workers' and Peasants' Red Army has been plagued by routing, leaving many Soviet industrial and urban centers near the border under Axis control. Joseph Stalin has responded with an order to all Red Army commanders to cease unauthorized retreats and set up special detachments for dealing with deserters."
  news.5004.d:0 "Following a long and arduous process of recovering from the trials of the Great Purge, the Red Army, through the fire and flames of war, has proven itself to be just as tactically competent as the Wehrmacht, despite the retreats. Joseph Stalin has ordered an end to retreating: 'Not one step back'."
@@ -1047,7 +1047,7 @@
  NOR_spec_ops:0 "Fleischer's Plan"
  NOR_crofter:0 "Operation Crofter"
 
- GULF_OF_ADEN:0 "Gulf of Aden"
+ STRATEGICREGION_276:0 "Gulf of Aden"
  LOWER_EGYPT:0 "Lower Egypt"
 
  horsthelp.1.t:0 "Help with Fuel Manager"
