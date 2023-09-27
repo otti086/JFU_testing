@@ -47,8 +47,4 @@ spriteTypes = {
 		name = "GFX_r56_goal_generic_attack_belgium"       
 		texturefile = "gfx/interface/goals/r56_goal_generic_attack_belgium.dds"  
 	} 
-	SpriteType = {
-		name = "GFX_focus_GER_cze"
-		texturefile = "gfx/interface/goals/focus_GER_cze.dds"
-	}
 }
