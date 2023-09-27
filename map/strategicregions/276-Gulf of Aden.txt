@@ -1,7 +1,7 @@
 
 strategic_region={
 	id=276
-	name="Gulf_of_Aden"
+	name="STRATEGICREGION_276"
 	provinces={
 		2753 2776 5383 8788 
 	}
