@@ -2523,7 +2523,7 @@ focus_tree = {
 	focus = {
 		id = SOV_strengthen_the_mobilization_plan
 		icon = GFX_focus_SOV_mobilization_plan
-		x = 7
+		x = 6
 		y = 0
 		relative_position_id = SOV_found_the_pcdi
 		cost = 5
@@ -4463,7 +4463,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_organization_centralization_discipline
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -4472,23 +4472,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			custom_effect_tooltip = SOV_war_economy_stability_tt
-			if = {
-				limit = {
-					has_war = no
-				}
-				add_stability = -0.1
-			}
-			else = {
-				custom_effect_tooltip = SOV_war_economy_stability_war_tt
-			}
-			if = {
-				limit = {
-					NOT = { has_idea = war_economy }
-					NOT = { has_idea = tot_economic_mobilisation }
-				}
-				add_ideas = war_economy
-			}
 			if = {
 				limit = {
 					217 = {
@@ -4501,10 +4484,10 @@ focus_tree = {
 					}
 				}
 				217 = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 5
 					add_building_construction = {
 						type = arms_factory
-						level = 2
+						level = 5
 						instant_build = yes
 					}
 				}
@@ -4705,7 +4688,7 @@ focus_tree = {
 			else = {
 				custom_effect_tooltip = SOV_behead_the_snake_no_lar_tt
 			}
-		ROOT = { news_event = { id = nsb_news.100 days = 100 } }
+			custom_effect_tooltip = SOV_behead_the_snake_JFU_tt
 			SOV_paranoia_high_decrease_effect = yes
 		}
 	}
@@ -5573,38 +5556,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_timed_idea = { idea = SOV_military_advisors_in_spain days = 1095 }
-			if = {
-				limit = {
-					has_dlc = "La Resistance"
-					country_exists = SPD
-				}
-				SPD = {
-					hidden_effect = { country_event = { id = NSB_soviet_foreign_politics_events.20 hours = 2 random_hours = 1 } }
-					effect_tooltip = { add_timed_idea = {idea = SOV_soviet_advisors_spr days = 1095 } }
-				}
-			}
-			else_if = {
-				limit = {
-					has_dlc = "La Resistance"
-					NOT = { country_exists = SPD }
-				}
-				custom_effect_tooltip = SOV_aid_republican_spain_tt
-				effect_tooltip = { add_timed_idea = {idea = SOV_soviet_advisors_spr days = 1095 } }
-			}
-			else = {
-				random_country = {
-					limit = {
-						original_tag = SPR
-						has_civil_war = yes
-						OR = {
-							has_government = communism
-							has_government = democratic
-						}
-					}
-					hidden_effect = { country_event = { id = NSB_soviet_foreign_politics_events.20 hours = 2 random_hours = 1 } }
-					effect_tooltip = { add_timed_idea = {idea = SOV_soviet_advisors_spr days = 1095 } }
-				}
-			}
 			# A Spanish General will join the USSR if his side loses the SCW
 			if = {
 				limit = {
