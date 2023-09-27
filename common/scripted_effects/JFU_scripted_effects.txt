@@ -766,9 +766,10 @@ JFU_startup_on_action = {
 	if = {  limit = { ai_country_allies = yes } country_lock_all_division_template = yes }
 	every_country = { limit = { OR = { axis = yes allies = yes } } add_ideas = peace_training }
 	every_country = { limit = { OR = { axis = yes allies = yes } } set_rule = { can_be_spymaster = no } }
+	if = { limit = { FRA = { is_ai = yes } } country_lock_all_division_template = yes add_ideas = ai_limiter }
 	SWE = { set_global_flag = NOR_RUGES_PLAN }
 	SWE = { JFU_apply_intel = yes }
-	SWE = { HFU_fuel_startup_effect = yes }										
+	SWE = { HFU_fuel_startup_effect = yes }
 	SWE = { JFU_scripted_events_effect = yes }
 	SPR = {	country_lock_all_division_template = yes country_event = { id = lar_spain.2 days = 230 } activate_mission = days_till_civil_war }
 	ENG = {
