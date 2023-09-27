@@ -1395,12 +1395,6 @@ focus_tree = {
 				name = GER_rocketry_focus
 				bonus = 1.0
 				uses = 2
-				category = rocketry
-			}
-			add_tech_bonus = {
-				name = GER_rocketry_focus
-				bonus = 1.0
-				uses = 2
 				category = jet_technology
 				category = rocketry
 			}
@@ -1423,9 +1417,8 @@ focus_tree = {
 			add_tech_bonus = {
 				name = secret_bonus
 				bonus = 1.0
-				uses = 1
+				uses = 2
 				category = nuclear
-				category = rocketry
 			}
 		}
 	}
@@ -1456,6 +1449,9 @@ focus_tree = {
 		icon = GFX_GER_Generalplan_Ost
 		prerequisite = { focus = GER_mol_rib_pact }
 		cancel_if_invalid = no
+		available = {
+			date > 1941.01.01
+		}
 		x = 1
 		y = 1
 		relative_position_id = GER_mol_rib_pact
@@ -2092,7 +2088,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = GER_plan_z
-		cost = 1
+		cost = 5
 		available = { has_tech = improved_ship_hull_heavy }
 
 		available_if_capitulated = yes
@@ -2153,7 +2149,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GER_plan_z
-		cost = 1
+		cost = 5
 		available = { has_tech = improved_ship_hull_carrier }
 		available_if_capitulated = yes
 
@@ -2291,7 +2287,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_u_boat_effort
-		cost = 2
+		cost = 5
 
 		available_if_capitulated = yes
 
