@@ -368,3 +368,29 @@ news_event = {
 		}
 	}
 }
+#Greater Italy Proclaimed
+news_event = {
+	id = bba_italian_formables_news.1
+	title = bba_italian_formables_news.1.t
+	desc = bba_italian_formables_news.1.desc
+	picture = GFX_news_event_generic_parliament
+	
+	
+	
+	is_triggered_only = yes
+	
+	option = { #Us
+		name = bba_italian_formables_news.1.a
+		trigger = {
+			tag = ROOT
+		}
+	}
+
+	option = { #Them
+		name = bba_italian_formables_news.1.b
+		trigger = {
+			NOT = { tag = ROOT }
+		}
+	}
+
+}

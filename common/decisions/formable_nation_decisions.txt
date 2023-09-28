@@ -284,6 +284,8 @@ greater_italy_category = {
 				}
 				164 = { add_core_of = ROOT }
 
+				news_event = { id = bba_italian_formables_news.1 hours = 8 }	
+
 				set_global_flag = greater_italy_flag
 
 			}
