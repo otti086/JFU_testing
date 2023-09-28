@@ -814,6 +814,8 @@
  cancel_air_to_eng:0 "Cancel sending Planes to UK"
  JFU_decisions:0 " JFU Decisions"
  JFU_templates:0 "JFU Template Decisions"
+ political_actions1:0 "JFU Political Actions"
+
 
  GER_endsieg_1:0 "Panzersturm"
  GER_endsieg_2:0 "Throw out the Allies"
@@ -1015,6 +1017,9 @@
  GER_fall_blau:0 "§gFall§! §CBlau (Soviet Union)§!"
  ENG_permit_saf:0 "Permit an African Mandate for South Africa"
  ENG_permit_saf_desc:0 "Our overseas colonies in the Southern half of Africa are too difficult for us to maintain - we should encourage our dominion, South Africa, to take stewardship of them."
+ anti_non_aligned_raids:0 "Anti Non-Aligned Raids"
+ anti_non_aligned_raids_desc:0 "We must crack down on Non-Aligned elements in our nation for the sake of long-term domestic stability. Their influence is too great, and may potentially become a problem to the government."
+
  UK_imperial_conference_tt:0 " Add §YImperial Conference Economy Agreements§!, which grants (Factory Output §G+15.00%§!, Dockyard Output §G+15.00%§!).\n Add §YImperial Conference Economy Agreements§! which grants (§YCivilian Factory§! construction Speed §G+15.00%§!, §YMilitary Factory§! construction speed §G+15.00%§!, §!Dockyard§! construction Speed §G+15.00%§!)\n Gain Base War Support §G+10.00%§!\n(@AST§YAustralia, @CANDominion of Canada, @RAJBritish Raj,\n @NZLNew Zealand and @SAFSouth Africa§!):\n    Add §YImperial Conference Defense Agreements§! which grants (Factory Output §G+10.00%§!, Dockyard Output §G+10.00%§!).\n    Add §YImperial Conference Economy Agreements§! which grants (§YCivilian Factory§! construction Speed §G+10.00%§!, §YMilitary Factory§! construction speed §G+10.00%§!, §!Dockyard§! construction Speed §G+10.00%§!)\n   Gain Base War Support §G+10.00%§! "
 
  news.5003.d:0 "Since the start of Operation Barbarossa the Workers' and Peasants' Red Army has been plagued by routing, leaving many Soviet industrial and urban centers near the border under Axis control. Joseph Stalin has responded with an order to all Red Army commanders to cease unauthorized retreats and set up special detachments for dealing with deserters."

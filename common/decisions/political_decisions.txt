@@ -146,6 +146,42 @@ political_actions = {
 		}
     }
 
+    anti_non_aligned_raids = {
+
+    	icon = generic_civil_support
+
+    	visible = {
+			NOT = { has_government = neutrality }
+		}
+
+		available = {
+            neutrality > 0.1
+            if = {
+				limit = {
+					tag = SPR
+				}
+				NOT = {
+					has_idea = SPR_political_violence
+				}
+			}
+        }
+	
+		modifier = {
+			neutrality_drift = -0.05
+			stability_weekly = 0.007
+		}
+	
+		days_remove = 120
+		cost = 50
+
+		complete_effect = {
+			add_stability = -0.1
+		}
+		
+		remove_effect = {
+		}
+    }	
+
     anti_democratic_raids = {
 
     	icon = generic_civil_support
@@ -435,7 +471,7 @@ political_actions = {
 			factor = 0
 		}
 	}
-	
+
 	institute_press_censorship_fascist_state = {
 
 		icon = generic_political_discourse
