@@ -4689,6 +4689,9 @@ focus_tree = {
 				custom_effect_tooltip = SOV_behead_the_snake_no_lar_tt
 			}
 			custom_effect_tooltip = SOV_behead_the_snake_JFU_tt
+			hidden_effect = {
+				ROOT = { news_event = { id = nsb_news.100 days = 100 } }
+			}
 			SOV_paranoia_high_decrease_effect = yes
 		}
 	}
