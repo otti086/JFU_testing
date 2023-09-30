@@ -1424,6 +1424,7 @@ focus_tree = {
 		available = {
 			has_tech = advanced_ship_hull_heavy
 			has_full_control_of_state = 133
+			date > 1943.01.01
 		}
 
 		available_if_capitulated = yes

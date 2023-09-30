@@ -1435,6 +1435,13 @@ focus_tree = {
 		completion_reward = {
 			hidden_effect = {
 				POL = { load_oob = "POL_spawn"}
+				if = {
+					limit = {
+						FRA = {
+							is_ai = yes 
+						}
+					}
+				}
 				FRA = { load_oob = "FRA_AI_spawn"}
 			}
 			SOV = {
