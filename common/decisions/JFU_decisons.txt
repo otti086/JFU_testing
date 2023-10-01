@@ -1117,6 +1117,7 @@ JFU_decisions = {
 		allowed = { tag =  SOV }
 		available = {
 			date > 1941.11.1
+			date < 1941.12.1
 		}
 		cost = 0
 		complete_effect = {
@@ -1129,6 +1130,7 @@ JFU_decisions = {
 		allowed = { tag =  SOV }
 		available = {
 			date > 1942.11.1
+			date < 1942.12.1
 		}
 		cost = 0
 		complete_effect = {
@@ -1141,9 +1143,7 @@ JFU_decisions = {
 		allowed = { tag =  SOV }
 		available = {
 			date > 1943.11.1
-		}
-		visible = {
-			always = no		
+			date < 1943.12.1
 		}
 		cost = 0
 		complete_effect = {
