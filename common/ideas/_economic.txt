@@ -300,6 +300,26 @@ ideas = {
 						option = DISABLE_CLOSED_ECO
 					}
 				}
+				if = {
+					limit = {
+						original_tag = MAN
+					}
+					NOT = {
+						has_game_rule = {
+							rule = JFU_pre_sets
+							option = COMPETITIVE_JFU
+						}
+					}
+				}
+				if = {
+					limit = {
+						original_tag = MAN
+					}
+					has_game_rule = {
+						rule = JFU_closed_eco_JAPAN
+						option = DISABLE_CLOSED_ECO
+					}
+				}
 			}
 
 			cost = 150
@@ -367,13 +387,6 @@ ideas = {
 				}
 				if = {
 					limit = {
-						original_tag = CHI
-						has_dlc = "Waking the Tiger"
-					}
-					NOT = { has_idea = CHI_nine_power_treaty }
-				}
-				if = {
-					limit = {
 						original_tag = SOV
 					}
 					has_game_rule = {
@@ -384,6 +397,26 @@ ideas = {
 				if = {
 					limit = {
 						original_tag = JAP
+					}
+					has_game_rule = {
+						rule = JFU_closed_eco_JAPAN
+						option = DISABLE_CLOSED_ECO
+					}
+				}
+				if = {
+					limit = {
+						original_tag = MAN
+					}
+					NOT = {
+						has_game_rule = {
+							rule = JFU_pre_sets
+							option = COMPETITIVE_JFU
+						}
+					}
+				}
+				if = {
+					limit = {
+						original_tag = MAN
 					}
 					has_game_rule = {
 						rule = JFU_closed_eco_JAPAN
@@ -466,6 +499,26 @@ ideas = {
 				if = {
 					limit = {
 						original_tag = JAP
+					}
+					has_game_rule = {
+						rule = JFU_closed_eco_JAPAN
+						option = DISABLE_CLOSED_ECO
+					}
+				}
+				if = {
+					limit = {
+						original_tag = MAN
+					}
+					NOT = {
+						has_game_rule = {
+							rule = JFU_pre_sets
+							option = COMPETITIVE_JFU
+						}
+					}
+				}
+				if = {
+					limit = {
+						original_tag = MAN
 					}
 					has_game_rule = {
 						rule = JFU_closed_eco_JAPAN
