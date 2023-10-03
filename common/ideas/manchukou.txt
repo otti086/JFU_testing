@@ -364,6 +364,7 @@ ideas = {
 			targeted_modifier = {
 				tag = MAN
 				trade_cost_for_target_factor = -0.6
+				extra_trade_to_target_factor = 1.0
 			}
 		}
 		MAN_five_year_plan_industry = {

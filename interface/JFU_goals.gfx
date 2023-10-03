@@ -46,5 +46,65 @@ spriteTypes = {
     SpriteType = {                     
 		name = "GFX_r56_goal_generic_attack_belgium"       
 		texturefile = "gfx/interface/goals/r56_goal_generic_attack_belgium.dds"  
+	}
+	SpriteType = { 
+		name = "GFX_focus_MAN_rail"
+		texturefile = "gfx/interface/goals/focus_MAN_rail.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_oil"
+		texturefile = "gfx/interface/goals/goal_oil.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_oil_derrick"
+		texturefile = "gfx/interface/goals/goal_oil_derrick.tga"
+	}
+
+	SpriteType = { 
+		name = "GFX_goal_opium"
+		texturefile = "gfx/interface/goals/goal_opium.tga"
+	}
+
+	SpriteType = { 
+		name = "GFX_goal_golden_dragon"
+		texturefile = "gfx/interface/goals/goal_golden_dragon.tga"
+	}
+
+	SpriteType = { 
+		name = "GFX_goal_beiyang_star"
+		texturefile = "gfx/interface/goals/goal_beiyang_star.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_fengtian_light_metals"
+		texturefile = "gfx/interface/goals/goal_fengtian_light_metals.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_develop_provinces"
+		texturefile = "gfx/interface/goals/goal_develop_provinces.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_shenyang_arsenal"
+		texturefile = "gfx/interface/goals/goal_shenyang_arsenal.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_JAP_army_expansion"
+		texturefile = "gfx/interface/goals/focus_JAP_army_expansion.tga"
 	} 
+	SpriteType = { 
+		name = "GFX_focus_JAP_battlefleet"
+		texturefile = "gfx/interface/goals/focus_JAP_battlefleet.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_JAP_expansion"
+		texturefile = "gfx/interface/goals/focus_JAP_expansion.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_JAP_armor"
+		texturefile = "gfx/interface/goals/focus_JAP_armor.dds"
+	}
 }
