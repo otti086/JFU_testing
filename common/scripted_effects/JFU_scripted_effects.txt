@@ -212,6 +212,36 @@ HFU_fuel_startup_effect = {
 			set_variable={send_fuel_enabled=2}
 		}
 	}
+	JAP = {
+		every_country = {
+			limit = {
+				OR = {
+					AND = { 
+						NOT={tag=JAP}
+						
+						is_in_faction_with = JAP  
+						NOT = { is_in_array = { JAP.faction_members_array = THIS.id } }	
+					}
+				}
+			}
+			add_to_array = { JAP.faction_members_array = THIS.id }
+		}
+		if = {
+			limit = {
+				any_of_scopes={array=JAP.faction_members_array NOT={is_in_array={GLOBAL.fuel_countries=THIS.id}}}
+			}
+			for_each_scope_loop={
+				array=JAP.faction_members_array
+				if={limit={NOT={is_in_array={GLOBAL.fuel_countries=THIS.id}}}
+				add_to_array={GLOBAL.fuel_countries=THIS.id}}
+			}
+		}
+		set_variable={send_fuel_enabled=2}
+		for_each_scope_loop={
+			array=JAP.faction_members_array
+			set_variable={send_fuel_enabled=2}
+		}
+	}
 }
 HFU_fuel_on_daily_scripted_effect = {
 	if={
