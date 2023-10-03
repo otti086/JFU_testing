@@ -3541,7 +3541,11 @@ JAP_closed_eco_effect = {
 	JAP = {
 		add_ideas = closed_economy 
 		add_ideas = export_focus_idea
-	}	
+	}
+#	MAN = {
+#		add_ideas = closed_economy 
+#		add_ideas = export_focus_idea		
+#	}	
 }
 Endsieg_Tanks_spawn_ins = {
 	GER = {
