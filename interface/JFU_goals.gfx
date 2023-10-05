@@ -107,4 +107,48 @@ spriteTypes = {
 		name = "GFX_focus_JAP_armor"
 		texturefile = "gfx/interface/goals/focus_JAP_armor.dds"
 	}
+		SpriteType = { 
+		name = "GFX_focus_jap_hokushin"
+		texturefile = "gfx/interface/goals/focus_jap_hokushin.dds"
+	}
+	SpriteType = { 
+		name = "GFX_CHI_industry"
+		texturefile = "gfx/interface/goals/CHI_industry.tga"
+	}
+	SpriteType = {
+		name = "GFX_focus_CHU_clans_developt_infrustracture"
+		texturefile = "gfx/interface/goals/focus_CHU_clans_developt_infrustracture.dds"			
+	}
+		SpriteType = {
+		name = "GFX_focus_japan_manchoukuo_trade_resource" 
+		texturefile = "gfx/interface/goals/focus_japan_manchoukuo_trade_resource.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MAN_kanto_shu"
+		texturefile = "gfx/interface/goals/r56_goal_MAN_kanto_shu.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MAN_confront_gorillas"
+		texturefile = "gfx/interface/goals/r56_goal_MAN_confront_gorillas.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CHI_support_pro_japanese_faction"
+		texturefile = "gfx/interface/goals/r56_goal_CHI_support_pro_japanese_faction.dds"
+	}
+	SpriteType = {
+	name = "GFX_focus_CHU_land_doctrin_mechanize"
+	texturefile = "gfx/interface/goals/focus_CHU_land_doctrin_mechanize.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_CHU_imperial_army"  
+		texturefile = "gfx/interface/goals/focus_CHU_imperial_army.dds"			
+	}
+	SpriteType = {
+		name = "GFX_goal_JAP_co_prosperity_sphere"
+		texturefile = "gfx/interface/goals/r56_goal_JAP_co_prosperity_sphere.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_ITA_roman"
+		texturefile = "gfx/interface/goals/focus_ITA_roman.dds"
+	}
 }

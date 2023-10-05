@@ -1,15 +1,15 @@
 focus_tree = {
 	id = manchukuomod_focus		
-	country = {	factor = 0	} 
+		country = {	factor = 0	}
 	default = no 
 	continuous_focus_position = { x = 20 y = 2000 }
 
 	focus = {
 		id = MAN_pacify_the_countrysidex
-		icon = GFX_goal_generic_major_war
+		icon = GFX_goal_MAN_confront_gorillas
 		x = 10
 		y = 0
-		cost = 4
+		cost = 5
 		completion_reward = {
 			remove_ideas = MAN_banditry
 		}
@@ -24,7 +24,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = MAN_pacify_the_countrysidex
-		cost = 4
+		cost = 5
 		completion_reward = {
 			add_political_power = 120
 		}
@@ -39,7 +39,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_obediencex
 
-		cost = 4
+		cost = 5
 		completion_reward = {
 			army_experience = 25
 			set_rule = {
@@ -56,7 +56,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_obediencex
 
-		cost = 4
+		cost = 5
 		completion_reward = {
 			add_ideas = MAN_mukden_military_academy
 		}
@@ -70,7 +70,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_obediencex
 
-		cost = 4
+		cost = 5
 
 
 		completion_reward = {
@@ -82,13 +82,13 @@ focus_tree = {
 
 	focus = {
 		id = MAN_invite_japanese_investorsx
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_goal_MAN_kanto_shu
 		prerequisite = { focus = MAN_obediencex }
 		x = 3
 		y = 1
 		relative_position_id = MAN_obediencex
 
-		cost = 4
+		cost = 5
 
 		available = {
 			has_completed_focus = MAN_five_year_plan_new
@@ -117,7 +117,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_invite_japanese_investorsx
 
-		cost = 4
+		cost = 5
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -146,7 +146,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_obediencex
 
-		cost = 4
+		cost = 5
 
 
 		available = {		}
@@ -166,7 +166,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_social_research_unitx
 
-		cost = 4
+		cost = 5
 
 
 		available = {CHI = { exists = no }}
@@ -186,7 +186,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_trade_delegationx
 
-		cost = 4
+		cost = 5
 
 		available = {
 		has_country_flag = MAN_sungkiang
@@ -208,14 +208,14 @@ focus_tree = {
 
 	focus = {
 		id = MAN_alliance_with_the_kwantung_armyx
-		icon = GFX_goal_generic_occupy_states_ongoing_war
+		icon = GFX_goal_CHI_support_pro_japanese_faction
 		prerequisite = { focus = MAN_mukden_military_academyx }
 		prerequisite = { focus = MAN_army_modernizationx   }
 		x = -1
 		y = 1
 		relative_position_id = MAN_mukden_military_academyx
 
-		cost = 4
+		cost = 5
 
 
 		available_if_capitulated = yes
@@ -238,7 +238,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_alliance_with_the_kwantung_armyx
 
-		cost = 4
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -257,7 +257,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_obediencex
 
-		cost = 4
+		cost = 5
 
 
 		available = {
@@ -285,7 +285,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_chinese_leadershipx
 
-		cost = 4
+		cost = 5
 
 
 		available = {
@@ -319,15 +319,15 @@ focus_tree = {
 		y = 1
 		relative_position_id = MAN_national_cooperation_governmentx
 
-		cost = 4
+		cost = 5
 
 
 		available = {
-		OR = { 
-		JAP = { owns_state = 608 }
-		MAN = { owns_state = 608 }
-
-		}
+			OR = { 
+				JAP = { owns_state = 608 }
+				MAN = { owns_state = 608 }
+			}
+			NOT = { has_idea = MAN_kwantung_veto }
 		}
 
 		complete_tooltip = {
@@ -335,21 +335,20 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
-					MAN_low_legitimacy_level_down = yes
+			MAN_low_legitimacy_clear_all = yes
 		}
 	}
 	
 		
 	focus = {
 		id = MAN_five_year_plan_new
-		icon = GFX_goal_develop_provinces
+		icon = GFX_CHI_industry
 		prerequisite = { focus = MAN_obediencex }
 		relative_position_id = MAN_obediencex
 		x = 0
 		y = 2
 
-		cost = 4
+		cost = 5
 
 
 
@@ -370,7 +369,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 4
+		cost = 5
 
 		prerequisite = { focus = MAN_five_year_plan_new }
 		relative_position_id = MAN_five_year_plan_new
@@ -388,11 +387,11 @@ focus_tree = {
 	
 	focus = {
 		id = MAN_railways_kirin
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_focus_CHU_clans_developt_infrustracture
 		x = -8
 		y = 1
 
-		cost = 4
+		cost = 5
 
 		prerequisite = { focus = MAN_railways_opener }
 		relative_position_id = MAN_railways_opener
@@ -422,7 +421,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 4
+		cost = 5
 
 		prerequisite = { focus = MAN_railways_kirin }
 		relative_position_id = MAN_railways_kirin
@@ -450,7 +449,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 4
+		cost = 5
 
 		prerequisite = { focus = MAN_aluminum3 }
 		relative_position_id = MAN_aluminum3
@@ -479,7 +478,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 4
+		cost = 5
 
 		prerequisite = { focus = MAN_aluminum4 }
 		relative_position_id = MAN_aluminum4
@@ -504,7 +503,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 4
+		cost = 5
 
 		prerequisite = { focus = MAN_aluminum }
 		relative_position_id = MAN_aluminum
@@ -524,11 +523,11 @@ focus_tree = {
 		
 	focus = {
 		id = MAN_railways_heilungkiang
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_focus_CHU_clans_developt_infrustracture
 		x = -4
 		y = 1
 
-		cost = 4
+		cost = 5
 
 		prerequisite = { focus = MAN_railways_opener }
 		relative_position_id = MAN_railways_opener
@@ -551,7 +550,7 @@ focus_tree = {
 		x = -1
 		y = 1
 
-		cost = 4
+		cost = 5
 
 		prerequisite = { focus = MAN_railways_heilungkiang }
 		relative_position_id = MAN_railways_heilungkiang
@@ -572,7 +571,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 4
+		cost = 5
 
 		prerequisite = { focus = MAN_oil }
 		relative_position_id = MAN_oil
@@ -593,7 +592,7 @@ focus_tree = {
 		x = 1
 		y = 1
 
-		cost = 4
+		cost = 5
 
 		prerequisite = { focus = MAN_railways_heilungkiang }
 		relative_position_id = MAN_railways_heilungkiang
@@ -617,7 +616,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 4
+		cost = 5
 
 		prerequisite = { focus = MAN_synth }
 		relative_position_id = MAN_synth
@@ -638,7 +637,7 @@ focus_tree = {
 		x = -1
 		y = 1
 
-		cost = 4
+		cost = 5
 
 		prerequisite = { focus = MAN_synth2 }
 		relative_position_id = MAN_synth2
@@ -657,11 +656,11 @@ focus_tree = {
 		
 	focus = {
 		id = MAN_railways_jehol
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_focus_CHU_clans_developt_infrustracture
 		x = 4
 		y = 1
 
-		cost = 4
+		cost = 5
 
 		prerequisite = { focus = MAN_railways_opener }
 		relative_position_id = MAN_railways_opener
@@ -683,7 +682,7 @@ focus_tree = {
 		x = 2
 		y = 2
 
-		cost = 4
+		cost = 5
 
 		prerequisite = { focus = MAN_railways_jehol }
 		relative_position_id = MAN_railways_jehol
@@ -713,7 +712,7 @@ focus_tree = {
 		x = -1
 		y = 1
 
-		cost = 4
+		cost = 5
 
 		prerequisite = { focus = MAN_railways_jehol }
 		relative_position_id = MAN_railways_jehol
@@ -736,7 +735,7 @@ focus_tree = {
 		x = 1
 		y = 1
 
-		cost = 4
+		cost = 5
 
 		prerequisite = { focus = MAN_railways_jehol }
 		relative_position_id = MAN_railways_jehol
@@ -765,7 +764,7 @@ focus_tree = {
 		x = -1
 		y = 1
 
-		cost = 4
+		cost = 5
 
 		prerequisite = { focus = MAN_dockyards }
 		prerequisite = { focus = MAN_navy_academy }
@@ -794,7 +793,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 4
+		cost = 5
 
 		prerequisite = { focus = MAN_dockyardss }
 		relative_position_id = MAN_dockyardss
@@ -817,11 +816,11 @@ focus_tree = {
 	
 	focus = {
 		id = MAN_railways_liaotung
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_focus_CHU_clans_developt_infrustracture
 		x = 8
 		y = 1
 
-		cost = 4
+		cost = 5
 
 		prerequisite = { focus = MAN_railways_opener }
 		relative_position_id = MAN_railways_opener
@@ -843,7 +842,7 @@ focus_tree = {
 		x = -1
 		y = 1
 
-		cost = 4
+		cost = 5
 
 		prerequisite = { focus = MAN_railways_liaotung }
 		relative_position_id = MAN_railways_liaotung
@@ -869,7 +868,7 @@ focus_tree = {
 		x = 1
 		y = 1
 
-		cost = 4
+		cost = 5
 
 		prerequisite = { focus = MAN_anshan_steelworks }
 				prerequisite = { focus = MAN_railways_extend_to_pyongyang }
@@ -909,7 +908,7 @@ focus_tree = {
 		x = 3
 		y = 1
 
-		cost = 4
+		cost = 5
 
 		prerequisite = { focus = MAN_railways_liaotung }
 		relative_position_id = MAN_railways_liaotung
@@ -956,7 +955,7 @@ focus_tree = {
 		x = 1
 		y = 1
 
-		cost = 4
+		cost = 5
 
 		prerequisite = { focus = MAN_railways_liaotung }
 		relative_position_id = MAN_railways_liaotung
@@ -1005,11 +1004,11 @@ focus_tree = {
 	
 		focus = {
 		id = MAN_railways_japanese_imports
-		icon = GFX_focus_jap_zaibatsu
+		icon = GFX_focus_japan_manchoukuo_trade_resource_shine
 		x = 1
 		y = 1
 
-		cost = 4
+		cost = 5
 		prerequisite = { focus = MAN_railways_extend_to_pyongyang }
 			prerequisite = { focus = MAN_railways_extend_to_port_arthur }
 		relative_position_id = MAN_railways_extend_to_pyongyang
@@ -1021,11 +1020,11 @@ focus_tree = {
 		
 	focus = {
 		id = MAN_railways_chahar
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_focus_CHU_clans_developt_infrustracture
 		x = 0
 		y = 1
 
-		cost = 4
+		cost = 5
 
 		prerequisite = { focus = MAN_railways_opener }
 		relative_position_id = MAN_railways_opener
@@ -1044,11 +1043,11 @@ focus_tree = {
 	
 	focus = {
 		id = MAN_railways_schahar
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_focus_CHU_clans_developt_infrustracture
 		x = 2
 		y = 4
 
-		cost = 4
+		cost = 5
 
 		prerequisite = { focus = MAN_railways_chahar  }
 		prerequisite = {   focus = MAN_railways_jehol}
@@ -1069,7 +1068,7 @@ focus_tree = {
 		x = -1
 		y = 1
 
-		cost = 4
+		cost = 5
 
 		prerequisite = { focus = MAN_railways_schahar }
 		relative_position_id = MAN_railways_schahar
@@ -1096,7 +1095,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 4
+		cost = 5
 
 		prerequisite = { focus = MAN_chahar1 }
 		relative_position_id = MAN_chahar1
@@ -1117,7 +1116,7 @@ focus_tree = {
 		x = 1
 		y = 1
 
-		cost = 4
+		cost = 5
 
 		prerequisite = { focus = MAN_railways_schahar }
 		relative_position_id = MAN_railways_schahar
@@ -1146,7 +1145,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 4
+		cost = 5
 
 		prerequisite = { focus = MAN_chahar3 }
 		relative_position_id = MAN_chahar3
@@ -1167,7 +1166,7 @@ focus_tree = {
 		x = 1
 		y = 1
 
-		cost = 4
+		cost = 5
 
 		prerequisite = { focus = MAN_chahar2 }
 		prerequisite = { focus = MAN_chahar4 }
@@ -1186,7 +1185,7 @@ focus_tree = {
 		x = -1
 		y = 1
 
-		cost = 4
+		cost = 5
 
 		prerequisite = { focus = MAN_railways_chahar }
 
@@ -1204,7 +1203,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 4
+		cost = 5
 
 		prerequisite = { focus = MAN_poppy }
 
@@ -1226,7 +1225,7 @@ focus_tree = {
 		x = 1
 		y = 1
 
-		cost = 4
+		cost = 5
 
 		prerequisite = { focus = MAN_railways_chahar }
 
@@ -1245,7 +1244,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 4
+		cost = 5
 
 		prerequisite = { focus = MAN_shanxi }
 
@@ -1272,11 +1271,11 @@ focus_tree = {
 	
 	focus = {
 		id = MAN_railways_hulunbuir
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_focus_CHU_clans_developt_infrustracture
 		x = -2
 		y = 4
 
-		cost = 4
+		cost = 5
 
 		prerequisite = { focus = MAN_railways_chahar }
 			prerequisite = {  focus = MAN_railways_heilungkiang}
@@ -1301,7 +1300,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 4
+		cost = 5
 
 		prerequisite = { focus = MAN_railways_hulunbuir }
 		
@@ -1323,7 +1322,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 4
+		cost = 5
 
 		prerequisite = { focus = MAN_motorized }
 		
@@ -1345,7 +1344,7 @@ focus_tree = {
 		x = -2
 		y = 1
 
-		cost = 4
+		cost = 5
 
 		prerequisite = { focus = MAN_motorized }
 		
@@ -1369,7 +1368,7 @@ focus_tree = {
 		x = 1
 		y = 2
 
-		cost = 4
+		cost = 5
 
 		prerequisite = { focus = MAN_motorized }
 
@@ -1393,7 +1392,7 @@ focus_tree = {
 		x = -1
 		y = 2
 
-		cost = 4
+		cost = 5
 
 		prerequisite = { focus = MAN_motorized }
 		relative_position_id = MAN_motorized
@@ -1411,11 +1410,11 @@ focus_tree = {
 	}	
 	focus = {
 		id = MAN_railways_sungkiang
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_focus_CHU_clans_developt_infrustracture
 		x = -2
 		y = 4
 
-		cost = 4
+		cost = 5
 		prerequisite = {  focus = MAN_railways_heilungkiang}
 
 		prerequisite = { focus = MAN_railways_kirin }
@@ -1436,7 +1435,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 4
+		cost = 5
 
 		prerequisite = { focus = MAN_railways_sungkiang }
 		relative_position_id = MAN_railways_sungkiang
@@ -1455,7 +1454,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 4
+		cost = 5
 
 		prerequisite = { focus = MAN_mamcc }
 		relative_position_id = MAN_mamcc
@@ -1484,7 +1483,7 @@ focus_tree = {
 		x = -2
 		y = 1
 
-		cost = 4
+		cost = 5
 
 		prerequisite = { focus = MAN_mamcc }
 		relative_position_id = MAN_mamcc
@@ -1503,7 +1502,7 @@ focus_tree = {
 		x = 1
 		y = 1
 
-		cost = 4
+		cost = 5
 
 		mutually_exclusive = { focus = MAN_mamc_cas}
 		prerequisite = { focus = MAN_mamc_expansion }
@@ -1525,7 +1524,7 @@ focus_tree = {
 		x = -1
 		y = 1
 
-		cost = 4
+		cost = 5
 
 		mutually_exclusive = { focus = MAN_mamc_tac}
 		prerequisite = { focus = MAN_mamc_expansion }

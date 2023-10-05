@@ -145,6 +145,8 @@
  MAN_national_defense_statex_desc:0 "Until the war is won and we have returned to rule all of China, we must make every effort, be willing to make every sacrifice and use every available resource to wage the war."
  MAN_social_research_unitx:0 "Social Research Unit"
  MAN_social_research_unitx_desc:0 "We should set up a special unit to research the ways and customs of our people, so that we can better guide them to become productive citizens of the nation."
+ MAN_social_research_unitx_2:0 "Social Research Unit"
+ MAN_social_research_unitx_2_desc:0 "We should set up a special unit to research the ways and customs of our people, so that we can better guide them to become productive citizens of the nation."
  MAN_invite_japanese_investorsx:0 "Invite Japanese Investors"
  MAN_invite_japanese_investorsx_desc:0 "Developing our country will require outside help. A number of companies in Japan have indicated that they are willing to invest in our nation."
  MAN_hoankyokux:0 "Hoankyoku"
@@ -182,7 +184,7 @@
  MAN_anshan_steelworks_desc:0 "Founding a steel mill will enable the rest of our heavy industry to develop"
  # MAN_showa_steel_desc:0 "We can further develop our steel mill in Liaotung into the largest in east Asia with the help of Japan."
 
- tooltip_MAN_railways:0 "§YBegins work on a railway network across Manchuria§ \n\n§YRailway work is completed every 105 days until all states have been developed. Railway expansion adds 1 civilian factory, 2 infrastructure, and 3 building slot§\n\n"
+ tooltip_MAN_railways:0 "§YBegins work on a railway network across Manchuria§ \n\n§YRailway work is completed every 105 days until all states have been developed. Railway expansion adds 1 civilian factory, 1 infrastructure, and 3 building slot§\n\n"
 
  fin_army_effort:0 "Army Effort"
  fin_army_effort_desc:0 "Despite the increasing possibilities of aerial and naval warfare, ground combat is still key in tomorrow's wars. With preparation, we can avoid reliving the hell of the trenches."
@@ -995,12 +997,9 @@
  wtt_manchukou.101.f:0 "In Sunkiang, to develop our aviation industry"
  wtt_manchukou.101.g:0 "In Hulunbuir, to develop our armor industry"
  wtt_manchukou.101.h:0 "We have completed our railway expansion program!"
- wtt_manchukou.121.t:0 "Railway Expansion in Jehol"
- wtt_manchukou.121.d:0 ""
  wtt_manchukou.121.a:0 "Excellent!"
  wtt_manchukou.121.t:0 "Railway Expansion in Jehol"
  wtt_manchukou.121.d:0 ""
- wtt_manchukou.121.a:0 "Excellent!"
  wtt_manchukou.122.t:0 "Railway Expansion in Kirin"
  wtt_manchukou.122.d:0 ""
  wtt_manchukou.122.a:0 "Excellent!"
@@ -1049,8 +1048,6 @@
  GER_plan_z_cv_desc:0 ""
  GER_plan_z_bb:0 "Lay Down the Bismarck"
  GER_plan_z_bb_desc:0 ""
- 
-
 
  SOV_behead_the_snake_JFU_tt:0 "Trotsky will be §Rautomatically assasinated §Win 100 days."
 
@@ -1086,6 +1083,8 @@
  decision_cost_CP_50_pp_100_blocked:0 "£command_power  §R50§! £pol_power  §R100§!"
  decision_cost_CP_50_pp_100_tooltip:0 "It costs £command_power  §Y50§! £pol_power  §Y100§! to take the decision"
  Atlantikwall_modifier:0 "Atlantik Wall"
+ ITA_subdue_the_sentinels_dynamic_modifier:0 "Subdue the Sentinels"
+ by_blood_alone:0 "By Blood Alone"
 
  wtt_manchukou.11.C:0 "Build up our Civillian Industry"
  wtt_manchukou.11.M:0 "Invest in our Military Industry"
@@ -1097,6 +1096,12 @@
  NOR_army_buffs2:0 "Expand the Ruge's Plan"
  NOR_spec_ops:0 "Fleischer's Plan"
  NOR_crofter:0 "Operation Crofter"
+ commence_mare:0 "Commence Mare Nostrum" 
+ ITA_africa_campaign_idea2:0 "Mare Nostrum"
+ ITA_africa_campaign_idea:0 "Sempre Avanti Italia!"
+
+
+
 
  STRATEGICREGION_276:0 "Gulf of Aden"
  LOWER_EGYPT:0 "Lower Egypt"
