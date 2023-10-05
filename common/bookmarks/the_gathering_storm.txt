@@ -101,7 +101,7 @@ bookmarks = {
 			}	
 			focuses = {
 				ITA_comandante_diavolo
-				ITA_a_colonial_empire
+#				ITA_a_colonial_empire
 				ITA_pact_of_steel
 			}		
 		}

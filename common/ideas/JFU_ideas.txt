@@ -769,5 +769,42 @@ ideas = {
 					dig_in_speed_factor = 0.5
 			}
 		}
+
+		commence_mare = {
+			picture = italy_excessive_regia_marina_budget
+			allowed = {	original_tag = ITA	}
+			removal_cost = -1
+			modifier = {
+				extra_marine_supply_grace = 48
+				shore_bombardment_bonus = 0.5
+			}
+		}
+
+		ITA_africa_campaign_idea = { 
+			picture = ita_armir	
+			available = {
+				has_war = yes
+				has_full_control_of_state = 450
+				date < 1941.7.1
+			}
+			modifier =   {  
+				army_org_factor = 0.1
+				attrition = -0.1
+				acclimatization_hot_climate_gain_factor = 0.25
+				supply_consumption_factor = -0.05
+				army_attack_factor = 0.05
+				breakthrough_factor = 0.10
+			}
+		}
+
+		ITA_africa_campaign_idea2 = { 
+			picture = italy_excessive_regia_marina_budget	
+			modifier = {  
+				naval_defense_factor = 0.1 
+				naval_speed_factor = 0.1 
+				sortie_efficiency = 0.15 
+				naval_detection = 0.25  
+			}
+		}		
 	}
 }

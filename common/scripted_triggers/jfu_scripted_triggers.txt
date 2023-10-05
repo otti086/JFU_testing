@@ -91,3 +91,40 @@ atlantikwall_states = {
 		state = 806
 	}
 }
+ITA_africa_states = { 
+	OR = { 
+		state = 448 
+		state = 661 
+		state = 449 
+		state = 662 
+		state = 450 
+		state = 663 
+		state = 452 
+		state = 447 
+		state = 907 
+		state = 456 
+		state = 457 
+		state = 446 
+		state = 453 
+		state = 454 
+		state = 455 
+		state = 554 
+		state = 553 
+		state = 677 
+		state = 799 
+		state = 680 
+		state = 675 
+		state = 291 
+		state = 656 
+		state = 413 
+		state = 421 
+		state = 417 
+		state = 411 
+		state = 412 
+		state = 414 
+		state = 410 
+		state = 909 
+		state = 910 
+		state = 911 
+	}
+}

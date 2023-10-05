@@ -7574,6 +7574,35 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			add_timed_idea = { days = 180 idea = ITA_africa_campaign_idea  }
+		}
+	}
+
+	focus = {
+		id = ITA_masters_of_the_aegean
+		icon = GFX_focus_generic_aegean_sea_focus
+		prerequisite = { focus = ITA_bend_the_bars }
+		x = 2
+		y = 1
+		relative_position_id = ITA_bend_the_bars
+		cost = 1
+		completion_reward = {
+			add_timed_idea = { idea = commence_mare days = 180 }
+		}
+	}
+
+	focus = {
+		id = ITA_masters_of_the_mediterranean
+		icon = GFX_focus_ITA_roman
+		prerequisite = { focus = ITA_bend_the_bars }
+
+		x = -2
+		y = 1
+		relative_position_id = ITA_bend_the_bars
+		cost = 1
+		completion_reward = {
+			add_timed_idea = { idea = ITA_africa_campaign_idea2 days = 180 }
+		
 		}
 	}
 
@@ -7592,37 +7621,53 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			every_state = { 
+				limit = { 
+					OR = { 
+						state = 907 
+						state = 446 
+						state = 453 
+						state = 454 
+						state = 119
+						state = 447
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = ITA_subdue_the_sentinels_dynamic_modifier
+					days = 14
+				}
+			}
 		}
 	}
 
+#	focus = {
+#		id = ITA_a_colonial_empire
+#		icon = GFX_focus_ITA_a_colonial_empire
+#		prerequisite = { focus = ITA_subdue_the_sentinels }
+#
+#		x = 0
+#		y = 1
+#		relative_position_id = ITA_subdue_the_sentinels
+#		cost = 10
+#		available = {
+#		}
+#
+#		search_filters = {FOCUS_FILTER_MANPOWER}
+#
+#		completion_reward = {
+#			add_to_variable = { ITA_re_non_core_manpower = 0.15 }
+#			custom_effect_tooltip = ITA_a_colonial_empire_re_tt
+#		}
+#	}
+
 	focus = {
-		id = ITA_a_colonial_empire
-		icon = GFX_focus_ITA_a_colonial_empire
+		id = ITA_by_blood_alone
+		icon = GFX_focus_ITA_by_blood_alone
 		prerequisite = { focus = ITA_subdue_the_sentinels }
 
 		x = 0
 		y = 1
 		relative_position_id = ITA_subdue_the_sentinels
-		cost = 10
-		available = {
-		}
-
-		search_filters = {FOCUS_FILTER_MANPOWER}
-
-		completion_reward = {
-			add_to_variable = { ITA_re_non_core_manpower = 0.15 }
-			custom_effect_tooltip = ITA_a_colonial_empire_re_tt
-		}
-	}
-
-	focus = {
-		id = ITA_by_blood_alone
-		icon = GFX_focus_ITA_by_blood_alone
-		prerequisite = { focus = ITA_a_colonial_empire }
-
-		x = 0
-		y = 1
-		relative_position_id = ITA_a_colonial_empire
 		cost = 10
 		available = {
 		}
@@ -7646,6 +7691,10 @@ focus_tree = {
 
 			add_stability = -0.1
 			add_war_support = 0.1
+			
+			every_state = { limit = { ITA_africa_states = yes }
+				add_dynamic_modifier = {  modifier = by_blood_alone days = 365 }
+			}
 		}
 	}
 
