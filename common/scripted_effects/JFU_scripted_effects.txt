@@ -511,7 +511,7 @@ JFU_vichy_france_2 = {
 				is_ai = yes 
 			}
 		}
-		set_variable = { FRA_legitimacy = 90 }
+		set_variable = { FRA_legitimacy = 100 }
 	}
 	EFR ={ 
 		set_country_flag = vichy_france_established

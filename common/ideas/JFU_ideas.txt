@@ -121,6 +121,24 @@ ideas = {
 			}
 
 		}
+		GER_Barb_supply = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = generic_acquire_tanks
+
+			modifier = { 
+				supply_consumption_factor = -0.10
+				supply_node_range = 0.1 
+			}			
+		}
 		axis_fall_blau = {
 			allowed = {
 				always = no
