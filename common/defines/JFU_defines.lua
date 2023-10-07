@@ -141,6 +141,8 @@ NDefines.NNavy.NAVAL_TRANSFER_BASE_SPEED = 10                      -- WAS 6 | In
 NDefines.NNavy.ADMIRAL_TASKFORCE_CAP = 20                         -- WAS 10 | Increased so players can use their same submarine or escort admiral without penalties
 NDefines.NNavy.NAVAL_MINES_DECAY_AT_PEACE_TIME = 1000                    -- WAS 0.25 
 NDefines.NNavy.SUPPLY_NEED_FACTOR = 0
+NDefines.NNavy.CONVOY_EFFICIENCY_LOSS_MODIFIER = 0.5 --  WAS 1.25, reduced so players have more time to deal with it | How much efficiency drops when losing convoys. If modifier is 0.5, then losing 100% of convoys in short period, the efficiency will drop by 50%.
+
 
 NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 1                 -- License can be cancelled at any time now, down from 30 | 
 NDefines.NProduction.BASE_LICENSE_IC_COST = 0	

@@ -146,6 +146,11 @@ political_actions1 = {
 				BUL = { add_timed_idea = { idea = axis_barbarossa days = 180 } }	
 				SPR = { add_timed_idea = { idea = axis_barbarossa days = 180 } }
 				EFR = { add_timed_idea = { idea = axis_barbarossa days = 180 } }
+				HUN = { add_timed_idea = { idea = GER_Barb_supply days = 180 } }
+				ROM = { add_timed_idea = { idea = GER_Barb_supply days = 180 } }	
+				BUL = { add_timed_idea = { idea = GER_Barb_supply days = 180 } }	
+				SPR = { add_timed_idea = { idea = GER_Barb_supply days = 180 } }
+				EFR = { add_timed_idea = { idea = GER_Barb_supply days = 180 } }
 				ITA = { add_ideas = ITA_BARB_DEBUFF}
 				SOV = {
 		#			set_variable = { SOV_barb_AIR_defence_modifier = 0.1 }
