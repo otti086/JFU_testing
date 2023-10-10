@@ -1233,25 +1233,6 @@ ITA_pacified_italian_east_africa_modifier = {
 	resistance_decay = 0.1
 }
 
-ITA_fronte_militare_clandestino_modifier = { #In a RSI state
-	enable = { always = yes }
-	remove_trigger = {
-		ROOT = { is_controlled_by = RDS } # ROOT refers to the state on which the modifier is added
-	}
-	icon = GFX_modifiers_SOV_invaders_must_die
-
-	#INITIAL (FRONTE MILITARE CLANDESTINO)
-	required_garrison_factor = 2.ITA_fronte_militare_clandestino_required_garrison_factor #0.15
-	resistance_growth_on_our_occupied_states = 2.ITA_fronte_militare_clandestino_resistance_growth_on_our_occupied_states #0.1
-
-	#GAPPISTI
-	resistance_damage_to_garrison_on_our_occupied_states = 2.ITA_fronte_militare_clandestino_resistance_damage_to_garrison_on_our_occupied_states #0.1
-	resistance_target_on_our_occupied_states = 2.ITA_fronte_militare_clandestino_resistance_target_on_our_occupied_states #0.1
-
-	#PARTISAN REPUBLICS
-	compliance_growth_on_our_occupied_states = 2.ITA_fronte_militare_clandestino_compliance_growth_on_our_occupied_states #-0.1
-}
-
 ITA_cooperatives_for_intensive_exploitation_dm = {
 	enable = { always = yes }
 	remove_trigger = { # ROOT refers to the state on which the modifier is added
@@ -1297,44 +1278,6 @@ ITA_anti_colonialism_sentiment = {
 	resistance_damage_to_garrison = 0.15
 	local_factory_sabotage = 0.15
 	local_resources = -0.15
-}
-
-ITA_mafia_on_the_rise_no_lar = {
-	enable = { always = yes }
-	remove_trigger = { # ROOT refers to the state on which the modifier is added
-		ROOT = {
-			is_controlled_by = ITA
-			controller = {
-				has_completed_focus = ITA_cooperate_with_the_mafia
-			}
-		}
-	}
-	icon = GFX_modifiers_ITA_mafia_on_the_rise
-
-	state_resources_factor = -0.15
-	local_supplies_for_controller = -0.15
-	state_production_speed_buildings_factor = -0.15
-	local_non_core_supply_impact_factor = 0.15
-}
-
-ITA_mafia_on_the_rise = {
-	enable = { always = yes }
-	remove_trigger = { # ROOT refers to the state on which the modifier is added
-		ROOT = {
-			is_controlled_by = ITA
-			controller = {
-				has_completed_focus = ITA_cooperate_with_the_mafia
-			}
-		}
-	}
-	icon = GFX_modifiers_ITA_mafia_on_the_rise
-
-	local_intel_to_enemies = 0.25
-	state_resources_factor = -0.15
-	local_supplies_for_controller = -0.15
-	state_production_speed_buildings_factor = -0.15
-	enemy_operative_detection_chance_factor_over_occupied_tag = -0.15
-	local_non_core_supply_impact_factor = 0.15
 }
 
 ITA_established_mafia_no_lar = {
@@ -1445,21 +1388,6 @@ SWI_fake_active_citizen_militia_for_the_tooltip = { # I swear this is the last t
 	training_time_factor = 0.1
 	civilian_factory_use = 1
 
-}
-
-SWI_gold_trade_with_switzerland = {
-	enable = { 
-		NOT = {
-			has_war_with = SWI
-		}
-	}
-	icon = GFX_idea_SPR_seize_the_gold_reserves
-
-	consumer_goods_factor = SWI_gold_trade_consumer_goods_factor
-	production_speed_buildings_factor = SWI_gold_trade_building_speed_factor
-	research_speed_factor = SWI_gold_trade_research_speed_factor
-	production_lack_of_resource_penalty_factor = SWI_gold_trade_lack_of_resource_penalty_factor
-	production_factory_max_efficiency_factor = SWI_gold_trade_factory_max_efficiency_factor
 }
 
 SWI_swiss_gold_market = {
