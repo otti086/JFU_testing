@@ -163,11 +163,6 @@ MAN_alternate_plan_independent = {
 		id = "CHI"			
 		value = 200
 	}
-	ai_strategy = {
-		type = conquer 
-		id = "PRC"			
-		value = 200
-	}
 
 	# Keep small, as it is used as a factor for some things (such as research needs)
 	# Recommended around 1.0. Useful for relation between plans

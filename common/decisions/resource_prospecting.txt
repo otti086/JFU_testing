@@ -206,7 +206,6 @@ prospect_for_resources = {
 				OR = {
 					is_literally_china = yes
 					original_tag = MAN
-					original_tag = MEN
 					original_tag = JAP
 				}
 			}
@@ -617,7 +616,6 @@ prospect_for_resources = {
 				OR = {
 					is_literally_china = yes
 					original_tag = MAN
-					original_tag = MEN
 					original_tag = JAP
 				}
 			}

@@ -1,0 +1,130 @@
+axis = {
+	OR = {
+		tag = GER
+		tag = ITA
+		tag = HUN
+		tag = ROM
+		tag = SPR
+		tag = BUL
+		tag = JAP
+		tag = SIA
+		tag = MAN
+		tag = EFR
+		tag = FIN
+	}
+}
+
+allies = {
+	OR = {
+		tag = ENG
+		tag = FRA
+		tag = CAN
+		tag = AST
+		tag = BRA
+		tag = MEX
+		tag = NZL
+		tag = USA
+		tag = RAJ
+		tag = SAF
+		tag = IRE
+		tag = SOV
+		tag = NOR
+	}
+}
+ai_country = {
+	OR = {
+		tag = SWE
+		tag = BEL
+		tag = CZE
+		tag = POL
+		tag = AUS
+		tag = LIT
+		tag = YUG
+		tag = GRE
+		tag = ALB
+		tag = DEN
+		tag = CHI
+		tag = ETH
+		tag = HOL
+	}
+}
+ai_country_allies = {
+	OR = {
+		tag = HOL
+		tag = BEL
+		tag = POL
+		tag = DEN
+	}
+}
+africa_oil_states = {
+	OR = {
+		state = 291
+		state = 907
+		state = 451
+	}
+}
+
+ignore_aa_states = { NOT = { OR = { is_core_of = SPR state = 219 }}}
+
+spanish_coastline = { OR = { state = 169 state = 290 state = 177  state = 173 state = 168 state = 167 state = 165 state = 172 state = 171 } }
+atlantikwall_states = {
+	OR = {
+		state = 144
+		state = 143
+		state = 142
+		state = 110
+		state = 99
+		state = 58
+		state = 59
+		state = 56
+		state = 7
+		state = 35
+		state = 6
+		state = 29
+		state = 785
+		state = 15
+		state = 14
+		state = 30
+		state = 36
+		state = 23
+		state = 19
+		state = 806
+	}
+}
+ITA_africa_states = { 
+	OR = { 
+		state = 448 
+		state = 661 
+		state = 449 
+		state = 662 
+		state = 450 
+		state = 663 
+		state = 452 
+		state = 447 
+		state = 907 
+		state = 456 
+		state = 457 
+		state = 446 
+		state = 453 
+		state = 454 
+		state = 455 
+		state = 554 
+		state = 553 
+		state = 677 
+		state = 799 
+		state = 680 
+		state = 675 
+		state = 291 
+		state = 656 
+		state = 413 
+		state = 421 
+		state = 417 
+		state = 411 
+		state = 412 
+		state = 414 
+		state = 410 
+		state = 909 
+		state = 910 
+		state = 911 
+	}
+}

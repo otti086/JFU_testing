@@ -44,7 +44,7 @@ CHI_industrial_buildup = {
 		OR = {
 			original_tag = CHI
 			AND = {
-				is_chinese_warlord = yes
+				
 				has_focus_tree = china_nationalist_focus
 			}
 		}
@@ -94,7 +94,7 @@ CHI_inflation_handling = {
 		OR = {
 			original_tag = CHI
 			AND = {
-				is_chinese_warlord = yes
+				
 				has_focus_tree = china_nationalist_focus
 			}
 		}
@@ -198,7 +198,7 @@ CHI_war_measures = {
 		OR = {
 			original_tag = CHI
 			AND = {
-				is_chinese_warlord = yes
+				
 				has_focus_tree = china_nationalist_focus
 			}
 		}
@@ -611,36 +611,6 @@ CHI_european_allies = { #used to make minor European nations like Axis more
 	ai_strategy = {
 		type = alliance
 		id = "CHI"
-		value = -500
-	}
-	ai_strategy = {
-		type = alliance
-		id = "PRC"
-		value = -500
-	}
-	ai_strategy = {
-		type = alliance
-		id = "GXC"
-		value = -500
-	}
-	ai_strategy = {
-		type = alliance
-		id = "YUN"
-		value = -500
-	}
-	ai_strategy = {
-		type = alliance
-		id = "XSM"
-		value = -500
-	}
-	ai_strategy = {
-		type = alliance
-		id = "SHX"
-		value = -500
-	}
-	ai_strategy = {
-		type = alliance
-		id = "SIK"
 		value = -500
 	}
 }

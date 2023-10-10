@@ -8,7 +8,6 @@ peace_ai_desires = {
         enable = {
             FROM.FROM.FROM = {
                 OR = {
-                    is_core_of = PRC
                     is_core_of = CHI
                 }
                 any_neighbor_state = {
@@ -23,7 +22,6 @@ peace_ai_desires = {
             }
             ROOT = {
                 OR = {
-                    WTT_is_chinese_warlord = yes
                     tag = MAN
                 }
             }
@@ -35,7 +33,6 @@ peace_ai_desires = {
         enable = {
             FROM.FROM.FROM = {
                 OR = {
-                    is_core_of = PRC
                     is_core_of = CHI
                 }
                 NOT = {
@@ -52,9 +49,7 @@ peace_ai_desires = {
             }
             ROOT = {
                 OR = {
-                    WTT_is_chinese_warlord = yes
                     tag = MAN
-                    tag = PRC
                     tag = CHI
                 }
             }
@@ -66,14 +61,11 @@ peace_ai_desires = {
         enable = {
             FROM.FROM.FROM = {
                 OR = {
-                    is_core_of = PRC
                     is_core_of = CHI
                 }
             }
             ROOT = {
                 OR = {
-                    WTT_is_chinese_warlord = yes
-                    tag = PRC
                     tag = CHI
                     tag = MAN
                 }

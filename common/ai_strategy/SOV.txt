@@ -871,16 +871,6 @@ SOV_dont_send_volunteers_that_early_to_china = {
 		OR = {
 			#Soviet focus plans are set so that they support a Chinese tag in 39-40
 			AND = {
-				has_completed_focus = SOV_the_gobi_gambit
-				country_exists = SIK
-				SIK = { has_war_with = JAP }
-			}
-			AND = {
-				has_completed_focus = SOV_two_red_flags
-				country_exists = PRC
-				PRC = { has_war_with = JAP }
-			}
-			AND = {
 				has_completed_focus = SOV_support_the_kuomintang
 				country_exists = CHI
 				CHI = { has_war_with = JAP }
@@ -891,16 +881,6 @@ SOV_dont_send_volunteers_that_early_to_china = {
 	ai_strategy = {
 		type = send_volunteers_desire
 		id = "CHI"
-		value = -800
-	}
-	ai_strategy = {
-		type = send_volunteers_desire
-		id = "GXC"
-		value = -800
-	}
-	ai_strategy = {
-		type = send_volunteers_desire
-		id = "PRC"
 		value = -800
 	}
 }
@@ -940,48 +920,6 @@ SOV_have_some_train_production = {
 		type = equipment_production_min_factories
 		id = train
 		value = 3
-	}
-}
-
-# Make people sceptic about sending support to the Whites - again
-SOV_dont_support_whites = {
-
-	allowed = { has_dlc = "No Step Back" }
-	enable = {
-		SOV = { SOV_is_exiles = yes}
-		NOT = {
-			tag = SOV
-		}
-	}
-
-	abort = {
-		has_global_flag = SOV_soviet_civil_war_over
-	}
-
-	ai_strategy = {
-		type = alliance
-		id = SOV
-		value = -200
-	}
-	ai_strategy = {
-		type = befriend
-		id = SOV
-		value = -100
-	}
-	ai_strategy = {
-		type = support
-		id = SOV
-		value = -100
-	}
-	ai_strategy = {
-		type = send_volunteers_desire
-		id = SOV
-		value = -200
-	}
-	ai_strategy = {
-		type = send_lend_lease_desire
-		id = SOV
-		value = -200
 	}
 }
 

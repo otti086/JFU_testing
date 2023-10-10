@@ -1,0 +1,117 @@
+#	Triggers to control if diplomatic actions are enabled:
+#		Format:
+#
+#		<diplomatic action tag>_enabled_trigger = {
+#			<trigger contents>
+#		}
+#
+#		ROOT is the country initiating the diplomatic action.
+#		FROM is the recipient or target of the diplomatic action.
+#
+#		Note:  For cleaner tooltips, it is recommended that you use
+#			if triggers within the enable triggers, and a single
+#			custom_trigger_tooltip trigger within each if trigger.
+#
+#		Example: (Germany is prevented from declaring war on the Soviet Union.)
+#
+#		DIPLOMACY_WAR_ENABLE_TRIGGER = {
+#			if = {
+#				limit = {
+#					tag = GER
+#				}
+#				custom_trigger_tooltip = {
+#					tooltip = PREVENT_GER_WAR_ON_SOV
+#					FROM = {
+#						NOT = {
+#							tag = SOV
+#						}
+#					}
+#				}
+#			}
+#		}
+DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = { always = no } 
+DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
+	if = {
+		limit = {
+			tag = USA
+			tag = BRA
+			tag = MEX 
+		}
+		OR = {
+			16 = { is_controlled_by = GER }
+			date > 1940.01.01
+		}
+	}
+	if = { limit = { ROOT = { axis = yes  } } 	NOT = { FROM = { OR = { tag = MAN tag = JAP } } } }
+	if = { 
+		limit = {
+			FROM = { axis = yes}
+		}
+		NOT = {	ROOT = { allies = yes } }
+	}
+	if = { 
+		limit = {
+			FROM = { allies = yes}
+		}
+		NOT = {	ROOT = { axis = yes } }
+	}
+}
+DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = {
+	if = { 
+		limit = {
+			FROM = { axis = yes}
+		}
+		NOT = {	ROOT = { allies = yes } }
+	}
+	if = { 
+		limit = {
+			FROM = { allies = yes}
+		}
+		NOT = {	ROOT = { axis = yes } }
+	}
+}
+DIPLOMACY_CALL_ALLY_ENABLE_TRIGGER = { always = no } 
+DIPLOMACY_JOIN_ALLY_ENABLE_TRIGGER = { always = no } 
+DIPLOMACY_REQUEST_ACCESS_TO_LICENCE_PRODUCTION_ENABLE_TRIGGER = {
+	if = { 
+		limit = {
+			FROM = { axis = yes}
+		}
+		NOT = {	ROOT = { allies = yes } }
+	}
+	if = { 
+		limit = {
+			FROM = { allies = yes}
+		}
+		NOT = {	ROOT = { axis = yes } }
+	}
+	if = {
+		limit = { 
+			FROM = { tag = NOR } 
+		}
+		has_global_flag = NOR_RUGES_PLAN 
+	}
+}
+DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = { always = no }
+DIPLOMACY_WAR_ENABLE_TRIGGER = {always = no }
+DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
+	if = {
+		limit = {
+			NOT = { tag = CHI }
+			FROM = {
+				tag = CHI
+			}
+		}
+		always = no
+	}
+}
+DIPLOMACY_GIVESTATECONTROL_ENABLE_TRIGGER = { NOT = { FROM = { tag = SPR } } }
+DIPLOMACY_ASKSTATECONTROL_ENABLE_TRIGGER = { NOT = { tag = SPR} }
+DIPLOMACY_EMBARGO_ENABLE_TRIGGER = { 
+	always=  no 
+}
+DIPLOMACY_REVOKE_EMBARGO_ENABLE_TRIGGER = { 
+	always=  no 
+}
+DIPLOMACY_SEND_EXP_FORCE_ENABLE_TRIGGER = {
+}

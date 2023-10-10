@@ -1,0 +1,31 @@
+#	Example:
+# 
+#	example_trigger = {
+#		tag = GER
+#		is_ai = no
+#	}
+#
+#
+#	In a script file:
+#
+#	trigger = {
+#		exampel_trigger = yes
+#	}
+# 
+FRA_has_inefficient_economy = {
+	if = {
+		limit = { has_idea = FRA_inefficient_economy_2 }
+		has_idea = FRA_inefficient_economy_2
+	}
+	else = {
+		has_idea = FRA_inefficient_economy_1
+	}
+}
+
+USA_can_sell_weapons_trigger = {
+	NOT = { 
+		USA = {
+			has_war_with = FRA
+		}
+	}
+}

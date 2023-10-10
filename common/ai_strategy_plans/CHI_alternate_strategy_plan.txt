@@ -10,7 +10,7 @@ CHI_alternate_plan_1 = {
 		OR = {
 			original_tag = CHI
 			AND = {
-				is_chinese_warlord = yes
+				
 				has_focus_tree = china_nationalist_focus
 			}
 		}
@@ -115,7 +115,7 @@ CHI_alternate_plan_2 = {
 		OR = {
 			original_tag = CHI
 			AND = {
-				is_chinese_warlord = yes
+				
 				has_focus_tree = china_nationalist_focus
 			}
 		}
