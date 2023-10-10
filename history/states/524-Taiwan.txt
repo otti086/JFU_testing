@@ -8,39 +8,14 @@ state=
 	history=
 	{
 		owner = JAP
-		add_core_of = JAP
+		add_core_of = CHI
+		
 		buildings = {
 			infrastructure = 3 #was: 5
 			arms_factory = 1
 			air_base = 6
 			12068 = {
 				naval_base = 10
-				coastal_bunker = 5
-			}
-			1091 = {
-				coastal_bunker = 5				
-			}
-			11914 = {
-				coastal_bunker = 5				
-			}
-			1175 = {
-				coastal_bunker = 5				
-			}
-			4096 = {
-				coastal_bunker = 5				
-			}
-			9955 = {
-				coastal_bunker = 5				
-			}
-			7186 = {
-				naval_base = 1
-				coastal_bunker = 5				
-			}
-			7214 = {
-				coastal_bunker = 5				
-			}
-			11959 = {
-				coastal_bunker = 5				
 			}
 		}
 		victory_points = {

@@ -3,6 +3,17 @@
 
 oob = "BRA_1936"
 set_research_slots = 3
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "BRA_1936_air_bba"
+	else = {
+		set_air_oob = "BRA_1936_air_legacy"
+		set_technology = {
+			early_fighter = 1
+			CAS1 = 1
+		}
+	}
+}
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -28,14 +39,19 @@ set_technology = {
 	building_limiter_tech = 1 #air base max level
 }
 if = {
-	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "BRA_1936_air_bba"
-	else = {
-		set_air_oob = "BRA_1936_air_legacy"
-		set_technology = {
-			early_fighter = 1
-			CAS1 = 1
-		}
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+	}
+}
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
 	}
 }
 if = {
@@ -68,12 +84,13 @@ if = {
 	}
 	set_naval_oob = "BRA_1936_naval"	
 }
-set_country_flag = monroe_doctrine
 
 recruit_character = BRA_getulio_vargas
 recruit_character = BRA_plinio_salgado
 recruit_character = BRA_luis_carlos_prestes
 recruit_character = BRA_armando_sales
+recruit_character = BRA_eurico_gaspar_dutra
+recruit_character = BRA_mascarenhas_de_morais
 recruit_character = BRA_augusto_rademaker
 recruit_character = BRA_agliberto_vieira
 recruit_character = BRA_eduardo_gomes
@@ -88,11 +105,10 @@ recruit_character = BRA_artur_da_costa_e_silva
 recruit_character = BRA_ismael_motta_paes
 recruit_character = BRA_jorge_martins
 recruit_character = BRA_newton_cavalcanti
-recruit_character = BRA_eurico_gaspar_dutra
-recruit_character = BRA_mascarenhas_de_morais
 recruit_character = BRA_afranio_de_mello_franco
+recruit_character = BRA_washington_luis_pereira
+recruit_character = BRA_osvaldo_aranha
 recruit_character = BRA_arlindo_veiga_dos_santos
-
 
 set_politics = {
 	ruling_party = neutrality

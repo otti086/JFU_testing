@@ -1,5 +1,6 @@
 ﻿division_template = {
 	name = "Kebur Zabagna"				# Imperial Bodyguard
+	division_names_group = ETH_INF_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -17,6 +18,7 @@
 
 division_template = {
 	name = "Infantry Division"		
+	division_names_group = ETH_INF_01
 
 	# Note: Represents both regular infantry and militia units
 	regiments = {
@@ -28,6 +30,7 @@ division_template = {
 }
 division_template = {
 	name = "Mountain Division"		
+	division_names_group = ETH_MNT_01
 
 	regiments = {
 		mountaineers = { x = 0 y = 0 }
@@ -43,7 +46,10 @@ division_template = {
 units = {
 	##### Imperial Army #####
 	division = { # "Kebur Zabagna"
-
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
 		location = 5010
 		division_template = "Kebur Zabagna"			# Elite emperor's guard
 		start_experience_factor = 0.2
@@ -73,7 +79,10 @@ units = {
 	#}
 	# Wolqayt, Semien and Welega-Ardjo Provincial Armed Forces #
 	division = { # "Wolqayt-Semien Sefari"
-		name = "1"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
 		location = 13238
 		division_template = "Mountain Division"		# Regular Infantry
 		start_experience_factor = 0.2
@@ -81,7 +90,10 @@ units = {
 
 	}
 	division = { # "Welega-Ardjo Sefari"
-		name = "2"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
 		location = 2072
 		division_template = "Infantry Division"		# Regular Infantry
 		start_experience_factor = 0.2
@@ -90,7 +102,10 @@ units = {
 	}
 	# Tigray Provincial Armed Forces #
 	division = { # "1st Tigray Sefari"
-		name = "3"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
 		location = 13237
 		division_template = "Infantry Division"		# Militia
 		start_experience_factor = 0.1
@@ -98,7 +113,10 @@ units = {
 
 	}
 	division = { # "2nd Tigray Sefari"
-		name = "4"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
 		location = 1984
 		division_template = "Infantry Division"		# Militia
 		start_experience_factor = 0.1
@@ -107,7 +125,10 @@ units = {
 	}
 	# Wag and Begemder Provincial Armed Forces #
 	division = { # "Wag Sefari"
-		name = "5"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
 		location = 2072
 		division_template = "Infantry Division"		# Militia
 		start_experience_factor = 0.1
@@ -115,7 +136,10 @@ units = {
 
 	}
 	division = { # "1st Begemder Sefari"
-		name = "6"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
 		location = 7944
 		division_template = "Infantry Division"		# Militia
 		start_experience_factor = 0.1
@@ -123,7 +147,10 @@ units = {
 
 	}
 	division = { # "2nd Begemder Sefari"
-		name = "7"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
 		location = 7944
 		division_template = "Infantry Division"		# Militia
 		start_experience_factor = 0.1
@@ -133,7 +160,10 @@ units = {
 
 	### Southern Front ###
 	division = { # "Ogaden Sefari"
-		name = "8"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
 		location = 12812
 		division_template = "Infantry Division"		# Militia
 		start_experience_factor = 0.1
@@ -141,7 +171,10 @@ units = {
 
 	}
 	division = { # "Arusi Sefari"
-		name = "9"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
 		location = 8062
 		division_template = "Infantry Division"		# Militia
 		start_experience_factor = 0.1
@@ -150,7 +183,10 @@ units = {
 	}
 	# Willubabor and Sidamo Provincial Armed Forces #
 	division = { # "Illubabor Sefari"
-		name = "10"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 13
+		}
 		location = 8062
 		division_template = "Infantry Division"		# Militia
 		start_experience_factor = 0.1
@@ -158,7 +194,10 @@ units = {
 
 	}
 	division = { # "1st Sidamo Sefari"
-		name = "11"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 14
+		}
 		location = 4995
 		division_template = "Infantry Division"		# Regular Infantry
 		start_experience_factor = 0.1
@@ -166,7 +205,10 @@ units = {
 
 	}
 	division = { # "2nd Sidamo Sefari"
-		name = "12"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 15
+		}
 		location = 4995
 		division_template = "Infantry Division"		# Regular Infantry
 		start_experience_factor = 0.2

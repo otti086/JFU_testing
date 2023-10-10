@@ -8,12 +8,12 @@ state={
 	
 	resources={
 		rubber=140 # was: 242
-		oil=15 # was: 16
+		oil=10 # was: 16
 	}
 
 	history={
 		owner = HOL
-		add_core_of = HOL
+		add_core_of = SWE
 		victory_points = {
 			7381 5
 		}
@@ -23,8 +23,6 @@ state={
 
 		buildings = {
 			infrastructure = 3 #was: 5
-			industrial_complex = 1
-			dockyard = 1
 			air_base = 3
 			7381 = {
 				naval_base = 6

@@ -6,7 +6,7 @@ state={
 	
 	state_category = city
 	resources={
-		steel=100 # was: 236
+		steel=42 #was 100 # was: 236
 	}
 
 	history={
@@ -52,11 +52,6 @@ state={
 
 		}
 		add_core_of = FRA
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 4
-			}
-		}
 	}
 
 	provinces={

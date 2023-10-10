@@ -18,7 +18,7 @@ air_wings = {
 			amount = 72
 		}
 	}
-	129 = { 
+	130 = { 
 		### No. 11 Fighter Command, Essex area -- Hawker Demons, Furys, Gloster Gauntlets
 		fighter_equipment_0 = {
 			owner = "ENG" 
@@ -29,14 +29,14 @@ air_wings = {
 			amount = 77
 		}
 	}	
-	129 = { 
+	127 = { 
 		### No. 12 Fighter Command, Nottingham area -- Hawker Demons, Furys, Gloster Gauntlets
 		fighter_equipment_0 = {
 			owner = "ENG" 
 			amount = 96
 		}
 	}	
-	129 = { 
+	131 = { 
 		### No. 13 Fighter Command, Newcastle -- Hawker Demons, Furys, Gloster Gauntlets
 		fighter_equipment_0 = {
 			owner = "ENG" 
@@ -46,35 +46,35 @@ air_wings = {
 	}
 	
 	### RAF Bomber Command ###
-	129 = { 
+	125 = { 
 		### No. 1 Bomber Command, East Anglia area -- Fairey Gordons, Battles
 		CAS_equipment_1 = {
 			owner = "ENG" 
 			amount = 64
 		}
 	}
-	129 = { 
+	125 = { 
 		### No. 2 Bomber Command, East Anglia area -- HP Heyford, Harrows, AW Whitleys
 		tac_bomber_equipment_0 = {
 			owner = "ENG" 
 			amount = 48
 		}
 	}
-	129 = { 
+	126 = { 
 		### No. 3 Bomber Command, Suffolk area -- HP Heyford, Harrows, AW Whitleys
 		tac_bomber_equipment_0 = {
 			owner = "ENG" 
 			amount = 64
 		}
 	}
-	129 = { 
+	130 = { 
 		### No. 4 Bomber Command, York area -- HP Heyford, Harrows, AW Whitleys
 		tac_bomber_equipment_0 = {
 			owner = "ENG" 
 			amount = 80
 		}
 	}
-	129 = { 
+	128 = { 
 		### No. 5 Bomber Command, Lincoln area -- Fairey Gordons, Battles
 		CAS_equipment_1 = {
 			owner = "ENG" 
@@ -83,7 +83,7 @@ air_wings = {
 	}
 
 	### RAF Coastal Command
-	129 = { 
+	130 = { 
 		### No. 16 Coastal Command -- Vickers Vildebeests
 		nav_bomber_equipment_1 = {
 			owner = "ENG" 
@@ -92,7 +92,7 @@ air_wings = {
 	}
 
 	### RAF Middle East and Africa
-	129 = { 
+	447 = { 
 		### AHQ Egypt
 		fighter_equipment_0 = {
 			owner = "ENG" 
@@ -107,14 +107,14 @@ air_wings = {
 			amount = 64
 		}
 	}
-	129 = { 
+	454 = { 
 		### RAF Palestine & Iraq
 		CAS_equipment_1 = {
 			owner = "ENG" 
 			amount = 32
 		}
 	}
-	129 = { 
+	659 = { 
 		### RAF Aden
 		fighter_equipment_0 = {
 			owner = "ENG" 
@@ -127,7 +127,7 @@ air_wings = {
 	}
 
 	### RAF Far East
-	129 = { 
+	336 = { 
 		### RAF Far East
 		nav_bomber_equipment_1 = {
 			owner = "ENG" 
@@ -176,6 +176,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.15
 		efficiency = 50
+		industrial_manufacturer = mio:ENG_supermarine_organization
 	}
 
 	add_equipment_production = {
@@ -186,6 +187,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.1
 		efficiency = 50
+		industrial_manufacturer = mio:ENG_de_havilland_organization
 	}
 }
 	#####################

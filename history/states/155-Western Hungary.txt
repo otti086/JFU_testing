@@ -3,12 +3,12 @@ state={
 	id=155
 	name="STATE_155" # Transdanubia
 	manpower = 2197605
-
-	resources={
-		tungsten=30.000
-		Steel = 30.000
-	}	
+	
 	state_category = city
+	resources={
+		oil = 1 # was: 1
+		aluminium=60 # moved from Northern Hungary
+	}
 	history={
 		owner = HUN
 		victory_points = {

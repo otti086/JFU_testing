@@ -1,19 +1,29 @@
 ﻿capital = 275
-
-
-
-
-
 set_variable = {
     var = min_fuel
     value = 0.200
 }
 
 oob = "SAF_1936"
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "SAF_1936_air_bba"
+	else = {
+		set_air_oob = "SAF_1936_air_legacy"
+		set_technology = {
+			early_fighter = 1
+			cv_early_fighter = 1
+			cv_naval_bomber1 = 1
+			naval_bomber1 = 1
+			early_bomber = 1
+			CAS1 = 1
+
+		}
+	}
+}
 
 set_stability = 0.6
 set_war_support = 0.1
-set_research_slots = 3
 # Starting tech
 set_technology = {
 	trench_warfare = 1
@@ -40,22 +50,7 @@ set_technology = {
 
 	building_limiter_tech = 1 #air base max level
 }
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "SAF_1936_air_bba"
-	else = {
-		set_air_oob = "SAF_1936_air_legacy"
-		set_technology = {
-			early_fighter = 1
-			cv_early_fighter = 1
-			cv_naval_bomber1 = 1
-			naval_bomber1 = 1
-			early_bomber = 1
-			CAS1 = 1
 
-		}
-	}
-}
 if = {
 	limit = {
 		NOT = { has_dlc = "No Step Back" }
@@ -105,7 +100,9 @@ if = {
 
 add_equipment_to_stockpile = { type = train_equipment_1 amount = 50 }
 add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 }
-set_convoys = 25
+
+
+set_convoys = 100
 set_politics = {
 	ruling_party = democratic
 	last_election = "1933.5.17"
@@ -119,8 +116,11 @@ set_popularities = {
 }
 
 recruit_character = SAF_j_b_m_hertzog
+recruit_character = SAF_d_f_malan
 recruit_character = SAF_moses_kotane
 recruit_character = SAF_pixley_ka_isaka_seme
+recruit_character = SAF_george_edwin_brink
+recruit_character = SAF_guy_hallifax
 recruit_character = SAF_pierre_oliver_knoll
 recruit_character = SAF_cornelis_van_zuigenbrogge
 recruit_character = SAF_pierre_van_ryneveld
@@ -134,7 +134,6 @@ recruit_character = SAF_james_mitchell_baker
 recruit_character = SAF_jeannot_de_la_tourier
 recruit_character = SAF_j_f_van_rensburg
 recruit_character = SAF_e_g_jansen
-recruit_character = SAF_george_edwin_brink
-recruit_character = SAF_guy_hallifax
 recruit_character = SAF_nicolaas_havenga
 recruit_character = SAF_sir_patrick_duncan
+recruit_character = SAF_abram_fischer

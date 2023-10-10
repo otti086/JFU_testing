@@ -1,5 +1,6 @@
 ﻿capital = 277
-
+add_equipment_to_stockpile = { type = train_equipment_1 amount = 50 }
+add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 }
 oob = "MEX_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -8,8 +9,27 @@ if = {
 		set_naval_oob = "MEX_1936_naval_legacy"
 	}
 }
-add_equipment_to_stockpile = { type = train_equipment_1 amount = 50 }
-add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 }
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+	set_air_oob = "MEX_1936_air_bba"
+	set_technology = {
+		aa_lmg = 1
+		engines_1 = 1
+		early_bombs = 1
+		aircraft_construction = 1
+		iw_small_airframe = 1
+	}
+	else = {
+		set_air_oob = "MEX_1936_air_legacy"
+		set_technology = {
+			early_fighter = 1
+			early_bomber = 1
+			CAS1 = 1
+
+		}
+	}
+}
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -75,7 +95,9 @@ recruit_character = MEX_salvador_abascal
 recruit_character = MEX_adolfo_de_la_huerta
 recruit_character = MEX_dionisio_encina
 recruit_character = MEX_hernan_laborde
+recruit_character = MEX_heliodoro_charis
 recruit_character = MEX_luis_farell
+recruit_character = MEX_gildardo_magana
 recruit_character = MEX_manuel_perez_trevino
 recruit_character = MEX_abelardo_rodriguez
 recruit_character = MEX_manuel_avila_camacho
@@ -88,25 +110,26 @@ recruit_character = MEX_pablo_macias
 recruit_character = MEX_jose_gonzalo_escobar
 recruit_character = MEX_agustin_olachea
 recruit_character = MEX_leon_trotsky
-recruit_character = MEX_gildardo_magana
-recruit_character = MEX_heliodoro_charis
 recruit_character = MEX_saturnino_cedillo
 recruit_character = MEX_hector_meixueiro
 recruit_character = MEX_matias_santos_ramos
 recruit_character = MEX_enrique_estrada
+recruit_character = MEX_jose_vasconcelos
 recruit_character = MEX_pablo_gonzalez
 recruit_character = MEX_bartolome_garcia_correa
 recruit_character = MEX_luis_montes_de_oca
 recruit_character = MEX_aaron_saenz
 recruit_character = MEX_vicente_lombardo
+recruit_character = MEX_eduardo_hay
 recruit_character = MEX_alberto_pani
 recruit_character = MEX_juan_andreu
 recruit_character = MEX_plutarco_calles
 recruit_character = MEX_francisco_mugica
 recruit_character = MEX_jesus_degollado_guizar
 recruit_character = MEX_valentin_campa
+recruit_character = MEX_luis_maria_martinez
 
-set_country_flag = monroe_doctrine
+
 
 set_convoys = 45
 set_stability = 0.2
@@ -124,6 +147,7 @@ if = {
 		MEX_cedillo_tension_2
 	}
 }
+
 
 set_politics = {
 	ruling_party = neutrality

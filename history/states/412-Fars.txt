@@ -5,7 +5,8 @@ state={
 	manpower = 1
 
 
-	state_category = wasteland
+
+	state_category = rural
 	history={
 		owner = SWE
 		victory_points = {
@@ -19,6 +20,12 @@ state={
 		}
 		buildings = {
 			infrastructure = 1
+			7982 = {
+				naval_base = 4
+			}
+			12832 = {
+				naval_base = 2
+			}
 		}
 		add_core_of = SWE
 	}

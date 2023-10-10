@@ -2,18 +2,15 @@
 state={
 	id=309
 	name="STATE_309"
-	manpower = 1	
+	manpower = 1
 	
-	state_category = wasteland
+	state_category = rural
 
 	history={
 		add_core_of = SWE
 		owner = SWE
-		victory_points = {
-			10906 1
-		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 0
 		}
 	}
 

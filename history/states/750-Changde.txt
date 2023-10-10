@@ -10,25 +10,15 @@ state={
 	history={
 		owner = CHI
 		add_core_of = CHI
+		
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 2
 			arms_factory = 1
 			air_base = 2
 		}
-		add_extra_state_shared_building_slots = 3
 		victory_points = {
 			7101 10 
-		}
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 2
-				infrastructure = 3 #was: 6
-				air_base = 3
-				arms_factory = 1
-
-			}
-
 		}
 
 	}

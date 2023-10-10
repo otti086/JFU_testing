@@ -3,19 +3,19 @@ state={
 	id=307
 	name="STATE_307" # Miranda
 	
-	state_category = wasteland
+	state_category = city
 	
-	manpower = 1
+	manpower = 1335010
+	resources={
+		oil=41 # was: 58
+	}
 
 	history={
 		owner = SWE
 		buildings = {
-			infrastructure = 2
+			infrastructure = 0
 		}
 		add_core_of = SWE
-		victory_points = {
-			8113 5 
-		}
 
 	}
 

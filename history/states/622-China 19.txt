@@ -1,10 +1,16 @@
 state={
 	id=622
 	name="STATE_622"
+	resources={
+		steel=3.000
+		tungsten=3.000
+	}
 
 	history={
 		owner = CHI
+		
 		add_core_of = CHI
+		
 		victory_points = {
 			8049 3 
 		}
@@ -26,7 +32,7 @@ state={
 			}
 
 		}
-		add_extra_state_shared_building_slots = 6
+
 	}
 
 	provinces={

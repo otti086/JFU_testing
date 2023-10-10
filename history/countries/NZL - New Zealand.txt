@@ -1,20 +1,26 @@
 ﻿capital = 284
-
-oob = "NZL_1936"
-
-
-
 set_variable = {
     var = min_fuel
     value = 0.200
+}
+oob = "NZL_1936"
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "NZL_1936_air_bba"
+	else = {
+		set_air_oob = "NZL_1936_air_legacy"
+		set_technology = {
+			early_fighter = 1
+			naval_bomber1 = 1
+
+		}
+	}
 }
 
 # Starting tech
 set_stability = 0.8
 set_war_support = 0.3
-set_research_slots = 3
-add_equipment_to_stockpile = { type = train_equipment_1 amount = 50 }
-add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 }
+
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -39,18 +45,6 @@ set_technology = {
 	building_limiter_tech = 1 #air base max level
 	trench_warfare = 1
 	fleet_in_being = 1
-}
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "NZL_1936_air_bba"
-	else = {
-		set_air_oob = "NZL_1936_air_legacy"
-		set_technology = {
-			early_fighter = 1
-			naval_bomber1 = 1
-
-		}
-	}
 }
 if = {
 	limit = {
@@ -94,6 +88,8 @@ recruit_character = NZL_sidney_holland
 recruit_character = NZL_john_ormond
 recruit_character = NZL_elsie_farrelly
 recruit_character = NZL_bernard_freyberg
+recruit_character = NZL_robert_row
+recruit_character = NZL_william_stevens
 recruit_character = NZL_edmund_rupert_drummond
 recruit_character = NZL_peter_phipps
 recruit_character = NZL_r_a_cochrane
@@ -110,8 +106,6 @@ recruit_character = NZL_eric_prendergast
 recruit_character = NZL_arthur_dawes
 recruit_character = NZL_william_sinclair_burgess
 recruit_character = NZL_h_e_horan
-recruit_character = NZL_robert_row
-recruit_character = NZL_william_stevens
 recruit_character = NZL_h_d_mcgregor
 recruit_character = NZL_w_h_stratton
 recruit_character = NZL_a_e_davy
@@ -125,6 +119,7 @@ if = {
 
 	add_to_tech_sharing_group = commonwealth_research
 }
+
 set_politics = {
 	ruling_party = democratic
 	last_election = "1935.11.27"
@@ -136,7 +131,6 @@ set_popularities = {
 }
 
 set_convoys = 70
-
 
 
 ### VARIANTS ###
@@ -172,35 +166,6 @@ if = {
 			mid_1_custom_slot = ship_torpedo_1
 			mid_2_custom_slot = ship_torpedo_1
 			rear_1_custom_slot = empty
-		}
-	}
-}
-
-# 1939 Start #
-1939.1.1 = {
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		# Ship variants #
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		# Light Cruisers #
-		create_equipment_variant = {
-			name = "Leander Class"
-			type = ship_hull_cruiser_2
-			name_group = NZL_CL_HISTORICAL
-			modules = {
-				fixed_ship_battery_slot = ship_light_medium_battery_1
-				fixed_ship_anti_air_slot = ship_anti_air_1
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = cruiser_ship_engine_2
-				fixed_ship_armor_slot = ship_armor_cruiser_1
-				front_1_custom_slot = ship_anti_air_1
-				mid_1_custom_slot = ship_torpedo_1
-				mid_2_custom_slot = ship_airplane_launcher_1
-				rear_1_custom_slot = ship_light_medium_battery_1
-			}
 		}
 	}
 }

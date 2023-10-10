@@ -28,7 +28,7 @@ set_technology = {
 	building_limiter_tech = 1 #air base max level
 }
 
-set_convoys = 10
+set_convoys = 100
 
 recruit_character = IRE_Éamon_de_valera
 recruit_character = IRE_eoin_oduffy
@@ -49,6 +49,7 @@ recruit_character = IRE_s_muiris
 recruit_character = IRE_john_byrne
 recruit_character = IRE_sean_lemass
 recruit_character = IRE_douglas_hyde
+recruit_character = IRE_sean_ceallaigh
 
 
 set_politics = {

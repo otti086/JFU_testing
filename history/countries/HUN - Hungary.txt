@@ -1,19 +1,15 @@
 ﻿capital = 43
-
-
-
-
 set_variable = {
     var = min_fuel
     value = 0.200
 }
-
 oob = "HUN_1936"
 if = {
 	limit = { has_dlc = "By Blood Alone" }
 		set_air_oob = "HUN_1936_air_bba"
 		set_technology = {
 			iw_small_airframe = 1
+			engines_1 = 1
 			early_bombs = 1
 		}
 	else = {
@@ -24,6 +20,7 @@ if = {
 		}
 	}
 }
+
 set_research_slots = 3
 set_stability = 0.7
 set_war_support = 0.6
@@ -64,9 +61,7 @@ if = {
 }
 if = {
 	limit = {
-		
 		has_dlc = "No Step Back"
-		
 	}
 	set_technology = {
 		gwtank_chassis = 1
@@ -79,7 +74,16 @@ if = {
 	}
 	add_ideas = {
 		disarmed_nation
-		HUN_treaty_of_triannon
+	}
+	if = {
+		limit = { has_dlc = "Arms Against Tyranny" }
+		add_ideas = { HUN_treaty_of_triannon_aat }
+	}
+	if = {
+		limit = {
+			NOT = { has_dlc = "Arms Against Tyranny" }
+		}
+		add_ideas = { HUN_treaty_of_triannon }
 	}
 }
 if = {
@@ -96,6 +100,7 @@ if = {
 		}
 	}
 }
+
 if = {
 	limit = {
 		#has_dlc = Battle for the Bosporus
@@ -114,12 +119,26 @@ if = {
 	}
 }
 
-add_equipment_to_stockpile = { type = train_equipment_1 amount = 50 }
-add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 }
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1935.3.31"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 25
+	fascism = 31
+	neutrality = 44
+}
+
 #Start Horty as neutral if DOD
 recruit_character = HUN_miklos_horthy
 recruit_character = HUN_matyas_rakosi
 recruit_character = HUN_arpad_szakasits
+recruit_character = HUN_geza_lakatos
+recruit_character = HUN_ivan_hindy
+recruit_character = HUN_karoly_beregfy
+recruit_character = HUN_lajos_veress
 recruit_character = HUN_ferenc_feketehalmyczeydner
 recruit_character = HUN_istvan_szechenyi
 recruit_character = HUN_francois_deak
@@ -134,23 +153,14 @@ recruit_character = HUN_reszo_kastner
 recruit_character = HUN_shvoy_kalman
 recruit_character = HUN_sandor_magyarossy
 recruit_character = HUN_bela_rakosi
+recruit_character = HUN_kalman_kanya
+recruit_character = HUN_jozsef_szell
 recruit_character = HUN_vilmos_roder
 recruit_character = HUN_zoltan_tildy
+recruit_character = HUN_laszlo_rajk
+recruit_character = HUN_kalman_daranyi
 recruit_character = HUN_lajos_remenyi_schneller
-recruit_character = HUN_geza_lakatos
-recruit_character = HUN_ivan_hindy
-recruit_character = HUN_karoly_beregfy
-recruit_character = HUN_lajos_veress
-
-
-set_politics = {
-	ruling_party = neutrality
-	last_election = "1935.3.31"
-	election_frequency = 48
-	elections_allowed = yes
-}
-set_popularities = {
-	democratic = 25
-	fascism = 31
-	neutrality = 44
-}
+recruit_character = HUN_gusztav_gratz
+recruit_character = HUN_gyula_gombos_de_jakfa
+recruit_character = HUN_otto_von_habsburg
+recruit_character = HUN_franz_friedrich

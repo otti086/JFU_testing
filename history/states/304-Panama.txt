@@ -4,20 +4,14 @@ state={
 	name="STATE_304"
 	manpower = 1
 	
-	state_category = wasteland
+	state_category = town
 	
 	history={
 		owner = SWE
 		buildings = {
-			infrastructure = 2
+			infrastructure = 0
 		}
 		add_core_of = SWE
-		victory_points = {
-			7630 5 
-		}
-		victory_points = {
-			4611 1
-		}
 
 	}
 

@@ -3,15 +3,14 @@ state={
 	id=342
 	name="STATE_342" # Antalya
 	manpower = 1
-	state_category = wasteland
+
+	state_category = rural
 
 	history={
 		owner = SWE
-		victory_points = {
-			1005 5 
-		}
+
 		buildings = {
-			infrastructure = 2
+			infrastructure = 0
 		}
 		add_core_of = SWE
 	}

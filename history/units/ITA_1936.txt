@@ -496,7 +496,7 @@ units = {
 	division = { # 
 		name = "7a Divisione CC.NN. 'Cirene'" 
 		location = 1130 
-		division_template = "Divisione di Fanteria"	# CC.NN. militia, lower training and equipment 
+		division_template = "Camicie Nere"	# CC.NN. militia, lower training and equipment 
 		start_equipment_factor = 0.2
 	}
 	division = { # 
@@ -542,7 +542,7 @@ units = {
 	division = { # 
 		name = "4a Divisione CC.NN. '3 Gennaio'" 
 		location = 12723 
-		division_template = "Divisione di Fanteria"	# CC.NN. militia, lower training and equipment
+		division_template = "Camicie Nere"	# CC.NN. militia, lower training and equipment
 		start_experience_factor = 0.15
 	}
 
@@ -568,7 +568,7 @@ units = {
 	division = { # 
 		name = "3a Divisione CC.NN. '21 Aprile'" 
 		location = 13250
-		division_template = "Divisione di Fanteria"	# CC.NN. militia, lower training and equipment
+		division_template = "Camicie Nere"	# CC.NN. militia, lower training and equipment
 		start_experience_factor = 0.15
 	}
 
@@ -585,7 +585,7 @@ units = {
 	division = { # 
 		name = "1a Divisione CC.NN. '23 Marzo'" 
 		location = 12766 
-		division_template = "Divisione di Fanteria"	# CC.NN. militia, lower training and equipment
+		division_template = "Camicie Nere"	# CC.NN. militia, lower training and equipment
 		start_experience_factor = 0.15
 	}
 
@@ -602,13 +602,13 @@ units = {
 	division = { # 
 		name = "2a Divisione CC.NN. '28 Ottobre'" 
 		location = 8043 
-		division_template = "Divisione di Fanteria"	# CC.NN. militia, lower training and equipment
+		division_template = "Camicie Nere"	# CC.NN. militia, lower training and equipment
 		start_experience_factor = 0.15
 	}
 	division = { # 
 		name = "5a Divisione CC.NN. '1 Febbraio'" 
 		location = 8043 
-		division_template = "Divisione di Fanteria"	# CC.NN. militia, lower training and equipment
+		division_template = "Camicie Nere"	# CC.NN. militia, lower training and equipment
 		start_experience_factor = 0.15
 	}
 
@@ -664,7 +664,7 @@ units = {
 	division = { # 
 		name = "6a Divisione CC.NN. 'Tevere'" 
 		location = 2063 
-		division_template = "Divisione di Fanteria"	# CC.NN. militia, lower training and equipment
+		division_template = "Camicie Nere"	# CC.NN. militia, lower training and equipment
 		start_experience_factor = 0.15
 	}
 
@@ -780,6 +780,7 @@ instant_effect = {
 			requested_factories = 4 
 			progress = 0.1 
 			efficiency = 50 
+			industrial_manufacturer = mio:ITA_beretta_organization
 		} 
 
 		add_equipment_production = { 
@@ -790,7 +791,8 @@ instant_effect = {
 
 			requested_factories = 1 
 			progress = 0.3 
-			efficiency = 50 
+			efficiency = 50
+			industrial_manufacturer = mio:ITA_brescia_arsenal_organization
 		} 
 
 		add_equipment_production = { 
@@ -801,7 +803,8 @@ instant_effect = {
 
 			requested_factories = 1 
 			progress = 0.4 
-			efficiency = 50 
+			efficiency = 50
+			industrial_manufacturer = mio:ITA_fiat_organization
 		} 
 
 		add_equipment_production = { 
@@ -812,7 +815,8 @@ instant_effect = {
 
 			requested_factories = 2 
 			progress = 0.4 
-			efficiency = 50 
+			efficiency = 50
+			industrial_manufacturer = mio:ITA_lancia_organization
 		} 
 	}
 } 

@@ -7,7 +7,7 @@ state={
 	state_category = city
 
 	resources={
-		steel=10 #was 2 before Mexican steel production was centralized to allow oil concessions
+		steel=6 #was 2 before Mexican steel production was centralized to allow oil concessions
 	}
 	
 	history={
@@ -15,7 +15,7 @@ state={
 		buildings = {
 			infrastructure = 3 #was: 5
 			arms_factory = 2
-			industrial_complex = 2
+			industrial_complex = 4
 			air_base = 3
 		}
 		add_core_of = MEX

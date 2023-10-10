@@ -3,10 +3,7 @@ state={
 	id=440
 	name="STATE_440"
 	manpower = 13665000
-
-	resources={
-		tungsten = 102 
-	}	
+	
 	state_category = town
 
 	history={

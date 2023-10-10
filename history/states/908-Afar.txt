@@ -3,10 +3,6 @@ state = {
 	name = "STATE_908"
 
 	history = {
-		add_dynamic_modifier = {
-			modifier = ETH_state_development_dynamic_modifier
-
-		}
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1
@@ -16,11 +12,6 @@ state = {
 		}
 		owner = ETH
 		add_core_of = ETH
-		1936.6.1 = {
-			owner = ITA
-			controller = ITA
-
-		}
 
 	}
 

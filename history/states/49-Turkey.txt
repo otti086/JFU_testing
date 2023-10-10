@@ -4,21 +4,13 @@ state={
 	name="STATE_49" # Ankara
 	manpower = 1
 	
-	state_category = wasteland
+	state_category = town
 
 	history={
 		owner = SWE
-		victory_points = {
-			11747 15
-		}
-		victory_points = {
-			804 5 
-		}
-		victory_points = {
-			3951 1
-		}
+
 		buildings = {
-			infrastructure = 2
+			infrastructure = 0
 		}
 		add_core_of = SWE
 	}

@@ -1,11 +1,8 @@
 ﻿capital = 276
-
-
 set_variable = {
     var = min_fuel
     value = 0.200
 }
-
 if = {
 	limit = {
 		NOT = {
@@ -32,14 +29,17 @@ if = {
 		set_air_oob = "CAN_1936_air_bba"
 		set_technology = {
 			aa_lmg = 1
+			engines_1 = 1
+			aircraft_construction = 1
 			iw_small_airframe = 1
 		}
 	else = {
 		set_air_oob = "CAN_1936_air_legacy"
 	}
 }
+
 set_research_slots = 3
-set_country_flag = monroe_doctrine
+
 set_stability = 0.8
 set_war_support = 0.1
 add_equipment_to_stockpile = { type = train_equipment_1 amount = 50 }
@@ -48,6 +48,8 @@ recruit_character = CAN_mackenzie_king
 recruit_character = CAN_adrien_arcand
 recruit_character = CAN_tim_buck
 recruit_character = CAN_j_s_woodsworth
+recruit_character = CAN_thomas_victor_anderson
+recruit_character = CAN_charles_foulkes
 recruit_character = CAN_percival_john_montague
 recruit_character = CAN_bert_hoffmeister
 recruit_character = CAN_leonard_w_murray
@@ -61,8 +63,6 @@ recruit_character = CAN_harold_edwards
 recruit_character = CAN_frederick_m_w_harvey
 recruit_character = CAN_harry_crerar
 recruit_character = CAN_robert_leckie
-recruit_character = CAN_thomas_victor_anderson
-recruit_character = CAN_charles_foulkes
 recruit_character = CAN_kenneth_stuart
 recruit_character = CAN_andrew_mcnaughton
 recruit_character = CAN_george_jones
@@ -77,9 +77,12 @@ recruit_character = CAN_robert_manion
 recruit_character = CAN_ian_a_mackenzie
 recruit_character = CAN_c_d_howe
 recruit_character = CAN_newton_wesley_rowell
+recruit_character = CAN_chuck_crate
 recruit_character = CAN_james_ilsley
+recruit_character = CAN_william_kashtan
 recruit_character = CAN_leo_richer_lafleche
 recruit_character = CAN_r_b_bennett
+recruit_character = CAN_louis_st_laurent
 
 
 # Starting tech

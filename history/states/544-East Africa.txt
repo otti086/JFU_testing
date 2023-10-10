@@ -6,11 +6,8 @@ state={
 	history={
 		owner = SWE
 		buildings = {
-			infrastructure = 2
+			infrastructure = 0
 
-		}
-		victory_points = {
-			8245 1 
 		}
 		add_core_of = SWE
 
@@ -20,7 +17,6 @@ state={
 		2193 5177 5212 8245 
 	}
 
-	buildings_max_level_factor=1.000
-	state_category = wasteland
+	state_category=rural
 	local_supplies=0.000
 }

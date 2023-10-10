@@ -4,15 +4,12 @@ state={
 	name="STATE_348" # Kayseri
 	manpower = 1
 	
-	state_category = wasteland
+	state_category = rural
 
 	history={
 		owner = SWE
-		victory_points = {
-			3870 5 
-		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 0
 
 		}
 		add_core_of = SWE

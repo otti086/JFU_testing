@@ -1,13 +1,8 @@
 ﻿capital = 46
-
-
-
-
 set_variable = {
     var = min_fuel
     value = 0.200
 }
-
 if = {
 	limit = {
 		NOT = {
@@ -35,6 +30,7 @@ if = {
 		set_technology = {
 			iw_small_airframe = 1
 			aa_lmg = 1
+			engines_1 = 1
 		}
 	else = {
 		set_air_oob = "ROM_1936_air_legacy"
@@ -44,6 +40,7 @@ if = {
 		}
 	}
 }
+
 set_research_slots = 3
 set_stability = 0.6
 set_war_support = 0.6
@@ -52,7 +49,10 @@ recruit_character = ROM_gheorghe_tatarescu
 recruit_character = ROM_constantin_ion_parhon
 recruit_character = ROM_armand_calinescu
 recruit_character = ROM_corneliu_codreanu
+recruit_character = ROM_petre_dumitrescu
 recruit_character = ROM_ion_antonescu
+recruit_character = ROM_ioan_mihail_racovita
+recruit_character = ROM_gheorghe_avramescu
 recruit_character = ROM_constantin_sanatescu
 recruit_character = ROM_horia_macellariu
 recruit_character = ROM_gheorghe_potopeanu
@@ -63,14 +63,15 @@ recruit_character = ROM_nicolae_sova
 recruit_character = ROM_gheorghe_jienescu
 recruit_character = ROM_paul_teodorescu
 recruit_character = ROM_gheorghe_vasiliu
+recruit_character = ROM_iuliu_maniu
+recruit_character = ROM_petru_groza
+recruit_character = ROM_gheorghe_gheorghiu_dej
 recruit_character = ROM_nicolae_malaxa
 recruit_character = ROM_mihail_sturdza
 recruit_character = ROM_gheorghe_argeseanu
 recruit_character = ROM_king_michael
 recruit_character = ROM_octavian_goga
-recruit_character = ROM_gheorghe_avramescu
-recruit_character = ROM_ioan_mihail_racovita
-recruit_character = ROM_petre_dumitrescu
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -143,15 +144,9 @@ if = {
 	add_ideas = {
 		ROM_king_carol_ii_hedonist
 	}
+
 }
-if = {
-	limit = {
-		AND = {  
-			NOT = { has_dlc = "Death or Dishonor" }
-			has_dlc = "Battle for the Bosporus"
-		}
-	}
-}
+add_ideas = neutrality_idea
 
 #Kick off kings crazy life
 if = {
@@ -166,31 +161,11 @@ if = {
 	}
 }
 
-if = {
-	limit = {
-		#has_dlc = Battle for the Bosporus
-	}
-	add_opinion_modifier = { 
-		target = GRE
-		modifier = BFTB_balkan_pact_ally
-	}
-	add_opinion_modifier = { 
-		target = YUG
-		modifier = BFTB_balkan_pact_ally
-	}
-	add_opinion_modifier = { 
-		target = BUL
-		modifier = BFTB_balkan_pact_enemy
-	}
-	add_opinion_modifier = { 
-		target = HUN
-		modifier = BFTB_balkan_pact_enemy
-	}
-}
+
 
 set_convoys = 10
-add_equipment_to_stockpile = { type = train_equipment_1 amount = 50 }
-add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 }
+
+
 set_politics = {
 	ruling_party = democratic
 	last_election = "1933.12.20"
@@ -203,8 +178,6 @@ set_popularities = {
 	communism = 2
 	neutrality = 20
 }
-
-
 ### VARIANTS ###
 # 1936 Start #
 if = {

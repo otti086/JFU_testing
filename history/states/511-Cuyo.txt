@@ -4,17 +4,15 @@ state={
 	name="STATE_511" # Mendoza
 	manpower = 1
 	
-	state_category = wasteland
+	state_category = rural
 
 	history={
 		owner = SWE
 		buildings = {
-			infrastructure = 2
+			infrastructure = 0
 		}
 		add_core_of = SWE
-		victory_points = {
-			12942 1 
-		}
+
 
 	}
 

@@ -2,7 +2,7 @@
 ### Air oob
 air_wings = {
 	### I. Luftkreiskommando -- Konigsberg ###
-	64 = { 
+	763 = { 
 		# Jagdgeschwader 232 	
 		fighter_equipment_0 =  {		# He 51
 			owner = "GER" 
@@ -37,10 +37,15 @@ air_wings = {
 			version_name = "Ju 86"
 		}
 		name = "Kampfgeschwader 153"
+		# TODO: REMOVE THIS LATER ???
+		transport_plane_equipment_1 = {
+			owner = "GER" 
+			amount = 80
+		}
 	}
 
 	### III. Luftkreiskommando -- Breslau ###
-	64 = { 
+	66 = { 
 		# Kampfgeschwader 253 'General Wever'		
 		tac_bomber_equipment_0 = {		# He 45 or Do 23 ?
 			owner = "GER" 
@@ -60,7 +65,7 @@ air_wings = {
 	}
 
 	### IV. Luftkreiskommando -- Kassel ###
-	64 = { 
+	57 = { 
 		# Jagdgeschwader 134 'Horst Wessel'		
 		fighter_equipment_0 =  {		# He 51 # Ar 68
 			owner = "GER" 
@@ -86,7 +91,7 @@ air_wings = {
 	}
 
 	### V. Luftkreiskommando -- Munich ###
-	64 = { 
+	52 = { 
 		# Jagdgeschwader 136		
 		fighter_equipment_0 =  {		# He 51
 			owner = "GER" 
@@ -102,7 +107,7 @@ air_wings = {
 	}
 
 	### VI. Luftkreiskommando -- Kiel ###
-	64 = { 
+	58 = { 
 		# Küstenfliegergruppe 106		
 		nav_bomber_equipment_1 =  {		# He 59, Do 18
 			owner = "GER" 
@@ -126,6 +131,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.15
 		efficiency = 50
+		industrial_manufacturer = mio:GER_messerschmitt_organization
 	}
 
 	add_equipment_production = {
@@ -136,6 +142,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.2
 		efficiency = 50
+		industrial_manufacturer = mio:GER_junkers_organization
 	}
 
 	add_equipment_production = {
@@ -146,6 +153,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.1
 		efficiency = 50
+		industrial_manufacturer = mio:GER_heinkel_organization
 	}
 }
 

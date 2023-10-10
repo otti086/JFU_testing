@@ -6,7 +6,7 @@ air_wings = {
 		# RAAF Stations Laverton, Richmond -- Hawker Demons, Avro Ansons
 		CAS_equipment_1 =  {
 			owner = "AST" 
-			amount = 20
+			amount = 24
 		}
 	}
 }

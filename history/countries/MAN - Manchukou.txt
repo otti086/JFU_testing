@@ -1,12 +1,7 @@
 ﻿capital = 328
 
-set_variable = {
-    var = min_fuel
-    value = 0.400
-}
-
 oob = "MAN_1936"
-set_research_slots = 3
+
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -29,7 +24,6 @@ set_technology = {
 	fuel_silos = 1 #juggle button
 
 	building_limiter_tech = 1 #air base max level
-	
 }
 
 if = {
@@ -40,10 +34,9 @@ if = {
 	add_ideas = MAN_banditry
 	add_ideas = MAN_kwantung_veto
 	add_ideas = MAN_low_legitimacy_5
-	add_ideas = MAN_south_manchuria_railway_company
+	recruit_character = MAN_songgotu_zhanshan
 }
-add_equipment_to_stockpile = { type = train_equipment_1 amount = 50 }
-add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 }
+
 recruit_character = MAN_aisin_gioro_puyi
 recruit_character = MAN_zhang_haipeng
 recruit_character = MAN_zhang_jinghui
@@ -60,13 +53,7 @@ recruit_character = MAN_yin_zuoqian
 recruit_character = MAN_hesehn_tiemei
 recruit_character = MAN_xian_yuan
 recruit_character = MAN_guan_xingde
-recruit_character = MAN_tomoyuki_yamashita
-recruit_character = MAN_hisaichi_terauchi
-recruit_character = MAN_akira_muto
-recruit_character = MAN_shunroku_hata
-recruit_character = MAN_shizuichi_tanaka
-recruit_character = MAN_kenkichi_ueda
-
+recruit_character = MAN_megata_toshiro
 if = {
 	limit = { has_dlc = "No Step Back" }
 	recruit_character = SOV_grigory_semyonov
@@ -74,9 +61,9 @@ if = {
 		set_character_flag = SOV_exiled_army_leader
 	}
 }
-
-set_convoys = 5
-
+add_equipment_to_stockpile = { type = train_equipment_1 amount = 50 }
+add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 }
+set_convoys = 100
 
 set_politics = {
 	ruling_party = fascism

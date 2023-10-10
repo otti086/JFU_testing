@@ -6,7 +6,7 @@ air_wings = {
 		# RCAF Station Trenton (ONT) -- Westland Wapitis
 		nav_bomber_equipment_1 =  {
 			owner = "CAN" 
-			amount = 20
+			amount = 24
 		}
 	}
 }
