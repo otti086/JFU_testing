@@ -1,0 +1,44 @@
+#	Example:
+#
+#	example_effect = {
+#		add_political_power = 66
+#		add_popularity = {
+#			ideology = fascism
+#			popularity = 0.33
+#		}
+#	}
+#
+#
+#	In a script file:
+#
+#	effect = {
+#		example_effect = yes
+#	}
+#
+ETH_escalate_the_war_effect = {
+	custom_effect_tooltip = ETH_war_escalation_inc_tt
+	add_to_variable = { ETH.ETH_war_escalation_level = 1 }
+	#hidden_effect = {
+	#	ITA = {
+	#		add_named_threat = { 
+	#			threat = 0.2
+	#			name = ETH_war_escalation_threat
+	#		}
+	#	}
+	#}
+}
+
+ETH_set_up_lon_arms_resolution_effect = {
+	add_relation_rule_override = {
+		can_access_market = no
+		trigger = has_lon_arms_embargo
+		usage_desc = lon_arms_resolution_tt
+	}
+	
+}
+
+ETH_deescalate_the_war_effect = {
+	custom_effect_tooltip = ITA_war_deescalation_inc_tt #Change or use scripted loc if ETH ever has effects to de-escalate
+	subtract_from_variable = { ETH.ETH_war_escalation_level = 1 }
+}
+

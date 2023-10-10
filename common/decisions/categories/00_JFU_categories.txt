@@ -1,0 +1,15 @@
+political_actions1 = {
+	icon = generic_political_actions
+	allowed = {	always = yes}
+}
+
+JFU_decisions = {
+	icon = generic_research
+	visible = {
+	}
+}
+JFU_templates = {
+	icon = generic_research
+	visible = {
+	}	
+}
