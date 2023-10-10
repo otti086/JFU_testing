@@ -63,8 +63,18 @@ defined_text = {
 	text = {
 		trigger = {
 			original_tag = GRE
+			NOT = {
+				has_completed_focus = GRE_realign_ourselves_with_the_central_powers
+			}
 		}
 		localization_key = GRE_PROTECTORS_MEDITERRANEAN_FOCUS_NAME_STANDARD
+	}
+	text = {
+		trigger = {
+			original_tag = GRE
+			has_completed_focus = GRE_realign_ourselves_with_the_central_powers
+		}
+		localization_key = GRE_PROTECTORS_MEDITERRANEAN_FOCUS_NAME_MONARCHIST
 	}
 }
 
@@ -73,8 +83,18 @@ defined_text = {
 	text = {
 		trigger = {
 			original_tag = GRE
+			NOT = {
+				has_completed_focus = GRE_realign_ourselves_with_the_central_powers
+			}
 		}
 		localization_key = GRE_PROTECTORS_MEDITERRANEAN_FOCUS_DESCRIPTION_STANDARD
+	}
+	text = {
+		trigger = {
+			original_tag = GRE
+			has_completed_focus = GRE_realign_ourselves_with_the_central_powers
+		}
+		localization_key = GRE_PROTECTORS_MEDITERRANEAN_FOCUS_DESCRIPTION_MONARCHIST
 	}
 }
 
@@ -83,8 +103,18 @@ defined_text = {
 	text = {
 		trigger = {
 			original_tag = GRE
+			NOT = {
+				has_completed_focus = GRE_realign_ourselves_with_the_central_powers
+			}
 		}
 		localization_key = GRE_PROTECTORS_MEDITERRANEAN_SPIRIT_NAME_STANDARD
+	}
+	text = {
+		trigger = {
+			original_tag = GRE
+			has_completed_focus = GRE_realign_ourselves_with_the_central_powers
+		}
+		localization_key = GRE_PROTECTORS_MEDITERRANEAN_SPIRIT_NAME_MONARCHIST
 	}
 }
 
@@ -208,6 +238,343 @@ defined_text = {
 	}
 }
 
+defined_text = {
+	name = GetAchievingEnosisDesc #GREECE
+	text = {
+		trigger = {
+			original_tag = GRE
+			NOT = {
+				country_exists = CYP
+			}
+		}
+		localization_key = GRE_ACHIEVING_ENOSIS_FOCUS_DESCRIPTION_STANDARD
+	}
+	text = {
+		trigger = {
+			original_tag = GRE
+			country_exists = CYP
+		}
+		localization_key = GRE_ACHIEVING_ENOSIS_FOCUS_DESCRIPTION_ALTERNATE
+	}
+}
+
+defined_text = { 
+	name = GetDemocraticTransitionFocusName #TURKEY
+	text = {
+		trigger = {
+			original_tag = TUR
+			NOT = {
+				OR = { 
+					has_country_leader = {
+						character = TUR_adnan_menderes
+						ruling_only = yes
+					}
+					has_country_leader = {
+						character = TUR_refet_pasha
+						ruling_only = yes
+					}
+					has_country_leader = {
+						character = TUR_abdulmejid_ii
+						ruling_only = yes
+					}
+				}
+			}
+		}
+		localization_key = TUR_DEMOCRATIC_TRANSITION_FOCUS_NAME_STANDARD
+	}
+	text = {
+		trigger = {
+			original_tag = TUR
+			OR = { 
+				has_country_leader = {
+					character = TUR_adnan_menderes
+					ruling_only = yes
+				}
+				has_country_leader = {
+					character = TUR_refet_pasha
+					ruling_only = yes
+				}
+				has_country_leader = {
+					character = TUR_abdulmejid_ii
+					ruling_only = yes
+				}
+			}
+		}
+		localization_key = TUR_DEMOCRATIC_TRANSITION_FOCUS_NAME_ISLAMIST
+	}
+}
+
+defined_text = { 
+	name = GetDemocraticTransitionFocusDesc #TURKEY
+	text = {
+		trigger = {
+			original_tag = TUR
+			NOT = {
+				OR = { 
+					has_country_leader = {
+						character = TUR_adnan_menderes
+						ruling_only = yes
+					}
+					has_country_leader = {
+						character = TUR_refet_pasha
+						ruling_only = yes
+					}
+					has_country_leader = {
+						character = TUR_abdulmejid_ii
+						ruling_only = yes
+					}
+				}
+			}
+		}
+		localization_key = TUR_DEMOCRATIC_TRANSITION_FOCUS_DESCRIPTION_STANDARD
+	}
+	text = {
+		trigger = {
+			original_tag = TUR
+			OR = { 
+				has_country_leader = {
+					character = TUR_adnan_menderes
+					ruling_only = yes
+				}
+				has_country_leader = {
+					character = TUR_refet_pasha
+					ruling_only = yes
+				}
+				has_country_leader = {
+					character = TUR_abdulmejid_ii
+					ruling_only = yes
+				}
+			}
+		}
+		localization_key = TUR_DEMOCRATIC_TRANSITION_FOCUS_DESCRIPTION_ISLAMIST
+	}
+}
+
+defined_text = { 
+	name = GetDemocraticCapstoneFocusName #TURKEY
+	text = {
+		trigger = {
+			original_tag = TUR
+			NOT = { 
+				OR = { 
+					has_country_leader = {
+						character = TUR_adnan_menderes
+						ruling_only = yes
+					}
+					has_country_leader = {
+						character = TUR_refet_pasha
+						ruling_only = yes
+					}
+					has_country_leader = {
+						character = TUR_abdulmejid_ii
+						ruling_only = yes
+					}
+					has_country_leader = {
+						character = TUR_durrushehvar_i
+						ruling_only = yes
+					}
+				}
+			}
+		}
+		localization_key = TUR_DEMOCRATIC_CAPSTONE_FOCUS_NAME_STANDARD
+	}
+	text = {
+		trigger = {
+			original_tag = TUR
+			OR = {
+				has_country_leader = {
+					character = TUR_adnan_menderes
+					ruling_only = yes
+				}
+				has_country_leader = {
+					character = TUR_refet_pasha
+					ruling_only = yes
+				}
+				has_country_leader = {
+					character = TUR_abdulmejid_ii
+					ruling_only = yes
+				}
+				has_country_leader = {
+					character = TUR_durrushehvar_i
+					ruling_only = yes
+				}
+			}
+		}
+		localization_key = TUR_DEMOCRATIC_CAPSTONE_FOCUS_NAME_ISLAMIST
+	}
+}
+
+defined_text = { 
+	name = GetDemocraticCapstoneFocusDesc #TURKEY
+	text = {
+		trigger = {
+			original_tag = TUR
+			NOT = { 
+				OR = { 
+					has_country_leader = {
+						character = TUR_adnan_menderes
+						ruling_only = yes
+					}
+					has_country_leader = {
+						character = TUR_refet_pasha
+						ruling_only = yes
+					}
+					has_country_leader = {
+						character = TUR_abdulmejid_ii
+						ruling_only = yes
+					}
+					has_country_leader = {
+						character = TUR_durrushehvar_i
+						ruling_only = yes
+					}
+				}
+			}
+		}
+		localization_key = TUR_DEMOCRATIC_CAPSTONE_FOCUS_DESCRIPTION_STANDARD
+	}
+	text = {
+		trigger = {
+			original_tag = TUR
+			OR = {
+				has_country_leader = {
+					character = TUR_adnan_menderes
+					ruling_only = yes
+				}
+				has_country_leader = {
+					character = TUR_refet_pasha
+					ruling_only = yes
+				}
+				has_country_leader = {
+					character = TUR_abdulmejid_ii
+					ruling_only = yes
+				}
+				has_country_leader = {
+					character = TUR_durrushehvar_i
+					ruling_only = yes
+				}
+			}
+		}
+		localization_key = TUR_DEMOCRATIC_CAPSTONE_FOCUS_DESCRIPTION_ISLAMIST
+	}
+}
+defined_text = { 
+	name = GetCaliphTraitName #TURKEY
+	text = {
+		trigger = {
+			original_tag = TUR
+			has_country_leader = {
+				character = TUR_durrushehvar_i
+				ruling_only = yes
+			}
+		}
+		localization_key = TUR_CALIPH_NAME_FEMALE
+	}
+	text = {
+		trigger = {
+			original_tag = TUR
+			NOT =  {
+				has_country_leader = { 
+					character = TUR_durrushehvar_i
+					ruling_only = yes
+				}
+			}
+		}
+		localization_key = TUR_CALIPH_NAME_MALE
+	}
+}
+defined_text = { 
+	name = GetTurkishVariantTaxName #TURKEY
+	text = {
+		trigger = {
+			original_tag = TUR
+			NOT = { 
+				OR = { 
+					has_country_leader = {
+						character = TUR_mustafa_kemal_ataturk
+						ruling_only = yes
+					}
+					has_country_leader = {
+						character = TUR_mehmet_recep_peker
+						ruling_only = yes
+					}
+					has_country_leader = {
+						character = TUR_sevket_sureyya_aydemir
+						ruling_only = yes
+					}
+					has_country_flag = TUR_taxed_religious_institutions
+				}
+			}
+		}
+		localization_key = TUR_TURKISH_VARIANT_TAX_FOCUS_NAME_STANDARD
+	}
+	text = {
+		trigger = {
+			original_tag = TUR
+			OR = { 
+				has_country_leader = {
+					character = TUR_mustafa_kemal_ataturk
+					ruling_only = yes
+				}
+				has_country_leader = {
+					character = TUR_mehmet_recep_peker
+					ruling_only = yes
+				}
+				has_country_leader = {
+					character = TUR_sevket_sureyya_aydemir
+					ruling_only = yes
+				}
+				has_country_flag = TUR_taxed_religious_institutions
+			}
+		}
+		localization_key = TUR_TURKISH_VARIANT_TAX_FOCUS_NAME_SECULAR
+	}
+}
+
+defined_text = { 
+	name = GetTurkishVariantTaxDesc #TURKEY
+	text = {
+		trigger = {
+			original_tag = TUR
+			NOT = { 
+				OR = { 
+					has_country_leader = {
+						character = TUR_mustafa_kemal_ataturk
+						ruling_only = yes
+					}
+					has_country_leader = {
+						character = TUR_mehmet_recep_peker
+						ruling_only = yes
+					}
+					has_country_leader = {
+						character = TUR_sevket_sureyya_aydemir
+						ruling_only = yes
+					}
+				}
+			}
+		}
+		localization_key = TUR_TURKISH_VARIANT_TAX_FOCUS_DESCRIPTION_STANDARD
+	}
+	text = {
+		trigger = {
+			original_tag = TUR
+			OR = { 
+				has_country_leader = {
+					character = TUR_mustafa_kemal_ataturk
+					ruling_only = yes
+				}
+				has_country_leader = {
+					character = TUR_mehmet_recep_peker
+					ruling_only = yes
+				}
+				has_country_leader = {
+					character = TUR_sevket_sureyya_aydemir
+					ruling_only = yes
+				}
+			}
+		}
+		localization_key = TUR_TURKISH_VARIANT_TAX_FOCUS_DESCRIPTION_SECULAR
+	}
+}
 
 defined_text = {
 	name = GetMonarchistLoyaltyEffects
@@ -788,6 +1155,13 @@ defined_text = {
 defined_text = {
 	name = GetImroDecisionCategoryDesc
 	text = {
+		trigger = {
+			original_tag = BUL
+			has_completed_focus = BUL_support_macedonian_organizations
+		}
+		localization_key = BUL_macedonian_revolutionary_organizations_cooperation_desc
+	}
+	text = {
 		localization_key = BUL_macedonian_revolutionary_organizations_hostile_desc
 	}
 }
@@ -1050,6 +1424,12 @@ defined_text = {
 	name = GetGermanFactionNameDef
 	text = {
 		trigger = {
+			has_completed_focus = BUL_the_fate_of_the_balkans
+		}
+		localization_key = BUL_bulgarian_administration_of_the_balkans_independent_name_def
+	}
+	text = {
+		trigger = {
 			GER = {
 				has_government = neutrality
 				is_faction_leader = yes
@@ -1064,6 +1444,12 @@ defined_text = {
 
 defined_text = { 
 	name = GetGermanOrIndependent
+	text = {
+		trigger = {
+			has_completed_focus = BUL_the_fate_of_the_balkans
+		}
+		localization_key = BUL_bulgarian_administration_of_the_balkans_everyone_name
+	}
 	text = {
 		localization_key = BUL_bulgarian_administration_of_the_balkans_germans_name
 	}
@@ -1104,6 +1490,12 @@ defined_text = {
 			BUL = { has_non_aggression_pact_with = ROM }
 		}
 		localization_key = BUL_nap_with_romania
+	}
+	text = {
+		trigger = {
+			BUL = { has_non_aggression_pact_with = TUR }
+		}
+		localization_key = BUL_nap_with_turkey
 	}
 }
 
@@ -1379,6 +1771,18 @@ defined_text = {
 
 defined_text = {
 	name = GetBalkanFactionName
+	text = {
+		trigger = {
+			has_completed_focus = BUL_balkan_federation_of_socialist_republics
+		}
+		localization_key = BUL_bury_the_grudges_of_the_past_communist
+	}
+	text = {
+		trigger = {
+			has_completed_focus = BUL_a_balkan_confederation
+		}
+		localization_key = BUL_bury_the_grudges_of_the_past_democratic
+	}
 	text = {
 		localization_key = BUL_bury_the_grudges_of_the_past_no_faction
 	}
@@ -1963,6 +2367,13 @@ defined_text = {
 }
 
 defined_text = {
+	name = GetAntiCapitalismFocusLoc
+	text = {
+		localization_key = BUL_the_anti_capitalist_fight_desc
+	}
+}
+
+defined_text = {
 	name = GetUnitedWeShallPrevailFocusLoc
 	text = {
 		localization_key = BUL_united_we_shall_prevail_desc
@@ -1973,6 +2384,13 @@ defined_text = {
 	name = GetDefyingMoscowFocusLoc
 	text = {
 		localization_key = BUL_defy_moscow_desc
+	}
+}
+
+defined_text = {
+	name = GetTheFateOfTheBalkansFocusLoc
+	text = {
+		localization_key = BUL_the_fate_of_the_balkans_desc
 	}
 }
 
@@ -2018,6 +2436,12 @@ defined_text = {
 	}
 }
 
+defined_text = {
+	name = GetABalkanConfederationFocusLoc
+	text = {
+		localization_key = BUL_a_balkan_confederation_desc
+	}
+}
 
 defined_text = {
 	name = GetBulgarianLeader
@@ -2259,6 +2683,12 @@ defined_text = {
 
 defined_text = {
 	name = GetFederationOrConfederation
+	text = {
+		trigger = {
+			has_completed_focus = BUL_democratic_principles
+		}
+		localization_key = BUL_confederation
+	}
 	text = {
 		localization_key = BUL_federation
 	}

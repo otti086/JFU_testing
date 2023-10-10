@@ -59,6 +59,25 @@ defined_text = { # Country
 		localization_key = GER_HERMANN_GORING_WERKE_NAME
 	}
 }
+
+defined_text = { # for PRC tree
+	name = GetManchuriaPuppet
+	text = {
+		trigger = {
+			MAN = {
+				OR = {
+					is_subject_of = JAP
+					has_cosmetic_tag = MAN_kwantung_army 
+				}
+			}
+		}
+		localization_key = PRC_provoke_japan_manchuria
+	}
+	text = {
+		localization_key = PRC_provoke_japan_korea
+	}
+}
+
 defined_text = { # for shared tree
 	name = GetVietnamOwner
 	text = {
@@ -328,7 +347,18 @@ defined_text = {
 defined_text = {
 	name = GetLimitedRearmamentDesc
 	text = {
+		trigger = {
+			original_tag = ENG
+			NOT = { has_completed_focus = ENG_a_change_in_course }
+		}
 		localization_key = ENG_LIMITED_REARMAMENT_HISTORICAL
+	}
+	text = {
+		trigger = {
+			original_tag = ENG
+			has_completed_focus = ENG_a_change_in_course
+		}
+		localization_key = ENG_LIMITED_REARMAMENT_AHISTORICAL
 	}
 }
 
@@ -447,8 +477,16 @@ defined_text = {
 	text = {
 		trigger = {
 			original_tag = ENG
+			NOT = { has_completed_focus = ENG_a_change_in_course }
 		}
 		localization_key = ENG_GENERAL_REARMAMENT_DESC_HISTORICAL
+	}
+	text = {
+		trigger = {
+			original_tag = ENG
+			has_completed_focus = ENG_a_change_in_course
+		}
+		localization_key = ENG_GENERAL_REARMAMENT_DESC_AHISTORICAL
 	}
 }
 
@@ -594,6 +632,260 @@ defined_text = { # Country
 }
 
 defined_text = { # Country
+	name = GetCandidatesFascism2
+	text = {
+		trigger = {
+			has_completed_focus = USA_send_lindbergh_to_germany
+		}
+		localization_key = USA_lindbergh_candidate
+	}
+	text = {
+		localization_key = ""
+	}
+}
+
+defined_text = { # Country
+	name = GetStrengthRatioBritain
+	text = {
+		trigger = {
+			if = {
+				limit = { ENG = { has_naval_treaty_trigger = yes } }
+				naval_strength_comparison = {
+					other = ENG
+					ratio < 1
+					sub_unit_def_weights = {
+						carrier = 0.5
+						battleship = 1
+						battle_cruiser = 0.8
+						heavy_cruiser = 0.5
+					}
+				}
+				naval_strength_comparison = {
+					other = ENG
+					ratio > 0.9
+					sub_unit_def_weights = {
+						carrier = 0.5
+						battleship = 1
+						battle_cruiser = 0.8
+						heavy_cruiser = 0.5
+					}
+				}
+			}
+			else_if = {
+				limit = { USA = { has_naval_treaty_trigger = yes } }
+				naval_strength_comparison = {
+					other = USA
+					ratio < 1
+					sub_unit_def_weights = {
+						carrier = 0.5
+						battleship = 1
+						battle_cruiser = 0.8
+						heavy_cruiser = 0.5
+					}
+				}
+				naval_strength_comparison = {
+					other = USA
+					ratio > 0.9
+					sub_unit_def_weights = {
+						carrier = 0.5
+						battleship = 1
+						battle_cruiser = 0.8
+						heavy_cruiser = 0.5
+					}
+				}
+			}
+		}
+		localization_key = Naval_treaty_90
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { ENG = { has_naval_treaty_trigger = yes } }
+				naval_strength_comparison = {
+					other = ENG
+					ratio < 0.9
+					sub_unit_def_weights = {
+						carrier = 0.5
+						battleship = 1
+						battle_cruiser = 0.8
+						heavy_cruiser = 0.5
+					}
+				}
+				naval_strength_comparison = {
+					other = ENG
+					ratio > 0.75
+					sub_unit_def_weights = {
+						carrier = 0.5
+						battleship = 1
+						battle_cruiser = 0.8
+						heavy_cruiser = 0.5
+					}
+				}
+			}
+			else_if = {
+				limit = { USA = { has_naval_treaty_trigger = yes } }
+				naval_strength_comparison = {
+					other = USA
+					ratio < 0.9
+					sub_unit_def_weights = {
+						carrier = 0.5
+						battleship = 1
+						battle_cruiser = 0.8
+						heavy_cruiser = 0.5
+					}
+				}
+				naval_strength_comparison = {
+					other = USA
+					ratio > 0.75
+					sub_unit_def_weights = {
+						carrier = 0.5
+						battleship = 1
+						battle_cruiser = 0.8
+						heavy_cruiser = 0.5
+					}
+				}
+			}
+		}
+		localization_key = Naval_treaty_75
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { ENG = { has_naval_treaty_trigger = yes } }
+				naval_strength_comparison = {
+					other = ENG
+					ratio < 0.75
+					sub_unit_def_weights = {
+						carrier = 0.5
+						battleship = 1
+						battle_cruiser = 0.8
+						heavy_cruiser = 0.5
+					}
+				}
+				naval_strength_comparison = {
+					other = ENG
+					ratio > 0.5
+					sub_unit_def_weights = {
+						carrier = 0.5
+						battleship = 1
+						battle_cruiser = 0.8
+						heavy_cruiser = 0.5
+					}
+				}
+			}
+			else_if = {
+				limit = { USA = { has_naval_treaty_trigger = yes } }
+				naval_strength_comparison = {
+					other = USA
+					ratio < 0.75
+					sub_unit_def_weights = {
+						carrier = 0.5
+						battleship = 1
+						battle_cruiser = 0.8
+						heavy_cruiser = 0.5
+					}
+				}
+				naval_strength_comparison = {
+					other = USA
+					ratio > 0.5
+					sub_unit_def_weights = {
+						carrier = 0.5
+						battleship = 1
+						battle_cruiser = 0.8
+						heavy_cruiser = 0.5
+					}
+				}
+			}
+		}
+		localization_key = Naval_treaty_50
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { ENG = { has_naval_treaty_trigger = yes } }
+				naval_strength_comparison = {
+					other = ENG
+					ratio < 0.5
+					sub_unit_def_weights = {
+						carrier = 0.5
+						battleship = 1
+						battle_cruiser = 0.8
+						heavy_cruiser = 0.5
+					}
+				}
+			}
+			else_if = {
+				limit = { USA = { has_naval_treaty_trigger = yes } }
+				naval_strength_comparison = {
+					other = USA
+					ratio < 0.5
+					sub_unit_def_weights = {
+						carrier = 0.5
+						battleship = 1
+						battle_cruiser = 0.8
+						heavy_cruiser = 0.5
+					}
+				}
+			}
+		}
+		localization_key = Naval_treaty_lower_than_50
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = { ENG = { has_naval_treaty_trigger = yes } }
+				naval_strength_comparison = {
+					other = ENG
+					ratio > 1
+					sub_unit_def_weights = {
+						carrier = 0.5
+						battleship = 1
+						battle_cruiser = 0.8
+						heavy_cruiser = 0.5
+					}
+				}
+			}
+			else_if = {
+				limit = { USA = { has_naval_treaty_trigger = yes } }
+				naval_strength_comparison = {
+					other = USA
+					ratio > 1
+					sub_unit_def_weights = {
+						carrier = 0.5
+						battleship = 1
+						battle_cruiser = 0.8
+						heavy_cruiser = 0.5
+					}
+				}
+			}
+		}
+		localization_key = Naval_treaty_over_100
+	}
+}
+defined_text = { # Country
+	name = GetRelevantNavalTreatyNation
+	text = {
+		trigger = {
+			ENG = {
+				has_naval_treaty_trigger = yes
+			}
+		}
+		localization_key = ENG_Naval_treaty_nation
+	}
+	text = {
+		trigger = {
+			ENG = {
+				not = { has_naval_treaty_trigger = yes }
+			}
+			USA = {
+				has_naval_treaty_trigger = yes
+			}
+		}
+		localization_key = USA_Naval_treaty_nation
+	}
+}
+
+defined_text = { # Country
 	name = GetStresaMembers
 	text = {
 		trigger = {
@@ -625,9 +917,55 @@ defined_text = { # Country
 	}
 }
 
+defined_text = { # Country
+	name = GetFrenchCoronationCity
+	text = {
+		trigger = {
+			has_completed_focus = FRA_the_legitimate_heir
+		}
+		localization_key = LaR_France_Reims
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_completed_focus = FRA_proclaim_the_third_empire
+				has_completed_focus = FRA_orleanist_restoration
+			}
+		}
+		localization_key = LaR_France_Paris
+	}
+}
+
+defined_text = { # Country
+	name = GetFrenchRoyalTitle
+	text = {
+		trigger = {
+			has_completed_focus = FRA_the_legitimate_heir
+		}
+		localization_key = LaR_France_King
+	}
+	text = {
+		trigger = {	
+			has_completed_focus = FRA_orleanist_restoration
+		}
+		localization_key = LaR_France_King_of_The_French
+	}
+	text = {
+		trigger = {	
+			has_completed_focus = FRA_proclaim_the_third_empire
+		}
+		localization_key = LaR_France_Emperor
+	}
+}
 
 defined_text = {
 	name = GetIberianSummitReceiverName
+	text = {	#Portugal is sending the proposal to a Spanish Tag
+		trigger = { 
+			tag = POR
+		}
+		localization_key = POR_Iberian_Summit_Receiver_Spain
+	}
 	text = {	#A Spanish Tag is sending the proposal to Portugal
 		localization_key = POR_Iberian_Summit_Receiver_Portugal
 	}
@@ -748,8 +1086,18 @@ defined_text = {
 	text = {
 		trigger = {
 			original_tag = SOV
+			NOT = {
+				has_completed_focus = SOV_dismantle_the_zemsky_sobor
+			}
 		}
 		localization_key = SOV_CHURCH_CANDIDATES_NAME_TSARIST
+	}
+	text = {
+		trigger = {
+			original_tag = SOV
+			has_completed_focus = SOV_dismantle_the_zemsky_sobor
+		}
+		localization_key = SOV_CHURCH_CANDIDATES_NAME_FASCIST
 	}
 }
 
@@ -758,8 +1106,18 @@ defined_text = {
 	text = {
 		trigger = {
 			original_tag = SOV
+			NOT = {
+				has_completed_focus = SOV_dismantle_the_zemsky_sobor
+			}
 		}
 		localization_key = SOV_CHURCH_CANDIDATES_DESC_TSARIST
+	}
+	text = {
+		trigger = {
+			original_tag = SOV
+			has_completed_focus = SOV_dismantle_the_zemsky_sobor
+		}
+		localization_key = SOV_CHURCH_CANDIDATES_DESC_FASCIST
 	}
 }
 
@@ -769,6 +1127,7 @@ defined_text = {
 		trigger = {
 			original_tag = SOV
 			OR = {
+				NOT = { has_completed_focus = SOV_request_imperial_protection }
 				NOT = { is_subject_of = JAP }
 			}
 		}
@@ -777,6 +1136,7 @@ defined_text = {
 	text = {
 		trigger = {
 			original_tag = SOV
+			has_completed_focus = SOV_request_imperial_protection
 			is_subject_of = JAP
 		}
 		localization_key = SOV_THE_LONELY_ISLAND_NAME_INDEPENDENCE
@@ -789,6 +1149,7 @@ defined_text = {
 		trigger = {
 			original_tag = SOV
 			OR = {
+				NOT = { has_completed_focus = SOV_request_imperial_protection }
 				NOT = { is_subject_of = JAP }
 			}
 		}
@@ -797,6 +1158,7 @@ defined_text = {
 	text = {
 		trigger = {
 			original_tag = SOV
+			has_completed_focus = SOV_request_imperial_protection
 			is_subject_of = JAP
 		}
 		localization_key = SOV_THE_LONELY_ISLAND_DESC_INDEPENDENCE
@@ -1277,4 +1639,30 @@ defined_text = {
 		}
 		localization_key = SOV_STRIKE_AT_THE_SOURCE_DESC_EXILES
 	}
+}
+
+# Governments in Exile
+defined_text = {
+	name = GetGovernmentInExileCategoryDesc
+	text = {
+		trigger = {
+			is_exile_host = yes
+		}
+		localization_key = governments_in_exile_host_desc
+	}
+	text = {
+		trigger = {
+			
+			ROOT = { 
+				is_government_in_exile = yes
+				original_tag = ETH 
+			}
+		}
+		localization_key = governments_in_exile_ETH_desc
+		#TODO_TA set correct texticon
+	}
+	text = {
+		localization_key = governments_in_exile_exiled_desc
+	}
+
 }

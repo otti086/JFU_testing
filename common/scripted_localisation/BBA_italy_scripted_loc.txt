@@ -238,19 +238,84 @@ defined_text = {
 	}
 }
 
+defined_text = {
+	name = GetRailwayGunsTooltip
+	text = {
+		trigger = {
+			has_completed_focus = ITA_mobilize_the_railway_guns #Focus grants bonuses
+		}
+		localization_key = ITA_mobilize_the_railway_guns_dynamic_modifier_tt
+	}
+	text = {
+		localization_key = generic_null
+	}
+}
+
+defined_text = {
+	name = GetSuperHeavyAircraftTooltip
+	text = {
+		trigger = {
+			has_completed_focus = ITA_the_king_of_the_skies #Focus grants bonuses
+		}
+		localization_key = ITA_the_king_of_the_skies_dynamic_modifier_tt
+	}
+	text = {
+		localization_key = generic_null
+	}
+}
+
+defined_text = {
+	name = GetSuperHeavyTanksTooltip
+	text = {
+		trigger = {
+			OR = {
+				has_completed_focus = ITA_modern_musculus #Focus grants bonuses
+				has_completed_focus = ITA_a_time_for_war #Focus grants bonuses
+			}
+		}
+		localization_key = ITA_modern_musculus_dynamic_modifier_tt
+	}
+	text = {
+		localization_key = generic_null
+	}
+}
+
+defined_text = {
+	name = GetSuperHeavyShipsTooltip
+	text = {
+		trigger = {
+			has_completed_focus = ITA_caligulas_pride #Focus grants bonuses
+		}
+		localization_key = ITA_caligulas_pride_dynamic_modifier_tt
+	}
+	text = {
+		localization_key = generic_null
+	}
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
+#TODO_Manu: This does not work for a character name because of missing scope (regardless of checking inside ROOT and OWNER scopes)
+defined_text = {
+	name = GetGrandCouncilName
+	text = {
+		trigger = {
+			ITA = {
+				has_country_leader = {
+					character = ITA_grand_council
+					ruling_only = yes
+				}
+				OR = {
+					has_government = democratic
+					has_government = neutrality
+				}
+			}
+		}
+		localization_key = ITA_grand_council_alt
+	}
+	text = {
+		localization_key = ITA_grand_council
+	}
+}
 
 defined_text = {
 	name = GetRsiOverlord
@@ -292,10 +357,24 @@ defined_text = {
 }
 
 defined_text = {
+	name = GetAlbanianStates
+	text = {
+		trigger = {
+			has_completed_focus = ITA_albanian_fascist_militia
+		}
+		localization_key = BBA_italy_colonial_management_albanian_states
+	}
+	text = {
+		localization_key = generic_null
+	}
+}
+
+defined_text = {
 	name = GetAndOrNothing
 	text = {
 		trigger = {
 			has_completed_focus = ITA_ministry_of_italian_africa
+			has_completed_focus = ITA_albanian_fascist_militia
 		}
 		localization_key = BBA_italy_colonial_management_and
 	}
@@ -326,6 +405,155 @@ defined_text = {
 	}
 }
 
+
+defined_text = { #Text for the UK
+	name = GetItalyAsksEngland
+	text = {
+		trigger = {
+			has_country_flag = ITA_italy_asks_ethiopian_host_for_help
+		}
+		localization_key = BBA_italy_interaction_events.27.desc_hosting_ethiopia
+	}
+	text = {
+		localization_key = BBA_italy_interaction_events.27.desc_standard
+	}
+}
+
+#Italy negotiates for Somaliland
+defined_text = { 
+	name = NegotiatingItalianClaimsTitle
+	text = { #If Ethiopia refused to sign the peace deal
+		trigger = { 
+			FROM = {
+				has_country_flag = ETH_refused_forced_peace_flag
+			}	
+		}
+		localization_key = BBA_italy_interaction_events.31.t_refused_peace
+	}
+	text = { #If there is no war between Italy or Ethiopia, or England doesn't host Ethiopia's exiled government
+		localization_key = BBA_italy_interaction_events.31.t_negotiate_claims
+	}
+}
+#Italy negotiates for Somaliland
+defined_text = { 
+	name = GetRatifyStresaFrontEventDesc
+	text = { #If Italy signed a peace treaty with Ethiopia
+		trigger = { 
+			has_country_flag = ITA_italy_suing_for_peace_flag 	
+		}
+		localization_key = BBA_italy_interaction_events.31.desc_peace_signed
+	}
+	text = { #If Ethiopia refused to sign the peace deal
+		trigger = { 
+			FROM = {
+				has_country_flag = ETH_refused_forced_peace_flag
+			}	
+		}
+		localization_key = BBA_italy_interaction_events.31.desc_no_peace_deal
+	}
+	text = { #If there is no war between Italy or Ethiopia, or England doesn't host Ethiopia's exiled government
+		localization_key = BBA_italy_interaction_events.31.desc_no_war
+	}
+}
+
+defined_text = { #Italy's Negotiate Claims event for ENG
+	name = GetItalyWantsSocotra
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					has_country_flag = ITA_italy_has_started_negotiations_flag
+				}
+			}
+		}
+		localization_key = BBA_italy_interaction_events.33.desc_first_negotiation
+	}
+	text = {
+		localization_key = BBA_italy_interaction_events.33.desc_continued_negotiation
+	}
+}
+
+defined_text = { #Italy's Negotiate Claims event for ENG
+	name = GetItalyWantsMalta
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					has_country_flag = ITA_italy_has_started_negotiations_flag
+				}
+			}
+		}
+		localization_key = BBA_italy_interaction_events.35.desc_first_negotiation
+	}
+	text = {
+		localization_key = BBA_italy_interaction_events.35.desc_continued_negotiation
+	}
+}
+
+defined_text = { #Italy's Negotiate Claims event for FRA
+	name = GetItalyWantsTunisia
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					has_country_flag = ITA_italy_has_started_negotiations_flag
+				}
+			}
+		}
+		localization_key = BBA_italy_interaction_events.34.desc_first_negotiation
+	}
+	text = {
+		localization_key = BBA_italy_interaction_events.34.desc_continued_negotiation
+	}
+}
+
+defined_text = { #Italy's Negotiate Claims event for FRA
+	name = GetItalyClaimsBalkan
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					has_country_flag = ITA_italy_has_started_negotiations_flag
+				}
+			}
+		}
+		localization_key = BBA_italy_interaction_events.36.desc_first_negotiation
+	}
+	text = {
+		localization_key = BBA_italy_interaction_events.36.desc_continued_negotiation
+	}
+}
+
+defined_text = { #Text for Italy
+	name = GetItaloEthiopianPeaceDemands
+	text = {
+		trigger = {
+			FROM = { #England has the country flag
+				has_country_flag = ITA_italy_asks_ethiopian_host_for_help
+			}
+		}
+		localization_key = BBA_italo_ethiopian_war_events.500.desc_guarantees
+	}
+	text = {
+		localization_key = BBA_italo_ethiopian_war_events.500.desc_territories
+	}
+}
+
+defined_text = { #Text for England
+	name = GetItalyRefusesPeaceTalks
+	text = {
+		trigger = {
+			has_country_flag = ITA_italy_asks_ethiopian_host_for_help
+		}
+		localization_key = BBA_italo_ethiopian_war_events.502.desc_guarantees
+	}
+	text = {
+		localization_key = BBA_italo_ethiopian_war_events.502.desc_territories
+	}
+}
+
+
+
 #####################
 #### MISSIOLINIS ####
 #####################
@@ -342,6 +570,8 @@ defined_text = { #Color for Strengthened Industry missiolini tooltip.
 		localization_key = SOV_propaganda_campaigns_taken_requirement_color_red
 	}
 }
+
+
 
 
 ###PURGE THE PARY#####
@@ -436,14 +666,18 @@ defined_text = { #The Trial of Mussolini Title
 	name = GetTrialOfMussoliniTitles
 	text = { #INNOCENT
 		trigger = { 
-			ITA = { has_country_flag = ITA_mussolini_is_innocent  }
+			FROM = {
+				has_country_flag = ITA_mussolini_is_innocent 
+			}
 		}
 		localization_key = bba_news.102.t_innocent
 	}
 	text = { #GUILTY
-		#trigger = { 
-		#	ITA = { has_country_flag = ITA_mussolini_is_guilty }
-		#}
+		trigger = { 
+			FROM = {
+				has_country_flag = ITA_mussolini_is_guilty
+			}
+		}
 		localization_key = bba_news.102.t_guilty
 	}
 }
@@ -452,14 +686,18 @@ defined_text = { #The Trial of Mussolini Description
 	name = GetTrialOfMussoliniDesc
 	text = { #INNOCENT
 		trigger = { 
-			ITA = { has_country_flag = ITA_mussolini_is_innocent  }
+			FROM = {
+				has_country_flag = ITA_mussolini_is_innocent 	
+			}
 		}
 		localization_key = bba_news.102.desc_innocent
 	}
 	text = { #GUILTY
-		#trigger = { 
-		#	ITA = { has_country_flag = ITA_mussolini_is_guilty }
-		#}
+		trigger = { 
+			FROM = {
+				has_country_flag = ITA_mussolini_is_guilty	
+			}
+		}
 		localization_key = bba_news.102.desc_guilty
 	}
 }
@@ -468,14 +706,18 @@ defined_text = { #The Assassination of Mussolini Title
 	name = GetAssassinationOfMussoliniTitles
 	text = { #Communists
 		trigger = { 
-			ITA = { has_country_flag = ITA_mussolini_blame_communists }
+			FROM = {
+				has_country_flag = ITA_mussolini_blame_communists	
+			}
 		}
 		localization_key = bba_news.103.t_communists
 	}
 	text = { #Cover Story
-		#trigger = { 
-		#	ITA = { has_country_flag = ITA_mussolini_cover_story }
-		#}
+		trigger = { 
+			FROM = {
+				has_country_flag = ITA_mussolini_cover_story	
+			}
+		}
 		localization_key = bba_news.103.t_coverstory
 	}
 }
@@ -484,14 +726,18 @@ defined_text = { #The Assassination of Mussolini Description
 	name = GetAssassinationOfMussoliniDesc
 	text = { #Communists
 		trigger = { 
-			ITA = { has_country_flag = ITA_mussolini_blame_communists }
+			FROM = {
+				has_country_flag = ITA_mussolini_blame_communists	
+			}
 		}
 		localization_key = bba_news.103.desc_communists
 	}
 	text = { #Cover Story
-		#trigger = { 
-		#	ITA = { has_country_flag = ITA_mussolini_cover_story }
-		#}
+		trigger = { 
+			FROM = {
+				has_country_flag = ITA_mussolini_cover_story	
+			}
+		}
 		localization_key = bba_news.103.desc_coverstory
 	}
 }
@@ -512,6 +758,32 @@ defined_text = { #Italy Guarentees Major Back Tooltip
 	}
 }
 
+defined_text = { #Titles Vittorio Emanuele III Dies
+	name = GetVittorioDiesEventTitles
+	text = { #Emperor Title
+		trigger = { 
+			has_completed_focus = ITA_proclaim_the_italian_empire
+		}
+		localization_key = bba_news.106.t_emperor
+	}
+	text = { #King Title
+		localization_key = bba_news.106.t_king
+	}
+}
+
+defined_text = { #Desc Vittorio Emanuele III Dies
+	name = GetVittorioDiesEventDesc
+	text = { #Emperor Desc
+		trigger = { 
+			has_completed_focus = ITA_proclaim_the_italian_empire
+		}
+		localization_key = bba_news.106.desc_emperor
+	}
+	text = { #King Desc
+		localization_key = bba_news.106.desc_king
+	}
+}
+
 defined_text = { #Decolonization event 
 	name = GetDecolonizationEventDesc
 	text = { #Someone Decolonized
@@ -529,12 +801,57 @@ defined_text = { #Proclamation of Anarchist Confederation
 	name = GetAnarchistConfederationEventDesc
 	text = { #Anarchist Spain exists
 		trigger = { 
-			country_exists = SPD 
+			country_exists = SPC 
 		}
 		localization_key = bba_news.111.desc_joint_proclamation
 	}
 	text = { #Anarchist Spain does NOT exist - DEFAULT
 		localization_key = bba_news.111.desc_single_proclamation
+	}
+}
+
+defined_text = { #Litoranea Balbo name based on political path
+	name = GetAppropriateLitoraneaBalboName
+	text = {
+		trigger = { 
+			has_completed_focus = ITA_defy_the_duce
+		}
+		localization_key = ITA_litoranea_balbo_alt
+	}
+	text = {
+		localization_key = ITA_litoranea_balbo_default
+	}
+}
+
+defined_text = { #Moschettieri del Duce name based on political path
+	name = GetAppropriateMoschetieridelDuceName
+	text = { # Anti-Fascist
+		trigger = { 
+			has_completed_focus = ITA_defy_the_duce
+		}
+		localization_key = ITA_moschettieri_del_duce_alt
+	}
+	text = { # King
+		trigger = { 
+			has_completed_focus = ITA_monarchia_d_italia
+		}
+		localization_key = ITA_moschettieri_del_duce_king
+	}
+	text = { # Default - Duce
+		localization_key = ITA_moschettieri_del_duce_default
+	}
+}
+
+defined_text = { #Albanian Fascist Militia name based on political path
+	name = GetAppropriateAlbanianFascistMilitiaName
+	text = { # King
+		trigger = { 
+			has_completed_focus = ITA_monarchia_d_italia
+		}
+		localization_key = ITA_albanian_fascist_militia_alt
+	}
+	text = { # Default - Duce
+		localization_key = ITA_albanian_fascist_militia_default
 	}
 }
 

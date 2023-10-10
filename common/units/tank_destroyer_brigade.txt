@@ -13,7 +13,7 @@ sub_units = {
 			anti_tank
 		}
 		
-		group = armor
+		group = armor_combat_support
 		
 		categories = {
 			category_front_line
@@ -34,8 +34,8 @@ sub_units = {
 		weight = 1
 		supply_consumption = 0.2
 
-		breakthrough = -0.9
-		hard_attack = 0.3
+		breakthrough = -0.42
+
 		suppression = 1.0
 
 		forest = {
@@ -79,7 +79,7 @@ sub_units = {
 			anti_tank
 		}
 		
-		group = armor
+		group = armor_combat_support
 		
 		categories = {
 			category_front_line
@@ -101,8 +101,8 @@ sub_units = {
 		weight = 1.25
 		supply_consumption = 0.22
 
-		breakthrough = -0.9
-		hard_attack = 0.3	
+		breakthrough = -0.25
+		
 		suppression = 1.25
 
 		forest = {
@@ -113,13 +113,11 @@ sub_units = {
 		    attack = -0.1
 		}
 		mountain = 	{
-			defence = -0.65
-		    attack = -0.55
+		    attack = -0.2
 		}
 		jungle = {
-			defence = -0.6
-		    attack = -0.5
-			movement = -0.5
+		    attack = -0.4
+			movement = -0.4
 		}
 		marsh = {
 		    attack = -0.1 
@@ -134,7 +132,7 @@ sub_units = {
 			movement = -0.2
 		}
 		amphibious = { 
-			attack = -0.8
+			attack = -0.7
 		}
 	}
 	
@@ -152,7 +150,7 @@ sub_units = {
 			anti_tank
 		}
 		
-		group = armor
+		group = armor_combat_support
 		
 		categories = {
 			category_front_line
@@ -173,8 +171,8 @@ sub_units = {
 		weight = 1.5
 		supply_consumption = 0.3
 
-		breakthrough = -0.9
-		hard_attack = 0.3
+		breakthrough = -0.25
+
 		suppression = 1.25
 		
 		forest = {
@@ -185,12 +183,10 @@ sub_units = {
 		    attack = -0.20
 		}
 		mountain = 	{
-			defence = -0.6
-		    attack = -0.7
+		    attack = -0.3
 		}
 		jungle = {
-			defence = -0.8
-		    attack = -0.65
+		    attack = -0.6
 			movement = -0.4
 		}
 		marsh = {
@@ -206,7 +202,7 @@ sub_units = {
 			movement = -0.4
 		}
 		amphibious = { 
-			attack = -0.9 
+			attack = -0.8 
 		}
 		fort = {
 			attack = 0.05
@@ -222,11 +218,12 @@ sub_units = {
 		active = yes
 		
 		type = {
+			support
 			armor
 			anti_tank
 		}
 
-		group = armor
+		group = support
 		
 		categories = {
 			category_front_line
@@ -247,8 +244,8 @@ sub_units = {
 		weight = 1.75
 		supply_consumption = 0.4
 
-		breakthrough = -0.9
-		hard_attack = 0.3
+		breakthrough = -0.25
+
 		suppression = 1.25
 
 		forest = {
@@ -259,13 +256,11 @@ sub_units = {
 		    attack = -0.3
 		}
 		mountain = 	{
-			defence = -0.7
-		    attack = -0.8
+		    attack = -0.4
 		}
 		jungle = {
-			defence = -0.85
-		    attack = -0.75
-			movement = -0.5
+		    attack = -0.7
+			movement = -0.4
 		}
 		marsh = {
 		    attack = -0.5 
@@ -300,7 +295,7 @@ sub_units = {
 			anti_tank
 		}
 		
-		group = armor
+		group = armor_combat_support
 		
 		categories = {
 			category_front_line
@@ -322,8 +317,8 @@ sub_units = {
 		weight = 1.5
 		supply_consumption = 0.25
 		
-		breakthrough = -0.9
-		hard_attack = 0.3
+		breakthrough = -0.25
+
 		suppression = 1.25
 		
 		forest = {

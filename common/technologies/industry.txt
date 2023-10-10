@@ -1,21 +1,5 @@
 technologies = {
 
-	building_limiter_tech = {
-		start_year = 1918
-		allow = {always = no	}
-		enable_building = {
-			building = air_base
-			level = 10 #max is 100
-		}	
-		enable_building = {
-			building = bunker
-			level = 5
-		}
-		enable_building = {
-			building = coastal_bunker
-			level = 5
-		}
-	}	
 	basic_machine_tools = {
 	
 		production_factory_max_efficiency_factor = 0.1
@@ -234,7 +218,7 @@ technologies = {
 	#Conversion branch - Enabled in DoD
 	improved_equipment_conversion = {
 	
-		equipment_conversion_speed = 0.20
+		equipment_conversion_speed = 0.40
 
 		allow_branch = {
 			has_dlc = "Death or Dishonor"
@@ -275,7 +259,7 @@ technologies = {
 	
 	advanced_equipment_conversion = {
 		
-		equipment_conversion_speed = 0.20
+		equipment_conversion_speed = 0.40
 
 		research_cost = 2
 		start_year = 1939
@@ -771,14 +755,7 @@ technologies = {
 			building = fuel_silo
 			level = 3
 		}
-		path = {
-			leads_to_tech = naldo 
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = johannes
-			research_cost_coeff = 1
-		}		
+				
 		path = {
 			leads_to_tech = synth_oil_experiments 
 			research_cost_coeff = 1
@@ -866,58 +843,6 @@ technologies = {
 				date < "1938.1.1"
 			}
 		}
-	}
-
-	johannes = {
-
-		
-		
-		research_cost = 0
-		start_year = 1936
-		folder = {
-			name = industry_folder
-			position = { x = -2 y = 0 }
-		}
-		
-		categories = {
-			
-		}
-
-		
-		XOR = {
-			naldo
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-		
-	}
-
-	naldo = {
-
-		industrial_capacity_factory = 0.001
-		
-		research_cost = 0
-		start_year = 1936
-		folder = {
-			name = industry_folder
-			position = { x = -4 y = 0 }
-		}
-		
-		categories = {
-			
-		}
-
-		
-		XOR = {
-			johannes
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-		
 	}
 
 	fuel_refining = {
@@ -1206,6 +1131,19 @@ technologies = {
 			industry
 			synth_resources
 			cat_synth_oil
+		}
+
+		on_research_complete = {
+			# FIN effect from focus Tire Factory at Nokia
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+					tag = FIN
+					has_completed_focus = FIN_tire_factory_at_nokia
+					controls_state = 927
+				}
+				FIN_nokia_tires_after_tech_effect = yes
+			}
 		}
 		
 		ai_will_do = {

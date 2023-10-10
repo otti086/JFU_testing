@@ -13,14 +13,14 @@ sub_units = {
 			artillery
 		}
 		
-		group = armor
+		group = armor_combat_support
 
 		categories = {
 			category_all_armor
 			category_army
 		}		
 
-		combat_width = 2
+		combat_width = 3
 
 		need = {
 			light_tank_artillery_chassis = 50
@@ -33,9 +33,9 @@ sub_units = {
 		weight = 1
 		supply_consumption = 0.42
 
-		breakthrough = -0.9
+		breakthrough = -0.42
+
 		suppression = 1.25
-		soft_attack = 0.3
 
 		forest = {
 		    attack = -0.2
@@ -78,13 +78,13 @@ sub_units = {
 			artillery
 		}
 		
-		group = armor
+		group = armor_combat_support
 
 		categories = {
 			category_all_armor
 			category_army
 		}		
-		combat_width = 2
+		combat_width = 3
 
 		need = {
 			medium_tank_artillery_chassis = 50
@@ -95,11 +95,11 @@ sub_units = {
 		max_strength = 0.6
 		training_time = 180
 		weight = 1.25
-		supply_consumption = 0.9
+		supply_consumption = 0.46
 
 		breakthrough = -0.25
+
 		suppression = 1.5
-		soft_attack = 0.3
 
 		forest = {
 		    attack = -0.3
@@ -109,13 +109,11 @@ sub_units = {
 		    attack = -0.1
 		}
 		mountain = 	{
-			defence = -0.65
-		    attack = -0.55
+		    attack = -0.2
 		}
 		jungle = {
-			defence = -0.6
-		    attack = -0.5
-			movement = -0.5
+		    attack = -0.4
+			movement = -0.4
 		}
 		marsh = {
 		    attack = -0.1 
@@ -130,7 +128,7 @@ sub_units = {
 			movement = -0.2
 		}
 		amphibious = { 
-			attack = -0.8
+			attack = -0.7
 		}
 	}
 	
@@ -148,14 +146,14 @@ sub_units = {
 			artillery
 		}
 		
-		group = armor
+		group = armor_combat_support
 		
 		categories = {
 			category_all_armor
 			category_army
 		}
 
-		combat_width = 2
+		combat_width = 3
 
 		need = {
 			heavy_tank_artillery_chassis = 40
@@ -167,9 +165,9 @@ sub_units = {
 		weight = 1.5
 		supply_consumption = 0.6
 
-		breakthrough = -0.9
+		breakthrough = -0.25
+
 		suppression = 1.5
-		soft_attack = 0.3
 
 		forest = {
 		    attack = -0.40
@@ -179,12 +177,10 @@ sub_units = {
 		    attack = -0.20
 		}
 		mountain = 	{
-			defence = -0.6 
-		    attack = -0.7
+		    attack = -0.3
 		}
 		jungle = {
-			defence = -0.8
-		    attack = -0.65
+		    attack = -0.6
 			movement = -0.4
 		}
 		marsh = {
@@ -200,7 +196,7 @@ sub_units = {
 			movement = -0.4
 		}
 		amphibious = { 
-			attack = -0.9 
+			attack = -0.8 
 		}
 	}
 	
@@ -213,11 +209,12 @@ sub_units = {
 		active = yes
 		
 		type = {
+			support
 			armor
 			artillery
 		}
 		
-		group = armor
+		group = support
 		
 		categories = {
 			category_all_armor
@@ -225,7 +222,7 @@ sub_units = {
 		}
 		
 
-		combat_width = 2
+		combat_width = 3
 
 		need = {
 			super_heavy_tank_artillery_chassis = 40
@@ -238,9 +235,9 @@ sub_units = {
 		weight = 1.75
 		supply_consumption = 0.8
 
-		breakthrough = -0.9
+		breakthrough = -0.25
+
 		suppression = 1.25
-		soft_attack = 0.3
 
 		forest = {
 		    attack = -0.5
@@ -250,13 +247,11 @@ sub_units = {
 		    attack = -0.3
 		}
 		mountain = 	{
-			defence = -0.7
-		    attack = -0.8
+		    attack = -0.4
 		}
 		jungle = {
-			defence = -0.85
-		    attack = -0.75
-			movement = -0.5
+		    attack = -0.7
+			movement = -0.4
 		}
 		marsh = {
 		    attack = -0.5 
@@ -288,14 +283,14 @@ sub_units = {
 			artillery
 		}
 		
-		group = armor
+		group = armor_combat_support
 		
 		categories = {
 			category_all_armor
 			category_army
 		}
 
-		combat_width = 2
+		combat_width = 3
 
 		need = {
 			modern_tank_artillery_chassis = 50
@@ -308,9 +303,9 @@ sub_units = {
 		weight = 1.5
 		supply_consumption = 0.5
 		
-		breakthrough = -0.9
+		breakthrough = -0.25
+
 		suppression = 1.5
-		soft_attack = 0.3
 
 		forest = {
 		    attack = -0.3
@@ -357,7 +352,7 @@ sub_units = {
 	#		artillery
 	#	}
 	#	
-	#	group = armor
+	#	group = armor_combat_support
 #
 #	#	categories = {
 #	#		category_all_armor
@@ -419,7 +414,7 @@ sub_units = {
 #	#		artillery
 #	#	}
 #	#	
-#	#	group = armor
+#	#	group = armor_combat_support
 #
 #	#	categories = {
 #	#		category_all_armor
@@ -484,7 +479,7 @@ sub_units = {
 #			artillery
 #		}
 #		
-#		group = armor
+#		group = armor_combat_support
 #		
 #		categories = {
 #			category_all_armor

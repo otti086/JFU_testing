@@ -406,11 +406,106 @@ defined_text = {
 	}
 }
 
+
+# #TODO_TA remove ONLY FOR TESTING PURPOSES
+defined_text = {
+	name = GetPlaceholderBopText
+	text = {
+		trigger = {
+			is_power_balance_in_range = {
+				id = ETH_centralization_balance
+				range = ETH_mesafint_total_control_range
+			}
+		}
+		localization_key = ETH_mesafint_total_control_range
+	}
+
+	text = {
+		trigger = {
+			is_power_balance_in_range = {
+				id = ETH_centralization_balance
+				range = ETH_mesafint_dominant_range
+			}
+		}
+		localization_key = ETH_mesafint_dominant_range
+	}
+	text = {
+		trigger = {
+			is_power_balance_in_range = {
+				id = ETH_centralization_balance
+				range = ETH_mesafint_power_range
+			}
+		}
+		localization_key = ETH_mesafint_power_range
+	}
+
+	text = {
+		trigger = {
+			is_power_balance_in_range = {
+				id = ETH_centralization_balance
+				range = ETH_mesafint_influence_range
+			}
+		}
+		localization_key = ETH_mesafint_influence_range
+	}
+	text = {
+		trigger = {
+			is_power_balance_in_range = {
+				id = ETH_centralization_balance
+				range = ETH_balance_range
+			}
+		}
+		localization_key = ETH_balance_range_tt
+	}
+
+	text = {
+		trigger = {
+			is_power_balance_in_range = {
+				id = ETH_centralization_balance
+				range = ETH_mekwanint_influence_range
+			}
+		}
+		localization_key = ETH_mekwanint_influence_range
+	}
+	text = {
+		trigger = {
+			is_power_balance_in_range = {
+				id = ETH_centralization_balance
+				range = ETH_mekwanint_power_range
+			}
+		}
+		localization_key = ETH_mekwanint_power_range
+	}
+	text = {
+		trigger = {
+			is_power_balance_in_range = {
+				id = ETH_centralization_balance
+				range = ETH_mekwanint_dominant_range
+			}
+		}
+		localization_key = ETH_mekwanint_dominant_range
+	}
+	text = {
+		trigger = {
+			is_power_balance_in_range = {
+				id = ETH_centralization_balance
+				range = ETH_mekwanint_total_control_range
+			}
+		}
+		localization_key = ETH_mekwanint_total_control_range
+	}
+
+	text = {
+		localization_key = somethings_broken_i_guess
+	}
+}
+
 defined_text = {
 	name = GetEthiopianRailwayName
 	text = {
 		trigger = {
 			has_government = communism
+			has_completed_focus = ETH_callout_to_the_world
 		}
 		#TODO_ASD Set name
 		localization_key = ETH_cie_anarcho_communist
@@ -418,6 +513,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_government = communism
+			has_completed_focus = ETH_soviet_aid
 		}
 		#TODO_ASD Set name
 		localization_key = ETH_cie_stalinist
@@ -784,6 +880,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_government = communism
+			has_completed_focus = ETH_callout_to_the_world
 		}
 		localization_key = ETH_anarchist_bank
 	}
