@@ -5,6 +5,7 @@ tags={
 }
 replace_path="common/ai_strategy"
 replace_path="common/autonomous_states"
+replace_path="common/bop"
 replace_path="history/countries"
 name="JFU testing"
 supported_version="1.13.1"
