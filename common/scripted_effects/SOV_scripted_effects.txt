@@ -738,14 +738,6 @@ SOV_paranoia_update_portraits_ui = { #Expected to be called in the country scope
 	}
 	if = {
 		limit = {
-			NOT = { has_character = SOV_karl_radek }
-			check_variable = { SOV.SOV_paranoia_photo_radek = 9 compare = not_equals }
-		}
-		set_variable = { SOV.SOV_paranoia_photo_radek = 9 }
-		set_country_flag = SOV_added_purged_portrait_flag
-	}
-	if = {
-		limit = {
 			NOT = { has_character = SOV_nikolay_bukharin }
 			check_variable = { SOV.SOV_paranoia_photo_bukharin = 10 compare = not_equals }
 		}

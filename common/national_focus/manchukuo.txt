@@ -1410,10 +1410,6 @@
 		}
 
 		available = {
-			OR = {
-				GER_will_support = yes
-				SOV_will_support = yes
-			}
 		}
 
 		bypass = {
@@ -1859,7 +1855,7 @@
 		}
 
 		available = {
-			SOV_will_support = yes
+
 		}
 
 		bypass = {
@@ -2377,10 +2373,6 @@
 		}
 
 		available = {
-			OR = {
-				FRA_will_support = yes
-				ENG_will_support = yes
-			}
 		}
 
 		bypass = {
@@ -2891,15 +2883,6 @@
 		}
 
 		available = {
-			OR = {
-				JAP = { has_government = ROOT }
-				JAP_will_support = yes
-			}
-			NOT = { has_wargoal_against = JAP }
-			NOT = { has_war_with = JAP }
-			JAP = {
-				has_capitulated = no
-			}
 		}
 
 		bypass = {
