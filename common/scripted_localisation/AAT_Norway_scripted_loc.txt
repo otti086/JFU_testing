@@ -145,33 +145,6 @@ defined_text = {
 defined_text = {
 	name = NOR_GetExiledMonarchyLastParagraph
 	text = {
-		trigger = {
-			DEN = {
-				exists = yes 
-				NOT = { has_country_flag = DEN_depose_the_king }
-			}
-		}
-		localization_key = NOR_exiled_monarchy_to_desc_DEN
-	}
-	text = {
-		trigger = {
-			ENG ={
-				exists = yes 
-				NOT = { has_completed_focus = ENG_the_fate_of_the_royal_family }
-			}
-		}
-		localization_key = NOR_exiled_monarchy_to_desc_ENG
-	}
-	text = {
-		trigger = {
-			SWE = {
-				exists = yes
-				NOT = { has_completed_focus = SWE_liquidate_the_monarchy }
-			}	
-		}
-		localization_key = NOR_exiled_monarchy_to_desc_SWE
-	}
-	text = {
 		localization_key = NOR_exiled_monarchy_to_desc_NONE
 	}
 }

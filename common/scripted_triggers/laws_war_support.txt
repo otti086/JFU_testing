@@ -5,7 +5,6 @@ has_unsupported_economic_law = {
 			hidden_trigger = {
 				NOT = { 
 					original_tag = SWE
-					has_completed_focus = SWE_totalforsvar
 				}
 			}
 		}
@@ -18,7 +17,6 @@ has_unsupported_economic_law = {
 			hidden_trigger = {
 				NOT = { 
 					original_tag = SWE
-					has_completed_focus = SWE_totalforsvar
 				}
 			}
 		}
@@ -31,7 +29,6 @@ has_unsupported_economic_law = {
 			hidden_trigger = {
 				NOT = { 
 					original_tag = SWE
-					has_completed_focus = SWE_totalforsvar
 				}
 			}
 		}
@@ -44,7 +41,6 @@ has_unsupported_economic_law = {
 			hidden_trigger = {
 				NOT = { 
 					original_tag = SWE
-					has_completed_focus = SWE_totalforsvar
 				}
 			}
 		}
@@ -62,7 +58,6 @@ has_unsupported_manpower_law = {
 		}
 			has_idea = limited_conscription
 			has_war_support < 0.1
-			hidden_trigger = { NOT = { tag = TUR } }
 	}
 	else_if = {
 		limit = {

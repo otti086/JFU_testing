@@ -45,7 +45,6 @@ BUL_internal_factions = {
 		days_re_enable = 120
 
 		visible = {
-			NOT = { has_completed_focus = BUL_oppose_the_royal_dictatorship }
 			has_country_flag = BUL_factions_unlocked_flag
 			NOT = { has_country_flag = BUL_tsar_boris_is_dead_flag }
 			has_country_leader = {

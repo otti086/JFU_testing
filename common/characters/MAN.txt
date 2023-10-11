@@ -36,6 +36,118 @@ characters={
 			legacy_id=-1
 		}
 	}
+	MAN_tomoyuki_yamashita={
+		name=MAN_tomoyuki_yamashita
+		portraits={
+			army={
+				small="GFX_idea_tomoyuki_yamashita"
+				large="gfx/leaders/JAP/Portrait_Japan_Tomoyuki_Yamashita.dds"
+			}
+		}
+
+		corps_commander={
+			traits={ brilliant_strategist politically_connected trickster trait_engineer }
+			skill=5
+			attack_skill=4
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=0
+		}
+	}
+	MAN_hisaichi_terauchi={
+		name=MAN_hisaichi_terauchi
+		portraits={
+			army={
+				small="GFX_idea_hisaichi_terauchi"
+				large="gfx/leaders/JAP/Portrait_Japan_Hisaichi_Terauchi.dds"
+			}
+		}
+		
+		corps_commander={
+			traits={ JAP_samurai_lineage offensive_doctrine }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+	MAN_akira_muto={
+		name=MAN_akira_muto
+		portraits={
+			army={
+				large="gfx/leaders/JAP/Portrait_Japan_Akira_Muto.dds"
+				small="gfx/interface/ideas/idea_JAP_akira_muto.dds"
+			}
+		}
+		corps_commander={
+			traits={ career_officer commando }
+			skill=3
+			attack_skill=4
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+	MAN_shunroku_hata={
+		name=MAN_shunroku_hata
+		portraits={
+			army={
+				small="GFX_idea_shunroku_hata"
+				large="gfx/leaders/JAP/Portrait_Japan_Shunroku_Hata.dds"
+			}
+		}
+		
+		corps_commander={
+			traits={ JAP_samurai_lineage offensive_doctrine }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=0
+		}
+	}
+	MAN_shizuichi_tanaka={
+		name=MAN_shizuichi_tanaka
+		portraits={
+			army={
+				large="gfx/leaders/JAP/Portrait_Japan_Shizuichi_Tanaka.dds"
+				small="gfx/interface/ideas/idea_JAP_shizuichi_tanaka.dds"
+			}
+		}
+		corps_commander={
+			traits={ career_officer infantry_officer trickster }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=0
+		}
+	}
+	MAN_kenkichi_ueda={
+		name=MAN_kenkichi_ueda
+		portraits={
+			army={
+				large="gfx/leaders/JAP/Portrait_Japan_Kenkichi_Ueda.dds"
+				small="gfx/interface/ideas/idea_JAP_kenkichi_ueda.dds"
+			}
+		}
+		corps_commander={
+			traits={ old_guard trait_reckless cavalry_officer }
+			skill=4
+			attack_skill=3
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=0
+		}
+	}
+
 	MAN_zhang_jinghui={
 		name=MAN_zhang_jinghui
 		portraits={
