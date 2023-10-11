@@ -215,21 +215,6 @@ bookmarks = {
 				ROM_preserve_greater_romania
 			}
 		}
-		"CHI"={
-			minor = yes
-			history = "CHI_BLITZKRIEG_DESC"
-			ideology = neutrality
-			ideas = {
-				CHI_army_corruption_2
-				CHI_hyper_inflation_1
-				CHI_nine_power_treaty
-			}
-			focuses = {
-				CHI_renegotiate_the_unequal_treaties
-				CHI_invite_the_flying_tigers
-				CHI_war_of_resistance
-			}
-		}
 		"MAN"={
 			minor = yes
 			history = "MAN_BLITZKRIEG_DESC"
@@ -263,22 +248,6 @@ bookmarks = {
 			}
 		}
 
-		"HOL"={
-			minor = yes
-			history = "NETHERLANDS_BLITZKRIEG_DESC"
-			ideology = democratic
-			ideas = {
-				HOL_wilhelmina
-				HOL_shell_shocked_spectator_5
-				HOL_de_crisisjaren_1
-			}
-			focuses = {
-				HOL_continue_the_war_in_batavia
-				HOL_liberation
-				HOL_prepare_the_inundation_lines
-			}
-		}
-
 		"SPR"={
 			minor = yes
 			history = "SPAIN_BLITZKRIEG_DESC"
@@ -306,66 +275,6 @@ bookmarks = {
 				BUL_the_third_bulgarian_empire
 				BUL_the_return_of_ferdinand_i
 				BUL_bulgaria_on_the_three_seas
-			}
-		}
-
-		"GRE"={
-			minor = yes
-			history = "GRE_BLITZKRIEG_DESC"
-			ideology = neutrality
-			ideas = {
-				GRE_metaxism_2
-				GRE_schachtplan
-				GRE_farmer_culture
-			}
-			focuses = {
-				GRE_reviving_the_spartan_warrior_spirit
-				GRE_following_in_the_footsteps_of_giants
-				GRE_the_greater_enosis
-			}
-		}
-		"LIT"={
-			minor = yes
-			history = "LIT_BLITZKRIEG_DESC"
-			ideology = neutrality
-			ideas = {
-				LIT_victory_in_trust_idea
-				LIT_invested_in_farms_1
-				BALTIC_forest_brothers_idea
-			}
-			focuses = {
-				LIT_prepare_forest_brothers
-				LIT_new_kind_of_iron_wolf
-				BALTIC_belarus_ssr
-			}
-		}
-		
-		"LAT"={
-			minor = yes
-			history = "LAT_BLITZKRIEG_DESC"
-			ideology = neutrality
-			ideas = {
-				LAT_saeima_idea_military_1
-				LAT_the_sun_shines_equally_idea
-				LAT_paramilitary_idea_1
-			}
-			focuses = {
-				LAT_supply_forest_brothers
-				LAT_womens_aizsargi
-				BALTIC_revolutionary_cabinet
-			}
-		}
-		"POL"={
-			minor = yes
-			history = "POL_BLITZKRIEG_DESC"
-			ideology = neutrality
-			ideas = {
-				deterrence
-			}
-			focuses = {
-				POL_the_baltic_alliance
-				POL_draw_closer_to_britain
-				POL_seek_accommodation_with_germany
 			}
 		}
 		FIN={

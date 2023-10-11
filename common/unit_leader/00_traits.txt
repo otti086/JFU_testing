@@ -777,7 +777,6 @@ leader_traits = {
 			FROM = {
 				OR = {
 					original_tag = ITA
-					original_tag = SWI
 				}
 			}
 		}
@@ -791,7 +790,6 @@ leader_traits = {
 			owner = {
 				OR = {
 					original_tag = ITA
-					original_tag = SWI
 				}
 				NOT = {
 					OR = {
@@ -815,7 +813,6 @@ leader_traits = {
 				FROM = { #Looks like the allowed parameter is doing NOTHING :D 
 					OR = {
 						original_tag = ITA
-						original_tag = SWI
 					}
 				}
 			}
@@ -3317,19 +3314,6 @@ leader_traits = {
 		}
 	}
 
-	trait_TUR_kemalist_champion = {
-
-		type = all
-		trait_type = personality_trait
-
-		allowed = {
-			FROM = { original_tag = TUR }
-		}
-
-		new_commander_weight = {
-			factor = 0
-		}
-	}
 
 	trait_GRE_stauch_monarchist = {
 

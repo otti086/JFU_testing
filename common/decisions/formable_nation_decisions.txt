@@ -52,24 +52,6 @@ form_roman_empire_category = {
 				controls_state = 164 #DODECANESE initially controlled by Italy
 			}
 			# Turkey
-			custom_trigger_tooltip = {
-				tooltip = form_country_mare_nostrum_turkey_required_states_tt
-				controls_state = 341
-				controls_state = 797
-				controls_state = 340
-				controls_state = 339
-				controls_state = 342
-				controls_state = 345
-				controls_state = 344
-				if = { # HATAY will most likely be handed over from FRA to TUR, this hopefully prevents some confusion
-					limit = {
-						799 = {
-							is_controlled_by = TUR
-						}
-					}
-					controls_state = 799
-				}
-			}
 			# Italy
 			custom_trigger_tooltip = {
 				tooltip = form_spqr_italy_required_states_tt
@@ -154,14 +136,6 @@ form_roman_empire_category = {
 				controls_state = 553
 				#Syria
 				controls_state = 677
-				if = { # HATAY will most likely be handed over from FRA to TUR, this hopefully prevents some confusion
-					limit = {
-						799 = {
-							NOT = { is_controlled_by = TUR }
-						}
-					}
-					controls_state = 799
-				}
 			}
 		}
 

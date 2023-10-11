@@ -965,61 +965,6 @@ USA_convoy_hungry = {
 	}
 }
 
-USA_lose_fateful_lightning_from_terribly_swift_sword = {
-
-	allowed = {
-		OR = {
-			tag = USA
-			tag = ENG # second breakfast protocol - activated
-		}
-	}
-	enable = {
-		country_exists = VIC
-		FRA = {
-			OR = {
-				has_capitulated = yes
-				controls_state = 16
-			}
-			has_war_with = GER
-			is_in_faction_with = USA
-		}
-		OR = {
-			AND = {
-				VIC = {
-					is_ai = no
-					has_war = no
-				}
-				is_historical_focus_on = yes
-				date > "1942.9.1"
-			}
-			AND = {
-				OR = {
-					is_historical_focus_on = no
-					VIC = { has_war = yes }
-				}
-				date > "1942.6.1"
-			}
-			AND = {
-				VIC = { is_ai = yes }
-				date > "1942.6.1"
-			}
-		}
-	}
-
-	abort_when_not_enabled = yes
-
-	ai_strategy = {
-		type = antagonize
-		id = VIC
-		value = 2500 # we hateses them filthy Vichy Frenches
-	}
-	ai_strategy = {
-		type = declare_war
-		id = VIC
-		value = 500 # we hateses them filthy Vichy Frenches. strategy >= 500 forces declaration
-	}
-}
-
 GER_is_bad = {
 	allowed = {
 		tag = USA

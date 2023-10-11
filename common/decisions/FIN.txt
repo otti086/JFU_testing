@@ -3057,7 +3057,7 @@ FIN_foreign_politics_decision_category = {
 			}
 		}
 
-		targets = { EST LAT LIT POL }
+		targets = { LIT POL }
 
 		target_trigger = {
 			SOV_basic_pressure_government_triggers = yes #Reusable
@@ -3126,7 +3126,7 @@ FIN_foreign_politics_decision_category = {
 			}
 		}
 
-		targets = { EST LAT LIT POL }
+		targets = { LIT POL }
 
 		target_trigger = {
 			SOV_basic_promote_rallies_triggers = yes #Reusable
@@ -3205,7 +3205,7 @@ FIN_foreign_politics_decision_category = {
 			}
 		}
 
-		targets = { EST LAT LIT POL }
+		targets = { LIT POL }
 
 		target_trigger = {
 			SOV_basic_fight_alongside_comrades_triggers = yes #Reusable

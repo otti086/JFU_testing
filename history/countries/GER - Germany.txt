@@ -340,7 +340,7 @@ if = {
 		traits = { operative_infiltrator }
 		bypass_recruitment = no
 		available_to_spy_master = yes
-		nationalities = { GER TUR }
+		nationalities = { GER }
 		gender = male
 	}
 }

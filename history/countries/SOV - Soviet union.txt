@@ -653,7 +653,7 @@ set_variable = { SOV_send_ultimatum_to_country_cost = 75 }
 set_variable = { SOV_send_infantry_equipment_cost = 50 }
 set_variable = { SOV_peace_deal_cost = 15 }
 set_variable = { SOV_sinkiang_proposal_cost = 15 }
-set_variable = { SOV_sinkiang_puppeting_cost = 100 } #This will increase for each state controlled by SIK excluding the ones owned at game start.
+set_variable = { SOV_sinkiang_puppeting_cost = 100 } 
 set_variable = { SOV_sinkiang_puppeting_cost_increase_per_state = 15 }
 
 #DECISIONS DAYS

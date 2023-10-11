@@ -1488,7 +1488,7 @@ ideas = {
 				}
 				NOT = {
 					AND = {
-						OR = { tag = SPR tag = SPA  tag = SPD  }
+						OR = { tag = SPR }
 						has_dlc = "La Resistance"
 					}
 				}
@@ -1496,12 +1496,6 @@ ideas = {
 					AND = {
 						OR = { tag = BUL tag = GRE  }
 						has_dlc = "Battle for the Bosporus"
-					}
-				}
-				NOT = {
-					AND = {
-						OR = { tag = ETH tag = SWI }
-						has_dlc = "By Blood Alone"
 					}
 				}
 			}
@@ -1596,22 +1590,11 @@ ideas = {
 				}
 				NOT = {
 					AND = {
-						OR = { tag = SPR tag = SPA  tag = SPD }
+						OR = { tag = SPR }
 						has_dlc = "La Resistance"
 					}
 				}
-				NOT = {
-					AND = {
-						OR = { tag = BUL tag = GRE tag = TUR }
-						has_dlc = "Battle for the Bosporus"
-					}
-				}
-				NOT = {
-					AND = {
-						OR = { tag = ETH tag = SWI }
-						has_dlc = "By Blood Alone"
-					}
-				}
+
 			}
 			
 			cost = 150
@@ -1691,7 +1674,7 @@ ideas = {
 				}
 				NOT = {
 					AND = {
-						OR = { tag = CHI tag = MAN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
+						OR = { tag = CHI tag = MAN }
 						has_dlc = "Waking the Tiger"
 					}
 				}
@@ -1703,20 +1686,8 @@ ideas = {
 				}
 				NOT = {
 					AND = {
-						OR = { tag = SPR tag = SPA  tag = SPD  }
+						OR = { tag = SPR }
 						has_dlc = "La Resistance"
-					}
-				}
-				NOT = {
-					AND = {
-						OR = { tag = BUL tag = GRE tag = TUR }
-						has_dlc = "Battle for the Bosporus"
-					}
-				}
-				NOT = {
-					AND = {
-						tag = ETH
-						has_dlc = "By Blood Alone"
 					}
 				}
 			}
@@ -1742,7 +1713,7 @@ ideas = {
 				}
 				NOT = {
 					AND = {
-						OR = { tag = CHI tag = MAN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
+						OR = { tag = CHI tag = MAN }
 						has_dlc = "Waking the Tiger"
 					}
 				}
@@ -1754,7 +1725,7 @@ ideas = {
 				}
 				NOT = {
 					AND = {
-						OR = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD tag = POR }
+						OR = { tag = SPR }
 						has_dlc = "La Resistance"
 					}
 				}

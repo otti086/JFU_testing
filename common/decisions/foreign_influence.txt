@@ -591,13 +591,6 @@ foreign_influence = {
 			}
 
 			modifier = {
-			# [softly] Don't...
-				tag = TUR
-				FROM = { tag = KUR }
-
-				factor = 0
-			}
-			modifier = {
 				FROM = {
 					tag = POL
 					is_ai = no

@@ -1449,64 +1449,6 @@ ITA_missiolinis = {
 		}
 	}
 
-	# Occupy Ticino
-	ITA_missiolini_occupy_ticino = {
-		icon = GFX_decision_infiltrate_state
-		allowed = {
-			tag = ITA
-		}
-
-		visible = {
-			ITA_missiolinis_system_available = yes
-		}
-
-		available = { #GOAL
-			846 = { #TICINO
-				OR = {
-					is_fully_controlled_by = ROOT
-					controller = {
-						is_subject_of = ROOT
-						hidden_trigger = { #To prevent unnecessary overcrowding
-							has_full_control_of_state = PREV
-						}
-					}
-				}
-			}
-		}
-
-		activation = {
-			always = no
-		}
-
-		cancel_if_not_visible = yes
-		is_good = no #Tooltip purposes
-		selectable_mission = no
-		days_mission_timeout = ITA_missiolinis_default_days
-
-		cosmetic_tag = SWI
-		cosmetic_ideology = democratic
-
-		timeout_effect = { #MISSION FAILS
-			effect_tooltip = {
-				ITA_missiolini_occupy_ticino_failure_effect = yes
-			}
-
-			hidden_effect = {
-				country_event = { id = BBA_italy_missiolinis.132 hours = 1 }
-			}
-		}
-
-		complete_effect = { #MISSION SUCCEEDS
-			effect_tooltip = {
-				ITA_missiolini_occupy_ticino_success_effect = yes
-			}
-
-			hidden_effect = {
-				country_event = { id = BBA_italy_missiolinis.133 hours = 1 }
-			}
-		}
-	}
-
 
 
 
@@ -5464,84 +5406,6 @@ ITA_naval_cooperation_programs_dec_cat = {
 		}
 	}
 
-	ITA_cede_aquila_class_destroyers_to_spanish_tag = {
-		priority = 15
-
-		icon = GFX_decision_generic_naval
-
-		ai_will_do = {
-			base = 0
-			modifier = {
-				add = 10
-				is_historical_focus_on = yes
-			}
-		}
-
-		visible = {
-			NOT = { has_country_flag = ITA_ceded_aquila_class_destroyers_flag } #Used inside visible trigger to check continuously and prevent exploits
-		}
-
-		available = {
-			has_navy_size = {
-				size > 0
-				archetype = ship_hull_light #DDs
-			}
-			FROM = {
-				OR = {
-					is_in_faction_with = ROOT
-					is_in_faction = no
-				}
-				is_major = no
-				capital_scope = {
-					is_on_continent = europe
-				}
-				NOT = { has_war_with = ROOT }
-				has_navy_size = {
-					size > 0
-					archetype = ship_hull_light #DDs
-				}
-			}
-		}
-
-		fire_only_once = yes
-
-		targets = { SPA SPB SPC SPD }
-
-		target_trigger = { #Used to filter out allies with no navy. The actual trigger is part of the available trigger since we want the player to be aware of the requisites for FROM
-			FROM = {
-				original_tag = SPR
-				ITA_is_compatible_spanish_tag = yes
-			}
-		}
-
-		target_root_trigger = {
-			original_tag = ITA
-			has_civil_war = no
-			has_completed_focus = ITA_corpo_di_truppe_volontarie #It's totally ok that the decision gets unlocked even if the focus gets bypassed
-			NOT = { has_country_flag = ITA_ceded_aquila_class_destroyers_flag } #To prevent visible trigger to check every tick after this happens
-			OR = {
-				has_global_flag = spanish_civil_war
-				has_global_flag = scw_over
-			}
-		}
-
-		complete_effect = {
-			FROM = { country_event = { id = BBA_italy_naval_cooperation_programs.11 hours = 1 } }
-			custom_effect_tooltip = if_they_accept
-			effect_tooltip = {
-				navy_experience = 50
-				add_political_power = 50
-				custom_effect_tooltip = ITA_cede_aquila_class_destroyers_tt
-				FROM = {
-					add_opinion_modifier = {
-						modifier = ITA_ceded_destroyers
-						target = ROOT
-					}
-				}
-			}
-		}
-	}
-
 	ITA_export_midget_submarines = {
 		priority = 15
 
@@ -5671,7 +5535,7 @@ ITA_diplomacy_balkan_decision_category = {
 		}
 
 		targets = { YUG BUL ROM }
-		#targets = { BUL GRE YUG ALB ROM TUR SLV BOS HRZ MAC SER CRO KOS MNT TRA } #These are all tags included in scripted trigger "BUL_is_balkan_nation = yes"
+		#targets = { BUL GRE YUG ALB ROM } #These are all tags included in scripted trigger "BUL_is_balkan_nation = yes"
 
 		target_trigger = {
 			SOV_basic_pressure_government_triggers = yes
@@ -5741,7 +5605,7 @@ ITA_diplomacy_balkan_decision_category = {
 		}
 
 		targets = { YUG BUL ROM }
-		#targets = { BUL GRE YUG ALB ROM TUR SLV BOS HRZ MAC SER CRO KOS MNT TRA } #These are all tags included in scripted trigger "BUL_is_balkan_nation = yes"
+		#targets = { BUL GRE YUG ALB ROM } #These are all tags included in scripted trigger "BUL_is_balkan_nation = yes"
 
 		target_trigger = {
 			SOV_basic_promote_rallies_triggers = yes
@@ -5900,7 +5764,7 @@ ITA_diplomacy_balkan_decision_category = {
 			}
 		}
 
-		targets = { BUL GRE YUG ALB ROM TUR SLV BOS HRZ MAC SER CRO KOS MNT TRA } #These are all tags included in scripted trigger "BUL_is_balkan_nation = yes"
+		targets = { BUL GRE YUG ALB ROM } #These are all tags included in scripted trigger "BUL_is_balkan_nation = yes"
 
 		target_trigger = {
 			SOV_basic_fight_alongside_comrades_triggers = yes
@@ -6796,82 +6660,6 @@ ITA_diplomacy_balkan_decision_category = {
 
 			hidden_effect = {
 				set_country_flag = ITA_dodecanese_offered_to_greece
-			}
-		}
-	}
-
-
-	ITA_give_the_dodecanese_islands_to_turkey_for_an_alliance = {
-		priority = 24
-
-		icon = GFX_decision_eng_trade_unions_support
-
-		ai_will_do = {
-			base = 7
-			modifier = {
-				factor = 10
-				TUR = { is_ai = no }
-			}
-		}
-
-		allowed = {
-			original_tag = ITA
-		}
-
-		available = {
-			ITA = {
-				has_completed_focus = ITA_befriend_turkey
-				is_faction_leader = yes
-				controls_state = 164
-			}
-			TUR = {
-				is_subject = no
-				has_civil_war = no
-				NOT = {
-					has_government = communism
-				}
-			}
-		}
-
-		visible = {
-			TUR = {
-				exists = yes
-				NOT = { is_in_faction_with = ROOT }
-			}
-			ITA = {
-				OR = {
-					has_government = neutrality
-					has_government = fascism
-				}
-				controls_state = 164
-			}
-			NOT = {
-				has_country_flag = ITA_dodecanese_offered_to_turkey
-			}
-		}
-
-		cost = 75
-
-		complete_effect = {
-
-			random_country = {
-				limit = {
-					original_tag = TUR
-					is_subject = no
-					has_civil_war = no
-					NOT = {
-						has_government = communism
-					}
-				}
-				country_event = {
-				    id = BBA_italy_interaction_events.21
-				    days = 1
-				    random = 4
-				}
-			}
-
-			hidden_effect = {
-				set_country_flag = ITA_dodecanese_offered_to_turkey
 			}
 		}
 	}

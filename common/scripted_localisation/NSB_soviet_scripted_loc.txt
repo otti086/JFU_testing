@@ -1190,46 +1190,6 @@ defined_text = {
 }
 
 # For setting the event picture for sending weapons to Chinas or POUM
-defined_text = {
-	name = GetInfantryEquipmentGFX
-	text = { #POUM
-		trigger = {
-			tag = SPC
-		}
-		localization_key = GFX_report_event_spr_anarchists2
-	}
-	text = { #Chinas (or anything else)
-		localization_key = GFX_report_event_stalin_propaganda
-	}
-}
-
-defined_text = {
-	name = GetAppropriateSupportedChineseFaction
-	text = {
-		trigger = {
-			has_completed_focus = SOV_the_gobi_gambit
-			country_exists = SIK
-		}
-		localization_key = SOV_intervention_in_china_sik
-	}
-	text = {
-		trigger = {
-			has_completed_focus = SOV_two_red_flags
-			country_exists = PRC
-		}
-		localization_key = SOV_intervention_in_china_prc
-	}
-	text = {
-		trigger = {
-			has_completed_focus = SOV_support_the_kuomintang
-			country_exists = CHI
-		}
-		localization_key = SOV_intervention_in_china_chi
-	}
-	text = {
-		localization_key = SOV_intervention_in_china_default
-	}
-}
 
 defined_text = {
 	name = GetAppropriateSovietProgressInJapan
@@ -1241,19 +1201,6 @@ defined_text = {
 	}
 	text = {
 		localization_key = NSB_soviet_foreign_politics_events.264.desc_default
-	}
-}
-
-defined_text = {
-	name = GetPolandIncludedOrNot
-	text = {
-		trigger = {
-			has_global_flag = SOV_collective_security_pact_poland_inlcuded_flag
-		}
-		localization_key = SOV_collective_security_news_poland_included
-	}
-	text = {
-		localization_key = SOV_collective_security_news_poland_no
 	}
 }
 
@@ -2231,55 +2178,5 @@ defined_text = {
 	}
 	text = {
 		localization_key = SOV_rehabilitated_military_desc_default
-	}
-}
-
-### For Turkey
-defined_text = {
-	name = GetBraceAgainstTheRedMenaceName
-	text = {
-		trigger = {
-			SOV = { has_government = communism }
-		}
-		localization_key = TUR_brace_against_the_red_menace_communism
-	}
-	text = {
-		localization_key = TUR_brace_against_the_red_menace_generic
-	}
-}
-defined_text = {
-	name = GetBraceAgainstTheRedMenaceDesc
-	text = {
-		trigger = {
-			SOV = { has_government = communism }
-		}
-		localization_key = TUR_brace_against_the_red_menace_communism_desc
-	}
-	text = {
-		localization_key = TUR_brace_against_the_red_menace_generic_desc
-	}
-}
-defined_text = {
-	name = GetVictoryOrDeathAgainstCommunismName
-	text = {
-		trigger = {
-			SOV = { has_government = communism }
-		}
-		localization_key = TUR_victory_or_death_against_communism_communism
-	}
-	text = {
-		localization_key = TUR_victory_or_death_against_communism_generic
-	}
-}
-defined_text = {
-	name = GetVictoryOrDeathAgainstCommunismDesc
-	text = {
-		trigger = {
-			SOV = { has_government = communism }
-		}
-		localization_key = TUR_victory_or_death_against_communism_communism_desc
-	}
-	text = {
-		localization_key = TUR_victory_or_death_against_communism_generic_desc
 	}
 }

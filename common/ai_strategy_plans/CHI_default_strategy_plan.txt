@@ -556,16 +556,7 @@ CHI_european_allies = { #used to make minor European nations like Axis more
 			original_tag = SWE
 			original_tag = FIN
 			original_tag = SPR
-			original_tag = POR
-			original_tag = HOL
-			original_tag = BEL
-			original_tag = LUX
-			original_tag = POL
-			original_tag = LAT
-			original_tag = LIT
-			original_tag = EST
-			original_tag = CRO
-			original_tag = SLO
+
 		}
 	}
 	enable = {
@@ -586,16 +577,6 @@ CHI_european_allies = { #used to make minor European nations like Axis more
 			original_tag = SWE
 			original_tag = FIN
 			original_tag = SPR
-			original_tag = POR
-			original_tag = HOL
-			original_tag = BEL
-			original_tag = LUX
-			original_tag = POL
-			original_tag = LAT
-			original_tag = LIT
-			original_tag = EST
-			original_tag = CRO
-			original_tag = SLO
 		}
 	}
 	abort = {

@@ -769,12 +769,6 @@ careful_with_early_invasions = {
 		value = -500
 	}
 
-	ai_strategy = {
-		type = invade
-		id = "VIC"
-		value = -500
-	}
-
 	ai_strategy = { #TODO why does this crash
 		type = invade
 		id = "JAP"
@@ -838,12 +832,6 @@ careful_with_early_invasions_USA = { #Same as above, alter in tandem
 	ai_strategy = {
 		type = invade
 		id = "GER"
-		value = -500
-	}
-
-	ai_strategy = {
-		type = invade
-		id = "VIC"
 		value = -500
 	}
 	

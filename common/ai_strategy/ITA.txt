@@ -499,53 +499,6 @@ greece_ally = {
 	}
 }
 
-turkey_ally = {
-	allowed = {
-		original_tag = ITA
-	}
-	enable = {
-		has_completed_focus = ITA_befriend_turkey
-		country_exists = TUR
-	}
-	abort = {
-		NOT = { country_exists = TUR }
-	}
-
-	ai_strategy = {
-		type = befriend
-		id = "TUR"
-		value = 100
-	}
-	ai_strategy = {
-		type = alliance
-		id = "TUR"
-		value = 100
-	}
-}
-
-portugal_ally = {
-	allowed = {
-		original_tag = ITA
-	}
-	enable = {
-		has_completed_focus = ITA_befriend_portugal
-		country_exists = POR
-	}
-	abort = {
-		NOT = { country_exists = POR }
-	}
-
-	ai_strategy = {
-		type = befriend
-		id = "POR"
-		value = 100
-	}
-	ai_strategy = {
-		type = alliance
-		id = "POR"
-		value = 100
-	}
-}
 
 #ITA_keep_your_nose_clean_for_a_bit
 #{
@@ -1453,43 +1406,6 @@ ITA_prepare_british_invasion = {
 		type = prepare_for_war
 		id = "ENG"
 		value = 200
-	}
-}
-
-dont_die_in_mountains = {
-	allowed = {
-		original_tag = ITA
-	}
-	enable = {
-		date < 1942.5.1
-		country_exists = SWI
-		is_historical_focus_on = no
-	}
-	abort = {
-		NOT = { country_exists = FRA }
-		date > 1942.5.1
-	}
-
-	ai_strategy = {
-		type = ignore
-		id = "SWI"
-		value = 1000
-	}
-}
-
-GER_ignore_vichy_we_will_annex_them_later = {
-	allowed = {
-		original_tag = ITA
-	}
-	enable = {
-		country_exists = VIC
-	}
-	abort_when_not_enabled = yes
-
-	ai_strategy = {
-		type = ignore
-		id = "VIC"
-		value = 100
 	}
 }
 

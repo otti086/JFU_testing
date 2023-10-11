@@ -8527,15 +8527,6 @@ BUL_the_balkan_federation_dream = {
 					NOT = { is_in_faction_with = ROOT }
 				}
 			}
-			modifier = {
-				factor = 2
-				FROM = {
-					OR = {
-						tag = GRE
-						tag = TUR
-					}
-				}
-			}
 		}
 
 		allowed = {
@@ -9015,78 +9006,6 @@ BUL_the_balkan_federation_dream = {
 				}
 			}
 			annex_country = { target = FROM transfer_troops = yes }
-		}
-	}
-
-	BUL_balkan_federation_demand_turkish_territory = {
-
-		icon = GFX_decision_generic_military
-
-		ai_will_do = {
-			base = 0
-			modifier = {
-				add = 0.01
-				strength_ratio = {
-					tag = TUR
-					ratio > 1.5
-				}
-			}
-			modifier = {
-				factor = 5
-				strength_ratio = {
-					tag = TUR
-					ratio > 2
-				}
-			}
-			modifier = {
-				factor = 10
-				strength_ratio = {
-					tag = TUR
-					ratio > 3
-				}
-			}
-			modifier = {
-				factor = 100
-				TUR = { is_in_faction = no }
-			}
-		}
-
-		allowed = {
-			original_tag = BUL
-		}
-
-		available = {
-			NOT = { has_war_with = FROM }
-			strength_ratio = {
-				tag = TUR
-				ratio > 1
-			}
-		}
-		
-		visible = {
-			country_exists = TUR
-			TUR = {
-				OR = {
-					controls_state = 341
-					controls_state = 797
-				}	
-			}
-			NOT = { is_in_faction_with = TUR }
-			has_government = communism
-			has_completed_focus = BUL_the_unification_of_the_balkans
-		}
-
-		cancel_if_not_visible = yes
-
-		cost = 75
-		
-		complete_effect = {
-			TUR = {
-				country_event = { 
-					id = bftb_bulgaria_balkan_federation.16
-					hours = 1
-				}
-			}
 		}
 	}
 }
@@ -10108,38 +10027,6 @@ BUL_balkan_confederation = {
 			}
 		}
 
-		ai_will_do = {
-			base = 0.01
-			modifier = {
-				factor = 5
-				FROM = {
-					democratic > 0.2
-				}
-			}
-			modifier = {
-				factor = 5
-				FROM = {
-					tag = GRE
-				}
-			}
-			modifier = {
-				factor = 5
-				FROM = {
-					tag = GRE
-					NOT = { is_in_faction_with = ROOT }
-				}
-			}
-			modifier = {
-				factor = 2
-				FROM = {
-					OR = {
-						tag = YUG
-						tag = TUR
-					}
-				}
-			}
-		}
-
 		allowed = {
 			original_tag = BUL
 		}
@@ -10270,37 +10157,6 @@ BUL_balkan_confederation = {
 			}
 		}
 
-		ai_will_do = {
-			base = 0.01
-			modifier = {
-				factor = 5
-				FROM = {
-					democratic > 0.2
-				}
-			}
-			modifier = {
-				factor = 5
-				FROM = {
-					tag = GRE
-				}
-			}
-			modifier = {
-				factor = 5
-				FROM = {
-					tag = GRE
-					NOT = { is_in_faction_with = ROOT }
-				}
-			}
-			modifier = {
-				factor = 2
-				FROM = {
-					OR = {
-						tag = YUG
-						tag = TUR
-					}
-				}
-			}
-		}
 
 		allowed = {
 			original_tag = BUL
