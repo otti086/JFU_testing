@@ -1,4 +1,4 @@
-﻿﻿
+
 
 focus_tree = {
 	id = brazil_focus
