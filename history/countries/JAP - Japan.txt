@@ -86,12 +86,6 @@ if = {
 		JAP_interservice_rivalry_balanced		
 	}
 }
-if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	add_ideas = 
-}
 
 
 
@@ -317,9 +311,7 @@ recruit_character = JAP_mitsumasa_yonai
 recruit_character = JAP_takuo_godo
 recruit_character = JAP_chiune_sugihara
 recruit_character = JAP_kingoro_hashimoto
-recruit_character = JAP_sanzo_nosaka
 recruit_character = JAP_hiroshi_oshima
-recruit_character = JAP_kijuro_shidehara
 
 
 if = {

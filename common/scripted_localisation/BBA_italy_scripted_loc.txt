@@ -799,12 +799,7 @@ defined_text = { #Decolonization event
 
 defined_text = { #Litoranea Balbo name based on political path
 	name = GetAppropriateLitoraneaBalboName
-	text = {
-		trigger = { 
-			has_completed_focus = ITA_defy_the_duce
-		}
-		localization_key = ITA_litoranea_balbo_alt
-	}
+
 	text = {
 		localization_key = ITA_litoranea_balbo_default
 	}
@@ -812,18 +807,7 @@ defined_text = { #Litoranea Balbo name based on political path
 
 defined_text = { #Moschettieri del Duce name based on political path
 	name = GetAppropriateMoschetieridelDuceName
-	text = { # Anti-Fascist
-		trigger = { 
-			has_completed_focus = ITA_defy_the_duce
-		}
-		localization_key = ITA_moschettieri_del_duce_alt
-	}
-	text = { # King
-		trigger = { 
-			has_completed_focus = ITA_monarchia_d_italia
-		}
-		localization_key = ITA_moschettieri_del_duce_king
-	}
+
 	text = { # Default - Duce
 		localization_key = ITA_moschettieri_del_duce_default
 	}
@@ -831,12 +815,6 @@ defined_text = { #Moschettieri del Duce name based on political path
 
 defined_text = { #Albanian Fascist Militia name based on political path
 	name = GetAppropriateAlbanianFascistMilitiaName
-	text = { # King
-		trigger = { 
-			has_completed_focus = ITA_monarchia_d_italia
-		}
-		localization_key = ITA_albanian_fascist_militia_alt
-	}
 	text = { # Default - Duce
 		localization_key = ITA_albanian_fascist_militia_default
 	}

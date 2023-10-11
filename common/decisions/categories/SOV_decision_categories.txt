@@ -95,27 +95,6 @@ SOV_great_patriotic_war = {
 	}	
 }
 
-SOV_diplomacy_nordic_decision_category = {
-	priority = 25
-
-	icon = generic_foreign_policy
-
-	allowed = {
-		original_tag = SOV
-	}
-
-	visible = {
-		has_completed_focus = SOV_secure_leningrad
-		OR = {
-			country_exists = FIN
-			country_exists = SWE
-			country_exists = NOR
-			country_exists = DEN
-		}
-		is_subject = no
-	}
-}
-
 SOV_merge_designers_dec_cat = {
 	priority = 28
 

@@ -297,116 +297,6 @@ default_surplus_management = {
 	}
 }
 
-bba_air_prod_1 = {
-	# TODO BFW: this was moved from germany's strats
-
-	enable = {
-		always = yes
-		NOT = { original_tag = GER } 
-		NOT = { original_tag = ENG }
-	}
-
-	abort_when_not_enabled = yes
-
-	#Air unit factors
-	ai_strategy = {
-		type = unit_ratio
-		id = fighter
-		value = 200
-	}
-
-	ai_strategy = {
-		type = equipment_production_factor
-		id = fighter
-		value = 10
-	}
-
-	ai_strategy = {
-		type = equipment_production_min_factories
-		id = fighter
-		value = 1
-	}
-
-	ai_strategy = {
-		type = unit_ratio
-		id = cas
-		value = 20 #because doctrine this = 15
-	}
- 
-	ai_strategy = {
-		type = unit_ratio
-		id = naval_bomber
-		value = 5
-	}
-
-	ai_strategy = {
-		type = unit_ratio
-		id = tactical_bomber
-		value = 10
-	}
-
-	ai_strategy = {
-		type = equipment_production_factor
-		id = tactical_bomber
-		value = 5
-	}
-
-	ai_strategy = {
-		type = unit_ratio
-		id = strategic_bomber
-		value = 5
-	}
-
-	ai_strategy = {
-		type = equipment_production_factor
-		id = cas
-		value = 10
-	}
-
-	ai_strategy = {
-		type = equipment_production_min_factories
-		id = cas
-		value = 0
-	}
-
-	ai_strategy = {
-		type = equipment_production_factor
-		id = strategic_bomber
-		value = 1
-	}
-
-	ai_strategy = {
-		type = equipment_variant_production_factor
-		id = large_plane_airframe
-		value = 0
-	}
-
-	ai_strategy = {
-		type = equipment_production_factor
-		id = heavy_fighter
-		value = 1
-	}
-
-	ai_strategy = {
-		type = unit_ratio
-		id = heavy_fighter
-		value = 1
-	}
-
-	ai_strategy = {
-		type = unit_ratio
-		id = cv_fighter
-		value = 10
-	}
-
-	ai_strategy = {
-		type = unit_ratio
-		id = cv_naval_bomber
-		value = 10
-	}
-
-}
-
 bba_support_boosts = {
 
 	enable = {
@@ -1525,11 +1415,6 @@ comintern_avoid_starting_wars_during_endgame = { #Sov should avoid attacking all
 		type = conquer
 		id = FIN
 		value = 400 #These values offset each other. Basically we won't start wars with anyone except for finland while this strategy is active
-	}
-	ai_strategy = {
-		type = conquer
-		id = PER
-		value = 400 #These values offset each other. Basically we won't start wars with anyone except for iran while this strategy is active
 	}
 }
 

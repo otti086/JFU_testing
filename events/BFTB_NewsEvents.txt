@@ -961,8 +961,6 @@ news_event = {
 			OR = {
 				tag = BUL
 				tag = ALB
-				tag = IRQ
-				tag = SAU
 				tag = ROM
 				tag = YUG
 				tag = HUN
@@ -987,8 +985,6 @@ news_event = {
 		trigger = {
 			OR =  {
 				tag = GER
-				tag = PER
-				tag = AFG
 			}
 		}
 	}
@@ -997,11 +993,8 @@ news_event = {
 		trigger = {
 			NOT = {
 				OR = {
-					tag = TUR
 					tag = BUL
 					tag = ALB
-					tag = IRQ
-					tag = SAU
 					tag = ENG
 					tag = FRA
 					tag = USA
@@ -1012,8 +1005,6 @@ news_event = {
 					tag = AUS
 					tag = POL
 					tag = GER
-					tag = PER
-					tag = AFG
 				}
 			}
 		}
@@ -1216,63 +1207,6 @@ news_event = {
 		trigger = {
 			NOT = {
 				tag = TUR
-			}
-		}
-	}
-}
-
-#The Greek Civil War
-news_event = {
-	id = bftb_news.301
-	title = bftb_news.301.t
-	desc = bftb_news.301.desc
-	picture = GFX_news_event_greek_civil_war
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = bftb_news.301.a 
-		trigger = {
-			tag = GRE
-		}
-	}
-	option = {
-		name = bftb_news.301.b
-		trigger = {
-			OR = {
-				tag = ENG
-				AND = {
-					tag = GER
-					has_completed_focus = GER_oppose_hitler
-				}
-			}
-		}
-	}
-	option = {
-		name = bftb_news.301.c
-		trigger = {
-			OR = { 
-				tag = ITA
-				tag = BUL
-			}
-		}
-	}
-	option = {
-		name = bftb_news.301.d
-		trigger = {
-			OR = {
-				NOT = {
-					tag = ENG
-					tag = GRE
-					AND = {
-						tag = GER
-						has_completed_focus = GER_oppose_hitler
-					}
-					tag = ITA
-					tag = BUL
-				}
 			}
 		}
 	}

@@ -142,10 +142,10 @@ defined_text = {
 				limit = {
 					is_major = yes
 				}
-				tag = SOU
+				tag = SOV
 			}
 			else = {
-				is_in_faction_with = SOU
+				is_in_faction_with = SOV
 			}
 		}
 		random_list = {

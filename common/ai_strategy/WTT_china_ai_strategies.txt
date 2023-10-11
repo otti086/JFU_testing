@@ -10,63 +10,6 @@
 # protect
 # influence
 
-WTT_add_infiltration_save_equipment = {
-	enable = {
-		OR = {
-			has_completed_focus = PRC_infiltration
-			has_completed_focus = PRC_anti_japanese_expedition
-		}
-
-	}
-	abort = {
-		OR = {
-			has_war_with = event_target:WTT_current_china_leader
-			NOT = { country_exists = event_target:WTT_current_china_leader }
-			AND = {
-				has_war = yes
-				any_enemy_country = {
-					is_major = yes
-				}
-			}
-		}
-	}
-	
-	ai_strategy = {
-		type = save_equipment
-		id = infantry_equipment
-		value = 501
-	}
-}
-
-#Best always keep some in reserve to remove infiltration when needed
-WTT_remove_infiltration_save_equipment = {
-	enable = {
-		tag = event_target:WTT_current_china_leader
-		any_other_country = {
-			has_completed_focus = PRC_infiltration
-		}
-	}
-	abort = {
-		OR = {
-			any_country = {
-				has_completed_focus = PRC_infiltration
-				has_war_with = ROOT
-			}
-			AND = {
-				has_war = yes
-				any_enemy_country = {
-					is_major = yes
-				}
-			}
-		}
-	}
-	ai_strategy = {
-		type = save_equipment
-		id = infantry_equipment
-		value = 1001
-	}
-}
-
 # make warlords support china better
 WTT_all_warlords_support_china_in_war = {
 	reversed = yes
@@ -109,40 +52,5 @@ WTT_all_warlords_support_china_in_war = {
 	ai_strategy = {
 		type = spare_unit_factor
 		value = 50
-	}
-}
-
-
-
-
-SOV_dont_support_if_exiles_and_friendly_with_japan = {
-	allowed = {
-		tag = SOV
-	}
-
-	enable = {		
-		OR = {
-			SOV = { has_government = neutrality }	
-			SOV = { has_government = fascism }	
-		}
-	}
-	abort = {
-		OR ={
-			SOV = { has_war_with = JAP }
-			SOV = { has_completed_focus = SOV_memories_of_1905 }
-		}
-	}
-	
-
-	ai_strategy = {
-		type = send_volunteers_desire
-		id = "CHI"
-		value = -500
-	}
-
-	ai_strategy = {
-		type = send_lend_lease_desire
-		id = "CHI"
-		value = -500
 	}
 }

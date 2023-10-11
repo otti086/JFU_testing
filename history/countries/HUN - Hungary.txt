@@ -119,18 +119,6 @@ if = {
 	}
 }
 
-set_politics = {
-	ruling_party = neutrality
-	last_election = "1935.3.31"
-	election_frequency = 48
-	elections_allowed = yes
-}
-set_popularities = {
-	democratic = 25
-	fascism = 31
-	neutrality = 44
-}
-
 #Start Horty as neutral if DOD
 recruit_character = HUN_miklos_horthy
 recruit_character = HUN_matyas_rakosi
@@ -164,3 +152,16 @@ recruit_character = HUN_gusztav_gratz
 recruit_character = HUN_gyula_gombos_de_jakfa
 recruit_character = HUN_otto_von_habsburg
 recruit_character = HUN_franz_friedrich
+
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1935.3.31"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 25
+	fascism = 31
+	neutrality = 44
+}

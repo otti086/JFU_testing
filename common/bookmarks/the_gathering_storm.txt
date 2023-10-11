@@ -339,57 +339,12 @@ bookmarks = {
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }
-		}
-	}		
+		}	
 
 
 		"---"={
 			history = "OTHER_GATHERING_STORM_DESC"
 		}
-		FIN={
-			minor = yes
-			history = FIN_GATHERING_STORM_DESC
-			ideology = neutrality
-			available = {  NOT = { has_dlc = "Arms Against Tyranny" } }
-			ideas = {
-				FIN_sisu_2
-			}
-			focuses = {
-				FIN_winter_warfare
-				FIN_greater_finland
-				FIN_oy_alkoholiliike
-			}
-		}
-		FIN={
-			minor = yes
-			history = FIN_GATHERING_STORM_DESC
-			ideology = neutrality
-			available = { has_dlc = "Arms Against Tyranny" } 
-			ideas = {
-				FIN_sisu_2
-			}
-			focuses = {
-				FIN_red_finland
-				FIN_winter_warfare
-				FIN_greater_finland
-			}
-		}
-		"NOR"={
-			minor = yes
-			history = "NOR_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-				NOR_complacent_cabinet_ns
-				NOR_the_hard_thirties_ns
-				NOR_anti_communist_sentiment_ns
-			}
-			focuses = {
-				NOR_continue_nygaardsvold_government
-				NOR_the_stumbling_storting
-				NOR_arrest_quisling			
-			}
-		}
-
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }

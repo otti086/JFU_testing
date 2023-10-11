@@ -148,7 +148,6 @@ if = {
 		improved_airplane_launcher = 1
 		basic_dp_light_battery = 1
 	}
-	add_ideas = 
 }
 
 
@@ -176,7 +175,6 @@ add_ideas = {
 	home_of_the_free
 }
 
-recruit_character = USA_earl_browder
 recruit_character = USA_william_dudley_pelley
 recruit_character = USA_franklin_delano_roosevelt
 recruit_character = USA_george_s_patton
@@ -218,7 +216,6 @@ recruit_character = USA_thomas_kinkaid
 recruit_character = USA_henry_arnold
 recruit_character = USA_dewitt_clinton_ramsey
 recruit_character = USA_harold_mcclelland
-recruit_character = USA_charles_lindbergh
 recruit_character = USA_george_kenney
 recruit_character = USA_john_cannon
 recruit_character = USA_george_marshall
@@ -235,11 +232,8 @@ recruit_character = USA_donald_nelson
 recruit_character = USA_joseph_mccarthy
 recruit_character = USA_cordell_hull
 recruit_character = USA_harold_ickes
-recruit_character = USA_william_regnery
-recruit_character = USA_joseph_patterson
 recruit_character = USA_henry_stimson
 recruit_character = USA_victor_perlo
-recruit_character = USA_charles_coughlin
 recruit_character = USA_harry_white
 
 

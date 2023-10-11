@@ -51,7 +51,7 @@ air_wings = {
 		medium_plane_airframe_1 =  { owner = "USA" amount = 36 version_name = "PBY" }			# Naval Patrol Wing 3 -- PBY-1
 	}
 
-#	327 = { 															# Luzon, PHI
+#	327 = { 															# Luzon, 
 #		### Philippine Composite Wing (CO: ) ###
 #		fighter_equipment_0 =  { owner = "USA" amount = 72 }			# 4th/I Composite Group -- P-26As
 #		tac_bomber_equipment_0 = { owner = "USA" amount = 12 }			# 4th/II Composite Group -- B-18s

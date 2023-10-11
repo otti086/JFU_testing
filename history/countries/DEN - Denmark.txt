@@ -76,42 +76,14 @@ if = {
 
 
 
-
-if = {
-	limit = {
-		has_dlc = "Arms Against Tyranny"
-	}
-	set_politics = {
-		ruling_party = democratic
-		last_election = "1935.10.22"
-		election_frequency = 42
-		elections_allowed = yes
-	}
-	set_popularities = {
-		democratic = DEN_democratic_popularity
-		fascism = DEN_fascism_popularity
-		communism = DEN_communism_popularity
-		neutrality = DEN_neutrality_popularity
-	}
-
-	store_core_states_on_game_start = yes
+set_popularities = {
+	democratic = 100
 }
-if = {
-	limit = {
-		NOT = { has_dlc = "Arms Against Tyranny" }
-	}
-	set_popularities = {
-		democratic = 94
-		fascism = 1
-		communism = 2
-		neutrality = 3
-	}
-	set_politics = {
-		ruling_party = democratic
-		last_election = "1935.10.22"
-		election_frequency = 48
-		elections_allowed = yes
-	}
+set_politics = {
+	ruling_party = democratic
+	last_election = "1935.10.22"
+	election_frequency = 48
+	elections_allowed = yes
 }
 
 

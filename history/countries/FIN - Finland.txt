@@ -146,12 +146,12 @@ if = {
 	limit = {
 		has_start_date < 1936.01.02
 	}
-	set_power_balance = {
-		id = FIN_power_balance
-		left_side = FIN_bad_side
-		right_side = FIN_good_side
-		set_value = -0.45 #Adding FIN_sisu_2 idea below
-	}
+#	set_power_balance = {
+#		id = FIN_power_balance
+#		left_side = FIN_bad_side
+#		right_side = FIN_good_side
+#		set_value = -0.45 #Adding FIN_sisu_2 idea below
+#	}
 	#SISU NS
 	add_ideas = FIN_sisu_2
 }
@@ -593,12 +593,12 @@ set_convoys = 5
 	}
 
 	# BOP & COUNTRY LEADER ADJUSTMENTS
-	set_power_balance = {
-		id = FIN_power_balance
-		left_side = FIN_bad_side
-		right_side = FIN_good_side
-		set_value = 0 #Adding FIN_sisu_2 idea below
-	}
+#	set_power_balance = {
+#		id = FIN_power_balance
+#		left_side = FIN_bad_side
+#		right_side = FIN_good_side
+#		set_value = 0 #Adding FIN_sisu_2 idea below
+#	}
 	add_ideas = FIN_sisu_3
 
 	retire_country_leader = yes

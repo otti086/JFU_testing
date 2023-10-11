@@ -14,24 +14,6 @@
 
 
 
-ROM_be_nice_to_hitler = {
-	allowed = {
-		original_tag = ROM
-	}
-	enable = {
-		has_completed_focus = ROM_trade_treaty_with_germany
-	}
-	abort={
-		is_in_faction = yes
-	}
-
-	ai_strategy = {
-		type = befriend
-		id = GER
-		value = 200
-	}
-}
-
 ROM_build_early_civ = {
 	allowed = {
 		original_tag = ROM

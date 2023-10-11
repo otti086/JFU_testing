@@ -36,18 +36,7 @@ recruit_character = SOV_genrikh_yagoda
 recruit_character = SOV_nikolay_yezhov
 recruit_character = SOV_lavrenty_beriya
 recruit_character = SOV_vsevolod_merkulov
-recruit_character = SOV_yevgeny_preobrazhensky
-recruit_character = SOV_aleksandr_shlyapnikov
-recruit_character = SOV_nikolay_bukharin
-recruit_character = SOV_aleksey_rykov
-recruit_character = SOV_mikhail_tomsky
-recruit_character = SOV_grigory_sokolnikov
-recruit_character = SOV_grigory_zinovyev
-recruit_character = SOV_lev_kamenev
-recruit_character = SOV_martemyan_ryutin
 recruit_character = SOV_patriarch_sergy
-recruit_character = SOV_aleksandr_kerensky
-recruit_character = SOV_konstantin_rodzayevsky
 
 
 recruit_character = SOV_aleksandr_vasilevsky
@@ -118,7 +107,6 @@ recruit_character = SOV_vitaly_primakov
 #Not available at game start
 recruit_character = SOV_vasily_korzh
 recruit_character = SOV_sidor_kovpak
-recruit_character = SOV_lev_dovator
 recruit_character = SOV_pavel_rybalko
 
 if = {
@@ -126,7 +114,6 @@ if = {
 		has_dlc = "No Step Back"
 	}
 	# recruit_character = SOV_grigory_semyonov # starts as an advisor to Puyi
-	recruit_character = SOV_nikolay_ustryalov
 	recruit_character = SOV_tsar_vladimir_kirillovich
 }
 
@@ -159,12 +146,6 @@ SOV_lavrenty_beriya = { #NKVD Chiefs are always safe from regular purges, they'l
 SOV_vsevolod_merkulov = {
 	set_character_flag = SOV_safe_from_purge_flag
 }
-SOV_konstantin_rodzayevsky = { #Not in the country
-	set_character_flag = SOV_exiled_flag
-}
-SOV_aleksandr_kerensky = { #Not in the country
-	set_character_flag = SOV_exiled_flag
-}
 SOV_patriarch_sergy = { #Priests are not political enemies at this point
 	set_character_flag = SOV_safe_from_purge_flag
 }
@@ -176,76 +157,7 @@ if = {
 		set_character_flag = SOV_safe_from_purge_flag
 	}
 }
-SOV_yevgeny_preobrazhensky = {
-	set_character_flag = SOV_aligned_left_opposition_flag
-}
-SOV_aleksandr_shlyapnikov = {
-	set_character_flag = SOV_aligned_left_opposition_flag
-}
-SOV_nikolay_bukharin = {
-	set_character_flag = SOV_aligned_right_opposition_flag
-}
-SOV_aleksey_rykov = {
-	set_character_flag = SOV_aligned_right_opposition_flag
-}
-SOV_mikhail_tomsky = {
-	set_character_flag = SOV_aligned_right_opposition_flag
-}
-SOV_grigory_sokolnikov = {
-	set_character_flag = SOV_aligned_right_opposition_flag
-}
-#SOV_grigory_zinovyev -> Will be aligned with either left or right opposition via focus
-#SOV_lev_kamenev -> Will be aligned with either left or right opposition via focus
-#SOV_martemyan_ryutin -> Will be aligned with either left or right opposition via focus
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	SOV_anastasy_vonsyatsky = {
-		set_character_flag = SOV_aligned_the_exiles_flag
-		set_character_flag = SOV_exiled_flag
-	}
-	 
-	SOV_nikolay_ustryalov = {
-		set_character_flag = SOV_aligned_the_exiles_flag
-	}
-	SOV_aleksandr_kazembek = {
-		set_character_flag = SOV_aligned_the_exiles_flag
-	}
-	SOV_aleksandr_prokofyev_seversky = {
-		set_character_flag = SOV_aligned_the_exiles_flag
-		set_character_flag = SOV_exiled_military_advisor_flag
-	}
-	SOV_vyacheslav_tkachyov = {
-		set_character_flag = SOV_aligned_the_exiles_flag
-		set_character_flag = SOV_exiled_military_advisor_flag
-	}
-	SOV_yan_nagursky = {
-		set_character_flag = SOV_aligned_the_exiles_flag
-		set_character_flag = SOV_exiled_military_advisor_flag
-	}
-	SOV_vasily_yanchenko = {
-		set_character_flag = SOV_aligned_the_exiles_flag
-		set_character_flag = SOV_exiled_military_advisor_flag
-	}
-}
-
-#Initialize character flags Part III (aka who's in prison)
-SOV_aleksandr_shlyapnikov = {
-	set_character_flag = SOV_imprisoned_flag
-}
-SOV_grigory_zinovyev = {
-	set_character_flag = SOV_imprisoned_flag
-}
-SOV_lev_kamenev = {
-	set_character_flag = SOV_imprisoned_flag
-}
-SOV_martemyan_ryutin = {
-	set_character_flag = SOV_imprisoned_flag
-}
 	
-
-
 ### PROPAGANDA ###
 set_variable = { SOV_new_propaganda_campaign = 0 } #Used to pick a poster slot
 set_variable = { SOV_propaganda_campaign_to_remove = 0 } #Used to reset a poster slot
