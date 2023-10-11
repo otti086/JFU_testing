@@ -4,6 +4,7 @@ tags={
 	"Balance"
 }
 replace_path="common/ai_strategy"
+replace_path="common/ai_strategy_plans"
 replace_path="common/autonomous_states"
 replace_path="common/bop"
 replace_path="common/characters"
