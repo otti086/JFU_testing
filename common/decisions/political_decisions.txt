@@ -255,7 +255,41 @@ political_actions = {
 			factor = 0
 		}
     }
-    
+    anti_non_aligned_raids = {
+
+    	icon = generic_civil_support
+
+    	visible = {
+			NOT = { has_government = neutrality }
+		}
+
+		available = {
+            neutrality > 0.1
+            if = {
+				limit = {
+					tag = SPR
+				}
+				NOT = {
+					has_idea = SPR_political_violence
+				}
+			}
+        }
+	
+		modifier = {
+			neutrality_drift = -0.05
+			stability_weekly = 0.007
+		}
+	
+		days_remove = 120
+		cost = 50
+
+		complete_effect = {
+			add_stability = -0.1
+		}
+		
+		remove_effect = {
+		}
+    }    
 	ban_fascist_party = {
 
 		icon = generic_civil_support

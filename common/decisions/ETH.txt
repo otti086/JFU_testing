@@ -75,7 +75,6 @@ ETH_second_italo_ethiopian_war_category = {
 		selectable_mission = no  
 		days_mission_timeout = 14
 		timeout_effect = {
-			remove_ideas = ETH_christmas_offensive_idea
 
 			# TODO_MANU Change to Italian event, and move activation effects to there
 			hidden_effect = {

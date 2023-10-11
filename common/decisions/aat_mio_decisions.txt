@@ -11,7 +11,6 @@ foreign_mio_decisions_category = {
 		allowed = {
 			OR = {
 				tag = BUL 
-				tag = ETH 
 			}
 		}
 
@@ -22,14 +21,6 @@ foreign_mio_decisions_category = {
 			IF = {
 				limit = { original_tag = BUL }
 				has_completed_focus = BUL_contract_foreign_companies
-			}
-			ELSE_IF = {
-				limit = { original_tag = ETH }
-				has_completed_focus = ETH_invite_foreign_industrialists
-				GER = {
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
 			}
 			ELSE = {
 				always = no 
@@ -212,71 +203,6 @@ foreign_mio_decisions_category = {
 		}
 	}
 
-	invite_GER_junkers_organization = {
-
-		icon = generic_air 
-
-		cost = 50
-
-		fire_only_once = yes 
-
-		allowed = {
-			OR = {
-				tag = ETH 
-			}
-		}
-
-		visible = {
-			GER = {
-				mio_original_country_exists_and_not_at_war_with_ROOT = yes
-			}
-			IF = {
-				limit = { original_tag = ETH }
-				has_completed_focus = ETH_invite_foreign_industrialists
-				GER = {
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
-			}
-			ELSE = {
-				always = no 
-			}
-		}
-
-		available = {
-			IF = {
-				limit = { original_tag = ETH }
-				GER = {
-					has_opinion = {
-						target = ROOT
-						value > 49
-					}
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
-			}
-		}
-
-		complete_effect = {
-			hidden_effect = { set_country_flag = has_invited_GER_junkers_organization_flag }
-			custom_effect_tooltip = available_mio_tt
-			show_mio_tooltip = GER_junkers_organization
-			
-		}
-		
-		ai_will_do = {
-			base = 10
-			modifier = {
-				factor = 5
-				GER = { has_government = ROOT }
-			}
-			modifier = {
-				factor = 5
-				GER = { is_in_faction_with = ROOT }
-			}
-		}
-	}
-
 
 	# materiel
 	invite_GER_opel_organization = {
@@ -358,71 +284,6 @@ foreign_mio_decisions_category = {
 			}		
 		}
 
-		ai_will_do = {
-			base = 10
-			modifier = {
-				factor = 5
-				GER = { has_government = ROOT }
-			}
-			modifier = {
-				factor = 5
-				GER = { is_in_faction_with = ROOT }
-			}
-		}
-	}
-
-	invite_GER_mauser_organization = {
-
-		icon = generic_prepare_civil_war
-
-		cost = 50
-
-		fire_only_once = yes 
-
-		allowed = {
-			OR = {
-				tag = ETH 
-			}
-		}
-
-		visible = {
-			GER = {
-				mio_original_country_exists_and_not_at_war_with_ROOT = yes
-			}
-			IF = {
-				limit = { original_tag = ETH }
-				has_completed_focus = ETH_invite_foreign_industrialists
-				GER = {
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
-			}
-			ELSE = {
-				always = no 
-			}
-		}
-
-		available = {
-			IF = {
-				limit = { original_tag = ETH }
-				GER = {
-					has_opinion = {
-						target = ROOT
-						value > 49
-					}
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
-			}
-		}
-
-		complete_effect = {
-			hidden_effect = { set_country_flag = has_invited_GER_mauser_organization_flag }
-			custom_effect_tooltip = available_mio_tt
-			show_mio_tooltip = GER_mauser_organization
-			
-		}
-		
 		ai_will_do = {
 			base = 10
 			modifier = {
@@ -826,10 +687,6 @@ foreign_mio_decisions_category = {
 					tag = BUL
 					has_dlc = "Battle for the Bosporus"
 				}
-				AND = {
-					tag = ETH 
-					has_dlc = "By Blood Alone"
-				}
 			}
 		}
 
@@ -840,14 +697,6 @@ foreign_mio_decisions_category = {
 			IF = {
 				limit = { original_tag = BUL }
 				has_completed_focus = BUL_contract_foreign_companies
-			}
-			IF = {
-				limit = { owner = { original_tag = ETH } }
-				owner = { has_completed_focus = ETH_invite_foreign_industrialists }
-				ENG = {
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
 			}
 			ELSE = {
 				always = no 
@@ -870,17 +719,6 @@ foreign_mio_decisions_category = {
 					}
 					has_capitulated = no
 					BUL_is_valid_subject = yes
-				}
-			}
-			IF = {
-				limit = { original_tag = ETH }
-				ENG = {
-					has_opinion = {
-						target = ROOT
-						value > 49
-					}
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
 				}
 			}
 		}
@@ -1035,7 +873,6 @@ foreign_mio_decisions_category = {
 		allowed = {
 			OR = {
 				tag = BUL 
-				tag = ETH 
 			}
 		}
 
@@ -1048,14 +885,6 @@ foreign_mio_decisions_category = {
 				OR = {
 					has_completed_focus = BUL_contract_foreign_companies
 					has_completed_focus = BUL_a_black_sea_fleet
-				}
-			}
-			ELSE_IF = {
-				limit = { owner = { original_tag = ETH } }
-				owner = { has_completed_focus = ETH_invite_foreign_industrialists }
-				ENG = {
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
 				}
 			}
 			ELSE = {
@@ -1071,7 +900,6 @@ foreign_mio_decisions_category = {
 					is_subject_of = ENG
 				}
 				#is_in_faction_with = ENG
-				has_completed_focus = BUL_a_black_sea_fleet
 				NOT = { has_completed_focus = BUL_nationalization }
 				ENG = {
 					has_opinion = {
@@ -1082,17 +910,6 @@ foreign_mio_decisions_category = {
 					BUL_is_valid_subject = yes
 				}
 
-			}
-			IF = {
-				limit = { original_tag = ETH }
-				ENG = {
-					has_opinion = {
-						target = ROOT
-						value > 49
-					}
-					has_capitulated = no
-					NOT = { has_war_with = ROOT }
-				}
 			}
 		}
 
@@ -1248,10 +1065,6 @@ foreign_mio_decisions_category = {
 					tag = BUL
 					has_dlc = "Battle for the Bosporus"
 				}
-				AND = {
-					tag = ETH 
-					has_dlc = "By Blood Alone"
-				}
 			}
 		}
 
@@ -1292,17 +1105,6 @@ foreign_mio_decisions_category = {
 					}
 					has_capitulated = no
 					BUL_is_valid_subject = yes
-				}
-			}
-			IF = {
-				limit = { original_tag = ETH }
-				ENG = {
-					has_opinion = {
-						target = ROOT
-						value > 49
-					}
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
 				}
 			}
 		}
@@ -1468,7 +1270,6 @@ foreign_mio_decisions_category = {
 				limit = { original_tag = BUL }
 				OR = {
 					has_completed_focus = BUL_contract_foreign_companies
-					has_completed_focus = BUL_a_black_sea_fleet
 				}
 			}
 			ELSE = {
@@ -1484,7 +1285,6 @@ foreign_mio_decisions_category = {
 					is_subject_of = ITA
 				}
 				#is_in_faction_with = ITA
-				has_completed_focus = BUL_a_black_sea_fleet
 				NOT = { has_completed_focus = BUL_nationalization }
 				ITA = {
 					has_opinion = {
@@ -1632,595 +1432,6 @@ foreign_mio_decisions_category = {
 				ITA = { is_in_faction_with = ROOT }
 			}
 		}
-	}
-
-	### Czech MIOs 
-	# Tanks 
-	invite_CZE_ckd_organization = {
-
-		icon = generic_tank
-
-		cost = 50
-
-		fire_only_once = yes 
-
-		allowed = {
-			OR = {
-				tag = ETH 
-			}
-		}
-
-		visible = {
-			CZE = {
-				mio_original_country_exists_and_not_at_war_with_ROOT = yes
-			}
-			IF = {
-				limit = { original_tag = ETH }
-				has_completed_focus = ETH_invite_foreign_industrialists
-				CZE = {
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
-			}
-			ELSE = {
-				always = no 
-			}
-		}
-
-		available = {
-			IF = {
-				limit = { original_tag = ETH }
-				CZE = {
-					has_opinion = {
-						target = ROOT
-						value > 49
-					}
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
-			}
-		}
-
-		complete_effect = {
-			hidden_effect = { set_country_flag = has_invited_CZE_ckd_organization_flag }
-			custom_effect_tooltip = available_mio_tt
-			show_mio_tooltip = CZE_ckd_organization
-			
-		}
-		
-		ai_will_do = {
-			base = 10
-			modifier = {
-				factor = 5
-				CZE = { has_government = ROOT }
-			}
-			modifier = {
-				factor = 5
-				CZE = { is_in_faction_with = ROOT }
-			}
-		}
-	}
-	invite_CZE_skoda_armor_organization = {
-
-		icon = generic_tank
-
-		cost = 50
-
-		fire_only_once = yes 
-
-		allowed = {
-			OR = {
-				tag = ETH 
-			}
-		}
-
-		visible = {
-			CZE = {
-				mio_original_country_exists_and_not_at_war_with_ROOT = yes
-			}
-			IF = {
-				limit = { original_tag = ETH }
-				has_completed_focus = ETH_invite_foreign_industrialists
-				CZE = {
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
-			}
-			ELSE = {
-				always = no 
-			}
-		}
-
-		available = {
-			IF = {
-				limit = { original_tag = ETH }
-				CZE = {
-					has_opinion = {
-						target = ROOT
-						value > 49
-					}
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
-			}
-		}
-
-		complete_effect = {
-			hidden_effect = { set_country_flag = has_invited_CZE_skoda_armor_organization_flag }
-			custom_effect_tooltip = available_mio_tt
-			show_mio_tooltip = CZE_skoda_armor_organization
-			
-		}
-		
-		ai_will_do = {
-			base = 10
-			modifier = {
-				factor = 5
-				CZE = { has_government = ROOT }
-			}
-			modifier = {
-				factor = 5
-				CZE = { is_in_faction_with = ROOT }
-			}
-		}
-	}
-	# Materiel
-	invite_CZE_skoda_artillery_organization = {
-
-		icon = generic_industry
-
-		cost = 50
-
-		fire_only_once = yes 
-
-		allowed = {
-			OR = {
-				tag = ETH 
-			}
-		}
-
-		visible = {
-			CZE = {
-				mio_original_country_exists_and_not_at_war_with_ROOT = yes
-			}
-			IF = {
-				limit = { original_tag = ETH }
-				has_completed_focus = ETH_invite_foreign_industrialists
-				CZE = {
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
-			}
-			ELSE = {
-				always = no 
-			}
-		}
-
-		available = {
-			IF = {
-				limit = { original_tag = ETH }
-				CZE = {
-					has_opinion = {
-						target = ROOT
-						value > 49
-					}
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
-			}
-		}
-
-		complete_effect = {
-			hidden_effect = { set_country_flag = has_invited_CZE_skoda_artillery_organization_flag }
-			custom_effect_tooltip = available_mio_tt
-			show_mio_tooltip = CZE_skoda_artillery_organization
-			
-		}
-		
-		ai_will_do = {
-			base = 10
-			modifier = {
-				factor = 5
-				CZE = { has_government = ROOT }
-			}
-			modifier = {
-				factor = 5
-				CZE = { is_in_faction_with = ROOT }
-			}
-		}
-	}
-
-	#### French MIOs 
-	# Tanks
-	invite_FRA_renault_organization = {
-
-		icon = generic_tank
-
-		cost = 50
-
-		fire_only_once = yes 
-
-		allowed = {
-			OR = {
-				tag = ETH 
-			}
-		}
-
-		visible = {
-			FRA = {
-				mio_original_country_exists_and_not_at_war_with_ROOT = yes
-			}
-			IF = {
-				limit = { original_tag = ETH }
-				has_completed_focus = ETH_invite_foreign_industrialists
-				FRA = {
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
-			}
-			ELSE = {
-				always = no 
-			}
-		}
-
-		available = {
-			IF = {
-				limit = { original_tag = ETH }
-				FRA = {
-					has_opinion = {
-						target = ROOT
-						value > 49
-					}
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
-			}
-		}
-
-		complete_effect = {
-			hidden_effect = { set_country_flag = has_invited_FRA_renault_organization_flag }
-			custom_effect_tooltip = available_mio_tt
-			show_mio_tooltip = FRA_renault_organization
-			
-		}
-		
-		ai_will_do = {
-			base = 10
-			modifier = {
-				factor = 5
-				FRA = { has_government = ROOT }
-			}
-			modifier = {
-				factor = 5
-				FRA = { is_in_faction_with = ROOT }
-			}
-		}
-	} 
-
-	# Planes
-	invite_FRA_bloch_organization = {
-
-		icon = generic_air
-
-		cost = 50
-
-		fire_only_once = yes 
-		allowed = {
-			OR = {
-				tag = ETH 
-			}
-		}
-
-		visible = {
-			FRA = {
-				mio_original_country_exists_and_not_at_war_with_ROOT = yes
-			}
-			IF = {
-				limit = { original_tag = ETH }
-				has_completed_focus = ETH_invite_foreign_industrialists
-				FRA = {
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
-			}
-			ELSE = {
-				always = no 
-			}
-		}
-
-		available = {
-			IF = {
-				limit = { original_tag = ETH }
-				FRA = {
-					has_opinion = {
-						target = ROOT
-						value > 49
-					}
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
-			}
-		}
-
-		complete_effect = {
-			hidden_effect = { set_country_flag = has_invited_FRA_bloch_organization_flag }
-			custom_effect_tooltip = available_mio_tt
-			show_mio_tooltip = FRA_bloch_organization
-			
-		}
-		
-		ai_will_do = {
-			base = 10
-			modifier = {
-				factor = 5
-				FRA = { has_government = ROOT }
-			}
-			modifier = {
-				factor = 5
-				FRA = { is_in_faction_with = ROOT }
-			}
-		}
-	}
-
-	# Materiel
-	invite_FRA_mas_organization = {
-
-		icon = generic_prepare_civil_war
-		cost = 50
-
-		fire_only_once = yes 
-		allowed = {
-			OR = {
-				tag = ETH 
-			}
-		}
-
-		visible = {
-			FRA = {
-				mio_original_country_exists_and_not_at_war_with_ROOT = yes
-			}
-			IF = {
-				limit = { original_tag = ETH }
-				has_completed_focus = ETH_invite_foreign_industrialists
-				FRA = {
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
-			}
-			ELSE = {
-				always = no 
-			}
-		}
-
-		available = {
-			IF = {
-				limit = { original_tag = ETH }
-				FRA = {
-					has_opinion = {
-						target = ROOT
-						value > 49
-					}
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
-			}
-		}
-
-		complete_effect = {
-			hidden_effect = { set_country_flag = has_invited_FRA_mas_organization_flag }
-			custom_effect_tooltip = available_mio_tt
-			show_mio_tooltip = FRA_mas_organization
-			
-		}
-		
-		ai_will_do = {
-			base = 10
-			modifier = {
-				factor = 5
-				FRA = { has_government = ROOT }
-			}
-			modifier = {
-				factor = 5
-				FRA = { is_in_faction_with = ROOT }
-			}
-		}
-	}
-
-	# Japanese MIOs
-	# Ships
-	invite_JAP_maizuru_naval_arsenal_organization = {
-
-		icon = generic_naval
-
-		cost = 50
-
-		fire_only_once = yes 
-		allowed = {
-			OR = {
-				tag = ETH 
-			}
-		}
-
-		visible = {
-			JAP = {
-				mio_original_country_exists_and_not_at_war_with_ROOT = yes
-			}
-			IF = {
-				limit = { original_tag = ETH }
-				has_completed_focus = ETH_invite_foreign_industrialists
-				JAP = {
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
-			}
-			ELSE = {
-				always = no 
-			}
-		}
-
-		available = {
-			IF = {
-				limit = { original_tag = ETH }
-				JAP = {
-					has_opinion = {
-						target = ROOT
-						value > 49
-					}
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
-			}
-		}
-
-		complete_effect = {
-			hidden_effect = { set_country_flag = has_invited_JAP_maizuru_naval_arsenal_organization_flag }
-			custom_effect_tooltip = available_mio_tt
-			show_mio_tooltip = JAP_maizuru_naval_arsenal_organization
-			
-		}
-		
-		ai_will_do = {
-			base = 10
-			modifier = {
-				factor = 5
-				JAP = { has_government = ROOT }
-			}
-			modifier = {
-				factor = 5
-				JAP = { is_in_faction_with = ROOT }
-			}
-		}
-	}
-	# Planes
-	invite_JAP_mitsubishi_organization = {
-
-		icon = generic_air
-
-		cost = 50
-
-		fire_only_once = yes 
-
-		allowed = {
-			OR = {
-				tag = ETH 
-			}
-		}
-
-		visible = {
-			JAP = {
-				mio_original_country_exists_and_not_at_war_with_ROOT = yes
-			}
-			IF = {
-				limit = { original_tag = ETH }
-				has_completed_focus = ETH_invite_foreign_industrialists
-				JAP = {
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
-			}
-			ELSE = {
-				always = no 
-			}
-		}
-
-		available = {
-			IF = {
-				limit = { original_tag = ETH }
-				JAP = {
-					has_opinion = {
-						target = ROOT
-						value > 49
-					}
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
-			}
-		}
-
-		complete_effect = {
-			hidden_effect = { set_country_flag = has_invited_JAP_mitsubishi_organization_flag }
-			custom_effect_tooltip = available_mio_tt
-			show_mio_tooltip = JAP_mitsubishi_organization
-			
-		}
-		
-		ai_will_do = {
-			base = 10
-			modifier = {
-				factor = 5
-				JAP = { has_government = ROOT }
-			}
-			modifier = {
-				factor = 5
-				JAP = { is_in_faction_with = ROOT }
-			}
-		}
-	}
-
-	# Materiel
-	invite_JAP_nissan_organization = {
-
-		icon = generic_motorized
-
-		cost = 50
-
-		fire_only_once = yes 
-
-		allowed = {
-			OR = {
-				tag = ETH 
-			}
-		}
-
-		visible = {
-			JAP = {
-				mio_original_country_exists_and_not_at_war_with_ROOT = yes
-			}
-			IF = {
-				limit = { original_tag = ETH }
-				has_completed_focus = ETH_invite_foreign_industrialists
-				JAP = {
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
-			}
-			ELSE = {
-				always = no 
-			}
-		}
-
-		available = {
-			IF = {
-				limit = { original_tag = ETH }
-				JAP = {
-					has_opinion = {
-						target = ROOT
-						value > 49
-					}
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
-			}
-		}
-
-		complete_effect = {
-			hidden_effect = { set_country_flag = has_invited_JAP_nissan_organization_flag }
-			custom_effect_tooltip = available_mio_tt
-			show_mio_tooltip = JAP_nissan_organization
-			
-		}
-		
-		ai_will_do = {
-			base = 10
-			modifier = {
-				factor = 5
-				JAP = { has_government = ROOT }
-			}
-			modifier = {
-				factor = 5
-				JAP = { is_in_faction_with = ROOT }
-			}
-		}	
 	}
 }
 

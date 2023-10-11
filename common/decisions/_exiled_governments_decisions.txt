@@ -125,10 +125,6 @@ governments_in_exile = {
 
 		days_remove = 120
 		remove_effect = {
-			country_event = {
-				id = BBA_ethiopia_exile_events.53
-				hours = 1
-			}
 		}
 		ai_will_do = {
 			factor = 0.1
@@ -345,13 +341,7 @@ governments_in_exile = {
 		#	targeted_legitimacy_daily = -1
 		#	democratic_drift = 0.05
 		#}
-		complete_effect = {
-			FROM = {
-				add_timed_idea = {
-					idea = ETH_purge_ideology_boost_idea
-					days = 30
-				}
-			}			
+		complete_effect = {		
 		}
 
 		remove_effect = {
@@ -407,55 +397,55 @@ governments_in_exile = {
 		}
 	}
 
-	request_control_of_navy = {
-
-		icon = generic_naval
-
-		cost = 25
-		fire_only_once = yes
-
-		available = {
-		    FROM = {
-		    	has_legitimacy < 80
-		    }
-		}
-
-		visible = {
-			FROM = { is_exiled_in = ROOT }
-		}
-
-
-		target_array = exiles
-
-		target_trigger = {
-			FROM = {
-				is_exiled_in = ROOT
-				has_navy_size = {
-				    size > 0
-				}
-			}
-		}
-
-		complete_effect = {
-			effect_tooltip = {
-				FROM = {
-					transfer_navy = {
-						target = ROOT
-						is_government_in_exile = yes
-					}
-					add_legitimacy = 10
-				}
-			}
-			custom_effect_tooltip = HOL_request_equipment_tt_2
-			FROM = {
-				country_event = { id = mtg_exile_government.3 hours = 6 }
-			}
-		}
-
-		ai_will_do = {
-			factor = 5
-		}
-	}
+#	request_control_of_navy = {
+#
+#		icon = generic_naval
+#
+#		cost = 25
+#		fire_only_once = yes
+#
+#		available = {
+#		    FROM = {
+#		    	has_legitimacy < 80
+#		    }
+#		}
+#
+#		visible = {
+#			FROM = { is_exiled_in = ROOT }
+#		}
+#
+#
+#		target_array = exiles
+#
+#		target_trigger = {
+#			FROM = {
+#				is_exiled_in = ROOT
+#				has_navy_size = {
+#				    size > 0
+#				}
+#			}
+#		}
+#
+#		complete_effect = {
+#			effect_tooltip = {
+#				FROM = {
+#					transfer_navy = {
+#						target = ROOT
+#						is_government_in_exile = yes
+#					}
+#					add_legitimacy = 10
+#				}
+#			}
+#			custom_effect_tooltip = HOL_request_equipment_tt_2
+#			FROM = {
+#				country_event = { id = mtg_exile_government.3 hours = 6 }
+#			}
+#		}
+#
+#		ai_will_do = {
+#			factor = 5
+#		}
+#	}
 }
 
 category_exile_forces = {
