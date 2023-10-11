@@ -20,10 +20,6 @@ units= {
 			ship = { name = "Leopard" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
 			ship = { name = "Luchs" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
 			ship = { name = "Tiger" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
-		}
-		task_force = {
-			name = "Ostseeflotte"
-			location = 6332  # Konigsberg
 			ship = { name = "Schleswig-Holstein" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GER } } }
 			ship = { name = "Schlesien" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GER } } }		
 			# 2. Torpedobootflottille
@@ -36,16 +32,6 @@ units= {
 			ship = { name = "Kondor" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
 			ship = { name = "Wolf" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
 			ship = { name = "Iltis" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
-		}
-	}
-			
-	fleet = {
-		name = "Unterseeboots-Flotte "			
-		naval_base = 6389  # Kiel
-		task_force = {
-			name = "I. U-Boots Flottille Weddigen"
-			location = 6389  # Kiel
-			# 1. Unterseebootsflottille
 			ship = { name = "U-7" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }
 			ship = { name = "U-8" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }
 			ship = { name = "U-9" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }
@@ -55,11 +41,6 @@ units= {
 			ship = { name = "U-12" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }
 			ship = { name = "U-13" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }
 			ship = { name = "U-17" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }
-		}
-		task_force = {
-			name = "II. U-Boots-Ausbildungs-Gruppe"
-			location = 241  # Wilhemshaven
-			# 2. Unterseebootsflottille
 			ship = { name = "U-1" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }
 			ship = { name = "U-2" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }
 			ship = { name = "U-3" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }
@@ -89,7 +70,6 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.75
 		amount = 2
-		industrial_manufacturer = mio:GER_blohm_und_voss_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -99,7 +79,6 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.65
 		amount = 2
-		industrial_manufacturer = mio:GER_blohm_und_voss_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -109,7 +88,6 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.55
 		amount = 2
-		industrial_manufacturer = mio:GER_blohm_und_voss_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -119,7 +97,6 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.45
 		amount = 2
-		industrial_manufacturer = mio:GER_blohm_und_voss_organization
 	}
 	# DD: 1934 class (x4) ("Z1" "Z2" "Z3" "Z4")
 	add_equipment_production = {
@@ -130,7 +107,6 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.75
 		amount = 2
-		industrial_manufacturer = mio:GER_blohm_und_voss_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -140,7 +116,6 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.65
 		amount = 2
-		industrial_manufacturer = mio:GER_blohm_und_voss_organization
 	}
 	# CA: "Graf Spee"
 	add_equipment_production = {
@@ -152,7 +127,6 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.95
 		amount = 1
-		industrial_manufacturer = mio:GER_germaniawerft_organization
 	}
 	# Scharnhorst
 	add_equipment_production = {
@@ -163,7 +137,6 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.25
 		amount = 1
-		industrial_manufacturer = mio:GER_germaniawerft_organization
 	}
 	# Gneisenau
 	add_equipment_production = {
@@ -174,7 +147,6 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.1
 		amount = 1
-		industrial_manufacturer = mio:GER_germaniawerft_organization
 	}
 }
 

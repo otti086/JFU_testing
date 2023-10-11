@@ -1,6 +1,5 @@
 division_template = {
 	name = "Kebur Zabagna"				# Imperial Bodyguard
-	division_names_group = ETH_INF_IG
 	is_locked = yes 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -14,7 +13,7 @@ division_template = {
 
 division_template = {
 	name = "Mehal Sefari"		
-	division_names_group = ETH_INF_02
+
 
 	# Note: Represents both regular infantry and militia units
 	regiments = {
@@ -26,7 +25,7 @@ division_template = {
 }
 division_template = {
 	name = "Chitet Sefari"		
-	division_names_group = ETH_INF_03
+
 	is_locked = yes
 	force_allow_recruiting = yes
 	# Note: Represents levy and local army units 
@@ -43,7 +42,6 @@ division_template = {
 }
 division_template = {
 	name = "Mountain Division"		
-	division_names_group = ETH_INF_02
 
 	regiments = {
 		mountaineers = { x = 0 y = 0 }
@@ -240,8 +238,8 @@ units = {
 			is_name_ordered = yes
 			name_order = 3
 		}
-		officer = {
-			name = "Wondosson Kassa"
+		unique = {
+			"Wondosson Kassa"
 		}
 		location = 2072 # Macalle
 		division_template = "Chitet Sefari"	# Irregular Infantry
@@ -363,8 +361,8 @@ units = {
 			is_name_ordered = yes
 			name_order = 15
 		}
-		officer = {
-			name = "Haile Kebbede"
+		unique = {
+			"Haile Kebbede"
 		}
 		location = 7944
 		division_template = "Chitet Sefari"	# Irregular Infantry
@@ -421,8 +419,8 @@ units = {
 			is_name_ordered = yes
 			name_order = 20
 		}
-		officer = {
-			name = "Makonnen Demissie"
+		unique = {
+			"Makonnen Demissie"
 		}
 		location = 7944
 		division_template = "Chitet Sefari"	# Irregular Infantry
@@ -444,8 +442,8 @@ units = {
 			is_name_ordered = yes
 			name_order = 22
 		}
-		officer = {
-			name = "Getachew Abate"
+		unique = {
+			"Getachew Abate"
 		}
 		location = 1984
 		division_template = "Chitet Sefari"	# Irregular Infantry
@@ -464,8 +462,8 @@ units = {
 			is_name_ordered = yes
 			name_order = 23
 		}
-		officer = {
-			name = "Afawarq Walda Samayat"
+		unique = {
+			"Afawarq Walda Samayat"
 		}
 		location = 12812 # Wal Wal
 		division_template = "Chitet Sefari"	# Irregular Infantry
