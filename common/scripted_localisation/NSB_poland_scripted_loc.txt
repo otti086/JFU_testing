@@ -40,34 +40,6 @@ defined_text = { # Country
 }
 
 defined_text = { # Country
-	name = GetStalinistOrTrotskyite
-	text = {
-		trigger = {
-			SOV = {
-				has_country_leader = {
-					character = SOV_lev_trotsky
-					ruling_only = yes
-				}
-			}
-		}
-		localization_key = stalinist
-	}
-	text = {
-		trigger = {
-			SOV = {
-				NOT = {
-					has_country_leader = {
-						character = SOV_lev_trotsky
-						ruling_only = yes
-					}
-				}
-			}
-		}
-		localization_key = trotskyite
-	}
-}
-
-defined_text = { # Country
 	name = GetPolRoyalClaimStrength
 	text = {
 		trigger = {

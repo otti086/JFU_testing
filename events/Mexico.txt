@@ -954,37 +954,6 @@ country_event = {
 
 		promote_character = MEX_hernan_laborde
 	}
-
-	option = { # Trotsky himself
-		name = mexico.19.m
-		
-		trigger = {
-			NOT = {
-				has_country_leader = { character = MEX_leon_trotsky }
-			}
-			NOT = { has_global_flag = flag_trotsky_dead }
-			NOT = {
-				SOV = {
-					has_country_leader = { character = SOV_lev_trotsky }
-				}
-			}
-			has_government = communism
-			has_global_flag = flag_mexico_invited_trotsky_to_government
-			NOT = { has_global_flag = flag_trotsky_has_returned_to_ussr_from_mexico }
-		}
-		MEX_leon_trotsky = {
-			add_country_leader_role = {
-				promote_leader = yes
-				country_leader = {
-					ideology = leninism
-					expire = "1965.1.1.1"
-					traits = {
-						exiled_revolutionary
-					}
-				}
-			}
-		}
-	}
 	
 	option = { # Continuity candidate: Saturnino Cedillo
 		name = mexico.19.n
@@ -1185,14 +1154,6 @@ country_event = {
 	
 	option = {
 		name = mexico.21.a
-
-		effect_tooltip = {
-			retire_character = SOV_lev_trotsky
-		}
-		swap_ideas = {
-			remove_idea = trotskyite_plot_nsb
-			add_idea = trotskyite_plot_purged
-		}
 	}
 }
 

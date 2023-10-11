@@ -108,120 +108,6 @@ on_actions = {
 				}
 			}
 		}
-	
-
-
-		#End of Italian CW - Manage BoP -> If Monarchist, bring it back, but against communists
-		effect = {
-			if = {
-				limit = {
-					tag = RDS
-					has_completed_focus = ITA_monarchia_d_italia
-					OR = {
-						has_government = neutrality
-						has_government = democratic
-					}
-					NOT = {
-						has_power_balance = { id = ITA_power_balance }
-					}
-				}
-				#BoP
-				set_power_balance = {
-					id = ITA_power_balance
-					left_side = ITA_communism_side
-					right_side = ITA_king_side
-					set_default = yes
-				}
-
-				#Drop cosmetic tag so that Regno del Sud becomes Italy again
-				if = {
-					limit = {
-						has_cosmetic_tag = ITA_rds
-					}
-					drop_cosmetic_tag = yes
-					#Move capital back to Rome if necessary
-					if = {
-						limit = {
-							capital_scope = {
-								NOT = { state = 2 } #ROME
-							}
-						}
-						set_capital = { state = 2 }
-					}
-				}
-			}
-		}
-
-		effect = {
-			if = {
-				limit = {
-					tag = RSI
-				}
-				if = { #BALBO
-					limit = {
-						has_completed_focus = ITA_italo_balbo_focus
-					}
-					#BoP
-					set_power_balance = {
-						id = ITA_power_balance
-						left_side = ITA_grand_council_side
-						right_side = ITA_balbo_side
-						set_default = yes
-					}
-					if = {
-						limit = {
-							NOT = {
-								has_country_leader = {
-									character = ITA_italo_balbo
-								}
-							}
-						}
-						promote_character = ITA_italo_balbo
-					}
-				}
-				else_if = { #GRANDI
-					limit = {
-						has_completed_focus = ITA_dino_grandi_focus
-					}
-					#BoP
-					set_power_balance = {
-						id = ITA_power_balance
-						left_side = ITA_grand_council_side
-						right_side = ITA_grandi_side
-						set_default = yes
-					}
-					if = {
-						limit = {
-							NOT = {
-								has_country_leader = {
-									character = ITA_dino_grandi
-								}
-							}
-						}
-						promote_character = ITA_dino_grandi
-					}
-				}
-				else = { #MUSSOLINI
-					#BoP
-					set_power_balance = {
-						id = ITA_power_balance
-						left_side = ITA_grand_council_side
-						right_side = ITA_mussolini_side
-						set_default = yes
-					}
-					if = {
-						limit = {
-							NOT = {
-								has_country_leader = {
-									character = ITA_benito_mussolini
-								}
-							}
-						}
-						promote_character = ITA_benito_mussolini
-					}
-				}
-			}
-		}
 	}
 
 	on_peace = {
@@ -251,20 +137,6 @@ on_actions = {
 				set_global_flag = ethiopia_recognized_flag
 			}
 			# Ethiopia switch law
-			IF = {
-				limit = {
-					original_tag = ETH
-					has_idea = ETH_chitet_law
-				}
-				swap_ideas = {
-					remove_idea = ETH_chitet_law
-					add_idea = ETH_chitet_law_peace_time
-				}
-				set_division_force_allow_recruiting = {
-					division_template = "Chitet Sefari"
-					force_allow_recruiting = no
-				}
-			}
 
 			# Delete extra units
 			IF = {
@@ -323,46 +195,9 @@ on_actions = {
 
 
 		}
-		effect = {
-			if = {
-				limit = {
-					SWI_bba = yes
-				}
-				SWI_make_helvetia_peace = yes
-			}
-		}
 	}
 	#ROOT = country that joined a war
 	#on_war is fired when a country goes to war against anyone and is not fired again when it enters war against another country unless it went to peace first
-	on_war = { 
-		effect = {
-			IF = {
-				limit = {
-					original_tag = ETH
-					has_idea = ETH_chitet_law_peace_time
-				}
-				swap_ideas = {
-					remove_idea = ETH_chitet_law_peace_time
-					add_idea = ETH_chitet_law
-				}
-				set_division_force_allow_recruiting = {
-					division_template = "Chitet Sefari"
-					force_allow_recruiting = yes
-				}
-
-			}
-		}
-		effect = {
-			if = {
-				limit = {
-					SWI_bba = yes
-					SWI_has_any_spirit_of_helvetia = yes
-				}
-				SWI_make_helvetia_war = yes
-			}
-		}
-
-	}
 	#ROOT = attacking side
 	#FROM = defending side
 	#fired when two countries end up at war with each other ()
@@ -968,34 +803,6 @@ on_actions = {
 				}
 			}
 		}
-
-		effect = {
-			#Italy defends Austria from Germany
-			if = {
-				limit = {
-					ROOT = {
-						original_tag = GER
-					}
-					FROM = {
-						original_tag = AUS
-					}
-					ITA = {
-						has_completed_focus = ITA_guarantee_austrian_independence
-					}
-				}
-
-				AUS = {
-					give_military_access = ITA
-				}
-
-				ITA = {
-					add_timed_idea = {
-						idea = ITA_alpine_defense
-						days = 360
-					}
-				}
-			}
-		}
 	}
 
 	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
@@ -1118,53 +925,6 @@ on_actions = {
 				}
 				FROM.FROM = {
 					add_dynamic_modifier = { modifier = ITA_cooperatives_for_intensive_exploitation_dm }
-				}
-			}
-		}
-
-		#Mafia State modifiers
-		effect = {
-			if = {
-				limit = {
-					FROM.FROM = {
-						ITA_state_has_any_version_of_mafia_rising_modifier = yes
-					}
-					ROOT = {
-						original_tag = ITA
-						has_completed_focus = ITA_cooperate_with_the_mafia
-					}
-				}
-				if = {
-					limit = {
-						has_dynamic_modifier = { modifier = ITA_mafia_on_the_rise_no_lar }
-					}
-					remove_dynamic_modifier = { modifier = ITA_mafia_on_the_rise_no_lar }
-					add_dynamic_modifier = { modifier = ITA_established_mafia_no_lar }
-				}
-				else = {
-					remove_dynamic_modifier = { modifier = ITA_mafia_on_the_rise }
-					add_dynamic_modifier = { modifier = ITA_established_mafia }
-				}
-			}
-			else_if = {
-				limit = {
-					FROM.FROM = {
-						ITA_state_has_any_version_of_mafia_rising_modifier = yes
-					}
-					ROOT = {
-						NOT = { original_tag = ITA }
-					}
-				}
-				if = {
-					limit = {
-						has_dynamic_modifier = { modifier = ITA_established_mafia_no_lar }
-					}
-					remove_dynamic_modifier = { modifier = ITA_established_mafia_no_lar }
-					add_dynamic_modifier = { modifier = ITA_mafia_on_the_rise_no_lar }
-				}
-				else = {
-					remove_dynamic_modifier = { modifier = ITA_established_mafia }
-					add_dynamic_modifier = { modifier = ITA_mafia_on_the_rise }
 				}
 			}
 		}

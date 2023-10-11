@@ -423,19 +423,6 @@ news_event = {
 	option = {
 		name = news.37.b
 		trigger = { TAG = SOV }
-
-		if = {
-			limit = {
-				has_idea = trotskyite_plot_nsb
-			}
-			effect_tooltip = {
-				retire_character = SOV_lev_trotsky
-				swap_ideas = {
-					remove_idea = trotskyite_plot_nsb
-					add_idea = trotskyite_plot_purged
-				}
-			}
-		}
 	}
 
 	option = {

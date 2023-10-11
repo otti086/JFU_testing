@@ -218,30 +218,6 @@ trotsky_tracker = { #Scripted effect to check where Trotsky is
 		}
 		set_variable = { GLOBAL.trotskys_whereabouts = MEX }
 	}
-	if = {
-		limit = {
-			SOV = {
-				has_character = SOV_lev_trotsky 
-				SOV_lev_trotsky = {
-					NOT = { has_character_flag = SOV_exiled_flag }	
-				}
-				NOt = {
-					has_global_flag = flag_mexico_invited_trotsky_to_government 
-					has_global_flag = trotsky_exile_mexico	
-					has_global_flag = flag_trotsky_dead
-				}
-			}
-		}
-		if = {
-			limit = {
-				NOT = { has_variable = 	GLOBAL.trotskys_whereabouts } 
-			}
-			set_variable = { GLOBAL.trotskys_whereabouts = SOV }		
-		}
-		else = {
-			log = "Mr president a second trotsky has hit the queen"
-		}
-	}
 	log = "Trotsky is in [?GLOBAL.trotskys_whereabouts.GetName]"
 }
 

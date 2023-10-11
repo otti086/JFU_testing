@@ -439,23 +439,6 @@ country_event = { # Trotsky Arrives in Moscow
 		clr_global_flag = NOR_trotsky_in_norway
 		set_global_flag = AAT_trotsky_sent_to_stalin
 		SOV_paranoia_low_decrease_effect = yes 
-
-		IF = {
-			limit = {
-				SOV = {
-					NOT = {
-						has_completed_focus = SOV_the_left_opposition
-					}
-				}
-			}
-			effect_tooltip = {
-				retire_character = SOV_lev_trotsky
-			}
-			swap_ideas = {
-				remove_idea = trotskyite_plot_nsb
-				add_idea = trotskyite_plot_purged
-			}
-		}
 		
 	}
 
