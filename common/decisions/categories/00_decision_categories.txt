@@ -363,7 +363,6 @@ generic_refit_civilian_ships_category = {
 		OR = {
 			original_tag = DEN
 			original_tag = FIN
-			original_tag = ICE
 		}
 		has_dlc = "Arms Against Tyranny"
 	}

@@ -23,7 +23,6 @@ NORDIC_is_nordic = {
 		original_tag = NOR
 		original_tag = FIN
 		original_tag = DEN
-		original_tag = ICE
 	}
 }
 NORDIC_is_democratic = {
@@ -32,7 +31,6 @@ NORDIC_is_democratic = {
 		original_tag = NOR
 		original_tag = FIN
 		original_tag = DEN
-		original_tag = ICE
 	}
 	OR = {
 		has_government = democratic
@@ -50,7 +48,6 @@ NORDIC_is_monarchist = {
 		original_tag = NOR
 		original_tag = FIN
 		original_tag = DEN
-		original_tag = ICE
 	}
 	OR = {
 		has_government = democratic
@@ -70,7 +67,6 @@ NORDIC_is_communist = {
 		original_tag = NOR
 		original_tag = FIN
 		original_tag = DEN
-		original_tag = ICE
 	}
 	has_government = communism
 	# Add more triggers if needed
@@ -81,7 +77,6 @@ NORDIC_is_fascist = {
 		original_tag = NOR
 		original_tag = FIN
 		original_tag = DEN
-		original_tag = ICE
 	}
 	has_government = fascism
 	# Add more triggers if needed

@@ -499,11 +499,6 @@ FRA_benelux_will_surely_not_fall = {
 		value = 50
 	}
 	ai_strategy = {
-		type = dont_defend_ally_borders
-		id = "LUX"
-		value = 50
-	}
-	ai_strategy = {
 		type = put_unit_buffers
 		# french states bordering benelux
 		states = {

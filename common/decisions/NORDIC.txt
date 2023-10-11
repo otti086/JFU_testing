@@ -745,7 +745,7 @@ NORDIC_cooperation_decisions_category = {
 
 		targets_dynamic = yes 
 	
-		targets = { NOR FIN SWE ICE DEN }
+		targets = { NOR FIN SWE }
 
 		priority = 100
 		
@@ -782,7 +782,7 @@ NORDIC_cooperation_decisions_category = {
 			}
 		}
 		targets_dynamic = yes 
-		targets = { NOR FIN SWE ICE DEN }
+		targets = { NOR FIN SWE}
 
 		priority = 100
 		
@@ -831,7 +831,7 @@ NORDIC_cooperation_decisions_category = {
 
 		targets_dynamic = yes 
 
-		targets = { NOR FIN SWE ICE DEN }
+		targets = { NOR FIN SWE  }
 
 		priority = 100
 		
@@ -871,7 +871,7 @@ NORDIC_cooperation_decisions_category = {
 
 		targets_dynamic = yes 
 
-		targets = { NOR FIN SWE ICE DEN }
+		targets = { NOR FIN SWE DEN }
 
 		priority = 100
 		
@@ -912,7 +912,7 @@ NORDIC_cooperation_decisions_category = {
 			}
 		}
 		targets_dynamic = yes 
-		targets = { NOR FIN SWE ICE DEN }
+		targets = { NOR FIN SWE DEN }
 
 		priority = 100
 		

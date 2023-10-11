@@ -81,12 +81,6 @@ debug_decisions = { #TODO_Manu: Comment these out
 			}
 			every_state = {
 				limit = {
-					is_on_continent = europe
-				}
-				LUX = { transfer_state = PREV }
-			}
-			every_state = {
-				limit = {
 					is_on_continent = middle_east
 				}
 				YEM = { transfer_state = PREV }
@@ -7837,104 +7831,6 @@ SOV_great_patriotic_war = {
 						state = 812
 						state = 813
 					}
-				}
-				damage_building = {
-					type = infrastructure
-					damage = 3
-				}
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	SOV_scorched_earth_byelorussia = {
-
-		icon = generic_scorched_earth
-		allowed = {
-			NOT = {
-				has_dlc = "No Step Back"
-			}
-		}
-		available = {
-			has_war = yes
-			has_country_flag = SOV_scorched_earth
-			has_equipment = {
-				support_equipment > 49
-			}
-			NOT = { has_country_flag = SOV_order_227_flag }
-		}
-
-		cost = 75
-		fire_only_once = yes
-		visible = {
-			has_country_flag = SOV_scorched_earth
-			NOT = { has_country_flag = SOV_order_227_flag }
-			any_of = {
-				array = BLR.core_states
-				var:v = { is_controlled_by = SOV }
-			}
-		}
-
-		complete_effect = {
-			add_equipment_to_stockpile = {
-				type = support_equipment_1
-				amount = -50
-			}
-			every_state = {
-				limit = {
-					is_core_of = BLR
-					is_controlled_by = SOV
-				}
-				damage_building = {
-					type = infrastructure
-					damage = 3
-				}
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	SOV_scorched_earth_ukraine = {
-
-		icon = generic_scorched_earth
-		allowed = {
-			NOT = {
-				has_dlc = "No Step Back"
-			}
-		}
-		available = {
-			has_war = yes
-			has_country_flag = SOV_scorched_earth
-			has_equipment = {
-				support_equipment > 74
-			}
-		}
-
-		cost = 75
-		fire_only_once = yes
-		visible = {
-			has_country_flag = SOV_scorched_earth
-			any_of = {
-				array = UKR.core_states
-				var:v = { is_controlled_by = SOV }
-			}
-		}
-
-		complete_effect = {
-			add_equipment_to_stockpile = {
-				type = support_equipment_1
-				amount = -75
-			}
-			every_state = {
-				limit = {
-					is_core_of = UKR
-					is_controlled_by = SOV
 				}
 				damage_building = {
 					type = infrastructure

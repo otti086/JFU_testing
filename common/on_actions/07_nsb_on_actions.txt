@@ -231,28 +231,6 @@ on_actions = {
 				FROM.FROM = { remove_dynamic_modifier = { modifier = SOV_soviet_imports } }
 			}
 		}
-
-		#SOVIET - Nikolay Kuznetsov becomes an operative (Ukrainian state occupied)
-		effect = { #ROOT is new controller #FROM is old controller #FROM.FROM is state ID
-			if = {
-				limit = {
-					has_dlc = "La Resistance"
-					FROM.FROM = {
-						is_core_of = UKR
-						NOT = { is_owned_by = ROOT }
-					}
-					FROM = {
-						original_tag = SOV
-						has_government = communism
-					}
-					ROOT = { has_war_with = SOV }
-				}
-				FROM = {
-					set_variable = { SOV_invader_of_ukraine = ROOT } #Store invader in SOV for loc purposes in the event below
-					country_event = { id = NSB_soviet_great_patriotic_war.01 days = 10 random_days = 30 }
-				}
-			}
-		}
 	}
 	
 	on_ruling_party_change = { 
@@ -1207,25 +1185,6 @@ on_actions = {
 
 					FROM = { country_event = { id = NSB_soviet_foreign_politics_events.157 days = 1 } } #Hidden Effect to transfer states and give resource rights and military access
 				}
-			}
-		}
-
-		#Spanish general from SPD/SPC exile in SOV -> NSB
-		effect = {
-			if = {
-				limit = {
-					SOV = { has_country_flag = SOV_spanish_refugee_generals_welcome_flag }
-					has_dlc = "La Resistance"
-					OR = {
-						tag = SPD
-						tag = SPC
-					}
-					OR = {
-						SPR_scw_in_progress = yes #In case someone else caps the Spanish faction
-						FROM = { original_tag = SPR }
-					}
-				}
-				SOV_manage_spanish_generals_exiled_in_ussr_effect = yes
 			}
 		}
 

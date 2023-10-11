@@ -136,12 +136,6 @@ DEN_avoid_allies = {
 
 	ai_strategy = {
 		type = alliance
-		id = "ICE"
-		value = -1000
-	}
-
-	ai_strategy = {
-		type = alliance
 		id = "NZL"
 		value = -1000
 	}
@@ -149,12 +143,6 @@ DEN_avoid_allies = {
 	ai_strategy = {
 		type = alliance
 		id = "HOL"
-		value = -1000
-	}
-
-	ai_strategy = {
-		type = alliance
-		id = "LUX"
 		value = -1000
 	}
 

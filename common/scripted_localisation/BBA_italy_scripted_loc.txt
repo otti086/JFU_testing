@@ -797,19 +797,6 @@ defined_text = { #Decolonization event
 	}
 }
 
-defined_text = { #Proclamation of Anarchist Confederation
-	name = GetAnarchistConfederationEventDesc
-	text = { #Anarchist Spain exists
-		trigger = { 
-			country_exists = SPC 
-		}
-		localization_key = bba_news.111.desc_joint_proclamation
-	}
-	text = { #Anarchist Spain does NOT exist - DEFAULT
-		localization_key = bba_news.111.desc_single_proclamation
-	}
-}
-
 defined_text = { #Litoranea Balbo name based on political path
 	name = GetAppropriateLitoraneaBalboName
 	text = {

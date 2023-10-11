@@ -1371,11 +1371,6 @@ make_sure_poland_is_ganked_before_we_move = {
 	#	id = "BEL"
 	#	value = -2000
 	#}
-	ai_strategy = {
-		type = declare_war
-		id = "LUX"
-		value = -2000
-	}
 }
 
 make_sure_poland_is_ganked_before_we_move_bel = {
@@ -2007,13 +2002,6 @@ GER_around_the_maginot = {
 			}
 		}
 
-		# lux somehow joined the fun
-		NOT = { has_war_with = LUX }
-		LUX = {
-			has_capitulated = no
-			NOT = { is_in_faction_with = FRA }
-		}
-
 		# we are ready to declare war on low countries
 		OR = {
 			focus_progress = {
@@ -2029,20 +2017,6 @@ GER_around_the_maginot = {
 	}
 
 	abort_when_not_enabled = yes
-
-	# leave LUX for later
-	ai_strategy = {
-		type = declare_war
-		id = "LUX"
-		value = -2000
-	}
-
-	ai_strategy = {
-		type = diplo_action_desire
-		id = "LUX"
-		target = declare_war
-		value = -50000
-	}
 
 	ai_strategy = {
 		type = front_armor_score
@@ -2338,7 +2312,6 @@ GER_tanks_against_france = {
 		is_historical_focus_on = yes
 		HOL = { has_capitulated = yes }
 		BEL = { has_capitulated = yes }
-		LUX = { has_capitulated = yes }
 	}
 
 	abort = {

@@ -7,7 +7,6 @@ peace_ai_desires = {
         enable = {
             ROOT = { 
                 original_tag = SPR 
-                not = { tag = SPC }
             }
             FROM.FROM = { original_tag = SPR }  #And it is being taken from an original spain
         }

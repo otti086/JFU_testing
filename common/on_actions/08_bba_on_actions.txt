@@ -552,21 +552,6 @@ on_actions = {
 		}
 	}
 
-
-	#ROOT is subject FROM is previous overlord
-	on_subject_free = {
-		effect = {
-			IF = {
-				limit = {
-					original_tag = AOI
-				}
-				AOI = {
-					drop_cosmetic_tag = yes
-				}
-			}
-		}
-	}
-
 	#
 	on_daily_ETH = {
 		effect = {
@@ -1241,74 +1226,6 @@ on_actions = {
 					unlock_national_focus = ETH_sway_the_warlords
 					unlock_national_focus = ETH_declare_for_italy
 				}
-			}
-		}
-
-
-
-		# In case of historical split of N and S Korea try to locate the correct leaders
-		effect = {
-			IF = {
-				limit = {
-					original_tag = KOR
-					has_government = democratic
-					NOT = {
-						has_country_leader = {
-							name = "Syngman Rhee"
-							ruling_only = no
-						}
-					}
-				}
-
-				random_other_country = {
-					limit = {
-						original_tag = KOR
-						has_country_leader = {
-							name = "Syngman Rhee"
-							ruling_only = no
-						}
-						NOT = { has_government = democratic }
-					}
-					every_character = {
-						limit = {
-							has_ideology_group = democratic
-						}
-						set_nationality =  ROOT
-					}
-				}
-				retire_country_leader = yes
-
-			}
-			IF = {
-				limit = {
-					original_tag = KOR
-					has_government = communism
-					NOT = {
-						has_country_leader = {
-							name = "Kim Il-sung"
-							ruling_only = no
-						}
-					}
-				}
-
-				random_other_country = {
-					limit = {
-						original_tag = KOR
-						has_country_leader = {
-							name = "Kim Il-sung"
-							ruling_only = no
-						}
-						NOT = { has_government = communism }
-					}
-					every_character = {
-						limit = {
-							has_ideology_group = communism
-						}
-						set_nationality =  ROOT
-					}
-				}
-				retire_country_leader = yes
-
 			}
 		}
 

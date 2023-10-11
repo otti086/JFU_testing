@@ -980,10 +980,7 @@ FRA_spanish_intervention_category = {
 			every_other_country = {
 				limit = {
 					OR = {
-						tag = SPA
-						tag = SPD
-						tag = SPB
-						tag = SPC
+						tag = SPR
 					}
 					exists = yes
 					NOT = { has_country_flag = FRA_has_received_volunteers }

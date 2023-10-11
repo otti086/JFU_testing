@@ -204,7 +204,6 @@ FIN_change_name_of_state_or_vp = {
 			limit = {
 				OR = {
 					ROOT = { original_tag = FIN }
-					ROOT = { original_tag = KAR }
 				}
 			}
 			set_province_name = { id = 11159 name = VICTORY_POINTS_11159_FIN }
@@ -213,13 +212,11 @@ FIN_change_name_of_state_or_vp = {
 			limit = {
 				OR = {
 					FROM = { original_tag = FIN }
-					FROM = { original_tag = KAR }
 				}
 				ROOT = {
 					NOT = {
 						OR = {
 							original_tag = FIN
-							original_tag = KAR
 						}
 					}
 				}
@@ -237,7 +234,7 @@ FIN_change_name_of_state_or_vp = {
 			limit = {
 				OR = {
 					ROOT = { original_tag = FIN }
-					ROOT = { original_tag = KAR }
+
 				}
 			}
 			FROM.FROM = { set_state_name = STATE_213_FIN }
@@ -248,13 +245,13 @@ FIN_change_name_of_state_or_vp = {
 			limit = {
 				OR = {
 					FROM = { original_tag = FIN }
-					FROM = { original_tag = KAR }
+
 				}
 				ROOT = {
 					NOT = {
 						OR = {
 							original_tag = FIN
-							original_tag = KAR
+
 						}
 					}
 				}
