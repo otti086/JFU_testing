@@ -2,7 +2,7 @@
 state={
 	id=936
 	name="Bigger Libya"
-	manpower = 0
+	manpower = 1
 	
 	state_category = wasteland
 
