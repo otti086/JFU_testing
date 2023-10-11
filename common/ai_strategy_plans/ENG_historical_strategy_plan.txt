@@ -7,42 +7,23 @@ ENG_historical_plan = {
 	}
 	enable = {
 		OR = {
-			AND = {
-				is_historical_focus_on = yes
-				OR = {
-					not = { has_dlc = "Man the Guns" }
-					has_game_rule = {
-						rule = ENG_ai_behavior 
-						option = DEFAULT
-					}
-				}
-			}
+			is_historical_focus_on = yes
 			has_country_flag = ENG_AI_DEMOCRATIC_HISTORICAL
-			has_game_rule = {
-				rule = ENG_ai_behavior 
-				option = DEMOCRATIC_HISTORICAL
-			}
-		}
-	}
-	abort = {
-		GER = {
-			has_completed_focus = GER_oppose_hitler
 		}
 	}
 
 	ai_national_focuses = {
 		limited_rearmament_focus #March 10 1936	
-		uk_empire_focus #May 20 1936
-		uk_service_focus #July 30 1936
-		shadow_scheme_focus #October 10 1936
-		uk_industrial_focus #October 10 1936	
-		general_rearmament_focus #December 20 1936
-		royal_ordinance_focus #February 30 1937
-		uk_small_arms_focus #May 10 1937	
-		uk_extra_tech_slot #July 20 1937 
+		shadow_scheme_focus #May 20 1936	
+		uk_industrial_focus #July 30 1936
+		general_rearmament_focus #October 10 1936
+		royal_ordinance_focus #October 10 1936	
+		uk_small_arms_focus #December 20 1936
+		uk_extra_tech_slot #February 30 1937
+		uk_empire_focus  #May 10 1937	
+		uk_service_focus  #July 20 1937
 		uk_colonial_focus #September 30 1937	
 		uk_asia_focus #December 10 1937
-		uk_burma_focus #February 20 1938	
 		air_defense_focus #April 30 1938
 		radar_focus #July 10 1938
 		air_rearmament_focus#September 20 1938
@@ -67,21 +48,13 @@ ENG_historical_plan = {
 		maud_focus#May 30 1942	
 		uk_mediterranean_focus#August 10 1942
 		uk_carrier_focus#October 20 1942	
- 		hongkong_focus#December 30 1942	
- 		uk_iraq_focus#March 10 1943
  		uk_rock_focus#May 20 1943
  		singapore_focus#July 30 1943
- 		peninsular_focus
  		uk_amphibious_focus
  		uk_protect_suez
 		uk_malta_focus
 		uk_commonwealth_focus
-		uk_canada_focus
-		uk_australia_focus
-		uk_new_zealand_focus
-		uk_south_africa_focus
 		UK_secret_focus
-		uk_jet_focus
 		ENG_tank_focus
 	}
 

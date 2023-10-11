@@ -7,29 +7,8 @@ JAP_historical_plan = {
 	}
 	enable = {
 		OR = {
-			AND = {
 				is_historical_focus_on = yes
-				OR = {
-					not = { has_dlc = "Waking the Tiger" }
-					has_game_rule = {
-						rule = JAP_ai_behavior
-						option = DEFAULT
-					}
-				}
-			}
-			has_game_rule = {
-				rule = JAP_ai_behavior
-				option = FASCIST
-			}
 			has_country_flag = JAP_AI_RANDOM_FASCIST
-		}
-		MAN = {
-			is_ai = yes
-		}
-	}
-	abort = {
-		MAN = {
-			has_completed_focus = MAN_assertiveness
 		}
 	}
 
@@ -56,31 +35,22 @@ JAP_historical_plan = {
 		JAP_small_arms_modernization #June 30 1939	
 		JAP_cruiser_modernization #November 30 1938	
 		JAP_long_lance_torpedoes #February 10 1939	
-		JAP_bicycle_battalions #April 20 1939	
 		#1940
 		JAP_torpedo_cruisers #September 10 1939	
 		JAP_strike_south_doctrine #November 20 1939	
 		JAP_agility_focus #January 30 1940	
 		JAP_first_air_fleet #April 10 1940	
 		JAP_the_zero #June 20 1940	
-		#1941
-		JAP_sign_tripartite_pact #August 30 1940	
-		JAP_bomber_modernization #November 10 1940	
-		JAP_non_aggression_pact_with_the_soviet_union #March 30 1941	
-		JAP_secure_the_philippines #August 20 1941	
-		JAP_strike_on_the_southern_resource_area #October 30 1941	
+		#1941	
+		JAP_bomber_modernization #November 10 1940			
 		#1942
 		JAP_range_focus #January 20 1941	
-		JAP_modern_artillery #June 10 1941	
-		JAP_alliance_with_siam #January 10	
-		JAP_strategic_bomber_effort #March 20 1942	
+		JAP_modern_artillery #June 10 1941		
 		JAP_modern_escorts #May 30 1942	
 		#1943
 		JAP_warrior_spirit #December 30 1942	
 		JAP_coal_liquification #March 10 1943	
-		JAP_exploit_the_southern_resource_area #May 20 1943	
 		JAP_secure_china #July 30 1943	
-		JAP_jet_prototypes
 		JAP_strengthen_the_divine_wind
 		JAP_armored_divisions
 	}
