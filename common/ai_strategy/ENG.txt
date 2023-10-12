@@ -1572,9 +1572,6 @@ ENG_norway_is_not_THAT_important = {
 	}
 	enable = {
 		date < 1945.1.1
-		any_allied_country = { 
-			NORDIC_is_nordic = yes 
-		}
 	}
 	abort_when_not_enabled = yes
 

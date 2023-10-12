@@ -510,7 +510,6 @@ political_actions = {
 			modifier = {
 				add = 2000
 				original_tag = FIN
-				FIN_is_historical_ai = yes
 				OR = {
 					has_idea = communist_pressure
 					communism > 0.08
@@ -745,7 +744,6 @@ political_actions = {
 				add = 10
 				has_dlc = "Arms Against Tyranny"
 				original_tag = FIN
-				FIN_is_historical_ai = yes
 				has_government = neutrality
 #				NOT = { has_completed_focus = FIN_the_lone_wolf }
 				neutrality < 0.85

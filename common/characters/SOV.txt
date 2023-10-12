@@ -1834,9 +1834,6 @@ characters = {
 			}
 		}
 		allowed_civil_war = {
-			OR = {
-				SOV_advisor_is_aligned_centre = yes 
-			}
 			has_government = communism
 		}
 
@@ -1874,9 +1871,6 @@ characters = {
 			}
 		}
 		allowed_civil_war = {
-			OR = {
-				SOV_advisor_is_aligned_centre = yes 
-			}
 			has_government = communism
 		}
 
@@ -2157,9 +2151,6 @@ characters = {
 			}
 		}
 		allowed_civil_war = {
-			OR = {
-				SOV_advisor_is_aligned_centre = yes 
-			}
 			has_government = communism
 		}
 

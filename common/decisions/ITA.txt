@@ -1784,10 +1784,6 @@ ITA_balance_of_power_category = {
 					value < -0.2
 				}
 			}
-			modifier = {
-				factor = 0
-				ITA_is_historical_ai = no
-			}
 		}
 	}
 
@@ -1908,10 +1904,7 @@ ITA_balance_of_power_category = {
 					value < -0.2
 				}
 			}
-			modifier = {
-				factor = 0
-				ITA_is_historical_ai = no
-			}
+
 		}
 	}
 
@@ -2032,10 +2025,7 @@ ITA_balance_of_power_category = {
 					value < -0.2
 				}
 			}
-			modifier = {
-				factor = 0
-				ITA_is_historical_ai = no
-			}
+
 		}
 	}
 
@@ -2156,10 +2146,7 @@ ITA_balance_of_power_category = {
 					value < -0.2
 				}
 			}
-			modifier = {
-				factor = 0
-				ITA_is_historical_ai = no
-			}
+
 		}
 	}
 
@@ -2261,10 +2248,6 @@ ITA_balance_of_power_category = {
 					value > -0.1
 				}
 			}
-			modifier = {
-				factor = 0
-				ITA_is_historical_ai = yes
-			}
 		}
 	}
 
@@ -2330,10 +2313,6 @@ ITA_balance_of_power_category = {
 					value > -0.1
 				}
 			}
-			modifier = {
-				factor = 0
-				ITA_is_historical_ai = yes
-			}
 		}
 	}
 
@@ -2396,10 +2375,6 @@ ITA_balance_of_power_category = {
 					id = ITA_power_balance
 					value > -0.1
 				}
-			}
-			modifier = {
-				factor = 0
-				ITA_is_historical_ai = yes
 			}
 		}
 	}
@@ -2464,10 +2439,6 @@ ITA_balance_of_power_category = {
 					value > -0.1
 				}
 			}
-			modifier = {
-				factor = 0
-				ITA_is_historical_ai = yes
-			}
 		}
 	}
 
@@ -2530,10 +2501,6 @@ ITA_balance_of_power_category = {
 					id = ITA_power_balance
 					value > -0.1
 				}
-			}
-			modifier = {
-				factor = 0
-				ITA_is_historical_ai = yes
 			}
 		}
 	}

@@ -1406,13 +1406,7 @@ characters = {
 				traditionalist_theorist 
 			}
 
-			ai_will_do = {
-				base = 1.000
-				modifier = {
-					factor = 100
-					FIN_is_historical_ai = yes
-				}
-			}
+
 		}
 	}
 
@@ -1444,13 +1438,7 @@ characters = {
 			traits = {
 				white_liberal 
 			}
-			ai_will_do = {
-				base = 1.000
-				modifier = {
-					factor = 10
-					FIN_is_historical_ai = yes
-				}
-			}
+
 		}
 	}
 
@@ -1478,13 +1466,7 @@ characters = {
 			traits = {
 				hurja_hilja
 			}
-			ai_will_do = {
-				base = 1.000
-				modifier = {
-					factor = 0.100
-					FIN_is_historical_ai = yes
-				}
-			}
+
 		}
 	}
 
@@ -1517,13 +1499,7 @@ characters = {
 			traits = {
 				head_of_intelligence #TODO_Manu: Watchdog of White Finland? 
 			}
-			ai_will_do = {
-				base = 1.000
-				modifier = {
-					factor = 0.5
-					FIN_is_historical_ai = yes
-				}
-			}
+
 		}
 	}
 
@@ -1559,18 +1535,7 @@ characters = {
 				traits = {
 					fascist_corporatist 
 				}
-				ai_will_do = {
-					base = 1.000
-					modifier = {
-						factor = 0.100
-						FIN_is_historical_ai = yes
-					}
-					modifier = {
-						factor = 10
-						FIN_is_fascist_ai = yes
-						date < 1936.10.01 #He will become country leader after completing the focus A Fascist Regime in January 1937
-					}
-				}
+
 			}
 		}
 		instance = {
@@ -1650,17 +1615,7 @@ characters = {
 				traits = {
 					fascist_demagogue 
 				}
-				ai_will_do = {
-					base = 1
-					modifier = {
-						factor = 100
-						FIN_is_fascist_ai = yes
-					}
-					modifier = {
-						factor = 0
-						FIN_is_historical_ai = yes
-					}
-				}
+
 			}
 		}
 		instance = {
@@ -1721,17 +1676,7 @@ characters = {
 				nationalist_lutheran_priest 
 			}
 
-			ai_will_do = {
-				base = 1.000
-				modifier = {
-					factor = 0.01
-					FIN_is_historical_ai = yes
-				}
-				modifier = {
-					factor = 100
-					FIN_is_fascist_ai = yes
-				}
-			}
+
 		}
 	}
 
@@ -1918,17 +1863,7 @@ characters = {
 				traits = {
 					FIN_champion_of_equality_sillanpaa 
 				}
-				ai_will_do = {
-					base = 1.000
-					modifier = {
-						factor = 10
-						FIN_is_democratic_ai = yes
-					}
-					modifier = {
-						factor = 0
-						FIN_is_historical_ai = yes
-					}
-				}
+
 			}
 		}
 		instance = {
@@ -1983,17 +1918,6 @@ characters = {
 				cost = 100
 				traits = {
 					FIN_democratic_reformer_fagerholm 
-				}
-				ai_will_do = {
-					base = 0.01
-					modifier = {
-						add = 10
-						FIN_is_democratic_ai = yes
-					}
-					modifier = {
-						factor = 0
-						FIN_is_communist_ai = yes
-					}
 				}
 			}
 		}
@@ -2321,10 +2245,6 @@ characters = {
 			}
 			ai_will_do = {
 				base = 1.000
-				modifier = {
-					factor = 0.5
-					FIN_is_democratic_ai = yes
-				}
 			}
 		}
 	}
@@ -2355,10 +2275,6 @@ characters = {
 			}
 			ai_will_do = {
 				base = 1.000
-				modifier = {
-					factor = 0.5
-					FIN_is_democratic_ai = yes
-				}
 			}
 		}
 	}

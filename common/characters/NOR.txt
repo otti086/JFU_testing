@@ -47,10 +47,6 @@ characters={
 			}	
 			ai_will_do = {
 				factor = 1
-				modifier = {
-					add = 20
-					NOR_is_historical_ai = yes 
-				}
 			}
 		}
 	}
@@ -157,10 +153,6 @@ characters={
 			}
 			ai_will_do = {
 				base = 0
-				modifier = {
-					add = 200
-					NOR_is_monarchist_ai = yes
-				}
 			}
 		}
 	}
@@ -224,10 +216,6 @@ characters={
 			}
 			ai_will_do = {
 				base = 0
-				modifier = {
-					add = 200
-					NOR_is_fascist_ai = yes
-				}
 			}
 		}
 	}
@@ -342,10 +330,6 @@ characters={
 			}
 			ai_will_do = {
 				base = 0
-				modifier = {
-					add = 50
-					NOR_is_stalinist_ai = yes
-				}
 			}
 		}
 	}
@@ -407,10 +391,6 @@ characters={
 			}	
 			ai_will_do = {
 				factor = 1
-				modifier = {
-					add = 100
-					NOR_is_trotskyist_ai = yes 
-				}
 			}
 			available = {
 				has_country_flag = NOR_trotsky_embraced

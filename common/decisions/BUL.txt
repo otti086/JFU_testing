@@ -365,10 +365,6 @@ BUL_internal_factions = {
 				has_country_flag = BUL_bs_legalized_flag
 				check_variable = { BUL_bs_loyalty = 55 compare = less_than_or_equals }
 			}
-			modifier = {
-				factor = 0.1
-				BUL_is_historical_ai = yes #Not a prio thing for Boris
-			}
 
 		}
 
@@ -718,10 +714,6 @@ BUL_internal_factions = {
 
 		ai_will_do = {
 			base = 10
-			modifier = {
-				factor = 0.1
-				BUL_is_historical_ai = yes #Not a prio thing for Boris
-			}
 
 		}
 
@@ -3141,14 +3133,6 @@ BUL_internal_factions = {
 
 		ai_will_do = {
 			base = 100
-			modifier = {
-				factor = 0
-				OR = {
-					BUL_is_communist_stalinist_ai = yes
-					BUL_is_communist_balkan_ai = yes
-					BUL_is_democratic_socialist_ai = yes
-				}
-			}
 		}
 
 		allowed = { 
@@ -3222,14 +3206,6 @@ BUL_internal_factions = {
 
 		ai_will_do = {
 			base = 100
-			modifier = {
-				factor = 0
-				OR = {
-					BUL_is_communist_stalinist_ai = yes
-					BUL_is_communist_balkan_ai = yes
-					BUL_is_democratic_socialist_ai = yes
-				}
-			}
 		}
 
 		allowed = { 
@@ -3741,10 +3717,6 @@ BUL_macedonian_revolutionary_organizations = {
 
 		ai_will_do = {
 			base = 1
-			modifier = {
-				factor = 0
-				BUL_is_historical_ai = yes
-			}
 			modifier = {
 				factor = 2
 				OR = {
