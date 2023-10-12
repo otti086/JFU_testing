@@ -1020,11 +1020,7 @@ operation_coup_government = { ### 7 1/70
 	is_staged_coup = yes
 
 	visible = {
-		network_strength = {
-			target = FROM
-			value > 35
-		}
-		NOT = { has_completed_focus = SPR_regional_defense_council_of_aragon }
+		always = no
 	}
 
 	equipment = {
@@ -1038,77 +1034,10 @@ operation_coup_government = { ### 7 1/70
 		targets = { FROM }
 	}
 	allowed = {
-		NOT = {
-			has_game_rule = {
-				rule = allow_coups
-				option = BLOCKED
-			}
-		}
+		always = no
 	}
 
 	available = {
-		
-		FROM = {
-			has_civil_war = no
-			NOT = {
-				has_government = var:PREV.ROOT.current_party_ideology_group
-			}
-			if = {
-				limit = {
-					PREV.ROOT = { has_government = fascism }
-				}
-				fascism > 0.2
-			}
-			if = {
-				limit = {
-					PREV.ROOT = { has_government = communism }
-				}
-				communism > 0.2
-			}
-			if = {
-				limit = {
-					PREV.ROOT = { has_government = democratic }
-				}
-				democratic > 0.2
-			}
-			if = {
-				limit = {
-					PREV.ROOT = { has_government = neutrality }
-				}
-				neutrality > 0.2
-			}
-				#set_temp_variable = { coup_ideology@ROOT = PREV.ROOT.current_party_ideology_group }
-				#set_temp_variable = { coup_ideology_popularity@ROOT = party_popularity@ROOT.coup_ideology }
-				#check_variable = { ROOT.coup_ideology_popularity > 0.2 }
-			
-			OR = {
-				AND = {
-					is_major = no
-					has_war = no
-					has_stability < 0.7 #majors are harder to coup
-				}
-				AND = {
-					has_war = no
-					has_stability < 0.5
-				}
-				has_stability < 0.35 #can always coup at low stability
-			}
-		}
-		OR = {
-			has_game_rule = {
-				rule = allow_coups
-				option = FREE
-			}
-			AND = {
-				has_game_rule = {
-					rule = allow_coups
-					option = AI_ONLY
-				}
-				FROM = {
-					is_ai = yes
-				}
-			}
-		}
 	}
 
 	on_start = { #SCOPE_OPERATION
@@ -1282,15 +1211,7 @@ operation_boost_resistance = { ### 8 2/40
 	operatives = 2
 
 	visible = {
-		network_national_coverage = {
-			target = FROM
-			value > 0
-		}
-
-		has_operation_token = {
-			tag = FROM
-			token = token_resistance_contacts
-		}
+		always = no
 	}
 
 	selection_target = {
@@ -1314,24 +1235,10 @@ operation_boost_resistance = { ### 8 2/40
 	outcome_modifiers = { boost_resistance_factor }
 	outcome_execute = {
 		FROM.FROM = {
-			if = {
-				limit = {
-					ROOT = {
-						has_completed_focus = SWI_export_saboteurs
-					}
-				}
-				add_resistance_target = {
-					amount = 25
-					tooltip = intelligency_agency_resistance_boost_tt
-				}
-				add_compliance = -15
-			}
-			else = {
 				add_resistance_target = {
 					amount = 10
 					tooltip = intelligency_agency_resistance_boost_tt
 				}
-			}
 			subtract_from_variable = { boost_resistance_chance = 10 }
 		}
 	}
@@ -1363,24 +1270,10 @@ operation_boost_resistance = { ### 8 2/40
 
 	outcome_potential = {
 		FROM.FROM = {
-			if = {
-				limit = {
-					ROOT = {
-						has_completed_focus = SWI_export_saboteurs
-					}
-				}
-				add_resistance_target = {
-					amount = 25
-					tooltip = intelligency_agency_resistance_boost_tt
-				}
-				add_compliance = -15
-			}
-			else = {
 				add_resistance_target = {
 					amount = 10
 					tooltip = intelligency_agency_resistance_boost_tt
 				}
-			}
 		}
 	}
 

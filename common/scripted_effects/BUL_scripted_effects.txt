@@ -1268,7 +1268,44 @@ BUL_remove_balkan_opinion_modifiers = { #Requires scoping to the other country j
 		}
 	}
 }
-
+BUL_replace_national_aircraft_designer = {
+	if = {
+		limit = {
+			has_idea = BUL_dar
+		}
+		swap_ideas = {
+			remove_idea = BUL_dar
+			add_idea = BUL_dar_improved
+		}
+	}
+	if = {
+		limit = {
+			has_idea = BUL_kaproni_bulgarski
+		}
+		swap_ideas = {
+			remove_idea = BUL_kaproni_bulgarski
+			add_idea = BUL_kaproni_bulgarski_improved
+		}
+	}
+	if = {
+		limit = {
+			has_idea = BUL_dvf
+		}
+		swap_ideas = {
+			remove_idea = BUL_dvf
+			add_idea = BUL_dvf_improved
+		}
+	}
+	if = {
+		limit = {
+			has_idea = BUL_dvf_sopot
+		}
+		swap_ideas = {
+			remove_idea = BUL_dvf_sopot
+			add_idea = BUL_dvf_sopot_improved
+		}
+	}
+}
 #Apply appropriate cosmetic tag so that 3D models change based on ideology
 BUL_set_appropriate_cosmetic_tag = {
 	if = {

@@ -4108,13 +4108,13 @@ ideas = {
 			allowed = {
 				OR = {
 					original_tag = SOV
-					AND = {
-						OR = {
-							is_literally_china = yes
-							tag = MAN
-						}
-						has_dlc = "Waking the Tiger"
-					}
+	#				AND = {
+	#					OR = {
+	#						is_literally_china = yes
+	#						tag = MAN
+	#					}
+	#					has_dlc = "Waking the Tiger"
+	#				}
 				}
 			}
 
@@ -4127,18 +4127,18 @@ ideas = {
 			}
 
 			available = {
-				if = {
-					limit = {
-						OR = {
-							is_literally_china = yes
-							tag = MAN
-						}
-					}
-					has_completed_focus = CHI_hire_soviet_designer
-					NOT = {
-						has_war_with = SOV
-					}
-				}
+#				if = {
+#					limit = {
+#						OR = {
+#							is_literally_china = yes
+#							tag = MAN
+#						}
+#					}
+#					has_completed_focus = CHI_hire_soviet_designer
+#					NOT = {
+#						has_war_with = SOV
+#					}
+#				}
 			}
 
 			research_bonus = {

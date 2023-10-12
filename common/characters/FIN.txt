@@ -2120,10 +2120,6 @@ characters = {
 				}
 				ai_will_do = {
 					base = 0
-					modifier = {
-						add = 100
-						FIN_is_communist_ai = yes
-					}
 				}
 			}
 		}

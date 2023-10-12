@@ -1,7 +1,6 @@
 on_actions = {
 	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
 	on_state_control_changed = {
-		}
 		#SOVIET - If Death to Invaders Propaganda Campaign is active, manage the appropriate state modifier
 		effect = {
 			if = {

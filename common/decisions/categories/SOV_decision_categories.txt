@@ -125,64 +125,6 @@ SOV_kill_trotsky_dec_cat = {
 	}
 }
 
-SOV_infiltrate_foreign_atomic_programs_dec_cat = {
-	priority = 10
-
-	icon = eng_move_to_secure_the_dominions
-
-	allowed = {
-		original_tag = SOV
-		NOT = { has_dlc = "La Resistance" }
-	}
-
-	visible = {
-		has_completed_focus = SOV_soviet_atomic_bomb_project
-	}
-}
-
-SOV_comecon_dec_cat = {
-	priority = 13
-
-	icon = SOV_civil_puppet_interaction
-	picture = GFX_decision_cat_picture_soviet_comecon
-
-	allowed = {
-		original_tag = SOV
-	}
-
-	visible = {
-		has_completed_focus = SOV_found_the_comecon
-	}
-}
-
-SOV_permanent_revolution_dec_cat = {
-	priority = 90
-
-	icon = GFX_decision_category_SOV_permanent_revolution
-
-	allowed = {
-		original_tag = SOV
-	}
-
-	visible = {
-		has_completed_focus = SOV_the_permanent_revolution
-	}
-}
-
-SOV_panslavic_nationalism = {
-	priority = 75
-
-	icon = generic_formable_nations
-
-	allowed = {
-		original_tag = SOV
-	}
-
-	visible = {
-		has_completed_focus = SOV_panslavic_nationalism
-	}
-}
-
 SOV_polish_territory = {
 	priority = 70
 

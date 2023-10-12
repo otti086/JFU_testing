@@ -232,50 +232,65 @@ country_event = {
 
 	fire_only_once = yes
 
-	trigger = {
-		tag = ENG
-		has_war = yes
-		has_government = democratic
-		NOT = {
-			has_completed_focus = uk_scandinavian_focus
-		}
-		POL = { has_capitulated = yes }
-		OR = {
-			has_global_flag = fall_of_france
-			FRA = { surrender_progress > 0.1 }
-			HOL = { surrender_progress > 0.1 }
-			BEL = { surrender_progress > 0.1 }
-			LUX = { surrender_progress > 0.1 }
-			DEN = { surrender_progress > 0.1 }
-			NOR = { surrender_progress > 0.1 }
-			AND = {
-				110 = { is_controlled_by = GER }
-				NOT = { is_in_faction_with = GER }
-			}
-		}
-		NOT = { has_country_flag = chamberlain_died }
-		has_country_leader = {
-			character = ENG_neville_chamberlain
-			ruling_only = yes
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 2
-	}
-
-	immediate = { set_country_flag = chamberlain_resigned }
+	is_triggered_only = yes 
 	
 	option = {
 		name = britain.9.a
-		promote_character = ENG_winston_churchill
-		retire_character = ENG_neville_chamberlain
-		add_stability = 0.1
-		add_war_support = 0.1
 
 	}
 }
+# King dies
+country_event = {
+	id = britain.16
+	title = britain.16.t
+	desc = britain.16.d
+	picture = GFX_report_event_europe_funeral
+	is_triggered_only = yes	
 
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = ENG_king_died
+			remove_ideas = george_v
+			add_ideas = ENG_king_edward
+		}		
+	}
+	
+	option = {
+		name = britain.16.a
+		effect_tooltip = {
+			remove_ideas = george_v		
+			add_ideas = ENG_king_edward
+		}
+	}
+}
+
+# King abdicates
+country_event = {
+	id = britain.17
+	title = britain.17.t
+	desc = britain.17.d
+	picture = GFX_report_event_generic_sign_treaty2
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	immediate = {
+		hidden_effect = {
+			remove_ideas = ENG_king_edward
+			add_ideas = ENG_george_vi		
+		}
+	}
+
+	option = {
+		name = britain.17.a
+		effect_tooltip = {
+			remove_ideas = ENG_king_edward
+			add_ideas = ENG_george_vi		
+		}
+	}
+}
 # Stanley Baldwin Resigns
 country_event = {
     id = britain.22

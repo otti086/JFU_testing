@@ -551,26 +551,6 @@ characters={
 				small="GFX_idea_MEX_leon_trotsky"
 			}
 		}
-		advisor={
-			slot = army_chief
-			idea_token = MEX_leon_trotsky
-			cost = 75.000
-			visible = {
-				has_global_flag = flag_mexico_invited_trotsky_to_government
-			}
-			allowed = {
-				original_tag = MEX
-			}
-			available = {
-				is_trotsky_valid_for_mexico = yes 
-			}
-			traits = {
-				red_army_organizer
-			}
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
 	}
 
 

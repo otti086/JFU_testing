@@ -7552,10 +7552,6 @@ focus_tree = {
 
 			ITA_bop_very_low_increase_effect = yes
 
-			#Names for NSs
-			hidden_effect = {
-				ITA_replace_stuff_based_on_ideology_effect = yes
-			}
 		}
 	}
 

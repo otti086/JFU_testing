@@ -652,20 +652,6 @@ on_actions = {
 			}
 		}
 	}
-
-	on_ruling_party_change = { 
-		#ITALY CHANGES IDEOLOGY -> Make sure it gets the appropriate name for Army NSs
-		effect = {
-			if = {
-				limit = {
-					original_tag = ITA
-				}
-				#log = "Updating NS names"
-				mark_focus_tree_layout_dirty = yes
-				ITA_replace_stuff_based_on_ideology_effect = yes
-			}
-		}
-	}
 	#on_unit_leader_promote_from_ranks_green
 
 	#Root is exile

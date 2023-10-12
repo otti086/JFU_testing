@@ -25,12 +25,6 @@ defined_text = {
 defined_text = {
 	name = GetAppropriateRegioEsercitoNsName
 	text = {
-		trigger = {
-			ITA_has_rejected_monarchy = yes
-		}
-		localization_key = ITA_regio_esercito_name_alt
-	}
-	text = {
 		localization_key = ITA_regio_esercito_name_default
 	}
 }
@@ -38,24 +32,12 @@ defined_text = {
 defined_text = {
 	name = GetAppropriateRegiaAeronauticaNsName
 	text = {
-		trigger = {
-			ITA_has_rejected_monarchy = yes
-		}
-		localization_key = ITA_regia_aeronautica_name_alt
-	}
-	text = {
 		localization_key = ITA_regia_aeronautica_name_default
 	}
 }
 
 defined_text = {
 	name = GetAppropriateRegiaMarinaNsName
-	text = {
-		trigger = {
-			ITA_has_rejected_monarchy = yes
-		}
-		localization_key = ITA_regia_marina_name_alt
-	}
 	text = {
 		localization_key = ITA_regia_marina_name_default
 	}
@@ -266,15 +248,6 @@ defined_text = {
 
 defined_text = {
 	name = GetSuperHeavyTanksTooltip
-	text = {
-		trigger = {
-			OR = {
-				has_completed_focus = ITA_modern_musculus #Focus grants bonuses
-				has_completed_focus = ITA_a_time_for_war #Focus grants bonuses
-			}
-		}
-		localization_key = ITA_modern_musculus_dynamic_modifier_tt
-	}
 	text = {
 		localization_key = generic_null
 	}
@@ -521,34 +494,6 @@ defined_text = { #Italy's Negotiate Claims event for FRA
 	}
 	text = {
 		localization_key = BBA_italy_interaction_events.36.desc_continued_negotiation
-	}
-}
-
-defined_text = { #Text for Italy
-	name = GetItaloEthiopianPeaceDemands
-	text = {
-		trigger = {
-			FROM = { #England has the country flag
-				has_country_flag = ITA_italy_asks_ethiopian_host_for_help
-			}
-		}
-		localization_key = BBA_italo_ethiopian_war_events.500.desc_guarantees
-	}
-	text = {
-		localization_key = BBA_italo_ethiopian_war_events.500.desc_territories
-	}
-}
-
-defined_text = { #Text for England
-	name = GetItalyRefusesPeaceTalks
-	text = {
-		trigger = {
-			has_country_flag = ITA_italy_asks_ethiopian_host_for_help
-		}
-		localization_key = BBA_italo_ethiopian_war_events.502.desc_guarantees
-	}
-	text = {
-		localization_key = BBA_italo_ethiopian_war_events.502.desc_territories
 	}
 }
 
