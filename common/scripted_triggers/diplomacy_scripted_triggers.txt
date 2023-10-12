@@ -31,14 +31,6 @@
 #		}
 
 # This specifically overrides the rule check as to whether or not you can guarantee other ideologies
-DIPLOMACY_GUARANTEE_ENABLE_TRIGGER_OVERRIDES_GAME = {
-	NOT = {
-		has_game_rule = {
-			rule = allow_guarantees
-			option = LIMITED
-		}
-	}
-}
 DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = { always = no } 
 DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
 	if = {
@@ -81,50 +73,23 @@ DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = {
 	}
 }
 DIPLOMACY_REQUEST_LICENSED_PRODUCTION_ENABLE_TRIGGER = {
-	if = {
+	if = { 
 		limit = {
-			has_game_rule = {
-				rule = allow_licensing
-				option = FREE
-			}
+			FROM = { axis = yes}
 		}
-		always = yes
+		NOT = {	ROOT = { allies = yes } }
+	}
+	if = { 
+		limit = {
+			FROM = { allies = yes}
+		}
+		NOT = {	ROOT = { axis = yes } }
 	}
 	if = {
-		limit = {
-			has_game_rule = {
-				rule = allow_licensing
-				option = SAME_IDEOLOGY
-			}
+		limit = { 
+			FROM = { tag = NOR } 
 		}
-		custom_trigger_tooltip = {
-			tooltip = RULE_ALLOW_LICENSING_SAME_IDEOLOGY_TT
-			has_government = FROM
-		}
-	}
-	if = {
-		limit = {
-			has_game_rule = {
-				rule = allow_licensing
-				option = SAME_FACTION
-			}
-		}
-		custom_trigger_tooltip = {
-			tooltip = RULE_ALLOW_LICENSING_SAME_FACTION_TT
-			is_in_faction_with = FROM
-		}
-	}
-	if = {
-		limit = {
-			has_game_rule = {
-				rule = allow_licensing
-				option = BLOCKED
-			}
-		}
-		custom_trigger_tooltip = {
-			tooltip = RULE_ALLOW_LICENSING_BLOCKED_TT
-			always = no
-		}
+		has_global_flag = NOR_RUGES_PLAN 
 	}
 }
 DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = { always = no }

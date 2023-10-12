@@ -90,64 +90,6 @@ on_actions = {
 		}
 	}
 	
-	on_ruling_party_change = { 
-		# temp var old_ideology_token is available for effects
-		effect = {
-			if = {
-				limit = {
-					has_government = democratic
-					has_idea = democratic_opposition
-				}
-				remove_ideas = democratic_opposition
-			}
-			if = {
-				limit = {
-					has_government = democratic
-					has_idea = democratic_opposition_idea_1
-				}
-				remove_ideas = democratic_opposition_idea_1
-			}
-			if = {
-				limit = {
-					has_government = democratic
-					has_idea = democratic_opposition_idea_2
-				}
-				remove_ideas = democratic_opposition_idea_2
-			}
-			if = {
-				limit = {
-					has_government = fascism
-					any_owned_state = {
-						is_capital = yes
-						is_on_continent = south_america
-					}
-					is_in_faction = no
-					has_country_flag = SOV_political_influence_americas_flag
-				}
-				country_event = {
-					id = NSB_soviet_fascist_tsarist.8
-					days = 3
-				}
-			}
-		}
-		effect = { #SOV - make FT dirty to force reload and tweak loc and icons to fit the new (wrong ^.^' ) ideology
-			if = {
-				limit = {
-					original_tag = SOV
-				}
-				mark_focus_tree_layout_dirty = yes
-				SOV_replace_stuff_based_on_ideology_effect = yes
-				if = { #Remove Paranoia, if for whatever reason country changes ideology while still active
-					limit = {
-						NOT = { has_government = communism }
-						has_country_flag = SOV_paranoia_system_active_flag
-					}
-					SOV_remove_paranoia_effect = yes
-				}
-			}
-		}
-	}
-	
 	#FROM - Country (owner)
 	#ROOT - leader
 	#FROMFROM - original owner for exiled leaders
@@ -680,26 +622,6 @@ on_actions = {
 			}
 			else = {
 				#log = "NOT A PURGE WEEK" #Debug
-			}
-
-			### SOVIET CIVIL WAR TRIGGER
-			IF = {
-				limit = { 
-					SOV_is_opposition = yes # Don't test for Stalin
-					SOV_soviet_civil_war_not_started = yes # Only test before the war has started 
-					check_variable = { SOV_paranoia > 89}
-					is_ai = no # Slight cheat, but the ai needs some support
-				}
-				random_list = {
-					80 = { } # No effect
-					20 = { 
-						set_country_flag = SOV_civil_war_triggered_flag 
-						country_event = {
-							id = NSB_soviet_civil_war_common.003
-							hours = 0
-						}
-					}
-				}
 			}
 		}
 	}

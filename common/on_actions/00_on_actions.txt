@@ -579,21 +579,6 @@ on_actions = {
 			#} #This would add a unit medal to the history entry you just received
 		}
 	}
-
-	on_weekly_GER = {
-		effect = {
-			GER = {
-				every_core_state = {
-					limit = {
-						has_dynamic_modifier = {
-							modifier = GER_poor_iron_quality
-						}
-					}
-					SWE_update_iron_ore_calc = yes
-				}
-			}
-		}
-	}
 	
 	# root is the state that was dropped into
 	# from is the dropping country

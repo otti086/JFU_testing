@@ -1397,19 +1397,6 @@ characters={
 				small="GFX_idea_USA_joseph_mccarthy"
 			}
 		}
-		advisor={
-			slot = political_advisor
-			idea_token = USA_joseph_mccarthy
-			allowed  = {
-				original_tag  = USA
-			}
-			available  = {
-				has_completed_focus  = USA_empower_the_huac 
-			}
-			traits  = {
-				anti_communist_crusader 
-			}
-		}
 	}
 
 	USA_john_winant={

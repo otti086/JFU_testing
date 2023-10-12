@@ -397,7 +397,7 @@ country_event = {
 		}
 
 		set_country_flag = FIN_available_decision_to_surrender_to_soviets_flag
-		unlock_decision_tooltip = FIN_surrender_to_the_soviet_union
+#		unlock_decision_tooltip = FIN_surrender_to_the_soviet_union
 	}
 }
 

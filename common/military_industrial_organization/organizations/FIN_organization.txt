@@ -242,9 +242,9 @@ FIN_crichton_vulcan_organization = { #Coastal Defense Ships & Subs
 		mutually_exclusive = { FIN_mio_trait_rapid_raiders }
 		
 		available = {
-			owner = {
-				has_completed_focus = FIN_deep_sea_raiders
-			}
+#			owner = {
+#				has_completed_focus = FIN_deep_sea_raiders
+#			}
 		}
 
 		limit_to_equipment_type = { submarine }

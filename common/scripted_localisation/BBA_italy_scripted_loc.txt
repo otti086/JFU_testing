@@ -223,24 +223,12 @@ defined_text = {
 defined_text = {
 	name = GetRailwayGunsTooltip
 	text = {
-		trigger = {
-			has_completed_focus = ITA_mobilize_the_railway_guns #Focus grants bonuses
-		}
-		localization_key = ITA_mobilize_the_railway_guns_dynamic_modifier_tt
-	}
-	text = {
 		localization_key = generic_null
 	}
 }
 
 defined_text = {
 	name = GetSuperHeavyAircraftTooltip
-	text = {
-		trigger = {
-			has_completed_focus = ITA_the_king_of_the_skies #Focus grants bonuses
-		}
-		localization_key = ITA_the_king_of_the_skies_dynamic_modifier_tt
-	}
 	text = {
 		localization_key = generic_null
 	}
@@ -255,12 +243,6 @@ defined_text = {
 
 defined_text = {
 	name = GetSuperHeavyShipsTooltip
-	text = {
-		trigger = {
-			has_completed_focus = ITA_caligulas_pride #Focus grants bonuses
-		}
-		localization_key = ITA_caligulas_pride_dynamic_modifier_tt
-	}
 	text = {
 		localization_key = generic_null
 	}
@@ -332,12 +314,6 @@ defined_text = {
 defined_text = {
 	name = GetAlbanianStates
 	text = {
-		trigger = {
-			has_completed_focus = ITA_albanian_fascist_militia
-		}
-		localization_key = BBA_italy_colonial_management_albanian_states
-	}
-	text = {
 		localization_key = generic_null
 	}
 }
@@ -347,7 +323,6 @@ defined_text = {
 	text = {
 		trigger = {
 			has_completed_focus = ITA_ministry_of_italian_africa
-			has_completed_focus = ITA_albanian_fascist_militia
 		}
 		localization_key = BBA_italy_colonial_management_and
 	}
@@ -705,12 +680,6 @@ defined_text = { #Italy Guarentees Major Back Tooltip
 
 defined_text = { #Titles Vittorio Emanuele III Dies
 	name = GetVittorioDiesEventTitles
-	text = { #Emperor Title
-		trigger = { 
-			has_completed_focus = ITA_proclaim_the_italian_empire
-		}
-		localization_key = bba_news.106.t_emperor
-	}
 	text = { #King Title
 		localization_key = bba_news.106.t_king
 	}
@@ -718,12 +687,6 @@ defined_text = { #Titles Vittorio Emanuele III Dies
 
 defined_text = { #Desc Vittorio Emanuele III Dies
 	name = GetVittorioDiesEventDesc
-	text = { #Emperor Desc
-		trigger = { 
-			has_completed_focus = ITA_proclaim_the_italian_empire
-		}
-		localization_key = bba_news.106.desc_emperor
-	}
 	text = { #King Desc
 		localization_key = bba_news.106.desc_king
 	}

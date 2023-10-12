@@ -216,9 +216,6 @@ bookmarks = {
 			ideas = {
 			}
 			focuses = {
-				nor_norway_in_exile
-				nor_ruges_plan
-				nor_operation_crofter
 			}					
 		}
 		"IRE"={

@@ -1,0 +1,13 @@
+﻿focus_tree = {
+    id = JFU_RSPAIN_focus
+	country = {	
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = SPA
+		}
+	} 
+	default = no 
+	continuous_focus_position = { x = 20 y = 2000 }
+}

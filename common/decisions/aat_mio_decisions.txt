@@ -408,38 +408,9 @@ foreign_mio_decisions_category = {
 			SOV = {
 				mio_original_country_exists_and_not_at_war_with_ROOT = yes
 			}
-			IF = {
-				limit = { original_tag = BUL }
-				OR = {
-					has_completed_focus = BUL_contract_foreign_companies
-					has_completed_focus = BUL_a_black_sea_fleet
-				}
-			}
-			ELSE = {
-				always = no 
-			}
 		}
 
 		available = {
-			IF = {
-				limit = { original_tag = BUL }
-				OR = {
-					is_subject = no
-					is_subject_of = SOV
-				}
-				#is_in_faction_with = SOV
-				has_completed_focus = BUL_a_black_sea_fleet
-				NOT = { has_completed_focus = BUL_nationalization }
-				SOV = {
-					has_opinion = {
-						target = ROOT
-						value > 49
-					}
-					has_capitulated = no
-					BUL_is_valid_subject = yes
-				}
-
-			}
 		}
 
 		complete_effect = {
@@ -785,37 +756,9 @@ foreign_mio_decisions_category = {
 			ENG = {
 				mio_original_country_exists_and_not_at_war_with_ROOT = yes
 			}
-			IF = {
-				limit = { original_tag = BUL }
-				OR = {
-					has_completed_focus = BUL_contract_foreign_companies
-					has_completed_focus = BUL_a_black_sea_fleet
-				}
-			}
-			ELSE = {
-				always = no 
-			}
 		}
 
 		available = {
-			IF = {
-				limit = { original_tag = BUL }
-				OR = {
-					is_subject = no
-					is_subject_of = ENG
-				}
-				#is_in_faction_with = ENG
-				has_completed_focus = BUL_a_black_sea_fleet
-				NOT = { has_completed_focus = BUL_nationalization }
-				ENG = {
-					has_opinion = {
-						target = ROOT
-						value > 49
-					}
-					has_capitulated = no
-					BUL_is_valid_subject = yes
-				}
-			}
 		}
 
 		complete_effect = {
@@ -880,37 +823,9 @@ foreign_mio_decisions_category = {
 			ENG = {
 				mio_original_country_exists_and_not_at_war_with_ROOT = yes
 			}
-			IF = {
-				limit = { original_tag = BUL }
-				OR = {
-					has_completed_focus = BUL_contract_foreign_companies
-					has_completed_focus = BUL_a_black_sea_fleet
-				}
-			}
-			ELSE = {
-				always = no 
-			}
 		}
 
 		available = {
-			IF = {
-				limit = { original_tag = BUL }
-				OR = {
-					is_subject = no
-					is_subject_of = ENG
-				}
-				#is_in_faction_with = ENG
-				NOT = { has_completed_focus = BUL_nationalization }
-				ENG = {
-					has_opinion = {
-						target = ROOT
-						value > 49
-					}
-					has_capitulated = no
-					BUL_is_valid_subject = yes
-				}
-
-			}
 		}
 
 		complete_effect = {

@@ -121,56 +121,6 @@ ETH_befriend_uk = {
 	}
 }
 
-ETH_befriend_japan = {
-	allowed = {
-		original_tag = ETH
-	}
-	enable = {
-		OR = {
-			AND = {
-				is_government_in_exile = yes 
-				check_variable = { ETH.host_nation = JAP }
-			}
-			JAP = { has_completed_focus = JAP_support_the_kodoha_faction }
-		}
-		
-	}
-	abort = {
-		OR = {
-			AND= {
-				has_opinion = {
-					target = JAP
-					value > 75
-				}
-				is_government_in_exile = no
-			}
-			JAP = {
-				has_opinion = {
-					target = ROOT
-					value > 99
-				}
-			}
-		}
-	}
-
-	ai_strategy = {
-		type = befriend
-		id = JAP
-		value = 400
-	}
-	ai_strategy = {
-		type = alliance
-		id = JAP
-		value = 400
-	}
-	ai_strategy = {
-		type = diplo_action_desire	
-		id = JAP
-		target = improve_relation
-		value = 400
-	}
-}
-
 ETH_befriend_germany = {
 	allowed = {
 		original_tag = ETH

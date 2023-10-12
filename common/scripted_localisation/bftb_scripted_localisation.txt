@@ -565,13 +565,6 @@ defined_text = {
 defined_text = {
 	name = GetImroDecisionCategoryDesc
 	text = {
-		trigger = {
-			original_tag = BUL
-			has_completed_focus = BUL_support_macedonian_organizations
-		}
-		localization_key = BUL_macedonian_revolutionary_organizations_cooperation_desc
-	}
-	text = {
 		localization_key = BUL_macedonian_revolutionary_organizations_hostile_desc
 	}
 }
@@ -834,12 +827,6 @@ defined_text = {
 	name = GetGermanFactionNameDef
 	text = {
 		trigger = {
-			has_completed_focus = BUL_the_fate_of_the_balkans
-		}
-		localization_key = BUL_bulgarian_administration_of_the_balkans_independent_name_def
-	}
-	text = {
-		trigger = {
 			GER = {
 				has_government = neutrality
 				is_faction_leader = yes
@@ -854,12 +841,6 @@ defined_text = {
 
 defined_text = { 
 	name = GetGermanOrIndependent
-	text = {
-		trigger = {
-			has_completed_focus = BUL_the_fate_of_the_balkans
-		}
-		localization_key = BUL_bulgarian_administration_of_the_balkans_everyone_name
-	}
 	text = {
 		localization_key = BUL_bulgarian_administration_of_the_balkans_germans_name
 	}
@@ -1175,18 +1156,6 @@ defined_text = {
 
 defined_text = {
 	name = GetBalkanFactionName
-	text = {
-		trigger = {
-			has_completed_focus = BUL_balkan_federation_of_socialist_republics
-		}
-		localization_key = BUL_bury_the_grudges_of_the_past_communist
-	}
-	text = {
-		trigger = {
-			has_completed_focus = BUL_a_balkan_confederation
-		}
-		localization_key = BUL_bury_the_grudges_of_the_past_democratic
-	}
 	text = {
 		localization_key = BUL_bury_the_grudges_of_the_past_no_faction
 	}
@@ -2087,12 +2056,6 @@ defined_text = {
 
 defined_text = {
 	name = GetFederationOrConfederation
-	text = {
-		trigger = {
-			has_completed_focus = BUL_democratic_principles
-		}
-		localization_key = BUL_confederation
-	}
 	text = {
 		localization_key = BUL_federation
 	}

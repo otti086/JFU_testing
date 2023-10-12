@@ -1162,7 +1162,7 @@ characters = {
 				original_tag = FIN
 			}
 			available = {
-				has_completed_focus = FIN_finnish_radio_intelligence
+#				has_completed_focus = FIN_finnish_radio_intelligence
 			}
 			traits = {
 				army_radio_intelligence_2
@@ -1376,7 +1376,7 @@ characters = {
 				original_tag = FIN
 			}
 			available = {
-				has_completed_focus = FIN_the_finnish_swedish_peoples_party
+#				has_completed_focus = FIN_the_finnish_swedish_peoples_party
 			}
 			cost = 70
 			traits = {

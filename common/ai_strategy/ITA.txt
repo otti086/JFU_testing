@@ -205,27 +205,6 @@ albania_war_goal = {
 	}
 }
 
-greece_war_goal = {
-	allowed = {
-		original_tag = ITA
-	}
-	enable = {
-		has_completed_focus = ITA_war_with_greece
-		country_exists = GRE
-	}
-	abort = {
-		NOT = {
-			country_exists = GRE
-		}
-	}
-
-	ai_strategy = {
-		type = antagonize
-		id = "GRE"
-		value = 200
-	}
-}
-
 ita_shore_up_against_france = {
 	allowed = {
 		original_tag = ITA
@@ -290,29 +269,6 @@ ita_slow_going_against_france = {
 		execute_order = no
 	}
 	
-}
-
-
-yugoslavia_war_goal = { #TODO_Manu: Check this with new focus
-	allowed = {
-		original_tag = ITA
-	}
-	enable = {
-		has_completed_focus = ITA_balkan_ambition
-		has_completed_focus = ITA_war_with_greece
-		country_exists = YUG
-	}
-	abort = {
-		NOT = {
-			country_exists = YUG
-		}
-	}
-
-	ai_strategy = {
-		type = antagonize
-		id = "YUG"
-		value = 200
-	}
 }
 
 germany_ally = {
@@ -801,11 +757,6 @@ ITA_let_germany_handle_polish_front_alone = {
 	ai_strategy = {
 		type = dont_defend_ally_borders
 		id = "GER"
-		value = 100
-	}
-	ai_strategy = {
-		type = dont_defend_ally_borders
-		id = "SLO"
 		value = 100
 	}
 }

@@ -143,18 +143,6 @@ political_actions = {
 				is_historical_focus_on = no
 			}
 			modifier = {
-				add = 10
-				tag = AUS
-				fascism > 0.45
-				GER = { has_completed_focus = GER_reestablish_free_elections }
-			}
-			modifier = {
-				add = 10
-				tag = AUS
-				fascism > 0.45
-				has_completed_focus = liberty_ethos
-			}
-			modifier = {
 				factor = 0
 				original_tag = SPR
 				NOT = { has_global_flag = spanish_civil_war }
@@ -491,15 +479,6 @@ political_actions = {
 					value = 0.66
 				}
 				set_country_flag = banned_communism_flag
-				if = {#NSB -> If country has Trotskyist Revolutionary Uprisings NS, swap it with the weakened version
-					limit = {
-						has_idea = SOV_trotskyist_revolutionary_agitation
-					}
-					swap_ideas = {
-						remove_idea = SOV_trotskyist_revolutionary_agitation
-						add_idea = SOV_trotskyist_revolutionary_agitation_weakened
-					}
-				}
 			}
 			custom_effect_tooltip = ban_communist_party_tt
 			add_stability = ban_ideology_var

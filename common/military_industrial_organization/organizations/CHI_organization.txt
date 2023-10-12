@@ -15,7 +15,6 @@ CHI_sino_german_technical_mission_organization = {
 		OR = {
 			is_literally_china = yes
 			tag = MAN
-			tag = MEN
 		} 
 		has_dlc = "Waking the Tiger"
 	}
@@ -49,7 +48,6 @@ CHI_jiangnan_shipyard_group_organization = {
 		OR = {
 			is_literally_china = yes
 			tag = MAN
-			tag = MEN
 		} 
 		has_dlc = "Waking the Tiger"
 	}
@@ -65,7 +63,6 @@ CHI_dagu_shipyard_organization = {
 		OR = {
 			is_literally_china = yes
 			tag = MAN
-			tag = MEN
 		} 
 		has_dlc = "Waking the Tiger"
 	}
@@ -99,7 +96,6 @@ CHI_camco_medium_organization = {
 		OR = {
 			is_literally_china = yes
 			tag = MAN
-			tag = MEN
 		} 
 		has_dlc = "Waking the Tiger"
 	}
@@ -114,7 +110,6 @@ CHI_camco_fighter_organization = {
 		OR = {
 			is_literally_china = yes
 			tag = MAN
-			tag = MEN
 		} 
 		has_dlc = "Waking the Tiger"
 	}
@@ -129,7 +124,6 @@ CHI_camco_bomber_organization = {
 		OR = {
 			is_literally_china = yes
 			tag = MAN
-			tag = MEN
 		} 
 		has_dlc = "Waking the Tiger"
 	}
@@ -156,7 +150,6 @@ CHI_taiyuan_arsenal_organization = {
 		OR = {
 			is_literally_china = yes
 			tag = MAN
-			tag = MEN
 		} 
 		has_dlc = "Waking the Tiger"
 	}
@@ -171,7 +164,6 @@ CHI_liaoning_arsenal_organization = {
 		OR = {
 			is_literally_china = yes
 			tag = MAN
-			tag = MEN
 		} 
 		has_dlc = "Waking the Tiger"
 	}
@@ -186,7 +178,6 @@ CHI_hanyan_arsenal_organization = {
 		OR = {
 			is_literally_china = yes
 			tag = MAN
-			tag = MEN
 		} 
 		has_dlc = "Waking the Tiger"
 	}
@@ -201,7 +192,6 @@ CHI_mukden_arsenal_organization = {
 		OR = {
 			is_literally_china = yes
 			tag = MAN
-			tag = MEN
 		} 
 		has_dlc = "Waking the Tiger"
 	}

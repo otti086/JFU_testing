@@ -261,27 +261,6 @@ SOV_anti_armor = {
 	}
 }
 
-claims_on_poland = {
-	allowed = {
-		original_tag = SOV
-	}
-	enable = {
-		has_completed_focus = SOV_claims_on_poland
-		country_exists = POL
-	}
-	abort = {
-		NOT = {
-			country_exists = POL
-		}
-	}
-
-	ai_strategy = {
-		type = antagonize
-		id = "POL"
-		value = 200
-	}
-}
-
 spanish_civil_war_SOV = {
 	allowed = {
 		original_tag = SOV

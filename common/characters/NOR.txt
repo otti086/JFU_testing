@@ -117,10 +117,10 @@ characters={
 			}
 			available = {
 				has_government = democratic
-				OR = {
-					has_completed_focus = NOR_vote_of_no_confidence
-					has_completed_focus = NOR_continue_nygaardsvold_government
-				}			
+#				OR = {
+#					has_completed_focus = NOR_vote_of_no_confidence
+#					has_completed_focus = NOR_continue_nygaardsvold_government
+#				}			
 			}
 			traits  = {
 				 NOR_conciliatory_socialist
@@ -206,9 +206,9 @@ characters={
 				NOR_AAT = yes
 			}
 			available = {				
-				NOT = {
-					has_completed_focus = NOR_get_rid_of_quisling 
-				}
+#				NOT = {
+#					has_completed_focus = NOR_get_rid_of_quisling 
+#				}
 				is_country_leader = no
 			}
 			traits  = {
@@ -260,7 +260,7 @@ characters={
 				NOR_AAT = yes
 			}
 			available = {
-				has_completed_focus = NOR_squash_dissent
+#				has_completed_focus = NOR_squash_dissent
 			}
 			traits  = { NOR_ruthless_police_captain }
 		}
@@ -312,10 +312,10 @@ characters={
 			}
 			available = {
 				has_government = democratic
-				OR = {
-					has_completed_focus = NOR_vote_of_no_confidence
-					has_completed_focus = NOR_continue_nygaardsvold_government
-				}
+#				OR = {
+#					has_completed_focus = NOR_vote_of_no_confidence
+#					has_completed_focus = NOR_continue_nygaardsvold_government
+#				}
 			}
 			traits  = {
 				 NOR_shipping_capitalist
@@ -367,7 +367,7 @@ characters={
 				NOR_AAT = yes
 			}
 			available = {
-				has_completed_focus = NOR_prosecute_the_nkp
+#				has_completed_focus = NOR_prosecute_the_nkp
 			}
 			traits  = {
 				NOR_radical_trade_unionist
@@ -394,7 +394,7 @@ characters={
 			}
 			available = {
 				has_country_flag = NOR_trotsky_embraced
-				NOT = { has_completed_focus = NOR_compromise_with_the_nkp } 
+#				NOT = { has_completed_focus = NOR_compromise_with_the_nkp } 
 				NOT = { has_government = fascism } 
 				NOT = { has_government = neutrality }
 				NOR_trotsky_not_in_sov = yes 
@@ -406,11 +406,11 @@ characters={
 		}
 		corps_commander={
 			visible = {
-				has_completed_focus = NOR_a_resurgent_labor_movement
+#				has_completed_focus = NOR_a_resurgent_labor_movement
 				has_country_flag = NOR_trotsky_embraced
-				NOT = {	
-					has_completed_focus = NOR_compromise_with_the_nkp 
-				}
+#				NOT = {	
+#					has_completed_focus = NOR_compromise_with_the_nkp 
+#				}
 			}
 			traits={  }
 			skill=3
@@ -460,7 +460,7 @@ characters={
 			available = {
 				OR = {
 					has_government = fascism 
-					has_completed_focus = NOR_nasjonal_samling
+#					has_completed_focus = NOR_nasjonal_samling
 				}
 			}
 			traits  = {
@@ -505,7 +505,7 @@ characters={
 				NOR_AAT = yes
 			}
 			available = {
-				has_completed_focus = NOR_approach_the_fatherland_league 
+#				has_completed_focus = NOR_approach_the_fatherland_league 
 			}
 			traits  = {
 				NOR_conservative_businessman
@@ -1269,10 +1269,10 @@ characters={
 				}
 				available = {
 					has_government = democratic
-					OR = {
-						has_completed_focus = NOR_vote_of_no_confidence
-						has_completed_focus = NOR_continue_nygaardsvold_government
-					}
+#					OR = {
+#						has_completed_focus = NOR_vote_of_no_confidence
+#						has_completed_focus = NOR_continue_nygaardsvold_government
+#					}
 				}
 				traits  = {
 					NOR_pacifist_diplomat 

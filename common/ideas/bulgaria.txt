@@ -2228,7 +2228,7 @@ ideas = {
 			}
 
 			available = {
-				has_completed_focus = BUL_darzhavna_aeroplanna_rabotilnitsa
+				always = no
 			}
 						
 			research_bonus = {
@@ -2261,7 +2261,7 @@ ideas = {
 			}
 
 			available = {
-				has_completed_focus = BUL_darzhavna_aeroplanna_rabotilnitsa
+				always = no
 			}
 						
 			research_bonus = {
@@ -2291,7 +2291,7 @@ ideas = {
 			}
 
 			available = {
-				has_completed_focus = BUL_kaproni_bulgarski
+				always = no
 			}
 						
 			research_bonus = {

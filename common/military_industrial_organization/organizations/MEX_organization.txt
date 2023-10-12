@@ -69,18 +69,6 @@ MEX_astimar_pacific_organization = {
 
 ###########################
 
-MEX_tnca_organization = {
-	include = generic_general_aircraft_organization
-	icon = GFX_idea_MEX_tnca
-	allowed = { 
-		has_dlc = "Man the Guns"
-		tag = MEX
-	}
-	available = {
-		owner = { has_completed_focus = MEX_focus_aviation_workshops }
-	}
-}
-
 
 ################################### 
 

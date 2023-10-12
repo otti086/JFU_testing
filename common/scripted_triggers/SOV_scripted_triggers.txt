@@ -672,94 +672,6 @@ SOV_is_going_historical_stalinist = { # Add/Change stuff here instead of doing i
 	has_completed_focus = SOV_the_centre	
 }
 
-SOV_target_capital_is_on_unlocked_continent_fifth_columnists = {
-	OR = {
-		AND = {
-			has_completed_focus = SOV_the_permanent_revolution
-			FROM = {
-				capital_scope = {
-					is_on_continent = europe
-				}
-			}
-		}
-		AND = {
-			has_completed_focus = SOV_the_onslaught_on_colonialism
-			FROM = {
-				capital_scope = {
-					is_on_continent = africa
-				}
-			}
-		}
-		AND = {
-			has_completed_focus = SOV_carry_revolution_east
-				FROM = {
-				capital_scope = {
-					OR = {
-						is_on_continent = asia
-						is_on_continent = middle_east
-					}
-				}
-			}
-		}
-		AND = {
-			has_completed_focus = SOV_the_end_of_the_imperialist_era
-			FROM = {
-				capital_scope = {
-					OR = {
-						is_on_continent = north_america
-						is_on_continent = south_america
-						is_on_continent = australia
-					}
-				}
-			}
-		}
-	}
-}
-
-SOV_target_capital_is_on_unlocked_continent_uprisings = {
-	OR = {
-		AND = {
-			has_completed_focus = SOV_a_global_class_struggle
-			FROM = {
-				capital_scope = {
-					is_on_continent = europe
-				}
-			}
-		}
-		AND = {
-			has_completed_focus = SOV_the_onslaught_on_colonialism
-			FROM = {
-				capital_scope = {
-					is_on_continent = africa
-				}
-			}
-		}
-		AND = {
-			has_completed_focus = SOV_carry_revolution_east
-			FROM = {
-				capital_scope = {
-					OR = {
-						is_on_continent = asia
-						is_on_continent = middle_east
-					}
-				}
-			}
-		}
-		AND = {
-			has_completed_focus = SOV_the_end_of_the_imperialist_era
-			FROM = {
-				capital_scope = {
-					OR = {
-						is_on_continent = north_america
-						is_on_continent = south_america
-						is_on_continent = oceania
-					}
-				}
-			}
-		}
-	}
-}
-
 SOV_basic_pressure_government_triggers = { #Used in foreign politics targeted decs - Expected Scope: ROOT = SOV // FROM = Target
 	country_exists = FROM
 	NOT = { has_war_with = FROM }
@@ -851,19 +763,6 @@ SOV_display_civil_war_start_state = {
 	OR = {
 		FROM = { has_state_flag = SOV_hq_state_selected } # this is the selected state
 		NOT = { has_country_flag = SOV_hq_state_selected_country_flag } # no state selected yet
-	}
-}
-
-SOV_has_crackdown = {
-	custom_trigger_tooltip = {
-		tooltip = SOV_has_crackdown_tt
-		OR = {
-			has_active_mission = SOV_ukraine_crackdown_timer
-			has_active_mission = SOV_steppe_crackdown_timer
-			has_active_mission = SOV_northern_crackdown_timer
-			has_active_mission = SOV_siberian_crackdown_timer
-			has_active_mission = SOV_urals_crackdown_timer
-		}
 	}
 }
 

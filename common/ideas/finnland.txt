@@ -116,7 +116,88 @@ ideas = {
 				army_core_attack_factor = 0.2
 			}
 		}
+		fin_sisu = {
 
+			name = "Sisu"
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = sisu
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_morale_factor = 0.25
+				attrition = -0.1
+				army_core_attack_factor = 0.2
+				army_core_defence_factor = 0.2
+			}
+		}
+		fin_sisu2 = {
+			
+			name = "Sisu"
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = sisu
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_morale_factor = 0.25
+				attrition = -0.1
+				army_core_attack_factor = 0.2
+				army_core_defence_factor = 0.2
+				acclimatization_cold_climate_gain_factor = 0.5
+				winter_attrition_factor = -0.2
+			}
+		}
+		fin_sisu3 = {
+			
+			name = "Sisu"
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = sisu
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_morale_factor = 0.25
+				attrition = -0.1
+				army_core_attack_factor = 0.2
+				army_core_defence_factor = 0.2
+				acclimatization_cold_climate_gain_factor = 0.5
+				winter_attrition_factor = -0.2
+				supply_consumption_factor = -0.2
+				pocket_penalty = -0.3
+				no_supply_grace = 24
+			}
+		}
 		fin_trade = {
 			name = "Trade Agreement"
 			
@@ -296,36 +377,6 @@ ideas = {
 				industrial_capacity_factory = 0.05
 				production_speed_buildings_factor = 0.05
 				production_factory_max_efficiency_factor = 0.05
-			}
-		}
-		fin_sisu3 = {
-			
-			name = "Sisu"
-			
-			allowed = {
-				always = no
-			}
-			
-			picture = sisu
-
-			allowed_civil_war = {
-				NOT = {
-					has_government = communism
-				}
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				army_morale_factor = 0.25
-				attrition = -0.1
-				army_core_attack_factor = 0.2
-				army_core_defence_factor = 0.2
-				acclimatization_cold_climate_gain_factor = 0.5
-				winter_attrition_factor = -0.2
-				supply_consumption_factor = -0.2
-				pocket_penalty = -0.3
-				no_supply_grace = 24
 			}
 		}
 
@@ -1999,7 +2050,7 @@ ideas = {
 			}
 
 			visible = {
-				NOT = { has_completed_focus = FIN_national_armor_focus }
+#				NOT = { has_completed_focus = FIN_national_armor_focus }
 			}
 			
 			research_bonus = {
@@ -2018,7 +2069,7 @@ ideas = {
 			}
 
 			visible = {
-				has_completed_focus = FIN_national_armor_focus
+#				has_completed_focus = FIN_national_armor_focus
 			}
 
 			cost = 75
@@ -2069,7 +2120,7 @@ ideas = {
 			}
 
 			visible = {
-				NOT = { has_completed_focus = FIN_conversion_of_civilian_vessels }
+#				NOT = { has_completed_focus = FIN_conversion_of_civilian_vessels }
 			}
 			
 			research_bonus = {
@@ -2088,7 +2139,7 @@ ideas = {
 			}
 
 			visible = {
-				has_completed_focus = FIN_conversion_of_civilian_vessels
+#				has_completed_focus = FIN_conversion_of_civilian_vessels
 			}
 
 			cost = 75
@@ -2148,7 +2199,7 @@ ideas = {
 			}
 
 			visible = {
-				NOT = { has_completed_focus = FIN_national_aircraft_production }
+#				NOT = { has_completed_focus = FIN_national_aircraft_production }
 			}
 			
 			research_bonus = {
@@ -2167,7 +2218,7 @@ ideas = {
 			}
 			
 			visible = {
-				has_completed_focus = FIN_national_aircraft_production
+#				has_completed_focus = FIN_national_aircraft_production
 			}
 
 			cost = 75
@@ -2204,7 +2255,7 @@ ideas = {
 			}
 
 			visible = {
-				NOT = { has_completed_focus = FIN_integrate_oy_tikkakoski }
+#				NOT = { has_completed_focus = FIN_integrate_oy_tikkakoski }
 			}
 			
 			research_bonus = {
@@ -2223,7 +2274,7 @@ ideas = {
 			}
 
 			visible = {
-				has_completed_focus = FIN_integrate_oy_tikkakoski
+#				has_completed_focus = FIN_integrate_oy_tikkakoski
 			}
 
 			cost = 75
@@ -2251,7 +2302,7 @@ ideas = {
 			}
 
 			visible = {
-				NOT = { has_completed_focus = FIN_national_firepower }
+#				NOT = { has_completed_focus = FIN_national_firepower }
 			}
 			
 			research_bonus = {
@@ -2270,7 +2321,7 @@ ideas = {
 			}
 
 			visible = {
-				has_completed_focus = FIN_national_firepower
+#				has_completed_focus = FIN_national_firepower
 			}
 
 			cost = 75
@@ -2298,7 +2349,7 @@ ideas = {
 			}
 
 			visible = {
-				NOT = { has_completed_focus = FIN_contract_with_yhteissisu }
+#				NOT = { has_completed_focus = FIN_contract_with_yhteissisu }
 			}
 			
 			research_bonus = {
@@ -2317,7 +2368,7 @@ ideas = {
 			}
 
 			visible = {
-				has_completed_focus = FIN_contract_with_yhteissisu
+#				has_completed_focus = FIN_contract_with_yhteissisu
 			}
 
 			cost = 75
@@ -2383,7 +2434,7 @@ ideas = {
 			}
 
 			available = {
-				has_completed_focus = FIN_found_pohjolan_voima
+#				has_completed_focus = FIN_found_pohjolan_voima
 			}
 			
 			cost = 150
@@ -2404,7 +2455,7 @@ ideas = {
 			}
 
 			visible = {
-				NOT = { has_completed_focus = FIN_tire_factory_at_nokia }
+#				NOT = { has_completed_focus = FIN_tire_factory_at_nokia }
 			}
 
 			available = {
@@ -2430,7 +2481,7 @@ ideas = {
 			}
 
 			visible = {
-				has_completed_focus = FIN_tire_factory_at_nokia
+#				has_completed_focus = FIN_tire_factory_at_nokia
 			}
 			
 			available = {

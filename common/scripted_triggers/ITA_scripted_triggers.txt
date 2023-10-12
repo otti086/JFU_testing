@@ -174,7 +174,6 @@ ITA_government_is_somewhat_fascist = {
 		}
 		OR = {
 			has_government = fascism
-			has_completed_focus = ITA_utilize_the_blackshirts
 		}
 	}
 	else = {

@@ -833,7 +833,7 @@ characters={
 				available = {
 					if = {
 						limit = {
-							has_completed_focus = SPA_unify_the_nationalist_front
+							has_completed_focus = SPR_unify_the_nationalist_front
 						}
 						NOT = {
 							has_global_flag = SPR_carlist_uprising_flag
@@ -1169,7 +1169,7 @@ characters={
 			available = {
 				if = {
 					limit = {
-						has_completed_focus = SPA_unify_the_nationalist_front
+						has_completed_focus = SPR_unify_the_nationalist_front
 					}
 					NOT = {
 						has_global_flag = SPR_carlist_uprising_flag
@@ -1207,7 +1207,7 @@ characters={
 			available = {
 				if = {
 					limit = {
-						has_completed_focus = SPA_unify_the_nationalist_front
+						has_completed_focus = SPR_unify_the_nationalist_front
 					}
 					NOT = {
 						has_global_flag = SPR_carlist_uprising_flag
@@ -1811,7 +1811,7 @@ characters={
 
 			available = {
 				NOT = {
-					has_completed_focus = SPA_banish_the_party_leaders
+					has_completed_focus = SPR_banish_the_party_leaders
 				}
 			}
 			traits = {
@@ -1837,7 +1837,7 @@ characters={
 			}
 
 			available = {
-				has_completed_focus = SPA_banish_the_party_leaders
+				has_completed_focus = SPR_banish_the_party_leaders
 			}
 			traits = {
 				loyal_falangist 
@@ -1864,7 +1864,7 @@ characters={
 			available = {
 				if = {
 					limit = {
-						has_completed_focus = SPA_unify_the_nationalist_front
+						has_completed_focus = SPR_unify_the_nationalist_front
 					}
 					NOT = {
 						has_global_flag = SPR_carlist_uprising_flag

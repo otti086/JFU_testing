@@ -29,7 +29,6 @@ if = {
 	}
 }
 add_ideas = { 
-	en_svensk_tiger 
 	neutrality_idea
 }
 set_research_slots = 0

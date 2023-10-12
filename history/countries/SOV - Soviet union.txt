@@ -149,14 +149,6 @@ SOV_vsevolod_merkulov = {
 SOV_patriarch_sergy = { #Priests are not political enemies at this point
 	set_character_flag = SOV_safe_from_purge_flag
 }
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	SOV_metropolitan_anastasy = { #Priests are not political enemies at this point
-		set_character_flag = SOV_safe_from_purge_flag
-	}
-}
 	
 ### PROPAGANDA ###
 set_variable = { SOV_new_propaganda_campaign = 0 } #Used to pick a poster slot
