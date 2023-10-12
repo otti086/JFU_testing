@@ -121,7 +121,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 			
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 			}
 		}
 		spiritual_mobilization_idea = {
@@ -254,7 +254,7 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.05
 				production_speed_arms_factory_factor = 0.05
 				production_speed_dockyard_factor = 0.05
-				consumer_goods_factor = 0.05
+				consumer_goods_factor = 0.10
 			}
 		}
 
@@ -301,7 +301,7 @@ ideas = {
 				production_speed_arms_factory_factor = 0.10
 				production_speed_dockyard_factor = 0.05
 				industrial_capacity_factory = 0.05
-				consumer_goods_factor = 0.05
+				consumer_goods_factor = 0.10
 			}
 		}
 
@@ -326,7 +326,7 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.10
 				production_speed_arms_factory_factor = 0.10
 				production_speed_dockyard_factor = 0.10
-				consumer_goods_factor = 0.05
+				consumer_goods_factor = 0.10
 			}
 		}
 
@@ -349,7 +349,7 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.10
 				production_speed_arms_factory_factor = 0.10
 				production_speed_dockyard_factor = 0.10
-				consumer_goods_factor = 0.05
+				consumer_goods_factor = 0.10
 			}
 		}
 

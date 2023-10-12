@@ -116,7 +116,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 				stability_factor = -0.05
 			}
 		}
@@ -249,7 +249,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = 0.2
+				consumer_goods_factor = 0.4
 			}
 		}
 		FRA_occupation_costs_3 = {
@@ -267,7 +267,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = 0.15
+				consumer_goods_factor = 0.3
 			}
 		}
 		FRA_occupation_costs_2 = {
@@ -285,7 +285,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = 0.1
+				consumer_goods_factor = 0.2
 			}
 		}
 		FRA_occupation_costs_1 = {
@@ -302,7 +302,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = 0.05
+				consumer_goods_factor = 0.10
 			}
 		}
 		FRA_mandatory_work_service = {

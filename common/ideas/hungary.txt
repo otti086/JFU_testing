@@ -255,7 +255,7 @@ ideas = {
 			picture = FRA_scw_intervention_republicans_focus
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 			}
 		}
 
@@ -267,7 +267,7 @@ ideas = {
 			picture = FRA_scw_intervention_republicans_focus
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 			}
 		}
 
@@ -279,7 +279,7 @@ ideas = {
 			picture = FRA_scw_intervention_nationalists_focus
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 				communism_drift = 0.02
 			}
 		}

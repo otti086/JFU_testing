@@ -830,7 +830,7 @@ ideas = {
 			}
 					
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 				supply_node_range = 0.1
 				supply_consumption_factor = -0.1
 			}
@@ -966,7 +966,7 @@ ideas = {
 			}
 					
 			modifier = {
-				consumer_goods_factor = -0.03
+				consumer_goods_factor = -0.10
 			}
 		}
 
@@ -984,7 +984,7 @@ ideas = {
 			}
 					
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 				political_power_factor = -0.15
 				out_of_supply_factor = -0.1
 			}
@@ -1004,7 +1004,7 @@ ideas = {
 			}
 					
 			modifier = {
-				consumer_goods_factor = -0.02
+				consumer_goods_factor = -0.05
 				political_power_factor = 0.1
 			}
 		}
@@ -1287,7 +1287,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.01
+				consumer_goods_factor = -0.03
 			}
 		}
 
@@ -1859,7 +1859,7 @@ ideas = {
 			modifier = {
 				stability_factor = -0.2
 				industrial_capacity_factory = 0.3
-				consumer_goods_factor = -0.1
+				consumer_goods_factor = -0.15
 			}
 		}
 
@@ -1913,7 +1913,7 @@ ideas = {
 			modifier = {
 				weekly_manpower = 1000
 				communism_drift = 0.1
-				consumer_goods_factor = -0.02
+				consumer_goods_factor = -0.05
 				custom_modifier_tooltip = ITA_grande_rivolta_rurale_terrain_bonus_tt
 			}
 		}
@@ -2211,7 +2211,7 @@ ideas = {
 				offence = 0.05
 				offensive_war_stability_factor = 0.5
 				weekly_manpower = 500
-				consumer_goods_factor = -0.03
+				consumer_goods_factor = -0.05
 				guarantee_cost = -0.35
 				guarantee_tension = -0.35
 				custom_modifier_tooltip = ITA_papal_state_catholic_dominion_puppet_discount_tt
@@ -2244,7 +2244,7 @@ ideas = {
 				offence = 0.05
 				offensive_war_stability_factor = 0.5
 				weekly_manpower = 500
-				consumer_goods_factor = -0.03
+				consumer_goods_factor = -0.10
 				guarantee_cost = -0.35
 				guarantee_tension = -0.35
 				custom_modifier_tooltip = ITA_papal_state_catholic_dominion_puppet_discount_tt
@@ -2265,7 +2265,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 			}
 		}
 
@@ -2580,7 +2580,7 @@ ideas = {
 			}
 			
 			modifier = {
-				consumer_goods_factor = -0.03
+				consumer_goods_factor = -0.10
 				subjects_autonomy_gain = -0.2
 			}
 		}
@@ -2605,7 +2605,7 @@ ideas = {
 			}
 			
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 				subjects_autonomy_gain = -0.3
 				research_speed_factor = 0.05
 			}
@@ -2652,7 +2652,7 @@ ideas = {
 				global_building_slots_factor = 0.4
 				stability_factor = 0.05
 				political_power_factor = 0.1
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 				production_speed_buildings_factor = 0.1
 				cic_to_overlord_factor = 0.3
 				mic_to_overlord_factor = 0.3
@@ -2973,7 +2973,7 @@ ideas = {
 			}
 					
 			modifier = {
-				consumer_goods_factor = 0.05
+				consumer_goods_factor = 0.10
 				industrial_capacity_factory = -0.025
 				production_speed_industrial_complex_factor = -0.05
 				production_speed_arms_factory_factor = -0.05
@@ -3044,7 +3044,7 @@ ideas = {
 				resistance_damage_to_garrison = -0.15
 				non_core_manpower = 0.25
 				industry_repair_factor = 0.3
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 				weekly_manpower = 150 
 			}
 		}

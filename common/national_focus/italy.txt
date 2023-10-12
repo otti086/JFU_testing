@@ -2040,7 +2040,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			add_to_variable = { ITA_iri_consumer_goods_factor = 0.01 }
+			add_to_variable = { ITA_iri_consumer_goods_factor = 0.02 }
 			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
 
 			if = {
@@ -2159,7 +2159,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			add_to_variable = { ITA_iri_consumer_goods_factor = -0.05 }
+			add_to_variable = { ITA_iri_consumer_goods_factor = -0.10 }
 			custom_effect_tooltip = ITA_investments_in_edison_ricostruzione_industriale_tt
 
 			159 = { #LOMBARDY (Milano)
@@ -2366,7 +2366,7 @@ focus_tree = {
 			add_to_variable = { ITA_military_industry_dm_production_factory_start_efficiency_factor = -0.04 }
 			custom_effect_tooltip = ITA_increase_production_military_industry_tt
 
-			add_to_variable = { ITA_iri_consumer_goods_factor = 0.01 }
+			add_to_variable = { ITA_iri_consumer_goods_factor = 0.02 }
 			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
 		}
 	}
@@ -2393,7 +2393,7 @@ focus_tree = {
 			add_to_variable = { ITA_military_industry_dm_line_change_production_efficiency_factor = -0.2 }
 			custom_effect_tooltip = ITA_keep_specialization_military_industry_tt
 
-			add_to_variable = { ITA_iri_consumer_goods_factor = 0.01 }
+			add_to_variable = { ITA_iri_consumer_goods_factor = 0.02 }
 			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
 		}
 	}
@@ -3325,7 +3325,7 @@ focus_tree = {
 				remove_ideas = ITA_hidden_research_penalties_ns
 			}
 
-			add_to_variable = { ITA_iri_consumer_goods_factor = 0.01 }
+			add_to_variable = { ITA_iri_consumer_goods_factor = 0.02 }
 			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
 
 			if = {
@@ -3383,7 +3383,7 @@ focus_tree = {
 			add_to_variable = { ITA_military_industry_dm_industrial_capacity_dockyard = 0.1 }
 			custom_effect_tooltip = ITA_modernize_ansaldo_facilities_military_industry_tt
 
-			add_to_variable = { ITA_iri_consumer_goods_factor = 0.01 }
+			add_to_variable = { ITA_iri_consumer_goods_factor = 0.02 }
 			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
 
 			158 = { #PIEDMONT (Genova)
@@ -3629,7 +3629,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			add_to_variable = { ITA_iri_consumer_goods_factor = -0.01 }
+			add_to_variable = { ITA_iri_consumer_goods_factor = -0.02 }
 			custom_effect_tooltip = ITA_reggianes_exports_ricostruzione_industriale_tt
 
 			161 = { #EMILIA ROMAGNA (Reggio Emilio)
@@ -3808,7 +3808,7 @@ focus_tree = {
 				add_ideas = ITA_hidden_standardization_ns
 			}
 
-			add_to_variable = { ITA_iri_consumer_goods_factor = 0.01 }
+			add_to_variable = { ITA_iri_consumer_goods_factor = 0.02 }
 			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
 		
 			add_tech_bonus = {
@@ -3864,7 +3864,7 @@ focus_tree = {
 				add_ideas = ITA_hidden_specialization_ns
 			}
 
-			add_to_variable = { ITA_iri_consumer_goods_factor = 0.01 }
+			add_to_variable = { ITA_iri_consumer_goods_factor = 0.02 }
 			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
 
 			air_experience = 15
@@ -4862,7 +4862,7 @@ focus_tree = {
 				add_ideas = ITA_hidden_light_cruisers_production_ns
 			}
 
-			add_to_variable = { ITA_iri_consumer_goods_factor = 0.01 }
+			add_to_variable = { ITA_iri_consumer_goods_factor = 0.02 }
 			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
 
 			navy_experience = 25
@@ -4907,7 +4907,7 @@ focus_tree = {
 				add_ideas = ITA_hidden_heavy_cruisers_production_ns
 			}			
 
-			add_to_variable = { ITA_iri_consumer_goods_factor = 0.01 }
+			add_to_variable = { ITA_iri_consumer_goods_factor = 0.02 }
 			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
 
 			navy_experience = 25

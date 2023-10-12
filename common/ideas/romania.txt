@@ -34,7 +34,7 @@ ideas = {
 
 			}
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 			}
 		}	
 		ROM_revenge_against_germany = {
@@ -200,7 +200,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = 0.2
+				consumer_goods_factor = 0.4
 			}
 		}
 
@@ -287,7 +287,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = 0.03
+				consumer_goods_factor = 0.06
 			}
 		}
 
@@ -388,7 +388,7 @@ ideas = {
 			}
 			
 			modifier = {
-				consumer_goods_factor = 0.15
+				consumer_goods_factor = 0.30
 				political_power_gain = -0.25
 			}
 		}
@@ -542,7 +542,7 @@ ideas = {
 			}
 			
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 			}
 		}
 
