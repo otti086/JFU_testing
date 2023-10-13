@@ -69,14 +69,14 @@ adjacency_rule =
 	{
 		army = no
 		navy = no
-		submarine = yes
+		submarine = no
 		trade = no
 	}
 	enemy =
 	{
 		army = no
 		navy = no
-		submarine = yes
+		submarine = no
 		trade = no
 	}
 	friend =
@@ -94,7 +94,7 @@ adjacency_rule =
 		trade = yes
 	}
 	
-	required_provinces = { 4135 9945 }
+	required_provinces = { 4135 }
 	
 	icon = 5407	
 	offset = { -31.0 0.0 -2.0 }
@@ -134,10 +134,10 @@ adjacency_rule =
 		trade = yes
 	}
 	
-	required_provinces = { 6287 3277 3325 3260 394 }
+	required_provinces = { 9296 316 }
 	
 	icon = 2431
-	offset = { -2 0 -7 }
+	offset = { -26 0 -13 }
 }
 
 #Panama Canal
@@ -395,4 +395,129 @@ adjacency_rule =
 		
 	icon = 6979
 	offset = { 9 0 6 }
+}
+#Berlin-Madrid
+adjacency_rule =
+{
+	name = "Berlin-Madrid"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 3761 }
+	is_disabled = {
+		NOT = {
+			tag=SPR
+		
+		}
+		
+	}
+}
+#Vienna-Madrid
+adjacency_rule =
+{
+	name = "Vienna-Madrid"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 6955 }
+	is_disabled = {
+		NOT = {
+			tag=SPR
+		
+		}
+		
+	}
+}
+#Strait of Aden
+adjacency_rule =
+{
+	name = "Aden_Strait"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 5074 }
+		
+	icon = 5074
+	offset = { -35 0 -10 }
 }
