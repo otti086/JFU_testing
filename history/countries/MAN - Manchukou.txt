@@ -54,6 +54,12 @@ recruit_character = MAN_hesehn_tiemei
 recruit_character = MAN_xian_yuan
 recruit_character = MAN_guan_xingde
 recruit_character = MAN_megata_toshiro
+recruit_character = MAN_tomoyuki_yamashita 
+recruit_character = MAN_hisaichi_terauchi
+recruit_character = MAN_shunroku_hata
+recruit_character = MAN_akira_muto 
+recruit_character = MAN_shizuichi_tanaka 
+recruit_character = MAN_kenkichi_ueda 
 if = {
 	limit = { has_dlc = "No Step Back" }
 	recruit_character = SOV_grigory_semyonov

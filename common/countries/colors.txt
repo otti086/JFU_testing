@@ -142,6 +142,10 @@ USA = {
 	color = rgb { 20 133 237 }
 	color_ui = rgb { 87 160 255 }
 }
+MAN = {
+	color = rgb { 255 120 71 }
+	color_ui = rgb { 255 120 71 }
+}
 RAJ = {
 	color = rgb { 226  135  40 }
 	color_ui = rgb { 226  135  40 }

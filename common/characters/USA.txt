@@ -1239,7 +1239,10 @@ characters={
 					has_completed_focus  = USA_reach_out_to_the_ware_group 
 				}
 				NOT  = {
-					has_idea  = USA_henry_morgenthau 
+					AND = {
+						has_idea = undisturbed_isolation
+						has_idea  = USA_henry_morgenthau 
+					}
 				}
 			}
 			visible  = {
@@ -1452,7 +1455,10 @@ characters={
 			}
 			available  = {
 				NOT  = {
-					has_idea  = harry_white 
+					AND = {
+						has_idea = undisturbed_isolation
+						has_idea  = harry_white
+					}
 				}
 			}
 			traits  = {

@@ -32,10 +32,7 @@ if = {
 		set_technology = {
 			aa_lmg = 1
 			aa_cannon_1 = 1
-			engines_1 = 1
-			engines_2 = 1
 			early_bombs = 1
-			aircraft_construction = 1
 			iw_small_airframe = 1
 			basic_small_airframe = 1
 			iw_medium_airframe = 1
@@ -171,7 +168,7 @@ if = {
 }
 set_variable = { GER_narvik_shipments = 0 }
 set_variable = { GER_narvik_civs = 0 }
-set_research_slots = 4
+set_research_slots = 5
 set_convoys = 200
 set_stability = 0.75 
 set_war_support = 0.3

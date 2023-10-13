@@ -30,7 +30,6 @@ if = {
 		set_technology = {
 			iw_small_airframe = 1
 			aa_lmg = 1
-			engines_1 = 1
 		}
 	else = {
 		set_air_oob = "ROM_1936_air_legacy"

@@ -168,20 +168,6 @@ technologies = {
 		}
 		on_research_complete = {
 			hidden_effect = {
-				if = {
-					limit = {
-						has_tech = motorised_infantry
-					}
-
-					load_oob = "unlock_tanks_mot"
-				}
-				if = {
-					limit = {
-						NOT = { has_tech = motorised_infantry }
-					}
-
-					load_oob = "unlock_tanks"
-				}
 
 				if = { #Italian templates
 					limit = {
@@ -245,6 +231,16 @@ technologies = {
 			light_tank_destroyer_chassis_2
 			light_tank_artillery_chassis_2
 			light_tank_aa_chassis_2
+		}
+
+		enable_equipment_modules = {
+			tank_high_velocity_cannon
+			tank_medium_cannon
+			tank_heavy_cannon
+			tank_small_cannon_2
+			secondary_turret_close_support_gun
+			tank_auto_cannon_2
+			squeezebore_adaptor
 		}
 
 		path = {
@@ -320,130 +316,6 @@ technologies = {
 		}
 	}
 
-
-
-	amphibious_tank_chassis = { #SchwimmPanzer II
-
-		enable_equipments = {
-			amphibious_tank_chassis_1
-		}
-
-		enable_subunits = {
-			amphibious_armor
-		}
-
-		path = {
-			leads_to_tech = amphibious_drive
-			research_cost_coeff = 1
-		}
-
-		allow_branch = {
-			has_dlc = "Man the Guns"
-		}
-
-		research_cost = 2
-		start_year = 1938
-
-		folder = {
-			name = nsb_armour_folder
-			position = { x = -4 y = 5 }
-		}
-
-		ai_will_do = {
-			factor = 0.5
-
-			modifier = {
-				factor = 2
-				is_major = yes
-				NOT = {
-					TAG = GER
-				}
-			}
-			modifier = {
-				OR = {
-					original_tag = USA
-					original_tag = JAP
-				}
-				factor = 2
-			}
-			modifier = {
-				not = {
-					any_controlled_state = {
-						is_coastal = yes
-					}
-				}
-				factor = 0
-			}
-		}
-
-		categories = {
-			armor
-			tp_tech
-			mio_cat_tech_light_armor_and_modules
-		}
-	}
-
-	amphibious_drive = { #SchwimmPanzer II
-
-
-		enable_equipment_modules = {
-			amphibious_drive
-		}
-
-		enable_equipments = {
-			light_tank_amphibious_chassis_0
-			medium_tank_amphibious_chassis_0
-			heavy_tank_amphibious_chassis_0
-			light_tank_amphibious_chassis_1
-			medium_tank_amphibious_chassis_1
-			heavy_tank_amphibious_chassis_1
-			light_tank_amphibious_chassis_2
-			medium_tank_amphibious_chassis_2
-			heavy_tank_amphibious_chassis_2
-			light_tank_amphibious_chassis_3
-			medium_tank_amphibious_chassis_3
-			heavy_tank_amphibious_chassis_3
-		}
-
-		research_cost = 2
-		start_year = 1941
-
-		folder = {
-			name = nsb_armour_folder
-			position = { x = -4 y = 8 }
-		}
-
-		ai_will_do = {
-			factor = 0.5
-
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-			modifier = {
-				OR = {
-					original_tag = USA
-					original_tag = JAP
-				}
-				factor = 2
-			}
-			modifier = {
-				not = {
-					any_controlled_state = {
-						is_coastal = yes
-					}
-				}
-				factor = 0
-			}
-		}
-
-		categories = {
-			armor
-			tp_tech
-			mio_cat_tech_light_armor_and_modules
-		}
-	}
-
 	advanced_light_tank_chassis = { #Leopard
 
 		enable_equipments = {
@@ -451,6 +323,15 @@ technologies = {
 			light_tank_destroyer_chassis_3
 			light_tank_artillery_chassis_3
 			light_tank_aa_chassis_3
+		}
+
+		enable_equipment_modules = {
+			tank_anti_air_cannon_2
+			tank_medium_howitzer
+			tank_rocket_launcher
+			tank_high_velocity_cannon_2
+			tank_medium_cannon_2
+			tank_heavy_cannon_2
 		}
 
 		research_cost = 2
@@ -490,14 +371,73 @@ technologies = {
 			mio_cat_tech_light_armor_and_modules
 		}
 	}
+	amphibious_tank_chassis = { #SchwimmPanzer II
 
+		enable_equipments = {
+			amphibious_tank_chassis_1
+		}
+
+		enable_subunits = {
+			amphibious_armor
+		}
+
+		research_cost = 2
+		start_year = 1938
+
+		ai_will_do = {
+			factor = 0.5
+
+			modifier = {
+				factor = 2
+				is_major = yes
+				NOT = {
+					TAG = GER
+				}
+			}
+			modifier = {
+				OR = {
+					original_tag = USA
+					original_tag = JAP
+				}
+				factor = 2
+			}
+			modifier = {
+				not = {
+					any_controlled_state = {
+						is_coastal = yes
+					}
+				}
+				factor = 0
+			}
+		}
+
+		categories = {
+			armor
+			tp_tech
+		}
+	}
 	basic_medium_tank_chassis = { #Panzer III
+
+		sub_technologies = {
+			amphibious_tank_chassis
+		}
 
 		enable_equipments = {
 			medium_tank_chassis_1
 			medium_tank_destroyer_chassis_1
 			medium_tank_artillery_chassis_1
 			medium_tank_aa_chassis_1
+		}
+
+		enable_equipment_modules = {
+			tank_high_velocity_cannon
+			tank_medium_cannon
+			tank_heavy_cannon
+			tank_small_cannon_2
+			secondary_turret_close_support_gun
+			tank_auto_cannon_2
+			squeezebore_adaptor
+			tank_medium_howitzer
 		}
 
 		enable_subunits = {
@@ -510,22 +450,6 @@ technologies = {
 			NOT = {	has_template_containing_unit = medium_armor }
 		}
 		on_research_complete = {
-			hidden_effect = {
-				if = {
-					limit = {
-						has_tech = motorised_infantry
-					}
-
-					load_oob = "unlock_tanks_mot"
-				}
-				if = {
-					limit = {
-						NOT = { has_tech = motorised_infantry }
-					}
-
-					load_oob = "unlock_tanks"
-				}
-			}
 
 			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 		}
@@ -536,11 +460,11 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1938
+		start_year = 1936
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = @1937 }
+			position = { x = 2 y = @1936 }
 		}
 
 		ai_will_do = {
@@ -592,11 +516,25 @@ technologies = {
 
 	improved_medium_tank_chassis = { #Panzer IV
 
+		sub_technologies = {
+			amphibious_drive
+		}
+
 		enable_equipments = {
 			medium_tank_chassis_2
 			medium_tank_destroyer_chassis_2
 			medium_tank_artillery_chassis_2
 			medium_tank_aa_chassis_2
+		}
+
+		enable_equipment_modules = {
+
+			tank_anti_air_cannon_2
+			tank_medium_howitzer_2
+			tank_rocket_launcher
+			tank_high_velocity_cannon_2
+			tank_medium_cannon_2
+			tank_heavy_cannon_2
 		}
 
 		path = {
@@ -673,6 +611,60 @@ technologies = {
 		}
 	}
 
+	amphibious_drive = { #SchwimmPanzer II
+
+
+		enable_equipment_modules = {
+			amphibious_drive
+		}
+
+		enable_equipments = {
+			light_tank_amphibious_chassis_0
+			medium_tank_amphibious_chassis_0
+			heavy_tank_amphibious_chassis_0
+			light_tank_amphibious_chassis_1
+			medium_tank_amphibious_chassis_1
+			heavy_tank_amphibious_chassis_1
+			light_tank_amphibious_chassis_2
+			medium_tank_amphibious_chassis_2
+			heavy_tank_amphibious_chassis_2
+			light_tank_amphibious_chassis_3
+			medium_tank_amphibious_chassis_3
+			heavy_tank_amphibious_chassis_3
+		}
+
+		research_cost = 2
+		start_year = 1940
+
+		ai_will_do = {
+			factor = 0.5
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				OR = {
+					original_tag = USA
+					original_tag = JAP
+				}
+				factor = 2
+			}
+			modifier = {
+				not = {
+					any_controlled_state = {
+						is_coastal = yes
+					}
+				}
+				factor = 0
+			}
+		}
+
+		categories = {
+			armor
+			tp_tech
+		}
+	}
 	advanced_medium_tank_chassis = { #Panther
 
 		enable_equipments = {
@@ -681,7 +673,14 @@ technologies = {
 			medium_tank_artillery_chassis_3
 			medium_tank_aa_chassis_3
 		}
-
+		enable_equipment_modules = {
+			tank_anti_air_cannon_3
+			tank_high_velocity_cannon_3
+			tank_heavy_cannon_3
+			auto_loader
+			tank_heavy_howitzer
+			tank_rocket_launcher_2
+		}
 		path = {
 			leads_to_tech = main_battle_tank_chassis
 			research_cost_coeff = 1
@@ -790,29 +789,21 @@ technologies = {
 		enable_subunits = {
 			heavy_armor
 		}
-
+		enable_equipment_modules = {
+			tank_high_velocity_cannon
+			tank_medium_cannon
+			tank_heavy_cannon
+			tank_small_cannon_2
+			secondary_turret_close_support_gun
+			tank_auto_cannon_2
+			squeezebore_adaptor
+		}
 		on_research_complete_limit = {
 			NOT = {	has_template_containing_unit = light_armor }
 			NOT = {	has_template_containing_unit = heavy_armor }
 			NOT = {	has_template_containing_unit = medium_armor }
 		}
 		on_research_complete = {
-			hidden_effect = {
-				if = {
-					limit = {
-						has_tech = motorised_infantry
-					}
-
-					load_oob = "unlock_tanks_mot"
-				}
-				if = {
-					limit = {
-						NOT = { has_tech = motorised_infantry }
-					}
-
-					load_oob = "unlock_tanks"
-				}
-			}
 
 			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 		}
@@ -872,6 +863,16 @@ technologies = {
 			heavy_tank_destroyer_chassis_2
 			heavy_tank_artillery_chassis_2
 			heavy_tank_aa_chassis_2
+		}
+
+		enable_equipment_modules = {
+
+			tank_anti_air_cannon_2
+			tank_medium_howitzer_2
+			tank_rocket_launcher
+			tank_high_velocity_cannon_2
+			tank_medium_cannon_2
+			tank_heavy_cannon_2
 		}
 
 		path = {
@@ -945,6 +946,15 @@ technologies = {
 			heavy_tank_aa_chassis_3
 		}
 
+		enable_equipment_modules = {
+			tank_anti_air_cannon_3
+			tank_high_velocity_cannon_3
+			tank_heavy_cannon_3
+			auto_loader
+			tank_heavy_howitzer
+			tank_rocket_launcher_2
+		}
+
 		path = {
 			leads_to_tech = main_battle_tank_chassis
 			research_cost_coeff = 1
@@ -1001,6 +1011,15 @@ technologies = {
 			super_heavy_tank_destroyer_chassis_1
 			super_heavy_tank_artillery_chassis_1
 			super_heavy_tank_aa_chassis_1
+		}
+
+		enable_equipment_modules = {
+			tank_anti_air_cannon_3
+			tank_high_velocity_cannon_3
+			tank_heavy_cannon_3
+			auto_loader
+			tank_heavy_howitzer
+			tank_rocket_launcher_2
 		}
 
 		enable_subunits = {
