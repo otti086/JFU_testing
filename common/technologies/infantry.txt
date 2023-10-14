@@ -784,7 +784,28 @@ technologies = {
 			factor = 0.7
 		}
 	}
+	rangers1 = {
 
+		enable_subunits = {
+			rangers
+		}
+
+		research_cost = 2
+		start_year = 1936
+		folder = {
+			name = infantry_folder
+			position = { x = 5 y = @1936 }
+		}
+
+		categories = {
+			infantry_tech
+			ranger_tech
+			cat_special_forces_generic
+		}
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
 	tech_special_forces = {
 		category_special_forces = {
 			acclimatization_hot_climate_gain_factor = 0.05
