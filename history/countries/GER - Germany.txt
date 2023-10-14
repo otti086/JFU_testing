@@ -39,6 +39,7 @@ if = {
 			basic_medium_airframe = 1
 			iw_large_airframe = 1
 			air_torpedoe_1 = 1
+			survivability_studies = 1
 		}
 	else = {
 		set_air_oob = "GER_1936_air_legacy"

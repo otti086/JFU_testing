@@ -34,7 +34,8 @@ sub_units = {
 		weight = 1
 		supply_consumption = 0.2
 
-		breakthrough = -0.42
+		breakthrough = -0.9
+		hard_attack = 0.3
 
 		suppression = 1.0
 
@@ -113,11 +114,13 @@ sub_units = {
 		    attack = -0.1
 		}
 		mountain = 	{
-		    attack = -0.2
+			defence = -0.65
+		    attack = -0.55
 		}
 		jungle = {
-		    attack = -0.4
-			movement = -0.4
+			defence = -0.6
+		    attack = -0.5
+			movement = -0.5
 		}
 		marsh = {
 		    attack = -0.1 
@@ -132,7 +135,7 @@ sub_units = {
 			movement = -0.2
 		}
 		amphibious = { 
-			attack = -0.7
+			attack = -0.8
 		}
 	}
 	
@@ -171,8 +174,8 @@ sub_units = {
 		weight = 1.5
 		supply_consumption = 0.3
 
-		breakthrough = -0.25
-
+		breakthrough = -0.9
+		hard_attack = 0.3
 		suppression = 1.25
 		
 		forest = {
@@ -183,10 +186,12 @@ sub_units = {
 		    attack = -0.20
 		}
 		mountain = 	{
-		    attack = -0.3
+			defence = -0.6
+		    attack = -0.7
 		}
 		jungle = {
-		    attack = -0.6
+			defence = -0.8
+		    attack = -0.65
 			movement = -0.4
 		}
 		marsh = {
@@ -202,7 +207,7 @@ sub_units = {
 			movement = -0.4
 		}
 		amphibious = { 
-			attack = -0.8 
+			attack = -0.9 
 		}
 		fort = {
 			attack = 0.05
@@ -244,8 +249,8 @@ sub_units = {
 		weight = 1.75
 		supply_consumption = 0.4
 
-		breakthrough = -0.25
-
+		breakthrough = -0.9
+		hard_attack = 0.3
 		suppression = 1.25
 
 		forest = {
@@ -256,11 +261,13 @@ sub_units = {
 		    attack = -0.3
 		}
 		mountain = 	{
-		    attack = -0.4
+			defence = -0.7
+		    attack = -0.8
 		}
 		jungle = {
-		    attack = -0.7
-			movement = -0.4
+			defence = -0.85
+		    attack = -0.75
+			movement = -0.5
 		}
 		marsh = {
 		    attack = -0.5 
@@ -317,8 +324,8 @@ sub_units = {
 		weight = 1.5
 		supply_consumption = 0.25
 		
-		breakthrough = -0.25
-
+		breakthrough = -0.9
+		hard_attack = 0.3
 		suppression = 1.25
 		
 		forest = {
@@ -329,11 +336,13 @@ sub_units = {
 		    attack = -0.1
 		}
 		mountain = 	{
-		    attack = -0.2
+			defence = -0.65
+		    attack = -0.55
 		}
 		jungle = {
-		    attack = -0.4
-			movement = -0.4
+			defence = -0.6
+		    attack = -0.5
+			movement = -0.5
 		}
 		marsh = {
 		    attack = -0.1 

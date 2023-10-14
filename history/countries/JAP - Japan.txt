@@ -114,6 +114,7 @@ set_technology = {
 	gwtank_chassis = 1 #nsb man
 
 	building_limiter_tech = 1 #air base max level
+	
 }
 
 if = {
@@ -196,6 +197,7 @@ if = {
 			iw_medium_airframe = 1
 			basic_small_airframe = 1
 			air_torpedoe_1 = 1
+			survivability_studies = 1
 		}
 	else = {
 		set_air_oob = "JAP_1936_air_legacy"
