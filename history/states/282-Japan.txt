@@ -5,10 +5,6 @@ state = {
 	manpower = 13773000
 	
 	state_category = megalopolis
-	
-	resources = {
-		aluminium = 1 # was: 2
-	}
 
 	history = {
 

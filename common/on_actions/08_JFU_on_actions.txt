@@ -610,9 +610,9 @@ on_actions = {
 					FROM.FROM = { is_core_of = NOR }
 					NOR = { NOT = { controls_state = 110 } }
 				}
-				tp_divs_out_of_norway = yes
+#				tp_divs_out_of_norway = yes
 
-				NOR = { transfer_state = 912 }
+#				NOR = { transfer_state = 912 }
 				GER = {
 					transfer_state = 110
 					transfer_state = 142

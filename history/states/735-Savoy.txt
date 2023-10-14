@@ -1,7 +1,9 @@
 state = {
 	id = 735
 	name = "STATE_735"
-
+	resources={
+		aluminium=110
+	}
 	state_category = town
 
 	history = {
