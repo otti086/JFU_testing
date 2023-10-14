@@ -70,7 +70,7 @@ if = {
 add_equipment_to_stockpile = { type = train_equipment_1 amount = 50 }
 add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 }
 set_convoys = 100
-
+set_research_slots = 3
 set_politics = {
 	ruling_party = fascism
 	last_election = "1936.1.1"
