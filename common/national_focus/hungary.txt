@@ -94,10 +94,22 @@ focus_tree = {
 		}
 
 		bypass = {
-			NOT = {
-				has_idea = HUN_treaty_of_triannon
-				has_idea = HUN_treaty_of_triannon_2
-				has_idea = HUN_treaty_of_triannon_3
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				NOT = {
+					has_idea = HUN_treaty_of_triannon_aat
+					has_idea = HUN_treaty_of_triannon_2
+					has_idea = HUN_treaty_of_triannon_3
+				}
+			}
+			else = {
+				NOT = {
+					has_idea = HUN_treaty_of_triannon
+					has_idea = HUN_treaty_of_triannon_2
+					has_idea = HUN_treaty_of_triannon_3
+				}
 			}
 		}
 
@@ -118,8 +130,8 @@ focus_tree = {
 			}
 			hidden_effect = {
 					set_politics = {
-					ruling_party = fascism
-					elections_allowed = no
+						ruling_party = fascism
+						elections_allowed = no
 					}
 				}
 			}	

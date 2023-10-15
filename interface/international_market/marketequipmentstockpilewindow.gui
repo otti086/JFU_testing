@@ -9,6 +9,15 @@ guiTypes = {
 			spriteType ="GFX_tiled_plain_bg"
 		}
 
+		buttonType = {
+			name = "add_to_market_button"
+			quadTextureSprite = "GFX_button_221x34"
+			position = { x=155 y=10 }
+			buttonText = "INTERNATIONAL_MARKET_ADD_EQUIPMENT_TO_STOCKPILE"
+			font = "hoi_18mbs"
+			pdx_tooltip = "INTERNATIONAL_MARKET_ADD_TO_STOCKPILE_BUTTON_TOOLTIP"
+		}
+
 		containerWindowType = {
 			name = "category_filters_bg"
 			position = { x= 12 y = 87}
