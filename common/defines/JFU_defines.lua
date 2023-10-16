@@ -159,7 +159,7 @@ NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 200
 NDefines.NProduction.DEFAULT_MAX_NAV_FACTORIES_PER_LINE = 200
 NDefines.NProduction.ANNEX_FIELD_EQUIPMENT_RATIO = 1	-- WAS 0.25 | Annex decisions should give all troops, but incase I screwed up here is this -Thrasymachus | How much equipment from deployed divisions will be transferred on annexation
 NDefines.NProduction.LICENSE_EQUIPMENT_SPEED_NOT_FACTION = 0     --VANILLA -0.10		-- MIC speed modifier for licensed equipment for not being in faction
-NDefines.NProduction.MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_PERCENT = 0	-- The minimum number of factories we have to put on consumer goods, in percent.
+NDefines.NProduction.MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_PERCENT = 0.05	-- The minimum number of factories we have to put on consumer goods, in percent.
 
 NDefines.NAI.GIVE_STATE_CONTROL_MIN_CONTROLLED = 0     
 NDefines.NAI.GIVE_STATE_CONTROL_MIN_CONTROLLED = 0     

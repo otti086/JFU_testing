@@ -1185,62 +1185,6 @@ SOV_boost_div_upgrades = { #lets make sure sov upgrades divs when at war
 	}
 }
 
-SOV_defend_blitzkrieg  = {#Only perform careful attacks, we want to defend while germany has buffs.
-	allowed = {
-		original_tag = SOV
-	}
-
-	enable = {
-		date < 1943.1.1 #To space!
-		has_war_with = GER
-		GER = { has_idea = GER_barbarossa }
-	}
-
-	abort_when_not_enabled = yes
-
-	ai_strategy = {
-		type = front_control
-
-		tag = GER
-
-		ratio = 0.4
-
-		priority = 100
-		ordertype = front
-		execution_type = careful
-		execute_order = no
-	}
-
-}
-
-SOV_defend_blitzkrieg_2  = {#Only perform careful attacks, we want to defend for a bit
-	allowed = {
-		original_tag = SOV
-	}
-
-	enable = {
-		date < 1943.1.1 #To space!
-		has_war_with = GER
-		NOT = { GER = { has_idea = GER_barbarossa } }
-		is_historical_focus_on = yes
-	}
-
-	abort_when_not_enabled = yes
-
-	ai_strategy = {
-		type = front_control
-
-		tag = GER
-
-		ratio = 0.4
-
-		priority = 100
-		ordertype = front
-		execution_type = careful
-	}
-
-}
-
 SOV_wants_civ = {
 	allowed = {
 		original_tag = SOV
@@ -1290,49 +1234,6 @@ SOV_nothing_bad_could_possibly_happen_now = {
 		value = -20 # we have a lovely non-aggression pact, so there's no reason to be worried. At all.
 	}
 	
-}
-
-SOV_defense_in_depth = {
-	allowed = {
-		original_tag = SOV
-	}
-	enable = {
-		is_historical_focus_on = yes
-		date > 1940.1.1 
-		date < 1943.1.1 #Maybe this isn't such a good idea now?
-		OR = {
-			has_war = no
-			GER = { has_idea = GER_barbarossa }
-		}
-	}
-
-	abort_when_not_enabled = yes
-
-	ai_strategy = {
-		type = put_unit_buffers
-
-		# ratio of total armeis in country to be buffered
-		ratio = 0.15
-
-		# you can specify an order id. ratio of same orders ids will be share same ratio
-		order_id = 5
-
-		# states to put garrison orders (if no state is friendly, strat is invalid)
-		states = {
-			219 #Moscow
-			254 #Ryazan
-			253 #Ivanovo
-			248 #Yaroslavl
-			223 #Tula
-		}
-
-		area = defend_moscow_zone #Hold in reserve until the line encroaches
-
-		# by default if you have orders in target areas, the buffer will request less units.
-		# you can override this to disable the feature
-		subtract_invasions_from_need = no
-		subtract_fronts_from_need = yes
-	}
 }
 
 ###########################
