@@ -14,34 +14,6 @@ characters={
 		}
 	}
 
-	JAP_kyuichi_tokuda={
-		name=JAP_kyuichi_tokuda
-		portraits={
-			civilian={
-				large="GFX_Portrait_kyuichi_tokuda"
-			}
-		}
-		country_leader={
-			ideology=marxism
-			expire="1989.1.1.1"
-			id=-1
-		}
-	}
-
-	JAP_tetsu_katayama={
-		name=JAP_tetsu_katayama
-		portraits={
-			civilian={
-				large="GFX_Portrait_tetsu_katayama"
-			}
-		}
-		country_leader={
-			ideology=liberalism
-			expire="1989.1.1.1"
-			id=-1
-		}
-	}
-
 	JAP_tomoyuki_yamashita={
 		name=JAP_tomoyuki_yamashita
 		portraits={
@@ -1165,7 +1137,7 @@ characters={
 				original_tag = JAP
 			}
 			traits = {
-				navy_chief_commerce_raiding_1
+				navy_chief_commerce_raiding_2
 			}
 			cost =  50
 			ai_will_do = {

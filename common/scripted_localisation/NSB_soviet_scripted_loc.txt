@@ -1262,14 +1262,6 @@ defined_text = {
 	}
 }
 
-# Soviet Pact Image
-defined_text = {
-	name = GetSovietPactImage
-	text = {
-		localization_key = GFX_news_event_SOV_supreme_soviet
-	}
-}
-
 # Headquarter and Infiltration
 defined_text = {
 	name = GetCategoryStateText

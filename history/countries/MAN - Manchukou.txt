@@ -42,8 +42,6 @@ recruit_character = MAN_zhang_haipeng
 recruit_character = MAN_zhang_jinghui
 recruit_character = MAN_aisin_gioro_xiqia
 recruit_character = MAN_yoshiko_kawashima
-recruit_character = MAN_zhao_shangzhi
-recruit_character = MAN_changlin_linge
 recruit_character = MAN_kyoiji_tomonaga
 recruit_character = MAN_yonimitsu_kasahara
 recruit_character = MAN_deng_linge
@@ -67,8 +65,6 @@ if = {
 		set_character_flag = SOV_exiled_army_leader
 	}
 }
-add_equipment_to_stockpile = { type = train_equipment_1 amount = 50 }
-add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 }
 set_convoys = 100
 set_research_slots = 3
 set_politics = {

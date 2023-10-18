@@ -36,6 +36,7 @@ characters={
 			legacy_id=-1
 		}
 	}
+
 	MAN_tomoyuki_yamashita={
 		name=MAN_tomoyuki_yamashita
 		portraits={
@@ -55,6 +56,7 @@ characters={
 			legacy_id=0
 		}
 	}
+
 	MAN_hisaichi_terauchi={
 		name=MAN_hisaichi_terauchi
 		portraits={
@@ -74,6 +76,7 @@ characters={
 			legacy_id=0
 		}
 	}
+
 	MAN_akira_muto={
 		name=MAN_akira_muto
 		portraits={
@@ -92,6 +95,7 @@ characters={
 			legacy_id=0
 		}
 	}
+
 	MAN_shunroku_hata={
 		name=MAN_shunroku_hata
 		portraits={
@@ -111,6 +115,7 @@ characters={
 			legacy_id=0
 		}
 	}
+
 	MAN_shizuichi_tanaka={
 		name=MAN_shizuichi_tanaka
 		portraits={
@@ -129,6 +134,7 @@ characters={
 			legacy_id=0
 		}
 	}
+
 	MAN_kenkichi_ueda={
 		name=MAN_kenkichi_ueda
 		portraits={
@@ -166,6 +172,7 @@ characters={
 			legacy_id=-1
 		}
 	}
+
 	MAN_aisin_gioro_xiqia={
 		name=MAN_aisin_gioro_xiqia
 		portraits={
@@ -184,6 +191,7 @@ characters={
 			legacy_id=-1
 		}
 	}
+
 	MAN_yoshiko_kawashima={
 		name=MAN_yoshiko_kawashima
 		portraits={
@@ -203,35 +211,6 @@ characters={
 			legacy_id=-1
 		}
 	}
-	MAN_zhao_shangzhi={
-		name=MAN_zhao_shangzhi
-		portraits={
-			civilian={
-				large=GFX_portrait_MAN_zhao_shangzhi
-			}
-		}
-		country_leader={
-			ideology=conservatism
-			traits={ national_integralist }
-			expire="1956.1.1.12"
-			id=-1
-		}
-	}
-	MAN_changlin_linge={
-		name=MAN_changlin_linge
-		portraits={
-			civilian={
-				large=GFX_portrait_MAN_changlin_linge
-			}
-		}
-		country_leader={
-			ideology=anti_revisionism
-			traits={ silent_workhorse }
-			expire="1941.1.1.12"
-			id=-1
-		}
-	}
-
 
 	### THEORISTS ###
 
@@ -334,7 +313,7 @@ characters={
 
 	### NAVY CHIEFS ###
 
-		MAN_yin_zuoqian={
+	MAN_yin_zuoqian={
 		name=MAN_yin_zuoqian
 		portraits={
 			army={

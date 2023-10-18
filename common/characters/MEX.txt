@@ -14,18 +14,6 @@ characters={
 		}
 	}
 
-	MEX_adolfo_de_la_huerta={ 
-		name=MEX_adolfo_de_la_huerta
-		portraits={
-			army={
-				large="GFX_Portrait_MEX_Adolfo_de_la_Huerta" #Can become a unit leader later
-			}
-			civilian={
-				large="GFX_Portrait_MEX_Adolfo_de_la_Huerta" #Can become country leader later (Democratic -> Conservatism)
-			}
-		}
-	}
-
 	MEX_dionisio_encina={
 		name=MEX_dionisio_encina
 		portraits={
@@ -126,15 +114,6 @@ characters={
 			}
 			civilian={
 				large="GFX_portrait_MEX_calles_civil" #Can become country leader (Non-Aligned -> Despotism) (Fascism -> Fascism)
-			}
-		}
-	}
-
-	MEX_juan_andreu = {
-		name=MEX_juan_andreu
-		portraits={
-			civilian={
-				large="GFX_portrait_MEX_juan_andreu" #Can become country leader (Fascism -> Fascism)
 			}
 		}
 	}
@@ -347,20 +326,6 @@ characters={
 				small="GFX_portrait_MEX_heriberto_corona_small"
 			}
 		}
-		advisor={
-			slot = navy_chief
-			idea_token = MEX_heriberto_corona
-			allowed = {
-				original_tag = MEX
-			}
-			traits = {
-				navy_chief_decisive_battle_1
-			}
-			cost =  50
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
 
 		navy_leader={
 			traits={ navy_media_personality }
@@ -370,36 +335,6 @@ characters={
 			maneuvering_skill=1
 			coordination_skill=1
 			legacy_id=707
-		}
-	}
-
-	MEX_manuel_sanchez={ #Empty FICTIOUS leader -> Can become unit leader later
-		name=MEX_manuel_sanchez
-		portraits={
-			army={
-				large="GFX_Portrait_South_America_Generic_land_2"
-				small=GFX_portrait_MEX_manuel_sanchez_small
-			}
-		}
-	}
-
-	MEX_alberto_gorostieta_vega = { #Empty FICTIOUS leader -> Can become unit leader later
-		name=MEX_alberto_gorostieta_vega
-		portraits={
-			army={
-				large=GFX_portrait_MEX_alberto_gorostieta_vega
-				small=GFX_portrait_MEX_alberto_gorostieta_vega_small
-			}
-		}
-	}
-
-	MEX_dionisio_navarro_anguiano = { #Empty FICTIOUS leader -> Can become unit leader later
-		name=MEX_dionisio_navarro_anguiano
-		portraits={
-			army={
-				large=GFX_portrait_MEX_dionisio_navarro_anguiano
-				small=GFX_portrait_MEX_dionisio_navarro_anguiano_small
-			}
 		}
 	}
 

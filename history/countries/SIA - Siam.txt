@@ -24,8 +24,6 @@ if = {
 }
 
 recruit_character = SIA_phraya_phahon
-recruit_character = SIA_nangklao_chichalerm
-recruit_character = SIA_chao_phonphayuhasena
 recruit_character = SIA_nangklao_suriyawongse
 recruit_character = SIA_tianliang_huntrakool
 recruit_character = SIA_phra_silpasakrakorn

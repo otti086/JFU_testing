@@ -340,10 +340,6 @@ defined_text = {
 					character = ITA_grand_council
 					ruling_only = yes
 				}
-				has_country_leader = {
-					character = ITA_comitato_di_liberazione_nazionale
-					ruling_only = yes
-				}
 			}
 		}
 		localization_key = news.114.d_council

@@ -84,9 +84,6 @@ if = {
 }
 
 recruit_character = NZL_michael_joseph_savage
-recruit_character = NZL_sidney_holland
-recruit_character = NZL_john_ormond
-recruit_character = NZL_elsie_farrelly
 recruit_character = NZL_bernard_freyberg
 recruit_character = NZL_robert_row
 recruit_character = NZL_william_stevens
@@ -111,7 +108,6 @@ recruit_character = NZL_w_h_stratton
 recruit_character = NZL_a_e_davy
 recruit_character = NZL_walter_nash
 recruit_character = NZL_w_a_veitch_milne
-recruit_character = NZL_peter_fraser
 
 
 if = {

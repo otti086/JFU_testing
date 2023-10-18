@@ -148,8 +148,3 @@ if = {
 		}
 	}
 }
-
-add_equipment_to_stockpile = {
-	type = train_equipment_1
-	amount = 7
-}

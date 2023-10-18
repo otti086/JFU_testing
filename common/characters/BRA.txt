@@ -13,65 +13,6 @@ characters={
 		}
 	}
 
-	BRA_arlindo_veiga_dos_santos={
-		name=BRA_arlindo_veiga_dos_santos
-		portraits={
-			civilian={
-				large=GFX_portrait_BRA_arlindo_veiga_dos_santos #Can become country leader later (via Portugal FT)
-			}
-		}
-		country_leader = {
-			expire = "1954.8.24"
-			ideology = despotism
-			id=-1
-			traits = {
-				staunch_monarchist
-			}
-		}
-	}
-	
-	BRA_plinio_salgado={
-		name=BRA_plinio_salgado
-		portraits={
-			civilian={
-				large=GFX_portrait_BRA_plinio_salgado
-			}
-		}
-		country_leader={
-			ideology=fascism_ideology
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-
-	BRA_luis_carlos_prestes={
-		name=BRA_luis_carlos_prestes
-		portraits={
-			civilian={
-				large=GFX_portrait_BRA_luis_carlos_prestes
-			}
-		}
-		country_leader={
-			ideology=marxism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-
-	BRA_armando_sales={
-		name=BRA_armando_sales
-		portraits={
-			civilian={
-				large=GFX_portrait_BRA_armando_sales
-			}
-		}
-		country_leader={
-			ideology=conservatism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-
 	BRA_eurico_gaspar_dutra={
 		name=BRA_eurico_gaspar_dutra
 		portraits={
@@ -297,7 +238,6 @@ characters={
 		}		
 	}
 
-
 	### AIR CHIEFS ###
 
 	BRA_salgado_filho={
@@ -323,55 +263,7 @@ characters={
 		}		
 	}
 
-	BRA_ismael_motta_paes={
-		name=BRA_ismael_motta_paes
-		portraits={
-			army={
-				small="GFX_idea_generic_air_south_america_2"
-			}
-		}
-		advisor={	
-			slot = air_chief
-			idea_token = BRA_ismael_motta_paes
-			allowed = {
-				original_tag = BRA
-			}
-			traits = {
-				air_chief_night_operations_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}		
-	}
-
-
 	### MILITARY HIGH COMMAND ###
-
-	BRA_epaminondas_dos_santos={
-		name=BRA_epaminondas_dos_santos
-		portraits={
-			army={
-				small="GFX_idea_generic_air_south_america_1"
-			}
-		}
-		advisor={	
-			slot = high_command
-			idea_token = BRA_epaminondas_dos_santos
-			ledger = air
-			allowed = {
-				original_tag = BRA
-			}
-			traits = {
-				air_air_combat_training_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}		
-	}
 
 	BRA_agliberto_vieira={
 		name=BRA_agliberto_vieira
@@ -420,31 +312,6 @@ characters={
 			}
 		}		
 	}
-
-	BRA_moreira_lima={
-		name=BRA_moreira_lima
-		portraits={
-			army={
-				small="GFX_idea_generic_air_south_america_2"
-			}
-		}
-		advisor={
-			slot = high_command
-			idea_token = BRA_moreira_lima
-			ledger = air
-			allowed = {
-				original_tag = BRA
-			}
-			traits = {
-				air_air_superiority_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}		
-	}
-
 
 	### POLITICAL ADVISORS ###
 

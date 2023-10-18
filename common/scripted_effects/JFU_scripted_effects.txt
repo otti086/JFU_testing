@@ -444,20 +444,16 @@ JFU_vichy_france = {
 	ENG = { news_event = { id = news.44 } }
 	GER = { country_event = { id = germany.107 } }
 	FRA = {
-	remove_ideas = FRA_protected_by_the_maginot_line
-	remove_ideas = FRA_victors_of_wwi
-	remove_ideas = FRA_full_employment
-	remove_ideas = FRA_disjointed_government
-	remove_ideas = FRA_political_violence
-			create_country_leader = {
-				name = "Charles de Gaulle"
-				desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
-				picture = "Portrait_France_Charles_De_Gaulle.dds"
-				expire = "1965.1.1"
-				ideology = conservatism
-				traits = {
-				}
-			}
+		remove_ideas = FRA_protected_by_the_maginot_line
+		remove_ideas = FRA_victors_of_wwi
+		remove_ideas = FRA_full_employment
+		remove_ideas = FRA_disjointed_government
+		remove_ideas = FRA_political_violence
+		retire_country_leader = yes
+		promote_character = {
+			character = FRA_charles_de_gaulle
+			ideology = conservatism
+		}
 	}
 	JFU_vichy_france_2 = yes
 	ENG = { 
@@ -825,6 +821,7 @@ JFU_startup_on_action = {
 		add_equipment_to_stockpile = { type = support_equipment_1 amount = 259 }
 		add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 100 }
 		add_equipment_to_stockpile = { type = light_tank_chassis_1 amount = 180 producer = ENG variant_name = "Light Tank Mk. VI" }
+		add_equipment_to_stockpile = { type = train_equipment_1 amount = 300 }
 	}
 	GER = {
 		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 24900 }
@@ -832,6 +829,7 @@ JFU_startup_on_action = {
 		add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 607 }
 		add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 349 }
 		add_equipment_to_stockpile = { type = light_tank_chassis_2 amount = 720 producer = GER variant_name = "Panzer II Ausf. A" }
+		add_equipment_to_stockpile = { type = train_equipment_1 amount = 300 }
 	}
 	FRA = {
 		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 25000 }
@@ -842,6 +840,7 @@ JFU_startup_on_action = {
 		add_equipment_to_stockpile = { type = light_tank_chassis_0 amount = 480 producer = FRA variant_name = "FT mod. 31" }
 		add_equipment_to_stockpile = { type = light_tank_chassis_0 amount = 240 producer = FRA variant_name = "FT Char Cannon" }
 		add_equipment_to_stockpile = { type = light_tank_chassis_1 amount = 480 producer = FRA variant_name = "H-35" }
+		add_equipment_to_stockpile = { type = train_equipment_1 amount = 300 }
 	}
 	JAP = {
 		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 7700 }
@@ -855,10 +854,13 @@ JFU_startup_on_action = {
 		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 11100 }
 		add_equipment_to_stockpile = { type = support_equipment_1 amount = 344 }
 		add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 106 }
+		add_equipment_to_stockpile = { type = train_equipment_1 amount = 300 }
 	}
 	HUN = {
 		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 7000 }
 		add_equipment_to_stockpile = { type = support_equipment_1 amount = 11 }
+		add_equipment_to_stockpile = { type = train_equipment_1 amount = 50 }
+		add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 }
 	}
 	ROM = {
 		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 9600 }
@@ -866,6 +868,8 @@ JFU_startup_on_action = {
 		add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 70 }
 		add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 87 }
 		add_equipment_to_stockpile = { type = light_tank_chassis_0 amount = 72 producer = ROM variant_name = "FT Char Cannon" }
+		add_equipment_to_stockpile = { type = train_equipment_1 amount = 50 }
+		add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 }
 	}
 	SOV = {
 		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 280000 }
@@ -876,36 +880,55 @@ JFU_startup_on_action = {
 		add_equipment_to_stockpile = { type = light_tank_chassis_1 amount = 1300 producer = SOV variant_name = "T-26TU mod. 1933" }
 		add_equipment_to_stockpile = { type = light_tank_chassis_1 amount = 1000 producer = SOV variant_name = "BT-5" }
 		add_equipment_to_stockpile = { type = train_equipment_1 amount = 300 }
+		
 	}
 	MAN = {
 		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 3900 }
+		add_equipment_to_stockpile = { type = train_equipment_1 amount = 50 }
+		add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 }
 	}
 	BRA = {
 		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2900 }
 		add_equipment_to_stockpile = { type = support_equipment_1 amount = 75 }
+		add_equipment_to_stockpile = { type = train_equipment_1 amount = 50 }
+		add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 }
 	}
 	MEX = {
 		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 5605 }
 		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 900 }
 		add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 55 }
+		add_equipment_to_stockpile = { type = train_equipment_1 amount = 50 }
+		add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 }
 	}
 	CAN = {
 		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 4000 }
+		add_equipment_to_stockpile = { type = train_equipment_1 amount = 50 }
+		add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 }
 	}
 	RAJ = {
 		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 4000 }
+		add_equipment_to_stockpile = { type = train_equipment_1 amount = 50 }
+		add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 }
 	}
 	AST = {
 		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 4000 }
+		add_equipment_to_stockpile = { type = train_equipment_1 amount = 50 }
+		add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 }
 	}
 	NZL = {
 		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 1000 }
+		add_equipment_to_stockpile = { type = train_equipment_1 amount = 50 }
+		add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 }
 	}
 	SAF = {
 		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2000 }
+		add_equipment_to_stockpile = { type = train_equipment_1 amount = 50 }
+		add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 }
 	}
 	SIA = {
 		give_resource_rights = { receiver = GER state = 724 }
+		add_equipment_to_stockpile = { type = train_equipment_1 amount = 50 }
+		add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 }
 	}
 	CHI = {
 		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 30000 }	

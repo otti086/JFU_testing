@@ -13,62 +13,6 @@ characters={
 		}
 	}
 
-	AST_eric_campbell={
-		name=AST_eric_campbell
-		portraits={
-			civilian={
-				large="GFX_AST_eric_campbell"
-			}
-		}
-		country_leader={
-			ideology=fascism_ideology
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-
-	AST_richard_dixon={
-		name=AST_richard_dixon
-		portraits={
-			civilian={
-				large="GFX_AST_richard_dixon"
-			}
-		}
-		country_leader={
-			ideology=stalinism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-
-	AST_earle_page={
-		name=AST_earle_page
-		portraits={
-			civilian={
-				large="GFX_AST_earle_page"
-			}
-		}
-		country_leader={
-			ideology=centrism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-
-	AST_rod_hull={
-		name=AST_rod_hull
-		portraits={
-			civilian={
-				large=GFX_portrait_AST_rod_hull
-			}
-		}
-		country_leader={
-			ideology=despotism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-
 	AST_leslie_morshead={
 		name=AST_leslie_morshead
 		portraits={
@@ -398,29 +342,6 @@ characters={
 
 	### AIR CHIEFS ###
 
-	AST_richard_williams={
-		name=AST_richard_williams
-		portraits={
-			army={
-				small="GFX_idea_AST_richard_williams" #small="GFX_idea_generic_air_europe_1"
-			}
-		}
-		advisor={
-			slot = air_chief
-			idea_token = AST_richard_williams
-			allowed = {
-				original_tag = AST
-			}
-			traits = {
-				air_chief_safety_3
-			}
-			cost = 200
-			ai_will_do = {
-				factor = 1.000
-			}
-		}		
-	}
-
 	AST_charles_burnett={
 		name=AST_charles_burnett
 		portraits={
@@ -471,31 +392,6 @@ characters={
 		}
 	}
 	
-	AST_clive_caldwell={
-		name=AST_clive_caldwell
-		portraits={
-			army={
-				small="GFX_idea_generic_air_europe_1"
-			}
-		}
-		advisor={
-			slot = high_command
-			idea_token = AST_clive_caldwell
-			ledger = air
-			allowed = {
-				original_tag = AST
-			}
-			traits = {
-				air_air_superiority_3
-			}
-			cost = 200
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-	
-	
 	AST_john_collins={
 		name=AST_john_collins
 		portraits={
@@ -543,28 +439,6 @@ characters={
 			}
 		}		
 	}
-
-	AST_arthur_drakeford={
-		name=AST_arthur_drakeford
-		portraits={
-			army={
-				small="GFX_idea_AST_arthur_drakeford" #small="GFX_idea_generic_army_europe_4"
-			}
-		}
-		advisor={			
-			slot = high_command
-			idea_token = AST_arthur_drakeford
-			ledger = air
-			allowed = {
-				original_tag = AST
-				has_dlc = "Together for Victory"
-			}
-			traits = {
-				air_air_combat_training_2
-			}
-			cost = 100
-		}		
-	}
 	
 	AST_cederic_hicks={
 		name=AST_cederic_hicks
@@ -594,7 +468,6 @@ characters={
 			}
 		}		
 	}
-
 
 	### POLITICAL ADVISORS ###
 

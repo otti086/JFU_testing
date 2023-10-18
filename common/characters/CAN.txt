@@ -13,48 +13,6 @@ characters={
 		}
 	}
 
-	CAN_adrien_arcand={
-		name=CAN_adrien_arcand
-		portraits={
-			civilian={
-				large="GFX_CAN_adrien_arcand"
-			}
-		}
-		country_leader={
-			ideology=nazism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-
-	CAN_tim_buck={
-		name=CAN_tim_buck
-		portraits={
-			civilian={
-				large=GFX_portrait_CAN_tim_buck
-			}
-		}
-		country_leader={
-			ideology=marxism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-
-	CAN_j_s_woodsworth={
-		name=CAN_j_s_woodsworth
-		portraits={
-			civilian={
-				large=GFX_portrait_CAN_j_s_woodsworth
-			}
-		}
-		country_leader={
-			ideology=centrism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-
 	CAN_thomas_victor_anderson={
 		name=CAN_thomas_victor_anderson
 		portraits={

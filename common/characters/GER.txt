@@ -14,72 +14,6 @@ characters={
 		}
 	}
 
-	GER_konrad_adenauer={
-		name=GER_konrad_adenauer
-		portraits={
-			civilian={
-				large=GFX_portrait_GER_konrad_adenauer
-			}
-		}
-		country_leader={
-			ideology=conservatism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-
-	GER_wilhelm_pieck={
-		name=GER_wilhelm_pieck
-		portraits={
-			civilian={
-				large=GFX_portrait_GER_wilhelm_pieck
-			}
-		}
-		country_leader={
-			ideology=stalinism
-			traits={ exiled }
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-
-	GER_wilhelm_ii={ #Empty Wilhelm II so he doesn't become ruler automatically if the neutrals are in power
-		name=GER_wilhelm_ii
-		portraits={
-			civilian={
-				large="GFX_portrait_ger_wilhelm_ii"
-			}	
-		}
-	}
-
-	GER_wilhelm_iii={ #Empty Wilhelm III so he doesn't become ruler automatically if the neutrals are in power
-		name=GER_wilhelm_iii
-		portraits={
-			civilian={
-				large="GFX_portrait_ger_wilhelm_iii"
-			}	
-		}
-	}
-
-	GER_victoria={ #Empty Vicky3 
-		name=GER_victoria
-		gender = female 
-		portraits={
-			civilian={
-				large="GFX_portrait_ger_victoria_louise"
-			}
-		}
-	}
-
-	GER_august_von_mackensen={
-		name=GER_august_von_mackensen
-		portraits={
-			civilian={
-				large="GFX_portrait_ger_august_von_mackensen"
-			}
-		}
-	}
-
 	GER_gerd_von_rundstedt={
 		name=GER_gerd_von_rundstedt
 		portraits={
@@ -1389,30 +1323,6 @@ characters={
 			}
 		}
 	}
-	
-	GER_viktor_schutze={
-		name=GER_viktor_schutze
-		portraits={
-			army={
-				small="GFX_idea_viktor_schutze"
-			}
-		}
-		advisor={
-			slot = high_command
-			idea_token = viktor_schutze
-			ledger = navy
-			allowed = {
-				original_tag = GER
-			}
-			traits = {
-				navy_anti_submarine_1
-			}
-			cost =  50
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
 
 
 	GER_nikolaus_von_falkenhorst = { # USED IN FINLAND
@@ -1430,7 +1340,7 @@ characters={
 				original_tag = FIN
 			}
 			available = {
-#				has_completed_focus = FIN_german_military_advisors
+			#	has_completed_focus = FIN_german_military_advisors
 				NOT = { has_war_with = GER }
 			}
 			traits = {

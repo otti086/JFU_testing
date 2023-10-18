@@ -58,8 +58,6 @@ set_technology = {
 }
 
 recruit_character = RAJ_lord_linlithgow
-recruit_character = RAJ_v_d_savarkar
-recruit_character = RAJ_p_krishna_pillai
 recruit_character = RAJ_b_p_sitaramayya
 recruit_character = RAJ_noel_beresfordpeirse
 recruit_character = RAJ_frank_messervy
@@ -83,7 +81,6 @@ recruit_character = RAJ_archibald_wavell
 recruit_character = RAJ_louis_mountbatten
 recruit_character = RAJ_kodandera_cariappa
 recruit_character = RAJ_ram_singh_thakur
-recruit_character = RAJ_homi_j_bhabha
 recruit_character = RAJ_bahadur_jayla_of_khoch_bahur
 recruit_character = RAJ_anyang_bhula
 recruit_character = RAJ_john_edward_golightly
@@ -100,7 +97,6 @@ if = {
 	limit = {
 		has_dlc = "Together for Victory"
 	}
-	recruit_character = RAJ_lakshmi_sahgal
 	recruit_character = RAJ_orde_wingate
 	recruit_character = RAJ_kodandera_madappa_cariappa
 	recruit_character = RAJ_kodandera_subayya_thimayya

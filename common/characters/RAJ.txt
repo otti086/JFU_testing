@@ -13,34 +13,6 @@ characters={
 		}
 	}
 
-	RAJ_v_d_savarkar={
-		name="V. D. Savarkar"
-		portraits={
-			civilian={
-				large="GFX_RAJ_veer_savarkar"
-			}
-		}
-		country_leader={
-			ideology=falangism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-
-	RAJ_p_krishna_pillai={
-		name=RAJ_p_krishna_pillai
-		portraits={
-			civilian={
-				large="GFX_RAJ_krishna_pillai"
-			}
-		}
-		country_leader={
-			ideology=marxism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-
 	RAJ_b_p_sitaramayya={
 		name=RAJ_b_p_sitaramayya
 		portraits={
@@ -131,18 +103,6 @@ characters={
 		}
 	}
 
-	### Empty characters that can become unit leaders later ###
-
-	RAJ_lakshmi_sahgal = {
-		name=RAJ_lakshmi_sahgal
-		portraits={
-			army={
-				large="GFX_RAJ_lakshmi_sahgal"
-				small=GFX_portrait_RAJ_lakshmi_sahgal_small
-			}
-		}
-		gender = female
-	}
 
 	RAJ_orde_wingate = {
 		name=RAJ_orde_wingate
@@ -249,15 +209,6 @@ characters={
 			
 			traits = {
 				naval_theorist
-			}
-		}
-	}
-
-	RAJ_homi_j_bhabha={
-		name=RAJ_homi_j_bhabha
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_arab_2"
 			}
 		}
 	}

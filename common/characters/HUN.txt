@@ -50,76 +50,6 @@ characters={
 		}
 	}
 
-	HUN_otto_von_habsburg={
-		name=HUN_otto_von_habsburg
-		portraits={
-			civilian={
-				large="GFX_Portrait_hungary_otto_von_hapsburg"
-			}
-		}
-		country_leader={
-			ideology=despotism
-			traits={  }
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-
-	HUN_matyas_rakosi={
-		name=HUN_matyas_rakosi
-		portraits={
-			civilian={
-				large="GFX_Portrait_hungary_matyas_rakosi"
-			}
-		}
-		country_leader={
-			ideology=stalinism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-
-	HUN_arpad_szakasits={
-		name=HUN_arpad_szakasits
-		portraits={
-			civilian={
-				large="GFX_portrait_HUN_arpad_szakasits"
-				small = "GFX_portrait_HUN_arpad_szakasits_small"
-			}
-		}
-		country_leader={
-			ideology=socialism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-
-	HUN_franz_friedrich = { #Can be given country leader roles later
-		name = HUN_franz_friedrich
-		portraits = {
-			#army = {
-			#	large = "GFX_Portrait_hungary_friedrich_franz"
-			#}
-			civilian = {
-				large = "GFX_Portrait_hungary_friedrich_franz"
-			}
-		}
-	}
-
-	HUN_istvan_szechenyi={
-		name=HUN_istvan_szechenyi
-		portraits={
-			civilian={
-				large="GFX_Portrait_hungary_istvan_szechenyi"
-			}
-		}
-		country_leader={
-			ideology=falangism
-			expire="1948.1.1.12"
-			id=-1
-		}
-	}
-
 	HUN_geza_lakatos={
 		name=HUN_geza_lakatos
 		portraits={
@@ -333,29 +263,6 @@ characters={
 		}
 	}
 
-	HUN_reszo_kastner={
-		name=HUN_reszo_kastner
-		portraits={
-			army={
-				small="GFX_idea_generic_navy_europe_2"
-			}
-		}
-		advisor={
-			slot = navy_chief
-			idea_token = HUN_reszo_kastner
-			allowed = {
-				original_tag = HUN
-			}
-			traits = {
-				navy_chief_maneuver_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-
 
 	### AIR CHIEFS ###
 
@@ -386,29 +293,6 @@ characters={
 
 	### MILITARY HIGH COMMAND ###
 
-	HUN_sandor_magyarossy={
-		name=HUN_sandor_magyarossy
-		portraits={
-			army={
-				small="GFX_idea_HUN_sandor_magyarossy"
-			}
-		}
-		advisor={
-			slot = high_command
-			idea_token = HUN_sandor_magyarossy
-			allowed = {
-				original_tag = HUN
-			}
-			traits = {
-				air_air_combat_training_1
-			}
-			cost =  50
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-
 	HUN_gusztav_jany={
 		name=HUN_gusztav_jany
 		portraits={
@@ -424,7 +308,7 @@ characters={
 				original_tag = HUN
 			}
 			traits = {
-				army_armored_1
+				army_armored_2
 			}
 			cost =  50
 			ai_will_do = {

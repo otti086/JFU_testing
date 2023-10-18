@@ -17,55 +17,6 @@ news_event = {
 	# TODO make better/more texts 
 }
 
-
-
-# Communist Ethiopia
-
-# SOV demand ITA end war against ETH
-news_event = {
-	id = bba_news.1
-	title = bba_news.1.t
-	desc = bba_news.1.desc
-	picture = GFX_news_event_SOV_supreme_soviet
-	
-	major = yes
-	is_triggered_only = yes
-
-	option = {
-		name = bba_news.1.a
-	}
-}
-
-#ITA backs down
-news_event = {
-	id = bba_news.2
-	title = bba_news.2.t
-	desc = bba_news.2.desc
-	picture = GFX_news_event_generic_sign_treaty2
-	
-	major = yes
-	is_triggered_only = yes
-
-	option = {
-		name = bba_news.2.a
-	}
-}
-
-#Anarchist Peace
-news_event = {
-	id = bba_news.3
-	title = bba_news.3.t
-	desc = bba_news.3.desc
-	picture = GFX_news_event_ETH_ethiopian_warriors
-	
-	major = yes
-	is_triggered_only = yes
-
-	option = {
-		name = bba_news.3.a
-	}
-}
-
 news_event = {
 	id = bba_news.4
 	title = bba_news.4.t
@@ -336,54 +287,6 @@ news_event = {
 	}
 }
 
-#The King Vittorio Emmanuele Dies
-news_event = {
-	id = bba_news.106
-	title = bba_news.106.t
-	desc = bba_news.106.desc
-	picture = GFX_news_event_ITA_vittorio_emanuele_III
-	
-	major = no
-
-	fire_only_once = yes
-
-	trigger = {
-		original_tag = ITA
-		has_character = ITA_prince_umberto
-		has_character = ITA_vittorio_emanuele_iii
-		date > 1947.12.27
-		NOT = { #Check if the King has been deposed
-			has_country_flag = ITA_deposed_the_king 
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 30
-		modifier = {
-			factor = 2
-			date > 1948.02.01
-		}
-	}
-
-	option = {
-		name = bba_news.106.a
-
-		if = { #Double check that the Vittorio is in fact King and country leader
-			limit = {
-				has_country_leader = {
-					character = ITA_vittorio_emanuele_iii
-					ruling_only = yes
-				}
-			}
-			ITA_promote_umberto_to_country_leader = yes
-		}
-		
-		hidden_effect = {
-			set_country_flag = ITA_vittorio_emmanuele_dead_flag
-		}
-	}
-}
-
 #The Pope Dies
 news_event = {
 	id = bba_news.107
@@ -428,16 +331,6 @@ news_event = {
 			effect_tooltip = {
 				retire_character = ITA_papa_pio_xi
 			}
-		}
-
-		if = {
-			limit = {
-				has_country_leader = {
-					character = ITA_papa_pio_xi
-					ruling_only = yes
-				}
-			}
-			ITA_pope_takes_over = yes
 		}
 
 		hidden_effect = {

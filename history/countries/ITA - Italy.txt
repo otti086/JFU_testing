@@ -472,7 +472,6 @@ set_popularities = {
 recruit_character = ITA_benito_mussolini
 recruit_character = ITA_grand_council
 recruit_character = ITA_vittorio_emanuele_iii
-recruit_character = ITA_ferruccio_parri
 recruit_character = ITA_rodolfo_graziani
 recruit_character = ITA_pietro_badoglio
 recruit_character = ITA_emilio_de_bono
@@ -491,7 +490,6 @@ recruit_character = ITA_giuseppe_tellera
 recruit_character = ITA_francesco_zingales
 recruit_character = ITA_ezio_rosi
 recruit_character = ITA_mario_vercellino
-recruit_character = ITA_prince_filiberto
 recruit_character = ITA_prince_adalberto
 recruit_character = ITA_prince_umberto
 recruit_character = ITA_alessandro_pirzio_biroli
@@ -502,7 +500,6 @@ recruit_character = ITA_amedeo_guillet
 recruit_character = ITA_annibale_bergonzoli
 recruit_character = ITA_hamid_idris_awate
 recruit_character = ITA_ibrahim_farag_mohammed
-recruit_character = ITA_giuseppe_pieche
 recruit_character = ITA_prince_aimone
 
 recruit_character = ITA_inigo_campioni
@@ -524,7 +521,6 @@ recruit_character = ITA_marziale_cerutti
 recruit_character = ITA_ettore_muti
 recruit_character = ITA_gaetano_crocco
 recruit_character = ITA_luigi_mascherpa
-recruit_character = ITA_domenico_cavagnari
 recruit_character = ITA_amedeo_mecozzi
 recruit_character = ITA_rino_corso_fougier
 recruit_character = ITA_giacomo_acerbo
@@ -547,15 +543,7 @@ recruit_character = ITA_adelchi_serena
 recruit_character = ITA_curzio_malaparte
 recruit_character = ITA_giuseppe_bottai
 recruit_character = ITA_raffaele_de_courten
-recruit_character = ITA_comitato_di_liberazione_nazionale
-recruit_character = ITA_papa_pio_xi
-recruit_character = ITA_papa_pio_xii
 recruit_character = ITA_antonio_gramsci
-
-recruit_character = ITA_haile_selassie_gugsa_doppleganger
-recruit_character = ITA_abba_jofir_doppleganger
-recruit_character = ITA_hailu_tekle_haymanot_doppleganger
-recruit_character = ITA_seyoum_mengesha_doppleganger
 
 
 ########################################

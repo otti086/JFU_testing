@@ -18,14 +18,6 @@ set_party_name = {
 
 #COUNTRY LEADERS
 recruit_character = SOV_iosif_stalin
-recruit_character = SOV_supreme_soviet #This is a fake character! Proper country leader role is added via focus
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	recruit_character = SOV_provisional_government # United Exiles
-	set_country_flag = vlasov_owner_flag
-}
 
 #POLITICAL ADVISORS
 recruit_character = SOV_mikhail_kalinin
@@ -108,14 +100,6 @@ recruit_character = SOV_vitaly_primakov
 recruit_character = SOV_vasily_korzh
 recruit_character = SOV_sidor_kovpak
 recruit_character = SOV_pavel_rybalko
-
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	# recruit_character = SOV_grigory_semyonov # starts as an advisor to Puyi
-	recruit_character = SOV_tsar_vladimir_kirillovich
-}
 
 
 #Initialize character flags Part I (aka who's safe)

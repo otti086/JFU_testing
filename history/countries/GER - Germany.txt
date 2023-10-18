@@ -219,9 +219,6 @@ add_ideas = {
 add_ideas = GER_mefo_bills_1
 
 activate_mission = GER_mefo_bills_mission
-add_equipment_to_stockpile = { type = train_equipment_1 amount = 200 }
-recruit_character = GER_wilhelm_pieck
-recruit_character = GER_konrad_adenauer
 recruit_character = GER_adolf_hitler
 recruit_character = GER_albert_kesselring
 recruit_character = GER_alfred_jodl
@@ -263,7 +260,6 @@ recruit_character = GER_otto_ciliax
 recruit_character = GER_paul_hausser
 recruit_character = GER_ritter_von_greim
 recruit_character = GER_sepp_dietrich
-recruit_character = GER_viktor_schutze
 recruit_character = GER_von_braun
 recruit_character = GER_walter_kruger
 recruit_character = GER_walter_model
@@ -288,10 +284,6 @@ recruit_character = GER_martin_bormann
 recruit_character = GER_wilhelm_canaris
 recruit_character = GER_joseph_goebbels
 recruit_character = GER_konstantin_von_neurath
-recruit_character = GER_wilhelm_ii
-recruit_character = GER_wilhelm_iii
-recruit_character = GER_victoria
-recruit_character = GER_august_von_mackensen
 
 recruit_character = GER_alexander_von_falkenhausen #Not visible unless recalled from China
 

@@ -36,54 +36,6 @@ characters={
 				factor = 0.000
 			}
 		}
-		
-		country_leader={
-			ideology=fascism_ideology
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-
-	SAF_moses_kotane={
-		name=SAF_moses_kotane
-		portraits={
-			civilian={
-				large="GFX_SAF_moses_kotane"
-			}
-		}
-		country_leader={
-			ideology=marxism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-
-	SAF_pixley_ka_isaka_seme={
-		name=SAF_pixley_ka_isaka_seme
-		portraits={
-			civilian={
-				large=GFX_portrait_SAF_pixley_ka_isaka_seme
-			}
-		}
-		country_leader={
-			ideology=centrism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-
-	SAF_jan_smuts = {
-		name=SAF_jan_smuts
-		portraits={
-			civilian={
-				large=GFX_portrait_SAF_jan_smuts
-			}
-		}
-		country_leader={
-			ideology=conservatism
-			expire="1965.1.1.1"
-			id=-1
-		}
 	}
 
 	SAF_george_edwin_brink={
@@ -247,54 +199,8 @@ characters={
 		}
 	}
 
-	SAF_cornelis_van_zuigenbrogge={
-		name=SAF_cornelis_van_zuigenbrogge
-		portraits={
-			army={
-				small="GFX_idea_generic_navy_europe_1"
-			}
-		}
-		advisor={
-			slot = navy_chief
-			idea_token = SAF_cornelis_van_zuigenbrogge
-			allowed = {
-				original_tag = SAF
-			}
-			traits = {
-				navy_chief_commerce_raiding_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-
 
 	### AIR CHIEFS ###
-
-	SAF_adolf_malan={
-		name=SAF_adolf_malan
-		portraits={
-			army={
-				small="GFX_idea_SAF_adolf_malan" #small="GFX_idea_generic_air_europe_3"
-			}
-		}
-		advisor={	
-			slot = air_chief
-			idea_token = SAF_adolf_malan
-			allowed = {
-				original_tag = SAF
-			}
-			traits = {
-				air_chief_all_weather_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}		
-	}
 
 	SAF_pierre_van_ryneveld={
 		name=SAF_pierre_van_ryneveld
@@ -386,30 +292,6 @@ characters={
 			}
 			traits = {
 				air_naval_strike_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}		
-	}
-
-	SAF_jeannot_de_la_tourier={
-		name=SAF_jeannot_de_la_tourier
-		portraits={
-			army={
-				small="GFX_idea_SAF_jeannot_de_la_tourier" #small="GFX_idea_generic_navy_europe_2"
-			}
-		}
-		advisor={
-			slot = high_command
-			idea_token = SAF_jeannot_de_la_tourier
-			ledger = navy
-			allowed = {
-				original_tag = SAF
-			}
-			traits = {
-				navy_screen_2
 			}
 			cost = 100
 			ai_will_do = {

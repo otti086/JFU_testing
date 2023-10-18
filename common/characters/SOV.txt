@@ -31,81 +31,6 @@ characters = {
 		}
 	}
 
-	#TODO: This should be a country leader token added to Stalin in the appropriate event/focus/whatever
-	SOV_tsar_iosif_stalin = {
-		name = "Tsar Joseph I"
-		portraits = {
-			civilian = {
-				large = "GFX_portrait_SOV_tsar_stalin"
-			}
-		}
-		country_leader = {
-			ideology = despotism
-			expire = "1953.3.1.1"
-			id = -1
-		}
-	}
-
-	# Kerensky and Rodzaevsky moved to the bottom of the file
-
-	SOV_tsar_vladimir_kirillovich = {
-		name = SOV_tsar_vladimir_kirillovich
-		portraits = {
-			civilian = {
-				large = "GFX_portrait_SOV_vladimir_kirillovich"
-			}
-		}
-		country_leader = {
-			ideology = despotism
-			expire = "1953.3.1.1"
-			id = -1
-			traits = {
-				emperor_and_autocrat_of_all_the_russias
-			}
-		}
-	}
-	SOV_tsar_vsevolod_ivanovich = {
-		name = SOV_tsar_vsevolod_ivanovich
-		portraits = {
-			civilian = {
-				large = "GFX_portrait_SOV_vsevolod_ivanovich"
-			}
-		}
-		country_leader = {
-			ideology = despotism
-			expire = "1953.3.1.1"
-			id = -1
-		}
-	}
-
-	SOV_supreme_soviet = { #Country Leader role added via focus
-		name = SOV_supreme_soviet
-
-		portraits = {
-			civilian = {
-				large = GFX_portrait_SOV_supreme_soviet
-			}
-		}
-	}
-
-	SOV_provisional_government = {
-		name = SOV_provisional_government
-
-		portraits = {
-			civilian = {
-				large = "GFX_portrait_SOV_white_transitionary_council"
-			}
-		}
-		country_leader = {
-			ideology = despotism
-			expire = "1953.3.1.1"
-			id = -1
-			traits = {
-				emigre_connections desperate_gambit dysfunctional_assembly
-			}
-		}
-	}
-
 
    # #    #####   #    #  #   #      #        ######    ##    #####   ######  #####    ####  
   #   #   #    #  ##  ##   # #       #        #        #  #   #    #  #       #    #  #      
@@ -133,7 +58,6 @@ characters = {
 			planning_skill = 4
 			logistics_skill = 5
 			legacy_id = 410
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 
 		advisor = {
@@ -146,12 +70,6 @@ characters = {
 			}
 			available = {
 				has_completed_focus = SOV_positive_heroism
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
 			}
 			traits = {
 				mass_assault_expert
@@ -177,7 +95,6 @@ characters = {
 			planning_skill = 2
 			logistics_skill = 4
 			legacy_id = 402
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 
 		advisor = {
@@ -198,12 +115,7 @@ characters = {
 			}
 			available = {
 				has_completed_focus = SOV_positive_heroism
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
+
 			}
 			traits = {
 				army_armored_2
@@ -231,7 +143,6 @@ characters = {
 			planning_skill = 3
 			logistics_skill = 2
 			legacy_id = 407
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 
 		advisor = {
@@ -251,12 +162,7 @@ characters = {
 						}
 					}
 				}
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
+
 			}
 			traits = {
 				army_regrouping_2
@@ -297,7 +203,6 @@ characters = {
 			planning_skill = 2
 			logistics_skill = 3
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
@@ -317,7 +222,6 @@ characters = {
 			planning_skill = 3
 			logistics_skill = 3
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
@@ -337,22 +241,6 @@ characters = {
 				original_tag = SOV
 			}
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = SOV_konev_civil_war
-					NOT = {
-						any_other_country = {
-							has_war_with = SOV
-							original_tag = SOV
-							has_unit_leader = 408.000
-						}
-					}
-				}
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
 			}
 			traits = {
 				army_concealment_2
@@ -371,7 +259,6 @@ characters = {
 			planning_skill = 2
 			logistics_skill = 5
 			legacy_id = 408
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
@@ -390,21 +277,6 @@ characters = {
 				original_tag = SOV
 			}
 			available = {
-				hidden_trigger = {
-					NOT = {
-						any_other_country = {
-							has_war_with = SOV
-							original_tag = SOV
-							has_unit_leader = 404.000
-						}
-					}
-				}
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
 			}
 			traits = {
 				army_chief_reform_2
@@ -423,7 +295,6 @@ characters = {
 			planning_skill = 2
 			logistics_skill = 3
 			legacy_id = 404
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
@@ -443,21 +314,6 @@ characters = {
 				original_tag = SOV
 			}
 			available = {
-				hidden_trigger = {
-					NOT = {
-						any_other_country = {
-							has_war_with = SOV
-							original_tag = SOV
-							has_unit_leader = 405.000
-						}
-					}
-				}
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
 			}
 			traits = {
 				army_chief_drill_1
@@ -476,7 +332,6 @@ characters = {
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 405
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
@@ -497,12 +352,7 @@ characters = {
 				original_tag = SOV
 			}
 			available = {
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
+
 			}
 			traits = {
 				mass_assault_expert
@@ -517,7 +367,6 @@ characters = {
 			planning_skill = 4
 			logistics_skill = 2
 			legacy_id = 401
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
@@ -537,7 +386,7 @@ characters = {
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+
 		}
 	}
 
@@ -557,7 +406,7 @@ characters = {
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 413
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+
 		}
 	}
 
@@ -577,7 +426,7 @@ characters = {
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+
 		}
 	}
 
@@ -596,7 +445,7 @@ characters = {
 			planning_skill = 3
 			logistics_skill = 2
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+
 		}
 	}
 
@@ -616,7 +465,7 @@ characters = {
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+
 		}
 	}
 
@@ -636,7 +485,7 @@ characters = {
 			planning_skill = 3
 			logistics_skill = 3
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+
 		}
 	}
 
@@ -656,7 +505,7 @@ characters = {
 			planning_skill = 3
 			logistics_skill = 1
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+
 		}
 	}
 
@@ -676,7 +525,7 @@ characters = {
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 412
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+
 		}
 	}
 
@@ -696,7 +545,7 @@ characters = {
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+
 		}
 	}
 
@@ -716,7 +565,7 @@ characters = {
 			planning_skill = 2
 			logistics_skill = 2
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+
 		}
 	}
 
@@ -736,7 +585,7 @@ characters = {
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+
 		}
 	}
 
@@ -756,7 +605,7 @@ characters = {
 			planning_skill = 3
 			logistics_skill = 3
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+
 		}
 	}
 
@@ -776,7 +625,7 @@ characters = {
 			planning_skill = 2
 			logistics_skill = 2
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+
 		}
 	}
 
@@ -796,22 +645,6 @@ characters = {
 			planning_skill = 1
 			logistics_skill = 3
 			legacy_id = 0
-			visible = {
-				if = {
-					limit = {
-						SOV = { has_country_flag = vlasov_owner_flag }
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
-				if = {
-					limit = {
-						GER = { has_country_flag = vlasov_owner_flag }
-					}
-					NOT = {
-						has_character_flag = vlasov_imprisoned_flag
-					}
-				}
-			}
 		}
 	}
 
@@ -831,7 +664,7 @@ characters = {
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+
 		}
 	}
 
@@ -851,7 +684,7 @@ characters = {
 			planning_skill = 2
 			logistics_skill = 3
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+
 		}
 	}
 
@@ -871,7 +704,7 @@ characters = {
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+
 		}
 	}
 
@@ -891,7 +724,7 @@ characters = {
 			planning_skill = 2
 			logistics_skill = 2
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+
 		}
 	}
 
@@ -911,7 +744,7 @@ characters = {
 			planning_skill = 2
 			logistics_skill = 2
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+
 		}
 	}
 
@@ -931,7 +764,7 @@ characters = {
 			planning_skill = 2
 			logistics_skill = 3
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+
 		}
 	}
 
@@ -950,7 +783,7 @@ characters = {
 			planning_skill = 3
 			logistics_skill = 3
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+
 		}
 	}
 
@@ -970,7 +803,7 @@ characters = {
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+
 		}
 	}
 
@@ -990,7 +823,7 @@ characters = {
 			planning_skill = 3
 			logistics_skill = 3
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+
 		}
 	}
 
@@ -1010,7 +843,7 @@ characters = {
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+
 		}
 	}
 
@@ -1030,7 +863,7 @@ characters = {
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+
 		}
 	}
 
@@ -1054,7 +887,7 @@ characters = {
 			maneuvering_skill = 1
 			coordination_skill = 1
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+
 		}
 	}
 
@@ -1077,12 +910,7 @@ characters = {
 				original_tag = SOV
 			}
 			available = {
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
+
 			}
 			traits = { naval_theorist }
 		}
@@ -1095,7 +923,7 @@ characters = {
 			maneuvering_skill = 3
 			coordination_skill = 2
 			legacy_id = 411
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+
 		}
 	}
 
@@ -1117,21 +945,6 @@ characters = {
 				original_tag = SOV
 			}
 			available = {
-				hidden_trigger = {
-					NOT = {
-						any_other_country = {
-							has_war_with = SOV
-							original_tag = SOV
-							has_unit_leader = 406
-						}
-					}
-				}
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
 			}
 			traits = {
 				navy_capital_ship_2
@@ -1150,7 +963,7 @@ characters = {
 			maneuvering_skill = 1
 			coordination_skill = 2
 			legacy_id = 406
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+
 		}
 	}
 
@@ -1172,21 +985,8 @@ characters = {
 				original_tag = SOV
 			}
 			available = {
-				hidden_trigger = {
-					NOT = {
-						any_other_country = {
-							has_war_with = SOV
-							original_tag = SOV
-							has_unit_leader = 409.000
-						}
-					}
-				}
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
+
+
 			}
 			traits = {
 				navy_amphibious_assault_2
@@ -1205,7 +1005,7 @@ characters = {
 			maneuvering_skill = 3
 			coordination_skill = 3
 			legacy_id = 409
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+
 		}
 	}
 
@@ -1227,21 +1027,7 @@ characters = {
 				original_tag = SOV
 			}
 			available = {
-				hidden_trigger = {
-					NOT = {
-						any_other_country = {
-							has_war_with = SOV
-							original_tag = SOV
-							has_unit_leader = 403.000
-						}
-					}
-				}
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
+
 			}
 			traits = {
 				navy_submarine_2
@@ -1260,7 +1046,7 @@ characters = {
 			maneuvering_skill = 2
 			coordination_skill = 2
 			legacy_id = 403
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+
 		}
 	}
 
@@ -1614,9 +1400,6 @@ characters = {
 				original_tag = SOV
 			}
 			available = {
-				NOT = {
-					has_country_flag = purge_1_group_a
-				}
 			}
 			traits = {
 				navy_chief_naval_aviation_1
@@ -1659,7 +1442,7 @@ characters = {
 			planning_skill = 4
 			logistics_skill = 2
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+
 		}	
 	}
 
@@ -1694,7 +1477,7 @@ characters = {
 			planning_skill = 3
 			logistics_skill = 4
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+
 		}
 	}
 
@@ -1742,7 +1525,7 @@ characters = {
 			planning_skill = 2
 			logistics_skill = 3
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+
 		}
 	}
 
@@ -1764,7 +1547,6 @@ characters = {
 			logistics_skill = 3
 			legacy_id = 0
 			visible = {
-				NOT = { has_character_flag = SOV_exiled_flag }
 				has_completed_focus = SOV_organization_of_the_partisans
 			}
 		}
@@ -1788,7 +1570,6 @@ characters = {
 			logistics_skill = 3
 			legacy_id = 0
 			visible = {
-				NOT = { has_character_flag = SOV_exiled_flag }
 				has_completed_focus = SOV_organization_of_the_partisans
 			}
 		}
@@ -1812,7 +1593,6 @@ characters = {
 			logistics_skill = 3
 			legacy_id = 0
 			visible = {
-				NOT = { has_character_flag = SOV_exiled_flag }
 				has_completed_focus = SOV_the_glory_of_the_red_army
 			}
 		}
@@ -1850,12 +1630,7 @@ characters = {
 				}
 			}
 			available = {
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
+
 			}
 			traits = {
 				popular_figurehead 
@@ -1886,12 +1661,7 @@ characters = {
 				}
 			}
 			available = {
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
+
 			}
 			traits = {
 				political_commissar 
@@ -2168,12 +1938,7 @@ characters = {
 			}
 			available = {
 				has_intelligence_agency = yes
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
+
 			}
 			traits = {
 				head_of_intelligence 
@@ -2230,7 +1995,7 @@ characters = {
 			logistics_skill = 3
 			legacy_id = 0
 			visible = {
-					has_idea = SOV_grigory_semyonov
+				has_idea = SOV_grigory_semyonov
 			}
 		}
 
@@ -2250,12 +2015,6 @@ characters = {
 					 	tooltip = SOV_grigory_semyonov_man_tt
 					 	SOV_soviet_civil_war_not_started = yes 
 					}
-				}
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
 				}
 			}
 			visible = {

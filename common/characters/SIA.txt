@@ -12,34 +12,7 @@ characters={
 			id=-1
 		}
 	}
-	SIA_nangklao_chichalerm={
-		name="Nangklao Chichalerm"
-		portraits={
-			civilian={
-				large=GFX_portrait_Nangklao_Chichalerm
-			}
-		}
-		country_leader={
-			ideology=socialism
-			traits={ retired_officer financial_expert }
-			expire="1948.1.1.12"
-			id=-1
-		}
-	}
-	SIA_chao_phonphayuhasena={
-		name="Chao Phonphayuhasena"
-		portraits={
-			civilian={
-				large=GFX_portrait_Chao_Phonphayuhasena
-			}
-		}
-		country_leader={
-			ideology=anarchist_communism
-			traits={ retired_officer }
-			expire="1942.1.1.12"
-			id=-1
-		}
-	}
+
 	SIA_nangklao_suriyawongse={
 		name="Nangklao Suriyawongse"
 		portraits={
@@ -53,6 +26,7 @@ characters={
 			id=-1
 		}
 	}
+
 	SIA_plaek_phibunsongkhram={
 		name="Plaek Phibunsongkhram"
 		portraits={
@@ -66,6 +40,7 @@ characters={
 			id=-1
 		}
 	}
+
 	SIA_tianliang_huntrakool={
 		advisor={
 			
@@ -84,7 +59,6 @@ characters={
 					factor = 1.000
 				}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		name="Tianliang Huntrakool"
 		portraits={
 			army={
@@ -92,6 +66,7 @@ characters={
 			}
 		}
 	}
+
 	SIA_phra_silpasakrakorn={
 		advisor={
 			cost = 100
@@ -107,7 +82,6 @@ characters={
 					air_warfare_theorist
 				}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		name="Phra Silpasakrakorn"
 		portraits={
 			army={
@@ -115,6 +89,7 @@ characters={
 			}
 		}
 	}
+
 	SIA_luang_sinthusongkhramchai={
 		advisor={
 			
@@ -133,7 +108,6 @@ characters={
 					factor = 1.000
 				}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		name="Luang Sinthusongkhramchai"
 		portraits={
 			army={
@@ -141,6 +115,7 @@ characters={
 			}
 		}
 	}
+
 	SIA_thawon_thamrongnawasawat={
 		advisor={
 			
@@ -158,7 +133,6 @@ characters={
 					factor = 1.000
 				}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		name="Thawon Thamrongnawasawat"
 		portraits={
 			army={
@@ -166,6 +140,7 @@ characters={
 			}
 		}
 	}
+
 	SIA_phraya_preechacholayudha={
 		advisor={
 			
@@ -184,7 +159,6 @@ characters={
 					factor = 1.000
 				}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		name="Phraya Preechacholayudha"
 		portraits={
 			army={
@@ -192,6 +166,7 @@ characters={
 			}
 		}
 	}
+
 	SIA_pridi_phanomyong={
 		advisor={
 			
@@ -210,7 +185,6 @@ characters={
 					factor = 1.000
 				}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		name="Pridi Phanomyong"
 		portraits={
 			army={
@@ -218,6 +192,7 @@ characters={
 			}
 		}
 	}
+
 	SIA_sindhu_kamalanavin={
 		advisor={
 			
@@ -236,7 +211,6 @@ characters={
 					factor = 1.000
 				}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		name="Sindhu Kamalanavin"
 		portraits={
 			army={
@@ -244,6 +218,7 @@ characters={
 			}
 		}
 	}
+
 	SIA_phraya_chitnasongkhla={
 		advisor={
 			
@@ -261,7 +236,6 @@ characters={
 					factor = 1.000
 				}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		name="Phraya Chitnasongkhla"
 		portraits={
 			army={
@@ -269,6 +243,7 @@ characters={
 			}
 		}
 	}
+
 	SIA_phraya_thayarnpikart={
 		advisor={
 			
@@ -287,7 +262,6 @@ characters={
 					factor = 1.000
 				}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		name="Phraya Thayarnpikart"
 		portraits={
 			army={
@@ -295,6 +269,7 @@ characters={
 			}
 		}
 	}
+
 	SIA_phra_vechayanrangsarit={
 		advisor={
 			
@@ -312,7 +287,6 @@ characters={
 					factor = 1.000
 				}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		name="Phra Vechayanrangsarit"
 		portraits={
 			army={
@@ -320,6 +294,7 @@ characters={
 			}
 		}
 	}
+
 	SIA_manphya_khanphialong={
 		advisor={
 			cost = 100
@@ -335,7 +310,6 @@ characters={
 					military_theorist
 				}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		name="Manphya Khanphialong"
 		portraits={
 			army={
@@ -343,6 +317,7 @@ characters={
 			}
 		}
 	}
+
 	SIA_luang_phibunsongkhram={
 		advisor={
 			
@@ -360,7 +335,6 @@ characters={
 					factor = 1.000
 				}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		name="Luang Phibunsongkhram"
 		portraits={
 			army={
@@ -368,6 +342,7 @@ characters={
 			}
 		}
 	}
+
 	SIA_phraya_wichcitcholathai={
 		advisor={
 			
@@ -385,7 +360,6 @@ characters={
 					factor = 1.000
 				}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		name="Phraya Wichcitcholathai"
 		portraits={
 			army={
@@ -393,6 +367,7 @@ characters={
 			}
 		}
 	}
+
 	SIA_sawat_phutianands={
 		advisor={
 			cost = 100
@@ -408,7 +383,6 @@ characters={
 					naval_theorist
 				}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		name="Sawat Phutianands"
 		portraits={
 			army={
@@ -416,6 +390,7 @@ characters={
 			}
 		}
 	}
+
 	SIA_phraya_chalermarkiart={
 		advisor={
 			
@@ -433,7 +408,6 @@ characters={
 					factor = 1.000
 				}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		name="Phraya Chalermarkiart"
 		portraits={
 			army={
@@ -441,6 +415,7 @@ characters={
 			}
 		}
 	}
+
 	SIA_kuang_abhayavongsa={
 		advisor={
 			slot = political_advisor
@@ -452,7 +427,6 @@ characters={
 					silent_workhorse 
 				}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		name="Kuang Abhayavongsa"
 		portraits={
 			army={
@@ -460,6 +434,7 @@ characters={
 			}
 		}
 	}
+
 	SIA_thawee_punyaketu={
 		advisor={
 			slot = political_advisor
@@ -471,7 +446,6 @@ characters={
 					captain_of_industry 
 				}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		name="Thawee Punyaketu"
 		portraits={
 			army={
@@ -479,6 +453,7 @@ characters={
 			}
 		}
 	}
+
 	SIA_phot_bhahalyodin={
 		advisor={
 			slot = political_advisor
@@ -490,7 +465,6 @@ characters={
 					prince_of_terror 
 				}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		name="Phot Bhahalyodin"
 		portraits={
 			army={

@@ -54,39 +54,6 @@ characters = {
 		}
 	}
 
-	ITA_comitato_di_liberazione_nazionale = {
-		name = ITA_comitato_di_liberazione_nazionale
-		portraits = {
-			civilian = {
-				large = GFX_portrait_ITA_cln
-			}
-		}
-
-		#COUNTRY LEADER ROLE IS GIVEN VIA EVENT (Communist or Democratic)
-	}
-
-	ITA_papa_pio_xi = {
-		name = ITA_papa_pio_xi
-		portraits = {
-			civilian = {
-				large = GFX_portrait_ITA_papa_pio_xi
-			}
-		}
-
-		#COUNTRY LEADER ROLE IS GIVEN LATER
-	}
-
-	ITA_papa_pio_xii = {
-		name = ITA_papa_pio_xii
-		portraits = {
-			civilian = {
-				large = GFX_portrait_ITA_papa_pio_xii
-			}
-		}
-
-		#COUNTRY LEADER ROLE IS GIVEN LATER
-	}
-
 	ITA_antonio_gramsci = {
 		name = ITA_antonio_gramsci
 		portraits = {
@@ -101,22 +68,6 @@ characters = {
 	#Balbo and Grandi can start with no country leader trait, then get it via focus/event
 
 	#Ivanoe Bonomi and Alcide de Gasperi (Democratic leaders) further down to keep order
-
-	ITA_ferruccio_parri = {
-		name = ITA_ferruccio_parri
-		portraits = {
-			civilian = {
-				large = GFX_portrait_italy_ferruccio_parri
-			}
-		}
-
-		country_leader = {
-			ideology = socialism
-			traits = { resistance_leader }
-			expire = "1965.1.1.1"
-			id = -1
-		}
-	}
 
 	ITA_vittorio_emanuele_iii = {
 		name = ITA_vittorio_emanuele_iii
@@ -684,16 +635,6 @@ characters = {
 		}
 	}
 
-	ITA_prince_filiberto = {
-		name = ITA_prince_filiberto
-		portraits = {
-			army = {
-				small = GFX_portrait_ITA_prince_filiberto_small
-				large = GFX_portrait_ITA_prince_filiberto
-			}
-		}
-	}
-
 	ITA_prince_adalberto = {
 		name = ITA_prince_adalberto
 		portraits = {
@@ -856,7 +797,6 @@ characters = {
 			legacy_id = 0
 			visible = {
 				has_completed_focus = ITA_army_leaders
-				NOT = { has_government = communism }
 			}
 		}
 	}
@@ -935,7 +875,7 @@ characters = {
 				original_tag = ITA			
 			}
 			traits = {
-				navy_chief_decisive_battle_1
+				navy_chief_decisive_battle_2
 			}
 			cost = 50
 			ai_will_do = {
@@ -960,22 +900,6 @@ characters = {
 			navy = {
 				small = GFX_idea_alberto_da_zara
 				large = GFX_portrait_ITA_alberto_da_zara
-			}
-		}
-
-		advisor = {
-			slot = high_command
-			idea_token = alberto_da_zara
-			ledger = navy
-			allowed = {
-				original_tag = ITA			
-			}
-			traits = {
-				navy_anti_submarine_1
-			}
-			cost = 50
-			ai_will_do = {
-				base = 1.000
 			}
 		}
 		
@@ -1303,30 +1227,6 @@ characters = {
 
 	# Campioni up there
 
-	ITA_domenico_cavagnari = {
-		name = ITA_domenico_cavagnari
-		portraits = {
-			army = {
-				small = GFX_idea_domenico_cavagnari
-			}
-		}
-
-		advisor = {
-			slot = navy_chief
-			idea_token = domenico_cavagnari
-			allowed = {
-				original_tag = ITA			
-			}
-			traits = {
-				navy_chief_commerce_raiding_1
-			}
-			cost = 50
-			ai_will_do = {
-				base = 1.000
-			}
-		}
-	}
-
 	ITA_arturo_riccardi = {
 		name = ITA_arturo_riccardi
 		portraits = {
@@ -1345,7 +1245,7 @@ characters = {
 				has_government = fascism
 			}
 			traits = {
-				navy_chief_naval_aviation_1
+				navy_chief_naval_aviation_2
 			}
 			cost = 50
 			ai_will_do = {
@@ -1612,7 +1512,7 @@ characters = {
 				has_completed_focus = ITA_army_leaders
 			}
 			traits = {
-				army_logistics_1 # Blackshirt related trait instead?
+				army_logistics_2 # Blackshirt related trait instead?
 			}
 			cost = 50
 			ai_will_do = {
@@ -1833,7 +1733,7 @@ characters = {
 				ITA_government_is_really_fascist = yes
 			}
 			traits = {
-				army_regrouping_1
+				army_regrouping_2
 			}
 			cost = 50
 			ai_will_do = {
@@ -2117,101 +2017,5 @@ characters = {
 	##    ##  #######  ##    ##         ##       ##     ##  ######   ######  ####  ######     ##       ##        ########  #######  ##        ######## ######## 
 
 
-	ITA_giuseppe_pieche = {
-		name = ITA_giuseppe_pieche
-		portraits = {
-			army = {
-				small = GFX_portrait_ITA_giuseppe_pieche_small
-				large = GFX_portrait_ITA_giuseppe_pieche
-			}
-		}
-	}	
-
-
 	##### ETHIOPIAN DOPPLEGANGERS #### -> For unit_leader_events purposes
-
-	ITA_haile_selassie_gugsa_doppleganger = {
-		name = ETH_haile_selassie_gugsa
-		portraits = {
-			civilian = {
-				large = GFX_portrait_ETH_haile_selassie_gugsa
-			}
-		}
-
-		corps_commander = {
-			traits = { }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-			visible = {
-				always = no #Used for unit_leader events
-			}
-		}
-	}
-
-	ITA_abba_jofir_doppleganger = {
-		name = ETH_abba_jofir
-		portraits = {
-			civilian = {
-				large = GFX_portrait_ETH_abba_jofir
-			}
-		}
-
-		corps_commander = {
-			traits = { desert_fox }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 2
-			visible = {
-				always = no #Used for unit_leader events
-			}
-		}
-	}
-
-	ITA_hailu_tekle_haymanot_doppleganger = {
-		name = ETH_hailu_tekle_haymanot
-		portraits = {
-			civilian = {
-				large = GFX_portrait_ETH_hailu_tekle_haymanot
-			}
-		}
-
-		corps_commander = {
-			traits = { hill_fighter }
-			skill = 1
-			attack_skill = 2
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-			visible = {
-				always = no #Used for unit_leader events
-			}
-		}
-	}
-
-	ITA_seyoum_mengesha_doppleganger = {
-		name = ETH_seyoum_mengesha
-		portraits = {
-			civilian = {
-				large = GFX_portrait_ETH_seyoum_mengesha
-			}
-		}
-		
-		corps_commander = {
-			traits = { old_guard }
-			skill = 2
-			attack_skill = 2
-			defense_skill = 3
-			planning_skill = 1
-			logistics_skill = 1
-			legacy_id = -1
-			visible = {
-				always = no #Used for unit_leader events
-			}
-		}
-	}
 }

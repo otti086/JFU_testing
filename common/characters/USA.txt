@@ -14,35 +14,6 @@ characters={
 		}
 	}
 
-	USA_william_dudley_pelley={
-		name=USA_william_dudley_pelley
-		portraits={
-			civilian={
-				large=GFX_portrait_USA_william_dudley_pelley
-			}
-		}
-		country_leader={
-			ideology=fascism_ideology
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-
-	USA_carnot_wheeler={
-		name=USA_carnot_wheeler
-		portraits={
-			civilian={
-				large=GFX_portrait_USA_carnot_wheeler
-			}
-		}
-		country_leader={
-			ideology=oligarchism
-			traits={ financial_expert }
-			expire="1953.1.1.12"
-			id=-1
-		}
-	}
-
 	USA_george_s_patton={
 		name=USA_george_s_patton
 		portraits={
@@ -229,12 +200,6 @@ characters={
 				original_tag = USA
 			}
 			available = {
-				NOT = {
-					has_country_leader = {
-						ruling_only = yes
-						character = USA_douglas_macarthur
-					}
-				}
 			}
 			traits = {
 				army_chief_morale_2
@@ -539,9 +504,6 @@ characters={
 				original_tag = USA
 			}
 			available = {
-				NOT = {
-					has_country_flag = joseph_stilwell_sent_to_china
-				}
 			}
 			traits = {
 				army_logistics_2
@@ -1389,15 +1351,6 @@ characters={
 			}
 			traits  = {
 				silent_workhorse 
-			}
-		}
-	}
-
-	USA_joseph_mccarthy={
-		name=USA_joseph_mccarthy
-		portraits={
-			army={
-				small="GFX_idea_USA_joseph_mccarthy"
 			}
 		}
 	}

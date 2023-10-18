@@ -191,10 +191,7 @@ if = { #DLC
 	}
 
 	recruit_character = BUL_boris_iii
-	recruit_character = BUL_georgi_dimitrov
-	recruit_character = BUL_nikola_mushanov
 	recruit_character = BUL_hristo_lukov
-	recruit_character = BUL_atanas_shalapatov
 	recruit_character = BUL_nikola_mihov
 	recruit_character = BUL_georgi_popov
 	recruit_character = BUL_vasil_boydev
@@ -209,8 +206,6 @@ if = { #DLC
 	recruit_character = BUL_trifon_trifonov
 	recruit_character = BUL_sava_ivanov
 	recruit_character = BUL_vladimir_stoychev
-	recruit_character = BUL_stoyan_stoyanov
-	recruit_character = BUL_stefan_tsanev
 	recruit_character = BUL_kiril_dimitrov_yanchulev
 	recruit_character = BUL_georgi_petsov
 	recruit_character = BUL_ivan_sapundzhiev
@@ -218,9 +213,7 @@ if = { #DLC
 	recruit_character = BUL_kiril_stanchev
 	recruit_character = BUL_georgi_drenikov
 	recruit_character = BUL_stoyan_trendafilov
-	recruit_character = BUL_ivan_variklechkov
 	recruit_character = BUL_gancho_manchev
-	recruit_character = BUL_dimitr_ayryanov
 	recruit_character = BUL_nikola_hadzipetkov
 	recruit_character = BUL_asen_toshev
 	recruit_character = BUL_bogdan_filov_fascism
@@ -297,10 +290,8 @@ if = { #DLC
 		recruit_character = BUL_ivan_gaidimitriv
 		recruit_character = BUL_kiril_stanchev
 		recruit_character = BUL_blagoi_ivanov
-		recruit_character = BUL_stoyan_stoyanov
 		recruit_character = BUL_nikola_hadzipetkov
 		recruit_character = BUL_kiril_dimitrov_yanchulev
-		recruit_character = BUL_nikola_totev_markov
 		recruit_character = BUL_georgi_ivanov_kyoseivanov
 		recruit_character = BUL_dobri_bozhilov
 		recruit_character = BUL_konstantin_muraviev
@@ -308,8 +299,6 @@ if = { #DLC
 	}
 
 }
-add_equipment_to_stockpile = { type = train_equipment_1 amount = 50 }
-add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 }
 set_technology = { #VANILLA & DLC
 	infantry_weapons = 1
 	infantry_weapons1 = 1

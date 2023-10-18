@@ -9,7 +9,7 @@ add_relation_modifier = {
 }
 oob = "USA_1936"
 
-add_equipment_to_stockpile = { type = train_equipment_1 amount = 300 }
+
 
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -173,7 +173,6 @@ add_ideas = {
 	home_of_the_free
 }
 
-recruit_character = USA_william_dudley_pelley
 recruit_character = USA_franklin_delano_roosevelt
 recruit_character = USA_george_s_patton
 recruit_character = USA_omar_bradley
@@ -206,7 +205,6 @@ recruit_character = USA_raymond_a_spruance
 recruit_character = USA_harold_rainsford_stark
 recruit_character = USA_arleigh_burke
 recruit_character = USA_charles_m_cooke_jr
-recruit_character = USA_carnot_wheeler
 recruit_character = USA_robert_goddard
 recruit_character = USA_robert_oppenheimer
 recruit_character = USA_curtis_lemay
@@ -227,7 +225,6 @@ recruit_character = USA_william_donovan
 recruit_character = USA_whittaker_chambers
 recruit_character = USA_robert_taft
 recruit_character = USA_donald_nelson
-recruit_character = USA_joseph_mccarthy
 recruit_character = USA_cordell_hull
 recruit_character = USA_harold_ickes
 recruit_character = USA_henry_stimson

@@ -12,62 +12,6 @@ characters={
 			id=-1
 		}
 	}
-	NZL_sidney_holland={
-		name=NZL_sidney_holland
-		portraits={
-			civilian={
-				large="GFX_NZL_sidney_holland"
-			}
-		}
-		country_leader={
-			ideology=centrism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-
-	NZL_john_ormond={
-		name=NZL_john_ormond
-		portraits={
-			civilian={
-				large="GFX_NZL_john_ormond"
-			}
-		}
-		country_leader={
-			ideology=fascism_ideology
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-
-	NZL_elsie_farrelly={
-		name=NZL_elsie_farrelly
-		portraits={
-			civilian={
-				large="GFX_NZL_elsie_farrelly"
-			}
-		}
-		gender = female
-		country_leader={
-			ideology=marxism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-
-	NZL_peter_fraser={
-		name=NZL_peter_fraser
-		portraits={
-			civilian={
-				large=GFX_portrait_NZL_peter_fraser
-			}
-		}
-		country_leader={
-			ideology=socialism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
 
 	NZL_bernard_freyberg={
 		name=NZL_bernard_freyberg

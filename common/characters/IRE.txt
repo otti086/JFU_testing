@@ -12,45 +12,7 @@ characters={
 			id=-1
 		}
 	}
-	IRE_eoin_oduffy={
-		name="Eoin O'Duffy"
-		portraits={
-			civilian={
-				large=GFX_portrait_Eoin_ODuffy
-			}
-		}
-		country_leader={
-			ideology=fascism_ideology
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-	IRE_james_larkin={
-		name="James Larkin"
-		portraits={
-			civilian={
-				large=GFX_portrait_James_Larkin
-			}
-		}
-		country_leader={
-			ideology=marxism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-	IRE_william_norton={
-		name="William Norton"
-		portraits={
-			civilian={
-				large=GFX_portrait_William_Norton
-			}
-		}
-		country_leader={
-			ideology=centrism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
+
 	IRE_michael_costello={
 		name="Michael Costello"
 		portraits={
@@ -68,6 +30,7 @@ characters={
 			legacy_id=-1
 		}
 	}
+
 	IRE_p_a_mulcahy={
 		advisor={
 			
@@ -85,7 +48,6 @@ characters={
 					factor = 1.000
 				}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		name="P.A. Mulcahy"
 		portraits={
 			army={
@@ -93,6 +55,7 @@ characters={
 			}
 		}
 	}
+
 	IRE_liam_archer={
 		advisor={
 			
@@ -110,7 +73,6 @@ characters={
 					factor = 1.000
 				}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		name="Liam Archer"
 		portraits={
 			army={
@@ -118,6 +80,7 @@ characters={
 			}
 		}
 	}
+
 	IRE_a_t_lawlor={
 		advisor={
 			
@@ -136,7 +99,6 @@ characters={
 					factor = 1.000
 				}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		name="A.T. Lawlor"
 		portraits={
 			army={
@@ -144,6 +106,7 @@ characters={
 			}
 		}
 	}
+
 	IRE_oscar_traynor={
 		advisor={
 			cost = 100
@@ -159,7 +122,6 @@ characters={
 					air_warfare_theorist
 				}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		name="Oscar Traynor"
 		portraits={
 			army={
@@ -167,6 +129,7 @@ characters={
 			}
 		}
 	}
+
 	IRE_frank_fahy={
 		advisor={
 			
@@ -185,7 +148,6 @@ characters={
 					factor = 1.000
 				}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		name="Frank Fahy"
 		portraits={
 			army={
@@ -193,6 +155,7 @@ characters={
 			}
 		}
 	}
+
 	IRE_h_t_green={
 		advisor={
 			
@@ -210,7 +173,6 @@ characters={
 					factor = 1.000
 				}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		name="H.T. Green"
 		portraits={
 			army={
@@ -218,32 +180,7 @@ characters={
 			}
 		}
 	}
-	IRE_michael_brennan={
-		advisor={
-			
-			
-			slot = high_command
-			idea_token = IRE_michael_brennan
-			ledger = air
-				allowed = {
-					original_tag = IRE
-				}
-				traits = {
-					air_bomber_interception_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="Michael Brennan"
-		portraits={
-			army={
-				small="GFX_idea_generic_air_europe_3"
-			}
-		}
-	}
+
 	IRE_richard_james_mulcahy={
 		advisor={
 			
@@ -261,7 +198,6 @@ characters={
 					factor = 1.000
 				}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		name="Richard James Mulcahy"
 		portraits={
 			army={
@@ -269,6 +205,7 @@ characters={
 			}
 		}
 	}
+
 	IRE_michael_joe_costello={
 		advisor={
 			cost = 100
@@ -284,7 +221,6 @@ characters={
 					military_theorist
 				}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		name="Michael Joe Costello"
 		portraits={
 			army={
@@ -292,6 +228,7 @@ characters={
 			}
 		}
 	}
+
 	IRE_dan_mckenna={
 		advisor={
 			
@@ -310,7 +247,6 @@ characters={
 					factor = 1.000
 				}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		name="Daniel McKenna"
 		portraits={
 			army={
@@ -318,6 +254,7 @@ characters={
 			}
 		}
 	}
+
 	IRE_s_muiris={
 		advisor={
 			
@@ -335,7 +272,6 @@ characters={
 					factor = 1.000
 				}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		name="S. O'Muiris"
 		portraits={
 			army={
@@ -343,6 +279,7 @@ characters={
 			}
 		}
 	}
+
 	IRE_john_byrne={
 		advisor={
 			
@@ -360,7 +297,6 @@ characters={
 					factor = 1.000
 				}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		name="John O'Byrne"
 		portraits={
 			army={
@@ -368,6 +304,7 @@ characters={
 			}
 		}
 	}
+
 	IRE_sean_lemass={
 		advisor={
 			slot = political_advisor
@@ -379,7 +316,6 @@ characters={
 					captain_of_industry 
 				}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		name="Seán Lemass"
 		portraits={
 			army={
@@ -387,6 +323,7 @@ characters={
 			}
 		}
 	}
+
 	IRE_douglas_hyde={
 		advisor={
 			slot = political_advisor
@@ -398,7 +335,6 @@ characters={
 					popular_figurehead 
 				}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		name="Douglas Hyde"
 		portraits={
 			army={
@@ -406,6 +342,7 @@ characters={
 			}
 		}
 	}
+
 	IRE_sean_ceallaigh={
 		advisor={
 			slot = political_advisor
@@ -417,7 +354,6 @@ characters={
 					smooth_talking_charmer 
 				}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		name="Seán T. O'Ceallaigh"
 		portraits={
 			army={

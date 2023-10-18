@@ -1,6 +1,4 @@
 ﻿capital = 277
-add_equipment_to_stockpile = { type = train_equipment_1 amount = 50 }
-add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 }
 oob = "MEX_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -90,7 +88,6 @@ if = {
 
 recruit_character = MEX_lazaro_cardenas
 recruit_character = MEX_salvador_abascal
-recruit_character = MEX_adolfo_de_la_huerta
 recruit_character = MEX_dionisio_encina
 recruit_character = MEX_hernan_laborde
 recruit_character = MEX_heliodoro_charis
@@ -118,7 +115,6 @@ recruit_character = MEX_luis_montes_de_oca
 recruit_character = MEX_aaron_saenz
 recruit_character = MEX_eduardo_hay
 recruit_character = MEX_alberto_pani
-recruit_character = MEX_juan_andreu
 recruit_character = MEX_plutarco_calles
 recruit_character = MEX_francisco_mugica
 recruit_character = MEX_jesus_degollado_guizar
