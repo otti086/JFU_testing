@@ -770,7 +770,14 @@ technologies = {
 			building = fuel_silo
 			level = 3
 		}
-				
+		path = {
+			leads_to_tech = naldo 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = johannes
+			research_cost_coeff = 1
+		}					
 		path = {
 			leads_to_tech = synth_oil_experiments 
 			research_cost_coeff = 1
@@ -858,6 +865,58 @@ technologies = {
 				date < "1938.1.1"
 			}
 		}
+	}
+
+	johannes = {
+
+		industrial_capacity_dockyard = 0.001
+		
+		research_cost = 0
+		start_year = 1936
+		folder = {
+			name = industry_folder
+			position = { x = -2 y = 0 }
+		}
+		
+		categories = {
+			
+		}
+
+		
+		XOR = {
+			naldo
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+	}
+
+	naldo = {
+
+		industrial_capacity_factory = 0.001
+		
+		research_cost = 0
+		start_year = 1936
+		folder = {
+			name = industry_folder
+			position = { x = -4 y = 0 }
+		}
+		
+		categories = {
+			
+		}
+
+		
+		XOR = {
+			johannes
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
 	}
 
 	fuel_refining = {

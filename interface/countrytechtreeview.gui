@@ -3147,6 +3147,18 @@ guiTypes = {
 					format = center
 					Orientation = "UPPER_LEFT"
 				}
+				instantTextBoxType = {
+					name = "JUGGLE BUTTON"
+					position = { x = 947 y = 115  }
+					textureFile = ""
+					font = "hoi_22tech"
+					borderSize = {x = 0 y = 4}
+					text = "JUGGLE BUTTON"
+					maxWidth = 250
+					maxHeight = 62
+					format = center
+					Orientation = "UPPER_LEFT"
+				}
 
 			gridboxtype = {
 				name = "basic_machine_tools_tree"

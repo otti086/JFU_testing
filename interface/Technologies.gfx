@@ -523,7 +523,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/mountain.dds"
 	}	
 	SpriteType = {
-			name = "GFX_rangers_medium"
+			name = "GFX_rangers1_medium"
 			texturefile = "gfx/technologies/TECH_rangers.dds"
 		}
 	SpriteType = {
@@ -2074,6 +2074,14 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_fuel_silos_medium"
 		texturefile = "gfx/interface/technologies/fuel_silos.dds"
+	}
+	SpriteType = {
+		name = "GFX_naldo_medium"
+		texturefile = "gfx/technologies/TECH_naldo.dds"
+	}
+	SpriteType = {
+		name = "GFX_johannes_medium"
+		texturefile = "gfx/technologies/TECH_johannes.dds"
 	}
 	SpriteType = {
 		name = "GFX_fuel_refining_medium"

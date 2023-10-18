@@ -6,23 +6,15 @@ technologies = {
 		doctrine_name = "TITLE_SPECIAL_FORCES"
 		
 		# EFFECT ########
-		mountaineers_special_forces_contribution_factor = -0.25
-		category_mountaineers = {
-			supply_consumption = -0.02
-		}
-		category_special_forces = {
-			max_organisation = 5
-			soft_attack = 0.05
-		}
 		enable_subunits = {
-			rangers_support
+			mountaineers
 		}		
 		###########
 		
 		force_use_small_tech_layout = yes
 		
 		xp_research_type = army
-		xp_unlock_cost = 999
+		xp_unlock_cost = 60
 		
 		#xor = { special_forces_marines special_forces_paratroopers }
 		
@@ -38,13 +30,7 @@ technologies = {
 		
 		doctrine = yes	
 		research_cost = 2.25
-		
-		allow = {
-			AND = {
-				has_tech = tech_mountaineers
-				can_unlock_new_special_forces_tree = yes
-			}
-		}
+
 		
 		on_research_complete = {
 			remove_potential_special_forces_tree = yes
@@ -63,10 +49,6 @@ technologies = {
 				
 		ai_will_do = {
 			factor = 10
-			modifier = {
-				factor = 0
-				NOT = { ai_has_completed_army_doctrine = yes }
-			}
 		}
 		
 		ai_research_weights = {
@@ -89,12 +71,12 @@ technologies = {
 
 		xor = { rangers }
 		
-		rangers_support = {
+		mountaineers = {
 			acclimatization_cold_climate_gain_factor = 0.25
-			snow = {
-				attack = 0.15
-				defence = 0.20
-				movement = 0.15
+			forest = {
+				attack = 0.10
+				defence = 0.05
+				movement = 0.10
 			}
 		}
 		
@@ -135,10 +117,10 @@ technologies = {
 
 		xor = { ski_troops }
 		
-		rangers_support = {
-			mountain = {
-				attack = 0.20
-				defence = 0.10
+		mountaineers = {
+			desert = {
+				attack = 0.10
+				defence = 0.05
 				movement = 0.10
 			}
 		}
@@ -174,9 +156,20 @@ technologies = {
 		category_mountaineers = {
 			initiative = 0.01
 		}
-		unit_mountaineers_design_cost_factor = -0.50
-		unit_rangers_support_design_cost_factor = -0.50
-		
+
+		mountaineers = {
+			Mountain = {
+				attack = 0.05
+				defence = 0.05
+				movement = 0.10
+			}
+			Hills = {
+				attack = 0.05
+				defence = 0.05
+				movement = 0.10
+			}
+		}
+
 		force_use_small_tech_layout = yes
 		
 		path = {
@@ -219,11 +212,12 @@ technologies = {
 		
 		force_use_small_tech_layout = yes
 		
-		category_mountaineers = {
-			defense = 0.10
-		}
 		mountaineers = {
-			combat_width = -0.2
+			Urban = {
+				attack = 0.10
+				defence = 0.05
+				movement = 0.10
+			}
 		}
 		
 		path = {
@@ -268,17 +262,16 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		artillery = {
-			battalion_mult = {
-				category = category_mountaineers
-				breakthrough = 0.15
+		mountaineers = {
+			Mountain = {
+				attack = 0.10
+				defence = 0.05
+				movement = 0.10
 			}
-		}
-		
-		rangers_support = {
-			battalion_mult = {
-				category = category_line_artillery
-				soft_attack = 0.20
+			Hills = {
+				attack = 0.10
+				defence = 0.05
+				movement = 0.10
 			}
 		}
 		
@@ -312,8 +305,17 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 60
 		
-		category_mountaineers = {
-			max_organisation = 10
+		mountaineers = {
+			Mountain = {
+				attack = 0.05
+				defence = 0.05
+				movement = 0.10
+			}
+			Hills = {
+				attack = 0.05
+				defence = 0.05
+				movement = 0.10
+			}
 		}
 		
 		force_use_small_tech_layout = yes
@@ -359,11 +361,8 @@ technologies = {
 		force_use_small_tech_layout = yes
 		
 		category_mountaineers = {
-			soft_attack = 0.10
+			breakthrough = 0.10
 		}
-		
-		mountaineers_special_forces_contribution_factor = -0.25
-		special_forces_training_time_factor = -0.20
 		
 		xor = { mountaineers_keystone_2 }
 		
@@ -395,11 +394,9 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 60
 		
-		special_forces_cap = 0.20
-		special_forces_out_of_supply_factor = -0.1
-		special_forces_attack_factor = 0.10
-		acclimatization_hot_climate_gain_factor = 0.10
-		acclimatization_cold_climate_gain_factor = 0.10
+		category_mountaineers = {
+			defense = 0.10
+		}
 		
 		force_use_small_tech_layout = yes
 
