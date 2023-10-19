@@ -430,8 +430,8 @@ technologies = {
 	special_forces_marines = {
 		doctrine_name = "MARINES_DOCTRINE"
 		
-		xp_research_type = navy
-		xp_unlock_cost = 999
+		xp_research_type = army
+		xp_unlock_cost = 60
 		
 		#xor = { special_forces_mountaineers special_forces_paratroopers }
 		
@@ -481,7 +481,7 @@ technologies = {
 	
 	marines_jungle_troops = {
 		
-		xp_research_type = navy
+		xp_research_type = army
 		xp_unlock_cost = 60
 		
 		xor = { marines_shore_parties }
@@ -527,7 +527,7 @@ technologies = {
 	
 	marines_shore_parties = {
 		
-		xp_research_type = navy
+		xp_research_type = army
 		xp_unlock_cost = 60
 		
 		xor = { marines_jungle_troops }
@@ -573,7 +573,7 @@ technologies = {
 	
 	marines_recon = {
 		
-		xp_research_type = navy
+		xp_research_type = army
 		xp_unlock_cost = 60
 		
 		force_use_small_tech_layout = yes
@@ -628,7 +628,7 @@ technologies = {
 	
 	marines_commandoes = {
 		
-		xp_research_type = navy
+		xp_research_type = army
 		xp_unlock_cost = 60
 		
 		force_use_small_tech_layout = yes
@@ -669,7 +669,7 @@ technologies = {
 	
 	marines_expeditionary = {
 		
-		xp_research_type = navy
+		xp_research_type = army
 		xp_unlock_cost = 60
 		
 		force_use_small_tech_layout = yes
@@ -709,7 +709,7 @@ technologies = {
 	
 	marines_commandos_demolition = {
 		
-		xp_research_type = navy
+		xp_research_type = army
 		xp_unlock_cost = 60
 		
 		force_use_small_tech_layout = yes
@@ -763,7 +763,7 @@ technologies = {
 	
 	marines_expeditionary_blowtorch = {
 		
-		xp_research_type = navy
+		xp_research_type = army
 		xp_unlock_cost = 60
 		
 		force_use_small_tech_layout = yes
@@ -815,7 +815,7 @@ technologies = {
 	
 	marines_commandoes_mechanised = {
 		
-		xp_research_type = navy
+		xp_research_type = army
 		xp_unlock_cost = 60
 		
 		force_use_small_tech_layout = yes
@@ -855,7 +855,7 @@ technologies = {
 	
 	marines_commandoes_mechanised_non_mtg = {
 		
-		xp_research_type = navy
+		xp_research_type = army
 		xp_unlock_cost = 60
 		
 		force_use_small_tech_layout = yes
@@ -891,7 +891,7 @@ technologies = {
 	
 	marines_expeditionary_support = {
 		
-		xp_research_type = navy
+		xp_research_type = army
 		xp_unlock_cost = 60
 		
 		force_use_small_tech_layout = yes
@@ -929,8 +929,8 @@ technologies = {
 	special_forces_paratroopers = {
 		doctrine_name = "PARATROOPERS_DOCTRINE"
 
-		xp_research_type = air
-		xp_unlock_cost = 999
+		xp_research_type = army
+		xp_unlock_cost = 60
 		
 		force_use_small_tech_layout = yes
 		
@@ -985,7 +985,7 @@ technologies = {
 	
 	paras_dispersed_drop = {
 
-		xp_research_type = air
+		xp_research_type = army
 		xp_unlock_cost = 60
 		
 		force_use_small_tech_layout = yes
@@ -1030,7 +1030,7 @@ technologies = {
 	
 	paras_combat_drop = {
 
-		xp_research_type = air
+		xp_research_type = army
 		xp_unlock_cost = 60
 		
 		force_use_small_tech_layout = yes
@@ -1075,7 +1075,7 @@ technologies = {
 	
 	paras_airborne_light_armor = {
 
-		xp_research_type = air
+		xp_research_type = army
 		xp_unlock_cost = 60
 		
 		force_use_small_tech_layout = yes
@@ -1132,7 +1132,7 @@ technologies = {
 	
 	paras_combat_1 = {
 		
-		xp_research_type = air
+		xp_research_type = army
 		xp_unlock_cost = 60
 		
 		force_use_small_tech_layout = yes
@@ -1178,7 +1178,7 @@ technologies = {
 	
 	paras_combat_2 = {
 		
-		xp_research_type = air
+		xp_research_type = army
 		xp_unlock_cost = 60
 		
 		force_use_small_tech_layout = yes
@@ -1224,7 +1224,7 @@ technologies = {
 	
 	paras_bonus_1 = {
 		
-		xp_research_type = air
+		xp_research_type = army
 		xp_unlock_cost = 60
 		
 		force_use_small_tech_layout = yes
@@ -1273,7 +1273,7 @@ technologies = {
 	
 	paras_bonus_2 = {
 		
-		xp_research_type = air
+		xp_research_type = army
 		xp_unlock_cost = 60
 		
 		force_use_small_tech_layout = yes
@@ -1322,7 +1322,7 @@ technologies = {
 	
 	paras_keystone_1 = {
 		
-		xp_research_type = air
+		xp_research_type = army
 		xp_unlock_cost = 60
 		
 		force_use_small_tech_layout = yes
@@ -1357,7 +1357,7 @@ technologies = {
 	
 	paras_keystone_2 = {
 		
-		xp_research_type = air
+		xp_research_type = army
 		xp_unlock_cost = 60
 		
 		force_use_small_tech_layout = yes
