@@ -96,7 +96,6 @@ set_technology = {
 	tech_recon = 1
 	tech_engineers = 1
 	motorised_infantry = 1
-	marines  = 1
 	gw_artillery = 1
 	basic_train = 1
 	trench_warfare = 1
@@ -106,8 +105,9 @@ set_technology = {
 	fuel_refining = 1
 	bicycle_infantry = 1 
 
-	rangers = 1 #special forces weil clown minors
-	tech_mountaineers = 1
+	special_forces_mountaineers = 1
+	special_forces_marines = 1
+	special_forces_paratroopers = 1
 
 	interwar_antiair = 1
 

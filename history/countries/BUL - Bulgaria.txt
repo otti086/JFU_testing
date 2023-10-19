@@ -316,4 +316,7 @@ set_technology = { #VANILLA & DLC
 	tech_recon = 1
 	gwtank_chassis = 1
 	building_limiter_tech = 1
+	special_forces_mountaineers = 1
+	special_forces_marines = 1
+	special_forces_paratroopers = 1
 }

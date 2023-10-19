@@ -449,6 +449,9 @@ set_technology = {
 	tech_recon = 1
 	tech_engineers = 1
 	basic_train = 1
+special_forces_mountaineers = 1
+	special_forces_marines = 1
+	special_forces_paratroopers = 1
 }
 if = {
 	limit = { NOT = { has_dlc = "Man the Guns" } }

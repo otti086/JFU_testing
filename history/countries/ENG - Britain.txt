@@ -92,15 +92,14 @@ set_technology = {
 	fuel_refining = 1
 	mechanical_computing = 1
 
-	rangers = 1 #special forces weil clown minors
-	marines = 1
-	tech_mountaineers = 1
-
 	gwtank_chassis = 1 #nsb man
 
 	fuel_silos = 1 #juggle button
 
 	building_limiter_tech = 1 #air base max level
+	special_forces_mountaineers = 1
+	special_forces_marines = 1
+	special_forces_paratroopers = 1
 }
 
 if = {

@@ -167,13 +167,13 @@ sub_units = {
 		}
 
 		marsh = {
-			attack = 0.3
+			attack = 0.2
 		}
 		river = {
-			attack = 0.3
+			attack = 0.2
 		}
 		amphibious = {
-			attack = 0.5
+			attack = 0.3
 		}
 	}
 
@@ -306,6 +306,7 @@ sub_units = {
 			category_all_infantry
 			category_army
 			category_special_forces
+			category_rangers
 		}
 
 		combat_width = 2
@@ -332,15 +333,6 @@ sub_units = {
 			infantry_equipment = 140
 		}
 
-		forest = {
-			attack = 0.1
-			movement = 0.1
-		}
-
-		jungle = {
-			attack = 0.1
-			movement = 0.1
-		}
 		urban = {
 			attack = 0.05
 			movement = 0.1		
