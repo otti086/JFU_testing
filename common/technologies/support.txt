@@ -892,6 +892,7 @@ technologies = {
 		}
 		
 		categories = {
+			mio_cat_tech_all_motorized_mechanized
 			support_tech
 			hospital_tech
 			motorized_equipment
@@ -937,6 +938,7 @@ technologies = {
 		}
 		
 		categories = {
+			mio_cat_tech_all_motorized_mechanized
 			support_tech
 			hospital_tech
 			motorized_equipment
@@ -981,6 +983,7 @@ technologies = {
 		}
 		
 		categories = {
+			mio_cat_tech_all_motorized_mechanized
 			support_tech
 			hospital_tech
 			motorized_equipment
@@ -1020,6 +1023,7 @@ technologies = {
 		}
 		
 		categories = {
+			mio_cat_tech_all_motorized_mechanized
 			support_tech
 			hospital_tech
 			motorized_equipment
@@ -1086,6 +1090,7 @@ technologies = {
 		}
 		
 		categories = {
+			mio_cat_tech_all_motorized_mechanized
 			support_tech
 			logistics_tech
 			motorized_equipment
@@ -1136,6 +1141,7 @@ technologies = {
 		}
 		
 		categories = {
+			mio_cat_tech_all_motorized_mechanized
 			support_tech
 			logistics_tech
 			motorized_equipment
@@ -1185,6 +1191,7 @@ technologies = {
 		}
 		
 		categories = {
+			mio_cat_tech_all_motorized_mechanized
 			support_tech
 			logistics_tech
 			motorized_equipment
@@ -1224,6 +1231,7 @@ technologies = {
 		}
 		
 		categories = {
+			mio_cat_tech_all_motorized_mechanized
 			support_tech
 			logistics_tech
 			motorized_equipment

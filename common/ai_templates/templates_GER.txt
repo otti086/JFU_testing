@@ -1065,12 +1065,7 @@ mountaineers_GER = {
 	upgrade_prio = {
 		factor = 2
 
-		modifier = {
-			factor = 0
-			NOT = {
-				has_tech = tech_mountaineers
-			}
-		}
+
 	}
 	
 	match_to_count = 0.45
@@ -1172,12 +1167,6 @@ marines_GER = {
 	upgrade_prio = {
 		factor = 2
 
-		modifier = {
-			factor = 0
-			NOT = {
-				has_tech = marines
-			}
-		}
 	}
 	
 	match_to_count = 0.45

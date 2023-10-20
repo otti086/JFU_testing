@@ -143,6 +143,7 @@ technologies = {
 		}
 
 		categories = {
+			mio_cat_tech_all_armor_and_modules
 			armor
 			cat_light_armor
 			mio_cat_tech_light_armor_and_modules
@@ -218,6 +219,7 @@ technologies = {
 		}
 
 		categories = {
+			mio_cat_tech_all_armor_and_modules
 			armor
 			cat_light_armor
 			mio_cat_tech_light_armor_and_modules
@@ -310,6 +312,7 @@ technologies = {
 		}
 
 		categories = {
+			mio_cat_tech_all_armor_and_modules
 			armor
 			cat_light_armor
 			mio_cat_tech_light_armor_and_modules
@@ -366,6 +369,7 @@ technologies = {
 		}
 
 		categories = {
+			mio_cat_tech_all_armor_and_modules
 			armor
 			cat_light_armor
 			mio_cat_tech_light_armor_and_modules
@@ -412,6 +416,7 @@ technologies = {
 		}
 
 		categories = {
+			mio_cat_tech_all_armor_and_modules
 			armor
 			tp_tech
 		}
@@ -506,6 +511,7 @@ technologies = {
 		}
 
 		categories = {
+			mio_cat_tech_all_armor_and_modules
 			armor
 			cat_medium_armor
 			mio_cat_tech_medium_armor_and_modules
@@ -605,6 +611,7 @@ technologies = {
 		}
 
 		categories = {
+			mio_cat_tech_all_armor_and_modules
 			armor
 			cat_medium_armor
 			mio_cat_tech_medium_armor_and_modules
@@ -661,6 +668,7 @@ technologies = {
 		}
 
 		categories = {
+			mio_cat_tech_all_armor_and_modules
 			armor
 			tp_tech
 		}
@@ -724,6 +732,7 @@ technologies = {
 		}
 
 		categories = {
+			mio_cat_tech_all_armor_and_modules
 			armor
 			cat_medium_armor
 			mio_cat_tech_medium_armor_and_modules
@@ -770,6 +779,7 @@ technologies = {
 		}
 
 		categories = {
+			mio_cat_tech_all_armor_and_modules
 			armor
 			cat_medium_armor
 			mio_cat_tech_medium_armor_and_modules
@@ -850,6 +860,7 @@ technologies = {
 		}
 
 		categories = {
+			mio_cat_tech_all_armor_and_modules
 			armor
 			cat_heavy_armor
 			mio_cat_tech_heavy_armor_and_modules
@@ -930,6 +941,7 @@ technologies = {
 		}
 
 		categories = {
+			mio_cat_tech_all_armor_and_modules
 			armor
 			cat_heavy_armor
 			mio_cat_tech_heavy_armor_and_modules
@@ -998,6 +1010,7 @@ technologies = {
 		}
 
 		categories = {
+			mio_cat_tech_all_armor_and_modules
 			armor
 			cat_heavy_armor
 			mio_cat_tech_heavy_armor_and_modules
@@ -1056,6 +1069,7 @@ technologies = {
 		}
 
 		categories = {
+			mio_cat_tech_all_armor_and_modules
 			armor
 			cat_heavy_armor
 			mio_cat_tech_heavy_armor_and_modules
@@ -1113,6 +1127,7 @@ technologies = {
 		}
 
 		categories = {
+			mio_cat_tech_all_armor_and_modules
 			armor
 			mio_cat_tech_light_armor_and_modules
 			mio_cat_tech_medium_armor_and_modules
@@ -1171,6 +1186,7 @@ technologies = {
 		}
 
 		categories = {
+			mio_cat_tech_all_armor_and_modules
 			armor
 			mio_cat_tech_light_armor_and_modules
 			mio_cat_tech_medium_armor_and_modules
@@ -1227,6 +1243,7 @@ technologies = {
 		}
 
 		categories = {
+			mio_cat_tech_all_armor_and_modules
 			armor
 			mio_cat_tech_light_armor_and_modules
 			mio_cat_tech_medium_armor_and_modules
@@ -1277,6 +1294,7 @@ technologies = {
 		}
 
 		categories = {
+			mio_cat_tech_all_armor_and_modules
 			armor
 			mio_cat_tech_light_armor_and_modules
 			mio_cat_tech_medium_armor_and_modules
@@ -1331,6 +1349,7 @@ technologies = {
 		}
 
 		categories = {
+			mio_cat_tech_all_armor_and_modules
 			armor
 			mio_cat_tech_light_armor_and_modules
 			mio_cat_tech_medium_armor_and_modules
@@ -1387,6 +1406,7 @@ technologies = {
 		}
 
 		categories = {
+			mio_cat_tech_all_armor_and_modules
 			armor
 			mio_cat_tech_light_armor_and_modules
 			mio_cat_tech_medium_armor_and_modules
@@ -1441,6 +1461,7 @@ technologies = {
 		}
 
 		categories = {
+			mio_cat_tech_all_armor_and_modules
 			armor
 			mio_cat_tech_light_armor_and_modules
 			mio_cat_tech_medium_armor_and_modules
@@ -1489,6 +1510,7 @@ technologies = {
 		}
 
 		categories = {
+			mio_cat_tech_all_armor_and_modules
 			armor
 			mio_cat_tech_light_armor_and_modules
 			mio_cat_tech_medium_armor_and_modules
@@ -1519,6 +1541,7 @@ technologies = {
 
 
 		categories = {
+			mio_cat_tech_all_armor_and_modules
 			armor
 		}
 	}

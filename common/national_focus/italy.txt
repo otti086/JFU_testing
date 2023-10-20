@@ -4706,7 +4706,6 @@ focus_tree = {
 		relative_position_id = ITA_expand_naval_facilities
 		cost = 5
 		available = {
-			has_tech = marines
 		}
 
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_MANPOWER}
@@ -4717,15 +4716,6 @@ focus_tree = {
 			add_to_variable = { ITA_rm_naval_invasion_capacity = 10 }
 			add_to_variable = { ITA_rm_invasion_preparation = -0.1 }
 			custom_effect_tooltip = ITA_forza_navale_especiale_rm_tt
-
-			hidden_effect = {
-				if = {
-					limit = {
-						NOT = { has_template = "Marines" }
-					}
-					load_oob = "unlock_marines"
-				}
-			}
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = ROOT
@@ -4739,12 +4729,11 @@ focus_tree = {
 				}
 			}
 
-			add_tech_bonus = {
-				name = ITA_forza_navale_especiale
-				bonus = 1.0
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.75
 				uses = 2
-				category = marine_tech
-				category = tp_tech
+				category = special_forces_doctrine
 			}
 
 			if = {

@@ -454,7 +454,7 @@ characters = {
 		portraits = {
 			army = {
 				large = GFX_portrait_FIN_erkki_raappana
-				small = GFX_idea_ENG_corgis_3 #TODO_Manu: GFX_portrait_FIN_erkki_raappana_small
+				small = GFX_portrait_FIN_erkki_raappana_small
 			}
 		}
 		corps_commander = {
