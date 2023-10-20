@@ -192,4 +192,6 @@ NDefines.NOperatives.MIN_NATIONAL_COVERAGE_FOR_PROPAGANDA = 99
 
 NDefines.NOperatives.AGENCY_CREATION_FACTORIES = 0
 
-NDefines.NIntel.ARMY_INTEL_COMBAT_BONUS_MAX_BONUS = 0.05
+NDefines.NIntel.ARMY_INTEL_COMBAT_BONUS_MAX_BONUS = 0
+
+NDefines.NIndustrialOrganisation.DESIGN_TEAM_CHANGE_XP_COST = 0	-- Flat cost added to the XP cost of a new equipment design. If 0, cost is entirely disabled.
