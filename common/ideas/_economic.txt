@@ -351,6 +351,10 @@ ideas = {
 
 		free_trade = {
 
+			rule = {
+				can_access_market = no
+			}
+
 			available = {
 				if = {
 					limit = {
@@ -409,6 +413,10 @@ ideas = {
 		}
 
 		export_focus = {
+
+			rule = {
+				can_access_market = no
+			}
 
 			available = {
 				NOT = {
@@ -493,6 +501,11 @@ ideas = {
 		}
 
 		limited_exports = {
+
+			rule = {
+				can_access_market = no
+			}
+
 			available = {
 				NOT = {
 					tag = EFR
@@ -557,6 +570,9 @@ ideas = {
 
 		closed_economy = {
 
+			rule = {
+				can_access_market = no
+			}
 
 			available = {
 				has_war = yes
