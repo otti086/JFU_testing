@@ -194,6 +194,6 @@ NDefines.NOperatives.AGENCY_CREATION_FACTORIES = 0
 
 NDefines.NIntel.ARMY_INTEL_COMBAT_BONUS_MAX_BONUS = 0
 
-NDefines.NIndustrial.Organisation.DESIGN_TEAM_CHANGE_XP_COST = 0	-- Flat cost added to the XP cost of a new equipment design. If 0, cost is entirely disabled.
+NDefines.NIndustrialOrganisation.DESIGN_TEAM_CHANGE_XP_COST = 1	-- Flat cost added to the XP cost of a new equipment design. If 0, cost is entirely disabled.
 
-NDefines.NMarket.IC_TO_CIC_FACTOR = 0.1,             -- The factor for mapping IC cost to CIC cost. Should be a positive number.
+NDefines.NMarket.IC_TO_CIC_FACTOR = 0.1             -- The factor for mapping IC cost to CIC cost. Should be a positive number.
