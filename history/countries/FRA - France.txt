@@ -23,10 +23,8 @@ starting_train_buffer = 2
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "FRA_1936_naval_mtg"
-		set_war_support = 0.1
 	else = {
 		set_naval_oob = "FRA_1936_naval_legacy"
-		set_war_support = 0.15
 	}
 }
 
@@ -58,7 +56,7 @@ if = {
 
 set_research_slots = 4
 set_stability = 0.5
-set_war_support = 0.10
+set_war_support = 0.15
 add_command_power = 20
 
 
