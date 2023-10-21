@@ -159,8 +159,8 @@ generic_tank_organization = {
 		all_parents = { generic_mio_trait_simplified_suspension generic_mio_trait_crew_ergonomics }
 
 		production_bonus = {
-			production_efficiency_gain_factor = 0.15
-			production_resource_need_factor = -0.15
+			production_efficiency_gain_factor = 0.10
+			production_resource_need_factor = -0.10
 		}
 	}
 
@@ -387,7 +387,7 @@ generic_infantry_tank_organization = {
 		all_parents = { generic_mio_trait_light_tank_improvements generic_mio_trait_medium_tank_improvements }
 
 		production_bonus = {
-			production_efficiency_gain_factor = 0.15
+			production_efficiency_gain_factor = 0.10
 		}
 	}
 
@@ -425,7 +425,7 @@ generic_infantry_tank_organization = {
 
 		equipment_bonus = {
 			reliability = 0.05
-			defense = 0.1
+			defense = 0.05
 		}
 	}
 
