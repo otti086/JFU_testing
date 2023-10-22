@@ -312,12 +312,11 @@ focus = {
 
 		completion_reward = {
 			add_ideas = { special_forces }
-			add_tech_bonus = {
-				name = FRA_fusiliers_marine
-				category = tp_tech
-				category = marine_tech
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
 				uses = 2
-				bonus = 1
+				category = special_forces_doctrine
 			}
 			add_tech_bonus = {
 				name = FRA_gun_bonus
@@ -436,8 +435,20 @@ focus = {
 				uses = 1
 				category = land_doctrine
 			}
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = FRA_AMX
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				show_mio_tooltip = FRA_hotchkiss_organization
+				mio:FRA_hotchkiss_organization = {
+					add_mio_funds = 1500
+					add_mio_research_bonus = 0.02
+				}
+			}
+			ELSE = {
+				custom_effect_tooltip = available_designer
+				show_ideas_tooltip = FRA_AMX
+			}
 		}
 	}	
 

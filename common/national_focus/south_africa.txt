@@ -1312,13 +1312,11 @@
         search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = SAF_south_african_special_forces
-				bonus = 1.0
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
 				uses = 1
-				category = para_tech
-				category = marine_tech
-				category = mountaineers_tech
+				category = special_forces_doctrine
 			}
 		}
 	}

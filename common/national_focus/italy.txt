@@ -3097,11 +3097,11 @@ focus_tree = {
 
 			army_experience = 15
 
-			add_tech_bonus = {
-				name = ITA_bersaglieri
-				bonus = 0.75
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.35
 				uses = 2
-				category = cat_special_forces_generic
+				category = special_forces_doctrine
 			}
 
 			set_technology = { bicycle_infantry = 1 popup = no }
@@ -3153,11 +3153,11 @@ focus_tree = {
 
 			army_experience = 15
 
-			add_tech_bonus = {
-				name = ITA_divisioni_alpine
-				bonus = 1.5
-				uses = 1
-				category = mountaineers_tech
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = special_forces_doctrine
 			}
 			
 		}
@@ -3233,12 +3233,11 @@ focus_tree = {
 					}
 				}
 			}
-
-			add_tech_bonus = {
-				name = ITA_fanti_dell_aria
-				bonus = 1.5
-				uses = 1
-				category = para_tech
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = special_forces_doctrine
 			}
 		}
 	}
@@ -4731,7 +4730,7 @@ focus_tree = {
 
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.75
+				cost_reduction = 0.35
 				uses = 2
 				category = special_forces_doctrine
 			}

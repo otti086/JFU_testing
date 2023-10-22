@@ -30,11 +30,12 @@ set_stability = 0.6
 set_war_support = 0.1
 # Starting tech
 set_technology = {
+	tech_trucks = 1
 	trench_warfare = 1
 	fleet_in_being = 1
 	fuel_silos = 1
 	fuel_refining = 1
-		infantry_weapons = 1
+	infantry_weapons = 1
 	infantry_weapons1 = 1
 
 	special_forces_mountaineers = 1

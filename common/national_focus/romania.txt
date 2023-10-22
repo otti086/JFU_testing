@@ -281,8 +281,7 @@ focus_tree = {
 		id = ROM_malaxa
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = ROM_danubian_transport_network }
-		mutually_exclusive = { focus = ROM_invite_foreign_motor_companies }
-		x = -1
+		x = 0
 		y = 3
 		relative_position_id = ROM_civil_works
 
@@ -329,42 +328,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ROM_invite_foreign_motor_companies
-		icon = GFX_goal_generic_army_motorized
-		prerequisite = { focus = ROM_danubian_transport_network }
-		mutually_exclusive = { focus = ROM_malaxa }
-		x = 1
-		y = 3
-		relative_position_id = ROM_civil_works
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 5
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-
-		completion_reward = {
-			country_event = DOD_romania.120
-		}
-	}
-
-	focus = {
 		id = ROM_hunedoara_steel_works
 		icon = GFX_goal_generic_construct_civilian
-		prerequisite = { focus = ROM_invite_foreign_motor_companies focus = ROM_malaxa }
+		prerequisite = { focus = ROM_malaxa }
 		x = -1
 		y = 4
 		relative_position_id = ROM_civil_works
@@ -434,7 +400,7 @@ focus_tree = {
 	focus = {
 		id = ROM_invest_in_the_iar
 		icon = GFX_goal_generic_construct_military
-		prerequisite = { focus = ROM_invite_foreign_motor_companies focus = ROM_malaxa }
+		prerequisite = { focus = ROM_malaxa }
 		x = 1
 		y = 4
 		relative_position_id = ROM_civil_works
@@ -478,8 +444,21 @@ focus_tree = {
 				}
 				set_state_flag = ROM_invest_in_the_iar_AF1
 			}
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = ROM_iar
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = ROM_iar_organization
+				mio:ROM_iar_organization = {
+					complete_mio_trait = generic_mio_trait_heavily_armed_aircraft
+					add_mio_funds = 2500
+				}
+			}
+			else = {
+				custom_effect_tooltip = available_designer
+				show_ideas_tooltip = ROM_iar
+			}
 		}
 	}
 
@@ -1005,7 +984,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = ROM_the_zb_53
 				bonus = 1.0
-				uses = 1
+				uses = 2
 				category = infantry_weapons
 			}
 		}
@@ -1039,6 +1018,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			custom_effect_tooltip = ROM_vanatori_de_munte_unit_tt
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = special_forces_doctrine
+			}
 			hidden_effect = {
 				division_template = {
 					name = "Vanatori de munte"
@@ -1069,12 +1054,6 @@ focus_tree = {
 						owner = ROM
 					}
 				}
-			}
-			add_tech_bonus = {
-				name = ROM_vanatori_de_munte
-				bonus = 1.0
-				uses = 1
-				category = mountaineers_tech
 			}
 		}
 	}
@@ -1133,7 +1112,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = ROM_modern_at_guns
-				bonus = 1.0
+				bonus = 1.01
 				uses = 2
 				category = cat_anti_tank
 			}
@@ -1169,6 +1148,7 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = ROM_mountain_artillery_tech_tt
+
 			hidden_effect = { set_technology = { mountain_gun = 1 } }
 		}
 	}
@@ -1343,8 +1323,20 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = ROM_leonidas_works
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = ROM_leonidas_works_organization
+				mio:ROM_leonidas_works_organization = {
+					add_mio_funds = 2500
+				}
+			}
+			else = {
+				custom_effect_tooltip = available_designer
+				show_ideas_tooltip = ROM_leonidas_works
+			}
 		}
 	}
 

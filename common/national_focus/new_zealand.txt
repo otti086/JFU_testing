@@ -620,7 +620,7 @@
 			add_tech_bonus = {
 				name = NZL_charlton_automatic_rifle
 				bonus = 1.0
-				uses = 1
+				uses = 2
 				category = infantry_weapons
 			}
 		}
@@ -798,11 +798,11 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = NZL_long_range_patrol
-				bonus = 1.00
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
 				uses = 2
-				category = marine_tech
+				category = special_forces_doctrine
 			}
 		}
 	}

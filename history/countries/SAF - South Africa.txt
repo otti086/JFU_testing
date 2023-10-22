@@ -26,6 +26,7 @@ set_stability = 0.6
 set_war_support = 0.1
 # Starting tech
 set_technology = {
+	tech_trucks = 1
 	trench_warfare = 1
 	fleet_in_being = 1
 	infantry_weapons = 1

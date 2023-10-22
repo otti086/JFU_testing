@@ -495,10 +495,6 @@ GER_opel_organization = {
 		OR = {
 			tag = GER
 			AND = {
-				tag = ROM
-				has_dlc = "Death or Dishonor"
-			}
-			AND = {
 				tag = BUL
 				has_dlc = "Battle for the Bosporus"
 			}
@@ -531,9 +527,5 @@ GER_opel_organization = {
 				NOT = { has_completed_focus = BUL_nationalization }
 			}
 		}
-		IF = {
-			limit = { FROM = { original_tag = ROM } }
-			FROM = { has_country_flag = GER_mot_chosen }
-		}	
 	}
 }

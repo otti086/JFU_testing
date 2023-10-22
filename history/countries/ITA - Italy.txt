@@ -332,7 +332,7 @@ set_technology = {
 	fuel_refining = 1
 	basic_train = 1
 	synth_oil_experiments = 1
-
+	tech_trucks = 1
 	special_forces_mountaineers = 1
 	special_forces_marines = 1
 	special_forces_paratroopers = 1

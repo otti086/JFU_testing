@@ -316,4 +316,5 @@ set_technology = { #VANILLA & DLC
 	special_forces_mountaineers = 1
 	special_forces_marines = 1
 	special_forces_paratroopers = 1
+	tech_trucks = 1
 }

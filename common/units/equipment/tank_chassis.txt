@@ -1219,7 +1219,7 @@ equipments = {
 		}
 		module_count_limit = {
 			category = tank_secondary_turret
-			count < 3 #two secondary turrets only
+			count < 2 #one secondary turret only
 		}
 		module_count_limit = {
 			module = sloped_armor
@@ -1278,7 +1278,7 @@ equipments = {
 
 		fuel_consumption = 0
 		maximum_speed = 5
-		build_cost_ic = 4.5
+		build_cost_ic = 5.5
 		reliability = 1.1
 		armor_value = 15
 		hardness = 0.85
