@@ -555,6 +555,9 @@ ENG_royal_arsenal_organization = {
 	include = generic_artillery_organization
 	icon = GFX_idea_royal_arsenal
 	allowed = {
+		OR = {
+			tag = ENG
+		}
 	}
 
 	available = {

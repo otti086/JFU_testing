@@ -1367,10 +1367,10 @@ spriteTypes = {
 	}
 	SpriteType = { 
 		name = "GFX_focus_huba_shine"
-		texturefile = "gfx/interface/goals/HUN/focus_huba.dds"
+		texturefile = "gfx/interface/goals/focus_huba.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/HUN/focus_huba.dds"
+			animationmaskfile = "gfx/interface/goals/focus_huba.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1383,7 +1383,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/HUN/focus_huba.dds"
+			animationmaskfile = "gfx/interface/goals/focus_huba.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1398,10 +1398,10 @@ spriteTypes = {
 	}
 	SpriteType = { 
 		name = "GFX_focus_HUN_nationalism_shine"
-		texturefile = "gfx/interface/goals/HUN/focus_HUN_nationalism.dds"
+		texturefile = "gfx/interface/goals/focus_HUN_nationalism.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/HUN/focus_HUN_nationalism.dds"
+			animationmaskfile = "gfx/interface/goals/focus_HUN_nationalism.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1414,7 +1414,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/HUN/focus_HUN_nationalism.dds"
+			animationmaskfile = "gfx/interface/goals/focus_HUN_nationalism.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1429,10 +1429,10 @@ spriteTypes = {
 	}
 	SpriteType = { 
 		name = "GFX_focus_greater_hun_shine"
-		texturefile = "gfx/interface/goals/HUN/greater_hun.dds"
+		texturefile = "gfx/interface/goals/greater_hun.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/HUN/greater_hun.dds"
+			animationmaskfile = "gfx/interface/goals/greater_hun.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1445,7 +1445,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/HUN/greater_hun.dds"
+			animationmaskfile = "gfx/interface/goals/greater_hun.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1460,10 +1460,10 @@ spriteTypes = {
 	}
 	SpriteType = { 
 		name = "GFX_focus_hun_united_nation_shine"
-		texturefile = "gfx/interface/goals/HUN/focus_hun_united_nation.dds"
+		texturefile = "gfx/interface/goals/focus_hun_united_nation.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/HUN/focus_hun_united_nation.dds"
+			animationmaskfile = "gfx/interface/goals/focus_hun_united_nation.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1476,7 +1476,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/HUN/focus_hun_united_nation.dds"
+			animationmaskfile = "gfx/interface/goals/focus_hun_united_nation.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
