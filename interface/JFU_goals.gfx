@@ -151,4 +151,73 @@ spriteTypes = {
 		name = "GFX_focus_ITA_roman"
 		texturefile = "gfx/interface/goals/focus_ITA_roman.dds"
 	}
+	SpriteType = { 
+		name = "GFX_American_Armor"
+		texturefile = "gfx/interface/goals/American_Armor.tga"
+	}
+	SpriteType = { 
+		name = "GFX_focus_ENG_general"
+		texturefile = "gfx/interface/goals/focus_ENG_general.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_ENG_home_defense"
+		texturefile = "gfx/interface/goals/focus_ENG_home_defense.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_ENG_limited"
+		texturefile = "gfx/interface/goals/focus_ENG_limited.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_ENG_steady"
+		texturefile = "gfx/interface/goals/focus_ENG_steady.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_FRA_de_gaulle"
+		texturefile = "gfx/interface/goals/focus_FRA_de_gaulle.dds"
+	}	
+	SpriteType = { 
+		name = "GFX_focus_GER_air_inno_1"
+		texturefile = "gfx/interface/goals/focus_GER_air_inno_1.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_GER_cas"
+		texturefile = "gfx/interface/goals/focus_GER_cas.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_GER_heavy_fighter"
+		texturefile = "gfx/interface/goals/focus_GER_heavy_fighter.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_huba"
+		texturefile = "gfx/interface/goals/focus_huba.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_HUN_nationalism"
+		texturefile = "gfx/interface/goals/focus_HUN_nationalism.dds"			
+	}
+		SpriteType = {
+		name = "GFX_focus_greater_hun"
+		texturefile = "gfx/interface/goals/greater_hun.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_hun_united_nation"
+		texturefile = "gfx/interface/goals/focus_hun_united_nation.dds"			
+	}
+	SpriteType = { 
+		name = "GFX_focus_JAP_new_naval"
+		texturefile = "gfx/interface/goals/focus_JAP_new_naval.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_generic_civs"
+		texturefile = "gfx/interface/goals/goal_generic_civs.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_generic_mils"
+		texturefile = "gfx/interface/goals/goal_generic_mils.dds"
+	}
+	SpriteType = { 
+		name = "GFX_goal_ITA_Regio_Esercito_2"
+		texturefile = "gfx/interface/goals/goal_ITA_Regio_Esercito_2.tga"
+	}
+
 }

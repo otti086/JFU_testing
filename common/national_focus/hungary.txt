@@ -168,7 +168,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_reaffirm_territorial_claims
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_focus_HUN_nationalism
 		prerequisite = { focus = HUN_renounce_the_treaty_of_trianon }
 		x = -1
 		y = 1
@@ -194,7 +194,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_proclaim_greater_hungary
-		icon = GFX_focus_proclaim_the_restauration_of_Austria_Hungary
+		icon = GFX_focus_greater_hun
 		prerequisite = { focus = HUN_reaffirm_territorial_claims }
 		x = 0
 		y = 1
@@ -840,7 +840,7 @@ focus_tree = {
 	############################
 	focus = {
 		id = HUN_home_defense
-		icon = GFX_goal_generic_fortify_city
+		icon = GFX_focus_hun_united_nation
 		prerequisite = { focus = HUN_bled_agreement }
 		x = 0
 		y = 1
@@ -880,7 +880,7 @@ focus_tree = {
 
 	focus = {
 		id = HUN_develop_tanks
-		icon = GFX_goal_generic_army_tanks
+		icon = GFX_focus_huba
 		prerequisite = { focus = HUN_home_defense }
 		x = -3
 		y = 1

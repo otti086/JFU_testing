@@ -902,7 +902,7 @@ focus_tree = {
 	focus = {
 		id = GER_air_innovation
 		text = air_innovation
-		icon = GFX_goal_generic_build_airforce
+		icon = GFX_focus_GER_air_inno_1
 		x = 12
 		y = 0
 		cost = 10
@@ -1055,7 +1055,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_long_range_escorts
-		icon = GFX_goal_generic_air_fighter
+		icon = GFX_focus_GER_heavy_fighter
 		prerequisite = { focus = GER_air_innovation }
 		x = 0
 		y = 1

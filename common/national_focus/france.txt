@@ -345,7 +345,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_battle_of_maneuver
-		icon = GFX_goal_generic_position_armies
+		icon = GFX_focus_FRA_de_gaulle
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_aggressive_focus }
