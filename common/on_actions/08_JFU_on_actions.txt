@@ -591,19 +591,19 @@ on_actions = {
 					SOV_cap_Building = yes
 				}				
 			}
-			if = {
-				limit = {
-					FROM = { tag = CHI }
-					FROM.FROM = { is_core_of = CHI }
-					CHI = { NOT = { controls_state = 608 } NOT = { controls_state = 597 }  }	
-					JAP = { NOT = { has_country_flag = china_spawn_ins } }
-				}	
-				CHI = { 
-					load_oob = "CHI_spawn2" 
-				}
-				JAP = { set_country_flag = china_spawn_ins}
-
-			}
+#			if = {
+#				limit = {
+#					FROM = { tag = CHI }
+#					FROM.FROM = { is_core_of = CHI }
+#					CHI = { NOT = { controls_state = 608 } NOT = { controls_state = 597 }  }	
+#					JAP = { NOT = { has_country_flag = china_spawn_ins } }
+#				}	
+#				CHI = { 
+#					load_oob = "CHI_spawn2" 
+#				}
+#				JAP = { set_country_flag = china_spawn_ins}
+#
+#			}
 			if = {
 				limit = {
 					FROM = { tag = NOR }
