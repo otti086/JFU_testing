@@ -24,6 +24,7 @@ state={
 		victory_points = {
 			10068 1 
 		}
+		add_extra_state_shared_building_slots = 2
 	}
 
 	provinces={

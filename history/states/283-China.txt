@@ -14,6 +14,7 @@ state = {
 		victory_points = {
 			2022 3 #Was in 12732, but is now here
 		}
+		add_extra_state_shared_building_slots = 2
 	}
 
 	provinces = {
