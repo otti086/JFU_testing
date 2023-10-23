@@ -429,6 +429,7 @@ technologies = {
 		}
 
 		categories = {
+			artillery
 			rocketry
 			mio_cat_all_artillery_equipment
 		}
@@ -473,6 +474,7 @@ technologies = {
 		}
 
 		categories = {
+			artillery
 			rocketry
 			mio_cat_all_artillery_equipment
 		}
@@ -517,6 +519,7 @@ technologies = {
 		}
 
 		categories = {
+			artillery
 			rocketry
 			mio_cat_all_artillery_equipment
 		}
@@ -552,6 +555,7 @@ technologies = {
 		}
 
 		categories = {
+			artillery
 			rocketry
 			mio_cat_all_artillery_equipment
 		}

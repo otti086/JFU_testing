@@ -33,7 +33,7 @@ NDefines.NMilitary.WITHDRAWING_SPEED_FACTOR = 0.25	-- VANILLA 0.15
 NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER = 0.060 -- VANILLA 0.0525
 NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.0575	-- VANILLA 0.053
 NDefines.NMilitary.PREFERRED_TACTIC_CHARACTER_SKILL_LEVEL_REQUIRED = 4 -- VANILLA 5(pregrinded change) -- Which level a field marhal or general has to be before they can pick their preferred tactic
-
+NDefines.NMilitary.MIN_DIVISION_BRIGADE_HEIGHT = 5		-- VANILLA 4 -- Min height of regiments in division designer.
 
 NDefines.NCountry.POPULATION_YEARLY_GROWTH_BASE = 0.0
 NDefines.NCountry.BASE_FUEL_CAPACITY = 100000

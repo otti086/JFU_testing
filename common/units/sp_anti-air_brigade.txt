@@ -13,7 +13,7 @@ sub_units = {
 			anti_air
 		}
 		
-		group = armor_combat_support
+		group = armor
 		
 		categories = {
 			category_all_armor
@@ -78,7 +78,7 @@ sub_units = {
 			anti_air
 		}
 		
-		group = armor_combat_support
+		group = armor
 		
 		categories = {
 			category_all_armor
@@ -147,7 +147,7 @@ sub_units = {
 			anti_air
 		}
 		
-		group = armor_combat_support
+		group = armor
 		
 		categories = {
 			category_all_armor
@@ -282,7 +282,7 @@ sub_units = {
 			anti_air
 		}
 		
-		group = armor_combat_support
+		group = armor
 		
 		categories = {
 			category_all_armor
