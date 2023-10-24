@@ -42,14 +42,16 @@ sub_units = {
 			movement = -0.4
 		}
 		mountain = 	{
-			attack = -0.1
+			attack = -0.6
+			defence = -0.5
 		}
 		plains = {
 			attack = -0.1
 			movement = -0.1
 		}
 		jungle = {
-			attack = -0.3
+			attack = -0.45
+			defence = -0.55
 			movement = -0.4
 		}
 		urban = {
@@ -110,7 +112,8 @@ sub_units = {
 			movement = -0.4
 		}
 		mountain = 	{
-		    attack = -0.1
+			attack = -0.4
+			defence = -0.3
 		}
 		plains = {
 			attack = -0.1
@@ -118,6 +121,7 @@ sub_units = {
 		}
 		jungle = {
 		    attack = -0.3
+			defence = -0.35
 			movement = -0.4
 		}
 		urban = {
@@ -178,14 +182,16 @@ sub_units = {
 			movement = -0.4
 		}
 		mountain = 	{
-		    attack = -0.1
+		    attack = -0.6
+			defence = -0.5
 		}
 		plains = {
 			attack = -0.1
 			movement = -0.1
 		}
 		jungle = {
-		    attack = -0.3
+			attack = -0.45
+			defence = -0.5
 			movement = -0.4
 		}
 		urban = {
@@ -246,14 +252,16 @@ sub_units = {
 			movement = -0.4
 		}
 		mountain = 	{
-		    attack = -0.1
+		    attack = -0.6
+			defence = -0.5
 		}
 		plains = {
 			attack = -0.1
 			movement = -0.1
 		}
 		jungle = {
-		    attack = -0.3
+		    attack = -0.6
+			defence = -0.75
 			movement = -0.4
 		}
 		urban = {
