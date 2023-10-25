@@ -75,8 +75,7 @@ technologies = {
 			acclimatization_cold_climate_gain_factor = 0.25
 			forest = {
 				attack = 0.10
-				defence = 0.05
-				movement = 0.10
+				movement = 0.05
 			}
 		}
 		
@@ -120,8 +119,7 @@ technologies = {
 		mountaineers = {
 			desert = {
 				attack = 0.10
-				defence = 0.05
-				movement = 0.10
+				movement = 0.05
 			}
 		}
 		
@@ -160,13 +158,11 @@ technologies = {
 		mountaineers = {
 			Mountain = {
 				attack = 0.05
-				defence = 0.05
-				movement = 0.10
+				movement = 0.05
 			}
 			Hills = {
 				attack = 0.05
-				defence = 0.05
-				movement = 0.10
+				movement = 0.05
 			}
 		}
 
@@ -215,8 +211,7 @@ technologies = {
 		mountaineers = {
 			Urban = {
 				attack = 0.10
-				defence = 0.05
-				movement = 0.10
+				movement = 0.05
 			}
 		}
 		
@@ -265,13 +260,11 @@ technologies = {
 		mountaineers = {
 			Mountain = {
 				attack = 0.10
-				defence = 0.05
-				movement = 0.10
+				movement = 0.05
 			}
 			Hills = {
 				attack = 0.10
-				defence = 0.05
-				movement = 0.10
+				movement = 0.05
 			}
 		}
 		
@@ -308,13 +301,11 @@ technologies = {
 		mountaineers = {
 			Mountain = {
 				attack = 0.05
-				defence = 0.05
-				movement = 0.10
+				movement = 0.05
 			}
 			Hills = {
 				attack = 0.05
-				defence = 0.05
-				movement = 0.10
+				movement = 0.05
 			}
 		}
 		
@@ -491,8 +482,7 @@ technologies = {
 		marine = {
 			jungle = {
 				attack = 0.10
-				defence = 0.05
-				movement = 0.10
+				movement = 0.05
 			}
 		}
 		
@@ -542,8 +532,7 @@ technologies = {
 		marine = {
 			marsh = {
 				attack = 0.10
-				defence = 0.05
-				movement = 0.10
+				movement = 0.05
 			}
 		}
 		
@@ -591,8 +580,7 @@ technologies = {
 		marine = {
 			marsh = {
 				attack = 0.05
-				defence = 0.05
-				movement = 0.10
+				movement = 0.05
 			}
 			river = {
 				attack = 0.05
@@ -728,7 +716,7 @@ technologies = {
 #			marsh = {
 #				attack = 0.05
 #				defence = 0.05
-#				movement = 0.10
+#				movement = 0.05
 #			}
 #			river = {
 #				attack = 0.05
@@ -780,8 +768,7 @@ technologies = {
 		marine = {
 			marsh = {
 				attack = 0.05
-				defence = 0.05
-				movement = 0.10
+				movement = 0.05
 			}
 			river = {
 				attack = 0.05
@@ -1009,8 +996,7 @@ xor = { marines_expeditionary_support }
 		rangers = {
 			snow = {
 				attack = 0.10
-				defence = 0.05
-				movement = 0.10
+				movement = 0.05
 			}
 		}
 		
@@ -1054,8 +1040,7 @@ xor = { marines_expeditionary_support }
 		rangers = {
 			jungle = {
 				attack = 0.10
-				defence = 0.05
-				movement = 0.10
+				movement = 0.05
 			}
 		}
 		
@@ -1106,12 +1091,10 @@ xor = { marines_expeditionary_support }
 		rangers = {
 			forest = {
 				attack = 0.05
-				defence = 0.05
 				movement = 0.05
 			}
 			jungle = {
 				attack = 0.05
-				defence = 0.05
 				movement = 0.05
 			}
 		}		
@@ -1153,8 +1136,7 @@ xor = { marines_expeditionary_support }
 		rangers = {
 			hills = {
 				attack = 0.10
-				defence = 0.05
-				movement = 0.10
+				movement = 0.05
 			}
 		}		
 			
@@ -1197,8 +1179,7 @@ xor = { marines_expeditionary_support }
 		rangers = {
 			Urban = {
 				attack = 0.10
-				defence = 0.05
-				movement = 0.10
+				movement = 0.05
 			}
 		}		
 		
@@ -1248,12 +1229,10 @@ xor = { marines_expeditionary_support }
 		rangers = {
 			forest = {
 				attack = 0.05
-				defence = 0.05
 				movement = 0.05
 			}
 			jungle = {
 				attack = 0.05
-				defence = 0.05
 				movement = 0.05
 			}
 		}
