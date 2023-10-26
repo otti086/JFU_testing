@@ -16,7 +16,15 @@ SAF_iscor_organization = {
         has_dlc = "Together for Victory"
     }
 }
-
+SAF_heavy_organization = {
+	include = generic_heavy_tank_organization
+	icon = GFX_idea_porsche
+	
+	allowed = {	
+        original_TAG = SAF
+        has_dlc = "Together for Victory"       
+	}
+}
 
 #####################
 

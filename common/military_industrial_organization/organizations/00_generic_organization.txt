@@ -381,6 +381,7 @@ generic_infantry_tank_organization = {
 
 		production_bonus = {
 			production_efficiency_gain_factor = 0.05
+			production_efficiency_cap_factor = 0.05
 		}
 	}
 
@@ -770,7 +771,7 @@ generic_medium_tank_organization = {
 	icon = GFX_idea_generic_tank_manufacturer_2
 
 	allowed = {
-		always = no # Archetype only - countries using it have their own verisons
+		NOT = { OR = { tag = GER tag = CAN tag = SOV tag = FRA tag = ENG tag = SAF tag = USA } }
 	}
 
 	equipment_type = { mio_cat_eq_all_medium_tank }
@@ -6296,7 +6297,7 @@ generic_artillery_organization = {
 		}
 		NOT = {
 			AND = {
-				OR = { tag = AST tag = SAF tag = NZL tag = CAN tag = RAJ }
+				OR = {tag = RAJ}
 				has_dlc = "Together for Victory"
 			}
 		}
@@ -6323,7 +6324,7 @@ generic_artillery_organization = {
 		}
 		NOT = {
 			AND = {
-				OR = { tag = BUL tag = GRE }
+				OR = { tag = BUL }
 				has_dlc = "Battle for the Bosporus"
 			}
 		}
@@ -6655,7 +6656,7 @@ generic_infantry_equipment_organization = {
 		}
 		NOT = {
 			AND = {
-				OR = { tag = AST tag = SAF tag = NZL tag = CAN tag = RAJ }
+				OR = { tag = AST tag = CAN tag = RAJ }
 				has_dlc = "Together for Victory"
 			}
 		}

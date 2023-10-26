@@ -44,15 +44,6 @@ ROM_leonidas_works_organization = {
 ##  #  # ### #    ##  
  
 #####################
-
-ROM_constanta_shipyard_organization = {
-	include = generic_task_force_ship_organization
-	icon = GFX_idea_generic_naval_manufacturer_2
-	allowed = { 
-		tag = ROM
-	}
-}
-
 ###########################
 
 ###  #    ##  #  # ###  ## 
@@ -98,24 +89,6 @@ ROM_iar_organization = {
 			air_attack = 0.05
 			air_ground_attack = 0.05
 		}
-	}
-}
-
-ROM_icar_organization = {
-	include = generic_general_aircraft_organization
-	icon = GFX_idea_ROM_ICAR
-	allowed = { 
-		tag = ROM
-		has_dlc = "Death or Dishonor"
-	}
-}
-
-ROM_set_organization = {
-	include = generic_naval_aircraft_organization
-	icon = GFX_idea_ROM_SET
-	allowed = { 
-		tag = ROM
-		has_dlc = "Death or Dishonor"
 	}
 }
 

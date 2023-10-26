@@ -30,14 +30,6 @@
 
 ###########################
 
-HUN_mw_aircraft_organization = {
-	include = generic_light_aircraft_organization
-	icon = GFX_idea_mw_aircraft
-	allowed = { 
-		tag = HUN
-	}
-}
-
 ################################### 
 
 #   #  ##  ### ### ###  ### ### #   

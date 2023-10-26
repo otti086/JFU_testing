@@ -28,24 +28,6 @@ CAN_vickers_armstrong_can_organization = {
  
 #####################
 
-CAN_kingston_shipbuilding_organization = {
-	name = CAN_kingston_shipbuilding_organization
-	include = generic_task_force_ship_organization
-	icon = GFX_idea_kingston_shipbuilding
-	allowed = {
-		original_TAG = CAN
-	}
-}
-
-CAN_halifax_shipyard_organization = {
-	name = CAN_halifax_shipyard_organization
-	include = generic_escort_ship_organization
-	icon = GFX_idea_halifax_shipyard
-	allowed = {
-		original_TAG = CAN
-	}
-}
-
 ###########################
 
 ###  #    ##  #  # ###  ## 
@@ -55,23 +37,6 @@ CAN_halifax_shipyard_organization = {
 #    ### #  # #  # ### ##  
 
 ###########################
-CAN_de_havilland_organization = {
-	name = CAN_de_havilland_organization
-	include = generic_medium_aircraft_organization
-	icon = GFX_idea_de_havilland
-	allowed = {
-		original_TAG = CAN
-	}
-}
-
-CAN_canadian_car_foundry_organization = {
-	name = CAN_canadian_car_foundry_organization
-	include = generic_light_aircraft_organization
-	icon = GFX_idea_canadian_car_foundry
-	allowed = {
-		original_TAG = CAN
-	}
-}
 
 
 ################################### 
