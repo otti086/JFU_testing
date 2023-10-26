@@ -1906,6 +1906,13 @@ pregrinded_effect = {
 			add_unit_leader_trait = infantry_leader	
 			add_unit_leader_trait = ranger
 		}
+		ENG_harold_alexander = { add_attack = 1}
+		ENG_harold_alexander = {
+			add_unit_leader_trait = pre_grinded
+			add_unit_leader_trait = panzer_expert
+			add_unit_leader_trait = hill_fighter	
+			add_unit_leader_trait = trait_engineer		
+		}
 	}
 	USA = {
 		USA_george_s_patton = { add_attack = 1}
@@ -2000,6 +2007,7 @@ pregrinded_effect = {
 			add_unit_leader_trait = guerilla_fighter
 			add_unit_leader_trait = expert_improviser			
 		}
+		SAF_guy_hallifax = { add_skill_level = 1 }
 		SAF_guy_hallifax = {
 			add_unit_leader_trait = trickster
 			add_unit_leader_trait = pre_grinded
@@ -2051,6 +2059,7 @@ pregrinded_effect = {
 			add_unit_leader_trait = desert_fox		
 			add_unit_leader_trait = guerilla_fighter		
 		}
+		AST_alan_vasey = { add_skill_level = 1 }
 		AST_alan_vasey = {
 			add_unit_leader_trait = trickster
 			add_unit_leader_trait = pre_grinded
@@ -2083,6 +2092,11 @@ pregrinded_effect = {
 		}
 	}
 	MEX = {
+		MEX_gildardo_magana = { add_skill_level = 1 }
+		MEX_gildardo_magana = { add_attack = 2 }
+		MEX_gildardo_magana = { add_defense = 2 }
+		MEX_gildardo_magana = { add_planning = 2 }
+		MEX_gildardo_magana = { add_logistics = 2 }
 		MEX_heliodoro_charis = {
 			add_unit_leader_trait = trickster
 			add_unit_leader_trait = pre_grinded
@@ -2091,6 +2105,11 @@ pregrinded_effect = {
 			add_unit_leader_trait = infantry_leader
 			add_unit_leader_trait = hill_fighter
 		}
+		MEX_gildardo_magana = { add_skill_level = 1 }
+		MEX_gildardo_magana = { add_attack = 3 }
+		MEX_gildardo_magana = { add_defense = 2 }
+		MEX_gildardo_magana = { add_planning = 1 }
+		MEX_gildardo_magana = { add_logistics = 1 }
 		MEX_gildardo_magana = {
 			add_unit_leader_trait = trickster
 			add_unit_leader_trait = pre_grinded
@@ -2119,8 +2138,8 @@ pregrinded_effect = {
 			add_unit_leader_trait = guerilla_fighter		
 		}
 		RAJ_douglas_gracey = { add_skill_level = 1 }
-		RAJ_douglas_gracey = { add_attack = 5 }
-		RAJ_douglas_gracey = { add_defense = 2 }
+		RAJ_douglas_gracey = { add_attack = 3 }
+		RAJ_douglas_gracey = { add_defense = 1 }
 		RAJ_douglas_gracey = {
 			add_unit_leader_trait = pre_grinded
 			add_unit_leader_trait = guerilla_fighter
@@ -2198,8 +2217,16 @@ JFU_update_generals = {
 			add_unit_leader_trait = thorough_planner
 			add_unit_leader_trait = commando			
 		}
+		MEX_lazaro_cardenas = { add_skill_level = 1 }
+		MEX_lazaro_cardenas = {
+			add_unit_leader_trait = commando
+		}
 	}
 	BRA = {
+		BRA_eurico_gaspar_dutra = { add_attack = 3 }
+		BRA_eurico_gaspar_dutra = { add_defense = 1 }
+		BRA_eurico_gaspar_dutra = { add_planning = 3 }
+		BRA_eurico_gaspar_dutra = { add_logistics = 2 }
 		BRA_eurico_gaspar_dutra = {
 			add_unit_leader_trait = commando
 			add_unit_leader_trait = trait_mountaineer		
@@ -2209,6 +2236,10 @@ JFU_update_generals = {
 			add_unit_leader_trait = thorough_planner
 			add_unit_leader_trait = trait_mountaineer	
 		}
+		BRA_augusto_rademaker = { add_attack = 4 }
+		BRA_augusto_rademaker = { add_defense = 2 }
+		BRA_augusto_rademaker = { add_planning = 3 }
+		BRA_augusto_rademaker = { add_logistics = 2 }
 		BRA_mascarenhas_de_morais = {
 			add_unit_leader_trait = expert_improviser	
 			add_unit_leader_trait = trait_engineer
@@ -2253,11 +2284,19 @@ JFU_update_generals = {
 		}
 	}
 	SAF = {
+		SAF_george_edwin_brink = { add_attack = 2 }
+		SAF_george_edwin_brink = { add_defense = 1 }
+		SAF_george_edwin_brink = { add_planning = 2 }
+		SAF_george_edwin_brink = { add_logistics = 3 }
 		SAF_george_edwin_brink = {
 			add_unit_leader_trait = trait_engineer
 			add_unit_leader_trait = fortress_buster
 			add_unit_leader_trait = ranger
 		}
+		SAF_guy_hallifax = { add_attack = 2 }
+		SAF_guy_hallifax = { add_defense = 2 }
+		SAF_guy_hallifax = { add_planning = 2 }
+		SAF_guy_hallifax = { add_logistics = 2 }
 		SAF_guy_hallifax = {
 			add_unit_leader_trait = trait_engineer
 			add_unit_leader_trait = fortress_buster	
@@ -2320,6 +2359,10 @@ JFU_update_generals = {
 		}
 		ENG_neil_ritchie = {
 			add_unit_leader_trait = commando
+		}
+		ENG_harold_alexander = {
+			add_unit_leader_trait = fortress_buster
+			add_unit_leader_trait = expert_improviser
 		}
 	}
 	FRA = {

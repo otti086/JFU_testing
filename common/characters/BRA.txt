@@ -59,13 +59,13 @@ characters={
 				small=GFX_portrait_BRA_augusto_rademaker_small
 			}
 		}
-		navy_leader={
-			traits = {navy_career_officer}
+		corps_commander={
+			traits = { }
 			skill=3
 			attack_skill=2
 			defense_skill=2
-			maneuvering_skill=1
-			coordination_skill=2
+			planning_skill=1
+			logistics_skill=2
 			legacy_id=-1
 		}
 	}

@@ -280,6 +280,12 @@ FIN_motti_tactics_category = {
 			FROM = {
 				is_controlled_by = ROOT
 			}
+			NOT = { 
+				has_game_rule = { 
+					rule = finland_focus 
+					option = HORST_ENABLE_MOD_FINLAND	
+				} 
+			}
 		}
 		
 		cancel_if_not_visible = yes
