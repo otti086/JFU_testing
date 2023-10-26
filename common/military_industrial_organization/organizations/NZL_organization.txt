@@ -79,13 +79,3 @@ NZL_port_chalmers_shipbuilding_organization = {
 
 
 ###################################
-
-NZL_charlton_mw_organization = {
-	name = NZL_charlton_mw_organization
-	include = generic_motorized_mechanized_organization
-	icon = GFX_idea_NZL_charlton_mw
-	allowed = {
-		original_TAG = NZL
-		has_dlc = "Together for Victory"
-	}
-}

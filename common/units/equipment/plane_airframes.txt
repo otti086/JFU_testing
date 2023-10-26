@@ -146,7 +146,10 @@ equipments = {
 			module = small_bomb_bay
 			count < 3
 		}
-
+		module_count_limit = {
+			module = armor_plate_small
+			count < 3
+		}
 		module_count_limit = {
 			module = torpedo_mounting
 			count < 2

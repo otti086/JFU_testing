@@ -720,6 +720,14 @@ SOV_kirov_organization = {
 ##        ##       ######### ##  #### ##             ## 
 ##        ##       ##     ## ##   ### ##       ##    ## 
 ##        ######## ##     ## ##    ## ########  ######  
+SOV_CAS_organization = {
+	include = generic_cas_aircraft_organization
+	icon = SOV_merge_aircraft_plant_1
+	
+	allowed = {	 
+		tag = SOV
+	}
+}
 
 SOV_mig_design_bureau_organization = {
 	include = generic_light_aircraft_organization
@@ -1360,6 +1368,7 @@ SOV_grabin_design_bureau_organization = {
 		}
 
 		available = {
+			always = no
 			FROM = {
 				has_full_control_of_state = 398 #PERM
 			}
@@ -1388,6 +1397,7 @@ SOV_grabin_design_bureau_organization = {
 		}
 
 		available = {
+			always = no
 			FROM = {
 				has_full_control_of_state = 227 #STALINO
 			}
@@ -1422,6 +1432,7 @@ SOV_grabin_design_bureau_organization = {
 		}
 
 		available = {
+			always = no
 			FROM = {
 				has_full_control_of_state = 582 #MAGNITOGORSK
 			}
@@ -1496,6 +1507,7 @@ SOV_tula_arms_plant_organization = {
 		}
 
 		available = {
+			always = no
 			FROM = {
 				has_full_control_of_state = 399 #UDMURTIA (Izhevsk)
 			}
@@ -1524,6 +1536,7 @@ SOV_tula_arms_plant_organization = {
 		}
 
 		available = {
+			always = no
 			FROM = {
 				has_full_control_of_state = 227 #STALINO
 			}
@@ -1558,6 +1571,7 @@ SOV_tula_arms_plant_organization = {
 		}
 
 		available = {
+			always = no
 			FROM = {
 				has_full_control_of_state = 582 #MAGNITOGORSK
 			}
@@ -1623,6 +1637,7 @@ SOV_gaz_organization = {
 		}
 
 		available = {
+			always = no
 			FROM = {
 				has_full_control_of_state = 252 #GORKY
 			}
@@ -1651,6 +1666,7 @@ SOV_gaz_organization = {
 		}
 
 		available = {
+			always = no
 			FROM = {
 				has_full_control_of_state = 227 #STALINO
 			}
@@ -1685,6 +1701,7 @@ SOV_gaz_organization = {
 		}
 
 		available = {
+			always = no
 			FROM = {
 				has_full_control_of_state = 582 #MAGNITOGORSK
 			}

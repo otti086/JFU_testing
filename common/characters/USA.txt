@@ -1201,11 +1201,11 @@ characters={
 					has_completed_focus  = USA_reach_out_to_the_ware_group 
 				}
 				NOT  = {
-					AND = {
-						has_idea = undisturbed_isolation
 						has_idea  = USA_henry_morgenthau 
-					}
 				}
+				NOT  = {
+						has_idea = undisturbed_isolation
+				}				
 			}
 			visible  = {
 				has_dlc = "Man the Guns"
@@ -1408,11 +1408,11 @@ characters={
 			}
 			available  = {
 				NOT  = {
-					AND = {
-						has_idea = undisturbed_isolation
-						has_idea  = harry_white
-					}
+						has_idea  = USA_henry_morgenthau 
 				}
+				NOT  = {
+						has_idea = harry_white
+				}				
 			}
 			traits  = {
 				financial_expert 

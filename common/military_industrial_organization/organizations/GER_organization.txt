@@ -297,38 +297,7 @@ GER_junkers_organization = {
 	icon = GFX_idea_junkers
 	
 	allowed = {	 
-		OR = {
-			tag = GER 
-			AND = {
-				tag = ETH
-				has_dlc = "By Blood Alone"
-			}
-		}
-	}
-	
-	visible = {
-	}
-
-	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = GER } }
-			}
-			FROM = { NOT = { has_war_with = GER } }
-		}
-
-		IF = {
-			limit = {
-				FROM = { NOT  = { original_tag = GER } }
-			}
-			custom_trigger_tooltip = {
-				tooltip = has_invited_mio_tt
-				FROM = {
-					has_country_flag = has_invited_GER_junkers_organization_flag
-				}
-			}
-		}
+		tag = GER 
 	}
 
 	add_trait = {
