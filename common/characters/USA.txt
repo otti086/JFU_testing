@@ -1408,7 +1408,7 @@ characters={
 			}
 			available  = {
 				NOT  = {
-						has_idea  = USA_henry_morgenthau 
+						has_idea = undisturbed_isolation
 				}
 				NOT  = {
 						has_idea = harry_white
