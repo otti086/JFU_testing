@@ -184,7 +184,7 @@
  MAN_anshan_steelworks_desc:0 "Founding a steel mill will enable the rest of our heavy industry to develop"
  # MAN_showa_steel_desc:0 "We can further develop our steel mill in Liaotung into the largest in east Asia with the help of Japan."
 
- tooltip_MAN_railways:0 "§YBegins work on a railway network across Manchuria§ \n\n§YRailway work is completed every 105 days until all states have been developed. Railway expansion adds 1 civilian factory, 1 infrastructure, and 3 building slot§\n\n"
+ tooltip_MAN_railways:0 "§YBegins work on a railway network across Manchuria§ \n\n§YRailway work is completed every 140 days until all states have been developed. Railway expansion adds 1 civilian factory, 1 infrastructure, and 3 building slot§\n\n"
 
  fin_army_effort:0 "Army Effort"
  fin_army_effort_desc:0 "Despite the increasing possibilities of aerial and naval warfare, ground combat is still key in tomorrow's wars. With preparation, we can avoid reliving the hell of the trenches."
