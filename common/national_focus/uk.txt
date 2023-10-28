@@ -1610,6 +1610,11 @@ focus_tree = {
 					level = 5
 					instant_build = yes
 				}
+				set_building_level = {
+					type = coastal_bunker
+					level = 5
+					instant_build = yes
+				}
 			}
 		}
 	}

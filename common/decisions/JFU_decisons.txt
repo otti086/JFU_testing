@@ -1527,7 +1527,7 @@ JFU_decisions = {
 		available = {NOT = { FRA = { owns_state = 16 }}  check_variable = { FRA.FRA_legitimacy < 100 }
 						FRA = { has_country_flag = france_is_kill}}
 		visible = {	tag = ENG }
-		cost = 50
+		cost = 0
 		complete_effect = {
 		custom_effect_tooltip = "French Legitimacy will increase by 20"
 			add_to_variable =  { var = FRA.FRA_legitimacy value = 20 }

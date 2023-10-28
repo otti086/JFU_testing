@@ -567,6 +567,8 @@ on_actions = {
 						335 = { is_controlled_by = GER }
 						672 = { is_controlled_by = GER }
 						334 = { is_controlled_by = GER }
+						667 = { is_controlled_by = GER }
+						673 = { is_controlled_by = GER }
 					}
 				}
 				HOL = {
@@ -574,6 +576,7 @@ on_actions = {
 					transfer_state = 672
 					transfer_state = 334
 					transfer_state = 667
+					transfer_state = 673
 				}
 			}
 			if = {

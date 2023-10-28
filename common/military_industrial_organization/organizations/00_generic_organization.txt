@@ -3544,23 +3544,7 @@ generic_general_aircraft_organization = {
 	icon = GFX_idea_generic_air_manufacturer_1
 
 	allowed = {
-		NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CAN tag = YUG tag = ROM tag = CZE tag = HUN tag = CHI tag = MAN tag = HOL tag = BUL tag = GRE } }
-		NOT = { tag = SPR }
-		NOT = {
-			AND = {
-				tag = POL
-				OR = {
-					has_dlc = "Poland: United and Ready"
-					has_dlc = "No Step Back"
-				}
-			}
-		}
-		NOT = {
-			AND = {
-				tag = MEX
-				has_dlc = "Man the Guns"
-			}
-		}
+		NOT = { OR = { tag = MEX tag = SPR tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CAN tag = YUG tag = ROM tag = CZE tag = HUN tag = CHI tag = MAN tag = HOL tag = BUL tag = GRE } }
 		NOT = {
 			AND = {
 				OR = { tag = FIN tag = NOR tag = DEN  tag = SWE }
