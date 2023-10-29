@@ -219,5 +219,55 @@ spriteTypes = {
 		name = "GFX_goal_ITA_Regio_Esercito_2"
 		texturefile = "gfx/interface/goals/goal_ITA_Regio_Esercito_2.tga"
 	}
+	SpriteType = {
+		name = "GFX_Bombs_Away"
+		textureFile = "gfx/interface/goals/Bombs_Away.tga"
+	}
+	SpriteType = {
+		name = "GFX_Aerial_Offensive"
+		textureFile = "gfx/interface/goals/Aerial_Offensive.tga"
+	}
+	SpriteType = {
+		name = "GFX_GER_rhineland"
+		texturefile = "gfx/interface/goals/ger/GER_rhineland.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_anschluss"
+ 		texturefile = "gfx/interface/goals/ger/GER_anschluss.tga"
+	}
+	SpriteType = {
+		name = "GFX_GER_total_war"
+		textureFile = "gfx/interface/goals/ger/GER_total_war.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_germaniawerft"
+		texturefile = "gfx/interface/goals/GER_germaniawerft.tga"
+	}
+	SpriteType = {
+		name = "GFX_GER_naval_effort2"
+		texturefile = "gfx/interface/goals/ger/GER_naval_effort2.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_eng_naval_rearm"
+		texturefile = "gfx/interface/goals/eng/ENG_naval_rearmament.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_demand_sudetenland"
+		texturefile = "gfx/interface/goals/ger/GER_demand_sudetenland.tga"
+	}
+	SpriteType = {
+		name = "GFX_GER_end_of_czechoslovakia"
+	 	texturefile = "gfx/interface/goals/ger/GER_end_of_czechoslovakia.tga"
+	}
+	SpriteType = {
+		name = "GFX_GER_demand_memel"
+		texturefile = "gfx/interface/goals/ger/GER_demand_memel.dds"
+	}
+
+
+
+
+
+
 
 }

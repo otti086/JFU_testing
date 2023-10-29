@@ -275,7 +275,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 
-		icon = GFX_goal_generic_construct_military
+		icon = GFX_focus_generic_air_defense
 		x = -4
 		y = 1
 		relative_position_id = limited_rearmament_focus
@@ -893,7 +893,7 @@ focus_tree = {
 	focus = {
 		id = fighter_command_focus
 		prerequisite = { focus = air_rearmament_focus }
-		icon = GFX_goal_generic_air_fighter
+		icon = GFX_focus_generic_cas_aircraft
 		x = -1
 		y = 2
 		relative_position_id = air_rearmament_focus
@@ -949,7 +949,7 @@ focus_tree = {
 	focus = {
 		id = bomber_command_focus
 		prerequisite = { focus = air_rearmament_focus }
-		icon = GFX_goal_generic_air_bomber
+		icon = GFX_focus_SWE_marauder_bombers
 		x = 0
 		y = 1
 		relative_position_id = air_rearmament_focus
@@ -1090,7 +1090,7 @@ focus_tree = {
 	focus = {
 		id = naval_rearmament_focus
 		prerequisite = { focus = general_rearmament_focus }
-		icon = GFX_goal_generic_construct_naval_dockyard 
+		icon = GFX_goal_eng_naval_rearm 
 		x = 2
 		y = 1
 		relative_position_id = general_rearmament_focus
@@ -1355,7 +1355,7 @@ focus_tree = {
 	focus = {
 		id = ENG_expand_the_repair_yards
 		prerequisite = { focus = uk_battleship_focus focus = uk_carrier_focus }
-		icon = GFX_goal_generic_production
+		icon = GFX_focus_generic_refit_civilian_ships
 		x = -1
 		y = 1
 		relative_position_id = uk_battleship_focus
@@ -2133,7 +2133,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
 			RAJ = {
-				add_opinion_modifier = { target = ENG modifier = aided_industry }
 				random_owned_controlled_state = {
 					limit = {
 						free_building_slots = {
@@ -2181,10 +2180,6 @@ focus_tree = {
 						instant_build = yes
 					}
 					set_state_flag = ENG_uk_india_focus_1IC
-				}
-				add_autonomy_ratio = {
-					value = -0.05
-					localization = uk_india_focus
 				}
 			}
 		}

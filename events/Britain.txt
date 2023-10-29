@@ -131,37 +131,6 @@ country_event = {
 	}
 }
 
-#Time for India to be free
-country_event = {
-	id = britain.6
-	title = britain.6.t
-	desc = britain.6.d
-	picture = GFX_report_event_ghandi_women
-
-	trigger = {
-		tag = ENG
-		has_global_flag = indian_independence_promised
-		NOT = { has_idea = indian_independence_promised_idea }
-		RAJ = { is_puppet_of = ENG }
-	}
-	
-	mean_time_to_happen = {
-		days = 30
-	}
-	
-	option = {
-		name = britain.6.a
-		end_puppet = RAJ
-	}
-	option = {
-		name = britain.6.b
-		RAJ = {
-			add_stability = -0.3
-			add_war_support = -0.2
-		}
-	}
-}
-
 #End trade with Germany event for SWE/NOR
 country_event = {
 	id = britain.7
