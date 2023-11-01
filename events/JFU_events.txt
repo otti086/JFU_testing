@@ -602,14 +602,14 @@ news_event = {
 	}
 	immediate = {
 		set_global_flag = fall_of_aswan
-		if = {
-			limit = {
-				NOT = { GER = { has_war_with = SOV } }
-			}
-			GER = {
-				add_timed_idea = { idea = GER_over_extented_military days = 210 }
-			}
-		}
+	#	if = {
+	#		limit = {
+	#			NOT = { GER = { has_war_with = SOV } }
+	#		}
+	#		GER = {
+	#			add_timed_idea = { idea = GER_over_extented_military days = 210 }
+	#		}
+	#	}
 	}
 	mean_time_to_happen = {
 		days = 2
