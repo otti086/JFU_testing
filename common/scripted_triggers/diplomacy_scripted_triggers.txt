@@ -44,7 +44,8 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
 			date > 1940.01.01
 		}
 	}
-	if = { limit = { ROOT = { axis = yes  } } 	NOT = { FROM = { OR = { tag = MAN tag = JAP } } } }
+	if = { limit = { FROM = { axis = yes  } } 	NOT = { ROOT = { OR = { tag = MAN tag = JAP } } } }
+	if = { limit = { FROM = { OR = { tag = MAN tag = JAP } } } 	NOT = { ROOT = { axis = yes  } } }
 	if = { 
 		limit = {
 			FROM = { axis = yes}
@@ -73,6 +74,8 @@ DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = {
 	}
 }
 DIPLOMACY_REQUEST_LICENSED_PRODUCTION_ENABLE_TRIGGER = {
+}
+DIPLOMACY_REQUEST_ACCESS_TO_LICENCE_PRODUCTION_ENABLE_TRIGGER = {
 	if = { 
 		limit = {
 			FROM = { axis = yes}
@@ -85,15 +88,8 @@ DIPLOMACY_REQUEST_LICENSED_PRODUCTION_ENABLE_TRIGGER = {
 		}
 		NOT = {	ROOT = { axis = yes } }
 	}
-	if = {
-		limit = { 
-			FROM = { tag = NOR } 
-		}
-		has_global_flag = NOR_RUGES_PLAN 
-	}
 }
 DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = { always = no }
-
 DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
 	if = {
 		limit = {

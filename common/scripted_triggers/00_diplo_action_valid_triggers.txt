@@ -21,5 +21,8 @@ is_diplomatic_action_valid_offer_join_faction = { always = no }
 is_diplomatic_action_valid_guarantee = { always = no }
 is_diplomatic_action_valid_peace_proposal = { always = no }
 is_diplomatic_action_valid_reduce_autonomy = { always = no }
+is_diplomatic_action_valid_increase_autonomy = { always = no }
 is_diplomatic_action_valid_improve_relation = { always = no }
 is_diplomatic_action_valid_increase_autonomy = { always = no }
+is_diplomatic_action_valid_set_faction_spymaster = { always = no }
+is_diplomatic_action_valid_transfert_spymaster = { always = no }

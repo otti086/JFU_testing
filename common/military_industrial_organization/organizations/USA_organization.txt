@@ -251,6 +251,17 @@ USA_newport_news_shipbuilding_organization = {
 
 ###########################
 
+
+USA_light_aircraft_organization = {
+	include = generic_light_aircraft_organization
+	icon = GFX_idea_supermarine
+
+	allowed = {	
+		tag = USA 
+		has_dlc = "Arms Against Tyranny"
+	}
+}
+
 USA_north_american_aviation_organization = {
 	include = generic_range_focused_aircraft_organization
 	icon = GFX_idea_north_american_aviation

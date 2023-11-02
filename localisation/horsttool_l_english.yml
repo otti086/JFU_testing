@@ -1024,8 +1024,7 @@
  
  
  
- GER_second_vienna_focus_tt:0 "This focus is automatically completed by an event which triggers in §YAugust 1940§!."
- GER_ussr_war_goal_focus_tt:0 "This focus is automatically completed in case of war with the §YSoviet Union§!."
+
  GER_focus_fall_blau:0 "Fall Blau"
  GER_danzig_or_war_tt:0 "With the claim of Danzig, this focus justifies a war against §YPoland§!."
  GER_around_maginot_tt:0 "This focus is automatically completed in case of war with §YBelgium, Nehterlands and Luxemburg§!."
@@ -1034,7 +1033,7 @@
  GER_fall_of_france_tt:0 "This focus is automatically completed upon the capitulation of §YFrance§!."
  GER_fall_blau_focus_tt:0 "This focus is automatically completed upon pressing the Fall Blau decision"
  GER_decision_focus_tt:0 "This focus is completed by selecting the matching £decision_icon_small §YDecision§! under §YJFU Decisions§!.\n\n"
- endsieg_tt:0 "§HOur§! §CDivision Attack on core territory§! §Hand§! §CDivision Defense on core territory§! §Hwill increase by§! §C30%§! §HWe will also deploy §G72 40w infantry divisions§! to hold the line.§!\n\n"
+ 
  endsieg_tanks_tt:0 "§RWe will organize an army of 4 Panzer divisions in Berlin§!"
  ITA_blackshirts_div_cap_20_tt:0 "Modify template cap of §YCamicie Nere§! by §G+20§!."
  ITA_strengthen_the_blackshirts_spawn_divs_10_tt:0 "Create §Y10 Camicie Nere§! divisions in §Y[THIS.GetName]§!."
@@ -1042,16 +1041,29 @@
  
  
  
- 
+ #FOCI
  axis_fall_blau:0 "Fall Blau"
  GER_plan_z_cv:0 "Graf Zeppelin Experiments"
  GER_plan_z_cv_desc:0 ""
  GER_plan_z_bb:0 "Lay Down the Bismarck"
  GER_plan_z_bb_desc:0 ""
+ 
+ SOV_Bessarabia:0 "Demand Besserabia"
+
+ #tooltips
 
  SOV_behead_the_snake_JFU_tt:0 "Trotsky will be §Rautomatically assasinated §Win 100 days."
+ 
+ UK_imperial_conference_tt:0 " Add §YImperial Conference Economy Agreements§!, which grants (Factory Output §G+15.00%§!, Dockyard Output §G+15.00%§!).\n Add §YImperial Conference Economy Agreements§! which grants (§YCivilian Factory§! construction Speed §G+15.00%§!, §YMilitary Factory§! construction speed §G+15.00%§!, §!Dockyard§! construction Speed §G+15.00%§!)\n Gain Base War Support §G+10.00%§!\n(@AST§YAustralia, @CANDominion of Canada, @RAJBritish Raj,\n @NZLNew Zealand and @SAFSouth Africa§!):\n    Add §YImperial Conference Defense Agreements§! which grants (Factory Output §G+10.00%§!, Dockyard Output §G+10.00%§!).\n    Add §YImperial Conference Economy Agreements§! which grants (§YCivilian Factory§! construction Speed §G+10.00%§!, §YMilitary Factory§! construction speed §G+10.00%§!, §!Dockyard§! construction Speed §G+10.00%§!)\n   Gain Base War Support §G+10.00%§! "
+ 
+ GER_second_vienna_focus_tt:0 "This focus is automatically completed by an event which triggers in §YAugust 1940§!."
+ GER_ussr_war_goal_focus_tt:0 "This focus is automatically completed in case of war with the §YSoviet Union§!."
+ endsieg_tt:0 "§HOur§! §CDivision Attack on core territory§! §Hand§! §CDivision Defense on core territory§! §Hwill increase by§! §C30%§! §HWe will also deploy §G72 40w infantry divisions§! to hold the line.§!\n\n"
+ endsieg_allies_tt:0 "Add '§YBattle of the Buldge§!' which grants (§YAll Allied Nations§!) Attack bonus against countries §G+15%§!, (§YAll Allied Nations§!) Defense bonus against countries §G+10%§!, (§Y@SOVSoviet Union§!) Attack bonus against countries §R-15%§!, (§Y@SOVSoviet Union§!) Defense bonus against countries §R-10%§!) for 180 day(s)."
+ endsieg_comintern_tt:0 "Add '§YSteiners Counterattack§!' which grants (§Y@SOVSoviet Union§!) Attack bonus against countries §G+15%§!, (§Y@SOVSoviet Union§!) Defense bonus against countries §G+10%§!, (§YAll Allied Nations§!) Attack bonus against countries §R-15%§!, (§YAll Allied Nations§!) Defense bonus against countries §R-10%§!) for 180 day(s)." 
+ 
+ #decisions
 
- SOV_Bessarabia:0 "Demand Besserabia"
  GER_fall_gelb:0 "§gFall§! §YGelb (Belgium and Netherlands)§!"
  GER_fall_weiss:0 "§gFall§! §WWeiss (Poland)§! and §gFall§! §RRot (France)§!"
  GER_weserbung_operation:0 "Unternehmen Weserübung (Denmark)" 
@@ -1063,7 +1075,7 @@
  anti_non_aligned_raids:0 "Anti Non-Aligned Raids"
  anti_non_aligned_raids_desc:0 "We must crack down on Non-Aligned elements in our nation for the sake of long-term domestic stability. Their influence is too great, and may potentially become a problem to the government."
 
- UK_imperial_conference_tt:0 " Add §YImperial Conference Economy Agreements§!, which grants (Factory Output §G+15.00%§!, Dockyard Output §G+15.00%§!).\n Add §YImperial Conference Economy Agreements§! which grants (§YCivilian Factory§! construction Speed §G+15.00%§!, §YMilitary Factory§! construction speed §G+15.00%§!, §!Dockyard§! construction Speed §G+15.00%§!)\n Gain Base War Support §G+10.00%§!\n(@AST§YAustralia, @CANDominion of Canada, @RAJBritish Raj,\n @NZLNew Zealand and @SAFSouth Africa§!):\n    Add §YImperial Conference Defense Agreements§! which grants (Factory Output §G+10.00%§!, Dockyard Output §G+10.00%§!).\n    Add §YImperial Conference Economy Agreements§! which grants (§YCivilian Factory§! construction Speed §G+10.00%§!, §YMilitary Factory§! construction speed §G+10.00%§!, §!Dockyard§! construction Speed §G+10.00%§!)\n   Gain Base War Support §G+10.00%§! "
+ #events
 
  news.5003.d:0 "Since the start of Operation Barbarossa the Workers' and Peasants' Red Army has been plagued by routing, leaving many Soviet industrial and urban centers near the border under Axis control. Joseph Stalin has responded with an order to all Red Army commanders to cease unauthorized retreats and set up special detachments for dealing with deserters."
  news.5004.d:0 "Following a long and arduous process of recovering from the trials of the Great Purge, the Red Army, through the fire and flames of war, has proven itself to be just as tactically competent as the Wehrmacht, despite the retreats. Joseph Stalin has ordered an end to retreating: 'Not one step back'."
@@ -1071,6 +1083,16 @@
  JFU_events.7.d:0 "Our diplomats have phoned us from London, informing us that we have successfully entered into a formal military alliance with Britain and her allies. As a member of the Allies, every struggle from from London to Wellington, Oslo to Cairo is now part of our struggle for Norway."
  JFU_events.7.a:0 "God Save Our Kings!"
  fall_blau_effect:0 "enables after Germany started Fall Blau"
+
+ #MIOs
+
+ ENG_light_aircraft_organization:0 "Light Aircraft Designer"
+ USA_light_aircraft_organization:0 "Light Aircraft Designer"
+ JAP_light_aircraft_organization:0 "Light Aircraft Designer"
+ SOV_CAS_organization:0 "Soviet Cas Designer"
+ JAP_CAS_organization:0 "Soviet Cas Designer"
+
+
 
 
  SOV_BARB_Debuff:0 "Suprise Attack"

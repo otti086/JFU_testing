@@ -115,6 +115,25 @@ JAP_sasebo_naval_arsenal_organization = {
 ###########################
 
 
+JAP_light_aircraft_organization = {
+	include = generic_light_aircraft_organization
+	icon = GFX_idea_supermarine
+
+	allowed = {	
+		tag = JAP 
+		has_dlc = "Arms Against Tyranny"
+	}
+}
+
+JAP_CAS_organization = {
+	include = generic_cas_aircraft_organization
+	icon = GFX_idea_mitsubishi
+	
+	allowed = {	 
+		tag = JAP
+	}
+}
+
 JAP_mitsubishi_organization = {
 	include = generic_high_agility_fighter_aircraft_organization
 	icon = GFX_idea_mitsubishi

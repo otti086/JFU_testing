@@ -289,6 +289,16 @@ ENG_john_brown_organization = {
 ##        ##       ##     ## ##   ### ##       ##    ## 
 ##        ######## ##     ## ##    ## ########  ######  
 
+ENG_light_aircraft_organization = {
+	include = generic_light_aircraft_organization
+	icon = GFX_idea_supermarine
+
+	allowed = {	
+		tag = ENG 
+		has_dlc = "Arms Against Tyranny"
+	}
+}
+
 
 ENG_supermarine_organization = {
 	include = generic_high_agility_fighter_aircraft_organization

@@ -1794,9 +1794,6 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_steel_industry_in_terni
 		cost = 5
-		available = {
-			has_tech = synth_oil_experiments
-		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
@@ -1805,7 +1802,7 @@ focus_tree = {
 				name = ITA_industria_della_gomma_sintetica
 				bonus = 0.75
 				uses = 2
-				category = cat_synth_oil
+				category = excavation_tech
 			}
 			2 = {
 				add_extra_state_shared_building_slots = 1
@@ -1822,11 +1819,10 @@ focus_tree = {
 		id = ITA_strengthen_northern_industry
 		icon = GFX_focus_ITA_northern_industry
 		prerequisite = { focus = ITA_industria_della_gomma_sintetica }
-		mutually_exclusive = { focus = ITA_modernize_the_mezzogiorno }
 		x = -1
 		y = 1
 		relative_position_id = ITA_industria_della_gomma_sintetica
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -1875,11 +1871,10 @@ focus_tree = {
 		id = ITA_modernize_the_mezzogiorno
 		icon = GFX_focus_ITA_southern_industry
 		prerequisite = { focus = ITA_industria_della_gomma_sintetica }
-		mutually_exclusive = { focus = ITA_strengthen_northern_industry }
 		x = 1
 		y = 1
 		relative_position_id = ITA_industria_della_gomma_sintetica
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -3789,6 +3784,7 @@ focus_tree = {
 		id = ITA_standardization
 		icon = GFX_goal_generic_production2
 		prerequisite = { focus = ITA_superaereo }
+		mutually_exclusive = { focus = ITA_specialization }
 		x = -1
 		y = 1
 		relative_position_id = ITA_superaereo
@@ -3845,6 +3841,7 @@ focus_tree = {
 		id = ITA_specialization
 		icon = GFX_goal_generic_air_production
 		prerequisite = { focus = ITA_superaereo }
+		mutually_exclusive = { focus = ITA_standardization }
 		x = 1
 		y = 1
 		relative_position_id = ITA_superaereo

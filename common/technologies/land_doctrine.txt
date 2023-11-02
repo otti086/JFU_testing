@@ -3080,7 +3080,16 @@ technologies = {
 		category_front_line = {
 			default_morale = 0.2
 		}
-		army_speed_factor = 0.10		
+		army_speed_factor = 0.10	
+
+		armored_car_recon = {
+			battalion_mult = {
+				category = category_light_infantry
+				max_organisation = 1
+				add = yes
+			}
+		}
+
 		path = {
 			leads_to_tech = continuous_offensive
 			research_cost_coeff = 1
@@ -3199,6 +3208,13 @@ technologies = {
 			cat_mass_assault
 		}
 
+		military_police = {
+			battalion_mult = {
+				category = category_cavalry
+				suppression = 0.50
+				add = yes
+			}
+		}
 		
 		folder = {
 			name = land_doctrine_folder
