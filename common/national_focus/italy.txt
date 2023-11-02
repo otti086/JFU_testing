@@ -1726,7 +1726,6 @@ focus_tree = {
 		id = ITA_steel_industry_in_terni
 		icon = GFX_focus_generic_steel
 		prerequisite = { focus = ITA_italian_highways_bba }
-		mutually_exclusive = { focus = ITA_power_plants_in_terni }
 		x = -1
 		y = 1
 		relative_position_id = ITA_italian_highways_bba
@@ -1759,7 +1758,6 @@ focus_tree = {
 		id = ITA_power_plants_in_terni
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = ITA_italian_highways_bba }
-		mutually_exclusive = { focus = ITA_steel_industry_in_terni }
 		x = 1
 		y = 1
 		relative_position_id = ITA_italian_highways_bba
@@ -3711,10 +3709,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_AIR_XP}
 
 		completion_reward = {
-			add_to_variable = { ITA_ra_air_mission_efficiency = 0.05 }
-			add_to_variable = { ITA_ra_air_mission_xp_gain_factor = 0.05 }
-			add_to_variable = { ITA_ra_air_doctrine_cost_factor = -0.1 }
-			custom_effect_tooltip = ITA_superaereo_ra_tt
 
 			air_experience = 50
 			#if = {
@@ -3910,10 +3904,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			add_to_variable = { ITA_ra_strategic_bomb_visibility = -0.05 }
-			add_to_variable = { ITA_ra_air_strategic_bomber_bombing_factor = 0.05 }
-			add_to_variable = { ITA_ra_air_range_factor = 0.05 }
-			custom_effect_tooltip = ITA_long_range_aircraft_ra_tt
 
 			random_core_state = {
 				limit = {
@@ -4070,10 +4060,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_AIR_XP}
 
 		completion_reward = {
-			add_to_variable = { ITA_ra_air_superiority_bonus_in_combat = 0.05 }
-			add_to_variable = { ITA_ra_air_superiority_efficiency = 0.05 }
-			add_to_variable = { ITA_ra_air_intercept_efficiency = 0.05 }
-			custom_effect_tooltip = ITA_supremacy_in_the_skies_ra_tt
 
 			air_experience = 50
 

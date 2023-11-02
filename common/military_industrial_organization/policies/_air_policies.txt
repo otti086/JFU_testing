@@ -37,7 +37,7 @@ mio_policy_air_heavy_gantry_cranes = {
 	available = { has_mio_size > 5}
 	production_bonus = {
 		large_plane_airframe = {
-			production_efficiency_cap_factor = 0.1
+			production_efficiency_cap_factor = 0.05
 		}
 	}
 }
@@ -58,7 +58,7 @@ mio_policy_air_propulsion_experimenters = {
 			has_mio_equipment_type = large_plane_maritime_patrol_plane_airframe
 		}
 	}
-	available = { has_mio_size > 5}
+	available = { always = yes  }
 	
 	organization_modifier = {
 		military_industrial_organization_research_bonus = 0.2
