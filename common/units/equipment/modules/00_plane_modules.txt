@@ -1410,7 +1410,7 @@ equipment_modules = {
 				cas
 			}
 			add_stats = {
-				air_defence = 19
+				air_defence = 12
 			}
 		}
 		dismantle_cost_ic = 2 #you essentially have to redesign part of the wing
