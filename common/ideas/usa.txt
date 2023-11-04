@@ -920,9 +920,6 @@ ideas = {
 				small_plane_airframe = {
 					build_cost_ic = -0.1 instant = yes
 				}
-				medium_plane_fighter_airframe = {
-					build_cost_ic = -0.1 instant = yes
-				}
 			}
 		}
 
@@ -1678,6 +1675,7 @@ ideas = {
 			
 			modifier = {
 				industrial_capacity_factory = 0.05
+				production_speed_arms_factory_factor = 0.1
 			}
 		}
 	}
