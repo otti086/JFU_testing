@@ -690,6 +690,10 @@ ITA_fiat_aviazione_organization = {
 		ITA_is_northern_designer = yes
 	}
 	
+	visible = {
+		always = no
+	}
+
 	initial_trait = {
 		equipment_bonus = {
 			naval_strike_attack = -0.1

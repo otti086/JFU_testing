@@ -297,6 +297,22 @@ ENG_light_aircraft_organization = {
 		tag = ENG 
 		has_dlc = "Arms Against Tyranny"
 	}
+	add_trait = {
+		token = ENG_increase_production_trait
+		name = ENG_increase_production_trait
+
+		icon = GFX_generic_mio_department_icon_plane_fighter_line_efficiency
+		special_trait_background = yes
+		
+		position = { x=0 y=1 }
+		relative_position_id = generic_mio_trait_expanded_production_facilities
+
+		all_parents = { generic_mio_trait_expanded_production_facilities }
+
+		production_bonus = {
+			production_capacity_factor = 0.1
+		} 
+	}
 }
 
 
@@ -308,7 +324,9 @@ ENG_supermarine_organization = {
 		tag = ENG
 		has_dlc = "Arms Against Tyranny"
 	}
-
+	visible = {
+		always = no
+	}
 	equipment_type = {
 		mio_cat_eq_all_small_plane
 		maritime_patrol_plane

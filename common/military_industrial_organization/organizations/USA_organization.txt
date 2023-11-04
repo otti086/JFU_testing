@@ -269,7 +269,9 @@ USA_north_american_aviation_organization = {
 	allowed = {	
 		tag = USA 
 	}
-	
+	visible = {
+		always = no
+	}	
 	add_trait = {
 		token = USA_mio_trait_outsourced_engines
 		name = USA_mio_trait_outsourced_engines

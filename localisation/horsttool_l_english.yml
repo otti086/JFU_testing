@@ -1061,7 +1061,9 @@
  endsieg_tt:0 "§HOur§! §CDivision Attack on core territory§! §Hand§! §CDivision Defense on core territory§! §Hwill increase by§! §C30%§! §HWe will also deploy §G72 40w infantry divisions§! to hold the line.§!\n\n"
  endsieg_allies_tt:0 "Add '§YBattle of the Buldge§!' which grants (§YAll Allied Nations§!) Attack bonus against countries §G+15%§!, (§YAll Allied Nations§!) Defense bonus against countries §G+10%§!, (§Y@SOVSoviet Union§!) Attack bonus against countries §R-15%§!, (§Y@SOVSoviet Union§!) Defense bonus against countries §R-10%§!) for 180 day(s)."
  endsieg_comintern_tt:0 "Add '§YSteiners Counterattack§!' which grants (§Y@SOVSoviet Union§!) Attack bonus against countries §G+15%§!, (§Y@SOVSoviet Union§!) Defense bonus against countries §G+10%§!, (§YAll Allied Nations§!) Attack bonus against countries §R-15%§!, (§YAll Allied Nations§!) Defense bonus against countries §R-10%§!) for 180 day(s)." 
- 
+ MIO_range_trait:0 "Unlocks a special Range trait for the Light Aircraft and Naval Aircraft Designer"
+ MIO_agility_trait:0 "Unlocks a special Agility trait for the Light Aircraft and Naval Aircraft Designer"
+
  #decisions
 
  GER_fall_gelb:0 "§gFall§! §YGelb (Belgium and Netherlands)§!"
@@ -1092,8 +1094,10 @@
  SOV_CAS_organization:0 "Soviet Cas Designer"
  JAP_CAS_organization:0 "Soviet Cas Designer"
 
+ #Mio traits
 
-
+ JAP_agility_focus_trait:0 "Agility Focus"
+ JAP_range_focus_trait:0 "Range Focus"
 
  SOV_BARB_Debuff:0 "Suprise Attack"
  attache_idea_tt:0 "gains the attache modifiers as long as the recieving country is at war"

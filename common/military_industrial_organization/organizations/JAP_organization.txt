@@ -123,6 +123,48 @@ JAP_light_aircraft_organization = {
 		tag = JAP 
 		has_dlc = "Arms Against Tyranny"
 	}
+
+	add_trait = {
+		token = JAP_agility_focus_trait
+		name = JAP_agility_focus_trait
+
+		icon = GFX_generic_mio_trait_icon_air_agility
+		special_trait_background = yes
+		
+		position = { x=2 y=-1 }
+		relative_position_id = generic_mio_trait_fuselage_ordinance_rack
+
+		available = {
+			FROM = {
+				has_completed_focus = JAP_agility_focus
+			}
+		}
+
+		equipment_bonus = {
+			air_agility = 0.1
+		} 
+	}
+
+	add_trait = {
+		token = JAP_range_focus_trait
+		name = JAP_range_focus_trait
+
+		icon = GFX_generic_mio_trait_icon_air_agility
+		special_trait_background = yes
+		
+		position = { x=2 y=0 }
+		relative_position_id = generic_mio_trait_fuselage_ordinance_rack
+
+		available = {
+			FROM = {
+				has_completed_focus = JAP_range_focus
+			}
+		}
+
+		equipment_bonus = {
+			air_range = 0.15
+		} 
+	}
 }
 
 JAP_CAS_organization = {
@@ -149,6 +191,7 @@ JAP_mitsubishi_organization = {
 	}
 	
 	visible = {
+		always = no
 	}
 	
 	available = {
@@ -183,6 +226,9 @@ JAP_aichi_organization = {
 	allowed = {	
 		tag = JAP
 	}
+	visible = {
+		always = no
+	}
 	available = {
 		FROM = { has_completed_focus = JAP_range_focus }
 	}
@@ -204,6 +250,49 @@ JAP_yokosuka_organization = {
 		tag = JAP
 		has_dlc = "Arms Against Tyranny"
 	}
+
+	add_trait = {
+		token = JAP_agility_focus_trait
+		name = JAP_agility_focus_trait
+
+		icon = GFX_generic_mio_trait_icon_air_agility
+		special_trait_background = yes
+		
+		position = { x=5 y=0 }
+		relative_position_id = generic_mio_trait_navigation_equipment
+
+		available = {
+			FROM = {
+				has_completed_focus = JAP_agility_focus
+			}
+		}
+
+		equipment_bonus = {
+			air_agility = 0.1
+		} 
+	}
+
+	add_trait = {
+		token = JAP_range_focus_trait
+		name = JAP_range_focus_trait
+
+		icon = GFX_generic_mio_trait_icon_air_agility
+		special_trait_background = yes
+		
+		position = { x=5 y=1 }
+		relative_position_id = generic_mio_trait_navigation_equipment
+
+		available = {
+			FROM = {
+				has_completed_focus = JAP_range_focus
+			}
+		}
+
+		equipment_bonus = {
+			air_range = 0.15
+		} 
+	}
+
 }
 
 
