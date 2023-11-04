@@ -1068,7 +1068,7 @@
 		x = -1
 		y = 2
 		relative_position_id = JAP_fighter_modernization
-
+		mutually_exclusive = { focus = JAP_agility_focus }
 		cost = 5
 
 		ai_will_do = {
@@ -1089,20 +1089,7 @@
 
 
 		completion_reward = {
-			IF = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}	
-				custom_effect_tooltip = available_mio_tt
-				show_mio_tooltip = JAP_aichi_organization
-				mio:JAP_aichi_organization = {
-					add_mio_funds = 1500
-				}
-			}
-			ELSE = {
-				custom_effect_tooltip = available_designer
-				show_ideas_tooltip = aichi
-			}
+			custom_effect_tooltip = MIO_range_trait
 		}
 	}
 
@@ -1113,7 +1100,7 @@
 		x = 1
 		y = 2
 		relative_position_id = JAP_fighter_modernization
-
+		mutually_exclusive = { focus = JAP_range_focus }
 		cost = 5
 
 		ai_will_do = {
@@ -1138,20 +1125,7 @@
 
 
 		completion_reward = {
-			IF = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}	
-				custom_effect_tooltip = available_mio_tt
-				show_mio_tooltip = JAP_mitsubishi_organization
-				mio:JAP_mitsubishi_organization = {
-					add_mio_funds = 1500
-				}
-			}
-			ELSE = {
-				custom_effect_tooltip = available_designer
-				show_ideas_tooltip = mitsubishi
-			}
+			custom_effect_tooltip = MIO_agility_trait
 		}
 	}
 
