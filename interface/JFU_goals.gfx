@@ -270,4 +270,113 @@ spriteTypes = {
 
 
 
+
+
+    SpriteType = {
+		name = "GFX_FOCUS_GER_CZE"
+		texturefile = "gfx/interface/goals/focus_GER_cze.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_FOCUS_JAP_HOKUSHIN"
+		texturefile = "gfx/interface/goals/focus_JAP_hokushin.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_FOCUS_SHI_AIR_TRADITION"
+		texturefile = "gfx/interface/goals/focus_SHI_air_tradition.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_FOCUS_SOV_BUILDER_OF_THE_RED_ARMY"
+		texturefile = "gfx/interface/goals/focus_SOV_builder_of_the_red_army.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_FOCUS_SOV_DEFENSE_OF_MOSCOW"
+		texturefile = "gfx/interface/goals/focus_SOV_defense_of_moscow.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_FOCUS_SOV_FIVEYEARPLAN"
+		texturefile = "gfx/interface/goals/focus_SOV_fiveyearplan.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_FOCUS_SOV_LESSONS"
+		texturefile = "gfx/interface/goals/focus_SOV_lessons.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_FOCUS_SOV_POSTIVE_HEROISM"
+		texturefile = "gfx/interface/goals/focus_SOV_postive_heroism.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_FOCUS_SOV_SOCIALIST_REALISM"
+		texturefile = "gfx/interface/goals/focus_SOV_socialist_realism.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_FOCUS_SOV_SOCIALIST_SCIENCE"
+		texturefile = "gfx/interface/goals/focus_SOV_socialist_science.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_FOCUS_SOV_WOMEN_IN_AVIATION2"
+		texturefile = "gfx/interface/goals/focus_SOV_women_in_aviation2.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_FOCUS_SOV_WORKER_CLUTURE"
+		texturefile = "gfx/interface/goals/focus_SOV_worker_cluture.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_FRA_VICHY"
+		texturefile = "gfx/interface/goals/FRA_vichy.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GOAL_AGRARIAN_REFORM"
+		texturefile = "gfx/interface/goals/goal_agrarian_reform.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_R56_GOAL_GENERIC_RESEARCH_SILVER"
+		texturefile = "gfx/interface/goals/r56_goal_generic_research_silver.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GOAL_ENG_NAVAL_REARM"
+		texturefile = "gfx/interface/goals/eng/goal_eng_naval_rearm.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GER_DEMAND_MEMEL"
+		texturefile = "gfx/interface/goals/ger/GER_demand_memel.tga"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GER_RHINELAND"
+		texturefile = "gfx/interface/goals/ger/GER_rhineland.tga"
+	}
+    
 }

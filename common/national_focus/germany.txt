@@ -1571,7 +1571,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_demand_memel
-		icon = GFX_GER_demand_memel
+		icon = GFX_GER_DEMAND_MEMEL
 		prerequisite = { focus = GER_anschluss }
 		x = 2
 		y = 1
@@ -1686,7 +1686,7 @@ focus_tree = {
 	focus = { 
 		id = GER_fall_of_france
 		text = "Fall of France"
-		icon = GFX_focus_attack_france
+		icon = GFX_FRA_VICHY
 		prerequisite = { focus = GER_weserubung focus = GER_around_maginot }
 		
 		available = {
