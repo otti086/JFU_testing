@@ -1316,3 +1316,7 @@ by_blood_alone = {
 icon = "GFX_idea_ITA_impero_italiano"
 	army_attack_speed_factor = -0.30
 }
+ENG_con_int_dynamic = {
+icon = "GFX_idea_generic_fortify_the_borders"
+	max_dig_in = -5
+}

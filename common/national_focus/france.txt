@@ -1354,12 +1354,54 @@ focus = {
 			add_stability = 0.1
 		}
 	}
+	focus = {
+		id = FRA_form_the_provisional_government_of_the_republic
+		icon = GFX_goal_support_democracy
+		x = 0
+		y = 1
+		prerequisite = { 
+			focus = FRA_form_the_national_committee
+		}
+		relative_position_id = FRA_form_the_national_committee
+		
+		cost = 10
 
+		available = {
+				EFR = { has_country_flag = EFR_torch_declared }
+				check_variable = {  FRA_legitimacy > 99  }
+								custom_trigger_tooltip = {
+					tooltip = "Has 100 legitimacy"
+					check_variable = { FRA_legitimacy > 99 }
+				}
+		}
+		
+
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = FRA_egalite_liberte_solidarite
+		}
+	}
+	focus = {
+		id = FRA_operation_dragoon
+		icon = GFX_focus_generic_attack_vichy_france_focus
+		x = 1
+		y = 1
+
+		prerequisite = { 	focus = FRA_form_the_provisional_government_of_the_republic	}
+		relative_position_id = FRA_form_the_provisional_government_of_the_republic
+		
+		cost = 5
+
+		available_if_capitulated = yes
+		completion_reward = {
+			every_state = { limit = { OR = { state = 22 state = 20 state = 32 state = 21 state = 313 state = 1 state = 507    } } add_dynamic_modifier = { modifier =  ENG_con_int_dynamic days = 60 }  }
+		}
+	}
 	focus = {
 		id = FRA_continue_the_fight
 		icon = GFX_goal_generic_major_war
-		x = 8
-		y = 1
+		x = 4
+		y = 3
 
 		prerequisite = { 
 			focus = FRA_appeal_to_the_french_nation
@@ -1382,10 +1424,8 @@ focus = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			add_offsite_building = {
-				type = arms_factory
-				level = 5
-			}
+			add_offsite_building = { type = arms_factory level = 3 }
+			add_offsite_building = { type = dockyard level = 4 }
 			create_corps_commander = {
 				name = "Marie-Pierre Koenig"
 				GFX = GFX_portrait_fra_marie_pierre_koenig
@@ -1411,7 +1451,7 @@ focus = {
 	focus = {
 		id = FRA_the_free_french_navy
 		icon = GFX_goal_generic_build_navy
-		x = -2
+		x = -1
 		y = 1
 
 		prerequisite = { 
@@ -1434,31 +1474,17 @@ focus = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
-			539 = {	
-				add_extra_state_shared_building_slots = 4 
-				add_building_construction = {
-				type = dockyard
-				level = 4
-				instant_build = yes
-				}
-			}	
-			create_navy_leader = {
-				name = "Emilie Muselier"
-				GFX = GFX_portrait_fra_emilie_muselier
-				skill = 3
-				traits = {  }
-				attack_skill = 1
-				defense_skill = 2
-				maneuvering_skill = 3
-				coordination_skill = 4
-			}
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 300
+			}			
 		}
 	}
 	focus = {
 		id = FRA_colonial_recruitment
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 0
-		y = 1
+		y = 2
 
 		prerequisite = { 
 			focus = FRA_continue_the_fight
@@ -1492,7 +1518,7 @@ focus = {
 	focus = {
 		id = FRA_the_regiment_normandie
 		icon = GFX_focus_fra_regiment_normandie
-		x = 2
+		x = 1
 		y = 1
 
 		prerequisite = { 
@@ -1520,14 +1546,8 @@ focus = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
-			air_experience = 25
-			SOV = {
-				add_equipment_to_stockpile = {
-					type = small_plane_airframe
-					amount = 100
-					producer = FRA
-				}
-			}
+			air_experience = 100
+			add_equipment_to_stockpile = { type = transport_plane_equipment amount = 25 }
 		}
 	}
 
@@ -1541,23 +1561,23 @@ focus = {
 		
 		}
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			check_variable = {  FRA_legitimacy > 100  }
+			check_variable = {  FRA_legitimacy > 60  }
 
 			custom_trigger_tooltip = {
-				tooltip = "Has at least 100 legitimacy"
-				check_variable = { FRA_legitimacy > 100 }
+				tooltip = "Has at least 60 legitimacy"
+				check_variable = { FRA_legitimacy > 60 }
 			}
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
-			remove_ideas = { FRA_defeatism }
+			remove_ideas =  FRA_defeatism 
 		}
 	}
 	focus = {
@@ -1571,7 +1591,7 @@ focus = {
 		}
 		relative_position_id = FRA_refus_absurde
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1612,7 +1632,7 @@ focus = {
 		}
 		relative_position_id = FRA_refus_absurde
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1642,7 +1662,7 @@ focus = {
 		}
 		relative_position_id = FRA_reach_out_to_trade_unions
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1681,7 +1701,7 @@ focus = {
 		}
 		relative_position_id = FRA_refus_absurde
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1711,7 +1731,7 @@ focus = {
 		}
 		relative_position_id = FRA_connections_to_industrialists
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1779,11 +1799,11 @@ focus = {
 		y = 1
 
 		prerequisite = { 
-			focus = FRA_national_council_of_the_resistance
+			focus = FRA_form_the_provisional_government_of_the_republic
 		}
-		relative_position_id = FRA_national_council_of_the_resistance
+		relative_position_id = FRA_form_the_provisional_government_of_the_republic
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1799,66 +1819,6 @@ focus = {
 		available_if_capitulated = yes
 		completion_reward = {
 			add_timed_idea = { idea = FRA_national_uprising days = 90 }
-		}
-	}
-	focus = {
-		id = FRA_french_forces_of_the_interior
-		icon = GFX_focus_prc_infiltration
-		x = 1
-		y = 1
-
-		prerequisite = { 
-			focus = FRA_national_council_of_the_resistance
-		}
-		relative_position_id = FRA_national_council_of_the_resistance
-		
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			
-		}
-		
-		bypass = {
-
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		completion_reward = {
-			custom_effect_tooltip = FRA_french_forces_of_the_interior_tt
-			division_template = {
-				name = "FFI Demi-Brigade" 	
-				division_names_group = FRA_INF_01
-				is_locked = yes
-				regiments = {
-					infantry = { x = 0 y = 0 }		
-					infantry = { x = 0 y = 1 }		
-					infantry = { x = 0 y = 2 }		
-					infantry = { x = 0 y = 3 }		
-					infantry = { x = 0 y = 4 }		
-				}
-				support = {
-					
-				}
-			}
-			every_owned_state = {
-				limit = { 
-					is_core_of = ROOT 
-					not = { has_state_flag = FRA_core_state_liberated }
-					is_fully_controlled_by = ROOT
-				}
-				create_unit = {
-					division = "name = \"1re Demi-Brigade des FFI\" division_template = \"FFI Demi-Brigade\" start_experience_factor = 0"  
-					owner = ROOT
-				}
-				create_unit = {
-					division = "name = \"2me Demi-Brigade des FFI\" division_template = \"FFI Demi-Brigade\" start_experience_factor = 0"  
-					owner = ROOT
-				}
-				set_state_flag = FRA_core_state_liberated
-			}
 		}
 	}
 
