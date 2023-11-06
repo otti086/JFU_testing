@@ -1107,8 +1107,8 @@ ideas = {
 			}
 
 			modifier = {
-				industrial_capacity_factory = 0.03
-				industrial_capacity_dockyard = 0.03
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
 			}
 		}
 
@@ -1174,7 +1174,7 @@ ideas = {
 
 			modifier = {
 				production_factory_efficiency_gain_factor = 0.05
-				research_speed_factor = 0.02
+				research_speed_factor = 0.05
 			}
 		}
 
@@ -1194,11 +1194,10 @@ ideas = {
 			}
 
 			modifier = {
-				production_factory_efficiency_gain_factor = 0.05
-				research_speed_factor = 0.02
-				drift_defence_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.1
+				research_speed_factor = 0.1
 				communism_drift = 0.05
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.1
 			}
 		}
 

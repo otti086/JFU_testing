@@ -247,7 +247,7 @@ focus_tree = {
 	focus = {
 		id = SOV_finish_the_five_year_plan
 
-		icon = GFX_focus_generic_industry_1
+		icon = GFX_FOCUS_SOV_FIVEYEARPLAN
 		prerequisite = { focus = SOV_infrastructure_effort_nsb }
 		prerequisite = { focus = SOV_heavy_industry }
 		x = 1
@@ -1390,7 +1390,7 @@ focus_tree = {
 	focus = {
 		id = SOV_the_ussr_academy_of_sciences
 
-		icon = GFX_focus_research
+		icon = GFX_FOCUS_SOV_SOCIALIST_SCIENCE
 		prerequisite = { focus = SOV_eastern_development }
 		prerequisite = { focus = SOV_develop_the_urals }
 		x = 1
@@ -1704,7 +1704,7 @@ focus_tree = {
 	focus = {
 		id = SOV_raskovas_aviation_group
 
-		icon = GFX_goal_generic_CAS
+		icon = GFX_FOCUS_SOV_WOMEN_IN_AVIATION2
 		prerequisite = { focus = SOV_women_in_aviation }
 		x = 1
 		y = 1
@@ -3229,7 +3229,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_the_defense_of_moscow
-		icon = GFX_focus_SOV_the_defense_of_moscow
+		icon = GFX_FOCUS_SOV_DEFENSE_OF_MOSCOW
 		prerequisite = { focus = SOV_move_industry_to_the_urals focus = SOV_improve_the_stalin_line focus = SOV_the_molotov_line }
 		x = 1
 		y = 1
@@ -3721,7 +3721,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_lessons_of_war
-		icon = GFX_goal_generic_military_sphere
+		icon = GFX_FOCUS_SOV_LESSONS
 		prerequisite = { focus = SOV_rehabilitated_military }
 		prerequisite = { focus = SOV_desperate_measures }
 		x = 0
@@ -5245,7 +5245,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_positive_heroism
-		icon = GFX_goal_generic_cavalry
+		icon = GFX_FOCUS_SOV_POSTIVE_HEROISM
 		prerequisite = { focus = SOV_expand_the_agitprop }
 		x = -2
 		y = 1
@@ -5276,7 +5276,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_revive_the_stakhanovite_movement
-		icon = GFX_goal_generic_construction2
+		icon = GFX_focus_SOV_worker_cluture
 		prerequisite = { focus = SOV_positive_heroism }
 		x = 0
 		y = 1
@@ -5311,73 +5311,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = SOV_war_heroes_ns
-
-			if = {
-				limit = {
-					SOV_georgy_zhukov = {
-						NOT = { has_character_flag = SOV_character_purged_flag }
-						is_corps_commander = yes
-					}
-				}
-				SOV_georgy_zhukov = {
-					promote_leader = yes
-				}
-			}
-			else = {
-				random_army_leader = {
-					limit = {
-						NOT = { has_character_flag = SOV_potential_target_flag }
-						is_corps_commander = yes
-						NOT = { is_character = SOV_konstantin_rokossovsky }
-						NOT = { is_character = SOV_ivan_konev }
-					}
-					promote_leader = yes
-				}
-			}
-			if = {
-				limit = {
-					SOV_konstantin_rokossovsky = {
-						NOT = { has_character_flag = SOV_character_purged_flag }
-						is_corps_commander = yes
-					}
-				}
-				SOV_konstantin_rokossovsky = {
-					promote_leader = yes
-				}
-			}
-			else = {
-				random_army_leader = {
-					limit = {
-						NOT = { has_character_flag = SOV_potential_target_flag }
-						is_corps_commander = yes
-						NOT = { is_character = SOV_georgy_zhukov }
-						NOT = { is_character = SOV_ivan_konev }
-					}
-					promote_leader = yes
-				}
-			}
-			if = {
-				limit = {
-					SOV_ivan_konev = {
-						NOT = { has_character_flag = SOV_character_purged_flag }
-						is_corps_commander = yes
-					}
-				}
-				SOV_ivan_konev = {
-					promote_leader = yes
-				}
-			}
-			else = {
-				random_army_leader = {
-					limit = {
-						NOT = { has_character_flag = SOV_potential_target_flag }
-						is_corps_commander = yes
-						NOT = { is_character = SOV_georgy_zhukov }
-						NOT = { is_character = SOV_konstantin_rokossovsky }
-					}
-					promote_leader = yes
-				}
-			}
 		}
 	}
 
@@ -5431,7 +5364,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_socialist_realism
-		icon = GFX_focus_YUG_pan_slavic_congress
+		icon = GFX_FOCUS_SOV_SOCIALIST_REALISM
 		prerequisite = { focus = SOV_socialist_emulation }
 		x = 0
 		y = 1
@@ -5499,8 +5432,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_STABILITY}
 
 		completion_reward = {
-			add_stability = 0.1
-
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = SOV_patriarch_sergy
 		}
@@ -5580,7 +5511,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_claims_in_baltic
-		icon = GFX_goal_generic_more_territorial_claims
+		icon = GFX_focus_SOV_baltic_security
 		prerequisite = { focus = SOV_the_comintern }
 		x = 0
 		y = 1
@@ -5609,7 +5540,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_Bessarabia
-		icon = GFX_goal_generic_more_territorial_claims
+		icon = GFX_focus_generic_attack_romania
 		prerequisite = { focus = SOV_claims_in_baltic }
 		available = { 
 			GER = { has_completed_focus = GER_mol_rib_pact } 	
