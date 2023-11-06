@@ -685,4 +685,124 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_JAP_total_mob.dds"
 	}
     
+
+    SpriteType = {
+		name = "GFX_R56_GOAL_GER_VOLKSWAGEN"
+		texturefile = "gfx/interface/goals/ger/r56_goal_GER_volkswagen.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_R56_GOAL_FRA_INCREASE_MILITARY_SPENDINGS"
+		texturefile = "gfx/interface/goals/fra/r56_goal_FRA_increase_military_spendings.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_R56_GOAL_FRA_AFRICA"
+		texturefile = "gfx/interface/goals/fra/r56_goal_FRA_africa.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_R56_GOAL_FRA_ARMY_REFORM"
+		texturefile = "gfx/interface/goals/fra/r56_goal_FRA_army_reform.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_R56_GOAL_FRA_CHAR_DE_BATAILLE"
+		texturefile = "gfx/interface/goals/fra/r56_goal_FRA_char_de_bataille.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_R56_GOAL_FRA_DEFENSE"
+		texturefile = "gfx/interface/goals/fra/r56_goal_FRA_defense.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_R56_GOAL_FRA_DE_GAULLE"
+		texturefile = "gfx/interface/goals/fra/r56_goal_FRA_de_gaulle.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_R56_GOAL_FRA_SOMUA"
+		texturefile = "gfx/interface/goals/fra/r56_goal_FRA_somua.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_R56_GOAL_FRA_STATUS_QUO"
+		texturefile = "gfx/interface/goals/fra/r56_goal_FRA_status_quo.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GOAL_ITALY_FIAT_G_50"
+		texturefile = "gfx/interface/goals/ita/goal_italy_fiat_g_50.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GOAL_ITALY_FOCUS_ON_MASS_MOBILIZATION"
+		texturefile = "gfx/interface/goals/ita/goal_italy_focus_on_mass_mobilization.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GOAL_ITALY_MESSE_PLAN"
+		texturefile = "gfx/interface/goals/ita/goal_italy_messe_plan.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GOAL_ITALY_SAVOIA_MARCHETTI_SM_79"
+		texturefile = "gfx/interface/goals/ita/goal_italy_savoia_marchetti_sm_79.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_R56_GOAL_ITA_MARE_NOSTRUM"
+		texturefile = "gfx/interface/goals/ita/r56_goal_ITA_mare_nostrum.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_R56_GOAL_JAP_SAKURA_INFANTRY"
+		texturefile = "gfx/interface/goals/jap/r56_goal_JAP_sakura_infantry.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_R56_GOAL_JAP_SAMURAI"
+		texturefile = "gfx/interface/goals/jap/r56_goal_JAP_samurai.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_R56_GOAL_ROM_IRON_GUARD"
+		texturefile = "gfx/interface/goals/r56_goal_ROM_iron_guard.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_R56_GOAL_ROM_MILITARIZE_THE_SENTINELS"
+		texturefile = "gfx/interface/goals/r56_goal_ROM_militarize_the_sentinels.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_R56_GOAL_ENG_PRIDE_OF_THE_FLEET"
+		texturefile = "gfx/interface/goals/eng/r56_goal_ENG_pride_of_the_fleet.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_R56_GOAL_ENG_SERVICE_OVERSEAS"
+		texturefile = "gfx/interface/goals/eng/r56_goal_ENG_service_overseas.dds"
+	}
+    
 }

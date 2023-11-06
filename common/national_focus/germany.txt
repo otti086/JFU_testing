@@ -618,7 +618,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_kdf_wagen
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_R56_GOAL_GER_VOLKSWAGEN
 		dynamic = yes
 		prerequisite = { focus = GER_hermann_goring_werke }
 		x = 0

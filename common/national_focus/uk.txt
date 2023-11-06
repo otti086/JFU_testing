@@ -1248,7 +1248,7 @@ focus_tree = {
 	focus = {
 		id = uk_waves_focus
 		prerequisite = { focus = naval_rearmament_focus }
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		icon = GFX_R56_GOAL_ENG_PRIDE_OF_THE_FLEET
 		x = 1
 		y = 2
 		relative_position_id = naval_rearmament_focus
@@ -1516,7 +1516,7 @@ focus_tree = {
 		available = {
 			
 		} 
-		icon = GFX_goal_generic_position_armies
+		icon = GFX_R56_GOAL_ENG_SERVICE_OVERSEAS
 		x = 0
 		y = 1
 		relative_position_id = uk_empire_focus

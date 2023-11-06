@@ -92,7 +92,7 @@
 	}	
 	focus = {
 		id = FRA_invest_in_the_colonies
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_R56_GOAL_FRA_AFRICA
 		x = 1
 		y = 1
 
@@ -218,7 +218,7 @@ focus = {
 
 	focus = {
 		id = FRA_begin_rearmament
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_R56_GOAL_FRA_INCREASE_MILITARY_SPENDINGS
 		x = 4
 		y = 0
 		available = { GER = { has_completed_focus = GER_rhineland} }
@@ -246,7 +246,7 @@ focus = {
 
 	focus = {
 		id = FRA_defensive_focus
-		icon = GFX_goal_generic_defence
+		icon = GFX_R56_GOAL_FRA_DEFENSE
 		x = -1
 		y = 1
 		cost = 5
@@ -391,7 +391,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_light_medium_armor
-		icon = GFX_goal_generic_army_tanks
+		icon = GFX_R56_GOAL_FRA_SOMUA
 		prerequisite = { focus = FRA_motorized_focus }
 		x = 0
 		y = 1
@@ -411,7 +411,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_army_reform
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_R56_GOAL_FRA_ARMY_REFORM
 		prerequisite = { 
 			focus = FRA_light_medium_armor 
 			focus = FRA_fusiliers_marine
@@ -697,7 +697,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_review_foreign_policy
-		icon = GFX_goal_support_democracy
+		icon = GFX_R56_GOAL_FRA_STATUS_QUO
 		x = 0
 		y = 1
 

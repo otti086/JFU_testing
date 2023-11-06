@@ -2542,7 +2542,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_preserve_army_traditions
-		icon = GFX_focus_generic_little_entente
+		icon = GFX_GOAL_ITALY_FOCUS_ON_MASS_MOBILIZATION
 		prerequisite = { focus = ITA_army_primacy_bba }
 		mutually_exclusive = { focus = ITA_a_bandits_war }
 		x = -3
@@ -2900,7 +2900,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_army_leaders
-		icon = GFX_focus_generic_military_mission
+		icon = GFX_GOAL_ITALY_MESSE_PLAN
 		prerequisite = { focus = ITA_preserve_army_traditions focus = ITA_a_bandits_war }
 
 		x = 1
@@ -3928,7 +3928,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_bomber_designs
-		icon = GFX_goal_generic_air_bomber
+		icon = GFX_GOAL_ITALY_SAVOIA_MARCHETTI_SM_79
 		prerequisite = { focus = ITA_standardization focus = ITA_specialization }
 
 		x = 2
@@ -3966,7 +3966,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_fighter_designs
-		icon = GFX_goal_generic_air_fighter
+		icon = GFX_GOAL_ITALY_FIAT_G_50
 		prerequisite = { focus = ITA_standardization focus = ITA_specialization }
 
 		x = 4
@@ -7560,7 +7560,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_masters_of_the_mediterranean
-		icon = GFX_focus_ITA_roman
+		icon = GFX_R56_GOAL_ITA_MARE_NOSTRUM
 		prerequisite = { focus = ITA_bend_the_bars }
 
 		x = -2

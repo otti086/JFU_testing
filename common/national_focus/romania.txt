@@ -739,7 +739,7 @@ focus_tree = {
 
 	focus = {
 		id = ROM_iron_guard
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_R56_GOAL_ROM_IRON_GUARD
 		prerequisite = { focus = ROM_appoint_german_friendly_government }
 		x = -1
 		y = 1
