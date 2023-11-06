@@ -63,7 +63,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_continue_the_new_deal
-		icon = GFX_focus_generic_self_management
+		icon = GFX_USA_SECOND_NEW_DEAL
 		x = 5
 		y = 0
 		cost = 10
@@ -194,7 +194,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_federal_housing_act
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_HOUSE
 		x = 1
 		y = 3
 		prerequisite = { focus = USA_fair_labour_standards_act }
@@ -449,7 +449,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_neutrality_act
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_USA_AN_ACT_OF_NEUTRALITY
 		x = 2
 		y = 1
 		prerequisite = { focus = USA_continue_the_new_deal  }
@@ -622,7 +622,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_the_giant_wakes
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_AMERICA_GOAL_AMERICAN_INDUSTRY
 		prerequisite = { focus = USA_arsenal_of_democracy }
 		available = {
 			OR = {
@@ -1849,7 +1849,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_air_war_plans_division
-		icon = GFX_goal_generic_build_airforce
+		icon = GFX_AMERICA_GOAL_FREEDOM_FIGHTERS
 		x = 2
 		y = 1
 		cost = 10

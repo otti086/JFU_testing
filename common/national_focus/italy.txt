@@ -2058,7 +2058,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_railway_innovations
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_FOCUS_ITA_INFRA
 		prerequisite = { focus = ITA_italian_highways_bba }
 
 		x = 3
@@ -2247,7 +2247,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_milan_comms_industry
-		icon = GFX_goal_generic_radar
+		icon = GFX_FOCUS_ITA_RADAR2
 		prerequisite = { focus = ITA_fiocchi_munizioni }
 
 		x = 1
@@ -2434,7 +2434,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_army_primacy_bba
-		icon = GFX_goal_generic_axis_build_infantry
+		icon = GFX_FOCUS_ITA_MAB
 
 		x = 13
 		y = 0
@@ -2573,7 +2573,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_increase_artillery_production
-		icon = GFX_goal_generic_army_artillery2
+		icon = GFX_GFX_FOCUS_ITA_ART
 		prerequisite = { focus = ITA_fiocchi_munizioni }
 		prerequisite = { focus = ITA_army_primacy_bba }
 
@@ -2620,7 +2620,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_vallo_alpino_del_littorio
-		icon = GFX_goal_fortify_the_westwall
+		icon = GFX_FOCUS_ITA_FORT
 		prerequisite = { focus = ITA_milan_comms_industry }
 		prerequisite = { focus = ITA_increase_artillery_production }
 
@@ -2953,7 +2953,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_superesercito
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_goal_ITA_Regio_Esercito_2
 		prerequisite = { focus = ITA_preserve_army_traditions focus = ITA_a_bandits_war }
 
 		x = 3
@@ -2989,7 +2989,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_italian_tankettes
-		icon = GFX_focus_generic_tankette
+		icon = GFX_FOCUS_ITA_TANK
 		prerequisite = { focus = ITA_preserve_army_traditions focus = ITA_a_bandits_war }
 
 		x = 5
@@ -3158,7 +3158,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_fanti_dell_aria
-		icon = GFX_focus_generic_paratrooper
+		icon = GFX_FOCUS_ITA_SPECOPS
 		prerequisite = { focus = ITA_bersaglieri }
 
 		x = 0
@@ -4046,7 +4046,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_supremacy_in_the_skies
-		icon = GFX_goal_generic_CAS
+		icon = GFX_FOCUS_ITA_JET
 		prerequisite = { focus = ITA_multirole_aircraft focus = ITA_long_range_aircraft focus = ITA_fighter_designs focus = ITA_bomber_designs }
 
 		x = 1
@@ -4096,7 +4096,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_naval_power_projection
-		icon = GFX_goal_generic_build_navy
+		icon = GFX_GOAL_ITALY_REGIA_MARINA_2
 
 		x = 11
 		y = 0
@@ -4227,7 +4227,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_expand_naval_facilities
-		icon = GFX_goal_generic_construct_naval_dockyard
+		icon = GFX_FOCUS_ITA_NAVAL
 		prerequisite = { focus = ITA_naval_power_projection }
 
 		x = 0
@@ -6968,7 +6968,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_devotion
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_FOCUS_ITA_ITA
 		prerequisite = { focus = ITA_to_live_as_a_lion focus = ITA_boost_the_grand_council_of_fascism }
 		prerequisite = { focus = ITA_strengthen_the_regime }
 
@@ -7716,7 +7716,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_balkan_ambition
-		icon = GFX_focus_generic_balkans_focus
+		icon = GFX_FOCUS_ITA_BALKAN
 		prerequisite = { focus = ITA_foreign_affairs }
 
 		x = 0
@@ -7857,7 +7857,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_secret_weapons
-		icon = GFX_goal_generic_secret_weapon
+		icon = GFX_FOCUS_ITA_NUC
 		prerequisite = { focus = ITA_german_military_cooperation }
 
 		x = 0
@@ -7884,7 +7884,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_treaty_with_germany
-		icon = GFX_focus_generic_diplomatic_treaty
+		icon = GFX_FOCUS_ITA_GER
 		prerequisite = { focus = ITA_pact_of_steel }
 
 		x = 1
@@ -8165,7 +8165,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_reinforce_the_gustav_line
-		icon = GFX_goal_fortify_the_westwall
+		icon = GFX_FOCUS_ITA_FORTMIL
 		prerequisite = { focus = ITA_battaglioni_m }
 		x = 1
 		y = 1
@@ -8260,7 +8260,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_independence_rsi
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_FOCUS_ITA_FORTEZZA
 		prerequisite = { focus = ITA_the_social_republic_prevails }
 		x = 0
 		y = 1

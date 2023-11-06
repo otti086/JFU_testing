@@ -630,7 +630,7 @@
 	}
 	focus = {
 		id = JAP_national_defense_state
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_FOCUS_JAP_TOTAL_MOB
 		prerequisite = { focus = JAP_nationalize_war_industry  }
 		x = 2
 		y = 1

@@ -1061,7 +1061,7 @@
 
 	focus = {
 		id = VIC_emergency_powers_to_petain
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_FRA_VIC_PETAIN
 		x = 20
 		y = 0
 		offset = {

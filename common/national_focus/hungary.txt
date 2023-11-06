@@ -31,7 +31,7 @@ focus_tree = {
 
 	focus = {
 		id = HUN_economic_intervention
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_FOCUS_HORTHY_SUCCESSION
 		x = 3
 		y = 0
 
@@ -1040,7 +1040,7 @@ focus_tree = {
 
 	focus = {
 		id = HUN_light_infantry_divisions_doctrine
-		icon = GFX_goal_generic_special_forces
+		icon = GFX_GOAL_ESPIRIT_DE_CORPS
 		prerequisite = { focus = HUN_home_defense }
 		x = 3
 		y = 1
@@ -1267,7 +1267,7 @@ focus_tree = {
 
 	focus = {
 		id = HUN_danuvia_submachine_guns
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_GOAL_LEVENTE_INSTITUTION
 		prerequisite = { focus = HUN_light_infantry_divisions_doctrine }
 		x = 1
 		y = 1

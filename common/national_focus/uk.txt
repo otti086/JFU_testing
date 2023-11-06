@@ -70,7 +70,7 @@ focus_tree = {
 		id = tizard_mission_focus
 		prerequisite = { focus = crypto_bomb_focus }
 		prerequisite = { focus = radar_focus }
-		icon = GFX_goal_generic_scientific_exchange
+		icon = GFX_R56_GOAL_GENERIC_BEFRIEND_UNITED_STATES
 		x = 0
 		y = 3
 		relative_position_id = crypto_bomb_focus

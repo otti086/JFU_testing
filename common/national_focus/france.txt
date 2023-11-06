@@ -456,9 +456,9 @@ focus = {
 
 
 	focus = {
-		id = FRA_revive_the_national_bloc
-		icon = GFX_focus_generic_strike_at_democracy2
-		x = 10
+		id = FRA_form_the_popular_front
+		icon = GFX_FRA_front_de_la_liberte
+		x = 9
 		y = 0
 
 
@@ -476,19 +476,29 @@ focus = {
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_country_leader_trait = tenacious_negotiator
+			create_country_leader = {
+				name = "Léon Blum"
+				desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
+				picture = GFX_portrait_fra_leon_blum
+				expire = "1965.1.1"
+				ideology = socialism
+				traits = {
+					reluctant_interventionist
+				}
+			}
+			add_stability = 0.05
 		}
 	}	
 	focus = {
 		id = FRA_laissez_faire
-		icon = GFX_goal_generic_consumer_goods
-		x = 1
+		icon = GFX_FOCUS_FRA_LAISSEZ
+		x = 0
 		y = 1
 
 		prerequisite = {
-			focus = FRA_revive_the_national_bloc
+			focus = FRA_form_the_popular_front
 		}
-		relative_position_id = FRA_revive_the_national_bloc
+		relative_position_id = FRA_form_the_popular_front
 		cost = 10
 
 
@@ -519,7 +529,7 @@ focus = {
 	focus = {
 		id = FRA_protect_the_rights_of_man
 		icon = GFX_goal_generic_demand_territory
-		x = -2
+		x = -1
 		y = 1
 		prerequisite = {
 			focus = FRA_laissez_faire
@@ -538,41 +548,9 @@ focus = {
 		}
 	}
 	focus = {
-		id = FRA_stimulate_the_dynamic_market
-		icon = GFX_goal_generic_construct_civilian
-		x = 0
-		y = 3
-
-		prerequisite = {
-			focus = FRA_promote_entrepeneurship
-		}
-		relative_position_id = FRA_laissez_faire
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			NOT = { 16 = { is_controlled_by = FRA} }
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			add_ideas = { FRA_market_dynamism }
-		}
-	}
-	focus = {
 		id = FRA_economic_devolution
-		icon = GFX_goal_generic_positive_trade_relations
-		x = 0
+		icon = GFX_FRA_PUT_FRANCE_IN_AUTARKY
+		x = 1
 		y = 1
 
 		prerequisite = {
@@ -635,7 +613,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_promote_entrepeneurship
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_FRA_STRENGTHEN_INDUSTRIAL_ECONOMIC_COOPERATION
 		x = 0
 		y = 1
 
@@ -654,15 +632,47 @@ focus = {
 		}
 	}	
 	focus = {
-		id = FRA_encourage_immigration
-		icon = GFX_goal_generic_national_unity
-		x = -2
+		id = FRA_stimulate_the_dynamic_market
+		icon = GFX_goal_generic_construct_civilian
+		x = 0
 		y = 1
 
 		prerequisite = {
-			focus = FRA_protect_the_rights_of_man
+			focus = FRA_promote_entrepeneurship
 		}
-		relative_position_id = FRA_protect_the_rights_of_man
+		relative_position_id = FRA_promote_entrepeneurship
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			NOT = { 16 = { is_controlled_by = FRA} }
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_ideas = { FRA_market_dynamism }
+		}
+	}
+	focus = {
+		id = FRA_encourage_immigration
+		icon = GFX_goal_generic_national_unity
+		x = 2
+		y = 1
+
+		prerequisite = {
+			focus = FRA_form_the_popular_front
+		}
+		relative_position_id = FRA_form_the_popular_front
 		cost = 5
 
 		ai_will_do = {
@@ -708,14 +718,14 @@ focus = {
 	focus = {
 		id = FRA_intervention_in_spain
 		icon = GFX_focus_focus_fra_intervention_spain
-		x = -1
+		x = -2
 		y = 1
 
 		prerequisite = {
-			focus = FRA_revive_the_national_bloc
+			focus = FRA_form_the_popular_front
 		}
 		
-		relative_position_id = FRA_revive_the_national_bloc
+		relative_position_id = FRA_form_the_popular_front
 		cost = 1
 
 		ai_will_do = {
@@ -875,7 +885,7 @@ focus = {
 			focus = FRA_buy_time
 		}
 		relative_position_id = FRA_buy_time
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1021,7 +1031,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_appeal_to_the_french_nation
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_FOCUS_FRA_DE_GAULLE
 		x = 25
 		y = 0
 
