@@ -376,7 +376,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_motorized_focus
-		icon = GFX_goal_generic_army_motorized
+		icon = GFX_FRA_MOTORIZED_FOCUS
 		prerequisite = { focus = FRA_battle_of_maneuver }
 		x = 0
 		y = 1
@@ -878,7 +878,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_arms_purchases_in_the_us
-		icon = GFX_goal_generic_build_tank
+		icon = GFX_FRA_ARMS_PURCHASES_IN_THE_US
 		x = 1
 		y = 1
 		prerequisite = {

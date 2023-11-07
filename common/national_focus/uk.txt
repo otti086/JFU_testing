@@ -242,7 +242,7 @@ focus_tree = {
 	focus = {
 		id = ENG_tank_focus
 		prerequisite = { focus = ENG_motorized_focus }
-		icon = GFX_goal_generic_army_tanks
+		icon = GFX_GOAL_ENG_TANK
 		x = 0
 		y = 1
 		relative_position_id = ENG_motorized_focus
@@ -330,7 +330,7 @@ focus_tree = {
 	focus = {
 		id = radar_focus
 		prerequisite = { focus = air_defense_focus }
-		icon = GFX_goal_generic_radar
+		icon = GFX_ENG_CHAIN_HOME
 		x = 0
 		y = 1
 		relative_position_id = air_defense_focus
@@ -1048,7 +1048,7 @@ focus_tree = {
 	focus = {
 		id = aircraft_production_focus
 		prerequisite = { focus = fighter_command_focus focus = bomber_command_focus focus = coastal_command_focus }
-		icon = GFX_goal_generic_air_production
+		icon = GFX_MOSKITO
 		x = 1
 		y = 1
 		relative_position_id = fighter_command_focus
@@ -1273,7 +1273,7 @@ focus_tree = {
 		id = uk_carrier_focus
 		prerequisite = { focus = uk_waves_focus }
 		mutually_exclusive = { focus = uk_battleship_focus }
-		icon = GFX_goal_generic_navy_carrier
+		icon = GFX_ENG_CARRIERS
 		x = -1
 		y = 1
 		relative_position_id = uk_waves_focus
@@ -1408,7 +1408,7 @@ focus_tree = {
 	focus = {
 		id = ENG_vanguard
 		prerequisite = { focus = uk_battleship_focus }
-		icon = GFX_focus_generic_navy_battleship2
+		icon = GFX_GOAL_ENG_VANGUARD
 		x = 0
 		y = 2
 		relative_position_id = uk_battleship_focus
@@ -2078,7 +2078,7 @@ focus_tree = {
 			}
 			date > 1938.6.1
 		} 
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_GOAL_ENG_DEVELOP_RAJ
 		x = -3
 		y = 1
 		relative_position_id = uk_commonwealth_focus

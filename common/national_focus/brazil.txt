@@ -14,7 +14,7 @@ focus_tree = {
 
 	focus = {
 		id = bra_army_effort
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_BRA_ARMY
 		x = 1
 		y = 0
 		cost = 10
@@ -251,7 +251,7 @@ focus_tree = {
 
 	focus = {
 		id = bra_naval_effort
-		icon = GFX_goal_generic_construct_naval_dockyard
+		icon = GFX_BRA_NAVY
 		x = 4
 		y = 0
 		cost = 10
@@ -1096,7 +1096,7 @@ focus_tree = {
 
 	focus = {
 		id = bra_extra_tech_slot
-		icon = GFX_focus_research
+		icon = GFX_KEEP_TENETES
 		prerequisite = { focus = bra_infrastructure_effort_2 }
 		x = 0
 		y = 1
@@ -1114,7 +1114,7 @@ focus_tree = {
 	
 	focus = {
 		id = bra_extra_tech_slot_2
-		icon = GFX_focus_research
+		icon = GFX_KEEP_TENETES
 		prerequisite = { focus = bra_extra_tech_slot }
 		available = {
 			num_of_factories > 50
@@ -1255,7 +1255,7 @@ focus_tree = {
 
 	focus = {
 		id = bra_deterrence
-		icon = GFX_goal_generic_defence
+		icon = GFX_GOAL_DETERRENCE
 		prerequisite = { focus = bra_neutrality_focus }
 		x = 0
 		y = 1

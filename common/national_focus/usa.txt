@@ -2245,7 +2245,7 @@ focus_tree = {
 	
 	focus = {
 		id = USA_liberty_ships
-		icon = GFX_goal_generic_amphibious_assault
+		icon = GFX_USA_LIBERTY_SHIPS
 		prerequisite = { focus = USA_maritime_commission }
 		x = -3
 		y = 2

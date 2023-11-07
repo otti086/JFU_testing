@@ -723,12 +723,6 @@ spriteTypes = {
     
 
     SpriteType = {
-		name = "GFX_R56_GOAL_FRA_DE_GAULLE"
-		texturefile = "gfx/interface/goals/fra/r56_goal_FRA_de_gaulle.dds"
-	}
-    
-
-    SpriteType = {
 		name = "GFX_R56_GOAL_FRA_SOMUA"
 		texturefile = "gfx/interface/goals/fra/r56_goal_FRA_somua.dds"
 	}
@@ -803,6 +797,271 @@ spriteTypes = {
     SpriteType = {
 		name = "GFX_R56_GOAL_ENG_SERVICE_OVERSEAS"
 		texturefile = "gfx/interface/goals/eng/r56_goal_ENG_service_overseas.dds"
+	}
+
+    
+
+    SpriteType = {
+		name = "GFX_FOCUS_CENTRAL_PLANNED_ECONOMY"
+		texturefile = "gfx/interface/goals/generic/Focus_Central_Planned_Economy.png"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_FOCUS_EXPORT_ECONOMY"
+		texturefile = "gfx/interface/goals/generic/Focus_Export_Economy.png"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GENERIC_FACTORY_COMPLEX"
+		texturefile = "gfx/interface/goals/generic/Generic_Factory_Complex.png"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_NAVAL_UPGRADE"
+		texturefile = "gfx/interface/goals/generic/Naval_Upgrade.png"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_FOCUS_GER_AIR_INNO_1"
+		texturefile = "gfx/interface/goals/ger/focus_GER_air_inno_1.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_FOCUS_GER_ARMY_INNO_1"
+		texturefile = "gfx/interface/goals/ger/focus_GER_army_inno_1.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_FOCUS_GER_HGW"
+		texturefile = "gfx/interface/goals/ger/focus_GER_hgw.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GER_ACHTUNG_PANZER"
+		texturefile = "gfx/interface/goals/ger/ger_achtung_panzer.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GER_ATLANTIKWALL"
+		texturefile = "gfx/interface/goals/ger/GER_atlantikwall.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GER_AUTARKY"
+		texturefile = "gfx/interface/goals/ger/GER_autarky.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GER_KING_TIGER"
+		texturefile = "gfx/interface/goals/ger/GER_king_tiger.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GER_MOL_RIB_PACT"
+		texturefile = "gfx/interface/goals/ger/GER_mol_rib_pact.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_ITA_H_CLASS"
+		texturefile = "gfx/interface/goals/ita/ITA_h_class.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_JAP_INDUSTRY"
+		texturefile = "gfx/interface/goals/jap/JAP_industry.tga"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_USA_LIBERTY_SHIPS"
+		texturefile = "gfx/interface/goals/usa/USA_liberty_ships.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_BRA_AIRFORCE"
+		texturefile = "gfx/interface/goals/bra/BRA_airforce.tga"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_BRA_ARMY"
+		texturefile = "gfx/interface/goals/bra/BRA_army.tga"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_BRA_NAVY"
+		texturefile = "gfx/interface/goals/bra/BRA_navy.tga"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_KEEP_TENETES"
+		texturefile = "gfx/interface/goals/bra/keep_tenetes.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_CAN_FIRST_CANADIAN_ARMY"
+		texturefile = "gfx/interface/goals/can/CAN_first_canadian_army.png"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_R56_GOAL_CAN_NATIONAL_HOUSING_ACT"
+		texturefile = "gfx/interface/goals/can/r56_goal_CAN_national_housing_act.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_R56_GOAL_CAN_PARLIAMENT"
+		texturefile = "gfx/interface/goals/can/r56_goal_CAN_parliament.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_R56_GOAL_CAN_RAM_TANK"
+		texturefile = "gfx/interface/goals/can/r56_goal_CAN_ram_tank.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_R56_GOAL_CAN_THE_CBC"
+		texturefile = "gfx/interface/goals/can/r56_goal_CAN_the_cbc.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GOAL_ENG_TANK"
+		texturefile = "gfx/interface/goals/eng/GOAL_eng_tank.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GOAL_DETERRENCE"
+		texturefile = "gfx/interface/goals/generic/GOAL_deterrence.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GOAL_DISPERSE_INDUSTRY"
+		texturefile = "gfx/interface/goals/generic/GOAL_disperse_industry.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GOAL_SOVIET_KATYUSHA"
+		texturefile = "gfx/interface/goals/sov/GOAL_soviet_katyusha.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_CRUSADER"
+		texturefile = "gfx/interface/goals/eng/crusader.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_ENG_CARRIERS"
+		texturefile = "gfx/interface/goals/eng/ENG_carriers.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_ENG_CHAIN_HOME"
+		texturefile = "gfx/interface/goals/eng/ENG_chain_home.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GOAL_ENG_DEVELOP_RAJ"
+		texturefile = "gfx/interface/goals/eng/goal_eng_develop_raj.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GOAL_ENG_VANGUARD"
+		texturefile = "gfx/interface/goals/eng/goal_eng_vanguard.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_MOSKITO"
+		texturefile = "gfx/interface/goals/eng/moskito.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_FRA_ARMS_PURCHASES_IN_THE_US"
+		texturefile = "gfx/interface/goals/fra/FRA_arms_purchases_in_the_us.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_FRA_MOTORIZED_FOCUS"
+		texturefile = "gfx/interface/goals/fra/FRA_motorized_focus.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GER_FUR_DAS_VATERLAND"
+		texturefile = "gfx/interface/goals/ger/ger_fur_das_vaterland.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GER_GROSRAUMWIRTSCHAFT"
+		texturefile = "gfx/interface/goals/ger/GER_grosraumwirtschaft.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GER_INTEGRATE_WAR_ECONOMIES_ICON"
+		texturefile = "gfx/interface/goals/ger/GER_integrate_war_economies_icon.tga"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GER_LUFTWAFFE_EXPANSION"
+		texturefile = "gfx/interface/goals/ger/GER_luftwaffe_expansion.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GER_MODERN_FIGHTER"
+		texturefile = "gfx/interface/goals/ger/GER_modern_fighter.tga"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GER_MOLOTOV_RIBBENTROP_PACT_ICON"
+		texturefile = "gfx/interface/goals/ger/GER_molotov_ribbentrop_pact_icon.tga"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GER_SYNTHETIC_RUBBER"
+		texturefile = "gfx/interface/goals/ger/GER_synthetic_rubber.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GER_WEAPONS_OF_VENGEANCE"
+		texturefile = "gfx/interface/goals/ger/GER_weapons_of_vengeance.tga"
 	}
     
 }

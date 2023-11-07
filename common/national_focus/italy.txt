@@ -4859,7 +4859,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_incrociatori_pesanti
-		icon = GFX_focus_generic_navy_battleship2
+		icon = GFX_ITA_H_CLASS
 		prerequisite = { focus = ITA_supermarina }
 		mutually_exclusive = { focus = ITA_incrociatori_leggeri }
 		x = 2
