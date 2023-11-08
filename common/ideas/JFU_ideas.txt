@@ -741,7 +741,7 @@ ideas = {
 				}
 			}
 			modifier = {  
-#				army_strength_factor = 0.2 
+				army_strength_factor = 0.3 
 				supply_consumption_factor = -0.1 
 				army_org_regain = 0.1 
 				supply_node_range = 0.1	
@@ -750,6 +750,19 @@ ideas = {
 #				small_plane_airframe = {  air_defence = 0.2 instant = yes }
 #			}
 		}
+		ENG_operation_compass = {
+			allowed = {	always = no	}
+			available = {  always = yes  }
+			removal_cost = -1
+			picture = eng_the_sun_never_sets
+			cancel={
+			}
+			modifier = {
+				heat_attrition_factor = -0.5  
+				army_strength_factor = 0.3 
+			}			
+		}
+
 		JFU_soviet_synthetics = {
 			allowed = {	always = no	}
 			available = {  always = yes  }

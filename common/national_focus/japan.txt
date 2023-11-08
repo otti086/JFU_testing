@@ -348,6 +348,12 @@
 						axis = yes
 					}
 					remove_ideas = { GER_the_blitzkrieg }
+				}
+				every_country = {
+					limit = {
+						allies = yes
+					}
+					remove_ideas = { ENG_operation_compass }
 				}						
 			} 			
 		}

@@ -473,6 +473,12 @@ country_event = {
 			HUN = { add_timed_idea = { idea = GER_the_blitzkrieg days = 365 } }
 			BUL = { add_timed_idea = { idea = GER_the_blitzkrieg days = 365 } }
 			ROM = { add_timed_idea = { idea = GER_the_blitzkrieg days = 365 } }
+			ENG = { add_timed_idea = { idea = ENG_operation_compass days = 365 } }
+			CAN = { add_timed_idea = { idea = ENG_operation_compass days = 365 } }
+			SAF = { add_timed_idea = { idea = ENG_operation_compass days = 365 } }
+			RAJ = { add_timed_idea = { idea = ENG_operation_compass days = 365 } }
+			AST = { add_timed_idea = { idea = ENG_operation_compass days = 365 } }
+			NZL = { add_timed_idea = { idea = ENG_operation_compass days = 365 } }
 		}
 	}
 }
