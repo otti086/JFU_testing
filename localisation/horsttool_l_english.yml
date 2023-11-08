@@ -1135,6 +1135,8 @@
  decisive_battle_idea:0 "Decisive Battle"   
  supremacy_at_sea:0 "Supremacy at Sea"
  wolfpack_tactics_idea:0 "Wolfpack Tactics"
+
+
  #decisions
 
  GER_fall_gelb:0 "§gFall§! §YGelb (Belgium and Netherlands)§!"
@@ -1148,6 +1150,7 @@
  anti_non_aligned_raids:0 "Anti Non-Aligned Raids"
  anti_non_aligned_raids_desc:0 "We must crack down on Non-Aligned elements in our nation for the sake of long-term domestic stability. Their influence is too great, and may potentially become a problem to the government."
 
+
  #events
 
  news.5003.d:0 "Since the start of Operation Barbarossa the Workers' and Peasants' Red Army has been plagued by routing, leaving many Soviet industrial and urban centers near the border under Axis control. Joseph Stalin has responded with an order to all Red Army commanders to cease unauthorized retreats and set up special detachments for dealing with deserters."
@@ -1157,6 +1160,13 @@
  JFU_events.7.a:0 "God Save Our Kings!"
  fall_blau_effect:0 "enables after Germany started Fall Blau"
 
+
+ #modifiers 
+
+ modifier_production_cost_dockyard_factor:0 "§YDockyard§! construction cost"
+ modifier_production_cost_dockyard_factor_desc:0 "Modifies the cost of Dockyard construction."
+
+
  #MIOs
 
  ENG_light_aircraft_organization:0 "Light Aircraft Designer"
@@ -1164,6 +1174,7 @@
  JAP_light_aircraft_organization:0 "Light Aircraft Designer"
  SOV_CAS_organization:0 "Soviet Cas Designer"
  JAP_CAS_organization:0 "Soviet Cas Designer"
+
 
  #Mio traits
 

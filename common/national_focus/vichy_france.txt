@@ -1457,7 +1457,7 @@
 	}
 	focus = {
 		id = VIC_a_nation_reborn
-		icon = GFX_goal_support_fascism
+		icon = GFX_VIC_A_NATION_REBORN
 		x = 0
 		y = 2
 		offset = {
@@ -1640,7 +1640,7 @@
 	}
 	focus = {
 		id = VIC_rebuild_the_military
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_EFR_FACTORY_ICON
 		x = 4
 		y = 1
 		offset = {

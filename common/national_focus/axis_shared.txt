@@ -19,7 +19,7 @@
 		trigger = {	tag = ROM}
 	}
 	offset = {
-		x = 14  
+		x = 23  
 		y = 5
 		trigger = {	tag = EFR}
 	}

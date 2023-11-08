@@ -1136,4 +1136,88 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/can/focus_CAN_zombie.dds"
 	}
     
+
+    SpriteType = {
+		name = "GFX_R56_GOAL_IRE_FIANNA_FAIL"
+		texturefile = "gfx/interface/goals/r56_goal_IRE_fianna_fail.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_USA_COMBINED_BOMBER_OFFENSIVE"
+		texturefile = "gfx/interface/goals/usa/USA_combined_bomber_offensive.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GOAL_USA_ARSENAL_OF_DEMOCRACY"
+		texturefile = "gfx/interface/goals/usa/Goal_USA_arsenal_of_democracy.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_USA_BOMB_JAPAN"
+		texturefile = "gfx/interface/goals/usa/USA_bomb_japan.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_USA_BIRTH_OF_THE_AIRFORCE"
+		texturefile = "gfx/interface/goals/usa/USA_birth_of_the_airforce.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_USA_PACIFIC_DEFENCES_IMPROVEMENT"
+		texturefile = "gfx/interface/goals/usa/USA_pacific_defences_improvement.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_EFR_FACTORY_ICON"
+		texturefile = "gfx/interface/goals/EFR_factory_icon.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_VIC_A_NATION_REBORN"
+		texturefile = "gfx/interface/goals/VIC_a_nation_reborn.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GOAL_GENERIC_JAPAN_OIL"
+		texturefile = "gfx/interface/goals/jap/goal_generic_japan_oil.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_JAP_SHOKAKU_CLASS"
+		texturefile = "gfx/interface/goals/jap/JAP_shokaku_class.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_JAP_YAMATO_BATTLESHIP"
+		texturefile = "gfx/interface/goals/jap/JAP_yamato_battleship.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_JAPAN_ARMY"
+		texturefile = "gfx/interface/goals/jap/Japan_Army.tga"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_JAPANESE_AIRFORCE"
+		texturefile = "gfx/interface/goals/jap/Japanese_Airforce.tga"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_JAPANESE_FLEET"
+		texturefile = "gfx/interface/goals/jap/Japanese_Fleet.tga"
+	}
+    
 }

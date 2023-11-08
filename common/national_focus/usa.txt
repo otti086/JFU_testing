@@ -493,7 +493,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_arsenal_of_democracy
-		icon = GFX_goal_support_democracy
+		icon = GFX_GOAL_USA_ARSENAL_OF_DEMOCRACY
 		prerequisite = { focus = USA_neutrality_act }
 		x = 0
 		y = 2
@@ -1250,7 +1250,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_defense_of_the_pacific
-		icon = GFX_goal_generic_occupy_states_coastal
+		icon = GFX_USA_PACIFIC_DEFENCES_IMPROVEMENT
 		prerequisite = { focus = USA_war_plan_orange }
 		available = {
 			JAP = {
@@ -1969,7 +1969,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_combined_bomber_offensive
-		icon = GFX_goal_generic_air_bomber
+		icon = GFX_USA_BOMB_JAPAN
 		prerequisite = { focus = USA_strategic_bombing }
 		available = {
 			has_war = yes
@@ -2041,7 +2041,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_us_army_airforce
-		icon = GFX_focus_generic_strike_at_democracy1
+		icon = GFX_USA_BIRTH_OF_THE_AIRFORCE
 		x = -1
 		y = 4
 		prerequisite = { focus = USA_TAC }

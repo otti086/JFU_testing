@@ -1115,7 +1115,7 @@ focus_tree = {
 
 	focus = {
 		id = ire_liberty_ethos
-		icon = GFX_goal_support_democracy
+		icon = GFX_R56_GOAL_IRE_FIANNA_FAIL
 		prerequisite = { focus = ire_political_effort }
 		available = {
 		}
