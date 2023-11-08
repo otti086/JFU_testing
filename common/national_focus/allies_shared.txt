@@ -91,10 +91,40 @@ shared_focus = {
 		y = 5
 		trigger = {	tag = AST}
 	} 
+	offset = {
+		x = 28  
+		y = 5
+		trigger = {	tag = MEX}
+	}
+ 	offset = {
+		x = 15  
+		y = 0
+		trigger = {	tag = BRA}
+	}
+	offset = {
+		x = 20  
+		y = 1
+		trigger = {	tag = SAF}
+	}
+	offset = {
+		x = 13  
+		y = 5
+		trigger = {	tag = RAJ}
+	}
+	offset = {
+		x = 13  
+		y = 5
+		trigger = {	tag = NZL}
+	}
+	offset = {
+		x = 15  
+		y = 0
+		trigger = {	tag = IRE}
+	}     
 	available = {has_capitulated = yes }
 	available_if_capitulated = yes
 	allow_branch = { 
-		NOT ={ OR = {tag = POL  tag = HOL tag = FRA tag = GRE tag = NOR tag = RAJ } }  #these minors are designed to be exiled and this focus sub-tree is only meant for minors that aren't supposed to capitulate usually
+		NOT ={ OR = { tag = FRA tag = NOR } }  #these minors are designed to be exiled and this focus sub-tree is only meant for minors that aren't supposed to capitulate usually
 	}
 	cost = 5
 	completion_reward = {

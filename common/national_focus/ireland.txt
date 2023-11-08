@@ -12,7 +12,7 @@ focus_tree = {
 		}
 	}
 	default = no
-
+	shared_focus = ALLIES_continue_the_fight
 	focus = {
 		id = ire_army_effort
 		icon = GFX_goal_generic_allies_build_infantry

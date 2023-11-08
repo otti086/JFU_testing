@@ -11,7 +11,7 @@ focus_tree = {
 		
 		}
 	}
-
+	shared_focus = ALLIES_continue_the_fight
 	focus = {
 		id = bra_army_effort
 		icon = GFX_BRA_ARMY

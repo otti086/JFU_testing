@@ -24,7 +24,7 @@ focus_tree = {
 	############################
 	## THE BIG QUEEN SECTION ###
 	############################
-
+	shared_focus = ALLIES_continue_the_fight
 	focus = {
 		id = RAJ_provincial_elections
 		icon = GFX_goal_generic_forceful_treaty

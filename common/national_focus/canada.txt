@@ -63,7 +63,7 @@ focus_tree = {
 	############################
 	##### INDUSTRY SECTION #####
 	############################
-
+	shared_focus = ALLIES_continue_the_fight
 	focus = {
 		id = CAN_rowell_sirois_commission
 		icon = GFX_FOCUS_CAN_ROWELL

@@ -14,7 +14,6 @@
 		x = 0
 	}
 
-	
 	default = no
 	focus = {
 		id = FRA_devalue_the_franc
