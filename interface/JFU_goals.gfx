@@ -1117,7 +1117,11 @@ spriteTypes = {
 		name = "GFX_FOCUS_ITA_SUB2"
 		texturefile = "gfx/interface/goals/ita/focus_ITA_sub2.dds"
 	}
-    
+
+    SpriteType = {
+		name = "GFX_FOCUS_ITA_SUB"
+		texturefile = "gfx/interface/goals/ita/focus_ITA_sub.dds"
+	}    
 
     SpriteType = {
 		name = "GFX_FOCUS_CAN_CORP"

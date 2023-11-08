@@ -5037,7 +5037,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_midget_submarines
-		icon = GFX_focus_generic_midget_submarines
+		icon = GFX_FOCUS_ITA_SUB
 		prerequisite = { focus = ITA_incrociatori_leggeri }
 		mutually_exclusive = { focus = ITA_cruiser_submarines }
 		x = -2

@@ -120,6 +120,11 @@ shared_focus = {
 		x = 15  
 		y = 0
 		trigger = {	tag = IRE}
+	} 
+	offset = {
+		x = 19
+		y = 6
+		trigger = {	tag = CAN}
 	}     
 	available = {has_capitulated = yes }
 	available_if_capitulated = yes
