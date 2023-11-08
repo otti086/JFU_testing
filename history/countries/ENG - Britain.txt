@@ -25,7 +25,18 @@ if = {
 	}
 	set_oob = "ENG_1936_nsb"
 }
-
+#907 = {
+#	add_dynamic_modifier = { modifier = no_entrenchment_africa }
+#}
+#452 = {
+#	add_dynamic_modifier = { modifier = no_entrenchment_africa }	
+#}
+#935 = {
+#	add_dynamic_modifier = { modifier = no_entrenchment_africa }	
+#}
+#447 = {
+#	add_dynamic_modifier = { modifier = no_entrenchment_africa }	
+#}
 starting_train_buffer = 4
 
 if = {

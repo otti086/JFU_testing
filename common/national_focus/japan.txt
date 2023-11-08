@@ -354,6 +354,16 @@
 						allies = yes
 					}
 					remove_ideas = { ENG_operation_compass }
+				}
+				every_state = {
+					limit = { 
+						has_dynamic_modifier = {
+							modifier = no_entrenchment_africa
+						}
+						remove_dynamic_modifier = {
+							modifier = no_entrenchment_africa
+						}
+					}
 				}						
 			} 			
 		}
