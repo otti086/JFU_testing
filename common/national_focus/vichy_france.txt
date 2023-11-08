@@ -11,7 +11,8 @@
 	}
 	
 	default = no
-		focus = {
+ 	shared_focus = AXIS_pact_of_steel
+	focus = {
 		id = EFR_army_effort
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 1

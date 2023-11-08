@@ -21,7 +21,7 @@ focus_tree = {
 	} 
 	default = no 
 	continuous_focus_position = { x = 20 y = 2000 }
-
+ 	shared_focus = AXIS_pact_of_steel
     focus = {
 		id = SPR_a_great_spain
 		cancel_if_invalid = yes

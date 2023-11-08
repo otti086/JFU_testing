@@ -18,7 +18,7 @@ focus_tree = {
 	############################
 	##### PRESERVE G ROM #######
 	############################
-
+ 	shared_focus = AXIS_pact_of_steel
 	focus = {
 		id = ROM_preserve_greater_romania
 		icon = GFX_focus_rom_preserve_romania

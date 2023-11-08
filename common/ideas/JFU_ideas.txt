@@ -858,6 +858,101 @@ ideas = {
 				army_core_attack_factor = 0.2
 				army_core_defence_factor = 0.2
 			}
-		}		
+		}
+		italian_defense= {
+			picture = general_staff
+
+			modifier = { 
+				max_dig_in = 0.5 
+				production_speed_bunker_factor = 0.1 
+			}
+		}
+		supremacy_at_sea = {
+			picture = generic_coastal_defense_ships2
+
+			modifier = {
+				naval_damage_factor = 0.05
+			}
+		}
+		brains_over_brawn = {
+			picture = general_staff
+
+			modifier = { planning_speed = 0.25 }
+		}
+		wolfpack_tactics_idea = {
+			picture = tur_golden_age_of_the_wolf
+
+			modifier = {
+				#naval_enemy_positioning_in_initial_attack = -0.10
+				naval_enemy_fleet_size_ratio_penalty_factor = 0.10
+				naval_torpedo_reveal_chance_factor = -0.10
+			}
+		}
+		italian_corporatism = {
+			picture = general_staff
+
+			modifier = { 
+				production_factory_start_efficiency_factor = 0.05 
+			}
+		}
+		showa_statism = {
+			picture = generic_monarchist_uprising
+
+			modifier = { 
+				stability_factor = 0.10
+			}
+		}
+		live_off_the_rear = {
+			picture = jap_supremacy_of_will
+
+			modifier = { 
+				supply_consumption_factor = -0.05
+			} 
+		}
+		decisive_battle_idea = {
+			picture = generic_coastal_defense_ships
+
+			modifier = { 
+				naval_defense_factor = 0.05 
+			}
+		}
+		japanese_shipyard_expertise= {
+			picture = sasebo_naval_arsenal
+
+			modifier = { 
+				production_cost_dockyard_factor = -0.15 
+			}
+		}
+		japanese_commando_training = {
+			picture = generic_japanese_conflict
+
+			modifier = { 
+				special_forces_no_supply_grace = 48 
+			}
+		}
+		ideological_fanaticism_focus_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+
+			rule = {
+				can_create_factions = yes
+			}
+
+			modifier = {
+				war_support_factor = 0.1
+				army_core_attack_factor = 0.2
+				army_core_defence_factor = 0.2
+			}
+		}		 		
 	}
 }

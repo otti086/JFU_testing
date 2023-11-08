@@ -28,7 +28,7 @@ focus_tree = {
 	############################
 	## ECONOMIC INTERVENTION ###
 	############################
-
+ 	shared_focus = AXIS_pact_of_steel
 	focus = {
 		id = HUN_economic_intervention
 		icon = GFX_FOCUS_HORTHY_SUCCESSION
