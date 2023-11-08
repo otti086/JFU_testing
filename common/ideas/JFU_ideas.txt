@@ -821,6 +821,43 @@ ideas = {
 				sortie_efficiency = 0.15 
 				naval_detection = 0.25  
 			}
+		}
+		POL_influx_of_exiles = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			picture = soviet_german_friendship
+
+			removal_cost = -1
+
+			modifier = {
+				weekly_manpower = 1000
+			}
+		}
+		POL_push_home_idea = {
+			allowed = {
+				original_tag = POL
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = chi_army_corruption3
+
+			modifier = {
+				army_core_attack_factor = 0.2
+				army_core_defence_factor = 0.2
+			}
 		}		
 	}
 }

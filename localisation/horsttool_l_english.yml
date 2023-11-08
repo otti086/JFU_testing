@@ -1047,8 +1047,28 @@
  GER_plan_z_cv_desc:0 ""
  GER_plan_z_bb:0 "Lay Down the Bismarck"
  GER_plan_z_bb_desc:0 ""
- 
  SOV_Bessarabia:0 "Demand Besserabia"
+ ALLIES_continue_the_fight:0 "Continue the Fight"
+ ALLIES_continue_the_fight_desc:0 "We shall fight on the beaches, we shall fight on the landing grounds, we shall fight in the fields and in the streets, we shall fight in the hills; we shall never surrender!"
+ ALLIES_continue_the_fight_navy:0 "Free [ROOT.GetAdjective] Navy"
+ ALLIES_continue_the_fight_navy_desc:0 "As an exiled nation, we shall focus our efforts on creating and maintaining a fleet to assist the [ENG.GetFactionName] against the Axis."
+ ALLIES_continue_the_fight_navy_seamen:0 "Seek Able-Bodied Seamen"
+ ALLIES_continue_the_fight_navy_seamen_desc:0 "We will scrape together a small fleet based in an Allied port."
+ ALLIES_continue_the_fight_navy_convoy:0 "Freedom Ships"
+ ALLIES_continue_the_fight_navy_convoy_desc:0 "Production of convoys is necessary for the war effort. This is something we can easily help with."
+ ALLIES_continue_the_fight_navy_marine:0 "Free [ROOT.GetAdjective] Marine Corps"
+ ALLIES_continue_the_fight_navy_marine_desc:0 "We will establish a marine infantry corps that will be attached to our navy."
+ ALLIES_continue_the_fight_army:0 "Free [ROOT.GetAdjective] Forces"
+ ALLIES_continue_the_fight_army_desc:0 "The fight doesn't end with our capitulation - it is merely the beginning of a new chapter of this war!"
+ ALLIES_continue_the_fight_army_spawn:0 "Mobilize Exiled Veterans"
+ ALLIES_continue_the_fight_army_spawn_desc:0 "All [ROOT.GetAdjective] that managed to flee the fall of [Root.GetName] will be banded together into an army."
+ ALLIES_continue_the_fight_army_sabotage:0 "Sabotage Captured Factories"
+ ALLIES_continue_the_fight_army_sabotage_desc:0 "Resistance operatives will sabotage the industry we left behind to hamper the war effort of our enemy."
+ ALLIES_continue_the_fight_army_volunteers:0 "Recruit Volunteers"
+ ALLIES_continue_the_fight_army_volunteers_desc:0 "We will find our expatriates and recruit them into our army."
+ ALLIES_resist:0 "Coming Home"
+ ALLIES_resist_desc:0 "The time for liberation draws near - we are coming home."
+
 
  #tooltips
 

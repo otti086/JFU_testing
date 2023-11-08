@@ -1,0 +1,246 @@
+﻿#shared_focus = {
+#	id = ALLIES_commonwealth_of_nations 
+#	icon = GFX_focus_eng_unite_the_anglosphere 
+#	x = 0
+#	y = 0
+#	offset = {
+#		x = 21  
+#		y = 5   
+#		trigger = {	tag = CAN}
+#	}
+#	offset = {
+#		x = 24  
+#		y = 0   
+#		trigger = {	tag = BRA}
+#	}
+#		offset = {
+#		x = 37  
+#		y = 0   
+#		trigger = {	tag = MEX}
+#	}
+#
+#	offset = {
+#		x = 21  
+#		y = 5   
+#		trigger = {	tag = AST}
+#	}	
+#	offset = {
+#		x = 4
+#		y = 6   
+#		trigger = {	tag = FRA}
+#	}	
+#		offset = {
+#		x = 15
+#		y = 4
+#		trigger = {	tag = GRE}
+#	}	
+#	
+#			offset = {
+#		x = 30
+#		y = 7
+#		trigger = {	tag = RAJ}
+#	}	
+#	
+#				offset = {
+#		x = 27
+#		y = 4
+#		trigger = {	tag = NZL}
+#	}	
+#				offset = {
+#		x = 8
+#		y = 7
+#		trigger = {	tag = HOL}
+#	}	
+#	
+#					offset = {
+#		x = 21
+#		y = 6
+#		trigger = {	tag = SAF}
+#	}	
+#						offset = {
+#		x = 9
+#		y = 6
+#		trigger = {	tag = NOR}
+#	}	
+#	
+#						offset = {
+#		x = 10
+#		y = 6
+#		trigger = {	tag = POL}
+#	}	
+#	
+#	
+#		cost = 5
+#		available_if_capitulated = yes
+#	completion_reward = {
+#		add_political_power = 50
+#	}
+#}
+
+
+
+
+
+shared_focus = {
+	id = ALLIES_continue_the_fight 
+	icon = GFX_focus_ETH_freedom_at_gunpoint 
+	x = 0
+	y = 0
+	offset = {
+		x = 13  
+		y = 5
+		trigger = {	tag = AST}
+	} 
+	available = {has_capitulated = yes }
+	available_if_capitulated = yes
+	allow_branch = { 
+		NOT ={ OR = {tag = POL  tag = HOL tag = FRA tag = GRE tag = NOR tag = RAJ } }  #these minors are designed to be exiled and this focus sub-tree is only meant for minors that aren't supposed to capitulate usually
+	}
+	cost = 5
+	completion_reward = {
+		add_offsite_building = { type = industrial_complex level = 10 } 
+		add_offsite_building = { type = arms_factory level = 4 } 
+		add_offsite_building = { type = dockyard level = 4 } 
+	}
+}
+
+
+shared_focus = {
+	id = ALLIES_continue_the_fight_army
+	icon = GFX_focus_generic_little_entente 
+	x = -2
+	y = 1
+	available_if_capitulated = yes
+	mutually_exclusive = { focus = ALLIES_continue_the_fight_navy }
+	prerequisite = { focus = ALLIES_continue_the_fight }
+	relative_position_id = ALLIES_continue_the_fight
+	cost = 5
+	completion_reward = {
+		add_offsite_building = { type = arms_factory level = 12 } 
+	}
+} 
+
+shared_focus = { 
+	id = ALLIES_continue_the_fight_army_spawn
+	icon = GFX_goal_generic_axis_build_infantry 
+	x = -1
+	y = 1
+	prerequisite = { focus = ALLIES_continue_the_fight_army }
+	relative_position_id = ALLIES_continue_the_fight_army
+	cost = 5
+	available_if_capitulated = yes
+	completion_reward = {
+		hidden_effect = { load_oob = "ALLIES_army_spawn_LONDON" } custom_effect_tooltip = ALLIES_army_eng
+	}
+}
+shared_focus = {
+	id = ALLIES_continue_the_fight_army_sabotage
+	icon = GFX_goal_generic_intelligence_exchange 
+	x = 1
+	y = 1
+	prerequisite = { focus = ALLIES_continue_the_fight_army }
+	relative_position_id = ALLIES_continue_the_fight_army
+	cost = 5
+	available_if_capitulated = yes
+	completion_reward = {
+	every_state = {
+			limit = { is_core_of = ROOT }
+			damage_building = {
+				type = industrial_complex
+				damage = 1
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 1
+			}
+			damage_building = {
+				type = dockyard
+				damage = 1
+			}
+		}
+	}
+}
+shared_focus = {
+	id = ALLIES_continue_the_fight_army_volunteers 
+	icon = GFX_focus_focus_fra_maquis 
+	x = 0
+	y = 2
+	available_if_capitulated = yes
+	prerequisite = { focus = ALLIES_continue_the_fight_army }
+	relative_position_id = ALLIES_continue_the_fight_army
+	cost = 5
+	completion_reward = {
+		add_manpower = 500000
+		add_ideas = POL_influx_of_exiles
+	}
+}
+
+shared_focus = {
+	id = ALLIES_continue_the_fight_navy
+	icon = GFX_goal_generic_build_navy 
+	x = 2
+	y = 1
+	available_if_capitulated = yes
+	mutually_exclusive = { focus = ALLIES_continue_the_fight_army }
+	prerequisite = { focus = ALLIES_continue_the_fight }
+	relative_position_id = ALLIES_continue_the_fight
+	cost = 5 
+	completion_reward = {
+		add_offsite_building = { type = dockyard level = 16 } 
+	}
+}
+shared_focus = {
+	id = ALLIES_continue_the_fight_navy_convoy 
+	icon = GFX_focus_POL_develop_polish_shipbuilding 
+	x = 1
+	y = 1
+	available_if_capitulated = yes
+	prerequisite = { focus = ALLIES_continue_the_fight_navy }
+	relative_position_id = ALLIES_continue_the_fight_navy
+	cost = 5
+	completion_reward = {
+		add_equipment_to_stockpile = { type = convoy_1 amount = 50 } 
+		add_ideas = liberty_ships_focus
+	}
+}
+shared_focus = {
+	id = ALLIES_continue_the_fight_navy_seamen
+	icon = GFX_focus_generic_refit_civilian_ships 
+	x = -1
+	y = 1
+	prerequisite = { focus = ALLIES_continue_the_fight_navy }
+	relative_position_id = ALLIES_continue_the_fight_navy
+	cost = 5
+	available_if_capitulated = yes
+	completion_reward = {
+	}
+} 
+shared_focus = {
+	id = ALLIES_continue_the_fight_navy_marine
+	icon = GFX_goal_generic_special_forces 
+	x = 0
+	y = 2
+	available_if_capitulated = yes
+	prerequisite = { focus = ALLIES_continue_the_fight_navy }
+	relative_position_id = ALLIES_continue_the_fight_navy
+	cost = 5
+	completion_reward = {
+		if = { 
+			limit ={ ENG = { controls_state = 126  } }
+			hidden_effect = { load_oob =  "ALLIES_navy_marines_LONDON" }   custom_effect_tooltip = ALLIES_marines_eng
+		}
+	}
+}
+shared_focus = {
+	id = ALLIES_resist
+	icon = GFX_focus_spr_torchbearers_of_tomorrow 
+	x = -2
+	y = 1
+	available_if_capitulated = yes
+	prerequisite = { focus = ALLIES_continue_the_fight_navy_marine focus = ALLIES_continue_the_fight_army_volunteers }
+	relative_position_id = ALLIES_continue_the_fight_navy_marine
+	cost = 5
+	completion_reward = {
+		add_timed_idea ={ idea = POL_push_home_idea days =  90 }
+	}
+}

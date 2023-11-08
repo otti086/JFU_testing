@@ -6383,4 +6383,400 @@ spriteTypes = {
         legacy_lazy_load = no
     }
     
+
+    SpriteType = {
+        name = "GFX_FOCUS_ITA_AIR1_shine"
+        texturefile = "gfx/interface/goals/ita/focus_ITA_air1.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/ita/focus_ITA_air1.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+            animationrotation = -90.0		
+            animationlooping = no			
+            animationtime = 0.75			
+            animationdelay = 0			
+            animationblendmode = "add"       
+            animationtype = "scrolling"     
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/ita/focus_ITA_air1.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0		
+            animationlooping = no			
+            animationtime = 0.75				
+            animationdelay = 0			
+            animationblendmode = "add"     
+            animationtype = "scrolling"      
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+        legacy_lazy_load = no
+    }
+    
+
+    SpriteType = {
+        name = "GFX_FOCUS_ITA_AIR2_shine"
+        texturefile = "gfx/interface/goals/ita/focus_ITA_air2.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/ita/focus_ITA_air2.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+            animationrotation = -90.0		
+            animationlooping = no			
+            animationtime = 0.75			
+            animationdelay = 0			
+            animationblendmode = "add"       
+            animationtype = "scrolling"     
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/ita/focus_ITA_air2.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0		
+            animationlooping = no			
+            animationtime = 0.75				
+            animationdelay = 0			
+            animationblendmode = "add"     
+            animationtype = "scrolling"      
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+        legacy_lazy_load = no
+    }
+    
+
+    SpriteType = {
+        name = "GFX_FOCUS_ITA_AQUILA_shine"
+        texturefile = "gfx/interface/goals/ita/focus_ITA_aquila.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/ita/focus_ITA_aquila.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+            animationrotation = -90.0		
+            animationlooping = no			
+            animationtime = 0.75			
+            animationdelay = 0			
+            animationblendmode = "add"       
+            animationtype = "scrolling"     
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/ita/focus_ITA_aquila.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0		
+            animationlooping = no			
+            animationtime = 0.75				
+            animationdelay = 0			
+            animationblendmode = "add"     
+            animationtype = "scrolling"      
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+        legacy_lazy_load = no
+    }
+    
+
+    SpriteType = {
+        name = "GFX_FOCUS_ITA_BOMBER_shine"
+        texturefile = "gfx/interface/goals/ita/focus_ITA_bomber.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/ita/focus_ITA_bomber.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+            animationrotation = -90.0		
+            animationlooping = no			
+            animationtime = 0.75			
+            animationdelay = 0			
+            animationblendmode = "add"       
+            animationtype = "scrolling"     
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/ita/focus_ITA_bomber.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0		
+            animationlooping = no			
+            animationtime = 0.75				
+            animationdelay = 0			
+            animationblendmode = "add"     
+            animationtype = "scrolling"      
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+        legacy_lazy_load = no
+    }
+    
+
+    SpriteType = {
+        name = "GFX_FOCUS_ITA_BOMBERN_shine"
+        texturefile = "gfx/interface/goals/ita/focus_ITA_bombern.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/ita/focus_ITA_bombern.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+            animationrotation = -90.0		
+            animationlooping = no			
+            animationtime = 0.75			
+            animationdelay = 0			
+            animationblendmode = "add"       
+            animationtype = "scrolling"     
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/ita/focus_ITA_bombern.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0		
+            animationlooping = no			
+            animationtime = 0.75				
+            animationdelay = 0			
+            animationblendmode = "add"     
+            animationtype = "scrolling"      
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+        legacy_lazy_load = no
+    }
+    
+
+    SpriteType = {
+        name = "GFX_FOCUS_ITA_LIGHT_shine"
+        texturefile = "gfx/interface/goals/ita/focus_ITA_light.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/ita/focus_ITA_light.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+            animationrotation = -90.0		
+            animationlooping = no			
+            animationtime = 0.75			
+            animationdelay = 0			
+            animationblendmode = "add"       
+            animationtype = "scrolling"     
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/ita/focus_ITA_light.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0		
+            animationlooping = no			
+            animationtime = 0.75				
+            animationdelay = 0			
+            animationblendmode = "add"     
+            animationtype = "scrolling"      
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+        legacy_lazy_load = no
+    }
+    
+
+    SpriteType = {
+        name = "GFX_FOCUS_ITA_MAR_shine"
+        texturefile = "gfx/interface/goals/ita/focus_ITA_mar.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/ita/focus_ITA_mar.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+            animationrotation = -90.0		
+            animationlooping = no			
+            animationtime = 0.75			
+            animationdelay = 0			
+            animationblendmode = "add"       
+            animationtype = "scrolling"     
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/ita/focus_ITA_mar.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0		
+            animationlooping = no			
+            animationtime = 0.75				
+            animationdelay = 0			
+            animationblendmode = "add"     
+            animationtype = "scrolling"      
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+        legacy_lazy_load = no
+    }
+    
+
+    SpriteType = {
+        name = "GFX_FOCUS_ITA_ROMA_shine"
+        texturefile = "gfx/interface/goals/ita/focus_ITA_roma.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/ita/focus_ITA_roma.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+            animationrotation = -90.0		
+            animationlooping = no			
+            animationtime = 0.75			
+            animationdelay = 0			
+            animationblendmode = "add"       
+            animationtype = "scrolling"     
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/ita/focus_ITA_roma.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0		
+            animationlooping = no			
+            animationtime = 0.75				
+            animationdelay = 0			
+            animationblendmode = "add"     
+            animationtype = "scrolling"      
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+        legacy_lazy_load = no
+    }
+    
+
+    SpriteType = {
+        name = "GFX_FOCUS_ITA_SUB2_shine"
+        texturefile = "gfx/interface/goals/ita/focus_ITA_sub2.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/ita/focus_ITA_sub2.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+            animationrotation = -90.0		
+            animationlooping = no			
+            animationtime = 0.75			
+            animationdelay = 0			
+            animationblendmode = "add"       
+            animationtype = "scrolling"     
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/ita/focus_ITA_sub2.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0		
+            animationlooping = no			
+            animationtime = 0.75				
+            animationdelay = 0			
+            animationblendmode = "add"     
+            animationtype = "scrolling"      
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+        legacy_lazy_load = no
+    }
+    
+
+    SpriteType = {
+        name = "GFX_FOCUS_CAN_CORP_shine"
+        texturefile = "gfx/interface/goals/can/focus_CAN_corp.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/can/focus_CAN_corp.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+            animationrotation = -90.0		
+            animationlooping = no			
+            animationtime = 0.75			
+            animationdelay = 0			
+            animationblendmode = "add"       
+            animationtype = "scrolling"     
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/can/focus_CAN_corp.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0		
+            animationlooping = no			
+            animationtime = 0.75				
+            animationdelay = 0			
+            animationblendmode = "add"     
+            animationtype = "scrolling"      
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+        legacy_lazy_load = no
+    }
+    
+
+    SpriteType = {
+        name = "GFX_FOCUS_CAN_ROWELL_shine"
+        texturefile = "gfx/interface/goals/can/focus_CAN_rowell.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/can/focus_CAN_rowell.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+            animationrotation = -90.0		
+            animationlooping = no			
+            animationtime = 0.75			
+            animationdelay = 0			
+            animationblendmode = "add"       
+            animationtype = "scrolling"     
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/can/focus_CAN_rowell.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0		
+            animationlooping = no			
+            animationtime = 0.75				
+            animationdelay = 0			
+            animationblendmode = "add"     
+            animationtype = "scrolling"      
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+        legacy_lazy_load = no
+    }
+    
+
+    SpriteType = {
+        name = "GFX_FOCUS_CAN_ZOMBIE_shine"
+        texturefile = "gfx/interface/goals/can/focus_CAN_zombie.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/can/focus_CAN_zombie.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+            animationrotation = -90.0		
+            animationlooping = no			
+            animationtime = 0.75			
+            animationdelay = 0			
+            animationblendmode = "add"       
+            animationtype = "scrolling"     
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/can/focus_CAN_zombie.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0		
+            animationlooping = no			
+            animationtime = 0.75				
+            animationdelay = 0			
+            animationblendmode = "add"     
+            animationtype = "scrolling"      
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+        legacy_lazy_load = no
+    }
+    
 }

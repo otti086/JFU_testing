@@ -1064,4 +1064,76 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/ger/GER_weapons_of_vengeance.tga"
 	}
     
+
+    SpriteType = {
+		name = "GFX_FOCUS_ITA_AIR1"
+		texturefile = "gfx/interface/goals/ita/focus_ITA_air1.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_FOCUS_ITA_AIR2"
+		texturefile = "gfx/interface/goals/ita/focus_ITA_air2.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_FOCUS_ITA_AQUILA"
+		texturefile = "gfx/interface/goals/ita/focus_ITA_aquila.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_FOCUS_ITA_BOMBER"
+		texturefile = "gfx/interface/goals/ita/focus_ITA_bomber.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_FOCUS_ITA_BOMBERN"
+		texturefile = "gfx/interface/goals/ita/focus_ITA_bombern.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_FOCUS_ITA_LIGHT"
+		texturefile = "gfx/interface/goals/ita/focus_ITA_light.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_FOCUS_ITA_MAR"
+		texturefile = "gfx/interface/goals/ita/focus_ITA_mar.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_FOCUS_ITA_ROMA"
+		texturefile = "gfx/interface/goals/ita/focus_ITA_roma.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_FOCUS_ITA_SUB2"
+		texturefile = "gfx/interface/goals/ita/focus_ITA_sub2.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_FOCUS_CAN_CORP"
+		texturefile = "gfx/interface/goals/can/focus_CAN_corp.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_FOCUS_CAN_ROWELL"
+		texturefile = "gfx/interface/goals/can/focus_CAN_rowell.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_FOCUS_CAN_ZOMBIE"
+		texturefile = "gfx/interface/goals/can/focus_CAN_zombie.dds"
+	}
+    
 }

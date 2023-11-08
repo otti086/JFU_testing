@@ -3512,7 +3512,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_air_innovations_bba
-		icon = GFX_goal_expand_the_luftwaffe
+		icon = GFX_FOCUS_ITA_AIR1
 
 		x = 7
 		y = 0
@@ -3693,7 +3693,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_superaereo
-		icon = GFX_goal_generic_air_doctrine
+		icon = GFX_FOCUS_ITA_AIR2
 		prerequisite = { focus = ITA_citta_dell_aria }
 
 		x = 0
@@ -3891,7 +3891,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_long_range_aircraft
-		icon = GFX_focus_generic_long_range_aircraft
+		icon = GFX_FOCUS_ITA_BOMBER
 		prerequisite = { focus = ITA_standardization }
 
 		x = -2
@@ -4600,7 +4600,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_supermarina
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		icon = GFX_FOCUS_ITA_MAR
 		prerequisite = { focus = ITA_expand_naval_facilities }
 
 		x = 0
@@ -4731,7 +4731,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_naval_air_coordination
-		icon = GFX_goal_generic_air_naval_bomber
+		icon = GFX_FOCUS_ITA_BOMBERN
 		prerequisite = { focus = ITA_supermarina }
 		prerequisite = { focus = ITA_expand_rome_flying_school }
 
@@ -4814,7 +4814,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_incrociatori_leggeri
-		icon = GFX_focus_generic_cruiser2
+		icon = GFX_FOCUS_ITA_SUB2
 		prerequisite = { focus = ITA_supermarina }
 		mutually_exclusive = { focus = ITA_incrociatori_pesanti }
 		x = -2
@@ -4859,7 +4859,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_incrociatori_pesanti
-		icon = GFX_ITA_H_CLASS
+		icon = GFX_FOCUS_ITA_LIGHT
 		prerequisite = { focus = ITA_supermarina }
 		mutually_exclusive = { focus = ITA_incrociatori_leggeri }
 		x = 2
@@ -5131,7 +5131,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_cacciatorpediniere_di_scorta
-		icon = GFX_focus_generic_destroyer
+		icon = GFX_ITA_H_CLASS
 		prerequisite = { focus = ITA_incrociatori_leggeri }
 
 		x = 0
@@ -5437,7 +5437,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_navi_da_battaglia
-		icon = GFX_goal_generic_navy_battleship
+		icon = GFX_FOCUS_ITA_ROMA
 		prerequisite = { focus = ITA_incrociatori_pesanti }
 
 		x = 0
@@ -5543,7 +5543,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_proper_carriers
-		icon = GFX_goal_generic_navy_carrier
+		icon = GFX_FOCUS_ITA_AQUILA
 		prerequisite = { focus = ITA_incrociatori_pesanti }
 		mutually_exclusive = { focus = ITA_refit_civilian_ships }
 		x = 2

@@ -48,7 +48,7 @@
 	}
 	focus = {
 			id = FRA_invest_in_the_metropole
-			icon = GFX_goal_generic_construct_civilian
+			icon = GFX_FOCUS_CENTRAL_PLANNED_ECONOMY
 			x = -1
 			y = 1
 
@@ -69,7 +69,7 @@
 
 	focus = {
 		id = FRA_military_factories
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_GENERIC_FACTORY_COMPLEX
 		available = {
 		}
 		prerequisite = {focus =  FRA_colonial_infrastructure1 }

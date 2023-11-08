@@ -24,7 +24,7 @@
 	############################
 	####### ARMY SECTION #######
 	############################
-
+	shared_focus = ALLIES_continue_the_fight
 	focus = {
 		id = AST_additional_militia_training
 		icon = GFX_goal_generic_allies_build_infantry
