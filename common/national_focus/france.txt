@@ -47,7 +47,7 @@
 	}
 	focus = {
 			id = FRA_invest_in_the_metropole
-			icon = GFX_FOCUS_CENTRAL_PLANNED_ECONOMY
+			icon = GFX_FRA_METROPOLITAN_FRANCE
 			x = -1
 			y = 1
 
@@ -122,7 +122,7 @@
 
 focus = {
 		id = FRA_colonial_infrastructure1
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_R56_GOAL_GENERIC_CONSTRUCTION3
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_invest_in_the_metropole }
@@ -147,7 +147,7 @@ focus = {
 
 	focus = {
 		id = FRA_colonial_infrastructure2
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_R56_GOAL_GENERIC_CONSTRUCTION3
 		x = 0
 		y = 1
 
@@ -259,7 +259,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_firepower_kills
-		icon = GFX_goal_generic_army_artillery
+		icon = GFX_FRA_FRENCH_ARTILLERY
 		x = 0
 		y = 1
 		prerequisite = { focus = FRA_defensive_focus }
@@ -282,7 +282,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_infantry_focus
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_FRA_LEVEE_EN_MASSE
 		prerequisite = { focus = FRA_firepower_kills }
 		x = 0
 		y = 1
@@ -632,7 +632,7 @@ focus = {
 	}	
 	focus = {
 		id = FRA_stimulate_the_dynamic_market
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_FRA_STIMULATE_THE_DYNAMIC_MARKET
 		x = 0
 		y = 1
 

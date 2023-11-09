@@ -7273,4 +7273,202 @@ spriteTypes = {
         legacy_lazy_load = no
     }
     
+
+    SpriteType = {
+        name = "GFX_R56_GOAL_GENERIC_ARTILLERY_shine"
+        texturefile = "gfx/interface/goals/r56_goal_generic_artillery.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/r56_goal_generic_artillery.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+            animationrotation = -90.0		
+            animationlooping = no			
+            animationtime = 0.75			
+            animationdelay = 0			
+            animationblendmode = "add"       
+            animationtype = "scrolling"     
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/r56_goal_generic_artillery.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0		
+            animationlooping = no			
+            animationtime = 0.75				
+            animationdelay = 0			
+            animationblendmode = "add"     
+            animationtype = "scrolling"      
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+        legacy_lazy_load = no
+    }
+    
+
+    SpriteType = {
+        name = "GFX_R56_GOAL_GENERIC_CONSTRUCTION3_shine"
+        texturefile = "gfx/interface/goals/r56_goal_generic_construction3.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/r56_goal_generic_construction3.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+            animationrotation = -90.0		
+            animationlooping = no			
+            animationtime = 0.75			
+            animationdelay = 0			
+            animationblendmode = "add"       
+            animationtype = "scrolling"     
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/r56_goal_generic_construction3.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0		
+            animationlooping = no			
+            animationtime = 0.75				
+            animationdelay = 0			
+            animationblendmode = "add"     
+            animationtype = "scrolling"      
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+        legacy_lazy_load = no
+    }
+    
+
+    SpriteType = {
+        name = "GFX_FRA_STIMULATE_THE_DYNAMIC_MARKET_shine"
+        texturefile = "gfx/interface/goals/FRA_stimulate_the_dynamic_market.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/FRA_stimulate_the_dynamic_market.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+            animationrotation = -90.0		
+            animationlooping = no			
+            animationtime = 0.75			
+            animationdelay = 0			
+            animationblendmode = "add"       
+            animationtype = "scrolling"     
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/FRA_stimulate_the_dynamic_market.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0		
+            animationlooping = no			
+            animationtime = 0.75				
+            animationdelay = 0			
+            animationblendmode = "add"     
+            animationtype = "scrolling"      
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+        legacy_lazy_load = no
+    }
+    
+
+    SpriteType = {
+        name = "GFX_FRA_METROPOLITAN_FRANCE_shine"
+        texturefile = "gfx/interface/goals/fra/FRA_metropolitan_france.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/fra/FRA_metropolitan_france.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+            animationrotation = -90.0		
+            animationlooping = no			
+            animationtime = 0.75			
+            animationdelay = 0			
+            animationblendmode = "add"       
+            animationtype = "scrolling"     
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/fra/FRA_metropolitan_france.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0		
+            animationlooping = no			
+            animationtime = 0.75				
+            animationdelay = 0			
+            animationblendmode = "add"     
+            animationtype = "scrolling"      
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+        legacy_lazy_load = no
+    }
+    
+
+    SpriteType = {
+        name = "GFX_FRA_FRENCH_ARTILLERY_shine"
+        texturefile = "gfx/interface/goals/fra/FRA_french_artillery.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/fra/FRA_french_artillery.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+            animationrotation = -90.0		
+            animationlooping = no			
+            animationtime = 0.75			
+            animationdelay = 0			
+            animationblendmode = "add"       
+            animationtype = "scrolling"     
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/fra/FRA_french_artillery.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0		
+            animationlooping = no			
+            animationtime = 0.75				
+            animationdelay = 0			
+            animationblendmode = "add"     
+            animationtype = "scrolling"      
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+        legacy_lazy_load = no
+    }
+    
+
+    SpriteType = {
+        name = "GFX_FRA_LEVEE_EN_MASSE_shine"
+        texturefile = "gfx/interface/goals/fra/FRA_levee_en_masse.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/fra/FRA_levee_en_masse.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+            animationrotation = -90.0		
+            animationlooping = no			
+            animationtime = 0.75			
+            animationdelay = 0			
+            animationblendmode = "add"       
+            animationtype = "scrolling"     
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/fra/FRA_levee_en_masse.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = 90.0		
+            animationlooping = no			
+            animationtime = 0.75				
+            animationdelay = 0			
+            animationblendmode = "add"     
+            animationtype = "scrolling"      
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+        legacy_lazy_load = no
+    }
+    
 }

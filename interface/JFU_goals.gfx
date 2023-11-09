@@ -1224,4 +1224,40 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/jap/Japanese_Fleet.tga"
 	}
     
+
+    SpriteType = {
+		name = "GFX_R56_GOAL_GENERIC_ARTILLERY"
+		texturefile = "gfx/interface/goals/r56_goal_generic_artillery.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_R56_GOAL_GENERIC_CONSTRUCTION3"
+		texturefile = "gfx/interface/goals/r56_goal_generic_construction3.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_FRA_STIMULATE_THE_DYNAMIC_MARKET"
+		texturefile = "gfx/interface/goals/FRA_stimulate_the_dynamic_market.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_FRA_METROPOLITAN_FRANCE"
+		texturefile = "gfx/interface/goals/fra/FRA_metropolitan_france.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_FRA_FRENCH_ARTILLERY"
+		texturefile = "gfx/interface/goals/fra/FRA_french_artillery.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_FRA_LEVEE_EN_MASSE"
+		texturefile = "gfx/interface/goals/fra/FRA_levee_en_masse.dds"
+	}
+    
 }

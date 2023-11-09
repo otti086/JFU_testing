@@ -26,6 +26,27 @@ ideas = {
 				conscription_factor = -0.25
 			}
 		}
+		FRA_egalite_liberte_solidarite = {
+			picture = FRA_FREE_army
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_dockyard = 0.3
+				industrial_capacity_factory = 0.3
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+
 		FRA_worker_shortage = {
 			picture = FRA_factory_strikes
 			allowed = {
@@ -536,7 +557,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				resistance_growth_on_our_occupied_states = 0.1 
+				political_power_gain = 0.25
 			}
 		}
 		FRA_industrialist_connections = {

@@ -802,7 +802,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_german_war_economy
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_GENERIC_FACTORY_COMPLEX
 		prerequisite = { focus = GER_autobahn }
 		x = 0
 		y = 1
