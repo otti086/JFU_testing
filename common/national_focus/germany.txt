@@ -891,7 +891,7 @@ focus_tree = {
 	focus = {
 		id = GER_air_innovation
 		text = air_innovation
-		icon = GFX_focus_GER_air_inno_1
+		icon = GFX_FOCUS_GER_AIR_INNO_1
 		x = 12
 		y = 0
 		cost = 10
@@ -1013,7 +1013,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_tactical_air_effort
-		icon = GFX_Bombs_Away
+		icon = GFX_BOMBS_AWAY
 		prerequisite = { focus = GER_air_innovation }
 		x = 1
 		y = 2
@@ -1044,7 +1044,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_long_range_escorts
-		icon = GFX_focus_GER_heavy_fighter
+		icon = GFX_FOCUS_GER_HEAVY_FIGHTER
 		prerequisite = { focus = GER_air_innovation }
 		x = 0
 		y = 1
@@ -1069,7 +1069,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_strategic_air_effort
-		icon = GFX_Aerial_Offensive
+		icon = GFX_AERIAL_OFFENSIVE
 		prerequisite = { focus = GER_air_innovation }
 		x = -1
 		y = 2
@@ -1442,7 +1442,7 @@ focus_tree = {
 	}
 	focus = { #should already be signed in 39
 		id = GER_prepare
-		icon = GFX_GER_Generalplan_Ost
+		icon = GFX_GER_GENERALPLAN_OST
 		prerequisite = { focus = GER_mol_rib_pact }
 		cancel_if_invalid = no
 		available = {
@@ -1459,7 +1459,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_ussr_war_goal
-		icon = GFX_GER_barb
+		icon = GFX_GER_BARBAROSSA
 		prerequisite = { focus = GER_prepare}
 		available_if_capitulated = no
 		will_lead_to_war_with = SOV
@@ -1481,7 +1481,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_focus_fall_blau
-		icon = GFX_GER_danzig_or_war_icon
+		icon = GFX_GER_DANZIG_OR_WAR_ICON
 		prerequisite = { focus = GER_ussr_war_goal}
 		available_if_capitulated = no
 		
@@ -1502,7 +1502,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_rhineland
-		icon = GFX_GER_rhineland
+		icon = GFX_GER_RHINELAND
 		x = 19
 		y = 0
 		cost = 10
@@ -1520,7 +1520,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_anschluss
-		icon = GFX_GER_anschluss
+		icon = GFX_GER_ANSCHLUSS
 		prerequisite = { focus = GER_rhineland }
 		available_if_capitulated = no
 		cancel_if_invalid = no
@@ -1583,7 +1583,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_danzig_or_war
-		icon = GFX_GER_danzig_or_war_icon
+		icon = GFX_GER_DANZIG_OR_WAR_ICON
 		prerequisite = { focus = GER_demand_memel }
 		available = {
 			date > 1939.6.1
@@ -1616,7 +1616,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_around_maginot
-		icon = GFX_r56_goal_generic_attack_belgium
+		icon = GFX_R56_GOAL_GENERIC_ATTACK_BELGIUM
 		prerequisite = { focus = GER_danzig_or_war }
 		
 		available = {
@@ -1695,7 +1695,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_demand_sudetenland
-		icon = GFX_GER_demand_sudetenland
+		icon = GFX_GER_DEMAND_SUDETENLAND
 		prerequisite = { focus = GER_anschluss }
 		will_lead_to_war_with = CZE
 		will_lead_to_war_with = FRA
@@ -1726,7 +1726,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_first_vienna_award
-		icon = GFX_GER_first_vienna_award_icon
+		icon = GFX_GER_FIRST_VIENNA_AWARD_ICON
 		prerequisite = { focus = GER_demand_sudetenland }
 		x = 0
 		y = 1
@@ -1746,7 +1746,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_end_of_czechoslovakia
-		icon = GFX_GER_end_of_czechoslovakia
+		icon = GFX_GER_END_OF_CZECHOSLOVAKIA
 		prerequisite = { focus = GER_first_vienna_award }
 		x = 0
 		y = 1
@@ -1791,7 +1791,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_second_vienna_award
-		icon = GFX_GER_second_vienna_award_icon
+		icon = GFX_GER_SECOND_VIENNA_AWARD_ICON
 		prerequisite = { focus = GER_end_of_czechoslovakia }
 		x = 0
 		y = 2
@@ -1830,7 +1830,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_naval_rearmament
-		icon = GFX_focus_GER_naval_rearm
+		icon = GFX_FOCUS_GER_NAVAL_REARM
 		x = 28
 		y = 0
 		cost = 5
@@ -1899,7 +1899,7 @@ focus_tree = {
 	focus = {
 		id = GER_naval_effort
 		text = naval_effort
-		icon = GFX_focus_GER_germaniawerft
+		icon = GFX_GER_GERMANIAWERFT
 		prerequisite = { focus = GER_naval_rearmament }
 		x = 0
 		y = 1
@@ -1971,7 +1971,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_naval_effort2
-		icon = GFX_GER_naval_effort2
+		icon = GFX_GER_NAVAL_EFFORT2
 		prerequisite = { focus = GER_naval_effort }
 		x = 0
 		y = 1
@@ -2034,7 +2034,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_plan_z
-		icon = GFX_focus_GER_plan_z
+		icon = GFX_FOCUS_GER_PLAN_Z
 		prerequisite = { focus = GER_naval_effort }
 		mutually_exclusive = { focus = GER_u_boat_effort  }
 		x = -2
@@ -2079,7 +2079,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_plan_z_bb
-		icon = GFX_focus_GER_bismarck
+		icon = GFX_FOCUS_GER_BISMARCK
 		prerequisite = { focus = GER_plan_z }
 		x = -1
 		y = 1
@@ -2140,7 +2140,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_plan_z_cv
-		icon = GFX_focus_GER_graf 
+		icon = GFX_FOCUS_GER_GRAF 
 		prerequisite = { focus = GER_plan_z }
 		x = 1
 		y = 1
@@ -2207,7 +2207,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_u_boat_effort
-		icon = GFX_focus_GER_sub_plan
+		icon = GFX_FOCUS_GER_SUB_PLAN
 		prerequisite = { focus = GER_naval_effort }
 		mutually_exclusive = { focus = GER_plan_z }
 		x = 2
@@ -2278,7 +2278,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_modular_construction
-		icon = GFX_focus_GER_sub
+		icon = GFX_FOCUS_GER_SUB
 		prerequisite = { focus = GER_u_boat_effort }
 		x = 0
 		y = 1
@@ -2294,7 +2294,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_endsieg_1
- 		icon = GFX_GER_total_war
+ 		icon = GFX_GER_TOTAL_WAR
 		prerequisite = { focus = GER_fall_of_france }
 		x = 1
 		y = 1

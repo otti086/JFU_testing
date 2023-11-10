@@ -2953,7 +2953,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_superesercito
-		icon = GFX_goal_ITA_Regio_Esercito_2
+		icon = GFX_GOAL_ITA_REGIO_ESERCITO_2
 		prerequisite = { focus = ITA_preserve_army_traditions focus = ITA_a_bandits_war }
 
 		x = 3

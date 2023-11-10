@@ -1625,7 +1625,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_tank_experiments
-		icon = GFX_American_Armor
+		icon = GFX_AMERICAN_ARMOR
 		x = 2
 		y = 2
 		prerequisite = { focus = USA_support_rock_island }

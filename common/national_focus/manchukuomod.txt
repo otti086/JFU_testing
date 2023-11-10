@@ -6,7 +6,7 @@ focus_tree = {
 
 	focus = {
 		id = MAN_pacify_the_countrysidex
-		icon = GFX_goal_MAN_confront_gorillas
+		icon = GFX_R56_GOAL_MAN_CONFRONT_GORILLAS
 		x = 10
 		y = 0
 		cost = 5
@@ -82,7 +82,7 @@ focus_tree = {
 
 	focus = {
 		id = MAN_invite_japanese_investorsx
-		icon = GFX_goal_MAN_kanto_shu
+		icon = GFX_R56_GOAL_MAN_KANTO_SHU
 		prerequisite = { focus = MAN_obediencex }
 		x = 3
 		y = 1
@@ -208,7 +208,7 @@ focus_tree = {
 
 	focus = {
 		id = MAN_alliance_with_the_kwantung_armyx
-		icon = GFX_goal_CHI_support_pro_japanese_faction
+		icon = GFX_R56_GOAL_CHI_SUPPORT_PRO_JAPANESE_FACTION
 		prerequisite = { focus = MAN_mukden_military_academyx }
 		prerequisite = { focus = MAN_army_modernizationx   }
 		x = -1
@@ -342,7 +342,7 @@ focus_tree = {
 		
 	focus = {
 		id = MAN_five_year_plan_new
-		icon = GFX_CHI_industry
+		icon = GFX_CHI_INDUSTRY
 		prerequisite = { focus = MAN_obediencex }
 		relative_position_id = MAN_obediencex
 		x = 0
@@ -365,7 +365,7 @@ focus_tree = {
 	
 	focus = {
 		id = MAN_railways_opener 
-		icon = GFX_goal_develop_provinces
+		icon = GFX_GOAL_DEVELOP_PROVINCES
 		x = 0
 		y = 1
 
@@ -387,7 +387,7 @@ focus_tree = {
 	
 	focus = {
 		id = MAN_railways_kirin
-		icon = GFX_focus_CHU_clans_developt_infrustracture
+		icon = GFX_FOCUS_CHU_CLANS_DEVELOPT_INFRUSTRACTURE
 		x = -8
 		y = 1
 
@@ -499,7 +499,7 @@ focus_tree = {
 		
 	focus = {
 		id = MAN_aluminum2
-		icon = GFX_goal_fengtian_light_metals
+		icon = GFX_GOAL_FENGTIAN_LIGHT_METALS
 		x = 0
 		y = 1
 
@@ -523,7 +523,7 @@ focus_tree = {
 		
 	focus = {
 		id = MAN_railways_heilungkiang
-		icon = GFX_focus_CHU_clans_developt_infrustracture
+		icon = GFX_FOCUS_CHU_CLANS_DEVELOPT_INFRUSTRACTURE
 		x = -4
 		y = 1
 
@@ -546,7 +546,7 @@ focus_tree = {
 	
 	focus = {
 		id = MAN_oil
-		icon = GFX_goal_oil_derrick
+		icon = GFX_GOAL_OIL_DERRICK
 		x = -1
 		y = 1
 
@@ -567,7 +567,7 @@ focus_tree = {
 	
 	focus = {
 		id = MAN_oil2
-		icon = GFX_goal_oil_derrick
+		icon = GFX_GOAL_OIL_DERRICK
 		x = 0
 		y = 1
 
@@ -588,7 +588,7 @@ focus_tree = {
 		
 	focus = {
 		id = MAN_synth
-		icon = GFX_goal_oil
+		icon = GFX_GOAL_OIL
 		x = 1
 		y = 1
 
@@ -633,7 +633,7 @@ focus_tree = {
 		
 	focus = {
 		id = MAN_synth3
-		icon = GFX_goal_oil
+		icon = GFX_GOAL_OIL
 		x = -1
 		y = 1
 
@@ -656,7 +656,7 @@ focus_tree = {
 		
 	focus = {
 		id = MAN_railways_jehol
-		icon = GFX_focus_CHU_clans_developt_infrustracture
+		icon = GFX_FOCUS_CHU_CLANS_DEVELOPT_INFRUSTRACTURE
 		x = 4
 		y = 1
 
@@ -678,7 +678,7 @@ focus_tree = {
 	
 		focus = {
 		id = MAN_railways_expand_to_east_hebei
-		icon = GFX_focus_MAN_rail
+		icon = GFX_FOCUS_MAN_RAIL
 		x = 2
 		y = 2
 
@@ -708,7 +708,7 @@ focus_tree = {
 	
 		focus = {
 		id = MAN_navy_academy
-		icon = GFX_focus_JAP_army_expansion
+		icon = GFX_FOCUS_JAP_ARMY_EXPANSION
 		x = -1
 		y = 1
 
@@ -789,7 +789,7 @@ focus_tree = {
 		
 	focus = {
 		id = MAN_ship_designs
-		icon = GFX_focus_JAP_battlefleet
+		icon = GFX_FOCUS_JAP_BATTLEFLEET
 		x = 0
 		y = 1
 
@@ -816,7 +816,7 @@ focus_tree = {
 	
 	focus = {
 		id = MAN_railways_liaotung
-		icon = GFX_focus_CHU_clans_developt_infrustracture
+		icon = GFX_FOCUS_CHU_CLANS_DEVELOPT_INFRUSTRACTURE
 		x = 8
 		y = 1
 
@@ -904,7 +904,7 @@ focus_tree = {
 	
 	focus = {
 		id = MAN_railways_extend_to_port_arthur
-		icon = GFX_focus_MAN_rail
+		icon = GFX_FOCUS_MAN_RAIL
 		x = 3
 		y = 1
 
@@ -951,7 +951,7 @@ focus_tree = {
 	
 		focus = {
 		id = MAN_railways_extend_to_pyongyang
-		icon = GFX_focus_MAN_rail
+		icon = GFX_FOCUS_MAN_RAIL
 		x = 1
 		y = 1
 
@@ -1004,7 +1004,7 @@ focus_tree = {
 	
 		focus = {
 		id = MAN_railways_japanese_imports
-		icon = GFX_focus_japan_manchoukuo_trade_resource_shine
+		icon = GFX_FOCUS_JAPAN_MANCHOUKUO_TRADE_RESOURCE
 		x = 1
 		y = 1
 
@@ -1020,7 +1020,7 @@ focus_tree = {
 		
 	focus = {
 		id = MAN_railways_chahar
-		icon = GFX_focus_CHU_clans_developt_infrustracture
+		icon = GFX_FOCUS_CHU_CLANS_DEVELOPT_INFRUSTRACTURE
 		x = 0
 		y = 1
 
@@ -1043,7 +1043,7 @@ focus_tree = {
 	
 	focus = {
 		id = MAN_railways_schahar
-		icon = GFX_focus_CHU_clans_developt_infrustracture
+		icon = GFX_FOCUS_CHU_CLANS_DEVELOPT_INFRUSTRACTURE
 		x = 2
 		y = 4
 
@@ -1064,7 +1064,7 @@ focus_tree = {
 	
 	focus = {
 		id = MAN_chahar1
-		icon = GFX_goal_shenyang_arsenal
+		icon = GFX_GOAL_SHENYANG_ARSENAL
 		x = -1
 		y = 1
 
@@ -1091,7 +1091,7 @@ focus_tree = {
 	
 	focus = {
 		id = MAN_chahar2
-		icon = GFX_focus_JAP_expansion
+		icon = GFX_FOCUS_JAP_EXPANSION
 		x = 0
 		y = 1
 
@@ -1187,7 +1187,7 @@ focus_tree = {
 	
 	focus = {
 		id = MAN_poppy
-		icon = GFX_goal_opium
+		icon = GFX_GOAL_OPIUM
 		x = -1
 		y = 1
 
@@ -1205,7 +1205,7 @@ focus_tree = {
 	
 	focus = {
 		id = MAN_poppy2
-		icon = GFX_goal_golden_dragon
+		icon = GFX_GOAL_GOLDEN_DRAGON
 		x = 0
 		y = 1
 
@@ -1277,7 +1277,7 @@ focus_tree = {
 	
 	focus = {
 		id = MAN_railways_hulunbuir
-		icon = GFX_focus_CHU_clans_developt_infrustracture
+		icon = GFX_FOCUS_CHU_CLANS_DEVELOPT_INFRUSTRACTURE
 		x = -2
 		y = 4
 
@@ -1346,7 +1346,7 @@ focus_tree = {
 	
 	focus = {
 		id = MAN_armorf
-		icon = GFX_focus_JAP_armor
+		icon = GFX_FOCUS_JAP_ARMOR
 		x = -2
 		y = 1
 
@@ -1416,7 +1416,7 @@ focus_tree = {
 	}	
 	focus = {
 		id = MAN_railways_sungkiang
-		icon = GFX_focus_CHU_clans_developt_infrustracture
+		icon = GFX_FOCUS_CHU_CLANS_DEVELOPT_INFRUSTRACTURE
 		x = -2
 		y = 4
 

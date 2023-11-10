@@ -79,7 +79,7 @@
 
 	focus = {
 		id = JAP_greater_east_asian_co_prosperity_sphere
-		icon = GFX_goal_JAP_co_prosperity_sphere
+		icon = GFX_R56_GOAL_JAP_CO_PROSPERITY_SPHERE
 		prerequisite = { focus = JAP_liaison_conference }
 		x = -1
 		y = 1
@@ -370,7 +370,7 @@
 	}
 	focus = {
 		id = JAP_strike_on_the_northern_resource_area
-		icon = GFX_focus_jap_hokushin
+		icon = GFX_FOCUS_JAP_HOKUSHIN
 		prerequisite = { focus = JAP_strike_on_the_southern_resource_area }
 		x = 0
 		y = 1
@@ -807,7 +807,7 @@
 
 	focus = {
 		id = JAP_army_expansion_law
-		icon = GFX_focus_CHU_imperial_army
+		icon = GFX_FOCUS_CHU_IMPERIAL_ARMY
 		x = 8
 		y = 0
 		relative_position_id = JAP_purge_the_kodoha_faction 
@@ -936,7 +936,7 @@
 
 	focus = {
 		id = JAP_armored_divisions
-		icon = GFX_focus_CHU_land_doctrin_mechanize
+		icon = GFX_FOCUS_CHU_LAND_DOCTRIN_MECHANIZE
 		prerequisite = { focus = JAP_supremacy_of_technology }
 		x = 1
 		y = 1
@@ -1231,7 +1231,7 @@
 
 	focus = {
 		id = JAP_new_naval_estimates
-		icon = GFX_focus_JAP_new_naval
+		icon = GFX_FOCUS_JAP_NEW_NAVAL
 		x = 8
 		y = 0
 		relative_position_id = JAP_army_expansion_law
@@ -1416,7 +1416,7 @@
 
 	focus = {
 		id = JAP_supremacy_of_the_battlefleet
-		icon = GFX_focus_JAP_battlefleet
+		icon = GFX_FOCUS_JAP_BATTLEFLEET
 		prerequisite = { focus = JAP_new_naval_estimates }
 		x = 1
 		y = 1
