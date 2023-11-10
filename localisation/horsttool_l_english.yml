@@ -1094,6 +1094,8 @@
  ALLIES_soviet_aid_desc:0 "Soviet style planning and organization seems to offer great benefits for the nations willing to take on the risk of implementing them. We should model ourselves after the Soviet Union."
  ALLIES_paramil:0 "Loyal Paramilitaries"
  ALLIES_paramil_desc:0 "Building a strong paramilitary organization can supplement our army and increase the share of the population ready trained to resist foreign invaders." 
+ ALLIES_commonwealth_of_nations:0 "The [ENG.GetFactionName]"
+ ALLIES_commonwealth_of_nations_desc:0 "The [ENG.GetFactionName] shall stand together!" 
  AXIS_ita_patron:0 "Italian Corporatism"
  AXIS_ita_patron_desc:0 "The fascist trade unions of Italy provide a bottom-up model to build our soceity, starting with the workers."
  AXIS_ita_patron_1:0 "Italian Defensive Doctrine"
@@ -1129,7 +1131,8 @@
  AXIS_pact_of_steel_desc:0 "Under Germany's leadership we will lead our nation to new heights."
  AXIS_joint_training_program:0 "Joint Training with Germany"
  AXIS_joint_training_program_desc:0 "Conducting military drills with Germany will improve our readiness."
-
+ FRA_operation_dragoon:0 "Operation Dragoon"
+ FRA_operation_dragoon_desc:0 "An amphibious landing in Southern France can draw away German units from the Atlantikwall, making a more serious invasion in Northern France more possible."
 
  #tooltips
 
@@ -1206,6 +1209,11 @@
 
  modifier_production_cost_dockyard_factor:0 "§YDockyard§! construction cost"
  modifier_production_cost_dockyard_factor_desc:0 "Modifies the cost of Dockyard construction."
+
+
+ #country flags
+
+ EFR_torch_declared:0 "Torch has been declared" 
 
 
  #MIOs

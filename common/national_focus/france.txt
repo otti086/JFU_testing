@@ -1366,12 +1366,12 @@ focus = {
 		cost = 10
 
 		available = {
-				EFR = { has_country_flag = EFR_torch_declared }
-				check_variable = {  FRA_legitimacy > 99  }
-								custom_trigger_tooltip = {
-					tooltip = "Has 100 legitimacy"
-					check_variable = { FRA_legitimacy > 99 }
-				}
+			has_global_flag = EFR_torch_declared
+			check_variable = {  FRA_legitimacy > 99  }
+				custom_trigger_tooltip = {
+				tooltip = "Has 100 legitimacy"
+				check_variable = { FRA_legitimacy > 99 }
+			}
 		}
 		
 
