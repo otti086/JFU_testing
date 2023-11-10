@@ -1,81 +1,56 @@
-﻿#shared_focus = {
-#	id = ALLIES_commonwealth_of_nations 
-#	icon = GFX_focus_eng_unite_the_anglosphere 
-#	x = 0
-#	y = 0
-#	offset = {
-#		x = 21  
-#		y = 5   
-#		trigger = {	tag = CAN}
-#	}
-#	offset = {
-#		x = 24  
-#		y = 0   
-#		trigger = {	tag = BRA}
-#	}
-#		offset = {
-#		x = 37  
-#		y = 0   
-#		trigger = {	tag = MEX}
-#	}
-#
-#	offset = {
-#		x = 21  
-#		y = 5   
-#		trigger = {	tag = AST}
-#	}	
-#	offset = {
-#		x = 4
-#		y = 6   
-#		trigger = {	tag = FRA}
-#	}	
-#		offset = {
-#		x = 15
-#		y = 4
-#		trigger = {	tag = GRE}
-#	}	
-#	
-#			offset = {
-#		x = 30
-#		y = 7
-#		trigger = {	tag = RAJ}
-#	}	
-#	
-#				offset = {
-#		x = 27
-#		y = 4
-#		trigger = {	tag = NZL}
-#	}	
-#				offset = {
-#		x = 8
-#		y = 7
-#		trigger = {	tag = HOL}
-#	}	
-#	
-#					offset = {
-#		x = 21
-#		y = 6
-#		trigger = {	tag = SAF}
-#	}	
-#						offset = {
-#		x = 9
-#		y = 6
-#		trigger = {	tag = NOR}
-#	}	
-#	
-#						offset = {
-#		x = 10
-#		y = 6
-#		trigger = {	tag = POL}
-#	}	
-#	
-#	
-#		cost = 5
-#		available_if_capitulated = yes
-#	completion_reward = {
-#		add_political_power = 50
-#	}
-#}
+﻿shared_focus = {
+	id = ALLIES_commonwealth_of_nations 
+	icon = GFX_focus_eng_unite_the_anglosphere 
+	x = 0
+	y = 0
+	offset = {
+		x = 15  
+		y = 5
+		trigger = {	tag = AST}
+	} 
+	offset = {
+		x = 29  
+		y = 5
+		trigger = {	tag = MEX}
+	}
+ 	offset = {
+		x = 18  
+		y = 0
+		trigger = {	tag = BRA}
+	}
+	offset = {
+		x = 23  
+		y = 1
+		trigger = {	tag = SAF}
+	}
+	offset = {
+		x = 15  
+		y = 5
+		trigger = {	tag = RAJ}
+	}
+	offset = {
+		x = 15  
+		y = 5
+		trigger = {	tag = NZL}
+	}
+	offset = {
+		x = 18  
+		y = 0
+		trigger = {	tag = IRE}
+	} 
+	offset = {
+		x = 19
+		y = 6
+		trigger = {	tag = CAN}
+	}     	
+	
+	
+		cost = 5
+		available_if_capitulated = yes
+	completion_reward = {
+		add_political_power = 50
+	}
+}
 
 
 
@@ -84,48 +59,10 @@
 shared_focus = {
 	id = ALLIES_continue_the_fight 
 	icon = GFX_focus_ETH_freedom_at_gunpoint 
-	x = 0
-	y = 0
-	offset = {
-		x = 13  
-		y = 5
-		trigger = {	tag = AST}
-	} 
-	offset = {
-		x = 28  
-		y = 5
-		trigger = {	tag = MEX}
-	}
- 	offset = {
-		x = 15  
-		y = 0
-		trigger = {	tag = BRA}
-	}
-	offset = {
-		x = 20  
-		y = 1
-		trigger = {	tag = SAF}
-	}
-	offset = {
-		x = 13  
-		y = 5
-		trigger = {	tag = RAJ}
-	}
-	offset = {
-		x = 13  
-		y = 5
-		trigger = {	tag = NZL}
-	}
-	offset = {
-		x = 15  
-		y = 0
-		trigger = {	tag = IRE}
-	} 
-	offset = {
-		x = 19
-		y = 6
-		trigger = {	tag = CAN}
-	}     
+	x = -3
+	y = 1
+	prerequisite = { focus = ALLIES_commonwealth_of_nations }
+	relative_position_id = ALLIES_commonwealth_of_nations
 	available = {has_capitulated = yes }
 	available_if_capitulated = yes
 	allow_branch = { 
@@ -277,5 +214,263 @@ shared_focus = {
 	cost = 5
 	completion_reward = {
 		add_timed_idea ={ idea = POL_push_home_idea days =  90 }
+	}
+}
+shared_focus = {
+	id = ALLIES_joint_training_program
+	icon = GFX_focus_generic_military_mission 
+	x = 3
+	y = 1
+	available = { date > 1937.07.01 }		
+	available_if_capitulated = yes
+	prerequisite = { focus = ALLIES_commonwealth_of_nations }
+	relative_position_id = ALLIES_commonwealth_of_nations
+	mutually_exclusive = { focus =  ALLIES_friends_near_and_afar }
+	cost = 5
+	completion_reward = {
+		army_experience = 50 
+	}
+}
+
+shared_focus = {
+	id = ALLIES_friends_near_and_afar
+	icon = GFX_goal_generic_military_deal 
+	x = 8
+	y = 1	
+	available = { date > 1937.07.01 }	
+	relative_position_id = ALLIES_commonwealth_of_nations
+	prerequisite = { focus = ALLIES_commonwealth_of_nations }
+	mutually_exclusive = { focus = ALLIES_joint_training_program }
+	cost = 5
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+shared_focus = {
+	id = ALLIES_go_it_alone
+	icon = GFX_goal_generic_national_unity 
+	x = -1
+	y = 1
+	relative_position_id = ALLIES_friends_near_and_afar
+	prerequisite = { focus = ALLIES_friends_near_and_afar }
+	mutually_exclusive = { focus = ALLIES_soviet_aid }
+	cost = 5
+	completion_reward = {
+		add_ideas = why_we_fight_focus
+	}
+}
+shared_focus = {
+	id = ALLIES_paramil
+	icon = GFX_focus_generic_military_mission 
+	x = -1
+	y = 2
+	relative_position_id = ALLIES_go_it_alone
+	prerequisite = { focus = ALLIES_go_it_alone }
+	cost = 5
+	completion_reward = {
+		add_ideas = paramilitarism_focus
+	}
+}
+shared_focus = {
+	id = ALLIES_preparations
+	icon = GFX_goal_generic_army_artillery2 
+	x = 0
+	y = 1
+	relative_position_id = ALLIES_go_it_alone
+	prerequisite = { focus = ALLIES_go_it_alone }
+	cost = 5
+	completion_reward = {
+		add_ideas = ALLIES_preparations_idea
+	}
+}
+
+
+
+shared_focus = {
+	id = ALLIES_soviet_aid
+	icon = GFX_focus_chi_mission_to_the_soviet_union 
+	x = 1
+	y = 1
+	relative_position_id = ALLIES_friends_near_and_afar
+	prerequisite = { focus = ALLIES_friends_near_and_afar }
+	mutually_exclusive = { focus = ALLIES_go_it_alone }
+	cost = 5 
+	completion_reward = {
+		add_ideas = ALLIES_sov_procure
+	}
+}
+
+shared_focus = {
+	id = ALLIES_sov_factory
+	icon = GFX_goal_generic_construct_infrastructure  
+	x = -1
+	y = 2
+	relative_position_id = ALLIES_soviet_aid
+	prerequisite = { focus = ALLIES_soviet_aid }
+	cost = 5
+	completion_reward = {
+
+		if = { limit = {  original_tag = NOR }
+			323 = {
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		if = { limit = {  original_tag = NZL }
+			284	 = {
+			add_extra_state_shared_building_slots = 2
+			}
+		}
+		if = { limit = {  original_tag = AST }
+			285 = {
+				add_extra_state_shared_building_slots = 2
+			}
+		}			
+			
+		if = { limit = {  original_tag = RAJ }
+			439 = {
+				add_extra_state_shared_building_slots = 2
+			}
+		}			
+			
+		if = { limit = {  original_tag = CAN }
+			276 = {
+				add_extra_state_shared_building_slots = 2
+			}
+		}			
+		if = { limit = {  original_tag = SAF }
+			275 = {
+				add_extra_state_shared_building_slots = 2
+			}
+		}						
+		if = { limit = {  original_tag = BRA }
+			500 = {
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		if = { limit = {  original_tag = IRE }
+			113 = {
+				add_extra_state_shared_building_slots = 2
+			}
+		}						
+	}
+}
+shared_focus = {
+	id = ALLIES_sov_def 
+	icon = GFX_goal_generic_defence 
+	x = 0
+	y = 1
+	relative_position_id = ALLIES_soviet_aid
+	prerequisite = { focus = ALLIES_soviet_aid }
+	cost = 5
+	completion_reward = {
+		add_ideas = ALLIES_sov_def_idea
+	}
+}
+
+
+
+
+shared_focus = {
+	id = ALLIES_usa_patron
+	icon = GFX_focus_chi_mission_to_the_us 
+	x = 1
+	y = 1
+	available_if_capitulated = yes
+	mutually_exclusive = {  focus = ALLIES_eng_patron }
+	prerequisite = { focus = ALLIES_joint_training_program }
+	relative_position_id = ALLIES_joint_training_program
+	cost = 5
+	completion_reward = {
+		add_ideas = ALLIES_usa_patron_idea		
+	}
+}
+
+shared_focus = {
+	id = ALLIES_usa_dock
+	icon = GFX_goal_generic_construct_naval_dockyard 
+	x = 1
+	y = 1
+	available_if_capitulated = yes
+	available = {
+		custom_trigger_tooltip = { AND = { JAP = { has_war = yes } date > 1941.01.01 } tooltip = "The Empire of Japan has attacked the Allies"}
+	}
+	prerequisite = { focus = ALLIES_usa_patron }
+	relative_position_id = ALLIES_usa_patron
+	cost = 5
+	completion_reward = {
+		add_ideas = ALLIES_usa_dock_idea
+	}
+}
+shared_focus = {
+	id = ALLIES_usa_spec
+	icon = GFX_focus_usa_focus_on_asia 
+	x = 0
+	y = 2
+	prerequisite = { focus = ALLIES_usa_patron }
+	relative_position_id = ALLIES_usa_patron
+	cost = 5
+	available_if_capitulated = yes
+	available = {
+		custom_trigger_tooltip = { AND = { JAP = { has_war = yes } date > 1941.01.01 } tooltip = "The Empire of Japan has attacked the Allies"}
+	}
+	completion_reward = {
+		hidden_effect ={ 
+			set_technology = { jungle_tactics_allies = 1 }
+		}
+		custom_effect_tooltip = jungle_tactics_allies_effect
+	}
+}
+
+
+
+shared_focus = {
+	id = ALLIES_eng_patron
+	icon = GFX_focus_chi_british_cooperation 
+	x = -1
+	y = 1
+	mutually_exclusive = {  focus = ALLIES_usa_patron }
+	prerequisite = { focus = ALLIES_joint_training_program }
+	relative_position_id = ALLIES_joint_training_program
+	available_if_capitulated = yes
+	cost = 5
+	completion_reward = {
+		add_ideas = ALLIES_eng_patron_idea
+	}
+}
+
+shared_focus = {
+	id = ALLIES_eng_spec
+	icon = GFX_focus_usa_focus_on_europe 
+	x = 0
+	y = 2
+	prerequisite = { focus = ALLIES_eng_patron }
+	relative_position_id = ALLIES_eng_patron
+	cost = 5
+	available = {
+		custom_trigger_tooltip = { AND = { JAP = { has_war = yes } date > 1941.01.01 } tooltip = "The Empire of Japan has attacked the Allies"}
+	}
+	available_if_capitulated = yes
+	completion_reward = {
+		hidden_effect ={ 
+			set_technology = { desert_tactics_allies = 1 }
+		}
+		custom_effect_tooltip = desert_tactics_allies_effect
+	}
+}
+shared_focus = {
+	id = ALLIES_eng_operations
+	icon = GFX_focus_eng_special_air_service 
+	x = 1
+	y = 1
+	available = {
+		custom_trigger_tooltip = { AND = { JAP = { has_war = yes } date > 1941.01.01 } tooltip = "The Empire of Japan has attacked the Allies"}
+	}
+	available_if_capitulated = yes
+	prerequisite = { focus = ALLIES_eng_patron }
+	relative_position_id = ALLIES_eng_patron
+	cost = 5
+	completion_reward = {
+		add_ideas = ALLIES_eng_operations_idea
 	}
 }

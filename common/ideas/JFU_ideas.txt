@@ -966,6 +966,65 @@ ideas = {
 				army_core_attack_factor = 0.2
 				army_core_defence_factor = 0.2
 			}
-		}		 		
+		}
+		ALLIES_eng_patron_idea = {
+			picture = eng_guided_by_britain
+			allowed = {
+				always = no
+			}	
+			removal_cost = -1
+			targeted_modifier = {
+				tag = ENG
+				license_production_speed = 0.05
+			}
+		}
+		ALLIES_usa_patron_idea = {
+			picture = generic_usa_conflict
+			allowed = {
+				always = no
+			}	
+			removal_cost = -1
+			targeted_modifier = {
+				tag = USA
+				license_production_speed = 0.05
+			}
+		}
+		ALLIES_eng_operations_idea = {
+				picture = ast_all_in
+			allowed = {
+				always = no
+			}	
+			removal_cost = -1	
+			modifier = {
+				experience_gain_army_unit_factor	 = 0.1
+				recon_factor  = 0.1
+			}
+		}
+		ALLIES_usa_dock_idea = {
+				picture = generic_naval_manufacturer_3
+			allowed = {
+				always = no
+			}	
+			removal_cost = -1	
+			modifier = {
+				naval_invasion_planning_bonus_speed  = 0.15
+				amphibious_invasion_defence= 0.05
+			}
+		}
+		ALLIES_preparations_idea = {
+			picture = SOV_scientist_defect
+
+			modifier = { max_command_power = 25  }
+		}
+		ALLIES_sov_procure = {
+			picture = SOV_scientist_defect
+
+			modifier = { license_production_speed = -0.10  industrial_capacity_dockyard = 0.05 industrial_capacity_factory = 0.05 }
+		}
+		ALLIES_sov_def_idea = {
+			picture = ast_all_in
+
+			modifier = { dig_in_speed_factor = 0.25 } 
+		}			 		
 	}
 }

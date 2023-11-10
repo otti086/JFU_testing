@@ -62,7 +62,7 @@
 	############################
 	#### WAR PREP SECTION ######
 	############################
-	shared_focus = ALLIES_continue_the_fight
+	shared_focus = ALLIES_commonwealth_of_nations
 	focus = {
 		id = SAF_war_measures_act
 		icon = GFX_goal_generic_demand_territory

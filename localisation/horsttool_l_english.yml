@@ -1068,6 +1068,32 @@
  ALLIES_continue_the_fight_army_volunteers_desc:0 "We will find our expatriates and recruit them into our army."
  ALLIES_resist:0 "Coming Home"
  ALLIES_resist_desc:0 "The time for liberation draws near - we are coming home."
+ ALLIES_joint_training_program:0 "Joint Training Program"
+ ALLIES_joint_training_program_desc:0 "Through jointly conducted war games and training exercises we can hone our military skills."
+ ALLIES_eng_patron:0 "Seek British Expertise"
+ ALLIES_eng_patron_desc:0 "We will see British expertise on desert warfare and military planning as well as study British industrial designs."
+ ALLIES_usa_patron:0 "Learn from Americans"
+ ALLIES_usa_patron_desc:0 "We will see American experience on jungle warfare and military planning as well as study American industrial designs."
+ ALLIES_usa_dock:0 "Marine Warfare"
+ ALLIES_usa_dock_desc:0 "We will study how to plan and launch naval invasions."
+ ALLIES_eng_operations:0 "Lessons of the Great War"
+ ALLIES_eng_operations_desc:0 "We will study British military planning from the Great War."
+ ALLIES_eng_spec:0 "Desert Tactics"
+ ALLIES_eng_spec_desc:0 "We will learn how to fight in deserts."
+ ALLIES_usa_spec:0 "Ranger Tactics"
+ ALLIES_usa_spec_desc:0 "We will learn how to fight in jungles." 
+ ALLIES_friends_near_and_afar:0 "Friends Near and Afar"
+ ALLIES_friends_near_and_afar_desc:0 "We should look beyond our immediate allies for strength and assistance..."
+ ALLIES_sov_factory:0 "Begin a Five Year Plan"
+ ALLIES_sov_factory_desc:0 "We will begin a 'Five Year Plan' modelled after Soviet economic planning, but within a capitalist framework."
+ ALLIES_preparations:0 "Military Preparations"
+ ALLIES_preparations_desc:0 "Numerous invasion scenarions will be wargamed."
+ ALLIES_go_it_alone:0 "Friends Near"
+ ALLIES_go_it_alone_desc:0 "While we may be allied with other nations, that does not mean our military is interchangeable with theirs. The army, navy, and airforce will operate independently of foreign military planners."
+ ALLIES_soviet_aid:0 "Friends Afar"
+ ALLIES_soviet_aid_desc:0 "Soviet style planning and organization seems to offer great benefits for the nations willing to take on the risk of implementing them. We should model ourselves after the Soviet Union."
+ ALLIES_paramil:0 "Loyal Paramilitaries"
+ ALLIES_paramil_desc:0 "Building a strong paramilitary organization can supplement our army and increase the share of the population ready trained to resist foreign invaders." 
  AXIS_ita_patron:0 "Italian Corporatism"
  AXIS_ita_patron_desc:0 "The fascist trade unions of Italy provide a bottom-up model to build our soceity, starting with the workers."
  AXIS_ita_patron_1:0 "Italian Defensive Doctrine"
@@ -1120,6 +1146,8 @@
  MIO_agility_trait:0 "Unlocks a special Agility trait for the Light Aircraft and Naval Aircraft Designer"
  ALLIES_army_eng:0 "§HEighteen§! §Rveteran§! ranger divisions will be assembled in §HLondon§! under our command."
  ALLIES_marines_eng:0 "§HEight§! §Rveteran§! marine divisions will be assembled in §HLondon§! under our command."
+ desert_tactics_allies_effect:0 "Enables §HDesert Training§!\n§HTanks and Infantry\n    Desert§!\n      Defense: §G+10%§!"
+ jungle_tactics_allies_effect:0 "Enables §HRanger Training§!\n§HTanks and Infantry\n    Jungle and Forest§!\n      Attack: §G+5%§!"
 
 
  #ideas
@@ -1136,6 +1164,14 @@
  supremacy_at_sea:0 "Supremacy at Sea"
  wolfpack_tactics_idea:0 "Wolfpack Tactics"
  ENG_con_int_dynamic:0 "Continental Intervention"
+ ALLIES_sov_def_idea:0 "Defense in Depth"
+ ALLIES_sov_procure:0 "Soviet Military-Industrial Planning" 
+ ALLIES_preparations_idea:0 "Military Preparations"
+ ALLIES_eng_operations_idea:0 "Trained by the British Army"
+ ALLIES_usa_dock_idea:0 "Trained by the US Marine Corps"
+ ALLIES_usa_patron_idea:0 "Learn from Americans"
+ ALLIES_eng_patron_idea:0 "Seek British Expertise"
+
 
  #decisions
 
@@ -1149,6 +1185,11 @@
  ENG_permit_saf_desc:0 "Our overseas colonies in the Southern half of Africa are too difficult for us to maintain - we should encourage our dominion, South Africa, to take stewardship of them."
  anti_non_aligned_raids:0 "Anti Non-Aligned Raids"
  anti_non_aligned_raids_desc:0 "We must crack down on Non-Aligned elements in our nation for the sake of long-term domestic stability. Their influence is too great, and may potentially become a problem to the government."
+
+ #techology
+
+ desert_tactics_allies:0 "Desert Training"
+ jungle_tactics_allies:0 "Ranger Training"
 
 
  #events

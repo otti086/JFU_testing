@@ -26,7 +26,7 @@ focus_tree = {
 	default = no
 
 	continuous_focus_position = { x = 70 y = 1100 }
-	shared_focus = ALLIES_continue_the_fight
+	shared_focus = ALLIES_commonwealth_of_nations
 	focus = {
 		id = MEX_focus_plan_of_agua_prieta
 		icon = GFX_focus_hol_the_foundations_of_defense

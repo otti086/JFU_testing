@@ -62,7 +62,7 @@
 	############################
 	###### NAVY SECTION ########
 	############################
-	shared_focus = ALLIES_continue_the_fight
+	shared_focus = ALLIES_commonwealth_of_nations
 	focus = {
 		id = NZL_form_the_rnzn
 		icon = GFX_goal_generic_build_navy
