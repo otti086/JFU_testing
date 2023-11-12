@@ -310,8 +310,8 @@ ENG_light_aircraft_organization = {
 		all_parents = { generic_mio_trait_expanded_production_facilities }
 
 		production_bonus = {
-			production_capacity_factor = 0.1
-		} 
+			production_capacity_factor = 0.05
+		}
 	}
 }
 
