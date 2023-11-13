@@ -375,7 +375,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				resistance_growth = -0.1
+				conscription = 0.05
 			}
 		}
 		FRA_milice = {
@@ -392,7 +392,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				resistance_growth = -0.2
+				conscription = 0.10 
 			}
 		}
 		FRA_anti_bolshevist_volunteers = {
@@ -409,7 +409,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				send_volunteer_size = 3
+				send_volunteer_size = 49
 			}
 			targeted_modifier = {
 				tag = SOV

@@ -968,8 +968,7 @@
  BUL_foreign_investor_germany_tt:0 "Modify §YForeign Investors§! by \nProduction Efficiency Retention: §G+20%§! \n§YMilitary Factory§! construction Speed: §G+10%§!"
  BUL_foreign_industry:0 "Invited Foreign Investors"
 
- ITA_yugo_attack_desc_tt:0 "Enables decision to attack Yugoslavia"
- ITA_greece_attack_desc_tt:0 "Enables decision to attack Greece" 
+
 
  GER_prepare_barb_idea:0 "Prepare for Operation Barbarossa"
  GER_prepare:0 "Build up the East"
@@ -1026,14 +1025,6 @@
  
 
  GER_focus_fall_blau:0 "Fall Blau"
- GER_danzig_or_war_tt:0 "With the claim of Danzig, this focus justifies a war against §YPoland§!."
- GER_around_maginot_tt:0 "This focus is automatically completed in case of war with §YBelgium, Nehterlands and Luxemburg§!."
- GER_wesserubung_1_tt:0 "This focus is automatically completed in case of war with §YDenmark§!."
- GER_wesserubung_2_tt:0 "This focus is automatically completed in case of war with §YNorway§!."
- GER_fall_of_france_tt:0 "This focus is automatically completed upon the capitulation of §YFrance§!."
- GER_fall_blau_focus_tt:0 "This focus is automatically completed upon pressing the Fall Blau decision"
- GER_decision_focus_tt:0 "This focus is completed by selecting the matching £decision_icon_small §YDecision§! under §YJFU Decisions§!.\n\n"
- 
  endsieg_tanks_tt:0 "§RWe will organize an army of 4 Panzer divisions in Berlin§!"
  ITA_blackshirts_div_cap_20_tt:0 "Modify template cap of §YCamicie Nere§! by §G+20§!."
  ITA_strengthen_the_blackshirts_spawn_divs_10_tt:0 "Create §Y10 Camicie Nere§! divisions in §Y[THIS.GetName]§!."
@@ -1133,6 +1124,16 @@
  AXIS_joint_training_program_desc:0 "Conducting military drills with Germany will improve our readiness."
  FRA_operation_dragoon:0 "Operation Dragoon"
  FRA_operation_dragoon_desc:0 "An amphibious landing in Southern France can draw away German units from the Atlantikwall, making a more serious invasion in Northern France more possible."
+ VIC_africa_corps:0 "The Algerian Bulwark"
+ VIC_africa_corps_desc:0 "Algeria is as much of a part of Metropolitan France as Toulouse or Marseilles. It is our southern defense line against foreign invasion."
+ VIC_africa_corps_3:0 "The Legitimate France"
+ VIC_africa_corps_3_desc:0 "We are the one true France."
+ VIC_mainland_defense:0 "Focus on the Mainland"
+ VIC_mainland_defense_desc:0 "Africa is far too much of a burden on us - we must prepare to abandon Algeria."
+ VIC_mainland_defense_2:0 "Fortress Marseilles"
+ VIC_mainland_defense_2_desc:0 "Marseilles is the main logistical route from the Mediterrenean into France - this is where any future invasion of France will take place and thus this is where we will focus our defensive efforts."
+ VIC_Installing_Patriotism:0 "Instill Patriotism"
+ VIC_Installing_Patriotism_desc:0 "The people of France have much to be proud of, but first they must be taught to be proud."
 
  #tooltips
 
@@ -1151,7 +1152,17 @@
  ALLIES_marines_eng:0 "§HEight§! §Rveteran§! marine divisions will be assembled in §HLondon§! under our command."
  desert_tactics_allies_effect:0 "Enables §HDesert Training§!\n§HTanks and Infantry\n    Desert§!\n      Defense: §G+10%§!"
  jungle_tactics_allies_effect:0 "Enables §HRanger Training§!\n§HTanks and Infantry\n    Jungle and Forest§!\n      Attack: §G+5%§!"
-
+ GER_danzig_or_war_tt:0 "With the claim of Danzig, this focus justifies a war against §YPoland§!."
+ GER_around_maginot_tt:0 "This focus is automatically completed in case of war with §YBelgium, Nehterlands and Luxemburg§!."
+ GER_wesserubung_1_tt:0 "This focus is automatically completed in case of war with §YDenmark§!."
+ GER_wesserubung_2_tt:0 "This focus is automatically completed in case of war with §YNorway§!."
+ GER_fall_of_france_tt:0 "This focus is automatically completed upon the capitulation of §YFrance§!."
+ GER_fall_blau_focus_tt:0 "This focus is automatically completed upon pressing the Fall Blau decision"
+ GER_decision_focus_tt:0 "This focus is completed by selecting the matching £decision_icon_small §YDecision§! under §YJFU Decisions§!.\n\n"
+ SOV_claims_in_balitc.tt:0 "We will annex the Baltic states"
+ SOV_Bessarabia.tt:0 "We will force Romania to cede us Bessarabia"
+ ITA_yugo_attack_desc_tt:0 "Enables decision to attack Yugoslavia"
+ ITA_greece_attack_desc_tt:0 "Enables decision to attack Greece" 
 
  #ideas
 
@@ -1174,7 +1185,7 @@
  ALLIES_usa_dock_idea:0 "Trained by the US Marine Corps"
  ALLIES_usa_patron_idea:0 "Learn from Americans"
  ALLIES_eng_patron_idea:0 "Seek British Expertise"
-
+ EFR_work_service:0 "Guest Workers Sent to Germany"
 
  #decisions
 
@@ -1195,6 +1206,45 @@
  jungle_tactics_allies:0 "Ranger Training"
 
 
+ #characters
+
+ EFR_gaston_henry_haye:0 "Gaston Henry-Haye"
+ EFR_jacques_duclos:0 "Jacques Duclos"
+ EFR_paul_baudouin:0 "Paul Baudouin"
+ EFR_zivony_peshkov:0 "Zivony Peshkov"
+ EFR_felix_gouin:0 "Félix Gouin"
+ EFR_charles_tillon:0 "Charles Tillon"
+ EFR_paul_reynaud:0 "Paul Reynaud"
+ EFR_henri_marie_auguste_bineau:0 "Henri Marie Auguste Bineau"
+ EFR_pierre_alombert_goget:0 "Pierre Alombert Goget"
+ EFR_renault_fra:0 "Renault"
+ EFR_somua:0 "SOMUA"
+ EFR_mas:0 "MAS"
+ EFR_schneider:0 "Schneider"
+ EFR_morane_saulnier:0 "Morane-Saulnier"
+ EFR_bloch:0 "Bloch"
+ EFR_amiot:0 "Amiot"
+ EFR_fcm:0 "FCM"
+ EFR_famh:0 "FAMH"
+ EFR_levasseur:0 "Levasseur"
+ EFR_charles_de_gaulle:0 "Charles de Gaulle"
+ EFR_henri_giraud:0 "Henri Giraud"
+ EFR_louis_kahn:0 "Louis Kahn"
+ EFR_jean_decoux:0 "Jean Decoux"
+ EFR_victor_denain:0 "Victor Denain"
+ EFR_frederic_irene_joliot_curie:0 "Frédéric & Iréne Joliot-Curie"
+ EFR_joe_biden:0 "Jérôme Carcopino"
+ EFR_philippe_henriot:0 "Philippe Henriot"
+ EFR_pierre_pucheu:0 "Pierre Pucheu"
+ EFR_marius_viple:0 "Marius Viple"
+ EFR_jean_francois_darlan:0 "Jean François Darlan"
+ EFR_jean_marie_abrial:0 "Jean Marie Abrial"
+ EFR_jean_romatet:0 "Jean Romatet"
+ EFR_jean_marie_bergeret:0 "Jean-Marie Bergeret"
+ EFR_marcel_bruno_gensoul:0 "Marcel-Bruno Gensoul"
+
+
+
  #events
 
  news.5003.d:0 "Since the start of Operation Barbarossa the Workers' and Peasants' Red Army has been plagued by routing, leaving many Soviet industrial and urban centers near the border under Axis control. Joseph Stalin has responded with an order to all Red Army commanders to cease unauthorized retreats and set up special detachments for dealing with deserters."
@@ -1209,7 +1259,7 @@
 
  modifier_production_cost_dockyard_factor:0 "§YDockyard§! construction cost"
  modifier_production_cost_dockyard_factor_desc:0 "Modifies the cost of Dockyard construction."
-
+ EFR_defense_plan:0 "Bulwark of France"
 
  #country flags
 

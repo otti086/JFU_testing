@@ -1,0 +1,11 @@
+spriteTypes = {	
+ 	spriteType = {
+		name = "GFX_idea_EFR_pierre_pucheu"
+		texturefile = "gfx/interface/ideas/idea_fra_pierre_pucheu.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_EFR_philippe_henriot"
+		texturefile = "gfx/interface/ideas/idea_fra_philippe_henriot.dds"
+	}
+}
+

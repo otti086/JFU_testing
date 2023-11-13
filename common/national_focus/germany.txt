@@ -22,7 +22,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_four_year_plan
-		icon = GFX_goal_generic_construction
+		icon = GFX_GER_FOUR_YEAR_PLAN
 		x = 4
 		y = 0
 		cost = 10
@@ -1714,11 +1714,13 @@ focus_tree = {
 				74 = { add_core_of = GER }
 				POL = { transfer_state = 72 }
 				add_named_threat = { threat = 3 name = GER_demand_sudetenland_threat }
+				GER = { transfer_state = 69 }
+				GER = { transfer_state = 74 }
 			}
 			add_war_support = 0.1
 			add_stability = 0.05
-			GER = { transfer_state = 69 }
-			GER = { transfer_state = 74 }
+			news_event = { hours = 6 id = JFU_events.6 }
+
 
 			set_country_flag = sudetenland_acquired
 		}

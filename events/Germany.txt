@@ -62,23 +62,6 @@ country_event = {
 	}
 }
 
-# Memel - Lithuania Folds
-country_event = {
-	id = germany.22
-	title = germany.22.t
-	desc = germany.22.d
-	picture = GFX_report_event_vienna_award_hungary
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = germany.22.a
-		hidden_effect = {
-			country_event = { days = 1 id = news.19 }
-		}
-	}
-}
-
 
 # Fortifying the Westwall
 country_event = {

@@ -185,13 +185,6 @@ on_actions = {
 		}
 	}
 
-	# When a new faction is formed
-	on_faction_formed = {
-		effect = {
-			news_event = { id = news.159 }
-		}
-	}
-
 	# ROOT is capitulated country, FROM is winner
 	on_capitulation = {
 		effect = {

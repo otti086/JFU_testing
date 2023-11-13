@@ -1025,6 +1025,65 @@ ideas = {
 			picture = ast_all_in
 
 			modifier = { dig_in_speed_factor = 0.25 } 
-		}			 		
+		}
+		VIC_produce_aircraft_parts = {
+			picture = generic_bomber_production_diverted
+			allowed = {
+				original_tag = EFR #should probably be VIC
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			equipment_bonus = {
+				medium_plane_airframe = {
+					build_cost_ic = 0.25
+					instant = yes
+				}
+				large_plane_airframe = {
+					build_cost_ic = 0.25
+					instant = yes
+				}
+				small_plane_naval_bomber_airframe = {
+					build_cost_ic = 0.25
+					instant = yes
+				}
+				small_plane_cas_airframe = {
+					build_cost_ic = 0.25
+					instant = yes
+				}
+				small_plane_airframe = {
+					build_cost_ic = 0.25
+					instant = yes
+				}
+				medium_plane_fighter_airframe = {
+					build_cost_ic = 0.25
+					instant = yes
+				}
+					large_plane_maritime_patrol_plane_airframe = {
+					build_cost_ic =  0.25
+					instant = yes
+				}
+			}
+		}	
+		EFR_work_service = {
+			picture = generic_production_bonus
+			allowed = {
+				original_tag = EFR
+				always = no
+			}
+
+			allowed_civil_war = {	tag = EFR	}
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = -0.25
+			}
+		}		 		
 	}
 }

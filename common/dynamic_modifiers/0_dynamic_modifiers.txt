@@ -1320,3 +1320,6 @@ ENG_con_int_dynamic = {
 icon = "GFX_idea_generic_fortify_the_borders"
 	max_dig_in = -5
 }
+EFR_defense_plan = {
+	army_defence_factor = 0.1
+}

@@ -1341,4 +1341,40 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/sov/focus_SOV_fiveyearplan.dds"
 	}
     
+
+    SpriteType = {
+		name = "GFX_GOAL_ENG_CONTINUE_THE_SPITFIRE"
+		texturefile = "gfx/interface/goals/eng/goal_ENG_continue_the_spitfire.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_FRA_VIC_RATIONNING"
+		texturefile = "gfx/interface/goals/fra/FRA_VIC_rationning.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_R56_GOAL_FRA_VIC_MILICE_FRANCAISE"
+		texturefile = "gfx/interface/goals/fra/r56_goal_FRA_VIC_milice_francaise.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_R56_GOAL_FRA_VIC_LEGION_VOLONTAIRES_FRANCAIS"
+		texturefile = "gfx/interface/goals/fra/r56_goal_FRA_VIC_legion_volontaires_francais.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_R56_GOAL_FRA_VIC_CHANTIERS_DE_LA_JEUNESSE"
+		texturefile = "gfx/interface/goals/fra/r56_goal_FRA_VIC_chantiers_de_la_jeunesse.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_R56_GOAL_FRA_VIC_FRANCISQUE"
+		texturefile = "gfx/interface/goals/fra/r56_goal_FRA_VIC_francisque.dds"
+	}
+    
 }

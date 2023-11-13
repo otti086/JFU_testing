@@ -347,7 +347,7 @@
 		completion_reward = {
 			add_offsite_building = {
 				type = arms_factory
-				level = 1
+				level = 2
 			}			
 		}
 	}
@@ -399,7 +399,7 @@
 		completion_reward = {
 			add_offsite_building = {
 				type = arms_factory
-				level = 1
+				level = 2
 			}
 		}
 	}
@@ -745,12 +745,6 @@
 		icon = GFX_goal_generic_national_unity #icon = GFX_goal_tripartite_pact
 		prerequisite = { focus = EFR_political_effort }
 		mutually_exclusive = { focus = EFR_liberty_ethos}
-		available = {
-			OR = {
-				has_government = fascism
-				has_government = neutrality
-			}
-		}
 		x = -1
 		y = 1
 		relative_position_id = EFR_political_effort
@@ -1065,14 +1059,11 @@
 		icon = GFX_FRA_VIC_PETAIN
 		x = 20
 		y = 0
-		offset = {
-			x = 0
-			y = 0
-		}
+
 		prerequisite = {}
 		mutually_exclusive = { }
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1089,31 +1080,51 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+
 			add_country_leader_trait = emergency_powers
-			if = {
-				limit = {
-					has_idea = FRA_disjointed_government
-				}
-				remove_ideas = { FRA_disjointed_government }
-			}
+			add_ideas = tot_economic_mobilisation
 			add_ideas = volunteers_50
+			hidden_effect = { 	
+				add_offsite_building = {	
+					type = arms_factory	
+					level = -6 
+				}
+				31 = {
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+				33 = {
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+				25 = {
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
 		}
 	}
 	focus = {
 		id = VIC_the_national_revolution
-		icon = GFX_focus_generic_strike_at_democracy1
+		icon = GFX_R56_GOAL_FRA_VIC_FRANCISQUE
 		x = -5
 		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
+
 		prerequisite = { 
 			focus = VIC_emergency_powers_to_petain
 		}
 		relative_position_id = VIC_emergency_powers_to_petain
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1134,19 +1145,16 @@
 	}
 	focus = {
 		id = VIC_long_term_economic_planning
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_EFR_FACTORY_ICON
 		x = -2
 		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
+
 		prerequisite = { 
 			focus = VIC_the_national_revolution
 		}
 		relative_position_id = VIC_the_national_revolution
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1172,19 +1180,16 @@
 	}
 	focus = {
 		id = VIC_aid_small_businesses
-		icon = GFX_goal_generic_consumer_goods
+		icon = GFX_FRA_VIC_RATIONNING
 		x = 0
-		y = 2
-		offset = {
-			x = 0
-			y = 0
-		}
+		y = 1
+
 		prerequisite = { 
 			focus = VIC_long_term_economic_planning
 		}
 		relative_position_id = VIC_long_term_economic_planning
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1200,16 +1205,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			random_owned_state = {
-				limit = {
-					is_fully_controlled_by = ROOT
-					is_core_of = ROOT
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
+			20 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -1223,17 +1219,14 @@
 		id = VIC_venerate_the_craftsman
 		icon = GFX_goal_generic_production
 		x = 0
-		y = 2
-		offset = {
-			x = 0
-			y = 0
-		}
+		y = 1
+
 		prerequisite = { 
 			focus = VIC_aid_small_businesses
 		}
 		relative_position_id = VIC_aid_small_businesses
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1257,16 +1250,13 @@
 		icon = GFX_focus_focus_fra_down_marianne
 		x = 0
 		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
+
 		prerequisite = { 
 			focus = VIC_the_national_revolution
 		}
 		relative_position_id = VIC_the_national_revolution
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1283,7 +1273,7 @@
 		completion_reward = {
 			add_timed_idea = { 
 				idea = FRA_down_with_marianne 
-				days = 730
+				days = 365
 			}
 		}
 	}
@@ -1291,17 +1281,14 @@
 		id = VIC_up_with_jean_darc
 		icon = GFX_focus_up_joan_of_arc
 		x = 0
-		y = 2
-		offset = {
-			x = 0
-			y = 0
-		}
+		y = 1
+
 		prerequisite = { 
 			focus = VIC_down_with_marianne
 		}
 		relative_position_id = VIC_down_with_marianne
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1318,7 +1305,7 @@
 		completion_reward = {
 			add_timed_idea = { 
 				idea = FRA_up_with_jean_darc 
-				days = 730
+				days = 365
 			}
 		}
 	}
@@ -1326,17 +1313,14 @@
 		id = VIC_celebrate_motherhood
 		icon = GFX_goal_generic_propaganda
 		x = 0
-		y = 2
-		offset = {
-			x = 0
-			y = 0
-		}
+		y = 1
+
 		prerequisite = { 
 			focus = VIC_up_with_jean_darc
 		}
 		relative_position_id = VIC_up_with_jean_darc
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1352,24 +1336,21 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
-			add_stability = 0.1
+			add_stability = 0.05
 		}
 	}
 	focus = {
 		id = VIC_prosecute_the_losers
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_R56_GOAL_FRA_VIC_MILICE_FRANCAISE
 		x = 2
 		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
+
 		prerequisite = { 
 			focus = VIC_the_national_revolution
 		}
 		relative_position_id = VIC_the_national_revolution
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1385,24 +1366,21 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
-			add_war_support = 0.1
+			add_war_support = 0.05
 		}
 	}
 	focus = {
 		id = VIC_concessions_to_the_germans
 		icon = GFX_focus_chi_mission_to_germany
 		x = 0
-		y = 2
-		offset = {
-			x = 0
-			y = 0
-		}
+		y = 1
+
 		prerequisite = { 
 			focus = VIC_prosecute_the_losers
 		}
 		relative_position_id = VIC_prosecute_the_losers
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1420,23 +1398,21 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_FRA_OCCUPATION_COST }
 		completion_reward = {
+			remove_ideas = EFR_work_service
 		}
 	}
 	focus = {
 		id = VIC_mandatory_work_service
 		icon = GFX_goal_generic_construction2
 		x = 0
-		y = 2
-		offset = {
-			x = 0
-			y = 0
-		}
+		y = 1
+
 		prerequisite = { 
 			focus = VIC_concessions_to_the_germans
 		}
 		relative_position_id = VIC_concessions_to_the_germans
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1452,18 +1428,15 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_FRA_OCCUPATION_COST }
 		completion_reward = {
-			add_ideas = { FRA_mandatory_work_service }
+			remove_ideas =  FRA_mandatory_work_service
 		}
 	}
 	focus = {
 		id = VIC_a_nation_reborn
 		icon = GFX_VIC_A_NATION_REBORN
 		x = 0
-		y = 2
-		offset = {
-			x = 0
-			y = 0
-		}
+		y = 1
+
 		prerequisite = { 
 			focus = VIC_celebrate_motherhood
 		}
@@ -1491,24 +1464,117 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
-			add_stability = 0.3
+			add_stability = 0.15
+		}
+	}
+
+	focus = {
+		id = VIC_end_the_occupation
+		icon = GFX_goal_generic_territory_or_war
+		x = 0
+		y = 1
+		prerequisite = { 	focus = VIC_a_nation_reborn	}
+		relative_position_id = VIC_a_nation_reborn
+		
+		cost = 5
+
+		available = {
+			is_puppet = no 
+			is_in_faction_with = GER
+			has_war = yes
+			has_stability > 0.99
+			date > 1943.1.1 
+			OR = {  
+				ITA = { controls_state = 461 }
+				AND = { 
+				ITA = { controls_state = 460 }
+				date > 1944.1.1 
+				}
+			}
+			has_country_flag = EFR_torch_declared
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			transfer_state = 19 
+			add_state_core = 19
+			transfer_state = 23
+			add_state_core = 23 
+			transfer_state = 30 
+			add_state_core = 30
+			transfer_state = 14
+			add_state_core = 14 
+			transfer_state = 24 
+			add_state_core = 24
+			transfer_state = 15
+			add_state_core = 15 
+			transfer_state = 16 
+			add_state_core = 16
+			transfer_state = 27
+			add_state_core = 27
+			transfer_state = 806
+			add_state_core = 806
+			GER = {  
+				add_state_core = 17  
+				add_state_core = 18 
+				add_state_core = 29  
+			}
+			set_capital = { state = 16 }
+
+			remove_ideas = VIC_produce_aircraft_parts
+			FRA = { add_ideas = CHI_illegal_regime }
+			hidden_effect = {
+			EFR = { set_cosmetic_tag = EFR_STATE }
+			FRA =  { set_cosmetic_tag = FRA_GAULLE }
+			}
+			}
+	}
+	
+	focus = {
+		id = FRA_national_regeneration
+		icon = GFX_goal_generic_political_pressure
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = VIC_end_the_occupation
+		}
+		relative_position_id = VIC_end_the_occupation
+		cost = 5
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+				create_country_leader = {
+					name = "Pierre Laval"
+					#desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
+					picture = "gfx/leaders/FRA/portrait_fra_pierre_laval.dds"
+					expire = "1965.1.1"
+					ideology = rexism
+					traits = {
+						tenacious_negotiator
+						emergency_powers
+						nationalist_symbol
+					}
+				}
 		}
 	}
 	focus = {
 		id = VIC_the_national_bureau_of_statistics
 		icon = GFX_focus_generic_treaty
-		x = -2
+		x = 3
 		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
+
 		prerequisite = { 
 			focus = VIC_emergency_powers_to_petain
 		}
 		relative_position_id = VIC_emergency_powers_to_petain
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1532,16 +1598,13 @@
 		icon = GFX_goal_generic_small_arms
 		x = 0
 		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
+
 		prerequisite = { 
 			focus = VIC_emergency_powers_to_petain
 		}
 		relative_position_id = VIC_emergency_powers_to_petain
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1564,17 +1627,14 @@
 		id = VIC_form_the_milice
 		icon = GFX_focus_fra_milice
 		x = -1
-		y = 2
-		offset = {
-			x = 0
-			y = 0
-		}
+		y = 1
+
 		prerequisite = { 
 			focus = VIC_the_legionary_service_order
 		}
 		relative_position_id = VIC_the_legionary_service_order
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1597,35 +1657,21 @@
 	}
 	focus = {
 		id = VIC_anti_bolshevist_volunteers
-		icon = GFX_focus_generic_military_mission
+		icon = GFX_R56_GOAL_FRA_VIC_LEGION_VOLONTAIRES_FRANCAIS
 		x = 1
-		y = 2
-		offset = {
-			x = 0
-			y = 0
-		}
+		y = 1
+
 		prerequisite = { 
 			focus = VIC_the_legionary_service_order
 		}
 		relative_position_id = VIC_the_legionary_service_order
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			16 = { # Controller of paris is in a war against any communist major
-				CONTROLLER = {
-					NOT = {
-						tag = ROOT
-					}
-					NOT = { has_war_with = ROOT }
-					any_enemy_country = {
-						is_major = yes
-						has_government = communism
-					}
-				}
-			}
+			GER = { has_war_with = SOV }
 		}
 		
 		bypass = {
@@ -1635,24 +1681,21 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			add_ideas = { FRA_anti_bolshevist_volunteers }
+			add_ideas = FRA_anti_bolshevist_volunteers
 		}
 	}
 	focus = {
 		id = VIC_rebuild_the_military
-		icon = GFX_EFR_FACTORY_ICON
-		x = 4
+		icon = GFX_R56_GOAL_FRA_VIC_CHANTIERS_DE_LA_JEUNESSE
+		x = 5
 		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
+
 		prerequisite = { 
 			focus = VIC_emergency_powers_to_petain
 		}
 		relative_position_id = VIC_emergency_powers_to_petain
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1671,9 +1714,9 @@
 		}
 	}
 	focus = {
-		id = VIC_hidden_materials
-		icon = GFX_focus_secret_rearmament
-		x = 0
+		id = VIC_finish_the_naval_buildup
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = -2
 		y = 1
 		offset = {
 			x = 0
@@ -1684,7 +1727,45 @@
 		}
 		relative_position_id = VIC_rebuild_the_military
 		
-		cost = 10
+		cost = 5
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			random_owned_state = {
+			add_extra_state_shared_building_slots = 2
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_core_of = ROOT
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = VIC_hidden_materials
+		icon = GFX_focus_secret_rearmament
+		x = 0
+		y = 1
+
+		prerequisite = { 
+			focus = VIC_rebuild_the_military
+		}
+		relative_position_id = VIC_rebuild_the_military
+		
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1699,7 +1780,94 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			add_ideas = { FRA_hidden_materials }
+			hidden_effect = {
+				if = { limit = { NOT = { has_tech = improved_light_tank_chassis } } set_technology = { improved_light_tank_chassis = 1 popup = no } }
+				if = { limit = { NOT = { has_tech = basic_medium_tank_chassis } } set_technology = { basic_medium_tank_chassis = 1 popup = no } }
+			}
+			create_equipment_variant = {
+				name = "Renault AMC 35"
+				type = medium_tank_chassis_1
+				parent_version = 0
+				modules = {
+					main_armament_slot = tank_medium_cannon_2
+					turret_type_slot = tank_medium_three_man_tank_turret
+					suspension_type_slot = tank_bogie_suspension
+					armor_type_slot = tank_riveted_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_1 = tank_radio_2
+					special_type_slot_2 = secondary_turret_small_cannon
+					special_type_slot_3 = secondary_turret_small_cannon
+					special_type_slot_4 = wet_ammo_storage
+				}
+				upgrades = {
+					tank_nsb_engine_upgrade = 5
+				}
+				icon = "GFX_FRA_improved_medium_tank_medium"
+			}
+
+			create_equipment_variant = {
+				name = "1936 FCM"
+				type = light_tank_chassis_2
+				parent_version = 0
+				modules = {
+					main_armament_slot = tank_small_cannon_2
+					turret_type_slot = tank_light_three_man_tank_turret
+					suspension_type_slot = tank_interleaved_suspension
+					armor_type_slot = tank_riveted_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_1 = tank_radio_2
+					special_type_slot_2 = extra_ammo_storage
+					special_type_slot_3 = extra_ammo_storage
+					special_type_slot_4 = extra_ammo_storage
+				}
+				upgrades = {
+					tank_nsb_engine_upgrade = 2
+				}
+				icon = "GFX_FRA_improved_light_tank_medium"
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 40000
+				producer = FRA
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment_1
+				amount = 2000
+				producer = FRA
+			}
+			add_equipment_to_stockpile = {
+				type = anti_tank_equipment_1
+				amount = 2000
+				producer = FRA
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_1
+				amount = 2000
+				producer = FRA
+			}
+			add_equipment_to_stockpile = {
+				type = anti_air_equipment_1
+				amount = 1500
+				producer = FRA
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment_1
+				amount = 1000
+				producer = FRA
+			}
+
+			add_equipment_to_stockpile = {
+				type = medium_tank_chassis_1
+				amount = 1500 #1300+300 
+				variant_name  = "Renault AMC 35"
+				producer = EFR
+			}
+			add_equipment_to_stockpile = {
+				type = light_tank_chassis_2
+				amount = 1500 #900 heavies + 600 lights
+				variant_name = "1936 FCM" 
+				producer = EFR
+			}
 		}
 	}
 	focus = {
@@ -1707,16 +1875,13 @@
 		icon = GFX_goal_generic_army_doctrines
 		x = 0
 		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
+
 		prerequisite = { 
 			focus = VIC_hidden_materials
 		}
 		relative_position_id = VIC_hidden_materials
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1740,5 +1905,118 @@
 			}
 		}
 	}
+	focus = {
+		id = VIC_mainland_defense
+		icon = GFX_focus_SWI_fortify_border_with_france
+		x = 1 
+		y = 1
+		mutually_exclusive = { focus = VIC_africa_corps } 
+		prerequisite = { focus = VIC_analyze_our_defeat	}
+		relative_position_id = VIC_analyze_our_defeat
+		cost = 5
+		completion_reward = {
+			every_state = {
+				limit = { OR = { state = 31 state = 22 state = 21  } } 
+				add_dynamic_modifier = { modifier = EFR_defense_plan scope = EFR }
+			}
+		}
+	}
+	focus = {
+		id = VIC_mainland_defense_2
+		icon = GFX_focus_generic_coastal_fort
+		x = 0
+		y = 1
+		prerequisite = { focus = VIC_mainland_defense }
+		relative_position_id = VIC_mainland_defense
+		cost = 5
+		completion_reward = {
+			21 = {
+				set_building_level = {
+					type = coastal_bunker
+					level = 5
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level < 5
+					}
+				}
+			}
+			851 = {
+				set_building_level = {
+					type = coastal_bunker
+					level = 5
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level < 5
+					}
+				}
+			}
+		}
+	}
+	
+	
+    focus = {
+        id = VIC_Installing_Patriotism
+        icon = GFX_focus_generic_military_mission
+        prerequisite = { focus = VIC_mainland_defense_2 }
+        relative_position_id = VIC_mainland_defense_2
+        x = 0
+        y = 1
+        
+        cost = 5
 
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+    
+        completion_reward = {
+            add_war_support = 0.10
+        }
+    }
+	
+	focus = { 
+		id = VIC_africa_corps
+		icon = GFX_focus_generic_africa_defense
+		x = -1
+		y = 1
+		mutually_exclusive = { focus = VIC_mainland_defense } 
+		
+		prerequisite = { focus = VIC_analyze_our_defeat	}
+		relative_position_id = VIC_analyze_our_defeat
+		cost = 5
+		completion_reward = {
+			every_state = {
+				limit = { OR = { state = 461 state = 459 state = 513 state = 273 state = 607 state = 397 state = 458 state=  577  } } 
+				add_dynamic_modifier = { modifier = EFR_defense_plan scope = EFR }
+			}
+		}
+	}
+	focus = {
+		id = VIC_africa_corps_2
+		text = SAF_desert_equipment
+		icon = GFX_goal_generic_axis_build_infantry
+		x = 0
+		y = 1
+		prerequisite = { 	focus = VIC_africa_corps	}
+		relative_position_id = VIC_africa_corps
+		cost = 5
+		completion_reward = {
+			add_ideas = SAF_desert_equipment
+		}
+	}
+	
+	focus = {
+		id = VIC_africa_corps_3
+		icon = GFX_goal_generic_demand_territory
+		x = 0
+		y = 1
+		prerequisite = { 	focus = VIC_africa_corps_2	}
+		relative_position_id = VIC_africa_corps_2
+		cost = 5
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
 }

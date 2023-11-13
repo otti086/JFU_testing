@@ -414,7 +414,7 @@ focus_tree = {
 	focus = {
 		id = uk_extra_tech_slot
 		text = extra_tech_slot
-		icon = GFX_focus_research
+		icon = GFX_ENG_INDUSTRIAL_RESEARCH_COMMITTEE
 		prerequisite = { focus = uk_industrial_focus }
 		x = 0
 		y = 1
@@ -874,9 +874,9 @@ focus_tree = {
 	focus = {
 		id = fighter_command_focus
 		prerequisite = { focus = air_rearmament_focus }
-		icon = GFX_focus_generic_cas_aircraft
-		x = -1
-		y = 2
+		icon = GFX_GOAL_ENG_CONTINUE_THE_SPITFIRE
+		x = 0
+		y = 1
 		relative_position_id = air_rearmament_focus
 		cost = 10
 		ai_will_do = {
@@ -930,9 +930,9 @@ focus_tree = {
 	focus = {
 		id = bomber_command_focus
 		prerequisite = { focus = air_rearmament_focus }
-		icon = GFX_focus_SWE_marauder_bombers
-		x = 0
-		y = 1
+		icon = GFX_goal_generic_air_bomber
+		x = -1
+		y = 2
 		relative_position_id = air_rearmament_focus
 		cost = 10
 		ai_will_do = {
@@ -1032,7 +1032,7 @@ focus_tree = {
 		icon = GFX_MOSKITO
 		x = 1
 		y = 1
-		relative_position_id = fighter_command_focus
+		relative_position_id = bomber_command_focus
 		cost = 10
 		ai_will_do = {
 			factor = 3
@@ -2244,7 +2244,7 @@ focus_tree = {
 
 		continue_if_invalid = no
 
-		icon = GFX_focus_eng_imperial_federation
+		icon = GFX_ENG_IMPERIAL_CONFERENCE
 
 
 		x = 0

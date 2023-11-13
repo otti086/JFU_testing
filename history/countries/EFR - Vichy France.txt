@@ -1,8 +1,6 @@
 ﻿capital = 713
 oob = "EFR_1936"
 
-
-
 set_variable = {
     var = min_fuel
     value = 0.200
@@ -51,7 +49,38 @@ add_relation_modifier = {
 	target = ITA
 	modifier = trade_vichy
 }
-set_convoys = 15
+set_convoys = 50
+
+recruit_character = EFR_maxime_weygand
+recruit_character = EFR_phillipe_pétain
+recruit_character = EFR_jonas_smith
+recruit_character = EFR_marcus_smith
+recruit_character = EFR_alex_walker
+recruit_character = EFR_charles_huntziger
+recruit_character = EFR_maurice_gamelin
+recruit_character = EFR_vicente_rojo_lluch
+recruit_character = EFR_ion_antonescu
+recruit_character = EFR_francisco_franco
+recruit_character = EFR_emilio_mola
+recruit_character = EFR_paul_reynaud
+recruit_character = EFR_jean_francois_darlan
+recruit_character = EFR_joe_biden
+recruit_character = EFR_charles_maurras
+recruit_character = EFR_marius_viple
+recruit_character = EFR_felix_gouin
+recruit_character = EFR_marcel_bucard
+recruit_character = EFR_gaston_henry_haye
+recruit_character = EFR_jean_romatet
+recruit_character = EFR_philippe_henriot
+recruit_character = EFR_pierre_pucheu
+recruit_character = EFR_charles_tillon
+recruit_character = EFR_zivony_peshkov
+recruit_character = EFR_jean_marie_abrial
+recruit_character = EFR_henri_giraud
+recruit_character = EFR_jean_francois_jannekeyn
+recruit_character = EFR_frederic_irene_joliot_curie
+recruit_character = EFR_jean_de_laborde
+recruit_character = EFR_marcel_bruno_gensoul
 
 set_politics = {
 	ruling_party = fascism
