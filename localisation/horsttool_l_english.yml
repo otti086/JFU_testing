@@ -11,7 +11,7 @@
  WHITEPEACE_TT:0 "§HWhitepeace§!\nCountry will be whitepeaced with every enemy\n\n" 
  WHITEPEACE_TT_DELAYED:0 ""
  why_use_lel_lennard_tt:0 "[This.Owner.GetName] ([This.Owner.GetTag])" 
- OBSERVER:0 "§HObserve§!\nMoves player to observer mode (they are tagswitched to an unused tag, SWE)\n\n"
+ OBSERVER:0 "§HObserve§!\nMoves player to observer mode (they are tagswitched to an unused tag, SPD)\n\n"
  OBSERVER_DELAYED:0 ""
  CHEAT5:0 "50 Political Power"
  WHITEPEACE:0 "§HWhitepeace§!\nCountry will be whitepeaced with every enemy\n\n"
