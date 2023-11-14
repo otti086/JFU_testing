@@ -1377,4 +1377,148 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/fra/r56_goal_FRA_VIC_francisque.dds"
 	}
     
+
+    SpriteType = {
+		name = "GFX_FOCUS_GER_STUKATABLETS"
+		texturefile = "gfx/interface/goals/ger/focus_GER_stukatablets.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GER_AIR_INNOVATION"
+		texturefile = "gfx/interface/goals/ger/GER_air_innovation.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GER_ARMOR_PRODUCTION"
+		texturefile = "gfx/interface/goals/ger/ger_armor_production.tga"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GER_E50"
+		texturefile = "gfx/interface/goals/ger/GER_e50.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GER_GERMAN_BAZOOKA"
+		texturefile = "gfx/interface/goals/ger/GER_German_Bazooka.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GER_ME262"
+		texturefile = "gfx/interface/goals/ger/GER_Me262.tga"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GER_MOSCOW_PUSH"
+		texturefile = "gfx/interface/goals/ger/GER_moscow_push.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GER_MP43"
+		texturefile = "gfx/interface/goals/ger/GER_mp43.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GER_ORGANISE_TODT"
+		texturefile = "gfx/interface/goals/ger/GER_organise_todt.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GER_PANZERFAUST"
+		texturefile = "gfx/interface/goals/ger/GER_panzerfaust.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GER_SOVIET_TREATY"
+		texturefile = "gfx/interface/goals/ger/GER_soviet_treaty.tga"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GER_UNDERGROUND_INDUSTRY"
+		texturefile = "gfx/interface/goals/ger/GER_underground_industry.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GER_V2"
+		texturefile = "gfx/interface/goals/ger/GER_v2.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GER_WINTER_SEASON"
+		texturefile = "gfx/interface/goals/ger/GER_winter_season.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GER_WUNDERWAFFE"
+		texturefile = "gfx/interface/goals/ger/GER_wunderwaffe.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GOAL_GERMAN_SUPER_HEAVY"
+		texturefile = "gfx/interface/goals/ger/GOAL_german_super_heavy.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_FOCUS_GER_GOERINGPILLS"
+		texturefile = "gfx/interface/goals/ger/focus_GER_goeringpills.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GER_AWARD_HEROES"
+		texturefile = "gfx/interface/goals/ger/GER_award_heroes.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GER_REINTEGRATE_ALSACE_LORRAINE"
+		texturefile = "gfx/interface/goals/ger/GER_reintegrate_alsace_lorraine.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GER_V1"
+		texturefile = "gfx/interface/goals/ger/GER_v1.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GER_AMMUNITIONS_MIRACLE"
+		texturefile = "gfx/interface/goals/ger/GER_ammunitions_miracle.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GER_HEAVY_FIGHTER"
+		texturefile = "gfx/interface/goals/ger/GER_heavy_fighter.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GOAL_GENERIC_BEFRIEND_SWEDEN"
+		texturefile = "gfx/interface/goals/generic/goal_generic_befriend_sweden.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_FOCUS_GENERIC_ATTACK_COMMUNISTS"
+		texturefile = "gfx/interface/goals/generic/focus_generic_attack_communists.dds"
+	}
+    
 }

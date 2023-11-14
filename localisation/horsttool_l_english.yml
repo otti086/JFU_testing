@@ -820,13 +820,6 @@
  political_actions1:0 "JFU Political Actions"
 
 
- GER_endsieg_1:0 "Panzersturm"
- GER_endsieg_2:0 "Throw out the Allies"
- GER_endsieg_3:0 "Push back the Soviet"
- GER_endsieg_4:0 "Volkssturm"
-
- GER_endsieg_1_tt:0 "Get 4 Tank Divs"
-
  peace_training:0 "Peace Time Training"
  pre_grinded_gens_volunteers:0 "Not Allowed To Send Volunteers"
  volunteers_3:0 "3 Allowed Volunteers"
@@ -1025,7 +1018,6 @@
  
 
  GER_focus_fall_blau:0 "Fall Blau"
- endsieg_tanks_tt:0 "§RWe will organize an army of 4 Panzer divisions in Berlin§!"
  ITA_blackshirts_div_cap_20_tt:0 "Modify template cap of §YCamicie Nere§! by §G+20§!."
  ITA_strengthen_the_blackshirts_spawn_divs_10_tt:0 "Create §Y10 Camicie Nere§! divisions in §Y[THIS.GetName]§!."
  ITA_strengthen_the_blackshirts_template_30_tt:0 "Modify template cap of §YCamicie Nere§! by §G+30§!."
@@ -1134,8 +1126,32 @@
  VIC_mainland_defense_2_desc:0 "Marseilles is the main logistical route from the Mediterrenean into France - this is where any future invasion of France will take place and thus this is where we will focus our defensive efforts."
  VIC_Installing_Patriotism:0 "Instill Patriotism"
  VIC_Installing_Patriotism_desc:0 "The people of France have much to be proud of, but first they must be taught to be proud."
+ GER_reorg_civilian:0 "War Production"
+ GER_reorg_civilian_desc:0 "" 
+ GER_appoint_speer:0 "Albert Speer's Reforms"
+ GER_appoint_speer_desc:0 ""
+ GER_festungosteuropa:0 "Festung Ost-Europa"
+ GER_festungosteuropa_desc:0 ""  
+ GER_festungwesteneuropa:0 "Festung Westen-Europa"
+ GER_festungwesteneuropa_desc:0 "" 
+ GER_endsieg_4:0 "Volkssturm"
+ GER_endsieg_4_desc:0 "Forming a levée en masse national militia will allow us to turn the tide of the war against the Soviets and Allies."
+ GER_endsieg_5:0 "Das Letzte Aufgebot"
+ GER_endsieg_5_desc:0 ""
+ GER_prio_fighter:0 "Prioritise Plane production"
+ GER_prio_tank:0 "Prioritise Tank production"
+ GER_todt:0 "Expand Organisation Todt"
+ GER_todt_desc:0 "There is no shortage of volunteers for our labor needs"
+ GER_todt_idea:0 "Organisation Todt" 
+ GER_total_war:0 "Totale Krieg"
+ GER_endsieg_1:0 "Final Victory"
+ GER_endsieg_2:0 "Throw out the Allies"
+ GER_endsieg_3:0 "Push back the Soviet"
+ GER_endsieg_1_desc:0 "The victory against the international Bolshevist conspiracy is inevitable! The German people are destined to turn the war around and win, defeat is impossible!"
+ GER_greater_ger:0 "Greater Germany"
 
  #tooltips
+
 
  SOV_behead_the_snake_JFU_tt:0 "Trotsky will be §Rautomatically assasinated §Win 100 days."
  
@@ -1143,7 +1159,6 @@
  
  GER_second_vienna_focus_tt:0 "This focus is automatically completed by an event which triggers in §YAugust 1940§!."
  GER_ussr_war_goal_focus_tt:0 "This focus is automatically completed in case of war with the §YSoviet Union§!."
- endsieg_tt:0 "§HOur§! §CDivision Attack on core territory§! §Hand§! §CDivision Defense on core territory§! §Hwill increase by§! §C30%§! §HWe will also deploy §G72 40w infantry divisions§! to hold the line.§!\n\n"
  endsieg_allies_tt:0 "Add '§YBattle of the Buldge§!' which grants (§YAll Allied Nations§!) Attack bonus against countries §G+15%§!, (§YAll Allied Nations§!) Defense bonus against countries §G+10%§!, (§Y@SOVSoviet Union§!) Attack bonus against countries §R-15%§!, (§Y@SOVSoviet Union§!) Defense bonus against countries §R-10%§!) for 180 day(s)."
  endsieg_comintern_tt:0 "Add '§YSteiners Counterattack§!' which grants (§Y@SOVSoviet Union§!) Attack bonus against countries §G+15%§!, (§Y@SOVSoviet Union§!) Defense bonus against countries §G+10%§!, (§YAll Allied Nations§!) Attack bonus against countries §R-15%§!, (§YAll Allied Nations§!) Defense bonus against countries §R-10%§!) for 180 day(s)." 
  MIO_range_trait:0 "Unlocks a special Range trait for the Light Aircraft and Naval Aircraft Designer"
@@ -1163,7 +1178,16 @@
  SOV_Bessarabia.tt:0 "We will force Romania to cede us Bessarabia"
  ITA_yugo_attack_desc_tt:0 "Enables decision to attack Yugoslavia"
  ITA_greece_attack_desc_tt:0 "Enables decision to attack Greece" 
-
+ barb_failed:0 "Operation Barbarossa has failed"
+ barb_declared:0 "Operation Barbarossa has begun"
+ GER_prio_fighter_tt:0 "Add '§YFighter Priority§!', which grants \n(§YFighter§!: $production_cost_tt$ §G-15.00%§!, §YLight§!, §YMedium§! and §YHeavy Armor§!: $production_cost_tt$ §R+20.00%§!)"
+ GER_prio_tanks_tt:0 "Add '§YArmor Priority§!', which grants \n(§YLight§!, §YMedium§! and §YHeavy Armor§!: $production_cost_tt$ §G-15.00%§!, §YFighter§!: $production_cost_tt$ §R+20.00%§!)"
+ GER_SWE_deal_tt:0 "We will broker a trade deal with Sweden giving us access to their steal and tungston resources (spawns 80 Steal and 50 Tungeston in Oslo)"
+ endsieg_tanks_tt:0 "§HOur§! §CDivision Attack on core territory§! §Hand§! §CDivision Defense on core territory§! §Hwill increase by§! §C30%§!. \n§YWe will also organize an army of 4 Panzer divisions in Berlin§!"
+ endsieg_tt:0 "§HWe will deploy §G72 40w infantry divisions§! to hold the line.§!\n\n"
+ 
+ GER_endsieg_1_tt:0 "Get 4 Tank Divs" 
+ 
  #ideas
 
  italian_defense:0 "Italian Defensive Doctrine"
@@ -1186,7 +1210,11 @@
  ALLIES_usa_patron_idea:0 "Learn from Americans"
  ALLIES_eng_patron_idea:0 "Seek British Expertise"
  EFR_work_service:0 "Guest Workers Sent to Germany"
-
+ GER_apointalbertspeer:0 "Albert Speer's Reforms"
+ goebbels_total_war:0 "Totaler Krieg"
+ goebbels_total_war_desc:0 "Wollt ihr den totalen Krieg? - Ja"
+ goebbels_total_war2:0 "Totaler Krieg"
+ goebbels_total_war2_desc:0 "Wollt ihr den totalen Krieg? - Ja"
  #decisions
 
  GER_fall_gelb:0 "§gFall§! §YGelb (Belgium and Netherlands)§!"
