@@ -892,7 +892,7 @@ focus_tree = {
 		id = GER_air_innovation
 		text = air_innovation
 		icon = GFX_GER_AIR_INNOVATION
-		x = 12
+		x = 13
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -1101,7 +1101,7 @@ focus_tree = {
 	focus = {
 		id = GER_army_innovation
 		icon = GFX_FOCUS_GER_ARMY_INNO_1
-		x = 15
+		x = 16
 		y = 0
 		cost = 10
 		available = { GER = { has_completed_focus = GER_rhineland} }
@@ -1395,7 +1395,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = GER_wunderwaffe
 		icon = GFX_GER_WUNDERWAFFE
@@ -1404,7 +1403,7 @@ focus_tree = {
 		available = {
 			date > 1940.08.01
 		}
-		x = 3
+		x = 4
 		y = 1
 		relative_position_id = GER_extra_tech_slot
 		cost = 5
@@ -1422,8 +1421,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER_wunderwaffe_1
-		icon = GFX_focus_wonderweapons
+		id = GER_guns1
+		icon = GFX_GER_INFANTRY_TACTICS
 		prerequisite = { focus = GER_wunderwaffe }
 		x = -1
 		y = 1
@@ -1432,10 +1431,16 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		completion_reward = {
+			add_tech_bonus = { 
+				name = GER_guns1
+				bonus = 3 
+				uses = 1
+				technology = advanced_infantry_weapons
+			}
 		}
 	}	
 	focus = {
-		id = GER_wunderwaffe_2
+		id = GER_Maus
 		icon = GFX_GOAL_GERMAN_SUPER_HEAVY
 		prerequisite = { focus = GER_wunderwaffe }
 		available = {
@@ -1457,7 +1462,8 @@ focus_tree = {
 		}
 	}	
 	focus = {
-		id = GER_wunderwaffe_3
+
+		id = GER_rocketry_focus2
 		icon = GFX_GER_V1
 		prerequisite = { focus = GER_wunderwaffe }
 		prerequisite = { focus = GER_rocketry_focus }
@@ -1486,61 +1492,106 @@ focus_tree = {
 		}
 	}	
 	focus = {
-		id = GER_wunderwaffe_4
-		icon = GFX_focus_wonderweapons
+		id = GER_jet_focus
+		icon = GFX_GER_ME262
 		prerequisite = { focus = GER_wunderwaffe }
 		x = -2
-		y = 2
+		y = 3
 		relative_position_id = GER_wunderwaffe
 		cost = 5
 
 		available_if_capitulated = yes
 		completion_reward = {
-
+			add_tech_bonus = {
+				name = "Jet Engine"
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = jet_technology
+			}
+			add_tech_bonus = {
+				name = "Jet Fighter"
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				technology = modern_small_airframe			
+			}			
 		}
 	}	
 	focus = {
-		id = GER_wunderwaffe_5
-		icon = GFX_focus_wonderweapons
+		id = GER_gun3
+		icon = GFX_GER_MP43
 		prerequisite = { focus = GER_wunderwaffe }
 		x = 0
-		y = 2
+		y = 3
 		relative_position_id = GER_wunderwaffe
 		cost = 5
 
 		available_if_capitulated = yes
 		completion_reward = {
+			add_tech_bonus = {
+				name = "The Vampire"
+				bonus = 1.0
+				uses = 1
+				technology = night_vision
+			}
 		}
 	}	
 	focus = {
-		id = GER_wunderwaffe_6
-		icon = GFX_focus_wonderweapons
-		prerequisite = { focus = GER_wunderwaffe_1 }
+		id = GER_guns2
+		icon = GFX_GER_PANZERFAUST
+		prerequisite = { focus = GER_guns1 }
 		x = 0
-		y = 2
-		relative_position_id = GER_wunderwaffe_1
-		cost = 5
-
-		available_if_capitulated = yes
-		completion_reward = {
-		}
-	}	
-	focus = {
-		id = GER_wunderwaffe_7
-		icon = GFX_focus_wonderweapons
-		prerequisite = { focus = GER_wunderwaffe }
-		x = -5
 		y = 1
+		relative_position_id = GER_guns1
+		cost = 5
+
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = "Panzerfaust"
+				bonus = 1.0
+				uses = 2
+				technology = infantry_at
+				technology = infantry_at2
+			}
+		}
+	}	
+	focus = {
+		id = GER_stuka_foc
+		icon = GFX_FOCUS_GER_STUKATABLETS
+		prerequisite = { focus = GER_wunderwaffe }
+		x = -4
+		y = 3
 		relative_position_id = GER_wunderwaffe
 		cost = 5
 
 		available_if_capitulated = yes
 		completion_reward = {
+			add_ideas = GER_stuka 
 		}
 	}
 	focus = {
-		id = GER_wunderwaffe_8
-		icon = GFX_FOCUS_GER_GOERINGPILLS
+		id = GER_amerikabomber
+		icon = GFX_GER_URAL_BOMBER
+		prerequisite = { focus = GER_rocketry_focus }
+
+		x = -5
+		y = 1
+
+		available = { date > 1943.6.1 }
+
+		relative_position_id = GER_wunderwaffe 
+		cost = 5
+
+		completion_reward = {
+			custom_effect_tooltip = amerika_bomber_tt
+			hidden_effect = {	set_technology = { modern_medium_airframe = 1 } }
+		}
+	}
+	focus = {
+		id = GER_choco_foc
+		icon = GFX_FOCUS_GER_PANZERSCHOKOLADE
 		prerequisite = { focus = GER_wunderwaffe }
 		x = 3
 		y = 1
@@ -1549,20 +1600,35 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		completion_reward = {
+			add_ideas = GER_choco
 		}
 	}
 	focus = {
-		id = GER_wunderwaffe_9
+		id = GER_pillen_foc
+		icon = GFX_FOCUS_GER_GOERINGPILLS
+		prerequisite = { focus = GER_wunderwaffe }
+		x = 2
+		y = 3
+		relative_position_id = GER_wunderwaffe
+		cost = 5
+
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = GER_pillen
+		}
+	}
+	focus = {
+		id = GER_rocketry_focus3
 		icon = GFX_GER_V2
-		prerequisite = { focus = GER_wunderwaffe_3 }
+		prerequisite = { focus = GER_rocketry_focus2 }
 		available = {
 			date > 1942.06.01
 			has_full_control_of_state = 35
 			has_full_control_of_state = 36
 		}
 		x = 0
-		y = 2
-		relative_position_id = GER_wunderwaffe_3
+		y = 1
+		relative_position_id = GER_rocketry_focus2
 		cost = 5
 
 		available_if_capitulated = yes
@@ -1589,15 +1655,15 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GER_wunderwaffe_10
+		id = GER_standard_tank
 		icon = GFX_GER_E50
-		prerequisite = { focus = GER_wunderwaffe_2 }
+		prerequisite = { focus = GER_Maus }
 		available = {
 			date > 1941.06.01
 		}
 		x = 0
-		y = 2
-		relative_position_id = GER_wunderwaffe_2
+		y = 1
+		relative_position_id = GER_Maus
 		cost = 5
 
 		available_if_capitulated = yes
@@ -1647,7 +1713,7 @@ focus_tree = {
 		available = {
 			date > 1941.01.01
 		}
-		x = 3
+		x = 2
 		y = 1
 		relative_position_id = GER_mol_rib_pact
 		cost = 5
@@ -2548,7 +2614,6 @@ focus_tree = {
 		prerequisite = { focus = GER_fall_of_france }
 		
 		available = {
-			always = no
 			custom_trigger_tooltip = { tooltip = barb_declared has_war_with = SOV }		
 		}
 		
@@ -2855,7 +2920,6 @@ focus_tree = {
 		prerequisite = { focus = GER_total_war }
 		
 		available = {
-			always = no
 		}
 		
 		x = 3
@@ -2880,7 +2944,6 @@ focus_tree = {
 		prerequisite = { focus = GER_todt }
 		
 		available = {
-			always = no
 			custom_trigger_tooltip = { tooltip = barb_failed date > 1941.11.22 }
 		}
 		
@@ -2901,7 +2964,6 @@ focus_tree = {
 		prerequisite = { focus = GER_appoint_speer }
 		
 		available = {
-			always = no
 		}
 		
 		x = 0
@@ -2922,7 +2984,6 @@ focus_tree = {
 		prerequisite = { focus = GER_reintegrate_luxemburg_and_alsace_lorraine }
 		prerequisite = { focus = GER_total_war }
 		available = {
-			always = no
 		}
 		
 		x = -1
@@ -2940,7 +3001,6 @@ focus_tree = {
 		prerequisite = { focus = GER_greater_ger }
 		
 		available = {
-			always = no
 		}
 		
 		x = 0
@@ -2957,7 +3017,6 @@ focus_tree = {
 		prerequisite = { focus = GER_larp_6 }
 		
 		available = {
-			always = no
 		}
 		
 		x = 0
@@ -3101,7 +3160,6 @@ focus_tree = {
 		prerequisite = { focus = GER_endsieg_3 focus = GER_endsieg_2 }
 		
 		available = {
-			always = no
 		}
 		
 		x = -3
@@ -3122,7 +3180,6 @@ focus_tree = {
 		prerequisite = { focus = GER_endsieg_3 focus = GER_endsieg_2 }
 		
 		available = {
-			always = no
 		}
 		
 		x = 1
@@ -3143,7 +3200,6 @@ focus_tree = {
 		prerequisite = { focus = GER_endsieg_4 }
 		
 		available = {
-			always = no
 		}
 		
 		x = 0
@@ -3162,7 +3218,6 @@ focus_tree = {
 		prerequisite = { focus = GER_endsieg_5 focus = GER_reorg_civilian focus = GER_larp_7}
 		
 		available = {
-			always = no
 		}
 		
 		x = 0

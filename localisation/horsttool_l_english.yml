@@ -1149,6 +1149,7 @@
  GER_endsieg_3:0 "Push back the Soviet"
  GER_endsieg_1_desc:0 "The victory against the international Bolshevist conspiracy is inevitable! The German people are destined to turn the war around and win, defeat is impossible!"
  GER_greater_ger:0 "Greater Germany"
+ GER_trade_deal_with_sweden:0 "Trade Deal with Sweden"
 
  #tooltips
 
@@ -1185,9 +1186,30 @@
  GER_SWE_deal_tt:0 "We will broker a trade deal with Sweden giving us access to their steal and tungston resources (spawns 80 Steal and 50 Tungeston in Oslo)"
  endsieg_tanks_tt:0 "§HOur§! §CDivision Attack on core territory§! §Hand§! §CDivision Defense on core territory§! §Hwill increase by§! §C30%§!. \n§YWe will also organize an army of 4 Panzer divisions in Berlin§!"
  endsieg_tt:0 "§HWe will deploy §G72 40w infantry divisions§! to hold the line.§!\n\n"
- 
+ amerika_bomber_tt:0 "Researches §CModern Medium Airframe§!" 
  GER_endsieg_1_tt:0 "Get 4 Tank Divs" 
- 
+ GER_guns2:0 "Panzerfaust"
+ GER_guns2_desc:0 "Every man pressed into the army shall be armed with our most effective and modern tank killer. The panzerfaust. Equipping every man with these fearsome yet cheap weapons will force enemy armor to slow down their advance to wait for their infantry screens or risk utter destruction."
+ GER_guns1:0 "Sturmgewehr"
+ GER_gun3:0 "Vampir"
+ GER_gun3_desc:0 "The ability to see the enemy at night opens up an entirely new dimension of warfare - the ability to effectively conduct night operations against enemy forces without significant hindrance."
+ GER_Maus:0 "Superior Firepower"
+ GER_Maus_desc:0 "Unpierceable superheavy tanks..." 
+ GER_choco_foc:0 "Panzer Schokolade"
+ GER_choco_foc_desc:0 "Speed is all we need."
+ GER_pillen_foc:0 "Hermann Göring Pills"
+ GER_pillen_foc_desc:0 "Harder, faster, stronger."
+ GER_stuka_foc:0 "Stuka Tablets" 
+ GER_stuka_foc_desc:0 "Our dive bomber pilots are among the best in the world, but the war calls for 120% of what we got."
+ GER_rocketry_focus2:0 "Improved Rockets"
+ GER_rocketry_focus3:0 "Advanced Rockets"
+ GER_standard_tank:0 "The Standardpanzer"
+ GER_jet_focus:0 "Messerschmitt's Project"
+ GER_amerikabomber:0 "The Amerikabomber"
+ GER_amerikabomber_desc:0 "By bombing out the industrial heartland of the USA we can divert American civilian and military industry towards the heartland, isolating Britain for a second aerial battle."
+
+
+
  #ideas
 
  italian_defense:0 "Italian Defensive Doctrine"
@@ -1215,6 +1237,14 @@
  goebbels_total_war_desc:0 "Wollt ihr den totalen Krieg? - Ja"
  goebbels_total_war2:0 "Totaler Krieg"
  goebbels_total_war2_desc:0 "Wollt ihr den totalen Krieg? - Ja"
+ GER_stuka:0 "Stuka-Tabletten"
+ GER_stuka_desc:0 "Distributing Pervitin to our dive bombers has made them far more accurate and focused on their missions, albeit due to dangerous low air speeds."
+ GER_choco:0 "Panzerschokolade"
+ GER_choco_desc:0 "Distributing Pervitin to our tankists has significantly improved the combat alertness of our armor divisions."
+ GER_pillen:0 "Hermann-Göring-Pillen"
+ GER_pillen_desc:0 "Distributing Pervitin to our troops has significantly improved their endurance in day-to-day combat." 
+ 
+ 
  #decisions
 
  GER_fall_gelb:0 "§gFall§! §YGelb (Belgium and Netherlands)§!"

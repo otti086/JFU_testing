@@ -1521,4 +1521,22 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/generic/focus_generic_attack_communists.dds"
 	}
     
+
+    SpriteType = {
+		name = "GFX_GER_INFANTRY_TACTICS"
+		texturefile = "gfx/interface/goals/ger/ger_infantry_tactics.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GER_URAL_BOMBER"
+		texturefile = "gfx/interface/goals/ger/GER_ural_bomber.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_FOCUS_GER_PANZERSCHOKOLADE"
+		texturefile = "gfx/interface/goals/ger/focus_GER_panzerschokolade.dds"
+	}
+    
 }
