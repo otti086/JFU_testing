@@ -1499,7 +1499,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = GER_wunderwaffe
 		cost = 5
-
+		available = { date > 1943.1.1 }
 		available_if_capitulated = yes
 		completion_reward = {
 			add_tech_bonus = {
@@ -2924,7 +2924,7 @@ focus_tree = {
 		}
 		
 		x = 3
-		y = 2
+		y = 1
 		relative_position_id = GER_total_war
 		cost = 5
 
@@ -2944,7 +2944,7 @@ focus_tree = {
 		}
 		
 		x = 0
-		y = 3
+		y = 2
 		relative_position_id = GER_appoint_speer
 		cost = 5
 
@@ -2964,7 +2964,7 @@ focus_tree = {
 		}
 		
 		x = -1
-		y = 2
+		y = 1
 		relative_position_id = GER_reintegrate_luxemburg_and_alsace_lorraine
 		cost = 5
 
@@ -2982,7 +2982,7 @@ focus_tree = {
 		}
 		
 		x = 0
-		y = 3
+		y = 2
 		relative_position_id = GER_greater_ger
 		cost = 5
 
@@ -3077,7 +3077,7 @@ focus_tree = {
 		icon = GFX_GER_ENDSIEG
 		prerequisite = { focus = GER_endsieg_2 focus = GER_endsieg_3 }
 		x = 0
-		y = 2
+		y = 3
 		relative_position_id = GER_todt
 		available = {
 			OR = {
@@ -3133,7 +3133,7 @@ focus_tree = {
 		id = GER_prio_fighter
 		icon = GFX_GER_HEAVY_FIGHTER
 		prerequisite = { focus = GER_endsieg_3 focus = GER_endsieg_2 }
-		
+		mutually_exclusive = { focus = GER_prio_tank  }	
 		available = {
 		}
 		
@@ -3153,7 +3153,7 @@ focus_tree = {
 		id = GER_prio_tank
 		icon = GFX_GER_ARMOR_PRODUCTION
 		prerequisite = { focus = GER_endsieg_3 focus = GER_endsieg_2 }
-		
+		mutually_exclusive = { focus = GER_prio_fighter  }	
 		available = {
 		}
 		
@@ -3172,14 +3172,14 @@ focus_tree = {
 	focus = { 
 		id = GER_endsieg_5
 		icon = GFX_GER_AWARD_HEROES
-		prerequisite = { focus = GER_endsieg_1 }
+		prerequisite = { focus = GER_endsieg_4 }
 		
 		available = {
 		}
 		
 		x = 0
-		y = 1
-		relative_position_id = GER_endsieg_1
+		y = 2
+		relative_position_id = GER_endsieg_4
 		cost = 5
 
 		completion_reward = {
@@ -3189,12 +3189,12 @@ focus_tree = {
 	focus = { 
 		id = GER_steinercounteroffensive
 		icon = GFX_goal_support_fascism
-		prerequisite = { focus = GER_endsieg_5 focus = GER_reorg_civilian focus = GER_endsieg_4}
+		prerequisite = { focus = GER_endsieg_1}
 		
 		available = {
 		}
 		
-		x = 0
+		x = 3
 		y = 1
 		relative_position_id = GER_endsieg_5
 		cost = 5
