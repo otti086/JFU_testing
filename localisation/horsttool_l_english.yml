@@ -1150,6 +1150,8 @@
  GER_endsieg_1_desc:0 "The victory against the international Bolshevist conspiracy is inevitable! The German people are destined to turn the war around and win, defeat is impossible!"
  GER_greater_ger:0 "Greater Germany"
  GER_trade_deal_with_sweden:0 "Trade Deal with Sweden"
+ GER_steinercounteroffensive:0 "Steiner's Counter Offensive"
+
 
  #tooltips
 
@@ -1180,12 +1182,14 @@
  ITA_yugo_attack_desc_tt:0 "Enables decision to attack Yugoslavia"
  ITA_greece_attack_desc_tt:0 "Enables decision to attack Greece" 
  barb_failed:0 "Operation Barbarossa has failed"
+ blau_failed:0 "Fall Blau has failed"
  barb_declared:0 "Operation Barbarossa has begun"
  GER_prio_fighter_tt:0 "Add '§YFighter Priority§!', which grants \n(§YFighter§!: $production_cost_tt$ §G-15.00%§!, §YLight§!, §YMedium§! and §YHeavy Armor§!: $production_cost_tt$ §R+20.00%§!)"
  GER_prio_tanks_tt:0 "Add '§YArmor Priority§!', which grants \n(§YLight§!, §YMedium§! and §YHeavy Armor§!: $production_cost_tt$ §G-15.00%§!, §YFighter§!: $production_cost_tt$ §R+20.00%§!)"
- GER_SWE_deal_tt:0 "We will broker a trade deal with Sweden giving us access to their steal and tungston resources (spawns 80 Steal and 50 Tungeston in Oslo)"
- endsieg_tanks_tt:0 "§HOur§! §CDivision Attack on core territory§! §Hand§! §CDivision Defense on core territory§! §Hwill increase by§! §C30%§!. \n§YWe will also organize an army of 4 Panzer divisions in Berlin§!"
+ GER_SWE_deal_tt:0 "We will broker a trade deal with @SWE§YSweden§! giving us access to their Steal and Tungsten (spawns 80 Steal and 50 Tungeston in Oslo)"
+ endsieg_tanks_tt:0 "§HOur§! §CDivision Attack on core territory§! §Hand§! §CDivision Defense on core territory§! §Hwill increase by§! §C30%§!."
  endsieg_tt:0 "§HWe will deploy §G72 40w infantry divisions§! to hold the line.§!\n\n"
+ steiners_counter_tt:0 "§RSteiner will organize an army of 8 Panzer divisions in Berlin§!"
  amerika_bomber_tt:0 "Researches §CModern Medium Airframe§!" 
  GER_endsieg_1_tt:0 "Get 4 Tank Divs" 
  GER_guns2:0 "Panzerfaust"
@@ -1207,7 +1211,7 @@
  GER_jet_focus:0 "Messerschmitt's Project"
  GER_amerikabomber:0 "The Amerikabomber"
  GER_amerikabomber_desc:0 "By bombing out the industrial heartland of the USA we can divert American civilian and military industry towards the heartland, isolating Britain for a second aerial battle."
-
+ endsieg_states:0 "We lost controll of at least 1 state in @POL§YPoland§!, @FRA§YFrance§! or god forbid in the Reich itself"
 
 
  #ideas

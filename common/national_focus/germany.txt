@@ -2915,41 +2915,17 @@ focus_tree = {
 	    }
 	}
 	focus = { 
-		id = GER_todt
-		icon = GFX_GER_ORGANISE_TODT
-		prerequisite = { focus = GER_total_war }
-		
-		available = {
-		}
-		
-		x = 3
-		y = 1
-		relative_position_id = GER_total_war
-		cost = 5
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = GER_ot
-				bonus = 1.0
-				uses = 2
-				category = construction_tech
-				category = excavation_tech
-			}
-		}
-
-	}
-	focus = { 
 		id = GER_appoint_speer
 		icon = GFX_GER_AMMUNITIONS_MIRACLE
-		prerequisite = { focus = GER_todt }
+		prerequisite = { focus = GER_total_war }
 		
 		available = {
 			custom_trigger_tooltip = { tooltip = barb_failed date > 1941.11.22 }
 		}
 		
-		x = 0
+		x = 3
 		y = 2
-		relative_position_id = GER_todt
+		relative_position_id = GER_total_war
 		cost = 5
 
 		completion_reward = {
@@ -2964,10 +2940,11 @@ focus_tree = {
 		prerequisite = { focus = GER_appoint_speer }
 		
 		available = {
+			custom_trigger_tooltip = { tooltip = blau_failed date > 1942.11.22 }
 		}
 		
 		x = 0
-		y = 2
+		y = 3
 		relative_position_id = GER_appoint_speer
 		cost = 5
 
@@ -2980,14 +2957,14 @@ focus_tree = {
 	}
 	focus = { 
 		id = GER_greater_ger
-		icon = GER_larp_1
+		icon = GFX_goal_support_fascism
 		prerequisite = { focus = GER_reintegrate_luxemburg_and_alsace_lorraine }
 		prerequisite = { focus = GER_total_war }
 		available = {
 		}
 		
 		x = -1
-		y = 1
+		y = 2
 		relative_position_id = GER_reintegrate_luxemburg_and_alsace_lorraine
 		cost = 5
 
@@ -2996,100 +2973,67 @@ focus_tree = {
 		}
 	}
 	focus = { 
-		id = GER_larp_6
-		icon = GER_larp_1
+		id = GER_endsieg_4
+		icon = GFX_GER_FUR_DAS_VATERLAND
 		prerequisite = { focus = GER_greater_ger }
 		
 		available = {
+			custom_trigger_tooltip = { tooltip = barb_failed date > 1941.11.22 }
 		}
 		
 		x = 0
-		y = 2
+		y = 3
 		relative_position_id = GER_greater_ger
 		cost = 5
 
 		completion_reward = {
+			custom_effect_tooltip = endsieg_tt 
+			hidden_effect = { 
+				delete_unit_template_and_units = { 
+					division_template = "Endsieg Infanterie" 
+				} 
+				load_oob = "GER_army2" 
+				if = { 
+					limit = {  
+						has_idea = extensive_conscription 
+					} 
+					add_ideas = service_by_requirement 
+				}
+			}
 		}
-	}
-	focus = { 
-		id = GER_larp_7
-		icon = GER_larp_1
-		prerequisite = { focus = GER_larp_6 }
-		
-		available = {
-		}
-		
-		x = 0
-		y = 2
-		relative_position_id = GER_larp_6
-		cost = 5
-
-		completion_reward = {
-		}
-		
 	}
 
 	focus = {
-		id = GER_endsieg_1
- 		icon = GFX_GER_ENDSIEG
+		id = GER_todt
+ 		icon = GFX_GER_ORGANISE_TODT
 		prerequisite = { focus = GER_total_war }
 		x = 0
 		y = 2
 		relative_position_id = GER_total_war
 		available = {
-			GER = { has_war_with = SOV }
-			OR = {
-				any_state = {
-					OR = {
-						is_core_of = GER
-						#POL
-						state = 98
-						state = 10
-						state = 92
-						state = 88
-						#DDAY
-						state = 31
-						state = 25
-						state = 33
-						state = 24
-						state = 16
-						state = 785
-						state = 34
-					}
-					controller = { has_war_with = GER }
-				}
-				any_country = {
-					is_in_faction_with = GER
-					surrender_progress > 0.1
-				}
-			}
+
 		}
 		cost = 5 
 		completion_reward = {
-			hidden_effect = {
-				GER = { Endsieg_Tanks_spawn_ins = yes }
-				add_timed_idea = {
-					idea = endsieg
-					days = 365
-				} 
-				add_dynamic_modifier = {
-					modifier = GER_endsieg
-				}			
-				add_to_variable = { germany_war_army_core_attack_factor = 0.3	} 
-				add_to_variable = { germany_war_army_core_defence_factor = 0.3	} 
+			add_tech_bonus = {
+				name = GER_ot
+				bonus = 2.0
+				uses = 2
+				category = construction_tech
+				category = excavation_tech
 			}
-			custom_effect_tooltip = endsieg_tanks_tt
 		}
 	}
 	focus = {
 		id = GER_endsieg_2
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = GER_endsieg_1 }
+		prerequisite = { focus = GER_todt }
 		mutually_exclusive = { focus = GER_endsieg_3  }	
 		x = -1
 		y = 1
-		relative_position_id = GER_endsieg_1	
+		relative_position_id = GER_todt	
 		available = {
+			custom_trigger_tooltip = { tooltip = barb_failed date > 1941.11.22 }
 			NOT = { controls_state = 16 } 			
 		}
 		cost = 5
@@ -3107,12 +3051,13 @@ focus_tree = {
 	focus = {
 		id = GER_endsieg_3
 		icon = GFX_focus_attack_soviet
-		prerequisite = { focus = GER_endsieg_1 }
+		prerequisite = { focus = GER_todt }
 		mutually_exclusive = { focus = GER_endsieg_2  }	
 		x = 1
 		y = 1
-		relative_position_id = GER_endsieg_1	
+		relative_position_id = GER_todt	
 		available = {
+			custom_trigger_tooltip = { tooltip = barb_failed date > 1941.11.22 }
 			NOT = { controls_state = 5 } 			
 		}
 		cost = 5
@@ -3128,30 +3073,60 @@ focus_tree = {
 		}
 	}
 	focus = { 
-		id = GER_endsieg_4
-		icon = GFX_GER_FUR_DAS_VATERLAND
+		id = GER_endsieg_1
+		icon = GFX_GER_ENDSIEG
 		prerequisite = { focus = GER_endsieg_2 focus = GER_endsieg_3 }
 		x = 0
 		y = 2
-		relative_position_id = GER_endsieg_1
+		relative_position_id = GER_todt
 		available = {
+			OR = {
+				custom_trigger_tooltip = { tooltip = blau_failed date > 1942.11.22 }
+				custom_trigger_tooltip = { 
+					tooltip = endsieg_states 
+					any_state = {
+						OR = {
+							is_core_of = GER
+							#POL
+							state = 98
+							state = 10
+							state = 92
+							state = 88
+							#DDAY
+							state = 31
+							state = 25
+							state = 33
+							state = 24
+							state = 16
+							state = 785
+							state = 34
+						}
+						controller = { has_war_with = GER }
+					}
+				}
+
+				any_country = {
+					is_in_faction_with = GER
+					surrender_progress > 0.1
+				}
+			}
 		}
 		cost = 5
 		
 		completion_reward = {
-			custom_effect_tooltip = endsieg_tt 
-			hidden_effect = { 
-				delete_unit_template_and_units = { 
-					division_template = "Endsieg Infanterie" 
+			hidden_effect = {
+				add_timed_idea = {
+					idea = endsieg
+					days = 365
 				} 
-				load_oob = "GER_army2" 
-				if = { 
-					limit = {  
-						has_idea = extensive_conscription 
-					} 
-					add_ideas = service_by_requirement 
-				}
+				add_dynamic_modifier = {
+					modifier = GER_endsieg
+				}			
+				add_to_variable = { germany_war_army_core_attack_factor = 0.3	} 
+				add_to_variable = { germany_war_army_core_defence_factor = 0.3	} 
 			}
+			custom_effect_tooltip = endsieg_tanks_tt
+			swap_ideas = {	remove_idea = goebbels_total_war	add_idea = goebbels_total_war2	}	
 		}	
 	}
 	focus = { 
@@ -3197,25 +3172,24 @@ focus_tree = {
 	focus = { 
 		id = GER_endsieg_5
 		icon = GFX_GER_AWARD_HEROES
-		prerequisite = { focus = GER_endsieg_4 }
+		prerequisite = { focus = GER_endsieg_1 }
 		
 		available = {
 		}
 		
 		x = 0
 		y = 1
-		relative_position_id = GER_endsieg_4
+		relative_position_id = GER_endsieg_1
 		cost = 5
 
 		completion_reward = {
 			add_ideas = scraping_the_barrel
-			swap_ideas = {	remove_idea = goebbels_total_war	add_idea = goebbels_total_war2	}	
 		}
 	}
 	focus = { 
-		id = GER_larp_9
+		id = GER_steinercounteroffensive
 		icon = GFX_goal_support_fascism
-		prerequisite = { focus = GER_endsieg_5 focus = GER_reorg_civilian focus = GER_larp_7}
+		prerequisite = { focus = GER_endsieg_5 focus = GER_reorg_civilian focus = GER_endsieg_4}
 		
 		available = {
 		}
@@ -3226,6 +3200,10 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
+			custom_effect_tooltip = steiners_counter_tt
+			hidden_effect = {
+				GER = { Endsieg_Tanks_spawn_ins = yes }
+			}
 		}
 	}
 }
