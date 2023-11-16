@@ -1151,7 +1151,7 @@
  GER_greater_ger:0 "Greater Germany"
  GER_trade_deal_with_sweden:0 "Trade Deal with Sweden"
  GER_steinercounteroffensive:0 "Steiner's Counter Offensive"
-
+ GER_reorg_civilian2:0 "We need more Eco"
 
  #tooltips
 
@@ -1184,6 +1184,7 @@
  barb_failed:0 "Operation Barbarossa has failed"
  blau_failed:0 "Fall Blau has failed"
  barb_declared:0 "Operation Barbarossa has begun"
+ kursk_failed:0 "Operation Citadelle has failed"
  GER_prio_fighter_tt:0 "Add '§YFighter Priority§!', which grants \n(§YFighter§!: $production_cost_tt$ §G-15.00%§!, §YLight§!, §YMedium§! and §YHeavy Armor§!: $production_cost_tt$ §R+20.00%§!)"
  GER_prio_tanks_tt:0 "Add '§YArmor Priority§!', which grants \n(§YLight§!, §YMedium§! and §YHeavy Armor§!: $production_cost_tt$ §G-15.00%§!, §YFighter§!: $production_cost_tt$ §R+20.00%§!)"
  GER_SWE_deal_tt:0 "We will broker a trade deal with @SWE§YSweden§! giving us access to their Steal and Tungsten (spawns 80 Steal and 50 Tungeston in Oslo)"
@@ -1212,7 +1213,7 @@
  GER_amerikabomber:0 "The Amerikabomber"
  GER_amerikabomber_desc:0 "By bombing out the industrial heartland of the USA we can divert American civilian and military industry towards the heartland, isolating Britain for a second aerial battle."
  endsieg_states:0 "We lost controll of at least 1 state in @POL§YPoland§!, @FRA§YFrance§! or god forbid in the Reich itself"
-
+ 
 
  #ideas
 
@@ -1421,10 +1422,8 @@
  SOV_medium_tank_artillery_chassisodern_tank_chassis_1_short:0 "SU-152-54"
  SOV_medium_tank_aa_chassisodern_tank_chassis_1:0 "ZSU-57-2"
  SOV_medium_tank_aa_chassisodern_tank_chassis_1_short:0 "ZSU-57-2"
- GER_modern_tank_destroyer_equipmentodern_tank_chassis_1:0 "Kugelblitz"
- GER_modern_tank_destroyer_equipmentodern_tank_chassis_1_short:0 "Kugelblitz"
- GER_modern_tank_aa_equipmentodern_tank_chassis_1:0 "E-25 Standardpanzer"
- GER_modern_tank_aa_equipmentodern_tank_chassis_1_short:0 "E-25"
+ GER_modern_tank_destroyer_equipmentodern_tank_chassis_1:0 "E-25 Standardpanzer"
+ GER_modern_tank_destroyer_equipmentodern_tank_chassis_1_short:0 "E-25"
  medium_tank_aa_chassisodern_tank_chassis_1:0 "Modern SP Anti-Air"
  medium_tank_aa_chassisodern_tank_chassis_1_desc:0 "A combination of anti-air missiles and rapid fire cannon, modern anti-air artillery presents a deadly threat to aircraft."
  medium_tank_aa_chassisodern_tank_chassis_1_short:0 "Modern AA"

@@ -223,7 +223,7 @@ ideas = {
 			
 			modifier = {
 				stability_weekly = -0.002
-				war_support_weekly = -0.00425
+				war_support_weekly = -0.002
 				consumer_goods_expected_value = -0.05
 			}
 		}
@@ -241,7 +241,7 @@ ideas = {
 			
 			modifier = {
 				stability_weekly = -0.004
-				war_support_weekly = -0.0085
+				war_support_weekly = -0.004
 				consumer_goods_expected_value = -0.1
 			}
 		}

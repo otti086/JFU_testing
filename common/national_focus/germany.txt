@@ -1348,21 +1348,6 @@ focus_tree = {
 					technology = mechanised_infantry
 				}
 			}
-			if = { 
-				add_tech_bonus = {
-					bonus = 1.0
-					uses = 2
-					technology = artillery2
-					technology = artillery3
-					technology = artillery4
-					technology = artillery5
-					technology = artillery2
-					technology = antitank2
-					technology = antitank3
-					technology = antitank4
-					technology = antitank5
-				}
-			}
 		}
 	}
 
@@ -1830,15 +1815,15 @@ focus_tree = {
 		x = -2
 		y = 2
 		relative_position_id = GER_rhineland
-		cost = 5
+		cost = 1
 
 		completion_reward = {
-			every_country = { 
-				limit = { 
-					axis = yes 
-				} 
-				add_war_support = 0.05	
-			}			
+			#every_country = { 
+			#	limit = { 
+			#		axis = yes 
+			#	} 
+			#	add_war_support = 0.05	
+			#}			
 		}
 	}
 
@@ -2126,7 +2111,6 @@ focus_tree = {
 		icon = GFX_GER_REINTEGRATE_ALSACE_LORRAINE
 		prerequisite = { focus = GER_fall_of_france }
 		available = {
-			is_subject = no
 			has_full_control_of_state = 8
 			has_full_control_of_state = 28
 		}
@@ -2940,7 +2924,7 @@ focus_tree = {
 		prerequisite = { focus = GER_appoint_speer }
 		
 		available = {
-			custom_trigger_tooltip = { tooltip = blau_failed date > 1942.11.22 }
+			custom_trigger_tooltip = { tooltip = blau_failed date > 1943.11.22 }
 		}
 		
 		x = 0
@@ -2949,12 +2933,58 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
+			54 = {
+				remove_building = {
+					type = industrial_complex
+					level = 5
+				}
+			}
+			42 = {
+				remove_building = {
+					type = industrial_complex
+					level = 5
+				}
+			}
+			51 = {
+				remove_building = {
+					type = industrial_complex
+					level = 5
+				}
+			}
+			60 = {
+				remove_building = {
+					type = industrial_complex
+					level = 5
+				}
+			}
 			add_offsite_building = {
 				type = arms_factory
 				level = 20
 			}
 		}
 	}
+
+	focus = { 
+		id = GER_reorg_civilian2
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = GER_reorg_civilian }
+		
+		available = {
+			custom_trigger_tooltip = { tooltip = kursk_failed date > 1942.11.22 }
+		}
+		x = 0
+		y = 2
+		relative_position_id = GER_reorg_civilian
+		cost = 5
+
+		completion_reward = {
+			add_offsite_building = {
+				type = arms_factory
+				level = 40
+			}
+		}
+	}
+
 	focus = { 
 		id = GER_greater_ger
 		icon = GFX_goal_support_fascism
