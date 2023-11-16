@@ -990,9 +990,9 @@ technologies = {
 		super_heavy_tank_destroyer_brigade = {
 			ap_attack = 0.2
 		}
-		modern_tank_destroyer_brigade = {
-			ap_attack = 0.2
-		}
+		#modern_tank_destroyer_brigade = {
+		#	ap_attack = 0.2
+		#}
 
 		enable_equipment_modules = {
 			tank_medium_cannon
@@ -1159,9 +1159,9 @@ technologies = {
 		super_heavy_tank_destroyer_brigade = {
 			ap_attack = 0.05
 		}
-		modern_tank_destroyer_brigade = {
-			ap_attack = 0.05
-		}
+		#modern_tank_destroyer_brigade = {
+		#	ap_attack = 0.05
+		#}
 
 		path = {
 			leads_to_tech = antitank4
@@ -1251,9 +1251,9 @@ technologies = {
 		super_heavy_tank_destroyer_brigade = {
 			ap_attack = 0.05
 		}
-		modern_tank_destroyer_brigade = {
-			ap_attack = 0.05
-		}
+		#modern_tank_destroyer_brigade = {
+		#	ap_attack = 0.05
+		#}
 
 		path = {
 			leads_to_tech = antitank5
@@ -1408,9 +1408,9 @@ technologies = {
 		super_heavy_tank_destroyer_brigade = {
 			ap_attack = 0.1
 		}
-		modern_tank_destroyer_brigade = {
-			ap_attack = 0.1
-		}
+		#modern_tank_destroyer_brigade = {
+		#	ap_attack = 0.1
+		#}
 
 		categories = {
 			cat_anti_tank

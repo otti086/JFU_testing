@@ -747,9 +747,6 @@ technologies = {
 			modern_tank_artillery_chassis_1
 			modern_tank_aa_chassis_1
 		}
-		enable_subunits = {
-			modern_armor
-		}
 
 		research_cost = 2.5
 		start_year = 1945
