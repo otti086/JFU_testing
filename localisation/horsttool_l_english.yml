@@ -835,7 +835,7 @@
  fin_coutinuation_war:0 "Countinuation War"
  axis_barbarossa:0 "Operation Babarossa"
  pre_grinded:0 "No Xp gain"
- Ger_endsieg:0 "Endsieg"
+ GER_endsieg_idea:0 "Endsieg"
  women_in_the_workforce_ITA:0 " Woman in the Workforce"
  horst_groupkey:0 "JFU Gamerules"
  JAP_strike_on_the_northern_resource_area:0 "Strike on the Northern Resource Area"
@@ -1324,8 +1324,8 @@
  modifier_production_cost_dockyard_factor:0 "§YDockyard§! construction cost"
  modifier_production_cost_dockyard_factor_desc:0 "Modifies the cost of Dockyard construction."
  EFR_defense_plan:0 "Bulwark of France"
- GER_endsieg:0 " Total War"
- 
+ GER_endsieg:0 "Total War"
+ GER_endsieg_desc:0 "Wollt ihr den totalen Krieg? - Ja"
  #country flags
 
  EFR_torch_declared:0 "Torch has been declared" 

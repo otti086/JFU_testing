@@ -1071,7 +1071,7 @@ ideas = {
  				consumer_goods_factor = 0.40
 			}
 		}
-		endsieg = {
+		GER_endsieg_idea = {
 			picture = generic_fascism_drift_2
 			allowed = {
 				original_tag = GER
