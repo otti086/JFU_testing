@@ -2607,7 +2607,9 @@ focus_tree = {
 		cost = 4
 
 		completion_reward = {
-			add_ideas = goebbels_total_war
+			add_dynamic_modifier = {
+				modifier = GER_endsieg
+			}
 		}
 
 	}
@@ -2924,7 +2926,7 @@ focus_tree = {
 		prerequisite = { focus = GER_appoint_speer }
 		
 		available = {
-			custom_trigger_tooltip = { tooltip = blau_failed date > 1943.11.22 }
+			custom_trigger_tooltip = { tooltip = blau_failed date > 1942.11.22 }
 		}
 		
 		x = 0
@@ -2933,25 +2935,45 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-			54 = {
+			random_owned_controlled_state = {
+				prioritize = { 4 }
+				limit = {
+					is_core_of = ROOT
+					industrial_complex > 4
+				}
 				remove_building = {
 					type = industrial_complex
 					level = 5
 				}
 			}
-			42 = {
+			random_owned_controlled_state = {
+				prioritize = { 54 }
+				limit = {
+					is_core_of = ROOT
+					industrial_complex > 4
+				}
 				remove_building = {
 					type = industrial_complex
 					level = 5
 				}
 			}
-			51 = {
+			random_owned_controlled_state = {
+				prioritize = { 60 }
+				limit = {
+					is_core_of = ROOT
+					industrial_complex > 4
+				}
 				remove_building = {
 					type = industrial_complex
 					level = 5
 				}
 			}
-			60 = {
+			random_owned_controlled_state = {
+				prioritize = { 42 }
+				limit = {
+					is_core_of = ROOT
+					industrial_complex > 4
+				}
 				remove_building = {
 					type = industrial_complex
 					level = 5
@@ -2970,7 +2992,7 @@ focus_tree = {
 		prerequisite = { focus = GER_reorg_civilian }
 		
 		available = {
-			custom_trigger_tooltip = { tooltip = kursk_failed date > 1942.11.22 }
+			custom_trigger_tooltip = { tooltip = kursk_failed date > 1943.11.22 }
 		}
 		x = 0
 		y = 2
@@ -3148,16 +3170,14 @@ focus_tree = {
 				add_timed_idea = {
 					idea = endsieg
 					days = 365
-				} 
-				add_dynamic_modifier = {
-					modifier = GER_endsieg
-				}			
-				add_to_variable = { germany_war_army_core_attack_factor = 0.3	} 
-				add_to_variable = { germany_war_army_core_defence_factor = 0.3	} 
+				} 			
+				set_variable = { germany_war_army_core_attack_factor = 0.3	} 
+				set_variable = { germany_war_army_core_defence_factor = 0.3	} 
+				add_to_variable = { germany_war_consumer_goods_factor = -0.4 }
+				add_to_variable = { germany_war_stability_weekly_factor = -0.002 }
+				add_to_variable = { germany_war_war_support_weekly_factor = -0.002 }
 			}
-			custom_effect_tooltip = endsieg_tanks_tt
-			swap_ideas = {	remove_idea = goebbels_total_war	add_idea = goebbels_total_war2	}	
-		}	
+			custom_effect_tooltip = endsieg_tanks_tt		}	
 	}
 	focus = { 
 		id = GER_prio_fighter
@@ -3205,6 +3225,7 @@ focus_tree = {
 		prerequisite = { focus = GER_endsieg_4 }
 		
 		available = {
+			custom_trigger_tooltip = { tooltip = blau_failed date > 1942.11.22 }
 		}
 		
 		x = 0

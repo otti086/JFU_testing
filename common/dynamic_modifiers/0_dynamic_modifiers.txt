@@ -1259,10 +1259,12 @@ pacific_states_USA = {
 }
 GER_endsieg = {
 	enable = { always = yes }
-	icon = generic_acquire_tanks
-
+	icon = "GFX_idea_generic_fascism_drift_2"
+	war_support_weekly_factor = germany_war_war_support_weekly_factor
+	stability_weekly_factor = germany_war_stability_weekly_factor
 	army_core_attack_factor = germany_war_army_core_attack_factor
 	army_core_defence_factor = germany_war_army_core_defence_factor	
+	consumer_goods_factor = germany_war_consumer_goods_factor
 }
 SOV_BARB_Debuff = {
 	enable = { always = yes }

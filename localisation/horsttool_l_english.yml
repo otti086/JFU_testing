@@ -1188,7 +1188,7 @@
  GER_prio_fighter_tt:0 "Add '§YFighter Priority§!', which grants \n(§YFighter§!: $production_cost_tt$ §G-15.00%§!, §YLight§!, §YMedium§! and §YHeavy Armor§!: $production_cost_tt$ §R+20.00%§!)"
  GER_prio_tanks_tt:0 "Add '§YArmor Priority§!', which grants \n(§YLight§!, §YMedium§! and §YHeavy Armor§!: $production_cost_tt$ §G-15.00%§!, §YFighter§!: $production_cost_tt$ §R+20.00%§!)"
  GER_SWE_deal_tt:0 "We will broker a trade deal with @SWE§YSweden§! giving us access to their Steal and Tungsten (spawns 80 Steal and 50 Tungeston in Oslo)"
- endsieg_tanks_tt:0 "§HOur§! §CDivision Attack on core territory§! §Hand§! §CDivision Defense on core territory§! §Hwill increase by§! §C30%§!."
+ endsieg_tanks_tt:0 "§HOur§! §CDivision Attack on core territory§! §Hand§! §CDivision Defense on core territory§! §Hwill increase by§! §C30%§!.\n§RWe will also double our Total war Modifier§!"
  endsieg_tt:0 "§HWe will deploy §G72 40w infantry divisions§! to hold the line.§!\n\n"
  steiners_counter_tt:0 "§RSteiner will organize an army of 8 Panzer divisions in Berlin§!"
  amerika_bomber_tt:0 "Researches §CModern Medium Airframe§!" 
@@ -1324,7 +1324,8 @@
  modifier_production_cost_dockyard_factor:0 "§YDockyard§! construction cost"
  modifier_production_cost_dockyard_factor_desc:0 "Modifies the cost of Dockyard construction."
  EFR_defense_plan:0 "Bulwark of France"
-
+ GER_endsieg:0 " Total War"
+ 
  #country flags
 
  EFR_torch_declared:0 "Torch has been declared" 
