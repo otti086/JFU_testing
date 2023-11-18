@@ -1083,7 +1083,6 @@
 
 			add_country_leader_trait = emergency_powers
 			add_ideas = tot_economic_mobilisation
-			add_ideas = volunteers_50
 			hidden_effect = { 	
 				add_offsite_building = {	
 					type = arms_factory	

@@ -1248,7 +1248,8 @@
  GER_choco_desc:0 "Distributing Pervitin to our tankists has significantly improved the combat alertness of our armor divisions."
  GER_pillen:0 "Hermann-Göring-Pillen"
  GER_pillen_desc:0 "Distributing Pervitin to our troops has significantly improved their endurance in day-to-day combat." 
- 
+ GER_triumph_in_africa:0 "Triumph in Africa"
+ GER_the_blitzkrieg:0 "The Blitzkrieg"
  
  #decisions
 
@@ -1326,6 +1327,7 @@
  EFR_defense_plan:0 "Bulwark of France"
  GER_endsieg:0 "Total War"
  GER_endsieg_desc:0 "Wollt ihr den totalen Krieg? - Ja"
+ 
  #country flags
 
  EFR_torch_declared:0 "Torch has been declared" 
