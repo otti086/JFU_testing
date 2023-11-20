@@ -96,11 +96,6 @@ political_actions1 = {
 		visible = { NOT = { has_war_with = NOR }}
 		cost = 0		
 		complete_effect = {
-			hidden_effect = {
-				ENG = {
-					add_to_faction = NOR
-				}
-			}
 			declare_war_on = {
 				target = NOR
 				type = annex_everything
