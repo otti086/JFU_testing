@@ -320,14 +320,6 @@ characters={
 			traits  = {
 				 NOR_shipping_capitalist
 			}
-			on_add = {
-				mio:NOR_akers_mekaniske_verksted_organization = {
-					unlock_mio_trait_tooltip = {
-						trait = NOR_mio_trait_convoy_production
-						show_modifiers = yes 
-					}
-				}
-			}
 			ai_will_do = {
 				base = 0
 			}
@@ -483,7 +475,6 @@ characters={
 				NOR_AAT = yes
 			}
 			available = {
-				has_government = fascism 
 			}
 			traits  = {
 				NOR_callous_engineer
