@@ -818,6 +818,7 @@
  JFU_decisions:0 " JFU Decisions"
  JFU_templates:0 "JFU Template Decisions"
  political_actions1:0 "JFU Political Actions"
+ anti_monarchist_raids:0 "Anti-Monarchist Raids"
 
 
  peace_training:0 "Peace Time Training"
@@ -1026,6 +1027,7 @@
  
  #FOCI
  axis_fall_blau:0 "Fall Blau"
+ axis_operation_citadelle:0 "Operation Citadelle"
  GER_plan_z_cv:0 "Graf Zeppelin Experiments"
  GER_plan_z_cv_desc:0 ""
  GER_plan_z_bb:0 "Lay Down the Bismarck"
