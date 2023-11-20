@@ -1,7 +1,129 @@
 ideas = {
 	country = {
+
+		NOR_coredef = {
+			picture = generic_infantry_bonus
+			modifier = {
+				army_core_defence_factor = 0.2
+			}
+		}
+		NOR_army_buffs = {
+			picture = generic_manpower_bonus
+			modifier = {
+				command_power_gain_mult = 0.2
+				training_time_factor = -0.2
+			}
+		}
+		
+		NOR_army_buffs_2 = {
+			picture = generic_victors_of_ww1 
+			modifier = {
+				army_core_attack_factor = 0.10
+				army_core_defence_factor = 0.1
+				amphibious_invasion = 0.2
+				winter_attrition_factor = -0.25
+				out_of_supply_factor = -0.25
+				command_power_gain_mult = 0.2
+				training_time_factor = -0.2
+			}
+		}
 	
-		###  Initial National Spirits ###
+		NOR_spec_ops = {
+			picture = ast_volunteer_defence_corps
+			modifier = {
+				special_forces_training_time_factor = -0.5
+				max_command_power = 20
+			}
+		}
+
+		NOR_spec_ops_2 = {
+			picture = ast_volunteer_defence_corps
+			modifier = {
+				special_forces_training_time_factor = -0.5
+				max_command_power = 20
+			}
+			equipment_bonus = {
+				artillery_equipment = {
+					soft_attack = 0.05
+					breakthrough = 0.05
+				}
+				infantry_equipment = {
+					soft_attack = 0.05
+				}
+			}
+		}
+
+		NOR_ic_reduction = {
+			picture = generic_manpower_bonus
+			modifier = {	
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+					}
+				support_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				artillery_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+					
+				anti_tank_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+					
+				anti_air_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+					
+				motorized_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+		}
+
+		NOR_AI_STATE = {
+
+			picture = idea_hol_aloof_neutrality
+
+			allowed = {
+				tag = NOR
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				#generate_wargoal_tension = 1.00
+				join_faction_tension = 1.00
+				#lend_lease_tension = 0.50
+				send_volunteers_tension = 0.20
+				guarantee_tension = 1.0
+				embargo_threshold_factor = 2.5
+				ai_badass_factor = 0.01   
+				political_power_factor = -4.20
+			}
+		}
+
+		NOR_NO_DEF = {
+
+			picture = idea_yug_federal_defense_council
+
+			allowed = {
+				tag = NOR
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_defence_factor = -1
+			}
+		}
 
 		NOR_complacent_cabinet_ns = {
 			allowed = {
@@ -20,6 +142,47 @@ ideas = {
 				economy_cost_factor = 0.5
 				training_time_army_factor = 0.6
 				theorist_cost_factor = 1.2
+			}	
+		}
+
+		NOR_monarcist_controlled_goverment = {
+			allowed = {
+				NOR_AAT = yes 
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1 
+
+			modifier = {
+				political_power_gain = -0.10
+				trade_laws_cost_factor = 0
+				economy_cost_factor = 0
+				training_time_army_factor = 0.6
+				theorist_cost_factor = 1.2
+			}	
+		}
+
+		NOR_monarcist_full_controlled_goverment = {
+			allowed = {
+				NOR_AAT = yes 
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1 
+
+			modifier = {
+				political_power_gain = 0.0
+				trade_laws_cost_factor = 0
+				economy_cost_factor = 0
+				training_time_army_factor = 0
+				theorist_cost_factor = 0
+				weekly_manpower = 500
 			}	
 		}
 
@@ -997,7 +1160,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				industry = 0.06
+				industry = 0.05
 			}
 			
 			traits = { NOR_hydroelectric_company_trait }
@@ -1020,7 +1183,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				industry = 0.07
+				industry = 0.05
 			}
 			
 			traits = { NOR_nationalized_hydroelectric_company_trait }
