@@ -428,7 +428,6 @@ ENG_de_havilland_organization = {
 		has_dlc = "Arms Against Tyranny"
 		OR = {
 			tag = ENG
-			tag = NOR 		
 		}
 	}
 
