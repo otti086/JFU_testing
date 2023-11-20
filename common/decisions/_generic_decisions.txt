@@ -1904,8 +1904,6 @@ economy_decisions = {
 		}
 
         complete_effect = {
-        	add_war_support = -0.025
-			add_stability = -0.025
 			if = {
 				limit = {
 					any_owned_state = {
