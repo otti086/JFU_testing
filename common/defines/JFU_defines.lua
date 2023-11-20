@@ -78,7 +78,7 @@ NDefines.NDiplomacy.BASE_SEND_ATTACHE_CP_COST = 0			-- vanilla 50 Command Power 
 
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 480			
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 20
-NDefines.NGame.GAME_SPEED_SECONDS = { 600.0, 0.5, 0.2, 0.07, 0.0 }
+NDefines.NGame.GAME_SPEED_SECONDS = { 600.0, 0.12, 0.23, 0.07, 0.0 }
 NDefines.NGame.DIPLOMACY_ACCEPT_ATTACHE_BASE = 200
 NDefines.NGame.DIPLOMACY_ACCEPT_ATTACHE_OPINION_TRASHHOLD = 10
 
@@ -159,7 +159,7 @@ NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 200
 NDefines.NProduction.DEFAULT_MAX_NAV_FACTORIES_PER_LINE = 200
 NDefines.NProduction.ANNEX_FIELD_EQUIPMENT_RATIO = 1	-- WAS 0.25 | Annex decisions should give all troops, but incase I screwed up here is this -Thrasymachus | How much equipment from deployed divisions will be transferred on annexation
 NDefines.NProduction.LICENSE_EQUIPMENT_SPEED_NOT_FACTION = 0     --VANILLA -0.10		-- MIC speed modifier for licensed equipment for not being in faction
-NDefines.NProduction.MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_PERCENT = 0.05	-- The minimum number of factories we have to put on consumer goods, in percent.
+NDefines.NProduction.MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_PERCENT = 0.01	-- The minimum number of factories we have to put on consumer goods, in percent.
 
 NDefines.NAI.GIVE_STATE_CONTROL_MIN_CONTROLLED = 0     
 NDefines.NAI.GIVE_STATE_CONTROL_MIN_CONTROLLED = 0     

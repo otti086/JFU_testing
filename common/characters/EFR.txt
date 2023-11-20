@@ -1,0 +1,595 @@
+characters={
+	EFR_maxime_weygand={
+		name="Maxime Weygand"
+		advisor={
+			slot = army_chief
+			idea_token = EFR_maxime_weygand
+			allowed  = {
+					original_tag  = EFR 
+				}
+				cost = 100
+				traits  = {
+					army_chief_defensive_2 
+				}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_3"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Maxime_Weygand.dds"
+			}
+		}
+		field_marshal={ #13.5/13
+			traits={ old_guard  panzer_leader panzer_expert  thorough_planner logistics_wizard  }
+			skill=4
+			attack_skill=6
+			defense_skill=5
+			planning_skill=5
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	EFR_phillipe_pétain={
+		name="Phillipe Pétain"
+		portraits={
+			civilian={
+				large="gfx/leaders/FRA/Portrait_France_Philippe_Petain.dds"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			traits={ lion_of_verdun }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	EFR_jonas_smith={
+		name="Jonas Smith"
+		portraits={
+			civilian={
+				large="GFX_Portrait_Africa_Generic_2"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1944.1.1.12"
+			id=-1
+		}
+	}
+	EFR_marcus_smith={
+		name="Marcus Smith"
+		portraits={
+			civilian={
+				large="GFX_Portrait_South_Africa_Political_Leader_Generic_2"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			traits={ captain_of_industry compassionate_gentleman }
+			expire="1943.1.1.12"
+			id=-1
+		}
+	}
+	EFR_alex_walker={
+		name="Alex Walker"
+		portraits={
+			civilian={
+				large="GFX_Portrait_South_Africa_Political_Leader_Generic"
+			}
+		}
+		country_leader={
+			ideology=moderatism
+			traits={ compassionate_gentleman }
+			expire="1942.1.1.12"
+			id=-1
+		}
+	}
+	EFR_charles_huntziger={
+		name="Charles Huntziger"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_charles_huntziger.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/portrait_france_charles_huntziger.dds"
+			}
+		}
+		field_marshal={ #13.5/13
+			traits={ old_guard inflexible_strategist panzer_leader panzer_expert defensive_doctrine unyielding_defender winter_specialist    }
+			skill=4
+			attack_skill=6
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	EFR_maurice_gamelin={
+		name="Maurice Gamelin"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_maurice_gamelin.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Maurice_Gamelin.dds"
+			}
+		}
+		field_marshal={ #13/13
+			traits={ old_guard inflexible_strategist infantry_leader ambusher logistics_wizard ranger unyielding_defender  }
+			skill=4
+			attack_skill=4
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=7
+			legacy_id=-1
+		}
+	}
+	EFR_vicente_rojo_lluch={
+		name="André-Gaston Prételat"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_SPR_vicente_rojo_lluch.dds"
+			}
+			army={
+				large="gfx/leaders/EFR/andregaston_pretelat.dds"
+			}
+		}
+		field_marshal={ #13.5/13
+			traits={ brilliant_strategist infantry_expert infantry_leader logistics_wizard offensive_doctrine aggressive_assaulter   }
+			skill=4
+			attack_skill=3
+			defense_skill=5
+			planning_skill=4
+			logistics_skill=7
+			legacy_id=-1
+		}
+	}
+	EFR_ion_antonescu={
+		name="Paul Vauthier"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_ROM_ion_antonescu.dds"
+			}
+			army={
+				large="gfx/leaders/EFR/paul_vauthier.dds"
+			}
+		}
+		field_marshal={ #13/13
+			traits={ brilliant_strategist infantry_leader infantry_expert organizer thorough_planner aggressive_assaulter   }
+			skill=4
+			attack_skill=6
+			defense_skill=2
+			planning_skill=6
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	EFR_francisco_franco={
+		name="Louis Colson"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_SPA_francisco_franco.dds"
+			}
+			army={
+				large="gfx/leaders/EFR/louis_colson.dds"
+			}
+		}
+		field_marshal={ # 13/13
+			traits={ brilliant_strategist panzer_leader combined_arms_expert desert_fox hill_fighter thorough_planner aggressive_assaulter }
+			skill=4
+			attack_skill=5
+			defense_skill=1
+			planning_skill=8
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	EFR_emilio_mola={
+		name="Émile Laure"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_SPA_emilio_mola.dds"
+			}
+			army={
+				large="gfx/leaders/EFR/emile_laure.dds"
+			}
+		}
+		field_marshal={ #13/13
+			traits={  trait_cautious cavalry_leader combined_arms_expert  logistics_wizard defensive_doctrine   }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=8
+			legacy_id=-1
+		}
+	}
+
+	EFR_paul_reynaud={
+		advisor={
+			slot = political_advisor
+			idea_token = EFR_paul_reynaud
+			allowed  = {
+					original_tag  = EFR 
+				}
+				traits  = {
+					quartermaster_general 
+				}
+		}
+		name="EFR_paul_reynaud"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+	}
+
+	EFR_jean_francois_darlan={
+		advisor={
+			slot = navy_chief
+			idea_token = EFR_jean_francois_darlan
+			allowed  = {
+					original_tag  = EFR 
+				}
+				cost = 50
+				traits  = {
+					navy_chief_maneuver_2 
+				}
+		}
+		name="EFR_jean_francois_darlan"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_1"
+			}
+		}
+	}
+
+	EFR_joe_biden={
+		advisor={
+			slot = political_advisor
+			idea_token = EFR_joe_biden
+			allowed  = {
+					original_tag  = EFR 
+				}
+				available  = {
+					has_completed_focus  = VIC_the_national_bureau_of_statistics 
+				}
+				cost  = 0.000
+				traits  = {
+					scientist 
+				}
+		}
+		name="EFR_joe_biden"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+	}
+
+	EFR_charles_maurras={
+		advisor={
+			slot = political_advisor
+			idea_token = charles_maurras
+			allowed  = {
+					original_tag  = EFR 
+				}
+				available  = {
+					has_completed_focus  = FRA_national_regeneration 
+				}
+				visible  = {
+					has_dlc = "La Resistance"
+				}
+				cost  = 0.000
+				traits  = {
+					national_integralist 
+				}
+		}
+		name="charles_maurras"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+	}
+	
+	EFR_marius_viple={
+		advisor={
+			slot = political_advisor
+			idea_token = EFR_marius_viple
+			allowed  = {
+					original_tag  = EFR 
+				}
+				traits  = {
+					popular_figurehead 
+				}
+		}
+		name="EFR_marius_viple"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+	}
+	EFR_felix_gouin={
+		advisor={
+			slot = political_advisor
+			idea_token = EFR_felix_gouin
+			allowed  = {
+					original_tag  = EFR 
+				}
+				traits  = {
+					captain_of_industry 
+				}
+		}
+		name="EFR_felix_gouin"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+	}
+	EFR_marcel_bucard={
+		advisor={
+			slot = political_advisor
+			idea_token = marcel_bucard
+			allowed  = {
+					original_tag  = EFR 
+				}
+				traits  = {
+					fascist_demagogue 
+				}
+		}
+		name="marcel_bucard"
+		portraits={
+			army={
+				small="GFX_idea_marcel_bucard"
+			}
+		}
+	}
+	EFR_gaston_henry_haye={
+		advisor={
+			slot = political_advisor
+			idea_token = EFR_gaston_henry_haye
+			allowed  = {
+					original_tag  = EFR 
+				}
+				traits  = {
+					silent_workhorse 
+				}
+		}
+		name="EFR_gaston_henry_haye"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_5"
+			}
+		}
+	}
+	EFR_jean_romatet={
+		advisor={
+			slot = air_chief
+			idea_token = EFR_jean_romatet
+			allowed  = {
+					original_tag  = EFR 
+				}
+				cost = 50
+				traits  = {
+					air_chief_ground_support_2 
+				}
+		}
+		name="EFR_jean_romatet"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_3"
+			}
+		}
+	}
+	EFR_philippe_henriot={
+		advisor={
+			slot = political_advisor
+			idea_token = EFR_philippe_henriot
+			allowed  = {
+					original_tag  = EFR 
+				}
+				visible  = {
+					has_dlc = "La Resistance"
+				}
+				available  = {
+					has_completed_focus  = FRA_national_regeneration 
+				}
+				cost  = 0.000
+				traits  = {
+					propaganda_expert 
+				}
+		}
+		name="EFR_philippe_henriot"
+		portraits={
+			army={
+				small="GFX_idea_EFR_philippe_henriot"
+			}
+		}
+	}
+	EFR_pierre_pucheu={
+		advisor={
+			slot = political_advisor
+			idea_token = EFR_pierre_pucheu
+			allowed  = {
+					original_tag  = EFR 
+				}
+				available  = {
+				}
+				cost  = 150.000
+				traits  = {
+					technocrat 
+				}
+		}
+		name="EFR_pierre_pucheu"
+		portraits={
+			army={
+				small="GFX_idea_EFR_pierre_pucheu"
+			}
+		}
+	}
+	EFR_charles_tillon={
+		advisor={
+			slot = political_advisor
+			idea_token = EFR_charles_tillon
+			allowed  = {
+					original_tag  = EFR 
+				}
+				traits  = {
+					armaments_organizer 
+				}
+		}
+		name="EFR_charles_tillon"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+	}
+	EFR_zivony_peshkov={
+		advisor={
+			slot = political_advisor
+			idea_token = EFR_zivony_peshkov
+			allowed  = {
+					original_tag  = EFR 
+				}
+				traits  = {
+					war_industrialist 
+				}
+		}
+		name="EFR_zivony_peshkov"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_5"
+			}
+		}
+	}
+	EFR_jean_marie_abrial={
+		advisor={
+			slot = high_command
+			idea_token = EFR_jean_marie_abrial
+			ledger  = army 
+				allowed  = {
+					original_tag  = EFR 
+				}
+				cost = 75
+				traits  = {
+					army_chief_organizational_2
+				}
+		}
+		name="EFR_jean_marie_abrial"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_1"
+			}
+		}
+	}
+	
+	EFR_henri_giraud={
+		advisor={
+			slot = theorist
+			idea_token = EFR_henri_giraud
+			ledger  = army 
+				allowed  = {
+					original_tag  = EFR 
+				}
+				cost = 100
+				traits  = {
+					military_theorist 
+				}
+		}
+		name="EFR_henri_giraud"
+		portraits={
+			army={
+				small="GFX_idea_EFR_henri_giraud"
+			}
+		}
+	}
+	EFR_jean_francois_jannekeyn={
+		advisor={
+			slot = high_command
+			idea_token = EFR_jean_francois_jannekeyn
+			ledger  = army 
+				allowed  = {
+					original_tag  = EFR 
+				}
+				cost = 75
+				traits  = {
+					army_infantry_2 
+				}
+		}
+		name="EFR_jean_francois_jannekeyn"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_1"
+			}
+		}
+	}
+	
+	EFR_frederic_irene_joliot_curie={
+		advisor={
+			slot = theorist
+			idea_token = EFR_frederic_irene_joliot_curie
+			ledger  = army 
+				allowed  = {
+					original_tag  = EFR 
+				}
+				research_bonus  = {
+					nuclear  = 0.25
+				}
+				traits  = {
+					nuclear_scientist 
+				}
+		}
+		name="EFR_frederic_irene_joliot_curie"
+		portraits={
+			army={
+				small="GFX_idea_EFR_frederic_irene_joliot_curie"
+			}
+		}
+	}
+	
+	EFR_jean_de_laborde={
+		advisor={
+			slot = high_command
+			idea_token = EFR_jean_de_laborde
+			ledger  = army 
+				allowed  = {
+					original_tag  = EFR 
+				}
+				cost = 75
+				traits  = {
+					army_commando_2 
+				}
+		}
+		name="EFR_jean_de_laborde"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_2"
+			}
+		}
+	}
+	EFR_marcel_bruno_gensoul={
+		advisor={
+			slot = high_command
+			idea_token = EFR_marcel_bruno_gensoul
+			ledger  = army 
+				allowed  = {
+					original_tag  = EFR 
+				}
+				cost = 75
+				traits  = {
+					army_armored_2 
+				}
+		}
+		name="EFR_marcel_bruno_gensoul"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_1"
+			}
+		}
+	}
+}

@@ -133,7 +133,21 @@ SOV_vsevolod_merkulov = {
 SOV_patriarch_sergy = { #Priests are not political enemies at this point
 	set_character_flag = SOV_safe_from_purge_flag
 }
-	
+SOV_georgy_zhukov = { #Priests are not political enemies at this point
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_dmitry_lelyushenko = { #Priests are not political enemies at this point
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_andrey_grechko = { #Priests are not political enemies at this point
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_vasily_chuykov = { #Priests are not political enemies at this point
+	set_character_flag = SOV_safe_from_purge_flag
+}
+
+
+
 ### PROPAGANDA ###
 set_variable = { SOV_new_propaganda_campaign = 0 } #Used to pick a poster slot
 set_variable = { SOV_propaganda_campaign_to_remove = 0 } #Used to reset a poster slot

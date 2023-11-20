@@ -19,8 +19,8 @@
 		trigger = {	tag = ROM}
 	}
 	offset = {
-		x = 23  
-		y = 5
+		x = 22  
+		y = 7
 		trigger = {	tag = EFR}
 	}
 	offset = {
@@ -103,7 +103,11 @@ shared_focus = {
 	icon = GFX_goal_generic_oil_refinery 
 	x = 1
 	y = 1
-
+	available = {
+		NOT = { 
+			controls_state = 713
+		}
+	}
 	prerequisite = { focus = AXIS_ger_patron }
 	relative_position_id = AXIS_ger_patron
 	cost = 5

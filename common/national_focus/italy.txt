@@ -2953,7 +2953,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_superesercito
-		icon = GFX_goal_ITA_Regio_Esercito_2
+		icon = GFX_GOAL_ITA_REGIO_ESERCITO_2
 		prerequisite = { focus = ITA_preserve_army_traditions focus = ITA_a_bandits_war }
 
 		x = 3
@@ -7742,6 +7742,7 @@ focus_tree = {
 					}
 					GRE = { load_oob = "GRE_spawn"}
 				}
+				news_event = { id = news.192 days = 1}
 			}
 		}
 	}
@@ -7942,6 +7943,7 @@ focus_tree = {
 				ideology = fascism
 				popularity = 0.05
 			}
+			news_event = { id = news.186 days = 1}
 			add_named_threat = { threat = 4 name = ITA_italian_irredentism }
 			custom_effect_tooltip = ITA_greece_attack_desc_tt
 		}

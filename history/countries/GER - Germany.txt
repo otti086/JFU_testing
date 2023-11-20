@@ -3,6 +3,9 @@
 
 set_variable = { var = Atlantikwall_dig_in_modifier value = 10 }
 set_variable = { var = Atlantikwall_invasion_penalty_modifier value = 0.5 }
+set_variable = { germany_war_war_support_weekly_factor = -0.002 }
+set_variable = { germany_war_stability_weekly_factor = -0.002 }
+set_variable = { germany_war_consumer_goods_factor = -0.4 }
 set_variable = {
     var = min_fuel
     value = 0.300
@@ -167,8 +170,6 @@ if = {
 		armored_car1 = 1
 	}
 }
-set_variable = { GER_narvik_shipments = 0 }
-set_variable = { GER_narvik_civs = 0 }
 set_research_slots = 5
 set_convoys = 200
 set_stability = 0.75 

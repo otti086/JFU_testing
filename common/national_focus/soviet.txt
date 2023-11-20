@@ -4690,7 +4690,7 @@ focus_tree = {
 			}
 			custom_effect_tooltip = SOV_behead_the_snake_JFU_tt
 			hidden_effect = {
-				ROOT = { news_event = { id = nsb_news.100 days = 100 } }
+				ROOT = { news_event = { id = news.37 days = 100 } }
 			}
 			SOV_paranoia_high_decrease_effect = yes
 		}
@@ -5530,10 +5530,12 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 
 		completion_reward = {
-			annex_country = { target = LIT  }
-			add_named_threat = { threat = 1 name = SOV_claims_in_baltic }
-			add_political_power = -75
+			custom_effect_tooltip = SOV_claims_in_balitc.tt
 			hidden_effect = {
+				news_event = { id = news.199 days = 1}
+				annex_country = { target = LIT  }
+				add_named_threat = { threat = 1 name = SOV_claims_in_baltic }
+				add_political_power = -75
 				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 60000 }
 			}
 		}
@@ -5552,10 +5554,13 @@ focus_tree = {
 		cost = 1
 
 		completion_reward = {
-			SOV = { transfer_state = 78 }
-			SOV = { transfer_state = 766 }
-			SOV = { transfer_state = 80 }
-
+			custom_effect_tooltip = SOV_Bessarabia.tt
+			hidden_effect = { 
+				SOV = { transfer_state = 78 }
+				SOV = { transfer_state = 766 }
+				SOV = { transfer_state = 80 }
+				news_event = {id = news.199 days = 1 }
+			}
 		}
 	}
 }

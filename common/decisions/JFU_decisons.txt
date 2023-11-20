@@ -458,12 +458,6 @@ political_actions1 = {
 				USA = { country_event = { id = panay_incident.1 days = 60 }}
 			}
 			USA = { set_country_flag = { flag = USA_china_window days = 60 value = 1 } }
-			if = {
-				limit = {
-					has_country_leader = { id = 700 ruling_only = yes }
-				}
-				remove_country_leader_trait = imperial_sanction
-			}
 		}
 	}
 	"Operation Countenance Japan" = {
@@ -838,6 +832,7 @@ political_actions1 = {
 					GER = { annex_country = { target = EFR transfer_troops = no } }
 				} 
 				USA = { country_event = { id = usa.996  days = 0 }  }
+				set_global_flag = EFR_torch_declared
 			}
 			news_event = { id = news.5001 }
 

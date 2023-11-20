@@ -141,7 +141,7 @@ JAP_light_aircraft_organization = {
 		}
 
 		equipment_bonus = {
-			air_agility = 0.1
+			air_agility = 0.05
 		} 
 	}
 
@@ -162,7 +162,7 @@ JAP_light_aircraft_organization = {
 		}
 
 		equipment_bonus = {
-			air_range = 0.15
+			air_range = 0.10
 		} 
 	}
 }
@@ -268,7 +268,7 @@ JAP_yokosuka_organization = {
 		}
 
 		equipment_bonus = {
-			air_agility = 0.1
+			air_agility = 0.05
 		} 
 	}
 
@@ -289,7 +289,7 @@ JAP_yokosuka_organization = {
 		}
 
 		equipment_bonus = {
-			air_range = 0.15
+			air_range = 0.10
 		} 
 	}
 

@@ -619,6 +619,9 @@ JFU_vichy_france_2 = {
 			#	transfer_state = 772				
 			#}
 		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 15000 }
+		add_ideas = EFR_work_service 
+		add_ideas = FRA_mandatory_work_service 
+		add_ideas = VIC_produce_aircraft_parts
 	}
 	FRA = {
 		if = { 
@@ -810,8 +813,9 @@ JFU_startup_on_action = {
 		}
 	}
 	if = {  limit = { ai_country_allies = yes } country_lock_all_division_template = yes }
-	every_country = { limit = { OR = { axis = yes allies = yes } } add_ideas = peace_training }
-	every_country = { limit = { OR = { axis = yes allies = yes } } set_rule = { can_be_spymaster = no } }
+	every_country = { limit = { OR = { axis = yes allies = yes } } add_ideas = peace_training set_rule = { can_be_spymaster = no }  }
+	every_country = { limit = { axis = yes } anti_cross_faction_trade_allies = yes }
+	every_country = { limit = { allies = yes } anti_cross_faction_trade_axis = yes }
 	SWE = { set_global_flag = NOR_RUGES_PLAN }
 	SWE = { JFU_apply_intel = yes }
 	SWE = { HFU_fuel_startup_effect = yes }
@@ -965,6 +969,11 @@ JFU_scripted_events_effect = {
 	MEX = { country_event = { id = mexico.15 days = 180 } }
 	MEX = { country_event = { id = mexico.27 days = 120 } }
 	GER = { country_event = { id = JFU_events.4 days = 1703 }}
+	USA = { news_event = { id = news.42 days = 240 } }
+	USA = { news_event = { id = news.48 days = 550 } }
+	ENG = { news_event = { id = news.55 days = 1250 } }
+	SWE = { news_event = { id = news.63 days = 231 } }
+	GER = { news_event = { id = news.66 days = 227 } }
 }
 HMP_anti_building_exploit_effect = { #add to horst tool
 	every_state = { limit = { ignore_aa_states = yes non_damaged_building_level  = { building = anti_air_building  level > 5 } } remove_building  = {  type = anti_air_building  level = 1 }  }  
@@ -3126,4 +3135,31 @@ Atlantikwall_modifier_effect = {
 	if = { limit = { date > 1942.09.01 } add_to_variable = { var = GER.Atlantikwall_dig_in_modifier value = -1 } add_to_variable = { var = GER.Atlantikwall_invasion_penalty_modifier value = -0.05 } }
 	if = { limit = { date > 1942.10.01 } add_to_variable = { var = GER.Atlantikwall_dig_in_modifier value = -1 } add_to_variable = { var = GER.Atlantikwall_invasion_penalty_modifier value = -0.05 } }
 	if = { limit = { check_variable = { GER.Atlantikwall_dig_in_modifier < 0 } } every_state = { remove_dynamic_modifier = { modifier = Atlantikwall_modifier } } }
+}
+anti_cross_faction_trade_allies = {
+	send_embargo = USA
+	send_embargo = ENG
+	send_embargo = POL
+	send_embargo = FRA
+	send_embargo = MEX
+	send_embargo = CAN
+	send_embargo = SAF
+	send_embargo = RAJ
+	send_embargo = AST
+	send_embargo = SOV
+	send_embargo = NZL
+	send_embargo = NOR
+}
+anti_cross_faction_trade_axis = {
+	send_embargo = GER 
+	send_embargo = EFR 
+	send_embargo = SIA
+	send_embargo = ITA 
+	send_embargo = BUL 
+	send_embargo = ROM 
+	send_embargo = HUN 
+	send_embargo = SPR 
+	send_embargo = FIN 
+	send_embargo = JAP 
+	send_embargo = MAN 
 }
