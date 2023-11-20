@@ -617,10 +617,18 @@ on_actions = {
 
 #				NOR = { transfer_state = 912 }
 				GER = {
+				GER = {
 					transfer_state = 110
 					transfer_state = 142
 					transfer_state = 143
 					transfer_state = 144
+					transfer_state = 920
+					transfer_state = 921
+					transfer_state = 922
+					transfer_state = 923
+					transfer_state = 924
+					transfer_state = 925
+				}
 				}
 				every_state = {
 					limit = {
