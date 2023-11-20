@@ -90,7 +90,6 @@ SOV_morozov_design_bureau_organization = {
 				} 
 				has_dlc = "Waking the Tiger"
 			}
-			NOR_AAT = yes
 		}
 	}
 
