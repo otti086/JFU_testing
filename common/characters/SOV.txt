@@ -68,11 +68,8 @@ characters = {
 			allowed = {
 				original_tag = SOV
 			}
-			available = {
-				has_completed_focus = SOV_positive_heroism
-			}
 			traits = {
-				mass_assault_expert
+				military_theorist
 			}
 		}		
 	}
@@ -214,8 +211,23 @@ characters = {
 				small=GFX_portrait_SOV_nikolay_vatutin_small
 			}
 		}
+		advisor = {
+			cost = 100
+			slot = army_chief
+			idea_token = nikolay_vatutin
+			ledger = army
+			allowed = {
+				original_tag = SOV
+			}
+			available = {
+				has_completed_focus = SOV_positive_heroism
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+		}
 		corps_commander = {
-			traits = { trait_reckless infantry_officer }
+			traits = { trait_reckless infantry_officer offensive_doctrine }
 			skill = 3
 			attack_skill = 1
 			defense_skill = 3
@@ -437,6 +449,21 @@ characters = {
 				large = "GFX_portrait_SOV_leonid_govorov"
 				small= "GFX_idea_SOV_leonid_govorov"
 			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = leonid_govorov
+			ledger = army
+			allowed = {
+				original_tag = SOV
+			}
+			available = {
+				has_completed_focus = SOV_positive_heroism
+			}
+			traits = {
+				army_CombinedArms_2
+			}
+			cost = 50
 		}
 		corps_commander = {
 			skill = 3
@@ -795,6 +822,18 @@ characters = {
 				small=GFX_portrait_SOV_dmitry_lelyushenko_small
 			}
 		}
+		advisor = {
+			slot = high_command
+			idea_token = dmitry_lelyushenko
+			ledger = army
+			allowed = {
+				original_tag = SOV
+			}
+			traits = {
+				army_CombinedArms_1
+			}
+			cost = 50
+		}
 		corps_commander = {
 			traits = { trait_reckless armor_officer }
 			skill = 1
@@ -854,6 +893,18 @@ characters = {
 				large = GFX_portrait_SOV_vasily_chuykov
 				small=GFX_portrait_SOV_vasily_chuykov_small
 			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = vasily_chuykov
+			ledger = army
+			allowed = {
+				original_tag = SOV
+			}
+			traits = {
+				army_armored_1
+			}
+			cost = 50
 		}
 		corps_commander = {
 			traits = { brilliant_strategist career_officer }

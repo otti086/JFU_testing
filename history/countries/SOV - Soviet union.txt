@@ -145,8 +145,12 @@ SOV_andrey_grechko = { #Priests are not political enemies at this point
 SOV_vasily_chuykov = { #Priests are not political enemies at this point
 	set_character_flag = SOV_safe_from_purge_flag
 }
-
-
+SOV_nikolay_vatutin = { #Priests are not political enemies at this point
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_leonid_govorov = { #Priests are not political enemies at this point
+	set_character_flag = SOV_safe_from_purge_flag
+}
 
 ### PROPAGANDA ###
 set_variable = { SOV_new_propaganda_campaign = 0 } #Used to pick a poster slot
@@ -302,7 +306,7 @@ set_variable = { SOV_fyp_factory_requirement_tier_5 = 220 }
 
 #THIRD FIVE YEAR PLAN NATIONAL SPIRIT VARS
 set_variable = { SOV_fyp_production_factory_efficiency_gain_factor = -0.15 }
-set_variable = { SOV_fyp_production_factory_max_efficiency_factor = 0.05 }
+set_variable = { SOV_fyp_production_factory_max_efficiency_factor = 0.03 }
 set_variable = { SOV_fyp_consumer_goods_factor = 0.10 }
 set_variable = { SOV_fyp_production_speed_industrial_complex_factor = 0.05 }
 
@@ -357,7 +361,7 @@ set_variable = { SOV_red_fleet_special_forces_cap = 0 } #-> Marines
 
 #DEFENSE INDUSTRY NATIONAL SPIRIT VARS
 set_variable = { SOV_defense_industry_conversion_cost_civ_to_mil_factor = -0.2 }
-set_variable = { SOV_defense_industry_production_factory_max_efficiency_factor = 0.05 }
+set_variable = { SOV_defense_industry_production_factory_max_efficiency_factor = 0.03 }
 set_variable = { SOV_defense_industry_production_factory_efficiency_gain_factor = -0.05 }
 set_variable = { SOV_defense_industry_line_change_production_efficiency_factor = -0.1 }
 

@@ -1173,8 +1173,9 @@ ideas = {
 			}
 
 			modifier = {
-				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
 				research_speed_factor = 0.05
+				consumer_goods_factor = -0.05
 			}
 		}
 
@@ -1194,7 +1195,7 @@ ideas = {
 			}
 
 			modifier = {
-				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
 				research_speed_factor = 0.1
 				communism_drift = 0.05
 				consumer_goods_factor = -0.1
@@ -2806,7 +2807,7 @@ ideas = {
 			modifier = {
 				command_abilities_cost_factor = 0.1
 				naval_doctrine_cost_factor = 0.2
-#				land_doctrine_cost_factor = 0.2
+				land_doctrine_cost_factor = 0.2
 				drift_defence_factor = 0.1
 				army_core_defence_factor = 0.03
 			}
@@ -2829,7 +2830,7 @@ ideas = {
 
 			modifier = {
 				command_abilities_cost_factor = 0.1
-#				land_doctrine_cost_factor = 0.2
+				land_doctrine_cost_factor = 0.2
 				naval_doctrine_cost_factor = 0.2
 				air_doctrine_cost_factor = 0.2
 
@@ -2852,7 +2853,7 @@ ideas = {
 
 			modifier = {
 				command_abilities_cost_factor = 0.1
-#				land_doctrine_cost_factor = 0.2
+				land_doctrine_cost_factor = 0.2
 				naval_doctrine_cost_factor = 0.2
 				air_doctrine_cost_factor = 0.2
 
@@ -2879,7 +2880,7 @@ ideas = {
 
 			modifier = {
 				command_abilities_cost_factor = 0.1
-#				land_doctrine_cost_factor = 0.2
+				land_doctrine_cost_factor = 0.2
 				naval_doctrine_cost_factor = 0.2
 				air_doctrine_cost_factor = 0.2
 
@@ -2905,7 +2906,7 @@ ideas = {
 			}
 
 			modifier = {
-#				land_doctrine_cost_factor = 0.1
+				land_doctrine_cost_factor = 0.1
 				naval_doctrine_cost_factor = 0.1
 				air_doctrine_cost_factor = 0.1
 
@@ -2930,7 +2931,7 @@ ideas = {
 			}
 
 			modifier = {
-#				land_doctrine_cost_factor = 0.1
+				land_doctrine_cost_factor = 0.1
 				naval_doctrine_cost_factor = 0.1
 				air_doctrine_cost_factor = 0.1
 
@@ -2954,7 +2955,7 @@ ideas = {
 			}
 
 			modifier = {
-#				land_doctrine_cost_factor = 0.2
+				land_doctrine_cost_factor = 0.2
 				naval_doctrine_cost_factor = 0.2
 				air_doctrine_cost_factor = 0.2
 

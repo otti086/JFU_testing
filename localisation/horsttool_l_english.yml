@@ -1252,7 +1252,7 @@
  GER_pillen_desc:0 "Distributing Pervitin to our troops has significantly improved their endurance in day-to-day combat." 
  GER_triumph_in_africa:0 "Triumph in Africa"
  GER_the_blitzkrieg:0 "The Blitzkrieg"
- 
+ ai_limiter:0 "AI Limiter"
  #decisions
 
  GER_fall_gelb:0 "§gFall§! §YGelb (Belgium and Netherlands)§!"
