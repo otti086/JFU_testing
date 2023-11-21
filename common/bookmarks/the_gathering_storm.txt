@@ -301,9 +301,9 @@ bookmarks = {
 				MAN_low_legitimacy_5
 			}
 			focuses = {
-				MAN_obedience
-				MAN_the_two_emperors
-				MAN_first_five_year_plan
+				MAN_obediencex
+				MAN_railways_opener
+				MAN_the_two_emperorsx
 			}
 		}
 		"FIN"={

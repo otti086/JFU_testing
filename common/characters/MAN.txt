@@ -476,7 +476,7 @@ characters={
 				original_tag = MAN
 			}
 			available = {
-				has_completed_focus = MAN_invite_japanese_investors
+				has_completed_focus = MAN_invite_japanese_investorsx
 			}
 			cost = 150
 			traits = { economist }

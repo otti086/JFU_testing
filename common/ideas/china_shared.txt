@@ -351,12 +351,6 @@ ideas = {
 			picture = CHI_camco
 
 			available = {
-				if = {
-					limit = {
-						has_dlc = "Waking the Tiger"
-					}
-					has_completed_focus = CHI_camco
-				}
 			}
 
 			allowed = {
@@ -387,12 +381,6 @@ ideas = {
 			picture = CHI_camco
 
 			available = {
-				if = {
-					limit = {
-						has_dlc = "Waking the Tiger"
-					}
-					has_completed_focus = CHI_local_fighter_production
-				}
 			}
 
 			allowed = {
@@ -431,7 +419,6 @@ ideas = {
 			cost = 50
 
 			available = {
-				has_completed_focus = CHI_local_bomber_production
 			}
 
 			allowed = {
