@@ -1872,8 +1872,6 @@ leader_traits = {
 			factor = 1
 		}
 		
-		enable_ability = makeshift_bridges
-		
 		trait_type = assignable_trait
 		any_parent = { trickster }
 		prerequisites = {

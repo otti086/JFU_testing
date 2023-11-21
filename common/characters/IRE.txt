@@ -30,7 +30,24 @@ characters={
 			legacy_id=-1
 		}
 	}
-
+	IRE_maurice_gamelin={
+		name="Frederick Joseph Loftus-Tottenham"
+		portraits={
+			army={
+				large=GFX_portrait_Michael_Costello
+				small=GFX_portrait_Michael_Costello_small
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
 	IRE_p_a_mulcahy={
 		advisor={
 			
