@@ -672,7 +672,6 @@ JFU_startup_on_action = {
 	if = {	limit = { has_game_rule = { rule = JFU_AFRICA_TILES option = ONE_TILE_AFRICA } } SWE = { transfer_state = 909 } SWE = { transfer_state = 910 } SWE = { transfer_state = 911 } }
 	if = {	limit = { has_game_rule = { rule = JFU_YUGO_COLAB option = FREE_COLAB_YUGO } } set_global_flag = YUGO_FREE_COLAB_FLAG }
 	if = {	limit = { has_game_rule = { rule = JFU_pre_sets option = COMPETITIVE_JFU } } set_global_flag = YUGO_FREE_COLAB_FLAG }
-	if = {	limit = { has_game_rule = { rule = CASUAL_STUFF option = CASUAL_STUFF_ON } } JAP = { add_dynamic_modifier = { modifier = pacific_states_JAP } } USA = { add_dynamic_modifier = { modifier = pacific_states_USA } } }	
 	if = {
 		limit = { 
 			OR = {
@@ -820,6 +819,7 @@ JFU_startup_on_action = {
 	SWE = { HFU_fuel_startup_effect = yes }
 	SWE = { JFU_scripted_events_effect = yes }
 	SPR = {	country_lock_all_division_template = yes country_event = { id = lar_spain.2 days = 230 } activate_mission = days_till_civil_war }
+	SWE = { pacifc_war_variables = yes }
 	ENG = {
 		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 30000 }
 		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 20000 }
@@ -853,13 +853,15 @@ JFU_startup_on_action = {
 		add_equipment_to_stockpile = { type = support_equipment_1 amount = 801 }
 		add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 880 }
 		add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 25 }
-		add_equipment_to_stockpile = { type = light_tank_chassis_1 amount = 180 producer = JAP variant_name = "Type 95 Ha-Go" }		
+		add_equipment_to_stockpile = { type = light_tank_chassis_1 amount = 180 producer = JAP variant_name = "Type 95 Ha-Go" }	
+		add_dynamic_modifier = { modifier = pacific_war_japan }	
 	}
 	USA = {
 		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 11100 }
 		add_equipment_to_stockpile = { type = support_equipment_1 amount = 344 }
 		add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 106 }
 		add_equipment_to_stockpile = { type = train_equipment_1 amount = 300 }
+		add_dynamic_modifier = { modifier = pacific_war_USA }
 	}
 	HUN = {
 		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 7000 }
@@ -904,11 +906,13 @@ JFU_startup_on_action = {
 		add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 55 }
 		add_equipment_to_stockpile = { type = train_equipment_1 amount = 50 }
 		add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 }
+		add_dynamic_modifier = { modifier = pacific_war_aallies }
 	}
 	CAN = {
 		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 4000 }
 		add_equipment_to_stockpile = { type = train_equipment_1 amount = 50 }
 		add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 }
+		add_dynamic_modifier = { modifier = pacific_war_aallies }
 	}
 	RAJ = {
 		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 4000 }
@@ -919,16 +923,19 @@ JFU_startup_on_action = {
 		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 4000 }
 		add_equipment_to_stockpile = { type = train_equipment_1 amount = 50 }
 		add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 }
+		add_dynamic_modifier = { modifier = pacific_war_allies }
 	}
 	NZL = {
 		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 1000 }
 		add_equipment_to_stockpile = { type = train_equipment_1 amount = 50 }
 		add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 }
+		add_dynamic_modifier = { modifier = pacific_war_allies }
 	}
 	SAF = {
 		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2000 }
 		add_equipment_to_stockpile = { type = train_equipment_1 amount = 50 }
 		add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 }
+		add_dynamic_modifier = { modifier = pacific_war_allies }
 	}
 	SIA = {
 		give_resource_rights = { receiver = GER state = 724 }
@@ -974,32 +981,47 @@ JFU_scripted_events_effect = {
 	SWE = { news_event = { id = news.63 days = 231 } }
 	GER = { news_event = { id = news.66 days = 227 } }
 }
+pacifc_war_variables = {
+	JAP = {
+		set_variable = { PWJ_consumer_goods_factor = 0 }
+		set_variable = { PWJ_war_support_factor = 0 }
+		set_variable = { PWJ_stability_factor = 0 }
+		set_variable = { PWJ_army_core_attack_factor = 1 }
+		set_variable = { PWJ_army_core_defence_factor = 1 }
+	}
+	USA = {
+		set_variable = { PWUSA_consumer_goods_factor = 0 }
+		set_variable = { PWUSA_war_support_factor = 0 }
+		set_variable = { PWUSA_stability_factor = 0 }
+		set_variable = { PWUSA_army_core_attack_factor = 1 }
+		set_variable = { PWUSA_army_core_defence_factor = 1 }
+	}
+	SAF = {
+		set_variable = { PWA_army_core_attack_factor = 1 }
+		set_variable = { PWA_army_core_defence_factor = 1 }
+	}
+	AST = {
+		set_variable = { PWA_army_core_attack_factor = 1 }
+		set_variable = { PWA_army_core_defence_factor = 1 }
+	}
+	NZL = {
+		set_variable = { PWA_army_core_attack_factor = 1 }
+		set_variable = { PWA_army_core_defence_factor = 1 }
+	}
+	MEX = {
+		set_variable = { PWAA_army_core_attack_factor = 1 }
+		set_variable = { PWAA_army_core_defence_factor = 1 }
+	}
+	CAN = {
+		set_variable = { PWAA_army_core_attack_factor = 1 }
+		set_variable = { PWAA_army_core_defence_factor = 1 }
+	}
+
+}
 HMP_anti_building_exploit_effect = { #add to horst tool
 	every_state = { limit = { ignore_aa_states = yes non_damaged_building_level  = { building = anti_air_building  level > 5 } } remove_building  = {  type = anti_air_building  level = 1 }  }  
 	every_state = { limit = {  non_damaged_building_level  = { building = infrastructure  level > 5 } } remove_building  = {  type = infrastructure  level = 1 }  }  
 }	
-island_hopping_JAP = {
-	set_variable = { PJ_05 = 0 }
-	set_variable = { PJ_15 = 0 }
-	set_variable = { PJ_60 = 0.6 }
-	if = { limit = { any_country = {axis = yes controls_state = 629 } } add_to_variable = { var = PJ_05 value = -0.02 } add_to_variable = { var = PJ_15 value = 0.05 } add_to_variable = { var = PJ_60 value = 0.2 } }
-	if = { limit = { any_country = {axis = yes controls_state = 631 } } add_to_variable = {	var = PJ_05 value = -0.02 } add_to_variable = { var = PJ_15 value = 0.05 } add_to_variable = { var = PJ_60 value = 0.2 } }
-	if = { limit = { any_country = {axis = yes controls_state = 632 } } add_to_variable = { var = PJ_05 value = -0.02 } add_to_variable = { var = PJ_15 value = 0.05 } add_to_variable = { var = PJ_60 value = 0.2 } }
-	if = { limit = { NOT = { any_country = {axis = yes controls_state = 648 } } } add_to_variable = { var = PJ_05 value = 0.02 } add_to_variable = { var = PJ_15 value = -0.05 } add_to_variable = { var = PJ_60 value = -0.2 } }
-	if = { limit = { NOT = { any_country = {axis = yes controls_state = 645 } } } add_to_variable = { var = PJ_05 value = 0.02 } add_to_variable = { var = PJ_15 value = -0.05 } add_to_variable = { var = PJ_60 value = -0.2 } }
-	if = { limit = { NOT = { any_country = {axis = yes controls_state = 524 } } } add_to_variable = { var = PJ_05 value = 0.02 } add_to_variable = { var = PJ_15 value = -0.05 } add_to_variable = { var = PJ_60 value = -0.2 } }
-}
-island_hopping_USA = {
-	set_variable = { PJU_05 = 0 }	
-	set_variable = { PJU_15 = 0 }
-	set_variable = { PJU_60 = 0.6 }
-	if = { limit = { any_country = {allies = yes controls_state = 648}} add_to_variable = {	var = PJU_05 value = -0.02 } add_to_variable = { var = PJU_15 value = 0.05 } add_to_variable = { var = PJU_60 value = 0.2 } }
-	if = { limit = { any_country = {allies = yes controls_state = 645}} add_to_variable = {	var = PJU_05 value = -0.02 } add_to_variable = { var = PJU_15 value = 0.05 } add_to_variable = { var = PJU_60 value = 0.2 } }
-	if = { limit = { any_country = {allies = yes controls_state = 524}} add_to_variable = {	var = PJU_05 value = -0.02 } add_to_variable = { var = PJU_15 value = 0.05 } add_to_variable = { var = PJU_60 value = 0.2 } }
-	if = { limit = { NOT = { any_country = {allies = yes controls_state = 629}}} add_to_variable = { var = PJU_05 value = 0.02 } add_to_variable = { var = PJU_15 value = -0.05 } add_to_variable = { var = PJU_60 value = -0.2 }  }
-	if = { limit = { NOT = { any_country = {allies = yes controls_state = 631}}} add_to_variable = { var = PJU_05 value = 0.02 } add_to_variable = { var = PJU_15 value = -0.05 } add_to_variable = { var = PJU_60 value = -0.2 } }
-	if = { limit = { NOT = { any_country = {allies = yes controls_state = 632}}} add_to_variable = { var = PJU_05 value = 0.02 } add_to_variable = { var = PJU_15 value = -0.05 } add_to_variable = { var = PJU_60 value = -0.2 } }
-}
 SOV_Barb_debuff_effect = {
 	add_to_variable	= { var = SOV_barb_attack_debuff value = 0.005 }
 #	add_to_variable = { var = SOV_barb_defence_debuff value = 0.005 }
@@ -3179,6 +3201,144 @@ Atlantikwall_modifier_effect = {
 	if = { limit = { date > 1942.10.01 } add_to_variable = { var = GER.Atlantikwall_dig_in_modifier value = -1 } add_to_variable = { var = GER.Atlantikwall_invasion_penalty_modifier value = -0.05 } }
 	if = { limit = { check_variable = { GER.Atlantikwall_dig_in_modifier < 0 } } every_state = { remove_dynamic_modifier = { modifier = Atlantikwall_modifier } } }
 }
+pacific_war_japan = {
+	set_variable = { PWJ_consumer_goods_factor = 0 }
+	set_variable = { PWJ_war_support_factor = 0 }
+	set_variable = { PWJ_stability_factor = 0 }
+	set_variable = { PWJ_army_core_attack_factor = 1 }
+	set_variable = { PWJ_army_core_defence_factor = 1 }
+
+	#major - islands against usa
+	if = { limit = { any_country = {axis = yes controls_state = 638 } } add_to_variable = { var = PWJ_army_core_attack_factor value = 0.1 } add_to_variable = { var = PWJ_army_core_defence_factor value = 0.1 } add_to_variable = { var = PWJ_consumer_goods_factor value = -0.05 } add_to_variable = { var = PWJ_war_support_factor value = 0.05 } add_to_variable = { var = PWJ_stability_factor value = 0.05 } }
+	if = { limit = { any_country = {axis = yes controls_state = 632 } } add_to_variable = { var = PWJ_army_core_attack_factor value = 0.1 } add_to_variable = { var = PWJ_army_core_defence_factor value = 0.1 } add_to_variable = { var = PWJ_consumer_goods_factor value = -0.05 } add_to_variable = { var = PWJ_war_support_factor value = 0.05 } add_to_variable = { var = PWJ_stability_factor value = 0.05 } }
+	if = { limit = { any_country = {axis = yes controls_state = 631 } } add_to_variable = { var = PWJ_army_core_attack_factor value = 0.1 } add_to_variable = { var = PWJ_army_core_defence_factor value = 0.1 } add_to_variable = { var = PWJ_consumer_goods_factor value = -0.05 } add_to_variable = { var = PWJ_war_support_factor value = 0.05 } add_to_variable = { var = PWJ_stability_factor value = 0.05 } }
+	if = { limit = { any_country = {axis = yes controls_state = 630 } } add_to_variable = { var = PWJ_army_core_attack_factor value = 0.1 } add_to_variable = { var = PWJ_army_core_defence_factor value = 0.1 } add_to_variable = { var = PWJ_consumer_goods_factor value = -0.05 } add_to_variable = { var = PWJ_war_support_factor value = 0.05 } add_to_variable = { var = PWJ_stability_factor value = 0.05 } }
+	if = { limit = { any_country = {axis = yes controls_state = 629 } } add_to_variable = { var = PWJ_army_core_attack_factor value = 0.1 } add_to_variable = { var = PWJ_army_core_defence_factor value = 0.1 } add_to_variable = { var = PWJ_consumer_goods_factor value = -0.05 } add_to_variable = { var = PWJ_war_support_factor value = 0.05 } add_to_variable = { var = PWJ_stability_factor value = 0.05 } }
+	#minor - only core attack/defence
+	if = { limit = { any_country = {axis = yes controls_state = 327 } } add_to_variable = { var = PWJ_army_core_attack_factor value = 0.1 } add_to_variable = { var = PWJ_army_core_defence_factor value = 0.1 } }
+	if = { limit = { any_country = {axis = yes controls_state = 336 } } add_to_variable = { var = PWJ_army_core_attack_factor value = 0.1 } add_to_variable = { var = PWJ_army_core_defence_factor value = 0.1 } }
+	if = { limit = { any_country = {axis = yes controls_state = 335 } } add_to_variable = { var = PWJ_army_core_attack_factor value = 0.1 } add_to_variable = { var = PWJ_army_core_defence_factor value = 0.1 } }
+	if = { limit = { any_country = {axis = yes controls_state = 334 } } add_to_variable = { var = PWJ_army_core_attack_factor value = 0.1 } add_to_variable = { var = PWJ_army_core_defence_factor value = 0.1 } }
+	if = { limit = { any_country = {axis = yes controls_state = 523 } } add_to_variable = { var = PWJ_army_core_attack_factor value = 0.1 } add_to_variable = { var = PWJ_army_core_defence_factor value = 0.1 } }
+		
+	
+	
+	#major
+	if = { limit = { NOT = { any_country = {axis = yes controls_state = 526 } } } add_to_variable = { var = PWJ_army_core_attack_factor value = -0.1 } add_to_variable = { var = PWJ_army_core_defence_factor value = -0.1 } add_to_variable = { var = PWJ_consumer_goods_factor value = 0.05 } add_to_variable = { var = PWJ_war_support_factor value = -0.05 } add_to_variable = { var = PWJ_stability_factor value = -0.05 } }
+	if = { limit = { NOT = { any_country = {axis = yes controls_state = 524 } } } add_to_variable = { var = PWJ_army_core_attack_factor value = -0.1 } add_to_variable = { var = PWJ_army_core_defence_factor value = -0.1 } add_to_variable = { var = PWJ_consumer_goods_factor value = 0.05 } add_to_variable = { var = PWJ_war_support_factor value = -0.05 } add_to_variable = { var = PWJ_stability_factor value = -0.05 } }
+	if = { limit = { NOT = { any_country = {axis = yes controls_state = 645 } } } add_to_variable = { var = PWJ_army_core_attack_factor value = -0.1 } add_to_variable = { var = PWJ_army_core_defence_factor value = -0.1 } add_to_variable = { var = PWJ_consumer_goods_factor value = 0.05 } add_to_variable = { var = PWJ_war_support_factor value = -0.05 } add_to_variable = { var = PWJ_stability_factor value = -0.05 } }
+	if = { limit = { NOT = { any_country = {axis = yes controls_state = 646 } } } add_to_variable = { var = PWJ_army_core_attack_factor value = -0.1 } add_to_variable = { var = PWJ_army_core_defence_factor value = -0.1 } add_to_variable = { var = PWJ_consumer_goods_factor value = 0.05 } add_to_variable = { var = PWJ_war_support_factor value = -0.05 } add_to_variable = { var = PWJ_stability_factor value = -0.05 } }
+	if = { limit = { NOT = { any_country = {axis = yes controls_state = 648 } } } add_to_variable = { var = PWJ_army_core_attack_factor value = -0.1 } add_to_variable = { var = PWJ_army_core_defence_factor value = -0.1 } add_to_variable = { var = PWJ_consumer_goods_factor value = 0.05 } add_to_variable = { var = PWJ_war_support_factor value = -0.05 } add_to_variable = { var = PWJ_stability_factor value = -0.05 } }
+	#minor - only core attack/defence
+	if = { limit = { NOT = { any_country = {axis = yes controls_state = 684 } } } add_to_variable = { var = PWJ_army_core_attack_factor value = -0.1 } add_to_variable = { var = PWJ_army_core_defence_factor value = -0.1 } }
+	if = { limit = { NOT = { any_country = {axis = yes controls_state = 647 } } } add_to_variable = { var = PWJ_army_core_attack_factor value = -0.1 } add_to_variable = { var = PWJ_army_core_defence_factor value = -0.1 } }
+	if = { limit = { NOT = { any_country = {axis = yes controls_state = 684 } } } add_to_variable = { var = PWJ_army_core_attack_factor value = -0.1 } add_to_variable = { var = PWJ_army_core_defence_factor value = -0.1 } }
+	if = { limit = { NOT = { any_country = {axis = yes controls_state = 633 } } } add_to_variable = { var = PWJ_army_core_attack_factor value = -0.1 } add_to_variable = { var = PWJ_army_core_defence_factor value = -0.1 } }
+	if = { limit = { NOT = { any_country = {axis = yes controls_state = 555 } } } add_to_variable = { var = PWJ_army_core_attack_factor value = -0.1 } add_to_variable = { var = PWJ_army_core_defence_factor value = -0.1 } }
+
+	if = {	
+		limit = { 
+			has_game_rule = { 
+				rule = CASUAL_STUFF 
+				option = CASUAL_STUFF_OFF 
+			} 
+		}
+		set_variable = { PWJ_consumer_goods_factor = 0 }
+		set_variable = { PWJ_war_support_factor = 0 }
+		set_variable = { PWJ_stability_factor = 0 }		
+	}	
+}
+
+pacific_war_USA = {
+	set_variable = { PWUSA_consumer_goods_factor = 0 }
+	set_variable = { PWUSA_war_support_factor = 0 }
+	set_variable = { PWUSA_stability_factor = 0 }
+	set_variable = { PWUSA_army_core_attack_factor = 1 }
+	set_variable = { PWUSA_army_core_defence_factor = 1 }
+
+	#major - islands against usa 
+	if = { limit = { any_country = { allies = yes controls_state = 526 } } add_to_variable = { var = PWUSA_army_core_attack_factor value = 0.1 } add_to_variable = { var = PWUSA_army_core_defence_factor value = 0.1 } add_to_variable = { var = PWUSA_consumer_goods_factor value = -0.05 } add_to_variable = { var = PWUSA_war_support_factor value = 0.05 } add_to_variable = { var = PWUSA_stability_factor value = 0.05 } }
+	if = { limit = { any_country = { allies = yes controls_state = 524 } } add_to_variable = { var = PWUSA_army_core_attack_factor value = 0.1 } add_to_variable = { var = PWUSA_army_core_defence_factor value = 0.1 } add_to_variable = { var = PWUSA_consumer_goods_factor value = -0.05 } add_to_variable = { var = PWUSA_war_support_factor value = 0.05 } add_to_variable = { var = PWUSA_stability_factor value = 0.05 } }
+	if = { limit = { any_country = { allies = yes controls_state = 645 } } add_to_variable = { var = PWUSA_army_core_attack_factor value = 0.1 } add_to_variable = { var = PWUSA_army_core_defence_factor value = 0.1 } add_to_variable = { var = PWUSA_consumer_goods_factor value = -0.05 } add_to_variable = { var = PWUSA_war_support_factor value = 0.05 } add_to_variable = { var = PWUSA_stability_factor value = 0.05 } }
+	if = { limit = { any_country = { allies = yes controls_state = 646 } } add_to_variable = { var = PWUSA_army_core_attack_factor value = 0.1 } add_to_variable = { var = PWUSA_army_core_defence_factor value = 0.1 } add_to_variable = { var = PWUSA_consumer_goods_factor value = -0.05 } add_to_variable = { var = PWUSA_war_support_factor value = 0.05 } add_to_variable = { var = PWUSA_stability_factor value = 0.05 } }
+	if = { limit = { any_country = { allies = yes controls_state = 648 } } add_to_variable = { var = PWUSA_army_core_attack_factor value = 0.1 } add_to_variable = { var = PWUSA_army_core_defence_factor value = 0.1 } add_to_variable = { var = PWUSA_consumer_goods_factor value = -0.05 } add_to_variable = { var = PWUSA_war_support_factor value = 0.05 } add_to_variable = { var = PWUSA_stability_factor value = 0.05 } }
+	#minor - only core attack/defence
+	if = { limit = { any_country = { allies = yes controls_state = 684 } } add_to_variable = { var = PWUSA_army_core_attack_factor value = 0.1 } add_to_variable = { var = PWUSA_army_core_defence_factor value = 0.1 } }
+	if = { limit = { any_country = { allies = yes controls_state = 647 } } add_to_variable = { var = PWUSA_army_core_attack_factor value = 0.1 } add_to_variable = { var = PWUSA_army_core_defence_factor value = 0.1 } }
+	if = { limit = { any_country = { allies = yes controls_state = 684 } } add_to_variable = { var = PWUSA_army_core_attack_factor value = 0.1 } add_to_variable = { var = PWUSA_army_core_defence_factor value = 0.1 } }
+	if = { limit = { any_country = { allies = yes controls_state = 633 } } add_to_variable = { var = PWUSA_army_core_attack_factor value = 0.1 } add_to_variable = { var = PWUSA_army_core_defence_factor value = 0.1 } }
+	if = { limit = { any_country = { allies = yes controls_state = 555 } } add_to_variable = { var = PWUSA_army_core_attack_factor value = 0.1 } add_to_variable = { var = PWUSA_army_core_defence_factor value = 0.1 } }
+		
+
+
+	#major
+	if = { limit = { NOT = { any_country = { allies = yes controls_state = 638 } } } add_to_variable = { var = PWUSA_army_core_attack_factor value = -0.1 } add_to_variable = { var = PWUSA_army_core_defence_factor value = -0.1 } add_to_variable = { var = PWUSA_consumer_goods_factor value = 0.05 } add_to_variable = { var = PWUSA_war_support_factor value = -0.05 } add_to_variable = { var = PWUSA_stability_factor value = -0.05 } }
+	if = { limit = { NOT = { any_country = { allies = yes controls_state = 632 } } } add_to_variable = { var = PWUSA_army_core_attack_factor value = -0.1 } add_to_variable = { var = PWUSA_army_core_defence_factor value = -0.1 } add_to_variable = { var = PWUSA_consumer_goods_factor value = 0.05 } add_to_variable = { var = PWUSA_war_support_factor value = -0.05 } add_to_variable = { var = PWUSA_stability_factor value = -0.05 } }
+	if = { limit = { NOT = { any_country = { allies = yes controls_state = 631 } } } add_to_variable = { var = PWUSA_army_core_attack_factor value = -0.1 } add_to_variable = { var = PWUSA_army_core_defence_factor value = -0.1 } add_to_variable = { var = PWUSA_consumer_goods_factor value = 0.05 } add_to_variable = { var = PWUSA_war_support_factor value = -0.05 } add_to_variable = { var = PWUSA_stability_factor value = -0.05 } }
+	if = { limit = { NOT = { any_country = { allies = yes controls_state = 630 } } } add_to_variable = { var = PWUSA_army_core_attack_factor value = -0.1 } add_to_variable = { var = PWUSA_army_core_defence_factor value = -0.1 } add_to_variable = { var = PWUSA_consumer_goods_factor value = 0.05 } add_to_variable = { var = PWUSA_war_support_factor value = -0.05 } add_to_variable = { var = PWUSA_stability_factor value = -0.05 } }
+	if = { limit = { NOT = { any_country = { allies = yes controls_state = 629 } } } add_to_variable = { var = PWUSA_army_core_attack_factor value = -0.1 } add_to_variable = { var = PWUSA_army_core_defence_factor value = -0.1 } add_to_variable = { var = PWUSA_consumer_goods_factor value = 0.05 } add_to_variable = { var = PWUSA_war_support_factor value = -0.05 } add_to_variable = { var = PWUSA_stability_factor value = -0.05 } }
+	#minor - only core attack/defence
+	if = { limit = { NOT = { any_country = { allies = yes controls_state = 327 } } } add_to_variable = { var = PWUSA_army_core_attack_factor value = -0.1 } add_to_variable = { var = PWUSA_army_core_defence_factor value = -0.1 } }
+	if = { limit = { NOT = { any_country = { allies = yes controls_state = 336 } } } add_to_variable = { var = PWUSA_army_core_attack_factor value = -0.1 } add_to_variable = { var = PWUSA_army_core_defence_factor value = -0.1 } }
+	if = { limit = { NOT = { any_country = { allies = yes controls_state = 335 } } } add_to_variable = { var = PWUSA_army_core_attack_factor value = -0.1 } add_to_variable = { var = PWUSA_army_core_defence_factor value = -0.1 } }
+	if = { limit = { NOT = { any_country = { allies = yes controls_state = 334 } } } add_to_variable = { var = PWUSA_army_core_attack_factor value = -0.1 } add_to_variable = { var = PWUSA_army_core_defence_factor value = -0.1 } }
+	if = { limit = { NOT = { any_country = { allies = yes controls_state = 523 } } } add_to_variable = { var = PWUSA_army_core_attack_factor value = -0.1 } add_to_variable = { var = PWUSA_army_core_defence_factor value = -0.1 } }
+
+	if = {	
+		limit = { 
+			has_game_rule = { 
+				rule = CASUAL_STUFF 
+				option = CASUAL_STUFF_OFF 
+			} 
+		}
+		set_variable = { PWUSA_consumer_goods_factor = 0 }
+		set_variable = { PWUSA_war_support_factor = 0 }
+		set_variable = { PWUSA_stability_factor = 0 }		
+	}	
+}
+
+pacific_war_allies = {
+	set_variable = { PWA_army_core_attack_factor = 0.5 }
+	set_variable = { PWA_army_core_defence_factor = 0.5 }
+
+	#minor - only core attack/defence
+	if = { limit = { any_country = { allies = yes controls_state = 684 } } add_to_variable = { var = PWA_army_core_attack_factor value = 0.1 } add_to_variable = { var = PWA_army_core_defence_factor value = 0.1 } }
+	if = { limit = { any_country = { allies = yes controls_state = 647 } } add_to_variable = { var = PWA_army_core_attack_factor value = 0.1 } add_to_variable = { var = PWA_army_core_defence_factor value = 0.1 } }
+	if = { limit = { any_country = { allies = yes controls_state = 684 } } add_to_variable = { var = PWA_army_core_attack_factor value = 0.1 } add_to_variable = { var = PWA_army_core_defence_factor value = 0.1 } }
+	if = { limit = { any_country = { allies = yes controls_state = 633 } } add_to_variable = { var = PWA_army_core_attack_factor value = 0.1 } add_to_variable = { var = PWA_army_core_defence_factor value = 0.1 } }
+	if = { limit = { any_country = { allies = yes controls_state = 555 } } add_to_variable = { var = PWA_army_core_attack_factor value = 0.1 } add_to_variable = { var = PWA_army_core_defence_factor value = 0.1 } }
+		
+
+
+	#minor - only core attack/defence
+	if = { limit = { NOT = { any_country = { allies = yes controls_state = 327 } } } add_to_variable = { var = PWA_army_core_attack_factor value = -0.1 } add_to_variable = { var = PWA_army_core_defence_factor value = -0.1 } }
+	if = { limit = { NOT = { any_country = { allies = yes controls_state = 336 } } } add_to_variable = { var = PWA_army_core_attack_factor value = -0.1 } add_to_variable = { var = PWA_army_core_defence_factor value = -0.1 } }
+	if = { limit = { NOT = { any_country = { allies = yes controls_state = 335 } } } add_to_variable = { var = PWA_army_core_attack_factor value = -0.1 } add_to_variable = { var = PWA_army_core_defence_factor value = -0.1 } }
+	if = { limit = { NOT = { any_country = { allies = yes controls_state = 334 } } } add_to_variable = { var = PWA_army_core_attack_factor value = -0.1 } add_to_variable = { var = PWA_army_core_defence_factor value = -0.1 } }
+	if = { limit = { NOT = { any_country = { allies = yes controls_state = 523 } } } add_to_variable = { var = PWA_army_core_attack_factor value = -0.1 } add_to_variable = { var = PWA_army_core_defence_factor value = -0.1 } }	
+}
+
+pacific_war_aallies = {
+	set_variable = { PWAA_army_core_attack_factor = 0.5 }
+	set_variable = { PWAA_army_core_defence_factor = 0.5 }
+
+	#american minors - only core attack/defence
+	if = { limit = { any_country = { allies = yes controls_state = 526 } } add_to_variable = { var = PWAA_army_core_attack_factor value = 0.1 } add_to_variable = { var = PWAA_army_core_defence_factor value = 0.1 } }
+	if = { limit = { any_country = { allies = yes controls_state = 524 } } add_to_variable = { var = PWAA_army_core_attack_factor value = 0.1 } add_to_variable = { var = PWAA_army_core_defence_factor value = 0.1 } }
+	if = { limit = { any_country = { allies = yes controls_state = 645 } } add_to_variable = { var = PWAA_army_core_attack_factor value = 0.1 } add_to_variable = { var = PWAA_army_core_defence_factor value = 0.1 } }
+	if = { limit = { any_country = { allies = yes controls_state = 646 } } add_to_variable = { var = PWAA_army_core_attack_factor value = 0.1 } add_to_variable = { var = PWAA_army_core_defence_factor value = 0.1 } }
+	if = { limit = { any_country = { allies = yes controls_state = 648 } } add_to_variable = { var = PWAA_army_core_attack_factor value = 0.1 } add_to_variable = { var = PWAA_army_core_defence_factor value = 0.1 } }
+		
+
+
+	#american minor - only core attack/defence
+	if = { limit = { NOT = { any_country = { allies = yes controls_state = 638 } } } add_to_variable = { var = PWAA_army_core_attack_factor value = -0.1 } add_to_variable = { var = PWAA_army_core_defence_factor value = -0.1 } }
+	if = { limit = { NOT = { any_country = { allies = yes controls_state = 632 } } } add_to_variable = { var = PWAA_army_core_attack_factor value = -0.1 } add_to_variable = { var = PWAA_army_core_defence_factor value = -0.1 } }
+	if = { limit = { NOT = { any_country = { allies = yes controls_state = 631 } } } add_to_variable = { var = PWAA_army_core_attack_factor value = -0.1 } add_to_variable = { var = PWAA_army_core_defence_factor value = -0.1 } }
+	if = { limit = { NOT = { any_country = { allies = yes controls_state = 630 } } } add_to_variable = { var = PWAA_army_core_attack_factor value = -0.1 } add_to_variable = { var = PWAA_army_core_defence_factor value = -0.1 } }
+	if = { limit = { NOT = { any_country = { allies = yes controls_state = 629 } } } add_to_variable = { var = PWAA_army_core_attack_factor value = -0.1 } add_to_variable = { var = PWAA_army_core_defence_factor value = -0.1 } }	
+}
+
 anti_cross_faction_trade_allies = {
 	send_embargo = USA
 	send_embargo = ENG

@@ -647,38 +647,26 @@ on_actions = {
 			if = {  limit = { OR = { is_core_of = SPR state = 118 } } ROOT = { PREV = {  teleport_armies = { to_state = FROM } } }	}
 		}
 	}
+	
 	on_naval_invasion = { effect ={  if = { limit = { spanish_coastline = yes } teleport_armies = {limit = { allies = yes  } to_state = FROM }  PREV = { if = { limit = { SPR = { owns_state = 41 } }transfer_state_to = SPR}  else = { transfer_state_to = GER }  }  } }   }	
-	on_weekly_JAP = {
+
+	on_weekly_SWE = {
 		effect = {
 			if = {
 				limit = {
 					AND = {
 						date > 1941.1.1
-						has_game_rule = { 
-							rule = CASUAL_STUFF 
-							option = CASUAL_STUFF_ON 
-						} 
 					}
 				}
-				JAP = { island_hopping_JAP = yes }
+				JAP = { pacific_war_japan = yes }
+				USA = { pacific_war_USA = yes }
+				SAF = { pacific_war_allies = yes }
+				AST = { pacific_war_allies = yes }			
+				NZL = { pacific_war_allies = yes }
+				MEX = { pacific_war_aallies = yes }
+				CAN = { pacific_war_aallies = yes }	
 			}
-		}
-	}
-	on_weekly_USA = {
-		effect = {
-			if = {
-				limit = {
-					AND = {
-						date > 1941.1.1
-						has_game_rule = { 
-							rule = CASUAL_STUFF 
-							option = CASUAL_STUFF_ON 
-						} 
-					}
-				}
-				USA = { island_hopping_USA = yes }
-			}
-		}
+		}		
 	}
 	on_monthly_SOV = {
 		effect = {

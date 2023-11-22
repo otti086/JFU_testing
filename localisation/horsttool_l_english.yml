@@ -1329,7 +1329,10 @@
  EFR_defense_plan:0 "Bulwark of France"
  GER_endsieg:0 "Total War"
  GER_endsieg_desc:0 "Wollt ihr den totalen Krieg? - Ja"
- 
+ pacific_war_japan:0 "Pacific War" 
+ pacific_war_USA:0 "Pacific War" 
+ pacific_war_allies:0 "Pacific War" 
+ pacific_war_aallies:0 "Pacific War"
  #country flags
 
  EFR_torch_declared:0 "Torch has been declared" 
