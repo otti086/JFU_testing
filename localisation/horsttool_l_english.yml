@@ -799,7 +799,30 @@
  ire_nationalism_focus_desc:0 "Our nation is unique, and our political achievements could only have happened here. We must fight for it at any cost."
  ire_ideological_fanaticism:0 "Ideological Fanaticism"
  ire_ideological_fanaticism_desc:0 "Our politically established values and goals are worth dying for as much as any ancient faith. Any follower should be prepared to face death, and those who stray better be prepared to face death."
- 
+ aus_industrial_effort:0 "Industrial Effort"
+ aus_industrial_effort_desc:0 "Focus all our political efforts on building up the civilian industry in a great leap forward."
+ aus_industrial_effort_2:0 "Industrial Effort II"
+ aus_industrial_effort_2_desc:0 "With iron will and a relentless work ethic, we can mobilize the people in another great industrial effort."
+ aus_construction_effort:0 "Construction Effort"
+ aus_construction_effort_tt:0 "Not enough building slots for §YCivilian Factories§!"
+ aus_construction_effort_desc:0 "Civilian industrial capacity must not be underestimated even when war looms over the world."
+ aus_production_effort:0 "Armament Effort"
+ aus_production_effort_tt:0 "Not enough building slots for §YMilitary Factory§!"
+ aus_production_effort_desc:0 "If you can build tractors, you can build tanks! We must not allow our military production capacity to lag behind."
+ aus_construction_effort_2:0 "Construction Effort II"
+ aus_construction_effort_2_desc:0 "Continuing to expand our factories will allow us to speed up production of goods for trade and further construction efforts."
+ aus_production_effort_2:0 "Armament Effort II"
+ aus_production_effort_2_desc:0 "Trying to adapt civilian factories to produce military equipment is inefficient. We should focus on preparing military production now."
+ aus_production_effort_3:0 "Armament Effort III"
+ aus_production_effort_3_desc:0 "Continued efforts to expand our military factories are necessary to meet the demands for new equipment."
+ aus_infrastructure_effort:0 "Infrastructure Effort"
+ aus_infrastructure_effort_desc:0 "A country without proper infrastructure cannot pursue advanced projects or constructions."
+ aus_infrastructure_effort_tt:0 "Not enough building slots for §YInfrastructure§!"
+ aus_infrastructure_effort_2:0 "Infrastructure Effort II"
+ aus_infrastructure_effort_2_desc:0 "Extending our infrastructure further will enable the transports and communications necessary for high-tech clandestine projects." 
+
+
+
  EFR_fascism:0 "Vichy France"
  EFR_fascism_DEF:0 "Vichy France"
  ITA_SRI:0 "Italian Socialist Republic"
@@ -1215,7 +1238,8 @@
  GER_amerikabomber:0 "The Amerikabomber"
  GER_amerikabomber_desc:0 "By bombing out the industrial heartland of the USA we can divert American civilian and military industry towards the heartland, isolating Britain for a second aerial battle."
  endsieg_states:0 "We lost controll of at least 1 state in @POL§YPoland§!, @FRA§YFrance§! or god forbid in the Reich itself"
- 
+ GEN_the_kings_guard_1a_tt:0 "Modify template cap of §YFascist Militia§! by §G+16§!."
+ GEN_the_kings_guard_1b_tt:0 "Create §Y8 Fascist Militia§! divisions in §Y[THIS.GetName]§!." 
 
  #ideas
 
@@ -1253,6 +1277,7 @@
  GER_triumph_in_africa:0 "Triumph in Africa"
  GER_the_blitzkrieg:0 "The Blitzkrieg"
  ai_limiter:0 "AI Limiter"
+
  #decisions
 
  GER_fall_gelb:0 "§gFall§! §YGelb (Belgium and Netherlands)§!"
@@ -1330,11 +1355,11 @@
  GER_endsieg:0 "Total War"
  GER_endsieg_desc:0 "Wollt ihr den totalen Krieg? - Ja"
  pacific_war_japan:0 "Pacific War" 
- pacific_war_japan_desc:0 "If we lose control of any Island we will gradually lose the Pacific War \nPacific War Islands Japan: §YMarshall Islands, Caroline Islands, Palau, Kuril Islands, Hainan, Saipan, Marcus Islands, Iwo Jima, Formosa, Okinawa§!."
+ pacific_war_japan_desc:0 "If we lose control of our Island our Homelands will be threatened \nPacific War Islands Japan: §YMarshall Islands, Caroline Islands, Palau, Kuril Islands, Hainan, Saipan, Marcus Islands, Iwo Jima, Formosa, Okinawa§!."
  pacific_war_USA:0 "Pacific War" 
- pacific_war_USA_desc:0 "If we lose control of our Islands we will gradually lose the Pacific War \nPacific War Islands USA: §YGuam, Wake, Midway Islands, Johnston Atoll, Hawaii§!.\nSouth east asian states: §YManila, Singapur, Kalimantan, Java, Papua§!."
+ pacific_war_USA_desc:0 "If we lose control of our Islands our Homelands will be threatened \nPacific War Islands USA: §YGuam, Wake, Midway Islands, Johnston Atoll, Hawaii§!.\nSouth east asian states: §YManila, Singapur, Kalimantan, Java, Papua§!."
  pacific_war_allies:0 "Pacific War" 
- pacific_war_allies_desc:0 "If we lose controll of South East Asia our Homelands will be threatened \nPacific War States @AST @NZL @SAF: §YGuam, Wake, Midway Islands, Johnston Atoll, Hawaii§!"
+ pacific_war_allies_desc:0 "If we lose controll of South East Asia our Homelands will be threatened \nPacific War States @AST @NZL @SAF: §YManila, Singapur, Kalimantan, Java, Papua§!"
  pacific_war_aallies:0 "Pacific War"
  pacific_war_aallies_desc:0 "If we lose controll of the pacific islands our Homelands will be threatened \nPacific War States @CAN @MEX: §YGuam, Wake, Midway Islands, Johnston Atoll, Hawaii§!"
  SOV_BARB_Debuff:0 "Suprise Attack"
@@ -1377,8 +1402,7 @@
  wtt_manchukou.11.M:0 "Invest in our Military Industry"
  wtt_manchukou.11.F:0 "Focus on our Fleet"
 
- nor_bad_debuffs:0 "Norway Debuff"
- nor_bad_debuffs2:0 "Not ready for the German Attack"
+ NOR_NO_DEF:0 "Not ready for the German Attack"
  NOR_army_buffs:0 "Ruge's Plan"
  NOR_army_buffs2:0 "Expand the Ruge's Plan"
  NOR_spec_ops:0 "Fleischer's Plan"

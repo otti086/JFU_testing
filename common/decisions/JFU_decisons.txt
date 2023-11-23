@@ -1515,7 +1515,7 @@ JFU_decisions = {
 	"Support France" = {
 		icon = eng_install_government
 		allowed = { original_tag = ENG }
-		days_remove = 60
+		days_remove = 120
 
 		available = {NOT = { FRA = { owns_state = 16 }}  check_variable = { FRA.FRA_legitimacy < 100 }
 						FRA = { has_country_flag = france_is_kill}}

@@ -5551,15 +5551,6 @@ focus_tree = {
 		relative_position_id = ITA_incrociatori_pesanti
 		cost = 5
 		available = {
-			if = { # MTG tech
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				has_tech = early_ship_hull_carrier
-			}
-			else = { #Non-MTG tech
-				has_tech = early_carrier
-			}
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH}
@@ -5611,9 +5602,9 @@ focus_tree = {
 						version_name = "Aquila Class"
 					}
 					name = "Aquila"
-					requested_factories = 2
+					requested_factories = 10
 					progress = 0.45
-					amount = 1
+					amount = 2
 				}
 			}
 

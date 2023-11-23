@@ -1235,31 +1235,9 @@ RAJ_industrialized_personnel = {
 	state_resources_factor = 0.15
 	state_production_speed_buildings_factor = 0.15
 }
-pacific_states_JAP = {
-	enable = { always = yes }
-	icon = jap_interservice_rivalry_balanced
-	
-	consumer_goods_factor = PJ_05
-	political_power_gain = PJ_15
-	war_support_factor = PJ_15
-	stability_factor = PJ_15
-	army_core_attack_factor = PJ_60
-	army_core_defence_factor = PJ_60
-}
-pacific_states_USA = {
-	enable = { always = yes }
-	icon = jap_interservice_rivalry_balanced
-
-	consumer_goods_factor = PJU_05
-	political_power_gain = PJU_15
-	war_support_factor = PJU_15
-	stability_factor = PJU_15
-	army_core_attack_factor = PJU_60
-	army_core_defence_factor = PJU_60
-}
 pacific_war_japan = {
 	enable = { always = yes }
-	icon = jap_interservice_rivalry_balanced
+	icon = GFX_idea_generic_fortify_the_borders
 	
 	consumer_goods_factor = PWJ_consumer_goods_factor
 	war_support_factor = PWJ_war_support_factor
@@ -1269,7 +1247,7 @@ pacific_war_japan = {
 }
 pacific_war_USA = {
 	enable = { always = yes }
-	icon = jap_interservice_rivalry_balanced
+	icon = GFX_idea_generic_fortify_the_borders
 
 	consumer_goods_factor = PWUSA_consumer_goods_factor
 	war_support_factor = PWUSA_war_support_factor
@@ -1279,14 +1257,14 @@ pacific_war_USA = {
 }
 pacific_war_allies = {
 	enable = { always = yes }
-	icon = jap_interservice_rivalry_balanced
+	icon = GFX_idea_generic_fortify_the_borders
 
 	army_core_attack_factor = PWA_army_core_attack_factor
 	army_core_defence_factor = PWA_army_core_defence_factor
 }
 pacific_war_aallies = {
 	enable = { always = yes }
-	icon = jap_interservice_rivalry_balanced
+	icon = GFX_idea_generic_fortify_the_borders
 
 	army_core_attack_factor = PWAA_army_core_attack_factor
 	army_core_defence_factor = PWAA_army_core_defence_factor

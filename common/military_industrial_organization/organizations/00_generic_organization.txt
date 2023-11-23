@@ -768,7 +768,7 @@ generic_medium_tank_organization = {
 		}
 		
 		production_bonus = {
-			production_capacity_factor = 0.05
+			production_capacity_factor = 0.02
 		}
 	}
 
@@ -872,7 +872,7 @@ generic_medium_tank_organization = {
 		relative_position_id = generic_mio_trait_power_traverse
 		
 		production_bonus = {
-			production_capacity_factor = 0.05
+			production_capacity_factor = 0.03
 		}
 	}
 
@@ -6193,49 +6193,7 @@ generic_artillery_organization = {
 	icon = GFX_idea_generic_artillery_manufacturer_2
 
 	allowed = {
-		NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = USA tag = JAP tag = BEL tag = CZE tag = ROM tag = MEX } }
-		NOT = {
-			AND = {
-				tag = POL
-				OR = {
-					has_dlc = "Poland: United and Ready"
-					has_dlc = "No Step Back"
-				}
-			}
-		}
-		NOT = {
-			AND = {
-				OR = {tag = RAJ}
-				has_dlc = "Together for Victory"
-			}
-		}
-		NOT = {
-			AND = {
-				OR = {
-					is_literally_china = yes
-					tag = MAN
-				}
-				has_dlc = "Waking the Tiger"
-			}
-		}
-		NOT = {
-			AND = {
-				tag = HOL
-				has_dlc = "Man the Guns"
-			}
-		}
-		NOT = {
-			AND = {
-				OR = { tag = SPR tag = POR}
-				has_dlc = "La Resistance"
-			}
-		}
-		NOT = {
-			AND = {
-				OR = { tag = BUL }
-				has_dlc = "Battle for the Bosporus"
-			}
-		}
+		NOT = { OR = { tag = BUL tag = SPR tag = RAJ tag = HOL tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = USA tag = JAP tag = BEL tag = CZE tag = ROM tag = MEX } }
 		NOT = {
 			AND = {
 				OR = { tag = FIN tag = NOR tag = DEN tag = SWE }
@@ -6555,32 +6513,8 @@ generic_infantry_equipment_organization = {
 		NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = BEL tag = CZE tag = HUN tag = YUG tag = ROM tag = MEX } }
 		NOT = {
 			AND = {
-				tag = POL
-				OR = {
-					has_dlc = "Poland: United and Ready"
-					has_dlc = "No Step Back"
-				}
-			}
-		}
-		NOT = {
-			AND = {
 				OR = { tag = AST tag = CAN tag = RAJ }
 				has_dlc = "Together for Victory"
-			}
-		}
-		NOT = {
-			AND = {
-				OR = {
-					is_literally_china = yes
-					tag = MAN
-				}
-				has_dlc = "Waking the Tiger"
-			}
-		}
-		NOT = {
-			AND = {
-				tag = HOL
-				has_dlc = "Man the Guns"
 			}
 		}
 		NOT = {
@@ -6591,7 +6525,7 @@ generic_infantry_equipment_organization = {
 		}
 		NOT = {
 			AND = {
-				OR = { tag = BUL tag = GRE }
+				OR = { tag = BUL }
 				has_dlc = "Battle for the Bosporus"
 			}
 		}
@@ -7155,7 +7089,7 @@ generic_motorized_mechanized_organization = {
 	icon = GFX_idea_generic_motorized_equipment_manufacturer_3
 
 	allowed = {
-		NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CZE tag = POL tag = ROM tag = MEX tag = CHI tag = MAN tag = HOL tag = SPR tag = BUL tag = GRE } }
+		NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CZE tag = POL tag = ROM tag = MEX tag = CHI tag = HOL tag = SPR tag = BUL tag = GRE } }
 		NOT = {
 			AND = {
 				OR = { tag = FIN tag = NOR tag = DEN tag = SWE }

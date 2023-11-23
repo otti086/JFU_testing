@@ -469,13 +469,8 @@ SOV_mytishchy_machine_building_plant_organization = {
 	icon = GFX_idea_SOV_mytishchy_machine_building_plant
 	
 	allowed = {	
-		OR = {
-			tag = SOV
-			AND = {
-				tag = ETH 
-				has_dlc = "By Blood Alone"
-			}
-		}
+		tag = SOV
+		always = no
 	}
 
 	available = {
