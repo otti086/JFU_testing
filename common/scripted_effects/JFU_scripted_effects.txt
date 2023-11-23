@@ -672,6 +672,7 @@ JFU_startup_on_action = {
 	if = {	limit = { has_game_rule = { rule = JFU_AFRICA_TILES option = ONE_TILE_AFRICA } } SWE = { transfer_state = 909 } SWE = { transfer_state = 910 } SWE = { transfer_state = 911 } }
 	if = {	limit = { has_game_rule = { rule = JFU_YUGO_COLAB option = FREE_COLAB_YUGO } } set_global_flag = YUGO_FREE_COLAB_FLAG }
 	if = {	limit = { has_game_rule = { rule = JFU_pre_sets option = COMPETITIVE_JFU } } set_global_flag = YUGO_FREE_COLAB_FLAG }
+	if = { limit = { NOT = { has_game_rule = { rule = JFU_SPAIN option = SPAIN_NO_CW } } } SPR_airports = yes }	
 	if = {
 		limit = { 
 			OR = {
@@ -1017,6 +1018,71 @@ pacifc_war_variables = {
 		set_variable = { PWAA_army_core_defence_factor = 1 }
 	}
 
+}
+SPR_airports = {
+	41 = {
+		set_building_level = {
+			type = air_base
+			level = 6
+			instant_build = yes
+		}			
+	}
+	792 = {
+		set_building_level = {
+			type = air_base
+			level = 1
+			instant_build = yes
+		}			
+	}
+	171 = {
+		set_building_level = {
+			type = air_base
+			level = 1
+			instant_build = yes
+		}			
+	}
+	169 = {
+		set_building_level = {
+			type = air_base
+			level = 3
+			instant_build = yes
+		}			
+	}
+	173 = {
+		set_building_level = {
+			type = air_base
+			level = 4
+			instant_build = yes
+		}			
+	}
+	168 = {
+		set_building_level = {
+			type = air_base
+			level = 2
+			instant_build = yes
+		}			
+	}
+	167 = {
+		set_building_level = {
+			type = air_base
+			level = 3
+			instant_build = yes
+		}			
+	}
+	166 = {
+		set_building_level = {
+			type = air_base
+			level = 3
+			instant_build = yes
+		}			
+	}
+	165 = {
+		set_building_level = {
+			type = air_base
+			level = 2
+			instant_build = yes
+		}			
+	}
 }
 HMP_anti_building_exploit_effect = { #add to horst tool
 	every_state = { limit = { ignore_aa_states = yes non_damaged_building_level  = { building = anti_air_building  level > 5 } } remove_building  = {  type = anti_air_building  level = 1 }  }  
