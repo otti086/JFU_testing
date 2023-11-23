@@ -1330,9 +1330,17 @@
  GER_endsieg:0 "Total War"
  GER_endsieg_desc:0 "Wollt ihr den totalen Krieg? - Ja"
  pacific_war_japan:0 "Pacific War" 
+ pacific_war_japan_desc:0 "If we lose control of any Island we will gradually lose the Pacific War \nPacific War Islands Japan: §YMarshall Islands, Caroline Islands, Palau, Kuril Islands, Hainan, Saipan, Marcus Islands, Iwo Jima, Formosa, Okinawa§!."
  pacific_war_USA:0 "Pacific War" 
+ pacific_war_USA_desc:0 "If we lose control of our Islands we will gradually lose the Pacific War \nPacific War Islands USA: §YGuam, Wake, Midway Islands, Johnston Atoll, Hawaii§!.\nSouth east asian states: §YManila, Singapur, Kalimantan, Java, Papua§!."
  pacific_war_allies:0 "Pacific War" 
+ pacific_war_allies_desc:0 "If we lose controll of South East Asia our Homelands will be threatened \nPacific War States @AST @NZL @SAF: §YGuam, Wake, Midway Islands, Johnston Atoll, Hawaii§!"
  pacific_war_aallies:0 "Pacific War"
+ pacific_war_aallies_desc:0 "If we lose controll of the pacific islands our Homelands will be threatened \nPacific War States @CAN @MEX: §YGuam, Wake, Midway Islands, Johnston Atoll, Hawaii§!"
+ SOV_BARB_Debuff:0 "Suprise Attack"
+
+
+
  #country flags
 
  EFR_torch_declared:0 "Torch has been declared" 
@@ -1352,7 +1360,7 @@
  JAP_agility_focus_trait:0 "Agility Focus"
  JAP_range_focus_trait:0 "Range Focus"
 
- SOV_BARB_Debuff:0 "Suprise Attack"
+
  attache_idea_tt:0 "gains the attache modifiers as long as the recieving country is at war"
  attache_idea:0 "Attache Send"
  Battle_of_the_Buldge:0 "Battle of the Buldge"

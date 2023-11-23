@@ -672,7 +672,7 @@ JFU_startup_on_action = {
 	if = {	limit = { has_game_rule = { rule = JFU_AFRICA_TILES option = ONE_TILE_AFRICA } } SWE = { transfer_state = 909 } SWE = { transfer_state = 910 } SWE = { transfer_state = 911 } }
 	if = {	limit = { has_game_rule = { rule = JFU_YUGO_COLAB option = FREE_COLAB_YUGO } } set_global_flag = YUGO_FREE_COLAB_FLAG }
 	if = {	limit = { has_game_rule = { rule = JFU_pre_sets option = COMPETITIVE_JFU } } set_global_flag = YUGO_FREE_COLAB_FLAG }
-	if = { limit = { NOT = { has_game_rule = { rule = JFU_SPAIN option = SPAIN_NO_CW } } } SPR_airports = yes }	
+	if = { limit = { NOT = { has_game_rule = { rule = JFU_SPAIN option = SPAIN_NO_CW } } } SPR_airports_effect = yes }	
 	if = {
 		limit = { 
 			OR = {
@@ -998,28 +998,28 @@ pacifc_war_variables = {
 		set_variable = { PWUSA_army_core_defence_factor = 1 }
 	}
 	SAF = {
-		set_variable = { PWA_army_core_attack_factor = 1 }
-		set_variable = { PWA_army_core_defence_factor = 1 }
+		set_variable = { PWA_army_core_attack_factor = 0.5 }
+		set_variable = { PWA_army_core_defence_factor = 0.5 }
 	}
 	AST = {
-		set_variable = { PWA_army_core_attack_factor = 1 }
-		set_variable = { PWA_army_core_defence_factor = 1 }
+		set_variable = { PWA_army_core_attack_factor = 0.5 }
+		set_variable = { PWA_army_core_defence_factor = 0.5 }
 	}
 	NZL = {
-		set_variable = { PWA_army_core_attack_factor = 1 }
-		set_variable = { PWA_army_core_defence_factor = 1 }
+		set_variable = { PWA_army_core_attack_factor = 0.5 }
+		set_variable = { PWA_army_core_defence_factor = 0.5 }
 	}
 	MEX = {
-		set_variable = { PWAA_army_core_attack_factor = 1 }
-		set_variable = { PWAA_army_core_defence_factor = 1 }
+		set_variable = { PWAA_army_core_attack_factor = 0.5 }
+		set_variable = { PWAA_army_core_defence_factor = 0.5 }
 	}
 	CAN = {
-		set_variable = { PWAA_army_core_attack_factor = 1 }
-		set_variable = { PWAA_army_core_defence_factor = 1 }
+		set_variable = { PWAA_army_core_attack_factor = 0.5 }
+		set_variable = { PWAA_army_core_defence_factor = 0.5 }
 	}
 
 }
-SPR_airports = {
+SPR_airports_effect = {
 	41 = {
 		set_building_level = {
 			type = air_base
@@ -3298,7 +3298,7 @@ pacific_war_japan = {
 	#minor - only core attack/defence
 	if = { limit = { NOT = { any_country = {axis = yes controls_state = 684 } } } add_to_variable = { var = PWJ_army_core_attack_factor value = -0.1 } add_to_variable = { var = PWJ_army_core_defence_factor value = -0.1 } }
 	if = { limit = { NOT = { any_country = {axis = yes controls_state = 647 } } } add_to_variable = { var = PWJ_army_core_attack_factor value = -0.1 } add_to_variable = { var = PWJ_army_core_defence_factor value = -0.1 } }
-	if = { limit = { NOT = { any_country = {axis = yes controls_state = 684 } } } add_to_variable = { var = PWJ_army_core_attack_factor value = -0.1 } add_to_variable = { var = PWJ_army_core_defence_factor value = -0.1 } }
+	if = { limit = { NOT = { any_country = {axis = yes controls_state = 591 } } } add_to_variable = { var = PWJ_army_core_attack_factor value = -0.1 } add_to_variable = { var = PWJ_army_core_defence_factor value = -0.1 } }
 	if = { limit = { NOT = { any_country = {axis = yes controls_state = 633 } } } add_to_variable = { var = PWJ_army_core_attack_factor value = -0.1 } add_to_variable = { var = PWJ_army_core_defence_factor value = -0.1 } }
 	if = { limit = { NOT = { any_country = {axis = yes controls_state = 555 } } } add_to_variable = { var = PWJ_army_core_attack_factor value = -0.1 } add_to_variable = { var = PWJ_army_core_defence_factor value = -0.1 } }
 

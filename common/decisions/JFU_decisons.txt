@@ -452,6 +452,9 @@ political_actions1 = {
 			}
 			if = { limit = { country_exists = MAN }	MAN = { add_to_war = { targeted_alliance = JAP enemy = CHI } } }
 			add_ideas = JAP_intervene_in_china_5
+			MAN = {
+				add_ideas = JAP_intervene_in_china_5
+			}
 			unlock_decision_tooltip = JAP_china_step_up_war_effort
 			hidden_effect = {
 				country_event = { days = 5 id = news.1 }

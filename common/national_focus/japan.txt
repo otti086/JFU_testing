@@ -622,13 +622,16 @@
 
 		cost = 10
 
+		allow_branch = {
+			716 = {
+				NOT = { is_fully_controlled_by = MAN}
+			}			
+		}
+
 		ai_will_do = {
 			factor = 4
 		}
 		available = {
-			716 = {
-				NOT = { is_fully_controlled_by = MAN}
-			}
 		}
 
 		bypass = {
