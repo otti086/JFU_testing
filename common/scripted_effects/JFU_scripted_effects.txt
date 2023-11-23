@@ -2323,6 +2323,32 @@ pregrinded_effect = {
 			add_unit_leader_trait = logistics_wizard
 		}	
 	}	
+	NOR = {
+		NOR_jacob_hivden_haug = { add_skill_level = 2 }	
+		NOR_jacob_hivden_haug = {
+			add_unit_leader_trait = trickster
+			add_unit_leader_trait = pre_grinded
+			add_unit_leader_trait = guerilla_fighter
+			add_unit_leader_trait = infantry_leader
+			add_unit_leader_trait = infantry_expert	
+			add_unit_leader_trait = naval_invader
+			add_unit_leader_trait = urban_assault_specialist				
+		}
+		NOR_wilhelm_von_tangen_hansteen = { add_skill_level = 1 }		
+		NOR_wilhelm_von_tangen_hansteen = {
+			add_unit_leader_trait = trickster
+			add_unit_leader_trait = pre_grinded
+			add_unit_leader_trait = guerilla_fighter
+			add_unit_leader_trait = infantry_leader
+			add_unit_leader_trait = infantry_expert	
+			add_unit_leader_trait = urban_assault_specialist
+			add_unit_leader_trait = organizer				
+		}
+		NOR_wilhelm_von_tangen_hansteen = { promote_leader = yes }
+		NOR_wilhelm_von_tangen_hansteen = {
+			add_unit_leader_trait = logistics_wizard
+		}	
+	}	
 }
 JFU_update_generals = {
 	MEX = {
@@ -2577,6 +2603,27 @@ JFU_update_generals = {
 		IRE_maurice_gamelin = { add_planning = 4 }
 		IRE_maurice_gamelin = { add_logistics = 3 }
 		IRE_maurice_gamelin = {		
+			add_unit_leader_trait = trait_mountaineer
+			add_unit_leader_trait = aggressive_assaulter
+			add_unit_leader_trait = thorough_planner
+		}
+	}
+	NOR = {
+		NOR_jacob_hivden_haug = { add_attack = 6 }
+		NOR_jacob_hivden_haug = { add_defense = 4 }
+		NOR_jacob_hivden_haug = { add_planning = 3 }
+		NOR_jacob_hivden_haug = { add_logistics = 3 }
+		NOR_jacob_hivden_haug = {
+			add_unit_leader_trait = trait_engineer			
+			add_unit_leader_trait = trait_mountaineer
+			add_unit_leader_trait = fortress_buster
+			add_unit_leader_trait = expert_improviser
+		}
+		NOR_wilhelm_von_tangen_hansteen = { add_attack = 3 }
+		NOR_wilhelm_von_tangen_hansteen = { add_defense = 3 }
+		NOR_wilhelm_von_tangen_hansteen = { add_planning = 2 }
+		NOR_wilhelm_von_tangen_hansteen = { add_logistics = 3 }
+		NOR_wilhelm_von_tangen_hansteen = {		
 			add_unit_leader_trait = trait_mountaineer
 			add_unit_leader_trait = aggressive_assaulter
 			add_unit_leader_trait = thorough_planner
