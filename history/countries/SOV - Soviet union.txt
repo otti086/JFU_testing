@@ -151,6 +151,10 @@ SOV_nikolay_vatutin = { #Priests are not political enemies at this point
 SOV_leonid_govorov = { #Priests are not political enemies at this point
 	set_character_flag = SOV_safe_from_purge_flag
 }
+SOV_semyon_timoshenko = { #Priests are not political enemies at this point
+	set_character_flag = SOV_safe_from_purge_flag
+}
+
 
 ### PROPAGANDA ###
 set_variable = { SOV_new_propaganda_campaign = 0 } #Used to pick a poster slot
