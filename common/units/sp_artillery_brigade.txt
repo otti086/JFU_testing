@@ -32,7 +32,7 @@ sub_units = {
 		training_time = 180
 		weight = 1
 		supply_consumption = 0.42
-
+		soft_attack = 0.3
 		breakthrough = -0.9
 
 		suppression = 1.25
@@ -42,10 +42,12 @@ sub_units = {
 			movement = -0.4
 		}
 		mountain = 	{
-		    attack = -0.1
+			defence = -0.55
+		    attack = -0.45
 		}
 		jungle = {
-		    attack = -0.3
+			defence = -0.5
+		    attack = -0.4
 			movement = -0.4
 		}
 		marsh = {
