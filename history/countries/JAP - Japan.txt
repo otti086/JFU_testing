@@ -20,7 +20,6 @@ add_ideas = {
 	partial_economic_mobilisation
 
 	JAP_zaibatsus
-	JAP_duplicate_research_efforts
 	JAP_militarism
 }
 
