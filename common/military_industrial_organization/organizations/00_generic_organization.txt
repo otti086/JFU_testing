@@ -3933,7 +3933,7 @@ generic_light_aircraft_organization = {
 
 		equipment_bonus = {
 			air_attack = 0.05
-			air_range = 0.1
+			air_range = 0.05
 		}
 	}
 
@@ -4006,6 +4006,7 @@ generic_light_aircraft_organization = {
 		equipment_bonus = {
 			air_agility = 0.05
 			maximum_speed = 0.05
+			air_defence = 0.05	
 		}
 	}
 

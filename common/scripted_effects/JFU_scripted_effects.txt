@@ -2139,7 +2139,7 @@ pregrinded_effect = {
 			add_unit_leader_trait = pre_grinded
 			add_unit_leader_trait = guerilla_fighter
 			add_unit_leader_trait = panzer_leader
-			add_unit_leader_trait = panzer_expert
+			add_unit_leader_trait = combined_arms_expert
 			add_unit_leader_trait = hill_fighter	
 			add_unit_leader_trait = organizer				
 		}
@@ -2172,6 +2172,7 @@ pregrinded_effect = {
 			add_unit_leader_trait = commando	
 		}
 		AST_alan_vasey = { add_skill_level = 1 }
+		AST_alan_vasey = { add_attack = 2 }
 		AST_alan_vasey = {
 			add_unit_leader_trait = trickster
 			add_unit_leader_trait = pre_grinded
@@ -2179,7 +2180,8 @@ pregrinded_effect = {
 			add_unit_leader_trait = panzer_leader
 			add_unit_leader_trait = panzer_expert
 			add_unit_leader_trait = hill_fighter
-			add_unit_leader_trait = guerilla_fighter					
+			add_unit_leader_trait = guerilla_fighter
+			add_unit_leader_trait = expert_improviser					
 		}
 	}
 	BRA = {
@@ -2403,10 +2405,10 @@ JFU_update_generals = {
 			add_unit_leader_trait = aggressive_assaulter
 			add_unit_leader_trait = jungle_rat
 		}
-		AST_leslie_morshead = { add_attack = 4 }
-		AST_leslie_morshead = { add_defense = 3 }
-		AST_leslie_morshead = { add_planning = 2 }
-		AST_leslie_morshead = { add_logistics = 2 }	
+		AST_thomas_blamey = { add_attack = 4 }
+		AST_thomas_blamey = { add_defense = 3 }
+		AST_thomas_blamey = { add_planning = 2 }
+		AST_thomas_blamey = { add_logistics = 2 }	
 		AST_thomas_blamey = {
 			add_unit_leader_trait = hill_fighter
 			add_unit_leader_trait = thorough_planner
@@ -2421,10 +2423,10 @@ JFU_update_generals = {
 			add_unit_leader_trait = fortress_buster	
 			add_unit_leader_trait = trait_mountaineer		
 		}
-		AST_henry_wynter = { add_attack = 5 }
-		AST_henry_wynter = { add_defense = 2 }
-		AST_henry_wynter = { add_planning = 2 }
-		AST_henry_wynter = { add_logistics = 4 }
+		AST_alan_vasey = { add_attack = 3 }
+		AST_alan_vasey = { add_defense = 2 }
+		AST_alan_vasey = { add_planning = 2 }
+		AST_alan_vasey = { add_logistics = 4 }
 		AST_alan_vasey = {
 			add_unit_leader_trait = ranger	
 			add_unit_leader_trait = expert_improviser				
