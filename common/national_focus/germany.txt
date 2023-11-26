@@ -3030,7 +3030,11 @@ focus_tree = {
 		prerequisite = { focus = GER_greater_ger }
 		
 		available = {
-			custom_trigger_tooltip = { tooltip = barb_failed date > 1941.11.22 }
+			AND = {
+				custom_trigger_tooltip = { tooltip = barb_failed date > 1941.11.22 }
+				has_completed_focus = GER_endsieg_1
+			}
+		
 		}
 		
 		x = 0
