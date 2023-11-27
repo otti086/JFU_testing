@@ -731,7 +731,7 @@ ideas = {
 			allowed = {	always = no	}
 			available = {  always = yes  }
 			removal_cost = -1
-			picture = GER_blitzkrieg
+			picture = generic_acquire_tanks
 			cancel={
 				NOT={
 					OR = {
@@ -741,10 +741,11 @@ ideas = {
 				}
 			}
 			modifier = {  
-				army_strength_factor = 0.3 
+#				army_strength_factor = 0.3 
 				supply_consumption_factor = -0.1 
 				army_org_regain = 0.1 
-				supply_node_range = 0.1	
+				supply_node_range = 0.1
+				custom_modifier_tooltip = hp_spirit	
 			}
 #			equipment_bonus = {
 #				small_plane_airframe = {  air_defence = 0.2 instant = yes }
@@ -759,7 +760,8 @@ ideas = {
 			}
 			modifier = {
 				heat_attrition_factor = -0.5  
-				army_strength_factor = 0.3 
+#				army_strength_factor = 0.3 
+				custom_modifier_tooltip = hp_spirit_allies
 			}			
 		}
 

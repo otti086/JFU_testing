@@ -1991,19 +1991,6 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = GER_fall_of_france_tt
 			hidden_effect = {
-				set_technology = { Blitzkrieg_ON = 1 }
-				HUN = { set_technology = { Blitzkrieg_ON = 1 } }
-				SPR = { set_technology = { Blitzkrieg_ON = 1 } }
-				ITA = { set_technology = { Blitzkrieg_ON = 1 } }
-				ROM = { set_technology = { Blitzkrieg_ON = 1 } }
-				ENG = { set_technology = { Blitzkrieg_ON = 1 } }
-				FRA = { set_technology = { Blitzkrieg_ON = 1 } }
-				CAN = { set_technology = { Blitzkrieg_ON = 1 } }
-				SAF = { set_technology = { Blitzkrieg_ON = 1 } }
-				AST = { set_technology = { Blitzkrieg_ON = 1 } }
-				NZL = { set_technology = { Blitzkrieg_ON = 1 } }
-				RAJ = { set_technology = { Blitzkrieg_ON = 1 } }
-				country_event = { id = JFU_events.8 days = 365 }
 			}
 		}
 	}

@@ -1276,6 +1276,10 @@
  GER_pillen_desc:0 "Distributing Pervitin to our troops has significantly improved their endurance in day-to-day combat." 
  GER_triumph_in_africa:0 "Triumph in Africa"
  GER_the_blitzkrieg:0 "The Blitzkrieg"
+ hp_spirit:0 "Tank-HP §G+6§!\nMotorised-HP §G+10§!\nMechanized-HP §G+10§!\nAmphibious-Mechanized-HP §G+10§!"
+ hp_spirit_allies:0 "Tank-HP §G+6§!\nMotorised-HP §G+10§!\nMechanized-HP §G+10§!\nAmphibious-Mechanized-HP §G+10§!"
+ ENG_operation_compass:0 "Operation Compass"
+ ENG_operation_compass_desc:0 ""
  ai_limiter:0 "AI Limiter"
  GER_Barb_supply:0 "Barbarossa Supply Balancer"
 

@@ -466,18 +466,20 @@ country_event = {
 		name = "So it be"
 
 		hidden_effect = {
-			ITA = { add_to_war = { targeted_alliance = GER enemy = ENG } }
-			#GER = { add_timed_idea = { idea = GER_the_blitzkrieg days = 365 } }
-			#SPR = { add_timed_idea = { idea = GER_the_blitzkrieg days = 365 } }
-			#HUN = { add_timed_idea = { idea = GER_the_blitzkrieg days = 365 } }
-			#BUL = { add_timed_idea = { idea = GER_the_blitzkrieg days = 365 } }
-			#ROM = { add_timed_idea = { idea = GER_the_blitzkrieg days = 365 } }
-			#ENG = { add_timed_idea = { idea = ENG_operation_compass days = 365 } }
-			#CAN = { add_timed_idea = { idea = ENG_operation_compass days = 365 } }
-			#SAF = { add_timed_idea = { idea = ENG_operation_compass days = 365 } }
-			#RAJ = { add_timed_idea = { idea = ENG_operation_compass days = 365 } }
-			#AST = { add_timed_idea = { idea = ENG_operation_compass days = 365 } }
-			#NZL = { add_timed_idea = { idea = ENG_operation_compass days = 365 } }
+			ITA = { add_to_war = { targeted_alliance = GER enemy = ENG } add_timed_idea = { idea = GER_the_blitzkrieg days = 365 } set_technology = { Blitzkrieg_ON = 1 } }
+			GER = { add_timed_idea = { idea = GER_the_blitzkrieg days = 365 } set_technology = { Blitzkrieg_ON = 1 popup = no } }
+			SPR = { add_timed_idea = { idea = GER_the_blitzkrieg days = 365 } set_technology = { Blitzkrieg_ON = 1 popup = no } }
+			HUN = { add_timed_idea = { idea = GER_the_blitzkrieg days = 365 } set_technology = { Blitzkrieg_ON = 1 popup = no } }
+			BUL = { add_timed_idea = { idea = GER_the_blitzkrieg days = 365 } set_technology = { Blitzkrieg_ON = 1 popup = no } }
+			ROM = { add_timed_idea = { idea = GER_the_blitzkrieg days = 365 } set_technology = { Blitzkrieg_ON = 1 popup = no } }
+			ENG = { add_timed_idea = { idea = ENG_operation_compass days = 365 } set_technology = { Blitzkrieg_ON = 1 popup = no } }
+			FRA = { add_timed_idea = { idea = ENG_operation_compass days = 365 } set_technology = { Blitzkrieg_ON = 1 popup = no } }
+			CAN = { add_timed_idea = { idea = ENG_operation_compass days = 365 } set_technology = { Blitzkrieg_ON = 1 popup = no } }
+			SAF = { add_timed_idea = { idea = ENG_operation_compass days = 365 } set_technology = { Blitzkrieg_ON = 1 popup = no } }
+			RAJ = { add_timed_idea = { idea = ENG_operation_compass days = 365 } set_technology = { Blitzkrieg_ON = 1 popup = no } }
+			AST = { add_timed_idea = { idea = ENG_operation_compass days = 365 } set_technology = { Blitzkrieg_ON = 1 popup = no } }
+			NZL = { add_timed_idea = { idea = ENG_operation_compass days = 365 } set_technology = { Blitzkrieg_ON = 1 popup = no } }
+			country_event = { id = JFU_events.8 days = 365 }		
 		}
 	}
 }
@@ -782,18 +784,18 @@ country_event = {
 		name = JFU_events.8.a
 
 		hidden_effect = {
-			set_technology = { Blitzkrieg_OFF = 1 }
-			HUN = { set_technology = { Blitzkrieg_OFF = 1 } }
-			SPR = { set_technology = { Blitzkrieg_OFF = 1 } }
-			ITA = { set_technology = { Blitzkrieg_OFF = 1 } }
-			ROM = { set_technology = { Blitzkrieg_OFF = 1 } }
-			ENG = { set_technology = { Blitzkrieg_OFF = 1 } }
-			FRA = { set_technology = { Blitzkrieg_OFF = 1 } }
-			CAN = { set_technology = { Blitzkrieg_OFF = 1 } }
-			SAF = { set_technology = { Blitzkrieg_OFF = 1 } }
-			AST = { set_technology = { Blitzkrieg_OFF = 1 } }
-			NZL = { set_technology = { Blitzkrieg_OFF = 1 } }
-			RAJ = { set_technology = { Blitzkrieg_OFF = 1 } }
+			GER = { set_technology = { Blitzkrieg_OFF = 1 popup = no } }
+			HUN = { set_technology = { Blitzkrieg_OFF = 1 popup = no } }
+			SPR = { set_technology = { Blitzkrieg_OFF = 1 popup = no } }
+			ITA = { set_technology = { Blitzkrieg_OFF = 1 popup = no } }
+			ROM = { set_technology = { Blitzkrieg_OFF = 1 popup = no } }
+			ENG = { set_technology = { Blitzkrieg_OFF = 1 popup = no } }
+			FRA = { set_technology = { Blitzkrieg_OFF = 1 popup = no } }
+			CAN = { set_technology = { Blitzkrieg_OFF = 1 popup = no } }
+			SAF = { set_technology = { Blitzkrieg_OFF = 1 popup = no } }
+			AST = { set_technology = { Blitzkrieg_OFF = 1 popup = no } }
+			NZL = { set_technology = { Blitzkrieg_OFF = 1 popup = no } }
+			RAJ = { set_technology = { Blitzkrieg_OFF = 1 popup = no } }
 		}
 	}
 }
