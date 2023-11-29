@@ -2697,6 +2697,7 @@ SOV_propaganda_campaigns = {
 				has_country_flag = SOV_debug_unlock_propaganda_campaigns_flag #debug
 			}
 			has_dlc = "La Resistance"
+			always = no
 		}
 
 		days_remove = SOV_default_propaganda_campaign_duration
@@ -2778,6 +2779,7 @@ SOV_propaganda_campaigns = {
 				has_completed_focus = SOV_smersh
 				has_country_flag = SOV_debug_unlock_propaganda_campaigns_flag #debug
 			}
+			always = no
 		}
 
 		days_remove = SOV_default_propaganda_campaign_duration
@@ -2864,6 +2866,7 @@ SOV_propaganda_campaigns = {
 				has_completed_focus = SOV_the_komsomol
 				has_country_flag = SOV_debug_unlock_propaganda_campaigns_flag #debug
 			}
+			has_completed_focus = SOV_the_glory_of_the_red_army
 		}
 
 		days_remove = SOV_default_propaganda_campaign_duration
