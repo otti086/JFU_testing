@@ -1049,8 +1049,6 @@
  
  
  #FOCI
- axis_fall_blau:0 "Fall Blau"
- axis_operation_citadelle:0 "Operation Citadelle"
  GER_plan_z_cv:0 "Graf Zeppelin Experiments"
  GER_plan_z_cv_desc:0 ""
  GER_plan_z_bb:0 "Lay Down the Bismarck"
@@ -1177,7 +1175,7 @@
  GER_trade_deal_with_sweden:0 "Trade Deal with Sweden"
  GER_steinercounteroffensive:0 "Steiner's Counter Offensive"
  GER_reorg_civilian2:0 "We need more Eco"
-
+ JAP_armored_divisions_MAN:0 "Manchurian Armor Technology"
  #tooltips
 
 
@@ -1282,7 +1280,8 @@
  ENG_operation_compass_desc:0 ""
  ai_limiter:0 "AI Limiter"
  GER_Barb_supply:0 "Barbarossa Supply Balancer"
-
+ axis_fall_blau:0 "Fall Blau"
+ axis_operation_citadelle:0 "Operation Citadel"
 
  #decisions
 
@@ -1292,11 +1291,12 @@
  GER_weserbung_operation2:0 "Unternehmen Weserübung (Norway)"
  GER_unt_barb:0 "Unternehmen Barbarossa (Soviet Union)"
  GER_fall_blau:0 "§gFall§! §CBlau (Soviet Union)§!"
+ GER_Operation_citadel:0 "Operation §RCitadel§!"
  ENG_permit_saf:0 "Permit an African Mandate for South Africa"
  ENG_permit_saf_desc:0 "Our overseas colonies in the Southern half of Africa are too difficult for us to maintain - we should encourage our dominion, South Africa, to take stewardship of them."
  anti_non_aligned_raids:0 "Anti Non-Aligned Raids"
  anti_non_aligned_raids_desc:0 "We must crack down on Non-Aligned elements in our nation for the sake of long-term domestic stability. Their influence is too great, and may potentially become a problem to the government."
-
+ 
  #techology
 
  desert_tactics_allies:0 "Desert Training"

@@ -698,13 +698,6 @@ focus_tree = {
         	   resource = rubber
         	   amount = 3
         	}
-
-			set_technology = { fuel_refining2 = 1 }
-			set_technology = { fuel_refining3 = 1}
-			ITA = {
-				set_technology = { fuel_refining2 = 1 }
-				set_technology = { fuel_refining3 = 1}				
-			}
 		}
 	}
 

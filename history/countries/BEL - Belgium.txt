@@ -26,7 +26,6 @@ set_technology = {
 	motorised_infantry = 1
 	trench_warfare = 1
 	fuel_silos = 1
-	fuel_refining = 1
 	basic_train = 1
 }
 

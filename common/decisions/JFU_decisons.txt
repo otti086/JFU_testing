@@ -182,7 +182,7 @@ political_actions1 = {
 			set_global_flag = GER_fall_blau
 		}
 	}
-	"Operation Citadelle" = {
+	GER_Operation_citadel = {
 		icon = category_ger_military_buildup
 		fire_only_once = yes	
 		allowed = { tag = GER }
