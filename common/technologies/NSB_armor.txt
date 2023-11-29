@@ -746,8 +746,11 @@ technologies = {
 			modern_tank_destroyer_chassis_1
 			modern_tank_artillery_chassis_1
 			modern_tank_aa_chassis_1
+			
 		}
-
+		enable_equipment_modules = {
+			tank_modern_tank_turret
+		}
 		research_cost = 2.5
 		start_year = 1945
 
