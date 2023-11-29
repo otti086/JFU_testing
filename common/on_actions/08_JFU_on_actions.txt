@@ -299,6 +299,7 @@ on_actions = {
 				}
 				JAP = {
 					add_ideas = peace_training 
+					add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 75000 }
 				}
 				every_country = {
 					remove_ideas = { attache_idea}
