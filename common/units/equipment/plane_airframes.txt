@@ -209,7 +209,6 @@ equipments = {
 			special_type_slot_2 = empty
 		}
 	}
-
 	small_plane_airframe_0 = { #Inter-War
 		abbreviation = "afs0"
 		derived_variant_name = fighter_equipment_0
@@ -227,7 +226,6 @@ equipments = {
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
 	}
-
 	small_plane_airframe_1 = { #Basic
 		abbreviation = "afs1"
 		derived_variant_name = fighter_equipment_1
@@ -408,7 +406,6 @@ equipments = {
 			}
 		}
 	}
-
 	small_plane_airframe_3 = { #Advanced
 		abbreviation = "afs3"
 		derived_variant_name = fighter_equipment_3
@@ -422,7 +419,7 @@ equipments = {
 		maximum_speed = 475
 		air_agility = 50
 		air_defence = 12
-		weight = 4
+		weight = 6
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
 		build_cost_ic = 30
@@ -517,21 +514,8 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
-
-			special_type_slot_4 = {
-				required = no
-				allowed_module_categories = {
-					plane_special_module_small
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_defense_turret
-				}
-			}
 		}
 	}
-
 	small_plane_airframe_4 = { #modern
 		abbreviation = "afs4"
 		derived_variant_name = jet_fighter_equipment_1 # We should use "jet" for this or any of the ones below, but this is good enough for now.
@@ -545,7 +529,7 @@ equipments = {
 		maximum_speed = 500
 		air_agility = 55
 		air_defence = 18
-		weight = 4
+		weight = 6
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
 		build_cost_ic = 36
@@ -657,7 +641,6 @@ equipments = {
 			}
 		}
 	}
-
 	cv_small_plane_airframe = {
 		year = 1933
 
@@ -866,7 +849,6 @@ equipments = {
 			special_type_slot_2 = empty
 		}
 	}
-
 	cv_small_plane_airframe_0 = { #Inter-War
 		abbreviation = "afc0"
 		derived_variant_name = cv_fighter_equipment_0
@@ -886,7 +868,6 @@ equipments = {
 
 		lend_lease_cost = 8
 	}
-
 	cv_small_plane_airframe_1 = { #Basic
 		abbreviation = "afc1"
 		derived_variant_name = cv_fighter_equipment_1
@@ -976,7 +957,7 @@ equipments = {
 		maximum_speed = 450
 		air_agility = 40
 		air_defence = 11
-		weight = 5
+		weight = 6
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
 		build_cost_ic = 35
@@ -1065,7 +1046,6 @@ equipments = {
 			}
 		}
 	}
-
 	cv_small_plane_airframe_3 = { #Advanced
 		abbreviation = "afc3"
 		derived_variant_name = cv_fighter_equipment_3
@@ -1079,7 +1059,7 @@ equipments = {
 		maximum_speed = 475
 		air_agility = 45
 		air_defence = 12
-		weight = 5
+		weight = 6
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
 		build_cost_ic = 38
@@ -1175,7 +1155,6 @@ equipments = {
 			}
 		}
 	}
-
 	cv_small_plane_airframe_4 = { #modern
 		abbreviation = "afc4"
 		year = 1945
@@ -1188,7 +1167,7 @@ equipments = {
 		maximum_speed = 500
 		air_agility = 50
 		air_defence = 18
-		weight = 5
+		weight = 6
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
 		build_cost_ic = 45
@@ -1706,7 +1685,7 @@ equipments = {
 		maximum_speed = 375
 		air_agility = 35
 		air_defence = 20
-		weight = 8
+		weight = 12
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
 		build_cost_ic = 48
@@ -1854,7 +1833,7 @@ equipments = {
 		maximum_speed = 425
 		air_agility = 40
 		air_defence = 24
-		weight = 8
+		weight = 14
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
 		build_cost_ic = 54
@@ -2014,7 +1993,7 @@ equipments = {
 		maximum_speed = 500
 		air_agility = 45
 		air_defence = 24
-		weight = 8
+		weight = 16
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
 		build_cost_ic = 56
@@ -2425,7 +2404,7 @@ equipments = {
 		maximum_speed = 200
 		air_agility = 20
 		air_defence = 10
-		weight = 20
+		weight = 16
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
 	}
@@ -2443,7 +2422,7 @@ equipments = {
 		maximum_speed = 225
 		air_agility = 25
 		air_defence = 15
-		weight = 20
+		weight = 18
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
 		build_cost_ic = 88
@@ -2749,7 +2728,7 @@ equipments = {
 		maximum_speed = 350
 		air_agility = 35
 		air_defence = 40
-		weight = 20
+		weight = 22
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
 		build_cost_ic = 96
@@ -2915,7 +2894,7 @@ equipments = {
 		maximum_speed = 400
 		air_agility = 40
 		air_defence = 54
-		weight = 20
+		weight = 24
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
 		build_cost_ic = 100
