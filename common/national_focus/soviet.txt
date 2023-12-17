@@ -4220,7 +4220,6 @@ focus_tree = {
 			custom_effect_tooltip = SOV_the_collectivization_process_ns_tt
 
 			add_stability = -0.05
-			add_war_support = -0.05
 
 			if = { #Target a rural state with no civs
 				limit = {
