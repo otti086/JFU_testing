@@ -1245,7 +1245,7 @@
 						modules = {
 							fixed_main_weapon_slot = light_mg_2x
 							fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
-							engine_type_slot = engine_3_1x
+							engine_type_slot = engine_4_1x
 							special_type_slot_1 = drop_tanks
 							special_type_slot_2 = fuel_tanks_small
 						}
