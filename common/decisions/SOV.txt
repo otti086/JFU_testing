@@ -1765,9 +1765,9 @@ SOV_propaganda_campaigns = {
 		cost = SOV_propaganda_motherland_calls_cost
 
 		modifier = {
-			weekly_manpower = 1000
-			training_time_factor = -0.1
-			minimum_training_level = -0.1
+			weekly_manpower = 10000
+			training_time_factor = -0.2
+			minimum_training_level = -0.2
 		}
 
 		complete_effect = {
@@ -2860,13 +2860,14 @@ SOV_propaganda_campaigns = {
 		}
 
 		visible = {
-			always = no
-
 			OR = {
-				has_completed_focus = SOV_the_komsomol
+				AND = {
+					has_completed_focus = SOV_the_glory_of_the_red_army
+					has_completed_focus = SOV_the_komsomol
+				}
 				has_country_flag = SOV_debug_unlock_propaganda_campaigns_flag #debug
 			}
-			has_completed_focus = SOV_the_glory_of_the_red_army
+			
 		}
 
 		days_remove = SOV_default_propaganda_campaign_duration
@@ -3006,6 +3007,7 @@ SOV_propaganda_campaigns = {
 				has_completed_focus = SOV_the_komsomol
 				has_country_flag = SOV_debug_unlock_propaganda_campaigns_flag #debug
 			}
+			always = no
 		}
 
 		days_remove = SOV_default_propaganda_campaign_duration

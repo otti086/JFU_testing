@@ -4,3 +4,4 @@
  SOV_pc_of_mechanical_engineering_ns_tt:0 "$SOV_modify_defense_industry_ns_intro$ \n £prod_eff_cap Production Efficiency Cap: §G+2.00%§! \n £prod_eff Production Efficiency growth: §R-5.00%§! \n\n"
  SOV_found_the_pcdi_ns_tt:0 "Add §Y$SOV_defense_industry_dynamic_modifier$§!, which grants (Civilian to Military Factory conversion cost: §G-20.00%§!, Production Efficiency Retention: §R-10.00%§!, £prod_eff_cap Production Efficiency Cap: §G+3.00%§!, £prod_eff Production Efficiency growth: §R-5.00%§!) \n\n"
  SOV_optimize_production_lines_ns_tt:0 "$SOV_modify_fyp_ns_intro$ \nFactory Output: §G+5.00%§! \n£prod_eff Production Efficiency growth: §G+10.00%§! \nProduction Efficiency Base: §G+10.00%§! \n\n"
+ SOV_socialism_in_one_country_ns_tt:0 "$SOV_modify_the_politburo_ns_intro$ \nIdeology drift defense: §G+5.0%§! \nDaily Communism Support: §G+0.05§! \nDefensive War Penalty Stability Modifier: §G+10.00%§! \n\n"
