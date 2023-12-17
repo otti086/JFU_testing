@@ -665,22 +665,10 @@ focus_tree = {
 			hidden_effect = {
 				set_variable = { SOV_fyp_production_speed_industrial_complex_factor = 0 } #Remove Civ constr speed
 			}
-			if = {
-				limit = {
-					has_government = communism
-				}
-				hidden_effect = {
-					#Swap dynamic modifier to change icon
-					remove_dynamic_modifier = { modifier = SOV_third_five_year_plan_dynamic_modifier }
-					add_dynamic_modifier = { modifier = SOV_third_five_year_plan_military_dynamic_modifier }
-				}
-			}
-			else = {
-				hidden_effect = {
-					#Swap dynamic modifier to change icon
-					remove_dynamic_modifier = { modifier = SOV_third_five_year_plan_dynamic_modifier_alt }
-					add_dynamic_modifier = { modifier = SOV_third_five_year_plan_military_dynamic_modifier_alt }
-				}
+			hidden_effect = {
+				#Swap dynamic modifier to change icon
+				remove_dynamic_modifier = { modifier = SOV_third_five_year_plan_dynamic_modifier }
+				add_dynamic_modifier = { modifier = SOV_third_five_year_plan_military_dynamic_modifier }
 			}
 			custom_effect_tooltip = SOV_shift_to_armaments_production_ns_tt
 
@@ -688,7 +676,7 @@ focus_tree = {
 				name = SOV_shift_to_armaments_production
 				bonus = 1.0
 				uses = 2
-				category = infantry_weapons
+				category = cat_production
 			}
 		}
 	}
@@ -714,16 +702,16 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			add_to_variable = { SOV_fyp_production_factory_efficiency_gain_factor = 0.05 } #Add efficiency gain
-			add_to_variable = { SOV_fyp_production_factory_start_efficiency_factor = 0.05 } #Add efficiency start
-			add_to_variable = { SOV_fyp_industrial_capacity_factory = 0.02 } #Add small output bonus
+			add_to_variable = { SOV_fyp_production_factory_efficiency_gain_factor = 0.1 } #Add efficiency gain
+			add_to_variable = { SOV_fyp_production_factory_start_efficiency_factor = 0.1 } #Add efficiency start
+			add_to_variable = { SOV_fyp_industrial_capacity_factory = 0.05 } #Add small output bonus
 			custom_effect_tooltip = SOV_optimize_production_lines_ns_tt
 
 			add_tech_bonus = {
 				name = SOV_optimize_production_lines
 				bonus = 1
 				uses = 2
-				category = cat_production
+				category = industry
 			}
 		}
 	}
