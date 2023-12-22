@@ -130,7 +130,7 @@ characters = {
 				small = GFX_portrait_BUL_nikola_mihov_small
 			}
 		}
-		field_marshal = {
+		corps_commander = {
 			traits = { career_officer politically_connected fortress_buster }
 			skill = 4
 			attack_skill = 4
@@ -174,7 +174,7 @@ characters = {
 					small = GFX_portrait_BUL_georgi_popov_small
 				}
 			}
-			field_marshal = {
+			corps_commander = {
 				traits = { defensive_doctrine }
 				skill = 4
 				attack_skill = 2
