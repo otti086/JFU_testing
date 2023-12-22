@@ -108,7 +108,42 @@ characters={
 		}
 	}
 
-
+	ROM_nikola_mihov = {
+		name ="Paul Alexiu"
+		portraits = {
+			army = {
+				large = "GFX_Portrait_romania_ioan_mihail_racovita"
+				small = GFX_idea_ROM_ioan_mihail_racovita
+			}
+		}
+		corps_commander = {
+			traits = { career_officer politically_connected fortress_buster }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+	ROM_georgi_popov = {
+		name = "Vasile Atanasiu"
+		portraits = {
+			army = {
+				large = "GFX_portrait_bul_georgi_popov"
+				small = GFX_portrait_BUL_georgi_popov_small
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer war_hero skilled_staffer }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 4
+			legacy_id = -1
+		}
+	}
 	### THEORISTS ###
 
 	ROM_gheorghe_potopeanu={
