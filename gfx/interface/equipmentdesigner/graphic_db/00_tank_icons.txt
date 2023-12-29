@@ -281,7 +281,6 @@ GER = {
  				GFX_GER_light_ACB_camo
  				GFX_GER_light_ACC
  				GFX_GER_light_ACC_camo
- 				GFX_GER_light_AA_tank_A
 			}
 			models = {
 				"GER_light_armor_entity"
