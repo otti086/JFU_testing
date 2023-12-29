@@ -1149,7 +1149,7 @@
  VIC_mainland_defense_2_desc:0 "Marseilles is the main logistical route from the Mediterrenean into France - this is where any future invasion of France will take place and thus this is where we will focus our defensive efforts."
  VIC_Installing_Patriotism:0 "Instill Patriotism"
  VIC_Installing_Patriotism_desc:0 "The people of France have much to be proud of, but first they must be taught to be proud."
- GER_reorg_civilian:0 "War Production"
+ GER_reorg_civilian:0 "Reorganise Civilian Economy "
  GER_reorg_civilian_desc:0 "" 
  GER_appoint_speer:0 "Albert Speer's Reforms"
  GER_appoint_speer_desc:0 ""
@@ -1174,7 +1174,7 @@
  GER_greater_ger:0 "Greater Germany"
  GER_trade_deal_with_sweden:0 "Trade Deal with Sweden"
  GER_steinercounteroffensive:0 "Steiner's Counter Offensive"
- GER_reorg_civilian2:0 "We need more Eco"
+ GER_reorg_civilian2:0 "Mobilise the last reserves"
  JAP_armored_divisions_MAN:0 "Manchurian Armor Technology"
  #tooltips
 

@@ -1712,7 +1712,7 @@ focus_tree = {
 			has_completed_focus = GER_greater_ger
 		}
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = GER_prepare
 		cost = 10
 
