@@ -334,6 +334,7 @@ technologies = {
 			tank_high_velocity_cannon_2
 			tank_medium_cannon_2
 			tank_heavy_cannon_2
+			tank_advanced_light_cannon
 		}
 
 		research_cost = 2

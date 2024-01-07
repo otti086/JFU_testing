@@ -1422,8 +1422,10 @@
  NOR_CIV_INDUSTRY:0 "Fund new fertilizer plants"
 
  NOR_CIV_INDUSTRY_3:0 "Give the King more power"
+
  #equipment 
 
+ tank_advanced_light_cannon:0 "Advanced Light Cannon"
  medium_tank_amphibious_chassisodern_tank_chassis_1:0 "Modern Amphibious Tank"
  medium_tank_flame_chassisodern_tank_chassis_1:0 "Modern Flame Tank"
  AST_medium_tank_destroyer_chassisodern_tank_chassis_1:0 "Centurion Malkara"
