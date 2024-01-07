@@ -930,7 +930,7 @@ equipments = {
 
 		maximum_speed = 7
 		build_cost_ic = 11.5
-		reliability = 1.2
+		reliability = 2.2
 		armor_value = 65
 		hardness = 0.95
 		soft_attack = 16.7

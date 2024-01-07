@@ -588,7 +588,6 @@ equipment_modules = {
 		multiply_stats = {
 			
 		}
-
 	}
 
 	tank_modern_tank_turret = {
@@ -603,14 +602,15 @@ equipment_modules = {
 			}
 		}
 		add_stats = {
+			reliability = -1.0
 			build_cost_ic = 8.0
 			breakthrough = 24
 		}
 		dismantle_cost_ic = 1
 		xp_cost = 0
 		multiply_stats = {
-		}
 
+		}
 	}
 
 
