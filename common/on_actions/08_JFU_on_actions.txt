@@ -595,24 +595,11 @@ on_actions = {
 					SOV_cap_Building = yes
 				}				
 			}
-#			if = {
-#				limit = {
-#					FROM = { tag = CHI }
-#					FROM.FROM = { is_core_of = CHI }
-#					CHI = { NOT = { controls_state = 608 } NOT = { controls_state = 597 }  }	
-#					JAP = { NOT = { has_country_flag = china_spawn_ins } }
-#				}	
-#				CHI = { 
-#					load_oob = "CHI_spawn2" 
-#				}
-#				JAP = { set_country_flag = china_spawn_ins}
-#
-#			}
 			if = {
 				limit = {
 					FROM = { tag = NOR }
 					FROM.FROM = { is_core_of = NOR }
-					NOR = { NOT = { controls_state = 110 } }
+					NOT = { NOR = { controls_state = 110 } }
 				}
 #				tp_divs_out_of_norway = yes
 
@@ -640,6 +627,15 @@ on_actions = {
 					}
 					add_compliance = 50 
 				}
+			}
+			if = { 
+				limit = {
+					has_global_flag = fall_of_cairo
+					NOT = { ITA = {controls_state = 907 } }
+					NOT = { has_global_flag = fall_of_africa }
+
+				}
+				ITA = { country_event = { id =  JFU_events.9 } }
 			}
 		}
 	}
@@ -711,11 +707,15 @@ on_actions = {
 							907 = { is_controlled_by = ITA }	  
 						}
 						451 = { is_controlled_by = ITA }
+						NOT = { has_country_flag = ITA_lost_africa1 }
 					}
 				}
-				add_power_balance_modifier = {
+				ITA = {
+					add_power_balance_modifier = {
 					id = ITA_power_balance
 					modifier = ITA_JFU_BOP_change_1
+					}
+					set_country_flag = ITA_lost_africa1
 				}
 			}
 			if = {
@@ -726,12 +726,16 @@ on_actions = {
 							907 = { is_controlled_by = ITA }
 							451 = { is_controlled_by = ITA }	  
 						}	
+						NOT = { has_country_flag = ITA_lost_africa2 }
 					}
 				}
-				add_power_balance_modifier = {
+				ITA = {
+					add_power_balance_modifier = {
 					id = ITA_power_balance
 					modifier = ITA_JFU_BOP_change_2
-				}			
+					}
+					set_country_flag = ITA_lost_africa2
+				}
 			}
 		}
 	}

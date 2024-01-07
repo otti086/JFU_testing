@@ -16,7 +16,7 @@ leader_traits = {
 
 	lombardy = {
 		random = no
-		war_support_weekly = -0.03
+		war_support_weekly = -0.02
 	}
 	scientist = {
 		sprite = 13

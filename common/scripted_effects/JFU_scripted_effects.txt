@@ -1311,6 +1311,7 @@ pregrinded_effect = {
 			add_unit_leader_trait = desert_fox 
 			add_unit_leader_trait = trait_engineer
 			add_unit_leader_trait = fortress_buster
+			add_unit_leader_trait = commando
 		}
 		HUN_ivan_hindy = { add_attack = 2 }
         HUN_ivan_hindy = { add_defense = 1 }

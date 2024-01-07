@@ -799,6 +799,25 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = JFU_events.9
+	title = JFU_events.9.t
+	desc = JFU_events.9.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {
+		name = JFU_events.9.a
+
+		ITA = {
+			add_power_balance_value = {
+				id = ITA_power_balance
+				value = 0.80
+			}
+		}
+	}
+}
 add_namespace = horsthelp
 
 country_event = {   
