@@ -1176,13 +1176,11 @@
  GER_steinercounteroffensive:0 "Steiner's Counter Offensive"
  GER_reorg_civilian2:0 "Mobilise the last reserves"
  JAP_armored_divisions_MAN:0 "Manchurian Armor Technology"
+
  #tooltips
 
-
  SOV_behead_the_snake_JFU_tt:0 "Trotsky will be §Rautomatically assasinated §Win 100 days."
- 
  UK_imperial_conference_tt:0 " Add §YImperial Conference Economy Agreements§!, which grants (Factory Output §G+15.00%§!, Dockyard Output §G+15.00%§!).\n Add §YImperial Conference Economy Agreements§! which grants (§YCivilian Factory§! construction Speed §G+15.00%§!, §YMilitary Factory§! construction speed §G+15.00%§!, §!Dockyard§! construction Speed §G+15.00%§!)\n Gain Base War Support §G+10.00%§!\n(@AST§YAustralia, @CANDominion of Canada, @RAJBritish Raj,\n @NZLNew Zealand and @SAFSouth Africa§!):\n    Add §YImperial Conference Defense Agreements§! which grants (Factory Output §G+10.00%§!, Dockyard Output §G+10.00%§!).\n    Add §YImperial Conference Economy Agreements§! which grants (§YCivilian Factory§! construction Speed §G+10.00%§!, §YMilitary Factory§! construction speed §G+10.00%§!, §!Dockyard§! construction Speed §G+10.00%§!)\n   Gain Base War Support §G+10.00%§! "
- 
  GER_second_vienna_focus_tt:0 "This focus is automatically completed by an event which triggers in §YAugust 1940§!."
  GER_ussr_war_goal_focus_tt:0 "This focus is automatically completed in case of war with the §YSoviet Union§!."
  endsieg_allies_tt:0 "Add '§YBattle of the Buldge§!' which grants (§YAll Allied Nations§!) Attack bonus against countries §G+15%§!, (§YAll Allied Nations§!) Defense bonus against countries §G+10%§!, (§Y@SOVSoviet Union§!) Attack bonus against countries §R-15%§!, (§Y@SOVSoviet Union§!) Defense bonus against countries §R-10%§!) for 180 day(s)."
@@ -1202,8 +1200,8 @@
  GER_decision_focus_tt:0 "This focus is completed by selecting the matching £decision_icon_small §YDecision§! under §YJFU Decisions§!.\n\n"
  SOV_claims_in_balitc.tt:0 "We will annex the Baltic states"
  SOV_Bessarabia.tt:0 "We will force Romania to cede us Bessarabia"
- ITA_yugo_attack_desc_tt:0 "Enables decision to attack Yugoslavia"
- ITA_greece_attack_desc_tt:0 "Enables decision to attack Greece" 
+ ITA_yugo_attack_desc_tt:0 "§REnables decision to attack Yugoslavia§!"
+ ITA_greece_attack_desc_tt:0 "§REnables decision to attack Greece$!" 
  barb_failed:0 "Operation Barbarossa has failed"
  blau_failed:0 "Fall Blau has failed"
  barb_declared:0 "Operation Barbarossa has begun"

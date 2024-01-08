@@ -1,7 +1,9 @@
 ﻿l_english:
- SOV_upgrade_industrial_designer_tt:0 "Modify the following Industrial Designers by: \n\n§Y$stalingrad_tractor_factory$§!: Industrial Research Speed: §G+10%§!, Consumer Goods Factories: §Y-15.0%§! \n\n"
+ SOV_upgrade_industrial_designer_tt:0 "Modify the following Industrial Designers by: \n\n§Y$stalingrad_tractor_factory$§!: Industrial Research Speed: §G+15%§!, Consumer Goods Factories: §Y-20.0%§! \n\n§Y$leningrad_polytechnical_institute$§!: Electronics Research Speed: §G+15%§!, Supply Consumption: §G-5.0%§!"
  SOV_industrial_modernization_ns_tt:0 "$SOV_modify_fyp_ns_intro$ \n£prod_eff_cap Production Efficiency Cap: §G+2.00%§! \nProduction Efficiency Retention: §G+10.00%§! \n\n"
  SOV_pc_of_mechanical_engineering_ns_tt:0 "$SOV_modify_defense_industry_ns_intro$ \n £prod_eff_cap Production Efficiency Cap: §G+2.00%§! \n £prod_eff Production Efficiency growth: §R-5.00%§! \n\n"
  SOV_found_the_pcdi_ns_tt:0 "Add §Y$SOV_defense_industry_dynamic_modifier$§!, which grants (Civilian to Military Factory conversion cost: §G-20.00%§!, Production Efficiency Retention: §R-10.00%§!, £prod_eff_cap Production Efficiency Cap: §G+3.00%§!, £prod_eff Production Efficiency growth: §R-5.00%§!) \n\n"
  SOV_optimize_production_lines_ns_tt:0 "$SOV_modify_fyp_ns_intro$ \nFactory Output: §G+5.00%§! \n£prod_eff Production Efficiency growth: §G+10.00%§! \nProduction Efficiency Base: §G+10.00%§! \n\n"
  SOV_socialism_in_one_country_ns_tt:0 "$SOV_modify_the_politburo_ns_intro$ \nIdeology drift defense: §G+5.0%§! \nDaily Communism Support: §G+0.05§! \nDefensive War Penalty Stability Modifier: §G+10.00%§! \n\n"
+ SOV_increase_aircraft_production_ns_tt:0 "$SOV_modify_airforce_ns_intro$ \n§YAll types of aircraft§!: £production_cost Production Cost: §G-5.00%§! \n\n"
+ SOV_intensify_pilot_training_program_ns_tt:0 "$SOV_modify_airforce_ns_intro$ \nAce generation chance: §G+15%§!  \nAir Wing Experience loss when killed: §G-15%§! \nAir Accidents Chance: §G-25.0%§! \nNight Operations Penalty: §G-10.00%§! \nBad Weather Penalty: §G-15.00%§! \n\n"

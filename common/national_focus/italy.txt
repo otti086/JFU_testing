@@ -7797,17 +7797,6 @@ focus_tree = {
 		}
 
 		available = {
-			NOT = { has_war_with = GER }
-			custom_trigger_tooltip = {
-				tooltip = ITA_germ_italy_same_tt
-				GER = { has_government = ROOT }
-			}
-			GER = {
-				is_faction_leader = yes
-				is_subject = no
-			}
-			is_subject = no
-			NOT = { has_country_flag = ENG_ditched_by_the_germans_flag }
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -7836,8 +7825,6 @@ focus_tree = {
 		relative_position_id = ITA_pact_of_steel
 		cost = 5
 		available = {
-			NOT = { has_war_with = GER }
-			NOT = { has_country_flag = ENG_ditched_by_the_germans_flag }
 		}
 
 		search_filters = {FOCUS_FILTER_AIR_XP FOCUS_FILTER_ARMY_XP}
@@ -7857,7 +7844,6 @@ focus_tree = {
 		relative_position_id = ITA_german_military_cooperation
 		cost = 5
 		available = {
-			NOT = { has_country_flag = ENG_ditched_by_the_germans_flag }
 		}
 
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -7884,7 +7870,6 @@ focus_tree = {
 		relative_position_id = ITA_pact_of_steel
 		cost = 5
 		available = {
-			NOT = { has_country_flag = ENG_ditched_by_the_germans_flag }
 		}
 		
 		search_filters = {FOCUS_FILTER_RESEARCH}

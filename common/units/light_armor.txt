@@ -64,7 +64,7 @@ sub_units = {
 			defence = -0.1
 		}
 		river = { 
-			attack = -0.2 
+			attack = -0.1 
 			movement = -0.2
 		}
 		amphibious = { 

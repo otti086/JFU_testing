@@ -25,6 +25,11 @@ NDefines.NMilitary.COMBAT_MINIMUM_TIME = 2 		-- VANILLA 4
 NDefines.NMilitary.ARMY_FUEL_COST_MULT = 0.2	-- VANILLA 0.5             --fuel cost multiplier for all army related stuff
 NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.10 -- VANILLA 0.25
 NDefines.NMilitary.UNIT_EXPERIENCE_PER_TRAINING_DAY = 0  -- VANILLA 0.0015
+NDefines.NMilitary.RIVER_CROSSING_PENALTY = -0.3                 -- small river crossing
+NDefines.NMilitary.RIVER_CROSSING_PENALTY_LARGE = -0.6           -- large river crossing
+NDefines.NMilitary.RIVER_CROSSING_SPEED_PENALTY = -0.25           -- small river crossing
+NDefines.NMilitary.RIVER_CROSSING_SPEED_PENALTY_LARGE = -0.5     -- large river crossing
+
 
 NDefines.NMilitary.COMBAT_MOVEMENT_SPEED = 0.33 -- VANILLA 0.33
 NDefines.NMilitary.LAND_SPEED_MODIFIER = 0.05	-- VANILLA 0.05

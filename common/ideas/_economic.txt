@@ -309,17 +309,12 @@ ideas = {
 			removal_cost = -1
 			picture = isolation
 
-			rule = {
-				can_access_market = no
-			}
-
 			modifier = {
 				min_export = 0.25
 				consumer_goods_expected_value = 0.05
 				civilian_intel_to_others = 40.0
 				navy_intel_to_others = 40.0
 				agency_upgrade_time = 0.15
-				cic_construction_boost = 0.15
 			}
 
 			available = {
@@ -351,10 +346,6 @@ ideas = {
 		}
 
 		free_trade = {
-
-			rule = {
-				can_access_market = no
-			}
 
 			available = {
 				if = {
@@ -392,7 +383,6 @@ ideas = {
 				research_speed_factor = 0.10
 				civilian_intel_to_others = 40.0
 				navy_intel_to_others = 20.0
-				cic_construction_boost_factor = 0.05
 			}
 
 			cancel_if_invalid = no
@@ -418,10 +408,6 @@ ideas = {
 		}
 
 		export_focus = {
-
-			rule = {
-				can_access_market = no
-			}
 
 			available = {
 				NOT = {
@@ -481,7 +467,6 @@ ideas = {
 				research_speed_factor = 0.05
 				civilian_intel_to_others = 20.0
 				navy_intel_to_others = 10.0
-				cic_construction_boost_factor = 0.1
 			}
 
 			default = yes
@@ -506,10 +491,6 @@ ideas = {
 		}
 
 		limited_exports = {
-
-			rule = {
-				can_access_market = no
-			}
 
 			available = {
 				NOT = {
@@ -575,9 +556,6 @@ ideas = {
 
 		closed_economy = {
 
-			rule = {
-				can_access_market = no
-			}
 
 			available = {
 				has_war = yes
@@ -589,11 +567,6 @@ ideas = {
 					has_idea = war_economy
 					has_idea = tot_economic_mobilisation
 				}
-			}
-
-			rule = {
-				can_access_market = no
-				desc = can_not_access_market_closed_economy
 			}
 
 			cost = 150
