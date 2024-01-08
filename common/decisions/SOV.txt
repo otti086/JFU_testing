@@ -1832,6 +1832,7 @@ SOV_propaganda_campaigns = {
 		}
 
 		visible = {
+			always = no
 			OR = {
 				has_completed_focus = SOV_expand_the_agitprop
 				has_country_flag = SOV_debug_unlock_propaganda_campaigns_flag #debug
@@ -2154,8 +2155,8 @@ SOV_propaganda_campaigns = {
 		cost = SOV_propaganda_transport_cost
 
 		modifier = {
-			production_speed_supply_node_factor = 0.15
-			production_speed_rail_way_factor = 0.15
+			production_speed_supply_node_factor = 0.3
+			production_speed_rail_way_factor = 0.2
 			supply_consumption_factor = -0.1
 		}
 
@@ -2219,6 +2220,7 @@ SOV_propaganda_campaigns = {
 		}
 
 		visible = {
+			always = no
 			OR = {
 				has_completed_focus = SOV_expand_the_agitprop
 				has_country_flag = SOV_debug_unlock_propaganda_campaigns_flag #debug
@@ -2861,10 +2863,7 @@ SOV_propaganda_campaigns = {
 
 		visible = {
 			OR = {
-				AND = {
-					has_completed_focus = SOV_the_glory_of_the_red_army
-					has_completed_focus = SOV_the_komsomol
-				}
+				has_completed_focus = SOV_the_glory_of_the_red_army
 				has_country_flag = SOV_debug_unlock_propaganda_campaigns_flag #debug
 			}
 			
@@ -4581,7 +4580,7 @@ SOV_industry_relocation = {
 
 		cancel_if_not_visible = no
 
-		cost = 25
+		cost = 10
 
 		days_remove = SOV_industrial_relocation_days
 
@@ -4715,8 +4714,6 @@ SOV_industry_relocation = {
 					add_to_temp_variable = { SOV_factories_counter = 1 }
 				}
 			}
-			custom_effect_tooltip = SOV_relocate_industry_repair_tt
-			custom_effect_tooltip = SOV_relocate_industry_lose_control_tt
 		}
 	}
 
@@ -4750,7 +4747,7 @@ SOV_industry_relocation = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 10
 		days_remove = SOV_industrial_relocation_days
 
 		modifier = {

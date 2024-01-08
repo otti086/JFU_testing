@@ -1541,7 +1541,6 @@ focus_tree = {
 		cost = 5
 
 		available = {
-			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -1666,9 +1665,6 @@ focus_tree = {
 		cost = 5
 
 		available = {
-			OR = {
-				has_completed_focus = SOV_the_path_of_marxism_leninism
-			}
 		}
 		
 		search_filters = {FOCUS_FILTER_AIR_XP}
@@ -2705,11 +2701,6 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
-			
-				hidden_effect = {
-					damage_building = { type = arms_factory damage = 0.5 }
-					damage_building = { type = industrial_complex damage = 0.5 }
-				}
 			}
 			if = {
 				limit = {
@@ -2730,11 +2721,6 @@ focus_tree = {
 						type = industrial_complex
 						level = 1
 						instant_build = yes
-					}
-				
-					hidden_effect = {
-						damage_building = { type = arms_factory damage = 0.5 }
-						damage_building = { type = industrial_complex damage = 0.5 }
 					}
 				}
 			}
@@ -2758,14 +2744,8 @@ focus_tree = {
 						level = 1
 						instant_build = yes
 					}
-				
-					hidden_effect = {
-						damage_building = { type = arms_factory damage = 0.5 }
-						damage_building = { type = industrial_complex damage = 0.5 }
-					}
 				}
 			}
-			custom_effect_tooltip = SOV_relocate_industry_repair_tt
 		}
 	}
 
@@ -3999,9 +3979,10 @@ focus_tree = {
 			add_to_variable = { SOV_the_red_army_special_forces_cap = 0.1 }
 			add_to_variable = { SOV_the_red_army_land_doctrine_cost_factor = -0.1 }
 			custom_effect_tooltip = SOV_the_glory_of_the_red_army_ns_tt
-
+			
 			army_experience = 75
-
+			custom_effect_tooltip = unlock_propaganda_campaign_tt
+			unlock_decision_tooltip = SOV_propaganda_sweep_scum_out
 			#New
 			hidden_effect = {
 				set_technology = { masterful_blitz = 1 popup = no }
@@ -4041,10 +4022,6 @@ focus_tree = {
 			add_political_power = 25
 
 			SOV_paranoia_low_decrease_effect = yes	
-			IF = {
-				limit = { has_dlc = "No Step Back"}
-				mark_focus_tree_layout_dirty = yes
-			}
 		}
 	}
 
@@ -5393,8 +5370,7 @@ focus_tree = {
 
 			custom_effect_tooltip = unlock_propaganda_campaign_tt
 			unlock_decision_tooltip = SOV_propaganda_knowledge
-			unlock_decision_tooltip = SOV_propaganda_builders_of_communism
-			unlock_decision_tooltip = SOV_propaganda_sweep_scum_out
+			
 			custom_effect_tooltip = unlock_propaganda_campaign_slot_tt
 			SOV_unlock_propaganda_campaign_slot_effect = yes
 		}
@@ -5474,14 +5450,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_timed_idea = { idea = SOV_military_advisors_in_spain days = 1095 }
-			# A Spanish General will join the USSR if his side loses the SCW
-			if = {
-				limit = {
-					has_dlc = "La Resistance"
-				}
-				custom_effect_tooltip = SOV_send_military_advisors_to_spain_generals_tt
-				set_country_flag = SOV_spanish_refugee_generals_welcome_flag
-			}
 		}
 	}
 ########  #######  ########  ######## ####  ######   ##    ##    ########   #######  ##       #### ######## ####  ######   ######  
