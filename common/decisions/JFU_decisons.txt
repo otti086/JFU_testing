@@ -1119,7 +1119,7 @@ JFU_decisions = {
 		allowed = { tag =  SOV }
 		available = {
 			date > 1941.11.1
-			date < 1941.12.1
+			date < 1942.2.1
 		}
 		cost = 0
 		complete_effect = {
@@ -1132,7 +1132,7 @@ JFU_decisions = {
 		allowed = { tag =  SOV }
 		available = {
 			date > 1942.11.1
-			date < 1942.12.1
+			date < 1943.2.1
 		}
 		cost = 0
 		complete_effect = {
@@ -1145,11 +1145,11 @@ JFU_decisions = {
 		allowed = { tag =  SOV }
 		available = {
 			date > 1943.11.1
-			date < 1943.12.1
+			date < 1944.2.1
 		}
 		cost = 0
 		complete_effect = {
-			GER = { add_timed_idea = { idea = soviet_winter_offensive3 days = 180 } }
+			SOV = { add_timed_idea = { idea = soviet_winter_offensive3 days = 180 } }
 		}
 	}
 	"Enable Small Barb" = {

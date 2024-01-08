@@ -403,15 +403,6 @@ greater_italy_category = {
 					}
 					OR = {
 						ITA = { 
-						controls_state = 846 # Ticino 
-						}
-						any_country = {
-							is_subject_of = ITA
-							controls_state = 846 # Ticino
-						}
-					}
-					OR = {
-						ITA = { 
 						controls_state = 735 # Savoy 
 						}
 						any_country = {
@@ -510,13 +501,6 @@ greater_italy_category = {
 				    id = 3838 
 				    name = ITA_italian_ajaccio_name   
 				} 
-				
-				# Ticino
-				ITA = {
-					transfer_state = 846
-				}
-				846 = { add_core_of = ROOT }
-				
 				# Savoy
 				ITA = {
 					transfer_state = 735

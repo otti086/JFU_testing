@@ -1280,6 +1280,10 @@
  GER_Barb_supply:0 "Barbarossa Supply Balancer"
  axis_fall_blau:0 "Fall Blau"
  axis_operation_citadelle:0 "Operation Citadel"
+ soviet_winter_offensive1:0 "1941 Winter offensive"
+ soviet_winter_offensive2:0 "1942 Winter offensive"
+ soviet_winter_offensive3:0 "1943 Winter offensive"
+
 
  #decisions
 
