@@ -1085,6 +1085,14 @@ ideas = {
 			modifier = {
 				conscription_factor = -0.25
 			}
+		}
+		JFU_no_tradeback = {
+			picture = civilian_economy 
+			allowed = {
+				always = no
+			}
+			removal_cost = -1	
+			modifier = { production_lack_of_resource_penalty_factor = -1 }		
 		}		 		
 	}
 }

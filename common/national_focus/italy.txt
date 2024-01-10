@@ -2908,8 +2908,6 @@ focus_tree = {
 		relative_position_id = ITA_preserve_army_traditions
 		cost = 10
 		available = {
-			NOT = { has_global_flag = second_italo_ethiopian_war_flag }
-			#NTH_Manu: Should probably also require a completed focus in any of the ME political paths, so that it can unlock appropriate generals
 		}
 
 		search_filters = {FOCUS_FILTER_ARMY_XP}
@@ -3166,7 +3164,6 @@ focus_tree = {
 		relative_position_id = ITA_bersaglieri
 		cost = 10
 		available = {
-			has_tech = paratroopers
 		}
 
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_ARMY_XP FOCUS_FILTER_MANPOWER}
@@ -3178,54 +3175,6 @@ focus_tree = {
 			custom_effect_tooltip = ITA_fanti_dell_aria_re_tt
 
 			army_experience = 15
-
-			hidden_effect = {
-				if = {
-					limit = {
-						NOT = { has_template = "Paratroopers" }
-					}
-					load_oob = "unlock_paratroopers"
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = ROOT
-					is_fully_controlled_by = ROOT
-				}
-				prioritize = { 2 162 117 158 }
-				custom_effect_tooltip = ITA_fanti_dell_aria_spawn_divs_tt
-				hidden_effect = {
-					create_unit = {
-						division = "division_template = \"Paratroopers\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-						owner = ROOT
-						count = 3
-					}
-				}
-			}
-			#ASCARI
-			if = {
-				limit = {
-					any_owned_state = {
-						is_core_of = SWE
-						is_fully_controlled_by = ROOT
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						is_core_of = SWE
-						is_fully_controlled_by = ROOT
-					}
-					prioritize = { 448 450 }
-					custom_effect_tooltip = ITA_fanti_dell_aria_spawn_divs_libya_tt
-					hidden_effect = {
-						create_unit = {
-							division = "name = \"Ascari del Cielo\" division_template = \"Paratroopers\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-							owner = ROOT
-							count = 1
-						}
-					}
-				}
-			}
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
 				cost_reduction = 0.5
@@ -3246,12 +3195,6 @@ focus_tree = {
 		relative_position_id = ITA_superesercito
 		cost = 10
 		available = {
-			if = {
-				limit = {
-					has_dlc = "No Step Back"
-				}
-				has_tech = basic_medium_tank_chassis
-			}
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_XP}
@@ -8222,7 +8165,7 @@ focus_tree = {
 		#}
 
 		available = {
-			surrender_progress < 0.01
+			surrender_progress < 0.2
 		}
 
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT}
