@@ -1878,6 +1878,16 @@ focus_tree = {
 				GER = { remove_resource_rights = 724 }
 				remove_ideas = GER_rubber_balance
 				add_named_threat = { threat = 5 name = GER_danzig_or_war }
+				remove_ideas = JFU_no_tradeback
+				ITA = { remove_ideas = JFU_no_tradeback }
+				HUN = { remove_ideas = JFU_no_tradeback }
+				ROM = { remove_ideas = JFU_no_tradeback }
+				BUL = { remove_ideas = JFU_no_tradeback }
+				SPR = { remove_ideas = JFU_no_tradeback }
+				FIN = { remove_ideas = JFU_no_tradeback }
+				EFR = { remove_ideas = JFU_no_tradeback }
+				JAP = { remove_ideas = JFU_no_tradeback }
+				MAN = { remove_ideas = JFU_no_tradeback }
 			}
 			custom_effect_tooltip = GER_danzig_or_war_tt
 		}

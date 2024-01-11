@@ -681,8 +681,8 @@ JFU_startup_on_action = {
 					option = PRE_GRINDED_GENERALS_ON
 				}
 				has_game_rule = { 
-				rule = JFU_pre_sets 
-				option = COMPETITIVE_JFU 
+					rule = JFU_pre_sets 
+					option = COMPETITIVE_JFU 
 				} 
 			}
 		}			
@@ -780,7 +780,6 @@ JFU_startup_on_action = {
 					}					
 				}
 			}
-		
 		}
 		GER = {
 			add_ideas = { volunteers_7 }
@@ -819,6 +818,15 @@ JFU_startup_on_action = {
 	SWE = { JFU_apply_intel = yes }
 	SWE = { HFU_fuel_startup_effect = yes }
 	SWE = { JFU_scripted_events_effect = yes }
+	if = {
+		limit = {
+			has_game_rule = { 
+				rule = JFU_pre_sets 
+				option = COMPETITIVE_JFU 
+			}	
+		}
+		SWE = { JFU_comp_startup_effect = yes }
+	}
 	SPR = {	country_lock_all_division_template = yes country_event = { id = lar_spain.2 days = 230 } activate_mission = days_till_civil_war }
 	SWE = { pacifc_war_variables = yes }
 	ENG = {
@@ -969,6 +977,18 @@ JFU_startup_on_action = {
 			instant_build = yes
 		}			
 	}
+}
+JFU_comp_startup_effect = {
+	GER = { add_ideas = JFU_no_tradeback }
+	ITA = { add_ideas = JFU_no_tradeback }
+	HUN = { add_ideas = JFU_no_tradeback }
+	ROM = { add_ideas = JFU_no_tradeback }
+	BUL = { add_ideas = JFU_no_tradeback }
+	SPR = { add_ideas = JFU_no_tradeback }
+	FIN = { add_ideas = JFU_no_tradeback }
+	EFR = { add_ideas = JFU_no_tradeback }
+	JAP = { add_ideas = JFU_no_tradeback }
+	MAN = { add_ideas = JFU_no_tradeback }
 }
 JFU_scripted_events_effect = {
 	ENG = { country_event = { id = britain.16 days = 21 } }
