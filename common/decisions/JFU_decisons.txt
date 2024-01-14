@@ -442,12 +442,18 @@ political_actions1 = {
 	#	╚█████╔╝██║  ██║██║     
 	#	 ╚════╝ ╚═╝  ╚═╝╚═╝     
 
-	"Attack china" = {
+	attack_china_normal = {
 		icon = jap_conquer_china
 		fire_only_once = yes
 		allowed = { tag = JAP }
 		available = { has_completed_focus = JAP_intervene_in_china  }
 		cost = 0
+		visible = { 
+			has_game_rule = { 
+				rule = JFU_CHINA_WAR 
+				option = CHINA_WAR 
+			} 
+		}
 		complete_effect = {
 			declare_war_on = {
 			target = CHI 
@@ -463,7 +469,37 @@ political_actions1 = {
 				country_event = { days = 5 id = news.1 }
 				USA = { country_event = { id = panay_incident.1 days = 60 }}
 			}
-			USA = { set_country_flag = { flag = USA_china_window days = 60 value = 1 } }
+		}
+	}
+	attack_china_annex = {
+		icon = jap_conquer_china
+		fire_only_once = yes
+		allowed = { tag = JAP }
+		available = { has_completed_focus = JAP_intervene_in_china date > 1938.01.01 }
+		cost = 0
+		visible = { 
+			has_game_rule = { 
+				rule = JFU_CHINA_WAR 
+				option = NO_CHINA_WAR 
+			} 
+		}
+		complete_effect = {
+			annex_country = { target = CHI transfer_troops = no }
+			hidden_effect = {
+				country_event = { days = 5 id = news.1 }
+				USA = { country_event = { id = panay_incident.1 days = 60 }}
+				USA = { add_war_support = 0.125 }
+				add_threat = 40
+				every_state = {
+                    limit = {
+                        is_core_of = CHI
+                        is_controlled_by = JAP
+                    }
+                    set_compliance = 100
+                }
+				add_ideas = peace_training 
+				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 40000 }
+			}
 		}
 	}
 	"Operation Countenance Japan" = {

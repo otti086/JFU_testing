@@ -252,6 +252,21 @@ JFU_SPAIN = {
 		desc = "Spain gets the civil war bypassed"
 	}			
 }
+JFU_CHINA_WAR = {
+	name = "2. Sino-Japanese War Settings"
+	group = "HORST_GROUPKEY"
+	icon = "RULE_GROUP_GENERAL_UI"	
+	option = {
+		name = "NO_CHINA_WAR"
+		text = "No China War"
+		desc = "The 2. Sino Japanese War will get bypassed"
+	}
+	default = {
+		name = "CHINA_WAR"
+		text = "Normal China "
+		desc = "Normal China war"
+	}	
+}
 FIN_WAR = {
 	name = "Finnland War"
 	group = "HORST_GROUPKEY"

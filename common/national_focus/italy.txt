@@ -5082,19 +5082,6 @@ focus_tree = {
 		relative_position_id = ITA_incrociatori_leggeri
 		cost = 5
 		available = {
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				has_tech = improved_ship_hull_light
-				has_tech = sonar
-				#has_tech = improved_ship_torpedo_launcher #Granting it anyways
-				#has_tech = improved_depth_charges #Granting it anyways
-			}
-			else = {
-				has_tech = improved_destroyer
-			}
-			has_tech = decimetric_radar
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH}

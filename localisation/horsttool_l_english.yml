@@ -1299,6 +1299,12 @@
  anti_non_aligned_raids:0 "Anti Non-Aligned Raids"
  anti_non_aligned_raids_desc:0 "We must crack down on Non-Aligned elements in our nation for the sake of long-term domestic stability. Their influence is too great, and may potentially become a problem to the government."
  days_till_civil_war:0 "Days till Civil War starts"
+ attack_china_annex:0 "Annex China"
+ attack_china_normal:0 "Attack China"
+ 
+ 
+ 
+ 
  #techology
 
  desert_tactics_allies:0 "Desert Training"

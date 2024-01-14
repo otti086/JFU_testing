@@ -280,7 +280,7 @@ characters = {
 			available = {
 			}
 			traits = {
-				mobile_warfare_expert
+				military_theorist
 			}
 		}
 		
@@ -311,7 +311,7 @@ characters = {
 				original_tag = ITA			
 			}
 			traits = {
-				army_chief_organizational_1 # Was army_chief_maneuver_2 (replaced by Alberto Pariani)
+				army_chief_offensive_2 # Was army_chief_maneuver_2 (replaced by Alberto Pariani)
 			}
 			cost = 50
 			ai_will_do = {

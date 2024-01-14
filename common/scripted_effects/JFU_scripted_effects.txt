@@ -748,11 +748,27 @@ JFU_startup_on_action = {
 				instant_build = yes
 			}
 		}
+		if = {
+			limit = { 
+				has_game_rule = {
+					rule = JFU_CHINA_WAR
+					option = CHINA_WAR
+				}
+			}
+			605 = {
+				add_extra_state_shared_building_slots = 10
+				add_building_construction = {
+					type = arms_factory
+					level = 10
+					instant_build = yes
+				}
+			}				
+		}		
 		605 = {
-			add_extra_state_shared_building_slots = 13
+			add_extra_state_shared_building_slots = 3
 			add_building_construction = {
 				type = arms_factory
-				level = 13
+				level = 3
 				instant_build = yes
 			}
 		}		
@@ -989,6 +1005,24 @@ JFU_comp_startup_effect = {
 	EFR = { add_ideas = JFU_no_tradeback }
 	JAP = { add_ideas = JFU_no_tradeback }
 	MAN = { add_ideas = JFU_no_tradeback }
+	ENG = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
+	USA = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
+	FRA = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
+	SAF = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
+	RAJ = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
+	MEX = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
+	CAN = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
+	AST = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
+	BRA = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
+	NZL = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
+	2 = {
+		add_extra_state_shared_building_slots = 2
+		add_building_construction = {
+			type = industrial_complex
+			level = 2
+			instant_build = yes
+		}
+	}
 }
 JFU_scripted_events_effect = {
 	ENG = { country_event = { id = britain.16 days = 21 } }
