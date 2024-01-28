@@ -471,11 +471,11 @@ on_actions = {
 					NOT = { FRA = { has_country_flag = france_is_kill } }
 				}
 
-				tp_divs_out_of_france = yes 
+				#tp_divs_out_of_france = yes 
  
 				FRA = { 
 					set_country_flag = france_is_kill  
-					 set_capital = { state = 539 }
+					set_capital = { state = 539 }
 					country_event = { id = france.10 }
 					set_global_flag = fall_of_france
 					set_cosmetic_tag = FRA_FREE

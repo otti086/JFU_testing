@@ -635,6 +635,7 @@ JFU_vichy_france_2 = {
 			transfer_state = 889
 			transfer_state = 888
 		}
+		FRA_africa_spawn_ins = yes 
 	}
 	if = { 
 		limit = {
@@ -3568,4 +3569,32 @@ anti_cross_faction_trade_axis = {
 	send_embargo = FIN 
 	send_embargo = JAP 
 	send_embargo = MAN 
+}
+FRA_africa_spawn_ins = {
+	FRA = {
+		set_technology = { mechanised_infantry = 1 }
+	}
+	create_equipment_variant = {
+		name = "AFRICA TANKs"
+		type = medium_tank_chassis_1
+		allow_without_tech = yes
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_high_velocity_cannon_2
+			turret_type_slot = tank_medium_three_man_tank_turret
+			suspension_type_slot = tank_torsion_bar_suspension
+			armor_type_slot = tank_welded_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_2
+			special_type_slot_2 = secondary_turret_small_cannon
+			special_type_slot_3 = secondary_turret_small_cannon 
+			special_type_slot_4 = easy_maintenance 
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 9
+			tank_nsb_armor_upgrade = 0
+		}
+		icon = "GFX_GER_basic_medium_tank_medium"
+	}
+	load_oob = "FRA_AFRICA_tanks"
 }
