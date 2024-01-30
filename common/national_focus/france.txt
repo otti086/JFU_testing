@@ -1054,11 +1054,11 @@ focus = {
 		completion_reward = {
 			add_ideas = tot_economic_mobilisation
 			add_manpower = 100000
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = 10000
-			}
-
+			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 10000 }
+			add_equipment_to_stockpile = { type = support_equipment_1 amount = 500 }
+			add_equipment_to_stockpile = { type = train_equipment_1 amount = 50 }
+			add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 300 }
+			add_equipment_to_stockpile = { type = convoy amount = 400 }
 			ENG = { 
 				add_relation_modifier = {
 				target = FRA
@@ -1070,10 +1070,6 @@ focus = {
 				target = FRA
 				modifier = trade_major
 				}
-			}
-			add_equipment_to_stockpile = {
-				type = convoy
-				amount = 400
 			}
 			add_offsite_building = {
 				type = industrial_complex

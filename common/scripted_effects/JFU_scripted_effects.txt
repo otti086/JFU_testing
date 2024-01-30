@@ -455,6 +455,7 @@ JFU_vichy_france = {
 			ideology = conservatism
 		}
 		add_ideas = FRA_defeatism
+		set_equipment_fraction = 0.0
 	}
 	JFU_vichy_france_2 = yes
 	ENG = {
