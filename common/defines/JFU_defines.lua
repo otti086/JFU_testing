@@ -49,7 +49,7 @@ NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 100.0      -- vanilla 
 NDefines.NCountry.REINFORCEMENT_MANPOWER_CHUNK = 0.5				-- vanilla 0.1 Chunk size of manpower reinforcement delivery, in % of total manpower needed by the template.
 NDefines.NCountry.EQUIPMENT_UPGRADE_CHUNK_MAX_SIZE = 50			-- vanilla 10  Maximum chunk size of equipment upgrade distribution per update.
 NDefines.NCountry.WAR_SUPPORT_DEFENSIVE_WAR = 0.3				--vanilla 0.2 Impact of being in defensive war
-NDefines.NCountry.MIN_FOCUSES_FOR_CONTINUOUS = 0   				 -- WAS 10
+NDefines.NCountry.MIN_FOCUSES_FOR_CONTINUOUS = 0   				 --vanilla 10
 NDefines.NCountry.NUM_DAYS_TO_FULLY_DELETE_STOCKPILED_EQUIPMENT = 999 
 
 NDefines.NPolitics.LEADER_TRAITS_XP_SHOW = 0.01
@@ -63,7 +63,7 @@ NDefines.NResistance.NRESISTANCE_TARGET_MODIFIER_OCCUPIED_IS_EXILE_MAX = 10.0
 
 NDefines.NBuildings.MAX_SHARED_SLOTS = 50
 NDefines.NBuildings.OWNER_CHANGE_EXTRA_SHARED_SLOTS_FACTOR = 1.0
-NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 200
+NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 100
 NDefines.NBuildings.NAVALBASE_REPAIR_MULT = 0.15 -- vanilla 0.5 Each level of navalbase building repairs X strength and can repair as many ships as its level
 
 NDefines.NCharacter.SPECIALIST_ADVISOR_MIN_RANK = 2

@@ -1952,7 +1952,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_trade_deal_with_sweden
-		icon = GFX_GOAL_GENERIC_BEFRIEND_SWEDEN  
+		icon = GFX_GER_SWEDISH_TRADE  
 		prerequisite = { focus = GER_weserubung2 } 
 		x = 0
 		y = 1

@@ -1539,4 +1539,16 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/ger/focus_GER_panzerschokolade.dds"
 	}
     
+
+    SpriteType = {
+		name = "GFX_GER_SWEDISH_TRADE"
+		texturefile = "gfx/interface/goals/ger/GER_swedish_trade.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GOAL_INDYCLONE_THE_AXIS"
+		texturefile = "gfx/interface/goals/generic/goal_indyclone_the_axis.dds"
+	}
+    
 }

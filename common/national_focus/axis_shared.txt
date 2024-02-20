@@ -1,6 +1,6 @@
 ﻿shared_focus = {
 	id = AXIS_pact_of_steel
-	icon = GFX_focus_chi_mission_to_germany 
+	icon = GFX_GOAL_INDYCLONE_THE_AXIS 
 	x = 0
 	y = 0
 	offset = {
