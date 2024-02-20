@@ -490,7 +490,6 @@ on_actions = {
 					add_to_temp_variable = { AXIScasualtiesk = BUL.casualties_k }	
 					divide_temp_variable  = { AXIScasualtiesk  = 3  }
 					add_to_variable = { var = FRA_legitimacy value = AXIScasualtiesk }
-					divide_variable = { DAYSFRANCEHELD = 2 }
 					add_to_variable = { var = FRA_legitimacy value = DAYSFRANCEHELD }
 				}
 

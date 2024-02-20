@@ -637,6 +637,9 @@ JFU_vichy_france_2 = {
 			transfer_state = 888
 		}
 		FRA_africa_spawn_ins = yes 
+		add_equipment_to_stockpile = { type = medium_tank_chassis_2 amount = 500 producer = FRA variant_name = "AFRICA TANKs" }
+		add_equipment_to_stockpile = { type = medium_tank_flame_chassis_1 amount = 200 producer = FRA variant_name = "AFRICA FLAME TANKs" }
+		add_equipment_to_stockpile = { type = light_tank_chassis_1 amount = 300 producer = FRA variant_name = "AFRICA LIGHT TANKs" }
 	}
 	if = { 
 		limit = {
@@ -749,28 +752,12 @@ JFU_startup_on_action = {
 				level = 10
 				instant_build = yes
 			}
-		}
-		if = {
-			limit = { 
-				has_game_rule = {
-					rule = JFU_CHINA_WAR
-					option = CHINA_WAR
-				}
-			}
-			605 = {
-				add_extra_state_shared_building_slots = 10
-				add_building_construction = {
-					type = arms_factory
-					level = 10
-					instant_build = yes
-				}
-			}				
-		}		
+		}	
 		605 = {
-			add_extra_state_shared_building_slots = 3
+			add_extra_state_shared_building_slots = 15
 			add_building_construction = {
 				type = arms_factory
-				level = 3
+				level = 15
 				instant_build = yes
 			}
 		}		
@@ -3577,14 +3564,14 @@ FRA_africa_spawn_ins = {
 	}
 	create_equipment_variant = {
 		name = "AFRICA TANKs"
-		type = medium_tank_chassis_1
+		type = medium_tank_chassis_2
 		allow_without_tech = yes
 		parent_version = 0
 		modules = {
 			main_armament_slot = tank_high_velocity_cannon_2
 			turret_type_slot = tank_medium_three_man_tank_turret
 			suspension_type_slot = tank_torsion_bar_suspension
-			armor_type_slot = tank_welded_armor
+			armor_type_slot = tank_riveted_armor
 			engine_type_slot = tank_gasoline_engine
 			special_type_slot_1 = tank_radio_2
 			special_type_slot_2 = secondary_turret_small_cannon
@@ -3597,5 +3584,46 @@ FRA_africa_spawn_ins = {
 		}
 		icon = "GFX_GER_basic_medium_tank_medium"
 	}
+	create_equipment_variant = {
+		name = "AFRICA FLAME TANKs"
+		type = medium_tank_flame_chassis_1
+		allow_without_tech = yes
+		parent_version = 0
+		modules = {
+			main_armament_slot = flamethrower
+			turret_type_slot = tank_medium_one_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 9
+			tank_nsb_armor_upgrade = 0
+		}
+		icon = "GFX_GER_basic_medium_tank_medium"
+	}	
+	create_equipment_variant = {
+		name = "AFRICA LIGHT TANKs"
+		type = light_tank_chassis_1
+		allow_without_tech = yes
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_small_cannon_2
+			turret_type_slot = tank_light_three_man_tank_turret
+			suspension_type_slot = tank_interleaved_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_1
+			special_type_slot_2 = extra_ammo_storage
+			special_type_slot_3 = extra_ammo_storage 
+			special_type_slot_4 = extra_ammo_storage 
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 9
+			tank_nsb_armor_upgrade = 0
+		}
+		icon = "GFX_GER_basic_light_tank_light"
+	}
+
 	load_oob = "FRA_AFRICA_tanks"
 }
