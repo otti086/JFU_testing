@@ -708,6 +708,9 @@ country_event = {
 			transfer_state = 76
 		}
 		hidden_effect = {
+			76 = {
+				remove_dynamic_modifier = { modifier = ROM_no_building_slots }
+			}
 			country_event = { days = 1 id = news.15 }
 			complete_national_focus = GER_second_vienna_award
 		}

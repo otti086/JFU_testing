@@ -1337,3 +1337,10 @@ icon = "GFX_idea_generic_fortify_the_borders"
 EFR_defense_plan = {
 	army_defence_factor = 0.1
 }
+ROM_no_building_slots = {
+	enable = { always = yes }
+
+	icon = GFX_idea_generic_manpower_bonus
+
+	local_building_slots_factor = -1
+}

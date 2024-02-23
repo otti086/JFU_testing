@@ -5511,6 +5511,15 @@ focus_tree = {
 				SOV = { transfer_state = 78 }
 				SOV = { transfer_state = 766 }
 				SOV = { transfer_state = 80 }
+				78 = {
+					remove_dynamic_modifier = { modifier = ROM_no_building_slots }
+				}
+				80 = {
+					remove_dynamic_modifier = { modifier = ROM_no_building_slots }
+				}
+				766 = {
+					remove_dynamic_modifier = { modifier = ROM_no_building_slots }
+				}				
 				news_event = {id = news.199 days = 1 }
 			}
 		}
