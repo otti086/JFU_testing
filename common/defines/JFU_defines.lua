@@ -26,9 +26,10 @@ NDefines.NMilitary.ARMY_FUEL_COST_MULT = 0.2	-- VANILLA 0.5             --fuel c
 NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.10 -- VANILLA 0.25
 NDefines.NMilitary.UNIT_EXPERIENCE_PER_TRAINING_DAY = 0  -- VANILLA 0.0015
 NDefines.NMilitary.RIVER_CROSSING_PENALTY = -0.3                 -- small river crossing
-NDefines.NMilitary.RIVER_CROSSING_PENALTY_LARGE = -0.6           -- large river crossing
+NDefines.NMilitary.RIVER_CROSSING_PENALTY_LARGE = -0.5           -- large river crossing
 NDefines.NMilitary.RIVER_CROSSING_SPEED_PENALTY = -0.25           -- small river crossing
 NDefines.NMilitary.RIVER_CROSSING_SPEED_PENALTY_LARGE = -0.5     -- large river crossing
+NDefines.NMilitary.ENCIRCLED_DISBAND_MANPOWER_FACTOR = 0            -- WAS 0.2 | Most rulesets ban deleting encircled troops, but at least this prevents some manpower from returning | Deleting encircled divisions is always banned anyways, so this reduces unfair play | percentage of manpower returned when an encircled unit is disbanded
 
 
 NDefines.NMilitary.COMBAT_MOVEMENT_SPEED = 0.33 -- VANILLA 0.33
@@ -51,6 +52,7 @@ NDefines.NCountry.EQUIPMENT_UPGRADE_CHUNK_MAX_SIZE = 50			-- vanilla 10  Maximum
 NDefines.NCountry.WAR_SUPPORT_DEFENSIVE_WAR = 0.3				--vanilla 0.2 Impact of being in defensive war
 NDefines.NCountry.MIN_FOCUSES_FOR_CONTINUOUS = 0   				 --vanilla 10
 NDefines.NCountry.NUM_DAYS_TO_FULLY_DELETE_STOCKPILED_EQUIPMENT = 999 
+NDefines.NCountry.GIE_ESCAPING_DIVISIONS_TRANSFER_DAYS = 1 			--  WAS 30 | days to transfer escaping divisions to host nation
 
 NDefines.NPolitics.LEADER_TRAITS_XP_SHOW = 0.01
 
@@ -127,17 +129,17 @@ NDefines.NAir.AIR_WING_MAX_STATS_BOMBING = 200	-- vanilla 100
 
 
 NDefines.NNavy.MISSION_SUPREMACY_RATIOS = { 						-- supremacy multipliers for different mission types   | Strikeforce/Naval Invasion Support now 0 supremacy to avoid free supremacy
-		0.0, -- HOLD
-		1.0, -- PATROL		
-		0.0, -- STRIKE FORCE 
-		0.2, -- CONVOY RAIDING
-		0.5, -- CONVOY ESCORT
-		0.0, -- MINES PLANTING	
-		0.0, -- MINES SWEEPING	
-		0.0, -- TRAIN
-		0.0, -- RESERVE_FLEET
-		0.2, -- NAVAL_INVASION_SUPPORT
-	}
+	0.0, -- HOLD
+	1.0, -- PATROL		
+	0.0, -- STRIKE FORCE 
+	0.2, -- CONVOY RAIDING
+	0.5, -- CONVOY ESCORT
+	0.0, -- MINES PLANTING	
+	0.0, -- MINES SWEEPING	
+	0.0, -- TRAIN
+	0.0, -- RESERVE_FLEET
+	0.2, -- NAVAL_INVASION_SUPPORT
+}
 
 NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0
 NDefines.NNavy.ACCIDENTS_CHANCE_BALANCE_FACTOR = 0					-- WAS 0.004
@@ -147,7 +149,7 @@ NDefines.NNavy.ADMIRAL_TASKFORCE_CAP = 20                         -- WAS 10 | In
 NDefines.NNavy.NAVAL_MINES_DECAY_AT_PEACE_TIME = 1000                    -- WAS 0.25 
 NDefines.NNavy.SUPPLY_NEED_FACTOR = 0
 NDefines.NNavy.CONVOY_EFFICIENCY_LOSS_MODIFIER = 0.5 --  WAS 1.25, reduced so players have more time to deal with it | How much efficiency drops when losing convoys. If modifier is 0.5, then losing 100% of convoys in short period, the efficiency will drop by 50%.
-
+NDefines.NNavy.NAVAL_COMBAT_AIR_CARRIER_TARGET_SCORE = 50 -- VANILLA 200
 
 NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 1                 -- License can be cancelled at any time now, down from 30 | 
 NDefines.NProduction.BASE_LICENSE_IC_COST = 0	

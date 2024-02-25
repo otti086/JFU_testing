@@ -847,7 +847,7 @@ equipment_modules = {
 		add_equipment_type = cas
 
 		add_stats = {
-			build_cost_ic = 1.5
+			build_cost_ic = 3
 		}
 		xp_cost = 0
 		allow_mission_type = {
@@ -1118,10 +1118,10 @@ equipment_modules = {
 			add_stats = {
 				air_agility = -12
 				weight = 5
-				naval_strike_attack = 12
+				naval_strike_attack = 15
 			}
 			add_average_stats = {
-				naval_strike_targetting = 4
+				naval_strike_targetting = 6
 			}
 		}
 		dismantle_cost_ic = 1.5
@@ -1149,10 +1149,10 @@ equipment_modules = {
 			add_stats = {
 				air_agility = -12
 				weight = 8
-				naval_strike_attack = 15
+				naval_strike_attack = 20
 			}
 			add_average_stats = {
-				naval_strike_targetting = 8
+				naval_strike_targetting = 10
 			}
 		}
 		dismantle_cost_ic = 1.5
@@ -1180,10 +1180,10 @@ equipment_modules = {
 			add_stats = {
 				air_agility = -12
 				weight = 11
-				naval_strike_attack = 19
+				naval_strike_attack = 25
 			}
 			add_average_stats = {
-				naval_strike_targetting = 10
+				naval_strike_targetting = 12
 			}
 		}
 		dismantle_cost_ic = 1.5
@@ -1389,7 +1389,7 @@ equipment_modules = {
 				cas
 			}
 			add_stats = {
-				air_defence = 12
+				air_defence = 21
 			}
 		}
 		dismantle_cost_ic = 2 #you essentially have to redesign part of the wing

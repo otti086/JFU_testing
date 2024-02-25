@@ -747,7 +747,7 @@ ideas = {
 				custom_modifier_tooltip = hp_spirit	
 			}
 			equipment_bonus = {
-				small_plane_airframe = {  air_defence = 0.1 instant = yes }
+				small_plane_airframe = {  air_defence = 0.2 instant = yes }
 			}
 		}
 		ENG_operation_compass = {
@@ -1096,6 +1096,18 @@ ideas = {
 				production_lack_of_resource_penalty_factor = -1 
 				min_export = -1
 			}		
+		}
+		FRA_no_manchu = {
+			picture = generic_japanese_conflict
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			targeted_modifier = {
+				tag = JAP
+				attack_bonus_against = -0.3
+				defense_bonus_against = -0.1
+			}			
 		}		 		
 	}
 }

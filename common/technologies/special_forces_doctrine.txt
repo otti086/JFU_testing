@@ -777,7 +777,7 @@ technologies = {
 				attack = 0.10
 			}
 		}
-			
+		naval_invasion_planning_bonus_speed = 1			
 		doctrine = yes	
 		research_cost = 2.25
 		

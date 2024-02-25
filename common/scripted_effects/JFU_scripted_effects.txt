@@ -860,6 +860,12 @@ JFU_startup_on_action = {
 		add_equipment_to_stockpile = { type = light_tank_chassis_0 amount = 240 producer = FRA variant_name = "FT Char Cannon" }
 		add_equipment_to_stockpile = { type = light_tank_chassis_1 amount = 480 producer = FRA variant_name = "H-35" }
 		add_equipment_to_stockpile = { type = train_equipment_1 amount = 300 }
+		if = {
+			limit = {
+				MAN = { exists = yes }
+			}
+			add_ideas = { FRA_no_manchu }
+		}
 	}
 	JAP = {
 		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 7700 }
@@ -994,16 +1000,16 @@ JFU_comp_startup_effect = {
 	EFR = { add_ideas = JFU_no_tradeback }
 	JAP = { add_ideas = JFU_no_tradeback }
 	MAN = { add_ideas = JFU_no_tradeback }
-	ENG = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
-	USA = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
-	FRA = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
-	SAF = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
-	RAJ = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
-	MEX = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
-	CAN = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
-	AST = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
-	BRA = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
-	NZL = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
+#	ENG = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
+#	USA = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
+#	FRA = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
+#	SAF = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
+#	RAJ = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
+#	MEX = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
+#	CAN = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
+#	AST = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
+#	BRA = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
+#	NZL = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
 	2 = {
 		add_extra_state_shared_building_slots = 2
 		add_building_construction = {
@@ -1706,7 +1712,7 @@ pregrinded_effect = {
 			add_unit_leader_trait = logistics_wizard
 			add_unit_leader_trait = thorough_planner
 		}
-		JAP_akira_muto = { add_skill_level = 1 }
+		JAP_akira_muto = { add_skill_level = 2 }
 		JAP_akira_muto = { add_attack = 4 }
         JAP_akira_muto = { add_defense = 4 }
         JAP_akira_muto = { add_planning = 2 }
@@ -1812,7 +1818,7 @@ pregrinded_effect = {
 			add_unit_leader_trait = logistics_wizard
 			add_unit_leader_trait = thorough_planner
 		}
-		MAN_akira_muto = { add_skill_level = 1 }
+		MAN_akira_muto = { add_skill_level = 2 }
 		MAN_akira_muto = { add_attack = 2 }
         MAN_akira_muto = { add_defense = 4 }
         MAN_akira_muto = { add_planning = 2 }
@@ -2283,6 +2289,7 @@ pregrinded_effect = {
 			add_unit_leader_trait = infantry_expert
 			add_unit_leader_trait = infantry_leader	
 			add_unit_leader_trait = commando
+			add_unit_leader_trait = guerilla_fighter
 		}
 		BRA_augusto_rademaker = { add_skill_level = 1 }
 		BRA_augusto_rademaker = {
