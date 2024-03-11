@@ -1,0 +1,24 @@
+
+state={
+	id=970
+	name="Bigger Egypt"
+	manpower = 1
+	
+	state_category = wasteland
+
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 2
+		}
+
+		add_core_of = SWE
+	} 
+
+	provinces={
+		12764 1143 10127
+	}
+
+
+	local_supplies=9.0 
+}
