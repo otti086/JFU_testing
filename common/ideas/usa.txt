@@ -685,7 +685,9 @@ ideas = {
 					build_cost_ic = -0.05 instant = yes
 				}
 				ship_hull_carrier = {
-					build_cost_ic = -0.05 instant = yes
+					build_cost_ic = -0.05 
+					carrier_size = 2
+					instant = yes
 				}
 				ship_hull_cruiser = {
 					build_cost_ic = -0.05 instant = yes

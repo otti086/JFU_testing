@@ -77,6 +77,11 @@ ideas = {
 			modifier = {
 				sortie_efficiency = 0.2
 			}
+			equipment_bonus = {
+				ship_hull_carrier = {
+					carrier_size = 2
+				}
+			}
 		}
 
 		JAP_zaibatsus = {
