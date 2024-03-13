@@ -1545,8 +1545,8 @@
  NOR_army_buffs_2:0 "Ruge's Plan"
  NOR_coredef:0 "Protect the homeland"
  
- STRATEGICREGION_280:0 "Gulf of Aden"
- STRATEGICREGION_282:0 "Lower Egypt"
+ STRATEGICREGION_289:0 "Gulf of Aden"
+ STRATEGICREGION_291:0 "Lower Egypt"
 
 
  horsthelp.1.t:0 "Help with Fuel Manager"
