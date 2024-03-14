@@ -1,0 +1,24 @@
+state = {
+	id = 951
+	name = "STATE_951"
+	manpower = 1
+	
+	state_category = rural
+
+	history = {
+
+		owner = SWE
+		add_core_of = SWE
+
+		buildings = {
+			infrastructure = 0
+		}
+
+	}
+
+	provinces = {
+		5131 8217 8231 13303
+	}
+
+	local_supplies = 0.0 
+}

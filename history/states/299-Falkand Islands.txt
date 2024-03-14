@@ -14,8 +14,12 @@ state= {
 			}
 		}
 		add_claim_by = SWE
+
+		victory_points = {
+			12960 1
+		}
 	}
-	provinces= { 12960 }
+	provinces= { 12960 13292 }
 
 	local_supplies=0.0 
 }

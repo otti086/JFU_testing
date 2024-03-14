@@ -3634,3 +3634,301 @@ FRA_africa_spawn_ins = {
 
 	load_oob = "FRA_AFRICA_tanks"
 }
+
+JUNO_set_shared_military_branch_defaults = {
+	# Army modifiers
+	set_variable = { ROOT.JUNO_army_modifier_experience_gain_army_factor = 0.0 }
+	set_variable = { ROOT.JUNO_army_modifier_experience_loss_factor = 0.00 }
+	set_variable = { ROOT.JUNO_army_modifier_experience_gain_army = 0.02 }
+	set_variable = { ROOT.JUNO_army_production_speed_arms_factory_factor = 0.00 }
+	set_variable = { ROOT.JUNO_army_modifier_army_org_factor = 0.00 }
+	set_variable = { ROOT.JUNO_army_operative_slot = 0 }
+	set_variable = { ROOT.JUNO_supply_combat_penalties_on_core_factor = 0.00 }
+	set_variable = { ROOT.JUNO_modifier_production_speed_supply_node_factor = 0.00 }
+	set_variable = { ROOT.JUNO_army_modifier_army_core_defence_factor = 0.00 }
+	set_variable = { ROOT.JUNO_army_modifier_army_armor_defence_factor = 0.00 }
+	set_variable = { ROOT.JUNO_army_modifier_army_armor_attack_factor = 0.00 }
+	set_variable = { ROOT.JUNO_army_modifier_army_attack_speed_factor = 0.00 }
+	set_variable = { ROOT.JUNO_army_modifier_army_artillery_attack_factor = 0.00 }
+	set_variable = { ROOT.JUNO_army_modifier_army_artillery_defence_factor = 0.00 }
+	set_variable = { ROOT.JUNO_army_modifier_production_speed_anti_air_building_factor = 0.00 }
+	set_variable = { ROOT.JUNO_army_modifier_conscription = 0.00 }
+	set_variable = { ROOT.JUNO_army_modifier_training_time_factor = 0.00 }
+	set_variable = { ROOT.JUNO_army_modifier_conscription_factor = 0.00 }
+	set_variable = { ROOT.JUNO_army_modifier_army_defence_factor = 0.00 }
+	set_variable = { ROOT.JUNO_army_modifier_army_attack_factor = 0.00 }
+	set_variable = { ROOT.JUNO_army_modifier_special_forces_cap = 0.00 }
+	set_variable = { ROOT.JUNO_army_modifier_industrial_capacity_factory = 0.00 }
+	set_variable = { ROOT.JUNO_army_modifier_special_forces_out_of_supply_factor = 0.00 }
+	set_variable = { ROOT.JUNO_army_modifier_extra_marine_supply_grace = 0 }
+	set_variable = { ROOT.JUNO_army_modifier_max_planning_factor = 0 }
+	set_variable = { ROOT.JUNO_army_modifier_planning_speed_factor = 0 }
+	set_variable = { ROOT.JUNO_army_modifier_max_command_power_mult = 0 }
+	set_variable = { ROOT.JUNO_army_modifier_command_power_gain_mult = 0 }
+	set_variable = { ROOT.JUNO_army_modifier_acclimatization_cold_climate_gain_factor = 0 }
+	set_variable = { ROOT.JUNO_army_modifier_acclimatization_hot_climate_gain_factor = 0 }
+	
+	# Navy Modifiers
+	set_variable = { ROOT.JUNO_navy_experience_gain_navy_factor = 0.02 }
+	set_variable = { ROOT.JUNO_navy_mines_planting_by_fleets_factor = 0.0 }
+	set_variable = { ROOT.JUNO_navy_navy_anti_air_attack_factor = 0.0 }
+	set_variable = { ROOT.JUNO_navy_navy_spirit_category_type_cost_factor = 0 }
+	set_variable = { ROOT.JUNO_navy_convoy_retreat_speed = 0 }
+	set_variable = { ROOT.JUNO_navy_refit_speed = 0 }
+	set_variable = { ROOT.JUNO_navy_spotting_chance = 0 }
+	set_variable = { ROOT.JUNO_navy_repair_speed_factor = 0 }
+	set_variable = { ROOT.JUNO_navy_production_speed_dockyard_factor = 0 }
+	set_variable = { ROOT.JUNO_navy_industrial_capacity_dockyard = 0 }
+	set_variable = { ROOT.JUNO_navy_extra_marine_supply_grace = 0 }
+	set_variable = { ROOT.JUNO_navy_naval_invasion_capacity = 0 }
+	set_variable = { ROOT.JUNO_navy_naval_mines_effect_reduction = 0 }
+	set_variable = { ROOT.JUNO_navy_experience_gain_navy_unit_factor = 0 }
+	set_variable = { ROOT.JUNO_navy_naval_coordination = 0 }
+	set_variable = { ROOT.JUNO_navy_naval_equipment_upgrade_xp_cost = 0 }
+	set_variable = { ROOT.JUNO_naval_morale_factor = 0 }
+	set_variable = { ROOT.JUNO_screening_efficiency = 0 }
+	set_variable = { ROOT.JUNO_convoy_escort_efficiency = 0 }
+	set_variable = { ROOT.JUNO_navy_capital_ship_defence_factor = 0 }
+	set_variable = { ROOT.JUNO_naval_accidents_chance = 0 }
+	set_variable = { ROOT.JUNO_navy_screen_defence_factor = 0 }
+	#set_variable = { ROOT.JUNO_modifier_production_speed_bunker_factor = 0 }
+	set_variable = { ROOT.JUNO_modifier_production_speed_coastal_bunker_factor = 0 }
+
+	# Air modifier
+	set_variable = { ROOT.JUNO_airforce_modifier_air_doctrine_cost_factor = 0.0 }
+	set_variable = { ROOT.JUNO_airforce_modifier_air_ace_generation_chance_factor = 0.0 }
+	set_variable = { ROOT.JUNO_airforce_modifier_air_range_factor = 0.0 }
+	set_variable = { ROOT.JUNO_airforce_modifier_air_superiority_efficiency = 0.0 }
+	set_variable = { ROOT.JUNO_airforce_modifier_air_intercept_efficiency = 0.0 }
+	set_variable = { ROOT.JUNO_airforce_modifier_air_mission_xp_gain_factor = 0.0 }
+	set_variable = { ROOT.JUNO_airforce_modifier_air_agility_factor = 0.0 }
+	set_variable = { ROOT.JUNO_airforce_modifier_ground_attack_factor = 0.0 }
+	set_variable = { ROOT.JUNO_airforce_modifier_experience_gain_air = 0.02 }
+	set_variable = { ROOT.JUNO_army_modifier_industrial_capacity_factory_airfoce = 0.00 }
+	set_variable = { ROOT.JUNO_airforce_modifier_conscription_factor = 0.00 }
+	set_variable = { ROOT.JUNO_airforce_modifier_air_strategic_bomber_bombing_factor = 0.00 }
+	set_variable = { ROOT.JUNO_airforce_modifier_air_cas_present_factor = 0.00 }
+	#set_variable = { ROOT.JUNO_airforce_modifier_ground_attack_factor = 0.00 }
+	set_variable = { ROOT.JUNO_airforce_modifier_air_defence_factor = 0 }
+
+}
+
+BRA_remove_economy_modifier = {
+	IF = {
+		limit = {
+			AND = {
+				has_dynamic_modifier = { modifier = BRA_undiversified_economy_modifier }
+				check_variable = {
+					var = BRA_economy_industrial_capacity_factor
+					value = -0.1
+					compare = greater_than
+				}
+				check_variable = {
+					var = BRA_economy_production_efficiency_gain_factor
+					value = -0.1
+					compare = greater_than
+				}
+				check_variable = {
+					var = BRA_economy_production_max_efficiency_factor
+					value = -0.1
+					compare = greater_than
+				}				 						
+			}
+		}
+		remove_dynamic_modifier = { modifier = BRA_undiversified_economy_modifier }
+	}
+}
+
+BRA_setup_colonized_countries_to_liberate_array = {
+	hidden_effect = {
+		for_each_scope_loop = {
+			array = global.countries
+			IF = {
+				limit = {
+					exists = no #the country does not exist
+					any_state = {
+						is_core_of = PREV #the state is a core of the non-existing country
+						is_on_continent = south_america #the state is in south america
+						OWNER = { #the country owning the state
+							NOT = { is_in_faction_with = ROOT }
+							NOT = { tag = ROOT }
+							NOT = { #don't add multiple times
+								is_in_array = {
+									array = BRA.anti_colonialist_countries_to_liberate
+									value = THIS
+								}
+							}
+						}
+					}
+
+				}
+				add_to_array = { BRA.anti_colonialist_countries_to_liberate = THIS }
+			}
+		}
+		
+	}
+}
+
+
+BRA_communist_cw_transfer_chars = {
+		BRA = {
+			BRA_eurico_gaspar_dutra = {
+				set_character_flag = BRA_loyal_to_gov_char
+			}
+			BRA_mascarenhas_de_morais = {
+				set_character_flag = BRA_loyal_to_gov_char
+			}
+			every_character = {
+				limit = {
+					has_character_flag = BRA_loyal_to_gov_char
+				}
+				set_nationality = PREV.PREV
+			}
+		}
+}
+
+BRA_mio_military_factory = {
+	random_core_state = {
+		limit = {
+			free_building_slots = {
+				building = arms_factory
+				size > 0
+				include_locked = yes
+			}
+			is_owned_and_controlled_by = ROOT
+			NOT = {
+				has_dynamic_modifier = {
+					modifier = BRA_neglected_state_dynamic_modifier
+				} 
+				OR = {
+					state = 961
+					state = 962
+					state = 963
+					state = 964
+					state = 965
+					state = 966
+					state = 967
+					state = 968
+				}
+			}
+		}
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			type = arms_factory
+			level = 1
+			instant_build = yes
+		}
+	}
+}
+
+BRA_select_leader_flag = {
+	IF = {
+		limit = {
+			has_country_leader = {
+				ruling_only = yes
+				character = BRA_armando_de_sales_oliveira
+			}
+		}
+		set_country_flag = BRA_adso_president_flag
+	}
+	ELSE_IF = {
+		IF = {
+			limit = {
+				has_country_leader = {
+					ruling_only = yes
+					character = BRA_anisio_teixeira
+				}
+			}
+			set_country_flag = BRA_ansio_president_flag
+		}
+	}
+	ELSE_IF = {
+		IF = {
+			limit = {
+				has_country_leader = {
+					ruling_only = yes
+					character = BRA_minervino_de_oliveira
+				}
+			}
+			set_country_flag = BRA_mdo_president_flag
+		}
+	}
+	ELSE_IF = {
+		IF = {
+			limit = {
+				has_country_leader = {
+					ruling_only = yes
+					character = BRA_lindolfo_collor
+				}
+			}
+			set_country_flag = BRA_collor_president_flag
+		}
+	}
+	ELSE_IF = {
+		IF = {
+			limit = {
+				has_country_leader = {
+					ruling_only = yes
+					character = BRA_eurico_gaspar_dutra
+				}
+			}
+			set_country_flag = BRA_dutra_president_flag
+		}
+	}
+}
+
+BRA_clear_leader_flags = {
+	clr_country_flag = BRA_adso_president_flag
+	clr_country_flag = BRA_ansio_president_flag
+	clr_country_flag = BRA_mdo_president_flag
+	clr_country_flag = BRA_collor_president_flag
+	clr_country_flag = BRA_dutra_president_flag
+}
+
+BRA_clr_country_leader_role = {
+	IF = {
+		limit = {
+			has_country_flag = BRA_adso_president_flag
+		}
+		remove_country_leader_role = {
+			character = BRA_armando_de_sales_oliveira
+			ideology = liberalism
+		}
+	}
+	ELSE_IF = {
+		limit = {
+			has_country_flag = BRA_ansio_president_flag
+		}
+		remove_country_leader_role = {
+			character = BRA_anisio_teixeira
+			ideology = liberalism
+		}
+	}
+	ELSE_IF = {
+		limit = {
+			has_country_flag = BRA_mdo_president_flag
+		}
+		remove_country_leader_role = {
+			character = BRA_minervino_de_oliveira
+			ideology = liberalism
+		}
+	}
+	ELSE_IF = {
+		limit = {
+			has_country_flag = BRA_collor_president_flag
+		}
+		remove_country_leader_role = {
+			character = BRA_lindolfo_collor
+			ideology = liberalism
+		}
+	}
+	ELSE_IF = {
+		limit = {
+			has_country_flag = BRA_dutra_president_flag
+		}
+		remove_country_leader_role = {
+			character = BRA_eurico_gaspar_dutra
+			ideology = conservatism
+		}
+	}
+}

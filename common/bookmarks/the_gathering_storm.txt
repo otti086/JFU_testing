@@ -186,11 +186,6 @@ bookmarks = {
 			ideas = {
 				
 			}
-			focuses = {
-				bra_deterrence
-				bra_rocket_effort
-				bra_liberty_ethos
-			}			
 		}
 
 

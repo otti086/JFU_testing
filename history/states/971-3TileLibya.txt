@@ -1,13 +1,13 @@
 
 state={
-	id=935
-	name="Bigger Egypt"
+	id=971
+	name="Bigger Libya"
 	manpower = 1
 	
 	state_category = wasteland
 
 	history={
-		owner = ENG
+		owner = ITA
 		buildings = {
 			infrastructure = 2
 		}
@@ -16,7 +16,7 @@ state={
 	} 
 
 	provinces={
-		12764 13274 13275 13273 1143 10127
+		1060 11951 10785 13366 13367
 	}
 
 

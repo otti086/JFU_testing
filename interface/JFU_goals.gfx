@@ -1551,4 +1551,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/generic/goal_indyclone_the_axis.dds"
 	}
     
+
+    SpriteType = {
+		name = "GFX_FOCUS_JAP_SOUTHERN_COLONIES"
+		texturefile = "gfx/interface/goals/focus_jap_southern_colonies.dds"
+	}
+    
 }
