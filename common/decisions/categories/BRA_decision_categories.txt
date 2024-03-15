@@ -124,3 +124,13 @@
 
 		visible_when_empty = no
 	}
+	JUNO_promote_immigration_cat = {
+		priority = 45
+		picture = GFX_decision_cat_picture_generic_promote_immigration_cat
+		icon = GFX_decision_SWI_support_humanitarian_efforts
+
+		allowed = {
+			original_tag = BRA
+		}
+		visible_when_empty = no
+	}

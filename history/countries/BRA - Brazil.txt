@@ -122,21 +122,6 @@ if = {
 		}
 	}
 
-	every_owned_state = {
-		limit = {
-			OR = {
-				state = 498
-				state = 499
-				state = 935
-				state = 936
-				state = 937
-			}
-		}
-		add_dynamic_modifier = {
-			modifier = BRA_cangaceiro_state
-		}
-	}
-
 	JUNO_set_shared_military_branch_defaults = yes
 
 	# Undiversified Economy Modifier

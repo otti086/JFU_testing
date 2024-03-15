@@ -1762,43 +1762,6 @@ war_measures = {
 			}
 		}
     }
-	
-	diversify_special_forces = {
-
-		icon = GFX_decision_generic_military
-
-		available = {
-			date > 1940.1.1
-		}
-
-		visible = {
-			has_dlc = "Arms Against Tyranny"
-			NOT = {
-				OR = {
-					tag = ENG #has a focus
-					tag = USA #has a focus
-					tag = SOV #has a focus
-					tag = JAP #has a focus
-				}
-			} 
-		}
-
-		fire_only_once = yes
-
-		cost = 50
-
-		complete_effect = {
-			add_potential_special_forces_tree = yes
-		}
-		ai_will_do = {
-			factor = 201
-			modifier = {
-				factor = 0
-				is_major = no
-			}
-		}
-	}
-	
 }
 
 economy_decisions = {
@@ -1815,27 +1778,27 @@ economy_decisions = {
 
         days_re_enable = 30
 
-	available = {
-		any_owned_state = {
-			NOT = { has_state_flag = infrastructure_building_slot_flag }
-			is_fully_controlled_by = ROOT
-			free_building_slots = {
-				building = infrastructure
-				size < 1
+		available = {
+			any_owned_state = {
+				NOT = { has_state_flag = infrastructure_building_slot_flag }
+				is_fully_controlled_by = ROOT
+				free_building_slots = {
+					building = infrastructure
+					size < 1
+				}
 			}
 		}
-	}
 
-	visible = {
-		any_owned_state = {
-			NOT = { has_state_flag = infrastructure_building_slot_flag }
-			is_fully_controlled_by = ROOT
-			free_building_slots = {
-				building = infrastructure
-				size < 1
+		visible = {
+			any_owned_state = {
+				NOT = { has_state_flag = infrastructure_building_slot_flag }
+				is_fully_controlled_by = ROOT
+				free_building_slots = {
+					building = infrastructure
+					size < 1
+				}
 			}
 		}
-	}
 
         complete_effect = {
 			random_owned_state = {
@@ -1992,169 +1955,6 @@ economy_decisions = {
 			}
 		}
     }
-}
-
-generic_purchase_old_ships_category = {
-	purchase_ships_eng = {
-		cost = 50
-		icon = GFX_decision_generic_naval
-		fire_only_once = no
-		visible = {
-			has_country_flag = generic_purchase_old_ships_flag
-			ENG = { 
-				NOT = { 
-					has_country_flag = sold_ships_to_us@ROOT
-					has_country_flag = negotiating_ship_purchase_flag@ROOT 
-				}
-			}
-			NOT = { has_war_with = ENG}
-		}
-		available = {
-			NOT = {
-				ENG = {
-					OR = {
-						has_civil_war = yes
-						has_capitulated = yes
-						has_opinion = {
-							target = FROM
-							value < 30
-						}
-					}					
-				}
-			}
-			
-		}
-		days_remove = 14
-		remove_effect = {
-			ENG = {
-				country_event = {
-					id = generic_purchase_ships_events.01
-					hours = 1
-				}
-				set_country_flag = negotiating_ship_purchase_flag@ROOT
-			}			
-		}
-	}
-	purchase_ships_sov = {
-		cost = 50
-		icon = GFX_decision_generic_naval
-		fire_only_once = no
-		visible = {
-			has_country_flag = generic_purchase_old_ships_flag
-			SOV = { 
-					has_country_flag = sold_ships_to_us@ROOT
-					has_country_flag = negotiating_ship_purchase_flag@ROOT 
-			}
-
-			NOT = { has_war_with = SOV}
-		}
-		available = {
-			NOT = {
-				SOV = {
-					OR = {
-						has_civil_war = yes
-						has_capitulated = yes
-						has_opinion = {
-							target = FROM
-							value < 30
-						}
-					}					
-				}
-			}
-			
-		}
-		days_remove = 14
-		remove_effect = {
-			SOV = {
-				country_event = {
-					id = generic_purchase_ships_events.01
-					hours = 1
-				}
-				set_country_flag = negotiating_ship_purchase_flag@ROOT
-			}
-		}
-	}
-	purchase_ships_ger = {
-		cost = 50
-		icon = GFX_decision_generic_naval
-		fire_only_once = no
-		visible = {
-			has_country_flag = generic_purchase_old_ships_flag
-			GER = { 
-				NOT = { 
-					has_country_flag = sold_ships_to_us@ROOT
-					has_country_flag = negotiating_ship_purchase_flag@ROOT
-				}
-
-			}
-			NOT = { has_war_with = GER}
-		}
-		available = {
-			NOT = {
-				GER = {
-					OR = {
-						has_civil_war = yes
-						has_capitulated = yes
-						has_opinion = {
-							target = FROM
-							value < 30
-						}
-					}					
-				}
-			}
-			
-		}
-		days_remove = 14
-		remove_effect = {
-			GER = {
-				country_event = {
-					id = generic_purchase_ships_events.01
-					hours = 1
-				}
-				set_country_flag = negotiating_ship_purchase_flag@ROOT
-			}
-		}
-	}
-	purchase_ships_usa = {
-		cost = 50
-		icon = GFX_decision_generic_naval
-		fire_only_once = no
-		visible = {
-			has_country_flag = generic_purchase_old_ships_flag
-			USA = { 
-				NOT = { 
-					has_country_flag = sold_ships_to_us@ROOT
-					has_country_flag = negotiating_ship_purchase_flag@ROOT  
-				}
-			}
-			NOT = { has_war_with = USA}
-		}
-		available = {
-			NOT = {
-				USA = {
-					OR = {
-						has_civil_war = yes
-						has_capitulated = yes
-						has_opinion = {
-							target = FROM
-							value < 30
-						}
-					}					
-				}
-			}
-			
-		}
-		days_remove = 14
-		remove_effect = {
-			USA = {
-				country_event = {
-					id = generic_purchase_ships_events.01
-					hours = 1
-				}
-				set_country_flag = negotiating_ship_purchase_flag@ROOT
-			}
-		}
-	}
 }
 
 generic_refit_civilian_ships_category = {
