@@ -103,6 +103,11 @@ political_actions1 = {
 			hidden_effect = {  
 				ROOT_call_against_norway = yes 
 			}
+			hidden_effect = {  	
+				ENG = { 
+					add_to_faction = NOR 
+				}  
+			}
 			complete_national_focus = GER_weserubung2 
 		}	
 	}
@@ -1079,6 +1084,9 @@ political_actions1 = {
 				}
 			}
 			annex_country = { target = MAN transfer_troops = yes }
+			FRA = {
+				add_ideas = { FRA_no_manchu }
+			}
 		}
 	}
 }

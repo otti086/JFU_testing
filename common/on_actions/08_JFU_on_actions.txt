@@ -600,9 +600,9 @@ on_actions = {
 					FROM.FROM = { is_core_of = NOR }
 					NOT = { NOR = { controls_state = 110 } }
 				}
-#				tp_divs_out_of_norway = yes
+				#tp_divs_out_of_norway = yes
 
-#				NOR = { transfer_state = 912 }
+				#NOR = { transfer_state = 912 }
 				GER = {
 				GER = {
 					transfer_state = 110
@@ -625,6 +625,11 @@ on_actions = {
 						}
 					}
 					add_compliance = 50 
+				}
+				NOR = {
+					complete_national_focus = {
+						focus = NOR_ALLIANCE
+					}
 				}
 			}
 			if = { 

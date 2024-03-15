@@ -857,17 +857,11 @@ focus_tree = {
  
 		
 		bypass = {
-			110 = {
-				is_controlled_by = GER
-			}
 		}
 		available_if_capitulated = yes
 
 		completion_reward = {
 			add_ideas = tot_economic_mobilisation
-			ENG = {
-				add_to_faction = NOR
-			}
 		}
 
     }

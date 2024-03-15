@@ -860,12 +860,6 @@ JFU_startup_on_action = {
 		add_equipment_to_stockpile = { type = light_tank_chassis_0 amount = 240 producer = FRA variant_name = "FT Char Cannon" }
 		add_equipment_to_stockpile = { type = light_tank_chassis_1 amount = 480 producer = FRA variant_name = "H-35" }
 		add_equipment_to_stockpile = { type = train_equipment_1 amount = 300 }
-		if = {
-			limit = {
-				MAN = { exists = yes }
-			}
-			add_ideas = { FRA_no_manchu }
-		}
 	}
 	JAP = {
 		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 7700 }
