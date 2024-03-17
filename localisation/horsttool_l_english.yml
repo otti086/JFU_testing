@@ -1236,6 +1236,10 @@
  endsieg_states:0 "We lost controll of at least 1 state in @POL§YPoland§!, @FRA§YFrance§! or god forbid in the Reich itself"
  GEN_the_kings_guard_1a_tt:0 "Modify template cap of §YFascist Militia§! by §G+16§!."
  GEN_the_kings_guard_1b_tt:0 "Create §Y8 Fascist Militia§! divisions in §Y[THIS.GetName]§!." 
+ BRA_licence_tt:0 "If we went down the §RPromote Centralization§! Focus path we will gain §YForeign Licenses§!, which grants (LIcense production speed §G+10.00%§!)\nIf we went down the §RGreater Federalism§! Focus path this effect will be increased by §G+5.00%§!."
+ BRA_industry_factory_tt:0 "If we went down the §RGreater Federalism§! Focus path we will modify §Y$BRA_army_modifier$§! by (Factory Output §G+5.00%§!)\nIf we went down the §RPromote Centralization§! Focus path this effect will be increased by §G+5.00%§!."
+ BRA_mils_construction_tt:0 "If we went down the §RGreater Federalism§! Focus path we will modify §Y$BRA_army_modifier$§! by (§YMilitary Factory§! construction Speed §G+5.00%§!)\nIf we went down the §RPromote Centralization§! Focus path this effect will be increased by §G+5.00%§!."
+ BRA_max_planning_tt:0 "If we went down the §RPromote Centralization§! Focus path we will modify §Y$BRA_army_modifier$§! by (Max planning §G+5.00%§!)\nIf we went down the §RGreater Federalism§! Focus path this effect will be increased by §G+5.00%§!."
 
  #ideas
 

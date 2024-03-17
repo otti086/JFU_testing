@@ -14,8 +14,8 @@
 		trigger = {	tag = MEX}
 	}
  	offset = {
-		x = 40  
-		y = 20
+		x = 23 
+		y = 10
 		trigger = {	tag = BRA}
 	}
 	offset = {

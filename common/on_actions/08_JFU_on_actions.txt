@@ -627,9 +627,7 @@ on_actions = {
 					add_compliance = 50 
 				}
 				NOR = {
-					complete_national_focus = {
-						focus = NOR_ALLIANCE
-					}
+					complete_national_focus = NOR_ALLIANCE
 				}
 			}
 			if = { 

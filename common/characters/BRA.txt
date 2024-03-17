@@ -341,86 +341,80 @@ characters={
 
 	### POLITICAL ADVISORS ###
 
-	BRA_washington_luis_pereira={
-		name=BRA_washington_luis_pereira
+	#BRA_washington_luis_pereira={
+	#	name=BRA_washington_luis_pereira
 
-		portraits={
-			civilian={
-				small="GFX_portrait_BRA_washington_luis_small"
-				large="GFX_portrait_BRA_washington_luis"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = BRA_washington_luis_pereira
-			allowed  = {
-				original_tag  = BRA
-			}
-			available = {
-				has_completed_focus = BRA_end_the_state_of_emergency
-				NOT = {
-					OR = { 
-						has_government = fascism
-						has_government = communism
-					}
-				}
-				is_country_leader = no
-			}
-			traits  = {
-				BRA_deposed_former_president
-			}
-		}			
-	}
+	#	portraits={
+	#		civilian={
+	#			small="GFX_portrait_BRA_washington_luis_small"
+	#			large="GFX_portrait_BRA_washington_luis"
+	#		}
+	#	}
+	#	advisor={
+	#		slot = political_advisor
+	#		idea_token = BRA_washington_luis_pereira
+	#		allowed  = {
+	#			original_tag  = BRA
+	#		}
+	#		available = {
+	#			has_completed_focus = BRA_end_the_state_of_emergency
+	#			is_country_leader = no
+	#		}
+	#		traits  = {
+	#			BRA_deposed_former_president
+	#		}
+	#	}			
+	#}
 
-	BRA_osvaldo_aranha={
-		name=BRA_osvaldo_aranha	
-		portraits={
-			civilian={
-				small="GFX_portrait_BRA_osvaldo_aranha_small"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = BRA_osvaldo_aranha
-			allowed  = {
-				original_tag  = BRA
-			}
-			available = {
-				#NOT = {
-				#	has_government = fascism
-				#	has_government = communism
-				#}
-			}
-			traits  = {
-				BRA_renowned_ambassador
-			}
-		}	
-	}
+	#BRA_osvaldo_aranha={
+	#	name=BRA_osvaldo_aranha	
+	#	portraits={
+	#		civilian={
+	#			small="GFX_portrait_BRA_osvaldo_aranha_small"
+	#		}
+	#	}
+	#	advisor={
+	#		slot = political_advisor
+	#		idea_token = BRA_osvaldo_aranha
+	#		allowed  = {
+	#			original_tag  = BRA
+	#		}
+	#		available = {
+	#			#NOT = {
+	#			#	has_government = fascism
+	#			#	has_government = communism
+	#			#}
+	#		}
+	#		traits  = {
+	#			BRA_renowned_ambassador
+	#		}
+	#	}	
+	#}
 	
-	BRA_afranio_de_mello_franco={
-		name=BRA_afranio_de_mello_franco	
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_south_america_3"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = BRA_afranio_de_mello_franco
-			allowed  = {
-				original_tag  = BRA
-			}
-			available = {
-				NOT = {
-					has_government = fascism
-					has_government = communism
-				}
-			}
-			traits  = {
-				BRA_nobel_peace_prize_nominee
-			}
-		}	
-	}
+	#BRA_afranio_de_mello_franco={
+	#	name=BRA_afranio_de_mello_franco	
+	#	portraits={
+	#		army={
+	#			small="GFX_idea_generic_political_advisor_south_america_3"
+	#		}
+	#	}
+	#	advisor={
+	#		slot = political_advisor
+	#		idea_token = BRA_afranio_de_mello_franco
+	#		allowed  = {
+	#			original_tag  = BRA
+	#		}
+	#		available = {
+	#			NOT = {
+	#				has_government = fascism
+	#				has_government = communism
+	#			}
+	#		}
+	#		traits  = {
+	#			BRA_nobel_peace_prize_nominee
+	#		}
+	#	}	
+	#}
 
 	BRA_jose_linhares = {
 		name=BRA_jose_linhares
@@ -500,78 +494,51 @@ characters={
 		}		
 	}
 
-	BRA_joao_neves_da_fortuna = {
-		name=BRA_joao_neves_da_fortuna
-		portraits={
-			army={
-				small="GFX_portrait_BRA_jose_do_fontoura_small"
-			}
-		}
-		advisor={
-			cost = 100
-			slot = political_advisor
-			idea_token = BRA_joao_neves_da_fortuna
-			allowed  = {
-				original_tag  = BRA
-			}
-			available  = {
-				#NOT = {
-				#	has_government = communism
-				#}
-			}
-			traits  = {
-				BRA_distinguished_diplomat 
-			}
-		}		
-	}
+	#BRA_joao_neves_da_fortuna = {
+	#	name=BRA_joao_neves_da_fortuna
+	#	portraits={
+	#		army={
+	#			small="GFX_portrait_BRA_jose_do_fontoura_small"
+	#		}
+	#	}
+	#	advisor={
+	#		cost = 100
+	#		slot = political_advisor
+	#		idea_token = BRA_joao_neves_da_fortuna
+	#		allowed  = {
+	#			original_tag  = BRA
+	#		}
+	#		available  = {
+	#		}
+	#		traits  = {
+	#			BRA_distinguished_diplomat 
+	#		}
+	#	}		
+	#}
 
-	BRA_joao_marques_de_reis = {
-		name=BRA_joao_marques_de_reis
-		portraits={
-			army={
-				small="GFX_portrait_BRA_joao_marques_does_reis_small"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = BRA_joao_marques_de_reis
-			allowed  = {
-				original_tag  = BRA
-			}
-			available  = {
-				NOT = {
-					has_government = communism
-				}
-			}
-			traits  = {
-				BRA_minister_of_transport
-			}
-		}		
-	}
-
-	BRA_francisco_campos = {
-		name=BRA_francisco_campos
-		portraits={
-			army={
-				small="GFX_portrait_BRA_francisco_campos_small"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = BRA_francisco_campos
-			allowed  = {
-				original_tag  = BRA
-			}
-			available  = {
-				NOT = {
-					has_government = communism
-				}
-			}
-			traits  = {
-				BRA_right_wing_ideologue
-			}
-		}		
-	}
+	#BRA_joao_marques_de_reis = {
+	#	name=BRA_joao_marques_de_reis
+	#	portraits={
+	#		army={
+	#			small="GFX_portrait_BRA_joao_marques_does_reis_small"
+	#		}
+	#	}
+	#	advisor={
+	#		slot = political_advisor
+	#		idea_token = BRA_joao_marques_de_reis
+	#		allowed  = {
+	#			original_tag  = BRA
+	#		}
+	#		available  = {
+	#			NOT = {
+	#				has_government = communism
+	#			}
+	#		}
+	#		traits  = {
+	#			BRA_minister_of_transport
+	#		}
+	#	}		
+	#}
 
 	BRA_filinto_muller = {
 		name=BRA_filinto_muller
@@ -844,32 +811,6 @@ characters={
 		}	
 	}
 
-	BRA_leoncio_basbaum = {
-		name=BRA_leoncio_basbaum
-		portraits={
-			#army={
-			#	small="GFX_idea_generic_political_advisor_south_america_3"
-			#}
-			civilian={
-				small=GFX_portrait_BRA_leoncio_basbaum_small
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = BRA_leoncio_basbaum
-			allowed = {
-				original_tag = BRA
-				has_dlc = "Trial of Allegiance"
-			}
-			available  = {
-				NOT = { has_government = fascism }
-			}
-			traits  = {
-				leftist_intellectual
-			}
-		}		
-	}
-
 	BRA_integralist_militia_general = {
 		portraits={
 			army={
@@ -958,30 +899,30 @@ characters={
 		}		
 	}
 
-	BRA_geremia_lunarelli = {
-		name=BRA_geremia_lunarelli
-		portraits={
-			army={
-				small="GFX_portrait_BRA_geremia_lunardelli_small"
-			}
-		}
-		advisor={
-			cost = 100
-			slot = political_advisor
-			idea_token = BRA_geremia_lunarelli
-			allowed  = {
-				original_tag  = BRA
-				has_dlc = "Trial of Allegiance"
-			}
-			available  = {
-				always = no
-				#has_completed_focus = BRA_promote_agriculture
-			}
-			traits  = {
-				 BRA_coffee_king
-			}
-		}		
-	}
+	#BRA_geremia_lunarelli = {
+	#	name=BRA_geremia_lunarelli
+	#	portraits={
+	#		army={
+	#			small="GFX_portrait_BRA_geremia_lunardelli_small"
+	#		}
+	#	}
+	#	advisor={
+	#		cost = 100
+	#		slot = political_advisor
+	#		idea_token = BRA_geremia_lunarelli
+	#		allowed  = {
+	#			original_tag  = BRA
+	#			has_dlc = "Trial of Allegiance"
+	#		}
+	#		available  = {
+	#			always = no
+	#			#has_completed_focus = BRA_promote_agriculture
+	#		}
+	#		traits  = {
+	#			 BRA_coffee_king
+	#		}
+	#	}		
+	#}
 
 	BRA_henry_ford = {
 		name=BRA_henry_ford
