@@ -1236,11 +1236,16 @@
  endsieg_states:0 "We lost controll of at least 1 state in @POL§YPoland§!, @FRA§YFrance§! or god forbid in the Reich itself"
  GEN_the_kings_guard_1a_tt:0 "Modify template cap of §YFascist Militia§! by §G+16§!."
  GEN_the_kings_guard_1b_tt:0 "Create §Y8 Fascist Militia§! divisions in §Y[THIS.GetName]§!." 
- BRA_licence_tt:0 "If we went down the §RPromote Centralization§! Focus path we will gain §YForeign Licenses§!, which grants (LIcense production speed §G+10.00%§!)\nIf we went down the §RGreater Federalism§! Focus path this effect will be increased by §G+5.00%§!."
- BRA_industry_factory_tt:0 "If we went down the §RGreater Federalism§! Focus path we will modify §Y$BRA_army_modifier$§! by (Factory Output §G+5.00%§!)\nIf we went down the §RPromote Centralization§! Focus path this effect will be increased by §G+5.00%§!."
- BRA_mils_construction_tt:0 "If we went down the §RGreater Federalism§! Focus path we will modify §Y$BRA_army_modifier$§! by (§YMilitary Factory§! construction Speed §G+5.00%§!)\nIf we went down the §RPromote Centralization§! Focus path this effect will be increased by §G+5.00%§!."
- BRA_max_planning_tt:0 "If we went down the §RPromote Centralization§! Focus path we will modify §Y$BRA_army_modifier$§! by (Max planning §G+5.00%§!)\nIf we went down the §RGreater Federalism§! Focus path this effect will be increased by §G+5.00%§!."
-
+ BRA_licence_tt:0 "If we chose the §RPromote Centralization§! Focus path we will gain §YForeign Licenses§!, which grants (LIcense production speed §G+10.00%§!)\nIf we instead chose the §RGreater Federalism§! Focus path this effect will be increased by §G+5.00%§!."
+ BRA_industry_factory_tt:0 "If we chose the §RGreater Federalism§! Focus path we will modify §Y$BRA_army_modifier$§! by (Factory Output §G+5.00%§!)\nIf we instead chose the §RPromote Centralization§! Focus path this effect will be increased by §G+5.00%§!."
+ BRA_mils_construction_tt:0 "If we chose the §RGreater Federalism§! Focus path we will modify §Y$BRA_army_modifier$§! by (§YMilitary Factory§! construction Speed §G+5.00%§!)\nIf we chose the §RPromote Centralization§! Focus path this effect will be increased by §G+5.00%§!."
+ BRA_max_planning_tt:0 "If we chose the §RPromote Centralization§! Focus path we will modify §Y$BRA_army_modifier$§! by (Max planning §G+5.00%§!)\nIf we instead chose the §RGreater Federalism§! Focus path this effect will be increased by §G+5.00%§!."
+ BRA_army_prof_tt:0 "If we chose the §RPromote Centralization§! Focus path we will modify §Y$BRA_army_modifier$§! by (Division Oranisation §G+5.00%§!, Divison Attack §G+5.00%§!)\nIf we instead chose the §RGreater Federalism§! Focus path this effect will be increased by §G+5.00%§!."
+ BRA_conscription_tt:0 "If we chose the §RGreater Federalism§! Focus path we will modify §Y$BRA_army_modifier$§! by (Division Oranisation §G+5.00%§!, Recruitable Population §Y1.00%§!)\nIf we instead chose the §RPromote Centralization§! Focus path we will gain an additional (Division Organisation §G+5.00%§!, Recrutable Population §Y0.50%§!)."
+ BRA_artillery_tt:0 "If we chose the §RGreater Federalism§! Focus path we will modify §Y$BRA_army_modifier$§! by (Artillery Attack §G+10.00%§!, Artillery Defence §G10.00%§!)\nIf we instead chose the §RPromote Centralization§! Focus path we will gain §YIncreased Artillery Production§!, which grants (§YTowed Artillery§!: $production_cost_tt$ §G-10.00%§!, §YTowed Rocket Artillery§!: $production_cost_tt$ §G-10.00%§!, §YTowed anti Tank§!: $production_cost_tt$ §G-10.00%§!)."
+ 
+ 
+ 
  #ideas
 
  italian_defense:0 "Italian Defensive Doctrine"
@@ -1643,4 +1648,6 @@
  BRA_women_in_aviation: "[SMB_women_in_aviation_key]"
  BRA_women_in_aviation_desc: "[SMB_women_in_aviation_desc_key]"
  BRA_tank_warfare_tt: "Unlocks decisions to §YSpecialize§! our national armor programs"
+ BRA_jungle_pioneers: "$SMB_support_company_bra$"
+ BRA_jungle_pioneers_desc: "$SMB_support_company_default_desc$"
  BRA_jungle_pioneers_tt: "Unlocks support battalion §YJungle Pioneers:§!\n §YJungle§!:\n  Movement §G+30%§!, \n  Attack §G+10%§!, \n  Defense §G+20%§!"

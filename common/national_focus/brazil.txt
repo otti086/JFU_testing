@@ -437,8 +437,8 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			num_of_factories > 25
-			has_stability > 0.7
+			num_of_factories > 30
+			has_stability > 0.6
 		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -556,7 +556,7 @@ focus_tree = {
 		available = {
 			OR = {
 				AND = {
-					democratic > 0.6
+					democratic > 0.5
 					has_stability > 0.4
 				}
 				has_war = yes
@@ -613,9 +613,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 5
 		}
-		#available = {
-		#	has_idea = BRA_separatism_idea
-		#}
+		available = {
+			has_war = yes
+		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -636,7 +636,6 @@ focus_tree = {
 			factor = 5
 		}
 		available = {
-			has_war = yes
 		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1100,7 +1099,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = BRA_invest_in_railways
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 19
 		}
@@ -1128,12 +1127,6 @@ focus_tree = {
 					tooltip = MODIFIER_STATE_RESOURCES_FACTOR_tt
 				}
 				set_state_flag = BRA_resource_boost
-			}
-			add_tech_bonus = {
-				name = BRA_oil_industry_bonus
-				bonus = 0.25
-				uses = 1
-				category = synth_resources
 			}
 		}
 	}
@@ -1186,7 +1179,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = BRA_invest_in_railways
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 8
 		}
@@ -1274,7 +1267,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = BRA_invest_in_road_infrastructure
 		mutually_exclusive = { focus = BRA_expand_fordlandia }
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 4
 		}
@@ -1319,7 +1312,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = BRA_invest_in_road_infrastructure
 		mutually_exclusive = { focus = BRA_fabrica_nacional_de_motores }
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 4
 		}
@@ -1556,12 +1549,16 @@ focus_tree = {
 			value = GFX_focus_BRA_army
 		}
 
-		x = 12
+		x = 10
 		y = 0
 
 		cost = 5
 
 		available = {
+			OR = {
+				has_completed_focus = BRA_continue_centralization
+				has_completed_focus = BRA_greater_federalism
+			}
 		}
 
 		ai_will_do = {
@@ -1575,28 +1572,7 @@ focus_tree = {
 
 			army_experience = 25
 
-			random_core_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					is_owned_and_controlled_by = ROOT
-					NOT = {
-						has_dynamic_modifier = { modifier = BRA_neglected_state_dynamic_modifier }
-						OR = {
-							state = 961
-							state = 962
-							state = 963
-							state = 964
-							state = 965
-							state = 966
-							state = 967
-							state = 968
-						}					
-					}
-				}
+			501 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
@@ -1690,33 +1666,33 @@ focus_tree = {
 		}
 	}
 
-	focus = {  
-		id = BRA_logistics_department
-		icon = GFX_focus_generic_supply_line
-		relative_position_id = BRA_army 
-		prerequisite = { focus = BRA_army }  
-		x = -5
-		y = 1
+	#focus = {  
+	#	id = BRA_logistics_department
+	#	icon = GFX_focus_generic_supply_line
+	#	relative_position_id = BRA_army 
+	#	prerequisite = { focus = BRA_army }  
+	#	x = -5
+	#	y = 1
 
-		cost = 10
+	#	cost = 10
 
-		available = {
-		}
+	#	available = {
+	#	}
 
-		bypass = {
+	#	bypass = {
 			
-		}
+	#	}
 
-		ai_will_do = {
-				factor = 20
-		}
+	#	ai_will_do = {
+	#			factor = 20
+	#	}
 
-		completion_reward = {
-			custom_effect_tooltip = BRA_modify_brazilian_army_ns_intro
-			add_to_variable = { JUNO_supply_combat_penalties_on_core_factor = -0.15 tooltip = supply_combat_penalties_on_core_factor_tt }
-			add_to_variable = { JUNO_modifier_production_speed_supply_node_factor = 0.25 tooltip = production_speed_supply_node_factor_tt }
-		}
-	}
+	#	completion_reward = {
+	#		custom_effect_tooltip = BRA_modify_brazilian_army_ns_intro
+	#		add_to_variable = { JUNO_supply_combat_penalties_on_core_factor = -0.15 tooltip = supply_combat_penalties_on_core_factor_tt }
+	#		add_to_variable = { JUNO_modifier_production_speed_supply_node_factor = 0.25 tooltip = production_speed_supply_node_factor_tt }
+	#	}
+	#}
 
 #	focus = {
 #		id = BRA_department_of_military_intelligence
@@ -1809,7 +1785,7 @@ focus_tree = {
 		id = BRA_tank_warfare
 		icon = GFX_goal_generic_army_tanks
 		relative_position_id = BRA_motorized
-		prerequisite = { focus = BRA_motorized focus = BRA_regular_infantry }
+		prerequisite = { focus = BRA_motorized }
 		x = 0
 		y = 1
 
@@ -1844,7 +1820,7 @@ focus_tree = {
 		}
 		mutually_exclusive = { focus = BRA_foreign_designs }
 		relative_position_id = BRA_tank_warfare
-		prerequisite = { focus = BRA_tank_warfare }
+		prerequisite = { focus = BRA_tank_warfare focus = BRA_artillery}
 		x = 0
 		y = 1
 
@@ -1972,7 +1948,7 @@ focus_tree = {
 		id = BRA_artillery
 		icon = GFX_goal_generic_army_artillery2
 		relative_position_id = BRA_regular_infantry
-		prerequisite = { focus = BRA_regular_infantry focus = BRA_motorized}
+		prerequisite = { focus = BRA_regular_infantry }
 		x = 0
 		y = 1
 
@@ -1991,16 +1967,28 @@ focus_tree = {
 		completion_reward = {
 
 			add_tech_bonus = {
-				name = JUNO_artilery_modernization_initiative
+				name = "Heavy Guns Modernization Efforts"
 				bonus = 1
 				uses = 2
 				category = artillery
 			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_completed_focus = BRA_continue_centralization
+					}
+					add_ideas = JUNO_hidden_at_production_ns
+				}
+				if = {
+					limit = {
+						has_completed_focus = BRA_greater_federalism
+					}
+				add_to_variable = { JUNO_army_modifier_army_artillery_attack_factor = 0.1 tooltip = artillery_attack_factor_tt }
+				add_to_variable = { JUNO_army_modifier_army_artillery_defence_factor = 0.1 tooltip = army_artillery_defence_factor_tt }
+				}
+			}
+			custom_effect_tooltip = BRA_artillery_tt
 
-			country_event = {
-				id = south_american_events.2
-				hours = 0
-			}	
 		}
 	}
 
@@ -2106,11 +2094,23 @@ focus = {
 		}
 
 		completion_reward = {
-			custom_effect_tooltip = BRA_modify_brazilian_army_ns_intro
-			add_to_variable = { JUNO_army_modifier_training_time_factor = 0.25 tooltip = training_time_factor_tt }
-			add_to_variable = { JUNO_army_modifier_army_defence_factor = 0.1 tooltip = army_defence_factor_tt }
-			add_to_variable = { JUNO_army_modifier_army_attack_factor = 0.05 tooltip = army_attack_factor_tt }
-			add_to_variable = { JUNO_army_modifier_army_org_factor = 0.05 tooltip = army_org_factor_tt }
+			hidden_effect = {
+				if = {
+					limit = {
+						has_completed_focus = BRA_continue_centralization
+					}
+					add_to_variable = { JUNO_army_modifier_army_attack_factor = 0.05 }
+					add_to_variable = { JUNO_army_modifier_army_org_factor = 0.05 }
+				}
+				if = {
+					limit = {
+						has_completed_focus = BRA_greater_federalism
+					}
+					add_to_variable = { JUNO_army_modifier_army_attack_factor = 0.10 }
+					add_to_variable = { JUNO_army_modifier_army_org_factor = 0.10 }
+				}
+			}
+			custom_effect_tooltip = BRA_army_prof_tt
 		}
 	}
 
@@ -2136,10 +2136,23 @@ focus = {
 		}
 
 		completion_reward = {
-			custom_effect_tooltip = BRA_modify_brazilian_army_ns_intro
-			add_to_variable = { JUNO_army_modifier_training_time_factor = 0.15 tooltip = training_time_factor_tt }
-			add_to_variable = { JUNO_army_modifier_conscription = 0.015 tooltip = conscription_tt }
-			add_to_variable = { JUNO_army_modifier_conscription_factor = 0.1 tooltip = conscription_factor_tt }
+			hidden_effect = {
+				if = {
+					limit = {
+						has_completed_focus = BRA_greater_federalism
+					}
+					add_to_variable = { JUNO_army_modifier_conscription = 0.010 }
+					add_to_variable = { JUNO_army_modifier_conscription_factor = 0.05 }
+				}
+				if = {
+					limit = {
+						has_completed_focus = BRA_continue_centralization
+					}
+					add_to_variable = { JUNO_army_modifier_army_attack_factor = 0.15 }
+					add_to_variable = { JUNO_army_modifier_army_org_factor = 0.10 }
+				}
+			}
+			custom_effect_tooltip = BRA_conscription_tt
 		}
 	}
 
@@ -2214,7 +2227,7 @@ focus = {
 
 	focus = {
 		id = BRA_special_forces_option_1
-		icon = GFX_focus_BRA_special_forces_option_1
+		icon = GFX_focus_SMB_special_forces_option_1
 		relative_position_id = BRA_special_forces
 		prerequisite = { focus = BRA_special_forces }
 		mutually_exclusive = { focus = BRA_special_forces_option_2 focus = BRA_special_forces_option_3 }
@@ -2290,7 +2303,7 @@ focus = {
 
 	focus = {
 		id = BRA_special_forces_option_3
-		icon = GFX_focus_BRA_special_forces_option_3 
+		icon = GFX_focus_SMB_special_forces_option_3  
 		relative_position_id = BRA_special_forces
 		prerequisite = { focus = BRA_special_forces }
 		mutually_exclusive = { focus = BRA_special_forces_option_1 focus = BRA_special_forces_option_2 }
@@ -2637,107 +2650,107 @@ focus = {
 		}
 	}
 
-focus = {  
-	id = BRA_jungle_warfare_training
-	icon = GFX_focus_ETH_peacekeeping_forces
-	relative_position_id = BRA_regular_infantry 
-	prerequisite = { focus = BRA_regular_infantry }  
-	x = 2
-	y = 2
+	#focus = {  
+	#	id = BRA_jungle_warfare_training
+	#	icon = GFX_focus_ETH_peacekeeping_forces
+	#	relative_position_id = BRA_regular_infantry 
+	#	prerequisite = { focus = BRA_regular_infantry }  
+	#	x = 2
+	#	y = 2
 
-	cost = 10
+	#	cost = 10
 
-	available = {
-		495 = {
-			is_owned_and_controlled_by = ROOT
+	#	available = {
+	#		495 = {
+	#			is_owned_and_controlled_by = ROOT
+	#		}
+	#	}
+
+	#	ai_will_do = {
+	#		factor = 10
+	#	}
+
+	#	completion_reward = {
+
+	#		custom_effect_tooltip = BRA_modify_brazilian_army_ns_intro
+	#		add_to_variable = { JUNO_army_modifier_experience_gain_army_factor = 0.02 tooltip = experience_gain_army_factor_tt }
+	#		add_to_variable = { JUNO_army_modifier_army_org_factor = 0.03 tooltip = army_org_factor_tt }
+	#	}
+	#}
+
+	focus = {  
+		id = BRA_jungle_pioneers
+		icon = GFX_goal_generic_construction2
+		relative_position_id = BRA_army_professionalism 
+		prerequisite = { focus = BRA_army_professionalism  }  
+		x = 0
+		y = 1
+
+		cost = 10
+
+		available = {
+			
 		}
-	}
 
-	ai_will_do = {
-		factor = 10
-	}
+		bypass = {
+			
+		}
 
-	completion_reward = {
-
-		custom_effect_tooltip = BRA_modify_brazilian_army_ns_intro
-		add_to_variable = { JUNO_army_modifier_experience_gain_army_factor = 0.02 tooltip = experience_gain_army_factor_tt }
-		add_to_variable = { JUNO_army_modifier_army_org_factor = 0.03 tooltip = army_org_factor_tt }
-	}
-}
-
-focus = {  
-	id = BRA_jungle_pioneers
-	icon = GFX_goal_generic_construction2
-	relative_position_id = BRA_jungle_warfare_training 
-	prerequisite = { focus = BRA_jungle_warfare_training }  
-	x = 1
-	y = 1
-
-	cost = 10
-
-	available = {
-		
-	}
-
-	bypass = {
-		
-	}
-
-	ai_will_do = {
+		ai_will_do = {
 			factor = 20
 		}
 
-	completion_reward = {
-		add_tech_bonus = {
-			name = JUNO_support_company_initiative
-			bonus = 1
-			uses = 1
-			category = support_tech
-		}
-		hidden_effect = {
-			set_technology = { 
-				TOA_jungle_pioneers_support_tech = 1 
-				popup = no
+		completion_reward = {
+			add_tech_bonus = {
+				name = JUNO_support_company_initiative
+				bonus = 1
+				uses = 1
+				category = support_tech
 			}
+			hidden_effect = {
+				set_technology = { 
+					TOA_jungle_pioneers_support_tech = 1 
+					popup = no
+				}
+			}
+			custom_effect_tooltip = BRA_jungle_pioneers_tt
 		}
-		custom_effect_tooltip = BRA_jungle_pioneers_tt
-	}
-}
-
-focus = {  
-	id = BRA_brown_water_navy
-	icon = GFX_focus_generic_merchant_fleet
-	relative_position_id = BRA_jungle_warfare_training 
-	prerequisite = { focus = BRA_jungle_warfare_training }  
-	x = -1
-	y = 1
-
-	cost = 10
-
-	available = {
-		
 	}
 
-	bypass = {
-		
-	}
+	#focus = {  
+	#	id = BRA_brown_water_navy
+	#	icon = GFX_focus_generic_merchant_fleet
+	#	relative_position_id = BRA_jungle_warfare_training 
+	#	prerequisite = { focus = BRA_jungle_warfare_training }  
+	#	x = -1
+	#	y = 1
 
-	ai_will_do = {
-			factor = 20
-		}
+	#	cost = 10
 
-	completion_reward = {
-		#custom_effect_tooltip = BRA_modify_brazilian_army_ns_intro
-		#add_to_variable = { JUNO_army_heat_attrition_factor = -0.1 tooltip = heat_attrition_factor_tt }
-		#add_to_variable = { JUNO_supply_combat_penalties_on_core_factor = -0.05 tooltip = supply_combat_penalties_on_core_factor_tt }
-		hidden_effect = { 
-			set_technology = { 
-				ToA_river_boats_tech = 1	
-				popup = no
-			} 
-		}
-		#show_ideas_tooltip = BRA_brown_water_navy_idea
-		add_ideas = BRA_brown_water_navy_idea
-	}
-}
+	#	available = {
+			
+	#	}
+
+	#	bypass = {
+			
+	#	}
+
+	#	ai_will_do = {
+	#			factor = 20
+	#		}
+
+	#	completion_reward = {
+	#		#custom_effect_tooltip = BRA_modify_brazilian_army_ns_intro
+	#		#add_to_variable = { JUNO_army_heat_attrition_factor = -0.1 tooltip = heat_attrition_factor_tt }
+	#		#add_to_variable = { JUNO_supply_combat_penalties_on_core_factor = -0.05 tooltip = supply_combat_penalties_on_core_factor_tt }
+	#		hidden_effect = { 
+	#			set_technology = { 
+	#				ToA_river_boats_tech = 1	
+	#				popup = no
+	#			} 
+	#		}
+	#		#show_ideas_tooltip = BRA_brown_water_navy_idea
+	#		add_ideas = BRA_brown_water_navy_idea
+	#	}
+	#}
 }
