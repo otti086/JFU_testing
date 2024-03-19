@@ -674,3 +674,1110 @@ JUNO_promote_immigration_cat = {
 		}
 	}
 }
+improving_our_army_category = {
+	
+	JUNO_specialize_in_infantry_tanks  = {
+
+		priority = 10
+
+		icon = GFX_decision_generic_tank
+
+		ai_will_do = {
+			base = 80
+		}
+ 
+		allowed = {  
+			original_tag = BRA
+		}
+
+		available = {
+			has_completed_focus = BRA_tank_warfare
+			NOT = {
+				has_country_flag = JUNO_already_specialized_in_tanks_dummy
+			} 
+		}
+
+		custom_cost_trigger = { 
+			command_power > 39
+		}
+		custom_cost_text = decision_cost_CP_40	
+
+		visible = { 
+			has_completed_focus = BRA_tank_warfare
+			NOT = {
+				has_country_flag = JUNO_already_specialized_in_tanks
+			}
+		}
+
+		days_remove = 35
+
+		#cost = 75
+
+		complete_effect = { 
+			hidden_effect = {
+				add_command_power = -40
+				set_country_flag = JUNO_already_specialized_in_tanks_dummy
+			}
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = BRA_modify_brazilian_army_ns_intro
+			add_to_variable = { JUNO_army_modifier_army_armor_defence_factor = 0.1 tooltip = army_armor_defence_factor_tt }
+			add_to_variable = { JUNO_army_modifier_army_org_factor = 0.05 tooltip = army_org_factor_tt }
+
+			hidden_effect = {
+				set_country_flag = JUNO_already_specialized_in_tanks
+			}
+		}
+
+	}
+
+	JUNO_specialize_in_breakthrough_tanks  = {
+
+		priority = 9
+
+		icon = GFX_decision_generic_tank
+
+		ai_will_do = {
+			base = 80
+		}
+	
+		allowed = {  
+			original_tag = BRA
+		}
+ 
+		available = {
+			has_completed_focus = BRA_tank_warfare
+			NOT = {
+				has_country_flag = JUNO_already_specialized_in_tanks_dummy
+			} 
+		}
+
+		custom_cost_trigger = { 
+			command_power > 39
+		}
+		custom_cost_text = decision_cost_CP_40	
+
+		visible = { 
+			has_completed_focus = BRA_tank_warfare
+			NOT = {
+				has_country_flag = JUNO_already_specialized_in_tanks
+			}
+		}
+
+		days_remove = 35
+
+		#cost = 75
+
+		complete_effect = { 
+			hidden_effect = {
+				add_command_power = -40
+				set_country_flag = JUNO_already_specialized_in_tanks_dummy
+			}
+		}
+
+		remove_effect = {
+			
+			custom_effect_tooltip = BRA_modify_brazilian_army_ns_intro
+			add_to_variable = { JUNO_army_modifier_army_armor_attack_factor = 0.1 tooltip = army_armor_attack_factor_tt }
+			add_to_variable = { JUNO_army_modifier_army_attack_speed_factor = 0.05 tooltip = army_attack_speed_factor_tt }
+
+			hidden_effect = {
+				set_country_flag = JUNO_already_specialized_in_tanks
+			}
+		}
+
+	}
+
+	JUNO_invite_japanese_army_advisors  = {
+
+		priority = 20
+
+		icon = GFX_decision_generic_army_support
+
+		ai_will_do = {
+			base = 60
+		}
+	
+		allowed = {  
+			original_tag = BRA
+		}
+	
+		available = {
+			has_completed_focus = BRA_foreign_advisors
+			any_country = {
+				original_tag = JAP
+				exists = yes
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+			NOT = {
+				OR = {
+					has_country_flag = JUNO_already_invited_japanese_advisors_completed
+					has_country_flag = JUNO_already_invited_american_advisors_completed
+					has_country_flag = JUNO_already_invited_soviet_advisors_completed
+				}
+			} 
+			custom_trigger_tooltip = {
+				tooltip = has_japanese_ideology
+				OR = {
+					AND = {
+						JAP = {
+							has_government = fascism
+						}
+						ROOT = {
+							NOT = {
+								has_government = communism
+							}
+						}
+					}
+					AND = {
+						JAP = {
+							has_government = democratic
+						}
+						NOT = {
+							has_government = communism
+							has_government = fascism
+						}
+					}
+					AND = {
+						JAP = {
+							has_government = communism
+						}
+						NOT = {
+							has_government = fascism
+							has_government = neutrality
+						}
+					}
+					AND = {
+						JAP = {
+							has_government = neutrality
+						}
+						NOT = {
+							has_government = communism
+						}
+					}
+				}
+			}
+		}
+
+		visible = { 
+			has_completed_focus = BRA_foreign_advisors
+			NOT = {
+				OR = {
+					has_country_flag = JUNO_already_invited_japanese_advisors_removed
+					has_country_flag = JUNO_already_invited_american_advisors_removed
+					has_country_flag = JUNO_already_invited_soviet_advisors_removed
+				}
+			}
+		}
+
+		days_remove = 70
+
+		cost = 75
+
+		complete_effect = { 
+			hidden_effect = {
+				set_country_flag = JUNO_already_invited_japanese_advisors_completed
+			}
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = BRA_modify_brazilian_army_ns_intro
+			add_to_variable = { JUNO_army_modifier_army_org_factor = 0.05 tooltip = army_org_factor_tt }
+			add_to_variable = { JUNO_army_modifier_army_attack_speed_factor = 0.05 tooltip = army_attack_speed_factor_tt }
+
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.75
+				uses = 1
+				category = cat_grand_battle_plan
+			}
+
+			hidden_effect = {
+				set_country_flag = JUNO_already_invited_japanese_advisors_removed
+			}
+		}
+
+	}
+
+	JUNO_invite_american_army_advisors  = {
+
+		priority = 19
+
+		icon = GFX_decision_generic_army_support
+
+		ai_will_do = {
+			base = 80
+		}
+	
+		allowed = {  
+			original_tag = BRA
+		}
+	
+		available = {
+			has_completed_focus = BRA_foreign_advisors
+			any_country = {
+				original_tag = USA
+				exists = yes
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+			NOT = {
+				OR = {
+					has_country_flag = JUNO_already_invited_american_advisors_completed
+					has_country_flag = JUNO_already_invited_italian_advisors_completed
+					has_country_flag = JUNO_already_invited_japanese_advisors_completed
+				}
+			} 
+			IF = {
+				limit = {
+					original_tag = CHL
+				}
+				NOT = {
+					has_completed_focus = CHL_promote_broad_anti_americansim
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = has_american_ideology
+				OR = {
+					AND = {
+						USA = {
+							has_government = fascism
+						}
+						NOT = {
+							has_government = communism
+							has_government = democratic
+						}
+					}
+					AND = {
+						USA = {
+							has_government = democratic
+						}
+						NOT = {
+							has_government = communism
+							has_government = neutrality
+						}
+					}
+					AND = {
+						USA = {
+							has_government = communism
+						}
+						NOT = {
+							has_government = fascism
+							has_government = neutrality
+						}
+					}
+					AND = {
+						USA = {
+							has_government = neutrality
+						}
+						NOT = {
+							has_government = communism
+						}
+					}
+				}
+			}
+		}
+
+		visible = { 
+			has_completed_focus = BRA_foreign_advisors
+			NOT = {
+				OR = {
+					has_country_flag = JUNO_already_invited_american_advisors_removed
+					has_country_flag = JUNO_already_invited_italian_advisors_removed
+					has_country_flag = JUNO_already_invited_japanese_advisors_removed
+				}
+			}
+		}
+
+		days_remove = 70
+
+		cost = 75
+
+		complete_effect = { 
+			hidden_effect = {
+				set_country_flag = JUNO_already_invited_american_advisors_completed
+			}
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = BRA_modify_brazilian_army_ns_intro
+			add_to_variable = { JUNO_army_modifier_army_artillery_attack_factor = 0.05 tooltip = artillery_attack_factor_tt }
+			add_to_variable = { JUNO_army_modifier_special_forces_cap = 0.05 tooltip = special_forces_cap_tt }
+
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.75
+				uses = 1
+				category = cat_superior_firepower
+			}
+
+			hidden_effect = {
+				set_country_flag = JUNO_already_invited_american_advisors_removed
+			}
+		}
+
+	}
+
+	JUNO_invite_soviet_army_advisors  = {
+
+		priority = 18
+
+		icon = GFX_decision_generic_army_support
+
+		ai_will_do = {
+			base = 50
+		}
+	
+		allowed = {  
+			original_tag = BRA
+		}
+	
+		available = {
+			has_completed_focus = BRA_foreign_advisors
+			any_country = {
+				original_tag = SOV
+				exists = yes
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+			NOT = {
+				OR = {
+					has_country_flag = JUNO_already_invited_soviet_advisors_completed
+					has_country_flag = JUNO_already_invited_german_advisors_completed
+					has_country_flag = JUNO_already_invited_japanese_advisors_completed
+				}
+			} 
+			custom_trigger_tooltip = {
+				tooltip = has_soviet_ideology
+				OR = {
+					AND = {
+						SOV = {
+							has_government = fascism
+						}
+						NOT = {
+							has_government = communism
+							has_government = democratic
+							has_government = neutrality
+						}
+					}
+					AND = {
+						SOV = {
+							has_government = democratic
+						}
+						NOT = {
+							has_government = communism
+							has_government = neutrality
+							has_government = fascism
+						}
+					}
+					AND = {
+						SOV = {
+							has_government = communism
+						}
+						NOT = {
+							has_government = fascism
+							has_government = neutrality
+						}
+					}
+					AND = {
+						SOV = {
+							has_government = neutrality
+						}
+						NOT = {
+							has_government = communism
+							has_government = fascism
+						}
+					}
+				}
+			}
+		}
+
+		visible = { 
+			has_completed_focus = BRA_foreign_advisors
+			NOT = {
+				OR = {
+					has_country_flag = JUNO_already_invited_soviet_advisors_removed
+					has_country_flag = JUNO_already_invited_german_advisors_removed
+					has_country_flag = JUNO_already_invited_japanese_advisors_removed
+				}
+			}
+		}
+
+		days_remove = 70
+
+		cost = 75
+
+		complete_effect = { 
+			hidden_effect = {
+				set_country_flag = JUNO_already_invited_soviet_advisors_completed
+			}
+		}
+
+		remove_effect = {
+			
+			custom_effect_tooltip = BRA_modify_brazilian_army_ns_intro
+			add_to_variable = { JUNO_supply_combat_penalties_on_core_factor = -0.05 tooltip = supply_combat_penalties_on_core_factor_tt }
+			add_to_variable = { JUNO_army_modifier_conscription = 0.01 tooltip = conscription_tt }
+
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.75
+				uses = 1
+				category = cat_mass_assault
+			}
+
+			hidden_effect = {
+				set_country_flag = JUNO_already_invited_soviet_advisors_removed
+			}
+		}
+
+	}
+
+	JUNO_invite_german_army_advisors  = {
+
+		priority = 17
+
+		icon = GFX_decision_generic_army_support
+
+		ai_will_do = {
+			base = 60
+		}
+	
+		allowed = {  
+			original_tag = BRA
+		}
+	
+		available = {
+			has_completed_focus = BRA_foreign_advisors
+			any_country = {
+				original_tag = GER
+				exists = yes
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+			NOT = {
+				OR = {
+					has_country_flag = JUNO_already_invited_german_advisors_completed
+					has_country_flag = JUNO_already_invited_british_advisors_completed
+					has_country_flag = JUNO_already_invited_soviet_advisors_completed
+				}
+			} 
+			custom_trigger_tooltip = {
+				tooltip = has_german_ideology
+				OR = {
+					AND = {
+						GER = {
+							has_government = fascism
+						}
+						NOT = {
+							has_government = communism
+						}
+					}
+					AND = {
+						GER = {
+							has_government = democratic
+						}
+						NOT = {
+							has_government = communism
+							has_government = fascism
+						}
+					}
+					AND = {
+						GER = {
+							has_government = communism
+						}
+						NOT = {
+							has_government = fascism
+							has_government = neutrality
+						}
+					}
+					AND = {
+						GER = {
+							has_government = neutrality
+						}
+						NOT = {
+							has_government = communism
+							has_government = fascism
+							has_government = democratic
+						}
+					}
+				}
+			}
+		}
+
+		visible = { 
+			has_completed_focus = BRA_foreign_advisors
+			NOT = {
+				OR = {
+					has_country_flag = JUNO_already_invited_german_advisors_removed
+					has_country_flag = JUNO_already_invited_british_advisors_removed
+					has_country_flag = JUNO_already_invited_soviet_advisors_removed
+				}
+			}
+		}
+
+		days_remove = 70
+
+		cost = 75
+
+		complete_effect = { 
+			hidden_effect = {
+				set_country_flag = JUNO_already_invited_german_advisors_completed
+			}
+		}
+
+		remove_effect = {
+			
+			custom_effect_tooltip = BRA_modify_brazilian_army_ns_intro
+			add_to_variable = { JUNO_army_modifier_army_armor_defence_factor = 0.05 tooltip = army_armor_defence_factor_tt }
+			add_to_variable = { JUNO_army_modifier_army_armor_attack_factor = 0.05 tooltip = army_armor_attack_factor_tt }
+
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.75
+				uses = 1
+				category = cat_mobile_warfare
+			}
+
+			hidden_effect = {
+				set_country_flag = JUNO_already_invited_german_advisors_removed
+			}
+		}
+
+	}
+
+	JUNO_invite_italian_army_advisors  = {
+
+		priority = 16
+
+		icon = GFX_decision_generic_army_support
+
+		ai_will_do = {
+			base = 60
+		}
+	
+		allowed = {  
+			original_tag = BRA
+		}
+	
+		available = {
+			has_completed_focus = BRA_foreign_advisors
+			any_country = {
+				original_tag = ITA
+				exists = yes
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+			NOT = {
+				OR = {
+					has_country_flag = JUNO_already_invited_italian_advisors_completed
+					has_country_flag = JUNO_already_invited_american_advisors_completed
+					has_country_flag = JUNO_already_invited_british_advisors_completed
+				}
+			} 
+			custom_trigger_tooltip = {
+				tooltip = has_italian_ideology
+				OR = {
+					AND = {
+						ITA = {
+							has_government = fascism
+						}
+						NOT = {
+							has_government = communism
+							has_government = neutrality
+						}
+					}
+					AND = {
+						ITA = {
+							has_government = democratic
+						}
+						NOT = {
+							has_government = fascism
+						}
+					}
+					AND = {
+						ITA = {
+							has_government = communism
+						}
+						NOT = {
+							has_government = fascism
+							has_government = neutrality
+						}
+					}
+					AND = {
+						ITA = {
+							has_government = neutrality
+						}
+						NOT = {
+							has_government = communism
+							has_government = democratic
+						}
+					}
+				}
+			}
+		}
+
+		visible = { 
+			has_completed_focus = BRA_foreign_advisors
+			NOT = {
+				OR = {
+					has_country_flag = JUNO_already_invited_italian_advisors_removed
+					has_country_flag = JUNO_already_invited_american_advisors_removed
+					has_country_flag = JUNO_already_invited_british_advisors_removed
+				}
+			}
+		}
+
+		days_remove = 70
+
+		cost = 75
+
+		complete_effect = { 
+			hidden_effect = {
+				set_country_flag = JUNO_already_invited_italian_advisors_completed
+			}
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = BRA_modify_brazilian_army_ns_intro
+			add_to_variable = { JUNO_army_modifier_army_attack_speed_factor = 0.05 tooltip = army_attack_speed_factor_tt }
+			add_to_variable = { JUNO_army_modifier_army_core_defence_factor = 0.1 tooltip = army_core_defence_factor_tt }
+
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.75
+				uses = 1
+				category = cat_grand_battle_plan
+			}
+
+			hidden_effect = {
+				set_country_flag = JUNO_already_invited_italian_advisors_removed
+			}
+		}
+
+	}
+
+	JUNO_invite_british_army_advisors  = {
+
+		priority = 16
+
+		icon = GFX_decision_generic_army_support
+
+		ai_will_do = {
+			base = 70
+		}
+	
+		allowed = {  
+			original_tag = BRA
+		}
+	
+		available = {
+			has_completed_focus = BRA_foreign_advisors
+			any_country = {
+				original_tag = ENG
+				exists = yes
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+			NOT = {
+				OR = {
+					has_country_flag = JUNO_already_invited_british_advisors_completed
+					has_country_flag = JUNO_already_invited_italian_advisors_completed
+					has_country_flag = JUNO_already_invited_german_advisors_completed
+				}
+			} 
+			custom_trigger_tooltip = {
+				tooltip = has_british_ideology
+				OR = {
+					AND = {
+						ENG = {
+							has_government = fascism
+						}
+						NOT = {
+							has_government = communism
+							has_government = neutrality
+							has_government = democratic
+						}
+					}
+					AND = {
+						ENG = {
+							has_government = democratic
+						}
+						NOT = {
+							has_government = fascism
+							has_government = communism
+						}
+					}
+					AND = {
+						ENG = {
+							has_government = communism
+						}
+						NOT = {
+							has_government = fascism
+							has_government = neutrality
+						}
+					}
+					AND = {
+						ENG = {
+							has_government = neutrality
+						}
+						NOT = {
+							has_government = communism
+							has_government = democratic
+						}
+					}
+				}
+			}
+		}
+
+		visible = { 
+			has_completed_focus = BRA_foreign_advisors
+			NOT = {
+				OR = {
+					has_country_flag = JUNO_already_invited_british_advisors_removed
+					has_country_flag = JUNO_already_invited_italian_advisors_removed
+					has_country_flag = JUNO_already_invited_german_advisors_removed
+				}
+			}
+		}
+
+		days_remove = 70
+
+		cost = 75
+
+		complete_effect = { 
+			hidden_effect = {
+				set_country_flag = JUNO_already_invited_british_advisors_completed
+			}
+		}
+
+		remove_effect = {
+			
+			custom_effect_tooltip = BRA_modify_brazilian_army_ns_intro
+			add_to_variable = { JUNO_army_modifier_experience_gain_army_factor = 0.1 tooltip = experience_gain_army_factor_tt }
+			add_to_variable = { JUNO_army_modifier_army_attack_factor = 0.05 tooltip = army_attack_factor_tt }
+
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.75
+				uses = 1
+				category = cat_grand_battle_plan
+			}
+
+			hidden_effect = {
+				set_country_flag = JUNO_already_invited_british_advisors_removed
+			}
+		}
+
+	}
+
+	JUNO_invite_french_army_advisors  = {
+
+		priority = 15
+
+		icon = GFX_decision_generic_army_support
+
+		ai_will_do = {
+			base = 50
+		}
+	
+		allowed = {  
+			original_tag = BRA
+		}
+	
+		available = {
+			has_completed_focus = BRA_foreign_advisors
+			any_country = {
+				original_tag = FRA
+				exists = yes
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+			NOT = {
+				OR = {
+					has_country_flag = JUNO_already_invited_french_advisors_completed
+					has_country_flag = JUNO_already_invited_italian_advisors_completed
+					has_country_flag = JUNO_already_invited_german_advisors_completed
+				}
+			} 
+			custom_trigger_tooltip = {
+				tooltip = has_french_ideology
+				OR = {
+					AND = {
+						FRA = {
+							has_government = fascism
+						}
+						NOT = {
+							has_government = communism
+							has_government = democratic
+						}
+					}
+					AND = {
+						FRA = {
+							has_government = democratic
+						}
+						NOT = {
+							has_government = fascism
+						}
+					}
+					AND = {
+						FRA = {
+							has_government = communism
+						}
+						NOT = {
+							has_government = fascism
+							has_government = neutrality
+						}
+					}
+					AND = {
+						FRA = {
+							has_government = neutrality
+						}
+						NOT = {
+							has_government = communism
+							has_government = democratic
+							has_government = fascism
+						}
+					}
+				}
+			}
+		}
+
+		visible = { 
+			has_completed_focus = BRA_foreign_advisors
+			NOT = {
+				OR = {
+					has_country_flag = JUNO_already_invited_french_advisors_removed
+					has_country_flag = JUNO_already_invited_italian_advisors_removed
+					has_country_flag = JUNO_already_invited_german_advisors_removed
+				}
+			}
+		}
+
+		days_remove = 70
+
+		cost = 75
+
+		complete_effect = { 
+			hidden_effect = {
+				set_country_flag = JUNO_already_invited_french_advisors_completed
+			}
+		}
+
+		remove_effect = {
+			
+			add_to_variable = { JUNO_army_modifier_army_artillery_attack_factor = 0.05 tooltip = artillery_attack_factor_tt }
+			add_to_variable = { JUNO_army_modifier_army_artillery_defence_factor = 0.1 tooltip = army_artillery_defence_factor_tt }
+
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.75
+				uses = 1
+				category = cat_superior_firepower
+			}
+
+			hidden_effect = {
+				set_country_flag = JUNO_already_invited_french_advisors_removed
+			}
+		}
+
+	}
+
+	JUNO_purchase_aircraft = {
+
+		priority = 1
+
+		icon = generic_air
+
+		allowed = { 
+			original_tag = BRA
+		} 
+
+		available = {
+			any_country = {
+				has_opinion = {
+					target = ROOT
+					value > 0
+				}
+				is_major = yes
+				OR = { 
+					has_tech = early_fighter 
+					has_tech = iw_small_airframe 
+				}
+
+				NOT = {
+					OR = {
+						has_war_with = ROOT
+						is_justifying_wargoal_against = ROOT
+					}
+				}
+			}
+
+			NOT = { has_country_flag = JUNO_purchasing_aircraft_flag }
+
+			NOT = { has_war_with = FROM }
+			NOT = { is_justifying_wargoal_against = FROM }
+		}
+
+		visible = {
+			any_country = {
+				has_opinion = {
+					target = ROOT
+					value > 0
+				}
+				is_major = yes
+				OR = { 
+					has_tech = early_fighter 
+					has_tech = iw_small_airframe 
+				}
+
+				NOT = {
+					OR = {
+						has_war_with = ROOT
+						is_justifying_wargoal_against = ROOT
+					}
+				}
+			}
+			has_completed_focus = SMB_purchase_aircraft
+
+			NOT = {
+				has_dlc = "Arms Against Tyranny"
+			}
+		}
+
+		cost = 50
+
+		days_remove = 90
+
+		days_re_enable = 90
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 0.1
+			modifier = {
+				factor = 0
+				OR = {
+					num_of_civilian_factories < 10
+					AND = {
+						stockpile_ratio = { 
+			  				archetype = small_plane_airframe
+			  				ratio > 0.75
+			  			}
+			  			stockpile_ratio = { 
+			  				archetype = small_plane_naval_bomber_airframe
+			  				ratio > 0.75
+			  			}
+			  			stockpile_ratio = { 
+			  				archetype = medium_plane_airframe
+			  				ratio > 0.75
+			  			}
+					}
+				}
+			}
+		}
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+		
+		complete_effect = {
+			set_country_flag = JUNO_purchasing_aircraft_flag
+
+			custom_effect_tooltip = JUNO_purchase_aircraft_tt
+
+			hidden_effect = {
+				random_list =  {
+					50 = {
+						set_country_flag = JUNO_fighters_flag
+					}
+					50 = {
+						set_country_flag = JUNO_tactical_bomber_flag
+					}
+				}
+			}
+		}
+
+		remove_effect = {
+			IF = {
+				limit = {
+					has_country_flag = JUNO_fighters_flag
+				}
+				IF = {
+					limit = {
+						NOT = { has_dlc = "By Blood Alone" }
+					}
+					add_equipment_to_stockpile = {
+						producer = USA
+						type = fighter_equipment_1
+						amount = 100
+					}
+				}
+				ELSE = {
+					
+					create_equipment_variant = {
+						name = "P-40" #
+						type = small_plane_airframe_2
+						allow_without_tech = yes #For tooltip purposes, doesn't affect anything really
+						modules = {
+							fixed_main_weapon_slot = heavy_mg_4x
+							fixed_auxiliary_weapon_slot_1 = heavy_mg_2x
+							fixed_auxiliary_weapon_slot_2 = bomb_locks
+							engine_type_slot = engine_3_1x
+							special_type_slot_1 = drop_tanks
+						}
+					}
+					add_equipment_to_stockpile = {
+						producer = USA
+						type = small_plane_airframe_2
+						amount = 100
+						variant_name = "P-40"
+					}
+					
+				}
+				clr_country_flag = JUNO_fighters_flag
+			}
+			ELSE_IF = {
+				limit = {
+					has_country_flag = JUNO_tactical_bomber_flag
+				}
+				IF = {
+					limit = {
+						NOT = {
+							has_dlc = "By Blood Alone"
+						}
+					}
+					add_equipment_to_stockpile = {
+						producer = SOV
+						type = tac_bomber_equipment_1
+						amount = 100
+					}	
+				}
+				ELSE = {
+					create_equipment_variant = {
+						name = "DB-3" #
+						type = medium_plane_airframe_0
+						allow_without_tech = yes #For tooltip purposes, doesn't affect anything really
+						modules = {
+							fixed_main_weapon_slot = bomb_locks
+							fixed_auxiliary_weapon_slot_1 = bomb_locks
+							engine_type_slot = engine_3_1x
+							special_type_slot_1 = drop_tanks
+						}
+					}
+					add_equipment_to_stockpile = {
+						producer = SOV
+						type = medium_plane_airframe_0
+						amount = 100
+						variant_name = "DB-3"
+					}	
+				}
+				clr_country_flag = JUNO_tactical_bomber_flag
+			}
+			clr_country_flag = JUNO_purchasing_aircraft_flag 
+		}
+	}
+
+}
