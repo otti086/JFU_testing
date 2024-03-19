@@ -715,7 +715,7 @@ SOV_kirov_organization = {
 ##        ######## ##     ## ##    ## ########  ######  
 SOV_CAS_organization = {
 	include = generic_cas_aircraft_organization
-	icon = SOV_merge_aircraft_plant_1
+	icon = GFX_idea_ilyushin_design_bureau
 	
 	allowed = {	 
 		tag = SOV
@@ -736,12 +736,15 @@ SOV_mig_design_bureau_organization = {
 	}
 
 	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = SOV } }
-			}
-			FROM = { NOT = { has_war_with = SOV } }
+	}
+	initial_trait = {
+		name = generic_mio_initial_trait_light_aircraft_designer
+
+		equipment_bonus = {
+			air_agility = 0.05
+			maximum_speed = 0.05
+			air_attack = 0.05
+			air_defence = 0.15
 		}
 	}
 
@@ -854,7 +857,7 @@ SOV_mig_design_bureau_organization = {
 		}
 
 		equipment_bonus = {
-			air_defence = @aircraft_air_defence
+			#air_defence = @aircraft_air_defence
 			surface_detection = @aircraft_surface_detection
 			sub_detection = @aircraft_sub_detection
 		}
