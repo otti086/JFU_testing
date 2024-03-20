@@ -18,9 +18,6 @@ state={
 			infrastructure = 3 #was: 6
 			dockyard = 2
 			arms_factory = 1
-			758 = {
-				naval_base = 6
-			}
 		}
 		add_core_of = SPR
 	}
