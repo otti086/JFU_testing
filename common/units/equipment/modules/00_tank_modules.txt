@@ -1546,7 +1546,6 @@ equipment_modules = {
 		add_stats = {
 			fuel_capacity = 100
 			build_cost_ic = 1
-			maximum_speed = -0.25
 		}
 		xp_cost = 0
 		multiply_stats = {
