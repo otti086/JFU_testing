@@ -1557,4 +1557,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_jap_southern_colonies.dds"
 	}
     
+
+    SpriteType = {
+		name = "GFX_WAR_PRODUCTION"
+		texturefile = "gfx/interface/goals/ger/war_production.dds"
+	}
+    
 }

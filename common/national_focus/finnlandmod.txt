@@ -740,6 +740,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			set_rule = { 
+				can_send_volunteers = yes
+			}
 			add_ideas = tot_economic_mobilisation
 			add_ideas = service_by_requirement
 			swap_ideas = {

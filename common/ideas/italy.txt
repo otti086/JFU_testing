@@ -1831,7 +1831,7 @@ ideas = {
 			modifier = {
 				stability_factor = -0.2
 				industrial_capacity_factory = 0.3
-				consumer_goods_factor = -0.15
+				consumer_goods_factor = -0.25
 			}
 		}
 

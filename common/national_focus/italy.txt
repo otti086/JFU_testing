@@ -65,17 +65,10 @@ focus_tree = {
 
 		x = 2
 		y = 0
-		cost = 5
+		cost = 0
 
 		bypass = {
-			OR = {
-				NOT = { has_global_flag = second_italo_ethiopian_war_flag }
-				AND = {
-					550 = { NOT = { is_owned_and_controlled_by = ITA } }
-					559 = { NOT = { is_owned_and_controlled_by = ITA } }
-					844 = { NOT = { is_owned_and_controlled_by = ITA } }
-				}
-			}
+			NOT = { has_global_flag = second_italo_ethiopian_war_flag }
 		}
 
 		available = {
@@ -148,12 +141,6 @@ focus_tree = {
 		relative_position_id = ITA_ethiopian_war_logistics_bba
 		cost = 5
 		available = {
-			OR = {
-				controls_state = 2
-				controls_state = 117
-				controls_state = 162
-				controls_state = 158
-			}
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -1731,7 +1718,6 @@ focus_tree = {
 		relative_position_id = ITA_italian_highways_bba
 		cost = 10
 		available = {
-			has_full_control_of_state = 2
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -1763,7 +1749,6 @@ focus_tree = {
 		relative_position_id = ITA_italian_highways_bba
 		cost = 10
 		available = {
-			has_full_control_of_state = 2
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -2066,10 +2051,6 @@ focus_tree = {
 		relative_position_id = ITA_italian_highways_bba
 		cost = 10
 		available = {
-			controls_state = 2
-			controls_state = 161
-			controls_state = 162
-			controls_state = 117
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
@@ -2146,7 +2127,6 @@ focus_tree = {
 		relative_position_id = ITA_railway_innovations
 		cost = 10
 		available = {
-			has_full_control_of_state = 158
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -2195,7 +2175,6 @@ focus_tree = {
 		relative_position_id = ITA_italian_highways_bba
 		cost = 5
 		available = {
-			has_full_control_of_state = 159
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -2222,7 +2201,6 @@ focus_tree = {
 		relative_position_id = ITA_fiocchi_munizioni
 		cost = 5
 		available = {
-			has_full_control_of_state = 159
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
@@ -2256,7 +2234,6 @@ focus_tree = {
 		cost = 5
 		available = {
 			has_tech = radio_detection
-			has_full_control_of_state = 159
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
@@ -2302,7 +2279,6 @@ focus_tree = {
 		relative_position_id = ITA_brescia_small_arms_industry
 		cost = 10
 		available = {
-			has_full_control_of_state = 159
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
@@ -2564,9 +2540,9 @@ focus_tree = {
 
 			add_doctrine_cost_reduction = {
 				name = ITA_preserve_army_traditions
-				cost_reduction = 0.75
+				cost_reduction = 0.5
 				uses = 1
-				category = cat_grand_battle_plan
+				category = land_doctrine
 			}
 		}
 	}
@@ -2630,15 +2606,6 @@ focus_tree = {
 		cost = 5
 		
 		available = {
-			OR = {
-				has_full_control_of_state = 158 #PIEDMONT
-				has_full_control_of_state = 159 #LOMBARDY
-				has_full_control_of_state = 850 #TRENTINO
-				has_full_control_of_state = 39 #ALTO ADIGE
-				has_full_control_of_state = 160 #VENETO
-				has_full_control_of_state = 736 #LITORALE
-				has_full_control_of_state = 852 #FIUME
-			}
 		}
 
 		search_filters = {}
@@ -2829,9 +2796,9 @@ focus_tree = {
 
 			add_doctrine_cost_reduction = {
 				name = ITA_a_bandits_war
-				cost_reduction = 0.75
+				cost_reduction = 0.5
 				uses = 2
-				category = cat_mobile_warfare
+				category = land_doctrine
 			}
 
 			add_tech_bonus = {
@@ -3012,54 +2979,12 @@ focus_tree = {
 				category = cat_light_armor
 			}
 
-			random_core_state = {
-				limit = {
-					is_fully_controlled_by = ROOT
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-				}
+			2 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
 					level = 1
 					instant_build = yes
-				}
-			}
-
-			if = {
-				limit = {
-					has_dlc = "No Step Back"
-				}
-				if = {
-					limit = {
-						has_tech = improved_light_tank_chassis
-					}
-					ITA_add_improved_light_tank_templates = yes
-				}
-				else = {
-					custom_effect_tooltip = ITA_italian_tankettes_light_hull_tt
-					effect_tooltip = {
-						ITA_add_improved_light_tank_templates = yes
-					}
-				}
-				
-
-				if = {
-					limit = {
-						has_tech = tech_engineers2
-					}
-					#L3/35 lf Flamethrower
-					ITA_add_basic_light_flamethrower_template = yes
-				}
-				else = {
-					custom_effect_tooltip = ITA_italian_tankettes_flamethrower_tt
-					effect_tooltip = {
-						#L3/35 lf Flamethrower
-						ITA_add_basic_light_flamethrower_template = yes
-					}
 				}
 			}
 		}
@@ -3229,11 +3154,13 @@ focus_tree = {
 				}
 			}
 			
-			if = {
-				limit = {
-					has_dlc = "No Step Back"
-				}
-				ITA_add_basic_medium_tank_templates = yes
+			hidden_effect = {
+				if = {
+					limit = {
+						has_dlc = "No Step Back"
+					}
+					ITA_add_basic_medium_tank_templates = yes
+				}			
 			}
 		}
 	}
@@ -3263,36 +3190,37 @@ focus_tree = {
 			add_to_variable = { ITA_iri_consumer_goods_factor = 0.02 }
 			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
 
-			if = {
-				limit = {
-					has_dlc = "No Step Back"
-				}
+			hidden_effect = {
 				if = {
 					limit = {
-						has_tech = improved_medium_tank_chassis
+						has_dlc = "No Step Back"
 					}
-					ITA_add_improved_medium_tank_templates = yes
-				}
-				else = {
-					custom_effect_tooltip = ITA_end_fiat_ansaldo_duopoly_medium_templates_tt
-					effect_tooltip = {
+					if = {
+						limit = {
+							has_tech = improved_medium_tank_chassis
+						}
 						ITA_add_improved_medium_tank_templates = yes
 					}
-				}
-				if = {
-					limit = {
-						has_tech = improved_heavy_tank_chassis
+					else = {
+						custom_effect_tooltip = ITA_end_fiat_ansaldo_duopoly_medium_templates_tt
+						effect_tooltip = {
+							ITA_add_improved_medium_tank_templates = yes
+						}
 					}
-					ITA_add_improved_heavy_tank_templates = yes
-				}
-				else = {
-					custom_effect_tooltip = ITA_end_fiat_ansaldo_duopoly_heavy_templates_tt
-					effect_tooltip = {
+					if = {
+						limit = {
+							has_tech = improved_heavy_tank_chassis
+						}
 						ITA_add_improved_heavy_tank_templates = yes
 					}
-				}	
+					else = {
+						custom_effect_tooltip = ITA_end_fiat_ansaldo_duopoly_heavy_templates_tt
+						effect_tooltip = {
+							ITA_add_improved_heavy_tank_templates = yes
+						}
+					}	
+				}
 			}
-
 			#Update NS icon
 			ITA_improve_regio_esercito_dm_effect = yes
 		}
@@ -3330,36 +3258,37 @@ focus_tree = {
 				}
 			}
 
-			if = {
-				limit = {
-					has_dlc = "No Step Back"
-				}
+			hidden_effect= {
 				if = {
 					limit = {
-						has_tech = improved_medium_tank_chassis
+						has_dlc = "No Step Back"
 					}
-					ITA_add_improved_medium_tank_templates = yes
-				}
-				else = {
-					custom_effect_tooltip = ITA_end_fiat_ansaldo_duopoly_medium_templates_tt
-					effect_tooltip = {
+					if = {
+						limit = {
+							has_tech = improved_medium_tank_chassis
+						}
 						ITA_add_improved_medium_tank_templates = yes
 					}
-				}
-				if = {
-					limit = {
-						has_tech = improved_heavy_tank_chassis
+					else = {
+						custom_effect_tooltip = ITA_end_fiat_ansaldo_duopoly_medium_templates_tt
+						effect_tooltip = {
+							ITA_add_improved_medium_tank_templates = yes
+						}
 					}
-					ITA_add_improved_heavy_tank_templates = yes
-				}
-				else = {
-					custom_effect_tooltip = ITA_end_fiat_ansaldo_duopoly_heavy_templates_tt
-					effect_tooltip = {
+					if = {
+						limit = {
+							has_tech = improved_heavy_tank_chassis
+						}
 						ITA_add_improved_heavy_tank_templates = yes
 					}
-				}	
+					else = {
+						custom_effect_tooltip = ITA_end_fiat_ansaldo_duopoly_heavy_templates_tt
+						effect_tooltip = {
+							ITA_add_improved_heavy_tank_templates = yes
+						}
+					}	
+				}
 			}
-
 			#Update NS icon
 			ITA_improve_regio_esercito_dm_effect = yes
 		}
@@ -3384,25 +3313,14 @@ focus_tree = {
 			hidden_effect = {
 				add_ideas = ITA_hidden_ferrea_mole_ns
 			}
-
 			army_experience = 50
-
 			add_tech_bonus = {
 				name = ITA_ferrea_mole_ferreo_cuore
 				bonus = 1
 				uses = 2
 				category = armor
 			}
-
-			random_core_state = {
-				limit = {
-					is_fully_controlled_by = ROOT
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
+			157 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
@@ -3410,33 +3328,34 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-
-			if = {
-				limit = {
-					has_dlc = "No Step Back"
-				}
+			hidden_effect = {
 				if = {
 					limit = {
-						has_tech = advanced_medium_tank_chassis
+						has_dlc = "No Step Back"
 					}
-					ITA_add_advanced_medium_tank_templates = yes
-				}
-				else = {
-					custom_effect_tooltip = ITA_ferrea_mole_ferreo_cuore_medium_tempaltes_tt
-					effect_tooltip = {
+					if = {
+						limit = {
+							has_tech = advanced_medium_tank_chassis
+						}
 						ITA_add_advanced_medium_tank_templates = yes
 					}
-				}
-				if = {
-					limit = {
-						has_tech = advanced_heavy_tank_chassis
+					else = {
+						custom_effect_tooltip = ITA_ferrea_mole_ferreo_cuore_medium_tempaltes_tt
+						effect_tooltip = {
+							ITA_add_advanced_medium_tank_templates = yes
+						}
 					}
-					ITA_add_advanced_heavy_tank_templates = yes
-				}
-				else = {
-					custom_effect_tooltip = ITA_ferrea_mole_ferreo_cuore_heavy_tempaltes_tt
-					effect_tooltip = {
+					if = {
+						limit = {
+							has_tech = advanced_heavy_tank_chassis
+						}
 						ITA_add_advanced_heavy_tank_templates = yes
+					}
+					else = {
+						custom_effect_tooltip = ITA_ferrea_mole_ferreo_cuore_heavy_tempaltes_tt
+						effect_tooltip = {
+							ITA_add_advanced_heavy_tank_templates = yes
+						}
 					}
 				}
 			}
@@ -3495,7 +3414,6 @@ focus_tree = {
 		relative_position_id = ITA_air_innovations_bba
 		cost = 5
 		available = {
-			has_full_control_of_state = 2
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
@@ -3662,7 +3580,7 @@ focus_tree = {
 			#}
 
 			#Update NS icon
-			ITA_improve_regia_aeronautica_dm_effect = yes
+			#ITA_improve_regia_aeronautica_dm_effect = yes
 		}
 	}
 
@@ -3997,7 +3915,6 @@ focus_tree = {
 		relative_position_id = ITA_bomber_designs
 		cost = 5
 		available = {
-			date > 1941.1.1
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_AIR_XP}
@@ -4006,15 +3923,7 @@ focus_tree = {
 
 			air_experience = 50
 
-			random_core_state = {
-				limit = {
-					is_fully_controlled_by = ROOT
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
+			157 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
@@ -4178,76 +4087,26 @@ focus_tree = {
 		relative_position_id = ITA_naval_power_projection
 		cost = 5
 		available = {
-			OR = {
-				has_full_control_of_state = 162
-				has_full_control_of_state = 736
-				has_full_control_of_state = 114
-				has_full_control_of_state = 117
-				has_full_control_of_state = 849
-				has_full_control_of_state = 852
-			}
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
 			162 = { #TUSCANY (La Spezia)
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 
 			736 = { #LITORALE (Trieste)
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
-
-			114 = { #SARDINIA (Cagliari, La Maddalena)
-				add_building_construction = {
-					type = naval_base
 					level = 2
 					instant_build = yes
-					province = 6891 #La Maddalena
-				}
-				add_building_construction = {
-					type = naval_base
-					level = 2
-					instant_build = yes
-					province = 11773 #Cagliari
-				}
-			}
-
-			117 = { #CAMPAGNA (Napoli)
-				add_building_construction = {
-					type = naval_base
-					level = 2
-					instant_build = yes
-					province = 819 #Napoli
-				}
-			}
-
-			849 = { #PUGLIA (Brindisi)
-				add_building_construction = {
-					type = naval_base
-					level = 2
-					instant_build = yes
-					province = 11998
-				}
-			}
-
-			852 = { #ISTRIA (Fiume)
-				add_building_construction = {
-					type = naval_base
-					level = 2
-					instant_build = yes
-					province = 11564
 				}
 			}
 		}
@@ -4301,17 +4160,6 @@ focus_tree = {
 		relative_position_id = ITA_expand_naval_facilities
 		cost = 5
 		available = {
-			OR = {
-				has_full_control_of_state = 448
-				has_full_control_of_state = 451
-				has_full_control_of_state = 164
-				has_full_control_of_state = 550
-				has_full_control_of_state = 559
-				has_full_control_of_state = 844
-				has_full_control_of_state = 447
-				has_full_control_of_state = 458
-				has_full_control_of_state = 459
-			}
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -4783,9 +4631,9 @@ focus_tree = {
 
 			add_doctrine_cost_reduction = {
 				name = ITA_incrociatori_leggeri
-				cost_reduction = 0.75
+				cost_reduction = 0.5
 				uses = 3
-				category = cat_trade_interdiction
+				category = naval_doctrine
 			}
 
 			add_tech_bonus = {
@@ -4828,9 +4676,9 @@ focus_tree = {
 
 			add_doctrine_cost_reduction = {
 				name = ITA_incrociatori_pesanti
-				cost_reduction = 0.75
+				cost_reduction = 0.5
 				uses = 3
-				category = cat_fleet_in_being
+				category = naval_doctrine
 			}
 
 			add_tech_bonus = {
@@ -5090,9 +4938,9 @@ focus_tree = {
 			navy_experience = 15
 			add_doctrine_cost_reduction = {
 				name = ITA_cacciatorpediniere_di_scorta
-				cost_reduction = 0.75
+				cost_reduction = 0.5
 				uses = 2
-				category = convoy_defense_tree
+				category = naval_doctrine
 			}
 
 			add_tech_bonus = {
@@ -5383,9 +5231,9 @@ focus_tree = {
 			navy_experience = 15
 			add_doctrine_cost_reduction = {
 				name = ITA_navi_da_battaglia
-				cost_reduction = 0.75
+				cost_reduction = 0.5
 				uses = 2
-				category = fleet_in_being_tree
+				category = naval_doctrine
 			}
 
 			add_tech_bonus = {
@@ -6051,209 +5899,14 @@ focus_tree = {
 				}
 			}
 
-			### CORES
-			#ROME
-			if = {
-				limit = {
-					has_full_control_of_state = 2
-				}
-				2 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = dockyard
-						level = 1
-						instant_build = yes
-					}
+			2 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = dockyard
+					level = 5
+					instant_build = yes
 				}
 			}
-			#PUGLIA
-			if = {
-				limit = {
-					has_full_control_of_state = 849
-				}
-				849 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = dockyard
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			#SICILIA
-			if = {
-				limit = {
-					has_full_control_of_state = 115
-				}
-				115 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = dockyard
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-
-			### COLONIES
-			#TRIPOLI
-			if = {
-				limit = {
-					has_full_control_of_state = 448
-				}
-				448 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = dockyard
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			#ERITREA
-			if = {
-				limit = {
-					has_full_control_of_state = 550
-				}
-				550 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = dockyard
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			#SOMALILAND
-			if = {
-				limit = {
-					has_full_control_of_state = 559
-				}
-				559 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = dockyard
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-
-			### EXTRA STUFF
-			#GIBRALTAR
-			if = {
-				limit = {
-					has_full_control_of_state = 118
-				}
-				118 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = dockyard
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			#ALGIERS
-			if = {
-				limit = {
-					has_full_control_of_state = 459
-				}
-				459 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = dockyard
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			#TUNISIA
-			if = {
-				limit = {
-					has_full_control_of_state = 458
-				}
-				458 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = dockyard
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			#ALEXANDRIA
-			if = {
-				limit = {
-					has_full_control_of_state = 447
-				}
-				447 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = dockyard
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			#LISBON
-			if = {
-				limit = {
-					has_full_control_of_state = 112
-				}
-				112 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = dockyard
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			#SEVILLA
-			if = {
-				limit = {
-					has_full_control_of_state = 169
-				}
-				169 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = dockyard
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			#BORDEAUX
-			if = {
-				limit = {
-					has_full_control_of_state = 19
-				}
-				19 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = dockyard
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			#BRITTANY
-			if = {
-				limit = {
-					has_full_control_of_state = 14
-				}
-				14 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = dockyard
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-
-			custom_effect_tooltip = ITA_flotta_d_evasione_dockyards_tt #TODO_Manu: Dynamic tooltip
 		}
 	}
 
@@ -6854,7 +6507,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = ITA_la_battaglia_per_le_nascite
-		cost = 10
+		cost = 5
 		available = {
 			has_country_leader = {
 				character = ITA_benito_mussolini
@@ -6932,7 +6585,6 @@ focus_tree = {
 		relative_position_id = ITA_culto_del_duce
 		cost = 5
 		available = {
-			has_government = fascism
 		}
 
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_BALANCE_OF_POWER}
@@ -6959,7 +6611,6 @@ focus_tree = {
 		relative_position_id = ITA_ministero_della_cultura_popolare
 		cost = 5
 		available = {
-			has_government = fascism
 		}
 
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY}
@@ -6967,7 +6618,11 @@ focus_tree = {
 		completion_reward = {
 			add_to_variable = { ITA_re_conscription_factor = 0.1 }
 			custom_effect_tooltip = ITA_believe_obey_fight_re_tt
-
+			add_political_power = 100
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
 			if = {
 				limit = {
 					NOT = { 
@@ -6979,14 +6634,6 @@ focus_tree = {
 				}
 				custom_effect_tooltip = available_political_advisor
 				show_ideas_tooltip = ITA_dino_grandi
-			}
-
-			add_political_power = 75
-			add_war_support = 0.02
-			add_stability = 0.02
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.05
 			}
 		}
 	}
@@ -7072,7 +6719,6 @@ focus_tree = {
 		relative_position_id = ITA_culto_del_duce
 		cost = 5
 		available = {
-			has_government = fascism
 		}
 
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY}
@@ -7100,7 +6746,6 @@ focus_tree = {
 		relative_position_id = ITA_security_militias
 		cost = 10
 		available = {
-			has_government = fascism
 		}
 
 		search_filters = {}
@@ -7123,11 +6768,6 @@ focus_tree = {
 		relative_position_id = ITA_battaglioni_d_assalto
 		cost = 10
 		available = {
-			has_government = fascism
-			any_owned_state = {
-				is_core_of = ROOT
-				is_fully_controlled_by = ROOT
-			}
 		}
 
 		search_filters = {FOCUS_FILTER_MANPOWER}
@@ -7178,7 +6818,6 @@ focus_tree = {
 		relative_position_id = ITA_battaglioni_d_assalto
 		cost = 10
 		available = {
-			has_government = fascism
 		}
 
 		search_filters = {FOCUS_FILTER_MANPOWER}
@@ -7404,31 +7043,35 @@ focus_tree = {
 
 			ITA_remove_king_vittorio_emanuele_as_idea = yes
 
-			if = {
-				limit = {
-					has_dlc = "No Step Back"
-				}
+			hidden_effect = {
 				if = {
 					limit = {
-						has_tech = super_heavy_tank_chassis
+						has_dlc = "No Step Back"
 					}
-					#SH template
-					ITA_add_il_duce_sh_tank_template_and_production = yes
-				}
-				else = {
-					add_tech_bonus = {
-						name = ITA_capo_supremo
-						ahead_reduction = 2
-						bonus = 1.0
-						uses = 1
-						technology = super_heavy_tank_chassis
-					}
-					custom_effect_tooltip = ITA_focus_sh_tank_template_tt
-					effect_tooltip = {
+					if = {
+						limit = {
+							has_tech = super_heavy_tank_chassis
+						}
+						#SH template
 						ITA_add_il_duce_sh_tank_template_and_production = yes
+					}
+					else = {
+						add_tech_bonus = {
+							name = ITA_capo_supremo
+							ahead_reduction = 2
+							bonus = 1.0
+							uses = 1
+							technology = super_heavy_tank_chassis
+						}
+						custom_effect_tooltip = ITA_focus_sh_tank_template_tt
+						effect_tooltip = {
+							ITA_add_il_duce_sh_tank_template_and_production = yes
+						}
 					}
 				}
 			}
+
+
 			else = {
 				add_tech_bonus = {
 					name = ITA_capo_supremo
@@ -7502,7 +7145,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ITA_bend_the_bars
-		cost = 5
+		cost = 1
 		available = {
 		}
 
@@ -7880,20 +7523,22 @@ focus_tree = {
 			set_cosmetic_tag = RSI  
 			add_country_leader_trait = lombardy 
 			remove_power_balance = { id = ITA_power_balance	}
-			if = { limit = { has_idea = vittorio_emanuele } remove_ideas = vittorio_emanuele}
-			if = { limit = { has_idea = vittorio_emanuele_emperor_of_ethiopia } remove_ideas = vittorio_emanuele_emperor_of_ethiopia}
-			if = { limit = { has_idea = vittorio_emanuele_king_of_albania } remove_ideas = vittorio_emanuele_king_of_albania}
-			if = { limit = { has_idea = vittorio_emanuele_albania_ethiopia } remove_ideas = vittorio_emanuele_albania_ethiopia}
 			set_country_flag = ITA_rsi_established
 			add_timed_idea = { idea = desperate_defense_idea days = 90 }
-			GER = {
-				set_autonomy = {
-					target = ITA
-					autonomous_state = autonomy_dominion
-					freedom_level = 0.2
-				}
-			} 
-			add_ideas = SPA_death_before_surrender_capitulation
+			hidden_effect = {
+				add_ideas = SPA_death_before_surrender_capitulation
+				GER = {
+					set_autonomy = {
+						target = ITA
+						autonomous_state = autonomy_dominion
+						freedom_level = 0.2
+					}
+				} 
+				if = { limit = { has_idea = vittorio_emanuele } remove_ideas = vittorio_emanuele}
+				if = { limit = { has_idea = vittorio_emanuele_emperor_of_ethiopia } remove_ideas = vittorio_emanuele_emperor_of_ethiopia}
+				if = { limit = { has_idea = vittorio_emanuele_king_of_albania } remove_ideas = vittorio_emanuele_king_of_albania}
+				if = { limit = { has_idea = vittorio_emanuele_albania_ethiopia } remove_ideas = vittorio_emanuele_albania_ethiopia}
+			}
 		}
 	}
 
@@ -8091,6 +7736,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			custom_effect_tooltip = ITA_reinforce_the_gustav_line_tt
 			every_core_state = {
 				limit = {
 					is_island_state = no

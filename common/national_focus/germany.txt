@@ -2933,7 +2933,7 @@ focus_tree = {
 
 	focus = { 
 		id = GER_reorg_civilian
-		icon = GFX_goal_support_fascism
+		icon = GFX_WAR_PRODUCTION
 		prerequisite = { focus = GER_appoint_speer }
 		
 		available = {
@@ -2999,7 +2999,7 @@ focus_tree = {
 
 	focus = { 
 		id = GER_reorg_civilian2
-		icon = GFX_goal_support_fascism
+		icon = GFX_GOAL_GENERIC_MILS
 		prerequisite = { focus = GER_reorg_civilian }
 		
 		available = {
