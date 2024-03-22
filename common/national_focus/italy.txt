@@ -7069,21 +7069,20 @@ focus_tree = {
 						}
 					}
 				}
-			}
-
-
-			else = {
-				add_tech_bonus = {
-					name = ITA_capo_supremo
-					ahead_reduction = 2
-					bonus = 1.0
-					uses = 1
-					technology = super_heavy_tank
-					technology = super_heavy_td
-					technology = super_heavy_art
-					technology = super_heavy_spaa
+				else = {
+					add_tech_bonus = {
+						name = ITA_capo_supremo
+						ahead_reduction = 2
+						bonus = 1.0
+						uses = 1
+						technology = super_heavy_tank
+						technology = super_heavy_td
+						technology = super_heavy_art
+						technology = super_heavy_spaa
+					}
 				}
 			}
+
 
 			ITA_bop_very_low_increase_effect = yes
 
