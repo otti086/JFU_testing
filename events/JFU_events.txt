@@ -819,6 +819,7 @@ country_event = {
 				value = 0.80
 			}
 		}
+		set_global_flag = fall_of_africa
 	}
 }
 add_namespace = horsthelp
