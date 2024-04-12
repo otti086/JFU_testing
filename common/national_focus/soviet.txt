@@ -320,7 +320,7 @@ focus_tree = {
 	focus = {
 		id = SOV_improve_railway_network
 
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_SOV_INFRASTRUCTRURE_EFFORT
 		prerequisite = { focus = SOV_finish_the_five_year_plan }
 		x = -2
 		y = 1
@@ -386,7 +386,7 @@ focus_tree = {
 	focus = {
 		id = SOV_third_five_year_plan
 
-		icon = GFX_focus_generic_industry_2
+		icon = GFX_SOV_FINISH_FIVE_YEAR_PLAN
 		prerequisite = { focus = SOV_finish_the_five_year_plan }
 		x = 0
 		y = 1
@@ -1410,7 +1410,7 @@ focus_tree = {
 	focus = {
 		id = SOV_transpolar_flights
 
-		icon = GFX_goal_generic_air_fighter2
+		icon = GFX_SOV_AVIATION_CULT
 		x = 10
 		y = 0
 		relative_position_id = SOV_infrastructure_effort_nsb
@@ -1779,7 +1779,7 @@ focus_tree = {
 	focus = {
 		id = SOV_ground_support
 
-		icon = GFX_goal_generic_air_fighter
+		icon = GFX_SOV_CAS
 		prerequisite = { focus = SOV_increase_aircraft_production focus = SOV_intensify_pilot_training_program }
 		x = 0
 		y = 1
@@ -2403,7 +2403,7 @@ focus_tree = {
 	focus = {
 		id = SOV_development_of_tankograd
 
-		icon = GFX_goal_generic_army_tanks
+		icon = GFX_SOV_MASS_DEPLOYMENT_OF_T34
 		prerequisite = { focus = SOV_the_means_to_wage_war }
 		x = 1
 		y = 1
@@ -5257,7 +5257,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_war_heroes
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_SOV_MOBILIZATION
 		prerequisite = { focus = SOV_revive_the_stakhanovite_movement }
 		x = 0
 		y = 1

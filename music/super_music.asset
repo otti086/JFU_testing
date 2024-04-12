@@ -1,0 +1,24 @@
+music = {
+	name = "super_ww2"
+	file = "ww2.ogg"
+}
+music = {
+	name = "super_sino_japanese_war"
+	file = "sino_japanese_war.ogg"
+}
+music = {
+	name = "super_spainish_civil_war"
+	file = "spainish_civil_war.ogg"
+}
+music = {
+	name = "super_pacific_war"
+	file = "pacific_war.ogg"
+}
+music = {
+	name = "super_barbarossa"
+	file = "barbarossa.ogg"
+}
+music = {
+	name = "super_fall_china"
+	file = "fall_china.ogg"
+}

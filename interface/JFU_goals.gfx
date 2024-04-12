@@ -1563,4 +1563,46 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/ger/war_production.dds"
 	}
     
+
+    SpriteType = {
+		name = "GFX_GER_LOYALTY_TO_THE_FUHRER"
+		texturefile = "gfx/interface/goals/ger/ger_loyalty_to_the_fuhrer.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_SOV_CAS"
+		texturefile = "gfx/interface/goals/sov/SOV_cas.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_SOV_AVIATION_CULT"
+		texturefile = "gfx/interface/goals/sov/SOV_aviation_cult.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_SOV_INFRASTRUCTRURE_EFFORT"
+		texturefile = "gfx/interface/goals/sov/SOV_infrastructrure_effort.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_SOV_MASS_DEPLOYMENT_OF_T34"
+		texturefile = "gfx/interface/goals/sov/SOV_mass_deployment_of_t34.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_SOV_MOBILIZATION"
+		texturefile = "gfx/interface/goals/sov/SOV_mobilization.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_SOV_FINISH_FIVE_YEAR_PLAN"
+		texturefile = "gfx/interface/goals/sov/SOV_finish_five_year_plan.dds"
+	}
+    
 }

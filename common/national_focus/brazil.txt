@@ -73,6 +73,7 @@ focus_tree = {
 				name = BRA_democratic_union
 				long_name = BRA_democratic_union_long
 			}
+			custom_effect_tooltip = BRA_politcal_branches_tt
 		}
 	}
 

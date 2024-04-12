@@ -1187,7 +1187,7 @@
  endsieg_comintern_tt:0 "Add '§YSteiners Counterattack§!' which grants (§Y@SOVSoviet Union§!) Attack bonus against countries §G+15%§!, (§Y@SOVSoviet Union§!) Defense bonus against countries §G+10%§!, (§YAll Allied Nations§!) Attack bonus against countries §R-15%§!, (§YAll Allied Nations§!) Defense bonus against countries §R-10%§!) for 180 day(s)." 
  MIO_range_trait:0 "Unlocks a special Range trait for the Light Aircraft and Naval Aircraft Designer"
  MIO_agility_trait:0 "Unlocks a special Agility trait for the Light Aircraft and Naval Aircraft Designer"
- ALLIES_army_eng:0 "§HEighteen§! §Rveteran§! ranger divisions will be assembled in §HLondon§! under our command."
+ ALLIES_army_eng:0 "§HFourteen§! §Rveteran§! ranger divisions will be assembled in §HLondon§! under our command."
  ALLIES_marines_eng:0 "§HEight§! §Rveteran§! marine divisions will be assembled in §HLondon§! under our command."
  desert_tactics_allies_effect:0 "Enables §HDesert Training§!\n§HTanks and Infantry\n    Desert§!\n      Defense: §G+10%§!"
  jungle_tactics_allies_effect:0 "Enables §HRanger Training§!\n§HTanks and Infantry\n    Jungle and Forest§!\n      Attack: §G+5%§!"
@@ -1244,7 +1244,7 @@
  BRA_army_prof_tt:0 "If we chose the §RPromote Centralization§! Focus path we will modify §Y$BRA_army_modifier$§! by (Division Oranisation §G+5.00%§!, Divison Attack §G+5.00%§!)\nIf we instead chose the §RGreater Federalism§! Focus path this effect will be increased by §G+5.00%§!."
  BRA_conscription_tt:0 "If we chose the §RGreater Federalism§! Focus path we will modify §Y$BRA_army_modifier$§! by (Division Oranisation §G+5.00%§!, Recruitable Population §Y1.00%§!)\nIf we instead chose the §RPromote Centralization§! Focus path we will gain an additional (Division Organisation §G+5.00%§!, Recrutable Population §Y0.50%§!)."
  BRA_artillery_tt:0 "If we chose the §RGreater Federalism§! Focus path we will modify §Y$BRA_army_modifier$§! by (Artillery Attack §G+10.00%§!, Artillery Defence §G10.00%§!)\nIf we instead chose the §RPromote Centralization§! Focus path we will gain §YIncreased Artillery Production§!, which grants (§YTowed Artillery§!: $production_cost_tt$ §G-10.00%§!, §YTowed Rocket Artillery§!: $production_cost_tt$ §G-10.00%§!, §YTowed anti Tank§!: $production_cost_tt$ §G-10.00%§!)."
- 
+ BRA_politcal_branches_tt:0 "§RDepending on our politcal choice we change what boni we gain in our army tree§!" 
  
  
  #ideas

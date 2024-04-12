@@ -223,7 +223,7 @@
 			716 = {
 				add_resource = {
 					type = steel
-					amount = 100
+					amount = 160
 				}
 			}
 		}
@@ -364,7 +364,8 @@
 					remove_dynamic_modifier = {
 						modifier = no_entrenchment_africa
 					}
-				}						
+				}
+				country_event = { id = super.4 hours = 0 }						
 			} 			
 		}
 	}

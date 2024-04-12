@@ -1,0 +1,164 @@
+################
+# SUPER EVENTS #
+################
+
+add_namespace = super
+
+
+
+country_event = {	#ww2
+	id = super.1
+	title = super.1.t
+	desc = super.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	hidden = yes
+
+	option = {
+		name = super.1.a
+		
+        set_global_flag = GER_WW2
+		set_global_flag = Super_Event_Visible
+		play_song = "super_ww2"
+		
+		#WW2 Flag
+		set_global_flag = Super_WW2
+	}
+}
+
+country_event = {	#Second Sino Japanese War
+	id = super.2
+	title = super.2.t
+	desc = super.2.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		JAP = { has_war_with = CHI }
+	}
+
+	option = {
+		name = super.2.a
+		
+        set_global_flag = JAP_Sino_Japanese
+		set_global_flag = Super_Event_Visible
+		play_song = "super_sino_japanese_war"
+	}
+}
+
+country_event = {	#Spanish Civil War
+	id = super.3
+	title = super.3.t
+	desc = super.3.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		has_global_flag = spanish_civil_war
+	}
+	
+	option = {
+		name = super.3.a
+		
+        set_global_flag = SPA_Civil_War
+		set_global_flag = Super_Event_Visible
+		play_song = "super_spainish_civil_war"
+	}
+}
+
+country_event = {	#Pacific War
+	id = super.4
+	title = super.4.t
+	desc = super.4.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		USA = { has_defensive_war_with = JAP }
+	}
+	
+	option = {
+		name = super.4.a
+		
+        set_global_flag = USA_Pacific_War
+		set_global_flag = Super_Event_Visible
+		play_song = "super_pacific_war"
+	}
+}
+
+country_event = {	#Barb
+	id = super.5
+	title = super.5.t
+	desc = super.5.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+			GER = { has_offensive_war_with = SOV }
+			GER = { has_government = fascism }
+		}
+	}
+	
+	option = {
+		name = super.5.a
+		
+        set_global_flag = GER_Barbarossa
+		set_global_flag = Super_Event_Visible
+		play_song = "super_barbarossa"
+	}
+}
+
+country_event = { #Fall of China
+	id = super.35
+	title = super.35.t
+	desc = super.35.d
+	picture = GFX_report_event_diplomatic_message
+	
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		OR = {
+			NOT = {
+				country_exists = event_target:WTT_current_china_leader
+			}
+			event_target:WTT_current_china_leader = { has_capitulated = yes }
+		}
+	}
+	
+	option = {
+		name = super.35.a
+		
+		set_global_flag = CHI_Fall
+		set_global_flag = Super_Event_Visible
+		play_song = "super_fall_china"
+	}
+} 

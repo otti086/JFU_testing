@@ -1,0 +1,143 @@
+#Titles
+defined_text = {
+    name = get_super_event_title
+	
+    text = {
+        trigger = {
+            has_global_flag = GER_WW2
+        }
+        localization_key = "sp_event_Second_World_War"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = JAP_Sino_Japanese
+        }
+        localization_key = "sp_event_Sino_Japanese"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = SPA_Civil_War
+        }
+        localization_key = "sp_event_Spanish_Civil_War"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = USA_Pacific_War
+        }
+        localization_key = "sp_event_Pacific_War"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = GER_Barbarossa
+        }
+        localization_key = "sp_event_Barbarossa"
+    }
+	
+
+	text = {
+		trigger = {
+			has_global_flag = CHI_Fall
+		}
+		localization_key = "sp_event_Fall_China"
+	}
+
+}
+
+#Remarks
+defined_text = {
+    name = get_super_event_remark
+    
+    text = { 
+        trigger = {
+            has_global_flag = GER_WW2
+        }
+        localization_key = "sp_event_Second_World_War_REMARK"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = JAP_Sino_Japanese
+        }
+        localization_key = "sp_event_Sino_Japanese_REMARK"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = SPA_Civil_War
+        }
+        localization_key = "sp_event_Spanish_Civil_War_REMARK"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = USA_Pacific_War
+        }
+        localization_key = "sp_event_Pacific_War_REMARK"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = GER_Barbarossa
+        }
+        localization_key = "sp_event_Barbarossa_REMARK"
+    }
+
+	text = {
+		trigger = {
+			has_global_flag = CHI_Fall
+		}
+		localization_key = "sp_event_Fall_China_REMARK"
+	}
+
+}
+
+#Quotes
+defined_text = {
+    name = get_super_event_quote
+    
+    text = {
+        trigger = {
+            has_global_flag = GER_WW2
+        }
+        localization_key = "sp_event_Second_World_War_QUOTE"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = JAP_Sino_Japanese
+        }
+        localization_key = "sp_event_Sino_Japanese_QUOTE"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = SPA_Civil_War
+        }
+        localization_key = "sp_event_Spanish_Civil_War_QUOTE"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = USA_Pacific_War
+        }
+        localization_key = "sp_event_Pacific_War_QUOTE"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = GER_Barbarossa
+        }
+        localization_key = "sp_event_Barbarossa_QUOTE"
+    }
+
+	text = {
+		trigger = {
+			has_global_flag = CHI_Fall
+		}
+		localization_key = "sp_event_Fall_China_QUOTE"
+	}
+}

@@ -1,0 +1,50 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_super_event_picture"
+		textureFile = "/gfx/super_events.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_event_window"
+		textureFile = "/gfx/Super_Event_Window.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_sp_event_close_button"
+		textureFile = "/gfx/Super_Event_Close_Button.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_sp_event_underlay"
+		textureFile = "/gfx/Super_Event_Underlay.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_sp_event_Second_World_War"
+		textureFile = "/gfx/sp_events/Super_Event_World_War2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_sp_event_Sino_Japanese"
+		textureFile = "/gfx/sp_events/Super_Event_Sino_Japanese.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_sp_event_Spanish_Civil_War"
+		textureFile = "/gfx/sp_events/Super_Event_Spanish_Civil_War.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_sp_event_Pacific_War"
+		textureFile = "/gfx/sp_events/Super_Event_Pacific_War.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_sp_event_Barbarossa"
+		textureFile = "/gfx/sp_events/Super_Event_Barbarossa.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_sp_event_Fall_China"
+		textureFile = "/gfx/sp_events/Super_Event_Fall_China.dds"
+	}
+}

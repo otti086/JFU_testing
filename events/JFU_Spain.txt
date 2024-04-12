@@ -261,6 +261,7 @@ country_event = {
 				    target = SPA
 				    type = annex_everything
 				}
+				country_event = { id = super.3 hours = 0 }	
 			}
 			SPA = {
 				load_focus_tree = {

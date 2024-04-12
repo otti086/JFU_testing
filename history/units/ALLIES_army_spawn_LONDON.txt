@@ -20,33 +20,6 @@ units = {
 		start_experience_factor = 1
 		start_equipment_factor = 1
 	}
-		division = {
-		location = 6103
-		division_template = "Exiled Veterans"
-		start_experience_factor = 1
-		start_equipment_factor = 1
-	}
-	
-		division = {
-		location = 6103
-		division_template = "Exiled Veterans"
-		start_experience_factor = 1
-		start_equipment_factor = 1
-	}
-	
-		division = {
-		location = 6103
-		division_template = "Exiled Veterans"
-		start_experience_factor = 1
-		start_equipment_factor = 1
-	}
-	
-		division = {
-		location = 6103
-		division_template = "Exiled Veterans"
-		start_experience_factor = 1
-		start_equipment_factor = 1
-	}
 	
 		division = {
 		location = 6103

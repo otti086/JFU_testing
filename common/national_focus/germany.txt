@@ -3020,7 +3020,7 @@ focus_tree = {
 
 	focus = { 
 		id = GER_greater_ger
-		icon = GFX_goal_support_fascism
+		icon = GFX_focus_ger_reichskommisariats
 		prerequisite = { focus = GER_reintegrate_luxemburg_and_alsace_lorraine }
 		prerequisite = { focus = GER_total_war }
 		available = {
@@ -3255,7 +3255,7 @@ focus_tree = {
 	}
 	focus = { 
 		id = GER_steinercounteroffensive
-		icon = GFX_goal_support_fascism
+		icon = GFX_GER_LOYALTY_TO_THE_FUHRER
 		prerequisite = { focus = GER_endsieg_1}
 		
 		available = {

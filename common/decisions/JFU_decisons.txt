@@ -29,6 +29,7 @@ political_actions1 = {
 				ENG = { country_event = { id = britain.24 days = 5 }}
 				GER_remove_mefo_bills = yes
 				set_country_flag = mefo_bills_removed_through_war
+				country_event = { id = super.1 hours = 1}
 			}
 		}
 	}
@@ -159,7 +160,8 @@ political_actions1 = {
 		#			set_variable = { SOV_barb_defence_debuff = -0.1}
 					add_dynamic_modifier = { modifier = SOV_BARB_Debuff days = 140 }
 		#			add_dynamic_modifier = { modifier = SOV_BARB_Debuff1 }
-				}		
+				}
+				country_event = { id = super.5 hours = 0 }		
 			}
 			complete_national_focus = GER_ussr_war_goal
 		}
@@ -473,6 +475,7 @@ political_actions1 = {
 			hidden_effect = {
 				country_event = { days = 5 id = news.1 }
 				USA = { country_event = { id = panay_incident.1 days = 60 }}
+				country_event = { id = super.2 hours = 0 }
 			}
 		}
 	}
@@ -504,6 +507,7 @@ political_actions1 = {
                 }
 				add_ideas = peace_training 
 				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 40000 }
+				country_event = { id = super.35 hours = 0 }
 			}
 		}
 	}

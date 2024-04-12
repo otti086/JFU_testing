@@ -1,0 +1,38 @@
+music_station = "super_station"
+music = {
+	song = "super_ww2"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "super_sino_japanese_war"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "super_spainish_civil_war"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "super_pacific_war"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "super_barbarossa"
+	chance = {
+		factor = 0
+	}
+}
+
+music = {
+	song = "super_fall_china"
+	chance = {
+		factor = 0
+	}
+}
