@@ -602,7 +602,7 @@ equipment_modules = {
 		add_equipment_type = { fighter heavy_fighter }
 
 		add_stats = {
-			air_attack = 5
+			air_attack = 4
 			build_cost_ic = 1.5
 			weight = 1
 		}
@@ -620,7 +620,7 @@ equipment_modules = {
 		add_equipment_type = { fighter heavy_fighter }
 
 		add_stats = {
-			air_attack = 10
+			air_attack = 8
 			build_cost_ic = 3
 			weight = 2
 		}
@@ -642,7 +642,7 @@ equipment_modules = {
 		add_equipment_type = { fighter heavy_fighter }
 
 		add_stats = {
-			air_attack = 9
+			air_attack = 7
 			build_cost_ic = 2.5
 			weight = 2.5
 		}
@@ -660,7 +660,7 @@ equipment_modules = {
 		add_equipment_type = { fighter heavy_fighter }
 
 		add_stats = {
-			air_attack = 18
+			air_attack = 14
 			build_cost_ic = 4.5
 			weight = 5
 		}
@@ -682,7 +682,7 @@ equipment_modules = {
 		add_equipment_type = { fighter heavy_fighter }
 
 		add_stats = {
-			air_attack = 10
+			air_attack = 7.5
 			build_cost_ic = 4
 			air_agility = -1
 			weight = 3
@@ -701,7 +701,7 @@ equipment_modules = {
 		add_equipment_type = { fighter heavy_fighter }
 
 		add_stats = {
-			air_attack = 20
+			air_attack = 15
 			build_cost_ic = 7.5
 			air_agility = -2
 			weight = 6
@@ -724,7 +724,7 @@ equipment_modules = {
 		parent = aircraft_cannon_1_1x
 		add_equipment_type = { fighter heavy_fighter }
 		add_stats = {
-			air_attack = 12
+			air_attack = 9
 			build_cost_ic = 4.5
 			air_agility = -0.5
 			weight = 3
@@ -743,7 +743,7 @@ equipment_modules = {
 		parent = aircraft_cannon_1_2x
 		add_equipment_type = { fighter heavy_fighter }
 		add_stats = {
-			air_attack = 24
+			air_attack = 18
 			build_cost_ic = 9
 			air_agility = -1
 			weight = 6
@@ -766,7 +766,7 @@ equipment_modules = {
 		parent = aircraft_cannon_1_1x
 		add_equipment_type = { fighter heavy_fighter }
 		add_stats = {
-			air_attack = 12
+			air_attack = 9
 			build_cost_ic = 4.5
 			air_agility = -2
 			weight = 5
@@ -785,7 +785,7 @@ equipment_modules = {
 		parent = aircraft_cannon_1_2x
 		add_equipment_type = { fighter heavy_fighter }
 		add_stats = {
-			air_attack = 24
+			air_attack = 18
 			build_cost_ic = 9
 			air_agility = -4
 			weight = 10
@@ -1796,7 +1796,7 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 1.5
 			weight = 1
-			air_attack = 1
+			air_attack = 0.75
 			air_defence = 1
 		}
 
@@ -1842,7 +1842,7 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 3
 			weight = 2
-			air_attack = 1.5
+			air_attack = 1
 			air_defence = 2
 		}
 
@@ -1888,7 +1888,7 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 3
 			weight = 2
-			air_attack = 1.5
+			air_attack = 1
 			air_defence = 2
 		}
 
@@ -1933,7 +1933,7 @@ equipment_modules = {
 		add_stats = {	
 			build_cost_ic = 6
 			weight = 4
-			air_attack = 3
+			air_attack = 2.5
 			air_defence = 4
 		}
 
@@ -1978,7 +1978,7 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 6
 			weight = 4
-			air_attack = 3
+			air_attack = 2.5
 			air_defence = 4
 		}
 
@@ -2019,7 +2019,7 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 12
 			weight = 8
-			air_attack = 6
+			air_attack = 5
 			air_defence = 8
 		}
 

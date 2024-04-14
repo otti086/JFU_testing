@@ -31,7 +31,7 @@ if = {
 452 = {
 	add_dynamic_modifier = { modifier = no_entrenchment_africa }	
 }
-935 = {
+970 = {
 	add_dynamic_modifier = { modifier = no_entrenchment_africa }	
 }
 447 = {

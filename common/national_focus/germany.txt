@@ -549,21 +549,25 @@ focus_tree = {
 					}
 				}
 			}
-			if = {
-				limit = {
-					any_country = { axis = yes controls_state = 456 }
-				}
-				every_state = {
+			hidden_effect = {
+				if = {
 					limit = {
-						atlantikwall_states = yes
-						is_controlled_by = GER
-						NOT = { is_core_of = NOR }
+						any_country = { axis = yes controls_state = 456 }
 					}
-					add_dynamic_modifier = {
-						modifier = Atlantikwall_modifier
-					}
-				}			
+					every_state = {
+						limit = {
+							atlantikwall_states = yes
+							is_controlled_by = GER
+							NOT = { is_core_of = NOR }
+						}
+						add_dynamic_modifier = {
+							modifier = Atlantikwall_modifier
+						}
+					}			
+				}
 			}
+
+			custom_effect_tooltip = atlantikwall_modifier_tt
 		}
 	}
 
@@ -653,7 +657,6 @@ focus_tree = {
 		}
 
 		available = {
-			has_full_control_of_state = 65
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -737,12 +740,6 @@ focus_tree = {
 		}
 
 		available = {
-			OR = {
-				has_full_control_of_state = 64
-				has_full_control_of_state = 59
-				has_full_control_of_state = 60
-				has_full_control_of_state = 54
-			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -1275,7 +1272,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = GER_strategic_air_effort
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -1904,7 +1901,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = GER_danzig_or_war
-		cost = 4
+		cost = 5
 
 		completion_reward = {
 			custom_effect_tooltip = GER_decision_focus_tt
@@ -1923,7 +1920,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = GER_danzig_or_war
-		cost = 4
+		cost = 5
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -1943,7 +1940,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GER_weserubung
-		cost = 4
+		cost = 5
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -1994,7 +1991,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = GER_weserubung
-		cost = 4
+		cost = 5
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -2615,7 +2612,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_fall_of_france
-		cost = 4
+		cost = 5
 
 		completion_reward = {
 			add_dynamic_modifier = {
@@ -3041,11 +3038,7 @@ focus_tree = {
 		prerequisite = { focus = GER_greater_ger }
 		
 		available = {
-			AND = {
-				custom_trigger_tooltip = { tooltip = barb_failed date > 1941.11.22 }
-				has_completed_focus = GER_endsieg_1
-			}
-		
+			has_completed_focus = GER_endsieg_1
 		}
 		
 		x = 0
@@ -3241,7 +3234,7 @@ focus_tree = {
 		prerequisite = { focus = GER_endsieg_4 }
 		
 		available = {
-			custom_trigger_tooltip = { tooltip = blau_failed date > 1942.11.22 }
+			surrender_progress > 0.4
 		}
 		
 		x = 0
@@ -3251,6 +3244,11 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = scraping_the_barrel
+			hidden_effect = {
+				add_to_variable = { germany_war_army_core_attack_factor = 0.2 } 
+				add_to_variable = { germany_war_army_core_defence_factor = 0.2 }
+			}
+			custom_effect_tooltip = das_letzte_aufgebot_tt
 		}
 	}
 	focus = { 

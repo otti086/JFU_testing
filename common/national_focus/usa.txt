@@ -626,10 +626,17 @@ focus_tree = {
 		prerequisite = { focus = USA_arsenal_of_democracy }
 		available = {
 			OR = {
-				has_war = yes
 				has_war_support > 0.3
+				if = {
+					limit = {
+						has_game_rule = { 
+							rule = JFU_CHINA_WAR 
+							option = NO_CHINA_WAR 
+						} 
+					}
+					date > 1938.01.01
+				}
 			}
-			democratic > 0.95
 		}
 		continue_if_invalid = yes
 		x = 0

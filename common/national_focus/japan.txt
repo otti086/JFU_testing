@@ -92,7 +92,6 @@
 		}
 
 		available = {
-			is_subject = no
 		}
 
 		bypass = {
@@ -105,6 +104,12 @@
 
 		completion_reward = {
 			hidden_effect = { CHI = { load_oob = "CHI_spawn" } }
+			add_stability = 0.1
+			add_war_support = 0.1
+			MAN = {
+				add_stability = 0.1
+				add_war_support = 0.1				
+			}
 		}
 	}
 
@@ -135,8 +140,7 @@
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			add_named_threat = { threat = 1 name = JAP_intervene_in_china }
-			add_war_support = 0.05
+			custom_effect_tooltip = jap_china_tt
 		}
 	}
 
@@ -1219,7 +1223,14 @@
 		x = 1
 		y = 1
 		relative_position_id = JAP_agility_focus
-
+		available = {
+			OR = {
+				has_war_with = CHI
+				NOT = {
+					country_exists = CHI
+				}
+			}
+		}
 		cost = 10
 
 		cancel_if_invalid = yes
