@@ -428,6 +428,7 @@ technologies = {
 		
 		force_use_small_tech_layout = yes
 		naval_invasion_capacity = 10
+		naval_invasion_planning_bonus_speed = 1	
 		enable_subunits = {
 			marine
 		}
@@ -776,8 +777,7 @@ technologies = {
 			amphibious = {
 				attack = 0.10
 			}
-		}
-		naval_invasion_planning_bonus_speed = 1			
+		}		
 		doctrine = yes	
 		research_cost = 2.25
 		
