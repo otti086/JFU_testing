@@ -19,11 +19,9 @@ CAN_historical = {
 
 	ai_national_focuses = {
 		CAN_crown_corporations							#1936
-		CAN_rowell_sirois_commission					#1937
 		CAN_national_housing_act						#1938
 		CAN_defence_of_canada_regulations				#1939
 		CAN_halifax_shipyards							#
-		CAN_canada_pacific_railway						#late 1930s
 		CAN_army_modernization							#late 1930s
 
 	}

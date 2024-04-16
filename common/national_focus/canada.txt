@@ -64,32 +64,12 @@ focus_tree = {
 	##### INDUSTRY SECTION #####
 	############################
 	shared_focus = ALLIES_commonwealth_of_nations
-	focus = {
-		id = CAN_rowell_sirois_commission
-		icon = GFX_FOCUS_CAN_ROWELL
-		x = 0
-		y = 0
-
-		cost = 5
-
-
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
 
 	focus = {
 		id = CAN_crown_corporations
 		icon = GFX_FOCUS_CAN_CORP
-		x = 3
+		x = 1
 		y = 0
-		relative_position_id = CAN_rowell_sirois_commission
 
 		cost = 5
 
@@ -109,11 +89,10 @@ focus_tree = {
 	focus = {
 		id = CAN_national_housing_act
 		icon = GFX_R56_GOAL_CAN_NATIONAL_HOUSING_ACT
-		prerequisite = { focus = CAN_rowell_sirois_commission }
 		prerequisite = { focus = CAN_crown_corporations }
-		x = 2
+		x = -1
 		y = 1
-		relative_position_id = CAN_rowell_sirois_commission
+		relative_position_id = CAN_crown_corporations
 
 		cost = 5
 
@@ -125,21 +104,14 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-				}
+			465 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
 					instant_build = yes
 				}
-				set_state_flag = CAN_national_housing_act_IC
+
 			}
 		}
 	}
@@ -149,9 +121,9 @@ focus_tree = {
 		id = CAN_dollar_a_year_men
 		icon = GFX_goal_generic_construction
 		prerequisite = { focus = CAN_national_housing_act}
-		x = 2
-		y = 2
-		relative_position_id = CAN_rowell_sirois_commission
+		x = 0
+		y = 1
+		relative_position_id = CAN_national_housing_act
 
 		cost = 5
 
@@ -191,122 +163,52 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = CAN_canada_pacific_railway
-		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = CAN_rowell_sirois_commission }
-		x = 0
-		y = 2
-		relative_position_id = CAN_rowell_sirois_commission
-
-		cost = 2
-
-		ai_will_do = {
-			factor = 75
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-			NOT = {
-				owns_state = 473
-				owns_state = 471
-			}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-			build_railway = { #Vancouver - NW Canada
-				path = {
-					1408 1858 10273 4870 10548
-				}
-			}
-		}
-	}
-
-
-	focus = {
-		id = CAN_retool_angus_shops
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = CAN_canada_pacific_railway }
-		prerequisite = { focus = CAN_bits_and_pieces_program }
-		x = 2
-		y = 3
-		relative_position_id = CAN_rowell_sirois_commission
-
-		cost = 5
-		
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = production_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = arms_factory
-						size < 1
-						include_locked = yes
-					}					
-				}
-			}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		complete_tooltip = {
-			random_state = {
-				limit = {
-					has_state_flag = CAN_retool_angus_shops_AF
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-
-		completion_reward = {
-			random_owned_controlled_state = {
-				prioritize = { 285 517 }
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = CAN_retool_angus_shops_AF
-			}
-		}
-	}
-
 
 	############################
 	#### WAR PREP SECTION ######
 	############################
 
 	focus = {
+		id = CAN_war_bonds
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 0
+		relative_position_id = CAN_crown_corporations
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			has_war = yes
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			add_ideas = CAN_war_bonds_1
+		}
+	}
+
+
+	focus = {
 		id = CAN_defence_of_canada_regulations
 		icon = GFX_goal_generic_construct_military
-		x = 8
+		x = 2
 		y = 0
 
 		cost = 10
+
+		relative_position_id = CAN_war_bonds
 
 		ai_will_do = {
 			factor = 30
@@ -341,43 +243,11 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CAN_war_bonds
-		icon = GFX_goal_generic_consumer_goods
-		x = -2
-		y = 0
-		relative_position_id = CAN_defence_of_canada_regulations
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 80
-		}
-
-		available = {
-			has_war = yes
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-			add_ideas = CAN_war_bonds_1
-		}
-	}
-
-	focus = {
 		id = CAN_department_of_munitions_and_supply
 		icon = GFX_goal_generic_build_tank
-		prerequisite = { focus = CAN_crown_corporations }
 		prerequisite = { focus = CAN_defence_of_canada_regulations }
 		prerequisite = { focus = CAN_war_bonds }
-		x = -3
+		x = -1
 		y = 1
 		relative_position_id = CAN_defence_of_canada_regulations
 
@@ -392,16 +262,6 @@ focus_tree = {
 		}
 		
 		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = production_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = arms_factory
-						size < 1
-						include_locked = yes
-					}					
-				}
-			}
 		}
 
 		cancel_if_invalid = yes
@@ -409,40 +269,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
-		complete_tooltip = {
-			random_state = {
-				limit = {
-					has_state_flag = CAN_department_of_munitions_and_supply_AF1
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_state = {
-				limit = {
-					has_state_flag = CAN_department_of_munitions_and_supply_AF2
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-				}
+			276 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
@@ -451,53 +279,14 @@ focus_tree = {
 				}
 				set_state_flag = CAN_department_of_munitions_and_supply_AF1
 			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-				}
+			468 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
 					level = 1
 					instant_build = yes
 				}
-				set_state_flag = CAN_department_of_munitions_and_supply_AF2
 			}
-		}
-	}
-
-	focus = {
-		id = CAN_national_resources_mobilization_act
-		icon = GFX_goal_generic_demand_territory
-		prerequisite = { focus = CAN_defence_of_canada_regulations }
-		x = -1
-		y = 1
-		relative_position_id = CAN_defence_of_canada_regulations
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER }
-
-		completion_reward = {
 			add_ideas = CAN_national_resources_mobilization_act
 		}
 	}
@@ -506,7 +295,7 @@ focus_tree = {
 		id = CAN_wartime_prices_and_trade_board
 		icon = GFX_goal_generic_positive_trade_relations
 		prerequisite = { focus = CAN_defence_of_canada_regulations }
-		x = 2
+		x = 1
 		y = 1
 		relative_position_id = CAN_defence_of_canada_regulations
 
@@ -538,9 +327,9 @@ focus_tree = {
 		id = CAN_bits_and_pieces_program
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = CAN_department_of_munitions_and_supply }
-		x = -4
-		y = 2
-		relative_position_id = CAN_defence_of_canada_regulations
+		x = -2
+		y = 1
+		relative_position_id = CAN_department_of_munitions_and_supply
 
 		cost = 10
 
@@ -566,13 +355,45 @@ focus_tree = {
 		}
 	}
 
+
+	focus = {
+		id = CAN_retool_angus_shops
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = CAN_bits_and_pieces_program }
+		x = -1
+		y = 2
+		relative_position_id = CAN_bits_and_pieces_program
+
+		cost = 5
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			517 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
 	focus = {
 		id = CAN_fund_the_national_research_council
 		icon = GFX_focus_research
-		prerequisite = { focus = CAN_department_of_munitions_and_supply focus = CAN_national_resources_mobilization_act }
+		prerequisite = { focus = CAN_war_bonds }
+		prerequisite = { focus = CAN_crown_corporations}
 		x = -1
-		y = 2
-		relative_position_id = CAN_defence_of_canada_regulations
+		y = 1
+		relative_position_id = CAN_war_bonds
 
 		cost = 10
 
@@ -599,90 +420,16 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CAN_mine_the_shield
-		icon = GFX_goal_generic_construction2
-		prerequisite = { focus = CAN_national_resources_mobilization_act }
-		x = 1
-		y = 2
-		relative_position_id = CAN_defence_of_canada_regulations
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 25
-			modifier = {
-				factor = 2
-				has_completed_focus = CAN_canada_wheat_board
-			}
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-			NOT = {
-				any_owned_state = {
-					is_in_home_area = yes
-				}
-			}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-			random_owned_controlled_state = {
-				prioritize = { 471 472 683 }
-				limit = {
-					is_in_home_area = yes
-				}
-				add_resource = {
-					type = steel
-					amount = 2
-				}
-			}
-			random_owned_controlled_state = {
-				prioritize = { 471 472 683 }
-				limit = {
-					is_in_home_area = yes
-				}
-				add_resource = {
-					type = steel
-					amount = 2
-				}
-			}
-			random_owned_controlled_state = {
-				prioritize = { 471 472 683 }
-				limit = {
-					is_in_home_area = yes
-				}
-				add_resource = {
-					type = chromium
-					amount = 3
-				}
-			}
-		}
-	}
-
-	focus = {
 		id = CAN_canada_wheat_board
 		icon = GFX_goal_generic_construction2
 		prerequisite = { focus = CAN_wartime_prices_and_trade_board }
-		x = 3
-		y = 2
-		relative_position_id = CAN_defence_of_canada_regulations
+		x = 0
+		y = 1
+		relative_position_id = CAN_wartime_prices_and_trade_board
 
 		cost = 10
 
 		ai_will_do = {
-			factor = 25
-			modifier = {
-				factor = 2
-				has_completed_focus = CAN_mine_the_shield
-			}
 		}
 
 		available = {
@@ -711,8 +458,8 @@ focus_tree = {
 		icon = GFX_goal_generic_production2
 		prerequisite = { focus = CAN_department_of_munitions_and_supply }
 		x = -2
-		y = 3
-		relative_position_id = CAN_defence_of_canada_regulations
+		y = 1
+		relative_position_id = CAN_wartime_prices_and_trade_board
 
 		cost = 10
 
@@ -729,16 +476,6 @@ focus_tree = {
 		}
 		
 		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = production_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = arms_factory
-						size < 1
-						include_locked = yes
-					}					
-				}
-			}
 		}
 
 		cancel_if_invalid = yes
@@ -746,65 +483,22 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
-		complete_tooltip = {
-			random_state = {
-				limit = {
-					has_state_flag = CAN_victory_aircraft_limited_AF1
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_state = {
-				limit = {
-					has_state_flag = CAN_victory_aircraft_limited_AF2
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-
 		completion_reward = {
-			random_owned_controlled_state = {
-				prioritize = { 276 682 }
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
+			276 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
 					level = 2
 					instant_build = yes
 				}
-				set_state_flag = CAN_victory_aircraft_limited_AF1
 			}
-			random_owned_controlled_state = {
-				prioritize = { 276 682 }
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-				}
+			682 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
 					level = 1
 					instant_build = yes
 				}
-				set_state_flag = CAN_victory_aircraft_limited_AF2
 			}
 		}
 	}
@@ -812,11 +506,10 @@ focus_tree = {
 	focus = {
 		id = CAN_alberta_coal_towns
 		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = CAN_mine_the_shield }
 		prerequisite = { focus = CAN_canada_wheat_board }		
-		x = 2
-		y = 3
-		relative_position_id = CAN_defence_of_canada_regulations
+		x = 0
+		y = 1
+		relative_position_id = CAN_canada_wheat_board
 
 		cost = 10
 
@@ -825,20 +518,10 @@ focus_tree = {
 		}
 
 		available = {
-
+			has_war = yes
 		}
 		
 		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = construction_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = industrial_complex
-						size < 1
-						include_locked = yes
-					}					
-				}
-			}
 		}
 
 		cancel_if_invalid = yes
@@ -846,48 +529,121 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
-		complete_tooltip = {
-			random_state = {
-				limit = {
-					has_state_flag = CAN_alberta_coal_towns_IC
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = yes
-				}
-			}
-		}
 
 		completion_reward = {
-			random_owned_controlled_state = {
-				prioritize = { 470 }
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 2
-						include_locked = yes
-					}
-				}
+			470 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
 					level = 3
 					instant_build = yes
 				}
-				set_state_flag = CAN_alberta_coal_towns_IC
 			}
 		}
 	}
 
 	focus = {
-		id = CAN_commit_to_the_war
-		icon = GFX_goal_generic_attack_allies
+		id = CAN_john_inglis_and_company
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = CAN_bits_and_pieces_program }
+		x = 0
+		y = 1
+		relative_position_id = CAN_bits_and_pieces_program
+
+		cost = 10
+
+		ai_will_do = {
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			276 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			682 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = CAN_national_steel_car
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = CAN_alberta_coal_towns }
+		x = -1
+		y = 1
+		relative_position_id = CAN_alberta_coal_towns
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 2
+				has_completed_focus = CAN_if_day
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			860 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			276 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = CAN_send_in_the_zombies
+		icon = GFX_FOCUS_CAN_ZOMBIE
 		prerequisite = { focus = CAN_canada_wheat_board }
-		x = 4
-		y = 3
-		relative_position_id = CAN_defence_of_canada_regulations
+		x = 1
+		y = 2
+		relative_position_id = CAN_canada_wheat_board
 
 		cost = 10
 
@@ -909,394 +665,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_MANPOWER }
 
 		completion_reward = {
-			add_ideas = CAN_commit_to_the_war
-		}
-	}
-
-	focus = {
-		id = CAN_john_inglis_and_company
-		icon = GFX_goal_generic_construct_military
-		prerequisite = { focus = CAN_bits_and_pieces_program }
-		x = -4
-		y = 4
-		relative_position_id = CAN_defence_of_canada_regulations
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-			modifier = {
-				factor = 2
-				has_completed_focus = CAN_victory_aircraft_limited
-			}
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = production_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = arms_factory
-						size < 1
-						include_locked = yes
-					}
-				}
-			}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		complete_tooltip = {
-			random_state = {
-				limit = {
-					has_state_flag = CAN_john_inglis_and_company_AF1
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_state = {
-				limit = {
-					has_state_flag = CAN_john_inglis_and_company_AF2
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-
-		completion_reward = {
-			random_owned_controlled_state = {
-				prioritize = { 276 682 }
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = CAN_john_inglis_and_company_AF1
-			}
-			random_owned_controlled_state = {
-				prioritize = { 276 682 }
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = CAN_john_inglis_and_company_AF2
-			}
-		}
-	}
-
-	focus = {
-		id = CAN_polymer_corporation
-		icon = GFX_goal_generic_oil_refinery
-		prerequisite = { focus = CAN_victory_aircraft_limited focus = CAN_fund_the_national_research_council }
-		x = -1
-		y = 4
-		relative_position_id = CAN_defence_of_canada_regulations
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 50
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = synth_oil_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = synthetic_refinery
-						size < 0
-						include_locked = yes
-					}
-				}
-			}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
-
-		complete_tooltip = {
-			if = {
-				limit = { has_country_flag = CAN_polymer_corporation_unlock }
-				set_technology = { synth_oil_experiments = 1 }
-				else = {					
-					add_tech_bonus = {
-						name = CAN_polymer_corporation
-						ahead_reduction = 2
-						bonus = 1.0
-						uses = 1
-						category = synth_resources
-					}
-				}				
-			}
-			random_state = {
-				limit = {
-					has_state_flag = CAN_polymer_corporation_1
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = synthetic_refinery
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_state = {
-				limit = {
-					has_state_flag = CAN_polymer_corporation_2
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = synthetic_refinery
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-
-		completion_reward = {
-			if = {
-				limit = {
-					NOT = { has_tech = synth_oil_experiments }
-				}
-				set_technology = { synth_oil_experiments = 1 }
-				set_country_flag = CAN_polymer_corporation_unlock
-				effect_tooltip = {
-					random_owned_controlled_state = {
-						prioritize = { 682 }
-						limit = {
-						}
-						add_extra_state_shared_building_slots = 1
-						add_building_construction = {
-							type = synthetic_refinery
-							level = 1
-							instant_build = yes
-						}
-						set_state_flag = CAN_polymer_corporation_1
-					}
-					random_owned_controlled_state = {
-						prioritize = { 276 }
-						limit = {
-						}
-						add_extra_state_shared_building_slots = 1
-						add_building_construction = {
-							type = synthetic_refinery
-							level = 1
-							instant_build = yes
-						}
-						set_state_flag = CAN_polymer_corporation_2
-					}
-				}
-				else = {
-					add_tech_bonus = {
-						name = CAN_polymer_corporation
-						ahead_reduction = 2
-						bonus = 1.0
-						uses = 1
-						category = synth_resources
-					}
-				}
-			}
-			random_owned_controlled_state = {
-				prioritize = { 682 }
-				limit = {
-					free_building_slots = {
-						building = synthetic_refinery
-						size > 0
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = synthetic_refinery
-					level = 1
-					instant_build = yes
-				}
-				set_state_flag = CAN_polymer_corporation_1
-			}
-			random_owned_controlled_state = {
-				prioritize = { 276 }
-				limit = {
-					free_building_slots = {
-						building = synthetic_refinery
-						size > 0
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = synthetic_refinery
-					level = 1
-					instant_build = yes
-				}
-				set_state_flag = CAN_polymer_corporation_2
-			}
-		}
-	}
-
-	focus = {
-		id = CAN_national_steel_car
-		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = CAN_alberta_coal_towns }
-		x = 1
-		y = 4
-		relative_position_id = CAN_defence_of_canada_regulations
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-			modifier = {
-				factor = 2
-				has_completed_focus = CAN_if_day
-			}
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = construction_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = industrial_complex
-						size < 1
-						include_locked = yes
-					}
-				}
-			}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		complete_tooltip = {
-			random_state = {
-				limit = {
-					has_state_flag = CAN_national_steel_car_IC1
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_state = {
-				limit = {
-					has_state_flag = CAN_national_steel_car_IC2
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = CAN_national_steel_car_IC1
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = CAN_national_steel_car_IC2
-			}
-		}
-	}
-
-	focus = {
-		id = CAN_send_in_the_zombies
-		icon = GFX_FOCUS_CAN_ZOMBIE
-		prerequisite = { focus = CAN_commit_to_the_war }
-		x = 3
-		y = 4
-		relative_position_id = CAN_defence_of_canada_regulations
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_MANPOWER }
-
-		completion_reward = {
 			add_ideas = CAN_send_in_the_zombies
 		}
 	}
@@ -1306,9 +674,9 @@ focus_tree = {
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = CAN_john_inglis_and_company }
 		prerequisite = { focus = CAN_victory_aircraft_limited }
-		x = -2
-		y = 5
-		relative_position_id = CAN_defence_of_canada_regulations
+		x = -1
+		y = 2
+		relative_position_id = CAN_victory_aircraft_limited
 
 		cost = 10
 
@@ -1344,11 +712,10 @@ focus_tree = {
 	focus = {
 		id = CAN_defense_research_grants
 		icon = GFX_focus_research
-		prerequisite = { focus = CAN_john_inglis_and_company }
-		prerequisite = { focus = CAN_if_day }
-		x = -3
-		y = 6
-		relative_position_id = CAN_defence_of_canada_regulations
+		prerequisite = { focus = CAN_victory_aircraft_limited }
+		x = 0
+		y = 1
+		relative_position_id = CAN_victory_aircraft_limited
 
 		cost = 10
 
@@ -1357,7 +724,6 @@ focus_tree = {
 		}
 
 		available = {
-			num_of_factories > 50
 		}
 		
 		bypass = {
@@ -1375,49 +741,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CAN_uranium_mining
-		icon = GFX_focus_wonderweapons
-		prerequisite = { focus = CAN_polymer_corporation focus = CAN_national_steel_car }
-		x = 0
-		y = 5
-		relative_position_id = CAN_defence_of_canada_regulations
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_RESEARCH }
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = CAN_uranium_mining
-				bonus = 1.0
-				uses = 2
-				category = nuclear
-			}	
-		}
-	}
-
-	focus = {
 		id = CAN_long_branch_arsenal
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = CAN_send_in_the_zombies }
-		x = 2
-		y = 5
-		relative_position_id = CAN_defence_of_canada_regulations
+		x = -1
+		y = 1
+		relative_position_id = CAN_send_in_the_zombies
 
 		cost = 5
 
@@ -1454,9 +783,9 @@ focus_tree = {
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = CAN_send_in_the_zombies }
 		prerequisite = { focus = CAN_red_deer_training_camp }
-		x = 4
-		y = 5
-		relative_position_id = CAN_defence_of_canada_regulations
+		x = 1
+		y = 1
+		relative_position_id = CAN_send_in_the_zombies
 
 		cost = 5
 
@@ -1492,7 +821,6 @@ focus_tree = {
 		id = CAN_forced_quebec_conscription
 		icon = GFX_goal_tfv_can_forced_quebec_conscription 
 		prerequisite = { focus = CAN_long_branch_arsenal focus = CAN_independent_command }
-		mutually_exclusive = { focus =  CAN_compromise_with_quebec }
 		x = 2
 		y = 6
 		relative_position_id = CAN_defence_of_canada_regulations
@@ -1518,45 +846,6 @@ focus_tree = {
 
 		completion_reward = {
 			remove_ideas = CAN_conscription_crisis
-			custom_effect_tooltip = "CAN_ANGERED_WORKERS"
-			
-			# Opens up the MTTH events tfv_canada.50 - tfv_canada.53
-		}
-	}
-
-	focus = {
-		id = CAN_compromise_with_quebec
-		icon = GFX_goal_tfv_can_compromise_with_quebec
-		prerequisite = { focus = CAN_long_branch_arsenal focus = CAN_independent_command }
-		mutually_exclusive = { focus =  CAN_forced_quebec_conscription }
-		x = 4
-		y = 6
-		relative_position_id = CAN_defence_of_canada_regulations
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_MANPOWER }
-
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = CAN_conscription_crisis
-				add_idea = CAN_conscription_crisis_mended
-			}
 		}
 	}
 
@@ -1566,8 +855,8 @@ focus_tree = {
 		prerequisite = { focus = CAN_national_steel_car }
 		prerequisite = { focus = CAN_if_day }
 		x = 1
-		y = 7
-		relative_position_id = CAN_defence_of_canada_regulations
+		y = 1
+		relative_position_id = CAN_if_day
 
 		cost = 10
 
@@ -1588,95 +877,32 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
-		complete_tooltip = {
-			remove_ideas = CAN_great_depression_2
-			random_state = {
-				limit = {
-					has_state_flag = CAN_war_fueled_economy_AF1
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_state = {
-				limit = {
-					has_state_flag = CAN_war_fueled_economy_AF2
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_state = {
-				limit = {
-					has_state_flag = CAN_war_fueled_economy_AF3
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-
 		completion_reward = {
 			remove_ideas = CAN_great_depression_2
-			random_owned_controlled_state = {
-				limit = {
-					is_in_home_area = yes
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-				}
+			862 = {
+
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
 					level = 1
 					instant_build = yes
 				}
-				set_state_flag = CAN_war_fueled_economy_AF1
 			}
-			random_owned_controlled_state = {
-				limit = {
-					is_in_home_area = yes
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-				}
+			276 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
 					level = 1
 					instant_build = yes
 				}
-				set_state_flag = CAN_war_fueled_economy_AF2
 			}
-			random_owned_controlled_state = {
-				limit = {
-					is_in_home_area = yes
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-				}
+			473 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
 					level = 1
 					instant_build = yes
 				}
-				set_state_flag = CAN_war_fueled_economy_AF3
 			}
 		}
 	}
@@ -1689,7 +915,7 @@ focus_tree = {
 	focus = {
 		id = CAN_army_modernization
 		icon = GFX_CAN_FIRST_CANADIAN_ARMY
-		x = 15
+		x = 11
 		y = 0
 
 		cost = 10
@@ -2130,22 +1356,16 @@ focus_tree = {
 	focus = {
 		id = CAN_strengthen_the_commonwealth_ties
 		icon = GFX_R56_GOAL_CAN_PARLIAMENT
-		x = 20
+		x = 16
 		y = 0
 
 		cost = 5
 
 		ai_will_do = {
-			factor = 9
-			modifier = {
-				democratic < 0.5
-				factor = 0.5
-			}
+
 		}
 
 		available = {
-			ENG = { has_government = ROOT }
-			is_in_tech_sharing_group = commonwealth_research
 		}
 		
 		bypass = {
@@ -2158,15 +1378,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			add_political_power = 150
    			modify_tech_sharing_bonus = {
          		id = commonwealth_research
-         		bonus = 0.03
-			}
-			ENG = {
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = CAN_strengthen_the_commonwealth_ties
-				}
+         		bonus = 0.05
 			}
 		}
 	}
@@ -2207,90 +1422,30 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
-		complete_tooltip = {
-			random_state = {
-				limit = {
-					has_state_flag = CAN_shadow_factories_AF1
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_state = {
-				limit = {
-					has_state_flag = CAN_shadow_factories_AF2
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_state = {
-				limit = {
-					has_state_flag = CAN_shadow_factories_AF3
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-				}
+			468 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
 					level = 1
 					instant_build = yes
 				}
-				set_state_flag = CAN_shadow_factories_AF1
 			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-				}
+			863 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
 					level = 1
 					instant_build = yes
 				}
-				set_state_flag = CAN_shadow_factories_AF2
 			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-				}
+			276 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
 					level = 1
 					instant_build = yes
 				}
-				set_state_flag = CAN_shadow_factories_AF3
 			}
 		}
 	}
@@ -2558,7 +1713,7 @@ focus_tree = {
 	focus = {
 		id = CAN_halifax_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 17
+		x = 13
 		y = 0
 
 		cost = 10
@@ -2568,40 +1723,16 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
-		complete_tooltip = {
-			navy_experience = 25
-			random_state = {
-				limit = {
-					has_state_flag = CAN_halifax_shipyards_DY
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = dockyard
-					level = 3
-					instant_build = yes
-				}
-			}
-		}
-
 		completion_reward = {
 			navy_experience = 25
-			random_owned_controlled_state = {
-				prioritize = { 464 }
-				limit = {
-					is_coastal = yes
-					free_building_slots = {
-						building = dockyard
-						size > 2
-						include_locked = yes
-					}
-				}
+			464 = {
+
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard
 					level = 3
 					instant_build = yes
 				}
-				set_state_flag = CAN_halifax_shipyards_DY
 			}
 		}
 	}

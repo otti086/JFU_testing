@@ -579,7 +579,7 @@ characters={
 			planning_skill = 3
 			logistics_skill = 3
 			visible = { 
-				has_completed_focus = USA_intervention_in_asia 
+				always = no
 			}
 		}
 	}
