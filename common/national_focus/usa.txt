@@ -1469,7 +1469,7 @@ focus_tree = {
 		y = 2
 		prerequisite = { focus = USA_louisiana_maneuvers }
 		relative_position_id = USA_selective_training_act
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1498,7 +1498,7 @@ focus_tree = {
 		y = 3
 		prerequisite = { focus = USA_army_of_the_united_states }
 		relative_position_id = USA_selective_training_act
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1573,7 +1573,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_tank_experiments
-				uses = 1
+				uses = 2
 				bonus = 1.0
 				category = armor
 			}
@@ -1581,7 +1581,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_tank_destroyer_doctrine
-		icon = GFX_focus_usa_tank_destroyer_doctrine
+		icon = GFX_GOAL_USA_HEAVY_TANK_DOCTRINE
 		x = 2
 		y = 3
 		prerequisite = { focus = USA_tank_experiments }
@@ -1623,7 +1623,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_main_battle_tanks
-		icon = GFX_focus_generic_combined_arms
+		icon = GFX_GOAL_USA_MAIN_BATTLE_TANKS
 		x = 4
 		y = 3
 		prerequisite = { focus = USA_tank_experiments }
@@ -1670,7 +1670,7 @@ focus_tree = {
 		y = 4
 		prerequisite = { focus = USA_main_battle_tanks focus = USA_tank_destroyer_doctrine }
 		relative_position_id = USA_selective_training_act
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1820,7 +1820,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_strategic_bombing
-		icon = GFX_goal_generic_occupy_start_war
+		icon = GFX_USA_FLYING_FORTRESSES
 		prerequisite = { focus = USA_air_war_plans_division }
 		x = 1
 		y = 1
@@ -1847,7 +1847,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_TAC
-		icon = GFX_goal_generic_air_doctrine
+		icon = GFX_USA_HEAVY_BOMBER
 		prerequisite = { focus = USA_strategic_bombing }
 		x = 1
 		y = 1
@@ -1898,7 +1898,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_escort_fighters
-		icon = GFX_focus_usa_escort_fighters
+		icon = GFX_GOAL_USA_THE_SABRE_PROJECT	
 		x = 0
 		y = 2
 		prerequisite = { focus = USA_air_support focus = USA_strategic_bombing }
@@ -1940,7 +1940,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_two_ocean_navy_act
-		icon = GFX_focus_generic_navy_battleship2
+		icon = GFX_USA_TWO_OCEAN_NAVY_ACT
 		x = 9
 		y = 1
 		prerequisite = { focus = USA_war_department }
@@ -2114,7 +2114,7 @@ focus_tree = {
 	
 	focus = {
 		id = USA_battleship_primacy
-		icon = GFX_goal_generic_navy_battleship
+		icon = GFX_GOAL_USA_FY40_PLAN
 		prerequisite = { focus = USA_bureau_of_ships }
 		mutually_exclusive = { focus = USA_carrier_primacy }
 		x = -3
@@ -2165,7 +2165,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_carrier_primacy
-		icon = GFX_goal_generic_navy_carrier
+		icon = GFX_GOAL_USA_FY42_PLAN
 		prerequisite = { focus = USA_bureau_of_ships }
 		mutually_exclusive = { focus = USA_battleship_primacy }
 		x = -1

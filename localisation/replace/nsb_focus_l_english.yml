@@ -8,4 +8,4 @@
  SOV_increase_aircraft_production_ns_tt:0 "$SOV_modify_airforce_ns_intro$ \n§YAll types of aircraft§!: £production_cost Production Cost: §G-5.00%§! \n\n"
  SOV_intensify_pilot_training_program_ns_tt:0 "$SOV_modify_airforce_ns_intro$ \nAce generation chance: §G+15%§!  \nAir Wing Experience loss when killed: §G-15%§! \nAir Accidents Chance: §G-25.0%§! \nNight Operations Penalty: §G-10.00%§! \nBad Weather Penalty: §G-15.00%§! \n\n"
  SOV_move_industry_to_the_urals_trains_tt:0 "§R[?SOV_industrial_relocation_trains_focus] $train_equipment$s§! will be used for the duration of this focus.\n\n"
- 
+ SOV_leader_of_the_party_and_the_people_trait_tt:0 "§Y[ROOT.GetLeader]§!: Modify appropriate trait (§Y$stalin_inheritor_of_lenin$§! or §Y$stalin_servant_of_lenin$§!) by \nParty Popularity Stability Modifier: §G+10.00%§! \nDefensive War Penalty Stability Modifier: §G+10.00%§! \nPolitical Advisor Cost: §G-25%§!\n" 

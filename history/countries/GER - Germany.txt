@@ -284,7 +284,8 @@ recruit_character = GER_martin_bormann
 recruit_character = GER_wilhelm_canaris
 recruit_character = GER_joseph_goebbels
 recruit_character = GER_konstantin_von_neurath
-
+recruit_character = GER_felix_steiner_allies
+recruit_character = GER_felix_steiner_soviet
 recruit_character = GER_alexander_von_falkenhausen #Not visible unless recalled from China
 
 if = {

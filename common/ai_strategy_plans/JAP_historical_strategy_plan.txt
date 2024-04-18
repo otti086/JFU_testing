@@ -49,7 +49,6 @@ JAP_historical_plan = {
 		JAP_modern_escorts #May 30 1942	
 		#1943
 		JAP_warrior_spirit #December 30 1942	
-		JAP_coal_liquification #March 10 1943	
 		JAP_secure_china #July 30 1943	
 		JAP_strengthen_the_divine_wind
 		JAP_armored_divisions

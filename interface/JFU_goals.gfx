@@ -1605,4 +1605,262 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/sov/SOV_finish_five_year_plan.dds"
 	}
     
+
+    SpriteType = {
+		name = "GFX_SOV_ALLIED_HELP"
+		texturefile = "gfx/interface/goals/sov/SOV_allied_help.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_SOV_AIR_TO_GROUND_EXERCISES"
+		texturefile = "gfx/interface/goals/sov/SOV_air_to_ground_exercises.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_SOV_5_YEAR_PLAN"
+		texturefile = "gfx/interface/goals/sov/SOV_5_year_plan.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GOAL_SOVIET_DEFENSE2"
+		texturefile = "gfx/interface/goals/sov/Goal_Soviet_Defense2.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GOAL_SOV_HIGH_COMMAND"
+		texturefile = "gfx/interface/goals/sov/Goal_Sov_high_command.tga"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GOAL_SOV_ART2"
+		texturefile = "gfx/interface/goals/sov/Goal_sov_art2.tga"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_SOV_CAS_DESIGNER"
+		texturefile = "gfx/interface/goals/sov/SOV_cas_designer.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_SOV_FIGHTER_DESIGNER"
+		texturefile = "gfx/interface/goals/sov/SOV_fighter_designer.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_SOV_FORM_THE_PCDI"
+		texturefile = "gfx/interface/goals/sov/SOV_form_the_PCDI.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_SOV_GEORGY_ZHUKOV_HERO"
+		texturefile = "gfx/interface/goals/sov/SOV_georgy_zhukov_hero.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_SOV_GREAT_PATRIOTIC_WAR"
+		texturefile = "gfx/interface/goals/sov/SOV_great_patriotic_war.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_SOV_INCREASE_PRODUCTION"
+		texturefile = "gfx/interface/goals/sov/SOV_increase_production.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_SOV_LEND_LEASE"
+		texturefile = "gfx/interface/goals/sov/SOV_lend_lease.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_SOV_LONG_RANGE_ESCORTS"
+		texturefile = "gfx/interface/goals/sov/SOV_long_range_escorts.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_SOV_NEW_PLANE_MODEL"
+		texturefile = "gfx/interface/goals/sov/SOV_new_plane_model.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_SOV_ORDER_227"
+		texturefile = "gfx/interface/goals/sov/SOV_order_227.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_SOV_PLANS"
+		texturefile = "gfx/interface/goals/sov/sov_plans.tga"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_SOV_STALIN_CONSTITUTION"
+		texturefile = "gfx/interface/goals/sov/SOV_stalin_constitution.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_SOV_START_3_5_YEAR_PLAN"
+		texturefile = "gfx/interface/goals/sov/SOV_start_3_5_year_plan.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_SOV_STRAT_DESIGN"
+		texturefile = "gfx/interface/goals/sov/SOV_strat_design.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_SOV_TUPOLEV_DESIGN_BUREAU"
+		texturefile = "gfx/interface/goals/sov/SOV_tupolev_design_bureau.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_SOV_STALIN_WRITING"
+		texturefile = "gfx/interface/goals/sov/sov_stalin_writing.tga"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_SOV_REHABILITATE_THE_RED_ARMY"
+		texturefile = "gfx/interface/goals/sov/SOV_rehabilitate_the_red_army.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_USA_HEAVY_BOMBER"
+		texturefile = "gfx/interface/goals/usa/USA_heavy_bomber.tga"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_USA_MUSTANG"
+		texturefile = "gfx/interface/goals/usa/USA_mustang.tga"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_USA_JET_FIGHTER"
+		texturefile = "gfx/interface/goals/usa/USA_jet_fighter.tga"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GOAL_USA_FY40_PLAN"
+		texturefile = "gfx/interface/goals/usa/goal_USA_FY40_plan.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GOAL_USA_FY42_PLAN"
+		texturefile = "gfx/interface/goals/usa/goal_USA_FY42_plan.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GOAL_USA_MAIN_BATTLE_TANKS"
+		texturefile = "gfx/interface/goals/usa/goal_USA_main_battle_tanks.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GOAL_USA_HEAVY_TANK_DOCTRINE"
+		texturefile = "gfx/interface/goals/usa/goal_USA_heavy_tank_doctrine.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_GOAL_USA_THE_SABRE_PROJECT"
+		texturefile = "gfx/interface/goals/usa/goal_USA_the_sabre_project.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_USA_FLYING_FORTRESSES"
+		texturefile = "gfx/interface/goals/usa/USA_Flying_Fortresses.png"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_USA_TWO_OCEAN_NAVY_ACT"
+		texturefile = "gfx/interface/goals/usa/USA_two_ocean_navy_act.dds"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_ENG_BOMBER_COMMAND"
+		texturefile = "gfx/interface/goals/eng/ENG_Bomber_Command.png"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_ENG_COMMONWELTH_TOUR"
+		texturefile = "gfx/interface/goals/eng/ENG_commonwelth_tour.tga"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_ENG_EMPIRE_AIR_TRAINING_SCHEME"
+		texturefile = "gfx/interface/goals/eng/ENG_Empire_Air_Training_Scheme.png"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_ENG_FIGHTER_COMMAND"
+		texturefile = "gfx/interface/goals/eng/ENG_Fighter_Command.png"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_ENG_JET_AIRCRAFT"
+		texturefile = "gfx/interface/goals/eng/ENG_jet_aircraft.tga"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_ENG_LIFEBLOOD_OF_THE_EMPIRE"
+		texturefile = "gfx/interface/goals/eng/ENG_Lifeblood_of_the_Empire.png"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_ENG_ROYAL_NAVY"
+		texturefile = "gfx/interface/goals/eng/ENG_Royal_Navy.png"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_ENG_RULE_WAVES"
+		texturefile = "gfx/interface/goals/eng/ENG_rule_waves.tga"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_ENG_SAS_LOGO"
+		texturefile = "gfx/interface/goals/eng/ENG_SAS_logo.png"
+	}
+    
+
+    SpriteType = {
+		name = "GFX_ENG_SPITFIRE"
+		texturefile = "gfx/interface/goals/eng/ENG_Spitfire.png"
+	}
+    
 }

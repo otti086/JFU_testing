@@ -161,7 +161,11 @@ political_actions1 = {
 					add_dynamic_modifier = { modifier = SOV_BARB_Debuff days = 140 }
 		#			add_dynamic_modifier = { modifier = SOV_BARB_Debuff1 }
 				}
-				country_event = { id = super.5 hours = 0 }		
+				country_event = { id = super.5 hours = 0 }
+				SOV = {
+					complete_national_focus = SOV_Great_Patriotic_War
+				}	
+
 			}
 			complete_national_focus = GER_ussr_war_goal
 		}
@@ -1172,6 +1176,7 @@ JFU_decisions = {
 		cost = 0
 		complete_effect = {
 			SOV = { add_timed_idea = { idea = soviet_winter_offensive1 days = 120 } }
+			complete_national_focus = SOV_first_winter_offensive
 		}
 	}
 	"Winter 42 Counter Offensive" = {
@@ -1185,6 +1190,7 @@ JFU_decisions = {
 		cost = 0
 		complete_effect = {
 			SOV = { add_timed_idea = { idea = soviet_winter_offensive2 days = 120 } }
+			complete_national_focus = SOV_second_winter_offensive
 		}
 	}
 	"Winter 43 Counter Offensive" = {
@@ -1198,6 +1204,7 @@ JFU_decisions = {
 		cost = 0
 		complete_effect = {
 			SOV = { add_timed_idea = { idea = soviet_winter_offensive3 days = 180 } }
+			complete_national_focus = SOV_third_winter_offensive
 		}
 	}
 	"Enable Small Barb" = {

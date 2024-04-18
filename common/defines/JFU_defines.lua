@@ -66,7 +66,7 @@ NDefines.NResistance.NRESISTANCE_TARGET_MODIFIER_OCCUPIED_IS_EXILE_MAX = 10.0
 NDefines.NBuildings.MAX_SHARED_SLOTS = 50
 NDefines.NBuildings.OWNER_CHANGE_EXTRA_SHARED_SLOTS_FACTOR = 1.0
 NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 100
-NDefines.NBuildings.NAVALBASE_REPAIR_MULT = 0.15 -- vanilla 0.5 Each level of navalbase building repairs X strength and can repair as many ships as its level
+NDefines.NBuildings.NAVALBASE_REPAIR_MULT = 0.5 -- vanilla 0.5 Each level of navalbase building repairs X strength and can repair as many ships as its level
 
 NDefines.NCharacter.SPECIALIST_ADVISOR_MIN_RANK = 2
 NDefines.NCharacter.EXPERT_ADVISOR_MIN_RANK = 4
@@ -203,4 +203,4 @@ NDefines.NIntel.ARMY_INTEL_COMBAT_BONUS_MAX_BONUS = 0
 
 NDefines.NIndustrialOrganisation.DESIGN_TEAM_CHANGE_XP_COST = 1	-- Flat cost added to the XP cost of a new equipment design. If 0, cost is entirely disabled.
 
-NDefines.NMarket.IC_TO_CIC_FACTOR = 0.1             -- The factor for mapping IC cost to CIC cost. Should be a positive number.
+NDefines.NMarket.IC_TO_CIC_FACTOR = 0.1       -- The factor for mapping IC cost to CIC cost. Should be a positive number.

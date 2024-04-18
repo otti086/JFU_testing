@@ -34,7 +34,6 @@ characters={
 			idea_token = BRA_eurico_gaspar_dutra
 			allowed = {
 				original_tag = BRA
-				has_dlc = "Trial of Allegiance"
 			}
 			available = {
 				OR = { 
@@ -704,7 +703,6 @@ characters={
 			idea_token = BRA_minervino_de_oliveira
 			allowed = {
 				original_tag = BRA
-				has_dlc = "Trial of Allegiance"
 			}
 			available  = {
 				#has_government = communism
@@ -762,7 +760,6 @@ characters={
 			idea_token = BRA_war_industrialist
 			allowed = {
 				original_tag = BRA
-				has_dlc = "Trial of Allegiance"
 			}
 			available  = {
 				#has_government = communism
@@ -786,7 +783,6 @@ characters={
 			idea_token = BRA_captain_of_industry
 			allowed = {
 				original_tag = BRA
-				has_dlc = "Trial of Allegiance"
 			}
 			available  = {
 				#has_government = communism
@@ -848,7 +844,6 @@ characters={
 			idea_token = BRA_gustavo_barroso
 			allowed = {
 				original_tag = BRA
-				has_dlc = "Trial of Allegiance"
 			}
 			available  = {
 				NOT = { has_government = communism }
@@ -888,7 +883,6 @@ characters={
 			idea_token = BRA_oliveria_viana
 			allowed = {
 				original_tag = BRA
-				has_dlc = "Trial of Allegiance"
 			}
 			available  = {
 				NOT = { has_government = communism }
@@ -912,7 +906,6 @@ characters={
 	#		idea_token = BRA_geremia_lunarelli
 	#		allowed  = {
 	#			original_tag  = BRA
-	#			has_dlc = "Trial of Allegiance"
 	#		}
 	#		available  = {
 	#			always = no

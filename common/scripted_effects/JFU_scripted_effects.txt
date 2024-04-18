@@ -4008,3 +4008,133 @@ BRA_clr_country_leader_role = {
 		}
 	}
 }
+
+SOV_relocate_civ = {
+	random_owned_controlled_state = {
+		limit = {
+			any_neighbor_state = { 
+				is_core_of = SOV
+				NOT = { is_controlled_by = SOV } 
+				NOT = { state = 146}
+			} 
+			industrial_complex > 0
+		}
+		remove_building = {type = industrial_complex level = 1}
+		OWNER = { 
+			random_owned_controlled_state = {
+				limit = {
+					OR = {
+						state=576 
+						state=878 
+						state=575 
+						state=876 
+						state=516
+					}
+				}
+				add_extra_state_shared_building_slots=1
+				add_building_construction = {
+   			 		type = industrial_complex
+   			 		level = 1
+  			 		instant_build = yes
+			 	}
+			}				
+		}
+	}
+}
+
+SOV_relocate_mil = {
+	random_owned_controlled_state = {
+		limit = {
+			any_neighbor_state = { 
+				is_core_of = SOV
+				NOT = { is_controlled_by = SOV } 
+			} 
+			arms_factory > 0
+		}
+		remove_building = {type = arms_factory level = 1}
+		OWNER = { 
+			random_owned_controlled_state = {
+				limit = {
+					OR = {
+						state=576 
+						state=878 
+						state=575 
+						state=876 
+						state=516
+					}
+				}
+				add_extra_state_shared_building_slots=1
+				add_building_construction = {
+   			 		type = arms_factory
+   			 		level = 1
+  			 		instant_build = yes
+			 	}
+			}				
+		}
+	}
+}
+SOV_relocate_civ_moscow = {
+	random_owned_controlled_state={
+		limit = { 
+			OR = { 	
+				state = 219 
+				state = 195 
+				state = 217 
+			} 
+			industrial_complex > 0 
+		}
+		remove_building = {type = industrial_complex level = 1}
+		OWNER={
+			random_owned_controlled_state={
+				limit = {
+					OR = {
+						state=576 
+						state=878 
+						state=575 
+						state=876 
+						state=516
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+   					type = industrial_complex
+   					level = 1
+  					instant_build = yes
+				}
+			}				
+		}
+}
+}
+SOV_relocate_mil_moscow = {
+	random_owned_controlled_state = {
+		limit = { 
+			OR = { 	
+				state = 219 
+				state = 195 
+				state = 217 
+			} 
+			arms_factory > 0 
+		}
+		remove_building = {type = arms_factory level = 1}
+		OWNER = { add_to_variable = { relocatedmil = 1 } }
+		OWNER={
+			random_owned_controlled_state={
+				limit = {
+					OR = {
+						state=576 
+						state=878 
+						state=575 
+						state=876 
+						state=516
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+   					type = arms_factory
+   					level = 1
+  					instant_build = yes
+				}
+			}				
+		}
+	}
+}

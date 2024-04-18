@@ -66,20 +66,6 @@ SOV_gosproyektstroy_decision_category = {
 	}
 }
 
-SOV_industry_relocation = {
-	priority = 12
-
-	icon = generic
-
-	allowed = {
-		original_tag = SOV
-	}
-
-	visible = {
-		has_completed_focus = SOV_move_industry_to_the_urals
-	}
-}
-
 SOV_great_patriotic_war = {
 	priority = 200
 

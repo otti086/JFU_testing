@@ -12,7 +12,6 @@
 # 	include = generic_medium_tank_organization
 # 	icon = GFX_idea_BRA_bernardini
 # 	allowed = {	
-# 		has_dlc = "Trial of Allegiance"
 # 		tag = BRA 
 # 	}
 #
@@ -51,7 +50,6 @@
 #	include = generic_escort_ship_organization
 #	icon = GFX_idea_BRA_arsenal_de_marinha
 #	allowed = {
-#		has_dlc = "Trial of Allegiance"
 #		# TODO_JUNO: Add correct DLC check!
 #		tag = BRA 
 #	}
@@ -88,7 +86,6 @@
 #	include = generic_general_aircraft_organization
 #	icon = GFX_idea_BRA_embraer
 #	allowed = {	
-#		has_dlc = "Trial of Allegiance"
 #		# TODO_JUNO: Add correct DLC check!
 #		tag = BRA 
 #	}
@@ -129,7 +126,6 @@
 #	icon = GFX_idea_BRA_rossi
 #	allowed = { 
 #
-#		has_dlc = "Trial of Allegiance"
 #		tag = BRA
 #	}
 #}
@@ -139,7 +135,6 @@
 #	#icon = GFX_idea_generic_infantry_equipment_manufacturer_1
 #	allowed = { 
 #
-#		has_dlc = "Trial of Allegiance"
 #		tag = BRA
 #	}
 #}
@@ -148,7 +143,6 @@
 #	include = generic_artillery_organization
 #	#icon = GFX_idea_generic_infantry_equipment_manufacturer_1
 #	allowed = { 
-#		has_dlc = "Trial of Allegiance"
 #		tag = BRA
 #	}
 #}
@@ -158,7 +152,6 @@
 #	icon = GFX_idea_BRA_fnm
 #	allowed = { 
 #
-#		has_dlc = "Trial of Allegiance"
 #		tag = BRA
 #	}
 #	available = { 

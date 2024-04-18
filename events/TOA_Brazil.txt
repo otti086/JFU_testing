@@ -1844,93 +1844,6 @@ country_event = { #Bad mission
 	}
 }
 
-country_event = { #Brazil promoting communism
-	id = JUNO_brazil_events.143
-	title = JUNO_brazil_events.143.t
-	desc = JUNO_brazil_events.143.desc
-	picture = GFX_report_event_generic_sign_treaty1
-	is_triggered_only = yes
-
-	# worrying
-	option = {
-		name = JUNO_brazil_events.143.a
-		ai_chance = {
-			base = 1
-		}
-		custom_effect_tooltip = brazil_promoting_communism_tt
-		set_country_flag = BRA_influencing_us
-	}
-}
-
-country_event = { #FROM countering communism influence
-	id = JUNO_brazil_events.144
-	title = JUNO_brazil_events.144.t
-	desc = JUNO_brazil_events.144.desc
-	picture = GFX_report_event_generic_sign_treaty1
-	is_triggered_only = yes
-
-	# unfortunate
-	option = {
-		name = JUNO_brazil_events.144.a
-		ai_chance = {
-			base = 1
-		}
-	}
-}
-
-country_event = { #Anti-cangaceiro operation success
-	id = JUNO_brazil_events.151
-	title = JUNO_brazil_events.151.t
-	desc = JUNO_brazil_events.151.desc
-	picture = GFX_report_event_BRA_cangaco
-	is_triggered_only = yes
-
-	# great
-	option = {
-		name = JUNO_brazil_events.151.a
-		ai_chance = {
-			base = 1
-		}
-	}
-}
-
-country_event = {
-	id = JUNO_brazil_events.152
-	title = JUNO_brazil_events.152.t
-	desc = JUNO_brazil_events.152.desc
-	picture = GFX_report_event_BRA_cangaco
-	is_triggered_only = yes
-
-	# great
-	option = {
-		name = JUNO_brazil_events.152.a
-		ai_chance = {
-			base = 1
-		}
-		custom_effect_tooltip = BRA_end_of_cangaco_tt
-		add_stability = 0.05
-		add_political_power = 100
-		army_experience = 50
-	}
-}
-
-country_event = {
-	id = JUNO_brazil_events.153
-	title = JUNO_brazil_events.153.t
-	desc = JUNO_brazil_events.153.desc
-	picture = GFX_report_event_generic_sign_treaty1
-	is_triggered_only = yes
-
-	# ok
-	option = {
-		name = JUNO_brazil_events.153.a
-		ai_chance = {
-			base = 1
-		}
-		custom_effect_tooltip = JUNO_brazil_events_153_tt
-	}
-}
-
 #Brazil wants MIO
 country_event = {
 	id = JUNO_brazil_events.160
@@ -2478,7 +2391,6 @@ country_event = {
 	picture = GFX_report_event_election_vote
 
 	trigger = {
-		has_dlc = "Trial of Allegiance"
 		original_tag = BRA
 		# Testing Date		
 		#date > 1936.02.01

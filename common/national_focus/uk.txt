@@ -467,7 +467,7 @@ focus_tree = {
 
 		continue_if_invalid = yes
 
-		icon = GFX_focus_eng_special_air_service
+		icon = GFX_ENG_SAS_LOGO
 		x = 0
 		y = 1
 		relative_position_id = general_rearmament_focus
@@ -881,7 +881,7 @@ focus_tree = {
 	focus = {
 		id = fighter_command_focus
 		prerequisite = { focus = air_rearmament_focus }
-		icon = GFX_GOAL_ENG_CONTINUE_THE_SPITFIRE
+		icon = GFX_ENG_SPITFIRE
 		x = 0
 		y = 1
 		relative_position_id = air_rearmament_focus
@@ -937,7 +937,7 @@ focus_tree = {
 	focus = {
 		id = bomber_command_focus
 		prerequisite = { focus = air_rearmament_focus }
-		icon = GFX_goal_generic_air_bomber
+		icon = GFX_ENG_BOMBER_COMMAND
 		x = -1
 		y = 2
 		relative_position_id = air_rearmament_focus
@@ -1054,7 +1054,7 @@ focus_tree = {
 	focus = {
 		id = uk_jet_focus
 		prerequisite = { focus = aircraft_production_focus }
-		icon = GFX_goal_generic_build_airforce
+		icon = GFX_ENG_JET_AIRCRAFT
 		x = 0
 		y = 1
 		relative_position_id = aircraft_production_focus
@@ -1078,7 +1078,7 @@ focus_tree = {
 	focus = {
 		id = naval_rearmament_focus
 		prerequisite = { focus = general_rearmament_focus }
-		icon = GFX_ENG_NAVAL_REARMAMENT 
+		icon = GFX_ENG_ROYAL_NAVY
 		x = 2
 		y = 1
 		relative_position_id = general_rearmament_focus
@@ -1117,7 +1117,7 @@ focus_tree = {
 		id = ENG_secure_the_imperial_shipping_routes
 		prerequisite = { focus = naval_rearmament_focus }
 		prerequisite = { focus = uk_service_focus }
-		icon = GFX_focus_generic_cruiser2
+		icon = GFX_ENG_LIFEBLOOD_OF_THE_EMPIRE
 		x = 3
 		y = 1
 		relative_position_id = naval_rearmament_focus
@@ -1236,7 +1236,7 @@ focus_tree = {
 	focus = {
 		id = uk_waves_focus
 		prerequisite = { focus = naval_rearmament_focus }
-		icon = GFX_R56_GOAL_ENG_PRIDE_OF_THE_FLEET
+		icon = GFX_ENG_RULE_WAVES
 		x = 1
 		y = 2
 		relative_position_id = naval_rearmament_focus
@@ -2021,7 +2021,7 @@ focus_tree = {
 	focus = {
 		id = ENG_british_commonwealth_air_training_plan
 		prerequisite = { focus = uk_commonwealth_focus }
-		icon = GFX_goal_generic_air_fighter2
+		icon = GFX_ENG_EMPIRE_AIR_TRAINING_SCHEME
 		x = -1
 		y = 1
 		relative_position_id = uk_commonwealth_focus
@@ -2177,7 +2177,7 @@ focus_tree = {
 		id = uk_colony_focus
 		text = "Commonwealth Construction Effort"
 		prerequisite = { focus = uk_commonwealth_focus }
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_ENG_COMMONWELTH_TOUR
 		x = 1
 		y = 1
 		relative_position_id = uk_commonwealth_focus
