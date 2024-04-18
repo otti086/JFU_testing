@@ -1049,20 +1049,6 @@ focus_tree = {
 		}
 
 		available = {
-			OR = {
-				408 = { #VLADIVOSTOK
-					is_fully_controlled_by = ROOT
-				}
-				409 = { #KHABAROVSK
-					is_fully_controlled_by = ROOT
-				}
-				566 = { #IRKUTSK
-					is_fully_controlled_by = ROOT
-				}
-				564 = { #ULAN UDE
-					is_fully_controlled_by = ROOT
-				}
-			}
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -1242,20 +1228,6 @@ focus_tree = {
 		}
 
 		available = {
-			OR = {
-				572 = { #CHELYABISNK
-					is_fully_controlled_by = ROOT
-				}
-				573 = { #ZLATOUST
-					is_fully_controlled_by = ROOT
-				}
-				582 = { #MAGNITOGORSK
-					is_fully_controlled_by = ROOT
-				}
-				653 = { #SVERDLOVSK
-					is_fully_controlled_by = ROOT
-				}
-			}
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY}
