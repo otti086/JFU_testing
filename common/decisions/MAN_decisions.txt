@@ -1,5 +1,3 @@
-@MAN_HUNT_BANDITS_EQUIPMENT_COST_TRIGGER = 499
-@MAN_HUNT_BANDITS_EQUIPMENT_COST_EFFECT = -500
 prospect_for_resources = {
 
 	MAN_develop_kirin_aluminium_deposits = { #328

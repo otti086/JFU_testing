@@ -582,8 +582,8 @@ focus_tree = {
 	focus = {
 		id = BRA_combat_separatism
 		icon = GFX_goal_generic_national_unity
-		x = -2
-		y = 2
+		x = -1
+		y = 1
 		relative_position_id = BRA_address_labor_disputes
 		prerequisite = { focus = BRA_address_labor_disputes }
 		cost = 5
@@ -606,8 +606,8 @@ focus_tree = {
 	focus = {
 		id = BRA_war_bonds
 		icon = GFX_focus_SWI_issue_war_bonds
-		x = 2
-		y = 2
+		x = 1
+		y = 1
 		relative_position_id = BRA_address_labor_disputes
 		prerequisite = { focus = BRA_address_labor_disputes }
 		cost = 5
@@ -633,6 +633,9 @@ focus_tree = {
 		relative_position_id = BRA_address_labor_disputes
 		prerequisite = { focus = BRA_address_labor_disputes }
 		cost = 5
+		allow_branch = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 5
 		}
@@ -1010,28 +1013,6 @@ focus_tree = {
 #			custom_effect_tooltip = ARG_international_loan_decisions_tt
 #		}
 #	}
-
-	focus = {
-		id = BRA_promote_immigration_to_brazil
-		icon = GFX_focus_generic_promote_SA_immigration
-		prerequisite = { focus = BRA_desenvolvimentismo  }
-		x = 2
-		y = 1
-		relative_position_id = BRA_desenvolvimentismo
-		cost = 5
-		ai_will_do = {
-			factor = 5
-		}
-		available = {
-		}
-
-		search_filters = { }
-
-		completion_reward = {
-			set_country_flag = JUNO_promote_immigration_flag
-			custom_effect_tooltip = BRA_promote_immigration_to_brazil_tt
-		}
-	}
 
 	focus = {
 		id = BRA_invest_in_railways

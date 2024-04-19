@@ -822,6 +822,29 @@ country_event = {
 		set_global_flag = fall_of_africa
 	}
 }
+
+country_event = {
+	id = JFU_events.10
+	title = JFU_events.10.t
+	desc = JFU_events.10.desc
+
+	picture = GFX_report_event_journalists_speech
+
+	trigger = {
+	}
+	
+	is_triggered_only = yes
+	
+	immediate = {
+	}
+
+	option = {
+		name = JFU_events.10.a
+		add_war_support = 0.1
+	}
+}
+
+
 add_namespace = horsthelp
 
 country_event = {   

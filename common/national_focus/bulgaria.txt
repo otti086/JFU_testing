@@ -136,10 +136,10 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL}
 		completion_reward = {
 			48 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -235,10 +235,10 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
 			212 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -264,10 +264,10 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = BUL_nationalized_industry
 			212 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}	
@@ -324,25 +324,11 @@ focus_tree = {
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			if = {
-				limit = { has_completed_focus = BUL_attract_foreign_capitals }
-				subtract_from_variable = { BUL_foreign_industry_construction_speed_modifier = -0.05 }
-				subtract_from_variable = { BUL_foreign_industry_production_efficiency_modifier = -0.03 }
-				custom_effect_tooltip = BUL_utmost_optimization_dynamic_modifier_tt
+			swap_ideas = {
+				remove_idea = BUL_national_industry_03
+				add_idea = BUL_national_industry_04
 			}
-			else = {
-				swap_ideas = {
-					remove_idea = BUL_national_industry_03
-					add_idea = BUL_national_industry_04
-				}
-				if = {
-					limit = {
-						NOT = { has_completed_focus = BUL_invigorate_national_industry }
-					}
-					custom_effect_tooltip = BUL_utmost_optimization_tt
-				}
-			}
-			BUL_replace_national_industrial_designer = yes
+			BUL_replace_national_industrial_designer = yes	
 		}
 	}
 
@@ -421,7 +407,6 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			controls_state = 48
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
@@ -459,11 +444,6 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			has_tech = excavation2
-			OR = {
-				controls_state = 48
-				controls_state = 212
-			}
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
@@ -474,8 +454,12 @@ focus_tree = {
 			    uses = 1
 			    category = industry
 			}
-			set_variable = { var = BUL_plovdiv_chromium_duration value = 15 }
-			unlock_decision_tooltip = BUL_mineral_extraction_in_the_rhodopes
+			212 = {
+				add_resource = {
+					type = chromium
+					amount = 10
+				}
+			}
 		}
 	}
 
@@ -504,26 +488,6 @@ focus_tree = {
 			    category = nuclear
 			}
 			add_ideas = BUL_buhovo_uranium_mines
-			if = { 
-				limit = {
-					any_allied_country = {
-						is_faction_leader = yes
-					}
-				}
-				custom_effect_tooltip = BUL_uranium_prospecting_leader_target_tt
-			}
-			else_if = {
-				limit = {
-					is_faction_leader = yes
-					any_allied_country = {
-						is_major = yes
-					}
-				}
-				custom_effect_tooltip = BUL_uranium_prospecting_major_ally_target_tt
-			}
-			else = {
-				custom_effect_tooltip = BUL_uranium_prospecting_no_target_tt
-			}
 		}
 	}
 
@@ -596,9 +560,6 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			212 = {
-				is_owned_by = BUL
-			}
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
@@ -622,11 +583,9 @@ focus_tree = {
 				limit = {
 					has_dlc = "Arms Against Tyranny"
 				}	
-				custom_effect_tooltip = available_mio_tt
-				show_mio_tooltip = BUL_dvf_organization
 
 				mio:BUL_dvf_organization = {
-					add_mio_size = 3
+					add_mio_size = 2
 				}
 			}
 			ELSE = {
@@ -647,9 +606,6 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			212 = {
-				is_owned_by = BUL
-			}
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
@@ -672,11 +628,9 @@ focus_tree = {
 				limit = {
 					has_dlc = "Arms Against Tyranny"
 				}	
-				custom_effect_tooltip = available_mio_tt
-				show_mio_tooltip = BUL_dvf_sopot_organization
 
 				mio:BUL_dvf_sopot_organization = {
-					add_mio_size = 3
+					add_mio_size = 2
 				}
 			}
 			ELSE = {
@@ -701,46 +655,7 @@ focus_tree = {
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			effect_tooltip = {
-				if = {
-					limit = {
-						country_exists = GER
-						NOT = { has_war_with = GER }
-						GER = { BUL_is_valid_subject = yes }
-					}
-					activate_targeted_decision = { target = GER decision = BUL_military_agreements }
-				}
-				if = {
-					limit = {
-						country_exists = ENG
-						NOT = { has_war_with = ENG }
-						ENG = { BUL_is_valid_subject = yes }
-					}
-					activate_targeted_decision = { target = ENG decision = BUL_military_agreements }
-				}
-				if = {
-					limit = {
-						country_exists = SOV
-						NOT = { has_war_with = SOV }
-						SOV = { BUL_is_valid_subject = yes }
-					}
-					activate_targeted_decision = { target = SOV decision = BUL_military_agreements }
-				}
-				if = {
-					limit = {
-						country_exists = ITA
-						NOT = { has_war_with = ITA }
-						ITA = { BUL_is_valid_subject = yes }
-					}
-					activate_targeted_decision = { target = ITA decision = BUL_military_agreements }
-				}
-			}
-			hidden_effect = {
-				activate_targeted_decision = { target = GER decision = BUL_military_agreements }
-				activate_targeted_decision = { target = ENG decision = BUL_military_agreements }
-				activate_targeted_decision = { target = SOV decision = BUL_military_agreements }
-				activate_targeted_decision = { target = ITA decision = BUL_military_agreements }
-			}
+			add_ideas = JUNO_license_idea
 		}
 	}
 
@@ -804,15 +719,11 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			army_experience = 15
-			navy_experience = 15
-			air_experience = 15
 			add_doctrine_cost_reduction = {
 				name = BUL_vasil_levsky_national_military_university
 			    cost_reduction = 0.5
 			    uses = 2
 				category = land_doctrine
-				category = naval_doctrine
-				category = air_doctrine
 			}
 			add_research_slot = 1
 		}
@@ -1063,8 +974,6 @@ focus_tree = {
 			BUL_bzns_low_loyalty_decrease_effect = yes
 			BUL_nsm_low_loyalty_increase_effect = yes
 			custom_effect_tooltip = BUL_power_to_the_tsar_tt
-			custom_effect_tooltip = remove_political_advisor
-			show_ideas_tooltip = BUL_vasil_kolarov
 		}
 	}
 

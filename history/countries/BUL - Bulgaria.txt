@@ -225,6 +225,7 @@ if = { #DLC
 	recruit_character = BUL_georgi_ivanov_kyoseivanov
 	recruit_character = BUL_nikola_zhekov
 	recruit_character = BUL_nikola_petkov
+	recruit_character = BUL_dimitrana_ivanova
 
 	recruit_character = BUL_ferdinand_i #Starts as empty, can become country leader later
 	recruit_character = BUL_regency_council #Starts as empty, can become country leader later (tons of versions! :D)

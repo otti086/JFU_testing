@@ -2226,11 +2226,11 @@ focus_tree = {
 	focus = {
 		id = ITA_milan_comms_industry
 		icon = GFX_FOCUS_ITA_RADAR2
-		prerequisite = { focus = ITA_fiocchi_munizioni }
+		prerequisite = { focus = ITA_increase_artillery_production }
 
 		x = 1
 		y = 1
-		relative_position_id = ITA_fiocchi_munizioni
+		relative_position_id = ITA_increase_artillery_production
 		cost = 5
 		available = {
 			has_tech = radio_detection
@@ -2272,7 +2272,7 @@ focus_tree = {
 	focus = {
 		id = ITA_redirect_alfa_romeo_production
 		icon = GFX_focus_ITA_redirect_alfa_romeo_production
-		prerequisite = { focus = ITA_brescia_small_arms_industry focus = ITA_milan_comms_industry }
+		prerequisite = { focus = ITA_brescia_small_arms_industry focus = ITA_increase_artillery_production }
 
 		x = 1
 		y = 1
@@ -2412,7 +2412,7 @@ focus_tree = {
 		id = ITA_army_primacy_bba
 		icon = GFX_FOCUS_ITA_MAB
 
-		x = 13
+		x = 12
 		y = 0
 		relative_position_id = ITA_italian_highways_bba
 		cost = 5
@@ -2553,7 +2553,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_fiocchi_munizioni }
 		prerequisite = { focus = ITA_army_primacy_bba }
 
-		x = 3
+		x = 1
 		y = 1
 		relative_position_id = ITA_fiocchi_munizioni
 		cost = 10
@@ -2591,163 +2591,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-		}
-	}
-
-	focus = {
-		id = ITA_vallo_alpino_del_littorio
-		icon = GFX_FOCUS_ITA_FORT
-		prerequisite = { focus = ITA_milan_comms_industry }
-		prerequisite = { focus = ITA_increase_artillery_production }
-
-		x = 1
-		y = 1
-		relative_position_id = ITA_milan_comms_industry
-		cost = 5
-		
-		available = {
-		}
-
-		search_filters = {}
-
-		completion_reward = {
-
-			### VALLO ALPINO OCCIDENTALE ###
-			if = { #PIEDMONT
-				limit = {
-					158 = { is_fully_controlled_by = ROOT }
-				}
-				158 = {
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = {
-							id = 6780
-						}
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = {
-							id = 6635
-						}
-						instant_build = yes
-					}
-				}
-			}
-
-			### VALLO ALPINO SETTENTRIONALE ###
-			if = { #LOMBARDY
-				limit = {
-					159 = { is_fully_controlled_by = ROOT }
-				}
-				159 = {
-					add_building_construction = { #Two separate effects for stupid tt reasons :)
-						type = bunker
-						level = 2
-						province = {
-							id = 9584
-						}
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = {
-							id = 6661
-						}
-						instant_build = yes
-					}
-				}
-			}
-			if = { #ALTO ADIGE
-				limit = {
-					39 = { is_fully_controlled_by = ROOT }
-				}
-				39 = {
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = {
-							id = 11615
-						}
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = {
-							id = 11598
-						}
-						instant_build = yes
-					}
-				}
-			}
-			if = { #TRENTINO
-				limit = {
-					850 = { is_fully_controlled_by = ROOT }
-				}
-				850 = {
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = {
-							id = 9598
-						}
-						instant_build = yes
-					}
-				}
-			}
-			if = { #VENETO
-				limit = {
-					160 = { is_fully_controlled_by = ROOT }
-				}
-				160 = {
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = {
-							id = 3657
-						}
-						instant_build = yes
-					}
-				}
-			}
-
-			### VALLO ALPINO ORIENTALE ###
-			if = { #LITORALE
-				limit = {
-					736 = { is_fully_controlled_by = ROOT }
-				}
-				736 = {
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = {
-							id = 11595
-						}
-						instant_build = yes
-					}
-				}
-			}
-			if = { #ISTRIA
-				limit = {
-					852 = { is_fully_controlled_by = ROOT }
-				}
-				852 = {
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = {
-							id = 11564
-						}
-						instant_build = yes
-					}
-				}
-			}
-
-			custom_effect_tooltip = ITA_vallo_alpino_del_littorio_tt
 		}
 	}
 
@@ -4693,6 +4536,10 @@ focus_tree = {
 		id = ITA_cooperation_programs
 		icon = GFX_goal_generic_scientific_exchange
 		prerequisite = { focus = ITA_supermarina }
+
+		allow_branch = {
+			always = no
+		}
 
 		x = 6
 		y = 1

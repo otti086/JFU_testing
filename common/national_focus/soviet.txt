@@ -2505,7 +2505,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_military_engineering_university
-		cost = 10
+		cost = 5
 
 		mutually_exclusive = { focus = SOV_improve_the_stalin_line }
 
@@ -2746,7 +2746,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_military_engineering_university
-		cost = 10
+		cost = 5
 
 		mutually_exclusive = { focus = SOV_the_molotov_line }
 
@@ -2891,7 +2891,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_improve_the_stalin_line
-		cost = 10
+		cost = 5
 
 		available = {
 			OR = {
@@ -3519,7 +3519,7 @@ focus_tree = {
 		id = SOV_murmansk_lend_lease
 		icon = GFX_SOV_LEND_LEASE
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
-		cost = 5 
+		cost = 1
 		prerequisite = {
 			focus = SOV_american_lend_lease
 		}
@@ -3548,7 +3548,7 @@ focus_tree = {
 		id = SOV_arctic_lend_lease
 		icon = GFX_SOV_LEND_LEASE
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
-		cost = 5 
+		cost = 1
 		prerequisite = {
 			focus = SOV_american_lend_lease
 		}
@@ -3568,7 +3568,7 @@ focus_tree = {
 		id = SOV_persian_lend_lease
 		icon = GFX_SOV_LEND_LEASE
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
-		cost = 5 
+		cost = 1 
 
 		prerequisite = {
 			focus = SOV_american_lend_lease
@@ -3692,7 +3692,7 @@ focus_tree = {
 		cost = 5
 		
 		available = {
-			custom_trigger_tooltip = { tooltip = blau_failed date > 1942.11.22 }
+			custom_trigger_tooltip = { tooltip = kursk_failed date > 1943.11.22 }
 		}
 
 		search_filters = {FOCUS_FILTER_ARMY_XP}
@@ -4681,7 +4681,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_great_commander
-		cost = 10
+		cost = 5
 
 		available = {
 			custom_trigger_tooltip = {
