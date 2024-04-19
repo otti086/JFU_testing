@@ -2223,51 +2223,6 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = ITA_milan_comms_industry
-		icon = GFX_FOCUS_ITA_RADAR2
-		prerequisite = { focus = ITA_increase_artillery_production }
-
-		x = 1
-		y = 1
-		relative_position_id = ITA_increase_artillery_production
-		cost = 5
-		available = {
-			has_tech = radio_detection
-		}
-
-		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
-
-		completion_reward = {
-			159 = { #LOMBARDY (Milano)
-				add_building_construction = {
-					type = radar_station
-					level = 1
-					instant_build = yes
-				}
-			}
-			2 = { #LATIUM (Rome)
-				add_building_construction = {
-					type = radar_station
-					level = 1
-					instant_build = yes
-				}
-			}
-			115 = { #SICILY
-				add_building_construction = {
-					type = radar_station
-					level = 1
-					instant_build = yes
-				}
-			}
-			add_tech_bonus = {
-				name = ITA_milan_comms_industry
-				bonus = 1
-				uses = 1
-				category = radar_tech
-			}
-		}
-	}
 
 	focus = {
 		id = ITA_redirect_alfa_romeo_production
@@ -2594,6 +2549,51 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = ITA_milan_comms_industry
+		icon = GFX_FOCUS_ITA_RADAR2
+		prerequisite = { focus = ITA_increase_artillery_production }
+
+		x = 1
+		y = 1
+		relative_position_id = ITA_increase_artillery_production
+		cost = 5
+		available = {
+			has_tech = radio_detection
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+			159 = { #LOMBARDY (Milano)
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+			}
+			2 = { #LATIUM (Rome)
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+			}
+			115 = { #SICILY
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = ITA_milan_comms_industry
+				bonus = 1
+				uses = 1
+				category = radar_tech
+			}
+		}
+	}
 	focus = {
 		id = ITA_moschettieri_del_duce
 		icon = GFX_focus_ITA_moschettieri_del_duce
@@ -5663,14 +5663,6 @@ focus_tree = {
 						set_default = yes # whether or not to reset the power balance to the initial value, default = no
 					}
 				}
-			}
-
-			if = {
-				limit = {
-					has_completed_focus = ITA_solid_progress
-				}
-				unlock_decision_tooltip = ITA_bop_slander_the_duce
-				unlock_decision_tooltip = ITA_bop_criticize_the_war
 			}
 		}
 	}
