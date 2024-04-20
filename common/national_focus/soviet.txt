@@ -3721,9 +3721,9 @@ focus_tree = {
 			#	set_variable = { SOV_the_politburo_operative_slot = 1 }
 			#	custom_effect_tooltip = SOV_behead_the_snake_ns_tt
 			#}
-			else = {
-				custom_effect_tooltip = SOV_behead_the_snake_no_lar_tt
-			}
+			#else = {
+			#	custom_effect_tooltip = SOV_behead_the_snake_no_lar_tt
+			#}
 			custom_effect_tooltip = SOV_behead_the_snake_JFU_tt
 			hidden_effect = {
 				ROOT = { news_event = { id = news.37 days = 100 } }
