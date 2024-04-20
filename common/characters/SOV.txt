@@ -1774,7 +1774,6 @@ characters = {
 				}
 			}
 			available = {
-				has_completed_focus = SOV_finish_the_five_year_plan 
 			}
 			
 			traits = {
@@ -2005,10 +2004,6 @@ characters = {
 			}
 		}
 		allowed_civil_war = {
-			OR = {
-				has_government = neutrality 
-				has_government = fascism
-			}
 		}
 
 		advisor = {
@@ -2018,9 +2013,7 @@ characters = {
 				original_tag = SOV
 			}
 			available = {
-				OR = {
-					has_completed_focus = SOV_patriarch_of_all_russia
-				}
+				has_completed_focus = SOV_patriarch_of_all_russia
 			}
 			traits = {
 				patriarch_of_moscow_and_all_russia 

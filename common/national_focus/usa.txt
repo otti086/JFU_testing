@@ -368,7 +368,19 @@ focus_tree = {
 		icon = GFX_focus_generic_rubber
 		prerequisite = { focus = USA_office_of_scientific_research_and_development }
 		available = {
-			
+			date > 1942.01.01
+			custom_trigger_tooltip = { 
+				tooltip = USA_rubber_focus_tt 			
+				NOT = {
+					AND = {
+						672 = { is_controlled_by = ENG }
+						334 = { is_controlled_by = ENG }
+						336 = { is_controlled_by = ENG }
+						335 = { is_controlled_by = ENG }
+						422 = { is_controlled_by = ENG }
+					}
+				}
+			}
 		}
 		x = 2
 		y = 2
@@ -381,13 +393,14 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_rubber_reserve_company
-				bonus = 1.0
-				uses = 3
+				bonus = 2.0
+				uses = 2
 				technology = fuel_refining2
 				technology = fuel_refining3
 				technology = fuel_refining4
 				technology = fuel_refining5
 			}
+			add_timed_idea = { idea = JFU_soviet_synthetics days = 120}
 		}
 	}
 #   ### #   # ### ### ### ###      ### #  # ### ### ###  #   # ### #  # ### ###  ##  #  # 

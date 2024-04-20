@@ -525,7 +525,7 @@ news_event = {
 news_event = {
 	id = news.5002
 	title = "Operation Countenance"
-	desc = "The Allies and The Soviet Union invaded neural Iran"
+	desc = "The Allies and The Soviet Union invaded neutral Iran"
 	picture = GFX_news_event_italian_tank_desert
 
 	major = yes
