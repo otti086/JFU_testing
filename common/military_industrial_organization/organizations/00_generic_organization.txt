@@ -216,9 +216,7 @@ generic_tank_organization = {
 		mutually_exclusive = { generic_mio_trait_infantry_support_tanks }
 		
 		equipment_bonus = {
-			armor_value = 0.05
-			hard_attack = 0.05
-			soft_attack = 0.05
+			hard_attack = 0.1
 		}
 	}
 
@@ -235,12 +233,7 @@ generic_tank_organization = {
 		mutually_exclusive = { generic_mio_trait_anti_tank_specialization }
 		
 		equipment_bonus = {
-			soft_attack = 0.05
-			hard_attack = 0.05
-		}
-
-		production_bonus = {
-			production_cost_factor = -0.05
+			soft_attack = 0.1
 		}
 	}
 }
@@ -454,61 +447,61 @@ generic_infantry_tank_organization = {
 		}
 	}
 
-	trait = {
-		token = generic_mio_trait_light_tank_specialization
-		name = generic_mio_trait_light_tank_specialization
-		icon = GFX_generic_mio_department_icon_tank_light_tank_production
-		
-		position = { x=-1 y=2 }
-		relative_position_id = generic_mio_trait_modular_construction
-		
-		any_parent = { generic_mio_trait_modular_construction }
-		
-		mutually_exclusive= { generic_mio_trait_medium_tank_specialization generic_mio_trait_heavy_tank_specialization }
+	#trait = {
+	#	token = generic_mio_trait_light_tank_specialization
+	#	name = generic_mio_trait_light_tank_specialization
+	#	icon = GFX_generic_mio_department_icon_tank_light_tank_production
+	#	
+	#	position = { x=-1 y=2 }
+	#	relative_position_id = generic_mio_trait_modular_construction
+	#	
+	#	any_parent = { generic_mio_trait_modular_construction }
+	#	
+	#	mutually_exclusive= { generic_mio_trait_medium_tank_specialization generic_mio_trait_heavy_tank_specialization }
+	#
+	#	limit_to_equipment_type = { mio_cat_eq_all_light_tank }
+	#
+	#	production_bonus = {
+	#		production_cost_factor = -0.05
+	#	}
+	#}
+	#trait = {
+	#	token = generic_mio_trait_medium_tank_specialization
+	#	name = generic_mio_trait_medium_tank_specialization
+	#	icon = GFX_generic_mio_department_icon_tank_medium_tank_production
+	#	
+	#	position = { x=0 y=2 }
+	#	relative_position_id = generic_mio_trait_modular_construction
+	#
+	#	any_parent = { generic_mio_trait_modular_construction }
+	#	
+	#	mutually_exclusive= { generic_mio_trait_light_tank_specialization generic_mio_trait_heavy_tank_specialization }
+	#	
+	#	limit_to_equipment_type = { mio_cat_eq_all_medium_tank }
+	#
+	#	production_bonus = {
+	#		production_cost_factor = -0.05
+	#	}
+	#}
 
-		limit_to_equipment_type = { mio_cat_eq_all_light_tank }
-
-		production_bonus = {
-			production_cost_factor = -0.05
-		}
-	}
-	trait = {
-		token = generic_mio_trait_medium_tank_specialization
-		name = generic_mio_trait_medium_tank_specialization
-		icon = GFX_generic_mio_department_icon_tank_medium_tank_production
-		
-		position = { x=0 y=2 }
-		relative_position_id = generic_mio_trait_modular_construction
-
-		any_parent = { generic_mio_trait_modular_construction }
-		
-		mutually_exclusive= { generic_mio_trait_light_tank_specialization generic_mio_trait_heavy_tank_specialization }
-		
-		limit_to_equipment_type = { mio_cat_eq_all_medium_tank }
-
-		production_bonus = {
-			production_cost_factor = -0.05
-		}
-	}
-
-	trait = {
-		token = generic_mio_trait_heavy_tank_specialization
-		name = generic_mio_trait_heavy_tank_specialization
-		icon = GFX_generic_mio_department_icon_tank_heavy_tank_production
-		
-		position = { x=1 y=2 }
-		relative_position_id = generic_mio_trait_modular_construction
-
-		any_parent = { generic_mio_trait_modular_construction }
-		
-		mutually_exclusive= { generic_mio_trait_light_tank_specialization generic_mio_trait_medium_tank_specialization }
-		
-		limit_to_equipment_type = { mio_cat_eq_all_heavy_tank }
-
-		production_bonus = {
-			production_cost_factor = -0.05
-		}
-	}
+	#trait = {
+	#	token = generic_mio_trait_heavy_tank_specialization
+	#	name = generic_mio_trait_heavy_tank_specialization
+	#	icon = GFX_generic_mio_department_icon_tank_heavy_tank_production
+	#	
+	#	position = { x=1 y=2 }
+	#	relative_position_id = generic_mio_trait_modular_construction
+	#
+	#	any_parent = { generic_mio_trait_modular_construction }
+	#	
+	#	mutually_exclusive= { generic_mio_trait_light_tank_specialization generic_mio_trait_medium_tank_specialization }
+	#	
+	#	limit_to_equipment_type = { mio_cat_eq_all_heavy_tank }
+	#
+	#	production_bonus = {
+	#		production_cost_factor = -0.05
+	#	}
+	#}
 }
 
 # MOBILE TANK DESIGNER / FAST TANK DESIGNER - Based on Hotchkiss (FRA)
@@ -3782,7 +3775,6 @@ generic_light_aircraft_organization = {
 		equipment_bonus = {
 			air_agility = 0.05
 			maximum_speed = 0.05
-			air_attack = 0.05
 		}
 	}
 

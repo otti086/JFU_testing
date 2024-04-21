@@ -1,6 +1,6 @@
 ﻿l_english:
  ITA_investments_in_edison_ricostruzione_industriale_tt:0 "$ITA_modify_ricostruzione_industriale_dynamic_modifier_ns_intro$ \n$MODIFIER_CONSUMER_GOODS_FACTOR$: §Y-10.0%§! \n\n"
  ITA_increase_production_military_industry_tt:2 "$ITA_modify_military_industry_dynamic_modifier_ns_intro$ \n$MODIFIER_LINE_CHANGE_PRODUCTION_EFFICIENCY_FACTOR$: §G+10.00%§! \n$MODIFIER_PRODUCTION_FACTORY_MAX_EFFICIENCY$: §G+5.00%§! \n$MODIFIER_PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR$: §R-4.00%§! \n$MODIFIER_INDUSTRIAL_CAPACITY_FACTOR$: §G+5.00%§! \n\n"
- ITA_keep_specialization_military_industry_tt:0 "$ITA_modify_military_industry_dynamic_modifier_ns_intro$ \n$MODIFIER_LINE_CHANGE_PRODUCTION_EFFICIENCY_FACTOR$: §R-10.00%§! \n$MODIFIER_PRODUCTION_FACTORY_EFFICIENCY_GAIN_FACTOR$: §G+10.00%§! \n$MODIFIER_PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR$: §G+10.00%§! \n$MODIFIER_INDUSTRIAL_CAPACITY_FACTOR$: §G+5.00%§! \n\n" 
+ ITA_keep_specialization_military_industry_tt:0 "$ITA_modify_military_industry_dynamic_modifier_ns_intro$ \n$MODIFIER_LINE_CHANGE_PRODUCTION_EFFICIENCY_FACTOR$: §R-10.00%§! \n$MODIFIER_PRODUCTION_FACTORY_EFFICIENCY_GAIN_FACTOR$: §G+10.00%§! \n$MODIFIER_PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR$: §G+10.00%§! \n$MODIFIER_INDUSTRIAL_CAPACITY_FACTOR$: §G+10.00%§! \n\n" 
  SOV_the_modern_war_in_the_skies_ns_tt:0 "$SOV_modify_airforce_ns_intro$ \nAir Mission Efficiency: §G+10.0%§! \nNight Operations Penalty: §G-10.0%§! \n\n"
  SOV_oil_production_ns_tt:0 "$SOV_modify_fyp_ns_intro$ \nSynthetic Oil: §G+25.00%§! \nFuel Gain from Refineries: §G+25.00%§! \n\n"

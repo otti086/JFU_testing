@@ -1750,6 +1750,27 @@ focus_tree = {
 	}
 
 	focus = {
+		id = GER_focus_citadel
+		icon = GFX_GER_MOSCOW_PUSH
+		prerequisite = { focus = GER_focus_fall_blau}
+		available_if_capitulated = no
+		
+		available = {
+			always = no
+		}
+		x = 0
+		y = 1
+		relative_position_id = GER_focus_fall_blau
+		cost = 10
+
+		bypass = {
+		}
+		completion_reward = {
+			custom_effect_tooltip = GER_decision_focus_tt
+		}
+	}
+
+	focus = {
 		id = GER_rhineland
 		icon = GFX_GER_RHINELAND
 		x = 24
@@ -1780,30 +1801,21 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			hidden_effect = {
-				if = {
-					limit = {
-						has_idea = free_trade
-					}
-					add_ideas = GER_rubber_balance
-				}
 				4 =		{ add_core_of = GER }
 				152 = 	{ add_core_of = GER }
 				153 = 	{ add_core_of = GER }
 				848 =   { add_core_of = GER }
-				add_named_threat = { threat = 10 name = germany.4.t }
 			}
 			add_political_power = 100
 			add_war_support = 0.1
 			add_stability = 0.05
 			annex_country = { target = AUS transfer_troops = no }
+			add_named_threat = { threat = 10 name = germany.4.t }
 			hidden_effect = { 
-				GER_mefo_bills_level_down = yes
-				GER_mefo_bills_level_down = yes
+				add_to_variable = { var = MFB_PP value = -0.2 }
 				news_event = { hours = 6 id = news.36 }
-				every_unit_leader = {
-				set_nationality = GER
-				}
 			}
+			custom_effect_tooltip = mefo_reduction_large_tt
 		}
 	}
 	focus = {
@@ -1871,11 +1883,6 @@ focus_tree = {
 					add_war_support = 0.2
 					add_stability = 0.2					
 				}
-				HUN = {
-					navy_experience = 200
-				}
-				GER = { remove_resource_rights = 724 }
-				remove_ideas = GER_rubber_balance
 				add_named_threat = { threat = 5 name = GER_danzig_or_war }
 				remove_ideas = JFU_no_tradeback
 				ITA = { remove_ideas = JFU_no_tradeback }
@@ -2022,16 +2029,16 @@ focus_tree = {
 			hidden_effect = {
 				69 = { add_core_of = GER }
 				74 = { add_core_of = GER }
-				POL = { transfer_state = 72 }
-				add_named_threat = { threat = 3 name = GER_demand_sudetenland_threat }
-				GER = { transfer_state = 69 }
-				GER = { transfer_state = 74 }
+				add_to_variable = { var = MFB_PP value = -0.1 }
 			}
 			add_war_support = 0.1
 			add_stability = 0.05
+			POL = { transfer_state = 72 }
+			GER = { transfer_state = 69 }
+			GER = { transfer_state = 74 }
 			news_event = { hours = 6 id = JFU_events.6 }
-
-
+			add_named_threat = { threat = 5 name = GER_demand_sudetenland_threat }
+			custom_effect_tooltip = mefo_reduction_small_tt
 			set_country_flag = sudetenland_acquired
 		}
 	}
@@ -2075,8 +2082,7 @@ focus_tree = {
 			
 			hidden_effect = {
 				country_event = { hours = 6 id = news.61 }
-				add_to_variable = { var = GER_mefo_bill_counter value = -5 }
-				GER_mefo_bills_level_down = yes
+				add_to_variable = { var = MFB_PP value = -0.1 }
 				every_state = {
 					limit = {
 						AND = {
@@ -2098,7 +2104,7 @@ focus_tree = {
 			}
 			set_global_flag = end_of_czechoslovakia
 			add_named_threat = { threat = 5 name = GER_end_of_czechoslovakia }
-			custom_effect_tooltip = end_of_czechoslovakia_mefo_bills_tt
+			custom_effect_tooltip = mefo_reduction_small_tt
 		}
 	}
 	focus = {

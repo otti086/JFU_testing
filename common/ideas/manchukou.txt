@@ -1,26 +1,6 @@
 ideas = {
 	
 	country = {
-		MAN_exiled_imperial_family = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = fascism
-			}
-			
-			removal_cost = -1
-
-			picture = state_shintoism
-			
-			modifier = {
-				army_morale_factor = 0.1
-				stability_factor = 0.1
-				war_support_factor = 0.05
-			}
-		}
 
 		MAN_banditry = {
 
@@ -116,112 +96,6 @@ ideas = {
 			}
 		}
 
-		MAN_low_legitimacy_5 = {
-			
-			name = MAN_low_legitimacy
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				original_tag = MAN
-			}
-			
-			removal_cost = -1
-
-			picture = man_low_legitimacy
-			
-			modifier = {
-				stability_factor = -0.5
-				war_support_factor = -0.5
-			}
-		}
-		MAN_low_legitimacy_4 = {
-			
-			name = MAN_low_legitimacy
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				original_tag = MAN
-			}
-			
-			removal_cost = -1
-
-			picture = man_low_legitimacy2
-			
-			modifier = {
-				stability_factor = -0.4
-				war_support_factor = -0.4
-			}
-		}
-		MAN_low_legitimacy_3 = {
-			
-			name = MAN_low_legitimacy
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				original_tag = MAN
-			}
-			
-			removal_cost = -1
-
-			picture = man_low_legitimacy3
-			
-			modifier = {
-				stability_factor = -0.3
-				war_support_factor = -0.3
-			}
-		}
-		MAN_low_legitimacy_2 = {
-			
-			name = MAN_low_legitimacy
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				original_tag = MAN
-			}
-			
-			removal_cost = -1
-
-			picture = man_low_legitimacy4
-			
-			modifier = {
-				stability_factor = -0.2
-				war_support_factor = -0.2
-			}
-		}
-		MAN_low_legitimacy_1 = {
-			
-			name = MAN_low_legitimacy
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				original_tag = MAN
-			}
-			
-			removal_cost = -1
-
-			picture = man_low_legitimacy5
-			
-			modifier = {
-				stability_factor = -0.1
-				war_support_factor = -0.1
-			}
-		}
-
 		MAN_mukden_military_academy = {
 
 			allowed = {
@@ -257,27 +131,6 @@ ideas = {
 			
 			modifier = {
 				industrial_capacity_factory = 0.15
-			}
-		}
-
-		MAN_white_russian_advisers = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				original_tag = MAN
-			}
-			
-			removal_cost = -1
-
-			picture = generic_war_preparation
-			
-			modifier = {
-				army_morale_factor = 0.05
-				army_core_attack_factor = 0.05
-				army_core_defence_factor = 0.05
 			}
 		}
 
@@ -323,6 +176,7 @@ ideas = {
 				production_speed_air_base_factor = 0.1
 			}
 		}
+
 		MAN_five_year_plan_tank = {
 
 			name = MAN_five_year_plan
@@ -346,7 +200,6 @@ ideas = {
 			}
 		}
 
-
 		MAN_importjap = {
 	
 			available = {
@@ -367,6 +220,7 @@ ideas = {
 				extra_trade_to_target_factor = 1.0
 			}
 		}
+
 		MAN_five_year_plan_industry = {
 
 			name = MAN_five_year_plan
@@ -388,6 +242,7 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.1
 			}
 		}
+
 		MAN_underground_gun_shops = {
 
 			allowed = {
@@ -408,87 +263,6 @@ ideas = {
 					reliability = -0.4
 					instant = yes
 				}
-			}
-		}
-		MAN_arms_seized_1 = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				original_tag = MAN
-			}
-			
-			removal_cost = -1
-
-			picture = generic_army_problems
-			
-			targeted_modifier = {
-				tag = MAN
-				attack_bonus_against = -0.1
-				defense_bonus_against = -0.1
-			}
-		}
-		MAN_arms_seized_2 = {
-
-			allowed = {
-				always = no
-			}
-			name = MAN_arms_seized_1
-			allowed_civil_war = {
-				original_tag = MAN
-			}
-			
-			removal_cost = -1
-
-			picture = generic_army_problems
-			
-			targeted_modifier = {
-				tag = MAN
-				attack_bonus_against = -0.25
-				defense_bonus_against = -0.25
-			}
-		}
-		MAN_arms_seized_3 = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				original_tag = MAN
-			}
-			
-			removal_cost = -1
-			name = MAN_arms_seized_1
-			picture = generic_army_problems
-			
-			targeted_modifier = {
-				tag = MAN
-				attack_bonus_against = -0.4
-				defense_bonus_against = -0.4
-			}
-		}
-
-		MAN_bolster_nationalism = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-
-			picture = chi_war_of_resistance
-			
-			targeted_modifier = {
-				tag = JAP
-				attack_bonus_against = 0.1
-				defense_bonus_against = 0.1
 			}
 		}
 	}

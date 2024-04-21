@@ -720,6 +720,13 @@ SOV_CAS_organization = {
 	allowed = {	 
 		tag = SOV
 	}
+	initial_trait = {
+		name = generic_mio_initial_trait_sov_cas_designer
+
+		equipment_bonus = {
+			air_defence = 0.2
+		}
+	}
 }
 
 SOV_mig_design_bureau_organization = {
@@ -743,8 +750,7 @@ SOV_mig_design_bureau_organization = {
 		equipment_bonus = {
 			air_agility = 0.05
 			maximum_speed = 0.05
-			air_attack = 0.05
-			air_defence = 0.15
+			air_defence = 0.2
 		}
 	}
 

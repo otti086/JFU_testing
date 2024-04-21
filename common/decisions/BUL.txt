@@ -4101,7 +4101,7 @@ BUL_foreign_agreements = {
 		remove_effect = {
 			hidden_effect = {
 				set_variable = { BFI_MCS = 0.1 }
-				set_variable = { BFI_RF = 0.2 }
+				set_variable = { BFI_RF = 0.1 }
 			}
 				custom_effect_tooltip = BUL_foreign_investor_germany_tt			
 			801 = {
@@ -4157,7 +4157,7 @@ BUL_foreign_agreements = {
 
 			hidden_effect = {
 				set_variable = { BFI_MCS = 0.1 }
-				set_variable = { BFI_EGF = 0.2 }
+				set_variable = { BFI_EGF = 0.1 }
 			}
 			custom_effect_tooltip = BUL_foreign_investor_britain_tt
 			801 = {
@@ -4212,7 +4212,7 @@ BUL_foreign_agreements = {
 		remove_effect = {
 			hidden_effect = {
 				set_variable = { BFI_MCS = 0.1 }
-				set_variable = { BFI_SEF = 0.2 }
+				set_variable = { BFI_SEF = 0.1 }
 			}
 				custom_effect_tooltip = BUL_foreign_investor_soviet_tt
 			801 = {

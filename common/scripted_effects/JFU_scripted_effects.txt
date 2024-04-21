@@ -834,6 +834,7 @@ JFU_startup_on_action = {
 	}
 	SPR = {	country_lock_all_division_template = yes country_event = { id = lar_spain.2 days = 230 } activate_mission = days_till_civil_war }
 	SWE = { pacifc_war_variables = yes }
+	SWE = { dynamic_modifer_start_up = yes }
 	ENG = {
 		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 30000 }
 		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 20000 }
@@ -849,6 +850,7 @@ JFU_startup_on_action = {
 		add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 349 }
 		add_equipment_to_stockpile = { type = light_tank_chassis_2 amount = 720 producer = GER variant_name = "Panzer II Ausf. A" }
 		add_equipment_to_stockpile = { type = train_equipment_1 amount = 300 }
+		add_dynamic_modifier = { modifier = GER_mefo_bills_modifier }
 	}
 	FRA = {
 		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 25000 }
@@ -883,6 +885,7 @@ JFU_startup_on_action = {
 		add_equipment_to_stockpile = { type = support_equipment_1 amount = 11 }
 		add_equipment_to_stockpile = { type = train_equipment_1 amount = 50 }
 		add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 }
+		add_equipment_to_stockpile = { type = convoy_1 amount = 100 producer = HUN }
 	}
 	ROM = {
 		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 9600 }
@@ -892,6 +895,10 @@ JFU_startup_on_action = {
 		add_equipment_to_stockpile = { type = light_tank_chassis_0 amount = 72 producer = ROM variant_name = "FT Char Cannon" }
 		add_equipment_to_stockpile = { type = train_equipment_1 amount = 50 }
 		add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 }
+		add_equipment_to_stockpile = { type = convoy_1 amount = 100 producer = ROM }
+	}
+	BUL = {
+		add_equipment_to_stockpile = { type = convoy_1 amount = 100 producer = BUL }
 	}
 	SOV = {
 		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 280000 }
@@ -908,6 +915,8 @@ JFU_startup_on_action = {
 		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 3900 }
 		add_equipment_to_stockpile = { type = train_equipment_1 amount = 50 }
 		add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 }
+		add_equipment_to_stockpile = { type = convoy_1 amount = 100 producer = MAN }
+		add_dynamic_modifier = { modifier = MAN_low_legitimacy_modifier }
 	}
 	BRA = {
 		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2900 }
@@ -953,7 +962,6 @@ JFU_startup_on_action = {
 		add_dynamic_modifier = { modifier = pacific_war_allies }
 	}
 	SIA = {
-		give_resource_rights = { receiver = GER state = 724 }
 		add_equipment_to_stockpile = { type = train_equipment_1 amount = 50 }
 		add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 }
 	}
@@ -978,7 +986,7 @@ JFU_startup_on_action = {
 	251 = {
 		set_building_level = {
 			type = air_base
-			level = 40
+			level = 80
 			instant_build = yes
 		}			
 	}
@@ -4135,6 +4143,123 @@ SOV_relocate_mil_moscow = {
   					instant_build = yes
 				}
 			}				
+		}
+	}
+}
+SOV_allied_ll_tanks = {
+	create_equipment_variant = {
+		name = "Allied LL Tank"
+		type = medium_tank_chassis_2
+		allow_without_tech = yes
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_high_velocity_cannon_2
+			turret_type_slot = tank_medium_three_man_tank_turret
+			suspension_type_slot = tank_torsion_bar_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_diesel_engine
+			special_type_slot_1 = tank_radio_1
+			special_type_slot_2 = secondary_turret_small_cannon
+			special_type_slot_3 = secondary_turret_small_cannon 
+			special_type_slot_4 = easy_maintenance 
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 9
+			tank_nsb_armor_upgrade = 4
+		}
+		icon = "GFX_GER_basic_medium_tank_medium"
+	}
+	if = {
+		limit = {
+			has_tech = advanced_medium_tank_chassis
+		}
+		create_equipment_variant = {
+			name = "Allied LL TD"
+			type = medium_tank_destroyer_chassis_3
+			allow_without_tech = yes
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_high_velocity_cannon_3
+				turret_type_slot = tank_medium_fixed_superstructure_turret
+				suspension_type_slot = tank_torsion_bar_suspension
+				armor_type_slot = tank_riveted_armor
+				engine_type_slot = tank_diesel_engine
+				special_type_slot_1 = squeezebore_adaptor
+				special_type_slot_2 = secondary_turret_small_cannon
+				special_type_slot_3 = secondary_turret_small_cannon 
+				special_type_slot_4 = easy_maintenance 
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 9
+				tank_nsb_armor_upgrade = 0
+			}
+			icon = "GFX_GER_basic_medium_td"
+		}
+	}
+	else = {
+		create_equipment_variant = {
+			name = "Allied LL TD"
+			type = medium_tank_destroyer_chassis_2
+			allow_without_tech = yes
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_high_velocity_cannon_2
+				turret_type_slot = tank_medium_fixed_superstructure_turret
+				suspension_type_slot = tank_torsion_bar_suspension
+				armor_type_slot = tank_riveted_armor
+				engine_type_slot = tank_diesel_engine
+				special_type_slot_1 = squeezebore_adaptor
+				special_type_slot_2 = secondary_turret_small_cannon
+				special_type_slot_3 = secondary_turret_small_cannon 
+				special_type_slot_4 = easy_maintenance 
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 9
+				tank_nsb_armor_upgrade = 0
+			}
+			icon = "GFX_GER_basic_medium_td"
+		}
+	}
+}
+
+dynamic_modifer_start_up = {
+	MAN = {
+		set_variable = { var = MLL_stability value = -0.5 }
+		set_variable = { var = MLL_warsupport value = -0.5 }
+	}
+	GER = {
+		set_variable = { var = MFB_PP value = 0.1 }
+		set_variable = { var = GER_mefo_month_counter value = 0 }
+	}
+}
+give_SOV_armor_research_bonuses = { #this effect is run for the Soviets!
+	if = {
+		limit = {
+			NOT = {
+				has_dlc = "No Step Back"
+			}
+		}
+		add_tech_bonus = {
+			name = med_armor_bonus
+			ahead_reduction = 2
+			category = cat_medium_armor
+		}
+		add_tech_bonus = {
+			name = armor_bonus
+			bonus = 1.0
+			uses = 1
+			category = armor
+		}
+	}
+	if = { #double if because history files don't like else and this effect is run in the Soviet history file
+		limit = {
+			has_dlc = "No Step Back"
+		}
+		add_tech_bonus = {
+			name = armor_bonus
+			bonus = 1.0
+			uses = 2
+			category = armor
 		}
 	}
 }

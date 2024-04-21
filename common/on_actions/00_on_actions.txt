@@ -154,37 +154,6 @@ on_actions = {
 		}
 	}
 
-	#FROM is war target
-	on_declare_war = {
-		effect = {
-
-			#Remove MEFO bills if Germany goes to war
-			if = {
-				limit = {
-					ROOT = { original_tag = GER }
-					ROOT = { GER_has_mefo_bills = yes }
-					NOT = { FROM = { original_tag = GER } } # Don't remove it from Fascist Germany if they start the civil war
-				}
-				ROOT = {
-					GER_remove_mefo_bills = yes
-					set_country_flag = mefo_bills_removed_through_war
-				}
-			}
-
-			#Remove MEFO bills if Germany is declared war on
-			if = {
-				limit = {
-					FROM = { original_tag = GER }
-					FROM = { GER_has_mefo_bills = yes }
-				}
-				FROM = {
-					GER_remove_mefo_bills = yes
-					set_country_flag = mefo_bills_removed_through_war
-				}
-			}
-		}
-	}
-
 	# ROOT is capitulated country, FROM is winner
 	on_capitulation = {
 		effect = {
@@ -374,45 +343,6 @@ on_actions = {
 					has_country_leader = { character = USA_franklin_delano_roosevelt ruling_only = yes }
 				}
 				play_day_of_infamy_effect = yes
-			}
-		}
-	}
-	#ROOT = attacking side
-	#FROM = defending side
-	#fired when two countries end up at war with each other (on_war is fired when a country goes to war against anyone and is not fired again when it enters war against another country unless it went to peace first)
-	on_war_relation_added = {
-		effect = {
-			if = {
-				limit = {
-					tag = GER
-					FROM = {
-						tag = SOV
-						has_government = communism
-					}
-				}
-				set_global_flag = { flag = barbarossa_counter value = 1 days = 60 }
-			}
-			if = {
-				limit = {
-					ROOT = { original_tag = GER }
-					ROOT = { GER_has_mefo_bills = yes }
-					NOT = { FROM = { original_tag = GER } }
-				}
-				ROOT = {
-					GER_remove_mefo_bills = yes
-					set_country_flag = mefo_bills_removed_through_war
-				}
-			}
-			if = {
-				limit = {
-					FROM = { original_tag = GER }
-					FROM = { GER_has_mefo_bills = yes }
-					NOT = { ROOT = { original_tag = GER } }
-				}
-				FROM = {
-					GER_remove_mefo_bills = yes
-					set_country_flag = mefo_bills_removed_through_war
-				}
 			}
 		}
 	}

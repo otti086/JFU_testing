@@ -118,7 +118,6 @@ characters = {
 				original_tag = ITA			
 			}
 			available = {
-				has_government = fascism
 			}
 			traits = {
 				grand_battle_plan_expert
@@ -136,7 +135,6 @@ characters = {
 			planning_skill = 2
 			logistics_skill = 1
 			legacy_id = 0
-			visible = { has_government = fascism }
 		}
 	}
 
@@ -367,7 +365,6 @@ characters = {
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
-			visible = { has_government = fascism }
 		}
 	}
 
@@ -388,7 +385,6 @@ characters = {
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
-			visible = { has_government = fascism }
 		}
 	}
 
@@ -469,7 +465,6 @@ characters = {
 				original_tag = ITA			
 			}
 			available = {
-				has_government = fascism
 			}
 			traits = {
 				army_infantry_2
@@ -488,7 +483,6 @@ characters = {
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
-			visible = { has_government = fascism }
 		}
 	}
 
@@ -509,7 +503,6 @@ characters = {
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
-			visible = { has_government = fascism }
 		}
 	}
 
@@ -570,7 +563,6 @@ characters = {
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
-			visible = { has_government = fascism }
 		}
 	}
 
@@ -591,7 +583,6 @@ characters = {
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
-			visible = { has_government = fascism }
 		}
 	}
 
@@ -692,7 +683,6 @@ characters = {
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
-			visible = { has_government = fascism }
 		}
 	}
 
@@ -753,7 +743,6 @@ characters = {
 			planning_skill = 2
 			logistics_skill = 2
 			legacy_id = 0
-			visible = { has_government = fascism }
 		}
 	}
 
@@ -1024,7 +1013,6 @@ characters = {
 				original_tag = ITA			
 			}
 			available = {
-				has_government = fascism
 			}
 			traits = { naval_theorist }
 		}
@@ -1037,7 +1025,6 @@ characters = {
 			maneuvering_skill = 3
 			coordination_skill = 1
 			legacy_id = 0
-			visible = { has_government = fascism }
 		}
 	}
 
@@ -1059,8 +1046,6 @@ characters = {
 			coordination_skill = 1
 			legacy_id = 0
 			visible = {
-				#has_government = fascism
-				#has_completed_focus = ITA_supermarina #Maybe Escort focus? Or maybe available from start
 			} 
 		}
 	}
@@ -1242,7 +1227,6 @@ characters = {
 				original_tag = ITA			
 			}
 			available = {
-				has_government = fascism
 			}
 			traits = {
 				navy_chief_naval_aviation_2
@@ -1393,7 +1377,6 @@ characters = {
 				original_tag = ITA			
 			}
 			available = {
-				has_government = fascism
 			}
 			traits = {
 				air_tactical_bombing_2
@@ -1421,7 +1404,6 @@ characters = {
 				original_tag = ITA			
 			}
 			available = {
-				has_government = fascism
 			}
 			traits = {
 				air_air_combat_training_2
@@ -1449,7 +1431,6 @@ characters = {
 				original_tag = ITA			
 			}
 			available = {
-				has_government = fascism
 			}
 			traits = {
 				air_bomber_interception_2
@@ -1477,7 +1458,6 @@ characters = {
 				original_tag = ITA			
 			}
 			available = {
-				has_government = fascism
 			}
 			traits = {
 				navy_naval_air_defense_1
@@ -1505,10 +1485,6 @@ characters = {
 				original_tag = ITA			
 			}
 			available = {
-				OR = {
-					has_government = fascism
-					has_government = neutrality
-				}
 				has_completed_focus = ITA_army_leaders
 			}
 			traits = {
@@ -1875,7 +1851,6 @@ characters = {
 				original_tag = ITA			
 			}
 			available = {
-				has_government = fascism
 				NOT = { has_completed_focus = ITA_pact_of_steel }
 			}
 			traits = {
@@ -1922,7 +1897,6 @@ characters = {
 				original_tag = ITA			
 			}
 			available = {
-				has_government = fascism
 			}
 			traits = {
 				editor

@@ -981,9 +981,9 @@
  NO_GRINDING:0 "No Grinding"
  JFU_soviet_synthetics:0 "Emergency Rubber Programm"
 
- BUL_foreign_investor_soviet_tt:0 "Modify §YForeign Investors§! by \nProduction Efficiency Base: §G+20%§! \n§YMilitary Factory§! construction Speed: §G+10%§!"
- BUL_foreign_investor_britain_tt:0 "Modify §YForeign Investors§! by \n£prod_eff Production Efficiency Growth: §G+20%§! \n§YMilitary Factory§! construction Speed: §G+10%§!"
- BUL_foreign_investor_germany_tt:0 "Modify §YForeign Investors§! by \nProduction Efficiency Retention: §G+20%§! \n§YMilitary Factory§! construction Speed: §G+10%§!"
+ BUL_foreign_investor_soviet_tt:0 "Modify §YForeign Investors§! by \nProduction Efficiency Base: §G+10%§! \n§YMilitary Factory§! construction Speed: §G+10%§!"
+ BUL_foreign_investor_britain_tt:0 "Modify §YForeign Investors§! by \n£prod_eff Production Efficiency Growth: §G+10%§! \n§YMilitary Factory§! construction Speed: §G+10%§!"
+ BUL_foreign_investor_germany_tt:0 "Modify §YForeign Investors§! by \nProduction Efficiency Retention: §G+10%§! \n§YMilitary Factory§! construction Speed: §G+10%§!"
  BUL_foreign_industry:0 "Invited Foreign Investors"
 
 
@@ -1188,6 +1188,8 @@
  GER_plan_z_cv_desc:0 ""
  GER_plan_z_bb:0 "Lay Down the Bismarck"
  GER_plan_z_bb_desc:0 ""
+ GER_focus_citadel:0 "Operation Citadel"
+ GER_focus_citadel_desc:0 ""
  JAP_armored_divisions_MAN:0 "Manchurian Armor Technology"
 
  #tooltips
@@ -1197,6 +1199,8 @@
  SOV_rubber_focus_tt:0 "The Allies have lost control of §YSingarpur§!, §YBorneo§!,§YSumatra§! and ether §YJava§! or §YCeylon§!"
  SOV_claims_in_balitc.tt:0 "We will annex the §RBaltic states§!"
  SOV_Bessarabia.tt:0 "We will force Romania to cede us Bessarabia" 
+ SOV_arctic_ll_tt:0 "§Y3.00K§! units of §Yallied Tanks§! and §Y600§! units of §Yallied Tank Destroyers§! is added to the national stockpile"
+ SOV_north_sea_ll_tt:0 "§Y2.00K§! units of §Yallied Tanks§! and §Y400§! units of §Yallied Tank Destroyers§! is added to the national stockpile"
  
  UK_imperial_conference_tt:0 " Add §YImperial Conference Economy Agreements§!, which grants (Factory Output §G+15.00%§!, Dockyard Output §G+15.00%§!).\n Add §YImperial Conference Economy Agreements§! which grants (§YCivilian Factory§! construction Speed §G+15.00%§!, §YMilitary Factory§! construction speed §G+15.00%§!, §!Dockyard§! construction Speed §G+15.00%§!)\n Gain Base War Support §G+10.00%§!\n(@AST§YAustralia, @CANDominion of Canada, @RAJBritish Raj,\n @NZLNew Zealand and @SAFSouth Africa§!):\n    Add §YImperial Conference Defense Agreements§! which grants (Factory Output §G+10.00%§!, Dockyard Output §G+10.00%§!).\n    Add §YImperial Conference Economy Agreements§! which grants (§YCivilian Factory§! construction Speed §G+10.00%§!, §YMilitary Factory§! construction speed §G+10.00%§!, §!Dockyard§! construction Speed §G+10.00%§!)\n   Gain Base War Support §G+10.00%§! "
  
@@ -1242,15 +1246,19 @@
  GER_amerikabomber:0 "The Amerikabomber"
  GER_amerikabomber_desc:0 "By bombing out the industrial heartland of the USA we can divert American civilian and military industry towards the heartland, isolating Britain for a second aerial battle."
  endsieg_states:0 "We lost controll of at least 1 state in @POL§YPoland§!, @FRA§YFrance§! or god forbid in the Reich itself"
- atlantikwall_modifier_tt:0 "If we control §YAswan§! before completing this focus we will also add §YAtlantik Wall§! which grants: \nMax Entrechment §G+10.0§! \nInvasion Penalty §R+50%§! \nto all previously mentioned states." 
-  
+ atlantikwall_modifier_tt:0 "If we control §YAswan§! before completing this focus we will also add §YAtlantik Wall§! which grants: \nMax Entrechment §G+10.0§! \nInvasion Penalty §R+50%§! \nto all previously mentioned states."   
  endsieg_allies_tt:0 "Add '§YBattle of the Buldge§!' which grants (§YAll Allied Nations§!) Attack bonus against countries §G+15%§!, (§YAll Allied Nations§!) Defense bonus against countries §G+10%§!, (§Y@SOVSoviet Union§!) Attack bonus against countries §R-15%§!, (§Y@SOVSoviet Union§!) Defense bonus against countries §R-10%§!) for 180 day(s)."
  endsieg_comintern_tt:0 "Add '§YSteiners Counterattack§!' which grants (§Y@SOVSoviet Union§!) Attack bonus against countries §G+15%§!, (§Y@SOVSoviet Union§!) Defense bonus against countries §G+10%§!, (§YAll Allied Nations§!) Attack bonus against countries §R-15%§!, (§YAll Allied Nations§!) Defense bonus against countries §R-10%§!) for 180 day(s)." 
- 
+ mefo_reduction_large_tt:0 "We will use aquired funds to reduce the MEFO Bills payments by §G-0.20§! Political Power"
+ mefo_reduction_small_tt:0 "We will use aquired funds to reduce the MEFO Bills payments by §G-0.10§! Political Power"
+
+
  MIO_range_trait:0 "Unlocks a special Range trait for the Light Aircraft and Naval Aircraft Designer"
  MIO_agility_trait:0 "Unlocks a special Agility trait for the Light Aircraft and Naval Aircraft Designer"
  jap_china_tt:0 "§RMay declare war on China via decision§!"
  
+ MLL_dynamic_modifer_tt:0 "Modify §YLow Legitimacy§! by\nStabilty §G+10.00%§!\nWar Support §G+10.00%§!"
+ MLL_remove_tt:0 "Remove §YLow Legitmiacy§! which granted \nStabilty §R-20.00%§!\nWar Support §R-20.00%§!"
  ALLIES_army_eng:0 "§HFourteen§! §Rveteran§! ranger divisions will be assembled in §HLondon§! under our command."
  ALLIES_marines_eng:0 "§HEight§! §Rveteran§! marine divisions will be assembled in §HLondon§! under our command."
  desert_tactics_allies_effect:0 "Enables §HDesert Training§!\n§HTanks and Infantry\n    Desert§!\n      Defense: §G+10%§!"
@@ -1407,6 +1415,7 @@
  EFR_defense_plan:0 "Bulwark of France"
  GER_endsieg:0 "Total War"
  GER_endsieg_desc:0 "Wollt ihr den totalen Krieg? - Ja"
+ GER_mefo_bills_modifier:0 "MEFO Bills"
  pacific_war_japan:0 "Pacific War" 
  pacific_war_japan_desc:0 "If we lose control of our Island our Homelands will be threatened \nPacific War Islands Japan: §YMarshall Islands, Caroline Islands, Palau, Kuril Islands, Hainan, Saipan, Marcus Islands, Iwo Jima, Formosa, Okinawa§!."
  pacific_war_USA:0 "Pacific War" 
@@ -1416,7 +1425,7 @@
  pacific_war_aallies:0 "Pacific War"
  pacific_war_aallies_desc:0 "If we lose controll of the pacific islands our Homelands will be threatened \nPacific War States @CAN @MEX: §YGuam, Wake, Midway Islands, Johnston Atoll, Hawaii§!"
  SOV_BARB_Debuff:0 "Suprise Attack"
-
+ MAN_low_legitimacy_modifier:0 "Low Legitimacy"
 
 
  #country flags

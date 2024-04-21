@@ -23,5 +23,3 @@ set_popularities = {
 	neutrality = 100
 }
 
-set_convoys = 5
-

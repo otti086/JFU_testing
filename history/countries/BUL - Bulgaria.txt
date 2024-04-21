@@ -9,7 +9,6 @@ if = {
 		set_air_oob = "BUL_1936_air_legacy"
 	}
 }
-set_convoys = 5 #VANILLA & DLC
 
 #You don't want Bulgarian party names? Just remove these lines
 set_party_name = { # DLC
@@ -215,7 +214,6 @@ if = { #DLC
 	recruit_character = BUL_stoyan_trendafilov
 	recruit_character = BUL_gancho_manchev
 	recruit_character = BUL_nikola_hadzipetkov
-	recruit_character = BUL_asen_toshev
 	recruit_character = BUL_bogdan_filov_fascism
 	recruit_character = BUL_dobri_bozhilov
 	recruit_character = BUL_bogdan_filov

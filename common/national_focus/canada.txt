@@ -251,7 +251,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 50
@@ -461,7 +461,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CAN_wartime_prices_and_trade_board
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -518,7 +518,6 @@ focus_tree = {
 		}
 
 		available = {
-			has_war = yes
 		}
 		
 		bypass = {
@@ -591,6 +590,7 @@ focus_tree = {
 		id = CAN_national_steel_car
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = CAN_alberta_coal_towns }
+		prerequisite = { focus = CAN_victory_aircraft_limited}
 		x = -1
 		y = 1
 		relative_position_id = CAN_alberta_coal_towns
@@ -606,7 +606,6 @@ focus_tree = {
 		}
 
 		available = {
-
 		}
 		
 		bypass = {
@@ -1465,8 +1464,6 @@ focus_tree = {
 		}
 
 		available = {
-			is_in_faction_with = ENG
-			is_in_tech_sharing_group = commonwealth_research
 		}
 		
 		bypass = {
@@ -1632,9 +1629,6 @@ focus_tree = {
 		}
 
 		available = {
-			controls_state = 682
-			controls_state = 466
-			controls_state = 468
 		}
 		
 		bypass = {
@@ -1683,7 +1677,6 @@ focus_tree = {
 		}
 
 		available = {
-			controls_state = 470
 		}
 		
 		bypass = {
@@ -1716,7 +1709,7 @@ focus_tree = {
 		x = 13
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no

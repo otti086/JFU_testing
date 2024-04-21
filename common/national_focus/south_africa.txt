@@ -66,7 +66,7 @@
 	focus = {
 		id = SAF_war_measures_act
 		icon = GFX_goal_generic_demand_territory
-		x = 1
+		x = 2
 		y = 0
 
 		cost = 10
@@ -75,13 +75,10 @@
 			factor = 1
 		}
 		available = {
-			SAF = { is_ai = no }
 		}	
 		available = {
-			OR = {
-				threat > 0.2
-				NOT = { has_government = democratic }
-			}
+			threat > 0.2
+			SAF = { is_ai = no }
 		}
 		
 		bypass = {
@@ -291,7 +288,7 @@
 	focus = {
 		id = SAF_support_the_policy_of_appeasement
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
-		x = 4
+		x = 5
 		y = 0
 
 		cost = 5
@@ -302,16 +299,6 @@
 		available = {
 			SAF = { is_ai = no }
 		}	
-		available = {
-			OR = {
-				is_subject_of = ENG
-				AND = {
-					has_global_flag = ENG_decolonized
-					is_in_faction_with = ENG
-				}
-			}
-			ENG = { has_war = no }
-		}
 		
 		bypass = {
 
@@ -342,7 +329,6 @@
 		}
 
 		available = {
-			is_in_tech_sharing_group = commonwealth_research
 		}
 		
 		bypass = {
@@ -396,48 +382,16 @@
 				remove_idea = SAF_ossewabrandwag
 				add_idea = SAF_ossewabrandwag_2
 			}
-			remove_opinion_modifier = { target = ENG modifier = SAF_anti_british_sentiment }
-		}
-	}
-
-	focus = {
-		id = SAF_joint_air_training_scheme
-		icon = GFX_goal_generic_air_fighter2
-		prerequisite = { focus = SAF_csir }
-		x = -2
-		y = 2
-		relative_position_id = SAF_support_the_policy_of_appeasement
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_ideas = SAF_joint_air_training_scheme
 		}
 	}
 
 	focus = {
 		id = SAF_desert_equipment
 		icon = GFX_goal_generic_allies_build_infantry
-		prerequisite = { focus = SAF_joint_air_training_scheme }
-		x = -3
-		y = 3
-		relative_position_id = SAF_support_the_policy_of_appeasement
+		prerequisite = { focus = SAF_csir }
+		x = -1
+		y = 2
+		relative_position_id = SAF_csir
 
 		cost = 10
 
@@ -465,11 +419,11 @@
 	focus = {
 		id = SAF_suppress_the_stormjaers
 		icon = GFX_goal_generic_military_sphere
-		prerequisite = { focus = SAF_joint_air_training_scheme }
+		prerequisite = { focus = SAF_csir }
 		prerequisite = { focus = SAF_police_windhoek }
-		x = -1
-		y = 3
-		relative_position_id = SAF_support_the_policy_of_appeasement
+		x = 1
+		y = 2
+		relative_position_id = SAF_csir
 
 		cost = 10
 
@@ -538,7 +492,7 @@
 		id = SAF_native_laws_amendment_act
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = SAF_police_windhoek  }
-		x = 1
+		x = 0
 		y = 2
 		relative_position_id = SAF_support_the_policy_of_appeasement
 
@@ -620,7 +574,6 @@
 		}
 
 		available = {
-			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
 		bypass = {
@@ -664,8 +617,6 @@
 					instant_build = yes
 				}
 			}
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = SAF_south_african_railways
 		}
 	}
 
@@ -806,6 +757,12 @@
 				add_resource = {
 					type = steel
 					amount = 24
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
 				}
 			}
 		}
@@ -1374,7 +1331,7 @@
 		x = 17
 		y = 0		
 
-		cost = 10
+		cost = 5
 		available = {
 			SAF = { is_ai = no }
 		}	

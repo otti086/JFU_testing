@@ -298,20 +298,6 @@ characters={
 				large="GFX_Portrait_romania_horia_macellariu"
 			}
 		}
-		advisor={
-			slot = navy_chief
-			idea_token = ROM_horia_macellariu
-			allowed = {
-				original_tag = ROM
-			}
-			traits = {
-				navy_chief_maneuver_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
 		
 		navy_leader={
 			traits={ gentlemanly spotter }

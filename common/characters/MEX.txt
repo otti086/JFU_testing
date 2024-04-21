@@ -529,20 +529,6 @@ characters={
 				large="GFX_portrait_MEX_luis_farell"
 			}
 		}
-		advisor={
-			slot = air_chief
-			idea_token = MEX_luis_farell
-			allowed = {
-				original_tag = MEX
-			}
-			traits = {
-				air_chief_ground_support_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
 		
 		corps_commander={
 			traits={ war_hero }

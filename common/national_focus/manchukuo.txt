@@ -236,7 +236,12 @@
 		completion_reward = {
 			remove_ideas = MAN_kwantung_veto
 			army_experience = 75
-			MAN_low_legitimacy_level_down = yes
+			hidden_effect = {
+				add_to_variable = { var = MLL_stability value = 0.1 }
+				add_to_variable = { var = MLL_warsupport value = 0.1 }
+			}
+			custom_effect_tooltip = MLL_dynamic_modifer_tt
+
 		}
 	}
 
@@ -282,7 +287,11 @@
 		}
 
 		completion_reward = {
-			MAN_low_legitimacy_level_down = yes
+			hidden_effect = {
+				add_to_variable = { var = MLL_stability value = 0.1 }
+				add_to_variable = { var = MLL_warsupport value = 0.1 }
+			}
+			custom_effect_tooltip = MLL_dynamic_modifer_tt
 		}
 	}
 
@@ -311,13 +320,16 @@
 		}
 
 		completion_reward = {	
-			MAN_low_legitimacy_level_down = yes
+			hidden_effect = {
+				add_to_variable = { var = MLL_stability value = 0.1 }
+				add_to_variable = { var = MLL_warsupport value = 0.1 }
+			}
+			custom_effect_tooltip = MLL_dynamic_modifer_tt
 
 			every_state = {
 				limit = { is_core_of = CHI }
 				add_core_of = ROOT
 			}
-			
 		}
 	}
 
@@ -345,7 +357,10 @@
 		}
 
 		completion_reward = {
-			MAN_low_legitimacy_clear_all = yes
+			hidden_effect = {
+				remove_dynamic_modifier = { modifier = MAN_low_legitimacy_modifier }
+			}
+			custom_effect_tooltip = MLL_remove_tt
 		}
 	}
 	

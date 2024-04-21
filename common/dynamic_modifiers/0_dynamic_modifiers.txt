@@ -1344,3 +1344,27 @@ ROM_no_building_slots = {
 
 	local_building_slots_factor = -1
 }
+MAN_low_legitimacy_modifier = {
+	enable = { always = yes }
+
+	icon = GFX_idea_generic_manpower_bonus
+
+	stability_factor = MLL_stability
+	war_support_factor = MLL_warsupport
+}
+GER_mefo_bills_modifier = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_generic_military_plans
+
+	political_power_cost = MFB_PP
+	consumer_goods_factor = -0.33
+	production_speed_arms_factory_factor = 0.25
+	production_speed_air_base_factor = 0.25
+	production_speed_naval_base_factor = 0.25
+	production_speed_bunker_factor = 0.25
+	production_speed_coastal_bunker_factor = 0.25
+	production_speed_dockyard_factor = 0.25
+	production_speed_synthetic_refinery_factor = 0.25
+	production_speed_radar_station_factor = 0.25
+}

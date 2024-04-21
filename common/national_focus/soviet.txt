@@ -591,7 +591,12 @@ focus_tree = {
 				name = SOV_optimize_production_lines
 				bonus = 1
 				uses = 2
-				category = industry
+				technology = concentrated_industry3
+				technology = concentrated_industry4
+				technology = concentrated_industry5
+				technology = dispersed_industry3 
+				technology = dispersed_industry4 
+				technology = dispersed_industry5
 			}
 		}
 	}
@@ -981,6 +986,13 @@ focus_tree = {
 			add_to_variable = { SOV_soviet_airforce_air_range_factor = 0.05 }
 			add_to_variable = { SOV_soviet_airforce_air_agility_factor = 0.05 }
 			custom_effect_tooltip = SOV_modernize_aircraft_facilities_ns_tt
+			240 = {
+				set_building_level = {
+					type = air_base
+					level = 10
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -1001,6 +1013,13 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = SOV_merge_aircraft_plants_tt
+			246 = {
+				set_building_level = {
+					type = air_base
+					level = 10
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -1135,6 +1154,13 @@ focus_tree = {
 			set_rule = {
 				can_generate_female_aces = yes
 			}
+			263 = {
+				set_building_level = {
+					type = air_base
+					level = 10
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -1162,16 +1188,16 @@ focus_tree = {
 			set_variable = { SOV_soviet_airforce_air_strategic_bomber_night_penalty = -0.1 }
 			custom_effect_tooltip = SOV_raskovas_aviation_group_ns_tt
 
-			custom_effect_tooltip = SOV_night_witches_nsb_tt
-			hidden_effect = {
-				if = { #ALT IDEOLOGY
-					limit = {
-						NOT = { has_government = communism }
-					}
-					load_oob = "SOV_night_witches_nsb_alt"
-				}
-				else = { #DEFAULT COMMUNISM
-					load_oob = "SOV_night_witches_nsb"
+			#custom_effect_tooltip = SOV_night_witches_nsb_tt
+			#hidden_effect = {
+			#	load_oob = "SOV_night_witches_nsb"
+			#}
+
+			252 = {
+				set_building_level = {
+					type = air_base
+					level = 10
+					instant_build = yes
 				}
 			}
 		}
@@ -1234,6 +1260,13 @@ focus_tree = {
 			add_to_variable = { SOV_soviet_airforce_air_training_xp_gain_factor = 0.05 }
 			add_to_variable = { SOV_soviet_airforce_air_wing_xp_loss_when_killed_factor = -0.15 }
 			custom_effect_tooltip = SOV_expand_aviation_institutes_ns_tt
+			223 = {
+				set_building_level = {
+					type = air_base
+					level = 10
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -2990,6 +3023,11 @@ focus_tree = {
 				producer = USA
 			}
 			add_equipment_to_stockpile = {
+				type = anti_air_equipment_1
+				amount = 3000
+				producer = USA
+			}
+			add_equipment_to_stockpile = {
 				type = motorized_equipment_1
 				amount = 2000
 				producer = USA
@@ -3011,18 +3049,18 @@ focus_tree = {
 		}
 
 		available = {
-			SOV = { 
-				controls_state = 213 
-				controls_state = 215
-				controls_state = 216
-				controls_state = 264
-			}
 			surrender_progress > 0.25
 		}
 
 		relative_position_id = SOV_american_lend_lease
 
-		completion_reward = {		
+		completion_reward = {
+			hidden_effect = {
+				SOV_allied_ll_tanks = yes
+				add_equipment_to_stockpile = { type = medium_tank_chassis_2 amount = 2000 producer = SOV variant_name = "Allied LL Tank" }		
+				add_equipment_to_stockpile = { type = medium_tank_destroyer_chassis_2 amount = 400 producer = SOV variant_name = "Allied LL TD" }
+			}
+			custom_effect_tooltip = SOV_north_sea_ll_tt
 		}
 	}
 
@@ -3038,11 +3076,17 @@ focus_tree = {
 		y = 1
 		available = {
 			surrender_progress > 0.35
+			has_completed_focus = SOV_arctic_lend_lease
 		}
 
 		relative_position_id = SOV_american_lend_lease
 
-		completion_reward = {		
+		completion_reward = {	
+			hidden_effect = {
+				add_equipment_to_stockpile = { type = medium_tank_chassis_2 amount = 3000 producer = SOV variant_name = "Allied LL Tank" }		
+				add_equipment_to_stockpile = { type = medium_tank_destroyer_chassis_2 amount = 600 producer = SOV variant_name = "Allied LL TD" }	
+			}
+			custom_effect_tooltip = SOV_arctic_ll_tt
 		}
 	}	
 

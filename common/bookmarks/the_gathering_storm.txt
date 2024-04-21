@@ -12,7 +12,6 @@ bookmarks = {
 			ideas = {
 				sour_loser
 				general_staff
-				GER_mefo_bills_1
 			}
 			focuses = {
 				GER_anschluss
@@ -293,7 +292,6 @@ bookmarks = {
 			ideas = {
 				MAN_banditry
 				MAN_kwantung_veto
-				MAN_low_legitimacy_5
 			}
 			focuses = {
 				MAN_obediencex
@@ -308,7 +306,6 @@ bookmarks = {
 			ideas = {
 				MAN_banditry
 				MAN_kwantung_veto
-				MAN_low_legitimacy_5
 			}
 			focuses = {
 				FIN_winter_war
