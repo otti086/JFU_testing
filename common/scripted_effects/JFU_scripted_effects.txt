@@ -664,19 +664,19 @@ JFU_vichy_france_2 = {
 
 
 JFU_startup_on_action = {
-	if = {	limit = { has_game_rule = { rule = finland_focus option = HORST_ENABLE_MOD_FINLAND	} }	FIN = { load_focus_tree = finlandmod_focus } }
-	if = {	limit = { NOT = { has_game_rule = { rule = finland_focus option = HORST_ENABLE_MOD_FINLAND	} } } set_power_balance = { id = FIN_power_balance left_side = FIN_bad_side right_side = FIN_good_side set_value = -0.45 } add_ideas = FIN_sisu_2 }
-	if = {	limit = { has_game_rule = { rule = JFU_pre_sets option = COMPETITIVE_JFU } } SWE = {pregrinded_effect = yes} SWE = { JAP_closed_eco_effect = yes } SWE = { SOV_closed_eco_effect = yes } }
-	if = { 	limit = { has_game_rule = { rule = JFU_closed_eco_JAPAN option = ENABLE_CLOSED_ECO } } SWE = { JAP_closed_eco_effect = yes } }
-	if = {	limit = { has_game_rule = { rule = JFU_closed_eco_SOVIET option = ENABLE_CLOSED_ECO } } SWE = { SOV_closed_eco_effect = yes } }
-	if = {	limit = { has_game_rule = { rule = JFU_pre_grinded_generals option = PRE_GRINDED_GENERALS_ON } } SWE = {pregrinded_effect = yes} }
-	if = {	limit = { has_game_rule = { rule = JFU_pre_grinded_generals option = HALVED_GRIND_TIME } } every_possible_country = { limit = { NOT = { ai_country = yes } } add_ideas = { HALVED_GRIND } } }
-	if = {	limit = { has_game_rule = { rule = JFU_SPECIAL_FORCES_CAP option = JFU_DOUBLE_CAP } } every_possible_country = { limit = { NOT = { ai_country = yes } } add_ideas = DOUBLE_SF_CAP } }
-	if = {	limit = { has_game_rule = { rule = JFU_SPECIAL_FORCES_CAP option = JFU_QUADRUPLE_CAP } } every_possible_country = { limit = { NOT = { ai_country = yes } } add_ideas = QUADRUPLE_SF_CAP } }	
-	if = {	limit = { has_game_rule = { rule = JFU_SPECIAL_FORCES_CAP option = JFU_NO_CAP } } every_possible_country = { limit = { NOT = { ai_country = yes } } add_ideas = NO_SF_CAP } }
-	if = {	limit = { has_game_rule = { rule = JFU_AFRICA_TILES option = ONE_TILE_AFRICA } } SWE = { transfer_state = 909 } SWE = { transfer_state = 910 } SWE = { transfer_state = 911 } }
-	if = {	limit = { has_game_rule = { rule = JFU_YUGO_COLAB option = FREE_COLAB_YUGO } } set_global_flag = YUGO_FREE_COLAB_FLAG }
-	if = {	limit = { has_game_rule = { rule = JFU_pre_sets option = COMPETITIVE_JFU } } set_global_flag = YUGO_FREE_COLAB_FLAG }
+	if = { limit = { has_game_rule = { rule = finland_focus option = HORST_ENABLE_MOD_FINLAND	} }	FIN = { load_focus_tree = finlandmod_focus } }
+	if = { limit = { NOT = { has_game_rule = { rule = finland_focus option = HORST_ENABLE_MOD_FINLAND	} } } set_power_balance = { id = FIN_power_balance left_side = FIN_bad_side right_side = FIN_good_side set_value = -0.45 } add_ideas = FIN_sisu_2 }
+	if = { limit = { has_game_rule = { rule = JFU_pre_sets option = COMPETITIVE_JFU } } SWE = {pregrinded_effect = yes} SWE = { JAP_closed_eco_effect = yes } SWE = { SOV_closed_eco_effect = yes } }
+	if = { limit = { has_game_rule = { rule = JFU_closed_eco_JAPAN option = ENABLE_CLOSED_ECO } } SWE = { JAP_closed_eco_effect = yes } }
+	if = { limit = { has_game_rule = { rule = JFU_closed_eco_SOVIET option = ENABLE_CLOSED_ECO } } SWE = { SOV_closed_eco_effect = yes } }
+	if = { limit = { has_game_rule = { rule = JFU_pre_grinded_generals option = PRE_GRINDED_GENERALS_ON } } SWE = {pregrinded_effect = yes} }
+	if = { limit = { has_game_rule = { rule = JFU_pre_grinded_generals option = HALVED_GRIND_TIME } } every_possible_country = { limit = { NOT = { ai_country = yes } } add_ideas = { HALVED_GRIND } } }
+	if = { limit = { has_game_rule = { rule = JFU_SPECIAL_FORCES_CAP option = JFU_DOUBLE_CAP } } every_possible_country = { limit = { NOT = { ai_country = yes } } add_ideas = DOUBLE_SF_CAP } }
+	if = { limit = { has_game_rule = { rule = JFU_SPECIAL_FORCES_CAP option = JFU_QUADRUPLE_CAP } } every_possible_country = { limit = { NOT = { ai_country = yes } } add_ideas = QUADRUPLE_SF_CAP } }	
+	if = { limit = { has_game_rule = { rule = JFU_SPECIAL_FORCES_CAP option = JFU_NO_CAP } } every_possible_country = { limit = { NOT = { ai_country = yes } } add_ideas = NO_SF_CAP } }
+	if = { limit = { has_game_rule = { rule = JFU_AFRICA_TILES option = ONE_TILE_AFRICA } } SWE = { transfer_state = 909 } SWE = { transfer_state = 910 } SWE = { transfer_state = 911 } }
+	if = { limit = { has_game_rule = { rule = JFU_YUGO_COLAB option = FREE_COLAB_YUGO } } set_global_flag = YUGO_FREE_COLAB_FLAG }
+	if = { limit = { has_game_rule = { rule = JFU_pre_sets option = COMPETITIVE_JFU } } set_global_flag = YUGO_FREE_COLAB_FLAG }
 	if = { limit = { NOT = { has_game_rule = { rule = JFU_SPAIN option = SPAIN_NO_CW } } } SPR_airports_effect = yes }	
 	if = {
 		limit = { 
@@ -815,7 +815,7 @@ JFU_startup_on_action = {
 			add_ideas = { volunteers_4 }
 		}
 	}
-	if = {  limit = { ai_country_allies = yes } country_lock_all_division_template = yes }
+	if = { limit = { ai_country_allies = yes } country_lock_all_division_template = yes }
 	every_country = { limit = { OR = { axis = yes allies = yes } } add_ideas = peace_training set_rule = { can_be_spymaster = no }  }
 	every_country = { limit = { axis = yes } anti_cross_faction_trade_allies = yes }
 	every_country = { limit = { allies = yes } anti_cross_faction_trade_axis = yes }
@@ -842,6 +842,7 @@ JFU_startup_on_action = {
 		add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 100 }
 		add_equipment_to_stockpile = { type = light_tank_chassis_1 amount = 180 producer = ENG variant_name = "Light Tank Mk. VI" }
 		add_equipment_to_stockpile = { type = train_equipment_1 amount = 300 }
+		add_dynamic_modifier = { modifier = ENG_fortify_the_empire_modifier }
 	}
 	GER = {
 		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 24900 }
@@ -4230,6 +4231,10 @@ dynamic_modifer_start_up = {
 	GER = {
 		set_variable = { var = MFB_PP value = 0.1 }
 		set_variable = { var = GER_mefo_month_counter value = 0 }
+	}
+	ENG = {
+		set_variable = { var = fte_LFCS value = 0.05 }
+		set_variable = { var = fte_NFCS value = 0.05 }		
 	}
 }
 give_SOV_armor_research_bonuses = { #this effect is run for the Soviets!

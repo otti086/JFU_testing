@@ -39,7 +39,6 @@ SAF_historical = {
 		SAF_cape_garrison_artillery	
 		SAF_q_services_corps
 		SAF_csir 
-		SAF_joint_air_training_scheme
 		SAF_reconstitute_the_cape_corps	
 		SAF_seaward_defence_force
 		SAF_armor_effort

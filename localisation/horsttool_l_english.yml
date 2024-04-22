@@ -1203,7 +1203,9 @@
  SOV_north_sea_ll_tt:0 "§Y2.00K§! units of §Yallied Tanks§! and §Y400§! units of §Yallied Tank Destroyers§! is added to the national stockpile"
  
  UK_imperial_conference_tt:0 " Add §YImperial Conference Economy Agreements§!, which grants (Factory Output §G+15.00%§!, Dockyard Output §G+15.00%§!).\n Add §YImperial Conference Economy Agreements§! which grants (§YCivilian Factory§! construction Speed §G+15.00%§!, §YMilitary Factory§! construction speed §G+15.00%§!, §!Dockyard§! construction Speed §G+15.00%§!)\n Gain Base War Support §G+10.00%§!\n(@AST§YAustralia, @CANDominion of Canada, @RAJBritish Raj,\n @NZLNew Zealand and @SAFSouth Africa§!):\n    Add §YImperial Conference Defense Agreements§! which grants (Factory Output §G+10.00%§!, Dockyard Output §G+10.00%§!).\n    Add §YImperial Conference Economy Agreements§! which grants (§YCivilian Factory§! construction Speed §G+10.00%§!, §YMilitary Factory§! construction speed §G+10.00%§!, §!Dockyard§! construction Speed §G+10.00%§!)\n   Gain Base War Support §G+10.00%§! "
- 
+ ENG_fortify_the_empire_big_tt:0 "Modify §YFortify the Empire§! by\n §YLand Fort§! construction speed §G+10.00%§!\n §YCoastal Fort§! construction speed §G+10.00%§!"
+ ENG_fortify_the_empire_small_tt:0 "Modify §YFortify the Empire§! by\n §YLand Fort§! construction speed §G+5.00%§!\n §YCoastal Fort§! construction speed §G+5.00%§!"
+
  GER_second_vienna_focus_tt:0 "This focus is automatically completed by an event which triggers in §YAugust 1940§!."
  GER_ussr_war_goal_focus_tt:0 "This focus is automatically completed in case of war with the §YSoviet Union§!."
  GER_danzig_or_war_tt:0 "With the claim of Danzig, this focus justifies a war against §YPoland§!."
@@ -1426,7 +1428,7 @@
  pacific_war_aallies_desc:0 "If we lose controll of the pacific islands our Homelands will be threatened \nPacific War States @CAN @MEX: §YGuam, Wake, Midway Islands, Johnston Atoll, Hawaii§!"
  SOV_BARB_Debuff:0 "Suprise Attack"
  MAN_low_legitimacy_modifier:0 "Low Legitimacy"
-
+ ENG_fortify_the_empire_modifier:0 "Fortify the Empire"
 
  #country flags
 
