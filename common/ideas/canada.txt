@@ -43,27 +43,6 @@ ideas = {
 			}
 		}
 
-		CAN_patriation = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				NOT = { has_government = democratic }
-			}
-
-			removal_cost = -1
-
-			picture = can_patriation
-
-			rule = { can_decline_call_to_war = yes }
-
-			modifier = {
-				autonomy_gain = 1
-			}
-		}
-
 		CAN_conscription_crisis = {
 
 			allowed = {
@@ -80,25 +59,6 @@ ideas = {
 
 			modifier = {
 				conscription_factor = -0.30
-			}
-		}
-
-		CAN_conscription_crisis_mended = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = tfv_can_conscription_crisis
-
-			modifier = {
-				conscription_factor = -0.10
 			}
 		}
 
@@ -119,49 +79,6 @@ ideas = {
 			modifier = {
 				communism_drift = -0.01
 				fascism_drift = -0.01
-				foreign_subversive_activites = -0.50
-			}
-		}
-
-		CAN_defence_of_canada_regulations_fascism = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = fascism
-			}
-
-			removal_cost = -1
-
-			picture = can_defence_of_canada_regulations_fascism
-
-			modifier = {
-				democratic_drift = -0.01
-				communism_drift = -0.01
-				foreign_subversive_activites = -0.50
-			}
-		}
-
-		CAN_defence_of_canada_regulations_communism = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-
-			removal_cost = -1
-
-			picture = can_defence_of_canada_regulations_communism
-
-			modifier = {
-				democratic_drift = -0.01
-				fascism_drift = -0.01
-				foreign_subversive_activites = -0.50
 			}
 		}
 
@@ -267,26 +184,6 @@ ideas = {
 			}
 		}
 
-		CAN_commit_to_the_war = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_manpower_bonus
-
-			modifier = {
-				conscription_factor = 0.05
-			}
-
-		}
-
 		CAN_send_in_the_zombies = {
 
 			allowed = {
@@ -384,179 +281,6 @@ ideas = {
 
 			modifier = {
 				air_ace_generation_chance_factor = 0.10
-			}
-		}
-
-		CAN_swastika_clubs = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				 has_government = fascism
-			}
-
-			removal_cost = -1
-
-			picture = generic_fascism_drift_bonus
-
-			modifier = {
-				democratic_drift = -0.1
-				fascism_drift = 0.2
-			}
-		}
-
-		CAN_swastika_clubs_2 = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				 has_government = fascism
-			}
-
-			removal_cost = -1
-
-			picture = generic_fascism_drift_bonus
-
-			modifier = {
-				democratic_drift = -0.1
-				fascism_drift = 0.2
-				war_support_factor = 0.05
-				conscription = 0.02
-			}
-		}
-
-		CAN_swastika_clubs_skewer = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				 has_government = fascism
-			}
-
-			removal_cost = -1
-
-			picture = generic_fascism_drift_bonus
-
-			modifier = {
-				democratic_drift = -0.1
-				fascism_drift = 0.2
-				war_support_factor = 0.05
-				conscription = 0.02
-				send_volunteer_divisions_required = -1
-				send_volunteer_size = 1
-			}
-		}
-
-		CAN_communist_ideals = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				 has_government = communism
-			}
-
-			removal_cost = -1
-
-			picture = generic_communism_drift_bonus
-
-			modifier = {
-				democratic_drift = -0.1
-				communism_drift = 0.2
-			}
-		}
-
-		CAN_communist_ideals_2 = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				 has_government = communism
-			}
-
-			removal_cost = -1
-
-			picture = generic_communism_drift_bonus
-
-			modifier = {
-				democratic_drift = -0.1
-				communism_drift = 0.2
-				industrial_capacity_factory = 0.02
-				industrial_capacity_dockyard = 0.02
-			}
-		}
-
-		CAN_communist_ideals_3 = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				 has_government = communism
-			}
-
-			removal_cost = -1
-
-			picture = generic_communism_drift_bonus
-
-			rule = { can_send_volunteers = yes }
-
-			modifier = {
-				democratic_drift = -0.1
-				communism_drift = 0.2
-				industrial_capacity_factory = 0.04
-				industrial_capacity_dockyard = 0.04
-				subversive_activites_upkeep = -0.5
-			}
-		}
-
-		CAN_degauss_ship_hulls = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_degauss_ship_hulls
-
-			equipment_bonus = {
-				ship_hull_light = {
-					instant = yes
-					sub_detection = 0.1
-				}
-				ship_hull_cruiser = {
-					instant = yes
-					sub_detection = 0.1
-				}
-			}
-		}
-
-		CAN_trade_fleet = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = escort_effort_focus
-
-			equipment_bonus = {
-				convoy = {
-					build_cost_ic = -0.25 instant = yes
-				}
 			}
 		}
 	}

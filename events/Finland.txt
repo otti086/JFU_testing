@@ -28,7 +28,6 @@ country_event = {
 							has_guaranteed = FIN
 						}
 					}
-					has_idea = anti_soviet_pact
 				}
 			}
 		}

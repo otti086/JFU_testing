@@ -30,6 +30,7 @@ ideas = {
 
 			cancel_if_invalid = no
 		}
+
 		isolation = {
 
 			allowed = {
@@ -73,6 +74,7 @@ ideas = {
 
 			cancel_if_invalid = no
 		}
+
 		civilian_economy = {
 
 
@@ -299,51 +301,6 @@ ideas = {
 	trade_laws = {
 		law = yes
 		use_list_view = yes
-
-		uncontrolled_exports = {
-
-
-			allowed = {
-				always = no
-			}
-			removal_cost = -1
-			picture = isolation
-
-			modifier = {
-				min_export = 0.25
-				consumer_goods_expected_value = 0.05
-				civilian_intel_to_others = 40.0
-				navy_intel_to_others = 40.0
-				agency_upgrade_time = 0.15
-			}
-
-			available = {
-				if = {
-					limit = {
-						original_tag = SOV
-					}
-					NOT = {
-						has_game_rule = {
-							rule = JFU_pre_sets
-							option = COMPETITIVE_JFU
-						}
-					}
-				}
-				if = {
-					limit = {
-						original_tag = JAP
-					}
-					NOT = {
-						has_game_rule = {
-							rule = JFU_pre_sets
-							option = COMPETITIVE_JFU
-						}
-					}
-				}
-			}
-			
-			cancel_if_invalid = no
-		}
 
 		free_trade = {
 

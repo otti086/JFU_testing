@@ -1376,3 +1376,13 @@ ENG_fortify_the_empire_modifier = {
 	production_speed_bunker_factor = fte_LFCS
 	production_speed_coastal_bunker_factor = fte_NFCS
 }
+AST_great_depression_modifier = {
+	enable = { always = yes }
+	icon = GFX_idea_EST_exploit_the_banks
+
+	consumer_goods_factor = ASTgd_cgf
+	stability_factor = ASTgd_stab
+	industrial_capacity_factory = ASTgd_FO
+	industrial_capacity_dockyard = ASTgd_DO
+	production_speed_arms_factory_factor = ASTgd_mfcs
+}

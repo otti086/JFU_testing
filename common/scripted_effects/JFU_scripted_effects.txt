@@ -949,6 +949,7 @@ JFU_startup_on_action = {
 		add_equipment_to_stockpile = { type = train_equipment_1 amount = 50 }
 		add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 }
 		add_dynamic_modifier = { modifier = pacific_war_allies }
+		add_dynamic_modifier = { modifier = AST_great_depression_modifier}
 	}
 	NZL = {
 		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 1000 }
@@ -4235,6 +4236,13 @@ dynamic_modifer_start_up = {
 	ENG = {
 		set_variable = { var = fte_LFCS value = 0.05 }
 		set_variable = { var = fte_NFCS value = 0.05 }		
+	}
+	AST = {
+		set_variable = { var = ASTgd_cgf value = 0.4 }
+		set_variable = { var = ASTgd_stab value = -0.1 }
+		set_variable = { var = ASTgd_FO value = -0.15 }	
+		set_variable = { var = ASTgd_DO value = -0.15 }	
+		set_variable = { var = ASTgd_mfcs value = 0 }	
 	}
 }
 give_SOV_armor_research_bonuses = { #this effect is run for the Soviets!

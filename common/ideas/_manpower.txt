@@ -1,5 +1,5 @@
 ideas = {
-
+	
 	mobilization_laws = {
 		law = yes
 		use_list_view = yes
@@ -306,9 +306,5 @@ ideas = {
 
 			cancel_if_invalid = no
 		}
-
-		### Swiss Citizen Militia ### 
 	}
-
-
 }

@@ -123,7 +123,6 @@ ideas = {
 			}
 			
 			modifier = {
-				drift_defence_factor = 0.5
 				operative_slot = 4
 			}			
 		}
@@ -436,50 +435,6 @@ ideas = {
 			picture = generic_exploit_mines
 
 			removal_cost = -1
-		}
-
-		ENG_fortify_the_empire_1 = {
-
-			name = ENG_fortify_the_empire
-
-			picture = generic_fortify_the_borders
-		
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-
-			modifier = {
-				production_speed_bunker_factor = 0.05
-				production_speed_coastal_bunker_factor = 0.05
-			}
-		}
-
-		ENG_fortify_the_empire_2 = {
-
-			name = ENG_fortify_the_empire
-
-			picture = generic_fortify_the_borders
-		
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-
-			modifier = {
-				production_speed_bunker_factor = 0.1
-				production_speed_coastal_bunker_factor = 0.1
-			}
 		}
 
 		ENG_british_commonwealth_air_training_plan = {
