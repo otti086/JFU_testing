@@ -834,7 +834,7 @@ JFU_startup_on_action = {
 	}
 	SPR = {	country_lock_all_division_template = yes country_event = { id = lar_spain.2 days = 230 } activate_mission = days_till_civil_war }
 	SWE = { pacifc_war_variables = yes }
-	SWE = { dynamic_modifer_start_up = yes }
+	SWE = { dynamic_modifier_start_up = yes }
 	ENG = {
 		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 30000 }
 		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 20000 }
@@ -1014,13 +1014,14 @@ JFU_comp_startup_effect = {
 #	AST = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
 #	BRA = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
 #	NZL = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
-	2 = {
-		add_extra_state_shared_building_slots = 2
-		add_building_construction = {
-			type = industrial_complex
-			level = 2
-			instant_build = yes
+	if = {
+		limit = {
+			IRE = { is_ai = yes }
 		}
+		IRE = {
+			add_ideas = ai_limiter
+		}
+
 	}
 }
 JFU_scripted_events_effect = {
@@ -3855,24 +3856,6 @@ BRA_setup_colonized_countries_to_liberate_array = {
 	}
 }
 
-
-BRA_communist_cw_transfer_chars = {
-		BRA = {
-			BRA_eurico_gaspar_dutra = {
-				set_character_flag = BRA_loyal_to_gov_char
-			}
-			BRA_mascarenhas_de_morais = {
-				set_character_flag = BRA_loyal_to_gov_char
-			}
-			every_character = {
-				limit = {
-					has_character_flag = BRA_loyal_to_gov_char
-				}
-				set_nationality = PREV.PREV
-			}
-		}
-}
-
 BRA_mio_military_factory = {
 	random_core_state = {
 		limit = {
@@ -4224,7 +4207,7 @@ SOV_allied_ll_tanks = {
 	}
 }
 
-dynamic_modifer_start_up = {
+dynamic_modifier_start_up = {
 	MAN = {
 		set_variable = { var = MLL_stability value = -0.5 }
 		set_variable = { var = MLL_warsupport value = -0.5 }

@@ -1050,7 +1050,7 @@
  
  
  #FOCI
- SOV_Great_Patriotic_War:0 "The Great Patriotic War"
+ SOV_Great_Patriotic_War:0 "§RThe Great Patriotic War§!"
  SOV_order_270_focus:0 "Order 270"
  SOV_first_winter_offensive:0 "First counter offensive"
  SOV_order_227_focus:0 "Order 227"
@@ -1217,7 +1217,7 @@
 
  GER_second_vienna_focus_tt:0 "This focus is automatically completed by an event which triggers in §YAugust 1940§!."
  GER_ussr_war_goal_focus_tt:0 "This focus is automatically completed in case of war with the §YSoviet Union§!."
- GER_danzig_or_war_tt:0 "With the claim of Danzig, this focus justifies a war against §YPoland§!."
+ GER_danzig_or_war_tt:0 "With the claim on Danzig, this focus justifies a war against §YPoland§!"
  GER_around_maginot_tt:0 "This focus is automatically completed in case of war with §YBelgium, Nehterlands and Luxemburg§!."
  GER_wesserubung_1_tt:0 "This focus is automatically completed in case of war with §YDenmark§!."
  GER_wesserubung_2_tt:0 "This focus is automatically completed in case of war with §YNorway§!."
@@ -1262,14 +1262,14 @@
  endsieg_comintern_tt:0 "Add '§YSteiners Counterattack§!' which grants (§Y@SOVSoviet Union§!) Attack bonus against countries §G+15%§!, (§Y@SOVSoviet Union§!) Defense bonus against countries §G+10%§!, (§YAll Allied Nations§!) Attack bonus against countries §R-15%§!, (§YAll Allied Nations§!) Defense bonus against countries §R-10%§!) for 180 day(s)." 
  mefo_reduction_large_tt:0 "We will use aquired funds to reduce the MEFO Bills payments by §G-0.20§! Political Power"
  mefo_reduction_small_tt:0 "We will use aquired funds to reduce the MEFO Bills payments by §G-0.10§! Political Power"
-
-
+ 
  MIO_range_trait:0 "Unlocks a special Range trait for the Light Aircraft and Naval Aircraft Designer"
  MIO_agility_trait:0 "Unlocks a special Agility trait for the Light Aircraft and Naval Aircraft Designer"
  jap_china_tt:0 "§RMay declare war on China via decision§!"
  
  MLL_dynamic_modifer_tt:0 "Modify §YLow Legitimacy§! by\nStabilty §G+10.00%§!\nWar Support §G+10.00%§!"
  MLL_remove_tt:0 "Remove §YLow Legitmiacy§! which granted \nStabilty §R-20.00%§!\nWar Support §R-20.00%§!"
+ 
  ALLIES_army_eng:0 "§HFourteen§! §Rveteran§! ranger divisions will be assembled in §HLondon§! under our command."
  ALLIES_marines_eng:0 "§HEight§! §Rveteran§! marine divisions will be assembled in §HLondon§! under our command."
  desert_tactics_allies_effect:0 "Enables §HDesert Training§!\n§HTanks and Infantry\n    Desert§!\n      Defense: §G+10%§!"

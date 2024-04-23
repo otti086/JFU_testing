@@ -5724,7 +5724,6 @@ focus_tree = {
 				}
 				has_completed_focus = ITA_capo_supremo
 			}
-			is_subject = no
 		}
 
 		search_filters = {FOCUS_FILTER_STABILITY}
@@ -5771,10 +5770,6 @@ focus_tree = {
 		relative_position_id = ITA_triumph_in_africa_bba
 		cost = 10
 		available = {
-			has_country_leader = {
-				character = ITA_benito_mussolini
-				ruling_only = yes
-			}
 		}
 
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_BALANCE_OF_POWER}

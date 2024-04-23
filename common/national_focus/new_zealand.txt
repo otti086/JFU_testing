@@ -208,7 +208,6 @@
 		}
 
 		available = {
-			controls_state = 284 
 		}
 
 		bypass = {
@@ -983,8 +982,6 @@
 		}
 
 		available = {
-			controls_state = 284
-			controls_state = 723
 		}
 
 		bypass = {

@@ -1844,174 +1844,6 @@ country_event = { #Bad mission
 	}
 }
 
-#Brazil wants MIO
-country_event = {
-	id = JUNO_brazil_events.160
-	title = JUNO_brazil_events.160.t
-	desc = JUNO_brazil_events.160.desc
-	picture = GFX_report_event_generic_factory
-	is_triggered_only = yes
-
-	# yes
-	option = {
-		name = JUNO_brazil_events.160.a
-		ai_chance = {
-			base = 5
-			modifier = {
-				factor = 10
-				has_opinion = {
-					target = FROM
-					value > 50
-				}
-			}
-			modifier = {
-				factor = 0
-				has_opinion = {
-					target = FROM
-					value < 0
-				}
-			}
-			modifier = {
-				factor = 5
-				is_in_faction_with = FROM
-			}
-		}
-		FROM = {
-			country_event = {
-				id = JUNO_brazil_events.161
-				hours = 1
-			}
-		}	
-		add_offsite_building = { type = industrial_complex level = 1 }
-		effect_tooltip = {
-			IF = {
-				limit = {
-					original_tag = USA
-				}
-				custom_effect_tooltip = JUNO_brazil_events_160_tt
-				show_mio_tooltip = USA_marmon_herrington_organization
-				show_mio_tooltip = USA_north_american_aviation_organization
-				show_mio_tooltip = USA_newport_news_shipbuilding_organization
-			}
-			IF = {
-				limit = {
-					original_tag = ENG
-				}
-				custom_effect_tooltip = JUNO_brazil_events_160_tt
-				show_mio_tooltip = ENG_vauxhall_organization
-				show_mio_tooltip = ENG_cammell_laird_organization
-				show_mio_tooltip = ENG_avro_organization
-			}
-			IF = {
-				limit = {
-					original_tag = FRA
-				}
-				custom_effect_tooltip = JUNO_brazil_events_160_tt
-				show_mio_tooltip = FRA_acf_organization
-				show_mio_tooltip = FRA_bloch_organization
-				show_mio_tooltip = FRA_renault_organization
-			}
-			IF = {
-				limit = {
-					original_tag = SWE
-				}
-				custom_effect_tooltip = JUNO_brazil_events_160_tt
-				show_mio_tooltip = SWE_saab_organization			
-				show_mio_tooltip = SWE_landsverk_organization
-				show_mio_tooltip = SWE_gotaverken_organization
-				show_mio_tooltip = SWE_scania_vabis_organization
-			}
-		}
-	}
-	# no
-	option = {
-		name = JUNO_brazil_events.160.b
-		ai_chance = {
-			base = 1
-		}
-		FROM = {
-			country_event = {
-				id = JUNO_brazil_events.162
-				hours = 1
-			}
-		}		
-	}
-}
-
-country_event = {
-	id = JUNO_brazil_events.161
-	title = JUNO_brazil_events.161.t
-	desc = JUNO_brazil_events.161.desc
-	picture = GFX_report_event_generic_factory
-	is_triggered_only = yes
-
-	# army
-	option = {
-		name = JUNO_brazil_events.161.a
-		ai_chance = {
-			base = 1
-			modifier = {
-				factor = 5
-				has_completed_focus = BRA_foreign_advisors
-			}
-		}
-		IF = {
-			limit = {
-				FROM = {
-					original_tag = USA
-				}
-			}
-		}
-		clr_country_flag = BRA_invite_company_in_progress
-		BRA_mio_military_factory = yes
-		IF = {
-			limit = {
-				FROM = {
-					original_tag = USA
-				}
-			}
-			FROM = {
-				set_country_flag = BRA_already_sent_mio
-			}
-			set_country_flag = has_marmon_herrington_mio_flag
-			show_mio_tooltip = USA_marmon_herrington_organization
-			mio:USA_marmon_herrington_organization = {
-				add_mio_size = 2
-			}
-		}
-		IF = {
-			limit = {
-				FROM = {
-					original_tag = ENG
-				}
-			}
-			FROM = {
-				set_country_flag = BRA_already_sent_mio
-			}
-			set_country_flag = has_vauxhall_mio_flag
-			show_mio_tooltip = ENG_vauxhall_organization
-			mio:ENG_vauxhall_organization = {
-				add_mio_size = 2
-			}
-		}
-		IF = {
-			limit = {
-				FROM = {
-					original_tag = FRA
-				}
-			}
-			FROM = {
-				set_country_flag = BRA_already_sent_mio
-			}
-			set_country_flag = has_renault_mio_flag
-			show_mio_tooltip = FRA_renault_organization
-			mio:FRA_renault_organization = {
-				add_mio_size = 2
-			}
-		}
-	}
-}
-
 country_event = {
 	id = JUNO_brazil_events.162
 	title = JUNO_brazil_events.162.t
@@ -2049,8 +1881,14 @@ country_event = {
 		ai_chance = {
 			base = 1
 		}
-		BRA_mio_military_factory = yes
-		BRA_mio_military_factory = yes
+		500 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}			
+		}
 		add_war_support = 0.15
 		add_stability = -0.05
 	}

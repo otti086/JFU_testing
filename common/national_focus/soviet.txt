@@ -3076,7 +3076,7 @@ focus_tree = {
 		y = 1
 		available = {
 			surrender_progress > 0.35
-			has_completed_focus = SOV_arctic_lend_lease
+			has_completed_focus = SOV_murmansk_lend_lease
 		}
 
 		relative_position_id = SOV_american_lend_lease
