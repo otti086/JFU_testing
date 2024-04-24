@@ -1,5 +1,81 @@
 ideas = {
 
+	hidden_ideas = {
+		GER_Barb_supply = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = generic_acquire_tanks
+
+			modifier = { 
+				supply_node_range = 0.1 
+			}			
+		}
+
+		DOUBLE_SF_CAP = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				special_forces_min = 200
+			}
+		}
+		QUADRUPLE_SF_CAP = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				special_forces_min = 600
+			}
+		}
+		NO_SF_CAP = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				special_forces_min = 8000
+			}
+		}
+	}
+
+
+
+
+
 	country = {
 		
 		volunteers_3 = {
@@ -119,23 +195,6 @@ ideas = {
 				no_supply_grace = 72
 			}
 
-		}
-		GER_Barb_supply = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = fascism
-			}
-
-			removal_cost = -1
-
-			picture = generic_acquire_tanks
-
-			modifier = { 
-				supply_node_range = 0.1 
-			}			
 		}
 		axis_fall_blau = {
 			allowed = {
@@ -367,57 +426,6 @@ ideas = {
 			}
 		}
 
-		DOUBLE_SF_CAP = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_production_bonus
-
-			modifier = {
-				special_forces_min = 200
-			}
-		}
-		QUADRUPLE_SF_CAP = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_production_bonus
-
-			modifier = {
-				special_forces_min = 600
-			}
-		}
-		NO_SF_CAP = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_production_bonus
-
-			modifier = {
-				special_forces_min = 8000
-			}
-		}
 		GER_rubber_balance = { 
 		
 				allowed = {

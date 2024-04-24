@@ -2643,7 +2643,7 @@ focus_tree = {
 		x = 2
 		y = 2
 		relative_position_id = SOV_desperate_measures
-		cost = 5
+		cost = 1
 
 		available = {
 			219 = {
@@ -2879,43 +2879,6 @@ focus_tree = {
 		cost = 5
 
 		available = {
-			OR = {
-				195 = { #LENINGRAD
-					is_controlled_by = ROOT
-					any_neighbor_state = {
-						is_owned_by = ROOT
-						NOT = { is_fully_controlled_by = ROOT }
-					}
-				}
-				219 = { #MOSCOW
-					is_controlled_by = ROOT
-					any_neighbor_state = {
-						is_owned_by = ROOT
-						NOT = { is_fully_controlled_by = ROOT }
-					}
-				}
-				217 = { #STALINGRAD
-					is_controlled_by = ROOT
-					any_neighbor_state = {
-						is_owned_by = ROOT
-						NOT = { is_fully_controlled_by = ROOT }
-					}
-				}
-				137 = { #SEVASTOPOL
-					is_controlled_by = ROOT
-					any_neighbor_state = {
-						is_owned_by = ROOT
-						NOT = { is_fully_controlled_by = ROOT }
-					}
-				}
-				202 = { #Kiev
-					is_controlled_by = ROOT
-					any_neighbor_state = {
-						is_owned_by = ROOT
-						NOT = { is_fully_controlled_by = ROOT }
-					}
-				}
-			}
 		}
 		
 		search_filters = {}

@@ -690,6 +690,9 @@ political_actions1 = {
 						type = annex_everything
 					}	 
 				} 
+				SOV = {
+					complete_national_focus = SOV_Great_Patriotic_War
+				}	
 			}
 		}
 	}

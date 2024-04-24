@@ -213,10 +213,9 @@ sub_units = {
 			category_army
 		}
 		
-		group = support
+		group = armor
 		
 		type = {
-			support
 			armor
 			anti_air
 		}

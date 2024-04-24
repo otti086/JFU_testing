@@ -1352,7 +1352,7 @@ xor = { marines_expeditionary_support }
 		xp_research_type = army
 		xp_unlock_cost = 60
 
-		category_rangers = {
+		rangers = {
 			defense = 0.10
 		}	
 

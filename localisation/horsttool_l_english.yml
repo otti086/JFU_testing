@@ -1204,7 +1204,10 @@
  SOV_Bessarabia.tt:0 "We will force Romania to cede us Bessarabia" 
  SOV_arctic_ll_tt:0 "§Y3.00K§! units of §Yallied Tanks§! and §Y600§! units of §Yallied Tank Destroyers§! is added to the national stockpile"
  SOV_north_sea_ll_tt:0 "§Y2.00K§! units of §Yallied Tanks§! and §Y400§! units of §Yallied Tank Destroyers§! is added to the national stockpile"
- 
+ SOV_order_227_trigger_tt:0 "Doesn't has Order 270 active"
+
+
+
  UK_imperial_conference_tt:0 " Add §YImperial Conference Economy Agreements§!, which grants (Factory Output §G+15.00%§!, Dockyard Output §G+15.00%§!).\n Add §YImperial Conference Economy Agreements§! which grants (§YCivilian Factory§! construction Speed §G+15.00%§!, §YMilitary Factory§! construction speed §G+15.00%§!, §!Dockyard§! construction Speed §G+15.00%§!)\n Gain Base War Support §G+10.00%§!\n(@AST§YAustralia, @CANDominion of Canada, @RAJBritish Raj,\n @NZLNew Zealand and @SAFSouth Africa§!):\n    Add §YImperial Conference Defense Agreements§! which grants (Factory Output §G+10.00%§!, Dockyard Output §G+10.00%§!).\n    Add §YImperial Conference Economy Agreements§! which grants (§YCivilian Factory§! construction Speed §G+10.00%§!, §YMilitary Factory§! construction speed §G+10.00%§!, §!Dockyard§! construction Speed §G+10.00%§!)\n   Gain Base War Support §G+10.00%§! "
  ENG_fortify_the_empire_big_tt:0 "Modify §YFortify the Empire§! by\n §YLand Fort§! construction speed §G+10.00%§!\n §YCoastal Fort§! construction speed §G+10.00%§!"
  ENG_fortify_the_empire_small_tt:0 "Modify §YFortify the Empire§! by\n §YLand Fort§! construction speed §G+5.00%§!\n §YCoastal Fort§! construction speed §G+5.00%§!"
@@ -1450,13 +1453,21 @@
  USA_light_aircraft_organization:0 "Light Aircraft Designer"
  JAP_light_aircraft_organization:0 "Light Aircraft Designer"
  SOV_CAS_organization:0 "Soviet Cas Designer"
- JAP_CAS_organization:0 "Soviet Cas Designer"
+ JAP_CAS_organization:0 "Japanese Cas Designer"
+
+
 
 
  #Mio traits
 
  JAP_agility_focus_trait:0 "Agility Focus"
  JAP_range_focus_trait:0 "Range Focus"
+
+ USA_mio_trait_medium_tank_organization:0 "Medium Tank Designer"
+ generic_mio_initial_trait_sov_cas_designer:0 "CAS Aircraft Designer"
+
+
+
 
 
  attache_idea_tt:0 "gains the attache modifiers as long as the recieving country is at war"

@@ -215,12 +215,11 @@ sub_units = {
 		active = yes
 		
 		type = {
-			support
 			armor
 			artillery
 		}
 		
-		group = support
+		group = armor
 		
 		categories = {
 			category_all_armor

@@ -251,10 +251,10 @@
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			add_doctrine_cost_reduction = {
-				name = JAP_strike_south_doctrine
-				cost_reduction = 0.5
+				name = land_doc_bonus
+				cost_reduction = 0.75
 				uses = 2
-				category = naval_doctrine	
+				category = special_forces_doctrine
 			}
 		}
 	}
@@ -292,6 +292,7 @@
 				uses = 1
 				category = tp_tech
 			}
+
 		}
 	}
 	focus = {
@@ -341,11 +342,13 @@
 				}
 			}
 			declare_war_on_all_allies = yes
-			if = { limit = { country_exists = MAN }	MAN = { add_to_war = { targeted_alliance = JAP enemy = ENG } } }
-			if = { limit = { country_exists = SIA }	SIA = { add_to_war = { targeted_alliance = JAP enemy = ENG } } }
-			add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 180 }
-			MAN = { add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 180 } }
-			SIA = { add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 180 } }
+			hidden_effect = {
+				if = { limit = { country_exists = MAN }	MAN = { add_to_war = { targeted_alliance = JAP enemy = ENG } } }
+				if = { limit = { country_exists = SIA }	SIA = { add_to_war = { targeted_alliance = JAP enemy = ENG } } }
+				add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 180 }
+				MAN = { add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 180 } }
+				SIA = { add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 180 } }
+			}
 			hidden_effect = {
 				every_country = {
 					limit = {
@@ -426,8 +429,11 @@
 				target = SOV
     			type = annex_everything
 			}
-			if = { limit = { country_exists = MAN }	MAN = { add_to_war = { targeted_alliance = JAP enemy = SOV } } }
-			if = { limit = { country_exists = SIA }	SIA = { add_to_war = { targeted_alliance = JAP enemy = SOV } } }
+			hidden_effect = {
+				if = { limit = { country_exists = MAN }	MAN = { add_to_war = { targeted_alliance = JAP enemy = SOV } } }
+				if = { limit = { country_exists = SIA }	SIA = { add_to_war = { targeted_alliance = JAP enemy = SOV } } }
+			}
+			
 		}
 	}
 	focus = {
@@ -826,6 +832,12 @@
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
 			add_ideas = JAP_supremacy_of_technology
 		}
 	}
@@ -1377,7 +1389,7 @@
 			}
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.5
+				cost_reduction = 0.75
 				uses = 2
 				category = special_forces_doctrine
 			}

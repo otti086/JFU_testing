@@ -4508,11 +4508,11 @@ SOV_great_patriotic_war = {
 		}
 		fire_only_once = yes
 		available = {
+			has_completed_focus = SOV_desperate_measures
 			surrender_progress > 0.15
 		}
 
 		visible = {
-			has_completed_focus = SOV_desperate_measures
 			any_enemy_country = { SOV_is_major_not_original_sov = yes }
 			NOT = { has_country_flag = SOV_order_227_flag }
 		}
@@ -4566,7 +4566,7 @@ SOV_great_patriotic_war = {
 
 		available = {
 			has_completed_focus = SOV_lessons_of_war
-
+			custom_trigger_tooltip = { tooltip = SOV_order_227_trigger_tt NOT = { has_country_flag = SOV_order_270_flag } } 
 		}
 
 		ai_hint_pp_cost = 50
@@ -4578,10 +4578,10 @@ SOV_great_patriotic_war = {
 
 		fire_only_once = yes
 		visible = {
-			NOT = { has_country_flag = SOV_order_270_flag }
+
 		}
 
-		days_remove = 180
+		days_remove = 360
 
 
 		modifier = {
@@ -5195,40 +5195,14 @@ SOV_great_patriotic_war = {
 		activation = { always = no }
 
 		timeout_effect = {
-			SOV_relocate_mil =yes		
+			SOV_relocate_mil = yes		
 			SOV_relocate_mil = yes
 			SOV_relocate_mil = yes		
 			SOV_relocate_mil = yes
 			SOV_relocate_civ = yes		
 			SOV_relocate_civ = yes				
-			#SOV_relocate_civ_into_two_mills = yes
-			#SOV_relocate_civ_into_two_mills = yes
 			SOV_relocate_civ_moscow = yes
 			SOV_relocate_mil_moscow = yes
-			#if = {
-			#	limit = {
-			#		check_variable = { relocatedciv = 0 }
-			#	}
-			#	else_if = {
-			#		limit = { check_variable = { relocatedciv = 1 } 
-			#		}
-			#		SOV_relocate_mil = yes
-			#	}
-			#}	
-			#if = {
-			#	limit = {
-			#		check_variable = { relocatedmil = 0 }
-			#		}
-			#	SOV_relocate_civ = yes		
-			#	SOV_relocate_civ = yes
-			#	else_if = { 
-			#		limit = { check_variable = { relocatedmil = 1 }
-			#		}
-			#	SOV_relocate_civ=yes
-			#	}
-			#}
-			#set_variable = { reloceatedmil = 0 }
-			#set_variable = { reloceatedciv = 0 }
 			activate_mission = SOV_relocation2
 		}
 
@@ -5251,7 +5225,6 @@ SOV_great_patriotic_war = {
 			SOV_relocate_mil = yes
 			SOV_relocate_mil = yes		
 			SOV_relocate_mil = yes	
-			#SOV_relocate_civ_into_two_mills = yes
 			SOV_relocate_civ = yes
 			SOV_relocate_civ = yes		
 			SOV_relocate_civ = yes
