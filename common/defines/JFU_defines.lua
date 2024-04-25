@@ -63,7 +63,7 @@ NDefines.NResistance.NRESISTANCE_TARGET_MODIFIER_OCCUPIED_CAPITULATED = 5.0 -- r
 NDefines.NResistance.NRESISTANCE_TARGET_MODIFIER_OCCUPIED_IS_EXILE_MIN = 1.0   -- min & max resistance target modifier resistance target modifier for exile countries. interpolated using legitimacy
 NDefines.NResistance.NRESISTANCE_TARGET_MODIFIER_OCCUPIED_IS_EXILE_MAX = 10.0
 
-NDefines.NBuildings.MAX_SHARED_SLOTS = 50
+NDefines.NBuildings.MAX_SHARED_SLOTS = 100
 NDefines.NBuildings.OWNER_CHANGE_EXTRA_SHARED_SLOTS_FACTOR = 1.0
 NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 100
 NDefines.NBuildings.NAVALBASE_REPAIR_MULT = 0.5 -- vanilla 0.5 Each level of navalbase building repairs X strength and can repair as many ships as its level
