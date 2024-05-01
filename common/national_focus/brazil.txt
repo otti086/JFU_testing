@@ -538,7 +538,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			set_cosmetic_tag = BRA_united_states_of_brazil_cos_tag
 			add_ideas = BRA_us_of_brazil
 		}
 	}
