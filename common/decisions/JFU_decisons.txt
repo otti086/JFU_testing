@@ -1457,7 +1457,29 @@ JFU_decisions = {
 	#	╚════██║██║   ██║╚██╗ ██╔╝
 	#	███████║╚██████╔╝ ╚████╔╝ 
 	#	╚══════╝ ╚═════╝   ╚═══╝  
+	SOV_spawn = {
+		icon = GFX_decision_generic_army_support
 
+		allowed = {
+			original_tag = SOV
+		}
+
+		available = { 
+			has_manpower > 400000 
+			POL = { exists = no }
+			date < 1941.1.1
+		}
+
+		fire_only_once = yes
+
+		complete_effect = { 
+			custom_effect_tooltip = "We will deploy 400 empty 2w divisions which can be trained to our desired template." 
+			hidden_effect = { 
+				add_manpower = -400000 
+				load_oob = "SOV_Belarus_Deployment"
+			} 
+		}
+	}
 	"Small Barb" = {
 		icon = generic_air
 		allowed = { tag = SOV }

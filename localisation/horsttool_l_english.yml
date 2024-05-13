@@ -1212,6 +1212,7 @@
  ENG_fortify_the_empire_big_tt:0 "Modify §YFortify the Empire§! by\n §YLand Fort§! construction speed §G+10.00%§!\n §YCoastal Fort§! construction speed §G+10.00%§!"
  ENG_fortify_the_empire_small_tt:0 "Modify §YFortify the Empire§! by\n §YLand Fort§! construction speed §G+5.00%§!\n §YCoastal Fort§! construction speed §G+5.00%§!"
 
+
  AST_great_despression_NSA_tt:0 "Modify §YAustralian Economy§! by \nConsumer Goods Factories factor §Y-10.0%§! \nStability: §G+10.00%§! \nFactory Output §G+10.00%§! \nDockyard Output §G+10.00%§!"
  AST_great_despression_CCC_tt:0 "Modify §YAustralian Economy§! by \nConsumer Goods Factories factor §Y-20.0%§! \nFactory Output §G+5.00%§! \nDockyard Output §G+5.00%§!"
  AST_great_despression_INV_tt:0 "Modify §YAustralian Economy§! by \nConsumer Goods Factories factor §Y-15.0%§! \nStability: §G+5.00%§! \nFactory Output §G+7.00%§! \nDockyard Output §G+7.00%§!"
@@ -1311,6 +1312,7 @@
  supremacy_at_sea:0 "Supremacy at Sea"
  wolfpack_tactics_idea:0 "Wolfpack Tactics"
  ENG_con_int_dynamic:0 "Continental Intervention"
+ ENG_ireland_rebalance:0 "Ireland Rebalance"
  ALLIES_sov_def_idea:0 "Defense in Depth"
  ALLIES_sov_procure:0 "Soviet Military-Industrial Planning" 
  ALLIES_preparations_idea:0 "Military Preparations"

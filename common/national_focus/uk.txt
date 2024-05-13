@@ -2269,7 +2269,7 @@ focus_tree = {
 	focus = {
 		id = ENG_military_training_act
 		available = {
-			threat > 0.5
+			has_war = yes
 		}
 
 		available_if_capitulated = yes
@@ -2285,6 +2285,7 @@ focus_tree = {
 		}	
 		completion_reward = {
 			remove_ideas = ENG_the_war_to_end_all_wars
+			add_ideas = { ENG_ireland_rebalance }
 		}
 	}
 	focus = {

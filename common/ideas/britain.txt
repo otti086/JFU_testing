@@ -1,5 +1,21 @@
 ideas = {
 
+	hidden_ideas = {
+		ENG_ireland_rebalance = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = { 
+				global_building_slots_factor = 0.1
+			}
+		}
+	}
+
 	country = {
 		george_v = {
 			
@@ -143,7 +159,6 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = -0.15
-				global_building_slots_factor = 0.1
 			}
 		}
 		
