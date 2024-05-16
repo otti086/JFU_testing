@@ -1212,7 +1212,9 @@
  ENG_fortify_the_empire_big_tt:0 "Modify §YFortify the Empire§! by\n §YLand Fort§! construction speed §G+10.00%§!\n §YCoastal Fort§! construction speed §G+10.00%§!"
  ENG_fortify_the_empire_small_tt:0 "Modify §YFortify the Empire§! by\n §YLand Fort§! construction speed §G+5.00%§!\n §YCoastal Fort§! construction speed §G+5.00%§!"
 
-
+ RAJ_agrarian_society_small_up_tt:0 "Modify §YAgrarian Society§! by \nRecruitable Population factor §G+2%§!"
+ RAJ_agrarian_society_medium_up_tt:0 "Modify §YAgrarian Society§! by \nRecruitable Population factor §G+5%§!"
+ RAJ_agrarian_society_big_up_tt:0 "Modify §YAgrarian Society§! by \nRecruitable Population factor §G+10%§!"
  AST_great_despression_NSA_tt:0 "Modify §YAustralian Economy§! by \nConsumer Goods Factories factor §Y-10.0%§! \nStability: §G+10.00%§! \nFactory Output §G+10.00%§! \nDockyard Output §G+10.00%§!"
  AST_great_despression_CCC_tt:0 "Modify §YAustralian Economy§! by \nConsumer Goods Factories factor §Y-20.0%§! \nFactory Output §G+5.00%§! \nDockyard Output §G+5.00%§!"
  AST_great_despression_INV_tt:0 "Modify §YAustralian Economy§! by \nConsumer Goods Factories factor §Y-15.0%§! \nStability: §G+5.00%§! \nFactory Output §G+7.00%§! \nDockyard Output §G+7.00%§!"

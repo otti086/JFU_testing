@@ -340,7 +340,6 @@ focus_tree = {
 		}
 
 		available = {
-			has_full_control_of_state = 46
 		}
 
 		bypass = {

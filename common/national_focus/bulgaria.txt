@@ -502,7 +502,7 @@ focus_tree = {
 		cost = 5
 
 		bypass = {
-				NOT = { has_idea = BUL_army_restrictions }
+				NOT = { has_idea = BUL_army_restrictions_aat }
 		}
 
 		available = {
@@ -526,7 +526,7 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			NOT = { has_idea = BUL_army_restrictions }
+			NOT = { has_idea = BUL_army_restrictions_aat }
 		}
 		
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -741,10 +741,6 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			controls_state = 48
-			controls_state = 212
-			controls_state = 211
-			controls_state = 801
 		}
 		
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY}
