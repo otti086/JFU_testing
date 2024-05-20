@@ -572,14 +572,13 @@
 		x = 4
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
-			285 = { is_controlled_by = AST }
 		}
 		
 		bypass = {
@@ -946,7 +945,6 @@
 		}
 
 		available = {
-			controls_state = 520
 		}
 		
 		bypass = {
@@ -994,7 +992,8 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			add_ideas = AST_australian_arms_production
+			custom_effect_tooltip = AST_great_despression_AAP_tt
+			add_to_variable = { var = ASTgd_ccctm value = -0.20 }
 		}
 	}
 
@@ -1053,10 +1052,7 @@
 		}
 
 		available = {
-			OR = {
-				threat > 0.20
-				has_war = yes
-			}
+			threat > 0.20
 		}
 
 		cancel_if_invalid = no
@@ -1571,7 +1567,6 @@
 		}
 
 		available = {
-			is_subject = yes
 		}
 		
 		bypass = {

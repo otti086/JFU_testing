@@ -638,17 +638,25 @@ focus_tree = {
 		icon = GFX_AMERICA_GOAL_AMERICAN_INDUSTRY
 		prerequisite = { focus = USA_arsenal_of_democracy }
 		available = {
-			OR = {
-				has_war_support > 0.3
-				if = {
-					limit = {
+			if = {
+				limit = {
+					NOT = {
 						has_game_rule = { 
 							rule = JFU_CHINA_WAR 
 							option = NO_CHINA_WAR 
-						} 
+						}
 					}
-					date > 1938.01.01
 				}
+				has_war_support > 0.3
+			}
+			if = {
+				limit = {
+					has_game_rule = { 
+						rule = JFU_CHINA_WAR 
+						option = NO_CHINA_WAR 
+					} 
+				}
+				date > 1938.01.01
 			}
 		}
 		continue_if_invalid = yes

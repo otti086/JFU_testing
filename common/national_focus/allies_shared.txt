@@ -221,7 +221,7 @@ shared_focus = {
 	icon = GFX_focus_generic_military_mission 
 	x = 3
 	y = 1
-	available = { date > 1937.01.01 }		
+	available = { has_global_flag = spanish_civil_war }		
 	available_if_capitulated = yes
 	prerequisite = { focus = ALLIES_commonwealth_of_nations }
 	relative_position_id = ALLIES_commonwealth_of_nations
@@ -237,7 +237,7 @@ shared_focus = {
 	icon = GFX_goal_generic_military_deal 
 	x = 8
 	y = 1	
-	available = { date > 1937.01.01 }	
+	available = { has_global_flag = spanish_civil_war }	
 	relative_position_id = ALLIES_commonwealth_of_nations
 	prerequisite = { focus = ALLIES_commonwealth_of_nations }
 	mutually_exclusive = { focus = ALLIES_joint_training_program }

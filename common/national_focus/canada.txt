@@ -195,7 +195,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			add_ideas = CAN_war_bonds_1
+			hidden_effect = {
+				add_to_variable = { var = CANgd_cgf value = -0.1 }
+			}
+			custom_effect_tooltip = CAN_great_despression_wb_tt
 		}
 	}
 
@@ -260,23 +263,19 @@ focus_tree = {
 
 		completion_reward = {
 			276 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-				set_state_flag = CAN_department_of_munitions_and_supply_AF1
-			}
-			468 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
-			add_ideas = CAN_national_resources_mobilization_act
+			hidden_effect = {
+				add_to_variable = { var = CANgd_stab value = 0.05 }
+				add_to_variable = { var = CANgd_FO value = 0.02 }
+				add_to_variable = { var = CANgd_DO value = 0.02 }
+			}
+			custom_effect_tooltip = CAN_great_despression_dms_tt
 		}
 	}
 
@@ -308,7 +307,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			add_ideas = CAN_wartime_prices_and_trade_board
+			hidden_effect = {
+				add_to_variable = { var = CANgd_lbsf value = 0.1 }
+				add_to_variable = { var = CANgd_me value = -0.05 }
+			}
+			custom_effect_tooltip = CAN_great_despression_wpatb_tt
 		}
 	}
 
@@ -340,7 +343,13 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			add_ideas = CAN_bits_and_pieces_program
+			hidden_effect = {
+				add_to_variable = { var = CANgd_peg value = 0.05 }
+				add_to_variable = { var = CANgd_peb value = 0.05 }
+				add_to_variable = { var = CANgd_FO value = 0.03 }
+				add_to_variable = { var = CANgd_DO value = 0.03 }
+			}
+			custom_effect_tooltip = CAN_great_despression_bapp_tt			
 		}
 	}
 
@@ -378,8 +387,7 @@ focus_tree = {
 	focus = {
 		id = CAN_fund_the_national_research_council
 		icon = GFX_focus_research
-		prerequisite = { focus = CAN_war_bonds }
-		prerequisite = { focus = CAN_crown_corporations}
+		prerequisite = { focus = CAN_war_bonds  focus = CAN_crown_corporations }
 		x = -1
 		y = 1
 		relative_position_id = CAN_war_bonds
@@ -435,9 +443,29 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = CAN_great_depression_1
-				add_idea = CAN_great_depression_2		
+			hidden_effect = {
+				if = {
+					limit = {
+						681 = { is_controlled_by = CAN }
+					}
+					add_to_variable = { var = CANgd_cgf value = -0.1 }
+					add_to_variable = { var = CANgd_FO value = 0.05 }
+					add_to_variable = { var = CANgd_DO value = 0.05 }
+				}
+				else = {
+					add_to_variable = { var = CANgd_cgf value = -0.25 }
+					add_to_variable = { var = CANgd_FO value = 0.1 }
+					add_to_variable = { var = CANgd_DO value = 0.1 }
+				}
+			}
+			if = {
+				limit = {
+					681 = { is_controlled_by = CAN }
+				}
+				custom_effect_tooltip = CAN_great_despression_cwbSAF_tt
+			}
+			else = {
+				custom_effect_tooltip = CAN_great_despression_cwbCAN_tt
 			}
 		}
 	}
@@ -690,10 +718,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = CAN_war_bonds_1
-				add_idea = CAN_war_bonds_2
+			hidden_effect = {
+				add_to_variable = { var = CANgd_cgf value = -0.1 }
 			}
+			custom_effect_tooltip = CAN_great_despression_wb_tt
 		}
 	}
 
@@ -866,7 +894,30 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			remove_ideas = CAN_great_depression_2
+			hidden_effect = {
+				if = {
+					limit = {
+						681 = { is_controlled_by = CAN }
+					}
+					add_to_variable = { var = CANgd_cgf value = -0.15 }
+					add_to_variable = { var = CANgd_FO value = 0.05 }
+					add_to_variable = { var = CANgd_DO value = 0.05 }
+				}
+				else = {
+					add_to_variable = { var = CANgd_cgf value = -0.25 }
+					add_to_variable = { var = CANgd_FO value = 0.1 }
+					add_to_variable = { var = CANgd_DO value = 0.1 }
+				}
+			}
+			if = {
+				limit = {
+					681 = { is_controlled_by = CAN }
+				}
+				custom_effect_tooltip = CAN_great_despression_wfeSAF_tt
+			}
+			else = {
+				custom_effect_tooltip = CAN_great_despression_wfeCAN_tt
+			}
 			862 = {
 
 				add_extra_state_shared_building_slots = 1

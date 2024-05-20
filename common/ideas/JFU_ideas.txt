@@ -425,24 +425,6 @@ ideas = {
 				army_attack_factor = -0.3
 			}
 		}
-
-		GER_rubber_balance = { 
-		
-				allowed = {
-					always = no
-				}
-
-				allowed_civil_war = {
-					always = yes
-				}
-
-				removal_cost = -1
-				picture = generic_manpower_bonus
-				
-				modifier = { min_export = -0.3 }
-		
-		
-		}
 		peace_training = {
 			allowed = {
 				always = no

@@ -989,7 +989,9 @@ political_actions1 = {
 				add_core_of = CAN
 				}
 				CAN = {
-					add_ideas = SAF_annex_eco
+					add_to_variable = { var = CANgd_cgf value = -0.25 }
+					add_to_variable = { var = CANgd_FO value = 0.10 }
+					add_to_variable = { var = CANgd_DO value = 0.10 }
 				}
 			}
 			annex_country = { target = SAF transfer_troops = yes }

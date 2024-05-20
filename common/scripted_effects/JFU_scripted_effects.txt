@@ -938,6 +938,8 @@ JFU_startup_on_action = {
 		add_equipment_to_stockpile = { type = train_equipment_1 amount = 50 }
 		add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 }
 		add_dynamic_modifier = { modifier = pacific_war_aallies }
+		add_dynamic_modifier = { modifier = CAN_great_depression_modifier }
+		
 	}
 	RAJ = {
 		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 4000 }
@@ -950,7 +952,7 @@ JFU_startup_on_action = {
 		add_equipment_to_stockpile = { type = train_equipment_1 amount = 50 }
 		add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 }
 		add_dynamic_modifier = { modifier = pacific_war_allies }
-		add_dynamic_modifier = { modifier = AST_great_depression_modifier}
+		add_dynamic_modifier = { modifier = AST_great_depression_modifier }
 	}
 	NZL = {
 		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 1000 }
@@ -1241,7 +1243,6 @@ pregrinded_effect = {
 		add_ideas = { NO_GRINDING }
 	}
 	GER = {
-		add_ideas = { pre_grinded_gens_volunteers }
 		GER_gerd_von_rundstedt = { add_skill_level = 1 }
 		GER_gerd_von_rundstedt = { add_logistics = 2 }
 		GER_gerd_von_rundstedt = { add_attack = 1 }
@@ -1326,7 +1327,6 @@ pregrinded_effect = {
 		}	
 	}
 	ITA = {
-		add_ideas = { pre_grinded_gens_volunteers }
 		ITA_giovanni_messe = { add_planning = 3 }
         ITA_giovanni_messe = { add_attack = 4 }
         ITA_giovanni_messe = { add_defense = 2 }
@@ -1431,7 +1431,6 @@ pregrinded_effect = {
 		}				
 	}
 	HUN = {
-		add_ideas = { pre_grinded_gens_volunteers }
 		HUN_geza_lakatos = { add_skill_level = 1 }
 		HUN_geza_lakatos = { add_attack = 3 }
         HUN_geza_lakatos = { add_defense = 1 }
@@ -1505,7 +1504,6 @@ pregrinded_effect = {
         }				
 	}
 	ROM = {
-		add_ideas = { pre_grinded_gens_volunteers }
 		ROM_petre_dumitrescu = { add_attack = 1 }
         ROM_petre_dumitrescu = { add_defense = 1 }
         ROM_petre_dumitrescu = { add_planning = 2 }
@@ -1578,7 +1576,6 @@ pregrinded_effect = {
 		}				
 	}
 	BUL = {
-		add_ideas = { pre_grinded_gens_volunteers }
 		BUL_ivan_markov = { add_skill_level = 1 }
 		BUL_ivan_markov = { add_attack = 1 }
         BUL_ivan_markov = { add_defense = 3 }
@@ -1746,7 +1743,6 @@ pregrinded_effect = {
 		}		
 	}
 	JAP = {
-		add_ideas = { pre_grinded_gens_volunteers }
 		JAP_tomoyuki_yamashita = { add_attack = 3 }
         JAP_tomoyuki_yamashita = { add_defense = 1 }
         JAP_tomoyuki_yamashita = { add_planning = 2 }
@@ -1853,8 +1849,7 @@ pregrinded_effect = {
 			add_unit_leader_trait = fortress_buster
         }				
 	}
-	MAN = {
-		add_ideas = { pre_grinded_gens_volunteers }		
+	MAN = {	
 		MAN_tomoyuki_yamashita = { add_attack = 3 }
         MAN_tomoyuki_yamashita = { add_defense = 1 }
         MAN_tomoyuki_yamashita = { add_planning = 2 }
@@ -1955,7 +1950,6 @@ pregrinded_effect = {
         }				
 	}
 	FIN = {
-		add_ideas = { pre_grinded_gens_volunteers }
 		FIN_erik_heinrichs = {
             add_unit_leader_trait = pre_grinded
             add_unit_leader_trait = organizer
@@ -1984,7 +1978,6 @@ pregrinded_effect = {
         }		
 	}
 	FRA = {
-		add_ideas = { pre_grinded_gens_volunteers }
 		FRA_alphonse_juin = { add_attack = 4 }
 		FRA_alphonse_juin = { add_defense = 3 }
 		FRA_alphonse_juin = {
@@ -2047,7 +2040,6 @@ pregrinded_effect = {
 		}
 	}
 	SOV = {
-		add_ideas = { pre_grinded_gens_volunteers }
 		SOV_georgy_zhukov = {
 			add_unit_leader_trait = pre_grinded
 			add_unit_leader_trait = infantry_leader
@@ -4226,10 +4218,21 @@ dynamic_modifier_start_up = {
 		set_variable = { var = ASTgd_stab value = -0.1 }
 		set_variable = { var = ASTgd_FO value = -0.15 }	
 		set_variable = { var = ASTgd_DO value = -0.15 }	
-		set_variable = { var = ASTgd_mfcs value = 0 }	
+		set_variable = { var = ASTgd_mfcs value = 0 }
+		set_variable = { var = ASTgd_ccctm value = 0 }	
 	}
 	RAJ = {
-		set_variable = { var = RAJ_agrarian_society_value value = 0.85 }
+		set_variable = { var = RAJ_agrarian_society_value value = -0.85 }
+	}
+	CAN = {
+		set_variable = { var = CANgd_cgf value = 0.5 }
+		set_variable = { var = CANgd_stab value = 0 }
+		set_variable = { var = CANgd_FO value = -0.2 }	
+		set_variable = { var = CANgd_DO value = -0.2 }	
+		set_variable = { var = CANgd_lbsf value = 0 }
+		set_variable = { var = CANgd_me value = 0 }		
+		set_variable = { var = CANgd_peb value = 0 }	
+		set_variable = { var = CANgd_peg value = 0 }	
 	}
 }
 give_SOV_armor_research_bonuses = { #this effect is run for the Soviets!

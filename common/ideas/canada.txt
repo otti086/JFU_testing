@@ -1,47 +1,6 @@
 ideas = {
 
 	country = {
-		CAN_great_depression_1 = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = great_depression
-
-			modifier = {
-				consumer_goods_factor = 0.50
-				industrial_capacity_factory = -0.20
-				industrial_capacity_dockyard = -0.20
-			}
-		}
-
-		CAN_great_depression_2 = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = great_depression
-
-			modifier = {
-				consumer_goods_factor = 0.25
-				industrial_capacity_factory = -0.10
-				industrial_capacity_dockyard = -0.10
-			}
-		}
 
 		CAN_conscription_crisis = {
 
@@ -199,7 +158,7 @@ ideas = {
 			picture = can_send_in_the_zombies
 
 			modifier = {
-				conscription_factor = 0.15
+				conscription_factor = 0.20
 				conscription = 0.01
 			}
 		}

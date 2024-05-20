@@ -135,7 +135,7 @@ focus_tree = {
 				news_event = { id = news.282 hours = 6 }
 			}
 			hidden_effect = {
-				add_to_variable = { var = RAJ_agrarian_society_value value = -0.05 }
+				add_to_variable = { var = RAJ_agrarian_society_value value = 0.05 }
 			}
 			custom_effect_tooltip = RAJ_agrarian_society_medium_up_tt
 		}
@@ -180,7 +180,7 @@ focus_tree = {
 				localization = RAJ_cripps_mission
 		 	}	
 			hidden_effect = {
-				add_to_variable = { var = RAJ_agrarian_society_value value = -0.05 }
+				add_to_variable = { var = RAJ_agrarian_society_value value = 0.05 }
 			}
 			custom_effect_tooltip = RAJ_agrarian_society_medium_up_tt	 	
 		}
@@ -222,7 +222,7 @@ focus_tree = {
 				remove_idea = RAJ_marginalized_muslim_community_angry
 			}
 			hidden_effect = {
-				add_to_variable = { var = RAJ_agrarian_society_value value = -0.10 }
+				add_to_variable = { var = RAJ_agrarian_society_value value = 0.10 }
 			}
 			custom_effect_tooltip = RAJ_agrarian_society_big_up_tt
 		}
@@ -292,7 +292,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			hidden_effect = {
-				add_to_variable = { var = RAJ_agrarian_society_value value = -0.05 }
+				add_to_variable = { var = RAJ_agrarian_society_value value = 0.05 }
 			}
 			custom_effect_tooltip = RAJ_agrarian_society_medium_up_tt
 		}
@@ -458,7 +458,7 @@ focus_tree = {
 				category = special_forces_doctrine
 			}
 			hidden_effect = {
-				add_to_variable = { var = RAJ_agrarian_society_value value = -0.02 }
+				add_to_variable = { var = RAJ_agrarian_society_value value = 0.02 }
 			}
 			custom_effect_tooltip = RAJ_agrarian_society_small_up_tt
 		}
@@ -496,7 +496,7 @@ focus_tree = {
 			custom_effect_tooltip = RAJ_jungle_training_effect
 			hidden_effect = { set_technology = { jungle_warfare = 1 } }
 			hidden_effect = {
-				add_to_variable = { var = RAJ_agrarian_society_value value = -0.02 }
+				add_to_variable = { var = RAJ_agrarian_society_value value = 0.02 }
 			}
 			custom_effect_tooltip = RAJ_agrarian_society_small_up_tt
 		}
@@ -612,7 +612,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
 			hidden_effect = {
-				add_to_variable = { var = RAJ_agrarian_society_value value = -0.02 }
+				add_to_variable = { var = RAJ_agrarian_society_value value = 0.02 }
 			}
 			custom_effect_tooltip = RAJ_agrarian_society_small_up_tt		
 			custom_effect_tooltip = RAJ_create_unit_gurkas_tt
@@ -738,7 +738,7 @@ focus_tree = {
 		completion_reward = {
 			add_war_support = 0.05
 			hidden_effect = {
-				add_to_variable = { var = RAJ_agrarian_society_value value = -0.02 }
+				add_to_variable = { var = RAJ_agrarian_society_value value = 0.02 }
 			}
 			custom_effect_tooltip = RAJ_agrarian_society_small_up_tt
 			custom_effect_tooltip = RAJ_create_unit_sikh_tt
@@ -803,7 +803,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = RAJ_indian_gentlemen_officers
 			hidden_effect = {
-				add_to_variable = { var = RAJ_agrarian_society_value value = -0.02 }
+				add_to_variable = { var = RAJ_agrarian_society_value value = 0.02 }
 			}
 			custom_effect_tooltip = RAJ_agrarian_society_small_up_tt
 		}

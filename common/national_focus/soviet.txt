@@ -661,17 +661,15 @@ focus_tree = {
 
 		available = {
 			custom_trigger_tooltip = { 
-				tooltip = SOV_rubber_focus_tt 			
-				NOT = {
-					AND = {
-						672 = { is_controlled_by = ENG }
-						334 = { is_controlled_by = ENG }
-						336 = { is_controlled_by = ENG }
-					}
-					OR = {
-						335 = { is_controlled_by = ENG }
-						422 = { is_controlled_by = ENG }
-					}
+				tooltip = SOV_rubber_focus_tt 
+				AND = {
+					NOT = { 672 = { is_controlled_by = ENG } }
+					NOT = { 334 = { is_controlled_by = ENG } }
+					NOT = { 336 = { is_controlled_by = ENG } }
+				}			
+				OR = {
+					NOT = { 335 = { is_controlled_by = ENG } }
+					NOT = { 422 = { is_controlled_by = ENG } }
 				} 
 			}
 		}
