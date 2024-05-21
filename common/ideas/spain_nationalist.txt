@@ -18,9 +18,24 @@ ideas = {
 				max_surrender_limit_offset = 1
 			}
 		}
-	}
 
-	country = {
+		SPR_political_violence = {
+
+			picture = SPR_political_violence
+
+			allowed = {
+				original_tag = SPR
+				NOT = { has_global_flag = spanish_civil_war }
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				disabled_ideas = 1
+			}
+		}
 		SPR_no_airfields = {
 			
 			name = Isolationism
@@ -69,8 +84,21 @@ ideas = {
 				}
 			}
 		}
+		SPR_eco_placeholder_idea = {
 
+			name = SPR_eco_placeholder
+			allowed = {
+				original_tag = SPR
+			}	
+			removal_cost = -1
 
+			modifier = {
+				stability_weekly = 0.002
+			}		
+		}
+	}
+
+	country = {
 		SPR_carlists_uprising = {
 
 			name = carlist_uprising

@@ -155,65 +155,20 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SPR_equipment_shipments
-
-		prerequisite = { focus = SPR_the_corpo_truppe_volontarie }
-		prerequisite = { focus = SPR_the_condor_legion }
-		
-		icon = GFX_goal_generic_build_tank
-		x = 1
-		y = 1
-		relative_position_id = SPR_the_corpo_truppe_volontarie
-		cost = 5
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			GER = {
-				add_timed_idea = { idea = SPR_equipment_shipments days = 730 }
-				add_ai_strategy = { type = send_lend_lease_desire id = SPA value = 200 }
-			}
-			ITA = {
-				add_timed_idea = { idea = SPR_equipment_shipments days = 730 }
-				add_ai_strategy = { type = send_lend_lease_desire id = SPA value = 200 }
-			}
-			add_timed_idea = { idea = SPR_equipment_shipments_spain days = 730 }
-		}
-	}
-
-	focus = {
-		id = SPR_obtain_training_staff
-
-		prerequisite = { focus = SPR_equipment_shipments }
-		
-		icon = GFX_focus_generic_military_academy
-		x = -1
-		y = 1
-		relative_position_id = SPR_equipment_shipments
-		cost = 5
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			army_experience = 50
-			add_timed_idea = { idea = SPA_foreign_training_staff days = 730 }
-		}
-	}
-
-	focus = {
 		id = SPR_doctrinal_advancements
 
-		prerequisite = { focus = SPR_equipment_shipments }
+		prerequisite = { focus = SPR_the_condor_legion focus = SPR_the_corpo_truppe_volontarie }
 		
 		icon = GFX_goal_generic_army_doctrines
-		x = 1
+		x = -1
 		y = 1
-		relative_position_id = SPR_equipment_shipments
+		relative_position_id = SPR_the_condor_legion
 		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+			army_experience = 50
 			add_doctrine_cost_reduction = {
 				name = SPA_doctrinal_advancements
 				cost_reduction = 0.5
@@ -815,10 +770,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			add_timed_idea = { idea = SPA_national_recovery_1 days = 1460 }
-			add_ideas = SPR_no_airfields
-			remove_ideas = {scw_pre_grinded_nerf2}
+			custom_effect_tooltip = SPR_economy_nr_tt
 			hidden_effect = {
+				add_to_variable = { var = SPReco_cgf value = -0.10 }
+				add_to_variable = { var = SPReco_stabwg value = 0.002 }
+				add_ideas = SPR_no_airfields
+				remove_ideas = scw_pre_grinded_nerf2
 				169 = { 
 					remove_building = { type = air_base  level = 10 }  
 					set_building_level = {
@@ -1011,10 +968,14 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			add_ideas = SPA_fascist_economic_aid
-			swap_ideas = {
-				remove_idea = SPA_recovering_from_civil_war
-				add_idea = SPA_recovering_from_civil_war_2
+
+			custom_effect_tooltip = SPR_economy_fea_tt
+			hidden_effect = {
+				add_to_variable = { var = SPReco_cgf value = -0.05 }
+				add_to_variable = { var = SPReco_cs value = 0.06 }
+				add_to_variable = { var = SPReco_FO value = 0.12 }
+				add_to_variable = { var = SPReco_DO value = 0.12 }
+				add_to_variable = { var = SPReco_mfcs value = 0.1 }
 			}
 			add_tech_bonus = {
 				name = SPA_fascist_economic_aid
@@ -1116,10 +1077,6 @@ focus_tree = {
 
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = SPA_recovering_from_civil_war_2
-				add_idea = SPA_recovering_from_civil_war_3
-			}
 			41 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -1127,6 +1084,13 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}
+			}
+			custom_effect_tooltip = SPR_economy_stwi_tt
+			hidden_effect = {
+				add_to_variable = { var = SPReco_cgf value = -0.05 }
+				add_to_variable = { var = SPReco_cs value = 0.06 }
+				add_to_variable = { var = SPReco_FO value = 0.14 }
+				add_to_variable = { var = SPReco_DO value = 0.14 }
 			}
 		}
 	}
@@ -1146,8 +1110,13 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-            remove_ideas = SPA_recovering_from_civil_war_3
-			add_ideas = SPA_the_duty_to_work
+			custom_effect_tooltip = SPR_economy_tdtw_tt
+			hidden_effect = {
+				add_to_variable = { var = SPReco_cgf value = -0.10 }
+				add_to_variable = { var = SPReco_cs value = 0.08 }
+				add_to_variable = { var = SPReco_FO value = 0.24 }
+				add_to_variable = { var = SPReco_DO value = 0.14 }
+			}
 		}
 	}
 
@@ -1195,22 +1164,15 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-
-			swap_ideas = {
-				remove_idea = SPA_national_recovery_1
-				add_idea = SPA_national_recovery_2
+			hidden_effect = {
+				set_variable = { var = SPR_eco_ics value = 0.1 }
 			}
+			custom_effect_tooltip = SPR_economy_a_tt
 			add_tech_bonus = {
 				name = HOL_make_use_of_our_riches
 				bonus = 1.0
 				uses = 1
 				category = excavation_tech
-			}
-			add_tech_bonus = {
-				name = HOL_expand_curacao_oil_refineries
-				bonus = 1.0
-				uses = 1
-				category = synth_resources
 			}
 		}
 	}
@@ -1233,41 +1195,13 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = SPA_national_recovery_2
-				add_idea = SPA_national_recovery_3
-			}
-			if = {
-				limit = {
-					NOT = {
-						has_idea = SPA_recovering_from_civil_war
-						has_idea = SPA_recovering_from_civil_war_2
-					}
-				}
-				effect_tooltip = {
-					swap_ideas = {
-						remove_idea = SPA_recovering_from_civil_war
-						add_idea = SPA_recovering_from_civil_war_2
-					}
-				}
-			}
-			if = {
-				limit = {
-					has_idea = SPA_recovering_from_civil_war
-				}
-				swap_ideas = {
-					remove_idea = SPA_recovering_from_civil_war
-					add_idea = SPA_recovering_from_civil_war_2
-				}
-			}
-			if = {
-				limit = {
-					has_idea = SPA_recovering_from_civil_war_2
-				}
-				swap_ideas = {
-					remove_idea = SPA_recovering_from_civil_war_2
-					add_idea = SPA_recovering_from_civil_war_3
-				}
+			custom_effect_tooltip = SPR_economy_sa_tt
+			hidden_effect = {
+				add_to_variable = { var = SPReco_cgf value = -0.15 }
+				add_to_variable = { var = SPReco_cs value = 0.06 }
+				add_to_variable = { var = SPReco_FO value = 0.12 }
+				add_to_variable = { var = SPReco_DO value = 0.12 }
+				add_to_variable = { var = SPReco_stabwg value = -0.002 }
 			}
 		}
 	}
@@ -1310,7 +1244,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = SPA_expand_the_axis_gold_trade
+			custom_effect_tooltip = SPR_economy_eagt_tt
+			hidden_effect = {
+				add_to_variable = { var = SPReco_cs value = 0.1 }
+			}
 		}
 	}
 
@@ -1332,15 +1269,20 @@ focus_tree = {
 
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			remove_ideas = SPA_recovering_from_civil_war_3
 			167 = {
-				set_state_flag = SPA_ensure_agricultural_self_sufficiency_2civ
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
 					instant_build = yes
 				}
+			}
+			custom_effect_tooltip = SPR_economy_eass_tt
+			hidden_effect = {
+				add_to_variable = { var = SPReco_cgf value = -0.15 }
+				add_to_variable = { var = SPReco_cs value = 0.14 }
+				add_to_variable = { var = SPReco_FO value = 0.28 }
+				add_to_variable = { var = SPReco_DO value = 0.28 }
 			}
 		}
 	}

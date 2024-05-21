@@ -25,12 +25,7 @@ news_event = {
 
 	immediate = {
 		hidden_effect = {
-			if = {
-				limit = {
-					has_completed_focus = SPR_unify_the_nationalist_front
-				}
-				set_global_flag = SPR_franco_won
-			}
+			set_global_flag = SPR_franco_won
 			if = {
 				limit = {
 					OR = {
@@ -62,13 +57,11 @@ news_event = {
 					}
 				}
 				remove_ideas = SPA_death_before_surrender
-				add_timed_idea = { idea = SPA_recovering_from_civil_war days = 2190 }
-				if = {
-					limit = {
-						has_idea = SPA_foreign_training_staff
-					}
-					remove_ideas = SPA_foreign_training_staff
-				}
+				add_to_variable = { var = SPReco_cgf value = 0.2 }
+				add_to_variable = { var = SPReco_stab value = 0.25 }
+				add_to_variable = { var = SPReco_cs value = -0.1 }
+				add_to_variable = { var = SPReco_FO value = -0.3 }
+				add_to_variable = { var = SPReco_DO value = -0.3 }
 				if = {
 					limit = {
 						has_idea = SPA_a_methodical_approach

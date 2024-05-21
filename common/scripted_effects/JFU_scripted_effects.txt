@@ -823,6 +823,8 @@ JFU_startup_on_action = {
 	SWE = { JFU_apply_intel = yes }
 	SWE = { HFU_fuel_startup_effect = yes }
 	SWE = { JFU_scripted_events_effect = yes }
+	SWE = { pacifc_war_variables = yes }
+	SWE = { dynamic_modifier_start_up = yes }
 	if = {
 		limit = {
 			has_game_rule = { 
@@ -832,9 +834,12 @@ JFU_startup_on_action = {
 		}
 		SWE = { JFU_comp_startup_effect = yes }
 	}
-	SPR = {	country_lock_all_division_template = yes country_event = { id = lar_spain.2 days = 230 } activate_mission = days_till_civil_war }
-	SWE = { pacifc_war_variables = yes }
-	SWE = { dynamic_modifier_start_up = yes }
+	SPR = {	
+		country_lock_all_division_template = yes 
+		country_event = { id = lar_spain.2 days = 230 } 
+		activate_mission = days_till_civil_war 
+		add_dynamic_modifier = { modifier = SPR_economy_modifier }
+	}
 	ENG = {
 		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 30000 }
 		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 20000 }
@@ -4233,6 +4238,16 @@ dynamic_modifier_start_up = {
 		set_variable = { var = CANgd_me value = 0 }		
 		set_variable = { var = CANgd_peb value = 0 }	
 		set_variable = { var = CANgd_peg value = 0 }	
+	}
+	SPR = {
+		set_variable = { var = SPReco_cgf value = 0 }
+		set_variable = { var = SPReco_stab value = -0.25 }
+		set_variable = { var = SPReco_stabwg value = 0 }
+		set_variable = { var = SPReco_cs value = -0.1 }	
+		set_variable = { var = SPReco_FO value = -0.1 }	
+		set_variable = { var = SPReco_DO value = -0.1 }
+		set_variable = { var = SPReco_mfcs value = 0 }
+		set_variable = { var = SPR_eco_ics value = 0 }
 	}
 }
 give_SOV_armor_research_bonuses = { #this effect is run for the Soviets!

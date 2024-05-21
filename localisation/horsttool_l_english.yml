@@ -1193,7 +1193,7 @@
  JAP_armored_divisions_MAN:0 "Manchurian Armor Technology"
 
  AST_great_depression_modifier:0 "Australian Economy"
-
+ CAN_great_depression_modifier:0 "Canadian Economy"
 
  #tooltips
 
@@ -1231,6 +1231,19 @@
  CAN_great_despression_wfeSAF_tt:0 "Modify §YCanadian Economy§! by \nConsumer Goods Factories factor: §Y-15.0%§!\nFactory Output §G+5.00%§! \nDockyard Output §G+5.00%§!"
  CAN_great_despression_wfeCAN_tt:0 "Modify §YCanadian Economy§! by \nConsumer Goods Factories factor: §Y-25.0%§!\nFactory Output §G+10.00%§! \nDockyard Output §G+10.00%§!"
  CAN_great_despression_dms_tt:0 "Modify §YCanadian Economy§! by \nStability: §R-5.00%§!,\nFactory Output: §G+2.00%§!,\nDockyard Output: §G+2.00%§!"
+
+ SPR_economy_nr_tt:0 "Modify §YSpanish Economy§! by \nConsumer Goods Factories factor: §Y-15.0%§!,\nWeekly Stability: §G+0.20%§!"
+ SPR_economy_fea_tt:0 "Modify §YSpanish Economy§! by \nConsumer Goods Factories factor: §Y-5.0%§!,\nConstuction Speed: §G+6.00%§!\nFactory Output: §G+12.00%§!\nDockyard Output: §G+12.00%§!\n§YMilitary Factory§! construction speed: §G+10.00%§!"
+ SPR_economy_a_tt:0 "Modify §YSpanish Economy§! by \n§YInfrastructure§! construction speed: §G+10.00%§!,"
+ SPR_economy_sa_tt:0 "Modify §YSpanish Economy§! by \nConsumer Goods Factories factor: §Y-15.0%§!,\nConstuction Speed: §G+6.00%§!\nFactory Output: §G+12.00%§!\nDockyard Output: §G+12.00%§!\nWeekly Stability: §R-0.20%§!"
+ SPR_economy_stwi_tt:0 "Modify §YSpanish Economy§! by \nConsumer Goods Factories factor: §Y-5.0%§!,\nConstuction Speed: §G+6.00%§!\nFactory Output: §G+14.00%§!\nDockyard Output: §G+14.00%§!"
+ SPR_economy_eagt_tt:0 "Modify §YSpanish Economy§! by \nConstruction speed: §G+10.00%§!," 
+ SPR_economy_tdtw_tt:0 "Modify §YSpanish Economy§! by \nConsumer Goods Factories factor: §Y-10.0%§!,\nConstuction Speed: §G+8.00%§!\nFactory Output: §G+24.00%§!\nDockyard Output: §G+14.00%§!"
+ SPR_economy_eass_tt:0 "Modify §YSpanish Economy§! by \nConsumer Goods Factories factor: §Y-15.0%§!,\nConstuction Speed: §G+14.00%§!\nFactory Output: §G+28.00%§!\nDockyard Output: §G+28.00%§!"
+
+
+
+
 
  GER_second_vienna_focus_tt:0 "This focus is automatically completed by an event which triggers in §YAugust 1940§!."
  GER_ussr_war_goal_focus_tt:0 "This focus is automatically completed in case of war with the §YSoviet Union§!."

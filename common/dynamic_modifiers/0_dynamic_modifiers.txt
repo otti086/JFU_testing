@@ -1400,3 +1400,16 @@ CAN_great_depression_modifier = {
 	production_factory_start_efficiency_factor = CANgd_peb
 	production_factory_efficiency_gain_factor = CANgd_peg
 }
+SPR_economy_modifier = {
+	enable = { always = yes }
+	icon = GFX_idea_SOV_fourth_five_year_plan
+
+	consumer_goods_factor = SPReco_cgf
+	stability_factor = SPReco_stab
+	stability_weekly = SPReco_stabwg
+	production_speed_buildings_factor = SPReco_cs 
+	industrial_capacity_factory = SPReco_FO
+	industrial_capacity_dockyard = SPReco_DO	
+	production_speed_arms_factory_factor = SPReco_mfcs
+	production_speed_infrastructure_factor = SPR_eco_ics
+}

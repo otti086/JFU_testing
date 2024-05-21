@@ -595,7 +595,7 @@
 	focus = {
 		id = SAF_south_african_railways
 		icon = GFX_goal_generic_construct_infrastructure
-		x = 10
+		x = 9
 		y = 0
 
 		cost = 5
@@ -915,10 +915,10 @@
 	focus = {
 		id = SAF_the_cape_defense_institute
 		icon = GFX_focus_research
-		prerequisite = { focus = SAF_establish_the_atomics_energy_board }
+		prerequisite = { focus = SAF_csir }
 		x = 0
-		y = 7
-		relative_position_id = SAF_south_african_railways
+		y = 1
+		relative_position_id = SAF_csir
 
 		cost = 10
 
@@ -951,7 +951,7 @@
 	focus = {
 		id = SAF_special_service_battalion
 		icon = GFX_goal_generic_army_doctrines
-		x = 14
+		x = 13
 		y = 0
 
 		cost = 5
@@ -1328,7 +1328,7 @@
 	focus = {
 		id = SAF_seaward_defence_force
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		x = 17
+		x = 7
 		y = 0		
 
 		cost = 5
