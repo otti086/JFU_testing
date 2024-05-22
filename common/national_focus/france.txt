@@ -647,7 +647,6 @@ focus = {
 		}
 
 		available = {
-			NOT = { 16 = { is_controlled_by = FRA} }
 		}
 		
 		bypass = {
@@ -891,8 +890,6 @@ focus = {
 		}
 
 		available = {
-			country_exists = USA
-			USA_can_sell_weapons_trigger = yes
 		}
 		
 		bypass = {
@@ -1351,7 +1348,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_form_the_provisional_government_of_the_republic
-		icon = GFX_goal_support_democracy
+		icon = GFX_R56_GOAL_FRA_STATUS_QUO
 		x = 0
 		y = 1
 		prerequisite = { 
@@ -1378,7 +1375,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_operation_dragoon
-		icon = GFX_focus_generic_attack_vichy_france_focus
+		icon = GFX_focus_generic_attack_vichy_france
 		x = 1
 		y = 1
 

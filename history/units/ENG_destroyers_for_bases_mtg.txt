@@ -29,11 +29,13 @@ units = {
 			ship = { name = "HMS Clare" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Clemson Class" } } }					# USS Abel P Upshur	
 			ship = { name = "HMS Broadway" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Clemson Class" } } }				# USS Hunt	
 			ship = { name = "HMS Chesterfield" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Clemson Class" } } }			# USS Welborn C Wood	
-		}					
-		task_force = {					
-			name = "American Destroyer Flotilla 2"				
-			location = 3501 # Sussex
-			# 22nd Destroyer Division				
+			ship = { name = "HMCS St. Clair" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Clemson Class" } } }			# USS Williams	
+			ship = { name = "HMCS Niagara" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Clemson Class" } } }			# USS Thatcher	
+			ship = { name = "HMCS Hamilton" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Clemson Class" } } }			# USS Kalk	
+			ship = { name = "HMCS Annapolis" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Clemson Class" } } }			# USS Mackenzie	
+			ship = { name = "HMCS Columbia" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Clemson Class" } } }			# USS Haraden	
+			ship = { name = "HMCS St. Croix" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Clemson Class" } } }			# USS McCook	
+			ship = { name = "HMCS St. Francis" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Clemson Class" } } }		# USS Bancroft			
 			ship = { name = "HMS Ripley" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Clemson Class" } } }					# USS Shubrick		
 			ship = { name = "HMS Reading" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Clemson Class" } } }				# USS Bailey			
 			ship = { name = "HMS Rockingham" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Clemson Class" } } }				# USS Swasey			
@@ -42,12 +44,7 @@ units = {
 			ship = { name = "HMS Stanley" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Clemson Class" } } }				# USS McCalla			
 			ship = { name = "HMS Sherwood" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Clemson Class" } } }				# USS Rodgers			
 			ship = { name = "HMS Cameron" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Clemson Class" } } }				# USS Welles			
-			ship = { name = "HMS Burnham" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Clemson Class" } } }				# USS Aulick				
-		}				
-		task_force = {					
-			name = "American Destroyer Flotilla 3"				
-			location = 3501 # Sussex
-			# 19th Destroyer Division				
+			ship = { name = "HMS Burnham" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Clemson Class" } } }				# USS Aulick						
 			ship = { name = "HMS Charlestown" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Clemson Class" } } }			# USS Abbot	
 			ship = { name = "HMS St. Marys" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Clemson Class" } } }				# USS Doran		
 			ship = { name = "HMS Beverley" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Clemson Class" } } }				# USS Branch	
@@ -55,12 +52,7 @@ units = {
 			ship = { name = "HMS Churchill" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Clemson Class" } } }				# USS Herndon	
 			ship = { name = "HMS Burwell" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Clemson Class" } } }				# USS Laub	
 			ship = { name = "HMS Bradford" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Clemson Class" } } }				# USS McLanahan	
-			ship = { name = "HMS Buxton" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Clemson Class" } } }					# USS Edwards	
-		}					
-		task_force = {					
-			name = "American Destroyer Flotilla 4"				
-			location = 3501 # Sussex
-			# 19th Destroyer Division				
+			ship = { name = "HMS Buxton" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Clemson Class" } } }					# USS Edwards			
 			ship = { name = "HMS Lewes" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Clemson Class" } } }				# USS Craven	
 			ship = { name = "HMS Leeds" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Clemson Class" } } }				# USS Connor	
 			ship = { name = "HMS Ludlow" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Clemson Class" } } }				# USS Stockton	
@@ -71,8 +63,8 @@ units = {
 			ship = { name = "HMS Newport" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Clemson Class" } } }			# USS Sigourney	
 			ship = { name = "HMS Newmarket" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Clemson Class" } } }			# USS Robinson	
 			ship = { name = "HMS Newark" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Clemson Class" } } }				# USS Ringgold	
-			ship = { name = "HMS Richmond" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Clemson Class" } } }			# USS Fairfax	
-		}					
+			ship = { name = "HMS Richmond" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA creator = USA version_name = "Clemson Class" } } }			# USS Fairfax			
+		}									
 	}
 }					
 					

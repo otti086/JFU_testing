@@ -4476,9 +4476,19 @@ focus_tree = {
 				}
 				80 = {
 					remove_dynamic_modifier = { modifier = ROM_no_building_slots }
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}				
 				}
 				766 = {
 					remove_dynamic_modifier = { modifier = ROM_no_building_slots }
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
 				}				
 				news_event = {id = news.199 days = 1 }
 			}

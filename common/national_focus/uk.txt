@@ -1292,7 +1292,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = naval_rearmament_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1949,12 +1949,12 @@ focus_tree = {
 						instant_build = yes
 					}
 				}
-				set_autonomy = {
-					target = RAJ
-					autonomy_state = autonomy_dominion
-					end_wars = no 
-					end_civil_wars = no
-				}
+			}
+			set_autonomy = {
+				target = RAJ
+				autonomy_state = autonomy_dominion
+				end_wars = no 
+				end_civil_wars = no
 			}
 		}
 	}
@@ -2050,18 +2050,18 @@ focus_tree = {
 			custom_effect_tooltip = UK_imperial_conference_tt
 			hidden_effect = {
 				CAN = { add_timed_idea = { idea = ENG_imperial_conference_defense_dominion days = 365 } }
-				SAF = { add_timed_idea = {  idea = ENG_imperial_conference_defense_dominion days = 365 } }
-				AST = { add_timed_idea = {  idea = ENG_imperial_conference_defense_dominion days = 365 } }
-				NZL = { add_timed_idea = {  idea = ENG_imperial_conference_defense_dominion days = 365 } }
-				RAJ = { add_timed_idea = {  idea = ENG_imperial_conference_defense_dominion days = 365 } }
-				ENG = { add_timed_idea = {  idea = ENG_imperial_conference_defense_5 days = 365 } }
-				CAN = { add_timed_idea = {  idea = ENG_imperial_conference_economy_dominion days = 365 } }
-				SAF = { add_timed_idea = {  idea = ENG_imperial_conference_economy_dominion days = 365 } }
-				AST = { add_timed_idea = {   idea = ENG_imperial_conference_economy_dominion days = 365 } }
-				NZL = { add_timed_idea = {  idea = ENG_imperial_conference_economy_dominion days = 365 } }
-				RAJ = { add_timed_idea = {  idea = ENG_imperial_conference_economy_dominion days = 365 } }
-				ENG = { add_timed_idea = {  idea = ENG_imperial_conference_economy_5 days = 365 } }
-				ENG = { add_war_support = 0.1}
+				SAF = { add_timed_idea = { idea = ENG_imperial_conference_defense_dominion days = 365 } }
+				AST = { add_timed_idea = { idea = ENG_imperial_conference_defense_dominion days = 365 } }
+				NZL = { add_timed_idea = { idea = ENG_imperial_conference_defense_dominion days = 365 } }
+				RAJ = { add_timed_idea = { idea = ENG_imperial_conference_defense_dominion days = 365 } }
+				ENG = { add_timed_idea = { idea = ENG_imperial_conference_defense_5 days = 365 } }
+				CAN = { add_timed_idea = { idea = ENG_imperial_conference_economy_dominion days = 365 } }
+				SAF = { add_timed_idea = { idea = ENG_imperial_conference_economy_dominion days = 365 } }
+				AST = { add_timed_idea = { idea = ENG_imperial_conference_economy_dominion days = 365 } }
+				NZL = { add_timed_idea = { idea = ENG_imperial_conference_economy_dominion days = 365 } }
+				RAJ = { add_timed_idea = { idea = ENG_imperial_conference_economy_dominion days = 365 } }
+				ENG = { add_timed_idea = { idea = ENG_imperial_conference_economy_5 days = 365 } }
+				ENG = { add_war_support = 0.1 }
 				CAN = { add_war_support = 0.1 }
 				SAF = { add_war_support = 0.1 }
 				RAJ = { add_war_support = 0.1 }

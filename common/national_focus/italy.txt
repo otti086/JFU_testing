@@ -5487,41 +5487,12 @@ focus_tree = {
 ##     ##  ##  ##    ##    ##    ##     ## ##    ##   ##  ##    ## ##     ## ##       
 ##     ## ####  ######     ##     #######  ##     ## ####  ######  ##     ## ######## 
 
-
-	focus = {
-		id = ITA_the_abyssinian_fiasco
-		icon = GFX_focus_generic_anti_fascist_diplomacy
-		mutually_exclusive = { focus = ITA_solid_progress focus = ITA_struggle_in_ethiopia }
-		x = 9
-		y = 0
-		relative_position_id = ITA_naval_power_projection
-		cost = 5
-
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = ITA_the_abyssinian_fiasco_completion_tt
-				always = no
-			}
-		}
-
-		search_filters = {}
-
-		completion_reward = {
-			add_popularity = {
-				ideology = fascism 
-				popularity = -0.15
-			}
-			add_war_support = -0.03
-		}
-	}
-
 	focus = {
 		id = ITA_solid_progress
 		icon = GFX_focus_generic_attack_ethiopia
-		mutually_exclusive = { focus = ITA_the_abyssinian_fiasco focus = ITA_struggle_in_ethiopia }
-		x = 2
+		x = 10
 		y = 0
-		relative_position_id = ITA_the_abyssinian_fiasco
+		relative_position_id = ITA_naval_power_projection
 		cost = 5
 
 		bypass = {
@@ -5549,36 +5520,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ITA_struggle_in_ethiopia
-		icon = GFX_goal_generic_major_war
-		mutually_exclusive = { focus = ITA_the_abyssinian_fiasco focus = ITA_solid_progress }
-		x = 2
-		y = 0
-		relative_position_id = ITA_solid_progress
-		cost = 5
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = ITA_the_abyssinian_fiasco_completion_tt
-				always = no
-			}
-		}
-
-		search_filters = {}
-
-		completion_reward = {
-			add_popularity = {
-				ideology = fascism 
-				popularity = -0.05
-			}
-			add_stability = -0.03
-			add_political_power = -25
-		}
-	}
-
-	focus = {
 		id = ITA_servizio_informazione_militare
 		icon = GFX_focus_generic_secret_service_agency
-		prerequisite = { focus = ITA_solid_progress focus = ITA_the_abyssinian_fiasco focus = ITA_struggle_in_ethiopia }
+		prerequisite = { focus = ITA_solid_progress }
 
 		x = 0
 		y = 1
@@ -5641,10 +5585,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
-			add_war_support = 0.05
-			add_stability = 0.05
-			add_political_power = 50
-
 			unlock_decision_category_tooltip = ETH_italian_occupation_category
 
 			hidden_effect = {
@@ -5698,7 +5638,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			add_stability = 0.02
 			add_timed_idea = { idea = ITA_devaluated_lira days = 365 }
 		}
 	}

@@ -18,76 +18,6 @@ USA_marmon_herrington_organization = {
 	}
 }
 
-USA_chrysler_organization = {
-	include = generic_medium_tank_organization
-	icon = GFX_idea_chrysler
-	
-	allowed = {	
-		OR = {
-			tag = USA 
-			AND = {
-				tag = MEX 
-				has_dlc = "Man the Guns"
-			}
-		}
-	}
-
-	available = {
-		if = {
-			limit = {
-				FROM = { tag = MEX }
-			}
-			FROM = { is_in_faction_with = USA }
-		} 
-	}
-
-	initial_trait = {
-		name = USA_mio_trait_medium_tank_organization
-
-		limit_to_equipment_type = { mio_cat_eq_all_medium_tank }
-
-		equipment_bonus = {
-			reliability = 0.1
-		}
-		production_bonus = {
-			production_cost_factor = -0.05
-		}
-	}
-
-	add_trait = { 
-		token = USA_mio_trait_strict_design_specifications
-		name = USA_mio_trait_strict_design_specifications
-		icon = GFX_generic_mio_trait_icon_reliability
-		special_trait_background = yes
-
-		position = { x=2 y=1 }
-		relative_position_id = generic_mio_trait_simplified_turret_design
-
-		all_parents = { generic_mio_trait_simplified_turret_design generic_mio_trait_armor_steel_working }
-		limit_to_equipment_type = { mio_cat_eq_all_medium_tank }
-
-		equipment_bonus = {
-			reliability = 0.1
-
-		}
-	}
-
-	add_trait = { 
-		token = USA_mio_trait_expanded_production_facilities
-		name = USA_mio_trait_expanded_production_facilities
-		icon = GFX_generic_mio_trait_icon_build_cost_ic
-		special_trait_background = yes
-
-		position = { x=0 y=1 }
-		relative_position_id = USA_mio_trait_strict_design_specifications
-
-		all_parents = { USA_mio_trait_strict_design_specifications }
-		production_bonus = {
-			production_capacity_factor = 0.05
-		}
-	}
-}
-
 USA_army_ordnance_department_organization = {
 	include = generic_medium_tank_organization
 	icon = GFX_idea_army_ordnance_department
@@ -104,7 +34,7 @@ USA_army_ordnance_department_organization = {
 
 		position = { x=1 y=1 }
 		relative_position_id = generic_mio_trait_all_round_cupola
-
+		mutually_exclusive = { USA_mio_trait_mass_production_of_armor }
 		all_parents = { generic_mio_trait_all_round_cupola }
 		equipment_bonus = {
 			breakthrough = 0.1
@@ -118,10 +48,10 @@ USA_army_ordnance_department_organization = {
 		icon = GFX_generic_mio_department_icon_tank_medium_tank_line_efficiency
 		special_trait_background = yes
 
-		position = { x=2 y=1 }
+		position = { x=2 y=0 }
 		relative_position_id = generic_mio_trait_simplified_turret_design
-
-		all_parents = { generic_mio_trait_simplified_turret_design generic_mio_trait_armor_steel_working }
+		mutually_exclusive = { USA_mio_trait_periscope_sights }
+		all_parents = { generic_mio_trait_all_round_cupola generic_mio_trait_armor_steel_working }
 		production_bonus = {
 			production_efficiency_cap_factor = 0.05
 			production_efficiency_gain_factor = 0.05
@@ -141,7 +71,6 @@ USA_detroit_arsenal_organization = {
 }
 
 USA_tank_destroyer_board_organization = {
-	name = tank_destroyer_board
 	include = generic_medium_tank_organization
 	icon = GFX_idea_usa_tank_destroyer_board
 	allowed = {	
@@ -150,7 +79,7 @@ USA_tank_destroyer_board_organization = {
 	available = {
 	}
 	initial_trait = {
-		name = ROM_mio_trait_mobile_tank_destroyers
+		name = USA_mio_trait_mobile_tank_destroyers
 		
 		limit_to_equipment_type = { 
 			mio_cat_eq_all_tank_destroyers
@@ -208,7 +137,6 @@ USA_tank_destroyer_board_organization = {
 		limit_to_equipment_type = { 
 			mio_cat_eq_all_tank_destroyers
 		}
-
 		mutually_exclusive = { generic_mio_trait_specialist_shells }
 
 		equipment_bonus = {

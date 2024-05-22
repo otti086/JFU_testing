@@ -2031,7 +2031,7 @@ generic_escort_ship_organization = {
 	icon = GFX_idea_generic_naval_manufacturer_1
 
 	allowed = {
-		NOT = { OR = { tag = EFR tag = GER tag = ENG tag = SOV tag = FRA tag = CHI tag = MAN tag = ITA tag = JAP tag = MEX tag = HOL tag = BUL tag = AST tag = SPR tag = POL tag = NZL tag = RAJ tag = USA tag = CAN tag = SWE tag = HUN tag = CZE tag = ROM tag = YUG } }
+		NOT = { OR = { tag = BRA tag = EFR tag = GER tag = ENG tag = SOV tag = FRA tag = CHI tag = MAN tag = ITA tag = JAP tag = MEX tag = HOL tag = BUL tag = AST tag = SPR tag = POL tag = NZL tag = RAJ tag = USA tag = CAN tag = SWE tag = HUN tag = CZE tag = ROM tag = YUG } }
 		NOT = {
 			AND = {
 				OR = { tag = FIN tag = NOR tag = DEN tag = SWE }
@@ -3463,7 +3463,7 @@ generic_general_aircraft_organization = {
 	icon = GFX_idea_generic_air_manufacturer_1
 
 	allowed = {
-		NOT = { OR = { tag = EFR tag = MEX tag = SPR tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CAN tag = YUG tag = ROM tag = CZE tag = HUN tag = CHI tag = MAN tag = HOL tag = BUL tag = GRE } }
+		NOT = { OR = { tag = BRA tag = EFR tag = MEX tag = SPR tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CAN tag = YUG tag = ROM tag = CZE tag = HUN tag = CHI tag = MAN tag = HOL tag = BUL tag = GRE } }
 		NOT = {
 			AND = {
 				OR = { tag = FIN tag = NOR tag = DEN  tag = SWE }

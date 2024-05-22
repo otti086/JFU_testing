@@ -73,7 +73,6 @@ focus_tree = {
 		}
 
 		available = {
-			has_government = democratic
 		}
 		
 		bypass = {
@@ -422,7 +421,6 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		available = {
-			has_government = democratic
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
@@ -475,9 +473,6 @@ focus_tree = {
 
 		available = {
 			congress_low_support_trigger = yes
-			democratic > 0.95
-			NOT = { has_idea_with_trait = fascist_demagogue }
-			NOT = { has_idea_with_trait = communist_revolutionary }
 		}
 		
 		bypass = {
@@ -490,7 +485,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_USA_CONGRESS}
 		completion_reward = {
 			add_political_power = 200
-			add_ideas = USA_neutrality_act 
 			add_war_support = -0.05
 			if = {
 				limit = {
@@ -516,7 +510,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			democratic > 0.95
 		}
 		bypass = {
 			AND = {
@@ -691,7 +684,6 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		available = {
-			democratic > 0.95
 		}
 		completion_reward = {
 			add_ideas = wartime_industry_focus
@@ -707,10 +699,6 @@ focus_tree = {
 		prerequisite = { focus = USA_arsenal_of_democracy }
 		
 		available = {
-			OR = {
-				has_war = yes
-				has_war_support > 0.3
-			}
 		}
 
 		continue_if_invalid = yes
@@ -936,10 +924,6 @@ focus_tree = {
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = USA_military_construction }
 		available = {
-			OR = {
-				has_war_support > 0.3
-				has_war = yes
-			}
 		}
 
 		continue_if_invalid = yes
@@ -1056,10 +1040,10 @@ focus_tree = {
  	focus = {
 		id = USA_war_plans_division
 		icon = GFX_goal_generic_position_armies
-		x = 11
-		y = 0
+		x = 20
+		y = 5
 		
-		cost = 5
+		cost = 2
 
 		ai_will_do = {
 			factor = 1
@@ -1086,12 +1070,11 @@ focus_tree = {
 	focus = {
 		id = USA_war_plan_silver
 		icon = GFX_focus_attack_italy
-		x = -2
-		y = 2
+		x = -3
+		y = 1
 		prerequisite = { focus = USA_war_plans_division }
-		mutually_exclusive = { }
 		relative_position_id = USA_war_plans_division
-		cost = 5
+		cost = 2
 
 		ai_will_do = {
 			factor = 1
@@ -1123,10 +1106,10 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 
-		x = 0
-		y = 2
+		x = -1
+		y = 1
 		relative_position_id = USA_war_plans_division
-		cost = 5
+		cost = 2
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1146,29 +1129,41 @@ focus_tree = {
 		bypass = {
 		}
 
-		x = -1
+		x = 1
 		y = 1
 		relative_position_id = USA_war_plans_division
-		cost = 5
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		cost = 2
+
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 		completion_reward = {
-			ENG = {
-				custom_effect_tooltip = needs_approval
-				country_event = { id = usa.4 days = 1 }
+			hidden_effect = {
+				ENG = {	load_oob = "ENG_destroyers_for_bases_mtg" }
+				ENG = {
+					remove_state_core = 696
+					remove_state_core = 331
+					remove_state_core = 308
+					remove_state_core = 693
+					remove_state_core = 689
+					remove_state_core = 691
+				}
+				USA = {
+					transfer_state = 696
+					transfer_state = 331
+					transfer_state = 308
+					transfer_state = 693
+					transfer_state = 689
+					transfer_state = 691
+				}				
 			}
-			
 			effect_tooltip = {
-				custom_effect_tooltip = USA_destroyers_for_bases_tt
+				custom_effect_tooltip = USA_destroyers_for_bases_JFU_tt
 				transfer_state = 696
 				transfer_state = 331
 				transfer_state = 308
 				transfer_state = 693
 				transfer_state = 689
 				transfer_state = 691
-				
+				custom_effect_tooltip = USA_destroyers_for_bases_JFU1_tt
 			}
 		}
 	}
@@ -1182,10 +1177,10 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 
-		x = 2
-		y = 2
+		x = 3
+		y = 1
 		relative_position_id = USA_war_plans_division
-		cost = 5
+		cost = 2
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1198,14 +1193,14 @@ focus_tree = {
 	focus = {
 		id = USA_defense_of_the_pacific
 		icon = GFX_USA_PACIFIC_DEFENCES_IMPROVEMENT
-		prerequisite = { focus = USA_war_plans_division }
+		prerequisite = { focus = USA_war_plan_orange }
 		available = {
 		}
 		will_lead_to_war_with = JAP
 		x = 1
 		y = 1
-		relative_position_id = USA_war_plans_division
-		cost = 5
+		relative_position_id = USA_war_plan_orange
+		cost = 2
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1287,6 +1282,131 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = USA_operation_overlord
+		icon = GFX_focus_attack_germany
+		x = 1
+		y = 1
+
+		prerequisite = { focus = USA_war_plan_black	}
+		relative_position_id = USA_war_plan_black
+		
+		cost = 2
+
+		available = {
+			OR = {
+				date > 1942.06.01
+				SOV = { surrender_progress > 0.5 }
+			}
+		}
+
+		available_if_capitulated = yes
+		completion_reward = {
+			every_state = { limit = { OR = { state = 806 state = 19 state = 23 state = 30 state = 14 state = 15 state = 785 state = 29 state = 6 state = 35 state = 7 state = 36 } } add_dynamic_modifier = { modifier =  ENG_con_int_dynamic days = 60 }  }
+		}
+	}
+	focus = {
+		id = USA_operation_husky
+		icon = GFX_focus_SWI_fortify_border_with_italy
+		x = -1
+		y = 1
+
+		cost = 2
+
+		relative_position_id = USA_war_plan_silver		
+		prerequisite = {  focus = USA_war_plan_silver }
+
+		available = {
+			OR = {
+				448 = { is_controlled_by = ENG }
+				SOV = { surrender_progress > 0.5 }
+			}
+		}
+
+
+		completion_reward = {
+			every_state = { limit = { OR = { state = 114 state = 115 state = 156 state = 117 state = 849 state = 2 state = 162 state = 158 } } add_dynamic_modifier = { modifier =  ENG_con_int_dynamic days = 60 }  }
+		}
+	}
+	focus = {
+		id = USA_operation_torch
+		icon = GFX_focus_generic_attack_vichy_france
+		x = -1
+		y = 1
+
+		prerequisite = { focus = USA_war_plan_silver focus = USA_war_plan_black	}
+		relative_position_id = USA_war_plan_black
+		
+		cost = 2    
+
+		available_if_capitulated = yes
+		completion_reward = {
+			every_state = { limit = { OR = { state = 461 state = 462 state = 459 state = 513 state = 460 state = 458 state = 665    } } add_dynamic_modifier = { modifier =  ENG_con_int_dynamic days = 60 }  }
+		}
+	}
+focus = {
+		id = USA_Retake_Asia
+		icon = GFX_focus_attack_japan
+		x = -1
+		y = 1
+		cost = 2
+		
+		prerequisite = {  focus = USA_war_plan_orange }
+		relative_position_id= USA_war_plan_orange
+		available = {  
+			count_triggers = {
+    			amount = 4
+				OR = {
+					JAP = { controls_state = 336 }
+					any_other_country = {
+						is_in_faction_with = JAP
+						controls_state = 336
+					}
+				}
+				OR = {
+					JAP = { controls_state = 672 }
+					any_other_country = {
+						is_in_faction_with = JAP
+						controls_state = 672
+					}
+				}
+				OR = {
+					JAP = { controls_state = 333 }
+					any_other_country = {
+						is_in_faction_with = JAP
+						controls_state = 333
+					}
+				}
+				OR = {
+					JAP = { controls_state = 638 }
+					any_other_country = {
+						is_in_faction_with = JAP
+						controls_state = 638
+					}
+				}
+				OR = {
+					JAP = { controls_state = 632 }
+					any_other_country = {
+						is_in_faction_with = JAP
+						controls_state = 632
+					}
+				}
+				OR = {
+					JAP = { controls_state = 335 }
+					any_other_country = {
+						is_in_faction_with = JAP
+						controls_state = 335
+					}
+				}
+			}
+		}
+		completion_reward = {
+			every_state = { limit = { is_controlled_by = JAP } add_dynamic_modifier = { modifier =  ENG_con_int_dynamic days = 60 } } 
+		}
+	}
+
+
+
 
 #   #  ##  ###      ###  ### ###   ##  ###  ### #   # ### #  # ### 
 #   # #  # #  #     #  # #   #  # #  # #  #  #  ## ## #   ## #  #  
@@ -1298,7 +1418,7 @@ focus_tree = {
 	focus = {
 		id = USA_war_department
 		icon = GFX_goal_generic_army_doctrines
-		x = 22
+		x = 17
 		y = 0
 		cost = 10
 
@@ -1979,8 +2099,6 @@ focus_tree = {
 			else = {
 				congress_low_support_trigger = yes
 			}
-			controls_state = 378
-			controls_state = 358
 		}
 		
 		bypass = {
@@ -2017,42 +2135,20 @@ focus_tree = {
 				}
 				USA_congress_medium_opposition = yes
 			}
-			if = { 
-				limit = { 
-					378 = {
-						free_building_slots = {
-							building = dockyard
-							size > 4
-							include_locked = yes
-						}
-					}
-				}
-				378 = { 
-					add_extra_state_shared_building_slots = 5
-					add_building_construction = {
-						type = dockyard
-						level = 5
-						instant_build = yes
-					}
+			378 = { 
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = dockyard
+					level = 5
+					instant_build = yes
 				}
 			}
-			if = { 
-				limit = { 
-					358 = {
-						free_building_slots = {
-							building = dockyard
-							size > 4
-							include_locked = yes
-						}
-					}
-				}
-				358 = { 
-					add_extra_state_shared_building_slots = 5
-					add_building_construction = {
-						type = dockyard
-						level = 5
-						instant_build = yes
-					}
+			358 = { 
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = dockyard
+					level = 5
+					instant_build = yes
 				}
 			}
 		}
@@ -2122,10 +2218,6 @@ focus_tree = {
 		completion_reward = {
 			navy_experience = 50
 			add_ideas = bureau_of_ships_focus
-			if = {
-				limit = { has_idea = bureau_of_ordnance_spirit }
-				remove_ideas = bureau_of_ordnance_spirit
-			}
 		}
 	}
 	

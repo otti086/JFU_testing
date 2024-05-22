@@ -1050,6 +1050,11 @@
  
  
  #FOCI
+ USA_operation_husky:0 "Operation Husky"
+ USA_operation_torch:0 "Operation Torch"
+ USA_operation_overlord:0 "Operation Overlord"
+ USA_Retake_Asia:0 "Retake Asia"
+
  SOV_Great_Patriotic_War:0 "§RThe Great Patriotic War§!"
  SOV_order_270_focus:0 "Order 270"
  SOV_first_winter_offensive:0 "First counter offensive"
@@ -1194,6 +1199,8 @@
 
  AST_great_depression_modifier:0 "Australian Economy"
  CAN_great_depression_modifier:0 "Canadian Economy"
+ SPR_economy_modifier:0 "Spanish Economy"
+ SPR_economy_modifier_desc:0 "We may not build §Yairbases, ports, airports, ships and railway guns§!" 
 
  #tooltips
 
@@ -1313,7 +1320,9 @@
  ITA_reinforce_the_gustav_line_tt:0 "We will immediately create a §Hlevel 5§! fort line along the frontlines in Italy\n\n"
  
  USA_rubber_focus_tt:0 "We have lost control of §YSingarpur§!, §YBorneo§!,§YSumatra§!, §YJava§! and §YCeylon§!"
- 
+ USA_destroyers_for_bases_JFU_tt:0 "The §YUnited States§!"
+ USA_destroyers_for_bases_JFU1_tt:0 "§Rin exchange for 50 old destroyers§!"
+
  BRA_licence_tt:0 "If we chose the §RPromote Centralization§! Focus path we will gain §YForeign Licenses§!, which grants (LIcense production speed §G+10.00%§!)\nIf we instead chose the §RGreater Federalism§! Focus path this effect will be increased by §G+5.00%§!."
  BRA_industry_factory_tt:0 "If we chose the §RGreater Federalism§! Focus path we will modify §Y$BRA_army_modifier$§! by (Factory Output §G+5.00%§!)\nIf we instead chose the §RPromote Centralization§! Focus path this effect will be increased by §G+5.00%§!."
  BRA_mils_construction_tt:0 "If we chose the §RGreater Federalism§! Focus path we will modify §Y$BRA_army_modifier$§! by (§YMilitary Factory§! construction Speed §G+5.00%§!)\nIf we chose the §RPromote Centralization§! Focus path this effect will be increased by §G+5.00%§!."
@@ -1479,10 +1488,10 @@
 
  ENG_light_aircraft_organization:0 "Light Aircraft Designer"
  USA_light_aircraft_organization:0 "Light Aircraft Designer"
+ USA_tank_destroyer_board_organization:0 "Tank Destroyer Board"
  JAP_light_aircraft_organization:0 "Light Aircraft Designer"
- SOV_CAS_organization:0 "Soviet Cas Designer"
  JAP_CAS_organization:0 "Japanese Cas Designer"
-
+ SOV_CAS_organization:0 "Soviet Cas Designer" 
 
 
 
@@ -1492,6 +1501,7 @@
  JAP_range_focus_trait:0 "Range Focus"
 
  USA_mio_trait_medium_tank_organization:0 "Medium Tank Designer"
+ USA_mio_trait_mobile_tank_destroyers:0 "Tank Destroyer Designer"
  generic_mio_initial_trait_sov_cas_designer:0 "CAS Aircraft Designer"
 
 

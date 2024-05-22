@@ -1253,7 +1253,7 @@ characters = {
 				original_tag = ITA			
 			}
 			available = {
-				ITA_government_is_somewhat_fascist = yes
+				
 			}
 			traits = {
 				navy_chief_commerce_raiding_2
@@ -1523,9 +1523,8 @@ characters = {
 				NOT = {
 					has_country_leader_with_trait = mussolini_minister_of_foreign_affairs
 				}
-				ITA_government_is_somewhat_fascist = yes
 			}
-			cost = 75
+			cost = 150
 			traits = {
 				hierarch_minister_of_foreign_affairs
 			}
@@ -1568,16 +1567,8 @@ characters = {
 				NOT = {
 					has_country_leader_with_trait = mussolini_minister_of_justice
 				}
-				ITA_government_is_somewhat_fascist = yes
-				if =  {
-					limit = { 
-						has_dlc = "By Blood Alone"
-					}
-					ITA_is_advisor_available = yes
-				}
 			}
-			
-			cost = 75
+			cost = 150
 			traits = {
 				hierarch_minister_of_justice 
 			}
@@ -1619,7 +1610,7 @@ characters = {
 					has_country_leader_with_trait = mussolini_minister_of_education
 				}
 			}
-			cost = 75
+			cost = 150
 			traits = {
 				hierarch_minister_of_education # Hierarch / Minister of Education
 			}
@@ -1660,9 +1651,8 @@ characters = {
 				NOT = {
 					has_country_leader_with_trait = mussolini_minister_of_corporations
 				}
-				ITA_government_is_really_fascist = yes
 			}
-			cost = 75
+			cost = 150
 			traits = {
 				hierarch_minister_of_corporations # Leader of Blackshirts and Military Police
 			}
@@ -1706,7 +1696,7 @@ characters = {
 				original_tag = ITA			
 			}
 			available = {
-				ITA_government_is_really_fascist = yes
+				
 			}
 			traits = {
 				army_regrouping_2
@@ -1725,7 +1715,7 @@ characters = {
 			}
 			available = {
 				has_intelligence_agency = yes
-				ITA_government_is_really_fascist = yes
+				
 			}
 			traits = {
 				head_of_intelligence 
@@ -1740,7 +1730,7 @@ characters = {
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
-			visible = { ITA_government_is_really_fascist = yes }
+			visible = {  }
 		}
 	}
 
@@ -1759,7 +1749,7 @@ characters = {
 				original_tag = ITA			
 			}
 			available = {
-				ITA_government_is_somewhat_fascist = yes
+				
 			}
 			traits = {
 				prince_of_terror
@@ -1782,7 +1772,7 @@ characters = {
 				original_tag = ITA			
 			}
 			available = {
-				ITA_government_is_really_fascist = yes
+				
 			}
 			traits = {
 				war_industrialist 
@@ -1805,7 +1795,7 @@ characters = {
 				original_tag = ITA			
 			}
 			available = {
-				ITA_government_is_somewhat_fascist = yes
+				
 			}
 			traits = {
 				quartermaster_general 
@@ -1828,7 +1818,7 @@ characters = {
 				original_tag = ITA			
 			}
 			available = {
-				ITA_government_is_really_fascist = yes
+				
 			}
 			traits = {
 				armaments_organizer
@@ -1874,7 +1864,7 @@ characters = {
 				original_tag = ITA			
 			}
 			available = {
-				ITA_government_is_somewhat_fascist = yes
+				
 			}
 			traits = {
 				silent_workhorse
@@ -1919,7 +1909,7 @@ characters = {
 				original_tag = ITA			
 			}
 			available = {
-				ITA_government_is_really_fascist = yes
+				
 			}
 			traits = {
 				ideological_crusader 
@@ -1944,7 +1934,7 @@ characters = {
 				original_tag = ITA			
 			}
 			available = {
-				ITA_government_is_really_fascist = yes
+				
 			}
 			traits = {
 				backroom_backstabber 
@@ -1967,7 +1957,7 @@ characters = {
 				original_tag = ITA			
 			}
 			available = {
-				ITA_government_is_really_fascist = yes
+				
 			}
 			traits = {
 				fascist_demagogue 

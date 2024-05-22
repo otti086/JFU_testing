@@ -2413,115 +2413,16 @@ focus_tree = {
 	}
 
 	focus = {
-		id = MEX_focus_gulf_coast_naval_yards
-		icon = GFX_goal_generic_construct_naval_dockyard
-		prerequisite = { focus = MEX_focus_military_budget_review }
-		x = -2
-		y = 1
-		relative_position_id = MEX_focus_military_budget_review
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 100
-			
-			modifier = {
-				factor = 0.1
-				has_war_with = USA
-			}
-			
-			modifier = {
-				factor = 10
-				has_war_with = ENG
-			}
-			
-			modifier = {
-				factor = 10
-				has_war_with = GER
-			}
-			
-			modifier = {
-				factor = 10
-				has_war_with = SOV
-			}
-		}
-
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			every_state = {
-				limit = {
-					OR = {
-						state = 479
-						state = 477
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
-			IF = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
-				custom_effect_tooltip = available_mio_tt
-				show_mio_tooltip = MEX_astimar_gulf_organization
-				mio:MEX_astimar_gulf_organization = {
-					add_mio_funds = 500
-				}
-			}
-			ELSE = {
-				custom_effect_tooltip = available_designer
-				show_ideas_tooltip = MEX_astimar_gulf
-			}
-		}
-	}
-
-	focus = {
 		id = MEX_focus_pacific_coast_naval_yards
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = MEX_focus_military_budget_review }
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = MEX_focus_military_budget_review
 
 		cost = 5
 
 		ai_will_do = {
-			factor = 100
-			
-			modifier = {
-				factor = 0.1
-				has_war_with = USA
-			}
-			
-			modifier = {
-				factor = 10
-				has_war_with = ENG
-			}
-			
-			modifier = {
-				factor = 10
-				has_war_with = GER
-			}
-			
-			modifier = {
-				factor = 10
-				has_war_with = SOV
-			}
 		}
 
 		available = {
@@ -2537,33 +2438,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			every_state = {
-				limit = {
-					OR = {
-						state = 485
-						state = 478
-					}
-				}
-				add_extra_state_shared_building_slots = 1
+			85 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
-					level = 1
+					level = 2
 					instant_build = yes
 				}
-			}
-			IF = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
-				custom_effect_tooltip = available_mio_tt
-				show_mio_tooltip = MEX_astimar_pacific_organization
-				mio:MEX_astimar_pacific_organization = {
-					add_mio_funds = 500
-				}
-			}
-			ELSE = {
-				custom_effect_tooltip = available_designer
-				show_ideas_tooltip = MEX_astimar_pacific
 			}
 		}
 	}
@@ -2572,7 +2453,7 @@ focus_tree = {
 		id = MEX_focus_heroic_military_college
 		icon = GFX_focus_generic_military_academy
 		prerequisite = { focus = MEX_focus_military_budget_review }
-		x = 2
+		x = 1
 		y = 1
 		relative_position_id = MEX_focus_military_budget_review
 
@@ -2616,7 +2497,7 @@ focus_tree = {
 		id = MEX_focus_weapons_modernisation
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = MEX_focus_heroic_military_college }
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = MEX_focus_heroic_military_college
 
@@ -2662,10 +2543,10 @@ focus_tree = {
 	focus = {
 		id = MEX_focus_tank_workshops
 		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = MEX_focus_weapons_modernisation }
-		x = 0
+		prerequisite = { focus = MEX_focus_heroic_military_college }
+		x = -1
 		y = 1
-		relative_position_id = MEX_focus_weapons_modernisation
+		relative_position_id = MEX_focus_heroic_military_college
 
 		cost = 5
 
@@ -2717,8 +2598,8 @@ focus_tree = {
 	focus = {
 		id = MEX_focus_army_expansion_programme
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = MEX_focus_tank_workshops }
-		x = 0
+		prerequisite = { focus = MEX_focus_tank_workshops focus = MEX_focus_weapons_modernisation }
+		x = 1
 		y = 1
 		relative_position_id = MEX_focus_tank_workshops
 
@@ -2815,6 +2696,18 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+			}
+			add_tech_bonus = {
+				name = artillery
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
 			add_ideas = MEX_heavy_artillery
 		}
 	}		
