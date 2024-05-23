@@ -31,10 +31,6 @@ ITA_missiolinis_can_have_a_new_mission = {
 	check_variable = { ITA_missiolinis_active_missions = 2 compare = less_than_or_equals }
 }
 
-ITA_has_missiolini_easier_goals = {
-	has_completed_focus = ITA_boost_the_grand_council_of_fascism
-}
-
 ITA_missiolinis_weigh_mussolini_esta_flipado = {
 	has_completed_focus = ITA_to_live_as_a_lion
 }

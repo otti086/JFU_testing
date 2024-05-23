@@ -1122,36 +1122,6 @@ unit_leader_event = {
 
 		ITA_mussolinis_reroll_cleanup_if_necessary = yes #To clear stuff if coming from a reroll
 	}
-
-
-	# Re-roll
-	option = { 
-		name = BBA_italy_missiolinis.council
-
-		ai_chance = {
-			base = 0
-		}
-
-		trigger = {
-			has_completed_focus = ITA_boost_the_grand_council_of_fascism
-			NOT = { has_country_flag = ITA_missiolinis_rerolling_flag }
-		}
-
-		ITA_missiolinis_reroll_cost = yes
-
-		hidden_effect = {
-			#Revert mission initialization from immediate effect
-			ITA_missiolinis_revert_new_mission_initialization_effect = yes
-
-			#Revert other stuff in the immediate effect
-			clr_country_flag = ITA_missiolini_stockpile_trucks_triggered_flag
-			set_variable = { ITA_missiolinis_stockpile_trucks_goal = 0 }
-
-			#Re-roll
-			set_variable = { ITA_missiolini_reroll_from = 1 } #STOCKPILE TRUCKS
-			country_event = { id = BBA_italy_missiolinis.00 hours = 20 }
-		}
-	}
 }
 
 # Stockpile Trucks - FAILURE 
@@ -1243,34 +1213,6 @@ unit_leader_event = {
 		activate_mission = ITA_missiolini_stockpile_fuel
 
 		ITA_mussolinis_reroll_cleanup_if_necessary = yes #To clear stuff if coming from a reroll
-	}
-
-	# Re-roll
-	option = { 
-		name = BBA_italy_missiolinis.council
-
-		ai_chance = {
-			base = 0
-		}
-
-		trigger = {
-			has_completed_focus = ITA_boost_the_grand_council_of_fascism
-			NOT = { has_country_flag = ITA_missiolinis_rerolling_flag }
-		}
-
-		ITA_missiolinis_reroll_cost = yes
-
-		hidden_effect = {
-			#Revert mission initialization from immediate effect
-			ITA_missiolinis_revert_new_mission_initialization_effect = yes
-
-			#Revert other stuff in the immediate effect
-			clr_country_flag = ITA_missiolini_stockpile_fuel_triggered_flag
-
-			#Re-roll
-			set_variable = { ITA_missiolini_reroll_from = 2 } #STOCKPILE FUEL
-			country_event = { id = BBA_italy_missiolinis.00 hours = 20 }
-		}
 	}
 }
 
@@ -1417,39 +1359,6 @@ unit_leader_event = {
 		activate_mission = ITA_missiolini_strengthen_the_airforce
 
 		ITA_mussolinis_reroll_cleanup_if_necessary = yes #To clear stuff if coming from a reroll
-	}
-
-	# Re-roll
-	option = { 
-		name = BBA_italy_missiolinis.council
-
-		ai_chance = {
-			base = 0
-		}
-
-		trigger = {
-			has_completed_focus = ITA_boost_the_grand_council_of_fascism
-			NOT = { has_country_flag = ITA_missiolinis_rerolling_flag }
-		}
-
-		ITA_missiolinis_reroll_cost = yes
-
-		hidden_effect = {
-			#Revert mission initialization from immediate effect
-			ITA_missiolinis_revert_new_mission_initialization_effect = yes
-
-			#Revert other stuff in the immediate effect
-			clr_country_flag = ITA_missiolini_strengthen_the_airforce_triggered_flag
-			set_variable = { ITA_missiolinis_fighters_goal = 0 }
-			set_variable = { ITA_missiolinis_cas_goal = 0 }
-			set_variable = { ITA_missiolinis_naval_bombers_goal = 0 }
-			set_variable = { ITA_missiolinis_tactical_bombers_goal = 0 }
-
-
-			#Re-roll
-			set_variable = { ITA_missiolini_reroll_from = 3 } #STRENGTHEN THE AIRFORCE
-			country_event = { id = BBA_italy_missiolinis.00 hours = 20 }
-		}
 	}
 }
 
@@ -1708,51 +1617,6 @@ unit_leader_event = {
 
 		ITA_mussolinis_reroll_cleanup_if_necessary = yes #To clear stuff if coming from a reroll
 	}
-
-	# Re-roll
-	option = { 
-		name = BBA_italy_missiolinis.council
-
-		ai_chance = {
-			base = 0
-		}
-
-		trigger = {
-			has_completed_focus = ITA_boost_the_grand_council_of_fascism
-			NOT = { has_country_flag = ITA_missiolinis_rerolling_flag }
-		}
-
-		ITA_missiolinis_reroll_cost = yes
-
-		hidden_effect = {
-			#Revert mission initialization from immediate effect
-			ITA_missiolinis_revert_new_mission_initialization_effect = yes
-
-			#Revert other stuff in the immediate effect
-			if = {
-				limit = {
-					has_country_flag = ITA_missiolini_research_production_flag
-				}
-				clr_country_flag = ITA_missiolini_research_production_flag
-			}
-			if = {
-				limit = {
-					has_country_flag = ITA_missiolini_research_industry_flag
-				}
-				clr_country_flag = ITA_missiolini_research_industry_flag
-			}
-			if = {
-				limit = {
-					has_country_flag = ITA_missiolini_research_construction_flag
-				}
-				clr_country_flag = ITA_missiolini_research_construction_flag
-			}
-
-			#Re-roll
-			set_variable = { ITA_missiolini_reroll_from = 4 } #INDUSTRIAL RESEARCH
-			country_event = { id = BBA_italy_missiolinis.00 hours = 20 }
-		}
-	}
 }
 
 # Industrial Research - FAILURE 
@@ -1914,35 +1778,6 @@ unit_leader_event = {
 		activate_mission = ITA_missiolini_expand_intelligence_agency
 
 		ITA_mussolinis_reroll_cleanup_if_necessary = yes #To clear stuff if coming from a reroll
-	}
-
-	# Re-roll
-	option = { 
-		name = BBA_italy_missiolinis.council
-
-		ai_chance = {
-			base = 0
-		}
-
-		trigger = {
-			has_completed_focus = ITA_boost_the_grand_council_of_fascism
-			NOT = { has_country_flag = ITA_missiolinis_rerolling_flag }
-		}
-
-		ITA_missiolinis_reroll_cost = yes
-
-		hidden_effect = {
-			#Revert mission initialization from immediate effect
-			ITA_missiolinis_revert_new_mission_initialization_effect = yes
-
-			#Revert other stuff in the immediate effect
-			clr_country_flag = ITA_missiolini_expand_intelligence_service_triggered_flag
-			clr_country_flag = ITA_missiolini_upgrade_agency_goal_flag
-
-			#Re-roll
-			set_variable = { ITA_missiolini_reroll_from = 5 } #EXPAND INTELLIGENCE SERVICE
-			country_event = { id = BBA_italy_missiolinis.00 hours = 20 }
-		}
 	}
 }
 
@@ -2312,34 +2147,6 @@ unit_leader_event = {
 
 		ITA_mussolinis_reroll_cleanup_if_necessary = yes #To clear stuff if coming from a reroll
 	}
-
-	# Re-roll
-	option = { 
-		name = BBA_italy_missiolinis.council
-
-		ai_chance = {
-			base = 0
-		}
-
-		trigger = {
-			has_completed_focus = ITA_boost_the_grand_council_of_fascism
-			NOT = { has_country_flag = ITA_missiolinis_rerolling_flag }
-		}
-
-		ITA_missiolinis_reroll_cost = yes
-
-		hidden_effect = {
-			#Revert mission initialization from immediate effect
-			ITA_missiolinis_revert_new_mission_initialization_effect = yes
-
-			#Revert other stuff in the immediate effect
-			clr_country_flag = ITA_missiolini_bolster_political_cabinet_triggered_flag
-
-			#Re-roll
-			set_variable = { ITA_missiolini_reroll_from = 6 } #BOLSTER POLITICAL CABINET
-			country_event = { id = BBA_italy_missiolinis.00 hours = 20 }
-		}
-	}
 }
 
 # Bolster Political Cabinet - FAILURE 
@@ -2431,34 +2238,6 @@ unit_leader_event = {
 		activate_mission = ITA_missiolini_bolster_military_high_command
 
 		ITA_mussolinis_reroll_cleanup_if_necessary = yes #To clear stuff if coming from a reroll
-	}
-
-	# Re-roll
-	option = { 
-		name = BBA_italy_missiolinis.council
-
-		ai_chance = {
-			base = 0
-		}
-
-		trigger = {
-			has_completed_focus = ITA_boost_the_grand_council_of_fascism
-			NOT = { has_country_flag = ITA_missiolinis_rerolling_flag }
-		}
-
-		ITA_missiolinis_reroll_cost = yes
-
-		hidden_effect = {
-		#Revert mission initialization from immediate effect
-			ITA_missiolinis_revert_new_mission_initialization_effect = yes
-
-			#Revert other stuff in the immediate effect
-			clr_country_flag = ITA_missiolini_bolster_military_high_command_triggered_flag
-
-			#Re-roll
-			set_variable = { ITA_missiolini_reroll_from = 7 } #BOLSTER MILITARY CABINET
-			country_event = { id = BBA_italy_missiolinis.00 hours = 20 }
-		}
 	}
 }
 
