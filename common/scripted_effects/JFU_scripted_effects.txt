@@ -664,6 +664,12 @@ JFU_vichy_france_2 = {
 
 
 JFU_startup_on_action = {
+	every_country = {
+		army_experience = 10
+		navy_experience = 10
+		air_experience = 10
+	}
+	
 	if = { limit = { has_game_rule = { rule = finland_focus option = HORST_ENABLE_MOD_FINLAND	} }	FIN = { load_focus_tree = finlandmod_focus } }
 	if = { limit = { NOT = { has_game_rule = { rule = finland_focus option = HORST_ENABLE_MOD_FINLAND	} } } set_power_balance = { id = FIN_power_balance left_side = FIN_bad_side right_side = FIN_good_side set_value = -0.45 } add_ideas = FIN_sisu_2 }
 	if = { limit = { has_game_rule = { rule = JFU_pre_sets option = COMPETITIVE_JFU } } SWE = {pregrinded_effect = yes} SWE = { JAP_closed_eco_effect = yes } SWE = { SOV_closed_eco_effect = yes } }
