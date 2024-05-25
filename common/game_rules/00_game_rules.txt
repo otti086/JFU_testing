@@ -217,21 +217,6 @@ JFU_SPECIAL_FORCES_CAP = {
 	}
 
 }
-JFU_AFRICA_TILES = {
-	name = "AFRICA Tiles Settings"
-	group = "HORST_GROUPKEY"
-	icon = "RULE_GROUP_GENERAL_UI"
-	default = {
-		name = "THREE_TILE_AFRICA"
-		text = "Modded Africa"
-		desc = "enables modded Africa - 3 tile El-Alamein"
-	}
-	option = {
-		name = "ONE_TILE_AFRICA"
-		text = "Vanilla Africa"
-		desc = "disables modded Africa - 1 tile El-Alamein"
-	}	
-}
 JFU_SPAIN = {
 	name = "Spain CW Settings"
 	group = "HORST_GROUPKEY"
