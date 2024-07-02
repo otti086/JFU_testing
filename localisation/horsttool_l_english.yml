@@ -1201,7 +1201,7 @@
  CAN_great_depression_modifier:0 "Canadian Economy"
  SPR_economy_modifier:0 "Spanish Economy"
  SPR_economy_modifier_desc:0 "We may not build §Yairbases, ports, airports, ships and railway guns§!" 
-
+ ROM_nationalize_oil_industry:0 "Nationalise Oil Industry"
  #tooltips
 
  SOV_behead_the_snake_JFU_tt:0 "Trotsky will be §Rautomatically assasinated §Win 100 days."
@@ -1307,6 +1307,8 @@
  MLL_dynamic_modifer_tt:0 "Modify §YLow Legitimacy§! by\nStabilty §G+10.00%§!\nWar Support §G+10.00%§!"
  MLL_remove_tt:0 "Remove §YLow Legitmiacy§! which granted \nStabilty §R-20.00%§!\nWar Support §R-20.00%§!"
  
+ ROM_NDI_focus_tt:0 "§RThis modifer will get removed up on entering any war§!"
+
  ALLIES_army_eng:0 "§HFourteen§! §Rveteran§! ranger divisions will be assembled in §HLondon§! under our command."
  ALLIES_marines_eng:0 "§HEight§! §Rveteran§! marine divisions will be assembled in §HLondon§! under our command."
  desert_tactics_allies_effect:0 "Enables §HDesert Training§!\n§HTanks and Infantry\n    Desert§!\n      Defense: §G+10%§!"
@@ -1381,6 +1383,12 @@
  soviet_winter_offensive2:0 "1942 Winter offensive"
  soviet_winter_offensive3:0 "1943 Winter offensive"
  JFU_no_tradeback:0 "No tradeback"
+
+ ROM_nationalised_oil_idea:0 "Nationalised Oil"
+
+ MEFO_bills_axis_minor:0 "MEFO Bills" 
+ MEFO_bills_axis_minor_desc:0 "§RWill get removed up on entering any war§!"
+
 
  #decisions
 

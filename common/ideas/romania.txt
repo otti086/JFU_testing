@@ -1,6 +1,21 @@
 ideas = {
 
 	country = {
+		ROM_nationalised_oil_idea = {
+			picture = generic_refining_concern_1
+
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = ROM
+			}
+			
+			modifier = {
+				political_power_cost = 0.1
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+			}
+		}
 		ROM_revenge_against_soviet = {
 
 			picture = anti_soviet_pact

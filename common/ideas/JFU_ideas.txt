@@ -1095,7 +1095,24 @@ ideas = {
 				attack_bonus_against = -0.3
 				defense_bonus_against = -0.1
 			}			
-		}		 		
+		}	
+		MEFO_bills_axis_minor = {
+			allowed = {
+				always = no
+			}
+			cancel = {
+				GER = { has_war = yes }
+			}	
+
+			removal_cost = -1
+
+			picture = ger_mefo_bills
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.20
+				political_power_gain = -0.25
+			}			
+		}	 		
 	}
 	hidden_ideas = {
 		idea_JUNO_truck_production_cost = {
@@ -1243,5 +1260,6 @@ ideas = {
 				license_purchase_cost = -0.3
 			}
 		}
+
 	}
 }

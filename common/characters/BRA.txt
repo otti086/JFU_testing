@@ -39,7 +39,7 @@ characters={
 				OR = { 
 					has_completed_focus = BRA_posts_for_generals 
 				}
-				is_country_leader = NO
+				is_country_leader = no
 			}
 			traits = {
 				BRA_minister_of_defense

@@ -534,7 +534,7 @@ focus = {
 			focus = FRA_laissez_faire
 		}
 		relative_position_id = FRA_laissez_faire
-		cost = 10
+		cost = 5
 
 
 		cancel_if_invalid = yes
@@ -703,7 +703,7 @@ focus = {
 			focus = FRA_protect_the_rights_of_man
 		}
 		relative_position_id = FRA_protect_the_rights_of_man
-		cost = 10
+		cost = 5
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -861,7 +861,7 @@ focus = {
 		x = 0
 		y = 1
 		relative_position_id = FRA_strengthen_government_support
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -1356,7 +1356,7 @@ focus = {
 		}
 		relative_position_id = FRA_form_the_national_committee
 		
-		cost = 10
+		cost = 5
 
 		available = {
 			has_global_flag = EFR_torch_declared
@@ -1487,13 +1487,7 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-		available = {
-			any_owned_state = {
-				is_controlled_by = ROOT
-				NOT = {
-					is_core_of = ROOT
-				}
-			}
+		available = { 
 		}
 		
 		bypass = {
@@ -1524,9 +1518,6 @@ focus = {
 		}
 		available = {
 			any_enemy_country = {
-				has_war_with = SOV
-			}
-			NOT = {
 				has_war_with = SOV
 			}
 		}
@@ -1762,7 +1753,7 @@ focus = {
 		}
 		relative_position_id = FRA_the_civil_and_military_organization
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
