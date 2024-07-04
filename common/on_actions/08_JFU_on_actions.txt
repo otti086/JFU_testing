@@ -218,36 +218,30 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					has_global_flag = YUGO_FREE_COLAB_FLAG
+					original_tag = YUG
 				}
-				if = { 
+				every_state = {
 					limit = {
-						original_tag = YUG
-					}
-					every_state = {
-						limit = {
-							AND = {
-								is_core_of = YUG
-								is_controlled_by = ITA
-							}
+						AND = {
+							is_core_of = YUG
+							is_controlled_by = ITA
 						}
-					
-						add_compliance = 75 
 					}
+					add_compliance = 75 
 				}
 			}
 			if = {
 				limit = { 
 				original_tag = POL
 				}
-				SOV = {transfer_state = 96 }
-				SOV = {transfer_state = 95 }
-				SOV = {transfer_state = 94 }
-				SOV = {transfer_state = 784 }
-				SOV = {transfer_state = 93 }
-				SOV = {transfer_state = 91 }
-				SOV = {transfer_state = 89 }
-				SOV = {transfer_state = 97 }
+				SOV = { transfer_state = 96 }
+				SOV = { transfer_state = 95 }
+				SOV = { transfer_state = 94 }
+				SOV = { transfer_state = 784 }
+				SOV = { transfer_state = 93 }
+				SOV = { transfer_state = 91 }
+				SOV = { transfer_state = 89 }
+				SOV = { transfer_state = 97 }
 				every_state = {
 					limit = {
 						AND = {

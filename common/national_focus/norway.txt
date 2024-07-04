@@ -22,7 +22,7 @@ focus_tree = {
 		y = 0
 
 
-		cost = 10
+		cost = 1
 		ai_will_do = {
 			factor = 1
 		}
@@ -37,7 +37,7 @@ focus_tree = {
 
 		completion_reward = {
 			remove_ideas = NOR_AI_STATE
-			add_research_slot = 1
+			add_research_slot = 2
 			add_political_power = 150
 		}
 	}
@@ -457,7 +457,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_research_slot = 2
+			add_research_slot = 1
 		}
 
     }
@@ -862,6 +862,9 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = tot_economic_mobilisation
+			ENG = { 
+				add_to_faction = NOR 
+			}
 		}
 
     }

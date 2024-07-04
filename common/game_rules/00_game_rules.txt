@@ -161,36 +161,6 @@ JFU_closed_eco_JAPAN = {
 		desc = "Clicking this option will give Japan closed eco"
 	}
 }
-JFU_YUGO_COLAB = {
-	name = "Yugoslavia Colab Settings"
-	group = "HORST_GROUPKEY"
-	icon = "RULE_GROUP_GENERAL_UI"
-	default = {
-		name = "NO_FREE_COLAB"
-		text = "Standard JFU Settings"
-		desc = "Clicking this option will disable the free colab on yugoslavia for Italy"
-	}
-	option = {
-		name = "FREE_COLAB_YUGO"
-		text = "Free colab for Italy"
-		desc = "Clicking this option will give Italy 75% comliance on Yugoslavia"
-	}
-}
-JFU_TOT_MOB_ITA = {
-	name = "Total Mob Italy Settings"
-	group = "HORST_GROUPKEY"
-	icon = "RULE_GROUP_GENERAL_UI"
-	default = {
-		name = "TOT_MOB_ITA_ON"
-		text = "Total Mob on"
-		desc = "gives Italy Total Mobilisation when declaring on Yugoslavia "
-	}
-	option = {
-		name = "TOT_MOB_ITA_OFF"
-		text = "Total Mob off"
-		desc = "keep Total Mobilisation disabled until Italy joins WW2"
-	}		
-}
 JFU_SPECIAL_FORCES_CAP = {
 	name = "Special Forces Cap Settings"
 	group = "HORST_GROUPKEY"
@@ -281,21 +251,6 @@ CASUAL_STUFF = {
 		text = "Enabled - more casual/larp JFU"
 		desc = "enabled Island hoping, Japan declaring on soviets, Clown front for Japan..."
 	}		
-}
-finland_focus = {
-	name = "Finland Focus Tree"
-	group = "MODDED_FOCI"					
-	icon = "GFX_decision_hol_draw_up_staff_plans"			
-	default = {	
-		name = "HORST_ENABLE_MOD_FINLAND"
-		text = "Finland Modded Focus Tree"
-		desc = "Clicking this option will give Finland a powerful new focus tree that was created by Leo"	
-	}
-	option = {	
-		name = "HORST_ENABLE_VANILLA_FINLAND" 
-		text = "Finland Vanilla Focus Tree"
-		desc = "Vanilla Focus Tree for Finland"	
-	}
 }
 hosttool_game_rule = {
 	name = "HOSTTOOL_GAME_RULE"

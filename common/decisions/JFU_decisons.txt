@@ -279,42 +279,27 @@ political_actions1 = {
 
 				ITA = { annex_country = { target = YUG transfer_troops = no } }
 				hidden_effect = {
-					if = {
+					every_state = {
 						limit = {
-							has_global_flag = YUGO_FREE_COLAB_FLAG
-						}
-						every_state = {
-							limit = {
-								AND = {
-									is_core_of = YUG
-									is_controlled_by = ITA
-								}
+							AND = {
+								is_core_of = YUG
+								is_controlled_by = ITA
 							}
-							add_compliance = 75 
 						}
-						every_state = {
-							limit = {
-								AND = {
-									is_core_of = YUG
-									is_controlled_by = BUL
-								}
-							}
-							add_compliance = 30 
-						}
+						add_compliance = 75 
 					}
-				}
-			}
-			hidden_effect = { 
-				if = {
-					limit = {
-						has_game_rule = {
-							rule = JFU_TOT_MOB_ITA  
-							option = TOT_MOB_ITA_ON
+					every_state = {
+						limit = {
+							AND = {
+								is_core_of = YUG
+								is_controlled_by = BUL
+							}
 						}
+						add_compliance = 30 
 					}
 					add_ideas = tot_economic_mobilisation
-				}   
-			}	
+				}
+			}
 		}
 	}
 	"Attack Greece" = {
