@@ -4144,20 +4144,22 @@ focus_tree = {
 			}
 
 			custom_effect_tooltip = ITA_milizia_marittima_di_artiglieria_coastal_forts_tt
-			every_owned_state = {
-				limit = {
-					is_fully_controlled_by = ROOT
-					naval_base > 0
-				}
-				set_building_level = {
-					type = coastal_bunker
-					level = 2
-					instant_build = yes
-					province = {
-						all_provinces = yes
-						limit_to_naval_base = yes
+			hidden_effect = {
+				every_owned_state = {
+					limit = {
+						is_fully_controlled_by = ROOT
+						naval_base > 0
 					}
-				}
+					set_building_level = {
+						type = coastal_bunker
+						level = 2
+						instant_build = yes
+						province = {
+							all_provinces = yes
+							limit_to_naval_base = yes
+						}
+					}
+				}				
 			}
 		}
 	}
@@ -4517,20 +4519,6 @@ focus_tree = {
 
 		completion_reward = {
 			navy_experience = 15
-			add_doctrine_cost_reduction = {
-				name = ITA_cruiser_submarines
-				cost_reduction = 0.75
-				uses = 2
-				category = trade_interdiction_tree
-			}
-
-			add_tech_bonus = {
-				name = ITA_cruiser_submarines
-				bonus = 1.0
-				uses = 1
-				category = ss_tech
-			}
-
 			if = {
 				limit = {
 					has_dlc = "Man the Guns"
@@ -4565,19 +4553,6 @@ focus_tree = {
 
 		completion_reward = {
 			navy_experience = 15
-			add_doctrine_cost_reduction = {
-				name = ITA_midget_submarines
-				cost_reduction = 0.75
-				uses = 2
-				category = trade_interdiction_tree
-			}
-
-			add_tech_bonus = {
-				name = ITA_midget_submarines
-				bonus = 1.0
-				uses = 1
-				category = ss_tech
-			}
 
 			###########
 			### MTG ###
@@ -4751,8 +4726,6 @@ focus_tree = {
 		relative_position_id = ITA_incrociatori_leggeri
 		cost = 5
 		available = {
-			has_tech = improved_depth_charges
-			has_tech = sonar
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH}
@@ -5754,30 +5727,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ITA_la_battaglia_del_grano
-		icon = GFX_focus_SOV_breadbasket_of_the_union
-		prerequisite = { focus = ITA_culto_del_duce }
-		mutually_exclusive = { focus = ITA_la_battaglia_per_la_terra }
-		x = -1
-		y = 1
-		relative_position_id = ITA_culto_del_duce
-		cost = 10
-		available = {
-		}
-
-		search_filters = {FOCUS_FILTER_INDUSTRY}
-
-		completion_reward = {
-			add_timed_idea = { idea = ITA_battaglia_del_grano days = 730 }
-		}
-	}
-
-	focus = {
 		id = ITA_la_battaglia_per_la_terra
 		icon = GFX_focus_generic_land_reclamation
 		prerequisite = { focus = ITA_culto_del_duce }
-		mutually_exclusive = { focus = ITA_la_battaglia_del_grano }
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = ITA_culto_del_duce
 		cost = 10
@@ -5787,50 +5740,15 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			if = { #Latium
-				limit = {
-					2 = {
-						free_building_slots = {
-							building = arms_factory
-							size > 1
-							include_locked = yes
-						} 
-					}
-				}
-				2 = {
-					add_extra_state_shared_building_slots = 2
-				}
+			2 = {
+				add_extra_state_shared_building_slots = 2
 			}
-			if = { #Campania
-				limit = {
-					117 = {
-						free_building_slots = {
-							building = arms_factory
-							size > 1
-							include_locked = yes
-						} 
-					}
-				}
-				117 = {
-					add_extra_state_shared_building_slots = 2
-				}
+			117 = {
+				add_extra_state_shared_building_slots = 2
 			}
-
-			if = { #Tuscany
-				limit = {
-					162 = {
-						free_building_slots = {
-							building = arms_factory
-							size > 1
-							include_locked = yes
-						} 
-					}
-				}
-				162 = {
-					add_extra_state_shared_building_slots = 2
-				}
+			162 = {
+				add_extra_state_shared_building_slots = 2
 			}
-
 			add_timed_idea = { idea = ITA_battaglia_per_la_terra days = 730 }
 		}
 	}
@@ -5838,11 +5756,11 @@ focus_tree = {
 	focus = {
 		id = ITA_la_battaglia_per_le_nascite
 		icon = GFX_focus_generic_population_growth
-		prerequisite = { focus = ITA_la_battaglia_del_grano focus = ITA_la_battaglia_per_la_terra }
+		prerequisite = { focus = ITA_la_battaglia_per_la_terra }
 
-		x = 1
+		x = 0
 		y = 1
-		relative_position_id = ITA_la_battaglia_del_grano
+		relative_position_id = ITA_la_battaglia_per_la_terra
 		cost = 5
 		available = {
 		}
@@ -5864,18 +5782,11 @@ focus_tree = {
 		relative_position_id = ITA_la_battaglia_per_le_nascite
 		cost = 5
 		available = {
-			has_country_leader = {
-				character = ITA_benito_mussolini
-				ruling_only = yes
-			}
 		}
 
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER}
 
 		completion_reward = {
-			add_stability = 0.05
-			add_war_support = 0.05
-
 			if = {
 				limit = {
 					has_completed_focus = ITA_the_man_of_providence
@@ -5933,7 +5844,7 @@ focus_tree = {
 		icon = GFX_focus_generic_italy_propaganda
 		prerequisite = { focus = ITA_culto_del_duce }
 
-		x = 3
+		x = 2
 		y = 1
 		relative_position_id = ITA_culto_del_duce
 		cost = 5
@@ -5998,6 +5909,11 @@ focus_tree = {
 		y = 2
 		relative_position_id = ITA_believe_obey_fight
 		cost = 10
+
+
+		allow_branch = {
+			always = no
+		}
 
 		available = {
 			IF = {
@@ -6065,8 +5981,8 @@ focus_tree = {
 		icon = GFX_goal_generic_military_sphere
 		prerequisite = { focus = ITA_culto_del_duce }
 
-		x = 6
-		y = 2
+		x = 4
+		y = 1
 		relative_position_id = ITA_culto_del_duce
 		cost = 5
 		available = {
@@ -6418,11 +6334,10 @@ focus_tree = {
 			every_state = { 
 				limit = { 
 					OR = { 
-						state = 907 
+						state = 970 
 						state = 446 
+						state = 452 
 						state = 453 
-						state = 454 
-						state = 119
 						state = 447
 					}
 				}
@@ -6464,6 +6379,7 @@ focus_tree = {
 		relative_position_id = ITA_subdue_the_sentinels
 		cost = 10
 		available = {
+			controls_state = 907
 		}
 
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT}
@@ -6511,7 +6427,7 @@ focus_tree = {
 		icon = GFX_goal_generic_dangerous_deal
 		prerequisite = { focus = ITA_triumph_in_africa_bba }
 
-		x = 11
+		x = 8
 		y = 1
 		relative_position_id = ITA_triumph_in_africa_bba
 		cost = 5
@@ -6557,6 +6473,7 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = ITA_yugo_attack_desc_tt
+			add_named_threat = { threat = 2 name = ITA_yugo_war_goal }
 			hidden_effect = {
 				if = {
 					limit = { 

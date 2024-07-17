@@ -1564,10 +1564,10 @@ technologies = {
 		}
 
 		category_all_infantry = { 
-			soft_attack = 0.1 
+			soft_attack = 0.05 
 		}
 		category_artillery = { 
-			soft_attack = 0.1
+			soft_attack = 0.05
 		}
 		path = {
 			leads_to_tech = forward_observers 
@@ -1736,15 +1736,15 @@ technologies = {
 		
 		category_front_line = {
 			 soft_attack = 0.05
-			 hard_attack = 0.05
 		}
 		
 		category_all_infantry = { 
-			soft_attack = 0.05 
+			soft_attack = 0.1
+			hard_attack = 0.1
 		}
 		category_artillery = { 
-			soft_attack = 0.05
-			hard_attack = 0.05
+			soft_attack = 0.1
+			hard_attack = 0.1
 		}
 		enable_tactic = tactic_breakthrough
 				

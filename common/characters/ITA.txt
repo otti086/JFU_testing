@@ -1841,7 +1841,6 @@ characters = {
 				original_tag = ITA			
 			}
 			available = {
-				NOT = { has_completed_focus = ITA_pact_of_steel }
 			}
 			traits = {
 				financial_expert
