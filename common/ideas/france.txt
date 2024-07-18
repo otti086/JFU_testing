@@ -730,7 +730,6 @@ ideas = {
 			picture = generic_wall_line
 			
 			modifier = {
-				planning_speed = -0.25
 				conversion_cost_civ_to_mil_factor= 2
 				production_speed_naval_base_factor = -1.5
 			}
