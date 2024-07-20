@@ -76,8 +76,8 @@ weather_sandstorm = { # on Region
 	local_org_regain = -0.2
 	naval_strike = -0.9
 	org_loss_when_moving = 0.25
-	supply_factor = -0.15
-	truck_attrition_factor = 3.0
+	supply_factor = -0.05
+	truck_attrition_factor = 2.0
 }
 
 weather_arctic_water = { # on Region
@@ -119,7 +119,7 @@ weather_extreme_hot = { # on Province
 	army_attack_factor = -0.1
 	heat_attrition = 0.2
 	local_org_regain = -0.1
-	supply_consumption_factor = 0.5
+	supply_factor = -0.1
 	truck_attrition_factor = 0.1
 }
 weather_ground_snow_medium = { # on Province

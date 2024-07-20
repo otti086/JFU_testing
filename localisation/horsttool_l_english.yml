@@ -1202,6 +1202,7 @@
  SPR_economy_modifier:0 "Spanish Economy"
  SPR_economy_modifier_desc:0 "We may not build §Yairbases, ports, airports, ships and railway guns§!" 
  ROM_nationalize_oil_industry:0 "Nationalise Oil Industry"
+
  #tooltips
 
  SOV_behead_the_snake_JFU_tt:0 "Trotsky will be §Rautomatically assasinated §Win 100 days."
@@ -1212,8 +1213,6 @@
  SOV_arctic_ll_tt:0 "§Y3.00K§! units of §Yallied Tanks§! and §Y600§! units of §Yallied Tank Destroyers§! is added to the national stockpile"
  SOV_north_sea_ll_tt:0 "§Y2.00K§! units of §Yallied Tanks§! and §Y400§! units of §Yallied Tank Destroyers§! is added to the national stockpile"
  SOV_order_227_trigger_tt:0 "Doesn't has Order 270 active"
-
-
 
  UK_imperial_conference_tt:0 " Add §YImperial Conference Economy Agreements§!, which grants (Factory Output §G+15.00%§!, Dockyard Output §G+15.00%§!).\n Add §YImperial Conference Economy Agreements§! which grants (§YCivilian Factory§! construction Speed §G+15.00%§!, §YMilitary Factory§! construction speed §G+15.00%§!, §!Dockyard§! construction Speed §G+15.00%§!)\n Gain Base War Support §G+10.00%§!\n(@AST§YAustralia, @CANDominion of Canada, @RAJBritish Raj,\n @NZLNew Zealand and @SAFSouth Africa§!):\n    Add §YImperial Conference Defense Agreements§! which grants (Factory Output §G+10.00%§!, Dockyard Output §G+10.00%§!).\n    Add §YImperial Conference Economy Agreements§! which grants (§YCivilian Factory§! construction Speed §G+10.00%§!, §YMilitary Factory§! construction speed §G+10.00%§!, §!Dockyard§! construction Speed §G+10.00%§!)\n   Gain Base War Support §G+10.00%§! "
  ENG_fortify_the_empire_big_tt:0 "Modify §YFortify the Empire§! by\n §YLand Fort§! construction speed §G+10.00%§!\n §YCoastal Fort§! construction speed §G+10.00%§!"
@@ -1247,10 +1246,6 @@
  SPR_economy_eagt_tt:0 "Modify §YSpanish Economy§! by \nConstruction speed: §G+10.00%§!," 
  SPR_economy_tdtw_tt:0 "Modify §YSpanish Economy§! by \nConsumer Goods Factories factor: §Y-10.0%§!,\nConstuction Speed: §G+8.00%§!\nFactory Output: §G+24.00%§!\nDockyard Output: §G+14.00%§!"
  SPR_economy_eass_tt:0 "Modify §YSpanish Economy§! by \nConsumer Goods Factories factor: §Y-15.0%§!,\nConstuction Speed: §G+14.00%§!\nFactory Output: §G+28.00%§!\nDockyard Output: §G+28.00%§!"
-
-
-
-
 
  GER_second_vienna_focus_tt:0 "This focus is automatically completed by an event which triggers in §YAugust 1940§!."
  GER_ussr_war_goal_focus_tt:0 "This focus is automatically completed in case of war with the §YSoviet Union§!."
@@ -1303,7 +1298,8 @@
  MIO_range_trait:0 "Unlocks a special Range trait for the Light Aircraft and Naval Aircraft Designer"
  MIO_agility_trait:0 "Unlocks a special Agility trait for the Light Aircraft and Naval Aircraft Designer"
  jap_china_tt:0 "§RMay declare war on China via decision§!"
- 
+ JAP_declare_tt:0 "§RWe will declare war on all allied nations§!"
+
  MLL_dynamic_modifer_tt:0 "Modify §YLow Legitimacy§! by\nStabilty §G+10.00%§!\nWar Support §G+10.00%§!"
  MLL_remove_tt:0 "Remove §YLow Legitmiacy§! which granted \nStabilty §R-20.00%§!\nWar Support §R-20.00%§!"
  
