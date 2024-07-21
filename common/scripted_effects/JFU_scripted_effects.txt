@@ -459,29 +459,25 @@ JFU_vichy_france = {
 			}
 		add_to_faction = MEX
 		}
-		hidden_effect = { 
-			ENG = { 
-				every_state = {
-					limit = {
-						AND = {
-							is_controlled_by = HOL
-							is_on_continent = asia
-						}
-					}
-					transfer_state_to = ENG
+		every_state = {
+			limit = {
+			AND = {
+					is_controlled_by = HOL
+					is_on_continent = asia
 				}
-				transfer_state = 695
-				transfer_state = 669
-			} 
-			every_state = {
-				limit = {
-					AND = {
-						is_core_of = HOL
-						is_controlled_by = ENG
-					}
-				}
-				set_compliance = 80
 			}
+			transfer_state_to = ENG
+		}
+		transfer_state = 695
+		transfer_state = 669 
+		every_state = {
+			limit = {
+				AND = {
+					is_core_of = HOL
+					is_controlled_by = ENG
+				}
+			}
+			set_compliance = 80
 		}
 	}			
 }
@@ -889,8 +885,8 @@ JFU_startup_on_action = {
 		add_equipment_to_stockpile = { type = convoy_1 amount = 100 producer = BUL }
 	}
 	SOV = {
-		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 280000 }
-		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 80000 }
+		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 220000 }
+		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 40000 }
 		add_equipment_to_stockpile = { type = support_equipment_1 amount = 443 }
 		add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 1600 }
 		add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 814 }
@@ -3981,7 +3977,184 @@ BRA_clr_country_leader_role = {
 		}
 	}
 }
+JAP_interservice_rivalry_towards_army = {
+	
+	if = {
+		limit = {  has_idea = JAP_interservice_rivalry_army_strengthened }
+		swap_ideas = {
+			remove_idea = JAP_interservice_rivalry_army_strengthened
+			add_idea = JAP_interservice_rivalry_army_dominant
+		}
+	}
 
+	if = {
+		limit = { has_idea = JAP_interservice_rivalry_balanced }
+		swap_ideas = {
+			remove_idea = JAP_interservice_rivalry_balanced
+			add_idea = JAP_interservice_rivalry_army_strengthened
+		}
+	}
+
+	if = {
+		limit = { has_idea = JAP_interservice_rivalry_navy_strengthened }
+		swap_ideas = {
+			remove_idea = JAP_interservice_rivalry_navy_strengthened
+			add_idea = JAP_interservice_rivalry_balanced
+		}
+	}
+
+	if = {
+		limit = { has_idea = JAP_interservice_rivalry_navy_dominant }
+		swap_ideas = {
+			remove_idea = JAP_interservice_rivalry_navy_dominant
+			add_idea = JAP_interservice_rivalry_navy_strengthened
+		}
+	}
+
+}
+
+JAP_interservice_rivalry_towards_navy = {
+
+	if = {
+		limit = { has_idea = JAP_interservice_rivalry_navy_strengthened }
+		swap_ideas = {
+			remove_idea = JAP_interservice_rivalry_navy_strengthened
+			add_idea = JAP_interservice_rivalry_navy_dominant
+		}
+	}	
+	if = {
+		limit = { has_idea = JAP_interservice_rivalry_balanced }
+		swap_ideas = {
+			remove_idea = JAP_interservice_rivalry_balanced
+			add_idea = JAP_interservice_rivalry_navy_strengthened
+		}
+	}
+	if = {
+		limit = { has_idea = JAP_interservice_rivalry_army_strengthened }
+		swap_ideas = {
+			remove_idea = JAP_interservice_rivalry_army_strengthened
+			add_idea = JAP_interservice_rivalry_balanced
+		}
+	}
+	if = {
+		limit = { has_idea = JAP_interservice_rivalry_army_dominant }
+		swap_ideas = {
+			remove_idea = JAP_interservice_rivalry_army_dominant
+			add_idea = JAP_interservice_rivalry_army_strengthened
+		}
+	}
+	
+	
+	
+}
+
+JAP_intervene_in_china_level_down = {
+
+	if = {
+		limit = { has_idea = JAP_intervene_in_china_1 }
+		remove_ideas = JAP_intervene_in_china_1
+		MAN = {
+			remove_ideas = JAP_intervene_in_china_1
+		}
+	}
+	
+	if = {
+		limit = { has_idea = JAP_intervene_in_china_2 }
+		swap_ideas = {
+			remove_idea = JAP_intervene_in_china_2
+			add_idea = JAP_intervene_in_china_1
+		}
+		MAN = {
+			swap_ideas = {
+				remove_idea = JAP_intervene_in_china_2
+				add_idea = JAP_intervene_in_china_1
+			}
+		}
+	}
+	
+	if = {
+		limit = { has_idea = JAP_intervene_in_china_3 }
+		swap_ideas = {
+			remove_idea = JAP_intervene_in_china_3
+			add_idea = JAP_intervene_in_china_2
+		}
+		MAN = {
+			swap_ideas = {
+				remove_idea = JAP_intervene_in_china_3
+				add_idea = JAP_intervene_in_china_2
+			}
+		}
+	}
+	
+	if = {
+		limit = { has_idea = JAP_intervene_in_china_4 }
+		swap_ideas = {
+			remove_idea = JAP_intervene_in_china_4
+			add_idea = JAP_intervene_in_china_3
+		}
+		MAN = {
+			swap_ideas = {
+				remove_idea = JAP_intervene_in_china_4
+				add_idea = JAP_intervene_in_china_3
+			}
+		}
+	}
+
+	if = {
+		limit = { has_idea = JAP_intervene_in_china_5 }
+		swap_ideas = {
+			remove_idea = JAP_intervene_in_china_5
+			add_idea = JAP_intervene_in_china_4
+		}
+		MAN = {
+			swap_ideas = {
+				remove_idea = JAP_intervene_in_china_5
+				add_idea = JAP_intervene_in_china_4
+			}
+		}
+	}
+}
+
+JAP_intervene_in_china_remove = {
+
+	if = {
+		limit = { has_idea = JAP_intervene_in_china_5 }
+		remove_ideas = JAP_intervene_in_china_5
+		MAN = {
+			remove_ideas = JAP_intervene_in_china_5
+		}		
+	}
+	
+	if = {
+		limit = { has_idea = JAP_intervene_in_china_4 }
+		remove_ideas = JAP_intervene_in_china_4
+		MAN = {
+			remove_ideas = JAP_intervene_in_china_4
+		}	
+	}
+	
+	if = {
+		limit = { has_idea = JAP_intervene_in_china_3 }
+		remove_ideas = JAP_intervene_in_china_3
+		MAN = {
+			remove_ideas = JAP_intervene_in_china_3
+		}	
+	}
+	
+	if = {
+		limit = { has_idea = JAP_intervene_in_china_2 }
+		remove_ideas = JAP_intervene_in_china_2
+		MAN = {
+			remove_ideas = JAP_intervene_in_china_2
+		}	
+	}
+	else = {		
+		remove_ideas = JAP_intervene_in_china_1
+		MAN = {
+			remove_ideas = JAP_intervene_in_china_1
+		}	
+	}	
+}
 SOV_relocate_civ = {
 	random_owned_controlled_state = {
 		limit = {

@@ -1298,7 +1298,8 @@
  MIO_range_trait:0 "Unlocks a special Range trait for the Light Aircraft and Naval Aircraft Designer"
  MIO_agility_trait:0 "Unlocks a special Agility trait for the Light Aircraft and Naval Aircraft Designer"
  jap_china_tt:0 "§RMay declare war on China via decision§!"
- JAP_declare_tt:0 "§RWe will declare war on all allied nations§!"
+ JAP_declare_tt:0 "§RWe will declare war on all allied nations. \nTora Tora Tora will be active for 180 days. We will also reduced the Entrenchment of all east asian states by 8 for 180 days§!"
+ JAP_suprise_attack_dynamic:0 "Japanese suprise attack"
 
  MLL_dynamic_modifer_tt:0 "Modify §YLow Legitimacy§! by\nStabilty §G+10.00%§!\nWar Support §G+10.00%§!"
  MLL_remove_tt:0 "Remove §YLow Legitmiacy§! which granted \nStabilty §R-20.00%§!\nWar Support §R-20.00%§!"

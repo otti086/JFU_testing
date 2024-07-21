@@ -343,12 +343,6 @@ FRA_has_inefficient_economy = {
 		has_idea = FRA_inefficient_economy_1
 	}
 }
-FRA_has_worker_shortage = {
-	OR = {
-		has_idea = FRA_full_employment
-		has_idea = FRA_worker_shortage
-	}
-}
 
 is_owned_or_subject_trigger = {
 	CONTROLLER = {

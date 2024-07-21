@@ -266,7 +266,7 @@
 		y = 1
 		relative_position_id = JAP_strike_south_doctrine
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 3
@@ -322,6 +322,15 @@
 				add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 180 }
 				MAN = { add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 180 } }
 				SIA = { add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 180 } }
+				every_state = { 
+					limit = { 
+						ALLIED_asia_states = yes
+					}
+					add_dynamic_modifier = { 
+						modifier =  JAP_suprise_attack_dynamic 
+						days = 180 
+					}  
+				}			
 			}
 			hidden_effect = {
 				every_country = {
@@ -347,7 +356,8 @@
 					}
 				}
 				country_event = { id = super.4 hours = 0 }						
-			} 			
+			}
+			
 		}
 	}
 	focus = {
@@ -643,7 +653,7 @@
 		y = 1
 		relative_position_id = JAP_national_defense_state
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 4
@@ -675,7 +685,7 @@
 		y = 1
 		relative_position_id = JAP_national_defense_state
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -726,7 +736,7 @@
 		y = 1
 		relative_position_id = JAP_spiritual_mobilization
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 3
@@ -1218,7 +1228,7 @@
 		y = 3
 		relative_position_id = JAP_fighter_modernization
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1

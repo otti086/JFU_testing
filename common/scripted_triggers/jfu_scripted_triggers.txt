@@ -128,3 +128,28 @@ ITA_africa_states = {
 		state = 911 
 	}
 }
+ALLIED_asia_states = {
+	OR = {
+		state = 336
+		state = 672
+		state = 335
+		state = 667
+		state = 333
+		state = 334
+		state = 673
+		state = 626
+		state = 523
+		state = 327
+		state = 624
+		state = 628
+		state = 625
+		state = 627
+		state = 668
+		state = 669
+		state = 523
+		state = 738
+		state = 737
+		state = 634
+		state = 638
+	}
+}
