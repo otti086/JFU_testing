@@ -32,7 +32,7 @@ NDefines.NMilitary.RIVER_CROSSING_SPEED_PENALTY_LARGE = -0.5     -- large river 
 NDefines.NMilitary.ENCIRCLED_DISBAND_MANPOWER_FACTOR = 0            -- WAS 0.2 | Most rulesets ban deleting encircled troops, but at least this prevents some manpower from returning | Deleting encircled divisions is always banned anyways, so this reduces unfair play | percentage of manpower returned when an encircled unit is disbanded
 
 
-NDefines.NMilitary.COMBAT_MOVEMENT_SPEED = 0.36 -- VANILLA 0.33
+NDefines.NMilitary.COMBAT_MOVEMENT_SPEED = 0.30 -- VANILLA 0.33
 NDefines.NMilitary.LAND_SPEED_MODIFIER = 0.05	-- VANILLA 0.05
 NDefines.NMilitary.RETREAT_SPEED_FACTOR = 0.4		-- VANILLA 0.25 
 NDefines.NMilitary.WITHDRAWING_SPEED_FACTOR = 0.25	-- VANILLA 0.15
