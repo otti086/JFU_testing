@@ -27,7 +27,7 @@ if = {
 }
 add_relation_modifier = {
 	target = SPR
-	modifier = trade_spain
+	modifier = trade_halfed
 }
 if = {
 	limit = { has_dlc = "By Blood Alone" }

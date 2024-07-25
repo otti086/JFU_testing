@@ -3,7 +3,7 @@
 ### Air Wings
 air_wings = {
 	# LVO Aviatsya Komandovaniya -- Leningrad
-	219 = { 
+	247 = { 
 		# 15ya Istrebitel'nye Aviabrigada
 		small_plane_airframe_0 = {
 			owner = "SOV" 

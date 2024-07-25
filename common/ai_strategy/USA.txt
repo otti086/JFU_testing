@@ -577,12 +577,6 @@ USA_template_design_1 = {
 
 	ai_strategy = {
 		type = template_prio
-		id = paratroopers
-		value = -50
-	}
-
-	ai_strategy = {
-		type = template_prio
 		id = infantry
 		value = 60
 	}
@@ -633,12 +627,6 @@ USA_template_design_2 = {
 
 	ai_strategy = {
 		type = template_prio
-		id = paratroopers
-		value = -50
-	}
-
-	ai_strategy = {
-		type = template_prio
 		id = infantry
 		value = 100
 	}
@@ -653,10 +641,10 @@ USA_template_design_2 = {
 USA_garrison_production = {
 	allowed = { original_tag = USA }
 	enable = {
-		ai_wants_divisions >  12 #Massively decreasing the amount of paratroopers the AI wants
+		ai_wants_divisions >  12 
 	}
 	abort = {
-		ai_wants_divisions < 13 #Massively decreasing the amount of paratroopers the AI wants
+		ai_wants_divisions < 13
 	}
 
 	ai_strategy = {

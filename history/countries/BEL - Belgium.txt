@@ -17,6 +17,7 @@ set_technology = {
 	trench_warfare = 1
 	fuel_silos = 1
 	basic_train = 1
+	building_limiter_tech = 1
 }
 
 recruit_character = BEL_hubert_pierlot

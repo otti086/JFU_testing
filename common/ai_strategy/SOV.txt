@@ -27,11 +27,7 @@ SOV_unit_production = {
 		value = 1
 	}
 
-	ai_strategy = {
-		type = role_ratio
-		id = paratroopers
-		value = 0
-	}
+
 
 	ai_strategy = {
 		type = role_ratio
@@ -362,12 +358,6 @@ SOV_template_design_1 = {
 
 	ai_strategy = {
 		type = template_prio
-		id = paratroopers
-		value = -50
-	}
-
-	ai_strategy = {
-		type = template_prio
 		id = infantry
 		value = 50
 	}
@@ -416,12 +406,6 @@ SOV_template_design_2 = {
 		type = template_prio
 		id = heavy_armor
 		value = 20
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = paratroopers
-		value = -50
 	}
 
 	ai_strategy = {

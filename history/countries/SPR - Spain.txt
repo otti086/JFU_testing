@@ -163,7 +163,10 @@ if = {
 		set_character_flag = SPR_do_not_align_me_flag
 	}
 }
-
+add_relation_modifier = {
+	target = GER
+	modifier = trade_halfed
+}
 set_research_slots = 3
 
 set_technology = {

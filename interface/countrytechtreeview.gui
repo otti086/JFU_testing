@@ -1065,7 +1065,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "armour_subtitle_heavy"
-					position = { x = 275k  y = 50 }
+					position = { x = 285k  y = 50 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -1091,7 +1091,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "armour_subtitle_light"
-					position = { x = -140 y = 55  }
+					position = { x = -140 y = 50  }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -3111,7 +3111,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "industry_subtitle_synthetic_oil"
-					position = { x = 1308 y = 115  }
+					position = { x = 1218 y = 115  }
 					textureFile = ""
 					font = "hoi_22tech"
 					borderSize = {x = 0 y = 4}
@@ -3124,7 +3124,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "industry_subtitle_construction"
-					position = { x = 871 y = 255  }
+					position = { x = 881 y = 255  }
 					textureFile = ""
 					font = "hoi_22tech"
 					borderSize = {x = 0 y = 4}
@@ -3136,7 +3136,7 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "JUGGLE BUTTON"
-					position = { x = 947 y = 115  }
+					position = { x = 881 y = 115  }
 					textureFile = ""
 					font = "hoi_22tech"
 					borderSize = {x = 0 y = 4}

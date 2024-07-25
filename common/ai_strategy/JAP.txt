@@ -500,11 +500,6 @@ JAP_template_design = {
 		value = -100
 	}
 
-	ai_strategy = {
-		type = template_prio
-		id = paratroopers
-		value = -10
-	}
 
 	ai_strategy = {
 		type = template_prio

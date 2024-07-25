@@ -130,6 +130,7 @@ ITA_africa_states = {
 }
 ALLIED_asia_states = {
 	OR = {
+		state = 623
 		state = 336
 		state = 672
 		state = 335

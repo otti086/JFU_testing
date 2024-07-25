@@ -34,11 +34,6 @@ ENG_unit_production = {
 	# }
 
 
-	ai_strategy = {
-		type = role_ratio
-		id = paratroopers
-		value = 0
-	}
 
 	ai_strategy = {
 		type = role_ratio
@@ -531,11 +526,6 @@ ENG_template_design_1 = {
 		value = -100
 	}
 
-	ai_strategy = {
-		type = template_prio
-		id = paratroopers
-		value = -10
-	}
 
 	ai_strategy = {
 		type = template_prio
@@ -593,11 +583,6 @@ ENG_template_design_2 = {
 		value = -100
 	}
 
-	ai_strategy = {
-		type = template_prio
-		id = paratroopers
-		value = -10
-	}
 
 	ai_strategy = {
 		type = template_prio

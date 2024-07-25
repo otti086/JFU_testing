@@ -3,7 +3,7 @@
 ### Air Wings
 air_wings = {
 	# LVO Aviatsya Komandovaniya -- Leningrad
-	219 = { 
+	247 = { 
 		# 15ya Istrebitel'nye Aviabrigada
 		fighter_equipment_0 = {
 			owner = "SOV" 
@@ -13,43 +13,6 @@ air_wings = {
 		tac_bomber_equipment_0 =  {
 			owner = "SOV" 
 			amount = 120
-		}
-	}
-
-	# MVO Aviatsya Komandovaniya
-	219 = {
-		# 3ya Dal'nyaya Bombardirovochnye Aviabrigada
-		# 13ya Dal'nyaya Bombardirovochnye Aviabrigada
-		strat_bomber_equipment_1 =  {
-			owner = "SOV" 
-			amount = 48
-		}
-		# TODO -- 46ya Transporta Aviabrigada -- transport planes
-	}
-
-	# Dal'nevostochniy Aviatsya Komandovaniya -- Vladivostock	
-	219 = {
-		# 5ya Dal'nyaya Bombardirovochnye Aviabrigada
-		strat_bomber_equipment_1 =  {
-			owner = "SOV" 
-			amount = 24
-		}
-	}
-
-	# VVS - KBF Aviatsya Komandovaniya -- Leningrad
-	219 = {
-		# 8ya VMF Aviabrigada
-		nav_bomber_equipment_1 = {
-			owner = "SOV" 
-			amount = 54
-		}
-	}
-	# VVS - BSF Aviatsya Komandovaniya -- Sevastopol
-	219 = {
-		# 4ya VMF Aviabrigada
-		nav_bomber_equipment_1 = {
-			owner = "SOV" 
-			amount = 54
 		}
 	}
 }

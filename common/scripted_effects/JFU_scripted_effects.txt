@@ -978,6 +978,69 @@ JFU_startup_on_action = {
 			instant_build = yes
 		}			
 	}
+	10 = {
+		set_building_level = {
+			type = air_base
+			level = 20
+			instant_build = yes
+		}			
+	}
+	11 = {
+		set_building_level = {
+			type = air_base
+			level = 20
+			instant_build = yes
+		}			
+	}
+	195 = {
+		set_building_level = {
+			type = air_base
+			level = 20
+			instant_build = yes
+		}			
+	}
+	202 = {
+		set_building_level = {
+			type = air_base
+			level = 20
+			instant_build = yes
+		}			
+	}
+	206 = {
+		set_building_level = {
+			type = air_base
+			level = 20
+			instant_build = yes
+		}			
+	}
+	217 = {
+		set_building_level = {
+			type = air_base
+			level = 20
+			instant_build = yes
+		}			
+	}
+	219 = {
+		set_building_level = {
+			type = air_base
+			level = 20
+			instant_build = yes
+		}			
+	}
+	763 = {
+		set_building_level = {
+			type = air_base
+			level = 20
+			instant_build = yes
+		}			
+	}
+	79 = {
+		set_building_level = {
+			type = air_base
+			level = 20
+			instant_build = yes
+		}			
+	}
 }
 JFU_comp_startup_effect = {
 	GER = { add_ideas = JFU_no_tradeback }
@@ -990,16 +1053,16 @@ JFU_comp_startup_effect = {
 	EFR = { add_ideas = JFU_no_tradeback }
 	JAP = { add_ideas = JFU_no_tradeback }
 	MAN = { add_ideas = JFU_no_tradeback }
-#	ENG = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
-#	USA = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
-#	FRA = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
-#	SAF = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
-#	RAJ = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
-#	MEX = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
-#	CAN = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
-#	AST = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
-#	BRA = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
-#	NZL = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
+	#ENG = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
+	#USA = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
+	#FRA = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
+	#SAF = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
+	#RAJ = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
+	#MEX = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
+	#CAN = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
+	#AST = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
+	#BRA = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
+	#NZL = { add_timed_idea = { idea = JFU_no_tradeback days = 730 } }
 	if = {
 		limit = {
 			IRE = { is_ai = yes }
@@ -1742,7 +1805,7 @@ pregrinded_effect = {
 			add_unit_leader_trait = trait_engineer
 			add_unit_leader_trait = fortress_buster
         }
-		JAP_hisaichi_terauchi = { add_attack = 1 }
+		JAP_hisaichi_terauchi = { add_attack = 2 }
         JAP_hisaichi_terauchi = { add_defense = 1 }
         JAP_hisaichi_terauchi = { add_planning = 1 }
 		JAP_hisaichi_terauchi = { add_logistics = 2 }
@@ -1794,7 +1857,6 @@ pregrinded_effect = {
 			add_unit_leader_trait = hill_fighter
 			add_unit_leader_trait = urban_assault_specialist
 			add_unit_leader_trait = commando
-			add_unit_leader_trait = thorough_planner
 			add_unit_leader_trait = trait_engineer
 			add_unit_leader_trait = fortress_buster
         }
@@ -1830,7 +1892,22 @@ pregrinded_effect = {
 			add_unit_leader_trait = trait_mountaineer
 			add_unit_leader_trait = trait_engineer
 			add_unit_leader_trait = fortress_buster
-        }				
+        }
+		JAP_naruhiko_higashikuni = { add_attack = 4 }	
+        JAP_kenkichi_ueda = { add_defense = 2 }
+        JAP_kenkichi_ueda = { add_planning = 2 }
+		JAP_kenkichi_ueda = { add_logistics = 3 }	
+        JAP_kenkichi_ueda = {
+        	add_unit_leader_trait = pre_grinded
+            add_unit_leader_trait = infantry_expert
+			add_unit_leader_trait = infantry_leader
+            add_unit_leader_trait = trickster
+			add_unit_leader_trait = guerilla_fighter
+        }	
+		JAP_kenkichi_ueda = { promote_leader = yes }	
+		JAP_kenkichi_ueda = { 
+			add_unit_leader_trait = defensive_doctrine
+		}
 	}
 	MAN = {	
 		MAN_tomoyuki_yamashita = { add_attack = 3 }
@@ -2647,6 +2724,7 @@ JFU_update_generals = {
 			add_unit_leader_trait = thorough_planner
 			add_unit_leader_trait = aggressive_assaulter
 		}
+		ENG_william_slim = { add_attack = 3 }			
 		ENG_william_slim = {
 			add_unit_leader_trait = expert_improviser
 			add_unit_leader_trait = trait_engineer
@@ -2810,10 +2888,10 @@ JAP_closed_eco_effect = {
 		add_ideas = closed_economy 
 		add_ideas = export_focus_idea
 	}
-#	MAN = {
-#		add_ideas = closed_economy 
-#		add_ideas = export_focus_idea		
-#	}	
+	#MAN = {
+	#	add_ideas = closed_economy 
+	#	add_ideas = export_focus_idea		
+	#}	
 }
 Endsieg_Tanks_spawn_ins = {
 	GER = {

@@ -431,7 +431,7 @@ focus = {
 			add_doctrine_cost_reduction = {
 				name = FRA_army_reform
 				cost_reduction = 0.5
-				uses = 1
+				uses = 2
 				category = land_doctrine
 			}
 			IF = {
@@ -690,7 +690,7 @@ focus = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			remove_worker_shortage_effect = yes
+			remove_ideas = FRA_full_employment
 		}
 	}
 	focus = {
@@ -1418,25 +1418,11 @@ focus = {
 		completion_reward = {
 			add_offsite_building = { type = arms_factory level = 3 }
 			add_offsite_building = { type = dockyard level = 4 }
-			create_corps_commander = {
-				name = "Marie-Pierre Koenig"
-				GFX = GFX_portrait_fra_marie_pierre_koenig
-				skill = 3
-				traits = {  }
-				attack_skill = 2
-				defense_skill = 2
-				planning_skill = 3
-				logistics_skill = 3
-			}
-			create_corps_commander = {
-				name = "Georges Catroux"
-				GFX = GFX_portrait_fra_georges_catroux
-				skill = 3
-				traits = {  }
-				attack_skill = 3
-				defense_skill = 3
-				planning_skill = 2
-				logistics_skill = 2
+			add_doctrine_cost_reduction = {
+				name = FRA_army_reform
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
 			}
 		}
 	}
@@ -1544,7 +1530,7 @@ focus = {
 		
 		}
 		
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}

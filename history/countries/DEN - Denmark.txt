@@ -19,6 +19,7 @@ set_technology = {
 	tech_engineers = 1
 	tech_trucks = 1
 	basic_train = 1
+	building_limiter_tech = 1
 }
 
 #### TECH SET UP
