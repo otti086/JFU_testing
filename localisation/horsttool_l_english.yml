@@ -1755,3 +1755,25 @@
  BRA_jungle_pioneers: "$SMB_support_company_bra$"
  BRA_jungle_pioneers_desc: "$SMB_support_company_default_desc$"
  BRA_jungle_pioneers_tt: "Unlocks support battalion §YJungle Pioneers:§!\n §YJungle§!:\n  Movement §G+30%§!, \n  Attack §G+10%§!, \n  Defense §G+20%§!"
+
+
+#victory points
+ victory_con_axis_2:0 "Looming Axis Victory"
+ victory_con_axis_2_desc:0 "Axis control 7 or more out of 10 Victory points: \nNanjing \nDehli \nAlexandria \nBenghasi \nAmsterdam \nParis \nLyon \nBryansk \nMoscow \nStalingrad"
+ victory_con_allies_2:0 "Looming Allies Victory"
+ victory_con_allies_2_desc:0 "Allies control 7 or more out of 10 Victory points: \nNanjing \nDehli \nAlexandria \nBenghasi \nAmsterdam \nParis \nLyon \nBryansk \nMoscow \nStalingrad"
+ victory_con:0 "Victory Condition"
+ victory_con_desc:0 "To trigger the Victory Condition your Faction needs to control 7 out of 10 Victory points: \nNanjing \nDehli \nAlexandria \nBenghasi \nAmsterdam \nParis \nLyon \nBryansk \nMoscow \nStalingrad"
+ victory_con_allies_1:0 "Allies are winning"
+ victory_con_allies_1_desc:0 "Allies control 6 out of 10 Victory points: \nNanjing \nDehli \nAlexandria \nBenghasi \nAmsterdam \nParis \nLyon \nBryansk \nMoscow \nStalingrad"
+ victory_con_axis_1:0 "Axis are winning"
+ victory_con_axis_1_desc:0 "Axis control 6 out of 10 Victory points: \nNanjing \nDehli \nAlexandria \nBenghasi \nAmsterdam \nParis \nLyon \nBryansk \nMoscow \nStalingrad"
+ 
+ MOD_countdown_to_victory_cat:0 "Victory!"
+ MOD_countdown_to_victory_cat_desc:0 "The winner of the game is the team who controlls 7 or more of the 10 following Cities for §Y365 days§!:\n\n§YNanjing§! - [GetNanjingOwner]\n§YDehli§! - [GetDehliOwner]\n§YAlexandria§! - [GetAlexandriaOwner]\n§YBenghasi§! - [GetBenghasiOwner]\n§YAmsterdam§! - [GetAmsterdamOwner]\n§YParis§! - [GetParisOwner]\n§YLyon§! - [GetLyonOwner]\n§YBryansk§! - [GetBryanskOwner]\n§YMoscow§! - [GetMoscowOwner]\n§YStalingrad§! - [GetStalingradOwner]\n\n\n§YCurrent Score§!:\n\n[GER.GetFlag] §RAxis§!: [?global.axis_score]/§Y10§!\n\n[ENG.GetFlag] §CAllies§!: [?global.allies_score]/§Y10§!\n"
+ 
+ vp_axis_owns:0 "[GER.GetFlag] §RAxis§!"
+ vp_alies_owns:0 "[ENG.GetFlag] §CAllies§!"
+ 
+ MOD_countdown_to_allied_victory_mission:0 "Imminent [ENG.GetFlag] §CAllied§! §YVictory§!"
+ MOD_countdown_to_axis_victory_mission:0 "Imminent [GER.GetFlag] §RAxis§! §YVictory§!"
