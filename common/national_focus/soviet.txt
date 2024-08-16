@@ -872,7 +872,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_eastern_development
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -2530,7 +2530,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = SOV_strengthen_the_mobilization_plan
-		cost = 10
+		cost = 5
 
 
 		
@@ -2963,7 +2963,7 @@ focus_tree = {
 		id = SOV_american_lend_lease
 		icon = GFX_SOV_ALLIED_HELP
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
-		cost = 5
+		cost = 1
 		prerequisite = { focus = SOV_order_270_focus }
 		relative_position_id = SOV_order_270_focus
 		x = -1
@@ -3659,7 +3659,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_the_military_conspiracy
-		cost = 10
+		cost = 5
 
 		available = {
 			has_country_flag = {

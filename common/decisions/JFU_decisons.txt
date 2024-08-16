@@ -179,6 +179,11 @@ political_actions1 = {
 						modifier = AFRICA_retake_supply
 					}
 				}
+				883 = {
+					add_dynamic_modifier = {
+						modifier = AFRICA_retake_supply
+					}
+				}
 			}
 			complete_national_focus = GER_ussr_war_goal
 		}
