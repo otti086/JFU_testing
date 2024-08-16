@@ -163,8 +163,22 @@ political_actions1 = {
 				country_event = { id = super.5 hours = 0 }
 				SOV = {
 					complete_national_focus = SOV_Great_Patriotic_War
-				}	
-
+				}
+				551 = {
+					add_dynamic_modifier = {
+						modifier = AFRICA_retake_supply
+					}
+				}
+				456 = {
+					add_dynamic_modifier = {
+						modifier = AFRICA_retake_supply
+					}
+				}
+				457 = {
+					add_dynamic_modifier = {
+						modifier = AFRICA_retake_supply
+					}
+				}
 			}
 			complete_national_focus = GER_ussr_war_goal
 		}

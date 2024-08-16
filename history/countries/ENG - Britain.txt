@@ -25,27 +25,27 @@ if = {
 	}
 	set_oob = "ENG_1936_nsb"
 }
-907 = {
-	add_dynamic_modifier = { modifier = AFRICA_entrechment_dynamic }
-}
-452 = {
-	add_dynamic_modifier = { modifier = AFRICA_entrechment_dynamic }	
-}
-970 = {
-	add_dynamic_modifier = { modifier = AFRICA_entrechment_dynamic }	
-}
-446 = {
-	add_dynamic_modifier = { modifier = AFRICA_entrechment_dynamic }	
-}
-447 = {
-	add_dynamic_modifier = { modifier = AFRICA_entrechment_dynamic }	
-}
-456 = {
-	add_dynamic_modifier = { modifier = AFRICA_entrechment_dynamic }	
-}
-457 = {
-	add_dynamic_modifier = { modifier = AFRICA_entrechment_dynamic }	
-}
+#907 = {
+#	add_dynamic_modifier = { modifier = AFRICA_entrechment_dynamic }
+#}
+#452 = {
+#	add_dynamic_modifier = { modifier = AFRICA_entrechment_dynamic }	
+#}
+#970 = {
+#	add_dynamic_modifier = { modifier = AFRICA_entrechment_dynamic }	
+#}
+#446 = {
+#	add_dynamic_modifier = { modifier = AFRICA_entrechment_dynamic }	
+#}
+#447 = {
+#	add_dynamic_modifier = { modifier = AFRICA_entrechment_dynamic }	
+#}
+#456 = {
+#	add_dynamic_modifier = { modifier = AFRICA_entrechment_dynamic }	
+#}
+#457 = {
+#	add_dynamic_modifier = { modifier = AFRICA_entrechment_dynamic }	
+#}
 starting_train_buffer = 4
 
 if = {
