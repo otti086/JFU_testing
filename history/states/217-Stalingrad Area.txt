@@ -10,7 +10,11 @@ state={
 		owner = SOV
 		victory_points = {
 			3529 30.0
-		}
+		}		
+		victory_points = { 2101 1 }
+		victory_points = { 4949 1 }
+		victory_points = { 3555 1 }
+		victory_points = { 1948 1 }
 		buildings = {
 			infrastructure = 4 #was: 7
 			arms_factory = 1
@@ -20,7 +24,7 @@ state={
 	}
 
 	provinces={
-		498 520 3503 3529 3555 6503 6527 6541 9459 9474 9504 9530 11447 11474 11484 
+		520 3503 3529 3555 6503 6527 6541 9459 9474 9504 9530 11447 11474 11484 2101 4949 1948
 	}
 
 	local_supplies=7.0 

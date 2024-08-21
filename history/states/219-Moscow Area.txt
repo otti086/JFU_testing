@@ -11,9 +11,15 @@ state={
 
 	history={
 		owner = SOV
-		victory_points = {
-			6380 50 
-		}
+		victory_points = { 6380 50 	}
+		victory_points = { 2017 1 	}
+		victory_points = { 5020 1 	}
+		victory_points = { 5064 1 	}
+		victory_points = { 12877 1 	}
+		victory_points = { 10789 1 	}
+		victory_points = { 7984 1 	}
+		victory_points = { 1995 1 	}
+
 		buildings = {
 			infrastructure = 4 #was: 8
 			arms_factory = 7
@@ -23,7 +29,7 @@ state={
 	}
 
 	provinces={
-		301 350 366 401 3259 3290 3327 3358 3391 6283 6290 6348 6380 6414 9235 9282 9302 9348 9378 9395 11217 11236 11268 11282 11330 
+		301 350 366 401 3259 3290 3327 3358 3391 6283 6290 6348 6380 6414 9235 9282 9302 9348 9378 9395 11217 11236 11268 11282 11330 1995 7984 10789 12877 5064 5020 2017
 	}
 
 	local_supplies=6.0 

@@ -965,7 +965,7 @@ equipments = {
 	}
 
 	super_heavy_tank_chassis = {
-		year = 1948
+		year = 1943
 		is_archetype = yes
 		is_buildable = no
 		can_be_produced = {
