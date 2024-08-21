@@ -656,9 +656,23 @@ ideas = {
 			picture = generic_production_bonus
 
 			modifier = {
+				production_factory_start_efficiency_factor = 0.1
 				conversion_cost_civ_to_mil_factor= -0.5
 			}
 		}
+
+		USA_pre_war_production = {
+			picture = generic_production_bonus
+			allowed = {
+				always = no
+			}	
+
+			removal_cost = -1	
+
+			modifier = {
+				conversion_cost_civ_to_mil_factor= -0.2
+			}			
+		}	
 	
 		bureau_of_ships_focus = {
 			

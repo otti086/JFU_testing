@@ -499,8 +499,8 @@ ideas = {
 			}
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = -0.15
-				defense_bonus_against = -0.1
+				attack_bonus_against = -0.20
+				defense_bonus_against = -0.15
 			}			
 		}
 		Steiners_counter = {
@@ -511,53 +511,53 @@ ideas = {
 			picture = generic_acquire_tanks
 			targeted_modifier = {
 				tag = ENG
-				attack_bonus_against = -0.15
-				defense_bonus_against = -0.1
+				attack_bonus_against = -0.20
+				defense_bonus_against = -0.15
 			}
 			targeted_modifier = {
 				tag = USA
-				attack_bonus_against = -0.15
-				defense_bonus_against = -0.1
+				attack_bonus_against = -0.20
+				defense_bonus_against = -0.15
 			}
 			targeted_modifier = {
 				tag = CAN
-				attack_bonus_against = -0.15
-				defense_bonus_against = -0.1
+				attack_bonus_against = -0.20
+				defense_bonus_against = -0.15
 			}
 			targeted_modifier = {
 				tag = SAF
-				attack_bonus_against = -0.15
-				defense_bonus_against = -0.1
+				attack_bonus_against = -0.20
+				defense_bonus_against = -0.15
 			}
 			targeted_modifier = {
 				tag = FRA
-				attack_bonus_against = -0.15
-				defense_bonus_against = -0.1
+				attack_bonus_against = -0.20
+				defense_bonus_against = -0.15
 			}
 			targeted_modifier = {
 				tag = AST
-				attack_bonus_against = -0.15
-				defense_bonus_against = -0.1
+				attack_bonus_against = -0.20
+				defense_bonus_against = -0.15
 			}
 			targeted_modifier = {
 				tag = RAJ
-				attack_bonus_against = -0.15
-				defense_bonus_against = -0.1
+				attack_bonus_against = -0.20
+				defense_bonus_against = -0.15
 			}
 			targeted_modifier = {
 				tag = NZL
-				attack_bonus_against = -0.15
-				defense_bonus_against = -0.1
+				attack_bonus_against = -0.20
+				defense_bonus_against = -0.15
 			}
 			targeted_modifier = {
 				tag = BRA
-				attack_bonus_against = -0.15
-				defense_bonus_against = -0.1
+				attack_bonus_against = -0.20
+				defense_bonus_against = -0.15
 			}
 			targeted_modifier = {
 				tag = MEX
-				attack_bonus_against = -0.15
-				defense_bonus_against = -0.1
+				attack_bonus_against = -0.20
+				defense_bonus_against = -0.15
 			}
 			targeted_modifier = {
 				tag = SOV
@@ -676,22 +676,6 @@ ideas = {
 				production_factory_max_efficiency_factor = -0.4 
 				political_power_factor = -2.3
             }
-		}
-		SAF_annex_eco = {
-            allowed = { always = yes }
-
-            removal_cost = -1
-            picture = great_depression	
-
-			cancel={
-				CAN = { has_war = yes }
-			}
-
-			modifier = {
-				consumer_goods_factor = -0.15
-				industrial_capacity_factory = 0.10
-				industrial_capacity_dockyard = 0.10				
-			}		
 		}
 		GER_prepare_barb_idea = {
 			allowed = {
@@ -1244,7 +1228,7 @@ ideas = {
                 	has_global_flag = { flag = VIC value = 3 }
 				}
             }	    
-    	}	 		
+    	} 		
 	}
 	hidden_ideas = {
 		idea_JUNO_truck_production_cost = {

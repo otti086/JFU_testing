@@ -4533,7 +4533,6 @@ SOV_great_patriotic_war = {
 
 
 		modifier = {
-			army_speed_factor = -0.1
 			dig_in_speed_factor = 0.5
 			army_defence_factor = 0.05
 			out_of_supply_factor = -0.25
@@ -4566,7 +4565,13 @@ SOV_great_patriotic_war = {
 
 		available = {
 			has_completed_focus = SOV_lessons_of_war
-			custom_trigger_tooltip = { tooltip = SOV_order_227_trigger_tt NOT = { has_country_flag = SOV_order_270_flag } } 
+			custom_trigger_tooltip = { 
+				tooltip = SOV_order_227_trigger_tt 			
+				has_country_flag = {
+					flag = SOV_order_270_flag
+					days > 210
+				} 
+			} 
 		}
 
 		ai_hint_pp_cost = 50
@@ -4594,7 +4599,8 @@ SOV_great_patriotic_war = {
 		}
 
 		complete_effect = {
-			hidden_effect = { add_political_power = -50 complete_national_focus = SOV_order_227_focus }
+			hidden_effect = { add_political_power = -50 }
+			hidden_effect = { complete_national_focus = SOV_order_227_focus}
 			news_event = { id = news.5004 days = 0 }
 			set_country_flag = SOV_order_227_flag
 			custom_effect_tooltip = SOV_order_227_decisions_tt

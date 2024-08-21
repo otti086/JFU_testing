@@ -6701,13 +6701,6 @@ focus_tree = {
 			add_timed_idea = { idea = desperate_defense_idea days = 90 }
 			hidden_effect = {
 				add_ideas = SPA_death_before_surrender_capitulation
-				GER = {
-					set_autonomy = {
-						target = ITA
-						autonomous_state = autonomy_dominion
-						freedom_level = 0.2
-					}
-				} 
 				if = { limit = { has_idea = vittorio_emanuele } remove_ideas = vittorio_emanuele}
 				if = { limit = { has_idea = vittorio_emanuele_emperor_of_ethiopia } remove_ideas = vittorio_emanuele_emperor_of_ethiopia}
 				if = { limit = { has_idea = vittorio_emanuele_king_of_albania } remove_ideas = vittorio_emanuele_king_of_albania}

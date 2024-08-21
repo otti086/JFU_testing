@@ -672,13 +672,13 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = USA_wartime_industry
-		icon = GFX_goal_generic_construct_mil_factory
+		id = USA_pre_war_build_up
+		icon = GFX_focus_generic_the_giant_wakes
 		prerequisite = { focus = USA_the_giant_wakes }
 		x = 0
 		y = 2
 		relative_position_id = USA_the_giant_wakes
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -686,9 +686,31 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
-			add_ideas = wartime_industry_focus
+			add_ideas = USA_pre_war_production
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = USA_general_motors
+		}
+	}	
+	focus = {
+		id = USA_wartime_industry
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = USA_pre_war_build_up }
+		x = 0
+		y = 1
+		relative_position_id = USA_pre_war_build_up
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		available = {
+			has_war = yes
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = USA_pre_war_production
+				add_idea = wartime_industry_focus
+			}
 		}
 	}
 	

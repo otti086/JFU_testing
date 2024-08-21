@@ -241,6 +241,8 @@ technologies = {
 			secondary_turret_close_support_gun
 			tank_auto_cannon_2
 			squeezebore_adaptor
+			tank_medium_howitzer
+			tank_close_support_gun
 		}
 
 		path = {
@@ -443,6 +445,7 @@ technologies = {
 			tank_auto_cannon_2
 			squeezebore_adaptor
 			tank_medium_howitzer
+			tank_close_support_gun
 		}
 
 		enable_subunits = {
@@ -807,6 +810,8 @@ technologies = {
 			secondary_turret_close_support_gun
 			tank_auto_cannon_2
 			squeezebore_adaptor
+			tank_medium_howitzer
+			tank_close_support_gun
 		}
 		on_research_complete_limit = {
 			NOT = {	has_template_containing_unit = light_armor }
