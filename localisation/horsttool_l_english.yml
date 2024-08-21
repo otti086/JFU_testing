@@ -1388,6 +1388,8 @@
  MEFO_bills_axis_minor:0 "MEFO Bills" 
  MEFO_bills_axis_minor_desc:0 "§RWill get removed up on entering any war§!"
 
+ USA_pre_war_production:0 "Prepare our Industry"
+
 
  #decisions
 
@@ -1677,6 +1679,12 @@
  HORST_GROUPKEY: "JFU Rules"
  JAP_GROUPKEY: "Japan Rules"
  MODDED_FOCI: "Focustree Rules"
+
+ #flags
+
+ MAN_sungkiang:0 "Has completed the Sungkiang Railway Expansion focus"
+ MAN_hulunbuir:0 "Has completed the Hulunbiar Railway Expansion focus"
+ MAN_schahar:0 "Has completed the Chahar Railway Expansion focus"
 
 
  #brazil army stuff
