@@ -4586,7 +4586,7 @@ SOV_great_patriotic_war = {
 
 		}
 
-		days_remove = 360
+		days_remove = 720
 
 
 		modifier = {

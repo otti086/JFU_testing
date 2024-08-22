@@ -133,7 +133,7 @@ political_actions1 = {
 				target = SOV 
 				type = annex_everything
 			}
-			GER = { add_timed_idea = { idea = axis_barbarossa days = 180 } }
+			GER = { add_timed_idea = { idea = axis_barbarossa days = 120 } }
 			hidden_effect = {
 				if = { limit = { country_exists = HUN }	HUN = { add_to_war = { targeted_alliance = GER enemy = SOV } } }
 				if = { limit = { country_exists = ROM }	ROM = { add_to_war = { targeted_alliance = GER enemy = SOV } } }
@@ -141,16 +141,16 @@ political_actions1 = {
 				if = { limit = { country_exists = SPR }	SPR = { add_to_war = { targeted_alliance = GER enemy = SOV } } }
 				if = { limit = { country_exists = ITA }	ITA = { add_to_war = { targeted_alliance = GER enemy = SOV } } }
 				GER = { add_ideas = GER_Barb_supply }
-				HUN = { add_timed_idea = { idea = axis_barbarossa days = 180 } }
-				ROM = { add_timed_idea = { idea = axis_barbarossa days = 180 } }	
-				BUL = { add_timed_idea = { idea = axis_barbarossa days = 180 } }	
-				SPR = { add_timed_idea = { idea = axis_barbarossa days = 180 } }
-				EFR = { add_timed_idea = { idea = axis_barbarossa days = 180 } }
-				HUN = { add_timed_idea = { idea = GER_Barb_supply days = 180 } }
-				ROM = { add_timed_idea = { idea = GER_Barb_supply days = 180 } }	
-				BUL = { add_timed_idea = { idea = GER_Barb_supply days = 180 } }	
-				SPR = { add_timed_idea = { idea = GER_Barb_supply days = 180 } }
-				EFR = { add_timed_idea = { idea = GER_Barb_supply days = 180 } }
+				HUN = { add_timed_idea = { idea = axis_barbarossa days = 120 } }
+				ROM = { add_timed_idea = { idea = axis_barbarossa days = 120 } }	
+				BUL = { add_timed_idea = { idea = axis_barbarossa days = 120 } }	
+				SPR = { add_timed_idea = { idea = axis_barbarossa days = 120 } }
+				EFR = { add_timed_idea = { idea = axis_barbarossa days = 120 } }
+				HUN = { add_ideas = GER_Barb_supply }
+				ROM = { add_ideas = GER_Barb_supply }	
+				BUL = { add_ideas = GER_Barb_supply }	
+				SPR = { add_ideas = GER_Barb_supply } 
+				EFR = { add_ideas = GER_Barb_supply }
 				ITA = { add_ideas = ITA_BARB_DEBUFF}
 				SOV = {
 		#			set_variable = { SOV_barb_AIR_defence_modifier = 0.1 }
@@ -200,13 +200,13 @@ political_actions1 = {
 		}
 		cost = 0
 		complete_effect = {
-			GER = { add_timed_idea = { idea = axis_fall_blau days = 180 } }
+			GER = { add_timed_idea = { idea = axis_fall_blau days = 120 } }
 			hidden_effect = {
-				HUN = { add_timed_idea = { idea = axis_fall_blau days = 180 } }
-				ROM = { add_timed_idea = { idea = axis_fall_blau days = 180 } }	
-				BUL = { add_timed_idea = { idea = axis_fall_blau days = 180 } }	
-				SPR = { add_timed_idea = { idea = axis_fall_blau days = 180 } }
-				EFR = { add_timed_idea = { idea = axis_fall_blau days = 180 } }
+				HUN = { add_timed_idea = { idea = axis_fall_blau days = 120 } }
+				ROM = { add_timed_idea = { idea = axis_fall_blau days = 120 } }	
+				BUL = { add_timed_idea = { idea = axis_fall_blau days = 120 } }	
+				SPR = { add_timed_idea = { idea = axis_fall_blau days = 120 } }
+				EFR = { add_timed_idea = { idea = axis_fall_blau days = 120 } }
 			}
 			complete_national_focus = GER_focus_fall_blau
 			set_global_flag = GER_fall_blau
@@ -226,12 +226,13 @@ political_actions1 = {
 		}
 		cost = 0
 		complete_effect = {
-			GER = { add_timed_idea = { idea = axis_operation_citadelle days = 180 } }
+			GER = { add_timed_idea = { idea = axis_operation_citadelle days = 120 } }
 			hidden_effect = {
-				HUN = { add_timed_idea = { idea = axis_operation_citadelle days = 180 } }
-				ROM = { add_timed_idea = { idea = axis_operation_citadelle days = 180 } }	
-				BUL = { add_timed_idea = { idea = axis_operation_citadelle days = 180 } }	
-				SPR = { add_timed_idea = { idea = axis_operation_citadelle days = 180 } }
+				HUN = { add_timed_idea = { idea = axis_operation_citadelle days = 120 } }
+				ROM = { add_timed_idea = { idea = axis_operation_citadelle days = 120 } }	
+				BUL = { add_timed_idea = { idea = axis_operation_citadelle days = 120 } }	
+				SPR = { add_timed_idea = { idea = axis_operation_citadelle days = 120 } }
+				EFR = { add_timed_idea = { idea = axis_operation_citadelle days = 120 } }
 			}
 		}
 	}
@@ -1773,7 +1774,6 @@ JFU_templates = {
 					medium_armor = { x = 3 y = 4 }		
 
 					medium_armor = { x = 4 y = 0 }
-					medium_armor = { x = 4 y = 1 }
 				}
 			}
 		}
@@ -1819,7 +1819,6 @@ JFU_templates = {
 					medium_armor = { x = 3 y = 4 }		
 
 					medium_armor = { x = 4 y = 0 }
-					medium_armor = { x = 4 y = 1 }
 				}
 			}
 		}
@@ -1851,7 +1850,7 @@ JFU_templates = {
 		cost = 0
 		complete_effect = {
 			division_template = {
-				name = "INF.20"
+				name = "INF.20-RAW"
 				division_names_group = GER_ARM_01
 				regiments = {
 					infantry = { x = 0 y = 0 }
@@ -1940,6 +1939,36 @@ JFU_templates = {
 					infantry = { x = 3 y = 4 }		
 				}
 			}
+			division_template = {
+				name = "Anti-Infantry"
+				regiments = {
+					infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 } infantry = { x = 2 y = 0 } artillery_brigade = { x = 3 y = 0 }     
+					infantry = { x = 0 y = 1 } infantry = { x = 1 y = 1 } infantry = { x = 2 y = 1 } artillery_brigade = { x = 3 y = 1 }
+					infantry = { x = 0 y = 2 } infantry = { x = 1 y = 2 }	infantry = { x = 2 y = 2 } artillery_brigade = { x = 3 y = 2 }
+					infantry = { x = 0 y = 3 } infantry = { x = 1 y = 3 }	infantry = { x = 2 y = 3 } artillery_brigade = { x = 3 y = 3 }
+					infantry = { x = 0 y = 4 } infantry = { x = 1 y = 4 }	
+				}
+			}					
+			division_template = {
+				name = "Anti-Tank"
+				regiments = {
+					infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 } infantry = { x = 2 y = 0 } infantry = { x = 3 y = 0 } 	anti_tank_brigade = { x = 4 y = 0 }
+					infantry = { x = 0 y = 1 } infantry = { x = 1 y = 1 } infantry = { x = 2 y = 1 } infantry = { x = 3 y = 1 } 	anti_tank_brigade = { x = 4 y = 1 }
+					infantry = { x = 0 y = 2 } infantry = { x = 1 y = 2 } infantry = { x = 2 y = 2 } artillery_brigade = { x = 3 y = 2 }  anti_tank_brigade = { x = 4 y = 2 }
+					infantry = { x = 0 y = 3 } infantry = { x = 1 y = 3 } 							 artillery_brigade = { x = 3 y = 3 }  anti_tank_brigade = { x = 4 y = 3 }
+					infantry = { x = 0 y = 4 } infantry = { x = 1 y = 4 }																						
+				}
+			}	
+			division_template = {
+				name = "Generalist"
+				regiments = {
+					infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 } infantry = { x = 2 y = 0 } artillery_brigade = { x = 3 y = 0 } anti_tank_brigade = { x = 4 y = 0 } 
+					infantry = { x = 0 y = 1 } infantry = { x = 1 y = 1 } infantry = { x = 2 y = 1 } artillery_brigade = { x = 3 y = 1 } anti_tank_brigade = { x = 4 y = 1 } 
+					infantry = { x = 0 y = 2 } 	infantry = { x = 1 y = 2 } infantry = { x = 2 y = 2 } artillery_brigade = { x = 3 y = 2 } anti_tank_brigade = { x = 4 y = 2 }
+					infantry = { x = 0 y = 3 } infantry = { x = 1 y = 3 } infantry = { x = 2 y = 3 }
+					infantry = { x = 0 y = 4 } infantry = { x = 1 y = 4 } 
+				}
+			}	
 		}
 	}		
 	"Show Special Forces Templates" = {
@@ -1956,44 +1985,7 @@ JFU_templates = {
 			set_country_flag = JFU_open_special_templates
 		}
 	}
-	"Mountain 25W" = {
-		icon = generic_mountain_fortification
-		fire_only_once = yes
-		allowed = {}
-		visible = {
-			NOT = {
-				has_country_flag = JFU_templates_hide
-			}
-			has_country_flag = JFU_open_special_templates
-		}
-		available = {
-			has_tech = special_forces_mountaineers
-		}
-		cost = 0
-		complete_effect = {
-			division_template = {
-				name = "Mountain.25"
-				division_names_group = GER_ARM_01
-				regiments = {
-					mountaineers = { x = 0 y = 0 }
-					mountaineers = { x = 0 y = 1 }
-					mountaineers = { x = 0 y = 2 }
-					mountaineers = { x = 0 y = 3 }
-					mountaineers = { x = 0 y = 4 }
-
-					mountaineers = { x = 1 y = 0 }
-					mountaineers = { x = 1 y = 1 }
-					mountaineers = { x = 1 y = 2 }
-					mountaineers = { x = 1 y = 3 }
-
-					anti_tank_brigade = { x = 2 y = 0 }
-					artillery_brigade = { x = 2 y = 1 }
-					artillery_brigade = { x = 2 y = 2 }
-				}
-			}
-		}
-	}	
-	"Mountain 42W" = {
+	"Mountain 40W" = {
 		icon = generic_mountain_fortification
 		fire_only_once = yes
 		allowed = {}
@@ -2009,36 +2001,36 @@ JFU_templates = {
 		cost = 0
 		complete_effect = {
 			division_template = {
-				name = "Mountain.42"
-				division_names_group = GER_ARM_01
+				name = "Soft Attack Special Forces"
 				regiments = {
-					mountaineers = { x = 0 y = 0 }
-					mountaineers = { x = 0 y = 1 }
-					mountaineers = { x = 0 y = 2 }
-					mountaineers = { x = 0 y = 3 }
-					mountaineers = { x = 0 y = 4 }
-
-					mountaineers = { x = 1 y = 0 }
-					mountaineers = { x = 1 y = 1 }
-					mountaineers = { x = 1 y = 2 }
-					mountaineers = { x = 1 y = 3 }
-					mountaineers = { x = 1 y = 4 }
-
-					mountaineers = { x = 2 y = 0 }
-					mountaineers = { x = 2 y = 1 }
-					mountaineers = { x = 2 y = 2 }
-					mountaineers = { x = 2 y = 3 }
-					mountaineers = { x = 2 y = 4 }
-
-					artillery_brigade = { x = 3 y = 0 }
-					artillery_brigade = { x = 3 y = 1 }
-					artillery_brigade = { x = 3 y = 2 }
-
-					anti_tank_brigade = { x = 4 y = 0 }
-					anti_tank_brigade = { x = 4 y = 1 }
-					anti_tank_brigade = { x = 4 y = 2 }
+					mountaineers = { x = 0 y = 0 } mountaineers = { x = 1 y = 0 } mountaineers = { x = 2 y = 0 } artillery_brigade = { x = 3 y = 0 }
+					mountaineers = { x = 0 y = 1 } mountaineers = { x = 1 y = 1 } mountaineers = { x = 2 y = 1 } artillery_brigade = { x = 3 y = 1 }
+					mountaineers = { x = 0 y = 2 } mountaineers = { x = 1 y = 2 } mountaineers = { x = 2 y = 2 } artillery_brigade = { x = 3 y = 2 }
+					mountaineers = { x = 0 y = 3 } mountaineers = { x = 1 y = 3 } mountaineers = { x = 2 y = 3 } artillery_brigade = { x = 3 y = 3 }
+					mountaineers = { x = 0 y = 4 } mountaineers = { x = 1 y = 4 }
 				}
-			}
+			}	
+			division_template = {
+					name = "All-Purpose Special Forces"
+				regiments = {
+					mountaineers = { x = 0 y = 0 } mountaineers = { x = 1 y = 0 } mountaineers = { x = 2 y = 0 } anti_tank_brigade = { x = 3 y = 0 } artillery_brigade = { x = 4 y = 0 }
+					mountaineers = { x = 0 y = 1 } mountaineers = { x = 1 y = 1 } mountaineers = { x = 2 y = 1 } anti_tank_brigade = { x = 3 y = 1 } artillery_brigade = { x = 4 y = 1 }
+					mountaineers = { x = 0 y = 2 } mountaineers = { x = 1 y = 2 } mountaineers = { x = 2 y = 2 } anti_tank_brigade = { x = 3 y = 2 } artillery_brigade = { x = 4 y = 2 }
+					mountaineers = { x = 0 y = 3 } 	mountaineers = { x = 1 y = 3 } 	mountaineers = { x = 2 y = 3 } 	
+					mountaineers = { x = 0 y = 4 } 	mountaineers = { x = 1 y = 4 }
+																								   
+				}
+			}	
+			division_template = {
+				name = "Hard Attack Special Forces"
+				regiments = {
+					mountaineers = { x = 0 y = 0 } mountaineers = { x = 1 y = 0 } mountaineers = { x = 2 y = 0 } mountaineers = { x = 3 y = 0 } 	anti_tank_brigade = { x = 4 y = 0 }
+					mountaineers = { x = 0 y = 1 } mountaineers = { x = 1 y = 1 } mountaineers = { x = 2 y = 1 } mountaineers = { x = 3 y = 1 } 	anti_tank_brigade = { x = 4 y = 1 }
+					mountaineers = { x = 0 y = 2 } mountaineers = { x = 1 y = 2 } mountaineers = { x = 2 y = 2 } artillery_brigade = { x = 3 y = 2 }  anti_tank_brigade = { x = 4 y = 2 }
+					mountaineers = { x = 0 y = 3 } mountaineers = { x = 1 y = 3 } 							 artillery_brigade = { x = 3 y = 3 }  anti_tank_brigade = { x = 4 y = 3 }
+					mountaineers = { x = 0 y = 4 } mountaineers = { x = 1 y = 4 }
+				}
+			}	
 		}
 	}		
 	"Katjuscha Marines" = {
@@ -2077,7 +2069,6 @@ JFU_templates = {
 					motorized_rocket_brigade = { x = 2 y = 1 }
 					motorized_rocket_brigade = { x = 2 y = 2 }
 					motorized_rocket_brigade = { x = 2 y = 3 }
-					motorized_rocket_brigade = { x = 2 y = 4 }
 
 					marine = { x = 3 y = 0 }
 					marine = { x = 3 y = 1 }
@@ -2122,7 +2113,6 @@ JFU_templates = {
 					artillery_brigade = { x = 2 y = 1 }
 					artillery_brigade = { x = 2 y = 2 }
 					artillery_brigade = { x = 2 y = 3 }
-					artillery_brigade = { x = 2 y = 4 }
 
 					marine = { x = 3 y = 0 }
 					marine = { x = 3 y = 1 }
@@ -2132,94 +2122,7 @@ JFU_templates = {
 				}
 			}
 		}
-	}	
-#	"Ranger Template" = {
-#		icon = generic_army_support
-#		fire_only_once = yes
-#		allowed = {}
-#		visible = {
-#			has_country_flag = JFU_open_special_templates
-#			NOT = {
-#				has_country_flag = JFU_templates_hide
-#			}
-#		}
-#		available = {
-#			has_tech = rangers
-#		}
-#		cost = 0
-#		complete_effect = {
-#			division_template = {
-#				name = "Ranger.42"
-#				division_names_group = GER_ARM_01
-#				regiments = {
-#					rangers = { x = 0 y = 0 }
-#					rangers = { x = 0 y = 1 }
-#					rangers = { x = 0 y = 2 }
-#					rangers = { x = 0 y = 3 }
-#					rangers = { x = 0 y = 4 }
-#
-#					rangers = { x = 1 y = 0 }
-#					rangers = { x = 1 y = 1 }
-#					rangers = { x = 1 y = 2 }
-#					rangers = { x = 1 y = 3 }
-#					rangers = { x = 1 y = 4 }
-#
-#					rangers = { x = 2 y = 0 }
-#					rangers = { x = 2 y = 1 }
-#					rangers = { x = 2 y = 2 }
-#					rangers = { x = 2 y = 3 }
-#					rangers = { x = 2 y = 4 }
-#
-#					artillery_brigade = { x = 3 y = 0 }
-#					artillery_brigade = { x = 3 y = 1 }
-#					artillery_brigade = { x = 3 y = 2 }
-#
-#					anti_tank_brigade = { x = 4 y = 0 }
-#					anti_tank_brigade = { x = 4 y = 1 }
-#					anti_tank_brigade = { x = 4 y = 2 }
-#				}
-#			}
-#		}
-#	}		
-#	"Camels 30W" = {
-#		icon = generic_cavalry
-#		fire_only_once = yes
-#		allowed = {}
-#		visible = {			
- #       	has_tech = camelry
-#			has_country_flag = JFU_open_special_templates
-#			NOT = {
-#				has_country_flag = JFU_templates_hide
-#			}
-#		}
-#		cost = 0
-#		complete_effect = {
-#			division_template = {
-#				name = "Camels.30"
-#				division_names_group = GER_ARM_01
-#				regiments = {
-#					camelry = { x = 0 y = 0 }
-#					camelry = { x = 0 y = 1 }
-#					camelry = { x = 0 y = 2 }
-#					camelry = { x = 0 y = 3 }
-#					camelry = { x = 0 y = 4 }
-#
-#					camelry = { x = 1 y = 0 }
-#					camelry = { x = 1 y = 1 }
-#					camelry = { x = 1 y = 2 }
-#					camelry = { x = 1 y = 3 }
-#					camelry = { x = 1 y = 4 }
-#
-#					camelry = { x = 2 y = 0 }
-#					camelry = { x = 2 y = 1 }
-#					camelry = { x = 2 y = 2 }
-#					camelry = { x = 2 y = 3 }
-#					camelry = { x = 2 y = 4 }
-#				}
-#			}
-#		}
-#	}		
-
+	}		
 	"Close template tab - CAN NOT BE UNDONE" = {
 		icon = generic_operation
 		fire_only_once = yes

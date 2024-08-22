@@ -716,7 +716,7 @@ focus_tree = {
 		bypass = {
 		}
 		available = {
-			date > 1940.06.01
+			date > 1941.01.01
 		}
 		ai_will_do = {
 			factor = 1
@@ -3101,8 +3101,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_todt	
 		available = {
-			custom_trigger_tooltip = { tooltip = barb_failed date > 1941.11.22 }
-			NOT = { controls_state = 16 } 			
+			custom_trigger_tooltip = { tooltip = blau_failed date > 1942.11.22 }
+			NOT = { controls_state = 16 } 
+			has_war_with = SOV			
 		}
 		cost = 5
 		completion_reward = {
@@ -3125,8 +3126,8 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_todt	
 		available = {
-			custom_trigger_tooltip = { tooltip = barb_failed date > 1941.11.22 }
-			NOT = { controls_state = 5 } 			
+			custom_trigger_tooltip = { tooltip = blau_failed date > 1942.11.22 }
+			NOT = { controls_state = 5 }			
 		}
 		cost = 5
 		completion_reward = {
