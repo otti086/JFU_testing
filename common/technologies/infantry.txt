@@ -1270,6 +1270,10 @@ technologies = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
+		rangers = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
 		paratrooper = {
 			defense = 0.03
 			breakthrough = 0.03
@@ -1352,6 +1356,10 @@ technologies = {
 			breakthrough = 0.02
 		}		
 		mountaineers = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		rangers = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
@@ -1446,6 +1454,10 @@ technologies = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
+		rangers = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
 		paratrooper = {
 			defense = 0.03
 			breakthrough = 0.03
@@ -1527,6 +1539,10 @@ technologies = {
 			breakthrough = 0.02
 		}		
 		mountaineers = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		rangers = {
 			defense = 0.03
 			breakthrough = 0.03
 		}

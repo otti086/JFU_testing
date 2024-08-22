@@ -292,6 +292,8 @@ sub_units = {
 	rangers = {
 		sprite = infantry
 		map_icon_category = infantry
+		special_forces = yes
+		
 		priority = 601
 		ai_priority = 200
 		active = no
