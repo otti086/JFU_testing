@@ -695,7 +695,7 @@ focus_tree = {
 		id = USA_wartime_industry
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = USA_pre_war_build_up }
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = USA_pre_war_build_up
 		cost = 5
@@ -713,7 +713,31 @@ focus_tree = {
 			}
 		}
 	}
-	
+	focus = {
+		id = USA_victory_programs
+		icon = GFX_focus_generic_the_giant_wakes
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = {  focus = USA_pre_war_build_up   }
+		
+		available = {
+			date > 1944.01.01
+		}
+
+		relative_position_id = USA_pre_war_build_up
+		completion_reward = {
+			every_country = {
+				limit = {
+					AND = {
+						allies = yes 
+						NOT = { tag = SOV }
+					}
+				}
+				add_ideas = victory_programs
+			}
+		}
+	}	
 
 	focus = {
 		id = USA_military_construction

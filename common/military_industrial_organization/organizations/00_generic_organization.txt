@@ -149,7 +149,7 @@ generic_tank_organization = {
 		mutually_exclusive = { generic_mio_trait_quality_improvements }
 		
 		production_bonus = {
-			production_cost_factor = -0.05
+			production_capacity_factor = 0.05
 			production_efficiency_gain_factor = 0.05
 		}
 	}
@@ -6261,7 +6261,7 @@ generic_artillery_organization = {
 		}
 
 		equipment_bonus = {
-			reliability = 0.05
+			soft_attack = 0.05
 		}
 	}
 
@@ -6376,7 +6376,7 @@ generic_artillery_organization = {
 		}
 
 		equipment_bonus = {
-			soft_attack = 0.1
+			soft_attack = 0.05
 			hard_attack = 0.04
 			air_attack = 0.04
 		}
@@ -6577,7 +6577,6 @@ generic_infantry_equipment_organization = {
 
 		equipment_bonus = {
 			soft_attack = 0.025
-			reliability = 0.03
 		}
 	}
 
@@ -6687,7 +6686,7 @@ generic_infantry_equipment_organization = {
 		all_parents = { generic_mio_trait_drum_pattern_sights }
 
 		equipment_bonus = {
-			reliability = 0.05
+			defense = 0.02
 		}
 
 	}
@@ -6788,7 +6787,7 @@ generic_infantry_equipment_organization = {
 		any_parent = { generic_mio_trait_rubber_cushioned_buttpad generic_mio_trait_vehicle_mounted_capabilities }
 
 		equipment_bonus = {
-			defense = 0.04
+			defense = 0.02
 			hard_attack = 0.03
 			build_cost_ic = 0.05
 

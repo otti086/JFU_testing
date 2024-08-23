@@ -1055,7 +1055,7 @@
  USA_operation_overlord:0 "Operation Overlord"
  USA_Retake_Asia:0 "Retake Asia"
  USA_pre_war_build_up:0 "Prepare the Industry "
-
+ USA_victory_programs:0 "Victory Programs"
 
  SOV_Great_Patriotic_War:0 "§RThe Great Patriotic War§!"
  SOV_order_270_focus:0 "Order 270"
@@ -1389,7 +1389,7 @@
  MEFO_bills_axis_minor_desc:0 "§RWill get removed up on entering any war§!"
 
  USA_pre_war_production:0 "Prepare our Industry"
-
+ victory_programs:0 "Victory Programs"
 
  #decisions
 
@@ -1472,6 +1472,8 @@
 
  modifier_production_cost_dockyard_factor:0 "§YDockyard§! construction cost"
  modifier_production_cost_dockyard_factor_desc:0 "Modifies the cost of Dockyard construction."
+ modifier_production_cost_arms_factory_factor:0 "§YMilitary Factory§! construction cost"
+ modifier_production_cost_arms_factory_factor_desc:0 "Modifies the cost of Military Factory construction."
  EFR_defense_plan:0 "Bulwark of France"
  GER_endsieg:0 "Total War"
  GER_endsieg_desc:0 "Wollt ihr den totalen Krieg? - Ja"

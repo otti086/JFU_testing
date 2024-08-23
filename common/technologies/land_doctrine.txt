@@ -247,10 +247,18 @@ technologies = {
 	mass_motorization = {
 		xp_research_type = army
 		xp_unlock_cost = 100
-		category_all_infantry = {
+		motorized = {
 			max_organisation = 10
-		}	
-		
+		}
+		armored_car = {
+			max_organisation = 10
+		}
+		mechanized = {
+			max_organisation = 10
+		}
+		amphibious_mechanized = {
+			max_organisation = 10
+		}		
 		path = {
 			leads_to_tech = mechanised_offensive 
 			research_cost_coeff = 1

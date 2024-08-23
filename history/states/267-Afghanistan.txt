@@ -6,15 +6,15 @@ state={
 	
 	state_category = town
 	history={
-		owner = SWE
+		owner = RAJ
 		buildings = {
-			infrastructure = 0
+			infrastructure = 2
 		}
-		add_core_of = SWE
+		add_core_of = RAJ
 	}
 
 	provinces={
-		5082 7448 7519 7584 7916 10737 10781 10826 10852 10896 12248 12314 12653 12769 12831 8090 12788  
+		12238 4408 1403 12125 7295 1315 1385 12292 1296 4275 10217
 	}
 
 	local_supplies=0.0 

@@ -53,17 +53,6 @@ mio_policy_general_ruthless_contracts = {
 #	}
 #}
 
-mio_policy_general_mechanical_genius  = {
-	icon = GFX_mio_policy_mechanical_genius
-	allowed = { always = yes }
-	available = { has_mio_size > 5}
-	equipment_bonus = {
-		same_as_mio = {
-			reliability = 0.1
-		}
-	}
-}
-
 mio_policy_general_experimental_development_teams = {
 	icon = GFX_mio_policy_experimental_development_teams
 	allowed = { always = yes }
