@@ -2863,6 +2863,7 @@ SOV_propaganda_campaigns = {
 			OR = {
 				has_completed_focus = SOV_the_glory_of_the_red_army
 				has_country_flag = SOV_debug_unlock_propaganda_campaigns_flag #debug
+				has_country_flag = SOV_declare_on_germany
 			}
 			
 		}

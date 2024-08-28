@@ -681,7 +681,20 @@ JFU_startup_on_action = {
 				instant_build = yes
 			}			
 		}
-
+		126 = {
+			set_building_level = {
+				type = air_base
+				level = 80
+				instant_build = yes
+			}		
+		}
+		64 = {
+			set_building_level = {
+				type = air_base
+				level = 40
+				instant_build = yes
+			}		
+		}
 		ITA = {
 			ITA_benito_mussolini = { unit_leader_event = { id = BBA_italo_ethiopian_war_events.01 } }
 			annex_country = { target = ETH transfer_troops = no }
@@ -907,6 +920,7 @@ JFU_startup_on_action = {
 		add_equipment_to_stockpile = { type = support_equipment_1 amount = 75 }
 		add_equipment_to_stockpile = { type = train_equipment_1 amount = 50 }
 		add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 }
+		add_equipment_to_stockpile = { type = convoy_1 amount = 100 producer = BRA }
 	}
 	MEX = {
 		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 5605 }
@@ -914,12 +928,14 @@ JFU_startup_on_action = {
 		add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 55 }
 		add_equipment_to_stockpile = { type = train_equipment_1 amount = 50 }
 		add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 }
+		add_equipment_to_stockpile = { type = convoy_1 amount = 100 producer = MEX }
 		add_dynamic_modifier = { modifier = pacific_war_aallies }
 	}
 	CAN = {
 		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 4000 }
 		add_equipment_to_stockpile = { type = train_equipment_1 amount = 50 }
 		add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 }
+		add_equipment_to_stockpile = { type = convoy_1 amount = 100 producer = CAN }
 		add_dynamic_modifier = { modifier = pacific_war_aallies }
 		add_dynamic_modifier = { modifier = CAN_great_depression_modifier }
 		
@@ -928,6 +944,7 @@ JFU_startup_on_action = {
 		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 4000 }
 		add_equipment_to_stockpile = { type = train_equipment_1 amount = 50 }
 		add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 }
+		add_equipment_to_stockpile = { type = convoy_1 amount = 100 producer = RAJ }
 		add_dynamic_modifier = { modifier = RAJ_agrarian_society_dynamic }
 	}
 	AST = {
@@ -952,6 +969,7 @@ JFU_startup_on_action = {
 	SIA = {
 		add_equipment_to_stockpile = { type = train_equipment_1 amount = 50 }
 		add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 }
+		add_equipment_to_stockpile = { type = convoy_1 amount = 100 producer = SIA }
 	}
 	CHI = {
 		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 30000 }	
@@ -2272,7 +2290,7 @@ pregrinded_effect = {
 			add_unit_leader_trait = aggressive_assaulter			
 		}
 		USA_geoffrey_keyes = { add_skill_level = 2 }
-		USA_geoffrey_keyes = { add_attack = 5 }
+		USA_geoffrey_keyes = { add_attack = 54 }
 		USA_geoffrey_keyes = { add_defense = 4 }
 		USA_geoffrey_keyes = { add_planning = 1 }
 		USA_geoffrey_keyes = { add_logistics = 1 }

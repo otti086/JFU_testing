@@ -41,7 +41,7 @@ ideas = {
 				OR = { has_government = neutrality has_government = democratic }
 			}
 			modifier = {
-				army_org = 4
+				army_org_factor = 0.05
 				army_leader_start_level = 2
 				custom_modifier_tooltip = best_of_the_best_spirit_tt
 			}

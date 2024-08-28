@@ -1690,15 +1690,15 @@ focus_tree = {
 	focus = { #should already be signed in 39
 		id = GER_prepare
 		icon = GFX_GER_GENERALPLAN_OST
-		prerequisite = { focus = GER_mol_rib_pact }
 		prerequisite = { focus = GER_anti_comitern_pact }
-		cancel_if_invalid = no
+		cancel_if_invalid = yes
 		available = {
 			date > 1941.01.01
+			NOT = { has_war_with = SOV }
 		}
-		x = 2
+		x = 0
 		y = 1
-		relative_position_id = GER_mol_rib_pact
+		relative_position_id = GER_anti_comitern_pact
 		cost = 5
 		completion_reward = {
 			add_timed_idea = {idea = GER_prepare_barb_idea days = 180 }
@@ -1708,17 +1708,18 @@ focus_tree = {
 	focus = {
 		id = GER_ussr_war_goal
 		icon = GFX_GER_BARBAROSSA
-		prerequisite = { focus = GER_prepare  }
+		prerequisite = { focus = GER_anti_comitern_pact }
+		prerequisite = { focus =  GER_mol_rib_pact }
+
 		available_if_capitulated = no
 		will_lead_to_war_with = SOV
 		
 		available = {
 			always = no
-			has_completed_focus = GER_greater_ger
 		}
-		x = 0
-		y = 1
-		relative_position_id = GER_prepare
+		x = -2
+		y = 2
+		relative_position_id = GER_anti_comitern_pact
 		cost = 10
 
 		bypass = {
@@ -1773,7 +1774,7 @@ focus_tree = {
 	focus = {
 		id = GER_rhineland
 		icon = GFX_GER_RHINELAND
-		x = 24
+		x = 23
 		y = 0
 		cost = 10
 		search_filters = { FOCUS_FILTER_POLITICAL }	
@@ -1825,7 +1826,7 @@ focus_tree = {
 		x = -2
 		y = 2
 		relative_position_id = GER_rhineland
-		cost = 1
+		cost = 0
 
 		completion_reward = {
 			#every_country = { 
