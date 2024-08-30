@@ -1166,7 +1166,6 @@ focus_tree = {
 			focus = FIN_winter_war
 		}
 		available = {
-			has_war_with = SOV
 		}
 
 		completion_reward = {

@@ -2290,7 +2290,7 @@ pregrinded_effect = {
 			add_unit_leader_trait = aggressive_assaulter			
 		}
 		USA_geoffrey_keyes = { add_skill_level = 2 }
-		USA_geoffrey_keyes = { add_attack = 54 }
+		USA_geoffrey_keyes = { add_attack = 4 }
 		USA_geoffrey_keyes = { add_defense = 4 }
 		USA_geoffrey_keyes = { add_planning = 1 }
 		USA_geoffrey_keyes = { add_logistics = 1 }
