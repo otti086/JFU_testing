@@ -1687,6 +1687,24 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = GER_anti_comitern_pact
+		icon = GFX_FOCUS_GENERIC_ATTACK_COMMUNISTS
+		prerequisite = { focus = GER_rhineland  }
+		x = -2
+		y = 2
+		relative_position_id = GER_rhineland
+		cost = 0
+
+		completion_reward = {
+			#every_country = { 
+			#	limit = { 
+			#		axis = yes 
+			#	} 
+			#	add_war_support = 0.05	
+			#}			
+		}
+	}
 	focus = { #should already be signed in 39
 		id = GER_prepare
 		icon = GFX_GER_GENERALPLAN_OST
@@ -1819,24 +1837,7 @@ focus_tree = {
 			custom_effect_tooltip = mefo_reduction_large_tt
 		}
 	}
-	focus = {
-		id = GER_anti_comitern_pact
-		icon = GFX_FOCUS_GENERIC_ATTACK_COMMUNISTS
-		prerequisite = { focus = GER_rhineland  }
-		x = -2
-		y = 2
-		relative_position_id = GER_rhineland
-		cost = 0
 
-		completion_reward = {
-			#every_country = { 
-			#	limit = { 
-			#		axis = yes 
-			#	} 
-			#	add_war_support = 0.05	
-			#}			
-		}
-	}
 
 	focus = {
 		id = GER_demand_memel
