@@ -150,10 +150,6 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 60
-		
-		category_mountaineers = {
-			initiative = 0.01
-		}
 
 		mountaineers = {
 			Mountain = {
@@ -428,7 +424,7 @@ technologies = {
 		
 		force_use_small_tech_layout = yes
 		naval_invasion_capacity = 10
-		naval_invasion_planning_bonus_speed = 1	
+		naval_invasion_planning_bonus_speed = 2	
 		enable_subunits = {
 			marine
 		}

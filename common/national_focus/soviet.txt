@@ -3179,7 +3179,14 @@ focus_tree = {
 		cost = 5
 		
 		available = {
-			custom_trigger_tooltip = { tooltip = kursk_failed date > 1943.11.22 }
+			OR = {
+				GER = {
+					has_global_flag = GER_operation_citadel
+				}
+				date > 1943.08.01
+				surrender_progress > 0.7
+			}
+			
 		}
 
 		search_filters = {FOCUS_FILTER_ARMY_XP}

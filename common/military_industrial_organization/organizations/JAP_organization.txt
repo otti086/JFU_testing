@@ -106,9 +106,8 @@ JAP_light_aircraft_organization = {
 		}
 
 		equipment_bonus = {
-			air_agility = 0.05
 			air_defence = 0.15
-			air_attack = 0.05
+			air_attack = 0.10
 		} 
 	}
 
@@ -130,7 +129,7 @@ JAP_light_aircraft_organization = {
 
 		equipment_bonus = {
 			air_range = 0.10
-			air_defence = 0.15
+			air_defence = 0.10
 			air_attack = 0.05
 		} 
 	}

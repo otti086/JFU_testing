@@ -63,7 +63,7 @@ equipments = {
 
 		#Defensive Abilities
 		defense = 18
-		breakthrough = 3.5
+		breakthrough = 3
 
 		#Offensive Abilities
 		soft_attack = 6
@@ -85,7 +85,7 @@ equipments = {
 		
 		#Defensive Abilities
 		defense = 22
-		breakthrough = 5
+		breakthrough = 4
 
 		#Offensive Abilities
 		soft_attack = 9
@@ -93,7 +93,7 @@ equipments = {
 		ap_attack = 5
 		air_attack = 0
 		
-		build_cost_ic = 0.70
+		build_cost_ic = 0.67
 		resources = {
 			steel = 3
 		}
@@ -111,7 +111,7 @@ equipments = {
 		
 		#Defensive Abilities
 		defense = 27
-		breakthrough = 6
+		breakthrough = 5
 
 		#Offensive Abilities
 		soft_attack = 12

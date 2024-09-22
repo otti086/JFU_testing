@@ -4239,7 +4239,10 @@ SOV_relocate_civ = {
 	random_owned_controlled_state = {
 		limit = {
 			any_neighbor_state = { 
-				is_core_of = SOV
+				OR = {
+					is_core_of = LIT
+					is_core_of = SOV
+				}
 				NOT = { is_controlled_by = SOV } 
 				NOT = { state = 146}
 			} 
@@ -4272,7 +4275,10 @@ SOV_relocate_mil = {
 	random_owned_controlled_state = {
 		limit = {
 			any_neighbor_state = { 
-				is_core_of = SOV
+				OR = {
+					is_core_of = LIT
+					is_core_of = SOV
+				}
 				NOT = { is_controlled_by = SOV } 
 			} 
 			arms_factory > 0

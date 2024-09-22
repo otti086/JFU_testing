@@ -419,6 +419,7 @@ equipments = {
 		maximum_speed = 475
 		air_agility = 50
 		air_defence = 12
+		air_attack = 4
 		weight = 6
 		naval_strike_attack = 1
 		naval_strike_targetting = 1

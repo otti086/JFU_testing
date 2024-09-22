@@ -2863,7 +2863,7 @@ technologies = {
 			max_organisation = 3
 		}
 		category_all_infantry = {
-			max_organisation = 10
+			max_organisation = 5
 		}	
 
 		xp_research_type = army
@@ -3024,7 +3024,7 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		category_all_infantry = {
-			max_organisation = 10
+			max_organisation = 5
 		}
 		
 		enable_tactic = tactic_breakthrough

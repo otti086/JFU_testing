@@ -3020,7 +3020,7 @@ focus_tree = {
 		completion_reward = {
 			add_offsite_building = {
 				type = arms_factory
-				level = 40
+				level = 20
 			}
 		}
 	}
@@ -3104,8 +3104,10 @@ focus_tree = {
 		relative_position_id = GER_todt	
 		available = {
 			custom_trigger_tooltip = { tooltip = blau_failed date > 1942.11.22 }
-			NOT = { controls_state = 16 } 
-			has_war_with = SOV			
+			has_war_with = SOV	
+			OR = {
+				GER = { surrender_progress > 0.05 }	
+			}		
 		}
 		cost = 5
 		completion_reward = {
@@ -3113,7 +3115,7 @@ focus_tree = {
 			hidden_effect = {
 				add_timed_idea = {
 					idea = Battle_of_the_Buldge
-					days = 180
+					days = 120
 				} 
 			}
 			
@@ -3129,7 +3131,9 @@ focus_tree = {
 		relative_position_id = GER_todt	
 		available = {
 			custom_trigger_tooltip = { tooltip = blau_failed date > 1942.11.22 }
-			NOT = { controls_state = 5 }			
+			OR = {
+				GER = { surrender_progress > 0.05 }	
+			}
 		}
 		cost = 5
 		completion_reward = {
@@ -3137,7 +3141,7 @@ focus_tree = {
 			hidden_effect = {
 				add_timed_idea = {
 					idea = Steiners_counter
-					days = 180
+					days = 120
 				} 	
 			}
 		
@@ -3190,8 +3194,8 @@ focus_tree = {
 				days = 365
 			} 
 			hidden_effect = {
-				set_variable = { germany_war_army_core_attack_factor = 0.3	} 
-				set_variable = { germany_war_army_core_defence_factor = 0.3	} 
+				set_variable = { germany_war_army_core_attack_factor = 0.10	} 
+				set_variable = { germany_war_army_core_defence_factor = 0.10 } 
 				add_to_variable = { germany_war_consumer_goods_factor = -0.4 }
 				add_to_variable = { germany_war_stability_weekly_factor = -0.002 }
 				add_to_variable = { germany_war_war_support_weekly_factor = -0.002 }
@@ -3256,8 +3260,8 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = scraping_the_barrel
 			hidden_effect = {
-				add_to_variable = { germany_war_army_core_attack_factor = 0.2 } 
-				add_to_variable = { germany_war_army_core_defence_factor = 0.2 }
+				add_to_variable = { germany_war_army_core_attack_factor = 0.1 } 
+				add_to_variable = { germany_war_army_core_defence_factor = 0.1 }
 			}
 			custom_effect_tooltip = das_letzte_aufgebot_tt
 		}
