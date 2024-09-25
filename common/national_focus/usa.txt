@@ -1253,21 +1253,25 @@ focus_tree = {
 				date > 1943.01.01
 				SOV = { surrender_progress > 0.6 }
 			}
-			NOT = { has_idea = emergency_dday_idea }
+			has_country_flag = {
+				flag = USA_emergency_dday_flag
+				days > 60
+			} 
 		}
 
 		available_if_capitulated = yes
 		completion_reward = {
 			every_state = { limit = { OR = { state = 806 state = 19 state = 23 state = 30 state = 14 state = 15 state = 785 state = 29 state = 6 state = 35 state = 7 state = 36 } } add_dynamic_modifier = { modifier =  ENG_con_int_dynamic days = 60 }  }
-			every_country = {
-				limit = {
-					allies = yes
-				}
-				add_timed_idea = { 
-					idea = emergency_dday_idea 
-					days = 30 
-				}	 
-			}	
+			#every_country = {
+			#	limit = {
+			#		allies = yes
+			#	}
+				#add_timed_idea = { 
+				#	idea = emergency_dday_idea 
+				#	days = 30 
+				#}	 
+			#}
+			set_country_flag = USA_operation_overlord_flag	
 		}
 	}
 	focus = {
@@ -1290,6 +1294,10 @@ focus_tree = {
 			#		is_controlled_by_ROOT_or_ally = yes 
 			#	}
 			#}
+			has_country_flag = {
+				flag = USA_operation_overlord_flag
+				days > 60
+			} 
 		}
 
 		available_if_capitulated = yes
@@ -1299,12 +1307,13 @@ focus_tree = {
 					OR = { state = 806 state = 19 state = 23 state = 30 state = 14 state = 15 state = 785 state = 29 state = 6 state = 35 state = 7 state = 36 } 
 				} 
 				add_dynamic_modifier = { modifier =  ENG_con_int_dynamic days = 60 } 
-				add_dynamic_modifier = {
-					modifier = emergency_dday_modifier
-					days = 30
-					scope = USA
-				} 
+				#add_dynamic_modifier = {
+				#	modifier = emergency_dday_modifier
+				#	days = 30
+				#	scope = USA
+				#} 
 			}
+			set_country_flag = USA_emergency_dday_flag	
 		}
 	}
 	focus = {

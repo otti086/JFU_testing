@@ -625,9 +625,41 @@ technologies = {
 		
 		xor = { marines_expeditionary }
 		
-		acclimatization_cold_climate_gain_factor = 0.25
-		acclimatization_hot_climate_gain_factor = 0.25
-			
+		artillery_brigade = {
+			amphibious = {
+				attack = 0.10
+			}
+		}			
+		mot_artillery_brigade = {
+			amphibious = {
+				attack = 0.10
+			}
+		}	
+		rocket_artillery_brigade = {
+			amphibious = {
+				attack = 0.10
+			}
+		}	
+		mot_rocket_artillery_brigade = {
+			amphibious = {
+				attack = 0.10
+			}
+		}	
+		motorized_rocket_brigade = {
+			amphibious = {
+				attack = 0.10
+			}
+		}	
+		anti_tank_brigade = {
+			amphibious = {
+				attack = 0.10
+			}
+		}
+		mot_anti_tank_brigade = {
+			amphibious = {
+				attack = 0.10
+			}
+		}
 		doctrine = yes	
 		research_cost = 2.25
 		
@@ -881,8 +913,40 @@ xor = { marines_expeditionary_support }
 		xp_research_type = army
 		xp_unlock_cost = 60
 
-		category_marines = {
-			defense = 0.10
+		artillery_brigade = {
+			amphibious = {
+				attack = 0.10
+			}
+		}			
+		mot_artillery_brigade = {
+			amphibious = {
+				attack = 0.10
+			}
+		}	
+		rocket_artillery_brigade = {
+			amphibious = {
+				attack = 0.10
+			}
+		}	
+		mot_rocket_artillery_brigade = {
+			amphibious = {
+				attack = 0.10
+			}
+		}	
+		motorized_rocket_brigade = {
+			amphibious = {
+				attack = 0.10
+			}
+		}	
+		anti_tank_brigade = {
+			amphibious = {
+				attack = 0.10
+			}
+		}
+		mot_anti_tank_brigade = {
+			amphibious = {
+				attack = 0.10
+			}
 		}
 
 

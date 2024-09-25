@@ -323,7 +323,7 @@ characters = {
 			attack_skill = 1
 			defense_skill = 1
 			planning_skill = 2
-			logistics_skill = 3
+			logistics_skill = 2
 			legacy_id = 0
 		}
 	}
@@ -873,7 +873,7 @@ characters = {
 		}
 		
 		navy_leader = {
-			traits = { battleship_adherent superior_tactician spotter }
+			traits = { battleship_adherent superior_tactician spotter green_water_expert }
 			skill = 3
 			attack_skill = 5
 			defense_skill = 2
@@ -914,11 +914,25 @@ characters = {
 				large = GFX_portrait_ITA_prince_aimone
 			}
 		}
-		 
+		advisor={
+			slot = high_command
+			idea_token = prince_aimone
+			ledger = navy
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				navy_screen_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.700
+			}
+		}		 
 		navy_leader = {
 			traits = { gentlemanly inshore_fighter }
-			skill = 2
-			attack_skill = 2
+			skill = 4
+			attack_skill = 4
 			defense_skill = 2
 			maneuvering_skill = 2
 			coordination_skill = 2
@@ -985,8 +999,8 @@ characters = {
 		}
 		
 		navy_leader = {
-			traits = { gunnery_expert battleship_adherent ironside }
-			skill = 2
+			traits = { gunnery_expert battleship_adherent ironside superior_tactician  }
+			skill = 3
 			attack_skill = 3
 			defense_skill = 1
 			maneuvering_skill = 2

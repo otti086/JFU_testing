@@ -648,21 +648,7 @@ characters={
 				large=GFX_portrait_ENG_henry_harwood
 			}
 		}
-		advisor={
-			slot = high_command
-			idea_token = henry_harwood
-			ledger = navy
-			allowed = {
-				original_tag = ENG
-			}
-			traits = {
-				navy_screen_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 0.700
-			}
-		}
+
 		
 		navy_leader={
 			traits={ old_guard_navy bold }
@@ -701,7 +687,7 @@ characters={
 		}
 		
 		navy_leader={
-			traits={ gunnery_expert bold navy_career_officer blockade_runner superior_tactician }
+			traits={ gunnery_expert bold navy_career_officer blockade_runner superior_tactician blue_water_expert }
 			skill=5
 			attack_skill=5
 			defense_skill=4

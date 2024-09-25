@@ -107,7 +107,7 @@ ITA_power_balance = {
 				political_power_factor = 0.1
 				war_support_factor = 0.03
 				stability_factor = 0.03
-				army_core_defence_factor = 0.20
+				army_core_defence_factor = 0.1
 			}
 			on_activate = {
 				if = {
@@ -137,7 +137,7 @@ ITA_power_balance = {
 				political_power_factor = 0.15
 				war_support_factor = 0.05
 				stability_factor = 0.05
-				army_core_defence_factor = 0.35
+				army_core_defence_factor = 0.15
 			}
 			on_activate = {
 				
@@ -155,7 +155,7 @@ ITA_power_balance = {
 				political_power_factor = 0.2
 				war_support_factor = 0.07
 				stability_factor = 0.07
-				army_core_defence_factor = 0.55
+				army_core_defence_factor = 0.2
 			}
 			on_activate = {
 				
@@ -173,7 +173,7 @@ ITA_power_balance = {
 				political_power_factor = 0.25
 				war_support_factor = 0.1
 				stability_factor = 0.1
-				army_core_defence_factor = 0.75
+				army_core_defence_factor = 0.25
 			}
 			on_activate = {
 				set_power_balance_gfx = {

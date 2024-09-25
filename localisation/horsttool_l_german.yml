@@ -1061,6 +1061,7 @@
  SOV_arctic_lend_lease:0 "Arctic lend lease"
  SOV_persian_lend_lease:0 "Persian lend lease"
  SOV_Bessarabia:0 "Demand Besserabia"
+ USA_emergency_dday:0 "Emergency dday"
  ALLIES_continue_the_fight:0 "Continue the Fight"
  ALLIES_continue_the_fight_desc:0 "We shall fight on the beaches, we shall fight on the landing grounds, we shall fight in the fields and in the streets, we shall fight in the hills; we shall never surrender!"
  ALLIES_continue_the_fight_navy:0 "Free [ROOT.GetAdjective] Navy"
@@ -1422,7 +1423,8 @@
  #country flags
 
  EFR_torch_declared:0 "Torch has been declared" 
-
+ USA_emergency_dday_flag:0 "Emergency dday"
+ USA_operation_overlord_flag:0 "Operation Overlord"
 
  #MIOs
 

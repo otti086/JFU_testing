@@ -4080,6 +4080,7 @@ BUL_foreign_agreements = {
 		visible = {
 			NOT = { has_completed_focus = BUL_nationalization }
 			BUL = { has_completed_focus = BUL_attract_foreign_capitals }
+			NOT = { has_country_flag = foreign_contract_done }
 		}
 
 		cancel_trigger = {

@@ -2604,6 +2604,11 @@ leader_traits = {
 				movement = 0.1
 				defence = 0.1
 			}
+			ocean = {
+				attack = 0.1
+				movement = 0.1
+				defence = 0.1
+			}
 		}
 		
 		slot = high_command

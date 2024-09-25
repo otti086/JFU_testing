@@ -646,7 +646,7 @@ characters={
 		}
 		
 		navy_leader={
-			traits={ gentlemanly naval_lineage superior_tactician spotter blue_water_expert }
+			traits={ gentlemanly naval_lineage superior_tactician spotter }
 			skill=5
 			attack_skill=3
 			defense_skill=3
