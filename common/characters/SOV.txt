@@ -220,7 +220,7 @@ characters = {
 				original_tag = SOV
 			}
 			available = {
-				#has_completed_focus = SOV_positive_heroism
+				has_completed_focus = SOV_positive_heroism
 			}
 			traits = {
 				army_chief_offensive_2

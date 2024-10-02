@@ -20,14 +20,15 @@
 		x = 10
 		y = 0
 		cost = 5
+		available = {
+			is_ai = no
+		}
 		completion_reward = {
 			remove_ideas = MAN_banditry
 		}
 	}
 	
-	
-	
-		focus = {
+	focus = {
 		id = MAN_obediencex
 		icon = GFX_focus_CZE_german_puppet
 		prerequisite = { focus = MAN_pacify_the_countrysidex }
@@ -102,7 +103,7 @@
 
 		available = {
 			has_completed_focus = MAN_five_year_plan_new
-			is_ai = no
+
 		}
 
 		completion_reward = {

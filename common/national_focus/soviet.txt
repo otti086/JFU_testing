@@ -4126,7 +4126,7 @@ focus_tree = {
 			custom_effect_tooltip = available_military_high_command
 			show_ideas_tooltip = konstantin_rokossovsky 
 			show_ideas_tooltip = leonid_govorov
-			#show_ideas_tooltip = nikolay_vatutin
+			show_ideas_tooltip = nikolay_vatutin
 
 			custom_effect_tooltip = unlock_propaganda_campaign_tt
 			unlock_decision_tooltip = SOV_propaganda_heroes_forward

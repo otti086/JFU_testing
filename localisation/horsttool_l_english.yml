@@ -1360,6 +1360,7 @@
  USA_pre_war_production:0 "Prepare our Industry"
  victory_programs:0 "Victory Programs"
  emergency_dday_idea:0 "Emergency D-Day"
+
  EFR_work_service:0 "Guest Workers Sent to Germany"
  GER_apointalbertspeer:0 "Albert Speer's Reforms"
  goebbels_total_war:0 "Totaler Krieg"
@@ -1377,21 +1378,25 @@
  axis_fall_blau:0 "Fall Blau"
  axis_operation_citadelle:0 "Operation Citadel"
  GER_the_blitzkrieg:0 "The Blitzkrieg"
- hp_spirit:0 "Tank-HP §G+6§!\nMotorised-HP §G+10§!\nMechanized-HP §G+10§!\nAmphibious-Mechanized-HP §G+10§!"
- hp_spirit_allies:0 "Tank-HP §G+6§!\nMotorised-HP §G+10§!\nMechanized-HP §G+10§!\nAmphibious-Mechanized-HP §G+10§!"
- ai_limiter:0 "AI Limiter"
+
  soviet_winter_offensive1:0 "1941 Winter offensive"
  soviet_winter_offensive2:0 "1942 Winter offensive"
  soviet_winter_offensive3:0 "1943 Winter offensive"
+ 
+ hp_spirit:0 "Tank-HP §G+6§!\nMotorised-HP §G+10§!\nMechanized-HP §G+10§!\nAmphibious-Mechanized-HP §G+10§!"
+ hp_spirit_allies:0 "Tank-HP §G+6§!\nMotorised-HP §G+10§!\nMechanized-HP §G+10§!\nAmphibious-Mechanized-HP §G+10§!"
  JFU_no_tradeback:0 "No tradeback"
  NO_GRINDING:0 "No Grinding"
  JFU_soviet_synthetics:0 "Emergency Rubber Programm"
+ ai_limiter:0 "AI Limiter"
 
  ROM_nationalised_oil_idea:0 "Nationalised Oil"
 
  MEFO_bills_axis_minor:0 "MEFO Bills" 
  MEFO_bills_axis_minor_desc:0 "§RWill get removed up on entering any war§!"
 
+ MAN_opiumtrade:0 "Opium Trade"
+ MAN_agriculturaltrade:09 "Agricultural Trade"
 
  #decisions
 
@@ -1404,15 +1409,17 @@
  GER_Operation_citadel:0 "Operation §RCitadel§!"
  ENG_permit_saf:0 "Permit an African Mandate for South Africa"
  ENG_permit_saf_desc:0 "Our overseas colonies in the Southern half of Africa are too difficult for us to maintain - we should encourage our dominion, South Africa, to take stewardship of them."
- anti_non_aligned_raids:0 "Anti Non-Aligned Raids"
- anti_non_aligned_raids_desc:0 "We must crack down on Non-Aligned elements in our nation for the sake of long-term domestic stability. Their influence is too great, and may potentially become a problem to the government."
+
  days_till_civil_war:0 "Days till Civil War starts"
  attack_china_annex:0 "Annex China"
  attack_china_normal:0 "Attack China"
  SOV_relocation:0 "Soviet factory relocation"
  SOV_relocation2:0 "Soviet factory relocation"  
- 
- 
+ SOV_spawn:0 "Stalin Line Spawn ins"
+
+ add_convoy:0 "Add Convoy"
+ anti_non_aligned_raids:0 "Anti Non-Aligned Raids"
+ anti_non_aligned_raids_desc:0 "We must crack down on Non-Aligned elements in our nation for the sake of long-term domestic stability. Their influence is too great, and may potentially become a problem to the government." 
  
  #techology
 
@@ -1686,10 +1693,14 @@
 
  #flags
 
- MAN_sungkiang:0 "Has completed the Sungkiang Railway Expansion focus"
- MAN_hulunbuir:0 "Has completed the Hulunbiar Railway Expansion focus"
- MAN_schahar:0 "Has completed the Chahar Railway Expansion focus"
-
+ MAN_sungkiang:0 "Has selected the Sungkiang Railway Expansion"
+ MAN_hulunbuir:0 "Has selected the Hulunbiar Railway Expansion"
+ MAN_kirin:0 "Has selected the Kirin Railway Expansion"
+ MAN_heilungkiang:0 "Has selected the Heilungkiang Railway Expansion"
+ MAN_jehol:0 "Has selected the Jehol Railway Expansion"
+ MAN_liaotung:0 "Has selected the Liaotung Railway Expansion"
+ MAN_chahar:0 "Has selected the Chahar Railway Expansion"
+ MAN_schahar:0 "Has selected the South Chahar Railway Expansion"
 
  #brazil army stuff
 
