@@ -1804,23 +1804,21 @@
  MOD_countdown_to_axis_victory_mission:0 "Imminent [GER.GetFlag] §RAxis§! §YVictory§!"
 
 #vps
-  #moscow
-  VICTORY_POINTS_2017:0 "Lyubertsy"
-  VICTORY_POINTS_5020:0 "Reutov"
-  VICTORY_POINTS_5064:0 "Mytischi"
-  VICTORY_POINTS_12877:0 "Khimki"
-  VICTORY_POINTS_10789:0 "Krasnogorsk"
-  VICTORY_POINTS_7984:0 "Odintsovo"
-  VICTORY_POINTS_1995:0 "Zhukovsky"
+ #moscow
+ VICTORY_POINTS_2017:0 "Lyubertsy"
+ VICTORY_POINTS_5020:0 "Reutov"
+ VICTORY_POINTS_12877:0 "Khimki"
+ VICTORY_POINTS_10789:0 "Krasnogorsk"
+ VICTORY_POINTS_7984:0 "Odintsovo"
+ VICTORY_POINTS_1995:0 "Zhukovsky"
 
-  #leningrad 
-  VICTORY_POINTS_149:0 "Melun"
-  VICTORY_POINTS_10476:0 "Krasnogorsk"
-  VICTORY_POINTS_8053:0 "Olgino"
-  VICTORY_POINTS_4893:0 "Vaskelovo"
+ #leningrad 
+ VICTORY_POINTS_149:0 "Melun"
+ VICTORY_POINTS_10476:0 "Krasnogorsk"
+ VICTORY_POINTS_8053:0 "Olgino"
 
-  #Stalingrad
-  VICTORY_POINTS_2101:0 "Spartakova"
-  VICTORY_POINTS_4949:0 "Krasnaya Sloboda"
-  VICTORY_POINTS_3555:0 "Dzerzhinsky Tractor Factory"
-  VICTORY_POINTS_1948:0 "Yelshanka"
+ #Stalingrad
+ VICTORY_POINTS_2101:0 "Spartakova"
+ VICTORY_POINTS_4949:0 "Krasnaya Sloboda"
+ VICTORY_POINTS_3555:0 "Dzerzhinsky Tractor Factory"
+ VICTORY_POINTS_1948:0 "Yelshanka"
