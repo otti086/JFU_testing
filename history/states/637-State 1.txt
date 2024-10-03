@@ -7,6 +7,7 @@ state = {
 		owner = SOV
 		buildings = {
 			infrastructure = 1
+			dockyard = 5
 			12207 = {
 				naval_base = 1
 
@@ -14,7 +15,7 @@ state = {
 
 		}
 		add_core_of = SOV
-
+		add_extra_state_shared_building_slots = 5
 	}
 
 	provinces = {
