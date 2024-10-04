@@ -4596,7 +4596,6 @@ SOV_great_patriotic_war = {
 			army_defence_factor = 0.1
 			dig_in_speed_factor = 0.5
 			no_supply_grace = 336
-			supply_consumption_factor = -0.1
 		}
 
 		complete_effect = {

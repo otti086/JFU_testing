@@ -1784,7 +1784,46 @@ focus_tree = {
 			custom_effect_tooltip = GER_decision_focus_tt
 		}
 	}
-
+	focus = {
+		id = GER_ost
+		icon = GFX_focus_GER_recruit
+		prerequisite = { focus = GER_ussr_war_goal}
+		x = 2
+		y = 1
+		relative_position_id = GER_ussr_war_goal
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			custom_trigger_tooltip = { tooltip = blau_failed date > 1942.11.22 }
+		}
+		
+		completion_reward = {
+			add_manpower = 500000 
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 40000
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment_1
+				amount = 3000
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = anti_air_equipment_1
+				amount = 2000
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_1
+				amount = 1000
+				producer = GER
+			}		
+		}
+		
+	}
 	focus = {
 		id = GER_focus_citadel
 		icon = GFX_GER_MOSCOW_PUSH

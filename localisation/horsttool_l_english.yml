@@ -1196,6 +1196,9 @@
  GER_plan_z_bb_desc:0 ""
  GER_focus_citadel:0 "Operation Citadel"
  GER_focus_citadel_desc:0 ""
+ GER_ost:0 "Osttruppen"
+ GER_ost_desc:0 ""
+
  JAP_armored_divisions_MAN:0 "Manchurian Armor Technology"
 
  AST_great_depression_modifier:0 "Australian Economy"

@@ -999,7 +999,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			add_ideas = extensive_conscription
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
