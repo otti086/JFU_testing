@@ -57,8 +57,18 @@ political_actions1 = {
 				ROOT_call_against_beligum = yes  ROOT_call_against_holland = yes
 			}
 			complete_national_focus = GER_around_maginot
+			if = {
+				limit = { 
+					has_completed_focus = GER_west_wall
+				}
+				add_ideas = "Fall Gelb"
+				else = {
+					custom_effect_tooltip = "U get bonus Stats if u completet Westwall focus"
+				}
+			}
 		}
 	}
+	
 	GER_weserbung_operation = { 
 		icon = category_ger_reichskommissariats
 		fire_only_once = yes	

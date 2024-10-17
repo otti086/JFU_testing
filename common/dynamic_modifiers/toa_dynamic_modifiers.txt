@@ -33,6 +33,21 @@
 # Army Modifiers
 
 #The Brazilian Army
+GER_welthauptstadt = {
+	icon = GFX_idea_generic_fascism_drift_bonus
+	state_production_speed_buildings_factor = 0.25
+	local_building_slots_factor = 1
+}
+"SS Ocupation" = {
+	icon = GFX_idea_generic_fascism_drift_bonus
+	local_factories 				= 0.15
+	local_resources 				= 0.05
+
+	resistance_target 				= -0.40
+	compliance_gain 				= -0.01
+	required_garrison_factor 		= 0.15
+	resistance_damage_to_garrison 	= 0.50
+}
 BRA_army_modifier = { #NATIONAL SPIRIT
 	enable = { always = yes }
 

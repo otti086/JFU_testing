@@ -48,6 +48,25 @@ ideas = {
 			}
 		}	
 
+		"Fall Gelb" = {
+			picture = generic_acquire_tanks
+			allowed = {
+				always = no 
+			}
+			cancel = {
+				GER = {
+					controls_state = 16
+				}
+			}
+			modifier = {
+				army_speed_factor = 0.1
+			}
+			targeted_modifier = {
+				tag = FRA 
+				breakthrough_bonus_against = 0.05
+			}
+		}
+
 		GER_stuka = {
 			allowed = {
 				always = no

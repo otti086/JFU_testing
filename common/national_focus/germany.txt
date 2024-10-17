@@ -159,31 +159,13 @@ focus_tree = {
 	focus = {
 		id = GER_ostwall
 		icon = GFX_goal_generic_fortify_city
-		prerequisite = { focus = GER_west_wall }
+		prerequisite = { focus = GER_focus_fall_blau }
 		available = {
-			any_country = {
-				OR = {
-					tag = GER
-					is_in_faction_with = GER
-				}
-				OR = {
-					has_full_control_of_state = 191
-					has_full_control_of_state = 209
-					has_full_control_of_state = 210
-					has_full_control_of_state = 207
-					has_full_control_of_state = 206
-					has_full_control_of_state = 204
-					has_full_control_of_state = 194
-					has_full_control_of_state = 202
-					has_full_control_of_state = 203
-					has_full_control_of_state = 226
-					has_full_control_of_state = 200
-				}
-			}
+			custom_trigger_tooltip = { tooltip = blau_failed date > 1942.11.22 }
 		}
-		x = 0
+		x = -1
 		y = 1
-		relative_position_id = GER_west_wall
+		relative_position_id = GER_focus_fall_blau
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -191,347 +173,28 @@ focus_tree = {
 		
 		completion_reward = {
 			add_ideas = GER_ostwall_idea
-			custom_effect_tooltip = GER_ostwall_forts
-			custom_effect_tooltip = GER_ostwall_forts_2
-			if = {
-				limit = { 
-					any_country = {
-						OR = {
-							tag = GER
-							is_in_faction_with = GER
+			custom_effect_tooltip = "This Focus spawns lvl3 Forts in all border provinces to russia"
+			
+				every_owned_state = {
+					limit = {
+						is_border_of = SOV
+	
+					}
+					add_building_construction = {
+						type = bunker
+						province = {
+							all_provinces = yes
+							limit_to_border_country = SOV
+							limit_to_coastal = no
 						}
-						has_full_control_of_state = 191 
+						level = 3
+						instant_build = yes
 					}
 				}
-				hidden_effect = {
-					191 = {
-						set_building_level = {
-							type = bunker
-							level = 2
-							province = 4640
-							instant_build = yes
-						}
-					}
-				}
-			}
-			if = {
-				limit = { 
-					any_country = {
-						OR = {
-							tag = GER
-							is_in_faction_with = GER
-						}
-						has_full_control_of_state = 209
-					}
-				}
-				hidden_effect = {
-					209 = {
-						set_building_level = {
-							type = bunker
-							level = 1
-							province = 415
-							instant_build = yes
-						}
-						set_building_level = {
-							type = bunker
-							level = 1
-							province = 3310
-							instant_build = yes
-						}
-					}
-				}
-			}
-			if = {
-				limit = { 
-					any_country = {
-						OR = {
-							tag = GER
-							is_in_faction_with = GER
-						}
-						has_full_control_of_state = 210 
-					}
-				}
-				hidden_effect = {
-					210 = {
-						set_building_level = {
-							type = bunker
-							level = 1
-							province = 3333
-							instant_build = yes
-						}
-						set_building_level = {
-							type = bunker
-							level = 1
-							province = 11259
-							instant_build = yes
-						}
-						set_building_level = {
-							type = bunker
-							level = 1
-							province = 9386
-							instant_build = yes
-						}
-					}
-				}
-			}
-			if = {
-				limit = { 
-					any_country = {
-						OR = {
-							tag = GER
-							is_in_faction_with = GER
-						}
-						has_full_control_of_state = 207 
-					}
-				}
-				hidden_effect = {
-					207 = {
-						set_building_level = {
-							type = bunker
-							level = 1
-							province = 323
-							instant_build = yes
-						}
-						set_building_level = {
-							type = bunker
-							level = 3
-							province = 11241
-							instant_build = yes
-						}
-						set_building_level = {
-							type = bunker
-							level = 1
-							province = 11220
-							instant_build = yes
-						}
-						set_building_level = {
-							type = bunker
-							level = 1
-							province = 3331
-							instant_build = yes
-						}
-					}
-				}
-			}
-			if = {
-				limit = { 
-					any_country = {
-						OR = {
-							tag = GER
-							is_in_faction_with = GER
-						}
-						has_full_control_of_state = 206 
-					}
-				}
-				hidden_effect = {
-					206 = {
-						set_building_level = {
-							type = bunker
-							level = 1
-							province = 9289
-							instant_build = yes
-						}
-						set_building_level = {
-							type = bunker
-							level = 1
-							province = 3378
-							instant_build = yes
-						}
-					}
-				}
-			}
-			if = {
-				limit = { 
-					any_country = {
-						OR = {
-							tag = GER
-							is_in_faction_with = GER
-						}
-						has_full_control_of_state = 204 
-					}
-				}
-				hidden_effect = {
-					204 = {
-						set_building_level = {
-							type = bunker
-							level = 1
-							province = 6373
-							instant_build = yes
-						}
-					}
-				}
-			}
-			if = {
-				limit = { 
-					any_country = {
-						OR = {
-							tag = GER
-							is_in_faction_with = GER
-						}
-						has_full_control_of_state = 194 
-					}
-				}
-				hidden_effect = {
-					194 = {
-						set_building_level = {
-							type = bunker
-							level = 1
-							province = 6319
-							instant_build = yes
-						}
-						set_building_level = {
-							type = bunker
-							level = 1
-							province = 9249
-							instant_build = yes
-						}
-						set_building_level = {
-							type = bunker
-							level = 1
-							province = 3507
-							instant_build = yes
-						}
-					}
-				}
-			}
-			if = {
-				limit = { 
-					any_country = {
-						OR = {
-							tag = GER
-							is_in_faction_with = GER
-						}
-						has_full_control_of_state = 202 
-					}
-				}
-				hidden_effect = {
-					202 = {
-						set_building_level = {
-							type = bunker
-							level = 1
-							province = 9568
-							instant_build = yes
-						}
-						set_building_level = {
-							type = bunker
-							level = 1
-							province = 3543
-							instant_build = yes
-						}
-						set_building_level = {
-							type = bunker
-							level = 5
-							province = 525
-							instant_build = yes
-						}
-						set_building_level = {
-							type = bunker
-							level = 1
-							province = 3494
-							instant_build = yes
-						}
-					}
-				}
-			}
-			if = {
-				limit = { 
-					any_country = {
-						OR = {
-							tag = GER
-							is_in_faction_with = GER
-						}
-						has_full_control_of_state = 203 
-					}
-				}
-				hidden_effect = {
-					203 = {
-						set_building_level = {
-							type = bunker
-							level = 1
-							province = 11454
-							instant_build = yes
-						}
-						set_building_level = {
-							type = bunker
-							level = 1
-							province = 488
-							instant_build = yes
-						}
-						set_building_level = {
-							type = bunker
-							level = 1
-							province = 3468
-							instant_build = yes
-						}
-						set_building_level = {
-							type = bunker
-							level = 1
-							province = 6478
-							instant_build = yes
-						}
-					}
-				}
-			}
-			if = {
-				limit = { 
-					any_country = {
-						OR = {
-							tag = GER
-							is_in_faction_with = GER
-						}
-						has_full_control_of_state = 226 
-					}
-				}
-				hidden_effect = {
-					226 = {
-						set_building_level = {
-							type = bunker
-							level = 1
-							province = 9433
-							instant_build = yes
-						}
-						set_building_level = {
-							type = bunker
-							level = 3
-							province = 11437
-							instant_build = yes
-						}
-					}
-				}
-			}
-			if = {
-				limit = { 
-					any_country = {
-						OR = {
-							tag = GER
-							is_in_faction_with = GER
-						}
-						has_full_control_of_state = 200 
-					}
-				}
-				hidden_effect = {
-					200 = {
-						set_building_level = {
-							type = bunker
-							level = 3
-							province = 11405
-							instant_build = yes
-						}
-						set_building_level = {
-							type = bunker
-							level = 1
-							province = 6596
-							instant_build = yes
-						}
-						set_building_level = {
-							type = bunker
-							level = 1
-							province = 11700
-							instant_build = yes
-						}
-					}
-				}
-			}
+				
+			 
+			
+			
 		}
 	}
 	focus = {
@@ -819,6 +482,7 @@ focus_tree = {
 		cost = 10
 
 		available = {
+			has_idea = war_economy
 		}
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -900,6 +564,35 @@ focus_tree = {
 					type = arms_factory
 					level = 4
 					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = GER_form_the_reichskommissariats
+		icon = GFX_focus_ger_reichskommisariats
+		prerequisite = { focus = GER_german_war_economy focus = GER_integrate_war_economies }
+		available = {
+			date > 1940.1.1
+		}
+		x = 1
+		y = 1
+		relative_position_id = GER_integrate_war_economies
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			every_state = {
+				limit = {
+					NOT = {
+						is_core_of = GER
+					}
+					is_controlled_by = GER
+				}
+				add_dynamic_modifier = {
+					modifier = "SS Ocupation"
 				}
 			}
 		}
