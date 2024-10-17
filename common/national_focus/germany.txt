@@ -1786,11 +1786,11 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_ost
-		icon = GFX_focus_GER_recruit
-		prerequisite = { focus = GER_ussr_war_goal}
-		x = 2
+		icon = GFX_FOCUS_GER_RECRUIT
+		prerequisite = { focus = GER_focus_fall_blau}
+		x = 1
 		y = 1
-		relative_position_id = GER_ussr_war_goal
+		relative_position_id = GER_focus_fall_blau
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -1834,7 +1834,7 @@ focus_tree = {
 			always = no
 		}
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = GER_focus_fall_blau
 		cost = 10
 

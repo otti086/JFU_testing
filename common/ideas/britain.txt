@@ -139,7 +139,7 @@ ideas = {
 			}
 			
 			modifier = {
-				operative_slot = 4
+				#operative_slot = 4
 			}			
 		}
 

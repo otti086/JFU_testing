@@ -1414,8 +1414,12 @@
  ENG_permit_saf_desc:0 "Our overseas colonies in the Southern half of Africa are too difficult for us to maintain - we should encourage our dominion, South Africa, to take stewardship of them."
 
  days_till_civil_war:0 "Days till Civil War starts"
+ 
  attack_china_annex:0 "Annex China"
  attack_china_normal:0 "Attack China"
+ JAP_war_conferences_cd_mission:0 "Interservice Rivalry Cooldown"
+ JAP_war_conferences_cd_mission_short:0 "Interservice Rivalry Cooldown"
+
  SOV_relocation:0 "Soviet factory relocation"
  SOV_relocation2:0 "Soviet factory relocation"  
  SOV_spawn:0 "Stalin Line Spawn ins"

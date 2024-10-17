@@ -105,7 +105,8 @@ ideas = {
 
 			modifier = {
 				air_range_factor = 0.2
-				operative_slot = 1
+				#operative_slot = 1
+				conscription = 0.03
 			}
 		}
 

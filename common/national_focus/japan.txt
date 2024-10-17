@@ -241,7 +241,7 @@
 		y = 2
 		relative_position_id = JAP_liaison_conference
 
-		cost = 10
+		cost = 5
 
 
 		cancel_if_invalid = yes

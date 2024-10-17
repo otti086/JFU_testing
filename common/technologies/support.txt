@@ -738,7 +738,7 @@ technologies = {
 
 		maintenance_company = {
 			reliability_factor = 0.05
-			equipment_capture_factor = 0.05
+			equipment_capture_factor = 0.025
 		}
 		enable_equipment_modules = {
 			easy_maintenance
@@ -786,13 +786,7 @@ technologies = {
 
 		maintenance_company = {
 			reliability_factor = 0.05
-			
-			battalion_mult = {
-				category = category_all_armor
-				equipment_capture_factor = 0.01
-				add = yes
-			}
-			
+			equipment_capture_factor = 0.025	
 		}
 		path = {
 			leads_to_tech = tech_maintenance_company4
@@ -834,7 +828,7 @@ technologies = {
 
 		maintenance_company = {
 			reliability_factor = 0.05
-			equipment_capture_factor = 0.05
+			equipment_capture_factor = 0.025
 		}
 
 		research_cost = 2.0

@@ -1863,4 +1863,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/eng/ENG_Spitfire.png"
 	}
     
+
+    SpriteType = {
+		name = "GFX_FOCUS_GER_RECRUIT"
+		texturefile = "gfx/interface/goals/ger/focus_GER_recruit.dds"
+	}
+    
 }
