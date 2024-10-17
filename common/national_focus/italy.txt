@@ -6694,18 +6694,19 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			set_cosmetic_tag = RSI  
-			add_country_leader_trait = lombardy 
-			remove_power_balance = { id = ITA_power_balance	}
-			set_country_flag = ITA_rsi_established
-			add_timed_idea = { idea = desperate_defense_idea days = 90 }
+
 			hidden_effect = {
-				add_ideas = SPA_death_before_surrender_capitulation
 				if = { limit = { has_idea = vittorio_emanuele } remove_ideas = vittorio_emanuele}
 				if = { limit = { has_idea = vittorio_emanuele_emperor_of_ethiopia } remove_ideas = vittorio_emanuele_emperor_of_ethiopia}
 				if = { limit = { has_idea = vittorio_emanuele_king_of_albania } remove_ideas = vittorio_emanuele_king_of_albania}
 				if = { limit = { has_idea = vittorio_emanuele_albania_ethiopia } remove_ideas = vittorio_emanuele_albania_ethiopia}
 			}
+			set_cosmetic_tag = RSI  
+			add_country_leader_trait = lombardy 
+			ITA_bop_remove_bop_effect = yes
+			add_timed_idea = { idea = desperate_defense_idea days = 90 }
+			set_country_flag = ITA_rsi_established
+			#add_ideas = { ITA_surrender_limit_idea }
 		}
 	}
 

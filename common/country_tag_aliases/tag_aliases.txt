@@ -80,4 +80,3 @@ FGR = {
 MOT = {
 	variable = generic_operation_target
 }
-
