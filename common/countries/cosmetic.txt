@@ -867,3 +867,7 @@ DEN_imperial = {
 	color = rgb { 200 210 220 }
 	color_ui = rgb { 230 255 255 }
 }
+RSI = {
+	color = rgb { 10 80 20 }
+	color_ui = rgb { 10 80 20 }
+}
