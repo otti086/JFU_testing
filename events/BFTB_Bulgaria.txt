@@ -3194,27 +3194,6 @@ country_event = {
 	option = { #Ok
 		name = bftb_bulgaria_rearmament.9.a
 
-		ai_chance = {
-			base = 5
-			modifier = {
-				factor = 5
-				is_historical_focus_on = yes
-			}
-			modifier = {
-				factor = 100
-				BUL = {
-					OR = {
-						has_war_with = GER
-						is_in_faction_with = ROOT	
-					}
-				}
-			}
-			modifier = { #You think like us, we like that
-				factor = 1.5
-				BUL = {	has_government = ROOT }
-			}
-		}
-
 		effect_tooltip = { 
 			BUL = { remove_ideas = BUL_army_restrictions }
 		}
@@ -3243,10 +3222,6 @@ country_event = {
 			BUL = { remove_ideas = BUL_army_restrictions }
 		}
 		add_political_power = -75
-		create_wargoal = {
-			type = topple_government
-			target = BUL
-		}
 	}
 }
 

@@ -1299,7 +1299,7 @@
  mefo_reduction_large_tt:0 "We will use aquired funds to reduce the MEFO Bills payments by §G-0.20§! Political Power"
  mefo_reduction_small_tt:0 "We will use aquired funds to reduce the MEFO Bills payments by §G-0.10§! Political Power"
  ost_wall_tt:0 "We will gain level 3 forts in all porvinzes bordering the Soviet Union"
-
+ GER_form_the_reichskommissariats_tt:0 "Every state occupied by us \n  Add §YSS Occupation§! which grants:\nlocal Resources: §G+5%§!\nlocal Factories: §G+15%§!\nResistance Target: §G-40%§!\nDamage to Garrisons: §R+50%§!\nRequired Garrisons: §R+15%§!\nDaily Compliance Gain: §R-0.01%§!"
 
  MIO_range_trait:0 "Unlocks a special Range trait for the Light Aircraft and Naval Aircraft Designer"
  MIO_agility_trait:0 "Unlocks a special Agility trait for the Light Aircraft and Naval Aircraft Designer"
@@ -1524,7 +1524,7 @@
  JAP_light_aircraft_organization:0 "Light Aircraft Designer"
  JAP_CAS_organization:0 "Japanese Cas Designer"
  SOV_CAS_organization:0 "Soviet Cas Designer" 
-
+ SAF_heavy_organization:0 "Heavy Tank designer"
 
 
  #Mio traits

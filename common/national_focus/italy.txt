@@ -6707,6 +6707,9 @@ focus_tree = {
 			add_timed_idea = { idea = desperate_defense_idea days = 90 }
 			set_country_flag = ITA_rsi_established
 			#add_ideas = { ITA_surrender_limit_idea }
+			GER = {
+				transfer_state = 39
+			}
 		}
 	}
 

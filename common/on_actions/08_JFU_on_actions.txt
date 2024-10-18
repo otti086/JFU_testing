@@ -636,6 +636,14 @@ on_actions = {
 				NOR = {
 					complete_national_focus = NOR_ALLIANCE
 				}
+				if = {
+					limit = {
+						IRE = { is_ai = yes }
+					}
+					ENG = {
+						annex_country = { target = NOR transfer_troops = no }
+					}
+				}
 			}
 			if = { 
 				limit = {
