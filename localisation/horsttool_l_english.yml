@@ -1494,6 +1494,7 @@
  GER_endsieg:0 "Total War"
  GER_endsieg_desc:0 "Wollt ihr den totalen Krieg? - Ja"
  GER_mefo_bills_modifier:0 "MEFO Bills"
+ GER_ss_ocupation_modifier:0 "SS Ocupation"
  pacific_war_japan:0 "Pacific War" 
  pacific_war_japan_desc:0 "If we lose control of our Island our Homelands will be threatened \nPacific War Islands Japan: §YMarshall Islands, Caroline Islands, Palau, Kuril Islands, Hainan, Saipan, Marcus Islands, Iwo Jima, Formosa, Okinawa§!."
  pacific_war_USA:0 "Pacific War" 
@@ -1505,6 +1506,8 @@
  SOV_BARB_Debuff:0 "Suprise Attack"
  MAN_low_legitimacy_modifier:0 "Low Legitimacy"
  ENG_fortify_the_empire_modifier:0 "Fortify the Empire"
+
+ FRA_maginot_defence_modifier:0 "The Maginot Line"
 
  #country flags
 

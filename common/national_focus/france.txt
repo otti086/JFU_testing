@@ -402,7 +402,7 @@ focus = {
 		completion_reward = {
 			28 = {
 				add_dynamic_modifier = {
-					modifier = "The Maginot"
+					modifier = FRA_maginot_defence_modifier
 				}
 			}
 			

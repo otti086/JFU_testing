@@ -399,7 +399,27 @@ fuel_system_refresh_list = {
 }
 
 JFU_vichy_france = { 
-
+	28 = { 
+		remove_dynamic_modifier = {
+			modifier = FRA_maginot_defence_modifier
+		} 
+	}
+	ENG = { news_event = { id = news.44 } }
+	GER = { country_event = { id = germany.107 } }
+	FRA = {
+		remove_ideas = FRA_protected_by_the_maginot_line
+		remove_ideas = FRA_victors_of_wwi
+		remove_ideas = FRA_full_employment
+		remove_ideas = FRA_disjointed_government
+		remove_ideas = FRA_political_violence
+		retire_country_leader = yes
+		promote_character = {
+			character = FRA_charles_de_gaulle
+			ideology = conservatism
+		}
+		add_ideas = FRA_defeatism
+		set_equipment_fraction = 0.0
+	}
 	GER = {
 		transfer_state = 28
 		transfer_state = 17
@@ -427,22 +447,6 @@ JFU_vichy_france = {
 			add_compliance = 80
 		}
 		complete_national_focus = GER_fall_of_france
-	}
-	ENG = { news_event = { id = news.44 } }
-	GER = { country_event = { id = germany.107 } }
-	FRA = {
-		remove_ideas = FRA_protected_by_the_maginot_line
-		remove_ideas = FRA_victors_of_wwi
-		remove_ideas = FRA_full_employment
-		remove_ideas = FRA_disjointed_government
-		remove_ideas = FRA_political_violence
-		retire_country_leader = yes
-		promote_character = {
-			character = FRA_charles_de_gaulle
-			ideology = conservatism
-		}
-		add_ideas = FRA_defeatism
-		set_equipment_fraction = 0.0
 	}
 	JFU_vichy_france_2 = yes
 	ENG = {

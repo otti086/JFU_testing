@@ -592,7 +592,7 @@ focus_tree = {
 					is_controlled_by = GER
 				}
 				add_dynamic_modifier = {
-					modifier = "SS Ocupation"
+					modifier = GER_ss_ocupation_modifier
 				}
 			}
 		}
