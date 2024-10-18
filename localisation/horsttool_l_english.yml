@@ -1298,7 +1298,9 @@
  endsieg_comintern_tt:0 "Add '§YSteiners Counterattack§!' which grants (§Y@SOVSoviet Union§!) Attack bonus against countries §G+15%§!, (§Y@SOVSoviet Union§!) Defense bonus against countries §G+10%§!, (§YAll Allied Nations§!) Attack bonus against countries §R-20%§!, (§YAll Allied Nations§!) Defense bonus against countries §R-15%§!) for 180 day(s)." 
  mefo_reduction_large_tt:0 "We will use aquired funds to reduce the MEFO Bills payments by §G-0.20§! Political Power"
  mefo_reduction_small_tt:0 "We will use aquired funds to reduce the MEFO Bills payments by §G-0.10§! Political Power"
- 
+ ost_wall_tt:0 "We will gain level 3 forts in all porvinzes bordering the Soviet Union"
+
+
  MIO_range_trait:0 "Unlocks a special Range trait for the Light Aircraft and Naval Aircraft Designer"
  MIO_agility_trait:0 "Unlocks a special Agility trait for the Light Aircraft and Naval Aircraft Designer"
  jap_china_tt:0 "§RMay declare war on China via decision§!"

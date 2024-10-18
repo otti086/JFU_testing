@@ -63,7 +63,7 @@ political_actions1 = {
 				}
 				add_ideas = "Fall Gelb"
 				else = {
-					custom_effect_tooltip = "U get bonus Stats if u completet Westwall focus"
+					custom_effect_tooltip = "You will gain bonus stats against france if the Westwall was constructed"
 				}
 			}
 		}

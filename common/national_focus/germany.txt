@@ -157,47 +157,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER_ostwall
-		icon = GFX_goal_generic_fortify_city
-		prerequisite = { focus = GER_focus_fall_blau }
-		available = {
-			custom_trigger_tooltip = { tooltip = blau_failed date > 1942.11.22 }
-		}
-		x = -1
-		y = 1
-		relative_position_id = GER_focus_fall_blau
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		
-		completion_reward = {
-			add_ideas = GER_ostwall_idea
-			custom_effect_tooltip = "This Focus spawns lvl3 Forts in all border provinces to russia"
-			
-				every_owned_state = {
-					limit = {
-						is_border_of = SOV
-	
-					}
-					add_building_construction = {
-						type = bunker
-						province = {
-							all_provinces = yes
-							limit_to_border_country = SOV
-							limit_to_coastal = no
-						}
-						level = 3
-						instant_build = yes
-					}
-				}
-				
-			 
-			
-			
-		}
-	}
-	focus = {
 		id = GER_atlantikwall
 		icon = GFX_GER_ATLANTIKWALL
 		prerequisite = { focus = GER_four_year_plan }
@@ -573,7 +532,7 @@ focus_tree = {
 		icon = GFX_focus_ger_reichskommisariats
 		prerequisite = { focus = GER_german_war_economy focus = GER_integrate_war_economies }
 		available = {
-			date > 1940.1.1
+			EFR = { has_country_flag = vichy_france_established }
 		}
 		x = 1
 		y = 1
@@ -1516,6 +1475,41 @@ focus_tree = {
 			}		
 		}
 		
+	}
+
+	focus = {
+		id = GER_ostwall
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = GER_focus_fall_blau }
+		available = {
+			custom_trigger_tooltip = { tooltip = blau_failed date > 1942.11.22 }
+		}
+		x = -1
+		y = 1
+		relative_position_id = GER_focus_fall_blau
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_ideas = GER_ostwall_idea
+			custom_effect_tooltip = ost_wall_tt
+			hidden_effect = {
+				every_owned_state = {
+					set_building_level = {
+						type = bunker
+						province = {
+							all_provinces = yes
+							limit_to_border_country = SOV
+							limit_to_coastal = no
+						}
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+		}
 	}
 	focus = {
 		id = GER_focus_citadel
