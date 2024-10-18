@@ -28,6 +28,23 @@ ideas = {
 				}				
 			}
 		}
+		HURRENSOHNMINORS = {
+			name = "German Industrial Integration "
+			picture = ger_mefo_bills
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			targeted_modifier = {
+				tag = GER
+				mic_to_target_factor = 0.1
+			}
+			modifier = {
+				fascism_drift = 0.1
+				consumer_goods_factor = -0.1
+				stability_weekly_factor = 0.002
+			}
+		}
 
 		GER_pillen = {
 			allowed = {
