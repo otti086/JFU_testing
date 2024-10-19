@@ -1015,6 +1015,10 @@ ITA_regia_marina_dynamic_modifier = { #NATIONAL SPIRIT
 	decryption_factor = ITA_rm_decryption_factor #0.05
 	navy_intel_factor = ITA_rm_navy_intel_factor #0.1
 	naval_invasion_prep_speed = ITA_rm_naval_invasion_prep_speed #0.15
+
+	naval_speed_factor = ITA_naval_speed_factor
+	naval_damage_factor = ITA_naval_damage_factor
+
 }
 
 ITA_regia_marina_2_dynamic_modifier = { #NATIONAL SPIRIT
@@ -1048,6 +1052,9 @@ ITA_regia_marina_2_dynamic_modifier = { #NATIONAL SPIRIT
 	decryption_factor = ITA_rm_decryption_factor #0.05
 	navy_intel_factor = ITA_rm_navy_intel_factor #0.1
 	naval_invasion_prep_speed = ITA_rm_naval_invasion_prep_speed #0.15
+
+	naval_speed_factor = ITA_naval_speed_factor
+	naval_damage_factor = ITA_naval_damage_factor
 }
 
 ITA_regia_marina_3_dynamic_modifier = { #NATIONAL SPIRIT
@@ -1081,6 +1088,9 @@ ITA_regia_marina_3_dynamic_modifier = { #NATIONAL SPIRIT
 	decryption_factor = ITA_rm_decryption_factor #0.05
 	navy_intel_factor = ITA_rm_navy_intel_factor #0.1
 	naval_invasion_prep_speed = ITA_rm_naval_invasion_prep_speed #0.15
+
+	naval_speed_factor = ITA_naval_speed_factor
+	naval_damage_factor = ITA_naval_damage_factor
 }
 
 
@@ -1117,6 +1127,9 @@ ITA_regia_marina_alt_dynamic_modifier = { #NATIONAL SPIRIT
 	decryption_factor = ITA_rm_decryption_factor #0.05
 	navy_intel_factor = ITA_rm_navy_intel_factor #0.1
 	naval_invasion_prep_speed = ITA_rm_naval_invasion_prep_speed #0.15
+
+	naval_speed_factor = ITA_naval_speed_factor
+	naval_damage_factor = ITA_naval_damage_factor
 }
 
 #ALT NAME
@@ -1151,6 +1164,9 @@ ITA_regia_marina_2_alt_dynamic_modifier = { #NATIONAL SPIRIT
 	decryption_factor = ITA_rm_decryption_factor #0.05
 	navy_intel_factor = ITA_rm_navy_intel_factor #0.1
 	naval_invasion_prep_speed = ITA_rm_naval_invasion_prep_speed #0.15
+
+	naval_speed_factor = ITA_naval_speed_factor
+	naval_damage_factor = ITA_naval_damage_factor
 }
 
 #ALT NAME
@@ -1162,7 +1178,7 @@ ITA_regia_marina_3_alt_dynamic_modifier = { #NATIONAL SPIRIT
 	naval_has_potf_in_combat_attack = ITA_rm_naval_has_potf_in_combat_attack #0.1
 	screening_efficiency = ITA_rm_screening_efficiency #0.05
 
-	naval_doctrine_cost_factor = ITA_rm_naval_doctrine_cost_factor #0.1
+	naval_doctrine_cost_factor = ITA_rm_naval_doctrine_cost_factor #0.1 
 	naval_coordination = ITA_rm_naval_coordination #-0.05
 	naval_detection = ITA_rm_naval_detection #-0.1
 	spotting_chance = ITA_rm_spotting_chance #-0.1
@@ -1185,6 +1201,9 @@ ITA_regia_marina_3_alt_dynamic_modifier = { #NATIONAL SPIRIT
 	decryption_factor = ITA_rm_decryption_factor #0.05
 	navy_intel_factor = ITA_rm_navy_intel_factor #0.1
 	naval_invasion_prep_speed = ITA_rm_naval_invasion_prep_speed #0.15
+
+	naval_speed_factor = ITA_naval_speed_factor
+	naval_damage_factor = ITA_naval_damage_factor
 }
 
 

@@ -805,6 +805,7 @@ ideas = {
 				naval_speed_factor = 0.1 
 				sortie_efficiency = 0.15 
 				naval_detection = 0.25  
+				naval_damage_factor = 0.1
 			}
 		}
 		POL_influx_of_exiles = {

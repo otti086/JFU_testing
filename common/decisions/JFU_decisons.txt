@@ -280,6 +280,7 @@ political_actions1 = {
 		} 
 		cost = 0
 		complete_effect = {
+
 			if = {
 				limit = { 
 					NOT = {
@@ -307,7 +308,7 @@ political_actions1 = {
 					BUL = {
 						transfer_state = 803
 						transfer_state = 106				
-					}
+					} 
 				}
 
 				ITA = { annex_country = { target = YUG transfer_troops = no } }
@@ -331,7 +332,10 @@ political_actions1 = {
 						add_compliance = 30 
 					}
 					add_ideas = tot_economic_mobilisation
-				}
+					load_oob  = "YUG_1936_naval_mtg"
+				
+					
+				} 
 			}
 		}
 	}
@@ -353,11 +357,12 @@ political_actions1 = {
 				date > 1938.01.01
 			}
 			else = {
-				date > 1938.04.01
+				date > 1938.04.01 
 			}
 		} 
 		cost = 0
 		complete_effect = {
+		
 			if = {
 				limit = { 
 					NOT = {
@@ -367,7 +372,7 @@ political_actions1 = {
 						} 
 					}
 				}
-				declare_war_on = {
+				declare_war_on = { 
 					target = GRE
 					type = annex_everything			
 				}
@@ -385,6 +390,7 @@ political_actions1 = {
 				}
 				ITA = { annex_country = { target = GRE transfer_troops = no } }
 				hidden_effect = {
+					load_oob  = "GRE_1936_naval_mtg"  
 					every_state = {
              			limit = {
               		     	is_core_of = GRE
@@ -396,6 +402,7 @@ political_actions1 = {
               			}
               			add_compliance = 50
 		   			}
+					
 				}
 			}		
 			hidden_effect = {

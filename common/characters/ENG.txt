@@ -687,7 +687,7 @@ characters={
 		}
 		
 		navy_leader={
-			traits={ gunnery_expert bold navy_career_officer blockade_runner superior_tactician blue_water_expert }
+			traits={ gunnery_expert bold navy_career_officer blockade_runner superior_tactician  }
 			skill=5
 			attack_skill=5
 			defense_skill=4
