@@ -4979,6 +4979,9 @@ focus_tree = {
 		cost = 5
 		available = {
 		}
+		mutually_exclusive = {
+			focus = ITA_refit_civilian_ships
+		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH}
 
@@ -5024,41 +5027,9 @@ focus_tree = {
 					name = "Aquila"
 					requested_factories = 10
 					progress = 0.8
-					amount = 2
-				}
-				add_equipment_production = {
-					equipment = {
-						type = ship_hull_carrier_1
-						creator = "ITA"
-						version_name = "Aquila Class"
-					}
-					name = "Aquila"
-					requested_factories = 10
-					progress = 0.8
-					amount = 2
-				}
-				add_equipment_production = {
-					equipment = {
-						type = ship_hull_carrier_1
-						creator = "ITA"
-						version_name = "Aquila Class"
-					}
-					name = "Aquila"
-					requested_factories = 10
-					progress = 0.8
 					amount = 1
 				}
-				add_equipment_production = {
-					equipment = {
-						type = ship_hull_carrier_1
-						creator = "ITA"
-						version_name = "Aquila Class"
-					}
-					name = "Aquila"
-					requested_factories = 10
-					progress = 0.8
-					amount = 1
-				}
+				
 			}
 
 			##############
@@ -5089,6 +5060,161 @@ focus_tree = {
 					}
 					requested_factories = 2
 					progress = 0.45
+					amount = 1
+				}
+			}
+			
+			random_owned_controlled_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_coastal = yes
+				}
+				prioritize = { 158 } #PIEDMONT (Genoa)
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ITA_refit_civilian_ships
+		icon = GFX_focus_generic_refit_civilian_ships
+		prerequisite = { focus = ITA_incrociatori_pesanti }
+		mutually_exclusive = { focus = ITA_proper_carriers }
+		x = 4
+		y = 1
+		relative_position_id = ITA_incrociatori_pesanti
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+			custom_effect_tooltip = ITA_refit_civilian_ships_rm_tt
+			hidden_effect = {
+				add_ideas = ITA_hidden_deck_conversion_production_ns
+			}
+
+			navy_experience = 15
+
+			###########
+			### MTG ###
+			###########
+			if = { #MTG
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				if = {
+					limit = {
+						NOT = { has_tech = early_ship_hull_carrier }
+					}
+					set_technology = { early_ship_hull_carrier = 1 }
+				}
+				#Equipment Variant
+				create_equipment_variant = {
+					name = "Conte di Savoia Class - Converted Liner"
+					type = ship_hull_carrier_conversion_ca
+					name_group = ITA_CV_HISTORICAL #TODO_Manu: Namelist (Conte di Savoia, Rex, Neptunia, Oceania, Conte Rosso, Conte Grande, Saturnia, Vulcania, Conte Biancamo, Duilio, Conte verde, Giulio Cesare, Colombo, Tel Aviv) Excluded Roma (Aquila) and Augustus (Sparviero)
+					parent_version = 0
+					modules = {
+						fixed_ship_deck_slot_1 = ship_deck_space
+						fixed_ship_deck_slot_2 = ship_deck_space
+						fixed_ship_anti_air_slot = ship_anti_air_2
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = carrier_ship_engine_1
+						fixed_ship_secondaries_slot = ship_secondaries_1
+					}
+				}
+
+				#Line Production
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_carrier_conversion_ca
+						creator = "ITA"
+						version_name = "Conte di Savoia Class - Converted Liner"
+					}
+					name = "Conte di Savoia"
+					requested_factories = 1
+					progress = 0.8
+					amount = 1
+				}
+				#Line Production
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_carrier_conversion_ca
+						creator = "ITA"
+						version_name = "Conte di Savoia Class - Converted Liner"
+					}
+					name = "Rex"
+					requested_factories = 1
+					progress = 0.8
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_carrier_conversion_ca
+						creator = "ITA"
+						version_name = "Conte di Savoia Class - Converted Liner"
+					}
+					name = "Rex2"
+					requested_factories = 1
+					progress = 0.8
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_carrier_conversion_ca
+						creator = "ITA"
+						version_name = "Conte di Savoia Class - Converted Liner"
+					}
+					name = "Rex3"
+					requested_factories = 1
+					progress = 0.8
+					amount = 1
+				}
+			}
+			##############
+			### NO MTG ###
+			##############
+			else = {
+				if = {
+					limit = {
+						NOT = { has_tech = early_carrier }
+					}
+					set_technology = { early_carrier = 1 }
+				}
+				create_equipment_variant = {
+					name = "Conte di Savoia Class - Converted Liner"
+					type = carrier_1
+					upgrades = {
+						ship_deckspace_upgrade = 2
+						carrier_armor_upgrade = 1
+						ship_engine_upgrade = 2
+						ship_reliability_upgrade = 2
+					}
+				}
+				add_equipment_production = {
+					equipment = {
+						type = carrier_1
+						creator = "ITA"
+						version_name = "Conte di Savoia Class - Converted Liner"
+					}
+					requested_factories = 1
+					progress = 0.65
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = carrier_1
+						creator = "ITA"
+						version_name = "Conte di Savoia Class - Converted Liner"
+					}
+					requested_factories = 1
+					progress = 0.65
 					amount = 1
 				}
 			}

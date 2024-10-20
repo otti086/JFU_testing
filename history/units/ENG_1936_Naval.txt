@@ -20,7 +20,7 @@
 			ship = { name = "HMS Ramillies" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "Nelson Class" } } }
 			ship = { name = "HMS Queen Elizabeth" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "Nelson Class" } } }
 			ship = { name = "HMS Vanliant" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "Nelson Class" } } }
-			ship = { name = "HMS Nelson" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "Nelson Class" } } }
+			ship = { name = "HMS Teddy" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "Nelson Class" } } }
 			ship = { name = "HMS Revenge" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "Nelson Class" } } }
 			ship = { name = "HMS Resolution" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "Nelson Class" } } }
 			ship = { name = "HMS Malaya" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "Nelson Class" } } }
@@ -65,7 +65,7 @@
 			ship = { name = "HMS Galatea" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } } }	
 			ship = { name = "HMS Coventry" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } } }	
 			ship = { name = "HMS Orion" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } } }	
-			ship = { name = "HMS Neptune" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } } }	
+			ship = { name = "HMS Johanni" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } } }	
 			ship = { name = "HMS Ajax" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } } }	
 			ship = { name = "HMS Dauntless" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } } }	
 			ship = { name = "HMS Neptune" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } } }	
