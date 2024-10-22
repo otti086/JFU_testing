@@ -32,8 +32,8 @@ sub_units = {
 		training_time = 180
 		weight = 1
 		supply_consumption = 0.1
-
-		breakthrough = -0.55
+		breakthrough = 0.15
+		air_attack = 0.25
 
 		suppression = 0.75
 
@@ -97,8 +97,9 @@ sub_units = {
 		training_time = 180
 		weight = 1.25
 		supply_consumption = 0.1
-
-		breakthrough = -0.53
+		
+		breakthrough = 0.15
+		air_attack = 0.25
 
 		suppression = 0.8
 
@@ -166,7 +167,8 @@ sub_units = {
 		weight = 1.5
 		supply_consumption = 0.1
 
-		breakthrough = -0.35
+		breakthrough = 0.15
+		air_attack = 0.25
 
 		suppression = 0.75
 
@@ -233,7 +235,8 @@ sub_units = {
 		weight = 1.75
 		supply_consumption = 0.1
 
-		breakthrough = -0.35
+		breakthrough = 0.15
+		air_attack = 0.25
 
 		suppression = 0.75
 

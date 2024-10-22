@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_EMI_tank_horstmann_suspension"
+		textureFile = "gfx/equipmentdesigner/tanks/modules/tank_module_horstmann_suspension.dds"
+		legacy_lazy_load = no
+	}
+}

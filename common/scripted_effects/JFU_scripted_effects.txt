@@ -2770,6 +2770,9 @@ JFU_update_generals = {
 			add_unit_leader_trait = expert_improviser
 			add_unit_leader_trait = ranger
 		}
+		ENG_andrew_cunningham = {
+			add_unit_leader_trait = green_water_expert
+		}
 	}
 	FRA = {
 		FRA_maxime_weygand = { add_attack = 1 }

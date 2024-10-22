@@ -62,6 +62,7 @@ technologies = {
 			extra_ammo_storage
 			wet_ammo_storage
 			smoke_launchers
+			tank_horstmann_suspension
 		}
 		enable_subunits = {
 			light_armor

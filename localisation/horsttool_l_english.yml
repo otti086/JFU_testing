@@ -2,6 +2,13 @@
 
  HOSTTOOL_GAME_RULE: "      Select Host"
  HOSTTOOL_NONE: "§RDisable Host Tool§!"
+ tank_horstmann_suspension:0 "Horstmann Suspension"
+ germany.501.t:0 "The Axis Economy?"
+ germany.501.d:0 "We have to decide how we wanna build up The Axis Economy. Are we going to have the Axis Economy concentrated or dispersed"
+ germany.501.a:0 " We will have a dispersed Axis Economy!"
+ germany.501.b:0 "We will have a concentrated Axis Economy!"
+ tank_horstmann_suspension_desc:0 "Similar to the Christie suspension, the Horstmann Suspension distributes weight on multiple wheels allowing mounting of heavier equipment without 
+ 
  
  ST_STATE_MARK_FOR_TRANSFER:0 "§HMark State for Transfer§!\nMark the selected state so it can be transfered \n"
  ST_STATE_UNMARK_FOR_TRANSFER:0 "§HUnmark State§!\nUnmarks the selected state\n"
