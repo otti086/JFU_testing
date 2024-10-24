@@ -624,7 +624,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = general_rearmament_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 3
 		}
@@ -860,7 +860,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = air_rearmament_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 3
 		}
@@ -916,7 +916,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = air_rearmament_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -966,7 +966,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = air_rearmament_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1522,6 +1522,7 @@ focus_tree = {
 				set_building_level = {
 					type = coastal_bunker
 					level = 5
+					province = 4135
 					instant_build = yes
 				}
 			}
@@ -1942,10 +1943,10 @@ focus_tree = {
 		completion_reward = {
 			RAJ = {
 				429 = {
-					add_extra_state_shared_building_slots = 5
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 						type = industrial_complex
-						level = 5
+						level = 4
 						instant_build = yes
 					}
 				}
@@ -1975,10 +1976,10 @@ focus_tree = {
 
 		completion_reward = {
 			681 = {
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -1988,10 +1989,10 @@ focus_tree = {
 				}				
 			}
 			468 = {
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -2001,10 +2002,10 @@ focus_tree = {
 				}	
 			}
 			521 = {
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -2014,10 +2015,10 @@ focus_tree = {
 				}	
 			}
 			723 = {
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 				add_building_construction = {
