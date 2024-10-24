@@ -3735,15 +3735,7 @@ focus_tree = {
 
 		completion_reward = {
 			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
+			162 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = dockyard
@@ -3751,66 +3743,13 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
+			736 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = dockyard
 					level = 1
 					instant_build = yes
 				}
-			}
-
-			if = {
-				limit = {
-					NOT = {
-						any_owned_state = {
-							dockyard > 0
-							free_building_slots = {
-								building = dockyard
-								size > 0
-								include_locked = yes
-							}
-						}
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = dockyard
-							size > 1
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = dockyard
-						level = 1
-						instant_build = yes
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = dockyard
-							size > 1
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = dockyard
-						level = 1
-						instant_build = yes
-					}
-				}				
 			}
 
 			add_doctrine_cost_reduction = {
@@ -3867,19 +3806,19 @@ focus_tree = {
 
 		completion_reward = {
 			162 = { #TUSCANY (La Spezia)
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
 
 			736 = { #LITORALE (Trieste)
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -3903,15 +3842,6 @@ focus_tree = {
 		completion_reward = {
 			add_to_variable = { ITA_rm_navy_capital_ship_attack_factor = 0.05 }
 			custom_effect_tooltip = ITA_oto_naval_guns_rm_tt
-
-			162 = { #TUSCANY (La Spezia)
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
 
 			add_tech_bonus = {
 				name = ITA_oto_naval_guns
@@ -4390,20 +4320,100 @@ focus_tree = {
 			add_to_variable = { ITA_iri_consumer_goods_factor = 0.02 }
 			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
 
-			navy_experience = 25
-
-			add_doctrine_cost_reduction = {
-				name = ITA_incrociatori_leggeri
-				cost_reduction = 0.5
-				uses = 3
-				category = naval_doctrine
-			}
-
 			add_tech_bonus = {
 				name = ITA_incrociatori_leggeri
-				bonus = 1.5
+				bonus = 2
 				uses = 1
 				category = cl_tech
+			}
+
+			add_equipment_production = {
+				equipment = {
+					type =  ship_hull_cruiser_2
+					creator = "ITA"
+					version_name = "Montecuccoli Class"
+				}
+				name = "Montecuccoli Class"
+				requested_factories = 2
+				progress = 0.8
+				amount = 1
+			}
+			add_equipment_production = {
+				equipment = {
+					type =  ship_hull_cruiser_2
+					creator = "ITA"
+					version_name = "Montecuccoli Class"
+				}
+				name = "Montecuccoli Class"
+				requested_factories = 2
+				progress = 0.8
+				amount = 1
+			}
+			add_equipment_production = {
+				equipment = {
+					type =  ship_hull_cruiser_2
+					creator = "ITA"
+					version_name = "Montecuccoli Class"
+				}
+				name = "Montecuccoli Class"
+				requested_factories = 2
+				progress = 0.8
+				amount = 1
+			}
+			add_equipment_production = {
+				equipment = {
+					type =  ship_hull_cruiser_2
+					creator = "ITA"
+					version_name = "Montecuccoli Class"
+				}
+				name = "Montecuccoli Class"
+				requested_factories = 2
+				progress = 0.8
+				amount = 1
+			}
+			add_equipment_production = {
+				equipment = {
+					type =  ship_hull_cruiser_2
+					creator = "ITA"
+					version_name = "Montecuccoli Class"
+				}
+				name = "Montecuccoli Class"
+				requested_factories = 2
+				progress = 0.8
+				amount = 1
+			}
+			add_equipment_production = {
+				equipment = {
+					type =  ship_hull_cruiser_2
+					creator = "ITA"
+					version_name = "Montecuccoli Class"
+				}
+				name = "Montecuccoli Class"
+				requested_factories = 2
+				progress = 0.8
+				amount = 1
+			}
+			add_equipment_production = {
+				equipment = {
+					type =  ship_hull_cruiser_2
+					creator = "ITA"
+					version_name = "Montecuccoli Class"
+				}
+				name = "Montecuccoli Class"
+				requested_factories = 2
+				progress = 0.8
+				amount = 1
+			}
+			add_equipment_production = {
+				equipment = {
+					type =  ship_hull_cruiser_2
+					creator = "ITA"
+					version_name = "Montecuccoli Class"
+				}
+				name = "Montecuccoli Class"
+				requested_factories = 2
+				progress = 0.8
+				amount = 1
 			}
 
 			#Update NS icon
@@ -4435,20 +4445,78 @@ focus_tree = {
 			add_to_variable = { ITA_iri_consumer_goods_factor = 0.02 }
 			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
 
-			navy_experience = 25
-
-			add_doctrine_cost_reduction = {
-				name = ITA_incrociatori_pesanti
-				cost_reduction = 0.5
-				uses = 3
-				category = naval_doctrine
-			}
-
 			add_tech_bonus = {
 				name = ITA_incrociatori_pesanti
-				bonus = 1.5
+				bonus = 2
 				uses = 1
-				category = ca_tech
+				category = bb_tech
+			}
+
+			add_equipment_production = {
+				equipment = {
+					type =  ship_hull_cruiser_2
+					creator = "ITA"
+					version_name = "Zara Class"
+				}
+				name = "Montecuccoli Class"
+				requested_factories = 2
+				progress = 0.8
+				amount = 1
+			}
+			add_equipment_production = {
+				equipment = {
+					type =  ship_hull_cruiser_2
+					creator = "ITA"
+					version_name = "Zara Class"
+				}
+				name = "Montecuccoli Class"
+				requested_factories = 2
+				progress = 0.8
+				amount = 1
+			}
+			add_equipment_production = {
+				equipment = {
+					type =  ship_hull_cruiser_2
+					creator = "ITA"
+					version_name = "Zara Class"
+				}
+				name = "Montecuccoli Class"
+				requested_factories = 2
+				progress = 0.8
+				amount = 1
+			}
+			add_equipment_production = {
+				equipment = {
+					type =  ship_hull_cruiser_2
+					creator = "ITA"
+					version_name = "Zara Class"
+				}
+				name = "Montecuccoli Class"
+				requested_factories = 2
+				progress = 0.8
+				amount = 1
+			}
+			add_equipment_production = {
+				equipment = {
+					type =  ship_hull_cruiser_2
+					creator = "ITA"
+					version_name = "Zara Class"
+				}
+				name = "Montecuccoli Class"
+				requested_factories = 2
+				progress = 0.8
+				amount = 1
+			}
+			add_equipment_production = {
+				equipment = {
+					type =  ship_hull_cruiser_2
+					creator = "ITA"
+					version_name = "Zara Class"
+				}
+				name = "Montecuccoli Class"
+				requested_factories = 2
+				progress = 0.8
+				amount = 1
 			}
 
 			#Update NS icon
@@ -4585,6 +4653,7 @@ focus_tree = {
 		relative_position_id = ITA_incrociatori_leggeri
 		cost = 5
 		available = {
+			has_tech = improved_ship_hull_light
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH}
@@ -4598,13 +4667,6 @@ focus_tree = {
 				category = naval_doctrine
 			}
 
-			add_tech_bonus = {
-				name = ITA_cacciatorpediniere_di_scorta
-				bonus = 1.0
-				uses = 1
-				category = dd_tech
-			}
-
 			###########
 			### MTG ###
 			###########
@@ -4612,46 +4674,22 @@ focus_tree = {
 				limit = {
 					has_dlc = "Man the Guns"
 				}
-				#Equipment Variant
-				if = {
-					limit = {
-						has_tech = basic_dp_light_battery
-					}
-					create_equipment_variant = {
-						name = "Comandanti Medaglie d'Oro Class"
-						type = ship_hull_light_3
-						name_group = ITA_DD_HISTORICAL
-						parent_version = 0
-						modules = {
-							fixed_ship_battery_slot = dp_light_battery_2
-							fixed_ship_anti_air_slot = ship_anti_air_2
-							fixed_ship_fire_control_system_slot = ship_sonar_1
-							fixed_ship_radar_slot = ship_radar_1
-							fixed_ship_engine_slot = light_ship_engine_2
-							fixed_ship_torpedo_slot = ship_torpedo_2
-							mid_1_custom_slot = ship_mine_layer_1
-							rear_1_custom_slot = ship_depth_charge_2
-							front_1_custom_slot = dp_light_battery_2
-						}
-					}
-				}
-				else = {
-					create_equipment_variant = {
-						name = "Comandanti Medaglie d'Oro Class"
-						type = ship_hull_light_3
-						name_group = ITA_DD_HISTORICAL #TODO_Manu: Name List
-						parent_version = 0
-						modules = {
-							fixed_ship_battery_slot = ship_light_battery_2
-							fixed_ship_anti_air_slot = ship_anti_air_2
-							fixed_ship_fire_control_system_slot = ship_sonar_1
-							fixed_ship_radar_slot = ship_radar_1
-							fixed_ship_engine_slot = light_ship_engine_2
-							fixed_ship_torpedo_slot = ship_torpedo_2
-							mid_1_custom_slot = ship_mine_layer_1
-							rear_1_custom_slot = ship_depth_charge_2
-							front_1_custom_slot = ship_light_battery_2
-						}
+	
+				create_equipment_variant = {
+					name = "Comandanti Medaglie d'Oro Class"
+					type = ship_hull_light_3
+					name_group = ITA_DD_HISTORICAL #TODO_Manu: Name List
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = ship_light_battery_2
+						fixed_ship_anti_air_slot = ship_anti_air_2
+						fixed_ship_fire_control_system_slot = empty
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = light_ship_engine_3
+						fixed_ship_torpedo_slot = ship_torpedo_2
+						mid_1_custom_slot = ship_light_battery_2
+						rear_1_custom_slot = ship_light_battery_2
+						front_1_custom_slot = ship_light_battery_2
 					}
 				}
 				#Line Production
@@ -4659,12 +4697,89 @@ focus_tree = {
 					equipment = {
 						type = ship_hull_light_3
 						creator = "ITA"
-						version_name = "Comandanti Medaglie d'Oro Class"
+						version_name = "Comandanti Class"
 					}
 					name = "Comandante Margottini"
 					requested_factories = 2
-					progress = 0.35
-					amount = 3
+					progress = 0.8
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_light_3
+						creator = "ITA"
+						version_name = "Comandanti Class"
+					}
+					name = "Comandante Margottini"
+					requested_factories = 2
+					progress = 0.8
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_light_3
+						creator = "ITA"
+						version_name = "Comandanti Class"
+					}
+					name = "Comandante Margottini"
+					requested_factories = 2
+					progress = 0.8
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_light_3
+						creator = "ITA"
+						version_name = "Comandanti Class"
+					}
+					name = "Comandante Margottini"
+					requested_factories = 2
+					progress = 0.8
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_light_3
+						creator = "ITA"
+						version_name = "Comandanti Class"
+					}
+					name = "Comandante Margottini"
+					requested_factories = 2
+					progress = 0.8
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_light_3
+						creator = "ITA"
+						version_name = "Comandanti Class"
+					}
+					name = "Comandante Margottini"
+					requested_factories = 2
+					progress = 0.8
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_light_3
+						creator = "ITA"
+						version_name = "Comandanti Class"
+					}
+					name = "Comandante Margottini"
+					requested_factories = 2
+					progress = 0.8
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_light_3
+						creator = "ITA"
+						version_name = "Comandanti Class"
+					}
+					name = "Comandante Margottini"
+					requested_factories = 2
+					progress = 0.8
+					amount = 1
 				}
 			}
 
@@ -4768,20 +4883,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			navy_experience = 15
-			add_doctrine_cost_reduction = {
-				name = ITA_navi_da_battaglia
-				cost_reduction = 0.5
-				uses = 2
-				category = naval_doctrine
-			}
-
-			add_tech_bonus = {
-				name = ITA_navi_da_battaglia
-				bonus = 1.5
-				uses = 1
-				category = bb_tech
-			}
 
 			###########
 			### MTG ###
@@ -4795,14 +4896,35 @@ focus_tree = {
 					equipment = {
 						type = ship_hull_heavy_2
 						creator = "ITA"
+						version_name = "Littorio"
+					}
+					name = "Roma"
+					requested_factories = 1
+					progress = 0.8
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_heavy_2
+						creator = "ITA"
 						version_name = "Littorio Class"
 					}
 					name = "Roma"
 					requested_factories = 1
-					progress = 0.45
+					progress = 0.8
 					amount = 1
 				}
-
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_heavy_2
+						creator = "ITA"
+						version_name = "Littorio Class"
+					}
+					name = "Roma"
+					requested_factories = 1
+					progress = 0.8
+					amount = 1
+				}
 				#Line Production
 				add_equipment_production = {
 					equipment = {
@@ -4812,10 +4934,10 @@ focus_tree = {
 					}
 					name = "Impero"
 					requested_factories = 1
-					progress = 0.45
+					progress = 0.8
 					amount = 1
 				}
-			}
+			}	
 
 			##############
 			### NO MTG ###
@@ -5034,7 +5156,7 @@ focus_tree = {
 					}
 					name = "Conte di Savoia"
 					requested_factories = 1
-					progress = 0.65
+					progress = 0.8
 					amount = 1
 				}
 				#Line Production
@@ -5046,9 +5168,31 @@ focus_tree = {
 					}
 					name = "Rex"
 					requested_factories = 1
-					progress = 0.65
+					progress = 0.8
 					amount = 1
 				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_carrier_conversion_ca
+						creator = "ITA"
+						version_name = "Conte di Savoia Class - Converted Liner"
+					}
+					name = "Rex2"
+					requested_factories = 1
+					progress = 0.8
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_carrier_conversion_ca
+						creator = "ITA"
+						version_name = "Conte di Savoia Class - Converted Liner"
+					}
+					name = "Rex3"
+					requested_factories = 1
+					progress = 0.8
+					amount = 1
+				}	
 			}
 			##############
 			### NO MTG ###
@@ -5118,6 +5262,7 @@ focus_tree = {
 		relative_position_id = ITA_ispettorato_dei_mezzi_antisommergibili
 		cost = 5
 		available = {
+			has_tech = ship_hull_super_heavy
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY_XP}
@@ -5202,178 +5347,63 @@ focus_tree = {
 					}
 				}
 			}
-			
-			navy_experience = 50
+		
 
 			###########
 			### MTG ###
 			###########
-			hidden_effect = {
-				if = { #MTG
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					if = { #CRUISER HULL III
-						limit = {
-							has_tech = improved_ship_hull_cruiser
-						}
-						if = {
-							limit = {
-								has_tech = basic_dp_light_battery
-							}
-							#Equipment Variant
-							create_equipment_variant = {
-								name = "Costanzo Ciano Class"
-								type = ship_hull_cruiser_3
-								name_group = ITA_CL_HISTORICAL
-								parent_version = 0
-								modules = {
-									front_1_custom_slot = ship_light_medium_battery_3
-									mid_1_custom_slot = ship_torpedo_2
-									mid_2_custom_slot = dp_ship_secondaries_2
-									rear_1_custom_slot = ship_anti_air_3
-									rear_2_custom_slot = ship_airplane_launcher_2
-									fixed_ship_battery_slot = ship_light_medium_battery_3
-									fixed_ship_anti_air_slot = ship_anti_air_3
-									fixed_ship_fire_control_system_slot = ship_fire_control_system_1
-									fixed_ship_radar_slot = ship_sonar_1
-									fixed_ship_engine_slot = cruiser_ship_engine_3
-									fixed_ship_secondaries_slot = dp_ship_secondaries_2
-									fixed_ship_armor_slot = ship_armor_cruiser_2
-								}
-							}
-						}
-						else = {
-							#Equipment Variant
-							create_equipment_variant = {
-								name = "Costanzo Ciano Class"
-								type = ship_hull_cruiser_3
-								name_group = ITA_CL_HISTORICAL
-								parent_version = 0
-								modules = {
-									front_1_custom_slot = ship_light_medium_battery_3
-									mid_1_custom_slot = ship_torpedo_2
-									mid_2_custom_slot = ship_secondaries_2
-									rear_1_custom_slot = ship_anti_air_3
-									rear_2_custom_slot = ship_airplane_launcher_2
-									fixed_ship_battery_slot = ship_light_medium_battery_3
-									fixed_ship_anti_air_slot = ship_anti_air_3
-									fixed_ship_fire_control_system_slot = ship_fire_control_system_1
-									fixed_ship_radar_slot = ship_sonar_1
-									fixed_ship_engine_slot = cruiser_ship_engine_3
-									fixed_ship_secondaries_slot = ship_secondaries_2
-									fixed_ship_armor_slot = ship_armor_cruiser_2
-								}
-							}
-						}
-
-						#Line Production
-						add_equipment_production = {
-							equipment = {
-								type = ship_hull_cruiser_3
-								creator = "ITA"
-								version_name = "Costanzo Ciano Class"
-							}
-							name = "Constanzo Ciano"
-							requested_factories = 1
-							progress = 0.5
-							amount = 1
-						}
-						#Line Production
-						add_equipment_production = {
-							equipment = {
-								type = ship_hull_cruiser_3
-								creator = "ITA"
-								version_name = "Costanzo Ciano Class"
-							}
-							name = "Luigi Rizzo"
-							requested_factories = 1
-							progress = 0.35
-							amount = 1
-						}
-					}
-					else = { #CRUISER HULL II
-						if = {
-							limit = {
-								has_tech = basic_dp_light_battery
-							}
-							#Equipment Variant
-							create_equipment_variant = {
-								name = "Costanzo Ciano Class"
-								type = ship_hull_cruiser_2
-								name_group = ITA_CL_HISTORICAL #TODO_Manu: Namelist (Conte di Savoia, Rex, Neptunia, Oceania, Conte Rosso, Conte Grande, Saturnia, Vulcania, Conte Biancamo, Duilio, Conte verde, Giulio Cesare, Colombo, Tel Aviv) Excluded Roma (Aquila) and Augustus (Sparviero)
-								parent_version = 0
-								modules = {
-									front_1_custom_slot = ship_anti_air_2
-									mid_1_custom_slot = ship_torpedo_1
-									mid_2_custom_slot = ship_airplane_launcher_2
-									rear_1_custom_slot = ship_light_medium_battery_2
-									fixed_ship_battery_slot = ship_light_medium_battery_2
-									fixed_ship_anti_air_slot = ship_anti_air_2
-									fixed_ship_fire_control_system_slot = ship_fire_control_system_1
-									fixed_ship_radar_slot = empty
-									fixed_ship_engine_slot = cruiser_ship_engine_2
-									fixed_ship_secondaries_slot = dp_ship_secondaries_2
-									fixed_ship_armor_slot = ship_armor_cruiser_2
-								}
-							}
-						}
-						else = {
-							#Equipment Variant
-							create_equipment_variant = {
-								name = "Costanzo Ciano Class"
-								type = ship_hull_cruiser_2
-								name_group = ITA_CL_HISTORICAL #TODO_Manu: Namelist (Conte di Savoia, Rex, Neptunia, Oceania, Conte Rosso, Conte Grande, Saturnia, Vulcania, Conte Biancamo, Duilio, Conte verde, Giulio Cesare, Colombo, Tel Aviv) Excluded Roma (Aquila) and Augustus (Sparviero)
-								parent_version = 0
-								modules = {
-									front_1_custom_slot = ship_anti_air_2
-									mid_1_custom_slot = ship_torpedo_1
-									mid_2_custom_slot = ship_airplane_launcher_2
-									rear_1_custom_slot = ship_light_medium_battery_2
-									fixed_ship_battery_slot = ship_light_medium_battery_2
-									fixed_ship_anti_air_slot = ship_anti_air_2
-									fixed_ship_fire_control_system_slot = ship_fire_control_system_1
-									fixed_ship_radar_slot = empty
-									fixed_ship_engine_slot = cruiser_ship_engine_2
-									fixed_ship_secondaries_slot = ship_secondaries_2
-									fixed_ship_armor_slot = ship_armor_cruiser_2
-								}
-							}
-						}
-
-						#Line Production
-						add_equipment_production = {
-							equipment = {
-								type = ship_hull_cruiser_2
-								creator = "ITA"
-								version_name = "Costanzo Ciano Class"
-							}
-							name = "Constanzo Ciano"
-							requested_factories = 1
-							progress = 0.5
-							amount = 1
-						}
-						#Line Production
-						add_equipment_production = {
-							equipment = {
-								type = ship_hull_cruiser_2
-								creator = "ITA"
-								version_name = "Costanzo Ciano Class"
-							}
-							name = "Luigi Rizzo"
-							requested_factories = 1
-							progress = 0.35
-							amount = 1
-						}
+			hidden_effect= {
+				create_equipment_variant = {
+					name = "Roma Class"
+					type = ship_hull_super_heavy_1
+					name_group = JAP_BB_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = ship_super_heavy_battery_1
+						fixed_ship_anti_air_slot = ship_anti_air_2
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = heavy_ship_engine_2
+						fixed_ship_secondaries_slot = ship_secondaries_2
+						fixed_ship_armor_slot = ship_armor_shbb
+						front_1_custom_slot = ship_super_heavy_battery_1
+						front_2_custom_slot = ship_super_heavy_battery_1
+						mid_1_custom_slot = empty
+						mid_2_custom_slot = empty
+						mid_3_custom_slot = empty
+						rear_1_custom_slot = ship_super_heavy_battery_1
+						rear_2_custom_slot = ship_super_heavy_battery_1
 					}
 				}
 			}
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_super_heavy_1
+					creator = "ITA" 
+					version_name = "Roma Class"
+				}
+				name = "Yamato" 
+				requested_factories = 1
+				progress = 0.8
+				amount = 1
+			}
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_super_heavy_1
+					creator = "ITA" 
+					version_name = "Roma Class"
+				}
+				name = "Yamato" 
+				requested_factories = 1
+				progress = 0.8
+				amount = 1
+			}
 
 			2 = {
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = dockyard
-					level = 5
+					level = 4
 					instant_build = yes
 				}
 			}
