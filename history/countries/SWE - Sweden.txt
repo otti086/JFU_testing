@@ -1,6 +1,6 @@
 ﻿capital = 141	
 
-oob = "SWE_1936"
+
 add_ideas = { 
 	neutrality_idea
 }
