@@ -140,10 +140,11 @@ equipments = {
 
 		fuel_consumption = 0
 		maximum_speed = 6.5
-		build_cost_ic = 1.5
+		build_cost_ic = 3.5
 		reliability = 0.95
 		hardness = 0.4
 		armor_value = 5
+		breakthrough = 1
 		resources = {
 			steel = 1
 		}
@@ -193,11 +194,11 @@ equipments = {
 			}
 		}
 		maximum_speed = 6.5
-		build_cost_ic = 1.5
+		build_cost_ic = 3.5
 		reliability = 1.1
 		hardness = 0.45
 		armor_value = 15
-		breakthrough = 2
+		breakthrough = 6
 	}
 
 	light_tank_chassis_2 = {
@@ -231,12 +232,12 @@ equipments = {
 				}
 			}
 		}
-		build_cost_ic = 1.5
+		build_cost_ic = 3.5
 		maximum_speed = 6.5
 		reliability = 1.25
 		armor_value = 20
 		hardness = 0.5
-		breakthrough = 5
+		breakthrough = 11
 		resources = {
 			steel = 1
 		}
@@ -281,11 +282,11 @@ equipments = {
 				}
 			}
 		}
-		build_cost_ic = 1.5
+		build_cost_ic = 3.5 
 		maximum_speed = 6.5
 		reliability = 1.45
 		armor_value = 25
-		breakthrough = 5
+		breakthrough = 16 #90-110
 		hardness = 0.55
 		resources = {
 			steel = 2
