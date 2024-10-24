@@ -1394,6 +1394,8 @@
 
         completion_reward = {
           country_event = tfv_south_africa.5
+		  
+
         }
     }
 
@@ -1420,7 +1422,11 @@
         available_if_capitulated = yes
 
         completion_reward = {
-			add_ideas = SAF_cheap_labor_3
+			swap_ideas = {
+				remove_idea = SAF_ossewabrandwag
+				add_idea = SAF_cheap_labor_3
+			}
+			
         }
         search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER }
     }
@@ -1447,8 +1453,10 @@
         }
 
         completion_reward = {
-          
-          add_ideas = SAF_relax_racial_laws
+          swap_ideas = {
+			remove_idea = SAF_history_of_segregation
+			add_idea = SAF_relax_racial_laws
+		  }
         }
         search_filters = { FOCUS_FILTER_INDUSTRY }
     }
