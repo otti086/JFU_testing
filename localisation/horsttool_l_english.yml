@@ -1201,6 +1201,10 @@
 
  JAP_armored_divisions_MAN:0 "Manchurian Armor Technology"
 
+ FRA_extend_the_maginot:0 "Extend the Maginot"
+ FRA_improve_the_maginot:0 "Improve the Maginot"
+ FRA_integrate_bel_industry:0 "Integrate the Belgian Industy"
+ FRA_strike_first:0 "Strike First!"
  AST_great_depression_modifier:0 "Australian Economy"
  CAN_great_depression_modifier:0 "Canadian Economy"
  SPR_economy_modifier:0 "Spanish Economy"
@@ -1221,6 +1225,8 @@
  UK_imperial_conference_tt:0 " Add §YImperial Conference Economy Agreements§!, which grants (Factory Output §G+15.00%§!, Dockyard Output §G+15.00%§!).\n Add §YImperial Conference Economy Agreements§! which grants (§YCivilian Factory§! construction Speed §G+15.00%§!, §YMilitary Factory§! construction speed §G+15.00%§!, §!Dockyard§! construction Speed §G+15.00%§!)\n Gain Base War Support §G+10.00%§!\n(@AST§YAustralia, @CANDominion of Canada, @RAJBritish Raj,\n @NZLNew Zealand and @SAFSouth Africa§!):\n    Add §YImperial Conference Defense Agreements§! which grants (Factory Output §G+10.00%§!, Dockyard Output §G+10.00%§!).\n    Add §YImperial Conference Economy Agreements§! which grants (§YCivilian Factory§! construction Speed §G+10.00%§!, §YMilitary Factory§! construction speed §G+10.00%§!, §!Dockyard§! construction Speed §G+10.00%§!)\n   Gain Base War Support §G+10.00%§! "
  ENG_fortify_the_empire_big_tt:0 "Modify §YFortify the Empire§! by\n §YLand Fort§! construction speed §G+10.00%§!\n §YCoastal Fort§! construction speed §G+10.00%§!"
  ENG_fortify_the_empire_small_tt:0 "Modify §YFortify the Empire§! by\n §YLand Fort§! construction speed §G+5.00%§!\n §YCoastal Fort§! construction speed §G+5.00%§!"
+
+ FRA_integrate_bel_industry_tt:0 "§RWe will gain 100% of the belgium Industry§!"
 
  RAJ_agrarian_society_small_up_tt:0 "Modify §YAgrarian Society§! by \nRecruitable Population factor §G+2%§!"
  RAJ_agrarian_society_medium_up_tt:0 "Modify §YAgrarian Society§! by \nRecruitable Population factor §G+5%§!"

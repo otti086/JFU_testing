@@ -282,7 +282,7 @@ focus = {
 		}
 	}
 	focus = {
-		id = "Extend the Maginot"
+		id = FRA_extend_the_maginot
 		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = FRA_fortification_focus }
 		x = 0
@@ -387,13 +387,13 @@ focus = {
 		}
 	}
 	focus = {
-		id = "Improve the Maginot"
+		id = FRA_improve_the_maginot
 		icon = GFX_goal_generic_fortify_city
-		prerequisite = { focus = "Extend the Maginot" }
+		prerequisite = { focus = FRA_extend_the_maginot }
 		x = 0
 		y = 1
-		relative_position_id = "Extend the Maginot"
-		cost = 5
+		relative_position_id = FRA_extend_the_maginot
+		cost = 1
 
 		available = {
 			
@@ -516,18 +516,11 @@ focus = {
 		ai_will_do = {
 		}	
 		completion_reward = {
-			hidden_effect = {
-				BEL = {
-					add_ideas = SPA_death_before_surrender
-				}
-			}
-			set_autonomy = { target = BEL autonomy_state = autonomy_dominion }
-			
-			
+			give_guarantee = BEL
 		}
 	}
 	focus = {
-		id = "Integrate the Belgian Industy"
+		id = FRA_integrate_bel_industry
 		prerequisite = { focus = ENG_belgium_security }
 		icon = GFX_goal_demand_sudetenland
 		available = {
@@ -541,15 +534,19 @@ focus = {
 			factor = 10
 		}	
 		completion_reward = {
-			BEL = {
-				add_ideas = "French Industrial Integration"
+			custom_effect_tooltip = FRA_integrate_bel_industry_tt
+			hidden_effect = {
+				FRA = {
+					BEL_FRA_building = yes
+				}
 			}
+
 		}
 	}
 	focus = {
-		id = "Strike First!"
+		id = FRA_strike_first
 		icon = GFX_focus_attack_germany
-		prerequisite = { focus = "Integrate the Belgian Industy" }
+		prerequisite = { focus = FRA_integrate_bel_industry }
 		available = {
 			has_war_with = GER
 		}
@@ -559,7 +556,7 @@ focus = {
 
 		x = 0
 		y = 1
-		relative_position_id = "Integrate the Belgian Industy"
+		relative_position_id = FRA_integrate_bel_industry
 		cost = 1
 		completion_reward = {
 			add_timed_idea = {
@@ -645,7 +642,7 @@ focus = {
 		x = -3
 		y = 1
 		relative_position_id = FRA_light_medium_armor
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -1058,7 +1055,7 @@ focus = {
 		x = -1
 		y = 1
 		relative_position_id = FRA_buy_time
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 

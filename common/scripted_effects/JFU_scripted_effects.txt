@@ -419,6 +419,13 @@ JFU_vichy_france = {
 		}
 		add_ideas = FRA_defeatism
 		set_equipment_fraction = 0.0
+		if = {
+			limit = {
+				has_completed_focus = FRA_integrate_bel_industry
+			}
+			add_offsite_building = { type = industrial_complex level = -5 }
+			add_offsite_building = { type = arms_factory level = -5 }
+		}
 	}
 	GER = {
 		transfer_state = 28
@@ -2267,6 +2274,9 @@ pregrinded_effect = {
 			add_unit_leader_trait = organizer
 			add_unit_leader_trait = guerilla_fighter
 		}
+		ENG_andrew_cunningham = {
+			add_unit_leader_trait = green_water_expert
+		}
 	}
 	USA = {
 		USA_george_s_patton = { add_attack = 1 }
@@ -3027,6 +3037,21 @@ SOV_cap_Building = {
 		add_offsite_building = { type = arms_factory level = SOV_mils }
 		add_offsite_building = { type = industrial_complex level = SOV_civs }
 	}
+}
+BEL_FRA_building = {
+	set_temp_variable = { BEL_mils = 0 }
+	set_temp_variable = { BEL_civs = 0 }
+	BEL = {
+		every_controlled_state = {
+			limit = { is_core_of = BEL }
+			add_to_temp_variable = { SOV_mils = arms_factory_level }
+			add_to_temp_variable = { SOV_civs = industrial_complex_level }
+		}
+	}
+	FRA = {
+		add_offsite_building = { type = arms_factory level = BEL_mils }
+		add_offsite_building = { type = industrial_complex level = BEL_civs }
+	}	
 }
 SPR_NO_CW = {
 	SPR = {
