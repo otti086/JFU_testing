@@ -1635,7 +1635,7 @@ JFU_decisions = {
 		}
 		cost = 0
 		complete_effect = {
-			FRA = {
+			USA = {
 				transfer_state = 883
 			}
 		}		
