@@ -4509,7 +4509,8 @@ dynamic_modifier_start_up = {
 		set_variable = { var = CANgd_lbsf value = 0 }
 		set_variable = { var = CANgd_me value = 0 }		
 		set_variable = { var = CANgd_peb value = 0 }	
-		set_variable = { var = CANgd_peg value = 0 }	
+		set_variable = { var = CANgd_peg value = 0 }
+		set_variable = { var = Cangd_pem value = 0 }	
 	}
 	SPR = {
 		set_variable = { var = SPReco_cgf value = 0 }

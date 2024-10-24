@@ -1241,6 +1241,7 @@
  AST_great_despression_AAP_tt:0 "Modify §YAustralian Economy§! by \nCivilian to Military Factory conversion cost: §G-20.00%§!"
 
  CAN_great_despression_wb_tt:0 "Modify §YCanadian Economy§! by \nConsumer Goods Factories factor: §Y-10.0%§!"
+ CAN_ka_ttt:0 "Modify §YCanadian Economy§! by \nProduction Efficiency Growth: §Y5%"
  CAN_great_despression_wpatb_tt:0 "Modify §YCanadian Economy§! by \nMax Factories in a State: §G+10%§!, \nResources to Market: §Y-5%§!"
  CAN_great_despression_cwbSAF_tt:0 "Modify §YCanadian Economy§! by \nConsumer Goods Factories factor: §Y-10.0%§!\nFactory Output §G+5.00%§! \nDockyard Output §G+5.00%§!"
  CAN_great_despression_cwbCAN_tt:0 "Modify §YCanadian Economy§! by \nConsumer Goods Factories factor: §Y-25.0%§!\nFactory Output §G+10.00%§! \nDockyard Output §G+10.00%§!"
