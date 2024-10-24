@@ -891,7 +891,20 @@ characters = {
 				large = GFX_portrait_ITA_alberto_da_zara
 			}
 		}
-		
+		advisor={
+			slot = navy_chief
+			idea_token = alberto_da_zara
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				navy_chief_maneuver_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
 		navy_leader = {
 			traits = { gentlemanly superior_tactician }
 			skill = 3
