@@ -1671,7 +1671,7 @@ JFU_decisions = {
 		cost = 0
 
 		visible = {
-			NOT = { SAF = { has_completed_focus = SAF_secure_interests_in_africa } }
+			NOT = { SAF = { has_completed_focus = SAF_expand_the_union } }
 		}
 		complete_effect = {
 			SAF = { set_country_flag = ENG_permitted_SAF }
