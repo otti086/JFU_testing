@@ -331,6 +331,7 @@ political_actions1 = {
 						add_compliance = 30 
 					}
 					add_ideas = tot_economic_mobilisation
+					load_oob  = "YUG_annex_ITA"
 				}
 			}
 		}
@@ -396,6 +397,7 @@ political_actions1 = {
               			}
               			add_compliance = 50
 		   			}
+					load_oob  = "GRE_annex_ITA"
 				}
 			}		
 			hidden_effect = {

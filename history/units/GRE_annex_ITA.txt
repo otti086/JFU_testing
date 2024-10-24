@@ -1,0 +1,33 @@
+﻿units= {
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "Vasilikó Polemikó Naftikó"			
+		naval_base = 4109 # Athens
+		task_force = {				
+			name = "Vasilikós Stólos"				
+			location = 4109 # Athens
+			ship = { name = "RCT Nicola Fabrizi I" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Curtatone Class" } } } 
+			ship = { name = "RCT Nicola Fabrizi II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Curtatone Class" } } } 
+			ship = { name = "RCT Nicola Fabrizi III" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Curtatone Class" } } } 
+			ship = { name = "RCT Nicola Fabrizi IV" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Curtatone Class" } } } 
+			ship = { name = "RCT Nicola Fabrizi V" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Curtatone Class" } } } 
+			ship = { name = "RCT Nicola Fabrizi VI" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Curtatone Class" } } } 
+			ship = { name = "RCT Nicola Fabrizi VII" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Curtatone Class" } } } 
+			ship = { name = "RCT Nicola Fabrizi VIII" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Curtatone Class" } } } 
+			ship = { name = "RCT Nicola Fabrizi IX" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Curtatone Class" } } } 
+			ship = { name = "RCT Nicola Fabrizi X" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Curtatone Class" } } } 
+			ship = { name = "RCT Nicola Fabrizi XI" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Curtatone Class" } } } 		
+			ship = { name = "RCT Nicola Fabrizi XII" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Curtatone Class" } } } 
+			ship = { name = "RCT Nicola Fabrizi XIII" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Curtatone Class" } } } 
+			ship = { name = "RCT Nicola Fabrizi XIV" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Curtatone Class" } } } 
+			ship = { name = "RCT Nicola Fabrizi XV" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Curtatone Class" } } } 
+			ship = { name = "RCT Nicola Fabrizi XVI" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Curtatone Class" } } } 
+			ship = { name = "RCT Nicola Fabrizi XVII" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Curtatone Class" } } } 
+			ship = { name = "RCT Nicola Fabrizi XVIII" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Curtatone Class" } } } 
+			ship = { name = "RCT Nicola Fabrizi XIX" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Curtatone Class" } } } 
+			ship = { name = "RCT Nicola Fabrizi XX" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Curtatone Class" } } } 
+			ship = { name = "RCT Nicola Fabrizi XI" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Curtatone Class" } } } 
+			ship = { name = "RCT Nicola Fabrizi XII" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Curtatone Class" } } } 		
+		}					
+	}
+} 
