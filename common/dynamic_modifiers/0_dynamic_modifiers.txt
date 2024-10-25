@@ -1410,6 +1410,7 @@ CAN_great_depression_modifier = {
 	min_export = CANgd_me
 	production_factory_start_efficiency_factor = CANgd_peb
 	production_factory_efficiency_gain_factor = CANgd_peg
+	production_factory_max_efficiency_factor = Cangd_pem
 }
 SPR_economy_modifier = {
 	enable = { always = yes }

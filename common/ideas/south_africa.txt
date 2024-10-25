@@ -41,6 +41,76 @@ ideas = {
 				industrial_capacity_dockyard = -0.10
 			}
 		}
+		SAF_return_to_republicanism = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = can_patriation
+
+			modifier = {
+			  democratic_drift = 0.06
+				stability_factor = 0.05
+			}
+		}
+		SAF_laager_doctrine = {
+
+			allowed_civil_war = {
+			  always = no
+			}
+	  
+			removal_cost = -1
+	  
+			  picture = can_wartime_prices_and_trade_board
+	  
+			  modifier = {
+				army_infantry_attack_factor = 0.03
+				army_infantry_defence_factor = 0.03
+				army_armor_attack_factor = 0.03
+				army_armor_defence_factor = 0.03
+			}
+		  }
+
+		  war_measures_act_idea = {
+
+			name = "War Measures Act"
+
+			allowed_civil_war = {
+				always = no
+			  }
+		
+			removal_cost = -1
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.25
+				production_cost_arms_factory_factor = -0.05
+				industrial_capacity_factory = 0.05
+			}
+		  }
+		  SAF_the_aliens_act = {
+
+			name = "The Alien Act"
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+	
+			picture = generic_intel_bonus
+	
+			modifier = {
+				stability_weekly = 0.001
+				foreign_subversive_activites = -0.15
+				
+			}
+		}
+
 
 		SAF_ossewabrandwag_fascism = {
 			allowed = {
@@ -92,12 +162,31 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = saf_history_of_segregation_2
 
 			modifier = {
 				conscription_factor = -0.40
 			}
 
+		}
+
+		SAF_relax_racial_laws = {
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+	
+			picture = generic_army_war_college
+	
+			modifier = {
+		  		production_speed_arms_factory_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+			}
+	
 		}
 
 		SAF_abandon_westminster = {
@@ -176,9 +265,8 @@ ideas = {
 			picture = generic_production_bonus
 
 			modifier = {
-				production_speed_industrial_complex_factor = 0.07
-				production_speed_arms_factory_factor = 0.07
-				production_speed_infrastructure_factor = 0.07
+				production_speed_arms_factory_factor = 0.15
+				production_speed_infrastructure_factor = 0.15
 			}
 
 		}
@@ -240,8 +328,8 @@ ideas = {
 			picture = generic_manpower_bonus
 
 			modifier = {
-				industrial_capacity_factory = 0.06
-				industrial_capacity_dockyard = 0.06
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
 				consumer_goods_factor = -0.20
 				conscription_factor = -0.05
 			}

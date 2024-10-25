@@ -20,6 +20,25 @@ ideas = {
 				conscription_factor = -0.30
 			}
 		}
+		Commit_to_the_War = {
+			
+			name = "Commit to the War"
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = tfv_can_conscription_crisis
+
+			modifier = {
+				conscription_factor = -0.15
+			}
+		}
 
 		CAN_defence_of_canada_regulations_democratic = {
 
@@ -38,6 +57,98 @@ ideas = {
 			modifier = {
 				communism_drift = -0.01
 				fascism_drift = -0.01
+			}
+		}
+		CAN_ford_general_motors = {
+			name = "Ford General Motors"
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = idea_USA_general_motors
+			
+			equipment_bonus = {
+				mechanized_equipment = { 
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
+		CAN_sexton = {
+			name = "The Sexton"
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = idea_generic_license_production
+			
+			equipment_bonus = {
+				medium_tank_artillery_chassis = {
+					build_cost_ic = -0.15 instant = yes
+				}
+			}
+			
+			equipment_bonus = {
+				light_tank_artillery_chassis = {
+					build_cost_ic = -0.15 instant = yes
+				}
+			}
+		}
+
+		Can_usa_lisence = {
+			name = "American Licenses"
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = idea_generic_license_production
+
+			targeted_modifier = {
+				tag = USA
+				license_production_speed = 0.25
+			}
+		}
+		
+		CAN_kangaroo = {
+			name = "The Kanaroo"
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = FRA_motorized_focus
+			
+			equipment_bonus = {
+				mechanized_equipment = { 
+					armor_value = 0.2 instant = yes
+					build_cost_ic = -0.2 instant = yes
+					maximum_speed = -0.1 instant = yes
+				}
 			}
 		}
 

@@ -146,8 +146,8 @@ bookmarks = {
 			}
 			focuses = {
 				SAF_expand_the_cape_corps
-				SAF_secure_interests_in_africa
-				SAF_outlaw_strikes
+				SAF_expand_the_union
+				SAF_separation_policy
 			}
 		}
 		"AST"={
