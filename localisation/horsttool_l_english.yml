@@ -1498,7 +1498,7 @@
 
  modifier_production_cost_dockyard_factor:0 "§YDockyard§! construction cost"
  modifier_production_cost_dockyard_factor_desc:0 "Modifies the cost of Dockyard construction."
- modifier_production_cost_arms_factory_factor:0 "Consumer Goods Factory Factor: §Y+100.0%§!"
+ modifier_production_cost_arms_factory_factor:0 "Factory Output"
  modifier_production_cost_arms_factory_factor_desc:0 "Modifies the cost of Military Factory construction."
  EFR_defense_plan:0 "Bulwark of France"
  GER_endsieg:0 "Total War"
