@@ -4676,7 +4676,7 @@ focus_tree = {
 				}
 	
 				create_equipment_variant = {
-					name = "Comandanti Medaglie d'Oro Class"
+					name = "Comandanti Class"
 					type = ship_hull_light_3
 					name_group = ITA_DD_HISTORICAL #TODO_Manu: Name List
 					parent_version = 0
@@ -4896,7 +4896,7 @@ focus_tree = {
 					equipment = {
 						type = ship_hull_heavy_2
 						creator = "ITA"
-						version_name = "Littorio"
+						version_name = "Littorio Class"
 					}
 					name = "Roma"
 					requested_factories = 1
