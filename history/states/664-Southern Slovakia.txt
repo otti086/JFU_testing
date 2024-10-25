@@ -3,8 +3,8 @@ state={
 	name="STATE_664"
 	manpower = 854300
 	resources={
-		steel=13 # was: 20
-		chromium = 3 # was: 4
+		steel=15 # was: 20
+		chromium = 10 # was: 4
 	}
 	
 	state_category = town
@@ -12,7 +12,7 @@ state={
 	history={
 		owner = CZE
 		buildings = {
-			infrastructure = 3 #was: 6
+			infrastructure = 2 #was: 6
 			industrial_complex = 3
 		}
 		victory_points = {

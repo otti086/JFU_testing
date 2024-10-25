@@ -989,6 +989,14 @@ JFU_startup_on_action = {
 		add_ideas = ai_limiter
 		country_lock_all_division_template = yes					
 	}
+	FIN = {
+		add_dynamic_modifier = { modifier = FIN_economy_modifier }
+		set_variable = { var = FINeco_stab value = 0 }
+		set_variable = { var = FINeco_FO value = 0 }
+		set_variable = { var = FINeco_mfcs value = 0 }
+		set_variable = { var = FINeco_cs value = 0 }
+		set_variable = { var = FINeco_pec value = 0 }
+	}
 	if = { 
 		limit = { 
 			FRA = { 

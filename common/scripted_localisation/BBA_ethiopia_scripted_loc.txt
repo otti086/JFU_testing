@@ -323,17 +323,3 @@ defined_text = {
 		localization_key = ETH_hold_harar_mission_success
 	}
 }
-
-# Get correct tt for suez block 
-defined_text = {
-	name = GetSuezBlockText
-	text = {
-		trigger = {
-			has_country_flag = SUEZ_SANCTIONS_FLAG 
-		}
-		localization_key = blocked_as_part_of_sanctions_tt
-	}
-	text = {
-		localization_key = disable_canal_tt
-	}
-}

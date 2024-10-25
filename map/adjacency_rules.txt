@@ -50,10 +50,17 @@ adjacency_rule =
 	is_disabled = {
 		OR = {
 			has_global_flag = SUEZ_CANAL_BLOCKED
-			has_country_flag = SUEZ_CANAL_BLOCKED_FOR_COUNTRY
-			has_country_flag = SUEZ_SANCTIONS_FLAG
+			AND = {
+				tag = USA
+				USA = {
+						not  = {
+						has_global_flag  = EFR_torch_declared
+					}
+				}
+			}
 		}
 		tooltip = suez_blocked_tt
+
 	}
 	
 	icon = 12049

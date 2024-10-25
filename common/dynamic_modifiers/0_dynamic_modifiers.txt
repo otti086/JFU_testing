@@ -1425,6 +1425,17 @@ SPR_economy_modifier = {
 	production_speed_infrastructure_factor = SPR_eco_ics
 }
 
+FIN_economy_modifier = {
+	enable = { always = yes }
+	icon = GFX_idea_SOV_fourth_five_year_plan
+
+	stability_factor = FINeco_stab
+	industrial_capacity_factory = FINeco_FO
+	production_speed_arms_factory_factor = FINeco_mfcs
+	production_speed_buildings_factor = FINeco_cs 
+	production_factory_max_efficiency_factor = FINeco_pec
+}
+
 emergency_dday_modifier = { #STATE MODIFIER
 	enable = { always = yes }
 
