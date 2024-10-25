@@ -13,7 +13,6 @@ equipment_modules = {
 			build_cost_ic = 1
 			fuel_consumption = 2
 			maximum_speed = 2
-			reliability = 0.2
 		}
 		multiply_stats = {
 		}
@@ -617,7 +616,7 @@ equipment_modules = {
 		}
 		add_stats = {
 			reliability = -1.0
-			build_cost_ic = 8.0
+			build_cost_ic = 5.0
 			breakthrough = 19
 		}
 		dismantle_cost_ic = 1
@@ -1444,7 +1443,7 @@ equipment_modules = {
 		}
 	}
 
-	squeezebore_adaptor = {
+	squeezebore_adaptor = { 
 		abbreviation = "sque"
 		category = tank_special_module
 		sfx = sfx_ui_sd_module_turret
@@ -1468,12 +1467,11 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			hardness = 0.05
 			build_cost_ic = 2
 		}
 		xp_cost = 0
 		multiply_stats = {
-			
+			hardness = 0.075
 		}
 	}
 
