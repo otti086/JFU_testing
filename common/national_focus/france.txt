@@ -517,6 +517,10 @@ focus = {
 		}	
 		completion_reward = {
 			give_guarantee = BEL
+			BEL = {
+				give_military_access = FRA
+			}
+
 		}
 	}
 	focus = {
