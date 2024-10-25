@@ -3044,8 +3044,8 @@ BEL_FRA_building = {
 	BEL = {
 		every_controlled_state = {
 			limit = { is_core_of = BEL }
-			add_to_temp_variable = { SOV_mils = arms_factory_level }
-			add_to_temp_variable = { SOV_civs = industrial_complex_level }
+			add_to_temp_variable = { BEL_mils = arms_factory_level }
+			add_to_temp_variable = { BEL_civs = industrial_complex_level }
 		}
 	}
 	FRA = {
