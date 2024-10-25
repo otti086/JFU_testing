@@ -12,8 +12,7 @@
 # The 'name' property is how you refer to the rule in adjacencies.csv
 
 #Suez Canal
-adjacency_rule =
-{
+adjacency_rule = {
 	name = "SUEZ_CANAL"
 
 	contested =
@@ -48,10 +47,19 @@ adjacency_rule =
 	required_provinces = { 12049 1155 4073 9947 }
 
 	is_disabled = {
-		OR = {
+		OR= {
 			has_global_flag = SUEZ_CANAL_BLOCKED
 			has_country_flag = SUEZ_CANAL_BLOCKED_FOR_COUNTRY
 			has_country_flag = SUEZ_SANCTIONS_FLAG
+
+			AND = {
+				tag = USA
+				USA = {
+						not  = {
+						has_global_flag  = EFR_torch_declared
+					}
+				}
+			}
 		}
 		tooltip = suez_blocked_tt
 	}
@@ -61,8 +69,7 @@ adjacency_rule =
 }
 
 #Gibraltar Strait
-adjacency_rule =
-{
+adjacency_rule = {
 	name = "GIBRALTAR_STRAIT"
 
 	contested =
@@ -95,14 +102,24 @@ adjacency_rule =
 	}
 	
 	required_provinces = { 4135 }
-	
+	is_disabled = {
+		OR= {
+			AND = {
+				tag = USA
+				USA = {
+						not  = {
+						has_global_flag  = EFR_torch_declared
+					}
+				}
+			}
+		}
+	}
 	icon = 5407	
 	offset = { -31.0 0.0 -2.0 }
 }
 
 #Øresund - (Østersøen <-> Kattegat/Skagerak/Nordsøen)
-adjacency_rule =
-{
+adjacency_rule ={
 	name = "DANISH_BELTS_STRAIT"
 
 	contested =
