@@ -12,7 +12,7 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 1
 			fuel_consumption = 2
-			maximum_speed = 2
+			maximum_speed = 1.5
 		}
 		multiply_stats = {
 		}

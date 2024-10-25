@@ -22,7 +22,7 @@ equipments = {
 		type = armor
 		group_by = archetype
 		interface_category = interface_category_armor
-		priority = 2000
+		priority = 2000 
 
 		module_slots = {
 
@@ -172,7 +172,7 @@ equipments = {
 		}
 
 		fuel_consumption = 0
-		maximum_speed = 8
+		maximum_speed = 7
 		build_cost_ic = 5.5
 		reliability = 1.2
 		armor_value = 65
