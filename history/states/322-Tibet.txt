@@ -6,14 +6,13 @@ state={
 		owner = SWE
 		buildings = {
 			infrastructure = 0
-
 		}
 		add_core_of = SWE
 
 	}
 
 	provinces={
-		2010 2093 4994 5011 7926 8068 10755 10918 
+		4994 4891 7916 10918 8090
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
