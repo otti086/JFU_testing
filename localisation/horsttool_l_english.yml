@@ -1237,7 +1237,6 @@
  AST_great_despression_AAP_tt:0 "Modify §YAustralian Economy§! by \nCivilian to Military Factory conversion cost: §G-20.00%§!"
 
  CAN_great_despression_wb_tt:0 "Modify §YCanadian Economy§! by \nConsumer Goods Factories factor: §Y-10.0%§!"
- CAN_ka_ttt:0 "Modify §YCanadian Economy§! by \nProduction Efficiency Growth: §Y5%"
  CAN_great_despression_wpatb_tt:0 "Modify §YCanadian Economy§! by \nMax Factories in a State: §G+10%§!, \nResources to Market: §Y-5%§!"
  CAN_great_despression_cwbSAF_tt:0 "Modify §YCanadian Economy§! by \nConsumer Goods Factories factor: §Y-10.0%§!\nFactory Output §G+5.00%§! \nDockyard Output §G+5.00%§!"
  CAN_great_despression_cwbCAN_tt:0 "Modify §YCanadian Economy§! by \nConsumer Goods Factories factor: §Y-25.0%§!\nFactory Output §G+10.00%§! \nDockyard Output §G+10.00%§!"
@@ -1847,70 +1846,3 @@
  VICTORY_POINTS_4949:0 "Krasnaya Sloboda"
  VICTORY_POINTS_3555:0 "Dzerzhinsky Tractor Factory"
  VICTORY_POINTS_1948:0 "Yelshanka"
-
-
- #SAF
- SAF_ethnic_legislation:0 "Ethnic Legislation"
- SAF_ethnic_legislation_desc:0 "We must endeavour to delineate the rights of our citizens, which will allow us to further pass more laws and regulations in the future, with far-reaching consequences."
- SAF_push_the_unp_towards_independence:0 "Push The UNP Towards Independence"
- SAF_push_the_unp_towards_independence_desc:0 "The United Party stands as our best chance at securing our independence from the Mother Country. We must secure the appropriate steps in doing so."
- SAF_celebrate_the_voortrekkers:0 "Celebrate The Voortrekkers"
- SAF_celebrate_the_voortrekkers_desc:0 "The founders of this nation were the first to break away from the yoke of colonialism. Our future movements will mirror their courage in breaking away from our masters."
- SAF_return_to_republicanism:0 "Return To Republicanism"
- SAF_return_to_republicanism_desc:0 "A country is not made by mandate but by tacit agreement of its people. The [ROOT.GetName] will celebrate its roots by returning our idea of statehood from some distant monarch to a much closer power, from its people in our very own lands."
- SAF_build_a_new_state:0 "Rebuild The Government"
- SAF_build_a_new_state_desc:0 "Our path no longer lies with Westminster. We shall schedule a referendum to exit from British influence in our administration."
- SAF_laager_doctrine:0 "The Laager Doctrine"
- SAF_laager_doctrine_desc:0 "Our peoples are now united under a common flag and no longer from an overseas lord!"
- SAF_separation_policy:0 "Separation Policies"
- SAF_separation_policy_desc:0 "Our peoples still bear the scars of apartheid."
- SAF_relax_racial_laws:0 "Relax Racial Policies"
- SAF_relax_racial_laws_desc:0 "The strength of a republic comes from its peoples. We can no longer tolerate the repression of our people by some imaginary lines decided by the privileged few."
- SAF_policy_of_cooperation:0 "Policy Of Cooperation"
- SAF_policy_of_cooperation_desc:0 "[ROOT.GetName] must see to that our relations with the Mother Country remains strong and friendly."
- SAF_research_cooperation:0 "Commonwealth Research Cooperation"
- SAF_research_cooperation_desc:0 "South Africa must not fall behind on our scientific research efforts. We will begin research coordination efforts with the countries of the Commonwealth."
- SAF_commonwealth_industrial_cooperation:0 "Commonwealth Industrial Assistance"
- SAF_commonwealth_industrial_cooperation_desc:0 "The [ROOT.GetName] will begin a program of industrial modernization with the help of the Great Britain."
- SAF_finance_legislation:0 "Finance Legislation"
- SAF_finance_legislation_desc:0 "The growth of our cities and settlements must continue, by the way of funding newer infrastructure and factories to fuel it."
- SAF_guard_the_cape:0 "Guard The Cape"
- SAF_guard_the_cape_desc:0 "The Cape of Good Hope is located on the artery of sea-going trade. We must fortify the defenses on those shores so that none will interrupt our entreprises."
- SAF_remobilize_the_cape_corps:0 "Remobilize The Cape Corps"
- SAF_remobilize_the_cape_corps_desc:0 "Our stalwart defender throughout the ages, the Cape Corps has seen a decline in recent days. We must halt this trend, and begin a rapid expansion of our armed forces to crush any future threats before they happen."
- SAF_crush_ossewabrandwag:0 "Eliminate Ossewabrandwag"
- SAF_crush_ossewabrandwag_desc:0 "The presence of the Ossewabrandwag is an intolerable fifth columnist movement within our lands. We shall stamp out their influence wherever we find them."
- SAF_the_aliens_act:0 "Pass The Aliens Act"
- SAF_the_aliens_act_desc:0 "The immigration of foreign nationals into the [ROOT.GetName] is a national security risk that we must sorely limit for the time being."
- SAF_expand_the_union:0 "Expand The Union"
- SAF_expand_the_union_desc:0 "Our strengthened ties with [ENG.GetName] and the expansion of our defenses has cascaded into a legitimate capability to defend our mutual interests within the continent. We shall press for the unification of several territories under our control, for much more efficient administration over them."
- tfv_south_africa.5.t:0 "Independence Referendum"
- tfv_south_africa.5.d:0 "While in terms of state management we have become independent, there is still the question of our relations with the UK. We could become an equal ally to them, however if we go with this our Prime Minister Hertzog will resign along with pro-British commander and politician Jan Smuts."
- tfv_south_africa.5.a:0 "We still need the British."
- tfv_south_africa.5.b:0 "We don't need them."
- SAF_anc_long:0 "African National Congress"
- SAF_hertzog_in_power:0 "Hertzog In Power"
- SAF_smuts_in_power:0 "Smuts In Power"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

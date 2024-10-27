@@ -866,9 +866,6 @@ focus_tree = {
 	focus = {
 		id = naval_rearmament_focus
 		prerequisite = { focus = general_rearmament_focus }
-		available = {
-			has_war_with = GER
-		}
 		icon = GFX_ENG_ROYAL_NAVY
 		x = 2
 		y = 1
@@ -886,18 +883,18 @@ focus_tree = {
 		completion_reward = {
 			navy_experience = 50
 			126 = {
-				add_extra_state_shared_building_slots = 8
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
-					level = 8
+					level = 2
 					instant_build = yes
 				}
 			}
 			127 = {
-				add_extra_state_shared_building_slots = 8
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
-					level = 8
+					level = 2
 					instant_build = yes
 				}
 			}
