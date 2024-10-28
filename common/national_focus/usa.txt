@@ -1252,10 +1252,13 @@ focus_tree = {
 				date > 1943.01.01
 				SOV = { surrender_progress > 0.6 }
 			}
-			has_country_flag = {
-				flag = USA_emergency_dday_flag
-				days > 60
-			} 
+			OR = {
+				has_country_flag = {
+					flag = USA_operation_overlord_flag
+					days > 60
+				} 
+				NOT = { has_idea = emergency_dday_idea }
+			}
 		}
 
 		available_if_capitulated = yes
@@ -1270,7 +1273,7 @@ focus_tree = {
 				#	days = 30 
 				#}	 
 			#}
-			set_country_flag = USA_operation_overlord_flag	
+			set_country_flag = USA_operation_overlord_flag_2	
 		}
 	}
 	focus = {
@@ -1286,17 +1289,21 @@ focus_tree = {
 
 		available = {
 			SOV = { surrender_progress > 0.5 }
-			NOT = { has_idea = emergency_dday_idea }
+
 			#NOT = { 
 			#	any_state = {
 			#		limit = { atlantikwall_states = yes }
 			#		is_controlled_by_ROOT_or_ally = yes 
 			#	}
 			#}
-			has_country_flag = {
-				flag = USA_operation_overlord_flag
-				days > 60
-			} 
+			OR = {
+				has_country_flag = {
+					flag = USA_operation_overlord_flag_2
+					days > 60
+				} 
+				NOT = { has_idea = emergency_dday_idea }
+			}
+
 		}
 
 		available_if_capitulated = yes
@@ -1312,7 +1319,7 @@ focus_tree = {
 				#	scope = USA
 				#} 
 			}
-			set_country_flag = USA_emergency_dday_flag	
+			set_country_flag = USA_operation_overlord_flag	
 		}
 	}
 	focus = {
@@ -1327,10 +1334,7 @@ focus_tree = {
 		prerequisite = {  focus = USA_war_plan_silver }
 
 		available = {
-			OR = {
-				448 = { is_controlled_by = ENG }
-				SOV = { surrender_progress > 0.5 }
-			}
+			448 = { is_controlled_by = ENG }
 		}
 
 

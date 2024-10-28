@@ -67,7 +67,41 @@ characters={
 			legacy_id=-1
 		}
 	}
-
+	NZL_leslie_morshead={
+		name = "Harold Eric Barrowclough"
+		portraits={
+			army={
+				large="GFX_AST_leslie_morshead"
+				small=GFX_portrait_AST_leslie_morshead_small
+			}
+		}
+		corps_commander={
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=5
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	NZL_alan_vasey={
+		name = "Norman Weir"
+		portraits={
+			army={
+				large="GFX_AST_alan_vasey"
+				small=GFX_portrait_AST_alan_vasey_small
+			}
+		}
+		corps_commander={
+			traits={ hill_fighter }
+			skill=3
+			attack_skill=2
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
 	NZL_edmund_rupert_drummond={
 		name=NZL_edmund_rupert_drummond
 		portraits={

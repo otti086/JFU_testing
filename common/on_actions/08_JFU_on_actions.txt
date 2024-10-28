@@ -638,7 +638,7 @@ on_actions = {
 				}
 				if = {
 					limit = {
-						IRE = { is_ai = yes }
+						NOR = { is_ai = yes }
 					}
 					ENG = {
 						annex_country = { target = NOR transfer_troops = no }

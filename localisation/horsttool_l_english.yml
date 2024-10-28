@@ -1055,6 +1055,7 @@
  USA_Retake_Asia:0 "Retake Asia"
  USA_pre_war_build_up:0 "Prepare the Industry "
  USA_victory_programs:0 "Victory Programs"
+ USA_emergency_dday:0 "Emergency D-day"
 
  SOV_Great_Patriotic_War:0 "§RThe Great Patriotic War§!"
  SOV_order_270_focus:0 "Order 270"
@@ -1526,8 +1527,8 @@
  #country flags
 
  EFR_torch_declared:0 "Torch has been declared" 
-
-
+ USA_operation_overlord_flag:0 "Has completed focus §YEmergency D-day§!"
+ USA_operation_overlord_flag_2:0 "Has completed focus §YOperation Overlord§!"
  #MIOs
 
  ENG_light_aircraft_organization:0 "Light Aircraft Designer"
