@@ -1682,7 +1682,7 @@ focus = {
 		x = 2
 		y = 1
 		relative_position_id = USA_selective_training_act
-		cost = 10
+		cost = 5
 		prerequisite = { focus = USA_selective_training_act }
 		ai_will_do = {
 			factor = 5
@@ -1707,7 +1707,7 @@ focus = {
 		y = 2
 		prerequisite = { focus = USA_support_rock_island }
 		relative_position_id = USA_selective_training_act
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1741,7 +1741,7 @@ focus = {
 		y = 3
 		prerequisite = { focus = USA_tank_experiments }
 		relative_position_id = USA_selective_training_act
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1781,7 +1781,7 @@ focus = {
 		y = 3
 		prerequisite = { focus = USA_tank_experiments }
 		relative_position_id = USA_selective_training_act
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1941,6 +1941,12 @@ focus = {
 				category = air_doctrine
 			} # REVISIT May use modifier?
 			add_ideas = air_war_plans_division_focus
+			add_tech_bonus = {
+				name = CAS_effort
+				uses = 1
+				bonus = 1.0
+				category = light_air
+			}
 		}
 	}
 
@@ -1964,7 +1970,7 @@ focus = {
 				name = fighter_effort
 				uses = 1
 				bonus = 1.0
-				category = light_air
+				category = medium_air
 			}
 		}
 	}
@@ -1990,7 +1996,6 @@ focus = {
 				name = USA_medium_fighters
 				bonus = 1.0
 				uses = 1
-				category = medium_air
 				category = heavy_air
 			}
 		}
@@ -2176,7 +2181,7 @@ focus = {
 		x = -3
 		y = 1
 		relative_position_id = USA_two_ocean_navy_act
-		cost = 2
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -2189,6 +2194,26 @@ focus = {
 					level = 2
 					instant_build = yes
 				}
+				if= {
+					limit = {
+						650 = {
+							air_base > 8
+						}
+					}
+					set_building_level = {
+						type = air_base
+						level = 10
+						instant_build = yes
+					}				
+				}
+				else = {
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+				}
+
 				add_building_construction = {
 					type = naval_base
 					province = 13067
@@ -2203,6 +2228,25 @@ focus = {
 					province = 13052
 					level = 2
 					instant_build = yes
+				}
+				if= {
+					limit = {
+						631 = {
+							air_base > 8
+						}
+					}
+					set_building_level = {
+						type = air_base
+						level = 10
+						instant_build = yes
+					}				
+				}
+				else = {
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
 				}
 				add_building_construction = {
 					type = naval_base
@@ -2219,6 +2263,25 @@ focus = {
 					level = 2
 					instant_build = yes
 				}
+				if= {
+					limit = {
+						632 = {
+							air_base > 8
+						}
+					}
+					set_building_level = {
+						type = air_base
+						level = 10
+						instant_build = yes
+					}				
+				}
+				else = {
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+				}
 				add_building_construction = {
 					type = naval_base
 					province = 13047
@@ -2234,6 +2297,25 @@ focus = {
 					level = 2
 					instant_build = yes
 				}
+				if= {
+					limit = {
+						638 = {
+							air_base > 8
+						}
+					}
+					set_building_level = {
+						type = air_base
+						level = 10
+						instant_build = yes
+					}				
+				}
+				else = {
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+				}
 				add_building_construction = {
 					type = naval_base
 					province = 12140
@@ -2248,6 +2330,25 @@ focus = {
 					province = 13050
 					level = 2
 					instant_build = yes
+				}
+				if= {
+					limit = {
+						642 = {
+							air_base > 8
+						}
+					}
+					set_building_level = {
+						type = air_base
+						level = 10
+						instant_build = yes
+					}				
+				}
+				else = {
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
 				}
 				add_building_construction = {
 					type = naval_base
