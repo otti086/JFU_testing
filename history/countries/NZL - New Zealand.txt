@@ -96,7 +96,8 @@ recruit_character = NZL_w_h_stratton
 recruit_character = NZL_a_e_davy
 recruit_character = NZL_walter_nash
 recruit_character = NZL_w_a_veitch_milne
-
+recruit_character = NZL_alan_vasey
+recruit_character = NZL_leslie_morshead
 
 if = {
 	limit = { has_dlc = "Together for Victory" }
