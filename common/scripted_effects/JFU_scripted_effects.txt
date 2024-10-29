@@ -1082,6 +1082,13 @@ JFU_startup_on_action = {
 			instant_build = yes
 		}			
 	}
+	282 = {
+		set_building_level = {
+			type = air_base
+			level = 60
+			instant_build = yes
+		}			
+	}
 }
 JFU_comp_startup_effect = {
 	GER = { add_ideas = JFU_no_tradeback }
@@ -2286,9 +2293,6 @@ pregrinded_effect = {
 			add_unit_leader_trait = organizer
 			add_unit_leader_trait = guerilla_fighter
 		}
-		ENG_andrew_cunningham = {
-			add_unit_leader_trait = green_water_expert
-		}
 	}
 	USA = {
 		USA_george_s_patton = { add_attack = 1 }
@@ -2816,6 +2820,9 @@ JFU_update_generals = {
 			add_unit_leader_trait = fortress_buster
 			add_unit_leader_trait = expert_improviser
 			add_unit_leader_trait = ranger
+		}
+		ENG_andrew_cunningham = {
+			add_unit_leader_trait = green_water_expert
 		}
 	}
 	FRA = {
