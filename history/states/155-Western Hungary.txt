@@ -6,8 +6,8 @@ state={
 	
 	state_category = city
 	resources={
-		tungsten=30.000
-		Steel = 30.000
+		tungsten = 30.000
+		steel = 30.000
 	}
 	history={
 		owner = HUN
