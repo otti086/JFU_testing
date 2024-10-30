@@ -38,7 +38,7 @@ characters={
 	}
 
 	MAN_tomoyuki_yamashita={
-		name=MAN_tomoyuki_yamashita
+		name="Tomoyuki Yamashita"
 		portraits={
 			army={
 				small="GFX_idea_tomoyuki_yamashita"
@@ -58,7 +58,7 @@ characters={
 	}
 
 	MAN_hisaichi_terauchi={
-		name=MAN_hisaichi_terauchi
+		name="Hisaichi Terauchi"
 		portraits={
 			army={
 				small="GFX_idea_hisaichi_terauchi"
@@ -78,7 +78,7 @@ characters={
 	}
 
 	MAN_akira_muto={
-		name=MAN_akira_muto
+		name="Akira Muto"
 		portraits={
 			army={
 				large="gfx/leaders/JAP/Portrait_Japan_Akira_Muto.dds"
@@ -97,7 +97,7 @@ characters={
 	}
 
 	MAN_shunroku_hata={
-		name=MAN_shunroku_hata
+		name="$shunroku_hata$"
 		portraits={
 			army={
 				small="GFX_idea_shunroku_hata"
@@ -117,7 +117,7 @@ characters={
 	}
 
 	MAN_shizuichi_tanaka={
-		name=MAN_shizuichi_tanaka
+		name="Shizuichi Tanaka"
 		portraits={
 			army={
 				large="gfx/leaders/JAP/Portrait_Japan_Shizuichi_Tanaka.dds"
@@ -136,7 +136,7 @@ characters={
 	}
 
 	MAN_kenkichi_ueda={
-		name=MAN_kenkichi_ueda
+		name="Kenkichi Ueda"
 		portraits={
 			army={
 				large="gfx/leaders/JAP/Portrait_Japan_Kenkichi_Ueda.dds"

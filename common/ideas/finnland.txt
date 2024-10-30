@@ -3,7 +3,6 @@ ideas = {
 	country = {
 		
 		german_advisor1 = {
-			name = "German Advisors"
 			
 			allowed = {
 				always = no
@@ -22,7 +21,6 @@ ideas = {
 		}
 
 		FIN_arms_purchases = {
-			name = "German Payments"
 
 			allowed = {
 				always = no
@@ -41,7 +39,6 @@ ideas = {
 		}
 
 		FIN_kitchens = {
-			name = "Field Kitchens"
 
 			allowed = {
 				always = no
@@ -60,7 +57,6 @@ ideas = {
 		}
 
 		stockpile_supplies = {
-			name = "Stockpile Supplies"
 			
 			allowed = {
 				always = no
@@ -78,7 +74,6 @@ ideas = {
 		}
 
 		fin_continuation_war = {
-			name = "Prepare for War"
 
 			allowed = {
 				always = no
@@ -117,8 +112,6 @@ ideas = {
 			}
 		}
 		fin_sisu = {
-
-			name = "Sisu"
 			
 			allowed = {
 				always = no
@@ -143,7 +136,6 @@ ideas = {
 		}
 		fin_sisu2 = {
 			
-			name = "Sisu"
 			
 			allowed = {
 				always = no
@@ -170,7 +162,6 @@ ideas = {
 		}
 		fin_sisu3 = {
 			
-			name = "Sisu"
 			
 			allowed = {
 				always = no
@@ -199,7 +190,6 @@ ideas = {
 			}
 		}
 		fin_trade = {
-			name = "Trade Agreement"
 			
 			allowed = {
 				always = no
@@ -211,6 +201,8 @@ ideas = {
 			
 			removal_cost = -1
 
+			picture = can_wartime_prices_and_trade_board
+
 			targeted_modifier = {
 				tag = FIN
 				trade_cost_for_target_factor = -0.5
@@ -218,7 +210,6 @@ ideas = {
 		}
 
 		FIN_white_guard1 = {
-			name = "The White Guard"
 
 			picture = SOV_purged_junior_army_officers
 
@@ -255,70 +246,7 @@ ideas = {
 			}
 		}
 
-		finnish_subsidies1 = {
-			name = "Finnish Subsidies"
-
-			picture = SOV_third_five_year_plan_civilian
-
-				allowed = {
-					always = no
-				}
-			
-			allowed_civil_war = {
-				always = no
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				stability_factor = 0.1
-			}
-		}
-
-		finnish_subsidies2 = {
-			name = "Finnish Subsidies"
-
-			picture = SOV_third_five_year_plan_civilian
-
-				allowed = {
-					always = no
-				}
-			
-			allowed_civil_war = {
-				always = no
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				stability_factor = 0.1
-				production_speed_arms_factory_factor = 0.2
-			}
-		}
-
-		finnish_subsidies3 = {
-			name = "Finnish Subsidies"
-
-			picture = SOV_third_five_year_plan_civilian
-
-				allowed = {
-					always = no
-				}
-			
-			allowed_civil_war = {
-				always = no
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				stability_factor = 0.1
-				industrial_capacity_factory = 0.05
-			}
-		}
-
 		finnladen_rausen = {
-			name = "Finish Volunteers"
 
 			picture = partial_economic_mobilisation
 
@@ -335,48 +263,6 @@ ideas = {
 			modifier = {
 				send_volunteer_size = 180
 				send_volunteer_divisions_required = -0.99
-			}
-		}
-
-		finnish_subsidies4 = {
-			name = "Finnish Subsidies"
-
-			picture = SOV_third_five_year_plan_civilian
-
-				allowed = {
-					always = no
-				}
-			
-			allowed_civil_war = {
-				always = no
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				stability_factor = 0.1
-				industrial_capacity_factory = 0.05
-				production_speed_arms_factory_factor = 0.2
-			}
-		}
-
-		german_engineering = {
-			name = "German Engineering"
-				allowed = {
-					always = no
-				}
-			
-			allowed_civil_war = {
-				always = no
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				stability_factor = 0.1
-				industrial_capacity_factory = 0.05
-				production_speed_buildings_factor = 0.05
-				production_factory_max_efficiency_factor = 0.05
 			}
 		}
 

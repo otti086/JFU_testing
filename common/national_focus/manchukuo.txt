@@ -1101,7 +1101,7 @@
 		relative_position_id = MAN_railways_schahar
 	
 
-		available = {	is_ai = no	}
+		available = {}
 
 
 		completion_reward = {
@@ -1150,7 +1150,6 @@
 		
 
 		available = {
-			is_ai = no
 		}
 
 
@@ -1480,8 +1479,6 @@
 
 
 		completion_reward = {
-			custom_effect_tooltip = available_designer
-        	show_ideas_tooltip = MAN_mamc	
 		}
 	}
 	
@@ -1515,25 +1512,25 @@
 		}
 	}
 	
-	focus = {
-		id = MAN_mamc_pilot
-		icon = GFX_focus_generic_military_academy
-		x = -2
-		y = 1
+	#focus = {
+	#	id = MAN_mamc_pilot
+	#	icon = GFX_focus_generic_military_academy
+	#	x = -2
+	#	y = 1
 
-		cost = 5
+	#	cost = 5
 
-		prerequisite = { focus = MAN_mamcc }
-		relative_position_id = MAN_mamcc
-		
-		completion_reward = {
-			add_doctrine_cost_reduction = {
-				cost_reduction = 0.5
-				uses = 2
-				category = air_doctrine
-			}
-		}
-	}
+	#	prerequisite = { focus = MAN_mamcc }
+	#	relative_position_id = MAN_mamcc
+	#	
+	#	completion_reward = {
+	#		add_doctrine_cost_reduction = {
+	#			cost_reduction = 0.5
+	#			uses = 2
+	#			category = air_doctrine
+	#		}
+	#	}
+	#}
 	focus = {
 		id = MAN_mamc_tac
 		icon = GFX_goal_generic_air_bomber

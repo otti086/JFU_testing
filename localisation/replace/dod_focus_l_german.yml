@@ -1,0 +1,4 @@
+﻿l_german:
+ HUN_light_infantry_divisions_doctrine_tech_tt:0 "Ermöglicht die §HLeichtinfanterie-Doktrin§!\n§HInfanterie\n    Wald§!\n      Angriff: §G+3%§!\n      Bewegung: §G+10%§!\n    §HStadt§!\n      Angriff: §G+3%§!\n      Bewegung: §G+10%§!\n"
+ HUN_light_infantry_divisions_doctrine_tech_desert_tt:0 "Ermöglicht die §HLeichtinfanterie-Doktrin§!\n§HInfanterie\n    Wüste§!\n      Angriff: §G+5%§!\n      Bewegung: §G+10%§!\n    §HBerge§!\n      Angriff: §G+5%§!\n      Bewegung: §G+10%§!\n    §HHügel§!\n      Angriff: §G+5%§!\n      Bewegung: §G+10%§!\n"
+ ROM_mountain_artillery_tech_tt:0 "Ermöglicht die §HGebirgsgeschütze§!\n§HArtillerie\n   Weicher Angriff: §G+10%§!\n   Gebirge§!: Bewegung: §G+15%§! \n§HAnti-Panzer\n    Harte Angriff: §G+10%§!\n    Gebirge§!: Bewegung: §G+15%§! "

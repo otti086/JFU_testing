@@ -7,5 +7,9 @@ spriteTypes = {
 		name = "GFX_idea_EFR_philippe_henriot"
 		texturefile = "gfx/interface/ideas/idea_fra_philippe_henriot.dds"
 	}
+	SpriteType = { 
+		name = "GFX_idea_pervitin"
+		texturefile = "gfx/interface/ideas/pervitin.dds"
+	}	
 }
 

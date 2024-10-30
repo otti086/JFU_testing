@@ -1,0 +1,10 @@
+﻿l_german:
+ ITA_investments_in_edison_ricostruzione_industriale_tt:0 "$ITA_modify_ricostruzione_industriale_dynamic_modifier_ns_intro$ \n$MODIFIER_CONSUMER_GOODS_FACTOR$: §Y-10,0%§! \n\n"
+ ITA_increase_production_military_industry_tt:2 "$ITA_modify_military_industry_dynamic_modifier_ns_intro$ \n$MODIFIER_LINE_CHANGE_PRODUCTION_EFFICIENCY_FACTOR$: §G+10,00%§! \n$MODIFIER_PRODUCTION_FACTORY_MAX_EFFICIENCY$: §G+5,00%§! \n$MODIFIER_PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR$: §R-4,00%§! \n$MODIFIER_INDUSTRIAL_CAPACITY_FACTOR$: §G+5,00%§! \n\n"
+ ITA_keep_specialization_military_industry_tt:0 "$ITA_modify_military_industry_dynamic_modifier_ns_intro$ \n$MODIFIER_LINE_CHANGE_PRODUCTION_EFFICIENCY_FACTOR$: §R-10,00%§! \n$MODIFIER_PRODUCTION_FACTORY_EFFICIENCY_GAIN_FACTOR$: §G+10,00%§! \n$MODIFIER_PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR$: §G+10,00%§! \n$MODIFIER_INDUSTRIAL_CAPACITY_FACTOR$: §G+10,00%§! \n\n"
+ SOV_the_modern_war_in_the_skies_ns_tt:0 "$SOV_modify_airforce_ns_intro$ \nLuftmissionseffizienz: §G+10,0%§! \nNachtoperationsstrafe: §G-10,0%§! \n\n" 
+ SOV_oil_production_ns_tt:0 "$SOV_modify_fyp_ns_intro$ \nSynthetisches Öl: §G+25,00%§! \nKraftstoffgewinn aus Raffinerien: §G+25,00%§! \n\n"
+ ITA_milizia_marittima_di_artiglieria_coastal_forts_tt:0 "Fügt in jeder eigenen Provinz mit einem §Y$naval_base$§! §Y2 $coastal_bunker$§! hinzu."
+ ITA_preserve_army_traditions_re_tt:0 "$ITA_modify_regio_esercito_dynamic_modifier_ns_intro$ \n$modifier_army_sub_unit_militia_max_org_factor$: §G+5,00%§! \n$modifier_army_sub_unit_infantry_defence_factor$: §G+5,00%§! \n\n" 
+ ITA_superesercito_re_tt:0 "$ITA_modify_regio_esercito_dynamic_modifier_ns_intro$ \n$modifier_army_sub_unit_militia_max_org_factor$: §G+5,00%§! \n$MODIFIER_ORG_LOSS_WHEN_MOVING$: §G-5,0%§! \n$MODIFIER_LAND_DOCTRINE_COST_FACTOR$: §G-10,00%§! \n\n"
+ ITA_believe_obey_fight_re_tt:0 "$ITA_modify_regio_esercito_dynamic_modifier_ns_intro$ \n$MODIFIER_CONSCRIPTION_TOTAL_FACTOR$: §G+5%§! \n\n"
