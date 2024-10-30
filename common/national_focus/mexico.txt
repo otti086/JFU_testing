@@ -2372,7 +2372,7 @@ focus_tree = {
 		id = MEX_focus_military_budget_review
 		icon = GFX_focus_generic_combined_arms
 		prerequisite = { focus = MEX_focus_national_bank }
-		x = -6
+		x = -4
 		y = 1
 		relative_position_id = MEX_focus_national_bank
 
@@ -2413,47 +2413,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = MEX_focus_pacific_coast_naval_yards
-		icon = GFX_goal_generic_construct_naval_dockyard
-		prerequisite = { focus = MEX_focus_military_budget_review }
-		x = -1
-		y = 1
-		relative_position_id = MEX_focus_military_budget_review
-
-		cost = 5
-
-		ai_will_do = {
-		}
-
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			478 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
 		id = MEX_focus_heroic_military_college
 		icon = GFX_focus_generic_military_academy
 		prerequisite = { focus = MEX_focus_military_budget_review }
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = MEX_focus_military_budget_review
 
